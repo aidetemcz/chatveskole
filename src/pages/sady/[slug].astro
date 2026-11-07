@@ -1,0 +1,41 @@
+---
+import Zaklad from '../../layouts/Zaklad.astro';
+import SkillKarta from '../../components/SkillKarta.astro';
+import { nactiSady, nactiSkills, zipPluginu } from '../../lib/obsah';
+
+export async function getStaticPaths() {
+  const sady = await nactiSady();
+  return sady.map((sada) => ({ params: { slug: sada.slug }, props: { sada } }));
+}
+
+const { sada } = Astro.props;
+const skills = (await nactiSkills()).filter((s) => sada.skills.includes(s.slug))
+  .sort((a, b) => sada.skills.indexOf(a.slug) - sada.skills.indexOf(b.slug));
+// Metodiky ze skills v sadě (bez duplicit)
+const metodiky = [...new Map(skills.flatMap((s) => s.meta.metodika ?? []).map((m) => [m.url ?? m.nazev, m])).values()];
+---
+<Zaklad title={sada.title} popis={sada.popis}>
+  <article class="stranka">
+    <div class="stranka-hlava"><a class="eyebrow" href="/skills">Sada skills</a></div>
+    <div class="obsah">
+      <div class="uvod">
+        <h1>{sada.title}</h1>
+        <p>{sada.popis}</p>
+        <p class="odkazy">
+          <a class="btn btn-accent" href={zipPluginu(sada.slug)} download>Stáhnout celou sadu jako plugin</a>
+          <a class="btn btn-sky" href="/funkce/pluginy">Jak nainstalovat plugin</a>
+        </p>
+      </div>
+    </div>
+    <h2 class="sr-only">Skills v sadě</h2>
+    <div class="karty skills-mrizka">
+      {skills.map((s) => <SkillKarta skill={s} />)}
+    </div>
+    {metodiky.length > 0 && (
+      <section class="obsah">
+        <h2><span class="zvyrazneni">Metodika</span></h2>
+        <ul>{metodiky.map((x) => <li>{x.url ? <a href={x.url}>{x.nazev}</a> : x.nazev}</li>)}</ul>
+      </section>
+    )}
+  </article>
+</Zaklad>

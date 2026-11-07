@@ -33,7 +33,7 @@
 ## Skills a pluginy
 
 16. **Kontrola skills:** všechny jsou ve stavu `koncept`. Kdo je projde a otestuje (aspoň Claude + Gemini nebo ChatGPT)? Navrhujeme: formativní hodnocení — Eva + Šárka Polanecká; vedení školy — tým AI akcelerátoru.
-17. **Plugin v ChatGPT (veřejný adresář):** platform.openai.com 7. 11. 2026 hlásí „We are not accepting more skills-only submissions at this time“ — pluginy jen se skills teď veřejně podat nejdou. Do té doby pluginy jen v pracovním prostoru AI dětem a ke stažení na webu. Až se podávání otevře, potřebujeme v manifestu (`extensions.com.openai.interface`): podtitul do 30 znaků (`shortDescription`), `websiteURL`, `supportURL`, `privacyPolicyURL`, `termsOfServiceURL` — tedy stránky zásad ochrany osobních údajů a podmínek užití na webu (existují? kde?). Doplní je `scripts/build-plugins.py`.
+17. **Plugin v ChatGPT (veřejný adresář):** platform.openai.com 7. 11. 2026 hlásí „We are not accepting more skills-only submissions at this time“ — pluginy jen se skills teď veřejně podat nejdou. Do té doby pluginy jen v pracovním prostoru AI dětem a ke stažení na webu. Až se podávání otevře, potřebujeme v manifestu (`extensions.com.openai.interface`): podtitul do 30 znaků (`shortDescription`), `websiteURL`, `supportURL`, `privacyPolicyURL`, `termsOfServiceURL` — tedy stránky zásad ochrany osobních údajů a podmínek užití na webu (existují? kde?). Doplní je `scripts/build-balicky.mjs`.
 18. **Plugin v Claude:** repozitář je veřejný, takže může sloužit jako marketplace (`aidetemcz/chatveskole`). Podat i do veřejného adresáře Claude?
 19. **Žákovští asistenti** (Hádej chemické prvky, Poznej svět, Rozvoj myšlení): převést do Tiny jako hotové chatboty?
 

@@ -1,0 +1,16 @@
+---
+// Vykreslí stránku z Markdownu: kusy HTML a mezi nimi komponenty podle značek <!-- komponenta: … -->.
+import type { Cast } from '../lib/markdown';
+import SadyPrehled from './SadyPrehled.astro';
+import DatabazePromptu from './DatabazePromptu.astro';
+
+interface Props { casti: Cast[] }
+const { casti } = Astro.props;
+---
+{casti.map((c) => {
+  if ('html' in c) return <Fragment set:html={c.html} />;
+  if (c.komponenta === 'sady-skills') return <SadyPrehled />;
+  if (c.komponenta === 'sady-pluginy') return <SadyPrehled pluginy />;
+  if (c.komponenta === 'databaze-promptu') return <DatabazePromptu />;
+  return null; // sady-homepage: seznam sad pod značkou už odkazuje na /sady/…
+})}

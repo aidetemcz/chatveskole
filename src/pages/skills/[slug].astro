@@ -1,0 +1,106 @@
+---
+import { getCollection } from 'astro:content';
+import Zaklad from '../../layouts/Zaklad.astro';
+import { nactiSkills, PRO_KOHO, zipSkillu, zipCopilot, seznam, type Skill } from '../../lib/obsah';
+import { vykreslitHtml } from '../../lib/markdown';
+import { jeKoncept, zobrazit } from '../../lib/web';
+
+export async function getStaticPaths() {
+  const skills = await nactiSkills();
+  return skills.map((skill) => ({ params: { slug: skill.slug }, props: { skill } }));
+}
+
+interface Props { skill: Skill }
+const { skill } = Astro.props;
+const m = skill.meta;
+const promptyHtml = await vykreslitHtml(skill.promptMd);
+const znalostiVse = await getCollection('znalosti');
+const znalosti = (m.znalosti ?? []).map((k) => znalostiVse.find((z) => z.id === k)?.data).filter((z) => z && z.verejne !== false);
+const puvodniPrompty = (await getCollection('prompty', (p) => p.data.skill === skill.slug && zobrazit(p.data.stav)))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title, 'cs'));
+const gpt = seznam(m.puvodni_asistenti?.gpt);
+const gem = seznam(m.puvodni_asistenti?.gem);
+const datum = m.aktualizovano.toLocaleDateString('cs-CZ');
+---
+<Zaklad title={m.title} popis={m.kratky_popis}>
+  <article class="stranka skill">
+    <div class="stranka-hlava">
+      <a class="eyebrow" href="/skills">Katalog skills</a>
+      {skill.sady.map((s) => <a class="badge new" href={`/sady/${s.slug}`}>{s.title}</a>)}
+      {jeKoncept(m.stav) && <span class="badge koncept" title={`Stav: ${m.stav}`}>Koncept</span>}
+    </div>
+
+    <div class="skill-hlava">
+      <div class="obsah">
+        <h1>{m.title}</h1>
+        <p class="skill-lead">{m.kratky_popis}</p>
+        <p class="skill-pro">Pro koho: {m.pro_koho.map((p) => PRO_KOHO[p]).join(', ')}{m.vek && ` · ${m.vek}`}</p>
+      </div>
+      <aside class="karta nebe-svetle skill-stazeni" aria-labelledby="stahnout">
+        <h2 id="stahnout" class="karta-nazev">Stáhnout skill</h2>
+        <a class="btn btn-accent" href={zipSkillu(skill.slug)} download>Claude a Gemini (ZIP)</a>
+        <a class="btn btn-sky btn-maly" href={zipCopilot(skill.slug)} download>Microsoft Copilot (ZIP)</a>
+        {m.google_doc && <a class="btn btn-sky btn-maly" href={m.google_doc}>Systémový prompt (Google Docs)</a>}
+        <p class="poznamka">ZIP nerozbalujte. <a href="/funkce/skills#jak-skill-nainstalovat">Jak skill nainstalovat</a></p>
+      </aside>
+    </div>
+
+    {(gpt.length > 0 || gem.length > 0) && (
+      <div class="upozorneni varovani" role="note">
+        <strong>Původní asistent končí.</strong>
+        {gpt.length > 0 && ' Vlastní GPTs v ChatGPT přestanou fungovat 11. 12. 2026.'}
+        {gem.length > 0 && ' Gems v Gemini končí postupně od 17. 11. 2026.'}
+        {' '}Použijte místo nich tento skill, nebo prompt níže.
+        <span class="puvodni-odkazy">
+          {gpt.map((u, i) => <a href={u}>Původní GPT{gpt.length > 1 ? ` ${i + 1}` : ''}</a>)}
+          {gem.map((u, i) => <a href={u}>Původní Gem{gem.length > 1 ? ` ${i + 1}` : ''}</a>)}
+        </span>
+      </div>
+    )}
+
+    <div class="obsah">
+      <section class="oddil">
+        <h2><span class="zvyrazneni">Co skill umí</span></h2>
+        <p>{skill.description}</p>
+        {m.rezimy && m.rezimy.length > 0 && (
+          <>
+            <h3>Režimy</h3>
+            <ul>{m.rezimy.map((r) => <li>{r}</li>)}</ul>
+          </>
+        )}
+      </section>
+
+      <section class="oddil">
+        <h2><span class="zvyrazneni">Zkopírovat jako prompt</span></h2>
+        <p>Funguje v jakémkoli chatbotu, i v bezplatné verzi. Údaje v hranatých závorkách nahraďte svými.</p>
+        <div class="prompt-md" set:html={promptyHtml} />
+      </section>
+
+      {znalosti.length > 0 && (
+        <section class="oddil">
+          <h2><span class="zvyrazneni">Znalosti ke stažení</span></h2>
+          <p>Podklady, ze kterých skill čerpá. Nahrajte je k projektu nebo ke skillu, pokud chcete přesnější výstupy. Soubory jsou na Google Disku.</p>
+          <ul>{znalosti.map((z) => <li><a href={z!.url}>{z!.nazev}</a></li>)}</ul>
+          {m.google_slozka && <p><a href={m.google_slozka}>Celá složka skillu na Google Disku</a></p>}
+        </section>
+      )}
+
+      {puvodniPrompty.length > 0 && (
+        <section class="oddil">
+          <h2><span class="zvyrazneni">Původní prompty</span></h2>
+          <p>Skill vychází i z těchto promptů z naší databáze:</p>
+          <ul>{puvodniPrompty.map((p) => <li><a href={`/funkce/prompty/${p.id}`}>{p.data.title}</a></li>)}</ul>
+        </section>
+      )}
+
+      <section class="oddil">
+        <h2><span class="zvyrazneni">Autoři a metodika</span></h2>
+        <p>Autoři: {m.autori.join(', ')}</p>
+        {m.metodika && m.metodika.length > 0 && (
+          <ul>{m.metodika.map((x) => <li>{x.url ? <a href={x.url}>{x.nazev}</a> : x.nazev}</li>)}</ul>
+        )}
+        <p class="aktualizovano">Aktualizováno {datum}. Výstup chatbota je vždy návrh — zkontrolujte ho a upravte.</p>
+      </section>
+    </div>
+  </article>
+</Zaklad>

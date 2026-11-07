@@ -236,6 +236,8 @@ for (const r of redirects) {
 const { spawnSync } = await import('node:child_process');
 const v = spawnSync(process.execPath, ['scripts/build-vercel-json.mjs', '--kontrola'], { encoding: 'utf8' });
 if (v.status !== 0) E('vercel.json', v.stderr.trim());
+const b = spawnSync(process.execPath, ['scripts/build-balicky.mjs', '--kontrola'], { encoding: 'utf8' });
+if (b.status !== 0) E('plugins/', b.stderr.trim());
 
 console.log(`\nStránek a generovaných URL: ${routy.size}, přesměrování: ${redirects.length}`);
 console.log(`${chyby} chyb, ${varovani} varování`);

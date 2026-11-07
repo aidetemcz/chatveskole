@@ -1,5 +1,7 @@
 ---
-import { getCollection, render } from 'astro:content';
+import { getCollection } from 'astro:content';
+import Casti from '../components/Casti.astro';
+import { vykreslit } from '../lib/markdown';
 import Zaklad from '../layouts/Zaklad.astro';
 import Ilustrace from '../components/Ilustrace.astro';
 import { zobrazit, jeKoncept, sekceProUrl, dalsiStranka } from '../lib/web';
@@ -13,7 +15,7 @@ export async function getStaticPaths() {
 }
 
 const { stranka } = Astro.props;
-const { Content } = await render(stranka);
+const casti = await vykreslit(stranka.body ?? '');
 const url = stranka.id === 'index' ? '/' : `/${stranka.id}`;
 const homepage = stranka.data.sablona === 'homepage';
 const sekce = sekceProUrl(url);
@@ -32,7 +34,7 @@ const datum = stranka.data.aktualizovano.toLocaleDateString('cs-CZ', { day: 'num
     )}
     <div class:list={['obsah', { homepage }]}>
       {homepage && <Ilustrace />}
-      <Content />
+      <Casti casti={casti} />
     </div>
     {(zdroje.length > 0 || stranka.id !== 'index') && (
       <section class="zdroje" aria-labelledby="zdroje">

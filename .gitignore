@@ -12,3 +12,4 @@ _prenos-*.zip
 google-drive/
 # vygenerováno z archiv/uploads (scripts/priprav-public.mjs)
 public/archiv/
+public/download/

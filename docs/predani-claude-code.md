@@ -12,12 +12,14 @@ Tento dokument je pro Evu (jak práci spustit) i pro Claude Code (co dělat a v 
 - [x] 8 žákovských promptů + úvod — `content/prompty/zaci/`
 - [x] Export starého webu (7. 11. 2026, `archiv/`) a převod 88 promptů do databáze — `content/prompty/pedagogove` (32) a `archiv-2024` (56), obrázky z tipů v `archiv/uploads`. Dva prompty ručně opravené (Slovníček pojmů, Nápadníček — geografie), proto převod znovu spouštět **bez** `--prepsat`.
 - [x] Složky pro Google Disk (systémové prompty + data) — `google-drive/`, nahrané na sdílený disk, odkazy v `meta.yaml`
-- [x] Pluginy pro sady a marketplace — `scripts/build-plugins.py` → `plugins/`, `.claude-plugin/marketplace.json`, ZIPy v `dist/pluginy/` (build webu je má jen spouštět a ZIPy publikovat)
+- [x] Pluginy pro sady a marketplace — `scripts/build-balicky.mjs` (`npm run balicky`, spouští se i při buildu) → `plugins/`, `.claude-plugin/marketplace.json`, ZIPy v `public/download/`
 - [x] Data pro tabulky — `data/funkce-chatbotu.yaml`, `data/ceny.yaml`
 - [x] Design, architektura, specifikace skills — `docs/`
 - [x] Exportní skript z WordPressu — `scripts/export-wordpress.mjs`
 
-Ještě chybí: Astro aplikace (`src/`), export starého webu do `archiv/` (viz krok 0), nové Google Docs se systémovými prompty skills (odkazy do `meta.yaml → google_doc`), kontrola skills Evou a týmem.
+- [x] Fáze 1–3: Astro aplikace, design, katalog skills, sady, databáze promptů, ZIPy (PR aidetemcz/chatveskole#1)
+
+Ještě chybí: datové stránky (fáze 4), SEO a vyhledávání (fáze 5), nové Google Docs se systémovými prompty skills (odkazy do `meta.yaml → google_doc`), kontrola skills Evou a týmem.
 
 ## Krok 0 — příprava (Eva, 15 minut)
 

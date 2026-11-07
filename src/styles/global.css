@@ -284,3 +284,89 @@ main { padding-block: 24px var(--gap-sekce); }
   .paticka-blok { padding: 32px 20px 20px; }
   .paticka-mrizka { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* ---------- prompty: blok s tlačítkem Kopírovat ---------- */
+.prompt-blok { position: relative; margin: 0 0 1em; }
+.prompt-blok pre { margin: 0; padding: 18px 20px; padding-top: 58px; max-height: 520px; overflow: auto; }
+.prompt-blok pre code { font-family: var(--font-body); font-size: 0.92rem; line-height: 1.6; white-space: pre-wrap; }
+.prompt-blok .kopirovat { position: absolute; top: 10px; right: 10px; }
+
+/* ---------- filtry a přepínače ---------- */
+.filtr { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; }
+.chip {
+  font: 500 0.92rem/1.2 var(--font-body); color: var(--ink); cursor: pointer;
+  background: var(--bila); border: 1px solid var(--sky); border-radius: var(--pill); padding: 8px 14px; min-height: 38px;
+}
+.chip:hover { background: var(--sky-light); }
+.chip[aria-pressed="true"] { background: var(--nebe); border-color: var(--nebe-tmave); font-weight: 600; }
+.prepinac { display: flex; flex-wrap: wrap; gap: 6px; padding: 6px; background: var(--nebe-svetle); border: 1px solid var(--nebe); border-radius: var(--radius-lg); margin-bottom: 20px; width: fit-content; max-width: 100%; }
+.prepinac [role="tab"] { font: 600 0.98rem/1.2 var(--font-body); color: var(--ink); background: none; border: 1px solid transparent; border-radius: var(--radius); padding: 10px 16px; cursor: pointer; }
+.prepinac [role="tab"][aria-selected="true"] { background: var(--bila); border-color: var(--nebe); }
+.prepinac .pocet { font-weight: 500; color: var(--muted); margin-left: 4px; }
+
+/* ---------- katalog skills ---------- */
+.katalog-pocet { color: var(--muted); font-size: 0.9rem; margin: 4px 0 14px; }
+.skills-mrizka { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.skill-karta[hidden], .prompt-karta[hidden] { display: none; }
+.skill-karta .karta-nazev { font-size: 1.25rem; margin: 0; }
+.skill-karta .karta-nazev a, .sada-karta .karta-nazev a, .prompt-karta .karta-nazev a { text-decoration: none; }
+.skill-karta .karta-nazev a:hover, .sada-karta .karta-nazev a:hover, .prompt-karta .karta-nazev a:hover { text-decoration: underline; text-decoration-color: var(--accent); }
+.skill-karta .karta-popis { margin: 0; }
+.skill-karta-stitky, .prompt-karta-stitky { display: flex; flex-wrap: wrap; gap: 6px; }
+.skill-karta-pro { margin: 0; font-size: 0.84rem; color: var(--muted); }
+.skill-karta-akce, .prompt-karta-akce { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: auto; padding-top: 8px; }
+.btn-accent.btn-maly { font-size: 1.1875rem; font-weight: 700; } /* bílý text na jahodové musí zůstat velký */
+
+/* ---------- detail skillu ---------- */
+.skill-hlava { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 32px; align-items: start; }
+.skill-lead { font-size: 1.15rem; }
+.skill-pro { color: var(--muted); font-size: 0.92rem; }
+.skill-stazeni { gap: 12px; }
+.skill-stazeni .btn { width: 100%; white-space: normal; text-align: center; }
+.skill-stazeni .poznamka { font-size: 0.86rem; margin: 0; }
+.skill .oddil h2:first-child { margin-top: 1.2em; }
+.puvodni-odkazy { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 8px; }
+.aktualizovano { color: var(--muted); font-size: 0.86rem; }
+@media (max-width: 860px) { .skill-hlava { grid-template-columns: 1fr; } }
+
+/* ---------- sady ---------- */
+.sady-prehled { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; margin: 8px 0 24px; }
+.sada-karta .karta-nazev { font-size: 1.3rem; margin: 0; }
+.sada-karta p { margin: 0; }
+.sada-skills { margin: 4px 0 0; padding-left: 1.2em; }
+.sada-akce { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: auto; padding-top: 10px; }
+.sada-plugin-nazev { font-size: 0.84rem; color: var(--muted); }
+.karta.nebe .btn-sky { border-color: var(--bila); }
+
+/* ---------- databáze promptů ---------- */
+.databaze { margin: 12px 0 28px; max-width: var(--max); }
+.obsah:has(.databaze), .obsah:has(.sady-prehled) { max-width: none; }
+.obsah:has(.databaze) :is(.uvod, .oddil) > :not(.databaze, .sady-prehled), .obsah:has(.sady-prehled) :is(.uvod, .oddil) > :not(.databaze, .sady-prehled) { max-width: var(--mereni); }
+.databaze .skupina { margin-bottom: 28px; }
+.databaze .skupina[hidden] { display: none; }
+.databaze.s-js .skupina-nazev { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.skupina-nazev { font-size: 1.2rem; }
+.kotva { display: block; scroll-margin-top: 16px; }
+.prompty-seznam { list-style: none; padding: 0 !important; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.prompty-seznam > li + li { margin-top: 0 !important; }
+.prompt-karta { border-radius: var(--radius-lg); padding: 20px 22px; gap: 8px; }
+.prompt-karta .karta-nazev { font-size: 1.08rem; margin: 0; }
+.prompt-karta .karta-popis { margin: 0; }
+.prompt-karta-akce a { font-size: 0.92rem; }
+a.badge { text-decoration: none; }
+a.badge:hover { background: var(--sky-light); }
+
+.prompt-info { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 8px 18px; margin: 0 0 1.5em; padding: 18px 20px; background: var(--nebe-svetle); border: 1px solid var(--nebe); border-radius: var(--radius-lg); }
+.prompt-info dt { font-weight: 600; }
+.prompt-info dd { margin: 0; }
+@media (max-width: 560px) { .prompt-info { grid-template-columns: 1fr; } .prompt-info dd { margin-bottom: 8px; } }
+
+/* ---------- doladění fáze 3 ---------- */
+.stranka-hlava .badge { white-space: normal; max-width: 100%; }
+.obsah .databaze, .obsah .sady-prehled { max-width: none !important; }
+/* tlačítko v nebeské (tmavý text) — sekundární akce v kartách */
+.btn-nebe { background: var(--nebe); color: var(--ink); border-color: var(--nebe); font-weight: 600; font-size: 1rem; }
+.btn-nebe:hover { background: var(--nebe-svetle); border-color: var(--nebe-tmave); }
+/* varianty promptu na detailu skillu jsou podnadpisy oddílu „Zkopírovat jako prompt“ */
+.prompt-md h2 { font-size: 1.15rem; margin: 1.4em 0 0.5em; }
+.prompt-md h2 .zvyrazneni { background: none; padding: 0; }

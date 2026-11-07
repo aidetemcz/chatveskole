@@ -31,5 +31,27 @@ const titulek = title === 'Chatboti ve škole' ? title : `${title} | Chatboti ve
       </div>
     </main>
     <Paticka />
+    <p class="sr-only" aria-live="polite" data-hlaseni></p>
+    <script>
+      // Tlačítka Kopírovat: [data-kopirovat] zkopíruje prompt z bloku vedle, [data-kopirovat-z="id"] z <template id>.
+      const hlaseni = document.querySelector<HTMLElement>('[data-hlaseni]');
+      document.addEventListener('click', async (e) => {
+        const t = (e.target as Element).closest<HTMLButtonElement>('[data-kopirovat], [data-kopirovat-z]');
+        if (!t) return;
+        const text = t.dataset.kopirovatZ
+          ? (document.getElementById(t.dataset.kopirovatZ) as HTMLTemplateElement | null)?.content.textContent ?? ''
+          : t.parentElement?.querySelector('pre')?.textContent ?? '';
+        const puvodni = t.dataset.puvodni ?? t.textContent ?? '';
+        t.dataset.puvodni = puvodni;
+        try {
+          await navigator.clipboard.writeText(text.trim());
+          t.textContent = 'Zkopírováno ✓';
+          if (hlaseni) hlaseni.textContent = 'Prompt je zkopírovaný do schránky.';
+        } catch {
+          t.textContent = 'Nepodařilo se, označte text ručně';
+        }
+        setTimeout(() => { t.textContent = puvodni; }, 2500);
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,28 @@
+---
+import type { Skill } from '../lib/obsah';
+import { PRO_KOHO, zipSkillu } from '../lib/obsah';
+import { jeKoncept } from '../lib/web';
+
+interface Props { skill: Skill; nadpis?: 'h2' | 'h3' }
+const { skill, nadpis = 'h3' } = Astro.props;
+const H = nadpis;
+const idPromptu = `prompt-${skill.slug}`;
+---
+<article class="karta skill-karta" data-sady={skill.meta.sady.join(' ')} data-pro-koho={skill.meta.pro_koho.join(' ')}>
+  <div class="skill-karta-stitky">
+    {skill.sady.map((s) => <span class="badge new">{s.title}</span>)}
+    {jeKoncept(skill.meta.stav) && <span class="badge koncept">Koncept</span>}
+  </div>
+  <H class="karta-nazev"><a href={`/skills/${skill.slug}`}>{skill.meta.title}</a></H>
+  <p class="karta-popis">{skill.meta.kratky_popis}</p>
+  <p class="skill-karta-pro">{skill.meta.pro_koho.map((p) => PRO_KOHO[p]).join(' · ')}</p>
+  <div class="skill-karta-akce">
+    {skill.prompt && (
+      <>
+        <button class="btn btn-nebe btn-maly" type="button" data-kopirovat-z={idPromptu}>Zkopírovat prompt</button>
+        <template id={idPromptu}>{skill.prompt}</template>
+      </>
+    )}
+    <a class="btn btn-sky btn-maly" href={zipSkillu(skill.slug)} download>Stáhnout skill</a>
+  </div>
+</article>

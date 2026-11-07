@@ -1,0 +1,29 @@
+---
+// Karty sad se seznamem skills. Varianta „pluginy“ přidá stažení pluginu (ZIP).
+import { nactiSady, nactiSkills, zipPluginu } from '../lib/obsah';
+
+interface Props { pluginy?: boolean }
+const { pluginy = false } = Astro.props;
+const sady = await nactiSady();
+const skills = await nactiSkills();
+---
+<div class="sady-prehled">
+  {sady.map((sada, i) => (
+    <article class:list={['karta', 'sada-karta', i % 3 === 1 ? 'nebe-svetle' : i % 3 === 2 ? 'nebe' : '']}>
+      <h3 class="karta-nazev"><a href={`/sady/${sada.slug}`}>{sada.title}</a></h3>
+      <p>{sada.popis}</p>
+      <ul class="sada-skills">
+        {sada.skills.map((slug) => {
+          const s = skills.find((x) => x.slug === slug);
+          return s ? <li><a href={`/skills/${slug}`}>{s.meta.title}</a></li> : null;
+        })}
+      </ul>
+      <div class="sada-akce">
+        {pluginy
+          ? <a class="btn btn-accent btn-maly" href={zipPluginu(sada.slug)} download>Stáhnout plugin (ZIP)</a>
+          : <a class="btn btn-sky btn-maly" href={`/sady/${sada.slug}`}>Celá sada</a>}
+        {pluginy && <span class="sada-plugin-nazev">plugin <code>aidetem-{sada.slug}</code></span>}
+      </div>
+    </article>
+  ))}
+</div>

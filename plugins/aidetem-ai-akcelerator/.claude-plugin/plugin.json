@@ -1,0 +1,17 @@
+{
+  "name": "aidetem-ai-akcelerator",
+  "version": "0.1.0",
+  "description": "Nástroje pro školy v programu AI akcelerátor — řízení změny podle ADKAR a mapování administrativních procesů.",
+  "author": {
+    "name": "AI dětem, z. ú.",
+    "url": "https://aidetem.cz"
+  },
+  "homepage": "https://chatveskole.cz/sady/ai-akcelerator",
+  "repository": "https://github.com/aidetemcz/chatveskole",
+  "keywords": [
+    "škola",
+    "učitelé",
+    "vzdělávání",
+    "AI akcelerátor"
+  ]
+}

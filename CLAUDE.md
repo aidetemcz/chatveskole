@@ -24,13 +24,14 @@ Přečti:
 - `archiv/` — export starého WordPressu (`node scripts/export-wordpress.mjs --images`)
 - `migrace/mapa-promptu.json` — který záznam staré databáze je prompt, žákovský prompt, nebo asistent (→ skill)
 - `google-drive/` — složky pro Google Disk (systémový prompt + Data ke každému skillu), generuje `python3 scripts/build-google-drive.py`; není v gitu
-- `src/` — Astro aplikace
+- `src/` — Astro aplikace; Markdown z `content/` vykresluje `src/lib/markdown.ts` + `src/lib/rehype-obsah.mjs` (oddíly, zvýrazněné H2, tlačítka z odkazů, bloky promptů s Kopírovat). Značka `<!-- komponenta: … -->` v textu vloží komponentu (seznam v `src/lib/markdown.ts`)
 
 ## Příkazy
 
 - `npm install` — instalace (Node 22+)
 - `npm run dev` — vývojový server
-- `npm run build` — build (před ním `prebuild`: vercel.json z `migrace/redirects.json` a kopie `archiv/uploads` do `public/archiv/uploads`); ZIPy skills, pluginy a vyhledávání přibudou ve fázi 3 a 5
+- `npm run build` — build (před ním `prebuild`: vercel.json z `migrace/redirects.json`, pluginy + marketplace + ZIPy skills a pluginů v `public/download/`, kopie `archiv/uploads` do `public/archiv/uploads`); vyhledávání přibude ve fázi 5
+- `npm run balicky` — přegeneruje `plugins/` a `.claude-plugin/marketplace.json` z `content/` (commitnout; `npm run check` hlídá shodu)
 - `npm run check` — kontrola frontmatteru stránek, skills, promptů, sad, interních odkazů a přesměrování (`scripts/check.mjs`) + `astro check`
 - `npm run redirects` — přegeneruje `vercel.json` (needitovat ručně)
 - Náhled vs. produkce: při `VERCEL_ENV=production` se generuje jen obsah se stavem `hotovo` (prompty `prevzato`); jinde vše se štítkem „Koncept“

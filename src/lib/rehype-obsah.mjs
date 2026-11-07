@@ -3,7 +3,17 @@
 // 2) tabulky se zabalí do posuvného kontejneru (na mobilu se neposouvá celá stránka),
 // 3) odstavec, který obsahuje jen odkazy (oddělené „·“), se vykreslí jako řada tlačítek,
 // 4) text nadpisu H2 se zabalí do <span class="zvyrazneni"> (podbarvení jako zvýrazňovačem),
-// 5) obsah se rozdělí na oddíly: úvod před prvním H2 a <section> pro každé H2.
+// 5) obsah se rozdělí na oddíly: úvod před prvním H2 a <section> pro každé H2,
+// 6) blok ```text (prompt) dostane tlačítko Kopírovat,
+// 7) položka seznamu „**Název sady** — …“ odkazuje na stránku sady /sady/<slug>.
+import fs from 'node:fs';
+import path from 'node:path';
+import { load } from 'js-yaml';
+
+const sady = new Map(
+  (load(fs.readFileSync(path.join(process.cwd(), 'content/sady.yaml'), 'utf8')) ?? []).map((s) => [s.title, s.slug]),
+);
+
 export default function rehypeObsah() {
   return (tree) => {
     upravit(tree);
@@ -28,7 +38,8 @@ function upravit(uzel) {
         a.properties = { ...a.properties, className: ['btn', i === 0 ? 'btn-accent' : 'btn-sky'] };
       });
     }
-    if (dite.tagName === 'li') oddelitPomlcku(dite);
+    if (dite.tagName === 'li') { oddelitPomlcku(dite); odkazNaSadu(dite); }
+    if (dite.tagName === 'pre' && jePrompt(dite)) return blokPromptu(dite);
     if (dite.tagName === 'table') {
       upravit(dite);
       return el('div', ['tabulka'], [dite], { tabIndex: 0, role: 'region', ariaLabel: 'Tabulka (lze posouvat do strany)' });
@@ -77,4 +88,25 @@ function oddelitPomlcku(li) {
   const m = druhy.value.match(/^(\s*—\s*)/);
   if (!m) return;
   li.children.splice(1, 1, el('span', ['pomlcka'], [{ type: 'text', value: m[1] }]), { type: 'text', value: druhy.value.slice(m[1].length) });
+}
+
+const text = (u) => (u.type === 'text' ? u.value : (u.children ?? []).map(text).join(''));
+
+function jePrompt(pre) {
+  const code = pre.children.find((c) => c.type === 'element' && c.tagName === 'code');
+  return code && [].concat(code.properties?.className ?? []).includes('language-text');
+}
+
+function blokPromptu(pre) {
+  return el('div', ['prompt-blok'], [
+    el('button', ['btn', 'btn-sky', 'btn-maly', 'kopirovat'], [{ type: 'text', value: 'Kopírovat' }], { type: 'button', dataKopirovat: '' }),
+    pre,
+  ]);
+}
+
+function odkazNaSadu(li) {
+  const prvni = li.children[0];
+  if (prvni?.type !== 'element' || prvni.tagName !== 'strong') return;
+  const slug = sady.get(text(prvni).trim());
+  if (slug) li.children[0] = el('a', ['nazev-sady'], [prvni], { href: `/sady/${slug}` });
 }

@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import Zaklad from '../../../../layouts/Zaklad.astro';
+import { vykreslitHtml } from '../../../../lib/markdown';
+import { zobrazit } from '../../../../lib/web';
+
+export async function getStaticPaths() {
+  const prompty = await getCollection('promptyZaci', (p) => p.id !== '_index' && zobrazit(p.data.stav));
+  return prompty.map((p) => ({ params: { slug: p.id }, props: { prompt: p } }));
+}
+
+const { prompt } = Astro.props;
+const d = prompt.data;
+const html = await vykreslitHtml(prompt.body ?? '');
+---
+<Zaklad title={`${d.title} — prompt pro žáky`} popis={d.proc_ho_vyuzit ?? d.rozviji ?? d.title}>
+  <article class="stranka">
+    <div class="stranka-hlava">
+      <a class="eyebrow" href="/funkce/prompty/zaci">Prompty pro žáky</a>
+      <span class="badge new">Věk: {d.vek}</span>
+    </div>
+    <div class="obsah">
+      <div class="uvod"><h1>{d.title}</h1></div>
+      <dl class="prompt-info">
+        {d.rozviji && <><dt>Co rozvíjí</dt><dd>{d.rozviji}</dd></>}
+        {d.proc_ho_vyuzit && <><dt>Proč ho využít</dt><dd>{d.proc_ho_vyuzit}</dd></>}
+        {d.tiny_chatbot && <><dt>V aplikaci Tiny</dt><dd>Hotový chatbot <strong>{d.tiny_chatbot}</strong> — žák nic nekopíruje a nepotřebuje vlastní účet. <a href="/ve-vyuce/tiny">O aplikaci Tiny</a></dd></>}
+      </dl>
+      <Fragment set:html={html} />
+    </div>
+    <p><a href="/funkce/prompty/zaci">← Všechny prompty pro žáky</a></p>
+  </article>
+</Zaklad>

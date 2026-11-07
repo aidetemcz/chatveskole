@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import Zaklad from '../../../layouts/Zaklad.astro';
+import { vykreslitHtml } from '../../../lib/markdown';
+import { zobrazit } from '../../../lib/web';
+import { SKUPINY_PROMPTU } from '../../../lib/obsah';
+
+export async function getStaticPaths() {
+  const prompty = await getCollection('prompty', (p) => zobrazit(p.data.stav));
+  return prompty.map((p) => ({ params: { slug: p.id }, props: { prompt: p } }));
+}
+
+const { prompt } = Astro.props;
+const d = prompt.data;
+const html = await vykreslitHtml(prompt.body ?? '');
+const skill = d.skill ? (await getCollection('skillMeta', (m) => m.id === d.skill && zobrazit(m.data.stav)))[0] : undefined;
+const archiv = d.skupina === 'archiv-2024';
+---
+<Zaklad title={d.title} popis={`Prompt pro učitele: ${d.title}. Zkopírujte do chatbota a doplňte údaje.`}>
+  <article class="stranka">
+    <div class="stranka-hlava">
+      <a class="eyebrow" href={archiv ? '/funkce/prompty#skupina-archiv-2024' : '/funkce/prompty'}>{SKUPINY_PROMPTU[d.skupina]}</a>
+      {d.kategorie.map((k, i) => <a class="badge new" href={`/funkce/prompty#${d.kategorie_slug[i]}`}>{k}</a>)}
+    </div>
+    <div class="obsah">
+      <div class="uvod"><h1>{d.title}</h1></div>
+      {skill && (
+        <p class="upozorneni">Tento prompt je teď i součástí skillu <a href={`/skills/${skill.id}`}><strong>{skill.data.title}</strong></a>, který umí víc a nemusíte ho pokaždé kopírovat.</p>
+      )}
+      {archiv && (
+        <p class="upozorneni">Starší prompt z první verze databáze (2024). Chatboti od té doby umí víc, nápad ale funguje dál.</p>
+      )}
+      <Fragment set:html={html} />
+    </div>
+    <p><a href="/funkce/prompty">← Zpět do databáze promptů</a></p>
+  </article>
+</Zaklad>

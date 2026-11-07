@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import Zaklad from '../../../../layouts/Zaklad.astro';
+import { vykreslitHtml } from '../../../../lib/markdown';
+import { zobrazit, jeKoncept } from '../../../../lib/web';
+
+const uvod = (await getCollection('promptyZaci', (p) => p.id === '_index'))[0];
+if (!zobrazit(uvod.data.stav)) return Astro.redirect('/funkce/prompty');
+const html = await vykreslitHtml(uvod.body ?? '');
+const d = uvod.data;
+---
+<Zaklad title={d.title} popis={d.popis}>
+  <article class="stranka">
+    <div class="stranka-hlava">
+      <a class="eyebrow" href="/funkce/prompty#skupina-zaci">Prompty</a>
+      {d.vek && <span class="badge new">Věk: {d.vek}</span>}
+      {jeKoncept(d.stav) && <span class="badge koncept">Koncept</span>}
+    </div>
+    <div class="obsah" set:html={html} />
+  </article>
+</Zaklad>

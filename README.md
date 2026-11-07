@@ -45,4 +45,4 @@ Otevřete Claude Code v této složce a napište, co potřebujete, například:
 - `python3 scripts/build-inventura.py` — vygeneruje `migrace/inventura.csv`, `migrace/redirects.json` a `migrace/mapa-promptu.json`
 - `node scripts/prevod-promptu.mjs` — z exportu vytvoří databázi promptů v `content/prompty/` (původní znění); existující soubory nepřepisuje, `--prepsat` by smazal ruční opravy
 - `python3 scripts/build-google-drive.py` — vytvoří složky pro Google Disk: ke každému skillu systémový prompt a data (`google-drive/`)
-- `python3 scripts/build-plugins.py` — z sad vytvoří pluginy `plugins/aidetem-*`, marketplace `.claude-plugin/marketplace.json` a ZIPy k nahrání `dist/pluginy/`
+- `npm run balicky` — z sad vytvoří pluginy `plugins/aidetem-*` a marketplace `.claude-plugin/marketplace.json` (obojí commitnout) a ZIPy ke stažení v `public/download/` (skills pro Claude/Gemini i Copilot, pluginy). Spouští se i automaticky při `npm run build`.

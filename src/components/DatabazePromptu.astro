@@ -1,0 +1,165 @@
+---
+// Databáze promptů na /funkce/prompty: přepínač skupin, filtr kategorií (kotvy #<kategorie_slug>,
+// na které vedou přesměrování starých kategorií), karta s tlačítkem Kopírovat a odkazem na detail.
+// Bez JavaScriptu se zobrazí všechny skupiny pod sebou.
+import { getCollection } from 'astro:content';
+import { textyPromptu } from '../lib/markdown';
+import { SKUPINY_PROMPTU } from '../lib/obsah';
+import { zobrazit } from '../lib/web';
+
+const [prompty, zaci, skillMeta] = await Promise.all([
+  getCollection('prompty', (p) => zobrazit(p.data.stav)),
+  getCollection('promptyZaci', (p) => p.id !== '_index' && zobrazit(p.data.stav)),
+  getCollection('skillMeta', (m) => zobrazit(m.data.stav)),
+]);
+const nazevSkillu = new Map(skillMeta.map((m) => [m.id, m.data.title]));
+const razeni = (a: { title: string }, b: { title: string }) => a.title.localeCompare(b.title, 'cs');
+
+type Polozka = { id: string; title: string; href: string; kategorie: [string, string][]; prompt: string; skill?: string; poznamka?: string };
+const skupiny: Array<{ klic: keyof typeof SKUPINY_PROMPTU; polozky: Polozka[] }> = [
+  {
+    klic: 'pedagogove',
+    polozky: prompty.filter((p) => p.data.skupina === 'pedagogove').map((p) => ({
+      id: p.id, title: p.data.title, href: `/funkce/prompty/${p.id}`,
+      kategorie: p.data.kategorie_slug.map((s, i) => [s, p.data.kategorie[i]] as [string, string]),
+      prompt: textyPromptu(p.body ?? '')[0] ?? '', skill: p.data.skill ?? undefined,
+    })).sort(razeni),
+  },
+  {
+    klic: 'zaci',
+    polozky: zaci.map((p) => ({
+      id: p.id, title: p.data.title, href: `/funkce/prompty/zaci/${p.id}`, kategorie: [],
+      prompt: textyPromptu(p.body ?? '')[0] ?? '',
+      poznamka: p.data.tiny_chatbot ? `V aplikaci Tiny: ${p.data.tiny_chatbot}` : undefined,
+    })),
+  },
+  {
+    klic: 'archiv-2024',
+    polozky: prompty.filter((p) => p.data.skupina === 'archiv-2024').map((p) => ({
+      id: p.id, title: p.data.title, href: `/funkce/prompty/${p.id}`,
+      kategorie: p.data.kategorie_slug.map((s, i) => [s, p.data.kategorie[i]] as [string, string]),
+      prompt: textyPromptu(p.body ?? '')[0] ?? '', skill: p.data.skill ?? undefined,
+    })).sort(razeni),
+  },
+];
+const kategorieSkupiny = (polozky: Polozka[]) => {
+  const m = new Map<string, string>();
+  for (const p of polozky) for (const [s, n] of p.kategorie) m.set(s, n);
+  return [...m].sort((a, b) => a[1].localeCompare(b[1], 'cs'));
+};
+---
+<div class="databaze" data-databaze>
+  <div class="prepinac" role="tablist" aria-label="Skupiny promptů" hidden data-prepinac>
+    {skupiny.map((s, i) => (
+      <button type="button" role="tab" id={`tab-${s.klic}`} aria-controls={`skupina-${s.klic}`} aria-selected={i === 0 ? 'true' : 'false'} tabindex={i === 0 ? 0 : -1} data-skupina={s.klic}>
+        {SKUPINY_PROMPTU[s.klic]} <span class="pocet">{s.polozky.length}</span>
+      </button>
+    ))}
+  </div>
+
+  {skupiny.map((s) => {
+    const kategorie = kategorieSkupiny(s.polozky);
+    return (
+      <section class="skupina" id={`skupina-${s.klic}`} role="tabpanel" aria-labelledby={`tab-${s.klic}`} data-panel={s.klic}>
+        <h3 class="skupina-nazev">{SKUPINY_PROMPTU[s.klic]}</h3>
+        {kategorie.map(([slug]) => <span id={slug} class="kotva" data-kotva={slug} data-kotva-skupina={s.klic}></span>)}
+        {kategorie.length > 0 && (
+          <div class="filtr" role="group" aria-label="Filtr podle kategorie">
+            <button type="button" class="chip" aria-pressed="true" data-kategorie="">Vše</button>
+            {kategorie.map(([slug, nazev]) => (
+              <button type="button" class="chip" aria-pressed="false" data-kategorie={slug}>{nazev}</button>
+            ))}
+          </div>
+        )}
+        {s.klic === 'zaci' && (
+          <p class="skupina-uvod">Deset způsobů, jak mohou žáci využívat AI k učení, s úvodem pro učitele: <a href="/funkce/prompty/zaci">Prompty pro žáky</a>.</p>
+        )}
+        <ul class="prompty-seznam">
+          {s.polozky.map((p) => (
+            <li class="karta prompt-karta" data-kategorie={p.kategorie.map(([k]) => k).join(' ')}>
+              <div class="prompt-karta-stitky">
+                {p.kategorie.map(([, n]) => <span class="badge new">{n}</span>)}
+                {p.skill && nazevSkillu.has(p.skill) && <a class="badge koncept" href={`/skills/${p.skill}`}>i jako skill</a>}
+              </div>
+              <h4 class="karta-nazev"><a href={p.href}>{p.title}</a></h4>
+              {p.poznamka && <p class="karta-popis">{p.poznamka}</p>}
+              <div class="prompt-karta-akce">
+                {p.prompt && (
+                  <>
+                    <button class="btn btn-sky btn-maly" type="button" data-kopirovat-z={`p-${s.klic}-${p.id}`}>Kopírovat</button>
+                    <template id={`p-${s.klic}-${p.id}`}>{p.prompt}</template>
+                  </>
+                )}
+                <a href={p.href}>Detail a tipy</a>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <p class="filtr-prazdne" hidden data-prazdne>V této kategorii nic není.</p>
+      </section>
+    );
+  })}
+</div>
+
+<script>
+  const db = document.querySelector<HTMLElement>('[data-databaze]');
+  if (db) {
+    const tabs = [...db.querySelectorAll<HTMLButtonElement>('[role="tab"]')];
+    const panely = [...db.querySelectorAll<HTMLElement>('[data-panel]')];
+    db.querySelector<HTMLElement>('[data-prepinac]')!.hidden = false;
+    db.classList.add('s-js');
+
+    const vyberSkupinu = (klic: string, fokus = false) => {
+      for (const t of tabs) {
+        const ano = t.dataset.skupina === klic;
+        t.setAttribute('aria-selected', String(ano));
+        t.tabIndex = ano ? 0 : -1;
+        if (ano && fokus) t.focus();
+      }
+      for (const p of panely) p.hidden = p.dataset.panel !== klic;
+    };
+    const filtruj = (panel: HTMLElement, kategorie: string) => {
+      for (const c of panel.querySelectorAll<HTMLButtonElement>('.chip')) c.setAttribute('aria-pressed', String(c.dataset.kategorie === kategorie));
+      let pocet = 0;
+      for (const li of panel.querySelectorAll<HTMLElement>('.prompt-karta')) {
+        const ano = !kategorie || (li.dataset.kategorie ?? '').split(' ').includes(kategorie);
+        li.hidden = !ano;
+        if (ano) pocet++;
+      }
+      panel.querySelector<HTMLElement>('[data-prazdne]')!.hidden = pocet > 0;
+    };
+
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', () => vyberSkupinu(t.dataset.skupina!));
+      t.addEventListener('keydown', (e) => {
+        const posun = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (posun) vyberSkupinu(tabs[(i + posun + tabs.length) % tabs.length].dataset.skupina!, true);
+      });
+    });
+    for (const panel of panely) {
+      for (const c of panel.querySelectorAll<HTMLButtonElement>('.chip')) {
+        c.addEventListener('click', () => {
+          filtruj(panel, c.dataset.kategorie!);
+          history.replaceState(null, '', c.dataset.kategorie ? `#${c.dataset.kategorie}` : location.pathname);
+        });
+      }
+    }
+
+    // Kotva z adresy (#formativni-hodnoceni) → skupina + filtr
+    const zKotvy = () => {
+      const kotva = decodeURIComponent(location.hash.slice(1));
+      const cil = kotva && db.querySelector<HTMLElement>(`[data-kotva="${CSS.escape(kotva)}"]`);
+      if (cil) {
+        vyberSkupinu(cil.dataset.kotvaSkupina!);
+        filtruj(panely.find((p) => p.dataset.panel === cil.dataset.kotvaSkupina)!, kotva);
+        db.scrollIntoView();
+      } else if (kotva === 'skupina-zaci' || kotva === 'skupina-archiv-2024') {
+        vyberSkupinu(kotva.replace('skupina-', ''));
+      } else {
+        vyberSkupinu('pedagogove');
+      }
+    };
+    zKotvy();
+    window.addEventListener('hashchange', zKotvy);
+  }
+</script>

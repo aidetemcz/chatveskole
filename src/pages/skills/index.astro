@@ -1,0 +1,69 @@
+---
+import Zaklad from '../../layouts/Zaklad.astro';
+import SkillKarta from '../../components/SkillKarta.astro';
+import { nactiSkills, nactiSady, PRO_KOHO } from '../../lib/obsah';
+
+const skills = await nactiSkills();
+const sady = await nactiSady();
+const proKoho = [...new Set(skills.flatMap((s) => s.meta.pro_koho))];
+---
+<Zaklad title="Katalog skills" popis="Skills a prompty pro učitele a vedení škol: formativní hodnocení, příprava výuky, komunikace, vedení školy. Zkopírujte prompt, nebo stáhněte skill do Claude, Gemini, Copilotu či ChatGPT.">
+  <article class="stranka">
+    <div class="stranka-hlava"><span class="eyebrow">Funkce</span></div>
+    <div class="obsah">
+      <div class="uvod">
+        <h1>Katalog skills</h1>
+        <p>Všechny naše dřívější AI asistenty jsme převedli na skills. Každý můžete <strong>zkopírovat jako prompt</strong> (funguje v jakémkoli chatbotu, i zdarma), nebo <strong>stáhnout jako skill</strong> a nainstalovat do Claude, Gemini, Copilotu nebo ChatGPT.</p>
+        <p class="odkazy"><a class="btn btn-sky btn-maly" href="/funkce/skills">Co jsou skills a jak je nainstalovat</a></p>
+      </div>
+    </div>
+
+    <div class="katalog" data-katalog>
+      <div class="filtr" role="group" aria-label="Filtr podle sady" hidden data-filtr="sady">
+        <button type="button" class="chip" aria-pressed="true" data-hodnota="">Všechny sady</button>
+        {sady.map((s) => <button type="button" class="chip" aria-pressed="false" data-hodnota={s.slug}>{s.title}</button>)}
+      </div>
+      <div class="filtr" role="group" aria-label="Filtr podle toho, pro koho skill je" hidden data-filtr="pro-koho">
+        <button type="button" class="chip" aria-pressed="true" data-hodnota="">Pro všechny</button>
+        {proKoho.map((p) => <button type="button" class="chip" aria-pressed="false" data-hodnota={p}>{PRO_KOHO[p]}</button>)}
+      </div>
+      <p class="katalog-pocet" aria-live="polite" data-pocet>{skills.length} skills</p>
+      <div class="karty skills-mrizka">
+        {skills.map((s) => <SkillKarta skill={s} />)}
+      </div>
+    </div>
+  </article>
+</Zaklad>
+
+<script>
+  const katalog = document.querySelector<HTMLElement>('[data-katalog]');
+  if (katalog) {
+    const stav: Record<string, string> = { sady: '', 'pro-koho': '' };
+    const karty = [...katalog.querySelectorAll<HTMLElement>('.skill-karta')];
+    const pocet = katalog.querySelector<HTMLElement>('[data-pocet]')!;
+    const obnov = () => {
+      let n = 0;
+      for (const k of karty) {
+        const ano = (!stav.sady || k.dataset.sady!.split(' ').includes(stav.sady))
+          && (!stav['pro-koho'] || k.dataset.proKoho!.split(' ').includes(stav['pro-koho']));
+        k.hidden = !ano;
+        if (ano) n++;
+      }
+      pocet.textContent = n === 1 ? '1 skill' : `${n} skills`;
+    };
+    for (const f of katalog.querySelectorAll<HTMLElement>('[data-filtr]')) {
+      f.hidden = false;
+      for (const c of f.querySelectorAll<HTMLButtonElement>('.chip')) {
+        c.addEventListener('click', () => {
+          stav[f.dataset.filtr!] = c.dataset.hodnota!;
+          for (const x of f.querySelectorAll('.chip')) x.setAttribute('aria-pressed', String(x === c));
+          obnov();
+        });
+      }
+    }
+    // /skills#formativni-hodnoceni → předvybraná sada
+    const kotva = location.hash.slice(1);
+    const chip = kotva && katalog.querySelector<HTMLButtonElement>(`[data-filtr="sady"] .chip[data-hodnota="${CSS.escape(kotva)}"]`);
+    if (chip) chip.click();
+  }
+</script>
