@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Zaklad from '../layouts/Zaklad.astro';
+import Ilustrace from '../components/Ilustrace.astro';
 import { zobrazit, jeKoncept, sekceProUrl, dalsiStranka } from '../lib/web';
 
 export async function getStaticPaths() {
@@ -14,6 +15,7 @@ export async function getStaticPaths() {
 const { stranka } = Astro.props;
 const { Content } = await render(stranka);
 const url = stranka.id === 'index' ? '/' : `/${stranka.id}`;
+const homepage = stranka.data.sablona === 'homepage';
 const sekce = sekceProUrl(url);
 const dalsi = dalsiStranka(url);
 // Zdroje typu „data/…yaml“ vykreslí datové šablony (fáze 4); tady jen odkazy.
@@ -24,13 +26,12 @@ const datum = stranka.data.aktualizovano.toLocaleDateString('cs-CZ', { day: 'num
   <article class="stranka">
     {(sekce || jeKoncept(stranka.data.stav)) && (
       <div class="stranka-hlava">
-        <div class="stitky">
-          {sekce && <span class="eyebrow">{sekce}</span>}
-          {jeKoncept(stranka.data.stav) && <span class="badge koncept" title={`Stav: ${stranka.data.stav}`}>Koncept</span>}
-        </div>
+        {sekce && <span class="eyebrow">{sekce}</span>}
+        {jeKoncept(stranka.data.stav) && <span class="badge koncept" title={`Stav: ${stranka.data.stav}`}>Koncept</span>}
       </div>
     )}
-    <div class="obsah">
+    <div class:list={['obsah', { homepage }]}>
+      {homepage && <Ilustrace />}
       <Content />
     </div>
     {(zdroje.length > 0 || stranka.id !== 'index') && (
@@ -52,8 +53,8 @@ const datum = stranka.data.aktualizovano.toLocaleDateString('cs-CZ', { day: 'num
     )}
     {dalsi && (
       <a class="dalsi" href={dalsi.href}>
-        <span>Další stránka</span>
-        <strong>{dalsi.title} →</strong>
+        <span class="sipka" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 13L13 3M6 3h7v7" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><span>Další stránka</span><strong>{dalsi.title}</strong></span>
       </a>
     )}
   </article>

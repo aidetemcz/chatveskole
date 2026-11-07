@@ -12,6 +12,7 @@ const newsletter = 'https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f
 ---
 <footer class="paticka">
   <div class="wrap">
+   <div class="paticka-blok">
     <div class="paticka-mrizka">
       {navigace.menu.map((sekce, i) => (
         <nav aria-labelledby={`pat-${i}`}>
@@ -24,7 +25,7 @@ const newsletter = 'https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f
           <h2>Novinky do e-mailu</h2>
           <p>Funkce chatbotů se mění každý měsíc. Pošleme vám, co je pro školy důležité.</p>
         </div>
-        <a class="btn btn-accent" href={newsletter}>Přihlásit se k odběru</a>
+        <a class="btn btn-sky btn-maly" href={newsletter}>Přihlásit se k odběru</a>
         <div>
           <h2>Kontakt</h2>
           <ul>
@@ -42,5 +43,6 @@ const newsletter = 'https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f
       <span><strong>AI dětem, z. s.</strong> · <a href="https://aidetem.cz">aidetem.cz</a> · IČ 17914582</span>
       <span>Funkce chatbotů se mění každý měsíc. Klíčové údaje si ověřte ve zdrojích.</span>
     </div>
+   </div>
   </div>
 </footer>

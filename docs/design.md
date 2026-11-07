@@ -1,30 +1,27 @@
 # Design: grafika AI dětem
 
-Grafika (7. 11. 2026, rozhodnutí Evy): převzatá z aplikace **Asistent pro individualizaci výuky** — repozitář `aidetemcz/podpurna-opatreni`, větev `claude/prevod-katalogu-4c5gcn` (`app/globals.css`, logo `public/logo.png`, ikony). Odtud jsou logo, favicon, styl tlačítek (pilulky, písmo Inter 600), karet (rámeček, při najetí jahodový okraj a jemný stín), aktivní položky menu (`--accent-soft` + rámeček `--accent`) a barvy `--muted #6b7885`, `--sky-deep #7da4b2`, `--accent-hover #c94e4e`. Kvůli kontrastu WCAG AA: `--sky-deep` jen na dekorace, text v nebeské barvě má `--sky-text #456e7d`; tlačítka mají pozadí `--accent-strong` (bílý text na `#dc5b5b` má jen 3,7 : 1). Implementace: `src/styles/global.css`.
+**Rozhodnutí Evy 7. 11. 2026:**
+- **Vzhled a rozvržení** podle šablony **Positivus** (https://astro.build/themes/details/positivus/, kód `manulthanura/Positivus`, MIT). Převzaté je jen rozvržení, ne kód (Tailwind): zvýrazněné nadpisy (barevný podklad za textem), velké úvody s ilustrací, oddíly jako velké zaoblené karty střídající barvy, tlačítka, kroužek se šipkou.
+- **Barvy, písmo a rámečky** zůstávají AI dětem. Logo a ikony z aplikace `aidetemcz/podpurna-opatreni`.
+- **Web je vždy světlý.** Žádné tmavé plochy ani tmavý režim.
 
-Vzor: artefakt **Funkce chatbotů 2027** — [docs/design/vzor-funkce-chatbotu-2027.html](design/vzor-funkce-chatbotu-2027.html) (online: https://claude.ai/artifact/9ZyWLayjYG18oe6knwfvsi). Celý web má vypadat jako tento artefakt: čistý, vzdušný, světlý, s jahodovou a nebeskou barvou AI dětem.
+Vzor datových komponent (časová osa, matice, karty nástrojů): artefakt **Funkce chatbotů 2027** — [docs/design/vzor-funkce-chatbotu-2027.html](design/vzor-funkce-chatbotu-2027.html). Jeho barvy pro tmavý režim a odvozené odstíny se nepoužívají.
 
-## Barvy (design tokeny)
+## Barvy
 
-Definovat jako CSS proměnné na `:root`. **Web je vždy ve světlém režimu** (rozhodnutí Evy 7. 11. 2026) — sloupec Tmavý se nepoužívá, zůstává jen pro informaci.
+Plochy, rámečky a grafika jen v pěti barvách:
 
-| Token | Světlý | Tmavý | Použití |
-|---|---|---|---|
-| `--bg` | `#ffffff` | `#141b22` | pozadí stránky |
-| `--panel` | `#ffffff` | `#1a232c` | karty, tabulky |
-| `--ink` | `#1c2530` | `#e9eff3` | text |
-| `--muted` | `#5f6c79` | `#9eabb7` | vedlejší text, popisky |
-| `--accent` | `#dc5b5b` | `#e57373` | **Jahodová zmrzka** — hlavní akcent, tlačítka, „končí“ |
-| `--accent-strong` | `#c24848` | `#f09393` | odkazy a akcentový text na světlém podkladu |
-| `--accent-soft` | `#fbeeee` | `#3a2427` | podbarvení varování a změn k horšímu |
-| `--on-accent` | `#ffffff` | `#1c1113` | text na akcentu |
-| `--sky` | `#b3cdd6` | `#44626e` | **Nekonečné nebe** — linky, rámečky |
-| `--sky-deep` | `#5f8c9b` | `#93bccb` | nadtitulky (eyebrow), štítky „nové“, ikony |
-| `--sky-light` | `#e3f1f6` | `#1e2f38` | podbarvené panely, změny k lepšímu |
-| `--line` | `#e8edf0` | `#2a3742` | oddělovače |
-| `--line-soft` | `#f1f4f6` | `#212c36` | jemné oddělovače uvnitř tabulek |
+| Barva | Hodnota | Token |
+|---|---|---|
+| Jahodová zmrzka | `#dc5b5b` | `--jahoda` (`--accent`) |
+| Nekonečné nebe | `#b3cdd6` | `--nebe` (`--sky`) |
+| Nekonečné nebe po úsvitu | `#e3f1f6` | `--nebe-svetle` (`--sky-light`) |
+| Nekonečné nebe před setměním | `#7da4b2` | `--nebe-tmave` (`--sky-deep`) |
+| Bílá | `#ffffff` | `--bila` |
 
-Kontrast textu musí splnit WCAG AA (4,5 : 1). `--accent` (#dc5b5b) na bílé nesplňuje pro běžný text — na text používej `--accent-strong`.
+Text je tmavý (`--ink #1c2530`, vedlejší `--muted #5f6c79`), rámečky a oddělovače jemně šedé (`--line #e8edf0`, `--line-soft #f1f4f6`).
+
+Kontrast (WCAG AA): bílý text na jahodové má 3,7 : 1, proto jen velký tučný (tlačítka 19 px, 700). Jahodový text na bílé nepoužívat — odkazy v textu jsou tmavé s jahodovým podtržením. Tmavý text je čitelný na všech pěti barvách. Implementace: `src/styles/global.css`.
 
 ## Písmo
 
@@ -37,7 +34,7 @@ Kontrast textu musí splnit WCAG AA (4,5 : 1). `--accent` (#dc5b5b) na bílé ne
 - Zaoblení: `--radius: 16px`, `--radius-lg: 22px` (karty, panely), `--pill: 999px` (štítky, přepínače).
 - Obsah: max. šířka 1180 px, okraje 20 px (mobil 16 px), mezery mezi sekcemi 56 px (mobil 44 px).
 - Text článků: max. 70 znaků na řádek.
-- Stíny jen jemně: karty při najetí myší a rozbalovací menu (jako v aplikaci podpurna-opatreni). Jinak hloubku dělají rámečky `1px solid var(--line)` a podbarvení.
+- Stín jen u rozbalovacího menu. Jinak hloubku dělají rámečky `1px solid var(--line)` a podbarvení. Velké karty a oddíly mají zaoblení `--radius-xl: 36px`.
 
 ## Komponenty z artefaktu
 

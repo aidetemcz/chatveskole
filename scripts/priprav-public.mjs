@@ -3,6 +3,11 @@
 // public/archiv není v gitu — zdrojem je archiv/uploads.
 import fs from 'node:fs';
 
+// Mezipaměť obsahu Astra se neobnoví při změně src/lib/rehype-obsah.mjs — před buildem ji smažeme
+// (build trvá pár sekund, tak to nevadí; jinak by se na Vercelu mohlo použít staré vykreslení).
+fs.rmSync('node_modules/.astro', { recursive: true, force: true });
+fs.rmSync('.astro/data-store.json', { force: true });
+
 const zdroj = 'archiv/uploads';
 const cil = 'public/archiv/uploads';
 if (!fs.existsSync(zdroj)) {
