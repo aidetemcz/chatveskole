@@ -6,12 +6,12 @@
 - **7. 11. 2026 — Databáze promptů zůstává** na stránce *Funkce → Prompty* včetně starších promptů z roku 2024; skills mají vlastní katalog na *Funkce → Skills*.
 - **7. 11. 2026 — Všechny znalostní soubory jsou veřejné** včetně Katalogu aktivizačních metod a Příručky aktivizační výuky (Didaktický rádce).
 - **7. 11. 2026 — Souhlasy autorů** (Šárka Polanecká, Jan Jílek, AI reaktor UJEP, Vysvědčení jinak) Eva má, není potřeba je znovu získávat.
+- **7. 11. 2026 — Framework: Astro** (fáze 1 je na něm postavená).
+- **7. 11. 2026 — Hosting: Vercel**, AI dětem má placený tarif.
+- **7. 11. 2026 — Analytika: Google Analytics 4.** GA4 používá cookies, proto web potřebuje lištu se souhlasem: GA4 se načte až po souhlasu (Consent Mode v2), bez souhlasu se nic neměří. Měřicí ID (G-…) dodá Eva; doplní se ve fázi 5.
 
 ## Blokují stavbu webu
 
-1. **Framework:** Astro (doporučeno pro obsahový web) vs. Next.js (stejný jako ostatní appky AI dětem).
-2. **Hosting:** Vercel Hobby je podle podmínek jen pro osobní nekomerční použití. Pro web organizace: Vercel Pro (20 USD/měsíc), nebo bezplatné Netlify / Cloudflare Pages.
-3. **Analytika:** Vercel Web Analytics / Plausible (bez cookies, bez lišty) vs. Google Analytics (vyžaduje souhlas).
 4. **Sdílení složek na Disku:** systémové prompty a data všech 18 skills jsou od 7. 11. 2026 na sdíleném disku ve složce *Zdroje k stažení*, znalostní soubory zkopírované do složek Data, odkazy v `meta.yaml` (`google_doc`, `google_slozka`, přehled v `migrace/google-drive.json`). Zbývá nastavit sdílení „Kdokoli s odkazem – čtenář“ (teď je složka soukromá) a smazat z ní *Návod pro nahrání na Disk*, který je jen pro tým.
 
 ## Obsah

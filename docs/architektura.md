@@ -19,13 +19,13 @@ Výhody:
 | Styl | čisté CSS s tokeny z `docs/design.md` | bez frameworku, design tokeny 1:1 z artefaktu |
 | Vyhledávání | **Pagefind** | statické hledání, funguje bez serveru |
 | ZIPy skills a pluginů | build skript (Node, `archiver` nebo `jszip`) | generuje se při každém buildu z `content/skills` |
-| Hosting | **Vercel** (případně Netlify / Cloudflare Pages) | automatický deploy z GitHubu, náhledové verze pro každou změnu |
+| Hosting | **Vercel** (placený tarif AI dětem, rozhodnuto 7. 11. 2026) | automatický deploy z GitHubu, náhledové verze pro každou změnu |
 | Přesměrování | `vercel.json` z `migrace/redirects.json` | 176 trvalých přesměrování starých URL |
-| Analytika | Vercel Web Analytics nebo Plausible | bez cookies → bez cookie lišty |
+| Analytika | **Google Analytics 4** (rozhodnuto 7. 11. 2026) | používá cookies → lišta se souhlasem, GA4 se načte až po souhlasu (Consent Mode v2) |
 
 Alternativa: Next.js (pokud chcete stejný stack jako ostatní appky AI dětem na Vercelu). Pro tento typ webu je ale Astro jednodušší a rychlejší.
 
-> **Pozor na tarif Vercelu:** bezplatný tarif Hobby je podle podmínek jen pro osobní a nekomerční použití. Pro web organizace zvažte Vercel Pro, nebo bezplatné Netlify / Cloudflare Pages, které použití organizací povolují. Rozhodnutí je v `docs/otevrene-otazky.md`.
+> **Tarif Vercelu:** AI dětem má placený tarif, který použití organizací povoluje (bezplatný Hobby je jen pro osobní nekomerční použití).
 
 ## Co by potřebovalo server nebo databázi — a jak to vyřešit bez nich
 
