@@ -6,7 +6,7 @@ Vzor: artefakt **Funkce chatbotů 2027** — [docs/design/vzor-funkce-chatbotu-2
 
 ## Barvy (design tokeny)
 
-Definovat jako CSS proměnné na `:root`, pro tmavý režim přepsat v `@media (prefers-color-scheme: dark)` a na `:root[data-theme="dark"]`.
+Definovat jako CSS proměnné na `:root`. **Web je vždy ve světlém režimu** (rozhodnutí Evy 7. 11. 2026) — sloupec Tmavý se nepoužívá, zůstává jen pro informaci.
 
 | Token | Světlý | Tmavý | Použití |
 |---|---|---|---|

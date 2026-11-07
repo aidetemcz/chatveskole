@@ -1,6 +1,7 @@
 /* Design AI dětem — tokeny a komponenty podle docs/design.md.
    Grafika převzatá z aplikace Asistent pro individualizaci výuky (aidetemcz/podpurna-opatreni)
    a artefaktu Funkce chatbotů 2027 (docs/design/vzor-funkce-chatbotu-2027.html).
+   Web je vždy ve světlém režimu (rozhodnutí Evy 7. 11. 2026), tmavý režim se nepoužívá.
    Barvy pro text jsou upravené tak, aby splnily kontrast WCAG AA (4,5 : 1). Čisté CSS, bez frameworku. */
 
 /* ---------- tokeny ---------- */
@@ -32,22 +33,6 @@
   --gap-sekce: 56px;
   --mereni: 70ch;
   color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #141b22; --panel: #1a232c; --ink: #e9eff3; --muted: #9eabb7;
-    --accent: #e57373; --accent-hover: #f09393; --accent-strong: #f09393; --accent-press: #f5b0b0; --accent-soft: #3a2427; --on-accent: #1c1113;
-    --sky: #44626e; --sky-deep: #93bccb; --sky-text: #93bccb; --sky-light: #1e2f38;
-    --line: #2a3742; --line-soft: #212c36;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #141b22; --panel: #1a232c; --ink: #e9eff3; --muted: #9eabb7;
-  --accent: #e57373; --accent-hover: #f09393; --accent-strong: #f09393; --accent-press: #f5b0b0; --accent-soft: #3a2427; --on-accent: #1c1113;
-  --sky: #44626e; --sky-deep: #93bccb; --sky-text: #93bccb; --sky-light: #1e2f38;
-  --line: #2a3742; --line-soft: #212c36;
-  color-scheme: dark;
 }
 @media (max-width: 860px) {
   :root { --gutter: 16px; --gap-sekce: 44px; }
