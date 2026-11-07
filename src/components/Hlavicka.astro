@@ -1,0 +1,84 @@
+---
+import { navigace } from '../lib/web';
+
+const cesta = Astro.url.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
+const sipka = '<svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+---
+<header class="hlavicka">
+  <div class="wrap hlavicka-in">
+    <a class="brand" href="/">
+      <img src="/logo-aidetem.png" width="44" height="44" alt="" />
+      <span><span class="brand-title">Chatboti ve škole</span><span class="brand-sub">AI dětem pro učitele a školy</span></span>
+    </a>
+    <button class="btn btn-sky menu-otevrit" type="button" aria-controls="menu" aria-expanded="false" data-menu-otevrit>Menu</button>
+    <nav class="menu" id="menu" aria-label="Hlavní menu" data-menu>
+      <div class="menu-hlava">
+        <span class="brand-title">Menu</span>
+        <button class="btn btn-sky" type="button" data-menu-zavrit>Zavřít</button>
+      </div>
+      <ul class="menu-seznam">
+        {navigace.menu.map((sekce, i) => {
+          const aktivni = sekce.items.some((p) => p.href === cesta);
+          return (
+            <li class="menu-sekce">
+              <button class:list={['menu-tlacitko', { aktivni }]} type="button" aria-expanded="false" aria-controls={`menu-${i}`} data-podmenu>
+                {sekce.title}<Fragment set:html={sipka} />
+              </button>
+              <ul class="menu-panel" id={`menu-${i}`} hidden>
+                {sekce.items.map((p) => (
+                  <li><a href={p.href} class:list={{ zvyraznit: p.zvyraznit }} aria-current={p.href === cesta ? 'page' : undefined}>{p.title}</a></li>
+                ))}
+              </ul>
+            </li>
+          );
+        })}
+      </ul>
+      <a class="btn btn-accent menu-cta" href={navigace.cta.href}>{navigace.cta.title}</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  // Rozbalovací menu (desktop) a celoobrazovkové menu (mobil). Ovládání myší i klávesnicí, Esc zavírá.
+  const tlacitka = [...document.querySelectorAll<HTMLButtonElement>('[data-podmenu]')];
+  const zavritPodmenu = (krome?: HTMLButtonElement) => {
+    for (const t of tlacitka) {
+      if (t === krome) continue;
+      t.setAttribute('aria-expanded', 'false');
+      document.getElementById(t.getAttribute('aria-controls')!)!.hidden = true;
+    }
+  };
+  for (const t of tlacitka) {
+    t.addEventListener('click', () => {
+      const otevrit = t.getAttribute('aria-expanded') !== 'true';
+      zavritPodmenu(t);
+      t.setAttribute('aria-expanded', String(otevrit));
+      document.getElementById(t.getAttribute('aria-controls')!)!.hidden = !otevrit;
+    });
+  }
+  document.addEventListener('click', (e) => {
+    if (!(e.target as Element).closest('.menu-sekce')) zavritPodmenu();
+  });
+  document.addEventListener('focusin', (e) => {
+    if (!(e.target as Element).closest('.menu-sekce')) zavritPodmenu();
+  });
+
+  const menu = document.querySelector<HTMLElement>('[data-menu]')!;
+  const otevrit = document.querySelector<HTMLButtonElement>('[data-menu-otevrit]')!;
+  const zavrit = document.querySelector<HTMLButtonElement>('[data-menu-zavrit]')!;
+  const nastavMobil = (stav: boolean) => {
+    menu.classList.toggle('otevreno', stav);
+    document.body.classList.toggle('menu-otevreno', stav);
+    otevrit.setAttribute('aria-expanded', String(stav));
+    if (stav) zavrit.focus(); else otevrit.focus();
+  };
+  otevrit.addEventListener('click', () => nastavMobil(true));
+  zavrit.addEventListener('click', () => nastavMobil(false));
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    const otevreneTlacitko = tlacitka.find((t) => t.getAttribute('aria-expanded') === 'true');
+    if (menu.classList.contains('otevreno')) nastavMobil(false);
+    else if (otevreneTlacitko) { zavritPodmenu(); otevreneTlacitko.focus(); }
+  });
+</script>

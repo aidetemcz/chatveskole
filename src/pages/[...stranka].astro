@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Zaklad from '../layouts/Zaklad.astro';
-import { zobrazit, jeKoncept, sekceProUrl } from '../lib/web';
+import { zobrazit, jeKoncept, sekceProUrl, dalsiStranka } from '../lib/web';
 
 export async function getStaticPaths() {
   const stranky = await getCollection('stranky', (s) => zobrazit(s.data.stav));
@@ -13,23 +13,48 @@ export async function getStaticPaths() {
 
 const { stranka } = Astro.props;
 const { Content } = await render(stranka);
-const sekce = sekceProUrl(`/${stranka.id}`);
+const url = stranka.id === 'index' ? '/' : `/${stranka.id}`;
+const sekce = sekceProUrl(url);
+const dalsi = dalsiStranka(url);
 // Zdroje typu „data/…yaml“ vykreslí datové šablony (fáze 4); tady jen odkazy.
 const zdroje = (stranka.data.zdroje ?? []).filter((z) => /^https?:/.test(typeof z === 'string' ? z : z.url));
+const datum = stranka.data.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' });
 ---
-<Zaklad title={stranka.data.title} popis={stranka.data.popis} koncept={jeKoncept(stranka.data.stav)}>
-  {sekce && <p class="eyebrow">{sekce}</p>}
-  <Content />
-  {zdroje.length > 0 && (
-    <section aria-labelledby="zdroje">
-      <h2 id="zdroje">Zdroje</h2>
-      <ul>
-        {zdroje.map((z) => {
-          const url = typeof z === 'string' ? z : z.url;
-          const nazev = typeof z === 'string' ? z : (z.nazev ?? z.url);
-          return <li><a href={url}>{nazev}</a></li>;
-        })}
-      </ul>
-    </section>
-  )}
+<Zaklad title={stranka.data.title} popis={stranka.data.popis}>
+  <article class="stranka">
+    {(sekce || jeKoncept(stranka.data.stav)) && (
+      <div class="stranka-hlava">
+        <div class="stitky">
+          {sekce && <span class="eyebrow">{sekce}</span>}
+          {jeKoncept(stranka.data.stav) && <span class="badge koncept" title={`Stav: ${stranka.data.stav}`}>Koncept</span>}
+        </div>
+      </div>
+    )}
+    <div class="obsah">
+      <Content />
+    </div>
+    {(zdroje.length > 0 || stranka.id !== 'index') && (
+      <section class="zdroje" aria-labelledby="zdroje">
+        {zdroje.length > 0 && (
+          <>
+            <h2 id="zdroje">Zdroje</h2>
+            <ul>
+              {zdroje.map((z) => {
+                const u = typeof z === 'string' ? z : z.url;
+                const nazev = typeof z === 'string' ? z : (z.nazev ?? z.url);
+                return <li><a href={u}>{nazev}</a></li>;
+              })}
+            </ul>
+          </>
+        )}
+        <p class="aktualizovano">Aktualizováno {datum}</p>
+      </section>
+    )}
+    {dalsi && (
+      <a class="dalsi" href={dalsi.href}>
+        <span>Další stránka</span>
+        <strong>{dalsi.title} →</strong>
+      </a>
+    )}
+  </article>
 </Zaklad>

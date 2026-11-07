@@ -1,9 +1,12 @@
 ---
-// Základní layout. Design (tokeny, fonty, hlavička, patička) doplní fáze 2.
-import { navigace } from '../lib/web';
+import '@fontsource-variable/inter/wght.css';
+import '@fontsource-variable/space-grotesk/wght.css';
+import '../styles/global.css';
+import Hlavicka from '../components/Hlavicka.astro';
+import Paticka from '../components/Paticka.astro';
 
-interface Props { title: string; popis?: string; koncept?: boolean }
-const { title, popis, koncept = false } = Astro.props;
+interface Props { title: string; popis?: string }
+const { title, popis } = Astro.props;
 const titulek = title === 'Chatboti ve škole' ? title : `${title} | Chatboti ve škole`;
 ---
 <!doctype html>
@@ -13,27 +16,20 @@ const titulek = title === 'Chatboti ve škole' ? title : `${title} | Chatboti ve
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{titulek}</title>
     {popis && <meta name="description" content={popis} />}
-    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <link rel="canonical" href={new URL(Astro.url.pathname.replace(/\.html$/, ''), Astro.site)} />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#141b22" media="(prefers-color-scheme: dark)" />
   </head>
   <body>
-    <header>
-      <a href="/">Chatboti ve škole</a>
-      <nav aria-label="Hlavní menu">
-        <ul>
-          {navigace.menu.map((sekce) => (
-            <li>
-              {sekce.title}
-              <ul>{sekce.items.map((i) => <li><a href={i.href}>{i.title}</a></li>)}</ul>
-            </li>
-          ))}
-          <li><a href={navigace.cta.href}>{navigace.cta.title}</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      {koncept && <p class="stitek-koncept">Koncept</p>}
-      <slot />
+    <a class="skip" href="#obsah">Přeskočit na obsah</a>
+    <Hlavicka />
+    <main id="obsah" tabindex="-1">
+      <div class="wrap">
+        <slot />
+      </div>
     </main>
-    <footer><p>Chatboti ve škole · AI dětem</p></footer>
+    <Paticka />
   </body>
 </html>

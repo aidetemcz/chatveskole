@@ -27,3 +27,10 @@ export const jeKoncept = (stav?: string) => !!stav && stav !== 'hotovo' && stav 
 export function sekceProUrl(url: string): string | undefined {
   return navigace.menu.find((s) => s.items.some((i) => i.href === url))?.title;
 }
+
+/** Další stránka v pořadí menu (pro odkaz na konci stránky). */
+export function dalsiStranka(url: string): PolozkaMenu | undefined {
+  const vse = navigace.menu.flatMap((s) => s.items);
+  const i = vse.findIndex((p) => p.href === url);
+  return i >= 0 ? vse[i + 1] : undefined;
+}
