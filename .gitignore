@@ -10,3 +10,5 @@ Thumbs.db
 _prenos-*.zip
 # vygenerované složky pro Google Disk (scripts/build-google-drive.py)
 google-drive/
+# vygenerováno z archiv/uploads (scripts/priprav-public.mjs)
+public/archiv/

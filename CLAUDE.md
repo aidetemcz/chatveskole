@@ -28,10 +28,12 @@ Přečti:
 
 ## Příkazy
 
-(doplnit po založení projektu)
+- `npm install` — instalace (Node 22+)
 - `npm run dev` — vývojový server
-- `npm run build` — build včetně ZIPů skills, pluginů a vyhledávání
-- `npm run check` — kontrola odkazů, frontmatteru a SKILL.md
+- `npm run build` — build (před ním `prebuild`: vercel.json z `migrace/redirects.json` a kopie `archiv/uploads` do `public/archiv/uploads`); ZIPy skills, pluginy a vyhledávání přibudou ve fázi 3 a 5
+- `npm run check` — kontrola frontmatteru stránek, skills, promptů, sad, interních odkazů a přesměrování (`scripts/check.mjs`) + `astro check`
+- `npm run redirects` — přegeneruje `vercel.json` (needitovat ručně)
+- Náhled vs. produkce: při `VERCEL_ENV=production` se generuje jen obsah se stavem `hotovo` (prompty `prevzato`); jinde vše se štítkem „Koncept“
 
 ## Pravidla
 

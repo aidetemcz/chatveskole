@@ -1,0 +1,27 @@
+{
+  "name": "chatveskole",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "prebuild": "node scripts/build-vercel-json.mjs && node scripts/priprav-public.mjs",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "node scripts/check.mjs && astro check",
+    "redirects": "node scripts/build-vercel-json.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.4.7",
+    "js-yaml": "^5.5.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.20.5",
+    "typescript": "^6.0.3"
+  }
+}
