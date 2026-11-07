@@ -1,0 +1,45 @@
+title: Kritéria hodnocení
+slug: kriteria-hodnoceni
+kratky_popis: Z cíle vytvoří kritéria pro učitele i žáky, gradaci J–Č–T–Ú, sebehodnoticí list a nápady na důkazy o učení.
+pro_koho: [ucitele]
+sady: [formativni-hodnoceni]
+stitky: [formativní hodnocení, kritéria hodnocení, sebehodnocení, J–Č–T–Ú, důkazy o učení, SVP]
+rezimy:
+  - Kritéria z cíle
+  - Gradace J–Č–T–Ú
+  - Sebehodnoticí list pro žáky
+  - Důkazy o učení
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/tvorba-kriterii-hodnoceni/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/formulace-kriterii-hodnoceni/
+    typ: asistent
+  - url: https://chatveskole.cz/databaze-promptu/vytvareni-sebehodnotici-skaly-pro-zaky/
+    typ: asistent
+  - url: https://chatveskole.cz/databaze-promptu/sebehodnoceni-pro-zaky/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/tvorba-dukazu-o-uceni/
+    typ: prompt
+# Skill slučuje dva asistenty, proto jsou hodnoty seznamy (pořadí: 02 kritéria, 03 gradace J–Č–T–Ú).
+puvodni_asistenti:
+  gpt:
+    - https://chatgpt.com/g/g-68946941fe1c8191b0e1c3587eaedff0-asistent-pro-formulaci-kriterii-hodnoceni
+    - https://chatgpt.com/g/g-69046aa5481c8191b8c94e312bebe1a3-asistent-vytvarejici-sebehodnotici-skaly-j-c-t-u
+  gem:
+    - https://gemini.google.com/gem/1hdKKGHnjKC7ta-HviAwjhwIJUSF8bUKi?usp=sharing
+    - https://gemini.google.com/gem/1ifHoOIBy70m8YpqODzZJ08jL8nthyP9c?usp=sharing
+  systemovy_prompt:
+    - https://docs.google.com/document/d/1aaepsHxOf-W5mc-ff3gdRFluTzJkCqMk7dAhnL2FIsI/edit?usp=sharing
+    - https://docs.google.com/document/d/14qCxVX-ECOXzHcrRqHVPWplyBXK96LI3nM9Vlh6LbAs/edit?usp=sharing
+google_doc: https://docs.google.com/document/d/1nJtTFcuob9yQOGPP48PU4GLMKen8jiRoPuyv6Mfxby4/edit
+google_slozka: https://drive.google.com/drive/folders/17oqarr2QVHYv3dl_lKk0vOp-EKLC_fO9
+autori: [Eva Nečasová (AI dětem)]
+metodika:
+  - nazev: Vysvědčení jinak (PdF MU, Jana Kratochvílová)
+    url: https://vysvedcenijinak.ped.muni.cz/
+  - nazev: Vysvědčení jinak – stupnice hodnocení v teoretických předmětech
+    url: https://vysvedcenijinak.ped.muni.cz/metodika/teoreticke-predmety/stupnice-hodnoceni-v-teoretickych-predmetech
+znalosti: [spravna-formulace-kriterii-hodnoceni.md, klicove-kompetence.md, prurezova-temata.md, jedinci-se-specialnimi-vzdelavacimi-potrebami.md]
+vek: dospělí (skills jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-07

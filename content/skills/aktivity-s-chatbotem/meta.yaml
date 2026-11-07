@@ -1,0 +1,66 @@
+title: Aktivity s chatbotem
+slug: aktivity-s-chatbotem
+kratky_popis: Navrhne aktivitu, ve které žáci mluví s chatbotem – bezpečný prompt pro žáky a krátký návod pro učitele podle cíle hodiny.
+pro_koho: [ucitele]
+sady: [priprava-vyuky]
+stitky: [chatbot ve výuce, kvízbot, hraní rolí, textová hra, diskuze, bezpečnost, AI gramotnost, Tiny]
+rezimy:
+  - Nová aktivita
+  - Úprava hotového promptu
+  - Zadání pro Tiny
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/quiz_bot/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/cool_bot_vynalezy/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/hadej-chemicke-prvky/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/hadej-chemicke-prvky-asistent/
+    typ: asistent
+  - url: https://chatveskole.cz/databaze-promptu/asistent-poznej-svet-zemepisny-kviz/
+    typ: asistent
+  - url: https://chatveskole.cz/databaze-promptu/rpg-simulator-el-castice/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/hrani-dvou-roli-bunka/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/hraj-roli-chloroplast/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/simulator-darwin/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/zpetnovazebni-otazky-polymeraza/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/textova-hra-karel-iv/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/diskuzni-bot-genetika/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/pruvodce-biotopy/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/wikichat-hardware/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/piskvorky/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/karierni-poradce-se-zamerenim-na-matematiku/
+    typ: asistent
+puvodni_asistenti:
+  gpt:
+    - https://chatgpt.com/g/g-sTf7nS5F8-hadej-chemicky-prvek
+    - https://chatgpt.com/g/g-67c5b020537c8191a0b9e15a1374bfde-poznej-svet-zemepisny-kviz/
+    - https://chatgpt.com/g/g-tpHY1HiGh-karierni-poradce-se-zamerenim-na-matematiku
+  dalsi:                       # sloučený asistent pro Tiny (na webu nebyl), nahrazen průvodcem v Tiny
+    - nazev: Asistent pro tvorbu zadání (Tiny)
+      systemovy_prompt:
+        - https://docs.google.com/document/d/1AB9q7ftffIHAsedUor47I5sLC1-hd-nnvLWgrBsGntY/edit
+        - https://docs.google.com/document/d/1-125LsGfhQ4Aq2MpXCQvGJ4YXI6pHuPh-RFdWxYV7ds/edit
+google_doc: https://docs.google.com/document/d/1kpS1JEjNhr82F3xYPyt7xOA7-q8BRmrReavSBdOdmYk/edit
+google_slozka: https://drive.google.com/drive/folders/1mXLeunHunXbMMjIDKluzXScjkEPhd3bB
+autori: [Eva Nečasová (AI dětem), AI reaktor UJEP (Míša Liegertová), Jan Jílek (Poznej svět)]
+metodika:
+  - nazev: Kurikulum umělé inteligence – Matematika pro život (AI dětem)
+    url: https://kurikulum.aidetem.cz/metodicke-materialy/matematika-pro-zivot/
+  - nazev: Aplikace Tiny (AI dětem)
+    url: https://tiny.school
+  - nazev: Linka bezpečí
+    url: https://www.linkabezpeci.cz/
+vek: dospělí (skills jsou v Gemini a Claude 18+); prompty z výstupu jsou pro žáky podle věkových hranic nástroje
+stav: koncept
+aktualizovano: 2026-11-07

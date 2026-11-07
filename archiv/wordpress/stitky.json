@@ -1,0 +1,92 @@
+[
+  {
+    "id": 22,
+    "slug": "anglicky-jazyk",
+    "nazev": "Angličtina",
+    "pocet": 4
+  },
+  {
+    "id": 37,
+    "slug": "biologie",
+    "nazev": "Biologie",
+    "pocet": 7
+  },
+  {
+    "id": 19,
+    "slug": "cesky-jazyk",
+    "nazev": "Čeština",
+    "pocet": 3
+  },
+  {
+    "id": 39,
+    "slug": "chemie",
+    "nazev": "Chemie",
+    "pocet": 2
+  },
+  {
+    "id": 32,
+    "slug": "dejepis",
+    "nazev": "Dějepis",
+    "pocet": 6
+  },
+  {
+    "id": 21,
+    "slug": "fyzika",
+    "nazev": "Fyzika",
+    "pocet": 3
+  },
+  {
+    "id": 43,
+    "slug": "historie",
+    "nazev": "Historie",
+    "pocet": 3
+  },
+  {
+    "id": 40,
+    "slug": "hudebka",
+    "nazev": "Hudebka",
+    "pocet": 0
+  },
+  {
+    "id": 29,
+    "slug": "informatika",
+    "nazev": "Informatika",
+    "pocet": 9
+  },
+  {
+    "id": 36,
+    "slug": "logika",
+    "nazev": "Logika",
+    "pocet": 2
+  },
+  {
+    "id": 20,
+    "slug": "matematika",
+    "nazev": "Matematika",
+    "pocet": 2
+  },
+  {
+    "id": 41,
+    "slug": "obcanska-nauka",
+    "nazev": "Občanka",
+    "pocet": 6
+  },
+  {
+    "id": 42,
+    "slug": "prirodopis",
+    "nazev": "Přírodopis",
+    "pocet": 4
+  },
+  {
+    "id": 23,
+    "slug": "vytvarna-vychova",
+    "nazev": "Výtvarka",
+    "pocet": 0
+  },
+  {
+    "id": 38,
+    "slug": "zemepis",
+    "nazev": "Zeměpis",
+    "pocet": 6
+  }
+]

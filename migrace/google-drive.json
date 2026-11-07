@@ -1,0 +1,24 @@
+{
+  "_popis": "Složky skills na Google Disku (sdílený disk, složka Zdroje k stažení). Odkazy jsou v meta.yaml → google_doc, google_slozka. Nahráno 7. 11. 2026.",
+  "korenova_slozka": "https://drive.google.com/drive/folders/1vZ4IR6LhZs0v9Gvpwo4piEfIsN0DsS1X",
+  "skills": {
+    "Procesní analytik": {"slozka": "1Q8asrLsZvGG9QGksZI4DWacLuVKO8E3Y", "doc": "10Ojs971Ls5kjx4T_bhOjVPEQ7jZ4BVRwJ8e9nheO7Co"},
+    "Kritéria hodnocení": {"slozka": "17oqarr2QVHYv3dl_lKk0vOp-EKLC_fO9", "doc": "1nJtTFcuob9yQOGPP48PU4GLMKen8jiRoPuyv6Mfxby4"},
+    "Jazykový korektor": {"slozka": "1RnUfCJ0npVn2thxU31Jh9LGFUJTMIgPW", "doc": "1fRcqvskNFEo5wTBvHVsj9qGFYp9rB0J_Qggat03ZvGc"},
+    "AI gramotnost v RVP a ŠVP": {"slozka": "1Ywha8uPIPR76S_llsJXkTTr2aDhSjd8Z", "doc": "17cFTBieSCfpGCJ8swpA6ucRuPFj6DpnuB9igrJ8tUio"},
+    "Učitelský mentor": {"slozka": "1zr2DLZ9b1MpweSCRTO2D2_r1V9PIykQ6", "doc": "1dW_5njfLcyaJOs8Tldrt8cpxnFJfvUxoY7wfupEQMj8"},
+    "Didaktický rádce": {"slozka": "1X7p8y0wLhLRHENL6ifY_S9pjlzA5k218", "doc": "17bYWaTJ9-df68hPHldAbUylWY6jMztki8fQMQy8KDOk"},
+    "Řízení změny ve škole": {"slozka": "186uAIYKFjnN8WySh1VdgqAadTDguPveU", "doc": "1IiSI9Ui-rncV8JZNGkzX1tzSwap3EzBJfRPVrfyCwgs"},
+    "Úprava materiálu": {"slozka": "1oKSp_IJAhUfcXM-jVnlAddKQizn2_980", "doc": "1WtIuPQddEZsCLTHfvucx9nYQ9KrEMGlTCApDyjbAIqQ"},
+    "Rozvoj myšlení": {"slozka": "1vBW7-_3KVWVKg9iKq0_8oSP0WLh43e_n", "doc": "16nzIUd4QSUv-CqXENq0REC4L6H19wDdqrVRNK0lAzsA"},
+    "Aktivity s chatbotem": {"slozka": "1mXLeunHunXbMMjIDKluzXScjkEPhd3bB", "doc": "1kpS1JEjNhr82F3xYPyt7xOA7-q8BRmrReavSBdOdmYk"},
+    "Školní pravidla": {"slozka": "14tYlDmZX09IMruvuCqLNXvGycNK-hFWf", "doc": "1jm368kuPSAYuKAy-sKm1vtjoDrHwLWOhxycWMev_30w"},
+    "Pracovní listy": {"slozka": "1Fb6apT9KLJc7mqK_HnfJyVEL2NMSjDg9", "doc": "18QxJGkByRUZtGfn0tV6Gvtp8WqbGg1U7vuchCL4FMkI"},
+    "Hodnoty, mise, vize a profil absolventa": {"slozka": "1khnljfO_-PsrbJe1ppqvTGjXziCF_39B", "doc": "1arfBmh8D17Fae515nSf0eawsEjwJCnjivpVi7GYHktc"},
+    "Komunikace s rodiči": {"slozka": "1msQGOOgc24kYCw7X0vAUfzOEd0MFuWek", "doc": "12SwTwjk7d3B0kK_Q-_sKmoXZIEAk0yocqIeiFIiynyA"},
+    "Slovní hodnocení": {"slozka": "1BXd4fbz-IBvb6QBTJ64ywzPGw3Pa2z7G", "doc": "1D98KybOoVijHPFIwEy94CYBsxFYnpYKF31zVTgl9Z9E"},
+    "Vzdělávací cíle": {"slozka": "1_wl1U7ZGVC1aMwmfnNSFU2Q7T5fs8dwv", "doc": "15qxs92NMynJxiv00lPp7ffHinpYJyKc-gU8O_1JmXWA"},
+    "Strategické dokumenty": {"slozka": "1Okv2DfsPYl_cU-HuZvF6OF2jEWrh7hji", "doc": "1OOxAC-Fz78WICfe4AgQYN57SAG4JS1PseMHmPUJ1HVw"},
+    "Asistent ředitele": {"slozka": "14TTe3wJ0ZSDWWHgJ-XOxEBYUT8L7jfiC", "doc": "19bCRu39BUgojbsqiFgIM-you5ItsEY3rDuAHZpj55JA"}
+  }
+}

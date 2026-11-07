@@ -1,0 +1,884 @@
+{
+  "redirects": [
+    {
+      "source": "/pruvodce-chatgpt-pro-ucitele",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/jak-to-funguje",
+      "destination": "/funkce/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/jak-funguji-chatboti",
+      "destination": "/zaciname/jak-funguji-chatboti",
+      "permanent": true
+    },
+    {
+      "source": "/dostupne-nastroje",
+      "destination": "/zaciname/dostupne-nastroje",
+      "permanent": true
+    },
+    {
+      "source": "/kolik-stoji",
+      "destination": "/zaciname/kolik-stoji-chatboti",
+      "permanent": true
+    },
+    {
+      "source": "/registrace-do-sluzeb",
+      "destination": "/zaciname/registrace",
+      "permanent": true
+    },
+    {
+      "source": "/vekove-limity-pravo",
+      "destination": "/zaciname/vekove-limity-a-legislativa",
+      "permanent": true
+    },
+    {
+      "source": "/zahranicni-platby-pro-neplatce-dph",
+      "destination": "/zaciname/zahranicni-platby",
+      "permanent": true
+    },
+    {
+      "source": "/co-je-to-prompt",
+      "destination": "/funkce/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/jak-vytvaret-prompt",
+      "destination": "/funkce/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/prompty",
+      "destination": "/funkce/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/prompty-pro-pedagogy",
+      "destination": "/funkce/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/zpusoby-vyuziti-genai-ve-vyuce",
+      "destination": "/funkce/prompty/zaci",
+      "permanent": true
+    },
+    {
+      "source": "/co-jsou-ai-asistenti",
+      "destination": "/funkce/zmeny-2026",
+      "permanent": true
+    },
+    {
+      "source": "/jak-vyuzivat-ai-asistenty",
+      "destination": "/funkce/skills",
+      "permanent": true
+    },
+    {
+      "source": "/jak-vytvaret-ai-asistenty",
+      "destination": "/funkce/skills",
+      "permanent": true
+    },
+    {
+      "source": "/tvorba-systemoveho-promptu",
+      "destination": "/funkce/skills",
+      "permanent": true
+    },
+    {
+      "source": "/jaka-data-do-ai-asistenta-patri",
+      "destination": "/funkce/projekty",
+      "permanent": true
+    },
+    {
+      "source": "/testovani-a-publikace",
+      "destination": "/funkce/skills",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-ai-asistentu",
+      "destination": "/skills",
+      "permanent": true
+    },
+    {
+      "source": "/vyuziti-chatbotu-ve-formativnim-hodnoceni",
+      "destination": "/sady/formativni-hodnoceni",
+      "permanent": true
+    },
+    {
+      "source": "/materialy-do-vyuky",
+      "destination": "/ve-vyuce/metodiky",
+      "permanent": true
+    },
+    {
+      "source": "/strategie-vyuziti-umele-inteligence-ai-ve-skolach",
+      "destination": "/ve-vyuce/pravidla-pro-ai",
+      "permanent": true
+    },
+    {
+      "source": "/doporuceni-pro-vyuzivani-ai-na-zs-a-ss",
+      "destination": "/ve-vyuce/doporuceni-zs-ss",
+      "permanent": true
+    },
+    {
+      "source": "/doporuceni-pro-vyuzivani-ai-na-vs",
+      "destination": "/ve-vyuce/doporuceni-vs",
+      "permanent": true
+    },
+    {
+      "source": "/kdo-za-tim-stoji",
+      "destination": "/o-webu/kdo-za-tim-stoji",
+      "permanent": true
+    },
+    {
+      "source": "/kontakt",
+      "destination": "/o-webu/kontakt",
+      "permanent": true
+    },
+    {
+      "source": "/poslete-nam-prompt",
+      "destination": "/o-webu/kontakt",
+      "permanent": true
+    },
+    {
+      "source": "/jak-ucit-a-hodnotit-s-ai",
+      "destination": "/funkce/prompty/zaci",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/3d-model-kvetu",
+      "destination": "/funkce/prompty/3d-model-kvetu",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/ai-gramotnost-v-rvp-a-svp",
+      "destination": "/skills/ai-gramotnost-v-svp",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/aktualizace-tematickeho-planu",
+      "destination": "/funkce/prompty/aktualizace-tematickeho-planu",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/argumentace",
+      "destination": "/funkce/prompty/zaci/argumentace",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/asistent-poznej-svet-zemepisny-kviz",
+      "destination": "/skills/aktivity-s-chatbotem",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/asistent-pro-definici-hodnot-mise-a-vize-skoly",
+      "destination": "/skills/mise-vize-hodnoty",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/asistent-pro-rozvoj-mysleni",
+      "destination": "/skills/rozvoj-mysleni",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/asistent-reditele",
+      "destination": "/skills/asistent-reditele",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/brainstorming",
+      "destination": "/funkce/prompty/zaci/brainstorming",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/casove-osy",
+      "destination": "/funkce/prompty/casove-osy",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/chatboti-ve-skole-analogie",
+      "destination": "/funkce/prompty/chatboti-ve-skole-analogie",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/cool_bot_vynalezy",
+      "destination": "/funkce/prompty/cool_bot_vynalezy",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/derivace-latex",
+      "destination": "/funkce/prompty/derivace-latex",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/didakticky-radce",
+      "destination": "/skills/didakticky-radce",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/didaktik-konzultant",
+      "destination": "/funkce/prompty/didaktik-konzultant",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/diferenciace-textu-rozhovory",
+      "destination": "/funkce/prompty/diferenciace-textu-rozhovory",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/diskuzni-bot-genetika",
+      "destination": "/funkce/prompty/diskuzni-bot-genetika",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/doplnovacka",
+      "destination": "/funkce/prompty/doplnovacka",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/doplnovacka_slovesa",
+      "destination": "/funkce/prompty/doplnovacka_slovesa",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/eduscrum-mestsky-ekosystem",
+      "destination": "/funkce/prompty/eduscrum-mestsky-ekosystem",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/emotikony-zivot-vaclava-havla",
+      "destination": "/funkce/prompty/emotikony-zivot-vaclava-havla",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/formulace-hodnot-mise-a-vize-skoly",
+      "destination": "/funkce/prompty/formulace-hodnot-mise-a-vize-skoly",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/formulace-kriterii-hodnoceni",
+      "destination": "/skills/kriteria-hodnoceni",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/formulace-vyukoveho-cile",
+      "destination": "/funkce/prompty/formulace-vyukoveho-cile",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/formulace-vyukoveho-cile-2",
+      "destination": "/skills/vzdelavaci-cile",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/generovani-slovniho-hodnoceni",
+      "destination": "/skills/slovni-hodnoceni",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/graf-regiony",
+      "destination": "/funkce/prompty/graf-regiony",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/hadej-chemicke-prvky",
+      "destination": "/funkce/prompty/hadej-chemicke-prvky",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/hadej-chemicke-prvky-asistent",
+      "destination": "/skills/aktivity-s-chatbotem",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/hraj-roli-chloroplast",
+      "destination": "/funkce/prompty/hraj-roli-chloroplast",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/hrani-dvou-roli-bunka",
+      "destination": "/funkce/prompty/hrani-dvou-roli-bunka",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/individualizace-vyukovych-cilu",
+      "destination": "/funkce/prompty/individualizace-vyukovych-cilu",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/informace-o-skolnim-projektu",
+      "destination": "/funkce/prompty/informace-o-skolnim-projektu",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/integrace-digitalniho-wellbeingu",
+      "destination": "/funkce/prompty/integrace-digitalniho-wellbeingu",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/jazykovy-ai-korektor",
+      "destination": "/skills/jazykovy-korektor",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/k-cemu-mi-to-je",
+      "destination": "/funkce/prompty/k-cemu-mi-to-je",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/karierni-poradce-se-zamerenim-na-matematiku",
+      "destination": "/skills/aktivity-s-chatbotem",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/kolacovy-graf-vitaminy",
+      "destination": "/funkce/prompty/kolacovy-graf-vitaminy",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/komunikace-s-rodici",
+      "destination": "/funkce/prompty/komunikace-s-rodici",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/komunikace-s-rodici-pozvanka",
+      "destination": "/funkce/prompty/komunikace-s-rodici-pozvanka",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/komunikace-s-rodici-stiznost",
+      "destination": "/funkce/prompty/komunikace-s-rodici-stiznost",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/kostka-format-stl",
+      "destination": "/funkce/prompty/kostka-format-stl",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/kultura-a-komunikace-skoly-adkar",
+      "destination": "/skills/rizeni-zmeny",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/kviz",
+      "destination": "/funkce/prompty/kviz",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/kviz-historie",
+      "destination": "/funkce/prompty/kviz-historie",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/matematicke-priklady",
+      "destination": "/funkce/prompty/matematicke-priklady",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/myslenkove-mapy-dreviny",
+      "destination": "/funkce/prompty/myslenkove-mapy-dreviny",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/napadnicek-geografie",
+      "destination": "/funkce/prompty/napadnicek-geografie",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/navrh-systemu-vnitrniho-hodnoceni-kvality-vyuky",
+      "destination": "/funkce/prompty/navrh-systemu-vnitrniho-hodnoceni-kvality-vyuky",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/nedelitelne-mezery",
+      "destination": "/funkce/prompty/nedelitelne-mezery",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/obsahova-struktura",
+      "destination": "/funkce/prompty/zaci/obsahova-struktura",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/osnova-lekce-informatika",
+      "destination": "/funkce/prompty/osnova-lekce-informatika",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/otazky-k-diskuzi",
+      "destination": "/funkce/prompty/otazky-k-diskuzi",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/otazky-na-miru",
+      "destination": "/funkce/prompty/zaci/otazky-na-miru",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/piskvorky",
+      "destination": "/funkce/prompty/piskvorky",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/plan-postupneho-zavadeni-inovaci-do-vyuky",
+      "destination": "/funkce/prompty/plan-postupneho-zavadeni-inovaci-do-vyuky",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/planovac-vyuky",
+      "destination": "/skills/didakticky-radce",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/planovani",
+      "destination": "/funkce/prompty/zaci/planovani",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/pozvanka-na-skolni-akci",
+      "destination": "/funkce/prompty/pozvanka-na-skolni-akci",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/prace-s-textem-shrnuti",
+      "destination": "/funkce/prompty/prace-s-textem-shrnuti",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/pracovni-list-pro-reflexi-uciva",
+      "destination": "/funkce/prompty/pracovni-list-pro-reflexi-uciva",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/pracovni-list-s-otevrenymi-otazkami",
+      "destination": "/funkce/prompty/pracovni-list-s-otevrenymi-otazkami",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/prevod-materialu-do-jine-formy",
+      "destination": "/funkce/prompty/prevod-materialu-do-jine-formy",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/prevod-materialu-na-jinou-uroven-obtiznosti",
+      "destination": "/funkce/prompty/prevod-materialu-na-jinou-uroven-obtiznosti",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/procesni-analytik-ai-detem",
+      "destination": "/skills/procesni-analytik",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/protiklady-prid-jmena",
+      "destination": "/funkce/prompty/protiklady-prid-jmena",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/pruvodce-biotopy",
+      "destination": "/funkce/prompty/pruvodce-biotopy",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/pruvodce-rizenim-zmeny-adkar",
+      "destination": "/skills/rizeni-zmeny",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/quiz_bot",
+      "destination": "/funkce/prompty/quiz_bot",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/radce-pro-spravne-formulace-slovniho-hodnoceni",
+      "destination": "/skills/slovni-hodnoceni",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/radce-pro-tvorbu-skolnich-pravidel",
+      "destination": "/skills/skolni-pravidla",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/radce-pro-zlepseni-kultury-skoly",
+      "destination": "/skills/rizeni-zmeny",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/reakce-na-stiznost-rodice",
+      "destination": "/funkce/prompty/reakce-na-stiznost-rodice",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/role-experta",
+      "destination": "/funkce/prompty/zaci/role-experta",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/rozsireni-existujiciho-materialu",
+      "destination": "/funkce/prompty/rozsireni-existujiciho-materialu",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/rpg-simulator-el-castice",
+      "destination": "/funkce/prompty/rpg-simulator-el-castice",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/sebehodnoceni-pro-zaky",
+      "destination": "/funkce/prompty/sebehodnoceni-pro-zaky",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/sekvencni-diagram",
+      "destination": "/funkce/prompty/sekvencni-diagram",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/simulator-darwin",
+      "destination": "/funkce/prompty/simulator-darwin",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/slepe-skrvny",
+      "destination": "/funkce/prompty/slepe-skrvny",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/slovicka-nalady",
+      "destination": "/funkce/prompty/slovicka-nalady",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/slovni-a-vetny-rozbor",
+      "destination": "/funkce/prompty/slovni-a-vetny-rozbor",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/slovnicek-pojmu",
+      "destination": "/funkce/prompty/slovnicek-pojmu",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/slovnicky-pojmu",
+      "destination": "/funkce/prompty/slovnicky-pojmu",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/spojovacka",
+      "destination": "/funkce/prompty/spojovacka",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/srdce-ve-formatu-svg",
+      "destination": "/funkce/prompty/srdce-ve-formatu-svg",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/strategicky-radce-pro-rizeni-zmeny",
+      "destination": "/skills/rizeni-zmeny",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/strategie-pro-podporu-inkluze",
+      "destination": "/funkce/prompty/strategie-pro-podporu-inkluze",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/strategie-pro-rozvoj-digitalni-gramotnosti",
+      "destination": "/funkce/prompty/strategie-pro-rozvoj-digitalni-gramotnosti",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/strukturovany-ucebni-plan",
+      "destination": "/funkce/prompty/strukturovany-ucebni-plan",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/stylistika",
+      "destination": "/funkce/prompty/stylistika",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/swot-analyza",
+      "destination": "/funkce/prompty/swot-analyza",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/tabulky",
+      "destination": "/funkce/prompty/tabulky",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/tematicky-test-cizi-jazyk",
+      "destination": "/funkce/prompty/tematicky-test-cizi-jazyk",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/textova-hra-karel-iv",
+      "destination": "/funkce/prompty/textova-hra-karel-iv",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/tvorba-dukazu-o-uceni",
+      "destination": "/funkce/prompty/tvorba-dukazu-o-uceni",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/tvorba-kriterii-hodnoceni",
+      "destination": "/funkce/prompty/tvorba-kriterii-hodnoceni",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/tvorba-metodologie-hodnoceni",
+      "destination": "/funkce/prompty/tvorba-metodologie-hodnoceni",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/tvorba-pravidel",
+      "destination": "/funkce/prompty/tvorba-pravidel",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/tvorba-skolnich-pravidel",
+      "destination": "/funkce/prompty/tvorba-skolnich-pravidel",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/tvorba-slovniho-hodnoceni",
+      "destination": "/funkce/prompty/tvorba-slovniho-hodnoceni",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/tvorba-testu-dedicnost",
+      "destination": "/funkce/prompty/tvorba-testu-dedicnost",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/tvorba-zpetne-vazby",
+      "destination": "/funkce/prompty/tvorba-zpetne-vazby",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/ucitelsky-mentor",
+      "destination": "/skills/ucitelsky-mentor",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/unikovka-elektromagnetismus",
+      "destination": "/funkce/prompty/unikovka-elektromagnetismus",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/vylepseni-vystupu",
+      "destination": "/funkce/prompty/zaci/vylepseni-vystupu",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/vysvetleni-vyznamu-vyuziti-generativni-ai-ve-vyuce",
+      "destination": "/funkce/prompty/vysvetleni-vyznamu-vyuziti-generativni-ai-ve-vyuce",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/vytvareni-profilu-absolventa-skoly",
+      "destination": "/funkce/prompty/vytvareni-profilu-absolventa-skoly",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/vytvareni-sebehodnotici-skaly-pro-zaky",
+      "destination": "/skills/kriteria-hodnoceni",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/vyuka-s-emotikony",
+      "destination": "/funkce/prompty/vyuka-s-emotikony",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/vyukovy-plan-bloomova-taxonomie",
+      "destination": "/funkce/prompty/vyukovy-plan-bloomova-taxonomie",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/wikichat-hardware",
+      "destination": "/funkce/prompty/wikichat-hardware",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/zmena-textu-strucne-a-jasne",
+      "destination": "/funkce/prompty/zmena-textu-strucne-a-jasne",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/znalosti-zadna-ai",
+      "destination": "/funkce/prompty/zaci",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/zpetna-vazba",
+      "destination": "/funkce/prompty/zaci/zpetna-vazba",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/zpetnovazebni-otazky-polymeraza",
+      "destination": "/funkce/prompty/zpetnovazebni-otazky-polymeraza",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/zprava-o-pokroku-zaka",
+      "destination": "/funkce/prompty/zprava-o-pokroku-zaka",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/zvladani-stresu",
+      "destination": "/funkce/prompty/zvladani-stresu",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/zvyrazneni-chyb-v-textu",
+      "destination": "/funkce/prompty/zvyrazneni-chyb-v-textu",
+      "permanent": true
+    },
+    {
+      "source": "/dp/ai-asistenti-pro-hodnoceni-%e2%86%92",
+      "destination": "/sady/formativni-hodnoceni",
+      "permanent": true
+    },
+    {
+      "source": "/dp/formativni-hodnoceni",
+      "destination": "/funkce/prompty#formativni-hodnoceni",
+      "permanent": true
+    },
+    {
+      "source": "/dp/slovni-hodnoceni-%e2%86%92",
+      "destination": "/funkce/prompty#slovni-hodnoceni",
+      "permanent": true
+    },
+    {
+      "source": "/dp/hodnoceni",
+      "destination": "/funkce/prompty#hodnoceni",
+      "permanent": true
+    },
+    {
+      "source": "/dp/ai-asistenti-pro-rizeni-skoly",
+      "destination": "/sady/vedeni-skoly",
+      "permanent": true
+    },
+    {
+      "source": "/dp/tvorba-strategickych-dokumentu",
+      "destination": "/funkce/prompty#tvorba-strategickych-dokumentu",
+      "permanent": true
+    },
+    {
+      "source": "/dp/rizeni-a-administrativa-%e2%86%92",
+      "destination": "/funkce/prompty#rizeni-a-administrativa",
+      "permanent": true
+    },
+    {
+      "source": "/dp/ai-asistenti-ai-akcelerator-%e2%86%92",
+      "destination": "/sady/ai-akcelerator",
+      "permanent": true
+    },
+    {
+      "source": "/dp/ai-asistenti-ruzne",
+      "destination": "/skills",
+      "permanent": true
+    },
+    {
+      "source": "/dp/oborovi-ai-asistenti",
+      "destination": "/skills/aktivity-s-chatbotem",
+      "permanent": true
+    },
+    {
+      "source": "/dp/adaptivni-vzdelavani",
+      "destination": "/funkce/prompty#adaptivni-vzdelavani",
+      "permanent": true
+    },
+    {
+      "source": "/dp/aktualizace-materialu-%e2%86%92",
+      "destination": "/funkce/prompty#aktualizace-materialu",
+      "permanent": true
+    },
+    {
+      "source": "/dp/prace-s-textem",
+      "destination": "/funkce/prompty#prace-s-textem",
+      "permanent": true
+    },
+    {
+      "source": "/dp/komunikace-s-rodici-%e2%86%92",
+      "destination": "/funkce/prompty#komunikace-s-rodici",
+      "permanent": true
+    },
+    {
+      "source": "/dp/tvorba-materialu-do-vyuky",
+      "destination": "/funkce/prompty#tvorba-materialu-do-vyuky",
+      "permanent": true
+    },
+    {
+      "source": "/dp/vytvareni-pracovnich-listu",
+      "destination": "/funkce/prompty#vytvareni-pracovnich-listu",
+      "permanent": true
+    },
+    {
+      "source": "/dp/vytvareni-lekci",
+      "destination": "/funkce/prompty#vytvareni-lekci",
+      "permanent": true
+    },
+    {
+      "source": "/dp/projektova-vyuka",
+      "destination": "/funkce/prompty#projektova-vyuka",
+      "permanent": true
+    },
+    {
+      "source": "/dp/seberozvoj-%e2%86%92",
+      "destination": "/funkce/prompty#seberozvoj",
+      "permanent": true
+    },
+    {
+      "source": "/dp/vizualizace",
+      "destination": "/funkce/prompty#vizualizace",
+      "permanent": true
+    },
+    {
+      "source": "/dp/ruzne",
+      "destination": "/funkce/prompty#ruzne",
+      "permanent": true
+    },
+    {
+      "source": "/dp/principy-vyuziti-genai-ve-vyuce",
+      "destination": "/funkce/prompty/zaci",
+      "permanent": true
+    },
+    {
+      "source": "/dp/prompty-pro-zaky",
+      "destination": "/funkce/prompty/zaci",
+      "permanent": true
+    },
+    {
+      "source": "/dp/prompty-pro-pedagogy",
+      "destination": "/funkce/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu",
+      "destination": "/funkce/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/dp",
+      "destination": "/funkce/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/:path*",
+      "destination": "/archiv/uploads/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/feed",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

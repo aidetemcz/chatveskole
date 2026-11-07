@@ -1,0 +1,53 @@
+# Hlavní menu webu. Pořadí = pořadí v menu. Patička používá stejnou strukturu.
+menu:
+  - title: Začínáme
+    items:
+      - { title: Jak fungují chatboti, href: /zaciname/jak-funguji-chatboti }
+      - { title: Dostupné nástroje, href: /zaciname/dostupne-nastroje }
+      - { title: Kolik stojí chatboti, href: /zaciname/kolik-stoji-chatboti }
+      - { title: Registrace do chatbotů, href: /zaciname/registrace }
+      - { title: Věkové limity a legislativa, href: /zaciname/vekove-limity-a-legislativa }
+      - { title: Zahraniční platby pro neplátce DPH, href: /zaciname/zahranicni-platby }
+
+  - title: Funkce
+    items:
+      - { title: Změny ve funkcích 2026, href: /funkce/zmeny-2026, zvyraznit: true }
+      - { title: Prompty, href: /funkce/prompty }
+      - { title: Skills (dovednosti), href: /funkce/skills }
+      - { title: Pluginy, href: /funkce/pluginy }
+      - { title: Projekty, href: /funkce/projekty }
+      - { title: Konektory, href: /funkce/konektory }
+
+  - title: Vibe Coding
+    items:
+      - { title: Co je to, href: /vibe-coding/co-je-to }
+      - { title: Dostupné nástroje, href: /vibe-coding/nastroje }
+      - { title: Jak začít, href: /vibe-coding/jak-zacit }
+      - { title: Materiály do výuky, href: /vibe-coding/materialy-do-vyuky }
+      - { title: Pro pokročilé, href: /vibe-coding/pro-pokrocile }
+
+  - title: Chatboti ve výuce
+    items:
+      - { title: Aplikace Tiny, href: /ve-vyuce/tiny }
+      - { title: Metodické materiály, href: /ve-vyuce/metodiky }
+      - { title: Tvorba pravidel pro využívání AI, href: /ve-vyuce/pravidla-pro-ai }
+      - { title: Doporučení pro ZŠ a SŠ, href: /ve-vyuce/doporuceni-zs-ss }
+      - { title: Doporučení pro VŠ, href: /ve-vyuce/doporuceni-vs }
+
+  - title: O webu
+    items:
+      - { title: Kdo za tím stojí, href: /o-webu/kdo-za-tim-stoji }
+      - { title: Kontakt, href: /o-webu/kontakt }
+
+# Výrazné tlačítko v hlavičce (mimo rozbalovací menu)
+cta: { title: Katalog skills, href: /skills }
+
+# Stránky generované z dat (nejsou .md v content/stranky):
+generovane:
+  - { href: /skills, zdroj: content/skills/*/ + content/sady.yaml, popis: katalog skills s filtrem podle sady a pro koho }
+  - { href: "/skills/[slug]", zdroj: content/skills/<slug>/, popis: detail skillu — popis, režimy, Kopírovat prompt, Stáhnout ZIP, Google Docs, původní asistenti }
+  - { href: "/sady/[slug]", zdroj: content/sady.yaml, popis: rozcestník sady (= plugin), u formativního hodnocení i odkaz na metodiku }
+  - { href: /funkce/prompty, zdroj: content/stranky/funkce/prompty.md + content/prompty/*/, popis: stránka Prompty s databází promptů (skupiny pedagogove, zaci, archiv-2024) }
+  - { href: "/funkce/prompty/[slug]", zdroj: "content/prompty/pedagogove/<slug>.md, content/prompty/archiv-2024/<slug>.md" }
+  - { href: /funkce/prompty/zaci, zdroj: content/prompty/zaci/_index.md }
+  - { href: "/funkce/prompty/zaci/[slug]", zdroj: content/prompty/zaci/<slug>.md }

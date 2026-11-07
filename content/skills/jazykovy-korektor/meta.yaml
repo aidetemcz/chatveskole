@@ -1,0 +1,35 @@
+title: Jazykový korektor
+slug: jazykovy-korektor
+kratky_popis: Rychle zkontroluje český text — pravopis, gramatiku, styl i typografii — a ke každé opravě připíše krátký důvod.
+pro_koho: [ucitele, vedeni, zaci-18plus]
+sady: [komunikace-a-podpora-ucitele]
+stitky: [čeština, pravopis, korektura, stylistika, typografie, nedělitelné mezery, větný rozbor]
+rezimy:
+  - Oprava s vyznačením změn
+  - Stylistické hodnocení
+  - Typografie a nedělitelné mezery
+  - Slovní a větný rozbor (kontrola pro učitele)
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/jazykovy-ai-korektor/
+    typ: asistent
+  - url: https://chatveskole.cz/databaze-promptu/zvyrazneni-chyb-v-textu/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/stylistika/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/nedelitelne-mezery/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/slovni-a-vetny-rozbor/
+    typ: prompt
+puvodni_asistenti:
+  gpt: https://chatgpt.com/g/g-68b59d281f9881919bd7f1e29d90b99b-jazykovy-korektor-ai-detem
+  gem: https://gemini.google.com/gem/1GBbSG57TbI2AGP1Osfsb9tkwP7BxRyFy?usp=sharing
+  # systémový prompt v Google Docs zatím neexistuje
+google_doc: https://docs.google.com/document/d/1fRcqvskNFEo5wTBvHVsj9qGFYp9rB0J_Qggat03ZvGc/edit
+google_slozka: https://drive.google.com/drive/folders/1RnUfCJ0npVn2thxU31Jh9LGFUJTMIgPW
+autori: [AI dětem, AI reaktor UJEP (Míša Liegertová)]   # ověřit: čtyři prompty z roku 2024 nejspíš z původní databáze AI reaktoru UJEP; doplnit jména
+metodika:
+  - nazev: Internetová jazyková příručka (ÚJČ AV ČR)
+    url: https://prirucka.ujc.cas.cz/
+vek: dospělí (skills jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-07

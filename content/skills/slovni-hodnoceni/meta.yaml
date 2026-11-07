@@ -1,0 +1,55 @@
+title: Slovní hodnocení
+slug: slovni-hodnoceni
+kratky_popis: Napíše, shrne nebo zkontroluje slovní hodnocení podle Vysvědčení jinak a dá žákovi zpětnou vazbu k práci podle kritérií.
+pro_koho: [ucitele]
+sady: [formativni-hodnoceni]
+stitky: [formativní hodnocení, slovní hodnocení, zpětná vazba, vysvědčení, Vysvědčení jinak]
+rezimy:
+  - Napsat slovní hodnocení (vysvědčení, průběžná zpětná vazba)
+  - Shrnout více hodnocení do jednoho
+  - Kontrola formulací (Rádce)
+  - Zpětná vazba k práci žáka
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/tvorba-slovniho-hodnoceni/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/generovani-slovniho-hodnoceni/
+    typ: asistent
+  - url: https://chatveskole.cz/databaze-promptu/radce-pro-spravne-formulace-slovniho-hodnoceni/
+    typ: asistent
+  - url: https://chatveskole.cz/databaze-promptu/tvorba-zpetne-vazby/
+    typ: prompt
+# Skill slučuje dva asistenty, proto jsou hodnoty seznamy.
+puvodni_asistenti:
+  gpt:
+    # 04 Generování slovního hodnocení – odkaz z webu
+    - https://chatgpt.com/g/g-689478f617e88191a6e69b0ed680d4a0-asistent-pro-generovani-slovniho-hodnoceni
+    # 04 Generování slovního hodnocení – jiný odkaz uvedený v Google Docu se systémovým promptem (starší verze?)
+    - https://chatgpt.com/g/g-686bc657c8008191b23f8782c5e55400-04-asistent-pro-generovani-slovniho-hodnoceni
+    # 05 Rádce pro správné formulace slovního hodnocení
+    - https://chatgpt.com/g/g-6952b9b3a4908191aa32de37f3a31e4a-radce-pro-spravne-formulace-slovniho-hodnoceni
+  gem:
+    # 04 Generování slovního hodnocení
+    - https://gemini.google.com/gem/1hJasroRmk9eLRqdQhvijp7TyWDyNV758?usp=sharing
+    # 05 Rádce
+    - https://gemini.google.com/gem/1b6piE8VT_IO-3_Q8m-Uk6YzgCOCkcn-c?usp=sharing
+  systemovy_prompt:
+    # 04 Generování slovního hodnocení
+    - https://docs.google.com/document/d/1SlTa0QhQfmKfDfN-dLi_w3yMyNmm1ssjsuQoE4Rgg20/edit?usp=sharing
+    # 05 Rádce (Šárka Polanecká)
+    - https://docs.google.com/document/d/16WmesfaR0cyf90pZEb2FVkITuX8RkFwW_4K_wa2wwVI/edit?usp=sharing
+    # Prompty pro Tiny na tvorbu formativního hodnocení (verze 2026-03-29) – nejde o GPT ani Gem, jen zdroj
+    - https://docs.google.com/document/d/1haOrj-3758yeBzmFJQeGJd-JjqAZb2f-EqawB8vwono/edit
+google_doc: https://docs.google.com/document/d/1D98KybOoVijHPFIwEy94CYBsxFYnpYKF31zVTgl9Z9E/edit
+google_slozka: https://drive.google.com/drive/folders/1BXd4fbz-IBvb6QBTJ64ywzPGw3Pa2z7G
+autori:
+  - Eva Nečasová (AI dětem)
+  - Šárka Polanecká (ZŠ Pod Beckovem) – režim Kontrola formulací
+metodika:
+  - nazev: Vysvědčení jinak (PdF MU, Jana Kratochvílová)
+    url: https://vysvedcenijinak.ped.muni.cz/
+  - nazev: Jana Kratochvílová – Jak psát slovní hodnocení na vysvědčení
+    url: https://vysvedcenijinak.ped.muni.cz/media/3580698/jak-psat-slovni-hodnoceni.pdf
+znalosti: [jak-psat-slovni-hodnoceni.md]
+vek: dospělí (skills jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-07

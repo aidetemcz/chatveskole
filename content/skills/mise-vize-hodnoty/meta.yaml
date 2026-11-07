@@ -1,0 +1,33 @@
+title: Hodnoty, mise, vize a profil absolventa
+slug: mise-vize-hodnoty
+kratky_popis: Provede školní tým otázkami k hodnotám, misi a vizi školy a k profilu absolventa a navrhne formulace k doladění.
+pro_koho: [vedeni]
+sady: [vedeni-skoly]
+stitky: [strategické plánování, hodnoty, mise, vize, profil absolventa, NPI]
+rezimy:
+  - Hodnoty
+  - Mise (poslání)
+  - Vize
+  - Profil absolventa
+  - Kontrola hotového textu
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/asistent-pro-definici-hodnot-mise-a-vize-skoly/
+    typ: asistent
+  - url: https://chatveskole.cz/databaze-promptu/formulace-hodnot-mise-a-vize-skoly/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/vytvareni-profilu-absolventa-skoly/
+    typ: prompt
+puvodni_asistenti:
+  gpt: https://chatgpt.com/g/g-68723b9c9afc819188470dd2e9b17eac-vize-a-mise-skoly
+  gem: https://gemini.google.com/gem/1ZDYRdHmHDZPtSgJqbZR2FvaWtnIem2Qw?usp=sharing
+  systemovy_prompt: https://docs.google.com/document/d/17NSQ7PsiJsQNBKefkIgtOUJaDg8e7fHbiUx36v9BvDc/edit?usp=sharing
+google_doc: https://docs.google.com/document/d/1arfBmh8D17Fae515nSf0eawsEjwJCnjivpVi7GYHktc/edit
+google_slozka: https://drive.google.com/drive/folders/1khnljfO_-PsrbJe1ppqvTGjXziCF_39B
+autori: [AI dětem]
+metodika:
+  - nazev: Strategické plánování (NPI ČR, Vedeme školu)
+    url: https://vedemeskolu.npi.cz/strategicke-planovani
+znalosti: [klicove-kompetence.md]
+vek: dospělí (skills jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-07

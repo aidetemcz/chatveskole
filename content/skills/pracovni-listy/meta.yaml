@@ -1,0 +1,59 @@
+title: Pracovní listy
+slug: pracovni-listy
+kratky_popis: Doplňovačky, spojovačky, kvízy a testy s klíčem, otázky k textu, slovníčky a listy k reflexi – žákovská verze zvlášť od řešení.
+pro_koho: [ucitele]
+sady: [priprava-vyuky]
+stitky: [pracovní list, cvičení, kvíz, test, doplňovačka, spojovačka, slovníček pojmů, reflexe]
+rezimy:
+  - Doplňovačka
+  - Spojovačka
+  - Kvíz a test
+  - Pravda / nepravda
+  - Otevřené otázky k textu
+  - Výuka s emotikony
+  - Slovníček pojmů
+  - List k reflexi učiva
+  - Početní příklady
+  - Tabulka slovní zásoby
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/doplnovacka/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/spojovacka/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/kviz/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/pracovni-list-s-otevrenymi-otazkami/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/vyuka-s-emotikony/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/slovnicek-pojmu/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/pracovni-list-pro-reflexi-uciva/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/tematicky-test-cizi-jazyk/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/matematicke-priklady/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/slovicka-nalady/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/protiklady-prid-jmena/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/doplnovacka_slovesa/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/emotikony-zivot-vaclava-havla/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/kviz-historie/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/tvorba-testu-dedicnost/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/slovnicky-pojmu/
+    typ: prompt
+google_doc: https://docs.google.com/document/d/18QxJGkByRUZtGfn0tV6Gvtp8WqbGg1U7vuchCL4FMkI/edit
+google_slozka: https://drive.google.com/drive/folders/1Fb6apT9KLJc7mqK_HnfJyVEL2NMSjDg9
+autori: [Eva Nečasová (AI dětem), AI reaktor UJEP (Míša Liegertová)]
+metodika:
+  - nazev: Revidovaná Bloomova taxonomie
+    url: https://cs.wikipedia.org/wiki/Bloomova_taxonomie
+vek: dospělí (skills jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-07

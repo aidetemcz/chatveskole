@@ -1,0 +1,31 @@
+title: Vzdělávací cíle
+slug: vzdelavaci-cile
+kratky_popis: Formuluje kompetenčně orientovaný cíl z výstupu RVP či ŠVP, zkontroluje cíl, který už máte, a upraví ho pro žáka se SVP.
+pro_koho: [ucitele]
+sady: [formativni-hodnoceni]
+stitky: [formativní hodnocení, RVP, vzdělávací cíle, klíčové kompetence, Bloomova taxonomie]
+rezimy:
+  - Formulace cíle
+  - Kontrola cíle
+  - Úprava cíle pro žáka se SVP
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/formulace-vyukoveho-cile/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/formulace-vyukoveho-cile-2/
+    typ: asistent
+  # Pozn.: ze stránky aktivity „🤓 Znalosti“ (/databaze-promptu/znalosti-zadna-ai/) se sem převzala jen akční slovesa;
+  # samotná URL se podle migrace/inventura.csv přesměruje na /funkce/prompty/zaci.
+puvodni_asistenti:
+  gpt: https://chatgpt.com/g/g-68945f386058819181ea7b0715b0f864-asistent-pro-formulaci-vzdelavacich-cilu
+  gem: https://gemini.google.com/gem/1_6sdkGYW09mxdfXG68Y82n0gWnRqQwCP?usp=sharing
+  systemovy_prompt: https://docs.google.com/document/d/1CHi4vjGcVVyHDFOjVThW07Sya_dN0OlHrtJ0r6U5K9Q/edit?usp=sharing
+google_doc: https://docs.google.com/document/d/15qxs92NMynJxiv00lPp7ffHinpYJyKc-gU8O_1JmXWA/edit
+google_slozka: https://drive.google.com/drive/folders/1_wl1U7ZGVC1aMwmfnNSFU2Q7T5fs8dwv
+autori: [Eva Nečasová (AI dětem)]
+metodika:
+  - nazev: Vysvědčení jinak (PdF MU, Jana Kratochvílová)
+    url: https://vysvedcenijinak.ped.muni.cz/
+znalosti: [formulace-vzdelavacich-cilu.md, klicove-kompetence.md, prurezova-temata.md]
+vek: dospělí (skills jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-07

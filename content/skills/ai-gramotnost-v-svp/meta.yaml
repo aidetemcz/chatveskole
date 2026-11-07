@@ -1,0 +1,26 @@
+title: AI gramotnost v RVP a ŠVP
+slug: ai-gramotnost-v-svp
+kratky_popis: Pomůže promyslet AI gramotnost v ŠVP podle kompetenčního modelu AI dětem – zmapuje pokrytí a navrhne výstupy a učivo.
+pro_koho: [vedeni]
+sady: [vedeni-skoly]
+stitky: [AI gramotnost, ŠVP, RVP, kurikulum, kompetenční model, informatika, mediální výchova]
+rezimy:
+  - Zmapování ŠVP
+  - Návrh začlenění do předmětu nebo ročníku
+  - Podklad pro sborovnu
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/ai-gramotnost-v-rvp-a-svp/
+    typ: asistent
+puvodni_asistenti:
+  gpt: https://chatgpt.com/g/g-6a215e79611c8191a7ecbe07c7253cf7-ai-gramotnost-v-rvp-a-svp
+  # systémový prompt v Google Docs zatím neexistuje
+google_doc: https://docs.google.com/document/d/17cFTBieSCfpGCJ8swpA6ucRuPFj6DpnuB9igrJ8tUio/edit
+google_slozka: https://drive.google.com/drive/folders/1Ywha8uPIPR76S_llsJXkTTr2aDhSjd8Z
+autori: [AI dětem]   # doplnit jména autorů asistenta
+metodika:
+  - nazev: Kompetenční model Kurikula umělé inteligence pro ZŠ a SŠ (AI dětem ve spolupráci s NPI ČR)
+    url: https://kurikulum.aidetem.cz/kompetencni-model/
+znalosti: [klicove-kompetence.md, prurezova-temata.md]
+vek: dospělí (skills jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-07

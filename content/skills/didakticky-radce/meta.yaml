@@ -1,0 +1,60 @@
+title: Didaktický rádce
+slug: didakticky-radce
+kratky_popis: Nápady na oživení hodiny, plán hodiny podle E-U-R, plán celku, úniková hra, projekt a otázky k závěrečné diskuzi.
+pro_koho: [ucitele]
+sady: [priprava-vyuky]
+stitky: [plánování výuky, aktivizační metody, E-U-R, Bloomova taxonomie, úniková hra, projektová výuka, EduScrum]
+rezimy:
+  - Nápady na oživení výuky
+  - Plán hodiny
+  - Plán týdne nebo tematického celku
+  - Úniková hra
+  - Projekt (EduScrum)
+  - Otázky k závěrečné diskuzi
+  - K čemu mi to je
+  - Didaktická konzultace
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/didakticky-radce/
+    typ: asistent
+  - url: https://chatveskole.cz/databaze-promptu/planovac-vyuky/
+    typ: asistent
+  - url: https://chatveskole.cz/databaze-promptu/didaktik-konzultant/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/napadnicek-geografie/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/vyukovy-plan-bloomova-taxonomie/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/osnova-lekce-informatika/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/strukturovany-ucebni-plan/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/unikovka-elektromagnetismus/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/eduscrum-mestsky-ekosystem/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/otazky-k-diskuzi/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/k-cemu-mi-to-je/
+    typ: prompt
+puvodni_asistenti:
+  gpt:
+    - https://chatgpt.com/g/g-69ef6dbd05cc8191b17afa3e47955d12-didakticky-radce
+    - https://chat.openai.com/g/g-x2QXkDh1m-planovac-vyuky
+  systemovy_prompt:
+    - https://docs.google.com/document/d/1LgOmptN21da2VhVeMYBunj_4XMEYG4HFqjuYwOkdwGw/edit
+    - https://docs.google.com/document/d/18UkBvuy0MOztMRLUuISkaGO-QU5NKCEU0fujJ-9CxZ0/edit
+google_doc: https://docs.google.com/document/d/17bYWaTJ9-df68hPHldAbUylWY6jMztki8fQMQy8KDOk/edit
+google_slozka: https://drive.google.com/drive/folders/1X7p8y0wLhLRHENL6ifY_S9pjlzA5k218
+autori: [Eva Nečasová (AI dětem), AI reaktor UJEP (Míša Liegertová)]
+metodika:
+  - nazev: Katalog aktivizačních výukových metod a Příručka aktivizační výuky (AI dětem)
+  - nazev: Model E-U-R – Čtením a psaním ke kritickému myšlení (Kritické myšlení, z. s.)
+    url: https://kritickemysleni.cz/
+  - nazev: Revidovaná Bloomova taxonomie
+    url: https://cs.wikipedia.org/wiki/Bloomova_taxonomie
+  - nazev: EduScrum
+    url: https://www.eduscrum.cz/co/
+znalosti: [katalog-aktivizacnich-metod.md, prirucka-aktivizacni-vyuky.md, formulace-vzdelavacich-cilu.md, klicove-kompetence.md, prurezova-temata.md]
+vek: dospělí (skills jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-07

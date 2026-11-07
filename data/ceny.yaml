@@ -1,0 +1,131 @@
+# Ceny a tarify chatbotů pro stránku Začínáme → Kolik stojí chatboti.
+# Stav: 7. 11. 2026. Ceny jsou orientační, vč. DPH u spotřebitelských tarifů v Kč, jinak bez DPH.
+# ⚠ = údaj z neoficiálního nebo staršího zdroje, před zveřejněním ověřit.
+# Trénink = zda výrobce smí použít vaše konverzace k učení modelů.
+
+aktualizovano: 2026-11-07
+nastroje:
+  - id: chatgpt
+    nazev: ChatGPT
+    vyrobce: OpenAI
+    cenik: https://chatgpt.com/pricing
+    tarify:
+      - nazev: Free
+        cena: 0 Kč
+        pozn: Omezený počet zpráv, obrázků a souborů. Od srpna 2026 v EU reklamy (ne pro uživatele do 18 let). Projekty ano (5 souborů na projekt).
+      - nazev: Go
+        cena: 249 Kč měsíčně ⚠
+        pozn: Víc zpráv a souborů než Free, bez nejsilnějšího modelu, s reklamami.
+      - nazev: Plus
+        cena: 499 Kč měsíčně ⚠
+        pozn: Bez reklam, plné funkce včetně hloubkového výzkumu, pluginů a ChatGPT Work.
+      - nazev: Pro
+        cena: 100 USD měsíčně
+        pozn: Pro náročné uživatele a programování.
+      - nazev: Business
+        cena: 25 USD za uživatele měsíčně (20 USD při ročním placení), min. 2 uživatelé
+        pozn: Data se nepoužívají k tréninku, samostatné skills, sdílení v rámci organizace.
+      - nazev: Edu
+        cena: na dotaz
+        pozn: Jen pro vysoké školy.
+    trenink: U osobních tarifů ano, dá se vypnout v Nastavení → Ovládání dat. Business a Edu ne.
+    zdroje:
+      - https://chatgpt.com/pricing
+      - https://help.openai.com/en/articles/5722486
+      - https://openai.com/blog/chatgpt-ads-expands-across-europe
+
+  - id: gemini
+    nazev: Google Gemini
+    vyrobce: Google
+    cenik: https://gemini.google/subscriptions/
+    tarify:
+      - nazev: Zdarma
+        cena: 0 Kč
+        pozn: Hloubkový výzkum, obrázky, Canvas, Gemini Notebook (dříve NotebookLM), skills od 18 let.
+      - nazev: Google AI Plus
+        cena: 220 Kč měsíčně
+        pozn: Vyšší limity, víc úložiště.
+      - nazev: Google AI Pro
+        cena: 549,99 Kč měsíčně
+        pozn: Nejsilnější modely, video, 2 TB úložiště. Jen 18+.
+      - nazev: Google AI Ultra
+        cena: od 2 999,99 Kč měsíčně
+        pozn: Pro profesionály. Jen 18+.
+      - nazev: Google Workspace for Education
+        cena: zdarma pro školy
+        pozn: Gemini a Gemini Notebook ve všech edicích. Data se nepoužívají k tréninku a nečtou je lidé. Pro žáky do 18 let omezené funkce, zapíná správce.
+    trenink: U osobních účtů se zapnutou historií aktivity ano (část konverzací čtou lidé), dá se vypnout. Školní účty ne.
+    zdroje:
+      - https://gemini.google/subscriptions/
+      - https://knowledge.workspace.google.com/admin/getting-started/editions/quickstart-guide-to-gemini-and-gemini-notebook-for-education
+      - https://support.google.com/gemini/answer/13594961
+
+  - id: copilot
+    nazev: Microsoft Copilot
+    vyrobce: Microsoft
+    cenik: https://www.microsoft.com/cs-cz/microsoft-365/buy/compare-all-microsoft-365-products
+    tarify:
+      - nazev: Copilot (aplikace) a Copilot Chat se školním účtem
+        cena: 0 Kč
+        pozn: Se školní licencí A1/A3/A5 zdarma; data zůstávají ve škole a netrénuje se na nich. Agenti jen s pokyny a webem.
+      - nazev: Microsoft 365 Personal
+        cena: 269 Kč měsíčně / 2 699 Kč ročně
+        pozn: Copilot ve Wordu, Excelu, PowerPointu a Outlooku.
+      - nazev: Microsoft 365 Premium
+        cena: 549 Kč měsíčně / 5 489 Kč ročně
+        pozn: Vyšší limity, výzkumní agenti.
+      - nazev: Microsoft 365 Copilot (licence pro školy)
+        cena: 18 USD za uživatele měsíčně
+        pozn: Copilot nad daty školy, Cowork, skills, Agent Builder s daty.
+    trenink: Na datech uživatelů z EU a uživatelů do 18 let Microsoft netrénuje.
+    zdroje:
+      - https://www.microsoft.com/cs-cz/microsoft-365/buy/compare-all-microsoft-365-products
+      - https://www.microsoft.com/en-us/education/products/copilot-in-education
+
+  - id: claude
+    nazev: Claude
+    vyrobce: Anthropic
+    cenik: https://claude.com/pricing
+    tarify:
+      - nazev: Free
+        cena: 0 Kč
+        pozn: Projekty (nejvýš 5), skills, konektory, paměť, Docs, Slides a Design. Bez Research a Claude Code.
+      - nazev: Pro
+        cena: 20 USD měsíčně (17 USD při ročním placení)
+        pozn: Research, Claude Code, samostatná práce na úkolech, pluginy, sdílení artefaktů odkazem.
+      - nazev: Max
+        cena: 100 USD měsíčně
+        pozn: Pětinásobné limity proti Pro.
+      - nazev: Ultra
+        cena: 200 USD měsíčně
+        pozn: Desetinásobné limity proti Pro (dříve „Max 20x“).
+      - nazev: Team
+        cena: od 25 USD za uživatele měsíčně (20 USD ročně), 2–150 míst
+        pozn: Data se nepoužívají k tréninku, sdílení skills a pluginů v rámci organizace.
+      - nazev: Education
+        cena: na dotaz
+        pozn: Pro vysoké školy.
+    trenink: U Free, Pro a Max rozhodujete sami (přepínač „Help improve Claude“). Team a Education ne.
+    zdroje:
+      - https://claude.com/pricing
+      - https://www.anthropic.com/news/updates-to-our-consumer-terms
+
+  - id: perplexity
+    nazev: Perplexity
+    vyrobce: Perplexity AI
+    cenik: https://www.perplexity.ai/pro
+    tarify:
+      - nazev: Free
+        cena: 0 Kč
+        pozn: Vyhledávání s citacemi zdrojů.
+      - nazev: Pro
+        cena: 20 USD měsíčně ⚠
+        pozn: Silnější modely, víc hloubkových rešerší.
+      - nazev: Education Pro
+        cena: 10 USD měsíčně ⚠
+        pozn: Pro studenty a učitele s ověřením.
+    trenink: Ve výchozím stavu ano, dá se vypnout v Settings → Preferences.
+    zdroje:
+      - https://www.perplexity.ai/hub/legal/terms-of-service
+
+zahranicni_platby: Tarify v USD a EUR platíte zahraniční firmě — viz stránka Zahraniční platby pro neplátce DPH.

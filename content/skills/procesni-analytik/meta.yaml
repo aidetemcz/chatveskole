@@ -1,0 +1,29 @@
+title: Procesní analytik
+slug: procesni-analytik
+kratky_popis: Z přepisu nebo nahrávky obrazovky sestaví věrnou mapu administrativního procesu školy, jak dnes skutečně probíhá.
+pro_koho: [vedeni]
+sady: [ai-akcelerator]
+stitky: [AI akcelerátor, administrativa, procesy, mapování procesu, karta procesu]
+rezimy:
+  - Mapa stávajícího procesu
+  - Diagram (na vyžádání)
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/procesni-analytik-ai-detem/
+    typ: asistent
+puvodni_asistenti:
+  gem: https://gemini.google.com/gem/152vcaYvQ_O-ln3-KxCv4g49-O_ZTzYLg?usp=sharing
+  systemovy_prompt:
+    - https://drive.google.com/drive/folders/1yXgO86zo2-x93QALLDZZVugjEN_ArsYz?usp=drive_link   # složka uvedená na webu
+    - https://docs.google.com/document/d/1Zw7UIHXLtKbEYf-eId0NHywp_D7WTEXV7_QYpcHhi2w/edit
+google_doc: https://docs.google.com/document/d/10Ojs971Ls5kjx4T_bhOjVPEQ7jZ4BVRwJ8e9nheO7Co/edit
+google_slozka: https://drive.google.com/drive/folders/1Q8asrLsZvGG9QGksZI4DWacLuVKO8E3Y
+autori: [tým AI akcelerátoru (AI dětem)]   # doplnit jména autorů asistenta
+metodika:
+  - nazev: AI akcelerátor – oblast Administrativa (AI dětem)
+    url: https://aidetem.cz/ai-akcelerator-oblast-administrativa/
+  - nazev: Karta procesu (AI akcelerátor)
+    url: https://aidetem.cz/ai-akcelerator-karta-procesu/
+znalosti: []
+vek: dospělí (skills jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-07

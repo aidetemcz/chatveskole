@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.astro/
+.vercel/
+.env
+.env.*
+.DS_Store
+Thumbs.db
+# přenosový archiv z Claude (lze smazat)
+_prenos-*.zip
+# vygenerované složky pro Google Disk (scripts/build-google-drive.py)
+google-drive/

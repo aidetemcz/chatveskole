@@ -1,0 +1,40 @@
+title: Komunikace s rodiči
+slug: komunikace-s-rodici
+kratky_popis: Napíše zprávu rodičům — od odpovědi na stížnost po pozvánku na akci — nebo pomůže promyslet postup v citlivé situaci.
+pro_koho: [ucitele, vedeni]
+sady: [komunikace-a-podpora-ucitele]
+stitky: [komunikace s rodiči, třídní učitel, stížnost, pozvánka, třídní schůzka, generativní AI]
+rezimy:
+  - Odpověď na stížnost rodiče
+  - Zpráva o pokroku žáka
+  - Vysvětlení využití generativní AI ve výuce
+  - Pozvánka na školní akci (e-mail, plakát, sociální sítě, newsletter, web)
+  - Informace o školním projektu
+  - Pozvánka na třídní schůzku
+  - Promyslet postup v citlivé situaci
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/reakce-na-stiznost-rodice/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/zprava-o-pokroku-zaka/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/vysvetleni-vyznamu-vyuziti-generativni-ai-ve-vyuce/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/pozvanka-na-skolni-akci/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/informace-o-skolnim-projektu/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/komunikace-s-rodici/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/komunikace-s-rodici-pozvanka/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/komunikace-s-rodici-stiznost/
+    typ: prompt
+puvodni_asistenti:
+  gpt: https://chatgpt.com/g/g-69ef768b4d088191b3201a7402247ea9-komunikace-s-rodici
+  systemovy_prompt: https://docs.google.com/document/d/1DqhA9y-K-UZVOoVmdwkEZ81oKO7bFZZxykwOM3Twajo/edit
+google_doc: https://docs.google.com/document/d/12SwTwjk7d3B0kK_Q-_sKmoXZIEAk0yocqIeiFIiynyA/edit
+google_slozka: https://drive.google.com/drive/folders/1msQGOOgc24kYCw7X0vAUfzOEd0MFuWek
+autori: [AI dětem, AI reaktor UJEP (Míša Liegertová)]   # ověřit: tři prompty z roku 2024 nejspíš z původní databáze AI reaktoru UJEP; doplnit jména
+vek: dospělí (skills jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-07

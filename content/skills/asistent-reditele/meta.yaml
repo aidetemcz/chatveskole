@@ -1,0 +1,21 @@
+title: Asistent ředitele
+slug: asistent-reditele
+kratky_popis: Pomůže řediteli s každodenní agendou – porady, směrnice, e-maily, zpětná vazba pedagogům, SWOT – s výstupy k okamžitému použití.
+pro_koho: [vedeni]
+sady: [vedeni-skoly]
+stitky: [řízení školy, administrativa, porady, směrnice, zpětná vazba, rozvoj pedagogů, komunikace]
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/asistent-reditele/
+    typ: asistent
+puvodni_asistenti:
+  gpt: https://chatgpt.com/g/g-69b93abbb5388191a0097465df684ee0-asistent-reditele
+  gem: https://gemini.google.com/gem/1zBbC1kfE9GlZF3uiqbFCRSpu0n5WUPxw?usp=sharing
+  systemovy_prompt: https://docs.google.com/document/d/1S0ozcqPkcF2gL3HjDqZMRs24hYMg4GlfrhnyJlCe0gg/edit?usp=sharing
+google_doc: https://docs.google.com/document/d/19bCRu39BUgojbsqiFgIM-you5ItsEY3rDuAHZpj55JA/edit
+google_slozka: https://drive.google.com/drive/folders/14TTe3wJ0ZSDWWHgJ-XOxEBYUT8L7jfiC
+autori: [AI dětem]   # doplnit jména autorů asistenta
+metodika: []
+znalosti: []
+vek: dospělí (skills jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-07

@@ -1,0 +1,42 @@
+{
+  "name": "aidetem",
+  "owner": {
+    "name": "AI dětem, z. ú.",
+    "url": "https://aidetem.cz"
+  },
+  "metadata": {
+    "description": "Skills pro učitele a vedení škol z webu Chatboti ve škole (chatveskole.cz)."
+  },
+  "plugins": [
+    {
+      "name": "aidetem-formativni-hodnoceni",
+      "source": "./plugins/aidetem-formativni-hodnoceni",
+      "description": "Od vzdělávacího cíle přes kritéria a sebehodnocení až ke slovnímu hodnocení. Postaveno na metodice Vysvědčení jinak (PdF MU).",
+      "version": "0.1.0"
+    },
+    {
+      "name": "aidetem-priprava-vyuky",
+      "source": "./plugins/aidetem-priprava-vyuky",
+      "description": "Nápady na hodiny, pracovní listy, úpravy materiálů pro různé žáky a aktivity, ve kterých s chatbotem pracují sami žáci.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "aidetem-komunikace-a-podpora-ucitele",
+      "source": "./plugins/aidetem-komunikace-a-podpora-ucitele",
+      "description": "Zprávy rodičům, jazyková kontrola textů a mentor pro náročné situace ve třídě.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "aidetem-vedeni-skoly",
+      "source": "./plugins/aidetem-vedeni-skoly",
+      "description": "Hodnoty, mise a vize, školní pravidla, strategické dokumenty, AI gramotnost v ŠVP a každodenní agenda ředitele.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "aidetem-ai-akcelerator",
+      "source": "./plugins/aidetem-ai-akcelerator",
+      "description": "Nástroje pro školy v programu AI akcelerátor — řízení změny podle ADKAR a mapování administrativních procesů.",
+      "version": "0.1.0"
+    }
+  ]
+}

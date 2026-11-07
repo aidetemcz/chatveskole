@@ -1,0 +1,36 @@
+# Znalostní soubory na Google Disku. Klíč = název, kterým na soubor odkazují skills (meta.yaml → znalosti).
+# Web je u skillu nabízí ke stažení. Soubory musí být na Disku sdílené „kdokoli s odkazem může zobrazit“.
+# Všechny soubory jsou veřejné (rozhodnutí 7. 11. 2026). Kopie jsou i ve složkách Data jednotlivých skills na Disku.
+
+klicove-kompetence.md:
+  nazev: Klíčové kompetence (revidovaný RVP ZV)
+  url: https://drive.google.com/file/d/1Mt8zIdQGchiQK-C5u_jeQ19_lGM__9zM/view
+  verejne: true
+prurezova-temata.md:
+  nazev: Průřezová témata (revidovaný RVP ZV)
+  url: https://drive.google.com/file/d/1TzdHLyPEWo8mHcj09bLC1G0etdq_NtoY/view
+  verejne: true
+formulace-vzdelavacich-cilu.md:
+  nazev: Jak formulovat vzdělávací cíle
+  url: https://drive.google.com/file/d/1f4TRXygkmL_am5RKBqQdGbYlPEXIeBQ2/view
+  verejne: true      # před zveřejněním vyměnit citlivé příklady kontextů (viz docs/otevrene-otazky.md)
+spravna-formulace-kriterii-hodnoceni.md:
+  nazev: Správná formulace kritérií hodnocení
+  url: https://drive.google.com/file/d/17u-LvwdHGQrzUX7-RzIeQPYZ11ZWYLaB/view
+  verejne: true
+jedinci-se-specialnimi-vzdelavacimi-potrebami.md:
+  nazev: Žáci se speciálními vzdělávacími potřebami
+  url: https://drive.google.com/file/d/17ITGWWSi0DgRARRTrAALyQDpAv7eMpHJ/view
+  verejne: true
+jak-psat-slovni-hodnoceni.md:
+  nazev: Jak psát slovní hodnocení na vysvědčení (J. Kratochvílová, Vysvědčení jinak)
+  url: https://drive.google.com/file/d/1keh7tmX6Wcm-lBjluInerVv6mk9ElqeZ/view
+  verejne: true
+katalog-aktivizacnich-metod.md:
+  nazev: Katalog aktivizačních metod
+  url: https://drive.google.com/file/d/1UKRAdLd_gzUoKRk1Hjr2V8kUrn6I_vE1/view
+  verejne: true
+prirucka-aktivizacni-vyuky.md:
+  nazev: Příručka aktivizační výuky
+  url: https://drive.google.com/file/d/1a0v4R5Lm_mR5zpngtIAv8Omhy4TcKDGT/view
+  verejne: true

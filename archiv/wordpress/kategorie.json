@@ -1,0 +1,191 @@
+[
+  {
+    "id": 17,
+    "slug": "adaptivni-vzdelavani",
+    "nazev": "Adaptivní vzdělávání →",
+    "pocet": 13,
+    "link": "https://chatveskole.cz/dp/adaptivni-vzdelavani/"
+  },
+  {
+    "id": 81,
+    "slug": "ai-asistenti-ruzne",
+    "nazev": "AI asistenti (různé) →",
+    "pocet": 5,
+    "link": "https://chatveskole.cz/dp/ai-asistenti-ruzne/"
+  },
+  {
+    "id": 83,
+    "slug": "ai-asistenti-ai-akcelerator-%e2%86%92",
+    "nazev": "AI asistenti pro AI akcelerátor →",
+    "pocet": 4,
+    "link": "https://chatveskole.cz/dp/ai-asistenti-ai-akcelerator-%e2%86%92/"
+  },
+  {
+    "id": 80,
+    "slug": "ai-asistenti-pro-hodnoceni-%e2%86%92",
+    "nazev": "AI asistenti pro hodnocení →",
+    "pocet": 5,
+    "link": "https://chatveskole.cz/dp/ai-asistenti-pro-hodnoceni-%e2%86%92/"
+  },
+  {
+    "id": 82,
+    "slug": "ai-asistenti-pro-rizeni-skoly",
+    "nazev": "AI asistenti pro řízení školy →",
+    "pocet": 5,
+    "link": "https://chatveskole.cz/dp/ai-asistenti-pro-rizeni-skoly/"
+  },
+  {
+    "id": 73,
+    "slug": "aktualizace-materialu-%e2%86%92",
+    "nazev": "Aktualizace materiálů →",
+    "pocet": 4,
+    "link": "https://chatveskole.cz/dp/aktualizace-materialu-%e2%86%92/"
+  },
+  {
+    "id": 69,
+    "slug": "formativni-hodnoceni",
+    "nazev": "Formativní hodnocení →",
+    "pocet": 6,
+    "link": "https://chatveskole.cz/dp/formativni-hodnoceni/"
+  },
+  {
+    "id": 13,
+    "slug": "hodnoceni",
+    "nazev": "Hodnocení →",
+    "pocet": 2,
+    "link": "https://chatveskole.cz/dp/hodnoceni/"
+  },
+  {
+    "id": 70,
+    "slug": "komunikace-s-rodici-%e2%86%92",
+    "nazev": "Komunikace s rodiči →",
+    "pocet": 5,
+    "link": "https://chatveskole.cz/dp/komunikace-s-rodici-%e2%86%92/"
+  },
+  {
+    "id": 84,
+    "slug": "oborovi-ai-asistenti",
+    "nazev": "Oboroví AI asistenti →",
+    "pocet": 3,
+    "link": "https://chatveskole.cz/dp/oborovi-ai-asistenti/"
+  },
+  {
+    "id": 74,
+    "slug": "planovani-vyuky-%e2%86%92",
+    "nazev": "Plánování výuky →",
+    "pocet": 0,
+    "link": "https://chatveskole.cz/dp/planovani-vyuky-%e2%86%92/"
+  },
+  {
+    "id": 55,
+    "slug": "prace-s-textem",
+    "nazev": "Práce s textem →",
+    "pocet": 7,
+    "link": "https://chatveskole.cz/dp/prace-s-textem/"
+  },
+  {
+    "id": 79,
+    "slug": "principy-vyuziti-genai-ve-vyuce",
+    "nazev": "Principy využití GenAI ve výuce",
+    "pocet": 8,
+    "link": "https://chatveskole.cz/dp/principy-vyuziti-genai-ve-vyuce/"
+  },
+  {
+    "id": 14,
+    "slug": "projektova-vyuka",
+    "nazev": "Projektová výuka →",
+    "pocet": 1,
+    "link": "https://chatveskole.cz/dp/projektova-vyuka/"
+  },
+  {
+    "id": 68,
+    "slug": "prompty-pro-pedagogy",
+    "nazev": "Prompty pro pedagogy",
+    "pocet": 32,
+    "link": "https://chatveskole.cz/dp/prompty-pro-pedagogy/"
+  },
+  {
+    "id": 78,
+    "slug": "prompty-pro-zaky",
+    "nazev": "Prompty pro žáky",
+    "pocet": 8,
+    "link": "https://chatveskole.cz/dp/prompty-pro-zaky/"
+  },
+  {
+    "id": 45,
+    "slug": "rizeni-a-administrativa-%e2%86%92",
+    "nazev": "Řízení a administrativa →",
+    "pocet": 5,
+    "link": "https://chatveskole.cz/dp/rizeni-a-administrativa-%e2%86%92/"
+  },
+  {
+    "id": 44,
+    "slug": "ruzne",
+    "nazev": "Různé →",
+    "pocet": 4,
+    "link": "https://chatveskole.cz/dp/ruzne/"
+  },
+  {
+    "id": 46,
+    "slug": "seberozvoj-%e2%86%92",
+    "nazev": "Seberozvoj →",
+    "pocet": 3,
+    "link": "https://chatveskole.cz/dp/seberozvoj-%e2%86%92/"
+  },
+  {
+    "id": 72,
+    "slug": "slovni-hodnoceni-%e2%86%92",
+    "nazev": "Slovní hodnocení →",
+    "pocet": 4,
+    "link": "https://chatveskole.cz/dp/slovni-hodnoceni-%e2%86%92/"
+  },
+  {
+    "id": 71,
+    "slug": "tvorba-materialu-do-vyuky",
+    "nazev": "Tvorba materiálů do výuky →",
+    "pocet": 8,
+    "link": "https://chatveskole.cz/dp/tvorba-materialu-do-vyuky/"
+  },
+  {
+    "id": 77,
+    "slug": "tvorba-strategickych-dokumentu",
+    "nazev": "Tvorba strategických dokumentů",
+    "pocet": 9,
+    "link": "https://chatveskole.cz/dp/tvorba-strategickych-dokumentu/"
+  },
+  {
+    "id": 75,
+    "slug": "tvorba-vzdelavaci-strategie-skoly-%e2%86%92",
+    "nazev": "Tvorba vzdělávací strategie školy →",
+    "pocet": 0,
+    "link": "https://chatveskole.cz/dp/tvorba-vzdelavaci-strategie-skoly-%e2%86%92/"
+  },
+  {
+    "id": 11,
+    "slug": "vizualizace",
+    "nazev": "Vizualizace →",
+    "pocet": 7,
+    "link": "https://chatveskole.cz/dp/vizualizace/"
+  },
+  {
+    "id": 12,
+    "slug": "vytvareni-lekci",
+    "nazev": "Vytváření lekcí →",
+    "pocet": 8,
+    "link": "https://chatveskole.cz/dp/vytvareni-lekci/"
+  },
+  {
+    "id": 35,
+    "slug": "vytvareni-pracovnich-listu",
+    "nazev": "Vytváření pracovních listů →",
+    "pocet": 6,
+    "link": "https://chatveskole.cz/dp/vytvareni-pracovnich-listu/"
+  },
+  {
+    "id": 76,
+    "slug": "zacleneni-ai-do-praxe-%e2%86%92",
+    "nazev": "Začlenění AI do praxe →",
+    "pocet": 0,
+    "link": "https://chatveskole.cz/dp/zacleneni-ai-do-praxe-%e2%86%92/"
+  }
+]

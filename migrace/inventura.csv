@@ -1,0 +1,174 @@
+typ,stará URL,nová URL,akce,druh obsahu,poznámka
+stránka,https://chatveskole.cz/,/,přepsat,,Nová homepage podle nového menu
+stránka,https://chatveskole.cz/pruvodce-chatgpt-pro-ucitele/,/,smazat,,Duplikát homepage (stará verze)
+stránka,https://chatveskole.cz/jak-to-funguje/,/funkce/prompty,smazat,,"Stará stránka o ChatGPT, rozbitý obsah (lorem text), odkazy na gptveskole.cz"
+stránka,https://chatveskole.cz/jak-funguji-chatboti/,/zaciname/jak-funguji-chatboti,aktualizovat,,
+stránka,https://chatveskole.cz/dostupne-nastroje/,/zaciname/dostupne-nastroje,přepsat,,"Nová tabulka nástrojů 2026, bez Perplexity jako hlavního nástroje"
+stránka,https://chatveskole.cz/kolik-stoji/,/zaciname/kolik-stoji-chatboti,přepsat,,Ceny se na webu nezobrazují (0 Kč) — nová data z data/ceny.yaml
+stránka,https://chatveskole.cz/registrace-do-sluzeb/,/zaciname/registrace,aktualizovat,,
+stránka,https://chatveskole.cz/vekove-limity-pravo/,/zaciname/vekove-limity-a-legislativa,přepsat,,"Doplnit AI Act, ChatGPT pro teenagery, Gemini 18+ mimo školní účty"
+stránka,https://chatveskole.cz/zahranicni-platby-pro-neplatce-dph/,/zaciname/zahranicni-platby,aktualizovat,,Ověřit u daňového poradce
+stránka,https://chatveskole.cz/co-je-to-prompt/,/funkce/prompty,sloučit,,Sloučeno do stránky Prompty
+stránka,https://chatveskole.cz/jak-vytvaret-prompt/,/funkce/prompty,sloučit,,Sloučeno do stránky Prompty
+stránka,https://chatveskole.cz/prompty/,/funkce/prompty,přesunout,,Databáze promptů → Funkce → Prompty
+stránka,https://chatveskole.cz/prompty-pro-pedagogy/,/funkce/prompty,přesunout,,Databáze promptů → Funkce → Prompty
+stránka,https://chatveskole.cz/zpusoby-vyuziti-genai-ve-vyuce/,/funkce/prompty/zaci,přesunout,,10 způsobů využití GenAI + žákovské prompty (s NPI)
+stránka,https://chatveskole.cz/co-jsou-ai-asistenti/,/funkce/zmeny-2026,nahradit,,"Asistenti (GPTs, Gems) končí — vysvětlení na stránce změn"
+stránka,https://chatveskole.cz/jak-vyuzivat-ai-asistenty/,/funkce/skills,nahradit,,Instalace skills místo GPTs/Gems
+stránka,https://chatveskole.cz/jak-vytvaret-ai-asistenty/,/funkce/skills,nahradit,,Jak napsat vlastní skill
+stránka,https://chatveskole.cz/tvorba-systemoveho-promptu/,/funkce/skills,sloučit,,Principy systémového promptu → psaní SKILL.md
+stránka,https://chatveskole.cz/jaka-data-do-ai-asistenta-patri/,/funkce/projekty,sloučit,,Jaká data nahrávat do projektů a skills
+stránka,https://chatveskole.cz/testovani-a-publikace/,/funkce/skills,sloučit,,Testování a sdílení skills
+stránka,https://chatveskole.cz/databaze-ai-asistentu/,/skills,nahradit,,Asistenti převedeni na skills
+stránka,https://chatveskole.cz/vyuziti-chatbotu-ve-formativnim-hodnoceni/,/sady/formativni-hodnoceni,přesunout,,Rozcestník sady Formativní hodnocení
+stránka,https://chatveskole.cz/materialy-do-vyuky/,/ve-vyuce/metodiky,přepsat,,Metodické materiály: Tiny + AI kurikulum
+stránka,https://chatveskole.cz/strategie-vyuziti-umele-inteligence-ai-ve-skolach/,/ve-vyuce/pravidla-pro-ai,sloučit,,Tabulka J. Lodge jako podklad k volbě strategie
+stránka,https://chatveskole.cz/doporuceni-pro-vyuzivani-ai-na-zs-a-ss/,/ve-vyuce/doporuceni-zs-ss,aktualizovat,,NPI Jak na AI ve škole (2025)
+stránka,https://chatveskole.cz/doporuceni-pro-vyuzivani-ai-na-vs/,/ve-vyuce/doporuceni-vs,aktualizovat,,
+stránka,https://chatveskole.cz/kdo-za-tim-stoji/,/o-webu/kdo-za-tim-stoji,aktualizovat,,
+stránka,https://chatveskole.cz/kontakt/,/o-webu/kontakt,aktualizovat,,Sloučit s Pošlete nám prompt
+stránka,https://chatveskole.cz/poslete-nam-prompt/,/o-webu/kontakt,sloučit,,Formulář na návrhy skills/promptů
+stránka,https://chatveskole.cz/jak-ucit-a-hodnotit-s-ai/,/funkce/prompty/zaci,přesměrovat,,Rozbitý odkaz v patičce
+databáze promptů,https://chatveskole.cz/databaze-promptu/3d-model-kvetu/,/funkce/prompty/3d-model-kvetu,zachovat jako prompt,prompt,Starší prompt 2024; dnes vibe coding — odkaz na /vibe-coding/materialy-do-vyuky
+databáze promptů,https://chatveskole.cz/databaze-promptu/ai-gramotnost-v-rvp-a-svp/,/skills/ai-gramotnost-v-svp,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/aktualizace-tematickeho-planu/,/funkce/prompty/aktualizace-tematickeho-planu,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem uprava-materialu
+databáze promptů,https://chatveskole.cz/databaze-promptu/argumentace/,/funkce/prompty/zaci/argumentace,zachovat jako prompt,prompt,Žákovský prompt (skills jsou 18+)
+databáze promptů,https://chatveskole.cz/databaze-promptu/asistent-poznej-svet-zemepisny-kviz/,/skills/aktivity-s-chatbotem,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/asistent-pro-definici-hodnot-mise-a-vize-skoly/,/skills/mise-vize-hodnoty,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/asistent-pro-rozvoj-mysleni/,/skills/rozvoj-mysleni,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/asistent-reditele/,/skills/asistent-reditele,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/brainstorming/,/funkce/prompty/zaci/brainstorming,zachovat jako prompt,prompt,Žákovský prompt (skills jsou 18+)
+databáze promptů,https://chatveskole.cz/databaze-promptu/casove-osy/,/funkce/prompty/casove-osy,zachovat jako prompt,prompt,Starší prompt 2024; dnes vibe coding — odkaz na /vibe-coding/materialy-do-vyuky
+databáze promptů,https://chatveskole.cz/databaze-promptu/chatboti-ve-skole-analogie/,/funkce/prompty/chatboti-ve-skole-analogie,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem ucitelsky-mentor
+databáze promptů,https://chatveskole.cz/databaze-promptu/cool_bot_vynalezy/,/funkce/prompty/cool_bot_vynalezy,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem aktivity-s-chatbotem
+databáze promptů,https://chatveskole.cz/databaze-promptu/derivace-latex/,/funkce/prompty/derivace-latex,zachovat jako prompt,prompt,Starší prompt 2024; dnes vibe coding — odkaz na /vibe-coding/materialy-do-vyuky
+databáze promptů,https://chatveskole.cz/databaze-promptu/didakticky-radce/,/skills/didakticky-radce,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/didaktik-konzultant/,/funkce/prompty/didaktik-konzultant,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem didakticky-radce
+databáze promptů,https://chatveskole.cz/databaze-promptu/diferenciace-textu-rozhovory/,/funkce/prompty/diferenciace-textu-rozhovory,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem uprava-materialu
+databáze promptů,https://chatveskole.cz/databaze-promptu/diskuzni-bot-genetika/,/funkce/prompty/diskuzni-bot-genetika,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem aktivity-s-chatbotem
+databáze promptů,https://chatveskole.cz/databaze-promptu/doplnovacka/,/funkce/prompty/doplnovacka,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem pracovni-listy
+databáze promptů,https://chatveskole.cz/databaze-promptu/doplnovacka_slovesa/,/funkce/prompty/doplnovacka_slovesa,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem pracovni-listy
+databáze promptů,https://chatveskole.cz/databaze-promptu/eduscrum-mestsky-ekosystem/,/funkce/prompty/eduscrum-mestsky-ekosystem,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem didakticky-radce
+databáze promptů,https://chatveskole.cz/databaze-promptu/emotikony-zivot-vaclava-havla/,/funkce/prompty/emotikony-zivot-vaclava-havla,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem pracovni-listy
+databáze promptů,https://chatveskole.cz/databaze-promptu/formulace-hodnot-mise-a-vize-skoly/,/funkce/prompty/formulace-hodnot-mise-a-vize-skoly,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem mise-vize-hodnoty
+databáze promptů,https://chatveskole.cz/databaze-promptu/formulace-kriterii-hodnoceni/,/skills/kriteria-hodnoceni,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/formulace-vyukoveho-cile/,/funkce/prompty/formulace-vyukoveho-cile,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem vzdelavaci-cile
+databáze promptů,https://chatveskole.cz/databaze-promptu/formulace-vyukoveho-cile-2/,/skills/vzdelavaci-cile,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/generovani-slovniho-hodnoceni/,/skills/slovni-hodnoceni,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/graf-regiony/,/funkce/prompty/graf-regiony,zachovat jako prompt,prompt,Starší prompt 2024; dnes vibe coding — odkaz na /vibe-coding/materialy-do-vyuky
+databáze promptů,https://chatveskole.cz/databaze-promptu/hadej-chemicke-prvky/,/funkce/prompty/hadej-chemicke-prvky,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem aktivity-s-chatbotem
+databáze promptů,https://chatveskole.cz/databaze-promptu/hadej-chemicke-prvky-asistent/,/skills/aktivity-s-chatbotem,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/hraj-roli-chloroplast/,/funkce/prompty/hraj-roli-chloroplast,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem aktivity-s-chatbotem
+databáze promptů,https://chatveskole.cz/databaze-promptu/hrani-dvou-roli-bunka/,/funkce/prompty/hrani-dvou-roli-bunka,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem aktivity-s-chatbotem
+databáze promptů,https://chatveskole.cz/databaze-promptu/individualizace-vyukovych-cilu/,/funkce/prompty/individualizace-vyukovych-cilu,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem uprava-materialu
+databáze promptů,https://chatveskole.cz/databaze-promptu/informace-o-skolnim-projektu/,/funkce/prompty/informace-o-skolnim-projektu,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem komunikace-s-rodici
+databáze promptů,https://chatveskole.cz/databaze-promptu/integrace-digitalniho-wellbeingu/,/funkce/prompty/integrace-digitalniho-wellbeingu,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem strategicke-dokumenty
+databáze promptů,https://chatveskole.cz/databaze-promptu/jazykovy-ai-korektor/,/skills/jazykovy-korektor,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/k-cemu-mi-to-je/,/funkce/prompty/k-cemu-mi-to-je,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem didakticky-radce
+databáze promptů,https://chatveskole.cz/databaze-promptu/karierni-poradce-se-zamerenim-na-matematiku/,/skills/aktivity-s-chatbotem,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/kolacovy-graf-vitaminy/,/funkce/prompty/kolacovy-graf-vitaminy,zachovat jako prompt,prompt,Starší prompt 2024; dnes vibe coding — odkaz na /vibe-coding/materialy-do-vyuky
+databáze promptů,https://chatveskole.cz/databaze-promptu/komunikace-s-rodici/,/funkce/prompty/komunikace-s-rodici,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem komunikace-s-rodici
+databáze promptů,https://chatveskole.cz/databaze-promptu/komunikace-s-rodici-pozvanka/,/funkce/prompty/komunikace-s-rodici-pozvanka,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem komunikace-s-rodici
+databáze promptů,https://chatveskole.cz/databaze-promptu/komunikace-s-rodici-stiznost/,/funkce/prompty/komunikace-s-rodici-stiznost,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem komunikace-s-rodici
+databáze promptů,https://chatveskole.cz/databaze-promptu/kostka-format-stl/,/funkce/prompty/kostka-format-stl,zachovat jako prompt,prompt,Starší prompt 2024; dnes vibe coding — odkaz na /vibe-coding/materialy-do-vyuky
+databáze promptů,https://chatveskole.cz/databaze-promptu/kultura-a-komunikace-skoly-adkar/,/skills/rizeni-zmeny,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/kviz/,/funkce/prompty/kviz,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem pracovni-listy
+databáze promptů,https://chatveskole.cz/databaze-promptu/kviz-historie/,/funkce/prompty/kviz-historie,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem pracovni-listy
+databáze promptů,https://chatveskole.cz/databaze-promptu/matematicke-priklady/,/funkce/prompty/matematicke-priklady,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem pracovni-listy
+databáze promptů,https://chatveskole.cz/databaze-promptu/myslenkove-mapy-dreviny/,/funkce/prompty/myslenkove-mapy-dreviny,zachovat jako prompt,prompt,Starší prompt 2024; dnes vibe coding — odkaz na /vibe-coding/materialy-do-vyuky
+databáze promptů,https://chatveskole.cz/databaze-promptu/napadnicek-geografie/,/funkce/prompty/napadnicek-geografie,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem didakticky-radce
+databáze promptů,https://chatveskole.cz/databaze-promptu/navrh-systemu-vnitrniho-hodnoceni-kvality-vyuky/,/funkce/prompty/navrh-systemu-vnitrniho-hodnoceni-kvality-vyuky,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem strategicke-dokumenty
+databáze promptů,https://chatveskole.cz/databaze-promptu/nedelitelne-mezery/,/funkce/prompty/nedelitelne-mezery,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem jazykovy-korektor
+databáze promptů,https://chatveskole.cz/databaze-promptu/obsahova-struktura/,/funkce/prompty/zaci/obsahova-struktura,zachovat jako prompt,prompt,Žákovský prompt (skills jsou 18+)
+databáze promptů,https://chatveskole.cz/databaze-promptu/osnova-lekce-informatika/,/funkce/prompty/osnova-lekce-informatika,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem didakticky-radce
+databáze promptů,https://chatveskole.cz/databaze-promptu/otazky-k-diskuzi/,/funkce/prompty/otazky-k-diskuzi,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem didakticky-radce
+databáze promptů,https://chatveskole.cz/databaze-promptu/otazky-na-miru/,/funkce/prompty/zaci/otazky-na-miru,zachovat jako prompt,prompt,Žákovský prompt (skills jsou 18+)
+databáze promptů,https://chatveskole.cz/databaze-promptu/piskvorky/,/funkce/prompty/piskvorky,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem aktivity-s-chatbotem
+databáze promptů,https://chatveskole.cz/databaze-promptu/plan-postupneho-zavadeni-inovaci-do-vyuky/,/funkce/prompty/plan-postupneho-zavadeni-inovaci-do-vyuky,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem strategicke-dokumenty
+databáze promptů,https://chatveskole.cz/databaze-promptu/planovac-vyuky/,/skills/didakticky-radce,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/planovani/,/funkce/prompty/zaci/planovani,zachovat jako prompt,prompt,Žákovský prompt (skills jsou 18+)
+databáze promptů,https://chatveskole.cz/databaze-promptu/pozvanka-na-skolni-akci/,/funkce/prompty/pozvanka-na-skolni-akci,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem komunikace-s-rodici
+databáze promptů,https://chatveskole.cz/databaze-promptu/prace-s-textem-shrnuti/,/funkce/prompty/prace-s-textem-shrnuti,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem uprava-materialu
+databáze promptů,https://chatveskole.cz/databaze-promptu/pracovni-list-pro-reflexi-uciva/,/funkce/prompty/pracovni-list-pro-reflexi-uciva,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem pracovni-listy
+databáze promptů,https://chatveskole.cz/databaze-promptu/pracovni-list-s-otevrenymi-otazkami/,/funkce/prompty/pracovni-list-s-otevrenymi-otazkami,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem pracovni-listy
+databáze promptů,https://chatveskole.cz/databaze-promptu/prevod-materialu-do-jine-formy/,/funkce/prompty/prevod-materialu-do-jine-formy,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem uprava-materialu
+databáze promptů,https://chatveskole.cz/databaze-promptu/prevod-materialu-na-jinou-uroven-obtiznosti/,/funkce/prompty/prevod-materialu-na-jinou-uroven-obtiznosti,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem uprava-materialu
+databáze promptů,https://chatveskole.cz/databaze-promptu/procesni-analytik-ai-detem/,/skills/procesni-analytik,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/protiklady-prid-jmena/,/funkce/prompty/protiklady-prid-jmena,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem pracovni-listy
+databáze promptů,https://chatveskole.cz/databaze-promptu/pruvodce-biotopy/,/funkce/prompty/pruvodce-biotopy,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem aktivity-s-chatbotem
+databáze promptů,https://chatveskole.cz/databaze-promptu/pruvodce-rizenim-zmeny-adkar/,/skills/rizeni-zmeny,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/quiz_bot/,/funkce/prompty/quiz_bot,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem aktivity-s-chatbotem
+databáze promptů,https://chatveskole.cz/databaze-promptu/radce-pro-spravne-formulace-slovniho-hodnoceni/,/skills/slovni-hodnoceni,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/radce-pro-tvorbu-skolnich-pravidel/,/skills/skolni-pravidla,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/radce-pro-zlepseni-kultury-skoly/,/skills/rizeni-zmeny,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/reakce-na-stiznost-rodice/,/funkce/prompty/reakce-na-stiznost-rodice,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem komunikace-s-rodici
+databáze promptů,https://chatveskole.cz/databaze-promptu/role-experta/,/funkce/prompty/zaci/role-experta,zachovat jako prompt,prompt,Žákovský prompt (skills jsou 18+)
+databáze promptů,https://chatveskole.cz/databaze-promptu/rozsireni-existujiciho-materialu/,/funkce/prompty/rozsireni-existujiciho-materialu,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem uprava-materialu
+databáze promptů,https://chatveskole.cz/databaze-promptu/rpg-simulator-el-castice/,/funkce/prompty/rpg-simulator-el-castice,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem aktivity-s-chatbotem
+databáze promptů,https://chatveskole.cz/databaze-promptu/sebehodnoceni-pro-zaky/,/funkce/prompty/sebehodnoceni-pro-zaky,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem kriteria-hodnoceni
+databáze promptů,https://chatveskole.cz/databaze-promptu/sekvencni-diagram/,/funkce/prompty/sekvencni-diagram,zachovat jako prompt,prompt,Starší prompt 2024; dnes vibe coding — odkaz na /vibe-coding/materialy-do-vyuky
+databáze promptů,https://chatveskole.cz/databaze-promptu/simulator-darwin/,/funkce/prompty/simulator-darwin,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem aktivity-s-chatbotem
+databáze promptů,https://chatveskole.cz/databaze-promptu/slepe-skrvny/,/funkce/prompty/slepe-skrvny,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem ucitelsky-mentor
+databáze promptů,https://chatveskole.cz/databaze-promptu/slovicka-nalady/,/funkce/prompty/slovicka-nalady,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem pracovni-listy
+databáze promptů,https://chatveskole.cz/databaze-promptu/slovni-a-vetny-rozbor/,/funkce/prompty/slovni-a-vetny-rozbor,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem jazykovy-korektor
+databáze promptů,https://chatveskole.cz/databaze-promptu/slovnicek-pojmu/,/funkce/prompty/slovnicek-pojmu,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem pracovni-listy
+databáze promptů,https://chatveskole.cz/databaze-promptu/slovnicky-pojmu/,/funkce/prompty/slovnicky-pojmu,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem pracovni-listy
+databáze promptů,https://chatveskole.cz/databaze-promptu/spojovacka/,/funkce/prompty/spojovacka,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem pracovni-listy
+databáze promptů,https://chatveskole.cz/databaze-promptu/srdce-ve-formatu-svg/,/funkce/prompty/srdce-ve-formatu-svg,zachovat jako prompt,prompt,Starší prompt 2024; dnes vibe coding — odkaz na /vibe-coding/materialy-do-vyuky
+databáze promptů,https://chatveskole.cz/databaze-promptu/strategicky-radce-pro-rizeni-zmeny/,/skills/rizeni-zmeny,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/strategie-pro-podporu-inkluze/,/funkce/prompty/strategie-pro-podporu-inkluze,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem strategicke-dokumenty
+databáze promptů,https://chatveskole.cz/databaze-promptu/strategie-pro-rozvoj-digitalni-gramotnosti/,/funkce/prompty/strategie-pro-rozvoj-digitalni-gramotnosti,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem strategicke-dokumenty
+databáze promptů,https://chatveskole.cz/databaze-promptu/strukturovany-ucebni-plan/,/funkce/prompty/strukturovany-ucebni-plan,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem didakticky-radce
+databáze promptů,https://chatveskole.cz/databaze-promptu/stylistika/,/funkce/prompty/stylistika,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem jazykovy-korektor
+databáze promptů,https://chatveskole.cz/databaze-promptu/swot-analyza/,/funkce/prompty/swot-analyza,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem strategicke-dokumenty
+databáze promptů,https://chatveskole.cz/databaze-promptu/tabulky/,/funkce/prompty/tabulky,zachovat jako prompt,prompt,Starší prompt 2024; dnes vibe coding — odkaz na /vibe-coding/materialy-do-vyuky
+databáze promptů,https://chatveskole.cz/databaze-promptu/tematicky-test-cizi-jazyk/,/funkce/prompty/tematicky-test-cizi-jazyk,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem pracovni-listy
+databáze promptů,https://chatveskole.cz/databaze-promptu/textova-hra-karel-iv/,/funkce/prompty/textova-hra-karel-iv,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem aktivity-s-chatbotem
+databáze promptů,https://chatveskole.cz/databaze-promptu/tvorba-dukazu-o-uceni/,/funkce/prompty/tvorba-dukazu-o-uceni,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem kriteria-hodnoceni
+databáze promptů,https://chatveskole.cz/databaze-promptu/tvorba-kriterii-hodnoceni/,/funkce/prompty/tvorba-kriterii-hodnoceni,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem kriteria-hodnoceni
+databáze promptů,https://chatveskole.cz/databaze-promptu/tvorba-metodologie-hodnoceni/,/funkce/prompty/tvorba-metodologie-hodnoceni,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem strategicke-dokumenty
+databáze promptů,https://chatveskole.cz/databaze-promptu/tvorba-pravidel/,/funkce/prompty/tvorba-pravidel,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem skolni-pravidla
+databáze promptů,https://chatveskole.cz/databaze-promptu/tvorba-skolnich-pravidel/,/funkce/prompty/tvorba-skolnich-pravidel,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem skolni-pravidla
+databáze promptů,https://chatveskole.cz/databaze-promptu/tvorba-slovniho-hodnoceni/,/funkce/prompty/tvorba-slovniho-hodnoceni,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem slovni-hodnoceni
+databáze promptů,https://chatveskole.cz/databaze-promptu/tvorba-testu-dedicnost/,/funkce/prompty/tvorba-testu-dedicnost,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem pracovni-listy
+databáze promptů,https://chatveskole.cz/databaze-promptu/tvorba-zpetne-vazby/,/funkce/prompty/tvorba-zpetne-vazby,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem slovni-hodnoceni
+databáze promptů,https://chatveskole.cz/databaze-promptu/ucitelsky-mentor/,/skills/ucitelsky-mentor,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/unikovka-elektromagnetismus/,/funkce/prompty/unikovka-elektromagnetismus,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem didakticky-radce
+databáze promptů,https://chatveskole.cz/databaze-promptu/vylepseni-vystupu/,/funkce/prompty/zaci/vylepseni-vystupu,zachovat jako prompt,prompt,Žákovský prompt (skills jsou 18+)
+databáze promptů,https://chatveskole.cz/databaze-promptu/vysvetleni-vyznamu-vyuziti-generativni-ai-ve-vyuce/,/funkce/prompty/vysvetleni-vyznamu-vyuziti-generativni-ai-ve-vyuce,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem komunikace-s-rodici
+databáze promptů,https://chatveskole.cz/databaze-promptu/vytvareni-profilu-absolventa-skoly/,/funkce/prompty/vytvareni-profilu-absolventa-skoly,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem mise-vize-hodnoty
+databáze promptů,https://chatveskole.cz/databaze-promptu/vytvareni-sebehodnotici-skaly-pro-zaky/,/skills/kriteria-hodnoceni,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
+databáze promptů,https://chatveskole.cz/databaze-promptu/vyuka-s-emotikony/,/funkce/prompty/vyuka-s-emotikony,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem pracovni-listy
+databáze promptů,https://chatveskole.cz/databaze-promptu/vyukovy-plan-bloomova-taxonomie/,/funkce/prompty/vyukovy-plan-bloomova-taxonomie,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem didakticky-radce
+databáze promptů,https://chatveskole.cz/databaze-promptu/wikichat-hardware/,/funkce/prompty/wikichat-hardware,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem aktivity-s-chatbotem
+databáze promptů,https://chatveskole.cz/databaze-promptu/zmena-textu-strucne-a-jasne/,/funkce/prompty/zmena-textu-strucne-a-jasne,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem uprava-materialu
+databáze promptů,https://chatveskole.cz/databaze-promptu/znalosti-zadna-ai/,/funkce/prompty/zaci,sloučit,aktivita,Jediná publikovaná úroveň AIAS; zbytek nikdy nevyšel
+databáze promptů,https://chatveskole.cz/databaze-promptu/zpetna-vazba/,/funkce/prompty/zaci/zpetna-vazba,zachovat jako prompt,prompt,Žákovský prompt (skills jsou 18+)
+databáze promptů,https://chatveskole.cz/databaze-promptu/zpetnovazebni-otazky-polymeraza/,/funkce/prompty/zpetnovazebni-otazky-polymeraza,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem aktivity-s-chatbotem
+databáze promptů,https://chatveskole.cz/databaze-promptu/zprava-o-pokroku-zaka/,/funkce/prompty/zprava-o-pokroku-zaka,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem komunikace-s-rodici
+databáze promptů,https://chatveskole.cz/databaze-promptu/zvladani-stresu/,/funkce/prompty/zvladani-stresu,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem ucitelsky-mentor
+databáze promptů,https://chatveskole.cz/databaze-promptu/zvyrazneni-chyb-v-textu/,/funkce/prompty/zvyrazneni-chyb-v-textu,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem jazykovy-korektor
+kategorie,https://chatveskole.cz/dp/ai-asistenti-pro-hodnoceni-%e2%86%92/,/sady/formativni-hodnoceni,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/formativni-hodnoceni/,/funkce/prompty#formativni-hodnoceni,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/slovni-hodnoceni-%e2%86%92/,/funkce/prompty#slovni-hodnoceni,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/hodnoceni/,/funkce/prompty#hodnoceni,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/ai-asistenti-pro-rizeni-skoly/,/sady/vedeni-skoly,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/tvorba-strategickych-dokumentu/,/funkce/prompty#tvorba-strategickych-dokumentu,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/rizeni-a-administrativa-%e2%86%92/,/funkce/prompty#rizeni-a-administrativa,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/ai-asistenti-ai-akcelerator-%e2%86%92/,/sady/ai-akcelerator,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/ai-asistenti-ruzne/,/skills,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/oborovi-ai-asistenti/,/skills/aktivity-s-chatbotem,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/adaptivni-vzdelavani/,/funkce/prompty#adaptivni-vzdelavani,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/aktualizace-materialu-%e2%86%92/,/funkce/prompty#aktualizace-materialu,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/prace-s-textem/,/funkce/prompty#prace-s-textem,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/komunikace-s-rodici-%e2%86%92/,/funkce/prompty#komunikace-s-rodici,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/tvorba-materialu-do-vyuky/,/funkce/prompty#tvorba-materialu-do-vyuky,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/vytvareni-pracovnich-listu/,/funkce/prompty#vytvareni-pracovnich-listu,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/vytvareni-lekci/,/funkce/prompty#vytvareni-lekci,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/projektova-vyuka/,/funkce/prompty#projektova-vyuka,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/seberozvoj-%e2%86%92/,/funkce/prompty#seberozvoj,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/vizualizace/,/funkce/prompty#vizualizace,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/ruzne/,/funkce/prompty#ruzne,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/principy-vyuziti-genai-ve-vyuce/,/funkce/prompty/zaci,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/prompty-pro-zaky/,/funkce/prompty/zaci,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/prompty-pro-pedagogy/,/funkce/prompty,přesměrovat,,

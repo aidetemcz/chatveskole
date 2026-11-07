@@ -1,0 +1,32 @@
+# Sady skills = budoucí pluginy (Claude, ChatGPT, Copilot) a rozcestníky na webu.
+# Jeden skill může být ve více sadách.
+
+- slug: formativni-hodnoceni
+  title: Formativní hodnocení
+  popis: Od vzdělávacího cíle přes kritéria a sebehodnocení až ke slovnímu hodnocení. Postaveno na metodice Vysvědčení jinak (PdF MU).
+  pro_koho: [ucitele]
+  skills: [vzdelavaci-cile, kriteria-hodnoceni, slovni-hodnoceni]
+
+- slug: priprava-vyuky
+  title: Příprava výuky
+  popis: Nápady na hodiny, pracovní listy, úpravy materiálů pro různé žáky a aktivity, ve kterých s chatbotem pracují sami žáci.
+  pro_koho: [ucitele]
+  skills: [didakticky-radce, pracovni-listy, uprava-materialu, aktivity-s-chatbotem, rozvoj-mysleni]
+
+- slug: komunikace-a-podpora-ucitele
+  title: Komunikace a podpora učitele
+  popis: Zprávy rodičům, jazyková kontrola textů a mentor pro náročné situace ve třídě.
+  pro_koho: [ucitele, vedeni]
+  skills: [komunikace-s-rodici, jazykovy-korektor, ucitelsky-mentor]
+
+- slug: vedeni-skoly
+  title: Vedení školy
+  popis: Hodnoty, mise a vize, školní pravidla, strategické dokumenty, AI gramotnost v ŠVP a každodenní agenda ředitele.
+  pro_koho: [vedeni]
+  skills: [mise-vize-hodnoty, skolni-pravidla, strategicke-dokumenty, ai-gramotnost-v-svp, asistent-reditele, rizeni-zmeny]
+
+- slug: ai-akcelerator
+  title: AI akcelerátor
+  popis: Nástroje pro školy v programu AI akcelerátor — řízení změny podle ADKAR a mapování administrativních procesů.
+  pro_koho: [vedeni]
+  skills: [rizeni-zmeny, procesni-analytik]

@@ -1,0 +1,488 @@
+{
+  "formulace-vyukoveho-cile": {
+    "skupina": "pedagogove",
+    "skill": "vzdelavaci-cile"
+  },
+  "formulace-vyukoveho-cile-2": {
+    "skupina": "asistent",
+    "skill": "vzdelavaci-cile"
+  },
+  "tvorba-kriterii-hodnoceni": {
+    "skupina": "pedagogove",
+    "skill": "kriteria-hodnoceni"
+  },
+  "formulace-kriterii-hodnoceni": {
+    "skupina": "asistent",
+    "skill": "kriteria-hodnoceni"
+  },
+  "vytvareni-sebehodnotici-skaly-pro-zaky": {
+    "skupina": "asistent",
+    "skill": "kriteria-hodnoceni"
+  },
+  "sebehodnoceni-pro-zaky": {
+    "skupina": "pedagogove",
+    "skill": "kriteria-hodnoceni"
+  },
+  "tvorba-dukazu-o-uceni": {
+    "skupina": "pedagogove",
+    "skill": "kriteria-hodnoceni"
+  },
+  "tvorba-zpetne-vazby": {
+    "skupina": "pedagogove",
+    "skill": "slovni-hodnoceni"
+  },
+  "tvorba-slovniho-hodnoceni": {
+    "skupina": "pedagogove",
+    "skill": "slovni-hodnoceni"
+  },
+  "generovani-slovniho-hodnoceni": {
+    "skupina": "asistent",
+    "skill": "slovni-hodnoceni"
+  },
+  "radce-pro-spravne-formulace-slovniho-hodnoceni": {
+    "skupina": "asistent",
+    "skill": "slovni-hodnoceni"
+  },
+  "didakticky-radce": {
+    "skupina": "asistent",
+    "skill": "didakticky-radce"
+  },
+  "planovac-vyuky": {
+    "skupina": "asistent",
+    "skill": "didakticky-radce"
+  },
+  "didaktik-konzultant": {
+    "skupina": "archiv-2024",
+    "skill": "didakticky-radce"
+  },
+  "napadnicek-geografie": {
+    "skupina": "archiv-2024",
+    "skill": "didakticky-radce"
+  },
+  "vyukovy-plan-bloomova-taxonomie": {
+    "skupina": "archiv-2024",
+    "skill": "didakticky-radce"
+  },
+  "osnova-lekce-informatika": {
+    "skupina": "archiv-2024",
+    "skill": "didakticky-radce"
+  },
+  "strukturovany-ucebni-plan": {
+    "skupina": "archiv-2024",
+    "skill": "didakticky-radce"
+  },
+  "unikovka-elektromagnetismus": {
+    "skupina": "archiv-2024",
+    "skill": "didakticky-radce"
+  },
+  "eduscrum-mestsky-ekosystem": {
+    "skupina": "archiv-2024",
+    "skill": "didakticky-radce"
+  },
+  "otazky-k-diskuzi": {
+    "skupina": "archiv-2024",
+    "skill": "didakticky-radce"
+  },
+  "k-cemu-mi-to-je": {
+    "skupina": "archiv-2024",
+    "skill": "didakticky-radce"
+  },
+  "doplnovacka": {
+    "skupina": "pedagogove",
+    "skill": "pracovni-listy"
+  },
+  "spojovacka": {
+    "skupina": "pedagogove",
+    "skill": "pracovni-listy"
+  },
+  "kviz": {
+    "skupina": "pedagogove",
+    "skill": "pracovni-listy"
+  },
+  "pracovni-list-s-otevrenymi-otazkami": {
+    "skupina": "pedagogove",
+    "skill": "pracovni-listy"
+  },
+  "vyuka-s-emotikony": {
+    "skupina": "pedagogove",
+    "skill": "pracovni-listy"
+  },
+  "slovnicek-pojmu": {
+    "skupina": "pedagogove",
+    "skill": "pracovni-listy"
+  },
+  "pracovni-list-pro-reflexi-uciva": {
+    "skupina": "pedagogove",
+    "skill": "pracovni-listy"
+  },
+  "tematicky-test-cizi-jazyk": {
+    "skupina": "archiv-2024",
+    "skill": "pracovni-listy"
+  },
+  "matematicke-priklady": {
+    "skupina": "archiv-2024",
+    "skill": "pracovni-listy"
+  },
+  "slovicka-nalady": {
+    "skupina": "archiv-2024",
+    "skill": "pracovni-listy"
+  },
+  "protiklady-prid-jmena": {
+    "skupina": "archiv-2024",
+    "skill": "pracovni-listy"
+  },
+  "doplnovacka_slovesa": {
+    "skupina": "archiv-2024",
+    "skill": "pracovni-listy"
+  },
+  "emotikony-zivot-vaclava-havla": {
+    "skupina": "archiv-2024",
+    "skill": "pracovni-listy"
+  },
+  "kviz-historie": {
+    "skupina": "archiv-2024",
+    "skill": "pracovni-listy"
+  },
+  "tvorba-testu-dedicnost": {
+    "skupina": "archiv-2024",
+    "skill": "pracovni-listy"
+  },
+  "slovnicky-pojmu": {
+    "skupina": "archiv-2024",
+    "skill": "pracovni-listy"
+  },
+  "aktualizace-tematickeho-planu": {
+    "skupina": "pedagogove",
+    "skill": "uprava-materialu"
+  },
+  "prevod-materialu-do-jine-formy": {
+    "skupina": "pedagogove",
+    "skill": "uprava-materialu"
+  },
+  "rozsireni-existujiciho-materialu": {
+    "skupina": "pedagogove",
+    "skill": "uprava-materialu"
+  },
+  "prevod-materialu-na-jinou-uroven-obtiznosti": {
+    "skupina": "pedagogove",
+    "skill": "uprava-materialu"
+  },
+  "individualizace-vyukovych-cilu": {
+    "skupina": "pedagogove",
+    "skill": "uprava-materialu"
+  },
+  "diferenciace-textu-rozhovory": {
+    "skupina": "archiv-2024",
+    "skill": "uprava-materialu"
+  },
+  "zmena-textu-strucne-a-jasne": {
+    "skupina": "archiv-2024",
+    "skill": "uprava-materialu"
+  },
+  "prace-s-textem-shrnuti": {
+    "skupina": "archiv-2024",
+    "skill": "uprava-materialu"
+  },
+  "quiz_bot": {
+    "skupina": "archiv-2024",
+    "skill": "aktivity-s-chatbotem"
+  },
+  "cool_bot_vynalezy": {
+    "skupina": "archiv-2024",
+    "skill": "aktivity-s-chatbotem"
+  },
+  "hadej-chemicke-prvky": {
+    "skupina": "archiv-2024",
+    "skill": "aktivity-s-chatbotem"
+  },
+  "hadej-chemicke-prvky-asistent": {
+    "skupina": "asistent",
+    "skill": "aktivity-s-chatbotem"
+  },
+  "asistent-poznej-svet-zemepisny-kviz": {
+    "skupina": "asistent",
+    "skill": "aktivity-s-chatbotem"
+  },
+  "rpg-simulator-el-castice": {
+    "skupina": "archiv-2024",
+    "skill": "aktivity-s-chatbotem"
+  },
+  "hrani-dvou-roli-bunka": {
+    "skupina": "archiv-2024",
+    "skill": "aktivity-s-chatbotem"
+  },
+  "hraj-roli-chloroplast": {
+    "skupina": "archiv-2024",
+    "skill": "aktivity-s-chatbotem"
+  },
+  "simulator-darwin": {
+    "skupina": "archiv-2024",
+    "skill": "aktivity-s-chatbotem"
+  },
+  "zpetnovazebni-otazky-polymeraza": {
+    "skupina": "archiv-2024",
+    "skill": "aktivity-s-chatbotem"
+  },
+  "textova-hra-karel-iv": {
+    "skupina": "archiv-2024",
+    "skill": "aktivity-s-chatbotem"
+  },
+  "diskuzni-bot-genetika": {
+    "skupina": "archiv-2024",
+    "skill": "aktivity-s-chatbotem"
+  },
+  "pruvodce-biotopy": {
+    "skupina": "archiv-2024",
+    "skill": "aktivity-s-chatbotem"
+  },
+  "wikichat-hardware": {
+    "skupina": "archiv-2024",
+    "skill": "aktivity-s-chatbotem"
+  },
+  "piskvorky": {
+    "skupina": "archiv-2024",
+    "skill": "aktivity-s-chatbotem"
+  },
+  "karierni-poradce-se-zamerenim-na-matematiku": {
+    "skupina": "asistent",
+    "skill": "aktivity-s-chatbotem"
+  },
+  "asistent-pro-rozvoj-mysleni": {
+    "skupina": "asistent",
+    "skill": "rozvoj-mysleni"
+  },
+  "reakce-na-stiznost-rodice": {
+    "skupina": "pedagogove",
+    "skill": "komunikace-s-rodici"
+  },
+  "zprava-o-pokroku-zaka": {
+    "skupina": "pedagogove",
+    "skill": "komunikace-s-rodici"
+  },
+  "vysvetleni-vyznamu-vyuziti-generativni-ai-ve-vyuce": {
+    "skupina": "pedagogove",
+    "skill": "komunikace-s-rodici"
+  },
+  "pozvanka-na-skolni-akci": {
+    "skupina": "pedagogove",
+    "skill": "komunikace-s-rodici"
+  },
+  "informace-o-skolnim-projektu": {
+    "skupina": "pedagogove",
+    "skill": "komunikace-s-rodici"
+  },
+  "komunikace-s-rodici": {
+    "skupina": "archiv-2024",
+    "skill": "komunikace-s-rodici"
+  },
+  "komunikace-s-rodici-pozvanka": {
+    "skupina": "archiv-2024",
+    "skill": "komunikace-s-rodici"
+  },
+  "komunikace-s-rodici-stiznost": {
+    "skupina": "archiv-2024",
+    "skill": "komunikace-s-rodici"
+  },
+  "jazykovy-ai-korektor": {
+    "skupina": "asistent",
+    "skill": "jazykovy-korektor"
+  },
+  "zvyrazneni-chyb-v-textu": {
+    "skupina": "archiv-2024",
+    "skill": "jazykovy-korektor"
+  },
+  "stylistika": {
+    "skupina": "archiv-2024",
+    "skill": "jazykovy-korektor"
+  },
+  "nedelitelne-mezery": {
+    "skupina": "archiv-2024",
+    "skill": "jazykovy-korektor"
+  },
+  "slovni-a-vetny-rozbor": {
+    "skupina": "archiv-2024",
+    "skill": "jazykovy-korektor"
+  },
+  "ucitelsky-mentor": {
+    "skupina": "asistent",
+    "skill": "ucitelsky-mentor"
+  },
+  "chatboti-ve-skole-analogie": {
+    "skupina": "archiv-2024",
+    "skill": "ucitelsky-mentor"
+  },
+  "zvladani-stresu": {
+    "skupina": "archiv-2024",
+    "skill": "ucitelsky-mentor"
+  },
+  "slepe-skrvny": {
+    "skupina": "archiv-2024",
+    "skill": "ucitelsky-mentor"
+  },
+  "asistent-pro-definici-hodnot-mise-a-vize-skoly": {
+    "skupina": "asistent",
+    "skill": "mise-vize-hodnoty"
+  },
+  "formulace-hodnot-mise-a-vize-skoly": {
+    "skupina": "pedagogove",
+    "skill": "mise-vize-hodnoty"
+  },
+  "vytvareni-profilu-absolventa-skoly": {
+    "skupina": "pedagogove",
+    "skill": "mise-vize-hodnoty"
+  },
+  "radce-pro-tvorbu-skolnich-pravidel": {
+    "skupina": "asistent",
+    "skill": "skolni-pravidla"
+  },
+  "tvorba-skolnich-pravidel": {
+    "skupina": "pedagogove",
+    "skill": "skolni-pravidla"
+  },
+  "tvorba-pravidel": {
+    "skupina": "archiv-2024",
+    "skill": "skolni-pravidla"
+  },
+  "strategie-pro-rozvoj-digitalni-gramotnosti": {
+    "skupina": "pedagogove",
+    "skill": "strategicke-dokumenty"
+  },
+  "strategie-pro-podporu-inkluze": {
+    "skupina": "pedagogove",
+    "skill": "strategicke-dokumenty"
+  },
+  "integrace-digitalniho-wellbeingu": {
+    "skupina": "pedagogove",
+    "skill": "strategicke-dokumenty"
+  },
+  "tvorba-metodologie-hodnoceni": {
+    "skupina": "pedagogove",
+    "skill": "strategicke-dokumenty"
+  },
+  "navrh-systemu-vnitrniho-hodnoceni-kvality-vyuky": {
+    "skupina": "pedagogove",
+    "skill": "strategicke-dokumenty"
+  },
+  "swot-analyza": {
+    "skupina": "archiv-2024",
+    "skill": "strategicke-dokumenty"
+  },
+  "plan-postupneho-zavadeni-inovaci-do-vyuky": {
+    "skupina": "pedagogove",
+    "skill": "strategicke-dokumenty"
+  },
+  "strategicky-radce-pro-rizeni-zmeny": {
+    "skupina": "asistent",
+    "skill": "rizeni-zmeny"
+  },
+  "pruvodce-rizenim-zmeny-adkar": {
+    "skupina": "asistent",
+    "skill": "rizeni-zmeny"
+  },
+  "radce-pro-zlepseni-kultury-skoly": {
+    "skupina": "asistent",
+    "skill": "rizeni-zmeny"
+  },
+  "kultura-a-komunikace-skoly-adkar": {
+    "skupina": "asistent",
+    "skill": "rizeni-zmeny"
+  },
+  "asistent-reditele": {
+    "skupina": "asistent",
+    "skill": "asistent-reditele"
+  },
+  "procesni-analytik-ai-detem": {
+    "skupina": "asistent",
+    "skill": "procesni-analytik"
+  },
+  "ai-gramotnost-v-rvp-a-svp": {
+    "skupina": "asistent",
+    "skill": "ai-gramotnost-v-svp"
+  },
+  "otazky-na-miru": {
+    "skupina": "zaci",
+    "skill": null
+  },
+  "obsahova-struktura": {
+    "skupina": "zaci",
+    "skill": null
+  },
+  "brainstorming": {
+    "skupina": "zaci",
+    "skill": null
+  },
+  "planovani": {
+    "skupina": "zaci",
+    "skill": null
+  },
+  "vylepseni-vystupu": {
+    "skupina": "zaci",
+    "skill": null
+  },
+  "zpetna-vazba": {
+    "skupina": "zaci",
+    "skill": null
+  },
+  "argumentace": {
+    "skupina": "zaci",
+    "skill": null
+  },
+  "role-experta": {
+    "skupina": "zaci",
+    "skill": null
+  },
+  "tabulky": {
+    "skupina": "archiv-2024",
+    "skill": null,
+    "vibe": true
+  },
+  "sekvencni-diagram": {
+    "skupina": "archiv-2024",
+    "skill": null,
+    "vibe": true
+  },
+  "myslenkove-mapy-dreviny": {
+    "skupina": "archiv-2024",
+    "skill": null,
+    "vibe": true
+  },
+  "kolacovy-graf-vitaminy": {
+    "skupina": "archiv-2024",
+    "skill": null,
+    "vibe": true
+  },
+  "graf-regiony": {
+    "skupina": "archiv-2024",
+    "skill": null,
+    "vibe": true
+  },
+  "derivace-latex": {
+    "skupina": "archiv-2024",
+    "skill": null,
+    "vibe": true
+  },
+  "casove-osy": {
+    "skupina": "archiv-2024",
+    "skill": null,
+    "vibe": true
+  },
+  "srdce-ve-formatu-svg": {
+    "skupina": "archiv-2024",
+    "skill": null,
+    "vibe": true
+  },
+  "kostka-format-stl": {
+    "skupina": "archiv-2024",
+    "skill": null,
+    "vibe": true
+  },
+  "3d-model-kvetu": {
+    "skupina": "archiv-2024",
+    "skill": null,
+    "vibe": true
+  },
+  "znalosti-zadna-ai": {
+    "skupina": "vynechat",
+    "skill": null
+  }
+}

@@ -1,0 +1,55 @@
+title: Řízení změny ve škole
+slug: rizeni-zmeny
+kratky_popis: Provede vedení školy řízením změny – rámec změny z dat, mapa aktérů a plán podle ADKAR – nebo poradí s jakoukoli změnou.
+pro_koho: [vedeni]
+sady: [vedeni-skoly, ai-akcelerator]
+stitky: [řízení změny, ADKAR, AI akcelerátor, kultura školy, komunikace, lídr změny]
+rezimy:
+  - Rámec změny z dat
+  - Mapa aktérů
+  - Plán změny podle ADKAR
+  - Strategický rádce
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/strategicky-radce-pro-rizeni-zmeny/
+    typ: asistent
+  - url: https://chatveskole.cz/databaze-promptu/pruvodce-rizenim-zmeny-adkar/
+    typ: asistent
+  - url: https://chatveskole.cz/databaze-promptu/radce-pro-zlepseni-kultury-skoly/
+    typ: asistent
+  - url: https://chatveskole.cz/databaze-promptu/kultura-a-komunikace-skoly-adkar/
+    typ: asistent
+puvodni_asistenti:
+  gpt:
+    - https://chatgpt.com/g/g-69af061665348191aa6e3a64008c4de7-strategicky-radce-pro-rizeni-zmeny
+    - https://chatgpt.com/g/g-68ba943d80908191bbf5811fd492c427-pruvodce-rizenim-zmeny
+    - https://chatgpt.com/g/g-6947e3b77e6c819183e60a0d58045c93-kultura-a-komunikace-skoly-ramec-zmeny
+    - https://chatgpt.com/g/g-6950de7eb56c8191bffa61308087e44f-kultura-a-komunikace-skoly-plan-zmeny
+  gem:
+    - https://gemini.google.com/gem/1mP2fRV9qbzcixtxXoFpda7fRGeTwmaSY?usp=sharing
+    - https://gemini.google.com/gem/1xBmxDkakJulRd7QGGm93AtA-4Ip-JEIH?usp=sharing
+    - https://gemini.google.com/gem/1lLu64Sj--X-OZrsBV8UEUmD5Vy2P33nV?usp=sharing
+    - https://gemini.google.com/gem/120ex_F4N6k_QuPoE1Nbi1T8E_kBeAvP2?usp=sharing   # z Google Docs; odkaz na webu u „Kultura a komunikace školy (plán změny)“ je rozbitý
+  systemovy_prompt:
+    - https://docs.google.com/document/d/14LtRbfh00dXXplNu1vV2ME7u_tGF5S5w7sqmrYORH5s/edit?usp=sharing
+    - https://docs.google.com/document/d/1NO0BNz8XtlR4p-IV57xULfovftvDgH1b8p1pMpOv7og/edit?usp=sharing
+    - https://drive.google.com/drive/folders/1pZ5Br7cb7zfFabTHS7RdhxWwc3c8gFT3?usp=sharing   # složka uvedená na webu u Průvodce řízením změny (ADKAR)
+    - https://docs.google.com/document/d/1UZFJXqWWBn-yjvRYveNIST1Zxriki3cdHAi_4LjoXLI/edit?usp=sharing
+    - https://docs.google.com/document/d/1rvh38eGxiQ9p1Yn0L9HtY0MVZQKroJBhOgX_RxcsN4k/edit?usp=sharing
+google_doc: https://docs.google.com/document/d/1IiSI9Ui-rncV8JZNGkzX1tzSwap3EzBJfRPVrfyCwgs/edit
+google_slozka: https://drive.google.com/drive/folders/186uAIYKFjnN8WySh1VdgqAadTDguPveU
+autori: [AI dětem, tým AI akcelerátoru]   # doplnit jména autorů asistentů
+metodika:
+  - nazev: Úvod do teorie změny pro školy (AI akcelerátor, AI dětem; garant Luboš Malý)
+    url: https://aidetem.cz/ai-akcelerator-teorie-zmeny-pro-skoly/
+  - nazev: Rámec změny (AI akcelerátor)
+    url: https://aidetem.cz/ai-akcelerator-ramec-zmeny/
+  - nazev: Mapa aktérů změny (AI akcelerátor)
+    url: https://aidetem.cz/ai-akcelerator-mapa-akteru-zmeny/
+  - nazev: Plán změny (AI akcelerátor)
+    url: https://aidetem.cz/ai-akcelerator-plan-zmeny/
+  - nazev: Model ADKAR (Prosci)
+    url: https://www.prosci.com/methodology/adkar
+znalosti: []
+vek: dospělí (skills jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-07

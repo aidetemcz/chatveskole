@@ -1,0 +1,542 @@
+# Data pro stránku Funkce → Změny ve funkcích 2026 (a pro tabulky na dalších stránkách).
+# Zdroj: artefakt https://claude.ai/artifact/9ZyWLayjYG18oe6knwfvsi (stav 13. 10. 2026).
+# Při aktualizaci měň jen tento soubor; stránka se vykreslí z dat.
+stav_k: '2026-10-13'
+zdroj: Artefakt „Funkce chatbotů 2027“ (AI dětem), ověřeno v oficiálních nápovědách výrobců 13. 10. 2026
+poznamka: Výhled na rok 2027 vychází jen z toho, co výrobci oznámili do 13. 10. 2026. U Copilotu „zdarma“ = Copilot Chat se školním nebo pracovním účtem. Dostupnost se liší podle země a nastavení správce.
+nastroje:
+- id: chatgpt
+  nazev: ChatGPT
+  vyrobce: OpenAI
+  posun: GPTs se mění na pluginy
+  konci:
+  - 'Vlastní GPTs: 11. 12. 2026'
+  - 'Canvas: skončil 28. 5. 2026'
+  - 'ChatGPT agent: zrušen v létě 2026'
+  pribyva:
+  - Pluginy a skills místo GPTs
+  - ChatGPT Work pro samostatnou práci (placené tarify)
+  - Sites pro weby a malé aplikace (placené tarify)
+  - ChatGPT for Teens pro 13–17 let
+  skola:
+  - Migrovaný plugin je soukromý. Vlastní akce, výběr modelu ani sdílení se nepřenesou.
+  - Veřejný odkaz na GPT zatím nic nenahrazuje: sdílený projekt ukáže všem členům všechny konverzace, pluginy jen se skills OpenAI do veřejného adresáře teď nepřijímá.
+  - ChatGPT for Teachers je jen pro učitele v USA.
+- id: gemini
+  nazev: Gemini
+  vyrobce: Google
+  posun: Gems se mění na skills
+  konci:
+  - 'Gems: osobní účty od 17. 11. 2026, firmy nejdříve 1. 3. 2027, školy nejdříve 1. 6. 2027'
+  - 'Gems v Google Classroomu: se školním termínem'
+  - 'Opal a Gems z Google Labs: 17. 11. 2026'
+  pribyva:
+  - Skills ve formátu SKILL.md, nahrání i stažení jako ZIP
+  - Notebooky propojené s Gemini Notebook
+  - Workspace Studio; Gemini agent pro firmy zatím bez termínu
+  skola:
+  - Gems se převedou jen na koncepty skills. Autor je musí zkontrolovat a zapnout.
+  - Skills zatím nefungují s Canvasem, Deep Research ani Guided Learning a nejdou zadat v Classroomu.
+  - 'Věk u skills: správcovská dokumentace uvádí všechny věky, nápověda Gemini 18+. Ověřte na žákovském účtu.'
+- id: copilot
+  nazev: Copilot
+  vyrobce: Microsoft
+  posun: K agentům přibývají pluginy
+  konci:
+  - 'App Builder: 30. 11. 2026'
+  - 'Tlačítko Agenti v menu: do konce listopadu 2026 ho nahradí Pluginy'
+  - 'Deep Research v osobním Copilotu: skončil 18. 8. 2026'
+  pribyva:
+  - Pluginy a skills, Cowork přijme i balíčky z Claude
+  - Home, Code a Autopilot (zatím v programu Frontier)
+  - Paměť a Notebooks i bez placené licence
+  skola:
+  - Cowork, Code a Autopilot se platí kredity nad rámec licence a školám se zatím nenabízejí.
+  - Agenta nelze sdílet mimo školu. Jiné škole předáte jen návod.
+  - 'Zdarma se školní licencí: Study and Learn (od 13 let), Teach a Notebooks.'
+- id: claude
+  nazev: Claude
+  vyrobce: Anthropic
+  posun: Chat pracuje samostatně
+  konci:
+  - Žádná funkce nemá ohlášený konec.
+  pribyva:
+  - Samostatná práce přímo v chatu od 16. 9. 2026 (Pro a Max)
+  - Docs, Slides a Design ve všech tarifech od 8. 10. 2026
+  - Veřejný adresář pluginů od 25. 9. 2026
+  skola:
+  - Jen pro uživatele od 18 let, žákovský program není.
+  - Projekt ani skill nejdou poslat odkazem. Skill se předává jako ZIP.
+  - Pluginy, Research a naplánované úlohy jsou jen v placených tarifech.
+casova_osa:
+- datum: '2026-09-16'
+  nastroj: claude
+  text: Cowork je součástí běžného chatu (Pro, Max)
+- datum: '2026-09-30'
+  nastroj: gemini
+  text: Spuštěny skills
+- datum: '2026-10-08'
+  nastroj: claude
+  text: Docs, Slides a Design ve všech tarifech
+- datum: '2026-10-26'
+  nastroj: chatgpt
+  text: 'Enterprise: plánovaný konec tvorby nových GPTs'
+- datum: '2026-11-17'
+  nastroj: gemini
+  text: Gems začínají mizet z osobních účtů, končí Opal
+  klicove: true
+- datum: '2026-11-30'
+  nastroj: copilot
+  text: Končí App Builder; tlačítko Agenti nahradí Pluginy (do konce listopadu)
+- datum: '2026-12-11'
+  nastroj: chatgpt
+  text: GPTs přestanou fungovat
+  klicove: true
+- datum: '2027-02-11'
+  nastroj: chatgpt
+  text: Konec GPTs i pro Enterprise se schváleným odkladem
+- datum: '2027-03-01'
+  nastroj: gemini
+  text: Gems končí ve firmách (nejdříve)
+  klicove: true
+- datum: '2027-06-01'
+  nastroj: gemini
+  text: Gems končí ve školách i v Classroomu (nejdříve)
+  klicove: true
+stavy:
+  ano: ano, i v bezplatné verzi
+  omezene: 's omezením: tarif, licence, věk nebo region'
+  ne: ne
+matice:
+- funkce: Vlastní asistent
+  popis: 'Hotový pomocník s instrukcemi a soubory: GPTs, Gems, agenti'
+  nastroje:
+    chatgpt:
+      dnes: omezene
+      '2027': ne
+      zmena: down
+      stitek: končí
+      nazev: GPTs → pluginy
+      poznamka: GPTs přestanou fungovat 11. 12. 2026. Osobní účty už nové nevytvoří.
+    gemini:
+      dnes: ano
+      '2027': ne
+      zmena: down
+      stitek: končí
+      nazev: Gems → skills
+      poznamka: Osobní účty od 17. 11. 2026, firmy nejdříve 1. 3. 2027, školy nejdříve 1. 6. 2027.
+    copilot:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: null
+      nazev: Agenti (Agent Builder)
+      poznamka: Zůstávají. Zdarma jen s instrukcemi a webem, data školy vyžadují licenci.
+    claude:
+      dnes: ne
+      '2027': ne
+      zmena: same
+      stitek: null
+      nazev: Nemá a nechystá
+      poznamka: Roli asistenta plní projekt, skill nebo plugin.
+- funkce: Skills
+  popis: Znovupoužitelný návod uložený jako soubor SKILL.md
+  nastroje:
+    chatgpt:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: nové 2026
+      nazev: Skills uvnitř pluginů
+      poznamka: Samostatné Skills mají jen tarify Business, Enterprise a Edu.
+    gemini:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: nové 2026
+      nazev: Skills
+      poznamka: Od 30. 9. 2026, volají se lomítkem. Osobní účty 18+ a se zapnutou historií aktivity.
+    copilot:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: nové 2026
+      nazev: Skills v Coworku a v agentech
+      poznamka: Nahrání souboru .md nebo ZIP, až 50 vlastních. Cowork vyžaduje placenou licenci.
+    claude:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: null
+      nazev: Skills
+      poznamka: ZIP se SKILL.md nahrajete v Customize → Skills. U tarifu Free si oficiální stránky protiřečí.
+- funkce: Pluginy
+  popis: Balíček skills, konektorů a nástrojů k instalaci
+  nastroje:
+    chatgpt:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: nové 2026
+      nazev: Pluginy
+      poznamka: Od 9. 7. 2026. Adresář je ve všech tarifech; co nainstalujete, záleží na tarifu a regionu. Volání přes @.
+    gemini:
+      dnes: ne
+      '2027': ne
+      zmena: same
+      stitek: null
+      nazev: Nemá
+      poznamka: Nejblíž jsou Připojené aplikace.
+    copilot:
+      dnes: omezene
+      '2027': ano
+      zmena: up
+      stitek: nové 2026
+      nazev: Pluginy
+      poznamka: Do konce listopadu 2026 nahradí v menu tlačítko Agenti. Balí agenty, skills a konektory.
+    claude:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: null
+      nazev: Pluginy
+      poznamka: Jen placené tarify. Od 25. 9. 2026 lze plugin přihlásit do veřejného adresáře.
+- funkce: Projekty a notebooky
+  popis: Instrukce, soubory a chaty k jednomu tématu na jednom místě
+  nastroje:
+    chatgpt:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: null
+      nazev: Projekty
+      poznamka: Všechny tarify, ve Free 5 souborů na projekt. Projekt lze sdílet odkazem.
+    gemini:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: null
+      nazev: Notebooky
+      poznamka: Propojené s Gemini Notebook (dříve NotebookLM). Google je doporučuje jako náhradu Gems v Classroomu.
+    copilot:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: null
+      nazev: Notebooks a Pages
+      poznamka: Notebooks jsou od června 2026 i v bezplatném Copilot Chatu.
+    claude:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: null
+      nazev: Projekty
+      poznamka: I ve Free (nejvýše 5 projektů). Sdílení jen uvnitř týmu.
+- funkce: Samostatná práce na úkolech
+  popis: 'Agentní režim: nástroj sám plánuje, hledá a vytváří soubory'
+  nastroje:
+    chatgpt:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: nové 2026
+      nazev: ChatGPT Work
+      poznamka: Od 9. 7. 2026, jen placené tarify. Starší ChatGPT agent byl zrušen.
+    gemini:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: null
+      nazev: Workspace Studio
+      poznamka: Automatizované postupy pro firmy a školy. Osobní agent Gemini Spark v Evropě není.
+    copilot:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: nové 2026
+      nazev: Cowork → Home, Code, Autopilot
+      poznamka: Placená licence a navíc kredity. Školám se zatím nenabízí.
+    claude:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: nové 2026
+      nazev: Přímo v chatu (dříve Cowork)
+      poznamka: Od 16. 9. 2026 v tarifech Pro a Max. Free a Team mají následovat, termín není.
+- funkce: Konektory
+  popis: Napojení na Disk, e-mail, kalendář a další aplikace
+  nastroje:
+    chatgpt:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: null
+      nazev: Aplikace v pluginech
+      poznamka: Disk Google od tarifu Plus. Vlastní konektory (MCP) jen Business, Enterprise a Edu.
+    gemini:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: null
+      nazev: Připojené aplikace
+      poznamka: Gmail, Disk, Kalendář, Mapy, YouTube i aplikace třetích stran ve všech tarifech.
+    copilot:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: null
+      nazev: Copilot konektory
+      poznamka: Přes 100 hotových. K datům organizace jen s licencí nebo průběžnou platbou.
+    claude:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: null
+      nazev: Konektory
+      poznamka: 'Gmail, Kalendář, Disk i Microsoft 365 ve všech tarifech. Free: jeden vlastní konektor.'
+- funkce: Sdílení asistenta odkazem
+  popis: Může ho otevřít i člověk mimo vaši školu nebo organizaci?
+  nastroje:
+    chatgpt:
+      dnes: ano
+      '2027': omezene
+      zmena: down
+      stitek: končí
+      nazev: Odkaz na GPT → odkaz na projekt
+      poznamka: Plugin se sdílí jen uvnitř workspace, veřejně až po schválení OpenAI (pluginy jen se skills teď nepřijímá). Sdílený projekt otevře každý přihlášený uživatel, ale všichni členové v něm vidí všechny konverzace.
+    gemini:
+      dnes: ano
+      '2027': omezene
+      zmena: down
+      stitek: končí
+      nazev: Gem přes Disk → skill odkazem
+      poznamka: Příjemce dostane kopii skillu. Sdílení mimo doménu povoluje správce, u osobních účtů teprve přijde.
+    copilot:
+      dnes: ne
+      '2027': ne
+      zmena: same
+      stitek: null
+      nazev: Nejde
+      poznamka: Agent se sdílí jen uvnitř jedné organizace.
+    claude:
+      dnes: ne
+      '2027': ne
+      zmena: same
+      stitek: null
+      nazev: Odkazem ne, souborem ano
+      poznamka: Skill pošlete jako ZIP, plugin jako soubor. Veřejný odkaz má jen artefakt.
+- funkce: Paměť
+  popis: Nástroj si pamatuje, co jste mu řekli v dřívějších chatech
+  nastroje:
+    chatgpt:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: null
+      nazev: Paměť
+      poznamka: Uložené vzpomínky a historie chatů. Vylepšená paměť je zatím jen pro Plus a Pro v USA.
+    gemini:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: null
+      nazev: Vzpomínky a pokyny
+      poznamka: V Evropě od jara 2026. Personal Intelligence (Gmail, Fotky) v EU není.
+    copilot:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: nové 2026
+      nazev: Paměť Copilotu
+      poznamka: Zavádí se do konce října 2026, i bez placené licence. Může ji vypnout správce.
+    claude:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: null
+      nazev: Paměť
+      poznamka: Ve všech tarifech od března 2026. Jde importovat i exportovat.
+- funkce: Tvorba dokumentů a aplikací
+  popis: Výstup jako samostatný dokument, prezentace nebo malá aplikace
+  nastroje:
+    chatgpt:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: null
+      nazev: Bloky, Sites a Pages
+      poznamka: Canvas skončil 28. 5. 2026. Sites (beta) nejsou v tarifech Free a Go.
+    gemini:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: null
+      nazev: Canvas
+      poznamka: Dokumenty, aplikace, kvízy a prezentace ve všech tarifech, ve škole pro všechny věky.
+    copilot:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: null
+      nazev: Pages a Create
+      poznamka: Pages zdarma, Create s licencí. App Builder končí 30. 11. 2026.
+    claude:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: nové 2026
+      nazev: Artefakty, Docs, Slides, Design
+      poznamka: Od 8. 10. 2026 ve všech tarifech. Artefakt lze zveřejnit odkazem.
+- funkce: Hloubkový výzkum
+  popis: Delší rešerše z mnoha zdrojů s citacemi
+  nastroje:
+    chatgpt:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: null
+      nazev: Deep research
+      poznamka: Počet použití se liší podle tarifu.
+    gemini:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: null
+      nazev: Deep Research
+      poznamka: 'Jen 18+. Základní školní edice: 5 zpráv měsíčně.'
+    copilot:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: null
+      nazev: Researcher
+      poznamka: Jen s placenou licencí, 25 dotazů měsíčně.
+    claude:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: null
+      nazev: Research
+      poznamka: Jen placené tarify.
+- funkce: Režim učení
+  popis: Vede k řešení otázkami, místo aby rovnou odpověděl
+  nastroje:
+    chatgpt:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: null
+      nazev: Study mode
+      poznamka: Všechny tarify, nově i kartičky. Nejde zapnout uvnitř projektů.
+    gemini:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: null
+      nazev: Guided Learning
+      poznamka: Na školním účtu i pro žáky do 18 let. Vedené učení v Classroomu Google slibuje „brzy“.
+    copilot:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: null
+      nazev: Study and Learn, Teach
+      poznamka: Zdarma se školní licencí A1, A3 nebo A5. Žáci od 13 let.
+    claude:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: null
+      nazev: Learning mode
+      poznamka: Součást Claude for Education pro vysoké školy. Claude for Teachers je jen v USA.
+- funkce: Naplánované úlohy
+  popis: Úkol se spustí sám v daný čas nebo opakovaně
+  nastroje:
+    chatgpt:
+      dnes: ano
+      '2027': ano
+      zmena: same
+      stitek: null
+      nazev: Tasks
+      poznamka: Free 3 aktivní úlohy, Plus 5, Pro 15.
+    gemini:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: null
+      nazev: Naplánované akce
+      poznamka: Nejvýše 10. Dostupnost podle tarifu, v základních školních edicích nejsou.
+    copilot:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: null
+      nazev: Naplánované prompty
+      poznamka: S placenou licencí. V Coworku i úlohy spuštěné e-mailem nebo zprávou v Teams.
+    claude:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: null
+      nazev: Naplánované úlohy
+      poznamka: Jen placené tarify. Běží v cloudu.
+- funkce: Pro žáky do 18 let
+  popis: Smí nástroj používat nezletilý žák?
+  nastroje:
+    chatgpt:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: nové 2026
+      nazev: ChatGPT for Teens (13–17)
+      poznamka: 'Od 18. 8. 2026: odhad věku, rodičovský dohled, bez reklam.'
+    gemini:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: null
+      nazev: Nejlépe na školním účtu
+      poznamka: Osobní účet od 13 let (v ČR samostatně od 15), placené tarify a skills od 18 let. Ve škole Canvas, Guided Learning a do 1. 6. 2027 i Gems.   # upraveno 7. 11. 2026 podle support.google.com/gemini/answer/13278668 — artefakt uváděl „osobní účet v EU od 18 let“
+    copilot:
+      dnes: omezene
+      '2027': omezene
+      zmena: same
+      stitek: null
+      nazev: Od 13 let přes školu
+      poznamka: Do 13 let blokováno. Pro 13–17 musí Copilot Chat zapnout správce školy.
+    claude:
+      dnes: ne
+      '2027': ne
+      zmena: same
+      stitek: null
+      nazev: Od 18 let
+      poznamka: Žákovský program neexistuje.
+zdroje:
+  chatgpt:
+  - https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq
+  - https://help.openai.com/en/articles/20001256-plugins-in-chatgpt
+  - https://help.openai.com/en/articles/20001066-skills-in-chatgpt
+  - https://help.openai.com/en/articles/10169521-projects-in-chatgpt
+  - https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex
+  - https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+  gemini:
+  - https://support.google.com/gemini/answer/18560919
+  - https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/about-the-transition-to-skills
+  - https://support.google.com/gemini/answer/17094296
+  - https://knowledge.workspace.google.com/admin/studio/allow-skill-sharing
+  - https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/turn-the-gemini-app-on-or-off
+  - https://support.google.com/gemini/answer/17094507
+  copilot:
+  - https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/whats-new
+  - https://mc.merill.net/message/MC1484008
+  - https://mc.merill.net/message/MC1505609
+  - https://mc.merill.net/message/MC1479277
+  - https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-share-manage-agents
+  - https://learn.microsoft.com/en-us/microsoft-365/education/guide/1-reference/enable-copilot-chat-for-learners
+  claude:
+  - https://claude.com/blog/cowork-is-now-claude/
+  - https://support.claude.com/en/articles/12512180-use-skills-in-claude
+  - https://support.claude.com/en/articles/13837440-use-plugins-in-claude
+  - https://support.claude.com/en/articles/9517075-what-are-projects
+  - https://support.claude.com/en/articles/9547008-publish-and-share-artifacts
+  - https://www.anthropic.com/news/claude-for-teachers

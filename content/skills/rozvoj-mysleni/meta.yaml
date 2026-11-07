@@ -1,0 +1,26 @@
+title: Rozvoj myšlení
+slug: rozvoj-mysleni
+kratky_popis: Sokratovský průvodce myšlením — klade otázky místo odpovědí. Pro studenty 18+ nebo pro učitele, který vede diskusi se třídou.
+pro_koho: [ucitele, zaci-18plus]
+sady: [priprava-vyuky]
+stitky: [kritické myšlení, sokratovský dialog, otázky, argumentace, diskuse se třídou]
+rezimy:
+  - Rozhovor
+  - Diskuse se třídou (chatbota ovládá učitel)
+  - Žebříček otázek k tématu
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/asistent-pro-rozvoj-mysleni/
+    typ: asistent
+puvodni_asistenti:
+  gpt: https://chatgpt.com/g/g-67d3c569f1008191b494439f5cf8e3e3-asistent-pro-rozvoj-mysleni
+  systemovy_prompt: https://docs.google.com/document/d/1AdLKeXAux0ykSgVIKZdZUDDzi--AZuuetjrDo9GannQ/edit
+google_doc: https://docs.google.com/document/d/16nzIUd4QSUv-CqXENq0REC4L6H19wDdqrVRNK0lAzsA/edit
+google_slozka: https://drive.google.com/drive/folders/1vBW7-_3KVWVKg9iKq0_8oSP0WLh43e_n
+autori: [AI dětem]   # doplnit jména autorů asistenta
+metodika:
+  - nazev: Otázky učitele ve výukovém dialogu
+    url: https://cs.wikipedia.org/wiki/Ot%C3%A1zky_u%C4%8Ditele_ve_v%C3%BDukov%C3%A9m_dialogu
+  # Integrovaný model myšlení: dokument se nepodařilo najít na Disku — doplnit, pokud se má do skillu promítnout
+vek: dospělí (skills jsou v Gemini a Claude 18+); s mladšími žáky prompt pod dohledem učitele nebo aplikace Tiny
+stav: koncept
+aktualizovano: 2026-11-07

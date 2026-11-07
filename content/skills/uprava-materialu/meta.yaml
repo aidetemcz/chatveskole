@@ -1,0 +1,42 @@
+title: Úprava materiálu
+slug: uprava-materialu
+kratky_popis: Zjednoduší, rozšíří, zkrátí nebo převede hotový materiál, upraví ho pro žáky se SVP a aktualizuje tematický plán. Změny vyznačí.
+pro_koho: [ucitele]
+sady: [priprava-vyuky]
+stitky: [úprava materiálu, diferenciace, SVP, inkluze, tematický plán, zjednodušení textu, shrnutí]
+rezimy:
+  - Aktualizace tematického plánu
+  - Převod do jiné formy
+  - Rozšíření materiálu
+  - Změna obtížnosti
+  - Individualizace pro žáky se SVP
+  - Zkrácení a shrnutí
+  - Diferenciace textu
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/aktualizace-tematickeho-planu/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/prevod-materialu-do-jine-formy/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/rozsireni-existujiciho-materialu/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/prevod-materialu-na-jinou-uroven-obtiznosti/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/individualizace-vyukovych-cilu/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/diferenciace-textu-rozhovory/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/zmena-textu-strucne-a-jasne/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/prace-s-textem-shrnuti/
+    typ: prompt
+google_doc: https://docs.google.com/document/d/1WtIuPQddEZsCLTHfvucx9nYQ9KrEMGlTCApDyjbAIqQ/edit
+google_slozka: https://drive.google.com/drive/folders/1oKSp_IJAhUfcXM-jVnlAddKQizn2_980
+autori: [Eva Nečasová (AI dětem), AI reaktor UJEP (Míša Liegertová)]
+metodika:
+  - nazev: Klasifikace speciálních vzdělávacích potřeb podle MŠMT
+  - nazev: Vyhláška č. 27/2016 Sb., o vzdělávání žáků se speciálními vzdělávacími potřebami a žáků nadaných
+    url: https://www.zakonyprolidi.cz/cs/2016-27
+znalosti: [jedinci-se-specialnimi-vzdelavacimi-potrebami.md]
+vek: dospělí (skills jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-07
