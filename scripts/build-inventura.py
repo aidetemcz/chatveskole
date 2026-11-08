@@ -22,8 +22,8 @@ PAGES = {
     "zahranicni-platby-pro-neplatce-dph": ("/zaciname/zahranicni-platby", "aktualizovat", "Ověřit u daňového poradce"),
     "co-je-to-prompt": ("/funkce/prompty", "sloučit", "Sloučeno do stránky Prompty"),
     "jak-vytvaret-prompt": ("/funkce/prompty", "sloučit", "Sloučeno do stránky Prompty"),
-    "prompty": ("/funkce/prompty", "přesunout", "Databáze promptů → Funkce → Prompty"),
-    "prompty-pro-pedagogy": ("/funkce/prompty", "přesunout", "Databáze promptů → Funkce → Prompty"),
+    "prompty": ("/prompty", "přesunout", "Databáze promptů → Katalog promptů"),
+    "prompty-pro-pedagogy": ("/prompty", "přesunout", "Databáze promptů → Katalog promptů"),
     "zpusoby-vyuziti-genai-ve-vyuce": ("/funkce/prompty/zaci", "přesunout", "10 způsobů využití GenAI + žákovské prompty (s NPI)"),
     "co-jsou-ai-asistenti": ("/funkce/zmeny-2026", "nahradit", "Asistenti (GPTs, Gems) končí — vysvětlení na stránce změn"),
     "jak-vyuzivat-ai-asistenty": ("/funkce/skills", "nahradit", "Instalace skills místo GPTs/Gems"),
@@ -47,12 +47,16 @@ PAGES = {
 # --- Databáze promptů (manual_kb) -> cíl --------------------------------------
 SKILL_MAP = {
     "vzdelavaci-cile": ["formulace-vyukoveho-cile", "formulace-vyukoveho-cile-2"],
-    "kriteria-hodnoceni": ["tvorba-kriterii-hodnoceni", "formulace-kriterii-hodnoceni", "vytvareni-sebehodnotici-skaly-pro-zaky", "sebehodnoceni-pro-zaky", "tvorba-dukazu-o-uceni"],
-    "slovni-hodnoceni": ["tvorba-zpetne-vazby", "tvorba-slovniho-hodnoceni", "generovani-slovniho-hodnoceni", "radce-pro-spravne-formulace-slovniho-hodnoceni"],
+    "kriteria-hodnoceni": ["tvorba-kriterii-hodnoceni", "formulace-kriterii-hodnoceni", "sebehodnoceni-pro-zaky", "tvorba-dukazu-o-uceni"],
+    "slovni-hodnoceni": ["tvorba-zpetne-vazby", "tvorba-slovniho-hodnoceni", "generovani-slovniho-hodnoceni"],
+    "gradace-kriterii-hodnoceni": ["vytvareni-sebehodnotici-skaly-pro-zaky"],
+    "radce-slovniho-hodnoceni": ["radce-pro-spravne-formulace-slovniho-hodnoceni"],
     "didakticky-radce": ["didakticky-radce", "planovac-vyuky", "didaktik-konzultant", "napadnicek-geografie", "vyukovy-plan-bloomova-taxonomie", "osnova-lekce-informatika", "strukturovany-ucebni-plan", "unikovka-elektromagnetismus", "eduscrum-mestsky-ekosystem", "otazky-k-diskuzi", "k-cemu-mi-to-je"],
     "pracovni-listy": ["doplnovacka", "spojovacka", "kviz", "pracovni-list-s-otevrenymi-otazkami", "vyuka-s-emotikony", "slovnicek-pojmu", "pracovni-list-pro-reflexi-uciva", "tematicky-test-cizi-jazyk", "matematicke-priklady", "slovicka-nalady", "protiklady-prid-jmena", "doplnovacka_slovesa", "emotikony-zivot-vaclava-havla", "kviz-historie", "tvorba-testu-dedicnost", "slovnicky-pojmu"],
     "uprava-materialu": ["aktualizace-tematickeho-planu", "prevod-materialu-do-jine-formy", "rozsireni-existujiciho-materialu", "prevod-materialu-na-jinou-uroven-obtiznosti", "individualizace-vyukovych-cilu", "diferenciace-textu-rozhovory", "zmena-textu-strucne-a-jasne", "prace-s-textem-shrnuti"],
-    "aktivity-s-chatbotem": ["quiz_bot", "cool_bot_vynalezy", "hadej-chemicke-prvky", "hadej-chemicke-prvky-asistent", "asistent-poznej-svet-zemepisny-kviz", "rpg-simulator-el-castice", "hrani-dvou-roli-bunka", "hraj-roli-chloroplast", "simulator-darwin", "zpetnovazebni-otazky-polymeraza", "textova-hra-karel-iv", "diskuzni-bot-genetika", "pruvodce-biotopy", "wikichat-hardware", "piskvorky", "karierni-poradce-se-zamerenim-na-matematiku"],
+    "hadej-chemicky-prvek": ["hadej-chemicke-prvky-asistent"],
+    "karierni-poradce-matematika": ["karierni-poradce-se-zamerenim-na-matematiku"],
+    "aktivity-s-chatbotem": ["quiz_bot", "cool_bot_vynalezy", "hadej-chemicke-prvky", "asistent-poznej-svet-zemepisny-kviz", "rpg-simulator-el-castice", "hrani-dvou-roli-bunka", "hraj-roli-chloroplast", "simulator-darwin", "zpetnovazebni-otazky-polymeraza", "textova-hra-karel-iv", "diskuzni-bot-genetika", "pruvodce-biotopy", "wikichat-hardware", "piskvorky"],
     "rozvoj-mysleni": ["asistent-pro-rozvoj-mysleni"],
     "komunikace-s-rodici": ["reakce-na-stiznost-rodice", "zprava-o-pokroku-zaka", "vysvetleni-vyznamu-vyuziti-generativni-ai-ve-vyuce", "pozvanka-na-skolni-akci", "informace-o-skolnim-projektu", "komunikace-s-rodici", "komunikace-s-rodici-pozvanka", "komunikace-s-rodici-stiznost"],
     "jazykovy-korektor": ["jazykovy-ai-korektor", "zvyrazneni-chyb-v-textu", "stylistika", "nedelitelne-mezery", "slovni-a-vetny-rozbor"],
@@ -97,46 +101,51 @@ MAPA["znalosti-zadna-ai"] = {"skupina": "vynechat", "skill": None}
 # --- Kategorie (/dp/...) ---------------------------------------------------------
 CATS = {
     "ai-asistenti-pro-hodnoceni-%e2%86%92": "/sady/formativni-hodnoceni",
-    "formativni-hodnoceni": "/funkce/prompty#formativni-hodnoceni",
-    "slovni-hodnoceni-%e2%86%92": "/funkce/prompty#slovni-hodnoceni",
-    "hodnoceni": "/funkce/prompty#hodnoceni",
+    "formativni-hodnoceni": "/prompty#formativni-hodnoceni",
+    "slovni-hodnoceni-%e2%86%92": "/prompty#slovni-hodnoceni",
+    "hodnoceni": "/prompty#hodnoceni",
     "ai-asistenti-pro-rizeni-skoly": "/sady/vedeni-skoly",
-    "tvorba-strategickych-dokumentu": "/funkce/prompty#tvorba-strategickych-dokumentu",
-    "rizeni-a-administrativa-%e2%86%92": "/funkce/prompty#rizeni-a-administrativa",
+    "tvorba-strategickych-dokumentu": "/prompty#tvorba-strategickych-dokumentu",
+    "rizeni-a-administrativa-%e2%86%92": "/prompty#rizeni-a-administrativa",
     "ai-asistenti-ai-akcelerator-%e2%86%92": "/sady/ai-akcelerator",
     "ai-asistenti-ruzne": "/skills",
     "oborovi-ai-asistenti": "/skills/aktivity-s-chatbotem",
-    "adaptivni-vzdelavani": "/funkce/prompty#adaptivni-vzdelavani",
-    "aktualizace-materialu-%e2%86%92": "/funkce/prompty#aktualizace-materialu",
-    "prace-s-textem": "/funkce/prompty#prace-s-textem",
-    "komunikace-s-rodici-%e2%86%92": "/funkce/prompty#komunikace-s-rodici",
-    "tvorba-materialu-do-vyuky": "/funkce/prompty#tvorba-materialu-do-vyuky",
-    "vytvareni-pracovnich-listu": "/funkce/prompty#vytvareni-pracovnich-listu",
-    "vytvareni-lekci": "/funkce/prompty#vytvareni-lekci",
-    "projektova-vyuka": "/funkce/prompty#projektova-vyuka",
-    "seberozvoj-%e2%86%92": "/funkce/prompty#seberozvoj",
-    "vizualizace": "/funkce/prompty#vizualizace",
-    "ruzne": "/funkce/prompty#ruzne",
+    "adaptivni-vzdelavani": "/prompty#adaptivni-vzdelavani",
+    "aktualizace-materialu-%e2%86%92": "/prompty#aktualizace-materialu",
+    "prace-s-textem": "/prompty#prace-s-textem",
+    "komunikace-s-rodici-%e2%86%92": "/prompty#komunikace-s-rodici",
+    "tvorba-materialu-do-vyuky": "/prompty#tvorba-materialu-do-vyuky",
+    "vytvareni-pracovnich-listu": "/prompty#vytvareni-pracovnich-listu",
+    "vytvareni-lekci": "/prompty#vytvareni-lekci",
+    "projektova-vyuka": "/prompty#projektova-vyuka",
+    "seberozvoj-%e2%86%92": "/prompty#seberozvoj",
+    "vizualizace": "/prompty#vizualizace",
+    "ruzne": "/prompty#ruzne",
     "principy-vyuziti-genai-ve-vyuce": "/funkce/prompty/zaci",
     "prompty-pro-zaky": "/funkce/prompty/zaci",
-    "prompty-pro-pedagogy": "/funkce/prompty",
+    "prompty-pro-pedagogy": "/prompty",
 }
 
 rows, redirects = [], []
+def presmeruj(src, dst):
+    # stará adresa, která je zároveň novou stránkou (např. /prompty), se nepřesměrovává — jinak smyčka
+    if src.rstrip("/") != dst.split("#")[0].rstrip("/"):
+        redirects.append({"source": src, "destination": dst, "permanent": True})
+
 for slug, (new, akce, note) in PAGES.items():
     old = f"{BASE}/{slug}/" if slug else f"{BASE}/"
     rows.append(["stránka", old, new, akce, "", note])
     if slug:
-        redirects.append({"source": f"/{slug}", "destination": new, "permanent": True})
+        presmeruj(f"/{slug}", new)
 for slug, (new, akce, typ, note) in sorted(KB.items()):
     rows.append(["databáze promptů", f"{BASE}/databaze-promptu/{slug}/", new, akce, typ, note])
-    redirects.append({"source": f"/databaze-promptu/{slug}", "destination": new, "permanent": True})
+    presmeruj(f"/databaze-promptu/{slug}", new)
 for slug, new in CATS.items():
     rows.append(["kategorie", f"{BASE}/dp/{slug}/", new, "přesměrovat", "", ""])
-    redirects.append({"source": f"/dp/{slug}", "destination": new, "permanent": True})
+    presmeruj(f"/dp/{slug}", new)
 # zbytky WordPressu
-for src, dst in [("/databaze-promptu", "/funkce/prompty"), ("/dp", "/funkce/prompty"), ("/wp-content/uploads/:path*", "/archiv/uploads/:path*"), ("/feed", "/")]:
-    redirects.append({"source": src, "destination": dst, "permanent": True})
+for src, dst in [("/databaze-promptu", "/prompty"), ("/dp", "/prompty"), ("/wp-content/uploads/:path*", "/archiv/uploads/:path*"), ("/feed", "/")]:
+    presmeruj(src, dst)
 
 out = ROOT / "migrace"
 out.mkdir(exist_ok=True)

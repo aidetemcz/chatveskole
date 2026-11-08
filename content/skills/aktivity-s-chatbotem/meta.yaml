@@ -15,8 +15,6 @@ puvodni_obsah:
     typ: prompt
   - url: https://chatveskole.cz/databaze-promptu/hadej-chemicke-prvky/
     typ: prompt
-  - url: https://chatveskole.cz/databaze-promptu/hadej-chemicke-prvky-asistent/
-    typ: asistent
   - url: https://chatveskole.cz/databaze-promptu/asistent-poznej-svet-zemepisny-kviz/
     typ: asistent
   - url: https://chatveskole.cz/databaze-promptu/rpg-simulator-el-castice/
@@ -39,20 +37,16 @@ puvodni_obsah:
     typ: prompt
   - url: https://chatveskole.cz/databaze-promptu/piskvorky/
     typ: prompt
-  - url: https://chatveskole.cz/databaze-promptu/karierni-poradce-se-zamerenim-na-matematiku/
-    typ: asistent
 puvodni_asistenti:
-  gpt:
-    - https://chatgpt.com/g/g-sTf7nS5F8-hadej-chemicky-prvek
+  gpt:                         # Hádej chemický prvek a Kariérní poradce jsou od 8. 11. 2026 samostatné skills
     - https://chatgpt.com/g/g-67c5b020537c8191a0b9e15a1374bfde-poznej-svet-zemepisny-kviz/
-    - https://chatgpt.com/g/g-tpHY1HiGh-karierni-poradce-se-zamerenim-na-matematiku
   dalsi:                       # sloučený asistent pro Tiny (na webu nebyl), nahrazen průvodcem v Tiny
     - nazev: Asistent pro tvorbu zadání (Tiny)
       systemovy_prompt:
         - https://docs.google.com/document/d/1AB9q7ftffIHAsedUor47I5sLC1-hd-nnvLWgrBsGntY/edit
         - https://docs.google.com/document/d/1-125LsGfhQ4Aq2MpXCQvGJ4YXI6pHuPh-RFdWxYV7ds/edit
-google_doc: https://docs.google.com/document/d/1kpS1JEjNhr82F3xYPyt7xOA7-q8BRmrReavSBdOdmYk/edit
-google_slozka: https://drive.google.com/drive/folders/1mXLeunHunXbMMjIDKluzXScjkEPhd3bB
+google_doc: https://docs.google.com/document/d/1V5j9bzVXhRUO3SRh3tGb_hrOTZ0weB1c4EV33QEFOm0/edit
+google_slozka: https://drive.google.com/drive/folders/1tSfbk5Sg2vYC5QzDARZm29Y2AL6oEvZg
 autori: [Eva Nečasová (AI dětem), AI reaktor UJEP (Míša Liegertová), Jan Jílek (Poznej svět)]
 metodika:
   - nazev: Kurikulum umělé inteligence – Matematika pro život (AI dětem)
@@ -63,4 +57,4 @@ metodika:
     url: https://www.linkabezpeci.cz/
 vek: dospělí (skills jsou v Gemini a Claude 18+); prompty z výstupu jsou pro žáky podle věkových hranic nástroje
 stav: koncept
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-08

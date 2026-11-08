@@ -27,7 +27,7 @@ const skill = prompt.data.skill ? skillBySlug(prompt.data.skill) : undefined;
 <Base title={prompt.data.title} description={`Prompt ${prompt.data.title} — zkopírujte ho do chatbota a doplňte údaje.`} noindex={archiv}>
   <div class="wrap layout">
     <article class="main">
-      <Crumbs items={[{ title: 'Katalog promptů', href: '/funkce/prompty' }, { title: prompt.data.title }]} />
+      <Crumbs items={[{ title: 'Katalog promptů', href: '/prompty' }, { title: prompt.data.title }]} />
       <header class="page-head"><h1>{prompt.data.title}</h1></header>
       {archiv && <p class="note note--info">Starší prompt z roku 2024. Zatím není v katalogu — procházíme, které staré prompty zůstanou.</p>}
       <div class="prose"><Content /></div>

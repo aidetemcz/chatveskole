@@ -51,13 +51,8 @@
       "permanent": true
     },
     {
-      "source": "/prompty",
-      "destination": "/funkce/prompty",
-      "permanent": true
-    },
-    {
       "source": "/prompty-pro-pedagogy",
-      "destination": "/funkce/prompty",
+      "destination": "/prompty",
       "permanent": true
     },
     {
@@ -287,7 +282,7 @@
     },
     {
       "source": "/databaze-promptu/hadej-chemicke-prvky-asistent",
-      "destination": "/skills/aktivity-s-chatbotem",
+      "destination": "/skills/hadej-chemicky-prvek",
       "permanent": true
     },
     {
@@ -327,7 +322,7 @@
     },
     {
       "source": "/databaze-promptu/karierni-poradce-se-zamerenim-na-matematiku",
-      "destination": "/skills/aktivity-s-chatbotem",
+      "destination": "/skills/karierni-poradce-matematika",
       "permanent": true
     },
     {
@@ -492,7 +487,7 @@
     },
     {
       "source": "/databaze-promptu/radce-pro-spravne-formulace-slovniho-hodnoceni",
-      "destination": "/skills/slovni-hodnoceni",
+      "destination": "/skills/radce-slovniho-hodnoceni",
       "permanent": true
     },
     {
@@ -687,7 +682,7 @@
     },
     {
       "source": "/databaze-promptu/vytvareni-sebehodnotici-skaly-pro-zaky",
-      "destination": "/skills/kriteria-hodnoceni",
+      "destination": "/skills/gradace-kriterii-hodnoceni",
       "permanent": true
     },
     {
@@ -747,17 +742,17 @@
     },
     {
       "source": "/dp/formativni-hodnoceni",
-      "destination": "/funkce/prompty#formativni-hodnoceni",
+      "destination": "/prompty#formativni-hodnoceni",
       "permanent": true
     },
     {
       "source": "/dp/slovni-hodnoceni-%e2%86%92",
-      "destination": "/funkce/prompty#slovni-hodnoceni",
+      "destination": "/prompty#slovni-hodnoceni",
       "permanent": true
     },
     {
       "source": "/dp/hodnoceni",
-      "destination": "/funkce/prompty#hodnoceni",
+      "destination": "/prompty#hodnoceni",
       "permanent": true
     },
     {
@@ -767,12 +762,12 @@
     },
     {
       "source": "/dp/tvorba-strategickych-dokumentu",
-      "destination": "/funkce/prompty#tvorba-strategickych-dokumentu",
+      "destination": "/prompty#tvorba-strategickych-dokumentu",
       "permanent": true
     },
     {
       "source": "/dp/rizeni-a-administrativa-%e2%86%92",
-      "destination": "/funkce/prompty#rizeni-a-administrativa",
+      "destination": "/prompty#rizeni-a-administrativa",
       "permanent": true
     },
     {
@@ -792,57 +787,57 @@
     },
     {
       "source": "/dp/adaptivni-vzdelavani",
-      "destination": "/funkce/prompty#adaptivni-vzdelavani",
+      "destination": "/prompty#adaptivni-vzdelavani",
       "permanent": true
     },
     {
       "source": "/dp/aktualizace-materialu-%e2%86%92",
-      "destination": "/funkce/prompty#aktualizace-materialu",
+      "destination": "/prompty#aktualizace-materialu",
       "permanent": true
     },
     {
       "source": "/dp/prace-s-textem",
-      "destination": "/funkce/prompty#prace-s-textem",
+      "destination": "/prompty#prace-s-textem",
       "permanent": true
     },
     {
       "source": "/dp/komunikace-s-rodici-%e2%86%92",
-      "destination": "/funkce/prompty#komunikace-s-rodici",
+      "destination": "/prompty#komunikace-s-rodici",
       "permanent": true
     },
     {
       "source": "/dp/tvorba-materialu-do-vyuky",
-      "destination": "/funkce/prompty#tvorba-materialu-do-vyuky",
+      "destination": "/prompty#tvorba-materialu-do-vyuky",
       "permanent": true
     },
     {
       "source": "/dp/vytvareni-pracovnich-listu",
-      "destination": "/funkce/prompty#vytvareni-pracovnich-listu",
+      "destination": "/prompty#vytvareni-pracovnich-listu",
       "permanent": true
     },
     {
       "source": "/dp/vytvareni-lekci",
-      "destination": "/funkce/prompty#vytvareni-lekci",
+      "destination": "/prompty#vytvareni-lekci",
       "permanent": true
     },
     {
       "source": "/dp/projektova-vyuka",
-      "destination": "/funkce/prompty#projektova-vyuka",
+      "destination": "/prompty#projektova-vyuka",
       "permanent": true
     },
     {
       "source": "/dp/seberozvoj-%e2%86%92",
-      "destination": "/funkce/prompty#seberozvoj",
+      "destination": "/prompty#seberozvoj",
       "permanent": true
     },
     {
       "source": "/dp/vizualizace",
-      "destination": "/funkce/prompty#vizualizace",
+      "destination": "/prompty#vizualizace",
       "permanent": true
     },
     {
       "source": "/dp/ruzne",
-      "destination": "/funkce/prompty#ruzne",
+      "destination": "/prompty#ruzne",
       "permanent": true
     },
     {
@@ -857,17 +852,17 @@
     },
     {
       "source": "/dp/prompty-pro-pedagogy",
-      "destination": "/funkce/prompty",
+      "destination": "/prompty",
       "permanent": true
     },
     {
       "source": "/databaze-promptu",
-      "destination": "/funkce/prompty",
+      "destination": "/prompty",
       "permanent": true
     },
     {
       "source": "/dp",
-      "destination": "/funkce/prompty",
+      "destination": "/prompty",
       "permanent": true
     },
     {

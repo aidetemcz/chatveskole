@@ -1,24 +1,126 @@
 {
-  "_popis": "Složky skills na Google Disku (sdílený disk, složka Zdroje k stažení). Odkazy jsou v meta.yaml → google_doc, google_slozka. Nahráno 7. 11. 2026.",
-  "korenova_slozka": "https://drive.google.com/drive/folders/1vZ4IR6LhZs0v9Gvpwo4piEfIsN0DsS1X",
+  "_popis": "Složky skills na Google Disku (sdílený disk, místo pravdy: složka Skills). Odkazy jsou v meta.yaml → google_doc, google_slozka (google_dalsi). Stav 8. 11. 2026, přehled: https://docs.google.com/document/d/1vW46HZmgZMEncvKIE6jROxs3YfHvEcjxCWSWIKR7Ct4/edit",
+  "korenova_slozka": "https://drive.google.com/drive/folders/1AZy-XZ4PYPWCCB-LVVwy96FfQ2i1G4Ai",
   "skills": {
-    "Procesní analytik": {"slozka": "1Q8asrLsZvGG9QGksZI4DWacLuVKO8E3Y", "doc": "10Ojs971Ls5kjx4T_bhOjVPEQ7jZ4BVRwJ8e9nheO7Co"},
-    "Kritéria hodnocení": {"slozka": "17oqarr2QVHYv3dl_lKk0vOp-EKLC_fO9", "doc": "1nJtTFcuob9yQOGPP48PU4GLMKen8jiRoPuyv6Mfxby4"},
-    "Jazykový korektor": {"slozka": "1RnUfCJ0npVn2thxU31Jh9LGFUJTMIgPW", "doc": "1fRcqvskNFEo5wTBvHVsj9qGFYp9rB0J_Qggat03ZvGc"},
-    "AI gramotnost v RVP a ŠVP": {"slozka": "1Ywha8uPIPR76S_llsJXkTTr2aDhSjd8Z", "doc": "17cFTBieSCfpGCJ8swpA6ucRuPFj6DpnuB9igrJ8tUio"},
-    "Učitelský mentor": {"slozka": "1zr2DLZ9b1MpweSCRTO2D2_r1V9PIykQ6", "doc": "1dW_5njfLcyaJOs8Tldrt8cpxnFJfvUxoY7wfupEQMj8"},
-    "Didaktický rádce": {"slozka": "1X7p8y0wLhLRHENL6ifY_S9pjlzA5k218", "doc": "17bYWaTJ9-df68hPHldAbUylWY6jMztki8fQMQy8KDOk"},
-    "Řízení změny ve škole": {"slozka": "186uAIYKFjnN8WySh1VdgqAadTDguPveU", "doc": "1IiSI9Ui-rncV8JZNGkzX1tzSwap3EzBJfRPVrfyCwgs"},
-    "Úprava materiálu": {"slozka": "1oKSp_IJAhUfcXM-jVnlAddKQizn2_980", "doc": "1WtIuPQddEZsCLTHfvucx9nYQ9KrEMGlTCApDyjbAIqQ"},
-    "Rozvoj myšlení": {"slozka": "1vBW7-_3KVWVKg9iKq0_8oSP0WLh43e_n", "doc": "16nzIUd4QSUv-CqXENq0REC4L6H19wDdqrVRNK0lAzsA"},
-    "Aktivity s chatbotem": {"slozka": "1mXLeunHunXbMMjIDKluzXScjkEPhd3bB", "doc": "1kpS1JEjNhr82F3xYPyt7xOA7-q8BRmrReavSBdOdmYk"},
-    "Školní pravidla": {"slozka": "14tYlDmZX09IMruvuCqLNXvGycNK-hFWf", "doc": "1jm368kuPSAYuKAy-sKm1vtjoDrHwLWOhxycWMev_30w"},
-    "Pracovní listy": {"slozka": "1Fb6apT9KLJc7mqK_HnfJyVEL2NMSjDg9", "doc": "18QxJGkByRUZtGfn0tV6Gvtp8WqbGg1U7vuchCL4FMkI"},
-    "Hodnoty, mise, vize a profil absolventa": {"slozka": "1khnljfO_-PsrbJe1ppqvTGjXziCF_39B", "doc": "1arfBmh8D17Fae515nSf0eawsEjwJCnjivpVi7GYHktc"},
-    "Komunikace s rodiči": {"slozka": "1msQGOOgc24kYCw7X0vAUfzOEd0MFuWek", "doc": "12SwTwjk7d3B0kK_Q-_sKmoXZIEAk0yocqIeiFIiynyA"},
-    "Slovní hodnocení": {"slozka": "1BXd4fbz-IBvb6QBTJ64ywzPGw3Pa2z7G", "doc": "1D98KybOoVijHPFIwEy94CYBsxFYnpYKF31zVTgl9Z9E"},
-    "Vzdělávací cíle": {"slozka": "1_wl1U7ZGVC1aMwmfnNSFU2Q7T5fs8dwv", "doc": "15qxs92NMynJxiv00lPp7ffHinpYJyKc-gU8O_1JmXWA"},
-    "Strategické dokumenty": {"slozka": "1Okv2DfsPYl_cU-HuZvF6OF2jEWrh7hji", "doc": "1OOxAC-Fz78WICfe4AgQYN57SAG4JS1PseMHmPUJ1HVw"},
-    "Asistent ředitele": {"slozka": "14TTe3wJ0ZSDWWHgJ-XOxEBYUT8L7jfiC", "doc": "19bCRu39BUgojbsqiFgIM-you5ItsEY3rDuAHZpj55JA"}
+    "AI gramotnost v RVP a ŠVP": {
+      "slug": "ai-gramotnost-v-svp",
+      "slozka": "1vQgbbVvqb50qX4CfWIWZtdg8iGDMVSZo",
+      "doc": "1Jbi75Gs7o-RvWOtS-N-dih7uY8UotXrO0u8MFfMU1eI"
+    },
+    "Aktivity s chatbotem": {
+      "slug": "aktivity-s-chatbotem",
+      "slozka": "1tSfbk5Sg2vYC5QzDARZm29Y2AL6oEvZg",
+      "doc": "1V5j9bzVXhRUO3SRh3tGb_hrOTZ0weB1c4EV33QEFOm0"
+    },
+    "Asistent ředitele": {
+      "slug": "asistent-reditele",
+      "slozka": "12IyBwvIsF5rkFUyExv2lpamRsWDzIlCC",
+      "doc": "1W1qLlklJ5DK4-R_Jd6vTLa7K1jIcG5Jq5eIOOBBucfY"
+    },
+    "Didaktický rádce": {
+      "slug": "didakticky-radce",
+      "slozka": "18KjVr2x7s05owPk_RY0Iplha29FYhzaD",
+      "doc": "1NLbFO0t7gcQGyn8ijywK9lrgDB4PuYEy3AUrMz1Sfug"
+    },
+    "Gradace klíčových kompetencí": {
+      "slug": "gradace-klicovych-kompetenci",
+      "slozka": "1tIFIAxgdqj2JPRRpmPnF0hkcA46lZgRJ",
+      "doc": "1EfyY7MsppbJLY9kEZ6WYZm2ziuqVGq5VCEGFLcAvDWQ"
+    },
+    "Gradace kritérií hodnocení (J–Č–T–Ú)": {
+      "slug": "gradace-kriterii-hodnoceni",
+      "slozka": "10xmfAX7Ne5Arb6l5Isho6kKvOcSRaukN",
+      "doc": "1jI9LdW75FiNqdfns18bNraAPYaguHpdB7DNfmhlKuZ8"
+    },
+    "Hádej chemický prvek": {
+      "slug": "hadej-chemicky-prvek",
+      "slozka": "1PbiL0KG_eNlFE4MSF_BLcS9jjfcjxgpf",
+      "doc": "1au78J6jl80G1vYSOtzoOD_mIW8h16MiPuF7CdNGMpE8"
+    },
+    "Jazykový korektor": {
+      "slug": "jazykovy-korektor",
+      "slozka": "143QCVYHP2DkNpeSoFw1-fBnX9X_JO8m8",
+      "doc": "1hOLVAluQ-wQyU8LCKCXyjXmicAD9SAT5tSA8FxUa8nc"
+    },
+    "Kariérní poradce – matematika": {
+      "slug": "karierni-poradce-matematika",
+      "slozka": "1a4lhmY5I3qOVEzlSC09iSPx6dOvnhTTM",
+      "doc": "1lbj2cC8Z_T_b34AKIlJFR3jx9eG0o8HVTwhY0ycN1Qo"
+    },
+    "Komunikace s rodiči": {
+      "slug": "komunikace-s-rodici",
+      "slozka": "1HDcgeuiaF0KG5a-RhAYZHIn05lJf7XfC",
+      "doc": "1im5k0lxbdqdv0oN7HoSgTFVqeotW35aKN_ICGBLtcOY"
+    },
+    "Kritéria hodnocení": {
+      "slug": "kriteria-hodnoceni",
+      "slozka": "1AXAp1yrnNUiUSwTjQdwcV-PLLUU6LKNF",
+      "doc": "1UUhFUc8PfWJVqfB9g16j3-WDiTOrRQvfy_aB_yxYYjs"
+    },
+    "Lepší třídní klima": {
+      "slug": "lepsi-tridni-klima",
+      "slozka": "11xGfGjPpuG6kaovWbWmItpfvEYtLZc8H",
+      "doc": "1cwIBXQGFgCsFmYEPbfsRoiHAvBsqjBi2C753t35BN3A"
+    },
+    "Hodnoty, mise, vize a profil absolventa": {
+      "slug": "mise-vize-hodnoty",
+      "slozka": "1872qWtzNRB5EygB4WLc55InQRP3k3_D-",
+      "doc": "1c2MPDXW7omQE9laZaG8F0R8aX8gE4kzyxi7qWV0eIf0"
+    },
+    "Pracovní listy": {
+      "slug": "pracovni-listy",
+      "slozka": "1q6xd25uwBY2AGvCsWPE0FzC1T3yIeGVT",
+      "doc": "1J_gzfytRmCPsRXHckGl3ZMb3cM-BVWjtoPeBr5zIZVI"
+    },
+    "Procesní analytik": {
+      "slug": "procesni-analytik",
+      "slozka": "1JlRSo74mR2rHMl2V_YDcM0yU0E5WULdW",
+      "doc": "1Jrw1-QYxaEjlzWAVHKSAchVBuM-TplEb1xc_c3Yr9Lg"
+    },
+    "Rádce pro formulace slovního hodnocení": {
+      "slug": "radce-slovniho-hodnoceni",
+      "slozka": "1Gt3D082HsKF5dDqP8wLXLygDtktxPww_",
+      "doc": "1tSsQezytdBJ5f-ztsWKXfls3bXTP80r2TX_m7BuV7nU"
+    },
+    "Řízení změny ve škole": {
+      "slug": "rizeni-zmeny",
+      "slozka": "1MMa7m55095cB7SNb95m72FNkaGCYcZAl",
+      "doc": "1jfHVxUA3NtPmKA4LjFJRHVDjgbgxn6mplpx30MN3SyQ"
+    },
+    "Rozvoj myšlení": {
+      "slug": "rozvoj-mysleni",
+      "slozka": "13TnLbBcspfjJLq-2MWkkxBZNMbWZYw7X",
+      "doc": "169ApSelQyILOaVjvmrJ7HLnQHyrT-t8otEsXbROdrvM"
+    },
+    "Školní pravidla": {
+      "slug": "skolni-pravidla",
+      "slozka": "1nI-WrDOqaLl06FaDfUmlHyOPhuoz5zVl",
+      "doc": "1k0V9nqvSMF79JxynKbEhDfj7iofULqlyqJwUsuMdV0k"
+    },
+    "Slovní hodnocení": {
+      "slug": "slovni-hodnoceni",
+      "slozka": "1xfVr9r56k4yjkxvpKTeY_vODSeixx8lN",
+      "doc": "1r65QTk3-Q-qhcWDo1dHPSrCQPXmnNsjhT37mjIKDjBI"
+    },
+    "Strategické dokumenty": {
+      "slug": "strategicke-dokumenty",
+      "slozka": "1oXr0RKTC8j01hPRBlr9fszK7wEbsB0qY",
+      "doc": "1RwNaT2_ND4qc7gzWBT5EGJr8DBsIg-WKzb9mjnrMpLs"
+    },
+    "Učitelský mentor": {
+      "slug": "ucitelsky-mentor",
+      "slozka": "1lPjbiQfJfy6G_5bf_r4NGlxFzNZ6RIsA",
+      "doc": "1JezNEXPFJe6xCS2a_4J8ItAjnfsvZGcN6BY1STGVRq4"
+    },
+    "Úprava materiálu": {
+      "slug": "uprava-materialu",
+      "slozka": "1bQWAA57MxNdafjTF9PWbw_jinK39O_sS",
+      "doc": "14C3PtV0eh4LRUWAhi9pV0u-OJpVANwv895V1YoggmFk"
+    },
+    "Vzdělávací cíle": {
+      "slug": "vzdelavaci-cile",
+      "slozka": "1_hfZUb5jOB2Riamh8EGISCQMsJhIpeBB",
+      "doc": "1-vbZS3R3KRhswZl0OPVJgCGn7Ye4or7DfgReqy9b8hs"
+    }
   }
 }

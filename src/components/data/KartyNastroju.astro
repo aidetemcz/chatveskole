@@ -1,0 +1,41 @@
+---
+// Karty nástrojů z data/funkce-chatbotu.yaml: Končí / Přibývá / Na co myslet ve škole
+import { funkceChatbotu as F } from '../../lib/data';
+---
+<div class="tcards">
+  {F.nastroje.map((n) => (
+    <article class="tcard" aria-labelledby={`nastroj-${n.id}`}>
+      <header>
+        <h3 id={`nastroj-${n.id}`}>{n.nazev}</h3>
+        <span class="maker">{n.vyrobce}</span>
+        <span class="shift">{n.posun}</span>
+      </header>
+      <div class="grp g-end"><h4>Končí</h4><ul>{n.konci.map((x) => <li>{x}</li>)}</ul></div>
+      <div class="grp g-new"><h4>Přibývá</h4><ul>{n.pribyva.map((x) => <li>{x}</li>)}</ul></div>
+      <div class="grp g-school"><h4>Na co myslet ve škole</h4><ul>{n.skola.map((x) => <li>{x}</li>)}</ul></div>
+    </article>
+  ))}
+</div>
+
+<style>
+  .tcards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .tcard { border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 22px 24px; display: flex; flex-direction: column; gap: 16px; min-width: 0; background: var(--panel); }
+  header { display: grid; grid-template-columns: auto 1fr; align-items: baseline; gap: 2px 10px; }
+  h3 { font-size: 1.3rem; font-weight: 700; }
+  .maker { font-size: 0.8rem; color: var(--muted); }
+  .shift { grid-column: 1 / -1; color: var(--sky-ink); font-weight: 500; }
+  .grp { display: flex; flex-direction: column; gap: 6px; }
+  h4 { font-family: var(--fb); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+  h4::before { content: ''; width: 9px; height: 9px; border-radius: 50%; background: var(--sky); }
+  .g-end h4 { color: var(--accent-ink); }
+  .g-end h4::before { background: var(--accent); }
+  .g-new h4 { color: var(--sky-ink); }
+  .g-new h4::before { background: var(--sky-deep); }
+  ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 5px; }
+  li { font-size: 0.9rem; line-height: 1.45; padding-left: 17px; position: relative; }
+  li::before { content: ''; position: absolute; left: 2px; top: 0.62em; width: 5px; height: 5px; border-radius: 50%; background: var(--line); }
+  .g-end li::before { background: var(--accent); opacity: 0.6; }
+  .g-new li::before { background: var(--sky-deep); opacity: 0.6; }
+  .g-school li::before { background: var(--muted); opacity: 0.5; }
+  @media (max-width: 860px) { .tcards { grid-template-columns: 1fr; } .tcard { padding: 18px; } }
+</style>

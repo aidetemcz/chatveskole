@@ -3,6 +3,7 @@ title: Skills (dovednosti)
 menu: Funkce
 poradi: 3
 popis: Co jsou skills, jak je nainstalovat do Claude, Gemini, Copilotu a ChatGPT a jak napsat vlastní. Náhrada za GPTs a Gems.
+tlacitko: { text: Přejít na Katalog skills, href: /skills }
 aktualizovano: 2026-11-07
 stav: koncept
 zdroje:
@@ -33,7 +34,7 @@ Formát je otevřený standard [Agent Skills](https://agentskills.io), takže ho
 
 ## Skills z tohoto webu
 
-Všechny naše dřívější AI asistenty jsme převedli na skills a přidali k nim to nejlepší z databáze promptů. Původní prompty zůstávají v [databázi promptů](/funkce/prompty). U každého skillu najdete:
+Všechny naše dřívější AI asistenty jsme převedli na skills a přidali k nim to nejlepší z databáze promptů. Původní prompty zůstávají v [katalogu promptů](/prompty). U každého skillu najdete:
 
 - **Zkopírovat jako prompt** — funguje v jakémkoli chatbotu, i zdarma,
 - **Stáhnout skill (ZIP)** — k nahrání do vašeho chatbota,
@@ -42,7 +43,6 @@ Všechny naše dřívější AI asistenty jsme převedli na skills a přidali k 
 
 [Katalog skills →](/skills)
 
-<!-- komponenta: dlaždice sad a skills z content/sady.yaml + content/skills/*/meta.yaml -->
 
 ## Jak skill nainstalovat
 

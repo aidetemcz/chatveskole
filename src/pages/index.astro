@@ -21,7 +21,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
         <p class="lede" style="font-size: 1.15rem; max-width: 56ch">Chatboti jsou jako miliony asistentů s miliony expertíz. Pojďme je využít ve školách tak, aby učitelům šetřili čas a dětem pomáhali kvalitně se učit a kriticky přemýšlet.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 4px">
           <a class="btn btn--primary" href={url('/skills')}>Katalog skills</a>
-          <a class="btn btn--outline" href={url('/funkce/prompty')}>Katalog promptů</a>
+          <a class="btn btn--outline" href={url('/prompty')}>Katalog promptů</a>
         </div>
       </div>
       <div class="changes" aria-labelledby="zmeny">
@@ -65,14 +65,14 @@ const nKatalog = nUcitele + nVedeni + nZaci;
     <div class="wrap stack" style="gap: 22px">
       <div class="section-head">
         <div><h2 id="prompty-h">Katalog promptů</h2><p>Ověřené prompty pro učitele, vedení škol i žáky. Stačí zkopírovat do chatbota a doplnit údaje.</p></div>
-        <a class="more" href={url('/funkce/prompty')}>Všech {nKatalog} promptů →</a>
+        <a class="more" href={url('/prompty')}>Všech {nKatalog} promptů →</a>
       </div>
       <div class="grid-3">
-        <a class="card card--lg" href={url('/funkce/prompty')}>
+        <a class="card card--lg" href={url('/prompty')}>
           <div class="card-top"><span class="title-row"><span class="tile-icon tile-icon--accent"><Icon name="chat" size={18} /></span><h3 style="font-size: 1.15rem">Pro učitele</h3></span><span class="count" style="font-size: 0.78rem">{pocet(nUcitele, 'prompt', 'prompty', 'promptů')}</span></div>
           <p>Formativní a slovní hodnocení, pracovní listy, úpravy materiálů a komunikace s rodiči.</p>
         </a>
-        <a class="card card--lg" href={url('/funkce/prompty')}>
+        <a class="card card--lg" href={url('/prompty')}>
           <div class="card-top"><span class="title-row"><span class="tile-icon tile-icon--accent"><Icon name="school" size={18} /></span><h3 style="font-size: 1.15rem">Pro vedení školy</h3></span><span class="count" style="font-size: 0.78rem">{pocet(nVedeni, 'prompt', 'prompty', 'promptů')}</span></div>
           <p>Strategie školy, hodnoty, mise a vize, profil absolventa, školní pravidla a hodnocení kvality výuky.</p>
         </a>

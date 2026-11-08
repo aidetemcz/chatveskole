@@ -13,13 +13,14 @@ Přečti:
 
 ## Struktura
 
-- `content/stranky/**.md` — stránky podle menu; frontmatter: title, menu, poradi, popis (meta description), sablona, data, stav, zdroje
+- `content/stranky/**.md` — stránky podle menu; frontmatter: title, menu, poradi, popis (meta description), sablona, data, stav, zdroje, tlacitko (`{ text, href }` = tlačítko na konci stránky)
 - `content/navigace.yaml` — menu a generované stránky
 - `content/skills/<slug>/` — SKILL.md, prompt.md, meta.yaml, references/
 - `content/sady.yaml` — sady skills (= pluginy)
-- `content/prompty/{pedagogove,vedeni,zaci,archiv-2024}/` — katalog promptů (původní prompty, převedené `scripts/prevod-promptu.mjs`); `archiv-2024` se v katalogu nezobrazuje, stránky existují kvůli starým odkazům
+- `content/prompty/{pedagogove,vedeni,zaci,archiv-2024}/` — katalog promptů (původní prompty, převedené `scripts/prevod-promptu.mjs`); katalog je na `/prompty` (`src/pages/prompty.astro`), vysvětlení „co je prompt“ na `/funkce/prompty`; `archiv-2024` se v katalogu nezobrazuje, stránky existují kvůli starým odkazům
 - `content/znalosti/znalosti.yaml` — odkazy na znalostní soubory na Google Disku
-- `data/*.yaml` — data pro tabulky (funkce chatbotů, ceny)
+- `data/*.yaml` — data pro tabulky (funkce chatbotů, ceny); text s dvojtečkou dávejte do uvozovek, jinak build skončí chybou
+- `<!-- komponenta: … -->` v Markdownu = místo pro datovou komponentu nebo úpravu následujícího textu (záložky, karty); seznam značek v `src/lib/komponenty.ts`
 - `migrace/redirects.json` — přesměrování starých URL (generuje `scripts/build-inventura.py`)
 - `archiv/` — export starého WordPressu (`node scripts/export-wordpress.mjs --images`)
 - `migrace/mapa-promptu.json` — který záznam staré databáze je prompt, žákovský prompt, nebo asistent (→ skill)
@@ -30,7 +31,8 @@ Přečti:
 
 - `npm install` — jednou po stažení
 - `npm run dev` — vývojový server (http://localhost:4321)
-- `npm run build` — ZIPy skills a pluginů (`scripts/build-downloads.mjs`) + statický web do `dist/`
+- `npm run build` — ZIPy skills a pluginů (`scripts/build-downloads.mjs`), statický web do `dist/`, pak přesměrovací stránky starých URL, sitemap a robots.txt (`scripts/po-buildu.mjs`) a index vyhledávání (Pagefind)
+- `INDEXOVAT=1 npm run build` — build pro ostrý web na chatveskole.cz; bez `INDEXOVAT=1` mají všechny stránky `noindex` (náhledy na github.io a vercel.app)
 - `npm run check` — kontrola interních odkazů v `dist/` a SKILL.md (`scripts/check-links.mjs`, `scripts/check-skills.py`)
 - `BASE_PATH=/chatveskole npm run build` — build pro GitHub Pages (tak to dělá workflow `.github/workflows/deploy.yml`)
 
@@ -51,7 +53,7 @@ Přečti:
 - Pluginy mají prefix `aidetem-` a formát `.claude-plugin/plugin.json` + `skills/`; v kořeni repa `.claude-plugin/marketplace.json`.
 
 **Kód**
-- Astro, TypeScript, čisté CSS s tokeny z `docs/design.md` (`src/styles/global.css`). Žádný CSS framework, žádná databáze.
+- Astro, TypeScript, čisté CSS s tokeny z `docs/design.md` (`src/styles/global.css`). Žádný CSS framework, žádná databáze. Jen světlý režim, tmavý nepřidávat.
 - Interní odkazy vždy přes `url()` z `src/lib/url.ts` (doplní base `/chatveskole`); odkazy v Markdownu přepisuje plugin `src/lib/rehype-base.mjs`.
 - JavaScript jen tam, kde je potřeba interakce (kopírování promptu, záložky, menu, filtr katalogu).
 - Přístupnost: WCAG AA, ovládání klávesnicí, mobil od 360 px.

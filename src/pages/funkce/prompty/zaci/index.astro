@@ -3,6 +3,7 @@ import { getCollection, getEntry, render } from 'astro:content';
 import Base from '../../../../layouts/Base.astro';
 import Crumbs from '../../../../components/Crumbs.astro';
 import PromptCard from '../../../../components/PromptCard.astro';
+import TinyTabulka from '../../../../components/data/TinyTabulka.astro';
 import { url } from '../../../../lib/url';
 import { promptText } from '../../../../lib/data';
 
@@ -13,7 +14,7 @@ const zaci = (await getCollection('prompty')).filter((p) => p.id.startsWith('zac
 <Base title={uvod.data.title} description={uvod.data.popis}>
   <div class="band band--white" style="padding-bottom: 32px">
     <div class="wrap stack" style="gap: 24px">
-      <Crumbs items={[{ title: 'Katalog promptů', href: '/funkce/prompty' }, { title: uvod.data.title }]} />
+      <Crumbs items={[{ title: 'Katalog promptů', href: '/prompty' }, { title: uvod.data.title }]} />
       <header class="page-head">
         <h1>{uvod.data.title}</h1>
         <p class="lede">{uvod.data.popis}</p>
@@ -31,10 +32,7 @@ const zaci = (await getCollection('prompty')).filter((p) => p.id.startsWith('zac
       <section class="stack" style="gap: 12px; max-width: 72ch" aria-labelledby="tiny-h">
         <h2 id="tiny-h" style="font-size: 1.5rem">Prompty a chatboti v Tiny</h2>
         <p style="color: var(--muted)">Žáci pod věkovou hranicí chatbotů mohou stejné způsoby práce vyzkoušet v aplikaci <a href={url('/ve-vyuce/tiny')}>Tiny</a>.</p>
-        <div class="prose"><table>
-          <thead><tr><th scope="col">Prompt</th><th scope="col">Chatbot v Tiny</th></tr></thead>
-          <tbody>{zaci.map((p) => <tr><td><a href={url(`/funkce/prompty/zaci/${p.id.split('/')[1]}`)}>{p.data.title}</a></td><td>{p.data.tiny_chatbot ?? '—'}</td></tr>)}</tbody>
-        </table></div>
+        <TinyTabulka />
       </section>
     </div>
   </div>

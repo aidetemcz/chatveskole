@@ -15,7 +15,7 @@ const d = prompt.data;
 <Base title={`${d.title} — prompt pro žáky`} description={d.proc_ho_vyuzit}>
   <div class="wrap layout">
     <article class="main">
-      <Crumbs items={[{ title: 'Katalog promptů', href: '/funkce/prompty' }, { title: 'Pro žáky', href: '/funkce/prompty/zaci' }, { title: d.title }]} />
+      <Crumbs items={[{ title: 'Katalog promptů', href: '/prompty' }, { title: 'Pro žáky', href: '/funkce/prompty/zaci' }, { title: d.title }]} />
       <header class="page-head"><h1>{d.title}</h1></header>
       <div class="prose"><Content /></div>
     </article>

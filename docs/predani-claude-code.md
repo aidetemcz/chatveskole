@@ -19,7 +19,11 @@ Tento dokument je pro Evu (jak práci spustit) i pro Claude Code (co dělat a v 
 - [x] Schválený design (8. 11. 2026) — pravidla v `docs/design.md`, návrh v Claude Design
 - [x] Astro aplikace, fáze 2 a 3 (8. 11. 2026): hlavička, patička, homepage, obsahové stránky, katalog a detail skills, sady, katalog a detail promptů včetně žákovských, ZIPy ke stažení, 404, kontrola odkazů (`npm run check`), nasazení na GitHub Pages (`.github/workflows/deploy.yml`)
 
-Ještě chybí: datové komponenty (fáze 4), přesměrování, vyhledávání a SEO (fáze 5), kontrola skills Evou a týmem.
+- [x] Fáze 4 — datové stránky (8. 11. 2026): Změny ve funkcích 2026 (časová osa s čárou „dnes“, matice s přepínačem nástrojů na mobilu, karty nástrojů, zdroje), ceník z `data/ceny.yaml` se štítkem „ověřujeme“, dlaždice sad, karty pluginů, tabulka Tiny, záložky instalace, karty metodik, tabulka nástrojů jako karty na mobilu
+
+- [x] Fáze 5 — SEO a vyhledávání (8. 11. 2026): 175 přesměrovacích stránek starých URL (GitHub Pages neumí 301), sitemap.xml, robots.txt, kanonické URL, Open Graph obrázek, vyhledávání Pagefind (`/hledat`, lupa v hlavičce), `noindex` na náhledu, kontrola odkazů včetně cílů přesměrování
+
+Ještě chybí: analytika (čeká na rozhodnutí, otázka 3), kontrola skills Evou a týmem, napojení domény.
 
 ## Krok 0 — příprava (Eva, 15 minut)
 
@@ -97,8 +101,12 @@ v docs/otevrene-otazky.md). Spusť kontrolu všech interních i externích odkaz
 
 1. Eva a tým projdou náhled, hlavně skills (stav `koncept` → `hotovo`).
 2. Claude Code přepne stránky `ke-kontrole` podle schválení.
-3. DNS chatveskole.cz u Váš hosting → Vercel (záznamy ukáže Vercel v nastavení domény).
-4. Kontrola přesměrování na produkci, odeslání sitemap do Google Search Console.
+3. Závěrečná kontrola přesměrování: projít živý chatveskole.cz, porovnat s novým webem, doplnit `migrace/redirects.json` a dát Evě tabulku stará → nová adresa.
+4. Rozhodnout hosting (návrh: Vercel kvůli skutečným přesměrováním 301 a pravidlu pro `/wp-content/uploads/*`; GitHub Pages pak vypnout) a připravit soubor přesměrování pro něj.
+5. GA4 s lištou souhlasu (viz rozhodnutí v `docs/otevrene-otazky.md`).
+6. V produkčním buildu nastavit `INDEXOVAT=1` (jinak mají stránky `noindex`).
+7. DNS chatveskole.cz u Váš hosting → nový hosting (záznamy ukáže hosting v nastavení domény).
+8. Kontrola přesměrování na produkci, odeslání sitemap do Google Search Console.
 
 ### Fáze 7 — Volitelné
 

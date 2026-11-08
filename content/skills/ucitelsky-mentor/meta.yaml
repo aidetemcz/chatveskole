@@ -19,15 +19,14 @@ puvodni_obsah:
     typ: prompt
   - url: https://chatveskole.cz/databaze-promptu/slepe-skrvny/
     typ: prompt
-puvodni_asistenti:            # Učitelský mentor + Poradce pro lepší třídní klima (ten na starém webu nebyl)
+puvodni_asistenti:            # Poradce pro lepší třídní klima je od 8. 11. 2026 samostatný skill lepsi-tridni-klima
   gpt:
     - https://chat.openai.com/g/g-C7xCQX8zC-ucitelsky-mentor
-    - https://chatgpt.com/g/g-69efa987d5488191b76b566a789c3355-poradce-pro-lepsi-tridni-klima
   systemovy_prompt:
     - https://docs.google.com/document/d/1r9KKG_o_kAT1MEEZ6SP4jxUUm0cEchdHniPuWMm_PeA/edit
     - https://docs.google.com/document/d/1D8UBA7cpGI_hLp_Eh8jzXq8V3ylQrr4UhvCItouDeiA/edit
-google_doc: https://docs.google.com/document/d/1dW_5njfLcyaJOs8Tldrt8cpxnFJfvUxoY7wfupEQMj8/edit
-google_slozka: https://drive.google.com/drive/folders/1zr2DLZ9b1MpweSCRTO2D2_r1V9PIykQ6
+google_doc: https://docs.google.com/document/d/1JezNEXPFJe6xCS2a_4J8ItAjnfsvZGcN6BY1STGVRq4/edit
+google_slozka: https://drive.google.com/drive/folders/1lPjbiQfJfy6G_5bf_r4NGlxFzNZ6RIsA
 autori: [AI dětem, AI reaktor UJEP (Míša Liegertová)]   # ověřit: prompty z roku 2024 nejspíš z původní databáze AI reaktoru UJEP; doplnit jména
 metodika:            # příručky, ze kterých čerpal Poradce pro lepší třídní klima; doplnit autory a veřejné URL
   - nazev: Metodická příručka respektující komunikace
@@ -36,4 +35,4 @@ metodika:            # příručky, ze kterých čerpal Poradce pro lepší tř�
   - nazev: Práce s problémovým chováním
 vek: dospělí (skills jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-08

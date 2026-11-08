@@ -1,12 +1,14 @@
 ---
-import { getCollection, getEntry, render } from 'astro:content';
-import Base from '../../../layouts/Base.astro';
-import Crumbs from '../../../components/Crumbs.astro';
-import PromptCard from '../../../components/PromptCard.astro';
-import { SKUPINY_PROMPTU, PORADI_KATEGORII, KATEGORIE_ZACI, promptText, pocet, slugify } from '../../../lib/data';
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Crumbs from '../components/Crumbs.astro';
+import PromptCard from '../components/PromptCard.astro';
+import { url } from '../lib/url';
+import { SKUPINY_PROMPTU, PORADI_KATEGORII, KATEGORIE_ZACI, promptText, pocet, slugify } from '../lib/data';
 
-const stranka = (await getEntry('stranky', 'funkce/prompty'))!;
-const { Content } = await render(stranka);
+// Katalog promptů. Vysvětlení, co je prompt a jak ho psát, je na /funkce/prompty (content/stranky/funkce/prompty.md).
+const TITULEK = 'Katalog promptů';
+const POPIS = 'Ověřené prompty pro učitele, vedení škol i žáky. Zkopírujte prompt do jakéhokoli chatbota a doplňte údaje v hranatých závorkách.';
 const vse = (await getCollection('prompty')).filter((p) => !p.id.startsWith('archiv-2024/'));
 
 const polozka = (p: (typeof vse)[number]) => {
@@ -29,13 +31,13 @@ const views = [
   { id: 'komu', groups: SKUPINY_PROMPTU.map((s) => ({ id: `pro-${s.id}`, title: s.title, items: items.filter((i) => i.skupina === s.id) })).filter((g) => g.items.length) },
 ];
 ---
-<Base title={stranka.data.title} description={stranka.data.popis}>
+<Base title={TITULEK} description={POPIS}>
   <div class="band band--white" style="padding-bottom: 32px">
     <div class="wrap stack" style="gap: 24px">
-      <Crumbs items={[{ title: 'Funkce' }, { title: 'Katalog promptů' }]} />
+      <Crumbs items={[{ title: 'Prompty', href: '/funkce/prompty' }, { title: TITULEK }]} />
       <header class="page-head">
-        <h1>{stranka.data.title}</h1>
-        <p class="lede">{stranka.data.popis}</p>
+        <h1>{TITULEK}</h1>
+        <p class="lede">{POPIS}</p>
       </header>
       <div class="seg" role="group" aria-label="Řazení" data-switch="skupiny-promptu" style="align-self: flex-start">
         <button type="button" data-target="ucel" aria-pressed="true">Řadit dle účelu</button>
@@ -46,7 +48,7 @@ const views = [
 
   <div id="skupiny-promptu">
     {views.map((v) => (
-      <div data-group-view={v.id} hidden={v.id !== 'ucel'}>
+      <div data-group-view={v.id} hidden={v.id !== 'ucel'} data-pagefind-ignore={v.id !== 'ucel' ? '' : undefined}>
         {v.groups.map((g, i) => (
           <section id={v.id === 'ucel' ? g.id : undefined} class={`band ${i % 2 === 0 ? 'band--sky' : 'band--white'}`} aria-label={g.title}>
             <div class="wrap stack" style="gap: 20px">
@@ -63,7 +65,7 @@ const views = [
 
   <div class="band band--white">
     <div class="wrap">
-      <div class="prose"><Content /></div>
+      <p style="color: var(--muted)">Jak prompt napsat nebo upravit pro svou třídu, popisujeme na stránce <a href={url('/funkce/prompty')}>Prompty</a>.</p>
     </div>
   </div>
 </Base>
