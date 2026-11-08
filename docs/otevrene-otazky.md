@@ -15,9 +15,9 @@
 
 ## Blokují stavbu webu
 
-1. **Framework:** Astro (doporučeno pro obsahový web) vs. Next.js (stejný jako ostatní appky AI dětem).
-2. **Hosting pro doménu chatveskole.cz:** GitHub Pages (zdarma, jen přesměrovací stránky místo 301) vs. Vercel Pro / Netlify / Cloudflare Pages (skutečná přesměrování, náhledy větví).
-4. **Sdílení složek na Disku:** systémové prompty a data všech 18 skills jsou od 7. 11. 2026 na sdíleném disku ve složce *Zdroje k stažení*, znalostní soubory zkopírované do složek Data, odkazy v `meta.yaml` (`google_doc`, `google_slozka`, přehled v `migrace/google-drive.json`). Zbývá nastavit sdílení „Kdokoli s odkazem – čtenář“ (teď je složka soukromá) a smazat z ní *Návod pro nahrání na Disk*, který je jen pro tým.
+1. **Framework:** Astro (doporučeno pro obsahový web) vs. Next.js (stejný jako ostatní appky AI dětem). — *7. 11. Eva v jiné relaci: „nechme Astro“.*
+2. **Hosting pro doménu chatveskole.cz:** *(7. 11. Eva v jiné relaci: „máme placený Vercel“ — náhledy už běží na Vercelu, přesměrování by pak mohla být skutečná 301 přes vercel.json)* GitHub Pages (zdarma, jen přesměrovací stránky místo 301) vs. Vercel Pro / Netlify / Cloudflare Pages (skutečná přesměrování, náhledy větví).
+4. **Sdílení složek na Disku:** od 8. 11. 2026 je místem pravdy složka *Skills* na sdíleném disku (https://drive.google.com/drive/folders/1AZy-XZ4PYPWCCB-LVVwy96FfQ2i1G4Ai) — 24 skills, u každého dokument se systémovým promptem a Data. Odkazy v `meta.yaml` (`google_doc`, `google_slozka`), přehled v `migrace/google-drive.json`. Ověřit, že je složka sdílená „Kdokoli s odkazem – čtenář“. Starší složka *Zdroje k stažení* se už nepoužívá.
 
 ## Obsah
 
@@ -37,6 +37,10 @@
 15. **Claude Free a sdílení artefaktů odkazem:** nápověda je po přechodu na nové artefakty nejasná (nově jen Pro a vyšší?). Vyzkoušet.
 
 ## Skills a pluginy
+
+38. **Nové skills z 8. 11. 2026** (Lepší třídní klima, Gradace klíčových kompetencí, Hádej chemický prvek, Kariérní poradce – matematika): autoři jsou zapsaní jako „AI dětem“ — doplnit skutečné autory. Zařazení do sad je návrh: gradace klíčových kompetencí → Vedení školy (Formativní hodnocení má podle Disku pět skills 01–05), klima → Komunikace a podpora učitele, chemie a kariérní poradce → Příprava výuky. Hádej chemický prvek a Kariérní poradce jsou chatboti pro žáky (12–15, 13+), skills jsou ale v Gemini a Claude 18+ — na webu proto zdůrazňujeme prompt a Tiny (souvisí s bodem 19).
+40. **Formativní hodnocení 01–05 (8. 11. 2026):** z Kritérií hodnocení se oddělila Gradace kritérií (03) a ze Slovního hodnocení Rádce (05) — jsou to samostatné skills, později je spojí plugin. Kritéria hodnocení a Slovní hodnocení ale v `SKILL.md` gradaci a kontrolu formulací pořád obsahují (sloučená verze). Zúžit je na 02 a 04 podle Disku? (souvisí s bodem 39)
+39. **SKILL.md vs. dokument na Disku:** dokumenty v nové složce Skills nejsou vždy totožné se `SKILL.md` na webu (např. 01 Formulace vzdělávacích cílů je kratší). Má se `SKILL.md` převzít z Disku, nebo naopak?
 
 16. **Kontrola skills:** všechny jsou ve stavu `koncept`. Kdo je projde a otestuje (aspoň Claude + Gemini nebo ChatGPT)? Navrhujeme: formativní hodnocení — Eva + Šárka Polanecká; vedení školy — tým AI akcelerátoru.
 17. **Plugin v ChatGPT (veřejný adresář):** platform.openai.com 7. 11. 2026 hlásí „We are not accepting more skills-only submissions at this time“ — pluginy jen se skills teď veřejně podat nejdou. Do té doby pluginy jen v pracovním prostoru AI dětem a ke stažení na webu. Až se podávání otevře, potřebujeme v manifestu (`extensions.com.openai.interface`): podtitul do 30 znaků (`shortDescription`), `websiteURL`, `supportURL`, `privacyPolicyURL`, `termsOfServiceURL` — tedy stránky zásad ochrany osobních údajů a podmínek užití na webu (existují? kde?). Doplní je `scripts/build-plugins.py`.

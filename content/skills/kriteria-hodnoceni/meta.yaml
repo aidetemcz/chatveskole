@@ -14,25 +14,17 @@ puvodni_obsah:
     typ: prompt
   - url: https://chatveskole.cz/databaze-promptu/formulace-kriterii-hodnoceni/
     typ: asistent
-  - url: https://chatveskole.cz/databaze-promptu/vytvareni-sebehodnotici-skaly-pro-zaky/
-    typ: asistent
   - url: https://chatveskole.cz/databaze-promptu/sebehodnoceni-pro-zaky/
     typ: prompt
   - url: https://chatveskole.cz/databaze-promptu/tvorba-dukazu-o-uceni/
     typ: prompt
-# Skill slučuje dva asistenty, proto jsou hodnoty seznamy (pořadí: 02 kritéria, 03 gradace J–Č–T–Ú).
+# 03 Gradace J–Č–T–Ú je od 8. 11. 2026 samostatný skill gradace-kriterii-hodnoceni.
 puvodni_asistenti:
-  gpt:
-    - https://chatgpt.com/g/g-68946941fe1c8191b0e1c3587eaedff0-asistent-pro-formulaci-kriterii-hodnoceni
-    - https://chatgpt.com/g/g-69046aa5481c8191b8c94e312bebe1a3-asistent-vytvarejici-sebehodnotici-skaly-j-c-t-u
-  gem:
-    - https://gemini.google.com/gem/1hdKKGHnjKC7ta-HviAwjhwIJUSF8bUKi?usp=sharing
-    - https://gemini.google.com/gem/1ifHoOIBy70m8YpqODzZJ08jL8nthyP9c?usp=sharing
-  systemovy_prompt:
-    - https://docs.google.com/document/d/1aaepsHxOf-W5mc-ff3gdRFluTzJkCqMk7dAhnL2FIsI/edit?usp=sharing
-    - https://docs.google.com/document/d/14qCxVX-ECOXzHcrRqHVPWplyBXK96LI3nM9Vlh6LbAs/edit?usp=sharing
-google_doc: https://docs.google.com/document/d/1nJtTFcuob9yQOGPP48PU4GLMKen8jiRoPuyv6Mfxby4/edit
-google_slozka: https://drive.google.com/drive/folders/17oqarr2QVHYv3dl_lKk0vOp-EKLC_fO9
+  gpt: https://chatgpt.com/g/g-68946941fe1c8191b0e1c3587eaedff0-asistent-pro-formulaci-kriterii-hodnoceni
+  gem: https://gemini.google.com/gem/1hdKKGHnjKC7ta-HviAwjhwIJUSF8bUKi?usp=sharing
+  systemovy_prompt: https://docs.google.com/document/d/1aaepsHxOf-W5mc-ff3gdRFluTzJkCqMk7dAhnL2FIsI/edit?usp=sharing
+google_doc: https://docs.google.com/document/d/1UUhFUc8PfWJVqfB9g16j3-WDiTOrRQvfy_aB_yxYYjs/edit
+google_slozka: https://drive.google.com/drive/folders/1AXAp1yrnNUiUSwTjQdwcV-PLLUU6LKNF
 autori: [Eva Nečasová (AI dětem)]
 metodika:
   - nazev: Vysvědčení jinak (PdF MU, Jana Kratochvílová)
@@ -42,4 +34,4 @@ metodika:
 znalosti: [spravna-formulace-kriterii-hodnoceni.md, klicove-kompetence.md, prurezova-temata.md, jedinci-se-specialnimi-vzdelavacimi-potrebami.md]
 vek: dospělí (skills jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-08

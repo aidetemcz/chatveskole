@@ -2,7 +2,7 @@
   "name": "chatveskole",
   "private": true,
   "type": "module",
-  "description": "Web Chatboti ve škole (chatveskole.cz) — AI dětem, z. ú.",
+  "description": "Web Chatboti ve škole (chatveskole.cz) — AI dětem, z. s.",
   "scripts": {
     "predev": "node scripts/build-downloads.mjs",
     "dev": "astro dev",

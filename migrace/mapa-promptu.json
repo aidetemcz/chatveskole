@@ -15,10 +15,6 @@
     "skupina": "asistent",
     "skill": "kriteria-hodnoceni"
   },
-  "vytvareni-sebehodnotici-skaly-pro-zaky": {
-    "skupina": "asistent",
-    "skill": "kriteria-hodnoceni"
-  },
   "sebehodnoceni-pro-zaky": {
     "skupina": "pedagogove",
     "skill": "kriteria-hodnoceni"
@@ -39,9 +35,13 @@
     "skupina": "asistent",
     "skill": "slovni-hodnoceni"
   },
+  "vytvareni-sebehodnotici-skaly-pro-zaky": {
+    "skupina": "asistent",
+    "skill": "gradace-kriterii-hodnoceni"
+  },
   "radce-pro-spravne-formulace-slovniho-hodnoceni": {
     "skupina": "asistent",
-    "skill": "slovni-hodnoceni"
+    "skill": "radce-slovniho-hodnoceni"
   },
   "didakticky-radce": {
     "skupina": "asistent",
@@ -183,6 +183,14 @@
     "skupina": "archiv-2024",
     "skill": "uprava-materialu"
   },
+  "hadej-chemicke-prvky-asistent": {
+    "skupina": "asistent",
+    "skill": "hadej-chemicky-prvek"
+  },
+  "karierni-poradce-se-zamerenim-na-matematiku": {
+    "skupina": "asistent",
+    "skill": "karierni-poradce-matematika"
+  },
   "quiz_bot": {
     "skupina": "archiv-2024",
     "skill": "aktivity-s-chatbotem"
@@ -193,10 +201,6 @@
   },
   "hadej-chemicke-prvky": {
     "skupina": "archiv-2024",
-    "skill": "aktivity-s-chatbotem"
-  },
-  "hadej-chemicke-prvky-asistent": {
-    "skupina": "asistent",
     "skill": "aktivity-s-chatbotem"
   },
   "asistent-poznej-svet-zemepisny-kviz": {
@@ -241,10 +245,6 @@
   },
   "piskvorky": {
     "skupina": "archiv-2024",
-    "skill": "aktivity-s-chatbotem"
-  },
-  "karierni-poradce-se-zamerenim-na-matematiku": {
-    "skupina": "asistent",
     "skill": "aktivity-s-chatbotem"
   },
   "asistent-pro-rozvoj-mysleni": {

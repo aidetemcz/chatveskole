@@ -32,9 +32,9 @@ puvodni_obsah:
 puvodni_asistenti:
   gpt: https://chatgpt.com/g/g-69ef768b4d088191b3201a7402247ea9-komunikace-s-rodici
   systemovy_prompt: https://docs.google.com/document/d/1DqhA9y-K-UZVOoVmdwkEZ81oKO7bFZZxykwOM3Twajo/edit
-google_doc: https://docs.google.com/document/d/12SwTwjk7d3B0kK_Q-_sKmoXZIEAk0yocqIeiFIiynyA/edit
-google_slozka: https://drive.google.com/drive/folders/1msQGOOgc24kYCw7X0vAUfzOEd0MFuWek
+google_doc: https://docs.google.com/document/d/1im5k0lxbdqdv0oN7HoSgTFVqeotW35aKN_ICGBLtcOY/edit
+google_slozka: https://drive.google.com/drive/folders/1HDcgeuiaF0KG5a-RhAYZHIn05lJf7XfC
 autori: [AI dětem, AI reaktor UJEP (Míša Liegertová)]   # ověřit: tři prompty z roku 2024 nejspíš z původní databáze AI reaktoru UJEP; doplnit jména
 vek: dospělí (skills jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-08

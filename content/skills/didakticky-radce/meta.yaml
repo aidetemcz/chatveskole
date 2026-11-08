@@ -43,8 +43,8 @@ puvodni_asistenti:
   systemovy_prompt:
     - https://docs.google.com/document/d/1LgOmptN21da2VhVeMYBunj_4XMEYG4HFqjuYwOkdwGw/edit
     - https://docs.google.com/document/d/18UkBvuy0MOztMRLUuISkaGO-QU5NKCEU0fujJ-9CxZ0/edit
-google_doc: https://docs.google.com/document/d/17bYWaTJ9-df68hPHldAbUylWY6jMztki8fQMQy8KDOk/edit
-google_slozka: https://drive.google.com/drive/folders/1X7p8y0wLhLRHENL6ifY_S9pjlzA5k218
+google_doc: https://docs.google.com/document/d/1NLbFO0t7gcQGyn8ijywK9lrgDB4PuYEy3AUrMz1Sfug/edit
+google_slozka: https://drive.google.com/drive/folders/18KjVr2x7s05owPk_RY0Iplha29FYhzaD
 autori: [Eva Nečasová (AI dětem), AI reaktor UJEP (Míša Liegertová)]
 metodika:
   - nazev: Katalog aktivizačních výukových metod a Příručka aktivizační výuky (AI dětem)
@@ -57,4 +57,4 @@ metodika:
 znalosti: [katalog-aktivizacnich-metod.md, prirucka-aktivizacni-vyuky.md, formulace-vzdelavacich-cilu.md, klicove-kompetence.md, prurezova-temata.md]
 vek: dospělí (skills jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-08

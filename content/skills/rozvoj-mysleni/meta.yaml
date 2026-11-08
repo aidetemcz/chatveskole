@@ -14,8 +14,8 @@ puvodni_obsah:
 puvodni_asistenti:
   gpt: https://chatgpt.com/g/g-67d3c569f1008191b494439f5cf8e3e3-asistent-pro-rozvoj-mysleni
   systemovy_prompt: https://docs.google.com/document/d/1AdLKeXAux0ykSgVIKZdZUDDzi--AZuuetjrDo9GannQ/edit
-google_doc: https://docs.google.com/document/d/16nzIUd4QSUv-CqXENq0REC4L6H19wDdqrVRNK0lAzsA/edit
-google_slozka: https://drive.google.com/drive/folders/1vBW7-_3KVWVKg9iKq0_8oSP0WLh43e_n
+google_doc: https://docs.google.com/document/d/169ApSelQyILOaVjvmrJ7HLnQHyrT-t8otEsXbROdrvM/edit
+google_slozka: https://drive.google.com/drive/folders/13TnLbBcspfjJLq-2MWkkxBZNMbWZYw7X
 autori: [AI dětem]   # doplnit jména autorů asistenta
 metodika:
   - nazev: Otázky učitele ve výukovém dialogu
@@ -23,4 +23,4 @@ metodika:
   # Integrovaný model myšlení: dokument se nepodařilo najít na Disku — doplnit, pokud se má do skillu promítnout
 vek: dospělí (skills jsou v Gemini a Claude 18+); s mladšími žáky prompt pod dohledem učitele nebo aplikace Tiny
 stav: koncept
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-08

@@ -1,0 +1,25 @@
+title: Rádce pro formulace slovního hodnocení
+slug: radce-slovniho-hodnoceni
+kratky_popis: Dá stručnou zpětnou vazbu k hotovému slovnímu hodnocení v duchu Vysvědčení jinak – text nepřepisuje, učí formulovat.
+pro_koho: [ucitele]
+sady: [formativni-hodnoceni]
+stitky: [formativní hodnocení, slovní hodnocení, zpětná vazba, vysvědčení, Vysvědčení jinak, kontrola textu]
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/radce-pro-spravne-formulace-slovniho-hodnoceni/
+    typ: asistent
+puvodni_asistenti:
+  gpt: https://chatgpt.com/g/g-6952b9b3a4908191aa32de37f3a31e4a-radce-pro-spravne-formulace-slovniho-hodnoceni
+  gem: https://gemini.google.com/gem/1b6piE8VT_IO-3_Q8m-Uk6YzgCOCkcn-c?usp=sharing
+  systemovy_prompt: https://docs.google.com/document/d/16WmesfaR0cyf90pZEb2FVkITuX8RkFwW_4K_wa2wwVI/edit?usp=sharing
+google_doc: https://docs.google.com/document/d/1tSsQezytdBJ5f-ztsWKXfls3bXTP80r2TX_m7BuV7nU/edit
+google_slozka: https://drive.google.com/drive/folders/1Gt3D082HsKF5dDqP8wLXLygDtktxPww_
+autori: [Šárka Polanecká (ZŠ Pod Beckovem), Eva Nečasová (AI dětem)]
+metodika:
+  - nazev: Vysvědčení jinak (PdF MU, Jana Kratochvílová)
+    url: https://vysvedcenijinak.ped.muni.cz/
+  - nazev: Jana Kratochvílová – Jak psát slovní hodnocení na vysvědčení
+    url: https://vysvedcenijinak.ped.muni.cz/media/3580698/jak-psat-slovni-hodnoceni.pdf
+znalosti: [vysvedceni-jinak-metodika.md, jak-psat-slovni-hodnoceni.md]
+vek: dospělí (skills jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-08

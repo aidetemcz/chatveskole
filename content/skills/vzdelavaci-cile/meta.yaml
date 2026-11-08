@@ -19,8 +19,8 @@ puvodni_asistenti:
   gpt: https://chatgpt.com/g/g-68945f386058819181ea7b0715b0f864-asistent-pro-formulaci-vzdelavacich-cilu
   gem: https://gemini.google.com/gem/1_6sdkGYW09mxdfXG68Y82n0gWnRqQwCP?usp=sharing
   systemovy_prompt: https://docs.google.com/document/d/1CHi4vjGcVVyHDFOjVThW07Sya_dN0OlHrtJ0r6U5K9Q/edit?usp=sharing
-google_doc: https://docs.google.com/document/d/15qxs92NMynJxiv00lPp7ffHinpYJyKc-gU8O_1JmXWA/edit
-google_slozka: https://drive.google.com/drive/folders/1_wl1U7ZGVC1aMwmfnNSFU2Q7T5fs8dwv
+google_doc: https://docs.google.com/document/d/1-vbZS3R3KRhswZl0OPVJgCGn7Ye4or7DfgReqy9b8hs/edit
+google_slozka: https://drive.google.com/drive/folders/1_hfZUb5jOB2Riamh8EGISCQMsJhIpeBB
 autori: [Eva Nečasová (AI dětem)]
 metodika:
   - nazev: Vysvědčení jinak (PdF MU, Jana Kratochvílová)
@@ -28,4 +28,4 @@ metodika:
 znalosti: [formulace-vzdelavacich-cilu.md, klicove-kompetence.md, prurezova-temata.md]
 vek: dospělí (skills jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-08
