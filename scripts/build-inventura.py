@@ -22,8 +22,8 @@ PAGES = {
     "zahranicni-platby-pro-neplatce-dph": ("/zaciname/zahranicni-platby", "aktualizovat", "Ověřit u daňového poradce"),
     "co-je-to-prompt": ("/funkce/prompty", "sloučit", "Sloučeno do stránky Prompty"),
     "jak-vytvaret-prompt": ("/funkce/prompty", "sloučit", "Sloučeno do stránky Prompty"),
-    "prompty": ("/funkce/prompty", "přesunout", "Databáze promptů → Funkce → Prompty"),
-    "prompty-pro-pedagogy": ("/funkce/prompty", "přesunout", "Databáze promptů → Funkce → Prompty"),
+    "prompty": ("/prompty", "přesunout", "Databáze promptů → Katalog promptů"),
+    "prompty-pro-pedagogy": ("/prompty", "přesunout", "Databáze promptů → Katalog promptů"),
     "zpusoby-vyuziti-genai-ve-vyuce": ("/funkce/prompty/zaci", "přesunout", "10 způsobů využití GenAI + žákovské prompty (s NPI)"),
     "co-jsou-ai-asistenti": ("/funkce/zmeny-2026", "nahradit", "Asistenti (GPTs, Gems) končí — vysvětlení na stránce změn"),
     "jak-vyuzivat-ai-asistenty": ("/funkce/skills", "nahradit", "Instalace skills místo GPTs/Gems"),
@@ -97,46 +97,51 @@ MAPA["znalosti-zadna-ai"] = {"skupina": "vynechat", "skill": None}
 # --- Kategorie (/dp/...) ---------------------------------------------------------
 CATS = {
     "ai-asistenti-pro-hodnoceni-%e2%86%92": "/sady/formativni-hodnoceni",
-    "formativni-hodnoceni": "/funkce/prompty#formativni-hodnoceni",
-    "slovni-hodnoceni-%e2%86%92": "/funkce/prompty#slovni-hodnoceni",
-    "hodnoceni": "/funkce/prompty#hodnoceni",
+    "formativni-hodnoceni": "/prompty#formativni-hodnoceni",
+    "slovni-hodnoceni-%e2%86%92": "/prompty#slovni-hodnoceni",
+    "hodnoceni": "/prompty#hodnoceni",
     "ai-asistenti-pro-rizeni-skoly": "/sady/vedeni-skoly",
-    "tvorba-strategickych-dokumentu": "/funkce/prompty#tvorba-strategickych-dokumentu",
-    "rizeni-a-administrativa-%e2%86%92": "/funkce/prompty#rizeni-a-administrativa",
+    "tvorba-strategickych-dokumentu": "/prompty#tvorba-strategickych-dokumentu",
+    "rizeni-a-administrativa-%e2%86%92": "/prompty#rizeni-a-administrativa",
     "ai-asistenti-ai-akcelerator-%e2%86%92": "/sady/ai-akcelerator",
     "ai-asistenti-ruzne": "/skills",
     "oborovi-ai-asistenti": "/skills/aktivity-s-chatbotem",
-    "adaptivni-vzdelavani": "/funkce/prompty#adaptivni-vzdelavani",
-    "aktualizace-materialu-%e2%86%92": "/funkce/prompty#aktualizace-materialu",
-    "prace-s-textem": "/funkce/prompty#prace-s-textem",
-    "komunikace-s-rodici-%e2%86%92": "/funkce/prompty#komunikace-s-rodici",
-    "tvorba-materialu-do-vyuky": "/funkce/prompty#tvorba-materialu-do-vyuky",
-    "vytvareni-pracovnich-listu": "/funkce/prompty#vytvareni-pracovnich-listu",
-    "vytvareni-lekci": "/funkce/prompty#vytvareni-lekci",
-    "projektova-vyuka": "/funkce/prompty#projektova-vyuka",
-    "seberozvoj-%e2%86%92": "/funkce/prompty#seberozvoj",
-    "vizualizace": "/funkce/prompty#vizualizace",
-    "ruzne": "/funkce/prompty#ruzne",
+    "adaptivni-vzdelavani": "/prompty#adaptivni-vzdelavani",
+    "aktualizace-materialu-%e2%86%92": "/prompty#aktualizace-materialu",
+    "prace-s-textem": "/prompty#prace-s-textem",
+    "komunikace-s-rodici-%e2%86%92": "/prompty#komunikace-s-rodici",
+    "tvorba-materialu-do-vyuky": "/prompty#tvorba-materialu-do-vyuky",
+    "vytvareni-pracovnich-listu": "/prompty#vytvareni-pracovnich-listu",
+    "vytvareni-lekci": "/prompty#vytvareni-lekci",
+    "projektova-vyuka": "/prompty#projektova-vyuka",
+    "seberozvoj-%e2%86%92": "/prompty#seberozvoj",
+    "vizualizace": "/prompty#vizualizace",
+    "ruzne": "/prompty#ruzne",
     "principy-vyuziti-genai-ve-vyuce": "/funkce/prompty/zaci",
     "prompty-pro-zaky": "/funkce/prompty/zaci",
-    "prompty-pro-pedagogy": "/funkce/prompty",
+    "prompty-pro-pedagogy": "/prompty",
 }
 
 rows, redirects = [], []
+def presmeruj(src, dst):
+    # stará adresa, která je zároveň novou stránkou (např. /prompty), se nepřesměrovává — jinak smyčka
+    if src.rstrip("/") != dst.split("#")[0].rstrip("/"):
+        redirects.append({"source": src, "destination": dst, "permanent": True})
+
 for slug, (new, akce, note) in PAGES.items():
     old = f"{BASE}/{slug}/" if slug else f"{BASE}/"
     rows.append(["stránka", old, new, akce, "", note])
     if slug:
-        redirects.append({"source": f"/{slug}", "destination": new, "permanent": True})
+        presmeruj(f"/{slug}", new)
 for slug, (new, akce, typ, note) in sorted(KB.items()):
     rows.append(["databáze promptů", f"{BASE}/databaze-promptu/{slug}/", new, akce, typ, note])
-    redirects.append({"source": f"/databaze-promptu/{slug}", "destination": new, "permanent": True})
+    presmeruj(f"/databaze-promptu/{slug}", new)
 for slug, new in CATS.items():
     rows.append(["kategorie", f"{BASE}/dp/{slug}/", new, "přesměrovat", "", ""])
-    redirects.append({"source": f"/dp/{slug}", "destination": new, "permanent": True})
+    presmeruj(f"/dp/{slug}", new)
 # zbytky WordPressu
-for src, dst in [("/databaze-promptu", "/funkce/prompty"), ("/dp", "/funkce/prompty"), ("/wp-content/uploads/:path*", "/archiv/uploads/:path*"), ("/feed", "/")]:
-    redirects.append({"source": src, "destination": dst, "permanent": True})
+for src, dst in [("/databaze-promptu", "/prompty"), ("/dp", "/prompty"), ("/wp-content/uploads/:path*", "/archiv/uploads/:path*"), ("/feed", "/")]:
+    presmeruj(src, dst)
 
 out = ROOT / "migrace"
 out.mkdir(exist_ok=True)

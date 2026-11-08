@@ -13,11 +13,11 @@ Přečti:
 
 ## Struktura
 
-- `content/stranky/**.md` — stránky podle menu; frontmatter: title, menu, poradi, popis (meta description), sablona, data, stav, zdroje
+- `content/stranky/**.md` — stránky podle menu; frontmatter: title, menu, poradi, popis (meta description), sablona, data, stav, zdroje, tlacitko (`{ text, href }` = tlačítko na konci stránky)
 - `content/navigace.yaml` — menu a generované stránky
 - `content/skills/<slug>/` — SKILL.md, prompt.md, meta.yaml, references/
 - `content/sady.yaml` — sady skills (= pluginy)
-- `content/prompty/{pedagogove,vedeni,zaci,archiv-2024}/` — katalog promptů (původní prompty, převedené `scripts/prevod-promptu.mjs`); `archiv-2024` se v katalogu nezobrazuje, stránky existují kvůli starým odkazům
+- `content/prompty/{pedagogove,vedeni,zaci,archiv-2024}/` — katalog promptů (původní prompty, převedené `scripts/prevod-promptu.mjs`); katalog je na `/prompty` (`src/pages/prompty.astro`), vysvětlení „co je prompt“ na `/funkce/prompty`; `archiv-2024` se v katalogu nezobrazuje, stránky existují kvůli starým odkazům
 - `content/znalosti/znalosti.yaml` — odkazy na znalostní soubory na Google Disku
 - `data/*.yaml` — data pro tabulky (funkce chatbotů, ceny); text s dvojtečkou dávejte do uvozovek, jinak build skončí chybou
 - `<!-- komponenta: … -->` v Markdownu = místo pro datovou komponentu nebo úpravu následujícího textu (záložky, karty); seznam značek v `src/lib/komponenty.ts`

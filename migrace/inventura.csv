@@ -10,8 +10,8 @@ stránka,https://chatveskole.cz/vekove-limity-pravo/,/zaciname/vekove-limity-a-l
 stránka,https://chatveskole.cz/zahranicni-platby-pro-neplatce-dph/,/zaciname/zahranicni-platby,aktualizovat,,Ověřit u daňového poradce
 stránka,https://chatveskole.cz/co-je-to-prompt/,/funkce/prompty,sloučit,,Sloučeno do stránky Prompty
 stránka,https://chatveskole.cz/jak-vytvaret-prompt/,/funkce/prompty,sloučit,,Sloučeno do stránky Prompty
-stránka,https://chatveskole.cz/prompty/,/funkce/prompty,přesunout,,Databáze promptů → Funkce → Prompty
-stránka,https://chatveskole.cz/prompty-pro-pedagogy/,/funkce/prompty,přesunout,,Databáze promptů → Funkce → Prompty
+stránka,https://chatveskole.cz/prompty/,/prompty,přesunout,,Databáze promptů → Katalog promptů
+stránka,https://chatveskole.cz/prompty-pro-pedagogy/,/prompty,přesunout,,Databáze promptů → Katalog promptů
 stránka,https://chatveskole.cz/zpusoby-vyuziti-genai-ve-vyuce/,/funkce/prompty/zaci,přesunout,,10 způsobů využití GenAI + žákovské prompty (s NPI)
 stránka,https://chatveskole.cz/co-jsou-ai-asistenti/,/funkce/zmeny-2026,nahradit,,"Asistenti (GPTs, Gems) končí — vysvětlení na stránce změn"
 stránka,https://chatveskole.cz/jak-vyuzivat-ai-asistenty/,/funkce/skills,nahradit,,Instalace skills místo GPTs/Gems
@@ -149,26 +149,26 @@ databáze promptů,https://chatveskole.cz/databaze-promptu/zprava-o-pokroku-zaka
 databáze promptů,https://chatveskole.cz/databaze-promptu/zvladani-stresu/,/funkce/prompty/zvladani-stresu,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem ucitelsky-mentor
 databáze promptů,https://chatveskole.cz/databaze-promptu/zvyrazneni-chyb-v-textu/,/funkce/prompty/zvyrazneni-chyb-v-textu,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem jazykovy-korektor
 kategorie,https://chatveskole.cz/dp/ai-asistenti-pro-hodnoceni-%e2%86%92/,/sady/formativni-hodnoceni,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/formativni-hodnoceni/,/funkce/prompty#formativni-hodnoceni,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/slovni-hodnoceni-%e2%86%92/,/funkce/prompty#slovni-hodnoceni,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/hodnoceni/,/funkce/prompty#hodnoceni,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/formativni-hodnoceni/,/prompty#formativni-hodnoceni,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/slovni-hodnoceni-%e2%86%92/,/prompty#slovni-hodnoceni,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/hodnoceni/,/prompty#hodnoceni,přesměrovat,,
 kategorie,https://chatveskole.cz/dp/ai-asistenti-pro-rizeni-skoly/,/sady/vedeni-skoly,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/tvorba-strategickych-dokumentu/,/funkce/prompty#tvorba-strategickych-dokumentu,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/rizeni-a-administrativa-%e2%86%92/,/funkce/prompty#rizeni-a-administrativa,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/tvorba-strategickych-dokumentu/,/prompty#tvorba-strategickych-dokumentu,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/rizeni-a-administrativa-%e2%86%92/,/prompty#rizeni-a-administrativa,přesměrovat,,
 kategorie,https://chatveskole.cz/dp/ai-asistenti-ai-akcelerator-%e2%86%92/,/sady/ai-akcelerator,přesměrovat,,
 kategorie,https://chatveskole.cz/dp/ai-asistenti-ruzne/,/skills,přesměrovat,,
 kategorie,https://chatveskole.cz/dp/oborovi-ai-asistenti/,/skills/aktivity-s-chatbotem,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/adaptivni-vzdelavani/,/funkce/prompty#adaptivni-vzdelavani,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/aktualizace-materialu-%e2%86%92/,/funkce/prompty#aktualizace-materialu,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/prace-s-textem/,/funkce/prompty#prace-s-textem,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/komunikace-s-rodici-%e2%86%92/,/funkce/prompty#komunikace-s-rodici,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/tvorba-materialu-do-vyuky/,/funkce/prompty#tvorba-materialu-do-vyuky,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/vytvareni-pracovnich-listu/,/funkce/prompty#vytvareni-pracovnich-listu,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/vytvareni-lekci/,/funkce/prompty#vytvareni-lekci,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/projektova-vyuka/,/funkce/prompty#projektova-vyuka,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/seberozvoj-%e2%86%92/,/funkce/prompty#seberozvoj,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/vizualizace/,/funkce/prompty#vizualizace,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/ruzne/,/funkce/prompty#ruzne,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/adaptivni-vzdelavani/,/prompty#adaptivni-vzdelavani,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/aktualizace-materialu-%e2%86%92/,/prompty#aktualizace-materialu,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/prace-s-textem/,/prompty#prace-s-textem,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/komunikace-s-rodici-%e2%86%92/,/prompty#komunikace-s-rodici,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/tvorba-materialu-do-vyuky/,/prompty#tvorba-materialu-do-vyuky,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/vytvareni-pracovnich-listu/,/prompty#vytvareni-pracovnich-listu,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/vytvareni-lekci/,/prompty#vytvareni-lekci,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/projektova-vyuka/,/prompty#projektova-vyuka,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/seberozvoj-%e2%86%92/,/prompty#seberozvoj,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/vizualizace/,/prompty#vizualizace,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/ruzne/,/prompty#ruzne,přesměrovat,,
 kategorie,https://chatveskole.cz/dp/principy-vyuziti-genai-ve-vyuce/,/funkce/prompty/zaci,přesměrovat,,
 kategorie,https://chatveskole.cz/dp/prompty-pro-zaky/,/funkce/prompty/zaci,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/prompty-pro-pedagogy/,/funkce/prompty,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/prompty-pro-pedagogy/,/prompty,přesměrovat,,

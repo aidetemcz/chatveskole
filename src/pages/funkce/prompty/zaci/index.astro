@@ -14,7 +14,7 @@ const zaci = (await getCollection('prompty')).filter((p) => p.id.startsWith('zac
 <Base title={uvod.data.title} description={uvod.data.popis}>
   <div class="band band--white" style="padding-bottom: 32px">
     <div class="wrap stack" style="gap: 24px">
-      <Crumbs items={[{ title: 'Katalog promptů', href: '/funkce/prompty' }, { title: uvod.data.title }]} />
+      <Crumbs items={[{ title: 'Katalog promptů', href: '/prompty' }, { title: uvod.data.title }]} />
       <header class="page-head">
         <h1>{uvod.data.title}</h1>
         <p class="lede">{uvod.data.popis}</p>

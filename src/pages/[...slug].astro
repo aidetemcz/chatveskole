@@ -9,9 +9,9 @@ import { url } from '../lib/url';
 
 export async function getStaticPaths() {
   const stranky = await getCollection('stranky');
-  // vlastní šablony: index = hlavní stránka, funkce/prompty = katalog promptů, zmeny-funkci = funkce/zmeny-2026
+  // vlastní šablony: index = hlavní stránka, zmeny-funkci = funkce/zmeny-2026
   return stranky
-    .filter((s) => s.id !== 'index' && s.id !== 'funkce/prompty' && s.data.sablona !== 'zmeny-funkci')
+    .filter((s) => s.id !== 'index' && s.data.sablona !== 'zmeny-funkci')
     .map((s) => ({ params: { slug: s.id }, props: { stranka: s } }));
 }
 
@@ -23,6 +23,8 @@ const d = stranka.data;
 const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
 const zdroje: string[] = Array.isArray(d.zdroje) ? d.zdroje.filter((z: unknown) => typeof z === 'string') : [];
 const koncept = d.stav === 'koncept' || d.stav === 'ke-kontrole';
+// tlačítko na konci stránky (frontmatter: tlacitko: { text, href }), např. „Přejít na Katalog promptů“
+const tlacitko = d.tlacitko && typeof d.tlacitko === 'object' && d.tlacitko.href ? (d.tlacitko as { text: string; href: string }) : null;
 ---
 <Base title={d.title} description={d.popis}>
   <div class="wrap layout">
@@ -43,6 +45,9 @@ const koncept = d.stav === 'koncept' || d.stav === 'ke-kontrole';
       {casti.map((c, i) => c.typ === 'html'
         ? <div class:list={['prose', { 'prose--dalsi': i > 0 }]} set:html={c.html} />
         : <Komponenta klic={c.klic} />)}
+      {tlacitko && (
+        <p class="tlacitko-konec"><a class="btn btn--primary" href={url(tlacitko.href)}>{tlacitko.text} →</a></p>
+      )}
       {(zdroje.length > 0 || datum) && (
         <footer class="meta">
           {zdroje.length > 0 && (
@@ -72,6 +77,7 @@ const koncept = d.stav === 'koncept' || d.stav === 'ke-kontrole';
   .side a[aria-current='page'] { background: var(--sky-light); font-weight: 600; }
   .content { flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 24px; }
   .page-head { align-items: flex-start; }
+  .tlacitko-konec { padding: 8px 0 4px; }
   .meta { border-top: 1px solid var(--line); padding-top: 18px; font-size: 0.85rem; color: var(--muted); display: flex; flex-direction: column; gap: 10px; max-width: 72ch; }
   .meta summary { cursor: pointer; font-weight: 600; color: var(--ink); }
   .meta ul { margin: 10px 0 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; word-break: break-word; }
