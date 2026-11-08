@@ -8,7 +8,7 @@ stav: koncept
 
 # Chatboti ve škole
 
-Chatboti jsou jako miliony asistentů s miliony expertíz. Pojďme je využít ve školách tak, aby vyučujícím šetřili čas a žákům pomáhali kvalitně se učit a kriticky přemýšlet.
+Web Chatboti ve škole je komplexním rozcestníkem pro začátečníky i pokročilé. Najdete zde aktuální přehledy funkcí, jejich vysvětlení, instruktážní videa, kvalitní prompty, skilly i pluginy ke stažení. V sekci Chatboti ve výuce nabízíme pedagogické metody, jak uchopit výuku s chatboty tak, aby podporovala rozvoj žáků.
 
 [Jak fungují chatboti](/zaciname/jak-funguji-chatboti) · [Katalog skills](/skills)
 

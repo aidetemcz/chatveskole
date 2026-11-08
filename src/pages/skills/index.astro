@@ -22,7 +22,7 @@ const views = [
 ---
 <Base title="Katalog skills" description={`${skills.length} skills pro učitele a vedení škol ke stažení do Claude, Gemini, Copilotu a ChatGPT.`}>
   <div class="band band--white" style="padding-bottom: 32px">
-    <div class="wrap stack" style="gap: 24px">
+    <div class="wrap stack" style="gap: 32px">
       <Crumbs items={[{ title: 'Funkce', href: '/funkce/skills' }, { title: 'Katalog skills' }]} />
       <header class="page-head">
         <h1>Katalog skills</h1>
@@ -40,9 +40,9 @@ const views = [
       <div data-group-view={v.id} hidden={v.id !== 'ucel'} data-pagefind-ignore={v.id !== 'ucel' ? '' : undefined}>
         {v.groups.map((g, i) => (
           <section class={`band ${i % 2 === 0 ? 'band--sky' : 'band--white'}`} aria-label={g.title}>
-            <div class="wrap stack" style="gap: 20px">
+            <div class="wrap stack" style="gap: 28px">
               <div class="section-head">
-                <div class="stack" style="gap: 6px; max-width: 70ch">
+                <div class="stack" style="gap: 8px; max-width: 70ch">
                   <h2 style="font-size: 1.7rem">{g.title} <span class="count">{pocet(g.items.length, 'skill', 'skills', 'skills')}</span></h2>
                   {g.popis && <p style="margin-top: 0">{g.popis}</p>}
                 </div>

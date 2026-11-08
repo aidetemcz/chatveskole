@@ -18,7 +18,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
     <div class="wrap hero-in">
       <div class="page-head hero-text">
         <h1>Chatboti <em>ve škole</em></h1>
-        <p class="lede">Chatboti jsou jako miliony asistentů s miliony expertíz. Pojďme je využít ve školách tak, aby vyučujícím šetřili čas a žákům pomáhali kvalitně se učit a kriticky přemýšlet.</p>
+        <p class="lede">Web Chatboti ve škole je komplexním rozcestníkem pro začátečníky i pokročilé. Najdete zde aktuální přehledy funkcí, jejich vysvětlení, instruktážní videa, kvalitní prompty, skilly i pluginy ke stažení. V sekci Chatboti ve výuce nabízíme pedagogické metody, jak uchopit výuku s chatboty tak, aby podporovala rozvoj žáků.</p>
         <div class="hero-btns">
           <a class="btn btn--primary" href={url('/skills')}>Katalog skills</a>
           <a class="btn btn--outline" href={url('/prompty')}>Katalog promptů</a>
@@ -31,7 +31,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
   </section>
 
   <section class="band band--white" aria-labelledby="skills-h">
-    <div class="wrap stack" style="gap: 22px">
+    <div class="wrap stack" style="gap: 30px">
       <div class="section-head">
         <div><h2 id="skills-h">Skills</h2><p>Skills pro učitele a vedení škol v pěti sadách. Každý skill funguje i jako prompt: zkopírujete ho do jakéhokoli chatbota, i do bezplatné verze.</p></div>
         <a class="more" href={url('/skills')}>Katalog skills →</a>
@@ -54,7 +54,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
   </section>
 
   <section class="band band--sky" aria-labelledby="prompty-h">
-    <div class="wrap stack" style="gap: 22px">
+    <div class="wrap stack" style="gap: 30px">
       <div class="section-head">
         <div><h2 id="prompty-h">Katalog promptů</h2><p>Ověřené prompty pro učitele, vedení škol i žáky. Stačí zkopírovat do chatbota a doplnit údaje.</p></div>
         <a class="more" href={url('/prompty')}>Všech {nKatalog} promptů →</a>
@@ -77,7 +77,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
   </section>
 
   <section class="band band--white" aria-labelledby="vyuka-h">
-    <div class="wrap stack" style="gap: 24px">
+    <div class="wrap stack" style="gap: 32px">
       <div class="section-head">
         <div><h2 id="vyuka-h">Chatboti ve výuce</h2><p>Jak s chatboty pracovat ve třídě, aby se žáci učili víc, ne míň: bezpečná aplikace pro žáky, metodiky s hotovými lekcemi a doporučení, ze kterých může škola vycházet.</p></div>
       </div>
@@ -104,11 +104,11 @@ const nKatalog = nUcitele + nVedeni + nZaci;
         </div>
       </div>
       <div class="card card--lg rules">
-        <div class="stack" style="gap: 8px; flex: 1 1 520px">
+        <div class="stack" style="gap: 10px; flex: 1 1 520px">
           <h3 style="font-size: 1.35rem">Tvorba školních pravidel pro využívání AI ve výuce</h3>
           <p>Žáci AI používají, ať to škola dovolí, nebo ne. Pravidla nejsou o zákazu, ale o tom, kdy a jak AI učení pomáhá a kdy ho nahrazuje — a aby všichni věděli, co platí.</p>
         </div>
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px">
           <a class="btn btn--outline" href={url('/ve-vyuce/pravidla-pro-ai')}>Jak na pravidla</a>
           <a class="more" href={url('/skills/skolni-pravidla')}>Skill Školní pravidla →</a>
         </div>
@@ -117,7 +117,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
   </section>
 
   <section class="band band--sky" aria-label="Pluginy a vibe coding">
-    <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 16px">
+    <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 22px">
       <a class="card card--lg big" href={url('/funkce/pluginy')}>
         <span class="tile-icon tile-icon--accent" style="width: 44px; height: 44px"><Icon name="box" size={22} /></span>
         <h2>Pluginy</h2>
@@ -134,7 +134,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
   </section>
 
   <section class="band band--white" aria-labelledby="metodiky-h">
-    <div class="wrap stack" style="gap: 22px">
+    <div class="wrap stack" style="gap: 30px">
       <div class="section-head">
         <h2 id="metodiky-h">Metodické materiály</h2>
         <a class="more" href={url('/ve-vyuce/metodiky')}>Všechny metodické materiály →</a>
@@ -148,10 +148,10 @@ const nKatalog = nUcitele + nVedeni + nZaci;
   </section>
 
   <section class="band band--sky" aria-label="Kniha a novinky">
-    <div class="wrap" style="display: flex; flex-wrap: wrap; gap: 16px">
+    <div class="wrap" style="display: flex; flex-wrap: wrap; gap: 22px">
       <div class="card card--lg book">
         <img src={url('/img/kniha-ai-ve-skole-prakticky.jpg')} alt="Obálka knihy AI ve škole prakticky" loading="lazy" />
-        <div class="stack" style="gap: 10px; flex: 1 1 240px">
+        <div class="stack" style="gap: 14px; flex: 1 1 240px">
           <h2 style="font-size: 1.35rem">Kniha AI ve škole prakticky</h2>
           <p>Srozumitelný průvodce generativní umělou inteligencí pro všechny, kdo se věnují vzdělávání — od základních škol po univerzity.</p>
           <a class="more" href="https://vzdelavame.aidetem.cz/akce/publikace/ai-ve-skole-prakticky/">Objednat knihu →</a>
@@ -176,7 +176,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
   .hero h1 { font-size: clamp(2.2rem, 4.6vw, 3.4rem); max-width: 14ch; color: #fff; }
   .hero h1 em { color: var(--sky-light); }
   .hero .lede { font-size: 1.15rem; max-width: 56ch; color: #fff; }
-  .hero-btns { display: flex; flex-wrap: wrap; gap: 12px; padding-top: 4px; }
+  .hero-btns { display: flex; flex-wrap: wrap; gap: 16px; padding-top: 12px; }
   .hero .btn--primary { background: #fff; color: var(--accent-strong); }
   .hero .btn--primary:hover { background: var(--sky-light); color: var(--accent-ink); filter: none; }
   .hero .btn--outline { background: var(--accent); border-color: #fff; color: #fff; }
@@ -189,7 +189,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
     .hero { padding: 117px 0; }
     .sticker { margin-left: auto; }
   }
-  .way { display: flex; gap: 12px; }
+  .way { display: flex; gap: 14px; }
   .way span { flex: none; font-family: var(--fh); font-weight: 700; color: var(--accent-strong); }
   .way p { color: var(--ink); }
   .title-row { display: flex; align-items: center; gap: 10px; }
@@ -200,17 +200,17 @@ const nKatalog = nUcitele + nVedeni + nZaci;
   .li2 { text-decoration: none; display: flex; flex-direction: column; }
   .li2 strong { font-weight: 600; }
   .li2 span { font-size: 0.88rem; color: var(--muted); }
-  .ticks { margin: 0; padding-left: 18px; font-size: 0.93rem; display: flex; flex-direction: column; gap: 4px; }
-  .rules { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding: 26px 28px; }
+  .ticks { margin: 0; padding-left: 18px; font-size: 0.93rem; display: flex; flex-direction: column; gap: 7px; }
+  .rules { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 40px; padding: 34px 36px; }
   .big h2 { font-size: 1.5rem; }
   .big p { font-size: 1rem; }
   .thumb { border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; text-decoration: none; color: var(--ink); display: flex; flex-direction: column; background: var(--panel); }
   .thumb img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
-  .thumb div { padding: 18px 20px; display: flex; flex-direction: column; gap: 6px; }
+  .thumb div { padding: 24px 26px; display: flex; flex-direction: column; gap: 10px; }
   .thumb h3 { font-size: 1.05rem; font-weight: 700; }
   .thumb p { color: var(--muted); font-size: 0.9rem; }
-  .book { flex: 2 1 560px; flex-direction: row; flex-wrap: wrap; gap: 28px; align-items: center; padding: 26px 28px; }
+  .book { flex: 2 1 560px; flex-direction: row; flex-wrap: wrap; gap: 36px; align-items: center; padding: 34px 36px; }
   .book img { width: 240px; max-width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 16px; display: block; flex: none; }
-  .newsletter { flex: 1 1 300px; background: var(--panel); border: 1px solid var(--sky); border-radius: var(--radius-lg); padding: 26px 28px; display: flex; flex-direction: column; gap: 12px; justify-content: center; }
+  .newsletter { flex: 1 1 300px; background: var(--panel); border: 1px solid var(--sky); border-radius: var(--radius-lg); padding: 34px 36px; display: flex; flex-direction: column; gap: 16px; justify-content: center; }
   .newsletter p { color: var(--muted); font-size: 0.93rem; }
 </style>

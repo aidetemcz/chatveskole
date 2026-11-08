@@ -14,12 +14,12 @@ const items = sada.skills.map(skillBySlug).filter(Boolean) as Skill[];
 ---
 <Base title={`Sada ${sada.title}`} description={sada.popis}>
   <div class="band band--white" style="padding-bottom: 32px">
-    <div class="wrap stack" style="gap: 24px">
+    <div class="wrap stack" style="gap: 32px">
       <Crumbs items={[{ title: 'Katalog skills', href: '/skills' }, { title: sada.title }]} />
       <header class="page-head">
         <h1>{sada.title}</h1>
         <p class="lede">{sada.popis}</p>
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px; padding-top: 6px">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px 30px; padding-top: 6px">
           <a class="btn btn--primary" href={url(ZIP.plugin(sada.slug))} download><Icon name="download" size={16} />Stáhnout celou sadu (plugin)</a>
           <a class="linkbtn" href={url('/funkce/pluginy')} style="font-size: 1rem">Jak plugin nainstalovat →</a>
         </div>
@@ -27,7 +27,7 @@ const items = sada.skills.map(skillBySlug).filter(Boolean) as Skill[];
     </div>
   </div>
   <section class="band band--sky" aria-label="Skills v sadě">
-    <div class="wrap stack" style="gap: 20px">
+    <div class="wrap stack" style="gap: 28px">
       <h2 style="font-size: 1.7rem">Skills v sadě <span class="count">{pocet(items.length, 'skill', 'skills', 'skills')}</span></h2>
       <div class="grid-2">{items.map((k) => <SkillCard skill={k} />)}</div>
     </div>

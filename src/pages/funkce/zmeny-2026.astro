@@ -59,7 +59,7 @@ const datum = d.aktualizovano ? datumCesky(d.aktualizovano) : null;
 
   {oddily.map((o, i) => (
     <section class:list={['band', (i + (seznamTezi.length ? 1 : 0)) % 2 === 0 ? 'band--sky' : 'band--white']} aria-labelledby={o.id || undefined}>
-      <div class="wrap stack" style="gap: 22px">
+      <div class="wrap stack" style="gap: 30px">
         <div class="section-head">
           <div>
             <h2 id={o.id || undefined}>{o.nadpis}</h2>
@@ -82,8 +82,8 @@ const datum = d.aktualizovano ? datumCesky(d.aktualizovano) : null;
 
 <style>
   .perex :global(p) { font-size: 1.1rem; color: var(--muted); max-width: 64ch; }
-  .shifts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 32px; }
-  .shift-item { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .shifts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 40px; }
+  .shift-item { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
   .shift-item h2 { font-size: 1.2rem; font-weight: 700; line-height: 1.25; }
   .shift-item p { font-size: 0.95rem; }
   .glyph { display: flex; align-items: center; gap: 6px; height: 22px; margin-bottom: 4px; }

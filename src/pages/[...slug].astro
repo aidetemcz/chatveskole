@@ -69,16 +69,16 @@ const tlacitko = d.tlacitko && typeof d.tlacitko === 'object' && d.tlacitko.href
 </Base>
 
 <style>
-  .layout { display: flex; flex-wrap: wrap; gap: 32px 56px; align-items: flex-start; padding-top: 36px; padding-bottom: 64px; }
+  .layout { display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: flex-start; padding-top: 52px; padding-bottom: 96px; }
   .side { flex: 1 1 220px; max-width: 260px; display: flex; flex-direction: column; gap: 2px; font-size: 0.92rem; }
   .side-title { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--sky-ink); font-weight: 600; padding: 0 12px 8px; }
   .side a { padding: 8px 12px; border-radius: 10px; color: var(--ink); text-decoration: none; }
   .side a:hover { background: var(--line-soft); }
   .side a[aria-current='page'] { background: var(--sky-light); font-weight: 600; }
-  .content { flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 24px; }
+  .content { flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 32px; }
   .page-head { align-items: flex-start; }
-  .tlacitko-konec { padding: 8px 0 4px; }
-  .meta { border-top: 1px solid var(--line); padding-top: 18px; font-size: 0.85rem; color: var(--muted); display: flex; flex-direction: column; gap: 10px; max-width: 72ch; }
+  .tlacitko-konec { padding: 16px 0 8px; }
+  .meta { border-top: 1px solid var(--line); padding-top: 24px; font-size: 0.85rem; color: var(--muted); display: flex; flex-direction: column; gap: 10px; max-width: 72ch; }
   .meta summary { cursor: pointer; font-weight: 600; color: var(--ink); }
   .meta ul { margin: 10px 0 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; word-break: break-word; }
   @media (max-width: 860px) { .side { max-width: none; flex-direction: row; flex-wrap: wrap; } .side-title { width: 100%; } }
