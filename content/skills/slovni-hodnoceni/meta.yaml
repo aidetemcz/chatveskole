@@ -14,37 +14,25 @@ puvodni_obsah:
     typ: prompt
   - url: https://chatveskole.cz/databaze-promptu/generovani-slovniho-hodnoceni/
     typ: asistent
-  - url: https://chatveskole.cz/databaze-promptu/radce-pro-spravne-formulace-slovniho-hodnoceni/
-    typ: asistent
   - url: https://chatveskole.cz/databaze-promptu/tvorba-zpetne-vazby/
     typ: prompt
-# Skill slučuje dva asistenty, proto jsou hodnoty seznamy.
+# 05 Rádce je od 8. 11. 2026 samostatný skill radce-slovniho-hodnoceni.
 puvodni_asistenti:
   gpt:
     # 04 Generování slovního hodnocení – odkaz z webu
     - https://chatgpt.com/g/g-689478f617e88191a6e69b0ed680d4a0-asistent-pro-generovani-slovniho-hodnoceni
     # 04 Generování slovního hodnocení – jiný odkaz uvedený v Google Docu se systémovým promptem (starší verze?)
     - https://chatgpt.com/g/g-686bc657c8008191b23f8782c5e55400-04-asistent-pro-generovani-slovniho-hodnoceni
-    # 05 Rádce pro správné formulace slovního hodnocení
-    - https://chatgpt.com/g/g-6952b9b3a4908191aa32de37f3a31e4a-radce-pro-spravne-formulace-slovniho-hodnoceni
   gem:
     # 04 Generování slovního hodnocení
     - https://gemini.google.com/gem/1hJasroRmk9eLRqdQhvijp7TyWDyNV758?usp=sharing
-    # 05 Rádce
-    - https://gemini.google.com/gem/1b6piE8VT_IO-3_Q8m-Uk6YzgCOCkcn-c?usp=sharing
   systemovy_prompt:
     # 04 Generování slovního hodnocení
     - https://docs.google.com/document/d/1SlTa0QhQfmKfDfN-dLi_w3yMyNmm1ssjsuQoE4Rgg20/edit?usp=sharing
-    # 05 Rádce (Šárka Polanecká)
-    - https://docs.google.com/document/d/16WmesfaR0cyf90pZEb2FVkITuX8RkFwW_4K_wa2wwVI/edit?usp=sharing
     # Prompty pro Tiny na tvorbu formativního hodnocení (verze 2026-03-29) – nejde o GPT ani Gem, jen zdroj
     - https://docs.google.com/document/d/1haOrj-3758yeBzmFJQeGJd-JjqAZb2f-EqawB8vwono/edit
 google_doc: https://docs.google.com/document/d/1r65QTk3-Q-qhcWDo1dHPSrCQPXmnNsjhT37mjIKDjBI/edit
 google_slozka: https://drive.google.com/drive/folders/1xfVr9r56k4yjkxvpKTeY_vODSeixx8lN
-google_dalsi:                # druhý dokument ke skillu na Disku
-  - nazev: 05 Rádce pro formulace slovního hodnocení
-    google_doc: https://docs.google.com/document/d/1tSsQezytdBJ5f-ztsWKXfls3bXTP80r2TX_m7BuV7nU/edit
-    google_slozka: https://drive.google.com/drive/folders/1Gt3D082HsKF5dDqP8wLXLygDtktxPww_
 autori:
   - Eva Nečasová (AI dětem)
   - Šárka Polanecká (ZŠ Pod Beckovem) – režim Kontrola formulací

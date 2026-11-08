@@ -12,7 +12,7 @@
 
 ## Blokují stavbu webu
 
-4. **Sdílení složek na Disku:** od 8. 11. 2026 je místem pravdy složka *Skills* na sdíleném disku (https://drive.google.com/drive/folders/1AZy-XZ4PYPWCCB-LVVwy96FfQ2i1G4Ai) — 22 skills, u každého dokument se systémovým promptem a Data. Odkazy v `meta.yaml` (`google_doc`, `google_slozka`, u kritérií a slovního hodnocení i `google_dalsi`), přehled v `migrace/google-drive.json`. Ověřit, že je složka sdílená „Kdokoli s odkazem – čtenář“. Starší složka *Zdroje k stažení* se už nepoužívá.
+4. **Sdílení složek na Disku:** od 8. 11. 2026 je místem pravdy složka *Skills* na sdíleném disku (https://drive.google.com/drive/folders/1AZy-XZ4PYPWCCB-LVVwy96FfQ2i1G4Ai) — 24 skills, u každého dokument se systémovým promptem a Data. Odkazy v `meta.yaml` (`google_doc`, `google_slozka`), přehled v `migrace/google-drive.json`. Ověřit, že je složka sdílená „Kdokoli s odkazem – čtenář“. Starší složka *Zdroje k stažení* se už nepoužívá.
 
 ## Obsah
 
@@ -32,7 +32,8 @@
 
 ## Skills a pluginy
 
-38. **Nové skills z 8. 11. 2026** (Lepší třídní klima, Gradace klíčových kompetencí, Hádej chemický prvek, Kariérní poradce – matematika): autoři jsou zapsaní jako „AI dětem“ — doplnit skutečné autory. Zařazení do sad je návrh: gradace → Formativní hodnocení, klima → Komunikace a podpora učitele, chemie a kariérní poradce → Příprava výuky. Hádej chemický prvek a Kariérní poradce jsou chatboti pro žáky (12–15, 13+), skills jsou ale v Gemini a Claude 18+ — na webu proto zdůrazňujeme prompt a Tiny (souvisí s bodem 19).
+38. **Nové skills z 8. 11. 2026** (Lepší třídní klima, Gradace klíčových kompetencí, Hádej chemický prvek, Kariérní poradce – matematika): autoři jsou zapsaní jako „AI dětem“ — doplnit skutečné autory. Zařazení do sad je návrh: gradace klíčových kompetencí → Vedení školy (Formativní hodnocení má podle Disku pět skills 01–05), klima → Komunikace a podpora učitele, chemie a kariérní poradce → Příprava výuky. Hádej chemický prvek a Kariérní poradce jsou chatboti pro žáky (12–15, 13+), skills jsou ale v Gemini a Claude 18+ — na webu proto zdůrazňujeme prompt a Tiny (souvisí s bodem 19).
+40. **Formativní hodnocení 01–05 (8. 11. 2026):** z Kritérií hodnocení se oddělila Gradace kritérií (03) a ze Slovního hodnocení Rádce (05) — jsou to samostatné skills, později je spojí plugin. Kritéria hodnocení a Slovní hodnocení ale v `SKILL.md` gradaci a kontrolu formulací pořád obsahují (sloučená verze). Zúžit je na 02 a 04 podle Disku? (souvisí s bodem 39)
 39. **SKILL.md vs. dokument na Disku:** dokumenty v nové složce Skills nejsou vždy totožné se `SKILL.md` na webu (např. 01 Formulace vzdělávacích cílů je kratší). Má se `SKILL.md` převzít z Disku, nebo naopak?
 
 16. **Kontrola skills:** všechny jsou ve stavu `koncept`. Kdo je projde a otestuje (aspoň Claude + Gemini nebo ChatGPT)? Navrhujeme: formativní hodnocení — Eva + Šárka Polanecká; vedení školy — tým AI akcelerátoru.

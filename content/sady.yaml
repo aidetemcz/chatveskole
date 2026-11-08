@@ -5,7 +5,7 @@
   title: Formativní hodnocení
   popis: Od vzdělávacího cíle přes kritéria a sebehodnocení až ke slovnímu hodnocení. Postaveno na metodice Vysvědčení jinak (PdF MU).
   pro_koho: [ucitele]
-  skills: [vzdelavaci-cile, kriteria-hodnoceni, slovni-hodnoceni, gradace-klicovych-kompetenci]
+  skills: [vzdelavaci-cile, kriteria-hodnoceni, gradace-kriterii-hodnoceni, slovni-hodnoceni, radce-slovniho-hodnoceni]
 
 - slug: priprava-vyuky
   title: Příprava výuky
@@ -23,7 +23,7 @@
   title: Vedení školy
   popis: Hodnoty, mise a vize, školní pravidla, strategické dokumenty, AI gramotnost v ŠVP a každodenní agenda ředitele.
   pro_koho: [vedeni]
-  skills: [mise-vize-hodnoty, skolni-pravidla, strategicke-dokumenty, ai-gramotnost-v-svp, asistent-reditele, rizeni-zmeny]
+  skills: [mise-vize-hodnoty, skolni-pravidla, strategicke-dokumenty, ai-gramotnost-v-svp, gradace-klicovych-kompetenci, asistent-reditele, rizeni-zmeny]
 
 - slug: ai-akcelerator
   title: AI akcelerátor

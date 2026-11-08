@@ -498,7 +498,7 @@
     },
     {
       "source": "/databaze-promptu/radce-pro-spravne-formulace-slovniho-hodnoceni",
-      "destination": "/skills/slovni-hodnoceni",
+      "destination": "/skills/radce-slovniho-hodnoceni",
       "permanent": true
     },
     {
@@ -693,7 +693,7 @@
     },
     {
       "source": "/databaze-promptu/vytvareni-sebehodnotici-skaly-pro-zaky",
-      "destination": "/skills/kriteria-hodnoceni",
+      "destination": "/skills/gradace-kriterii-hodnoceni",
       "permanent": true
     },
     {

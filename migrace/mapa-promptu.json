@@ -15,10 +15,6 @@
     "skupina": "asistent",
     "skill": "kriteria-hodnoceni"
   },
-  "vytvareni-sebehodnotici-skaly-pro-zaky": {
-    "skupina": "asistent",
-    "skill": "kriteria-hodnoceni"
-  },
   "sebehodnoceni-pro-zaky": {
     "skupina": "pedagogove",
     "skill": "kriteria-hodnoceni"
@@ -39,9 +35,13 @@
     "skupina": "asistent",
     "skill": "slovni-hodnoceni"
   },
+  "vytvareni-sebehodnotici-skaly-pro-zaky": {
+    "skupina": "asistent",
+    "skill": "gradace-kriterii-hodnoceni"
+  },
   "radce-pro-spravne-formulace-slovniho-hodnoceni": {
     "skupina": "asistent",
-    "skill": "slovni-hodnoceni"
+    "skill": "radce-slovniho-hodnoceni"
   },
   "didakticky-radce": {
     "skupina": "asistent",

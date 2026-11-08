@@ -47,8 +47,10 @@ PAGES = {
 # --- Databáze promptů (manual_kb) -> cíl --------------------------------------
 SKILL_MAP = {
     "vzdelavaci-cile": ["formulace-vyukoveho-cile", "formulace-vyukoveho-cile-2"],
-    "kriteria-hodnoceni": ["tvorba-kriterii-hodnoceni", "formulace-kriterii-hodnoceni", "vytvareni-sebehodnotici-skaly-pro-zaky", "sebehodnoceni-pro-zaky", "tvorba-dukazu-o-uceni"],
-    "slovni-hodnoceni": ["tvorba-zpetne-vazby", "tvorba-slovniho-hodnoceni", "generovani-slovniho-hodnoceni", "radce-pro-spravne-formulace-slovniho-hodnoceni"],
+    "kriteria-hodnoceni": ["tvorba-kriterii-hodnoceni", "formulace-kriterii-hodnoceni", "sebehodnoceni-pro-zaky", "tvorba-dukazu-o-uceni"],
+    "slovni-hodnoceni": ["tvorba-zpetne-vazby", "tvorba-slovniho-hodnoceni", "generovani-slovniho-hodnoceni"],
+    "gradace-kriterii-hodnoceni": ["vytvareni-sebehodnotici-skaly-pro-zaky"],
+    "radce-slovniho-hodnoceni": ["radce-pro-spravne-formulace-slovniho-hodnoceni"],
     "didakticky-radce": ["didakticky-radce", "planovac-vyuky", "didaktik-konzultant", "napadnicek-geografie", "vyukovy-plan-bloomova-taxonomie", "osnova-lekce-informatika", "strukturovany-ucebni-plan", "unikovka-elektromagnetismus", "eduscrum-mestsky-ekosystem", "otazky-k-diskuzi", "k-cemu-mi-to-je"],
     "pracovni-listy": ["doplnovacka", "spojovacka", "kviz", "pracovni-list-s-otevrenymi-otazkami", "vyuka-s-emotikony", "slovnicek-pojmu", "pracovni-list-pro-reflexi-uciva", "tematicky-test-cizi-jazyk", "matematicke-priklady", "slovicka-nalady", "protiklady-prid-jmena", "doplnovacka_slovesa", "emotikony-zivot-vaclava-havla", "kviz-historie", "tvorba-testu-dedicnost", "slovnicky-pojmu"],
     "uprava-materialu": ["aktualizace-tematickeho-planu", "prevod-materialu-do-jine-formy", "rozsireni-existujiciho-materialu", "prevod-materialu-na-jinou-uroven-obtiznosti", "individualizace-vyukovych-cilu", "diferenciace-textu-rozhovory", "zmena-textu-strucne-a-jasne", "prace-s-textem-shrnuti"],

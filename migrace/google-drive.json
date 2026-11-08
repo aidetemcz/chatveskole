@@ -27,6 +27,11 @@
       "slozka": "1tIFIAxgdqj2JPRRpmPnF0hkcA46lZgRJ",
       "doc": "1EfyY7MsppbJLY9kEZ6WYZm2ziuqVGq5VCEGFLcAvDWQ"
     },
+    "Gradace kritérií hodnocení (J–Č–T–Ú)": {
+      "slug": "gradace-kriterii-hodnoceni",
+      "slozka": "10xmfAX7Ne5Arb6l5Isho6kKvOcSRaukN",
+      "doc": "1jI9LdW75FiNqdfns18bNraAPYaguHpdB7DNfmhlKuZ8"
+    },
     "Hádej chemický prvek": {
       "slug": "hadej-chemicky-prvek",
       "slozka": "1PbiL0KG_eNlFE4MSF_BLcS9jjfcjxgpf",
@@ -50,14 +55,7 @@
     "Kritéria hodnocení": {
       "slug": "kriteria-hodnoceni",
       "slozka": "1AXAp1yrnNUiUSwTjQdwcV-PLLUU6LKNF",
-      "doc": "1UUhFUc8PfWJVqfB9g16j3-WDiTOrRQvfy_aB_yxYYjs",
-      "dalsi": [
-        {
-          "nazev": "03 Gradace kritérií hodnocení (JČTÚ)",
-          "slozka": "10xmfAX7Ne5Arb6l5Isho6kKvOcSRaukN",
-          "doc": "1jI9LdW75FiNqdfns18bNraAPYaguHpdB7DNfmhlKuZ8"
-        }
-      ]
+      "doc": "1UUhFUc8PfWJVqfB9g16j3-WDiTOrRQvfy_aB_yxYYjs"
     },
     "Lepší třídní klima": {
       "slug": "lepsi-tridni-klima",
@@ -79,6 +77,11 @@
       "slozka": "1JlRSo74mR2rHMl2V_YDcM0yU0E5WULdW",
       "doc": "1Jrw1-QYxaEjlzWAVHKSAchVBuM-TplEb1xc_c3Yr9Lg"
     },
+    "Rádce pro formulace slovního hodnocení": {
+      "slug": "radce-slovniho-hodnoceni",
+      "slozka": "1Gt3D082HsKF5dDqP8wLXLygDtktxPww_",
+      "doc": "1tSsQezytdBJ5f-ztsWKXfls3bXTP80r2TX_m7BuV7nU"
+    },
     "Řízení změny ve škole": {
       "slug": "rizeni-zmeny",
       "slozka": "1MMa7m55095cB7SNb95m72FNkaGCYcZAl",
@@ -97,14 +100,7 @@
     "Slovní hodnocení": {
       "slug": "slovni-hodnoceni",
       "slozka": "1xfVr9r56k4yjkxvpKTeY_vODSeixx8lN",
-      "doc": "1r65QTk3-Q-qhcWDo1dHPSrCQPXmnNsjhT37mjIKDjBI",
-      "dalsi": [
-        {
-          "nazev": "05 Rádce pro formulace slovního hodnocení",
-          "slozka": "1Gt3D082HsKF5dDqP8wLXLygDtktxPww_",
-          "doc": "1tSsQezytdBJ5f-ztsWKXfls3bXTP80r2TX_m7BuV7nU"
-        }
-      ]
+      "doc": "1r65QTk3-Q-qhcWDo1dHPSrCQPXmnNsjhT37mjIKDjBI"
     },
     "Strategické dokumenty": {
       "slug": "strategicke-dokumenty",

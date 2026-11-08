@@ -19,7 +19,7 @@ process.chdir(ROOT);
 
 const WEB = 'https://chatveskole.cz';
 const REPO = 'https://github.com/aidetemcz/chatveskole';
-const AUTOR = { name: 'AI dětem, z. ú.', url: 'https://aidetem.cz' };
+const AUTOR = { name: 'AI dětem, z. s.', url: 'https://aidetem.cz' };
 const KONTROLA = process.argv.includes('--kontrola');
 const DATUM = new Date('2026-01-01T00:00:00Z'); // pevné datum v ZIPech → stejný obsah, stejný soubor
 
