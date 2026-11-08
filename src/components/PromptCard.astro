@@ -7,10 +7,10 @@ const { title, href, text, id, skill } = Astro.props;
 <article class="card">
   <div class="card-top">
     <h3><a href={url(href)}>{title}</a></h3>
-    {skill && <span class="badge badge--sky">i jako skill</span>}
+    {skill && <span class="badge badge--sky" data-pagefind-ignore>i jako skill</span>}
   </div>
   <template id={id}>{text}</template>
-  <div class="actions">
+  <div class="actions" data-pagefind-ignore>
     <a class="btn btn--outline btn--small" href={url(href)}>Detail</a>
     {text && <button type="button" class="linkbtn" data-copy={id}><Icon name="copy" /><span data-label>Kopírovat</span></button>}
   </div>

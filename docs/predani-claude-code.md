@@ -21,7 +21,9 @@ Tento dokument je pro Evu (jak práci spustit) i pro Claude Code (co dělat a v 
 
 - [x] Fáze 4 — datové stránky (8. 11. 2026): Změny ve funkcích 2026 (časová osa s čárou „dnes“, matice s přepínačem nástrojů na mobilu, karty nástrojů, zdroje), ceník z `data/ceny.yaml` se štítkem „ověřujeme“, dlaždice sad, karty pluginů, tabulka Tiny, záložky instalace, karty metodik, tabulka nástrojů jako karty na mobilu
 
-Ještě chybí: přesměrování, vyhledávání a SEO (fáze 5), kontrola skills Evou a týmem.
+- [x] Fáze 5 — SEO a vyhledávání (8. 11. 2026): 175 přesměrovacích stránek starých URL (GitHub Pages neumí 301), sitemap.xml, robots.txt, kanonické URL, Open Graph obrázek, vyhledávání Pagefind (`/hledat`, lupa v hlavičce), `noindex` na náhledu, kontrola odkazů včetně cílů přesměrování
+
+Ještě chybí: analytika (čeká na rozhodnutí, otázka 3), kontrola skills Evou a týmem, napojení domény.
 
 ## Krok 0 — příprava (Eva, 15 minut)
 

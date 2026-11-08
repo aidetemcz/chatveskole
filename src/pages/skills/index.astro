@@ -37,7 +37,7 @@ const views = [
 
   <div id="skupiny-skills">
     {views.map((v) => (
-      <div data-group-view={v.id} hidden={v.id !== 'ucel'}>
+      <div data-group-view={v.id} hidden={v.id !== 'ucel'} data-pagefind-ignore={v.id !== 'ucel' ? '' : undefined}>
         {v.groups.map((g, i) => (
           <section class={`band ${i % 2 === 0 ? 'band--sky' : 'band--white'}`} aria-label={g.title}>
             <div class="wrap stack" style="gap: 20px">
