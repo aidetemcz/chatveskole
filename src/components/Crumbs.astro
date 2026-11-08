@@ -1,0 +1,14 @@
+---
+import { url } from '../lib/url';
+interface Props { items: { title: string; href?: string }[] }
+const { items } = Astro.props;
+---
+<nav class="crumbs" aria-label="Drobečková navigace">
+  <a href={url('/')}>Domů</a>
+  {items.map((it) => (
+    <>
+      <span aria-hidden="true">/</span>
+      {it.href ? <a href={url(it.href)}>{it.title}</a> : <span aria-current="page">{it.title}</span>}
+    </>
+  ))}
+</nav>

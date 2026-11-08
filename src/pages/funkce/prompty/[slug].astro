@@ -1,0 +1,65 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import Crumbs from '../../../components/Crumbs.astro';
+import { url } from '../../../lib/url';
+import { skillBySlug } from '../../../lib/data';
+
+export async function getStaticPaths() {
+  const prompty = (await getCollection('prompty')).filter((p) => !p.id.startsWith('zaci/'));
+  const seen = new Map<string, string>();
+  return prompty.map((p) => {
+    const slug = p.id.split('/')[1];
+    if (seen.has(slug)) throw new Error(`Duplicitní slug promptu: ${slug} (${seen.get(slug)} a ${p.id})`);
+    seen.set(slug, p.id);
+    const podobne = prompty
+      .filter((q) => q.id !== p.id && !q.id.startsWith('archiv-2024/') && q.data.kategorie?.[0] && q.data.kategorie[0] === p.data.kategorie?.[0])
+      .slice(0, 5)
+      .map((q) => ({ title: q.data.title, href: `/funkce/prompty/${q.id.split('/')[1]}` }));
+    return { params: { slug }, props: { prompt: p, podobne } };
+  });
+}
+const { prompt, podobne } = Astro.props;
+const { Content } = await render(prompt);
+const archiv = prompt.id.startsWith('archiv-2024/');
+const skill = prompt.data.skill ? skillBySlug(prompt.data.skill) : undefined;
+---
+<Base title={prompt.data.title} description={`Prompt ${prompt.data.title} — zkopírujte ho do chatbota a doplňte údaje.`} noindex={archiv}>
+  <div class="wrap layout">
+    <article class="main">
+      <Crumbs items={[{ title: 'Katalog promptů', href: '/funkce/prompty' }, { title: prompt.data.title }]} />
+      <header class="page-head"><h1>{prompt.data.title}</h1></header>
+      {archiv && <p class="note note--info">Starší prompt z roku 2024. Zatím není v katalogu — procházíme, které staré prompty zůstanou.</p>}
+      <div class="prose"><Content /></div>
+    </article>
+    <aside class="side">
+      {skill && (
+        <div class="skillbox">
+          <span class="eyebrow">Používáte ho často?</span>
+          <h2>Nainstalujte skill {skill.title}</h2>
+          <p>{skill.kratky_popis}</p>
+          <a class="btn btn--outline btn--small" href={url(`/skills/${skill.slug}`)} style="align-self: flex-start; background: var(--panel)">Zobrazit skill →</a>
+        </div>
+      )}
+      {podobne.length > 0 && (
+        <div class="similar">
+          <h2>Podobné prompty</h2>
+          {podobne.map((q) => <a href={url(q.href)}>{q.title}</a>)}
+        </div>
+      )}
+    </aside>
+  </div>
+</Base>
+
+<style>
+  .layout { display: flex; flex-wrap: wrap; gap: 28px 48px; align-items: flex-start; padding-top: 36px; padding-bottom: 64px; }
+  .main { flex: 999 1 600px; min-width: 0; display: flex; flex-direction: column; gap: 22px; }
+  .side { flex: 1 1 300px; display: flex; flex-direction: column; gap: 14px; }
+  .skillbox { background: var(--sky-light); border-radius: var(--radius-lg); padding: 22px 24px; display: flex; flex-direction: column; gap: 10px; }
+  .eyebrow { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--sky-ink); font-weight: 600; }
+  .skillbox h2 { font-size: 1.15rem; }
+  .skillbox p { font-size: 0.9rem; }
+  .similar { border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; }
+  .similar h2 { font-size: 1rem; }
+  .similar a { text-decoration: none; font-weight: 500; }
+</style>

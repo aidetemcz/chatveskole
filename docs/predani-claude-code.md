@@ -16,8 +16,10 @@ Tento dokument je pro Evu (jak práci spustit) i pro Claude Code (co dělat a v 
 - [x] Data pro tabulky — `data/funkce-chatbotu.yaml`, `data/ceny.yaml`
 - [x] Design, architektura, specifikace skills — `docs/`
 - [x] Exportní skript z WordPressu — `scripts/export-wordpress.mjs`
+- [x] Schválený design (8. 11. 2026) — pravidla v `docs/design.md`, návrh v Claude Design
+- [x] Astro aplikace, fáze 2 a 3 (8. 11. 2026): hlavička, patička, homepage, obsahové stránky, katalog a detail skills, sady, katalog a detail promptů včetně žákovských, ZIPy ke stažení, 404, kontrola odkazů (`npm run check`), nasazení na GitHub Pages (`.github/workflows/deploy.yml`)
 
-Ještě chybí: Astro aplikace (`src/`), export starého webu do `archiv/` (viz krok 0), nové Google Docs se systémovými prompty skills (odkazy do `meta.yaml → google_doc`), kontrola skills Evou a týmem.
+Ještě chybí: datové komponenty (fáze 4), přesměrování, vyhledávání a SEO (fáze 5), kontrola skills Evou a týmem.
 
 ## Krok 0 — příprava (Eva, 15 minut)
 

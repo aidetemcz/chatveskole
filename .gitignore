@@ -12,3 +12,7 @@ _prenos-*.zip
 google-drive/
 # přenosové soubory z Claude (lze smazat)
 _to_delete/
+# ZIPy ke stažení (scripts/build-downloads.mjs)
+public/download/
+# obrázky ze starého webu kopírované při buildu (scripts/build-downloads.mjs)
+public/archiv/

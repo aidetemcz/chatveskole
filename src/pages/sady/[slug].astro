@@ -1,0 +1,35 @@
+---
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import SkillCard from '../../components/SkillCard.astro';
+import Icon from '../../components/Icon.astro';
+import { url } from '../../lib/url';
+import { sady, skillBySlug, ZIP, pocet, type Sada, type Skill } from '../../lib/data';
+
+export function getStaticPaths() {
+  return sady.map((sada) => ({ params: { slug: sada.slug }, props: { sada } }));
+}
+const { sada } = Astro.props as { sada: Sada };
+const items = sada.skills.map(skillBySlug).filter(Boolean) as Skill[];
+---
+<Base title={`Sada ${sada.title}`} description={sada.popis}>
+  <div class="band band--white" style="padding-bottom: 32px">
+    <div class="wrap stack" style="gap: 24px">
+      <Crumbs items={[{ title: 'Katalog skills', href: '/skills' }, { title: sada.title }]} />
+      <header class="page-head">
+        <h1>{sada.title}</h1>
+        <p class="lede">{sada.popis}</p>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px; padding-top: 6px">
+          <a class="btn btn--primary" href={url(ZIP.plugin(sada.slug))} download><Icon name="download" size={16} />Stáhnout celou sadu (plugin)</a>
+          <a class="linkbtn" href={url('/funkce/pluginy')} style="font-size: 1rem">Jak plugin nainstalovat →</a>
+        </div>
+      </header>
+    </div>
+  </div>
+  <section class="band band--sky" aria-label="Skills v sadě">
+    <div class="wrap stack" style="gap: 20px">
+      <h2 style="font-size: 1.7rem">Skills v sadě <span class="count">{pocet(items.length, 'skill', 'skills', 'skills')}</span></h2>
+      <div class="grid-2">{items.map((k) => <SkillCard skill={k} />)}</div>
+    </div>
+  </section>
+</Base>

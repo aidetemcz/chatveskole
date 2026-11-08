@@ -1,0 +1,48 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../../../layouts/Base.astro';
+import Crumbs from '../../../../components/Crumbs.astro';
+import { url } from '../../../../lib/url';
+
+export async function getStaticPaths() {
+  const zaci = (await getCollection('prompty')).filter((p) => p.id.startsWith('zaci/'));
+  return zaci.map((p) => ({ params: { slug: p.id.split('/')[1] }, props: { prompt: p } }));
+}
+const { prompt } = Astro.props;
+const { Content } = await render(prompt);
+const d = prompt.data;
+---
+<Base title={`${d.title} — prompt pro žáky`} description={d.proc_ho_vyuzit}>
+  <div class="wrap layout">
+    <article class="main">
+      <Crumbs items={[{ title: 'Katalog promptů', href: '/funkce/prompty' }, { title: 'Pro žáky', href: '/funkce/prompty/zaci' }, { title: d.title }]} />
+      <header class="page-head"><h1>{d.title}</h1></header>
+      <div class="prose"><Content /></div>
+    </article>
+    <aside class="side">
+      {(d.rozviji || d.proc_ho_vyuzit) && (
+        <div class="box">
+          {d.rozviji && <div><h2>Co rozvíjí</h2><p>{d.rozviji}</p></div>}
+          {d.proc_ho_vyuzit && <div><h2>Proč ho využít</h2><p>{d.proc_ho_vyuzit}</p></div>}
+        </div>
+      )}
+      {d.tiny_chatbot && (
+        <div class="box box--sky">
+          <h2>V aplikaci Tiny</h2>
+          <p>Stejně pracuje chatbot <strong>{d.tiny_chatbot}</strong> — bez účtů žáků u velkých firem.</p>
+          <a class="more" href={url('/ve-vyuce/tiny')}>O aplikaci Tiny →</a>
+        </div>
+      )}
+    </aside>
+  </div>
+</Base>
+
+<style>
+  .layout { display: flex; flex-wrap: wrap; gap: 28px 48px; align-items: flex-start; padding-top: 36px; padding-bottom: 64px; }
+  .main { flex: 999 1 600px; min-width: 0; display: flex; flex-direction: column; gap: 22px; }
+  .side { flex: 1 1 300px; display: flex; flex-direction: column; gap: 14px; }
+  .box { border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 20px 22px; display: flex; flex-direction: column; gap: 14px; font-size: 0.92rem; }
+  .box--sky { background: var(--sky-light); border-color: transparent; gap: 8px; }
+  .box h2 { font-family: var(--fb); font-size: 0.78rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
+  .box--sky h2 { font-family: var(--fh); font-size: 1.1rem; color: var(--ink); text-transform: none; letter-spacing: -0.01em; }
+</style>

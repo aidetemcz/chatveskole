@@ -1,0 +1,60 @@
+---
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import SkillCard from '../../components/SkillCard.astro';
+import Icon from '../../components/Icon.astro';
+import { url } from '../../lib/url';
+import { sady, skills, skillBySlug, PRO_KOHO_SKUPINA, ZIP, pocet, type Skill } from '../../lib/data';
+
+const podleUcelu = sady.map((s) => ({
+  title: s.title, popis: s.popis, sada: s.slug,
+  items: s.skills.map(skillBySlug).filter(Boolean) as Skill[],
+}));
+const podleKomu = Object.entries(PRO_KOHO_SKUPINA).map(([id, title]) => ({
+  title, popis: '', sada: '',
+  items: sady.flatMap((s) => s.skills).filter((v, i, a) => a.indexOf(v) === i)
+    .map(skillBySlug).filter((k): k is Skill => !!k && k.pro_koho.includes(id)),
+})).filter((g) => g.items.length > 0);
+const views = [
+  { id: 'ucel', groups: podleUcelu },
+  { id: 'komu', groups: podleKomu },
+];
+---
+<Base title="Katalog skills" description={`${skills.length} skills pro učitele a vedení škol ke stažení do Claude, Gemini, Copilotu a ChatGPT.`}>
+  <div class="band band--white" style="padding-bottom: 32px">
+    <div class="wrap stack" style="gap: 24px">
+      <Crumbs items={[{ title: 'Funkce', href: '/funkce/skills' }, { title: 'Katalog skills' }]} />
+      <header class="page-head">
+        <h1>Katalog skills</h1>
+        <p class="lede">{skills.length} skills pro učitele a vedení škol. Stáhněte skill a nainstalujte ho do Claude, Gemini, Copilotu nebo ChatGPT — chatbot ho pak použije sám, kdykoli ho budete potřebovat.</p>
+      </header>
+      <div class="seg" role="group" aria-label="Řazení" data-switch="skupiny-skills" style="align-self: flex-start">
+        <button type="button" data-target="ucel" aria-pressed="true">Řadit dle účelu</button>
+        <button type="button" data-target="komu" aria-pressed="false">Řadit dle toho, komu slouží</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="skupiny-skills">
+    {views.map((v) => (
+      <div data-group-view={v.id} hidden={v.id !== 'ucel'}>
+        {v.groups.map((g, i) => (
+          <section class={`band ${i % 2 === 0 ? 'band--sky' : 'band--white'}`} aria-label={g.title}>
+            <div class="wrap stack" style="gap: 20px">
+              <div class="section-head">
+                <div class="stack" style="gap: 6px; max-width: 70ch">
+                  <h2 style="font-size: 1.7rem">{g.title} <span class="count">{pocet(g.items.length, 'skill', 'skills', 'skills')}</span></h2>
+                  {g.popis && <p style="margin-top: 0">{g.popis}</p>}
+                </div>
+                {g.sada && <a class="linkbtn" href={url(ZIP.plugin(g.sada))} download><Icon name="download" />Stáhnout celou sadu (plugin)</a>}
+              </div>
+              <div class="grid-2">
+                {g.items.map((k) => <SkillCard skill={k} />)}
+              </div>
+            </div>
+          </section>
+        ))}
+      </div>
+    ))}
+  </div>
+</Base>
