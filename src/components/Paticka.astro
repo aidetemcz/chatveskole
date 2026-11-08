@@ -2,7 +2,6 @@
 import { navigace } from '../lib/web';
 
 // Kontakty, sítě a newsletter: content/stranky/o-webu/kontakt.md a patička starého webu.
-// Vzhled podle aidetem.cz: jahodový pruh s výzvou, pod ním nebeská patička se šipkovými seznamy.
 const site = [
   { nazev: 'Facebook (skupina)', url: 'https://www.facebook.com/groups/aidetem/' },
   { nazev: 'LinkedIn', url: 'https://www.linkedin.com/company/aidetem/' },
@@ -12,35 +11,38 @@ const site = [
 const newsletter = 'https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f9d89c882af9a3a8b';
 ---
 <footer class="paticka">
-  <div class="paticka-vyzva">
-    <div class="wrap paticka-vyzva-in">
-      <p>Funkce chatbotů se mění každý měsíc. Pošleme vám, co je pro školy důležité.</p>
-      <a class="btn btn-obrys-bila" href={newsletter}>Novinky do e-mailu</a>
-    </div>
-  </div>
-  <div class="paticka-hlavni">
-    <div class="wrap">
-      <div class="paticka-mrizka">
-        <div class="paticka-aidetem">
-          <img src="/logo-aidetem.png" width="40" height="40" alt="" />
-          <p><strong>Chatboti ve škole</strong><br />Web neziskové organizace AI dětem pro učitele a vedení škol.</p>
-          <p>AI dětem, z. s.<br />IČ: 17914582</p>
-          <p>E-mail: <a href="mailto:cau@aidetem.cz">cau@aidetem.cz</a><br /><a href="/o-webu/kontakt#poslat">Pošlete nám skill nebo prompt</a></p>
+  <div class="wrap">
+   <div class="paticka-blok">
+    <div class="paticka-mrizka">
+      {navigace.menu.map((sekce, i) => (
+        <nav aria-labelledby={`pat-${i}`}>
+          <h2 id={`pat-${i}`}>{sekce.title}</h2>
+          <ul>{sekce.items.map((p) => <li><a href={p.href}>{p.title}</a></li>)}</ul>
+        </nav>
+      ))}
+      <div class="paticka-aidetem">
+        <div>
+          <h2>Novinky do e-mailu</h2>
+          <p>Funkce chatbotů se mění každý měsíc. Pošleme vám, co je pro školy důležité.</p>
+        </div>
+        <a class="btn btn-sky btn-maly" href={newsletter}>Přihlásit se k odběru</a>
+        <div>
+          <h2>Kontakt</h2>
+          <ul>
+            <li><a href="mailto:cau@aidetem.cz">cau@aidetem.cz</a></li>
+            <li><a href="/o-webu/kontakt#poslat">Pošlete nám skill nebo prompt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Sledujte nás</h2>
           <ul class="socialni">{site.map((s) => <li><a href={s.url}>{s.nazev}</a></li>)}</ul>
         </div>
-        {navigace.menu.map((sekce, i) => (
-          <nav aria-labelledby={`pat-${i}`}>
-            <h2 id={`pat-${i}`}>{sekce.title}</h2>
-            <ul class="sipky">{sekce.items.map((p) => <li><a href={p.href}>{p.title}</a></li>)}</ul>
-          </nav>
-        ))}
       </div>
     </div>
     <div class="paticka-spodek">
-      <div class="wrap paticka-spodek-in">
-        <span>© 2026 <a href="https://aidetem.cz">AI dětem, z. s.</a></span>
-        <span>Funkce chatbotů se mění každý měsíc. Klíčové údaje si ověřte ve zdrojích.</span>
-      </div>
+      <span><strong>AI dětem, z. s.</strong> · <a href="https://aidetem.cz">aidetem.cz</a> · IČ 17914582</span>
+      <span>Funkce chatbotů se mění každý měsíc. Klíčové údaje si ověřte ve zdrojích.</span>
     </div>
+   </div>
   </div>
 </footer>

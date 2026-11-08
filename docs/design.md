@@ -1,7 +1,5 @@
 # Design: grafika AI dětem
 
-**Rozhodnutí Evy 8. 11. 2026 — vzhled podle webu aidetem.cz:** jahodový úvod (hero) přes celou šířku s bílým textem, úzký sloupec obsahu uprostřed (`--sloupec: 760px`) a hodně prázdného místa, oddíly homepage jako pruhy přes celou šířku (bílá, každý třetí nebeský), nadpisy bez podbarvení, menší zaoblení (8 / 11 / 18 px), tlačítka ve tvaru pilulky, šipkové seznamy (→ v jahodové), patička: jahodový pruh s výzvou + nebeská patička. Implementace: konec `src/styles/global.css` („Vzhled podle aidetem.cz“).
-
 **Rozhodnutí Evy 7. 11. 2026:**
 - **Vzhled a rozvržení** podle šablony **Positivus** (https://astro.build/themes/details/positivus/, kód `manulthanura/Positivus`, MIT). Převzaté je jen rozvržení, ne kód (Tailwind): zvýrazněné nadpisy (barevný podklad za textem), velké úvody s ilustrací, oddíly jako velké zaoblené karty střídající barvy, tlačítka, kroužek se šipkou.
 - **Barvy, písmo a rámečky** zůstávají AI dětem. Logo a ikony z aplikace `aidetemcz/podpurna-opatreni`.

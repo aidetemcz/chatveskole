@@ -15,7 +15,7 @@ const skills = (await nactiSkills()).filter((s) => sada.skills.includes(s.slug))
 const metodiky = [...new Map(skills.flatMap((s) => s.meta.metodika ?? []).map((m) => [m.url ?? m.nazev, m])).values()];
 ---
 <Zaklad title={sada.title} popis={sada.popis}>
-  <article class="stranka siroka">
+  <article class="stranka">
     <div class="stranka-hlava"><a class="eyebrow" href="/skills">Sada skills</a></div>
     <div class="obsah">
       <div class="uvod">
