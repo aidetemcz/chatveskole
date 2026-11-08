@@ -1,0 +1,68 @@
+---
+// Vyhledávání na webu (Pagefind — index se vytváří po buildu, `npm run build`; v `npm run dev` nefunguje)
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/url';
+const bundle = url('/pagefind/');
+---
+<Base title="Hledat" description="Vyhledávání ve skills, promptech a návodech na webu Chatboti ve škole." noindex>
+  <div class="band band--white">
+    <div class="wrap stack" style="gap: 24px">
+      <header class="page-head">
+        <h1>Hledat na webu</h1>
+        <p class="lede">Skills, prompty, návody a přehledy funkcí chatbotů.</p>
+      </header>
+      <div id="hledani" data-bundle={bundle} data-base={url('/')}></div>
+      <noscript><p>Vyhledávání potřebuje zapnutý JavaScript. Zkuste <a href={url('/skills')}>katalog skills</a> nebo <a href={url('/funkce/prompty')}>katalog promptů</a>.</p></noscript>
+    </div>
+  </div>
+  <link rel="stylesheet" href={`${bundle}pagefind-ui.css`} />
+  <script is:inline src={`${bundle}pagefind-ui.js`}></script>
+  <script is:inline>
+    (function () {
+      var el = document.getElementById('hledani');
+      if (!window.PagefindUI) { el.innerHTML = '<p>Vyhledávání je dostupné jen na sestaveném webu.</p>'; return; }
+      new PagefindUI({
+        element: '#hledani',
+        bundlePath: el.dataset.bundle,
+        baseUrl: el.dataset.base,
+        showSubResults: true,
+        showImages: false,
+        resetStyles: false,
+        autofocus: true,
+        translations: {
+          placeholder: 'Co hledáte? Například slovní hodnocení',
+          clear_search: 'Vymazat',
+          load_more: 'Načíst další výsledky',
+          search_label: 'Hledat na webu',
+          filters_label: 'Filtry',
+          zero_results: 'Pro „[SEARCH_TERM]“ jsme nic nenašli',
+          many_results: '[COUNT] výsledků pro „[SEARCH_TERM]“',
+          one_result: '1 výsledek pro „[SEARCH_TERM]“',
+          alt_search: 'Pro „[SEARCH_TERM]“ jsme nic nenašli. Zobrazujeme výsledky pro „[DIFFERENT_TERM]“',
+          search_suggestion: 'Pro „[SEARCH_TERM]“ jsme nic nenašli. Zkuste jiné slovo.',
+          searching: 'Hledáme „[SEARCH_TERM]“…',
+        },
+      });
+      var q = new URLSearchParams(location.search).get('q');
+      if (q) { var i = el.querySelector('input'); if (i) { i.value = q; i.dispatchEvent(new Event('input')); } }
+    })();
+  </script>
+</Base>
+
+<style is:global>
+  #hledani {
+    --pagefind-ui-scale: 0.9;
+    --pagefind-ui-primary: var(--accent-strong);
+    --pagefind-ui-text: var(--ink);
+    --pagefind-ui-background: var(--panel);
+    --pagefind-ui-border: var(--sky);
+    --pagefind-ui-tag: var(--sky-light);
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 14px;
+    --pagefind-ui-font: var(--fb);
+    max-width: 820px;
+  }
+  #hledani .pagefind-ui__result-link { color: var(--ink); font-family: var(--fh); }
+  #hledani .pagefind-ui__result-link:hover { color: var(--accent-strong); }
+  #hledani mark { background: var(--accent-soft); color: inherit; }
+</style>

@@ -3,7 +3,7 @@ import { url } from '../lib/url';
 interface Props { items: { title: string; href?: string }[] }
 const { items } = Astro.props;
 ---
-<nav class="crumbs" aria-label="Drobečková navigace">
+<nav class="crumbs" aria-label="Drobečková navigace" data-pagefind-ignore>
   <a href={url('/')}>Domů</a>
   {items.map((it) => (
     <>

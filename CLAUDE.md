@@ -31,9 +31,9 @@ Přečti:
 
 - `npm install` — jednou po stažení
 - `npm run dev` — vývojový server (http://localhost:4321)
-- `npm run build` — ZIPy skills a pluginů (`scripts/build-downloads.mjs`) + statický web do `dist/`
+- `npm run build` — ZIPy skills a pluginů (`scripts/build-downloads.mjs`), statický web do `dist/`, pak přesměrovací stránky starých URL, sitemap a robots.txt (`scripts/po-buildu.mjs`) a index vyhledávání (Pagefind)
 - `npm run check` — kontrola interních odkazů v `dist/` a SKILL.md (`scripts/check-links.mjs`, `scripts/check-skills.py`)
-- `BASE_PATH=/chatveskole npm run build` — build pro GitHub Pages (tak to dělá workflow `.github/workflows/deploy.yml`)
+- `BASE_PATH=/chatveskole npm run build` — build pro GitHub Pages (tak to dělá workflow `.github/workflows/deploy.yml`); web na podadrese je náhled a všechny stránky mají `noindex`
 
 ## Pravidla
 

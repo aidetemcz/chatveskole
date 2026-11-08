@@ -10,6 +10,9 @@ const isIn = (g: { items: { href: string }[] }) => g.items.some((i) => current.s
       <img src={url('/img/logo-ai-detem.png')} alt="" width="44" height="44" />
       <span><strong>Chatboti ve škole</strong><span>AI dětem</span></span>
     </a>
+    <a class="search-link" href={url('/hledat')} aria-label="Hledat na webu" title="Hledat">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+    </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hlavni-menu">
       <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
       Menu
@@ -52,9 +55,13 @@ const isIn = (g: { items: { href: string }[] }) => g.items.some((i) => current.s
   .nav-top[aria-expanded='true'] + .nav-sub { display: block; }
   .nav-sub a { display: block; padding: 9px 12px; border-radius: 10px; color: var(--ink); text-decoration: none; }
   .nav-sub a:hover, .nav-sub a[aria-current='page'] { background: var(--sky-light); }
+  .search-link { order: 1; display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: var(--pill); color: var(--ink); }
+  .search-link:hover { background: var(--line-soft); color: var(--ink); }
+  .search-link .icon { width: 19px; height: 19px; }
   .menu-toggle { display: none; align-items: center; gap: 8px; padding: 10px 14px; border-radius: var(--pill); border: 1px solid var(--line); background: var(--panel); font-weight: 600; }
   @media (max-width: 1020px) {
     .menu-toggle { display: inline-flex; }
+    .search-link { order: 0; }
     .nav { display: none; width: 100%; flex-direction: column; align-items: stretch; padding-bottom: 8px; }
     .nav.is-open { display: flex; }
     .nav > ul { flex-direction: column; }

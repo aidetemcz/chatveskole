@@ -36,10 +36,13 @@ function resolveTarget(urlPath) {
 }
 
 const problems = [];
+const warnings = [];
 let count = 0;
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file, 'utf8');
   const page = '/' + path.relative(DIST, file).replace(/\\/g, '/').replace(/index\.html$/, '');
+  // přesměrovací stránka staré URL: chybějící kotva je jen varování (staré kategorie promptů)
+  const presmerovani = html.includes('http-equiv="refresh"');
   for (const m of html.matchAll(/\s(?:href|src)="([^"]+)"/g)) {
     const raw = m[1].replace(/&amp;/g, '&');
     if (/^(https?:|mailto:|tel:|data:|javascript:)/.test(raw)) continue;
@@ -54,11 +57,16 @@ for (const file of htmlFiles) {
     if (!clean.startsWith(BASE)) { problems.push(`${page}: odkaz bez base ${BASE}: ${raw}`); continue; }
     const target = resolveTarget(clean);
     if (!target) { problems.push(`${page}: neexistuje ${raw}`); continue; }
-    if (hash && target.endsWith('.html') && !idsOf(target).has(decodeURIComponent(hash))) problems.push(`${page}: kotva #${hash} v ${clean} neexistuje`);
+    if (hash && target.endsWith('.html') && !idsOf(target).has(decodeURIComponent(hash))) (presmerovani ? warnings : problems).push(`${page}: kotva #${hash} v ${clean} neexistuje`);
   }
 }
 
 const uniq = [...new Set(problems)];
+const varovani = [...new Set(warnings)];
+if (varovani.length) {
+  console.log(`Varování (stará adresa vede na stránku, ale kotva tam není): ${varovani.length}`);
+  for (const w of varovani) console.log('  ! ' + w);
+}
 console.log(`Odkazy: ${htmlFiles.length} stránek, ${count} interních odkazů, problémů: ${uniq.length}`);
 for (const p of uniq.slice(0, 200)) console.log('  ✗ ' + p);
 if (uniq.length > 200) console.log(`  … a dalších ${uniq.length - 200}`);
