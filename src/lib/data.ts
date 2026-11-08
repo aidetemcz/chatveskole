@@ -141,3 +141,42 @@ export const INTERNI_ZDROJE: Record<string, { title: string; href: string }> = {
   'data/funkce-chatbotu.yaml': { title: 'Přehled funkcí chatbotů na tomto webu', href: '/funkce/zmeny-2026' },
   'data/ceny.yaml': { title: 'Přehled cen chatbotů na tomto webu', href: '/zaciname/kolik-stoji-chatboti' },
 };
+
+// --- data pro tabulky ----------------------------------------------------------------
+export type StavFunkce = 'ano' | 'omezene' | 'ne';
+export type BunkaMatice = { dnes: StavFunkce; '2027': StavFunkce; zmena: 'up' | 'down' | 'same'; stitek: string | null; nazev: string; poznamka: string };
+export type FunkceChatbotu = {
+  stav_k: string;
+  zdroj: string;
+  poznamka: string;
+  nastroje: { id: string; nazev: string; vyrobce: string; posun: string; konci: string[]; pribyva: string[]; skola: string[] }[];
+  casova_osa: { datum: string; nastroj: string; text: string; klicove?: boolean }[];
+  stavy: Record<StavFunkce, string>;
+  matice: { funkce: string; popis: string; nastroje: Record<string, BunkaMatice> }[];
+  zdroje: Record<string, string[]>;
+};
+export const funkceChatbotu: FunkceChatbotu = readYaml('data/funkce-chatbotu.yaml');
+
+export type Ceny = {
+  aktualizovano: string;
+  zahranicni_platby?: string;
+  nastroje: { id: string; nazev: string; vyrobce: string; cenik: string; tarify: { nazev: string; cena: string; pozn?: string }[]; trenink?: string; zdroje?: string[] }[];
+};
+export const ceny: Ceny = readYaml('data/ceny.yaml');
+
+// datum 2026-11-17 → "17. 11. 2026" (nezlomitelné mezery)
+export function datumCesky(iso: string | Date): string {
+  const d = typeof iso === 'string' ? new Date(iso + 'T12:00:00') : iso;
+  return `${d.getDate()}. ${d.getMonth() + 1}. ${d.getFullYear()}`;
+}
+
+// Kontrola dat: položky seznamů musí být text (dvojtečka v YAML bez uvozovek vytvoří slovník)
+(() => {
+  const chyby: string[] = [];
+  const text = (v: unknown, kde: string) => { if (typeof v !== 'string') chyby.push(`${kde}: ${JSON.stringify(v)}`); };
+  for (const n of funkceChatbotu.nastroje) for (const k of ['konci', 'pribyva', 'skola'] as const) n[k].forEach((x, i) => text(x, `funkce-chatbotu.yaml ${n.id}.${k}[${i}]`));
+  for (const r of funkceChatbotu.matice) for (const [id, c] of Object.entries(r.nastroje)) { text(c.nazev, `funkce-chatbotu.yaml ${r.funkce}/${id}.nazev`); text(c.poznamka, `funkce-chatbotu.yaml ${r.funkce}/${id}.poznamka`); }
+  for (const u of funkceChatbotu.casova_osa) text(u.text, `funkce-chatbotu.yaml casova_osa ${u.datum}`);
+  for (const n of ceny.nastroje) n.tarify.forEach((t) => { text(t.cena, `ceny.yaml ${n.id}/${t.nazev}.cena`); if (t.pozn) text(t.pozn, `ceny.yaml ${n.id}/${t.nazev}.pozn`); });
+  if (chyby.length) throw new Error('Chybná data (dejte text do uvozovek):\n' + chyby.join('\n'));
+})();

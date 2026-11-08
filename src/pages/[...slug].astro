@@ -1,20 +1,22 @@
 ---
-import { getCollection, render } from 'astro:content';
+import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Crumbs from '../components/Crumbs.astro';
+import Komponenta from '../components/Komponenta.astro';
+import { rozdel } from '../lib/komponenty';
 import { navigace, INTERNI_ZDROJE } from '../lib/data';
 import { url } from '../lib/url';
 
 export async function getStaticPaths() {
   const stranky = await getCollection('stranky');
-  // index = hlavní stránka, funkce/prompty = katalog promptů (vlastní šablony)
+  // vlastní šablony: index = hlavní stránka, funkce/prompty = katalog promptů, zmeny-funkci = funkce/zmeny-2026
   return stranky
-    .filter((s) => s.id !== 'index' && s.id !== 'funkce/prompty')
+    .filter((s) => s.id !== 'index' && s.id !== 'funkce/prompty' && s.data.sablona !== 'zmeny-funkci')
     .map((s) => ({ params: { slug: s.id }, props: { stranka: s } }));
 }
 
 const { stranka } = Astro.props;
-const { Content } = await render(stranka);
+const casti = rozdel(stranka.rendered?.html ?? '');
 const href = '/' + stranka.id;
 const skupina = navigace.menu.find((g) => g.items.some((i) => i.href === href));
 const d = stranka.data;
@@ -38,9 +40,9 @@ const koncept = d.stav === 'koncept' || d.stav === 'ke-kontrole';
         {koncept && <span class="draft" title="Stránka čeká na kontrolu obsahu">Koncept</span>}
         <h1>{d.title}</h1>
       </header>
-      <div class="prose">
-        <Content />
-      </div>
+      {casti.map((c, i) => c.typ === 'html'
+        ? <div class:list={['prose', { 'prose--dalsi': i > 0 }]} set:html={c.html} />
+        : <Komponenta klic={c.klic} />)}
       {(zdroje.length > 0 || datum) && (
         <footer class="meta">
           {zdroje.length > 0 && (

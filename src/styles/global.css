@@ -157,3 +157,38 @@ a.card:hover { border-color: var(--sky-deep); }
   .seg { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; border-radius: 18px; width: 100%; }
   .seg button { border-radius: 14px; padding: 10px 10px; font-size: 0.85rem; line-height: 1.25; }
 }
+
+/* Markdown rozdělený komponentami: úvodní odstavec jen v první části */
+.prose--dalsi > p:first-child { font-size: inherit; color: inherit; }
+.prose > :first-child { margin-top: 0; }
+
+/* záložky v textu (### sekce → přepínač) */
+.zalozky { display: flex; flex-direction: column; gap: 14px; }
+.zalozky .seg { align-self: flex-start; }
+.zalozky-panely > div { border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 18px 22px; }
+.zalozky-panely > div > * + * { margin-top: 0.8em; }
+.zalozky-panely > div > :first-child { margin-top: 0; }
+
+/* karty s náhledem (metodiky) */
+.nahledy { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 14px; }
+.prose .nahled { padding: 0 0 18px; overflow: hidden; gap: 8px; }
+.prose .nahled > :not(img):not(.nahled-tile) { margin: 0 18px; }
+.prose .nahled img, .nahled-tile { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 0; margin-bottom: 6px; }
+.nahled-tile { display: grid; place-items: center; background: var(--sky-light); color: var(--sky-ink); }
+.prose .nahled h3 { margin-top: 0; font-size: 1.05rem; line-height: 1.3; }
+.prose .nahled h3 a { color: var(--ink); text-decoration: none; }
+.prose .nahled h3 a:hover { color: var(--accent-strong); }
+.prose .nahled p { font-size: 0.88rem; color: var(--muted); }
+
+/* tabulka, která se na mobilu skládá do karet */
+@media (max-width: 700px) {
+  .prose .tabulka-karty table { display: block; border: 0; border-radius: 0; overflow: visible; }
+  .tabulka-karty thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .tabulka-karty tbody { display: flex; flex-direction: column; gap: 12px; }
+  .tabulka-karty tr { display: block; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  .prose .tabulka-karty td { display: grid; grid-template-columns: 7.5em minmax(0, 1fr); gap: 10px; border-top: 1px solid var(--line-soft); padding: 9px 14px; }
+  .prose .tabulka-karty td:first-child { display: block; background: var(--sky-light); border-top: 0; font-family: var(--fh); font-weight: 700; }
+  .tabulka-karty td::before { content: attr(data-label); font-size: 0.8rem; font-weight: 600; color: var(--muted); }
+  .tabulka-karty td:first-child::before { content: none; }
+}
+.prose .nahled p::first-letter { text-transform: uppercase; }

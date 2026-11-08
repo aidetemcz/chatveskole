@@ -1,0 +1,27 @@
+---
+// Dlaždice sad se seznamem skills (content/sady.yaml + content/skills/*/meta.yaml)
+import { sady, skillBySlug, pocet } from '../../lib/data';
+import { url } from '../../lib/url';
+---
+<div class="sady">
+  {sady.map((s) => (
+    <section class="card" aria-labelledby={`sada-${s.slug}`}>
+      <div class="card-top">
+        <h3 id={`sada-${s.slug}`}><a href={url(`/sady/${s.slug}`)}>{s.title}</a></h3>
+        <span class="count">{pocet(s.skills.length, 'skill', 'skills', 'skills')}</span>
+      </div>
+      <p>{s.popis}</p>
+      <ul>
+        {s.skills.map((slug) => { const k = skillBySlug(slug); return k && <li><a href={url(`/skills/${slug}`)}>{k.title}</a></li>; })}
+      </ul>
+    </section>
+  ))}
+</div>
+
+<style>
+  .sady { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 14px; }
+  h3 { font-size: 1.15rem; }
+  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; font-size: 0.9rem; }
+  li a { text-decoration: none; font-weight: 500; }
+  li a:hover { text-decoration: underline; }
+</style>

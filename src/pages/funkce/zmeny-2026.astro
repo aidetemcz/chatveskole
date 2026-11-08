@@ -1,0 +1,98 @@
+---
+// Změny ve funkcích chatbotů — celostránková šablona (sablona: zmeny-funkci).
+// Texty z content/stranky/funkce/zmeny-2026.md, data z data/funkce-chatbotu.yaml.
+import { getEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import Komponenta from '../../components/Komponenta.astro';
+import { rozdel, naOddily, teze, type Cast } from '../../lib/komponenty';
+import { datumCesky } from '../../lib/data';
+
+const stranka = (await getEntry('stranky', 'funkce/zmeny-2026'))!;
+const d = stranka.data;
+const casti = rozdel(stranka.rendered?.html ?? '');
+const { uvod, oddily: oddilyMd } = naOddily(casti);
+// zdroje jako samostatný oddíl na konci
+const oddily = oddilyMd.flatMap((o) => {
+  const i = o.casti.findIndex((c) => c.typ === 'komponenta' && c.klic === 'zdroje-nastroju');
+  return i > 0 ? [{ ...o, casti: o.casti.slice(0, i) }, { nadpis: 'Zdroje', id: 'zdroje', casti: o.casti.slice(i) }] : [o];
+});
+
+// úvod: první odstavec = perex, za značkou „tři teze“ následují odstavce s tezemi
+const iTeze = uvod.findIndex((c) => c.typ === 'komponenta' && c.klic === 'teze');
+const perex = uvod.slice(0, iTeze === -1 ? uvod.length : iTeze).filter((c): c is Extract<Cast, { typ: 'html' }> => c.typ === 'html').map((c) => c.html).join('');
+const tezeHtml = iTeze === -1 ? '' : uvod.slice(iTeze + 1).filter((c): c is Extract<Cast, { typ: 'html' }> => c.typ === 'html').map((c) => c.html).join('');
+const seznamTezi = teze(tezeHtml);
+const GLYFY = [['full', 'none'], ['none', 'full'], ['half', 'half']];
+
+const POPISY: Record<string, string> = {
+  'casova-osa': 'Ohlášené termíny výrobců. Svislá čára ukazuje dnešní den.',
+  matice: 'Každé pole ukazuje, jestli funkce existuje dnes a jestli ji výrobci chystají i pro rok 2027. Podbarvená pole se mění.',
+};
+const popisOddilu = (o: { casti: Cast[] }) => { const k = o.casti.find((c) => c.typ === 'komponenta'); return k && k.typ === 'komponenta' ? POPISY[k.klic] : undefined; };
+const koncept = d.stav === 'koncept' || d.stav === 'ke-kontrole';
+const datum = d.aktualizovano ? datumCesky(d.aktualizovano) : null;
+---
+<Base title={d.title} description={d.popis ?? undefined}>
+  <div class="band band--white">
+    <div class="wrap page-head">
+      <Crumbs items={[{ title: 'Funkce' }, { title: d.title }]} />
+      {koncept && <span class="draft" title="Stránka čeká na kontrolu obsahu" style="align-self: flex-start">Koncept</span>}
+      <h1>{d.title}</h1>
+      <div class="lede perex" set:html={perex} />
+    </div>
+  </div>
+
+  {seznamTezi.length > 0 && (
+    <section class="band band--sky" aria-label="Hlavní změny">
+      <div class="wrap shifts">
+        {seznamTezi.map((t, i) => (
+          <div class="shift-item">
+            <div class="glyph" aria-hidden="true"><span class:list={['ball', GLYFY[i % 3][0]]}></span><span class="arrow"></span><span class:list={['ball', GLYFY[i % 3][1]]}></span></div>
+            <h2>{t.nadpis}</h2>
+            <p set:html={t.text} />
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {oddily.map((o, i) => (
+    <section class:list={['band', (i + (seznamTezi.length ? 1 : 0)) % 2 === 0 ? 'band--sky' : 'band--white']} aria-labelledby={o.id || undefined}>
+      <div class="wrap stack" style="gap: 22px">
+        <div class="section-head">
+          <div>
+            <h2 id={o.id || undefined}>{o.nadpis}</h2>
+            {popisOddilu(o) && <p>{popisOddilu(o)}</p>}
+          </div>
+        </div>
+        {o.casti.map((c) => c.typ === 'html'
+          ? <div class="prose prose--dalsi" set:html={c.html} />
+          : <Komponenta klic={c.klic} />)}
+      </div>
+    </section>
+  ))}
+
+  {datum && (
+    <div class="wrap">
+      <p class="aktualizace">Aktualizováno {datum}</p>
+    </div>
+  )}
+</Base>
+
+<style>
+  .perex :global(p) { font-size: 1.1rem; color: var(--muted); max-width: 64ch; }
+  .shifts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 32px; }
+  .shift-item { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .shift-item h2 { font-size: 1.2rem; font-weight: 700; line-height: 1.25; }
+  .shift-item p { font-size: 0.95rem; }
+  .glyph { display: flex; align-items: center; gap: 6px; height: 22px; margin-bottom: 4px; }
+  .ball { width: 15px; height: 15px; border-radius: 50%; border: 2px solid var(--sky-deep); display: inline-block; flex-shrink: 0; }
+  .ball.full { background: var(--sky-deep); }
+  .ball.half { background: linear-gradient(90deg, var(--sky-deep) 50%, transparent 50%); }
+  .ball.none { border-color: var(--muted); opacity: 0.55; }
+  .arrow { display: inline-block; width: 14px; height: 2px; background: var(--sky-deep); position: relative; flex-shrink: 0; margin-right: 3px; }
+  .arrow::after { content: ''; position: absolute; right: -3px; top: -3px; border-left: 6px solid var(--sky-deep); border-top: 4px solid transparent; border-bottom: 4px solid transparent; }
+  .aktualizace { font-size: 0.85rem; color: var(--muted); padding: 24px 0 8px; }
+  @media (max-width: 860px) { .shifts { grid-template-columns: 1fr; gap: 18px; } }
+</style>

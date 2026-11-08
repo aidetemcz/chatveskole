@@ -1,0 +1,62 @@
+---
+// Karty tarifů z data/ceny.yaml. Údaj s ⚠ se zobrazí se štítkem „ověřujeme“.
+import { ceny, datumCesky } from '../../lib/data';
+const overit = (s: string) => s.includes('⚠');
+const cist = (s: string) => s.replace(/\s*⚠\s*/g, ' ').trim();
+const domena = (u: string) => u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/.*$/, '');
+---
+<div class="cenik">
+  <nav class="skok" aria-label="Nástroje v ceníku">
+    {ceny.nastroje.map((n) => <a href={`#cenik-${n.id}`}>{n.nazev}</a>)}
+  </nav>
+  {ceny.nastroje.map((n) => (
+    <section class="nastroj" id={`cenik-${n.id}`} aria-labelledby={`cenik-${n.id}-h`}>
+      <header>
+        <div>
+          <h3 id={`cenik-${n.id}-h`}>{n.nazev}</h3>
+          <span class="vyrobce">{n.vyrobce}</span>
+        </div>
+        <a class="linkbtn" href={n.cenik}>Oficiální ceník →</a>
+      </header>
+      <ul class="tarify">
+        {n.tarify.map((t) => (
+          <li>
+            <div class="radek">
+              <strong>{t.nazev}</strong>
+              <span class="cena">{cist(t.cena)}{overit(t.cena) && <span class="overujeme" title="Údaj z neoficiálního nebo staršího zdroje, ověřujeme">ověřujeme</span>}</span>
+            </div>
+            {t.pozn && <p>{t.pozn}</p>}
+          </li>
+        ))}
+      </ul>
+      {n.trenink && <p class="trenink"><strong>Trénink na vašich konverzacích:</strong> {n.trenink}</p>}
+      {n.zdroje && n.zdroje.length > 0 && (
+        <p class="zdroje">Zdroje: {n.zdroje.map((z, i) => <>{i > 0 && ', '}<a href={z}>{domena(z)}</a></>)}</p>
+      )}
+    </section>
+  ))}
+  <p class="stav">Ceny jsou orientační, stav k {datumCesky(new Date(ceny.aktualizovano))}. Spotřebitelské tarify v Kč jsou včetně DPH, ostatní bez DPH. Rozhoduje vždy oficiální ceník.</p>
+</div>
+
+<style>
+  .cenik { display: flex; flex-direction: column; gap: 16px; }
+  .skok { display: flex; flex-wrap: wrap; gap: 8px; }
+  .skok a { font-size: 0.86rem; font-weight: 600; padding: 6px 14px; border-radius: var(--pill); background: var(--sky-light); color: var(--ink); text-decoration: none; }
+  .skok a:hover { background: var(--sky); }
+  .nastroj { border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 20px 22px; display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 16px; }
+  header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 16px; }
+  h3 { font-size: 1.35rem; font-weight: 700; display: inline; margin-right: 10px; }
+  .vyrobce { font-size: 0.82rem; color: var(--muted); }
+  .tarify { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+  .tarify li { padding: 12px 0; border-top: 1px solid var(--line-soft); display: flex; flex-direction: column; gap: 4px; }
+  .tarify li:first-child { border-top: 0; padding-top: 0; }
+  .radek { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; align-items: baseline; }
+  .radek strong { font-family: var(--fh); font-size: 1.02rem; }
+  .cena { font-weight: 600; color: var(--accent-ink); display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: flex-end; text-align: right; }
+  .tarify p { font-size: 0.9rem; color: var(--muted); }
+  .overujeme { font-size: 0.68rem; font-weight: 600; padding: 1px 8px; border-radius: var(--pill); background: var(--sky-light); color: var(--sky-ink); border: 1px solid var(--sky); }
+  .trenink { background: var(--sky-light); border-radius: var(--radius); padding: 12px 16px; font-size: 0.9rem; }
+  .zdroje { font-size: 0.8rem; color: var(--muted); overflow-wrap: anywhere; }
+  .zdroje a { color: var(--muted); }
+  .stav { font-size: 0.85rem; color: var(--muted); }
+</style>

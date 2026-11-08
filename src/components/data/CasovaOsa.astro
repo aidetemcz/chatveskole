@@ -1,0 +1,146 @@
+---
+// Časová osa z data/funkce-chatbotu.yaml (casova_osa). Svislá čára „dnes“ se při načtení stránky
+// posune podle aktuálního data (výchozí poloha = datum buildu).
+import { funkceChatbotu as F, datumCesky } from '../../lib/data';
+
+const MESICE = ['leden', 'únor', 'březen', 'duben', 'květen', 'červen', 'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec'];
+const udalosti = [...F.casova_osa].sort((a, b) => a.datum.localeCompare(b.datum));
+const d = (s: string) => new Date(s + 'T12:00:00');
+const prvni = d(udalosti[0].datum);
+const posledni = d(udalosti.at(-1)!.datum);
+const start = new Date(prvni.getFullYear(), prvni.getMonth(), 1);
+const konec = new Date(posledni.getFullYear(), posledni.getMonth() + 1, 1);
+const mesice: { nazev: string; rok: number }[] = [];
+for (let m = new Date(start); m < konec; m.setMonth(m.getMonth() + 1)) mesice.push({ nazev: MESICE[m.getMonth()], rok: m.getFullYear() });
+const podil = (x: Date) => (x.getTime() - start.getTime()) / (konec.getTime() - start.getTime());
+
+// rozmístění popisků: klíčová data dolů, ostatní nahoru; když by se popisek překryl se sousedním
+// ve stejné dráze nebo s popiskem dole v dráze nad ní, dá se na druhou stranu
+const SIRKA = 0.21; // šířka popisku jako podíl dráhy (170 px na dráze kolem 800 px)
+type Popisek = { od: number; do: number; strana: string };
+const rozsah = (f: number) => (f > 0.8 ? { od: f - SIRKA, do: f } : { od: f, do: f + SIRKA });
+const prekryv = (a: { od: number; do: number }, b: { od: number; do: number }) => a.od < b.do && b.od < a.do;
+let predchozi: Popisek[] = [];
+const drahy = F.nastroje.map((n) => {
+  const tady: Popisek[] = [];
+  const kolize = (f: number, strana: string) =>
+    tady.some((x) => x.strana === strana && prekryv(x, rozsah(f))) ||
+    (strana === 'up' && predchozi.some((x) => x.strana === 'down' && prekryv(x, rozsah(f))));
+  const ev = udalosti.filter((u) => u.nastroj === n.id).map((u) => {
+    const f = podil(d(u.datum));
+    const chce = u.klicove ? 'down' : 'up';
+    const jina = chce === 'up' ? 'down' : 'up';
+    const strana = !kolize(f, chce) || kolize(f, jina) ? chce : jina;
+    tady.push({ ...rozsah(f), strana });
+    return { ...u, f, strana, vpravo: f > 0.8 };
+  });
+  predchozi = tady;
+  return { ...n, ev };
+});
+const dnes = new Date();
+const fDnes = podil(dnes);
+---
+<div class="casova-osa" data-start={start.toISOString()} data-konec={konec.toISOString()}>
+  <div class="tl" aria-hidden="true">
+    <div class="lane axis">
+      <div class="lane-name"></div>
+      <div class="track months" style={`grid-template-columns: repeat(${mesice.length}, minmax(0, 1fr))`}>
+        {mesice.map((m) => <span>{m.nazev}<i>{m.rok}</i></span>)}
+      </div>
+    </div>
+    <div class="lanes" style={`--n: ${mesice.length}`}>
+      <div class="today" style={`--f: ${fDnes.toFixed(4)}`} hidden={fDnes < 0 || fDnes > 1}><span>dnes</span></div>
+      {drahy.map((dr) => (
+        <div class="lane">
+          <div class="lane-name">{dr.nazev}<span>{dr.vyrobce}</span></div>
+          <div class="track">
+            <span class="line"></span>
+            {dr.ev.map((e) => (
+              <div class:list={['ev', e.strana, { key: e.klicove, r: e.vpravo }]} style={`left: ${(e.f * 100).toFixed(2)}%`}>
+                <span class="dot"></span>
+                <div class="ev-l"><b>{datumCesky(e.datum)}</b>{e.text}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+  <ol class="tl-list">
+    {udalosti.map((u) => (
+      <li class:list={{ key: u.klicove }} data-datum={u.datum}>
+        <b>{datumCesky(u.datum)}</b>
+        <span class="tag">{F.nastroje.find((n) => n.id === u.nastroj)?.nazev}</span>
+        <span class="t">{u.text}</span>
+      </li>
+    ))}
+  </ol>
+  <p class="legenda"><span class="dot-key" aria-hidden="true"></span>Červeně jsou data, po kterých přestanou fungovat odkazy na hotové asistenty.</p>
+</div>
+
+<script>
+  // čára „dnes“ podle dnešního data (stránka může být sestavená dřív)
+  document.querySelectorAll<HTMLElement>('.casova-osa').forEach((osa) => {
+    const start = new Date(osa.dataset.start!).getTime();
+    const konec = new Date(osa.dataset.konec!).getTime();
+    const ted = Date.now();
+    const f = (ted - start) / (konec - start);
+    const today = osa.querySelector<HTMLElement>('.today');
+    if (today) { today.style.setProperty('--f', String(f)); today.hidden = f < 0 || f > 1; }
+    const list = osa.querySelector('.tl-list');
+    if (!list) return;
+    const iso = new Date().toISOString().slice(0, 10);
+    const dalsi = [...list.querySelectorAll<HTMLElement>('li[data-datum]')].find((li) => li.dataset.datum! > iso);
+    const li = document.createElement('li');
+    li.className = 'now';
+    const d = new Date();
+    li.textContent = `dnes, ${d.getDate()}. ${d.getMonth() + 1}. ${d.getFullYear()}`;
+    if (dalsi) list.insertBefore(li, dalsi); else list.appendChild(li);
+    list.querySelectorAll<HTMLElement>('li[data-datum]').forEach((x) => { if (x.dataset.datum! < iso) x.classList.add('minule'); });
+  });
+</script>
+
+<style>
+  .casova-osa { display: flex; flex-direction: column; gap: 12px; }
+  .tl { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 18px 22px 34px; }
+  .lane { display: grid; grid-template-columns: 112px minmax(0, 1fr); align-items: stretch; }
+  .lane + .lane { border-top: 1px solid var(--line-soft); }
+  .lane-name { font-family: var(--fh); font-weight: 600; font-size: 1rem; display: flex; flex-direction: column; justify-content: center; line-height: 1.2; }
+  .lane-name span { font-family: var(--fb); font-weight: 400; font-size: 0.76rem; color: var(--muted); }
+  .track { position: relative; height: 140px; }
+  .track.months { height: auto; display: grid; padding-bottom: 10px; }
+  .months span { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); padding-left: 6px; border-left: 1px solid var(--line); line-height: 1.3; }
+  .months i { display: block; font-style: normal; letter-spacing: 0; text-transform: none; opacity: 0.8; font-variant-numeric: tabular-nums; }
+  .lanes { position: relative; }
+  .lanes .track { background-image: linear-gradient(to right, var(--line-soft) 1px, transparent 1px); background-size: calc(100% / var(--n)) 100%; }
+  .line { position: absolute; left: 0; right: 0; top: 50%; height: 2px; background: var(--sky); transform: translateY(-1px); }
+  .ev { position: absolute; top: 50%; width: 0; height: 0; }
+  .dot { position: absolute; left: -6px; top: -6px; width: 12px; height: 12px; border-radius: 50%; background: var(--panel); border: 3px solid var(--sky-deep); }
+  .ev.key .dot { left: -8px; top: -8px; width: 16px; height: 16px; background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+  .ev-l { position: absolute; left: -6px; width: 170px; font-size: 0.76rem; line-height: 1.3; background: var(--panel); z-index: 3; }
+  .ev-l b { display: block; font-family: var(--fh); font-weight: 600; font-size: 0.82rem; font-variant-numeric: tabular-nums; }
+  .ev.up .ev-l { bottom: 13px; }
+  .ev.down .ev-l { top: 13px; }
+  .ev.key.down .ev-l { top: 15px; }
+  .ev.key .ev-l b { color: var(--accent-ink); }
+  .ev.r .ev-l { left: auto; right: -8px; text-align: right; }
+  .today { position: absolute; top: 0; bottom: 0; left: calc(112px + (100% - 112px) * var(--f)); width: 0; border-left: 2px dashed var(--accent); z-index: 2; pointer-events: none; }
+  .today[hidden] { display: none; }
+  .today span { position: absolute; bottom: -26px; left: -22px; z-index: 4; font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-ink); background: var(--panel); padding: 0 4px; }
+  /* na širokém displeji je seznam jen pro čtečky obrazovky (grafická osa je aria-hidden) */
+  .tl-list { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; background: var(--panel); list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; }
+  .tl-list li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 10px; padding: 12px 16px; border-top: 1px solid var(--line-soft); }
+  .tl-list li:first-child { border-top: none; }
+  .tl-list b { font-family: var(--fh); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .tl-list .tag { font-size: 0.74rem; font-weight: 600; color: var(--sky-ink); background: var(--sky-light); border-radius: var(--pill); padding: 1px 10px; align-self: center; }
+  .tl-list .t { grid-column: 1 / -1; font-size: 0.9rem; }
+  .tl-list li.key b { color: var(--accent-ink); }
+  .tl-list :global(li.minule) { opacity: 0.6; }
+  .tl-list :global(li.now) { display: block; padding: 6px 16px; background: var(--accent-soft); font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-ink); }
+  .legenda { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--muted); }
+  .dot-key { width: 12px; height: 12px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); flex: none; }
+  @media (max-width: 980px) {
+    .tl { display: none; }
+    .tl-list { position: static; width: auto; height: auto; overflow: hidden; clip: auto; white-space: normal; }
+  }
+</style>

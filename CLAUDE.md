@@ -19,7 +19,8 @@ Přečti:
 - `content/sady.yaml` — sady skills (= pluginy)
 - `content/prompty/{pedagogove,vedeni,zaci,archiv-2024}/` — katalog promptů (původní prompty, převedené `scripts/prevod-promptu.mjs`); `archiv-2024` se v katalogu nezobrazuje, stránky existují kvůli starým odkazům
 - `content/znalosti/znalosti.yaml` — odkazy na znalostní soubory na Google Disku
-- `data/*.yaml` — data pro tabulky (funkce chatbotů, ceny)
+- `data/*.yaml` — data pro tabulky (funkce chatbotů, ceny); text s dvojtečkou dávejte do uvozovek, jinak build skončí chybou
+- `<!-- komponenta: … -->` v Markdownu = místo pro datovou komponentu nebo úpravu následujícího textu (záložky, karty); seznam značek v `src/lib/komponenty.ts`
 - `migrace/redirects.json` — přesměrování starých URL (generuje `scripts/build-inventura.py`)
 - `archiv/` — export starého WordPressu (`node scripts/export-wordpress.mjs --images`)
 - `migrace/mapa-promptu.json` — který záznam staré databáze je prompt, žákovský prompt, nebo asistent (→ skill)

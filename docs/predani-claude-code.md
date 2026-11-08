@@ -19,7 +19,9 @@ Tento dokument je pro Evu (jak práci spustit) i pro Claude Code (co dělat a v 
 - [x] Schválený design (8. 11. 2026) — pravidla v `docs/design.md`, návrh v Claude Design
 - [x] Astro aplikace, fáze 2 a 3 (8. 11. 2026): hlavička, patička, homepage, obsahové stránky, katalog a detail skills, sady, katalog a detail promptů včetně žákovských, ZIPy ke stažení, 404, kontrola odkazů (`npm run check`), nasazení na GitHub Pages (`.github/workflows/deploy.yml`)
 
-Ještě chybí: datové komponenty (fáze 4), přesměrování, vyhledávání a SEO (fáze 5), kontrola skills Evou a týmem.
+- [x] Fáze 4 — datové stránky (8. 11. 2026): Změny ve funkcích 2026 (časová osa s čárou „dnes“, matice s přepínačem nástrojů na mobilu, karty nástrojů, zdroje), ceník z `data/ceny.yaml` se štítkem „ověřujeme“, dlaždice sad, karty pluginů, tabulka Tiny, záložky instalace, karty metodik, tabulka nástrojů jako karty na mobilu
+
+Ještě chybí: přesměrování, vyhledávání a SEO (fáze 5), kontrola skills Evou a týmem.
 
 ## Krok 0 — příprava (Eva, 15 minut)
 

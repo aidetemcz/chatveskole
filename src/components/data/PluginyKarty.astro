@@ -1,0 +1,28 @@
+---
+// Karty sad jako pluginů: seznam skills a stažení ZIPu pluginu
+import { sady, skillBySlug, ZIP } from '../../lib/data';
+import { url } from '../../lib/url';
+import Icon from '../Icon.astro';
+---
+<div class="pluginy">
+  {sady.map((s) => (
+    <section class="card" aria-labelledby={`plugin-${s.slug}`}>
+      <h3 id={`plugin-${s.slug}`}>{s.title}</h3>
+      <p>{s.popis}</p>
+      <p class="skills">{s.skills.map((slug, i) => { const k = skillBySlug(slug); return k && <>{i > 0 && ' · '}<a href={url(`/skills/${slug}`)}>{k.title}</a></>; })}</p>
+      <div class="actions">
+        <a class="btn btn--outline btn--small" href={url(ZIP.plugin(s.slug))} download><Icon name="download" />Stáhnout plugin</a>
+        <a class="linkbtn" href={url(`/sady/${s.slug}`)}>Detail sady →</a>
+      </div>
+      <p class="soubor">aidetem-{s.slug}.zip · nerozbalujte</p>
+    </section>
+  ))}
+</div>
+
+<style>
+  .pluginy { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 14px; }
+  h3 { font-size: 1.15rem; }
+  .skills { font-size: 0.86rem; }
+  .skills a { color: var(--ink); text-decoration-color: var(--sky); }
+  .soubor { font-size: 0.76rem; color: var(--muted); }
+</style>
