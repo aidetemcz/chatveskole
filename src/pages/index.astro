@@ -43,12 +43,6 @@ const nKatalog = nUcitele + nVedeni + nZaci;
             <p>{s.popis}</p>
           </a>
         ))}
-        <div class="card card--lg">
-          <h3 style="font-size: 1.05rem">Každý skill dvěma způsoby</h3>
-          <div class="way"><span>1</span><p><strong>Stáhnout jako skill</strong> — jednou nainstalujete do Claude, Gemini, Copilotu nebo ChatGPT a chatbot ho použije sám.</p></div>
-          <div class="way"><span>2</span><p><strong>Zkopírovat jako prompt</strong> — funguje v jakémkoli chatbotu, i zdarma.</p></div>
-          <a class="more" href={url('/funkce/skills')} style="margin-top: auto; font-size: 0.93rem">Co jsou skills a jak je nainstalovat →</a>
-        </div>
       </div>
     </div>
   </section>
@@ -189,9 +183,6 @@ const nKatalog = nUcitele + nVedeni + nZaci;
     .hero { padding: 117px 0; }
     .sticker { margin-left: auto; }
   }
-  .way { display: flex; gap: 14px; }
-  .way span { flex: none; font-family: var(--fh); font-weight: 700; color: var(--accent-strong); }
-  .way p { color: var(--ink); }
   .title-row { display: flex; align-items: center; gap: 10px; }
   .title-row .tile-icon { width: 34px; height: 34px; border-radius: 10px; }
   .tiny-banner { display: block; border-radius: var(--radius-lg); overflow: hidden; }
