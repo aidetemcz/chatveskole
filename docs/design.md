@@ -61,12 +61,13 @@ Kontrast textu musí splnit WCAG AA (4,5 : 1). `--accent` (#dc5b5b) na bílé ne
 - **Hlavička stránky** je jen nadpis (H1), popis a případně tlačítka pod ním. Žádné boxy, štítky ani nadtitulky vedle nebo nad nadpisem; kontext dává drobečková navigace.
 - **Pruhy přes celou šířku:** sekce hlavní stránky i skupiny v katalozích mají podklad přes celou šířku okna (bez rámečku a zaoblení) a střídají se `--sky-light` a `--bg`. Obsah uvnitř je omezený na 1180 px.
 - **Karty:** bílé (`--panel`), zaoblení 18–22 px, rámeček `--sky` na modrém pruhu a `--line` na bílém. Nadpis karty 1,3 rem.
-- **Tlačítka:** hlavní akce = plné tlačítko `--accent-strong` (na stránce nejvýš jedno nebo dvě). Vedlejší akce v kartě: tlačítko s obrysem `--sky` („Detail“) a vedle obyčejný odkaz s ikonou bez pilulky („Kopírovat“, „Stáhnout“).
+- **Tlačítka:** písmo jako odstavec (Inter, běžný řez, ne tučně, 15 px). Hlavní akce = plné tlačítko `--accent-strong` s bílým textem (na stránce nejvýš jedno nebo dvě). Vedlejší akce v kartě: tlačítko s obrysem `--sky` („Detail“) a vedle obyčejný odkaz s ikonou bez pilulky („Kopírovat“, „Stáhnout“). **Na červeném podkladu:** hlavní = bílá výplň a červený text, vedlejší = červená výplň, bílý obrys a bílý text.
+- **Menu v hlavičce:** hlavička je bílá; podmenu se na počítači ukáže při najetí myší (kliknutí a klávesnice fungují také).
 - **Katalog skills a katalog promptů** vypadají stejně: nadpis + popis, přepínač ze dvou pilulek *Řadit dle účelu* / *Řadit dle toho, komu slouží* (nic nefiltruje, jen seskupuje), skupiny s nadpisem a počtem, karty ve dvou sloupcích. Na kartě není kategorie ani „pro koho“ — to říká skupina.
 - **Detail skillu:** hlavní akce *Stáhnout skill*, vedlejší *Použít jako prompt*; pod hlavičkou pruh s údaji (sada, pro koho, metodika, autoři, Google Docs, Disk); pořadí sekcí: Co skill umí → Nainstalovat jako skill (záložky podle chatbota) → Použít jako prompt (záložky variant) → Původní asistent.
 - **Blok promptu:** šedý panel (`--line-soft`), písmo JetBrains Mono, tlačítko *Kopírovat* vpravo nahoře, po kliknutí „Zkopírováno“.
 - **Obsahová stránka:** vlevo menu sekce (na mobilu nad obsahem), vpravo text max. 70 znaků na řádek; tabulky v posuvném boxu; info na `--sky-light`, varování na `--accent-soft`.
-- **Hlavní stránka (pořadí pruhů):** Úvod (bílá, s panelem „Co se letos mění“ na `--accent-soft`) → Skills (modrá) → Katalog promptů (bílá) → Chatboti ve výuce s bannerem Tiny, metodikami, doporučeními a boxem Tvorba školních pravidel (modrá) → Pluginy a Vibe coding (bílá) → Metodické materiály (modrá) → Kniha a Novinky v poměru 2 : 1 (bílá).
+- **Hlavní stránka (pořadí pruhů, úprava 8. 11. 2026):** Hero na `--accent-strong` s dvojnásobným odsazením nahoře i dole, bílý text, vpravo lehce pootočené kolečko (`--sky-light`, červený text) „Změny ve funkcích chatbotů v roce 2026“ s odkazem na `/funkce/zmeny-2026` → Skills (bílá) → Katalog promptů (modrá) → Chatboti ve výuce s bannerem Tiny, metodikami, doporučeními a boxem Tvorba školních pravidel (bílá) → Pluginy a Vibe coding (modrá) → Metodické materiály (bílá) → Kniha a Novinky v poměru 2 : 1 (modrá).
 
 ## Logo a obrázky
 

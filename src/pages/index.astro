@@ -14,31 +14,24 @@ const nKatalog = nUcitele + nVedeni + nZaci;
 ---
 <Base title="Chatboti ve škole" description="Jak využívat chatboty ve škole: skills a prompty pro učitele a vedení škol, aktuální přehled funkcí, cen a věkových limitů, metodiky a doporučení.">
 
-  <section class="band band--white" aria-label="Úvod">
-    <div class="wrap stack" style="gap: 36px">
-      <div class="page-head">
-        <h1 style="font-size: clamp(2.2rem, 4.6vw, 3.4rem); max-width: 14ch">Chatboti <em>ve škole</em></h1>
-        <p class="lede" style="font-size: 1.15rem; max-width: 56ch">Chatboti jsou jako miliony asistentů s miliony expertíz. Pojďme je využít ve školách tak, aby učitelům šetřili čas a dětem pomáhali kvalitně se učit a kriticky přemýšlet.</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 4px">
+  <section class="hero" aria-label="Úvod">
+    <div class="wrap hero-in">
+      <div class="page-head hero-text">
+        <h1>Chatboti <em>ve škole</em></h1>
+        <p class="lede">Chatboti jsou jako miliony asistentů s miliony expertíz. Pojďme je využít ve školách tak, aby vyučujícím šetřili čas a žákům pomáhali kvalitně se učit a kriticky přemýšlet.</p>
+        <div class="hero-btns">
           <a class="btn btn--primary" href={url('/skills')}>Katalog skills</a>
           <a class="btn btn--outline" href={url('/prompty')}>Katalog promptů</a>
         </div>
       </div>
-      <div class="changes" aria-labelledby="zmeny">
-        <div class="section-head" style="align-items: center">
-          <h2 id="zmeny" style="font-size: 1.35rem">Co se letos mění</h2>
-          <a class="more" href={url('/funkce/zmeny-2026')}>Přehled změn ve funkcích chatbotů →</a>
-        </div>
-        <div class="grid-3" style="gap: 24px">
-          <div class="thesis"><span class="dot" style="color: var(--accent-strong)"><Icon name="x" size={16} /></span><div><h3>Hotoví asistenti na odkaz končí</h3><p>Vlastní GPTs v ChatGPT přestanou fungovat 11. prosince 2026, Gems v Gemini mizí postupně od 17. listopadu 2026.</p></div></div>
-          <div class="thesis"><span class="dot"><Icon name="plus" size={16} /></span><div><h3>Nahrazují je skills a pluginy</h3><p>Všechny naše asistenty jsme převedli na skills, které si nainstalujete do Claude, Gemini, Copilotu nebo ChatGPT.</p></div></div>
-          <div class="thesis"><span class="dot"><Icon name="copy" size={16} /></span><div><h3>Ke každému skillu i prompt</h3><p>Vložíte ho do jakéhokoli chatbota, i do bezplatné verze.</p></div></div>
-        </div>
-      </div>
+      <a class="sticker" href={url('/funkce/zmeny-2026')}>
+        <span>Změny ve funkcích chatbotů v&nbsp;roce 2026</span>
+        <span class="sticker-arrow" aria-hidden="true">→</span>
+      </a>
     </div>
   </section>
 
-  <section class="band band--sky" aria-labelledby="skills-h">
+  <section class="band band--white" aria-labelledby="skills-h">
     <div class="wrap stack" style="gap: 22px">
       <div class="section-head">
         <div><h2 id="skills-h">Skills</h2><p>Skills pro učitele a vedení škol v pěti sadách. Každý skill funguje i jako prompt: zkopírujete ho do jakéhokoli chatbota, i do bezplatné verze.</p></div>
@@ -61,7 +54,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
     </div>
   </section>
 
-  <section class="band band--white" aria-labelledby="prompty-h">
+  <section class="band band--sky" aria-labelledby="prompty-h">
     <div class="wrap stack" style="gap: 22px">
       <div class="section-head">
         <div><h2 id="prompty-h">Katalog promptů</h2><p>Ověřené prompty pro učitele, vedení škol i žáky. Stačí zkopírovat do chatbota a doplnit údaje.</p></div>
@@ -84,20 +77,20 @@ const nKatalog = nUcitele + nVedeni + nZaci;
     </div>
   </section>
 
-  <section class="band band--sky" aria-labelledby="vyuka-h">
+  <section class="band band--white" aria-labelledby="vyuka-h">
     <div class="wrap stack" style="gap: 24px">
       <div class="section-head">
         <div><h2 id="vyuka-h">Chatboti ve výuce</h2><p>Jak s chatboty pracovat ve třídě, aby se žáci učili víc, ne míň: bezpečná aplikace pro žáky, metodiky s hotovými lekcemi a doporučení, ze kterých může škola vycházet.</p></div>
       </div>
       <a href="https://tiny.school" class="tiny-banner"><img src={url('/img/banner-tiny.png')} alt="AI aplikace Tiny pro školy zdarma. Chatboti do výuky bezpečně a didakticky správně. tiny.school" width="681" height="166" /></a>
       <div class="grid-3">
-        <div class="card card--lg plain">
+        <div class="card card--lg">
           <h3 style="font-size: 1.15rem">Aplikace Tiny</h3>
           <p>Velké chatboty nejsou dělané pro děti. V Tiny žáci pracují bez vlastních účtů u velkých firem a učitel vidí jejich konverzace v reálném čase.</p>
           <ul class="ticks"><li>11 chatbotů pro žáky podle Bloomovy taxonomie</li><li>aktivity bez AI</li><li>AI asistenti pro učitele</li></ul>
           <a class="more" href={url('/ve-vyuce/tiny')} style="margin-top: auto">O aplikaci Tiny →</a>
         </div>
-        <div class="card card--lg plain">
+        <div class="card card--lg">
           <h3 style="font-size: 1.15rem">Metodiky k chatbotům</h3>
           <a class="li" href="https://kurikulum.aidetem.cz/knowledgebase/chatboti-ve-vyuce-pracovni-listy/">Chatboti ve výuce — pracovní listy</a>
           <a class="li" href="https://kurikulum.aidetem.cz/knowledgebase/zpusoby-vyuziti-chatbotu-ve-vyuce/">Způsoby využití chatbotů ve výuce</a>
@@ -105,13 +98,13 @@ const nKatalog = nUcitele + nVedeni + nZaci;
           <a class="li" href="https://kurikulum.aidetem.cz/knowledgebase/data-02-vizualizace-dat-casova-rada/">Data 02 — Interpretace dat pomocí chatbotů</a>
           <a class="more" href={url('/ve-vyuce/metodiky')} style="margin-top: auto">Všechny metodiky →</a>
         </div>
-        <div class="card card--lg plain">
+        <div class="card card--lg">
           <h3 style="font-size: 1.15rem">Doporučení pro využívání AI</h3>
           <a class="li2" href={url('/ve-vyuce/doporuceni-zs-ss')}><strong>Doporučení pro ZŠ a SŠ</strong><span>Jak na AI ve škole — Národní pedagogický institut ČR</span></a>
           <a class="li2" href={url('/ve-vyuce/doporuceni-vs')}><strong>Doporučení pro VŠ</strong><span>Pracovní skupina prg.ai a Univerzity Karlovy</span></a>
         </div>
       </div>
-      <div class="card card--lg plain rules">
+      <div class="card card--lg rules">
         <div class="stack" style="gap: 8px; flex: 1 1 520px">
           <h3 style="font-size: 1.35rem">Tvorba školních pravidel pro využívání AI ve výuce</h3>
           <p>Žáci AI používají, ať to škola dovolí, nebo ne. Pravidla nejsou o zákazu, ale o tom, kdy a jak AI učení pomáhá a kdy ho nahrazuje — a aby všichni věděli, co platí.</p>
@@ -124,7 +117,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
     </div>
   </section>
 
-  <section class="band band--white" aria-label="Pluginy a vibe coding">
+  <section class="band band--sky" aria-label="Pluginy a vibe coding">
     <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 16px">
       <a class="card card--lg big" href={url('/funkce/pluginy')}>
         <span class="tile-icon tile-icon--accent" style="width: 44px; height: 44px"><Icon name="box" size={22} /></span>
@@ -141,7 +134,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
     </div>
   </section>
 
-  <section class="band band--sky" aria-labelledby="metodiky-h">
+  <section class="band band--white" aria-labelledby="metodiky-h">
     <div class="wrap stack" style="gap: 22px">
       <div class="section-head">
         <h2 id="metodiky-h">Metodické materiály</h2>
@@ -155,7 +148,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
     </div>
   </section>
 
-  <section class="band band--white" aria-label="Kniha a novinky">
+  <section class="band band--sky" aria-label="Kniha a novinky">
     <div class="wrap" style="display: flex; flex-wrap: wrap; gap: 16px">
       <div class="card card--lg book">
         <img src={url('/img/kniha-ai-ve-skole-prakticky.jpg')} alt="Obálka knihy AI ve škole prakticky" loading="lazy" />
@@ -177,11 +170,27 @@ const nKatalog = nUcitele + nVedeni + nZaci;
 </Base>
 
 <style>
-  .changes { background: var(--accent-soft); border-radius: var(--radius-lg); padding: 26px 28px; display: flex; flex-direction: column; gap: 20px; }
-  .thesis { display: flex; gap: 14px; align-items: flex-start; }
-  .thesis h3 { font-size: 1rem; font-weight: 600; }
-  .thesis p { color: var(--muted); font-size: 0.93rem; }
-  .dot { flex: none; width: 34px; height: 34px; border-radius: 50%; background: var(--panel); display: grid; place-items: center; color: var(--sky-ink); }
+  /* hero: červený pás, dvojnásobné odsazení, bílý text */
+  .hero { background: var(--accent-strong); color: #fff; padding: 112px 0; }
+  .hero-in { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px 56px; }
+  .hero-text { flex: 1 1 520px; }
+  .hero h1 { font-size: clamp(2.2rem, 4.6vw, 3.4rem); max-width: 14ch; color: #fff; }
+  .hero h1 em { color: var(--sky-light); }
+  .hero .lede { font-size: 1.15rem; max-width: 56ch; color: #fff; }
+  .hero-btns { display: flex; flex-wrap: wrap; gap: 12px; padding-top: 4px; }
+  .hero .btn--primary { background: #fff; color: var(--accent-strong); }
+  .hero .btn--primary:hover { background: var(--sky-light); color: var(--accent-ink); filter: none; }
+  .hero .btn--outline { background: var(--accent-strong); border-color: #fff; color: #fff; }
+  .hero .btn--outline:hover { background: rgba(255, 255, 255, 0.14); color: #fff; }
+  .hero :focus-visible { outline-color: #fff; }
+  /* kolečko „Změny ve funkcích chatbotů“ — lehce pootočené doprava */
+  .sticker { flex: none; width: 230px; height: 230px; border-radius: 50%; background: var(--sky-light); color: var(--accent-ink); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 30px; text-align: center; text-decoration: none; font-family: var(--fh); font-weight: 700; font-size: 1.3rem; line-height: 1.2; transform: rotate(8deg); transition: transform 0.2s ease; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12); margin-right: 12px; }
+  .sticker:hover { color: var(--accent-ink); transform: rotate(3deg) scale(1.04); }
+  .sticker-arrow { font-size: 1.5rem; }
+  @media (max-width: 640px) {
+    .hero { padding: 88px 0; }
+    .sticker { width: 180px; height: 180px; font-size: 1.08rem; padding: 24px; margin-left: auto; }
+  }
   .way { display: flex; gap: 12px; }
   .way span { flex: none; font-family: var(--fh); font-weight: 700; color: var(--accent-strong); }
   .way p { color: var(--ink); }
@@ -189,7 +198,6 @@ const nKatalog = nUcitele + nVedeni + nZaci;
   .title-row .tile-icon { width: 34px; height: 34px; border-radius: 10px; }
   .tiny-banner { display: block; border-radius: var(--radius-lg); overflow: hidden; }
   .tiny-banner img { display: block; width: 100%; height: auto; }
-  .plain { border-color: transparent !important; }
   .li { text-decoration: none; font-weight: 500; }
   .li2 { text-decoration: none; display: flex; flex-direction: column; }
   .li2 strong { font-weight: 600; }
@@ -198,13 +206,13 @@ const nKatalog = nUcitele + nVedeni + nZaci;
   .rules { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding: 26px 28px; }
   .big h2 { font-size: 1.5rem; }
   .big p { font-size: 1rem; }
-  .thumb { border-radius: var(--radius-lg); overflow: hidden; text-decoration: none; color: var(--ink); display: flex; flex-direction: column; background: var(--panel); }
+  .thumb { border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; text-decoration: none; color: var(--ink); display: flex; flex-direction: column; background: var(--panel); }
   .thumb img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
   .thumb div { padding: 18px 20px; display: flex; flex-direction: column; gap: 6px; }
   .thumb h3 { font-size: 1.05rem; font-weight: 700; }
   .thumb p { color: var(--muted); font-size: 0.9rem; }
   .book { flex: 2 1 560px; flex-direction: row; flex-wrap: wrap; gap: 28px; align-items: center; padding: 26px 28px; }
   .book img { width: 240px; max-width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 16px; display: block; flex: none; }
-  .newsletter { flex: 1 1 300px; background: var(--sky-light); border-radius: var(--radius-lg); padding: 26px 28px; display: flex; flex-direction: column; gap: 12px; justify-content: center; }
+  .newsletter { flex: 1 1 300px; background: var(--panel); border: 1px solid var(--sky); border-radius: var(--radius-lg); padding: 26px 28px; display: flex; flex-direction: column; gap: 12px; justify-content: center; }
   .newsletter p { color: var(--muted); font-size: 0.93rem; }
 </style>

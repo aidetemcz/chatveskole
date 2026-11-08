@@ -8,7 +8,7 @@ stav: koncept
 
 # Chatboti ve škole
 
-Chatboti jsou jako miliony asistentů s miliony expertíz. Pojďme je využít ve školách tak, aby učitelům šetřili čas a dětem pomáhali kvalitně se učit a kriticky přemýšlet.
+Chatboti jsou jako miliony asistentů s miliony expertíz. Pojďme je využít ve školách tak, aby vyučujícím šetřili čas a žákům pomáhali kvalitně se učit a kriticky přemýšlet.
 
 [Jak fungují chatboti](/zaciname/jak-funguji-chatboti) · [Katalog skills](/skills)
 
