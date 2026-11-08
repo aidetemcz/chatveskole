@@ -1,0 +1,17 @@
+{
+  "name": "aidetem-formativni-hodnoceni",
+  "version": "0.1.0",
+  "description": "Od vzdělávacího cíle přes kritéria a sebehodnocení až ke slovnímu hodnocení. Postaveno na metodice Vysvědčení jinak (PdF MU).",
+  "author": {
+    "name": "AI dětem, z. ú.",
+    "url": "https://aidetem.cz"
+  },
+  "homepage": "https://chatveskole.cz/sady/formativni-hodnoceni",
+  "repository": "https://github.com/aidetemcz/chatveskole",
+  "keywords": [
+    "škola",
+    "učitelé",
+    "vzdělávání",
+    "Formativní hodnocení"
+  ]
+}

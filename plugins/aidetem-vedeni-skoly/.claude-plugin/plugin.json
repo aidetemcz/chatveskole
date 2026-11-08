@@ -1,0 +1,17 @@
+{
+  "name": "aidetem-vedeni-skoly",
+  "version": "0.1.0",
+  "description": "Hodnoty, mise a vize, školní pravidla, strategické dokumenty, AI gramotnost v ŠVP a každodenní agenda ředitele.",
+  "author": {
+    "name": "AI dětem, z. ú.",
+    "url": "https://aidetem.cz"
+  },
+  "homepage": "https://chatveskole.cz/sady/vedeni-skoly",
+  "repository": "https://github.com/aidetemcz/chatveskole",
+  "keywords": [
+    "škola",
+    "učitelé",
+    "vzdělávání",
+    "Vedení školy"
+  ]
+}

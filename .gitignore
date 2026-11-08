@@ -10,3 +10,5 @@ Thumbs.db
 _prenos-*.zip
 # vygenerované složky pro Google Disk (scripts/build-google-drive.py)
 google-drive/
+# přenosové soubory z Claude (lze smazat)
+_to_delete/
