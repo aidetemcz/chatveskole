@@ -35,8 +35,8 @@ puvodni_asistenti:
     - https://drive.google.com/drive/folders/1pZ5Br7cb7zfFabTHS7RdhxWwc3c8gFT3?usp=sharing   # složka uvedená na webu u Průvodce řízením změny (ADKAR)
     - https://docs.google.com/document/d/1UZFJXqWWBn-yjvRYveNIST1Zxriki3cdHAi_4LjoXLI/edit?usp=sharing
     - https://docs.google.com/document/d/1rvh38eGxiQ9p1Yn0L9HtY0MVZQKroJBhOgX_RxcsN4k/edit?usp=sharing
-google_doc: https://docs.google.com/document/d/1IiSI9Ui-rncV8JZNGkzX1tzSwap3EzBJfRPVrfyCwgs/edit
-google_slozka: https://drive.google.com/drive/folders/186uAIYKFjnN8WySh1VdgqAadTDguPveU
+google_doc: https://docs.google.com/document/d/1jfHVxUA3NtPmKA4LjFJRHVDjgbgxn6mplpx30MN3SyQ/edit
+google_slozka: https://drive.google.com/drive/folders/1MMa7m55095cB7SNb95m72FNkaGCYcZAl
 autori: [AI dětem, tým AI akcelerátoru]   # doplnit jména autorů asistentů
 metodika:
   - nazev: Úvod do teorie změny pro školy (AI akcelerátor, AI dětem; garant Luboš Malý)
@@ -52,4 +52,4 @@ metodika:
 znalosti: []
 vek: dospělí (skills jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-08

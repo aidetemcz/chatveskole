@@ -282,7 +282,7 @@
     },
     {
       "source": "/databaze-promptu/hadej-chemicke-prvky-asistent",
-      "destination": "/skills/aktivity-s-chatbotem",
+      "destination": "/skills/hadej-chemicky-prvek",
       "permanent": true
     },
     {
@@ -322,7 +322,7 @@
     },
     {
       "source": "/databaze-promptu/karierni-poradce-se-zamerenim-na-matematiku",
-      "destination": "/skills/aktivity-s-chatbotem",
+      "destination": "/skills/karierni-poradce-matematika",
       "permanent": true
     },
     {
@@ -487,7 +487,7 @@
     },
     {
       "source": "/databaze-promptu/radce-pro-spravne-formulace-slovniho-hodnoceni",
-      "destination": "/skills/slovni-hodnoceni",
+      "destination": "/skills/radce-slovniho-hodnoceni",
       "permanent": true
     },
     {
@@ -682,7 +682,7 @@
     },
     {
       "source": "/databaze-promptu/vytvareni-sebehodnotici-skaly-pro-zaky",
-      "destination": "/skills/kriteria-hodnoceni",
+      "destination": "/skills/gradace-kriterii-hodnoceni",
       "permanent": true
     },
     {

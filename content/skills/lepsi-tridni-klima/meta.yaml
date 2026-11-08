@@ -1,0 +1,23 @@
+title: Lepší třídní klima
+slug: lepsi-tridni-klima
+kratky_popis: Poradí, jak zlepšit klima ve třídě a pracovat s problémovým chováním žáků – od rozboru situace po plán intervence.
+pro_koho: [ucitele, vedeni]
+sady: [komunikace-a-podpora-ucitele]
+stitky: [třídní klima, problémové chování, respektující komunikace, participace, výchovná komise, komunitní kruh, prevence]
+rezimy:
+  - Diagnostika a strategie
+  - Plánování intervence
+  - Reflexe po situaci
+  - Koučovací rozhovor
+puvodni_obsah: []           # na starém webu nebyl (dříve GPT Poradce pro lepší třídní klima)
+puvodni_asistenti:
+  gpt: https://chatgpt.com/g/g-69efa987d5488191b76b566a789c3355-poradce-pro-lepsi-tridni-klima
+google_doc: https://docs.google.com/document/d/1cwIBXQGFgCsFmYEPbfsRoiHAvBsqjBi2C753t35BN3A/edit
+google_slozka: https://drive.google.com/drive/folders/11xGfGjPpuG6kaovWbWmItpfvEYtLZc8H
+autori: [AI dětem]          # ověřit autorství
+metodika:
+  - nazev: Metodické příručky AI akcelerátoru (AI dětem)
+znalosti: [respektujici-komunikace.md, participativni-pristup.md, spoluprace-pedagogu-napric-skolou.md, prace-s-problemovym-chovanim.md]
+vek: dospělí (skills jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-08

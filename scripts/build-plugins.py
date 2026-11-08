@@ -24,7 +24,7 @@ PLUGINS = ROOT / "plugins"
 DIST = ROOT / "dist" / "pluginy"
 WEB = "https://chatveskole.cz"
 REPO = "https://github.com/aidetemcz/chatveskole"
-AUTOR = {"name": "AI dětem, z. ú.", "url": "https://aidetem.cz"}
+AUTOR = {"name": "AI dětem, z. s.", "url": "https://aidetem.cz"}
 
 
 def main():

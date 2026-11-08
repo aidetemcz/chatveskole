@@ -48,12 +48,12 @@ puvodni_obsah:
     typ: prompt
   - url: https://chatveskole.cz/databaze-promptu/slovnicky-pojmu/
     typ: prompt
-google_doc: https://docs.google.com/document/d/18QxJGkByRUZtGfn0tV6Gvtp8WqbGg1U7vuchCL4FMkI/edit
-google_slozka: https://drive.google.com/drive/folders/1Fb6apT9KLJc7mqK_HnfJyVEL2NMSjDg9
+google_doc: https://docs.google.com/document/d/1J_gzfytRmCPsRXHckGl3ZMb3cM-BVWjtoPeBr5zIZVI/edit
+google_slozka: https://drive.google.com/drive/folders/1q6xd25uwBY2AGvCsWPE0FzC1T3yIeGVT
 autori: [Eva Nečasová (AI dětem), AI reaktor UJEP (Míša Liegertová)]
 metodika:
   - nazev: Revidovaná Bloomova taxonomie
     url: https://cs.wikipedia.org/wiki/Bloomova_taxonomie
 vek: dospělí (skills jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-08

@@ -24,12 +24,12 @@ puvodni_asistenti:
   gpt: https://chatgpt.com/g/g-68b59d281f9881919bd7f1e29d90b99b-jazykovy-korektor-ai-detem
   gem: https://gemini.google.com/gem/1GBbSG57TbI2AGP1Osfsb9tkwP7BxRyFy?usp=sharing
   # systémový prompt v Google Docs zatím neexistuje
-google_doc: https://docs.google.com/document/d/1fRcqvskNFEo5wTBvHVsj9qGFYp9rB0J_Qggat03ZvGc/edit
-google_slozka: https://drive.google.com/drive/folders/1RnUfCJ0npVn2thxU31Jh9LGFUJTMIgPW
+google_doc: https://docs.google.com/document/d/1hOLVAluQ-wQyU8LCKCXyjXmicAD9SAT5tSA8FxUa8nc/edit
+google_slozka: https://drive.google.com/drive/folders/143QCVYHP2DkNpeSoFw1-fBnX9X_JO8m8
 autori: [AI dětem, AI reaktor UJEP (Míša Liegertová)]   # ověřit: čtyři prompty z roku 2024 nejspíš z původní databáze AI reaktoru UJEP; doplnit jména
 metodika:
   - nazev: Internetová jazyková příručka (ÚJČ AV ČR)
     url: https://prirucka.ujc.cas.cz/
 vek: dospělí (skills jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-08
