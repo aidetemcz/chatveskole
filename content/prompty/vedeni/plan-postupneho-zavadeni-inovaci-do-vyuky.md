@@ -1,7 +1,7 @@
 ---
 title: "Plán postupného zavádění inovací do výuky"
 slug: "plan-postupneho-zavadeni-inovaci-do-vyuky"
-skupina: pedagogove
+skupina: vedeni
 kategorie: ["Tvorba strategických dokumentů"]
 kategorie_slug: ["tvorba-strategickych-dokumentu"]
 skill: "strategicke-dokumenty"

@@ -70,6 +70,9 @@ VIBE = ["tabulky", "sekvencni-diagram", "myslenkove-mapy-dreviny", "kolacovy-gra
 ASISTENTI = {"formulace-vyukoveho-cile-2", "formulace-kriterii-hodnoceni", "vytvareni-sebehodnotici-skaly-pro-zaky", "generovani-slovniho-hodnoceni", "radce-pro-spravne-formulace-slovniho-hodnoceni", "didakticky-radce", "planovac-vyuky", "ucitelsky-mentor", "jazykovy-ai-korektor", "asistent-pro-rozvoj-mysleni", "asistent-pro-definici-hodnot-mise-a-vize-skoly", "radce-pro-tvorbu-skolnich-pravidel", "asistent-reditele", "strategicky-radce-pro-rizeni-zmeny", "ai-gramotnost-v-rvp-a-svp", "pruvodce-rizenim-zmeny-adkar", "radce-pro-zlepseni-kultury-skoly", "kultura-a-komunikace-skoly-adkar", "procesni-analytik-ai-detem", "asistent-poznej-svet-zemepisny-kviz", "hadej-chemicke-prvky-asistent", "karierni-poradce-se-zamerenim-na-matematiku"}
 OLD_2024 = set(VIBE) | {"slovni-a-vetny-rozbor", "diferenciace-textu-rozhovory", "zmena-textu-strucne-a-jasne", "prace-s-textem-shrnuti", "zvyrazneni-chyb-v-textu", "k-cemu-mi-to-je", "otazky-k-diskuzi", "komunikace-s-rodici-pozvanka", "komunikace-s-rodici-stiznost", "tematicky-test-cizi-jazyk", "nedelitelne-mezery", "chatboti-ve-skole-analogie", "zvladani-stresu", "slepe-skrvny", "slovicka-nalady", "piskvorky", "protiklady-prid-jmena", "komunikace-s-rodici", "eduscrum-mestsky-ekosystem", "tvorba-pravidel", "matematicke-priklady", "cool_bot_vynalezy", "pruvodce-biotopy", "diskuzni-bot-genetika", "quiz_bot", "wikichat-hardware", "unikovka-elektromagnetismus", "strukturovany-ucebni-plan", "tvorba-testu-dedicnost", "swot-analyza", "napadnicek-geografie", "didaktik-konzultant", "hadej-chemicke-prvky", "rpg-simulator-el-castice", "hrani-dvou-roli-bunka", "simulator-darwin", "zpetnovazebni-otazky-polymeraza", "hraj-roli-chloroplast", "doplnovacka_slovesa", "emotikony-zivot-vaclava-havla", "stylistika", "textova-hra-karel-iv", "vyukovy-plan-bloomova-taxonomie", "osnova-lekce-informatika", "kviz-historie", "slovnicky-pojmu"}
 
+# Prompty pro vedení školy (skupina „vedeni“ v content/prompty/vedeni/)
+VEDENI_SKILLS = {"mise-vize-hodnoty", "skolni-pravidla", "strategicke-dokumenty"}
+
 KB = {}
 MAPA = {}   # slug -> {skupina, skill, vibe} pro scripts/prevod-promptu.mjs
 for skill, slugs in SKILL_MAP.items():
@@ -78,7 +81,7 @@ for skill, slugs in SKILL_MAP.items():
             KB[s] = (f"/skills/{skill}", "převést na skill", "asistent", "AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs")
             MAPA[s] = {"skupina": "asistent", "skill": skill}
         else:
-            skupina = "archiv-2024" if s in OLD_2024 else "pedagogove"
+            skupina = "archiv-2024" if s in OLD_2024 else ("vedeni" if skill in VEDENI_SKILLS else "pedagogove")
             note = "zachovat v databázi promptů (starší prompty 2024)" if skupina == "archiv-2024" else "zachovat v databázi promptů"
             KB[s] = (f"/funkce/prompty/{s}", "zachovat jako prompt", "prompt", note + f"; souvisí se skillem {skill}")
             MAPA[s] = {"skupina": skupina, "skill": skill}
@@ -138,7 +141,7 @@ for src, dst in [("/databaze-promptu", "/funkce/prompty"), ("/dp", "/funkce/prom
 out = ROOT / "migrace"
 out.mkdir(exist_ok=True)
 with open(out / "inventura.csv", "w", newline="", encoding="utf-8") as f:
-    w = csv.writer(f)
+    w = csv.writer(f, lineterminator="\n")
     w.writerow(["typ", "stará URL", "nová URL", "akce", "druh obsahu", "poznámka"])
     w.writerows(rows)
 (out / "mapa-promptu.json").write_text(json.dumps(MAPA, ensure_ascii=False, indent=2), encoding="utf-8")

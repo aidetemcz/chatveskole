@@ -1,7 +1,7 @@
 ---
 title: "Vytváření profilu absolventa školy"
 slug: "vytvareni-profilu-absolventa-skoly"
-skupina: pedagogove
+skupina: vedeni
 kategorie: ["Tvorba strategických dokumentů"]
 kategorie_slug: ["tvorba-strategickych-dokumentu"]
 skill: "mise-vize-hodnoty"

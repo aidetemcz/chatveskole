@@ -1,7 +1,7 @@
 ---
 title: "Strategie pro rozvoj digitální gramotnosti"
 slug: "strategie-pro-rozvoj-digitalni-gramotnosti"
-skupina: pedagogove
+skupina: vedeni
 kategorie: ["Tvorba strategických dokumentů"]
 kategorie_slug: ["tvorba-strategickych-dokumentu"]
 skill: "strategicke-dokumenty"

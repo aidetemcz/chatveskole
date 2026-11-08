@@ -47,7 +47,7 @@ generovane:
   - { href: /skills, zdroj: content/skills/*/ + content/sady.yaml, popis: katalog skills s filtrem podle sady a pro koho }
   - { href: "/skills/[slug]", zdroj: content/skills/<slug>/, popis: detail skillu — popis, režimy, Kopírovat prompt, Stáhnout ZIP, Google Docs, původní asistenti }
   - { href: "/sady/[slug]", zdroj: content/sady.yaml, popis: rozcestník sady (= plugin), u formativního hodnocení i odkaz na metodiku }
-  - { href: /funkce/prompty, zdroj: content/stranky/funkce/prompty.md + content/prompty/*/, popis: stránka Prompty s databází promptů (skupiny pedagogove, zaci, archiv-2024) }
-  - { href: "/funkce/prompty/[slug]", zdroj: "content/prompty/pedagogove/<slug>.md, content/prompty/archiv-2024/<slug>.md" }
+  - { href: /funkce/prompty, zdroj: content/stranky/funkce/prompty.md + content/prompty/*/, popis: "Katalog promptů — skupiny pedagogove (učitelé), vedeni, zaci; přepínač řazení dle účelu / komu slouží; archiv-2024 se nezobrazuje" }
+  - { href: "/funkce/prompty/[slug]", zdroj: "content/prompty/{pedagogove,vedeni,archiv-2024}/<slug>.md (archiv-2024 bez odkazu z katalogu, noindex)" }
   - { href: /funkce/prompty/zaci, zdroj: content/prompty/zaci/_index.md }
   - { href: "/funkce/prompty/zaci/[slug]", zdroj: content/prompty/zaci/<slug>.md }

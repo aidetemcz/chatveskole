@@ -5,12 +5,15 @@
 - **7. 11. 2026 — Systémové prompty a znalosti zůstávají v Google Docs / na Google Disku.** Učitelé je stahují odtud (GitHub je pro běžného učitele zbytečně odstrašující). Web u každého skillu odkazuje na Google Doc se systémovým promptem a na znalostní soubory na Disku. ZIP skillu obsahuje jen `SKILL.md` a `references/` (skill funguje i bez znalostních souborů). Jak se drží Google Doc a `SKILL.md` ve shodě, popisuje `docs/architektura.md`, sekce „Google Docs“.
 - **7. 11. 2026 — Databáze promptů zůstává** na stránce *Funkce → Prompty* včetně starších promptů z roku 2024; skills mají vlastní katalog na *Funkce → Skills*.
 - **7. 11. 2026 — Všechny znalostní soubory jsou veřejné** včetně Katalogu aktivizačních metod a Příručky aktivizační výuky (Didaktický rádce).
+- **8. 11. 2026 — Design schválen** (plátno Claude Design, pravidla v `docs/design.md`). Stránka promptů se jmenuje *Katalog promptů*, skupiny Pro učitele / Pro vedení školy / Pro žáky.
+- **8. 11. 2026 — Starší prompty 2024 se v katalogu nezobrazují**, dokud je Eva s Coworkem neprojde; jejich stránky zůstávají kvůli starým odkazům.
+- **8. 11. 2026 — Hosting zatím GitHub Pages** z větve `main`. Před přepnutím domény rozhodnout definitivně (GitHub Pages neumí skutečná přesměrování 301, jen přesměrovací stránky).
 - **7. 11. 2026 — Souhlasy autorů** (Šárka Polanecká, Jan Jílek, AI reaktor UJEP, Vysvědčení jinak) Eva má, není potřeba je znovu získávat.
 
 ## Blokují stavbu webu
 
 1. **Framework:** Astro (doporučeno pro obsahový web) vs. Next.js (stejný jako ostatní appky AI dětem).
-2. **Hosting:** Vercel Hobby je podle podmínek jen pro osobní nekomerční použití. Pro web organizace: Vercel Pro (20 USD/měsíc), nebo bezplatné Netlify / Cloudflare Pages.
+2. **Hosting pro doménu chatveskole.cz:** GitHub Pages (zdarma, jen přesměrovací stránky místo 301) vs. Vercel Pro / Netlify / Cloudflare Pages (skutečná přesměrování, náhledy větví).
 3. **Analytika:** Vercel Web Analytics / Plausible (bez cookies, bez lišty) vs. Google Analytics (vyžaduje souhlas).
 4. **Sdílení složek na Disku:** systémové prompty a data všech 18 skills jsou od 7. 11. 2026 na sdíleném disku ve složce *Zdroje k stažení*, znalostní soubory zkopírované do složek Data, odkazy v `meta.yaml` (`google_doc`, `google_slozka`, přehled v `migrace/google-drive.json`). Zbývá nastavit sdílení „Kdokoli s odkazem – čtenář“ (teď je složka soukromá) a smazat z ní *Návod pro nahrání na Disk*, který je jen pro tým.
 

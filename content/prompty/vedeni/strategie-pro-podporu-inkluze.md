@@ -1,7 +1,7 @@
 ---
 title: "Strategie pro podporu inkluze"
 slug: "strategie-pro-podporu-inkluze"
-skupina: pedagogove
+skupina: vedeni
 kategorie: ["Tvorba strategických dokumentů"]
 kategorie_slug: ["tvorba-strategickych-dokumentu"]
 skill: "strategicke-dokumenty"

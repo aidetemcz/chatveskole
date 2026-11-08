@@ -1,7 +1,7 @@
 ---
 title: "Integrace digitálního wellbeingu"
 slug: "integrace-digitalniho-wellbeingu"
-skupina: pedagogove
+skupina: vedeni
 kategorie: ["Tvorba strategických dokumentů"]
 kategorie_slug: ["tvorba-strategickych-dokumentu"]
 skill: "strategicke-dokumenty"

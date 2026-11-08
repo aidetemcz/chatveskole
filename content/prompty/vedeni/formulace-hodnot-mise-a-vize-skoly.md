@@ -1,7 +1,7 @@
 ---
 title: "Formulace hodnot, mise a vize školy"
 slug: "formulace-hodnot-mise-a-vize-skoly"
-skupina: pedagogove
+skupina: vedeni
 kategorie: ["Tvorba strategických dokumentů"]
 kategorie_slug: ["tvorba-strategickych-dokumentu"]
 skill: "mise-vize-hodnoty"

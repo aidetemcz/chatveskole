@@ -1,7 +1,7 @@
 ---
 title: "Tvorba školních pravidel"
 slug: "tvorba-skolnich-pravidel"
-skupina: pedagogove
+skupina: vedeni
 kategorie: ["Tvorba strategických dokumentů"]
 kategorie_slug: ["tvorba-strategickych-dokumentu"]
 skill: "skolni-pravidla"

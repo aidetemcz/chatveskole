@@ -1,7 +1,7 @@
 ---
 title: "Návrh systému vnitřního hodnocení kvality výuky"
 slug: "navrh-systemu-vnitrniho-hodnoceni-kvality-vyuky"
-skupina: pedagogove
+skupina: vedeni
 kategorie: ["Tvorba strategických dokumentů"]
 kategorie_slug: ["tvorba-strategickych-dokumentu"]
 skill: "strategicke-dokumenty"

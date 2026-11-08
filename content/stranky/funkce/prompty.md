@@ -1,34 +1,20 @@
 ---
-title: Prompty
+title: Katalog promptů
+menu_titulek: Prompty
 menu: Funkce
 poradi: 2
-popis: Databáze ověřených promptů pro učitele, vedení škol i žáky — a jak napsat prompt, aby chatbot odpověděl to, co potřebujete.
+popis: Ověřené prompty pro učitele, vedení škol i žáky. Zkopírujte prompt do jakéhokoli chatbota a doplňte údaje v hranatých závorkách.
 aktualizovano: 2026-11-07
 stav: koncept
 ---
 
-# Prompty
+# Katalog promptů
 
-Prompt je zadání, které chatbotu napíšete: otázka, pokyn, popis úkolu. Může to být jedno slovo, nebo stránka textu s přiloženými soubory. Čím jasněji a konkrétněji napíšete, co chcete, tím lépe chatbot pochopí, co od něj čekáte.
-
-## Databáze promptů
-
-Prompty stačí zkopírovat do jakéhokoli chatbota a doplnit údaje v hranatých závorkách. Fungují i v bezplatných verzích.
-
-<!-- komponenta: databáze promptů z content/prompty/{pedagogove,zaci,archiv-2024}
-     - přepínač skupin: Pro pedagogy a vedení škol (výchozí) · Pro žáky · Starší prompty (2024)
-     - filtr podle kategorie (kotvy #<kategorie_slug>, např. #formativni-hodnoceni — na ně vedou přesměrování starých kategorií)
-     - karta: název, kategorie, tlačítko Kopírovat, odkaz na detail; pokud má prompt pole skill, štítek „i jako skill“ -->
-
-**Pro pedagogy a vedení škol** — aktualizace materiálů, formativní a slovní hodnocení, komunikace s rodiči, tvorba materiálů do výuky, strategické dokumenty školy.
-
-**Pro žáky** — [10 způsobů využití AI ve výuce](/funkce/prompty/zaci), které jsme připravili s Národním pedagogickým institutem.
-
-**Starší prompty (2024)** — inspirace z první verze databáze: vizualizace, simulace, hry, práce s textem. Chatboti od té doby umí víc, ale nápady fungují dál.
-
-Většina promptů pro pedagogy má i podobu [skillu](/funkce/skills) — u promptu najdete odkaz.
+<!-- Katalog (skupiny pedagogove, vedeni, zaci) vykresluje šablona stránky z content/prompty/. Prompty z content/prompty/archiv-2024 se v katalogu nezobrazují (výběr s Coworkem), jejich stránky existují kvůli starým odkazům. -->
 
 ## Jak napsat dobrý prompt
+
+Prompt je zadání, které chatbotu napíšete: otázka, pokyn, popis úkolu. Může to být jedno slovo, nebo stránka textu s přiloženými soubory. Čím jasněji a konkrétněji napíšete, co chcete, tím lépe chatbot pochopí, co od něj čekáte.
 
 ## Prompt, nebo skill?
 

@@ -1,6 +1,6 @@
 # CLAUDE.md — web Chatboti ve škole (chatveskole.cz)
 
-Statický obsahový web neziskové organizace AI dětem pro učitele a vedení škol. Převádí se z WordPressu na Astro + Vercel. Obsah je v Markdownu a YAML v repozitáři; web ho jen vykresluje.
+Statický obsahový web neziskové organizace AI dětem pro učitele a vedení škol. Převádí se z WordPressu na Astro; zatím běží na GitHub Pages z větve `main` (adresa s `/chatveskole`). Obsah je v Markdownu a YAML v repozitáři; web ho jen vykresluje.
 
 ## Než začneš
 
@@ -17,7 +17,7 @@ Přečti:
 - `content/navigace.yaml` — menu a generované stránky
 - `content/skills/<slug>/` — SKILL.md, prompt.md, meta.yaml, references/
 - `content/sady.yaml` — sady skills (= pluginy)
-- `content/prompty/{pedagogove,zaci,archiv-2024}/` — databáze promptů (původní prompty; pedagogove a archiv-2024 vygeneruje `scripts/prevod-promptu.mjs` z exportu)
+- `content/prompty/{pedagogove,vedeni,zaci,archiv-2024}/` — katalog promptů (původní prompty, převedené `scripts/prevod-promptu.mjs`); `archiv-2024` se v katalogu nezobrazuje, stránky existují kvůli starým odkazům
 - `content/znalosti/znalosti.yaml` — odkazy na znalostní soubory na Google Disku
 - `data/*.yaml` — data pro tabulky (funkce chatbotů, ceny)
 - `migrace/redirects.json` — přesměrování starých URL (generuje `scripts/build-inventura.py`)
@@ -28,10 +28,11 @@ Přečti:
 
 ## Příkazy
 
-(doplnit po založení projektu)
-- `npm run dev` — vývojový server
-- `npm run build` — build včetně ZIPů skills, pluginů a vyhledávání
-- `npm run check` — kontrola odkazů, frontmatteru a SKILL.md
+- `npm install` — jednou po stažení
+- `npm run dev` — vývojový server (http://localhost:4321)
+- `npm run build` — ZIPy skills a pluginů (`scripts/build-downloads.mjs`) + statický web do `dist/`
+- `npm run check` — kontrola interních odkazů v `dist/` a SKILL.md (`scripts/check-links.mjs`, `scripts/check-skills.py`)
+- `BASE_PATH=/chatveskole npm run build` — build pro GitHub Pages (tak to dělá workflow `.github/workflows/deploy.yml`)
 
 ## Pravidla
 
@@ -50,13 +51,14 @@ Přečti:
 - Pluginy mají prefix `aidetem-` a formát `.claude-plugin/plugin.json` + `skills/`; v kořeni repa `.claude-plugin/marketplace.json`.
 
 **Kód**
-- Astro, TypeScript, čisté CSS s tokeny z `docs/design.md`. Žádný CSS framework, žádná databáze.
+- Astro, TypeScript, čisté CSS s tokeny z `docs/design.md` (`src/styles/global.css`). Žádný CSS framework, žádná databáze.
+- Interní odkazy vždy přes `url()` z `src/lib/url.ts` (doplní base `/chatveskole`); odkazy v Markdownu přepisuje plugin `src/lib/rehype-base.mjs`.
 - JavaScript jen tam, kde je potřeba interakce (kopírování promptu, záložky, menu, filtr katalogu).
 - Přístupnost: WCAG AA, ovládání klávesnicí, mobil od 360 px.
 - Žádné cookies a sledovací skripty třetích stran bez schválení. Fonty self-hostovat.
 - Žádné tajné klíče v repozitáři.
 
 **Postup**
-- Pracuj po fázích z `docs/predani-claude-code.md`, malé změny, každou na samostatné větvi s náhledem na Vercelu.
+- Pracuj po fázích z `docs/predani-claude-code.md`, malé změny, každou na samostatné větvi s pull requestem; po sloučení do `main` se web sám nasadí na GitHub Pages.
 - Po každé fázi spusť build a kontrolu odkazů a napiš Evě stručně, co je hotové a kde se na to podívat.
 - Commity česky, stručně.

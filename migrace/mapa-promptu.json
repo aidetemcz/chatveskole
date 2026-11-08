@@ -324,11 +324,11 @@
     "skill": "mise-vize-hodnoty"
   },
   "formulace-hodnot-mise-a-vize-skoly": {
-    "skupina": "pedagogove",
+    "skupina": "vedeni",
     "skill": "mise-vize-hodnoty"
   },
   "vytvareni-profilu-absolventa-skoly": {
-    "skupina": "pedagogove",
+    "skupina": "vedeni",
     "skill": "mise-vize-hodnoty"
   },
   "radce-pro-tvorbu-skolnich-pravidel": {
@@ -336,7 +336,7 @@
     "skill": "skolni-pravidla"
   },
   "tvorba-skolnich-pravidel": {
-    "skupina": "pedagogove",
+    "skupina": "vedeni",
     "skill": "skolni-pravidla"
   },
   "tvorba-pravidel": {
@@ -344,23 +344,23 @@
     "skill": "skolni-pravidla"
   },
   "strategie-pro-rozvoj-digitalni-gramotnosti": {
-    "skupina": "pedagogove",
+    "skupina": "vedeni",
     "skill": "strategicke-dokumenty"
   },
   "strategie-pro-podporu-inkluze": {
-    "skupina": "pedagogove",
+    "skupina": "vedeni",
     "skill": "strategicke-dokumenty"
   },
   "integrace-digitalniho-wellbeingu": {
-    "skupina": "pedagogove",
+    "skupina": "vedeni",
     "skill": "strategicke-dokumenty"
   },
   "tvorba-metodologie-hodnoceni": {
-    "skupina": "pedagogove",
+    "skupina": "vedeni",
     "skill": "strategicke-dokumenty"
   },
   "navrh-systemu-vnitrniho-hodnoceni-kvality-vyuky": {
-    "skupina": "pedagogove",
+    "skupina": "vedeni",
     "skill": "strategicke-dokumenty"
   },
   "swot-analyza": {
@@ -368,7 +368,7 @@
     "skill": "strategicke-dokumenty"
   },
   "plan-postupneho-zavadeni-inovaci-do-vyuky": {
-    "skupina": "pedagogove",
+    "skupina": "vedeni",
     "skill": "strategicke-dokumenty"
   },
   "strategicky-radce-pro-rizeni-zmeny": {
