@@ -36,7 +36,7 @@ Každý skill můžete použít dvěma způsoby: **zkopírovat jako prompt** (fu
 
 Desítky ověřených promptů pro učitele, vedení škol i žáky. Stačí zkopírovat do chatbota a doplnit údaje.
 
-[Databáze promptů](/funkce/prompty) · [Prompty pro žáky](/funkce/prompty/zaci)
+[Katalog promptů](/prompty) · [Prompty pro žáky](/funkce/prompty/zaci)
 
 ## Vibe coding
 

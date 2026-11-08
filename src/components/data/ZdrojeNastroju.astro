@@ -1,0 +1,22 @@
+---
+// Zdroje po nástrojích z data/funkce-chatbotu.yaml
+import { funkceChatbotu as F } from '../../lib/data';
+const popisek = (u: string) => u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
+---
+<div class="sources">
+  {F.nastroje.map((n) => F.zdroje[n.id] && (
+    <div>
+      <h3>{n.nazev}</h3>
+      <ul>{F.zdroje[n.id].map((z) => <li><a href={z}>{popisek(z)}</a></li>)}</ul>
+    </div>
+  ))}
+</div>
+
+<style>
+  .sources { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+  h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; }
+  ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 5px; }
+  li { font-size: 0.82rem; line-height: 1.4; overflow-wrap: anywhere; }
+  @media (max-width: 980px) { .sources { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 520px) { .sources { grid-template-columns: 1fr; } }
+</style>

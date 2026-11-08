@@ -1,0 +1,92 @@
+---
+import { navigace } from '../lib/data';
+import { url } from '../lib/url';
+const current = Astro.url.pathname.replace(import.meta.env.BASE_URL.replace(/\/$/, ''), '') || '/';
+const isIn = (g: { items: { href: string }[] }) => g.items.some((i) => current.startsWith(i.href));
+---
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href={url('/')}>
+      <img src={url('/img/logo-ai-detem.png')} alt="" width="44" height="44" />
+      <span><strong>Chatboti ve škole</strong><span>AI dětem</span></span>
+    </a>
+    <a class="search-link" href={url('/hledat')} aria-label="Hledat na webu" title="Hledat">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hlavni-menu">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      Menu
+    </button>
+    <nav id="hlavni-menu" class="nav" aria-label="Hlavní menu">
+      <ul>
+        {navigace.menu.map((g, i) => (
+          <li class="nav-group">
+            <button type="button" class={`nav-top${isIn(g) ? ' is-current' : ''}`} aria-expanded="false" aria-controls={`podmenu-${i}`}>
+              {g.title}
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <ul class="nav-sub" id={`podmenu-${i}`}>
+              {g.items.map((it) => (
+                <li><a href={url(it.href)} aria-current={current === it.href ? 'page' : undefined}>{it.title}</a></li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ul>
+      <a class="btn btn--primary btn--small cta" href={url(navigace.cta.href)}>{navigace.cta.title}</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header { border-bottom: 1px solid var(--line); background: var(--bg); position: relative; z-index: 20; }
+  .bar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding-top: 12px; padding-bottom: 12px; }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); margin-right: auto; }
+  .brand img { width: 44px; height: 44px; border-radius: 50%; display: block; }
+  .brand > span { display: flex; flex-direction: column; line-height: 1.2; }
+  .brand strong { font-family: var(--fh); font-size: 1.05rem; }
+  .brand > span > span { font-size: 0.8rem; color: var(--muted); }
+  .nav { display: flex; align-items: center; gap: 12px; }
+  .nav > ul { display: flex; gap: 2px; list-style: none; margin: 0; padding: 0; }
+  .nav-group { position: relative; }
+  .nav-top { display: flex; align-items: center; gap: 6px; padding: 10px 12px; border-radius: var(--pill); border: 0; background: none; font-weight: 500; color: var(--ink); }
+  .nav-top:hover, .nav-top[aria-expanded='true'], .nav-top.is-current { background: var(--line-soft); }
+  .nav-sub { display: none; position: absolute; left: 0; top: calc(100% + 6px); min-width: 280px; list-style: none; margin: 0; padding: 8px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); }
+  .nav-top[aria-expanded='true'] + .nav-sub { display: block; }
+  .nav-sub a { display: block; padding: 9px 12px; border-radius: 10px; color: var(--ink); text-decoration: none; }
+  .nav-sub a:hover, .nav-sub a[aria-current='page'] { background: var(--sky-light); }
+  .search-link { order: 1; display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: var(--pill); color: var(--ink); }
+  .search-link:hover { background: var(--line-soft); color: var(--ink); }
+  .search-link .icon { width: 19px; height: 19px; }
+  .menu-toggle { display: none; align-items: center; gap: 8px; padding: 10px 14px; border-radius: var(--pill); border: 1px solid var(--line); background: var(--panel); font-weight: 600; }
+  @media (max-width: 1020px) {
+    .menu-toggle { display: inline-flex; }
+    .search-link { order: 0; }
+    .nav { display: none; width: 100%; flex-direction: column; align-items: stretch; padding-bottom: 8px; }
+    .nav.is-open { display: flex; }
+    .nav > ul { flex-direction: column; }
+    .nav-top { width: 100%; justify-content: space-between; border-radius: 12px; }
+    .nav-sub { position: static; min-width: 0; border: 0; padding: 0 0 6px 12px; }
+    .cta { align-self: flex-start; }
+  }
+</style>
+
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>('.menu-toggle');
+  const nav = document.getElementById('hlavni-menu');
+  toggle?.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!open));
+    nav?.classList.toggle('is-open', !open);
+  });
+  const tops = document.querySelectorAll<HTMLButtonElement>('.nav-top');
+  const closeAll = (except?: HTMLButtonElement) => tops.forEach((b) => { if (b !== except) b.setAttribute('aria-expanded', 'false'); });
+  tops.forEach((b) => b.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const open = b.getAttribute('aria-expanded') === 'true';
+    closeAll(b);
+    b.setAttribute('aria-expanded', String(!open));
+  }));
+  document.addEventListener('click', (e) => { if (!(e.target as HTMLElement).closest('.nav-group')) closeAll(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeAll(); });
+</script>

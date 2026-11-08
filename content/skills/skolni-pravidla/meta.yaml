@@ -19,8 +19,8 @@ puvodni_asistenti:
   gpt: https://chatgpt.com/g/g-6880ff40bee881919ba1526e3df63ee2-asistent-pro-tvorbu-skolnich-pravidel
   gem: https://gemini.google.com/gem/1iQtpTkNr2g3Xihz6AkvUqM5Rg5p9Yq2p?usp=sharing
   systemovy_prompt: https://docs.google.com/document/d/1mYDweoUpqNUM7GTUXpjK3VjuQR6W2ns7GdzG2MHsMJw/edit?usp=sharing
-google_doc: https://docs.google.com/document/d/1jm368kuPSAYuKAy-sKm1vtjoDrHwLWOhxycWMev_30w/edit
-google_slozka: https://drive.google.com/drive/folders/14tYlDmZX09IMruvuCqLNXvGycNK-hFWf
+google_doc: https://docs.google.com/document/d/1k0V9nqvSMF79JxynKbEhDfj7iofULqlyqJwUsuMdV0k/edit
+google_slozka: https://drive.google.com/drive/folders/1nI-WrDOqaLl06FaDfUmlHyOPhuoz5zVl
 autori: [AI dětem]
 metodika:
   - nazev: Jak na AI ve škole – Doporučení pro využívání umělé inteligence na ZŠ a SŠ (NPI ČR, 2025)
@@ -28,4 +28,4 @@ metodika:
 znalosti: []
 vek: dospělí (skills jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-08

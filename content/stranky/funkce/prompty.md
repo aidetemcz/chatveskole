@@ -2,43 +2,17 @@
 title: Prompty
 menu: Funkce
 poradi: 2
-popis: Databáze ověřených promptů pro učitele, vedení škol i žáky — a jak napsat prompt, aby chatbot odpověděl to, co potřebujete.
-aktualizovano: 2026-11-07
+popis: Co je prompt, jak ho napsat, aby chatbot odpověděl dobře, a kdy místo promptu použít skill. Na konci odkaz na katalog ověřených promptů.
+tlacitko: { text: Přejít na Katalog promptů, href: /prompty }
+aktualizovano: 2026-11-08
 stav: koncept
 ---
 
-# Prompty
+## Co je prompt
 
 Prompt je zadání, které chatbotu napíšete: otázka, pokyn, popis úkolu. Může to být jedno slovo, nebo stránka textu s přiloženými soubory. Čím jasněji a konkrétněji napíšete, co chcete, tím lépe chatbot pochopí, co od něj čekáte.
 
-## Databáze promptů
-
-Prompty stačí zkopírovat do jakéhokoli chatbota a doplnit údaje v hranatých závorkách. Fungují i v bezplatných verzích.
-
-<!-- komponenta: databáze promptů z content/prompty/{pedagogove,zaci,archiv-2024}
-     - přepínač skupin: Pro pedagogy a vedení škol (výchozí) · Pro žáky · Starší prompty (2024)
-     - filtr podle kategorie (kotvy #<kategorie_slug>, např. #formativni-hodnoceni — na ně vedou přesměrování starých kategorií)
-     - karta: název, kategorie, tlačítko Kopírovat, odkaz na detail; pokud má prompt pole skill, štítek „i jako skill“ -->
-
-**Pro pedagogy a vedení škol** — aktualizace materiálů, formativní a slovní hodnocení, komunikace s rodiči, tvorba materiálů do výuky, strategické dokumenty školy.
-
-**Pro žáky** — [10 způsobů využití AI ve výuce](/funkce/prompty/zaci), které jsme připravili s Národním pedagogickým institutem.
-
-**Starší prompty (2024)** — inspirace z první verze databáze: vizualizace, simulace, hry, práce s textem. Chatboti od té doby umí víc, ale nápady fungují dál.
-
-Většina promptů pro pedagogy má i podobu [skillu](/funkce/skills) — u promptu najdete odkaz.
-
 ## Jak napsat dobrý prompt
-
-## Prompt, nebo skill?
-
-| | Prompt | Skill |
-|---|---|---|
-| Co to je | Text, který vložíte do chatu | Uložený návod (soubor SKILL.md), který si chatbot sám použije, když ho potřebuje |
-| Kde funguje | Všude, i v bezplatných verzích a pro žáky | V Claude, Gemini, Copilotu a ChatGPT (v pluginu); většinou jen pro dospělé |
-| Kdy se hodí | Jednorázový úkol, výuka se žáky, vyzkoušení | Úkol, který opakujete — hodnocení, přípravy, zprávy rodičům |
-
-Ke každému [skillu](/skills) na tomto webu najdete i verzi promptu. Začněte promptem, a když se vám osvědčí, nainstalujte si skill.
 
 ### Chatbot jako miliony expertů
 
@@ -106,4 +80,16 @@ Co ve výstupu být nemá.
 - **Pokračujte v konverzaci.** První odpověď je návrh. Řekněte, co upravit: „Zkrať to na polovinu“, „Přidej otázky k diskuzi“, „Udělej verzi pro žáky bez správných odpovědí.“
 - **Přiložte podklady.** Pracovní list, ŠVP, fotku tabule. Nikdy ale nevkládejte jména žáků ani jiné osobní údaje — místo nich používejte iniciály nebo přezdívky.
 
-[Skills (dovednosti) →](/funkce/skills)
+## Prompt, nebo skill?
+
+| | Prompt | Skill |
+|---|---|---|
+| Co to je | Text, který vložíte do chatu | Uložený návod (soubor SKILL.md), který si chatbot sám použije, když ho potřebuje |
+| Kde funguje | Všude, i v bezplatných verzích a pro žáky | V Claude, Gemini, Copilotu a ChatGPT (v pluginu); většinou jen pro dospělé |
+| Kdy se hodí | Jednorázový úkol, výuka se žáky, vyzkoušení | Úkol, který opakujete — hodnocení, přípravy, zprávy rodičům |
+
+Ke každému [skillu](/skills) na tomto webu najdete i verzi promptu. Začněte promptem, a když se vám osvědčí, nainstalujte si skill.
+
+## Katalog promptů
+
+V katalogu najdete ověřené prompty pro učitele, vedení škol i žáky. Zkopírujte prompt do jakéhokoli chatbota a doplňte údaje v hranatých závorkách.

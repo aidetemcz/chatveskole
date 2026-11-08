@@ -2,33 +2,37 @@
 
 Vzor: artefakt **Funkce chatbotů 2027** — [docs/design/vzor-funkce-chatbotu-2027.html](design/vzor-funkce-chatbotu-2027.html) (online: https://claude.ai/artifact/9ZyWLayjYG18oe6knwfvsi). Celý web má vypadat jako tento artefakt: čistý, vzdušný, světlý, s jahodovou a nebeskou barvou AI dětem.
 
+**Schválený návrh stránek (8. 11. 2026):** plátno v Claude Design *Chatboti ve škole – návrh webu* (https://claude.ai/artifact/14EHees2B9uckrw3d9QE4w) — hlavní stránka, katalog skills, detail skillu, katalog promptů, detail promptu, obsahová stránka. Při stavbě se drž tohoto návrhu; pravidla z něj jsou shrnutá níže v části „Pravidla ze schváleného návrhu“.
+
 ## Barvy (design tokeny)
 
-Definovat jako CSS proměnné na `:root`, pro tmavý režim přepsat v `@media (prefers-color-scheme: dark)` a na `:root[data-theme="dark"]`.
+Definovat jako CSS proměnné na `:root` (`src/styles/global.css`). **Web je jen ve světlém režimu** (rozhodnutí 8. 11. 2026) — tmavý režim nepřidávat, ani podle nastavení systému.
 
-| Token | Světlý | Tmavý | Použití |
-|---|---|---|---|
-| `--bg` | `#ffffff` | `#141b22` | pozadí stránky |
-| `--panel` | `#ffffff` | `#1a232c` | karty, tabulky |
-| `--ink` | `#1c2530` | `#e9eff3` | text |
-| `--muted` | `#5f6c79` | `#9eabb7` | vedlejší text, popisky |
-| `--accent` | `#dc5b5b` | `#e57373` | **Jahodová zmrzka** — hlavní akcent, tlačítka, „končí“ |
-| `--accent-strong` | `#c24848` | `#f09393` | odkazy a akcentový text na světlém podkladu |
-| `--accent-soft` | `#fbeeee` | `#3a2427` | podbarvení varování a změn k horšímu |
-| `--on-accent` | `#ffffff` | `#1c1113` | text na akcentu |
-| `--sky` | `#b3cdd6` | `#44626e` | **Nekonečné nebe** — linky, rámečky |
-| `--sky-deep` | `#5f8c9b` | `#93bccb` | nadtitulky (eyebrow), štítky „nové“, ikony |
-| `--sky-light` | `#e3f1f6` | `#1e2f38` | podbarvené panely, změny k lepšímu |
-| `--line` | `#e8edf0` | `#2a3742` | oddělovače |
-| `--line-soft` | `#f1f4f6` | `#212c36` | jemné oddělovače uvnitř tabulek |
+| Token | Hodnota | Použití |
+|---|---|---|
+| `--bg` | `#ffffff` | pozadí stránky |
+| `--panel` | `#ffffff` | karty, tabulky |
+| `--ink` | `#1c2530` | text |
+| `--muted` | `#5f6c79` | vedlejší text, popisky |
+| `--accent` | `#dc5b5b` | **Jahodová zmrzka** — hlavní akcent, tlačítka, „končí“ |
+| `--accent-strong` | `#c24848` | odkazy a akcentový text na světlém podkladu |
+| `--accent-soft` | `#fbeeee` | podbarvení varování a změn k horšímu |
+| `--accent-ink` | `#b23f3f` | text na `--accent-soft` |
+| `--on-accent` | `#ffffff` | text na akcentu |
+| `--sky` | `#b3cdd6` | **Nekonečné nebe** — linky, rámečky |
+| `--sky-deep` | `#5f8c9b` | ikony, dekorace (na text jen velký, kontrast 3,6 : 1) |
+| `--sky-ink` | `#3f6b7a` | text v nebeské barvě (malé nadpisy, štítky) — splňuje 4,5 : 1 i na `--sky-light` |
+| `--sky-light` | `#e3f1f6` | podbarvené panely, změny k lepšímu |
+| `--line` | `#e8edf0` | oddělovače |
+| `--line-soft` | `#f1f4f6` | jemné oddělovače uvnitř tabulek |
 
-Kontrast textu musí splnit WCAG AA (4,5 : 1). `--accent` (#dc5b5b) na bílé nesplňuje pro běžný text — na text používej `--accent-strong`.
+Kontrast textu musí splnit WCAG AA (4,5 : 1). `--accent` (#dc5b5b) na bílé nesplňuje pro běžný text — na text používej `--accent-strong`. **Plná tlačítka mají pozadí `--accent-strong`** (bílý text na `--accent` má jen 3,9 : 1).
 
 ## Písmo
 
 - **Nadpisy:** Space Grotesk 500/600/700, `letter-spacing: -0.01em`, `text-wrap: balance`.
 - **Text:** Inter 400/500/600, 15 px, `line-height: 1.55`.
-- Načítat z Google Fonts s `display=swap`, nebo self-hostovat (lepší pro GDPR — doporučeno).
+- Self-hostované (balíčky `@fontsource/*`), žádné načítání z Google Fonts. Kód promptů: JetBrains Mono.
 
 ## Tvary a rozvržení
 
@@ -42,7 +46,7 @@ Kontrast textu musí splnit WCAG AA (4,5 : 1). `--accent` (#dc5b5b) na bílé ne
 | Komponenta | Třída ve vzoru | Kde se použije |
 |---|---|---|
 | Hlavička s logem (kulaté logo 44 px, název, podtitul) | `.brand` | hlavička webu |
-| Nadtitulek (uppercase, 0.74rem, `--sky-deep`) | `.eyebrow` | nad H1 na všech stránkách (název sekce menu) |
+| Nadtitulek (uppercase, 0.74rem) | `.eyebrow` | jen výjimečně uvnitř sekcí, ne nad H1 (viz pravidla níže) |
 | H1 se zvýrazněným slovem (`<em>` v `--accent-strong`) | `h1 em` | homepage, hlavní stránky sekcí |
 | Panel tří tezí na `--sky-light` | `.shifts` | homepage, Změny 2026, souhrny |
 | Časová osa s „dnes“ | `.tl`, `.today` | Změny 2026 |
@@ -52,13 +56,17 @@ Kontrast textu musí splnit WCAG AA (4,5 : 1). `--accent` (#dc5b5b) na bílé ne
 | Zdroje ve 4 sloupcích | `.sources` | patička stránek s fakty |
 | Patička s podpisem AI dětem | `footer` | celý web |
 
-## Nové komponenty (navrhnout ve stejném stylu)
+## Pravidla ze schváleného návrhu (8. 11. 2026)
 
-- **Karta skillu:** název, krátký popis, štítky (pro koho, sada), tlačítka *Zkopírovat prompt* (accent) a *Stáhnout skill* (obrys sky).
-- **Blok promptu:** šedý panel s textem promptu, tlačítko *Kopírovat* vpravo nahoře, po kliknutí „Zkopírováno“.
-- **Záložky podle nástroje** (Claude / Gemini / Copilot / ChatGPT) — na mobilu jako segmentový přepínač z artefaktu (`.seg`).
-- **Rozbalovací menu** v hlavičce, na mobilu celoobrazovkové.
-- **Upozornění** (info na `--sky-light`, varování na `--accent-soft`).
+- **Hlavička stránky** je jen nadpis (H1), popis a případně tlačítka pod ním. Žádné boxy, štítky ani nadtitulky vedle nebo nad nadpisem; kontext dává drobečková navigace.
+- **Pruhy přes celou šířku:** sekce hlavní stránky i skupiny v katalozích mají podklad přes celou šířku okna (bez rámečku a zaoblení) a střídají se `--sky-light` a `--bg`. Obsah uvnitř je omezený na 1180 px.
+- **Karty:** bílé (`--panel`), zaoblení 18–22 px, rámeček `--sky` na modrém pruhu a `--line` na bílém. Nadpis karty 1,3 rem.
+- **Tlačítka:** hlavní akce = plné tlačítko `--accent-strong` (na stránce nejvýš jedno nebo dvě). Vedlejší akce v kartě: tlačítko s obrysem `--sky` („Detail“) a vedle obyčejný odkaz s ikonou bez pilulky („Kopírovat“, „Stáhnout“).
+- **Katalog skills a katalog promptů** vypadají stejně: nadpis + popis, přepínač ze dvou pilulek *Řadit dle účelu* / *Řadit dle toho, komu slouží* (nic nefiltruje, jen seskupuje), skupiny s nadpisem a počtem, karty ve dvou sloupcích. Na kartě není kategorie ani „pro koho“ — to říká skupina.
+- **Detail skillu:** hlavní akce *Stáhnout skill*, vedlejší *Použít jako prompt*; pod hlavičkou pruh s údaji (sada, pro koho, metodika, autoři, Google Docs, Disk); pořadí sekcí: Co skill umí → Nainstalovat jako skill (záložky podle chatbota) → Použít jako prompt (záložky variant) → Původní asistent.
+- **Blok promptu:** šedý panel (`--line-soft`), písmo JetBrains Mono, tlačítko *Kopírovat* vpravo nahoře, po kliknutí „Zkopírováno“.
+- **Obsahová stránka:** vlevo menu sekce (na mobilu nad obsahem), vpravo text max. 70 znaků na řádek; tabulky v posuvném boxu; info na `--sky-light`, varování na `--accent-soft`.
+- **Hlavní stránka (pořadí pruhů):** Úvod (bílá, s panelem „Co se letos mění“ na `--accent-soft`) → Skills (modrá) → Katalog promptů (bílá) → Chatboti ve výuce s bannerem Tiny, metodikami, doporučeními a boxem Tvorba školních pravidel (modrá) → Pluginy a Vibe coding (bílá) → Metodické materiály (modrá) → Kniha a Novinky v poměru 2 : 1 (bílá).
 
 ## Logo a obrázky
 

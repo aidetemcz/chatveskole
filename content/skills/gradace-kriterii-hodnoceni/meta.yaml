@@ -1,0 +1,28 @@
+title: Gradace kritérií hodnocení (J–Č–T–Ú)
+slug: gradace-kriterii-hodnoceni
+kratky_popis: Ke kritériím hodnocení navrhne gradaci J–Č–T–Ú pro sebehodnocení žáků a sebehodnoticí list „Jak se mi dařilo?“.
+pro_koho: [ucitele]
+sady: [formativni-hodnoceni]
+stitky: [formativní hodnocení, sebehodnocení, J–Č–T–Ú, gradace, Vysvědčení jinak]
+rezimy:
+  - Gradace J–Č–T–Ú
+  - Sebehodnoticí list pro žáky
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/vytvareni-sebehodnotici-skaly-pro-zaky/
+    typ: asistent
+puvodni_asistenti:
+  gpt: https://chatgpt.com/g/g-69046aa5481c8191b8c94e312bebe1a3-asistent-vytvarejici-sebehodnotici-skaly-j-c-t-u
+  gem: https://gemini.google.com/gem/1ifHoOIBy70m8YpqODzZJ08jL8nthyP9c?usp=sharing
+  systemovy_prompt: https://docs.google.com/document/d/14qCxVX-ECOXzHcrRqHVPWplyBXK96LI3nM9Vlh6LbAs/edit?usp=sharing
+google_doc: https://docs.google.com/document/d/1jI9LdW75FiNqdfns18bNraAPYaguHpdB7DNfmhlKuZ8/edit
+google_slozka: https://drive.google.com/drive/folders/10xmfAX7Ne5Arb6l5Isho6kKvOcSRaukN
+autori: [Eva Nečasová (AI dětem)]
+metodika:
+  - nazev: Vysvědčení jinak (PdF MU, Jana Kratochvílová)
+    url: https://vysvedcenijinak.ped.muni.cz/
+  - nazev: Vysvědčení jinak – stupnice hodnocení v teoretických předmětech
+    url: https://vysvedcenijinak.ped.muni.cz/metodika/teoreticke-predmety/stupnice-hodnoceni-v-teoretickych-predmetech
+znalosti: [vysvedceni-jinak-metodika.md]
+vek: dospělí (skills jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-08

@@ -21,8 +21,8 @@ puvodni_asistenti:
   gpt: https://chatgpt.com/g/g-68723b9c9afc819188470dd2e9b17eac-vize-a-mise-skoly
   gem: https://gemini.google.com/gem/1ZDYRdHmHDZPtSgJqbZR2FvaWtnIem2Qw?usp=sharing
   systemovy_prompt: https://docs.google.com/document/d/17NSQ7PsiJsQNBKefkIgtOUJaDg8e7fHbiUx36v9BvDc/edit?usp=sharing
-google_doc: https://docs.google.com/document/d/1arfBmh8D17Fae515nSf0eawsEjwJCnjivpVi7GYHktc/edit
-google_slozka: https://drive.google.com/drive/folders/1khnljfO_-PsrbJe1ppqvTGjXziCF_39B
+google_doc: https://docs.google.com/document/d/1c2MPDXW7omQE9laZaG8F0R8aX8gE4kzyxi7qWV0eIf0/edit
+google_slozka: https://drive.google.com/drive/folders/1872qWtzNRB5EygB4WLc55InQRP3k3_D-
 autori: [AI dětem]
 metodika:
   - nazev: Strategické plánování (NPI ČR, Vedeme školu)
@@ -30,4 +30,4 @@ metodika:
 znalosti: [klicove-kompetence.md]
 vek: dospělí (skills jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-08

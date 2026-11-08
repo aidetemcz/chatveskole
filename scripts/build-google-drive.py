@@ -277,7 +277,7 @@ def main():
             obsah[-1] += f" (skill {load_yaml(SKILLS / x / 'meta.yaml')['title']} je ve složce {umisteni[x][0]})"
         obsah.append("")
     obsah += ["Výstup chatbota je vždy návrh — zkontrolujte ho a upravte. Do chatbota nevkládejte jména žáků "
-              "ani citlivé údaje.", "", f"Web: [{WEB}]({WEB}) · AI dětem, z. ú."]
+              "ani citlivé údaje.", "", f"Web: [{WEB}]({WEB}) · AI dětem, z. s."]
     pandoc("\n".join(obsah) + "\n", UPLOAD / "00 Jak složky používat.docx", ref)
 
     # návod pro tým (nenahrává se)

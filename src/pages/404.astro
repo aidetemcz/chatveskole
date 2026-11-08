@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/url';
+---
+<Base title="Stránka nenalezena" noindex>
+  <div class="band band--white">
+    <div class="wrap page-head">
+      <h1>Stránka nenalezena</h1>
+      <p class="lede">Web Chatboti ve škole jsme přestavěli a některé stránky mají novou adresu. Zkuste hlavní stránku, katalog skills nebo katalog promptů.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px">
+        <a class="btn btn--primary" href={url('/')}>Hlavní stránka</a>
+        <a class="btn btn--outline" href={url('/skills')}>Katalog skills</a>
+        <a class="btn btn--outline" href={url('/prompty')}>Katalog promptů</a>
+      </div>
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,39 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import Base from '../../../../layouts/Base.astro';
+import Crumbs from '../../../../components/Crumbs.astro';
+import PromptCard from '../../../../components/PromptCard.astro';
+import TinyTabulka from '../../../../components/data/TinyTabulka.astro';
+import { url } from '../../../../lib/url';
+import { promptText } from '../../../../lib/data';
+
+const uvod = (await getEntry('promptyUvod', 'zaci/_index'))!;
+const { Content } = await render(uvod);
+const zaci = (await getCollection('prompty')).filter((p) => p.id.startsWith('zaci/')).sort((a, b) => a.data.title.localeCompare(b.data.title, 'cs'));
+---
+<Base title={uvod.data.title} description={uvod.data.popis}>
+  <div class="band band--white" style="padding-bottom: 32px">
+    <div class="wrap stack" style="gap: 24px">
+      <Crumbs items={[{ title: 'Katalog promptů', href: '/prompty' }, { title: uvod.data.title }]} />
+      <header class="page-head">
+        <h1>{uvod.data.title}</h1>
+        <p class="lede">{uvod.data.popis}</p>
+      </header>
+    </div>
+  </div>
+  <section class="band band--sky" aria-label="Prompty pro žáky">
+    <div class="wrap grid-2">
+      {zaci.map((p) => <PromptCard title={p.data.title} href={`/funkce/prompty/zaci/${p.id.split('/')[1]}`} text={promptText(p.body ?? '')} id={`zaci-${p.id.split('/')[1]}`} />)}
+    </div>
+  </section>
+  <div class="band band--white">
+    <div class="wrap stack" style="gap: 28px">
+      <div class="prose"><Content /></div>
+      <section class="stack" style="gap: 12px; max-width: 72ch" aria-labelledby="tiny-h">
+        <h2 id="tiny-h" style="font-size: 1.5rem">Prompty a chatboti v Tiny</h2>
+        <p style="color: var(--muted)">Žáci pod věkovou hranicí chatbotů mohou stejné způsoby práce vyzkoušet v aplikaci <a href={url('/ve-vyuce/tiny')}>Tiny</a>.</p>
+        <TinyTabulka />
+      </section>
+    </div>
+  </div>
+</Base>

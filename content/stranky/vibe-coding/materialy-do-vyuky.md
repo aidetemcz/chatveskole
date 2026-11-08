@@ -31,7 +31,7 @@ souvisejici_prompty:   # původní prompty z kategorií Vizualizace a Různé (2
 
 ## Osm zadání pro učitele
 
-Dřív jsme v [databázi promptů](/funkce/prompty#vizualizace) radili, jak nechat chatbota napsat kód pro graf a vložit ho do jiné aplikace. Dnes chatbot graf rovnou postaví a vy s ním můžete klikat. Zadání vložte do Gemini Canvas nebo Claude a upravte podle sebe.
+Dřív jsme v [databázi promptů](/funkce/prompty/graf-regiony) radili, jak nechat chatbota napsat kód pro graf a vložit ho do jiné aplikace. Dnes chatbot graf rovnou postaví a vy s ním můžete klikat. Zadání vložte do Gemini Canvas nebo Claude a upravte podle sebe.
 
 ### Interaktivní časová osa (dějepis, zeměpis)
 

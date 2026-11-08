@@ -1,0 +1,19 @@
+---
+// Tabulka: žákovský prompt → chatbot v aplikaci Tiny (frontmatter content/prompty/zaci/*.md, pole tiny_chatbot)
+import { getCollection } from 'astro:content';
+import { url } from '../../lib/url';
+const zaci = (await getCollection('prompty')).filter((p) => p.id.startsWith('zaci/')).sort((a, b) => a.data.title.localeCompare(b.data.title, 'cs'));
+---
+<div class="prose" style="max-width: none">
+  <table>
+    <thead><tr><th scope="col">Prompt pro žáky</th><th scope="col">Chatbot v Tiny</th></tr></thead>
+    <tbody>
+      {zaci.map((p) => (
+        <tr>
+          <td><a href={url(`/funkce/prompty/zaci/${p.id.split('/')[1]}`)}>{p.data.title}</a></td>
+          <td>{p.data.tiny_chatbot ?? '—'}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

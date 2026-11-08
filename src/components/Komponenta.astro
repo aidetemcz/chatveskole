@@ -1,0 +1,22 @@
+---
+// Datová komponenta podle značky <!-- komponenta: … --> v Markdownu (viz src/lib/komponenty.ts)
+import type { Klic } from '../lib/komponenty';
+import Cenik from './data/Cenik.astro';
+import SadySkills from './data/SadySkills.astro';
+import PluginyKarty from './data/PluginyKarty.astro';
+import TinyTabulka from './data/TinyTabulka.astro';
+import CasovaOsa from './data/CasovaOsa.astro';
+import MaticeFunkci from './data/MaticeFunkci.astro';
+import KartyNastroju from './data/KartyNastroju.astro';
+import ZdrojeNastroju from './data/ZdrojeNastroju.astro';
+interface Props { klic: Klic }
+const { klic } = Astro.props;
+---
+{klic === 'cenik' && <Cenik />}
+{klic === 'sady-skills' && <SadySkills />}
+{klic === 'pluginy' && <PluginyKarty />}
+{klic === 'tiny' && <TinyTabulka />}
+{klic === 'casova-osa' && <CasovaOsa />}
+{klic === 'matice' && <MaticeFunkci />}
+{klic === 'karty-nastroju' && <KartyNastroju />}
+{klic === 'zdroje-nastroju' && <ZdrojeNastroju />}

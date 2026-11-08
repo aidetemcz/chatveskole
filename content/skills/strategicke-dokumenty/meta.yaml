@@ -28,8 +28,8 @@ puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/swot-analyza/
     typ: prompt
 puvodni_asistenti: {}
-google_doc: https://docs.google.com/document/d/1OOxAC-Fz78WICfe4AgQYN57SAG4JS1PseMHmPUJ1HVw/edit
-google_slozka: https://drive.google.com/drive/folders/1Okv2DfsPYl_cU-HuZvF6OF2jEWrh7hji
+google_doc: https://docs.google.com/document/d/1RwNaT2_ND4qc7gzWBT5EGJr8DBsIg-WKzb9mjnrMpLs/edit
+google_slozka: https://drive.google.com/drive/folders/1oXr0RKTC8j01hPRBlr9fszK7wEbsB0qY
 autori: [AI dětem]
 metodika:
   - nazev: Strategické plánování (NPI ČR, Vedeme školu)
@@ -39,4 +39,4 @@ metodika:
 znalosti: []
 vek: dospělí (skills jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-08

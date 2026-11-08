@@ -1,0 +1,26 @@
+{
+  "name": "chatveskole",
+  "private": true,
+  "type": "module",
+  "description": "Web Chatboti ve škole (chatveskole.cz) — AI dětem, z. s.",
+  "scripts": {
+    "predev": "node scripts/build-downloads.mjs",
+    "dev": "astro dev",
+    "prebuild": "node scripts/build-downloads.mjs",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "node scripts/check-links.mjs && python3 scripts/check-skills.py",
+    "postbuild": "node scripts/po-buildu.mjs && pagefind --site dist"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/jetbrains-mono": "^5.2.8",
+    "@fontsource/space-grotesk": "^5.2.10",
+    "astro": "5.18.2",
+    "fflate": "^0.8.2",
+    "yaml": "^2.8.1"
+  },
+  "devDependencies": {
+    "pagefind": "^1.4.0"
+  }
+}

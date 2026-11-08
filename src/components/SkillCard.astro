@@ -1,0 +1,15 @@
+---
+import Icon from './Icon.astro';
+import { url } from '../lib/url';
+import { ZIP, type Skill } from '../lib/data';
+interface Props { skill: Skill }
+const { skill } = Astro.props;
+---
+<article class="card">
+  <h3><a href={url(`/skills/${skill.slug}`)}>{skill.title}</a></h3>
+  <p>{skill.kratky_popis}</p>
+  <div class="actions" data-pagefind-ignore>
+    <a class="btn btn--outline btn--small" href={url(`/skills/${skill.slug}`)}>Detail</a>
+    <a class="linkbtn" href={url(ZIP.skill(skill.slug))} download><Icon name="download" />Stáhnout</a>
+  </div>
+</article>

@@ -11,11 +11,11 @@ puvodni_asistenti:
   gpt: https://chatgpt.com/g/g-69b93abbb5388191a0097465df684ee0-asistent-reditele
   gem: https://gemini.google.com/gem/1zBbC1kfE9GlZF3uiqbFCRSpu0n5WUPxw?usp=sharing
   systemovy_prompt: https://docs.google.com/document/d/1S0ozcqPkcF2gL3HjDqZMRs24hYMg4GlfrhnyJlCe0gg/edit?usp=sharing
-google_doc: https://docs.google.com/document/d/19bCRu39BUgojbsqiFgIM-you5ItsEY3rDuAHZpj55JA/edit
-google_slozka: https://drive.google.com/drive/folders/14TTe3wJ0ZSDWWHgJ-XOxEBYUT8L7jfiC
+google_doc: https://docs.google.com/document/d/1W1qLlklJ5DK4-R_Jd6vTLa7K1jIcG5Jq5eIOOBBucfY/edit
+google_slozka: https://drive.google.com/drive/folders/12IyBwvIsF5rkFUyExv2lpamRsWDzIlCC
 autori: [AI dětem]   # doplnit jména autorů asistenta
 metodika: []
 znalosti: []
 vek: dospělí (skills jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-08

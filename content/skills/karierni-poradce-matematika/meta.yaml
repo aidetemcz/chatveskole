@@ -1,0 +1,20 @@
+title: Kariérní poradce – matematika
+slug: karierni-poradce-matematika
+kratky_popis: Pomůže žákům 8. a 9. ročníku vybrat povolání a ukáže, jak v něm využijí matematiku.
+pro_koho: [ucitele]
+sady: [priprava-vyuky]
+stitky: [matematika, kariérní poradenství, volba povolání, Kurikulum AI, žáci]
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/karierni-poradce-se-zamerenim-na-matematiku/
+    typ: asistent
+puvodni_asistenti:
+  gpt: https://chatgpt.com/g/g-tpHY1HiGh-karierni-poradce-se-zamerenim-na-matematiku
+google_doc: https://docs.google.com/document/d/1lbj2cC8Z_T_b34AKIlJFR3jx9eG0o8HVTwhY0ycN1Qo/edit
+google_slozka: https://drive.google.com/drive/folders/1a4lhmY5I3qOVEzlSC09iSPx6dOvnhTTM
+autori: [AI dětem]          # ověřit autorství
+metodika:
+  - nazev: Kurikulum umělé inteligence – Matematika pro život (AI dětem)
+    url: https://kurikulum.aidetem.cz/metodicke-materialy/matematika-pro-zivot/
+vek: chatbot pro žáky 8. a 9. ročníku (13+); skills jsou v Gemini a Claude 18+, se žáky použijte prompt nebo aplikaci Tiny
+stav: koncept
+aktualizovano: 2026-11-08

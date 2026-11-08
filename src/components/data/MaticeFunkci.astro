@@ -1,0 +1,125 @@
+---
+// Matice funkce × nástroje z data/funkce-chatbotu.yaml: kulička dnes → 2027, podbarvené změny.
+// Na úzké obrazovce se zobrazí jen jeden nástroj (přepínač z přepínacích tlačítek bez JavaScriptu).
+import { funkceChatbotu as F, datumCesky, type StavFunkce } from '../../lib/data';
+const KULICKA: Record<StavFunkce, string> = { ano: 'full', omezene: 'half', ne: 'none' };
+const ZMENA: Record<string, string> = { down: 'ubývá', up: 'přibývá', same: '' };
+const stavK = datumCesky(F.stav_k);
+---
+<div class="matice-wrap">
+  <div class="legend">
+    {(['ano', 'omezene', 'ne'] as StavFunkce[]).map((s) => <span class="i"><span class:list={['ball', KULICKA[s]]}></span>{F.stavy[s]}</span>)}
+    <span class="i"><span class="ball half"></span><span class="arrow"></span><span class="ball half"></span>dnes → 2027</span>
+  </div>
+
+  {F.nastroje.map((n, i) => <input type="radio" class="tool-radio" name="matice-nastroj" id={`mt-${n.id}`} checked={i === 0} aria-label={n.nazev} />)}
+  <div class="mseg" aria-hidden="true">
+    {F.nastroje.map((n) => <label for={`mt-${n.id}`}>{n.nazev}</label>)}
+  </div>
+
+  <div class="matrix" role="table" aria-label="Funkce chatbotů dnes a v roce 2027">
+    <div class="mrow mhead" role="row">
+      <div class="rowlabel" role="columnheader"><span class="legend-inline">Funkce</span></div>
+      {F.nastroje.map((n) => (
+        <div class="hcell" role="columnheader">
+          <span class="h-name">{n.nazev}</span>
+          <span class="h-maker">{n.vyrobce}</span>
+          <span class="h-shift">{n.posun}</span>
+        </div>
+      ))}
+    </div>
+    {F.matice.map((r) => (
+      <div class="mrow" role="row">
+        <div class="rowlabel" role="rowheader">
+          <span class="r-title">{r.funkce}</span>
+          <span class="r-sub">{r.popis}</span>
+        </div>
+        {F.nastroje.map((n) => {
+          const c = r.nastroje[n.id];
+          if (!c) return <div class="cell" role="cell"></div>;
+          return (
+            <div class:list={['cell', `c-${n.id}`, c.zmena !== 'same' && c.zmena]} role="cell">
+              <span class="sr-only">{n.nazev}: dnes {F.stavy[c.dnes]}, v roce 2027 {F.stavy[c['2027']]}{ZMENA[c.zmena] ? ` (${ZMENA[c.zmena]})` : ''}.</span>
+              <div class="state" aria-hidden="true">
+                <span class:list={['ball', KULICKA[c.dnes]]}></span><span class="arrow"></span><span class:list={['ball', KULICKA[c['2027']]]}></span>
+                {c.stitek && <span class:list={['badge', c.stitek === 'končí' ? 'badge--end' : 'badge--sky']}>{c.stitek}</span>}
+              </div>
+              <span class="cell-name">{c.nazev}</span>
+              <span class="cell-note">{c.poznamka}</span>
+            </div>
+          );
+        })}
+      </div>
+    ))}
+  </div>
+  <p class="method">První kulička ukazuje stav k {stavK}, druhá výhled na rok 2027. {F.poznamka}</p>
+</div>
+
+<style>
+  .matice-wrap { display: flex; flex-direction: column; gap: 16px; }
+  .ball { width: 15px; height: 15px; border-radius: 50%; border: 2px solid var(--sky-deep); display: inline-block; flex-shrink: 0; background: transparent; }
+  .ball.full { background: var(--sky-deep); }
+  .ball.half { background: linear-gradient(90deg, var(--sky-deep) 50%, transparent 50%); }
+  .ball.none { border-color: var(--muted); opacity: 0.55; }
+  .arrow { display: inline-block; width: 14px; height: 2px; background: var(--sky); position: relative; flex-shrink: 0; margin-right: 3px; }
+  .arrow::after { content: ''; position: absolute; right: -3px; top: -3px; border-left: 6px solid var(--sky); border-top: 4px solid transparent; border-bottom: 4px solid transparent; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 0.86rem; align-items: center; }
+  .legend .i { display: inline-flex; align-items: center; gap: 7px; }
+  .tool-radio, .mseg { display: none; }
+  .matrix { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg); }
+  .mrow { display: grid; grid-template-columns: minmax(150px, 0.78fr) repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+  .mrow.mhead { border-top: none; position: sticky; top: 0; z-index: 3; background: var(--panel); border-radius: var(--radius-lg) var(--radius-lg) 0 0; border-bottom: 2px solid var(--sky); }
+  .mrow.mhead + .mrow { border-top: none; }
+  .mrow > * { padding: 14px; min-width: 0; }
+  .mrow > * + * { border-left: 1px solid var(--line-soft); }
+  .rowlabel { display: flex; flex-direction: column; gap: 3px; }
+  .r-title { font-family: var(--fh); font-weight: 600; font-size: 0.98rem; line-height: 1.25; }
+  .r-sub { font-size: 0.78rem; color: var(--muted); line-height: 1.4; }
+  .legend-inline { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-top: auto; }
+  .hcell { display: flex; flex-direction: column; gap: 1px; }
+  .h-name { font-family: var(--fh); font-weight: 700; font-size: 1.12rem; line-height: 1.2; }
+  .h-maker { font-size: 0.76rem; color: var(--muted); }
+  .h-shift { font-size: 0.8rem; color: var(--sky-ink); font-weight: 500; margin-top: 4px; line-height: 1.3; }
+  .cell { display: flex; flex-direction: column; gap: 5px; }
+  .state { display: flex; align-items: center; gap: 5px; min-height: 20px; flex-wrap: wrap; }
+  .state .badge { margin-left: 4px; }
+  .cell-name { font-weight: 600; font-size: 0.88rem; line-height: 1.3; overflow-wrap: anywhere; }
+  .cell-note { font-size: 0.78rem; color: var(--muted); line-height: 1.45; overflow-wrap: anywhere; }
+  .cell.down { background: var(--accent-soft); }
+  .cell.down .arrow { background: var(--accent); }
+  .cell.down .arrow::after { border-left-color: var(--accent); }
+  .cell.down .ball.none { border-color: var(--accent); opacity: 1; }
+  .cell.up { background: var(--sky-light); }
+  .cell.up .arrow { background: var(--sky-deep); }
+  .cell.up .arrow::after { border-left-color: var(--sky-deep); }
+  .mrow:last-child > :first-child { border-bottom-left-radius: var(--radius-lg); }
+  .mrow:last-child > :last-child { border-bottom-right-radius: var(--radius-lg); }
+  .method { font-size: 0.84rem; color: var(--muted); max-width: 86ch; }
+
+  @media (max-width: 860px) {
+    .tool-radio { display: block; position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+    .mseg { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; position: sticky; top: 0; z-index: 4; background: var(--sky-light); padding-block: 8px; }
+    .mseg label { text-align: center; font-family: var(--fh); font-weight: 600; font-size: 0.86rem; padding: 9px 4px; border: 1px solid var(--line); border-radius: var(--pill); cursor: pointer; background: var(--panel); }
+    #mt-chatgpt:checked ~ .mseg label[for='mt-chatgpt'],
+    #mt-gemini:checked ~ .mseg label[for='mt-gemini'],
+    #mt-copilot:checked ~ .mseg label[for='mt-copilot'],
+    #mt-claude:checked ~ .mseg label[for='mt-claude'] { background: var(--accent-strong); border-color: var(--accent-strong); color: var(--on-accent); }
+    #mt-chatgpt:focus-visible ~ .mseg label[for='mt-chatgpt'],
+    #mt-gemini:focus-visible ~ .mseg label[for='mt-gemini'],
+    #mt-copilot:focus-visible ~ .mseg label[for='mt-copilot'],
+    #mt-claude:focus-visible ~ .mseg label[for='mt-claude'] { outline: 2px solid var(--ink); outline-offset: 2px; }
+    .mrow { grid-template-columns: 1fr; }
+    .mrow.mhead { display: none; }
+    .mrow > * + * { border-left: none; }
+    .mrow > * { padding: 12px 16px; }
+    .rowlabel { padding-bottom: 4px !important; }
+    .cell, .hcell { display: none; }
+    .cell { padding-top: 4px !important; }
+    #mt-chatgpt:checked ~ .matrix .c-chatgpt,
+    #mt-gemini:checked ~ .matrix .c-gemini,
+    #mt-copilot:checked ~ .matrix .c-copilot,
+    #mt-claude:checked ~ .matrix .c-claude { display: flex; }
+    .cell.down, .cell.up { margin: 0 8px 8px; border-radius: var(--radius); padding: 10px 12px !important; }
+    .mrow:last-child > :first-child { border-radius: 0; }
+  }
+</style>
