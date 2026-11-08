@@ -112,7 +112,7 @@ def make_reference_docx(path):
     from docx.shared import Pt, RGBColor
     doc = Document(str(path))
     by_name = {s.name: s for s in doc.styles}
-    colors = {"Title": "1C2530", "Heading 1": "1C2530", "Heading 2": "C24848",
+    colors = {"Title": "1C2530", "Heading 1": "1C2530", "Heading 2": "DC5B5B",
               "Heading 3": "1C2530", "Heading 4": "5F8C9B", "Heading 5": "1C2530", "Heading 6": "5F6C79"}
     sizes = {"Title": 24, "Heading 1": 20, "Heading 2": 16, "Heading 3": 14,
              "Heading 4": 12, "Heading 5": 11, "Heading 6": 11}

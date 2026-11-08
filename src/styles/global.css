@@ -5,8 +5,8 @@
   --ink: #1c2530;
   --muted: #5f6c79;
   --accent: #dc5b5b;
-  --accent-strong: #c24848;
-  --accent-ink: #b23f3f;
+  --accent-strong: #dc5b5b; /* jedna červená na celém webu (rozhodnutí 8. 11. 2026) */
+  --accent-ink: #dc5b5b;
   --accent-soft: #fbeeee;
   --on-accent: #ffffff;
   --sky: #b3cdd6;

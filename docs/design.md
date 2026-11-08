@@ -15,9 +15,9 @@ Definovat jako CSS proměnné na `:root` (`src/styles/global.css`). **Web je jen
 | `--ink` | `#1c2530` | text |
 | `--muted` | `#5f6c79` | vedlejší text, popisky |
 | `--accent` | `#dc5b5b` | **Jahodová zmrzka** — hlavní akcent, tlačítka, „končí“ |
-| `--accent-strong` | `#c24848` | odkazy a akcentový text na světlém podkladu |
+| `--accent-strong` | `#dc5b5b` | tlačítka, odkazy a akcentový text (od 8. 11. 2026 stejná jako `--accent`) |
 | `--accent-soft` | `#fbeeee` | podbarvení varování a změn k horšímu |
-| `--accent-ink` | `#b23f3f` | text na `--accent-soft` |
+| `--accent-ink` | `#dc5b5b` | text na `--accent-soft` (od 8. 11. 2026 stejná jako `--accent`) |
 | `--on-accent` | `#ffffff` | text na akcentu |
 | `--sky` | `#b3cdd6` | **Nekonečné nebe** — linky, rámečky |
 | `--sky-deep` | `#5f8c9b` | ikony, dekorace (na text jen velký, kontrast 3,6 : 1) |
@@ -26,7 +26,7 @@ Definovat jako CSS proměnné na `:root` (`src/styles/global.css`). **Web je jen
 | `--line` | `#e8edf0` | oddělovače |
 | `--line-soft` | `#f1f4f6` | jemné oddělovače uvnitř tabulek |
 
-Kontrast textu musí splnit WCAG AA (4,5 : 1). `--accent` (#dc5b5b) na bílé nesplňuje pro běžný text — na text používej `--accent-strong`. **Plná tlačítka mají pozadí `--accent-strong`** (bílý text na `--accent` má jen 3,9 : 1).
+**Červená je na celém webu jen jedna: #DC5B5B** (barva AI dětem, Evino rozhodnutí 8. 11. 2026). Tokeny `--accent-strong` a `--accent-ink` zůstávají kvůli kódu, ale mají stejnou hodnotu. Pozor: červený text na bílé i bílý text na červené má kontrast 3,9 : 1, WCAG AA chce pro běžný text 4,5 : 1 (velký text 3 : 1 splňuje). Když bude potřeba AA splnit, stačí tmavší odstín jen pro drobný text (odkazy, štítky), např. #C24848.
 
 ## Písmo
 
@@ -68,7 +68,7 @@ Kontrast textu musí splnit WCAG AA (4,5 : 1). `--accent` (#dc5b5b) na bílé ne
 - **Detail skillu:** hlavní akce *Stáhnout skill*, vedlejší *Použít jako prompt*; pod hlavičkou pruh s údaji (sada, pro koho, metodika, autoři, Google Docs, Disk); pořadí sekcí: Co skill umí → Nainstalovat jako skill (záložky podle chatbota) → Použít jako prompt (záložky variant) → Původní asistent.
 - **Blok promptu:** šedý panel (`--line-soft`), písmo JetBrains Mono, tlačítko *Kopírovat* vpravo nahoře, po kliknutí „Zkopírováno“.
 - **Obsahová stránka:** vlevo menu sekce (na mobilu nad obsahem), vpravo text max. 70 znaků na řádek; tabulky v posuvném boxu; info na `--sky-light`, varování na `--accent-soft`.
-- **Hlavní stránka (pořadí pruhů, úprava 8. 11. 2026):** Hero na `--accent` (#DC5B5B, barva AI dětem — Evino rozhodnutí; bílý běžný text na ní má kontrast jen 3,9 : 1) s odsazením 150 px nahoře i dole, bílý text, vpravo lehce pootočené kolečko 154 px (`--sky-light`, červený text, tři řádky „Změny ve / funkcích chatbotů / v roce 2026“, bez šipky) s odkazem na `/funkce/zmeny-2026` → Skills (bílá) → Katalog promptů (modrá) → Chatboti ve výuce s bannerem Tiny, metodikami, doporučeními a boxem Tvorba školních pravidel (bílá) → Pluginy a Vibe coding (modrá) → Metodické materiály (bílá) → Kniha a Novinky v poměru 2 : 1 (modrá).
+- **Hlavní stránka (pořadí pruhů, úprava 8. 11. 2026):** Hero na `--accent` (#DC5B5B, barva AI dětem — Evino rozhodnutí; bílý běžný text na ní má kontrast jen 3,9 : 1) s odsazením 150 px nahoře i dole, bílý text, vpravo lehce pootočené kolečko 172 px (`--sky-light`, červený text 15 px jako v tlačítkách, tři řádky „Změny ve / funkcích chatbotů / v roce 2026“, bez šipky) zarovnané dole s tlačítky, s odkazem na `/funkce/zmeny-2026` → Skills (bílá) → Katalog promptů (modrá) → Chatboti ve výuce s bannerem Tiny, metodikami, doporučeními a boxem Tvorba školních pravidel (bílá) → Pluginy a Vibe coding (modrá) → Metodické materiály (bílá) → Kniha a Novinky v poměru 2 : 1 (modrá).
 
 ## Logo a obrázky
 

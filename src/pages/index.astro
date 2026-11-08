@@ -171,7 +171,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
 <style>
   /* hero: červený pás, dvojnásobné odsazení, bílý text */
   .hero { background: var(--accent); color: #fff; padding: 150px 0; }
-  .hero-in { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px 56px; }
+  .hero-in { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 40px 56px; }
   .hero-text { flex: 1 1 520px; }
   .hero h1 { font-size: clamp(2.2rem, 4.6vw, 3.4rem); max-width: 14ch; color: #fff; }
   .hero h1 em { color: var(--sky-light); }
@@ -183,7 +183,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
   .hero .btn--outline:hover { background: rgba(255, 255, 255, 0.14); color: #fff; }
   .hero :focus-visible { outline-color: #fff; }
   /* kolečko „Změny ve funkcích chatbotů“ — lehce pootočené doprava */
-  .sticker { flex: none; width: 154px; height: 154px; border-radius: 50%; background: var(--sky-light); color: var(--accent-ink); display: flex; align-items: center; justify-content: center; padding: 40px 6px; text-align: center; text-decoration: none; font-family: var(--fh); font-weight: 700; font-size: 0.86rem; line-height: 1.25; white-space: nowrap; transform: rotate(8deg); transition: transform 0.2s ease; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); margin-right: 12px; }
+  .sticker { flex: none; width: 172px; height: 172px; border-radius: 50%; background: var(--sky-light); color: var(--accent-ink); display: flex; align-items: center; justify-content: center; padding: 40px 6px; text-align: center; text-decoration: none; font-family: var(--fh); font-weight: 700; font-size: 15px; line-height: 1.25; white-space: nowrap; transform: rotate(8deg); transition: transform 0.2s ease; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); margin-right: 12px; }
   .sticker:hover { color: var(--accent-ink); transform: rotate(3deg) scale(1.04); }
   @media (max-width: 640px) {
     .hero { padding: 117px 0; }
