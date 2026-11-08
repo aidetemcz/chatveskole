@@ -14,8 +14,8 @@ puvodni_obsah:
 puvodni_asistenti:
   gpt: https://chatgpt.com/g/g-6a215e79611c8191a7ecbe07c7253cf7-ai-gramotnost-v-rvp-a-svp
   # systémový prompt v Google Docs zatím neexistuje
-google_doc: https://docs.google.com/document/d/17cFTBieSCfpGCJ8swpA6ucRuPFj6DpnuB9igrJ8tUio/edit
-google_slozka: https://drive.google.com/drive/folders/1Ywha8uPIPR76S_llsJXkTTr2aDhSjd8Z
+google_doc: https://docs.google.com/document/d/1Jbi75Gs7o-RvWOtS-N-dih7uY8UotXrO0u8MFfMU1eI/edit
+google_slozka: https://drive.google.com/drive/folders/1vQgbbVvqb50qX4CfWIWZtdg8iGDMVSZo
 autori: [AI dětem]   # doplnit jména autorů asistenta
 metodika:
   - nazev: Kompetenční model Kurikula umělé inteligence pro ZŠ a SŠ (AI dětem ve spolupráci s NPI ČR)
@@ -23,4 +23,4 @@ metodika:
 znalosti: [klicove-kompetence.md, prurezova-temata.md]
 vek: dospělí (skills jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-08

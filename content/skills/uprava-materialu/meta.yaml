@@ -29,8 +29,8 @@ puvodni_obsah:
     typ: prompt
   - url: https://chatveskole.cz/databaze-promptu/prace-s-textem-shrnuti/
     typ: prompt
-google_doc: https://docs.google.com/document/d/1WtIuPQddEZsCLTHfvucx9nYQ9KrEMGlTCApDyjbAIqQ/edit
-google_slozka: https://drive.google.com/drive/folders/1oKSp_IJAhUfcXM-jVnlAddKQizn2_980
+google_doc: https://docs.google.com/document/d/14C3PtV0eh4LRUWAhi9pV0u-OJpVANwv895V1YoggmFk/edit
+google_slozka: https://drive.google.com/drive/folders/1bQWAA57MxNdafjTF9PWbw_jinK39O_sS
 autori: [Eva Nečasová (AI dětem), AI reaktor UJEP (Míša Liegertová)]
 metodika:
   - nazev: Klasifikace speciálních vzdělávacích potřeb podle MŠMT
@@ -39,4 +39,4 @@ metodika:
 znalosti: [jedinci-se-specialnimi-vzdelavacimi-potrebami.md]
 vek: dospělí (skills jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-08

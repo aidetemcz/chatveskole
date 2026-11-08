@@ -5,19 +5,19 @@
   title: Formativní hodnocení
   popis: Od vzdělávacího cíle přes kritéria a sebehodnocení až ke slovnímu hodnocení. Postaveno na metodice Vysvědčení jinak (PdF MU).
   pro_koho: [ucitele]
-  skills: [vzdelavaci-cile, kriteria-hodnoceni, slovni-hodnoceni]
+  skills: [vzdelavaci-cile, kriteria-hodnoceni, slovni-hodnoceni, gradace-klicovych-kompetenci]
 
 - slug: priprava-vyuky
   title: Příprava výuky
   popis: Nápady na hodiny, pracovní listy, úpravy materiálů pro různé žáky a aktivity, ve kterých s chatbotem pracují sami žáci.
   pro_koho: [ucitele]
-  skills: [didakticky-radce, pracovni-listy, uprava-materialu, aktivity-s-chatbotem, rozvoj-mysleni]
+  skills: [didakticky-radce, pracovni-listy, uprava-materialu, aktivity-s-chatbotem, rozvoj-mysleni, hadej-chemicky-prvek, karierni-poradce-matematika]
 
 - slug: komunikace-a-podpora-ucitele
   title: Komunikace a podpora učitele
   popis: Zprávy rodičům, jazyková kontrola textů a mentor pro náročné situace ve třídě.
   pro_koho: [ucitele, vedeni]
-  skills: [komunikace-s-rodici, jazykovy-korektor, ucitelsky-mentor]
+  skills: [komunikace-s-rodici, jazykovy-korektor, ucitelsky-mentor, lepsi-tridni-klima]
 
 - slug: vedeni-skoly
   title: Vedení školy

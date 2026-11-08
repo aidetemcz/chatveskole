@@ -12,7 +12,7 @@
 
 ## Blokují stavbu webu
 
-4. **Sdílení složek na Disku:** systémové prompty a data všech 18 skills jsou od 7. 11. 2026 na sdíleném disku ve složce *Zdroje k stažení*, znalostní soubory zkopírované do složek Data, odkazy v `meta.yaml` (`google_doc`, `google_slozka`, přehled v `migrace/google-drive.json`). Zbývá nastavit sdílení „Kdokoli s odkazem – čtenář“ (teď je složka soukromá) a smazat z ní *Návod pro nahrání na Disk*, který je jen pro tým.
+4. **Sdílení složek na Disku:** od 8. 11. 2026 je místem pravdy složka *Skills* na sdíleném disku (https://drive.google.com/drive/folders/1AZy-XZ4PYPWCCB-LVVwy96FfQ2i1G4Ai) — 22 skills, u každého dokument se systémovým promptem a Data. Odkazy v `meta.yaml` (`google_doc`, `google_slozka`, u kritérií a slovního hodnocení i `google_dalsi`), přehled v `migrace/google-drive.json`. Ověřit, že je složka sdílená „Kdokoli s odkazem – čtenář“. Starší složka *Zdroje k stažení* se už nepoužívá.
 
 ## Obsah
 
@@ -31,6 +31,9 @@
 15. **Claude Free a sdílení artefaktů odkazem:** nápověda je po přechodu na nové artefakty nejasná (nově jen Pro a vyšší?). Vyzkoušet.
 
 ## Skills a pluginy
+
+38. **Nové skills z 8. 11. 2026** (Lepší třídní klima, Gradace klíčových kompetencí, Hádej chemický prvek, Kariérní poradce – matematika): autoři jsou zapsaní jako „AI dětem“ — doplnit skutečné autory. Zařazení do sad je návrh: gradace → Formativní hodnocení, klima → Komunikace a podpora učitele, chemie a kariérní poradce → Příprava výuky. Hádej chemický prvek a Kariérní poradce jsou chatboti pro žáky (12–15, 13+), skills jsou ale v Gemini a Claude 18+ — na webu proto zdůrazňujeme prompt a Tiny (souvisí s bodem 19).
+39. **SKILL.md vs. dokument na Disku:** dokumenty v nové složce Skills nejsou vždy totožné se `SKILL.md` na webu (např. 01 Formulace vzdělávacích cílů je kratší). Má se `SKILL.md` převzít z Disku, nebo naopak?
 
 16. **Kontrola skills:** všechny jsou ve stavu `koncept`. Kdo je projde a otestuje (aspoň Claude + Gemini nebo ChatGPT)? Navrhujeme: formativní hodnocení — Eva + Šárka Polanecká; vedení školy — tým AI akcelerátoru.
 17. **Plugin v ChatGPT (veřejný adresář):** platform.openai.com 7. 11. 2026 hlásí „We are not accepting more skills-only submissions at this time“ — pluginy jen se skills teď veřejně podat nejdou. Do té doby pluginy jen v pracovním prostoru AI dětem a ke stažení na webu. Až se podávání otevře, potřebujeme v manifestu (`extensions.com.openai.interface`): podtitul do 30 znaků (`shortDescription`), `websiteURL`, `supportURL`, `privacyPolicyURL`, `termsOfServiceURL` — tedy stránky zásad ochrany osobních údajů a podmínek užití na webu (existují? kde?). Doplní je `scripts/build-balicky.mjs`.

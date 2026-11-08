@@ -41,6 +41,7 @@ const datum = m.aktualizovano.toLocaleDateString('cs-CZ');
         <a class="btn btn-accent" href={zipSkillu(skill.slug)} download>Claude a Gemini (ZIP)</a>
         <a class="btn btn-sky btn-maly" href={zipCopilot(skill.slug)} download>Microsoft Copilot (ZIP)</a>
         {m.google_doc && <a class="btn btn-sky btn-maly" href={m.google_doc}>Systémový prompt (Google Docs)</a>}
+        {m.google_dalsi?.filter((d) => d.google_doc).map((d) => <a class="btn btn-sky btn-maly" href={d.google_doc}>{d.nazev.replace(/^\d+\s*/, '')} (Google Docs)</a>)}
         <p class="poznamka">ZIP nerozbalujte. <a href="/funkce/skills#jak-skill-nainstalovat">Jak skill nainstalovat</a></p>
       </aside>
     </div>

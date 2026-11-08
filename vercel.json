@@ -293,7 +293,7 @@
     },
     {
       "source": "/databaze-promptu/hadej-chemicke-prvky-asistent",
-      "destination": "/skills/aktivity-s-chatbotem",
+      "destination": "/skills/hadej-chemicky-prvek",
       "permanent": true
     },
     {
@@ -333,7 +333,7 @@
     },
     {
       "source": "/databaze-promptu/karierni-poradce-se-zamerenim-na-matematiku",
-      "destination": "/skills/aktivity-s-chatbotem",
+      "destination": "/skills/karierni-poradce-matematika",
       "permanent": true
     },
     {

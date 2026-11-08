@@ -59,6 +59,7 @@ const skillMeta = defineCollection({
     }).loose().optional(),
     google_doc: z.string().optional(),
     google_slozka: z.string().optional(),
+    google_dalsi: z.array(z.object({ nazev: z.string(), google_doc: z.string().optional(), google_slozka: z.string().optional() })).optional(),
     autori: z.array(z.string()),
     metodika: z.array(z.object({ nazev: z.string(), url: z.string().optional() }).loose()).optional(),
     znalosti: z.array(z.string()).optional(),

@@ -15,8 +15,8 @@ puvodni_asistenti:
   systemovy_prompt:
     - https://drive.google.com/drive/folders/1yXgO86zo2-x93QALLDZZVugjEN_ArsYz?usp=drive_link   # složka uvedená na webu
     - https://docs.google.com/document/d/1Zw7UIHXLtKbEYf-eId0NHywp_D7WTEXV7_QYpcHhi2w/edit
-google_doc: https://docs.google.com/document/d/10Ojs971Ls5kjx4T_bhOjVPEQ7jZ4BVRwJ8e9nheO7Co/edit
-google_slozka: https://drive.google.com/drive/folders/1Q8asrLsZvGG9QGksZI4DWacLuVKO8E3Y
+google_doc: https://docs.google.com/document/d/1Jrw1-QYxaEjlzWAVHKSAchVBuM-TplEb1xc_c3Yr9Lg/edit
+google_slozka: https://drive.google.com/drive/folders/1JlRSo74mR2rHMl2V_YDcM0yU0E5WULdW
 autori: [tým AI akcelerátoru (AI dětem)]   # doplnit jména autorů asistenta
 metodika:
   - nazev: AI akcelerátor – oblast Administrativa (AI dětem)
@@ -26,4 +26,4 @@ metodika:
 znalosti: []
 vek: dospělí (skills jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-08

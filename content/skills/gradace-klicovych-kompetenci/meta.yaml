@@ -1,0 +1,16 @@
+title: Gradace klíčových kompetencí
+slug: gradace-klicovych-kompetenci
+kratky_popis: Rozpracuje klíčovou kompetenci z RVP do úrovní rozvoje s konkrétními příklady chování a aktivit žáků.
+pro_koho: [ucitele, vedeni]
+sady: [formativni-hodnoceni]
+stitky: [klíčové kompetence, RVP, ŠVP, gradace, Skills Builder, sebehodnocení]
+puvodni_obsah: []           # na starém webu nebyl
+google_doc: https://docs.google.com/document/d/1EfyY7MsppbJLY9kEZ6WYZm2ziuqVGq5VCEGFLcAvDWQ/edit
+google_slozka: https://drive.google.com/drive/folders/1tIFIAxgdqj2JPRRpmPnF0hkcA46lZgRJ
+autori: [AI dětem]          # ověřit autorství
+metodika:
+  - nazev: Skills Builder Universal Framework (inspirace)
+znalosti: [klicove-kompetence-disk-gradace.md]
+vek: dospělí (skills jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-08
