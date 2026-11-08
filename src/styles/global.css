@@ -1,6 +1,7 @@
 /* Design AI dětem — tokeny a komponenty podle docs/design.md.
-   Rozvržení inspirované šablonou Positivus (zvýrazněné nadpisy, barevné karty, výrazné úvody),
-   barvy, písmo a rámečky AI dětem.
+   Vzhled podle webu aidetem.cz (8. 11. 2026): jahodový úvod přes celou šířku, úzký sloupec obsahu,
+   hodně prázdného místa, pruhy přes celou šířku, malé zaoblení, tlačítka-pilulky, šipkové seznamy.
+   Z šablony Positivus zůstaly barevné karty a výrazné úvody.
 
    PALETA: plochy a grafika jen v pěti barvách — bílá, Jahodová zmrzka a tři odstíny Nekonečného nebe.
    Text je tmavý (--ink, --muted), jinak by nebyl čitelný. Tmavé plochy se nepoužívají, web je vždy světlý.
@@ -29,20 +30,21 @@
   --line: #e8edf0;            /* rámečky a oddělovače */
   --line-soft: #f1f4f6;
 
-  --radius: 16px;
-  --radius-lg: 22px;
-  --radius-xl: 36px;          /* velké bloky a karty (Positivus) */
+  --radius: 8px;
+  --radius-lg: 11px;
+  --radius-xl: 18px;          /* velké bloky a karty */
   --pill: 999px;
   --font-heading: 'Space Grotesk Variable', 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
   --font-body: 'Inter Variable', 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
   --max: 1180px;
   --gutter: 20px;
-  --gap-sekce: 56px;
+  --gap-sekce: 88px;
   --mereni: 70ch;
+  --sloupec: 760px;           /* úzký sloupec obsahu (aidetem.cz) */
   color-scheme: light;
 }
 @media (max-width: 860px) {
-  :root { --gutter: 16px; --gap-sekce: 44px; --radius-xl: 26px; }
+  :root { --gutter: 16px; --gap-sekce: 56px; --radius-xl: 14px; }
 }
 
 /* ---------- základ ---------- */
@@ -50,6 +52,7 @@
 html { -webkit-text-size-adjust: 100%; scroll-padding-top: 16px; }
 body {
   margin: 0;
+  overflow-x: clip;           /* pruhy přes celou šířku (100vw) nesmí vytvořit vodorovný posuvník */
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-body);
@@ -370,3 +373,128 @@ a.badge:hover { background: var(--sky-light); }
 /* varianty promptu na detailu skillu jsou podnadpisy oddílu „Zkopírovat jako prompt“ */
 .prompt-md h2 { font-size: 1.15rem; margin: 1.4em 0 0.5em; }
 .prompt-md h2 .zvyrazneni { background: none; padding: 0; }
+
+
+/* =====================================================================
+   Vzhled podle aidetem.cz (8. 11. 2026) — přepisuje pravidla výše
+   ===================================================================== */
+
+/* nadpisy bez zvýrazňovače */
+.zvyrazneni { background: none; padding: 0; border-radius: 0; }
+
+/* tlačítka jako pilulky */
+.btn { border-radius: var(--pill); min-height: 44px; padding: 9px 22px; }
+.btn-sky { border-color: var(--accent); }
+.btn-sky:hover { background: var(--accent); color: var(--on-accent); font-weight: 700; }
+.btn-maly { min-height: 38px; padding: 7px 16px; }
+.btn-obrys-bila { background: transparent; color: var(--bila); border-color: var(--bila); } /* jen na jahodové, 19 px tučně */
+.btn-obrys-bila:hover { background: var(--bila); color: var(--ink); }
+.btn-bila { background: var(--bila); color: var(--ink); border-color: var(--bila); }
+.btn-bila:hover { background: var(--nebe-svetle); border-color: var(--nebe-svetle); }
+
+/* nadtitulek bez podbarvení */
+.eyebrow { background: none; padding: 0; border-radius: 0; color: var(--ink); font-size: 0.74rem; letter-spacing: 0.12em; text-decoration: none; }
+
+/* hlavička */
+.hlavicka { border-bottom: 1px solid var(--line-soft); }
+.hlavicka-in { min-height: 76px; }
+.menu-tlacitko { font-size: 0.92rem; }
+.menu-cta.btn { min-height: 40px; padding: 7px 18px; }
+
+/* stránka: úzký sloupec uprostřed, víc prostoru */
+main { padding-block: 48px var(--gap-sekce); }
+.stranka { max-width: var(--sloupec); margin-inline: auto; gap: 36px; }
+.stranka.siroka { max-width: none; }
+.obsah h1 { font-weight: 600; margin-bottom: 24px; }
+.obsah h2 { margin: 2.4em 0 0.7em; }
+.obsah .tabulka, .tabulka { border-radius: var(--radius); }
+.obsah:has(.tabulka) { max-width: var(--mereni); }
+.stranka.siroka .obsah:has(.tabulka) { max-width: none; }
+
+/* šipkové seznamy odkazů (patička, sady) */
+ul.sipky { list-style: none; padding: 0; margin: 0; }
+ul.sipky li { position: relative; padding-left: 18px; }
+ul.sipky li::before { content: "→"; position: absolute; left: 0; color: var(--accent); font-weight: 600; }
+
+/* karty: tenký rámeček, malé zaoblení */
+.karta { border-radius: var(--radius-lg); padding: 22px 24px; }
+.karta.nebe-svetle, .karta.nebe { background: var(--bila); border-color: var(--line); }
+.prompt-karta { border-radius: var(--radius-lg); }
+.dalsi { border-radius: var(--radius-lg); }
+.upozorneni { border-radius: var(--radius); }
+.prepinac { border-radius: var(--radius); }
+.prepinac [role="tab"] { border-radius: var(--pill); }
+.skill-stazeni.karta { background: var(--nebe-svetle); border-color: var(--nebe); }
+
+/* ---------- homepage ---------- */
+.stranka-homepage { gap: 0; }
+.stranka-homepage > .stranka-hlava { max-width: var(--sloupec); margin: 0 auto 16px; width: 100%; }
+.hero {
+  background: var(--jahoda); color: var(--bila);
+  margin-inline: calc(50% - 50vw); padding-inline: calc(50vw - 50%);
+  margin-top: -48px;
+}
+.hero-in { max-width: 980px; margin-inline: auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 400px); gap: 32px; align-items: center; padding-block: 64px; }
+.hero-text { max-width: none; }
+.hero-text h1 { color: var(--bila); font-size: clamp(2.4rem, 5vw, 3.4rem); margin-bottom: 18px; }
+.hero-text p { color: var(--bila); font-size: 1.25rem; font-weight: 700; line-height: 1.45; max-width: 30ch; } /* 20 px tučně = velký text, bílá na jahodové projde AA */
+.hero-text .odkazy { margin-top: 28px; }
+.hero-text .odkazy .btn:first-child { background: var(--bila); color: var(--ink); border-color: var(--bila); }
+.hero-text .odkazy .btn:first-child:hover { background: var(--nebe-svetle); }
+.hero-text .odkazy .btn + .btn { background: transparent; color: var(--bila); border-color: var(--bila); font-size: 1.1875rem; font-weight: 700; }
+.hero-text .odkazy .btn + .btn:hover { background: var(--bila); color: var(--ink); }
+.hero .ilustrace { width: 100%; max-width: 400px; justify-self: end; }
+
+.obsah.homepage { display: block; max-width: none; }
+.homepage .oddil {
+  border: 0; border-radius: 0; background: var(--bila);
+  margin-inline: calc(50% - 50vw); padding: 80px calc(50vw - 50%);
+  text-align: center;
+}
+.homepage .oddil > * { max-width: var(--sloupec); margin-inline: auto; }
+.homepage .oddil h2 { margin-top: 0; font-size: clamp(1.6rem, 3vw, 2.1rem); }
+.homepage .oddil > p { margin-bottom: 1em; }
+.homepage .oddil .odkazy { justify-content: center; margin-top: 28px; }
+/* starší pravidla (karty Positivus) vynulovat, modrý je jen každý třetí pruh */
+.homepage .oddil:nth-of-type(n) { background: var(--bila); }
+.homepage .oddil:nth-of-type(n) .zvyrazneni { background: none; }
+.homepage .oddil:nth-of-type(3n+2) { background: var(--nebe); }
+.homepage .oddil:nth-of-type(3n+2) .btn-sky { background: var(--bila); border-color: var(--bila); }
+.homepage .oddil:nth-of-type(3n+2) > ul > li { border-color: var(--bila); }
+.homepage .oddil:nth-of-type(3n+3) + .oddil:nth-of-type(3n+4) { border-top: 1px solid var(--line); }
+.homepage .oddil > ul {
+  list-style: none; padding: 0; margin: 28px auto; text-align: left;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-width: 860px;
+}
+.homepage .oddil > ul > li { margin: 0; background: var(--bila); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 20px 22px; }
+.homepage .oddil > ul > li > strong:first-child, .homepage .oddil > ul > li > a:first-child { font-size: 1.08rem; }
+@media (max-width: 860px) {
+  .hero-in { grid-template-columns: 1fr; padding-block: 44px; }
+  .hero .ilustrace { justify-self: center; max-width: 260px; }
+  .homepage .oddil { padding-block: 56px; }
+  .homepage .oddil > ul { grid-template-columns: 1fr; }
+}
+
+/* ---------- patička ---------- */
+.paticka { padding: 0; margin-top: 0; }
+.paticka-vyzva { background: var(--jahoda); color: var(--bila); }
+.paticka-vyzva-in { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding-block: 36px; max-width: 980px; }
+.paticka-vyzva p { margin: 0; font-size: 1.2rem; font-weight: 700; max-width: 40ch; } /* 19 px tučně */
+.paticka-hlavni { background: var(--nebe); padding-top: 56px; font-size: 0.88rem; }
+.paticka-hlavni > .wrap { max-width: 980px; }
+.paticka-mrizka { grid-template-columns: minmax(0, 1.5fr) repeat(5, minmax(0, 1fr)); gap: 32px 24px; }
+.paticka h2 { font-family: var(--font-heading); font-size: 0.98rem; text-transform: none; letter-spacing: 0; font-weight: 600; margin: 0 0 10px; }
+.paticka ul.sipky { gap: 4px; }
+.paticka-aidetem { gap: 10px; }
+.paticka-aidetem img { border-radius: 50%; }
+.paticka-aidetem a { text-decoration: underline; text-decoration-color: var(--accent); }
+.paticka-spodek { margin-top: 48px; border-top: 1px solid rgba(255, 255, 255, 0.6); padding-block: 16px; }
+.paticka-spodek-in { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; max-width: 980px; }
+@media (max-width: 1060px) {
+  .paticka-mrizka { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .paticka-aidetem { grid-column: 1 / -1; }
+}
+@media (max-width: 560px) {
+  .paticka-mrizka { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+.stranka:not(.stranka-homepage) .obsah h1 { font-size: clamp(2rem, 4vw, 2.8rem); }

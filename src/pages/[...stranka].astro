@@ -15,25 +15,43 @@ export async function getStaticPaths() {
 }
 
 const { stranka } = Astro.props;
-const casti = await vykreslit(stranka.body ?? '');
+const vsechnyCasti = await vykreslit(stranka.body ?? '');
 const url = stranka.id === 'index' ? '/' : `/${stranka.id}`;
 const homepage = stranka.data.sablona === 'homepage';
 const sekce = sekceProUrl(url);
 const dalsi = dalsiStranka(url);
 // Zdroje typu „data/…yaml“ vykreslí datové šablony (fáze 4); tady jen odkazy.
 const zdroje = (stranka.data.zdroje ?? []).filter((z) => /^https?:/.test(typeof z === 'string' ? z : z.url));
+// Homepage: úvod (vše před prvním oddílem) se vykreslí v jahodovém pruhu přes celou šířku.
+let heroHtml = '';
+let casti = vsechnyCasti;
+if (homepage && vsechnyCasti[0] && 'html' in vsechnyCasti[0]) {
+  const prvni = vsechnyCasti[0].html;
+  const i = prvni.indexOf('<section class="oddil">');
+  heroHtml = i >= 0 ? prvni.slice(0, i) : prvni;
+  casti = [{ html: i >= 0 ? prvni.slice(i) : '' }, ...vsechnyCasti.slice(1)];
+}
+// Stránky s komponentami (katalog, databáze, sady) potřebují plnou šířku, ostatní mají úzký sloupec.
+const siroka = homepage || vsechnyCasti.some((c) => 'komponenta' in c && c.komponenta !== 'sady-homepage');
 const datum = stranka.data.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' });
 ---
 <Zaklad title={stranka.data.title} popis={stranka.data.popis}>
-  <article class="stranka">
+  <article class:list={['stranka', { siroka, 'stranka-homepage': homepage }]}>
     {(sekce || jeKoncept(stranka.data.stav)) && (
       <div class="stranka-hlava">
         {sekce && <span class="eyebrow">{sekce}</span>}
         {jeKoncept(stranka.data.stav) && <span class="badge koncept" title={`Stav: ${stranka.data.stav}`}>Koncept</span>}
       </div>
     )}
+    {homepage && (
+      <div class="hero">
+        <div class="hero-in">
+          <div class="hero-text obsah" set:html={heroHtml} />
+          <Ilustrace />
+        </div>
+      </div>
+    )}
     <div class:list={['obsah', { homepage }]}>
-      {homepage && <Ilustrace />}
       <Casti casti={casti} />
     </div>
     {(zdroje.length > 0 || stranka.id !== 'index') && (

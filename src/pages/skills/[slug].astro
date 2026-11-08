@@ -23,7 +23,7 @@ const gem = seznam(m.puvodni_asistenti?.gem);
 const datum = m.aktualizovano.toLocaleDateString('cs-CZ');
 ---
 <Zaklad title={m.title} popis={m.kratky_popis}>
-  <article class="stranka skill">
+  <article class="stranka siroka skill">
     <div class="stranka-hlava">
       <a class="eyebrow" href="/skills">Katalog skills</a>
       {skill.sady.map((s) => <a class="badge new" href={`/sady/${s.slug}`}>{s.title}</a>)}
