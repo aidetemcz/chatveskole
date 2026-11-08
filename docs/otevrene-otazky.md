@@ -8,18 +8,19 @@
 - **8. 11. 2026 — Design schválen** (plátno Claude Design, pravidla v `docs/design.md`). Stránka promptů se jmenuje *Katalog promptů*, skupiny Pro učitele / Pro vedení školy / Pro žáky.
 - **8. 11. 2026 — Starší prompty 2024 se v katalogu nezobrazují**, dokud je Eva s Coworkem neprojde; jejich stránky zůstávají kvůli starým odkazům.
 - **8. 11. 2026 — Hosting zatím GitHub Pages** z větve `main`. Před přepnutím domény rozhodnout definitivně (GitHub Pages neumí skutečná přesměrování 301, jen přesměrovací stránky).
+- **8. 11. 2026 — Jen světlý režim.** Web se zobrazuje vždy světle, i když má návštěvník v systému tmavý režim.
+- **8. 11. 2026 — Analytika: GA4 až při spuštění na chatveskole.cz** (AI dětem GA4 používá). S vlastní lištou se souhlasem v designu webu, GA4 se načte až po souhlasu, v patičce odkaz „Nastavení cookies“. Do té doby web žádné měření ani cookies nemá. Potřeba: ID měření `G-…` (nejlépe ze stávající služby chatveskole.cz) a odkaz na zásady ochrany osobních údajů AI dětem.
+- **8. 11. 2026 — Staré kategorie databáze promptů** (`/dp/…` z roku 2024) vedou na začátek katalogu promptů, není potřeba nic měnit.
 - **7. 11. 2026 — Souhlasy autorů** (Šárka Polanecká, Jan Jílek, AI reaktor UJEP, Vysvědčení jinak) Eva má, není potřeba je znovu získávat.
 
 ## Blokují stavbu webu
 
 1. **Framework:** Astro (doporučeno pro obsahový web) vs. Next.js (stejný jako ostatní appky AI dětem).
 2. **Hosting pro doménu chatveskole.cz:** GitHub Pages (zdarma, jen přesměrovací stránky místo 301) vs. Vercel Pro / Netlify / Cloudflare Pages (skutečná přesměrování, náhledy větví).
-3. **Analytika** (zatím žádná, web je bez cookies): Vercel Web Analytics / Plausible (bez cookies, bez lišty) vs. Google Analytics (vyžaduje souhlas).
 4. **Sdílení složek na Disku:** systémové prompty a data všech 18 skills jsou od 7. 11. 2026 na sdíleném disku ve složce *Zdroje k stažení*, znalostní soubory zkopírované do složek Data, odkazy v `meta.yaml` (`google_doc`, `google_slozka`, přehled v `migrace/google-drive.json`). Zbývá nastavit sdílení „Kdokoli s odkazem – čtenář“ (teď je složka soukromá) a smazat z ní *Návod pro nahrání na Disk*, který je jen pro tým.
 
 ## Obsah
 
-38. **Staré kategorie databáze promptů:** 10 starých adres `/dp/…` (Adaptivní vzdělávání, Hodnocení, Práce s textem, Projektová výuka, Řízení a administrativa, Různé, Seberozvoj, Vizualizace, Vytváření lekcí, Vytváření pracovních listů) vede na katalog promptů, ale kotva už neexistuje — šlo o kategorie promptů z roku 2024, které v katalogu nejsou. Stačí to tak (návštěvník skončí nahoře v katalogu), nebo je přesměrovat na konkrétní kategorie?
 
 5. **Žákovské prompty:** jsou součástí databáze na *Funkce → Prompty* (skupina Pro žáky). Chcete pro ně navíc odkaz v *Chatboti ve výuce*?
 7. **Hodnocení „Bylo to přínosné?“:** starý web ho měl. Vynechat (navrženo), nebo zachovat (pak je potřeba malé úložiště)?

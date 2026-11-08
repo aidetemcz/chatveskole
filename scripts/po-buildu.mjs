@@ -7,7 +7,7 @@ import path from 'node:path';
 const DIST = path.resolve('dist');
 const BASE = (process.env.BASE_PATH || '/').replace(/\/?$/, '/');
 const SITE = (process.env.SITE_URL || 'https://chatveskole.cz').replace(/\/$/, '');
-const NAHLED = BASE !== '/'; // web na podadrese (GitHub Pages) = náhled, nemá se indexovat
+const NAHLED = process.env.INDEXOVAT !== '1'; // indexuje se jen ostrý web na chatveskole.cz (build s INDEXOVAT=1)
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 
 // 1) přesměrování
@@ -52,7 +52,7 @@ ${urls.map((u) => `  <url><loc>${esc(u)}</loc></url>`).join('\n')}
 </urlset>
 `);
 
-// 3) robots.txt (na podadrese ho vyhledávače nečtou — náhled chrání meta noindex na každé stránce)
+// 3) robots.txt (na podadrese ho vyhledávače nečtou — náhledy chrání i meta noindex na každé stránce)
 fs.writeFileSync(path.join(DIST, 'robots.txt'), NAHLED
   ? 'User-agent: *\nDisallow: /\n'
   : `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);

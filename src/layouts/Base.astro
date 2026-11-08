@@ -15,8 +15,9 @@ interface Props { title: string; description?: string; noindex?: boolean }
 const { title, description, noindex } = Astro.props;
 const fullTitle = title === 'Chatboti ve škole' ? title : `${title} | Chatboti ve škole`;
 const canonical = new URL(Astro.url.pathname.replace(/\/?$/, '/'), Astro.site);
-// náhled na podadrese (GitHub Pages) se neindexuje, aby nekonkuroval chatveskole.cz
-const nahled = import.meta.env.BASE_URL !== '/';
+// indexovat jen ostrý web na chatveskole.cz (build s INDEXOVAT=1); náhledy na github.io a vercel.app ne,
+// aby nekonkurovaly dnešnímu chatveskole.cz
+const nahled = process.env.INDEXOVAT !== '1';
 const ogImage = new URL(url('/img/og-chatveskole.png'), Astro.site);
 ---
 <!doctype html>
@@ -24,6 +25,7 @@ const ogImage = new URL(url('/img/og-chatveskole.png'), Astro.site);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
     <title>{fullTitle}</title>
     {description && <meta name="description" content={description} />}
     {noindex && <meta name="robots" content="noindex" data-stranka />}

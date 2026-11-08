@@ -1,4 +1,4 @@
-/* Design tokeny a základní styly — viz docs/design.md (schválený návrh 8. 11. 2026) */
+/* Design tokeny a základní styly — viz docs/design.md (schválený návrh 8. 11. 2026). Web je jen ve světlém režimu. */
 :root {
   --bg: #ffffff;
   --panel: #ffffff;
@@ -24,23 +24,6 @@
   --wrap: 1180px;
   color-scheme: light;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) {
-    --bg: #141b22; --panel: #1a232c; --ink: #e9eff3; --muted: #9eabb7;
-    --accent: #e57373; --accent-strong: #f09393; --accent-ink: #f09393; --accent-soft: #3a2427; --on-accent: #1c1113;
-    --sky: #44626e; --sky-deep: #93bccb; --sky-ink: #93bccb; --sky-light: #1e2f38;
-    --line: #2a3742; --line-soft: #212c36;
-    color-scheme: dark;
-  }
-}
-:root[data-theme='dark'] {
-  --bg: #141b22; --panel: #1a232c; --ink: #e9eff3; --muted: #9eabb7;
-  --accent: #e57373; --accent-strong: #f09393; --accent-ink: #f09393; --accent-soft: #3a2427; --on-accent: #1c1113;
-  --sky: #44626e; --sky-deep: #93bccb; --sky-ink: #93bccb; --sky-light: #1e2f38;
-  --line: #2a3742; --line-soft: #212c36;
-  color-scheme: dark;
-}
-
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--fb); font-size: 15px; line-height: 1.55; }

@@ -6,25 +6,25 @@ Vzor: artefakt **Funkce chatbotů 2027** — [docs/design/vzor-funkce-chatbotu-2
 
 ## Barvy (design tokeny)
 
-Definovat jako CSS proměnné na `:root`, pro tmavý režim přepsat v `@media (prefers-color-scheme: dark)` a na `:root[data-theme="dark"]`.
+Definovat jako CSS proměnné na `:root` (`src/styles/global.css`). **Web je jen ve světlém režimu** (rozhodnutí 8. 11. 2026) — tmavý režim nepřidávat, ani podle nastavení systému.
 
-| Token | Světlý | Tmavý | Použití |
-|---|---|---|---|
-| `--bg` | `#ffffff` | `#141b22` | pozadí stránky |
-| `--panel` | `#ffffff` | `#1a232c` | karty, tabulky |
-| `--ink` | `#1c2530` | `#e9eff3` | text |
-| `--muted` | `#5f6c79` | `#9eabb7` | vedlejší text, popisky |
-| `--accent` | `#dc5b5b` | `#e57373` | **Jahodová zmrzka** — hlavní akcent, tlačítka, „končí“ |
-| `--accent-strong` | `#c24848` | `#f09393` | odkazy a akcentový text na světlém podkladu |
-| `--accent-soft` | `#fbeeee` | `#3a2427` | podbarvení varování a změn k horšímu |
-| `--accent-ink` | `#b23f3f` | `#f09393` | text na `--accent-soft` |
-| `--on-accent` | `#ffffff` | `#1c1113` | text na akcentu |
-| `--sky` | `#b3cdd6` | `#44626e` | **Nekonečné nebe** — linky, rámečky |
-| `--sky-deep` | `#5f8c9b` | `#93bccb` | ikony, dekorace (na text jen velký, kontrast 3,6 : 1) |
-| `--sky-ink` | `#3f6b7a` | `#93bccb` | text v nebeské barvě (malé nadpisy, štítky) — splňuje 4,5 : 1 i na `--sky-light` |
-| `--sky-light` | `#e3f1f6` | `#1e2f38` | podbarvené panely, změny k lepšímu |
-| `--line` | `#e8edf0` | `#2a3742` | oddělovače |
-| `--line-soft` | `#f1f4f6` | `#212c36` | jemné oddělovače uvnitř tabulek |
+| Token | Hodnota | Použití |
+|---|---|---|
+| `--bg` | `#ffffff` | pozadí stránky |
+| `--panel` | `#ffffff` | karty, tabulky |
+| `--ink` | `#1c2530` | text |
+| `--muted` | `#5f6c79` | vedlejší text, popisky |
+| `--accent` | `#dc5b5b` | **Jahodová zmrzka** — hlavní akcent, tlačítka, „končí“ |
+| `--accent-strong` | `#c24848` | odkazy a akcentový text na světlém podkladu |
+| `--accent-soft` | `#fbeeee` | podbarvení varování a změn k horšímu |
+| `--accent-ink` | `#b23f3f` | text na `--accent-soft` |
+| `--on-accent` | `#ffffff` | text na akcentu |
+| `--sky` | `#b3cdd6` | **Nekonečné nebe** — linky, rámečky |
+| `--sky-deep` | `#5f8c9b` | ikony, dekorace (na text jen velký, kontrast 3,6 : 1) |
+| `--sky-ink` | `#3f6b7a` | text v nebeské barvě (malé nadpisy, štítky) — splňuje 4,5 : 1 i na `--sky-light` |
+| `--sky-light` | `#e3f1f6` | podbarvené panely, změny k lepšímu |
+| `--line` | `#e8edf0` | oddělovače |
+| `--line-soft` | `#f1f4f6` | jemné oddělovače uvnitř tabulek |
 
 Kontrast textu musí splnit WCAG AA (4,5 : 1). `--accent` (#dc5b5b) na bílé nesplňuje pro běžný text — na text používej `--accent-strong`. **Plná tlačítka mají pozadí `--accent-strong`** (bílý text na `--accent` má jen 3,9 : 1).
 
