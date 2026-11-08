@@ -61,7 +61,7 @@ button { cursor: pointer; }
 .section-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 32px; }
 .section-head h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 700; }
 .section-head p { color: var(--muted); max-width: 64ch; margin-top: 12px; }
-.count { font-size: 0.9rem; color: var(--muted); font-weight: 400; font-family: var(--fb); }
+.count { font-size: 0.9rem; color: var(--muted); font-weight: 400; font-family: var(--fb); white-space: nowrap; flex: none; }
 .more { font-weight: 600; text-decoration: none; }
 
 /* tlačítka a odkazy */
