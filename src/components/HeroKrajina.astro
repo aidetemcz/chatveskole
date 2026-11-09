@@ -229,6 +229,21 @@
   }
 
   const zemRobota = () => zemR * ch + Math.round(ch * 0.7);
+  // stín jako řádky pixelů (stejná velikost jako pixely postav), konce se mírně třepí
+  function stin(xc, yTop, sirky, alfa, seed) {
+    const tik = Math.floor(t * 5);
+    ctx.globalAlpha = alfa; ctx.fillStyle = BARVY.navyDeep;
+    sirky.forEach((n, j) => {
+      const od = Math.round(xc - (n * s) / 2), y = Math.round(yTop + j * s);
+      for (let i = 0; i < n; i++) {
+        if ((i === 0 || i === n - 1) && n > 2 && h3(i + seed, j, tik) < 0.3) continue;
+        ctx.fillRect(od + i * s, y, s, s);
+      }
+      const r = h3(seed, j + 9, tik);
+      if (r < 0.12) ctx.fillRect(od - s, y, s, s); else if (r < 0.24) ctx.fillRect(od + n * s, y, s, s);
+    });
+    ctx.globalAlpha = 1;
+  }
   const robotX = () => Math.round(W * 0.64 - (19 * s) / 2 + Math.sin(t * 0.1) * W * 0.015);
 
   function kresliDite(d) {
@@ -239,9 +254,8 @@
     const x0 = Math.round(robotX() - d.odstup * s + Math.sin(t * d.vlna + d.vlnaF) * 1.5 * s);
     const poskok = d.naZemi && Math.sin(f * 2) > 0.35 ? 1 : 0; // drobné poskočení v každém kroku
     const y0 = Math.round(zem - (d.h + 2) * s + d.y) - poskok * s;
-    ctx.globalAlpha = d.naZemi ? 0.22 : Math.max(0.06, 0.22 + d.y / 200); ctx.fillStyle = BARVY.navyDeep;
-    ctx.beginPath(); ctx.ellipse(x0 + (d.w * s) / 2, zem + 1, d.w * s * 0.45, s * 0.6, 0, 0, Math.PI * 2); ctx.fill();
-    ctx.globalAlpha = 1;
+    const uzsi = d.naZemi ? 0 : Math.round(-d.y / (5 * s));     // ve skoku je stín menší a slabší
+    stin(x0 + (d.w * s) / 2, zem - s / 2, [Math.max(2, d.w + 2 - 2 * uzsi)], d.naZemi ? 0.22 : Math.max(0.06, 0.22 + d.y / 200), d.seed);
     const px = (x, y) => ctx.fillRect(x0 + Math.round(x) * s, y0 + Math.round(y) * s, s, s);
     // nožičky: kyčel pod tělem, chodidlo se střídavě zvedá a posouvá
     ctx.fillStyle = BARVY.redDark;
@@ -275,9 +289,8 @@
     const x0 = robotX();
     const houpani = robot.naZemi ? Math.round(1 - Math.abs(Math.cos(faze))) * -s : 0;
     const y0 = Math.round(zem - vyska + robot.y + houpani);
-    ctx.globalAlpha = robot.naZemi ? 0.3 : Math.max(0.08, 0.3 + robot.y / 300); ctx.fillStyle = BARVY.navyDeep;
-    ctx.beginPath(); ctx.ellipse(x0 + sirka * 0.5, zem + 1, sirka * 0.34 * (robot.naZemi ? 1 : 0.8), s, 0, 0, Math.PI * 2); ctx.fill();
-    ctx.globalAlpha = 1;
+    const uzsi = robot.naZemi ? 0 : Math.min(4, Math.round(-robot.y / (6 * s)));
+    stin(x0 + sirka * 0.5, zem - s, [Math.max(3, 11 - 2 * uzsi), Math.max(5, 13 - 2 * uzsi)], robot.naZemi ? 0.3 : Math.max(0.08, 0.3 + robot.y / 300), 1);
     const px = (x, y) => ctx.fillRect(x0 + Math.round(x) * s, y0 + Math.round(y) * s, s, s);
     const cara = (xa, ya, xb, yb, tl) => { const n = Math.max(Math.abs(xb - xa), Math.abs(yb - ya), 1); for (let i = 0; i <= n; i++) for (let k = 0; k < tl; k++) px(xa + (xb - xa) * i / n + k, ya + (yb - ya) * i / n); };
     // nohy: chodidlo jde po elipse (vpředu se zvedá, vzadu se opírá o zem)
