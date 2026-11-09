@@ -40,7 +40,9 @@ const isIn = (g: { items: { href: string }[] }) => g.items.some((i) => current.s
 
 <style>
   .site-header { border-bottom: 1px solid var(--line); background: var(--bg); position: relative; z-index: 20; }
-  .bar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding-top: 12px; padding-bottom: 12px; }
+  /* hlavička přes celou šířku okna: logo vlevo, menu, tlačítko a hledání vpravo */
+  .bar { max-width: none; padding-left: 32px; padding-right: 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; padding-top: 16px; padding-bottom: 16px; }
+  @media (max-width: 640px) { .bar { padding-left: 16px; padding-right: 16px; } }
   .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); margin-right: auto; }
   .brand img { width: 44px; height: 44px; border-radius: 50%; display: block; }
   .brand > span { display: flex; flex-direction: column; line-height: 1.2; }
@@ -51,9 +53,15 @@ const isIn = (g: { items: { href: string }[] }) => g.items.some((i) => current.s
   .nav-group { position: relative; }
   .nav-top { display: flex; align-items: center; gap: 6px; padding: 10px 12px; border-radius: var(--pill); border: 0; background: none; font-weight: 500; color: var(--ink); }
   .nav-top:hover, .nav-top[aria-expanded='true'], .nav-top.is-current { background: var(--line-soft); }
-  .nav-sub { display: none; position: absolute; left: 0; top: calc(100% + 6px); min-width: 280px; list-style: none; margin: 0; padding: 8px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); }
+  .nav-sub { display: none; position: absolute; left: 0; top: calc(100% + 6px); min-width: 280px; list-style: none; margin: 0; padding: 10px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); }
   .nav-top[aria-expanded='true'] + .nav-sub { display: block; }
-  .nav-sub a { display: block; padding: 9px 12px; border-radius: 10px; color: var(--ink); text-decoration: none; }
+  /* na počítači se podmenu ukáže při najetí myší (kliknutí a klávesnice fungují dál) */
+  @media (min-width: 1021px) and (hover: hover) {
+    .nav-group:hover > .nav-sub { display: block; }
+    .nav-group:hover > .nav-top { background: var(--line-soft); }
+    .nav-sub::before { content: ''; position: absolute; left: 0; right: 0; top: -10px; height: 10px; }
+  }
+  .nav-sub a { display: block; padding: 11px 14px; border-radius: 10px; color: var(--ink); text-decoration: none; }
   .nav-sub a:hover, .nav-sub a[aria-current='page'] { background: var(--sky-light); }
   .search-link { order: 1; display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: var(--pill); color: var(--ink); }
   .search-link:hover { background: var(--line-soft); color: var(--ink); }
@@ -88,5 +96,7 @@ const isIn = (g: { items: { href: string }[] }) => g.items.some((i) => current.s
     b.setAttribute('aria-expanded', String(!open));
   }));
   document.addEventListener('click', (e) => { if (!(e.target as HTMLElement).closest('.nav-group')) closeAll(); });
+  // při najetí myší na jinou položku zavřít podmenu otevřené kliknutím
+  document.querySelectorAll<HTMLElement>('.nav-group').forEach((g) => g.addEventListener('mouseenter', () => closeAll(g.querySelector<HTMLButtonElement>('.nav-top') ?? undefined)));
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeAll(); });
 </script>

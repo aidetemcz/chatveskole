@@ -56,7 +56,7 @@ const stavK = datumCesky(F.stav_k);
 </div>
 
 <style>
-  .matice-wrap { display: flex; flex-direction: column; gap: 16px; }
+  .matice-wrap { display: flex; flex-direction: column; gap: 20px; }
   .ball { width: 15px; height: 15px; border-radius: 50%; border: 2px solid var(--sky-deep); display: inline-block; flex-shrink: 0; background: transparent; }
   .ball.full { background: var(--sky-deep); }
   .ball.half { background: linear-gradient(90deg, var(--sky-deep) 50%, transparent 50%); }
@@ -70,7 +70,7 @@ const stavK = datumCesky(F.stav_k);
   .mrow { display: grid; grid-template-columns: minmax(150px, 0.78fr) repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--line); }
   .mrow.mhead { border-top: none; position: sticky; top: 0; z-index: 3; background: var(--panel); border-radius: var(--radius-lg) var(--radius-lg) 0 0; border-bottom: 2px solid var(--sky); }
   .mrow.mhead + .mrow { border-top: none; }
-  .mrow > * { padding: 14px; min-width: 0; }
+  .mrow > * { padding: 16px 18px; min-width: 0; }
   .mrow > * + * { border-left: 1px solid var(--line-soft); }
   .rowlabel { display: flex; flex-direction: column; gap: 3px; }
   .r-title { font-family: var(--fh); font-weight: 600; font-size: 0.98rem; line-height: 1.25; }

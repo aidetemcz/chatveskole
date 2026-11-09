@@ -15,9 +15,9 @@ Definovat jako CSS proměnné na `:root` (`src/styles/global.css`). **Web je jen
 | `--ink` | `#1c2530` | text |
 | `--muted` | `#5f6c79` | vedlejší text, popisky |
 | `--accent` | `#dc5b5b` | **Jahodová zmrzka** — hlavní akcent, tlačítka, „končí“ |
-| `--accent-strong` | `#c24848` | odkazy a akcentový text na světlém podkladu |
+| `--accent-strong` | `#dc5b5b` | tlačítka, odkazy a akcentový text (od 8. 11. 2026 stejná jako `--accent`) |
 | `--accent-soft` | `#fbeeee` | podbarvení varování a změn k horšímu |
-| `--accent-ink` | `#b23f3f` | text na `--accent-soft` |
+| `--accent-ink` | `#dc5b5b` | text na `--accent-soft` (od 8. 11. 2026 stejná jako `--accent`) |
 | `--on-accent` | `#ffffff` | text na akcentu |
 | `--sky` | `#b3cdd6` | **Nekonečné nebe** — linky, rámečky |
 | `--sky-deep` | `#5f8c9b` | ikony, dekorace (na text jen velký, kontrast 3,6 : 1) |
@@ -26,7 +26,7 @@ Definovat jako CSS proměnné na `:root` (`src/styles/global.css`). **Web je jen
 | `--line` | `#e8edf0` | oddělovače |
 | `--line-soft` | `#f1f4f6` | jemné oddělovače uvnitř tabulek |
 
-Kontrast textu musí splnit WCAG AA (4,5 : 1). `--accent` (#dc5b5b) na bílé nesplňuje pro běžný text — na text používej `--accent-strong`. **Plná tlačítka mají pozadí `--accent-strong`** (bílý text na `--accent` má jen 3,9 : 1).
+**Červená je na celém webu jen jedna: #DC5B5B** (barva AI dětem, Evino rozhodnutí 8. 11. 2026). Tokeny `--accent-strong` a `--accent-ink` zůstávají kvůli kódu, ale mají stejnou hodnotu. Pozor: červený text na bílé i bílý text na červené má kontrast 3,9 : 1, WCAG AA chce pro běžný text 4,5 : 1 (velký text 3 : 1 splňuje). Když bude potřeba AA splnit, stačí tmavší odstín jen pro drobný text (odkazy, štítky), např. #C24848.
 
 ## Písmo
 
@@ -61,12 +61,14 @@ Kontrast textu musí splnit WCAG AA (4,5 : 1). `--accent` (#dc5b5b) na bílé ne
 - **Hlavička stránky** je jen nadpis (H1), popis a případně tlačítka pod ním. Žádné boxy, štítky ani nadtitulky vedle nebo nad nadpisem; kontext dává drobečková navigace.
 - **Pruhy přes celou šířku:** sekce hlavní stránky i skupiny v katalozích mají podklad přes celou šířku okna (bez rámečku a zaoblení) a střídají se `--sky-light` a `--bg`. Obsah uvnitř je omezený na 1180 px.
 - **Karty:** bílé (`--panel`), zaoblení 18–22 px, rámeček `--sky` na modrém pruhu a `--line` na bílém. Nadpis karty 1,3 rem.
-- **Tlačítka:** hlavní akce = plné tlačítko `--accent-strong` (na stránce nejvýš jedno nebo dvě). Vedlejší akce v kartě: tlačítko s obrysem `--sky` („Detail“) a vedle obyčejný odkaz s ikonou bez pilulky („Kopírovat“, „Stáhnout“).
+- **Tlačítka:** písmo jako odstavec (Inter, běžný řez, ne tučně, 15 px). Hlavní akce = plné tlačítko `--accent-strong` s bílým textem (na stránce nejvýš jedno nebo dvě). Vedlejší akce v kartě: tlačítko s obrysem `--sky` („Detail“) a vedle obyčejný odkaz s ikonou bez pilulky („Kopírovat“, „Stáhnout“). **Na červeném podkladu:** hlavní = bílá výplň a červený text, vedlejší = červená výplň, bílý obrys a bílý text.
+- **Prostor (8. 11. 2026):** vzdušně — pruhy 84 px nahoře i dole (mobil 60 px), karty s vnitřním odsazením 26–32 px, mezery v mřížkách 20–22 px, mezi textem a tlačítky aspoň 14 px; v textu článků větší odstupy odstavců a nadpisů.
+- **Menu v hlavičce:** hlavička je bílá a přes celou šířku okna — logo vlevo, menu, tlačítko a hledání zarovnané vpravo; podmenu se na počítači ukáže při najetí myší (kliknutí a klávesnice fungují také).
 - **Katalog skills a katalog promptů** vypadají stejně: nadpis + popis, přepínač ze dvou pilulek *Řadit dle účelu* / *Řadit dle toho, komu slouží* (nic nefiltruje, jen seskupuje), skupiny s nadpisem a počtem, karty ve dvou sloupcích. Na kartě není kategorie ani „pro koho“ — to říká skupina.
 - **Detail skillu:** hlavní akce *Stáhnout skill*, vedlejší *Použít jako prompt*; pod hlavičkou pruh s údaji (sada, pro koho, metodika, autoři, Google Docs, Disk); pořadí sekcí: Co skill umí → Nainstalovat jako skill (záložky podle chatbota) → Použít jako prompt (záložky variant) → Původní asistent.
 - **Blok promptu:** šedý panel (`--line-soft`), písmo JetBrains Mono, tlačítko *Kopírovat* vpravo nahoře, po kliknutí „Zkopírováno“.
 - **Obsahová stránka:** vlevo menu sekce (na mobilu nad obsahem), vpravo text max. 70 znaků na řádek; tabulky v posuvném boxu; info na `--sky-light`, varování na `--accent-soft`.
-- **Hlavní stránka (pořadí pruhů):** Úvod (bílá, s panelem „Co se letos mění“ na `--accent-soft`) → Skills (modrá) → Katalog promptů (bílá) → Chatboti ve výuce s bannerem Tiny, metodikami, doporučeními a boxem Tvorba školních pravidel (modrá) → Pluginy a Vibe coding (bílá) → Metodické materiály (modrá) → Kniha a Novinky v poměru 2 : 1 (bílá).
+- **Hlavní stránka (pořadí pruhů, úprava 8. 11. 2026):** Hero na `--accent` (#DC5B5B, barva AI dětem — Evino rozhodnutí; bílý běžný text na ní má kontrast jen 3,9 : 1) s odsazením 150 px nahoře i dole, bílý text (i celý nadpis „Chatboti ve škole“), vpravo lehce pootočené kolečko 189 px (`--sky-light`, červený text stejným písmem jako odstavec v hero — Inter 1,15 rem, tři řádky „Změny ve / funkcích chatbotů / v roce 2026“, bez šipky) zarovnané dole s tlačítky, s odkazem na `/funkce/zmeny-2026` → Skills (bílá, jen karty sad) → Katalog promptů (modrá) → Chatboti ve výuce s bannerem Tiny, metodikami, doporučeními a boxem Tvorba školních pravidel (bílá) → Pluginy a Vibe coding (modrá) → Metodické materiály (bílá) → Kniha a Novinky v poměru 2 : 1 (modrá).
 
 ## Logo a obrázky
 

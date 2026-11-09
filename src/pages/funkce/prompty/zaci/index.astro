@@ -13,7 +13,7 @@ const zaci = (await getCollection('prompty')).filter((p) => p.id.startsWith('zac
 ---
 <Base title={uvod.data.title} description={uvod.data.popis}>
   <div class="band band--white" style="padding-bottom: 32px">
-    <div class="wrap stack" style="gap: 24px">
+    <div class="wrap stack" style="gap: 32px">
       <Crumbs items={[{ title: 'Katalog promptů', href: '/prompty' }, { title: uvod.data.title }]} />
       <header class="page-head">
         <h1>{uvod.data.title}</h1>
@@ -27,9 +27,9 @@ const zaci = (await getCollection('prompty')).filter((p) => p.id.startsWith('zac
     </div>
   </section>
   <div class="band band--white">
-    <div class="wrap stack" style="gap: 28px">
+    <div class="wrap stack" style="gap: 36px">
       <div class="prose"><Content /></div>
-      <section class="stack" style="gap: 12px; max-width: 72ch" aria-labelledby="tiny-h">
+      <section class="stack" style="gap: 16px; max-width: 72ch" aria-labelledby="tiny-h">
         <h2 id="tiny-h" style="font-size: 1.5rem">Prompty a chatboti v Tiny</h2>
         <p style="color: var(--muted)">Žáci pod věkovou hranicí chatbotů mohou stejné způsoby práce vyzkoušet v aplikaci <a href={url('/ve-vyuce/tiny')}>Tiny</a>.</p>
         <TinyTabulka />

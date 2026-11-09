@@ -33,7 +33,7 @@ const views = [
 ---
 <Base title={TITULEK} description={POPIS}>
   <div class="band band--white" style="padding-bottom: 32px">
-    <div class="wrap stack" style="gap: 24px">
+    <div class="wrap stack" style="gap: 32px">
       <Crumbs items={[{ title: 'Prompty', href: '/funkce/prompty' }, { title: TITULEK }]} />
       <header class="page-head">
         <h1>{TITULEK}</h1>
@@ -51,7 +51,7 @@ const views = [
       <div data-group-view={v.id} hidden={v.id !== 'ucel'} data-pagefind-ignore={v.id !== 'ucel' ? '' : undefined}>
         {v.groups.map((g, i) => (
           <section id={v.id === 'ucel' ? g.id : undefined} class={`band ${i % 2 === 0 ? 'band--sky' : 'band--white'}`} aria-label={g.title}>
-            <div class="wrap stack" style="gap: 20px">
+            <div class="wrap stack" style="gap: 28px">
               <h2 style="font-size: 1.7rem">{g.title} <span class="count">{pocet(g.items.length, 'prompt', 'prompty', 'promptů')}</span></h2>
               <div class="grid-2">
                 {g.items.map((p) => <PromptCard title={p.title} href={p.href} text={p.text} id={`${v.id}-${p.id.replace('/', '-')}`} skill={p.skill} />)}
