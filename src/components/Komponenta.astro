@@ -9,6 +9,7 @@ import CasovaOsa from './data/CasovaOsa.astro';
 import MaticeFunkci from './data/MaticeFunkci.astro';
 import KartyNastroju from './data/KartyNastroju.astro';
 import ZdrojeNastroju from './data/ZdrojeNastroju.astro';
+import InfografikaMcp from './data/InfografikaMcp.astro';
 interface Props { klic: Klic }
 const { klic } = Astro.props;
 ---
@@ -20,3 +21,4 @@ const { klic } = Astro.props;
 {klic === 'matice' && <MaticeFunkci />}
 {klic === 'karty-nastroju' && <KartyNastroju />}
 {klic === 'zdroje-nastroju' && <ZdrojeNastroju />}
+{klic === 'infografika-mcp' && <InfografikaMcp />}
