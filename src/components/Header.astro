@@ -61,7 +61,7 @@ const isIn = (g: { items: { href: string }[] }) => g.items.some((i) => current.s
     .nav-group:hover > .nav-top { background: var(--line-soft); }
     .nav-sub::before { content: ''; position: absolute; left: 0; right: 0; top: -10px; height: 10px; }
   }
-  .nav-sub a { display: block; padding: 11px 14px; border-radius: 10px; color: var(--ink); text-decoration: none; }
+  .nav-sub a { display: block; padding: 11px 14px; border-radius: 5px; color: var(--ink); text-decoration: none; }
   .nav-sub a:hover, .nav-sub a[aria-current='page'] { background: var(--sky-light); }
   .search-link { order: 1; display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: var(--pill); color: var(--ink); }
   .search-link:hover { background: var(--line-soft); color: var(--ink); }
@@ -73,7 +73,7 @@ const isIn = (g: { items: { href: string }[] }) => g.items.some((i) => current.s
     .nav { display: none; width: 100%; flex-direction: column; align-items: stretch; padding-bottom: 8px; }
     .nav.is-open { display: flex; }
     .nav > ul { flex-direction: column; }
-    .nav-top { width: 100%; justify-content: space-between; border-radius: 12px; }
+    .nav-top { width: 100%; justify-content: space-between; border-radius: 6px; }
     .nav-sub { position: static; min-width: 0; border: 0; padding: 0 0 6px 12px; }
     .cta { align-self: flex-start; }
   }

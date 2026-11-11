@@ -15,8 +15,8 @@
   --sky-light: #e3f1f6;
   --line: #e8edf0;
   --line-soft: #f1f4f6;
-  --radius: 16px;
-  --radius-lg: 22px;
+  --radius: 8px;
+  --radius-lg: 11px;
   --pill: 999px;
   --fh: 'Space Grotesk', system-ui, sans-serif;
   --fb: 'Inter', system-ui, sans-serif;
@@ -34,10 +34,10 @@ a { color: var(--accent-strong); }
 a:hover { color: var(--ink); }
 button, input { font: inherit; color: inherit; }
 button { cursor: pointer; }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
-.skip { position: absolute; left: 8px; top: -60px; background: var(--ink); color: var(--bg); padding: 10px 14px; border-radius: 10px; z-index: 50; }
+.skip { position: absolute; left: 8px; top: -60px; background: var(--ink); color: var(--bg); padding: 10px 14px; border-radius: 5px; z-index: 50; }
 .skip:focus { top: 8px; }
 
 /* rozvržení */
@@ -81,7 +81,7 @@ button { cursor: pointer; }
 .icon { width: 15px; height: 15px; flex: none; }
 
 /* karty */
-.card { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 26px 28px; display: flex; flex-direction: column; gap: 14px; color: var(--ink); text-decoration: none; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 9px; padding: 26px 28px; display: flex; flex-direction: column; gap: 14px; color: var(--ink); text-decoration: none; }
 .band--sky .card { border-color: var(--sky); }
 .card h3 { font-size: 1.3rem; font-weight: 700; }
 .card h3 a { color: var(--ink); text-decoration: none; }
@@ -93,7 +93,7 @@ a.card:hover { border-color: var(--sky-deep); }
 .badge { flex: none; font-size: 0.7rem; font-weight: 600; padding: 1px 8px; border-radius: var(--pill); white-space: nowrap; }
 .badge--sky { background: var(--sky-light); color: var(--sky-ink); border: 1px solid var(--sky); }
 .badge--end { background: var(--accent-strong); color: var(--on-accent); }
-.tile-icon { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; flex: none; }
+.tile-icon { width: 40px; height: 40px; border-radius: 6px; display: grid; place-items: center; flex: none; }
 .tile-icon--accent { background: var(--accent-soft); color: var(--accent-strong); }
 .tile-icon--sky { background: var(--sky-light); color: var(--sky-ink); }
 
@@ -126,7 +126,7 @@ a.card:hover { border-color: var(--sky-deep); }
 .prose li + li { margin-top: 0.5em; }
 .prose blockquote { margin-left: 0; margin-right: 0; background: var(--sky-light); border-radius: var(--radius); padding: 18px 22px; }
 .prose blockquote > * + * { margin-top: 0.6em; }
-.prose code { font-family: var(--fm); font-size: 0.88em; background: var(--line-soft); padding: 1px 5px; border-radius: 6px; }
+.prose code { font-family: var(--fm); font-size: 0.88em; background: var(--line-soft); padding: 1px 5px; border-radius: 3px; }
 .prose pre { background: var(--line-soft); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 24px; white-space: pre-wrap; font-size: 0.86rem; line-height: 1.6; overflow: auto; }
 .prose pre code { background: none; padding: 0; font-size: inherit; }
 .prose table { width: 100%; border-collapse: collapse; font-size: 0.93rem; display: block; overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius-lg); }
@@ -141,8 +141,8 @@ a.card:hover { border-color: var(--sky-deep); }
 .prose .prompt-block pre { background: none; border: 0; padding: 0; border-radius: 0; }
 .prose > .prompt-block { margin-top: 1em; }
 @media (max-width: 560px) {
-  .seg { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; border-radius: 18px; width: 100%; }
-  .seg button { border-radius: 14px; padding: 10px 10px; font-size: 0.85rem; line-height: 1.25; }
+  .seg { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; border-radius: 9px; width: 100%; }
+  .seg button { border-radius: 7px; padding: 10px 10px; font-size: 0.85rem; line-height: 1.25; }
 }
 
 /* Markdown rozdělený komponentami: úvodní odstavec jen v první části */
