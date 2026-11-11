@@ -74,10 +74,12 @@ const nKatalog = nUcitele + nVedeni + nZaci;
 
   <section class="band band--hp band--white" aria-labelledby="vyuka-h">
     <div class="wrap stack" style="gap: 32px">
-      <div class="section-head">
-        <div><h2 id="vyuka-h">Chatboti ve výuce</h2><p>Jak s chatboty pracovat ve třídě, aby se žáci učili víc, ne míň: bezpečná aplikace pro žáky, metodiky s hotovými lekcemi a doporučení, ze kterých může škola vycházet.</p></div>
+      <div class="tiny-uvod">
+        <a href="https://tiny.school" class="tiny-mockup"><img src={url('/img/tiny-mockup.png')} alt="Aplikace Tiny v mobilu (tiny.school)" width="579" height="535" loading="lazy" /></a>
+        <div class="section-head">
+          <div><h2 id="vyuka-h">Chatboti ve výuce</h2><p>Tiny je vzdělávací aplikace s jedenácti chatboty do hodiny. Připravili je naši didaktici. Vy zadáte jen téma (např. „opakování přítomného času“) a Tiny se postará o zbytek. Každý žák poté vede vlastní rozhovor k tématu. Místo odpovědí mu chatbot klade otázky, které ho posouvají v přemýšlení dál.</p></div>
+        </div>
       </div>
-      <a href="https://tiny.school" class="tiny-banner"><img src={url('/img/banner-tiny.png')} alt="AI aplikace Tiny pro školy zdarma. Chatboti do výuky bezpečně a didakticky správně. tiny.school" width="681" height="166" /></a>
       <div class="grid-3">
         <div class="card card--lg">
           <h3 style="font-size: 1.15rem">Aplikace Tiny</h3>
@@ -188,8 +190,10 @@ const nKatalog = nUcitele + nVedeni + nZaci;
   }
   .title-row { display: flex; align-items: center; gap: 10px; }
   .title-row .tile-icon { width: 34px; height: 34px; border-radius: 5px; }
-  .tiny-banner { display: block; border-radius: var(--radius-lg); overflow: hidden; }
-  .tiny-banner img { display: block; width: 100%; height: auto; }
+  .tiny-uvod { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 24px 48px; align-items: center; }
+  .tiny-mockup { display: block; justify-self: start; }
+  .tiny-mockup img { display: block; width: 100%; height: auto; }
+  @media (max-width: 760px) { .tiny-uvod { grid-template-columns: minmax(0, 1fr); } .tiny-mockup { max-width: 260px; } }
   .li { text-decoration: none; font-weight: 500; }
   .li2 { text-decoration: none; display: flex; flex-direction: column; }
   .li2 strong { font-weight: 600; }
