@@ -36,7 +36,7 @@ Definovat jako CSS proměnné na `:root` (`src/styles/global.css`). **Web je jen
 
 ## Tvary a rozvržení
 
-- Zaoblení: `--radius: 16px`, `--radius-lg: 22px` (karty, panely), `--pill: 999px` (štítky, přepínače).
+- Zaoblení: `--radius: 8px`, `--radius-lg: 11px` (karty, panely), `--pill: 999px` (štítky, přepínače, tlačítka). Od 11. 11. 2026 poloviční (Eva: „kulatost rohů je moc“); i pevné hodnoty v komponentách jsou poloviční.
 - Obsah: max. šířka 1180 px, okraje 20 px (mobil 16 px), mezery mezi sekcemi 56 px (mobil 44 px).
 - Text článků: max. 70 znaků na řádek.
 - Žádné stíny, hloubku dělají rámečky `1px solid var(--line)` a podbarvení.
@@ -60,7 +60,7 @@ Definovat jako CSS proměnné na `:root` (`src/styles/global.css`). **Web je jen
 
 - **Hlavička stránky** je jen nadpis (H1), popis a případně tlačítka pod ním. Žádné boxy, štítky ani nadtitulky vedle nebo nad nadpisem; kontext dává drobečková navigace.
 - **Pruhy přes celou šířku:** sekce hlavní stránky i skupiny v katalozích mají podklad přes celou šířku okna (bez rámečku a zaoblení) a střídají se `--sky-light` a `--bg`. Obsah uvnitř je omezený na 1180 px.
-- **Karty:** bílé (`--panel`), zaoblení 18–22 px, rámeček `--sky` na modrém pruhu a `--line` na bílém. Nadpis karty 1,3 rem.
+- **Karty:** bílé (`--panel`), zaoblení 9–11 px (od 11. 11. 2026), rámeček `--sky` na modrém pruhu a `--line` na bílém. Nadpis karty 1,3 rem.
 - **Tlačítka:** písmo jako odstavec (Inter, běžný řez, ne tučně, 15 px). Hlavní akce = plné tlačítko `--accent-strong` s bílým textem (na stránce nejvýš jedno nebo dvě). Vedlejší akce v kartě: tlačítko s obrysem `--sky` („Detail“) a vedle obyčejný odkaz s ikonou bez pilulky („Kopírovat“, „Stáhnout“). **Na červeném podkladu:** hlavní = bílá výplň a červený text, vedlejší = červená výplň, bílý obrys a bílý text.
 - **Prostor (8. 11. 2026):** vzdušně — pruhy 84 px nahoře i dole (mobil 60 px), na hlavní stránce o třetinu víc: 112 px (mobil 80 px), třída `.band--hp` (11. 11. 2026), karty s vnitřním odsazením 26–32 px, mezery v mřížkách 20–22 px, mezi textem a tlačítky aspoň 14 px; v textu článků větší odstupy odstavců a nadpisů.
 - **Menu v hlavičce:** hlavička je bílá a přes celou šířku okna — logo vlevo, menu, tlačítko a hledání zarovnané vpravo; podmenu se na počítači ukáže při najetí myší (kliknutí a klávesnice fungují také).
