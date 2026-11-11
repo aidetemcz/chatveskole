@@ -3,12 +3,13 @@
 import { url } from './url';
 
 export type Klic =
-  | 'cenik' | 'sady-skills' | 'pluginy' | 'tiny' // datové komponenty (Astro)
+  | 'cenik' | 'sady-skills' | 'pluginy' | 'tiny' | 'infografika-mcp' // datové komponenty (Astro)
   | 'zalozky' | 'nahledy' | 'tabulka-karty' // úprava následujícího HTML
   | 'teze' | 'casova-osa' | 'matice' | 'karty-nastroju' | 'zdroje-nastroju'; // stránka Změny funkcí
 
 const MAPA: [RegExp, Klic][] = [
   [/karty tarifů/, 'cenik'],
+  [/infografika MCP/, 'infografika-mcp'],
   [/dlaždice sad a skills/, 'sady-skills'],
   [/karty sad/, 'pluginy'],
   [/tabulka žákovský prompt/, 'tiny'],

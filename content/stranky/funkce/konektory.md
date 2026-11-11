@@ -13,6 +13,8 @@ zdroje:
 
 Konektor napojí chatbota na jinou aplikaci — Google Disk, Gmail, kalendář, Microsoft 365, Notion a další. Chatbot pak může s vaším svolením hledat ve vašich dokumentech, číst e-maily nebo zakládat události v kalendáři.
 
+<!-- komponenta: infografika MCP (src/components/data/InfografikaMcp.astro) -->
+
 ## K čemu je to ve škole dobré
 
 - „Najdi na mém Disku náš ŠVP pro 2. stupeň a navrhni, kam zařadit téma umělé inteligence.“
