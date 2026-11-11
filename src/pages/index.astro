@@ -135,10 +135,11 @@ const nKatalog = nUcitele + nVedeni + nZaci;
         <h2 id="metodiky-h">Metodické materiály</h2>
         <a class="more" href={url('/ve-vyuce/metodiky')}>Všechny metodické materiály →</a>
       </div>
-      <div class="grid-3">
+      <div class="grid-4">
         <a class="thumb" href="https://kurikulum.aidetem.cz/knowledgebase/chatboti-ve-vyuce-pracovni-listy/"><img src={url('/img/metodika-chatboti-ve-vyuce.png')} alt="" loading="lazy" /><div><h3>Chatboti ve výuce</h3><p>Úvod do promptování pro žáky od 13 let.</p></div></a>
         <a class="thumb" href="https://kurikulum.aidetem.cz/"><img src={url('/img/metodika-formativni-hodnoceni.jpg')} alt="" loading="lazy" /><div><h3>Využití chatbotů ve formativním hodnocení</h3><p>Metodika k sadě skills Formativní hodnocení.</p></div></a>
         <a class="thumb" href="https://kurikulum.aidetem.cz/knowledgebase/rozvoj-mysleni-s-vyuzitim-chatbota/"><img src={url('/img/metodika-rozvoj-mysleni.png')} alt="" loading="lazy" /><div><h3>Rozvoj myšlení s využitím chatbota</h3><p>Žáci rozvíjejí myšlení prostřednictvím otázek.</p></div></a>
+        <a class="thumb" href="https://www.tiny.school/metodiky/"><img src={url('/img/metodika-tiny.jpg')} alt="" loading="lazy" /><div><h3>Metodiky k aplikaci Tiny</h3><p>Podpůrné materiály pro využívání aplikace Tiny ve výuce.</p></div></a>
       </div>
     </div>
   </section>
@@ -197,6 +198,9 @@ const nKatalog = nUcitele + nVedeni + nZaci;
   .rules { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 40px; padding: 34px 36px; }
   .big h2 { font-size: 1.5rem; }
   .big p { font-size: 1rem; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
+  @media (max-width: 1000px) { .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 560px) { .grid-4 { grid-template-columns: minmax(0, 1fr); } }
   .thumb { border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; text-decoration: none; color: var(--ink); display: flex; flex-direction: column; background: var(--panel); }
   .thumb img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
   .thumb div { padding: 24px 26px; display: flex; flex-direction: column; gap: 10px; }
