@@ -80,35 +80,21 @@ const nKatalog = nUcitele + nVedeni + nZaci;
           <div><h2 id="vyuka-h">Chatboti ve výuce</h2><p>Tiny je AI aplikace s jedenácti vzdělávacími chatboty do hodiny. Připravili je didaktici AI dětem. Vy zadáte jen téma (např. „opakování přítomného času“) a Tiny se postará o zbytek. Každý žák poté vede vlastní rozhovor k tématu. Místo odpovědí mu chatbot klade otázky, které ho posouvají v přemýšlení dál. Všechny konverzace vidíte a na konci hodiny dostanete od Tiny jejich shrnutí.</p><p style="margin-top: 22px"><a class="btn btn--primary" href="https://tiny.school" target="_blank" rel="noopener">Vyzkoušet Tiny<span class="sr-only"> (otevře se v novém okně)</span></a></p></div>
         </div>
       </div>
-      <div class="grid-3">
+      <div class="grid-3 vyuka-boxy">
         <div class="card card--lg">
-          <h3 style="font-size: 1.15rem">Aplikace Tiny</h3>
-          <p>Velké chatboty nejsou dělané pro děti. V Tiny žáci pracují bez vlastních účtů u velkých firem a učitel vidí jejich konverzace v reálném čase.</p>
-          <ul class="ticks"><li>11 chatbotů pro žáky podle Bloomovy taxonomie</li><li>aktivity bez AI</li><li>AI asistenti pro učitele</li></ul>
-          <a class="more" href={url('/ve-vyuce/tiny')} style="margin-top: auto">O aplikaci Tiny →</a>
-        </div>
-        <div class="card card--lg">
-          <h3 style="font-size: 1.15rem">Metodiky k chatbotům</h3>
-          <a class="li" href="https://kurikulum.aidetem.cz/knowledgebase/chatboti-ve-vyuce-pracovni-listy/">Chatboti ve výuce — pracovní listy</a>
-          <a class="li" href="https://kurikulum.aidetem.cz/knowledgebase/zpusoby-vyuziti-chatbotu-ve-vyuce/">Způsoby využití chatbotů ve výuce</a>
-          <a class="li" href="https://kurikulum.aidetem.cz/knowledgebase/rozvoj-mysleni-s-vyuzitim-chatbota/">Rozvoj myšlení s využitím chatbota</a>
-          <a class="li" href="https://kurikulum.aidetem.cz/knowledgebase/data-02-vizualizace-dat-casova-rada/">Data 02 — Interpretace dat pomocí chatbotů</a>
-          <a class="more" href={url('/ve-vyuce/metodiky')} style="margin-top: auto">Všechny metodiky →</a>
+          <h3 style="font-size: 1.15rem">Metodické materiály pro Tiny</h3>
+          <p>Podpůrné materiály k aplikaci Tiny: jak její chatboty zařadit do hodiny a jak s nimi žáci pracují.</p>
+          <a class="more" href="https://www.tiny.school/metodiky/" style="margin-top: auto">Metodiky k Tiny →</a>
         </div>
         <div class="card card--lg">
-          <h3 style="font-size: 1.15rem">Doporučení pro využívání AI</h3>
-          <a class="li2" href={url('/ve-vyuce/doporuceni-zs-ss')}><strong>Doporučení pro ZŠ a SŠ</strong><span>Jak na AI ve škole — Národní pedagogický institut ČR</span></a>
-          <a class="li2" href={url('/ve-vyuce/doporuceni-vs')}><strong>Doporučení pro VŠ</strong><span>Pracovní skupina prg.ai a Univerzity Karlovy</span></a>
+          <h3 style="font-size: 1.15rem">Tvorba školních pravidel pro využívání AI</h3>
+          <p>Pravidla nejsou souborem zákazů, ale odrazem hodnot školy. Lekce na 45 minut a plán workshopu ukazují, jak je vytvořit společně s žáky.</p>
+          <a class="more" href="https://aidetem.cz/tvorba-skolnich-pravidel-pro-vyuzivani-digitalnich-technologii/" style="margin-top: auto">Jak na pravidla →</a>
         </div>
-      </div>
-      <div class="card card--lg rules">
-        <div class="stack" style="gap: 10px; flex: 1 1 520px">
-          <h3 style="font-size: 1.35rem">Tvorba školních pravidel pro využívání AI ve výuce</h3>
-          <p>Žáci AI používají, ať to škola dovolí, nebo ne. Pravidla nejsou o zákazu, ale o tom, kdy a jak AI učení pomáhá a kdy ho nahrazuje — a aby všichni věděli, co platí.</p>
-        </div>
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px">
-          <a class="btn btn--outline" href={url('/ve-vyuce/pravidla-pro-ai')}>Jak na pravidla</a>
-          <a class="more" href={url('/skills/skolni-pravidla')}>Skill Školní pravidla →</a>
+        <div class="card card--lg">
+          <h3 style="font-size: 1.15rem">Doporučení pro využívání AI ve školách</h3>
+          <p>Doporučení Národního pedagogického institutu „Jak na AI ve škole“ pro ředitele, učitele, žáky a rodiče.</p>
+          <a class="more" href={url('/ve-vyuce/doporuceni-zs-ss')} style="margin-top: auto">Doporučení pro ZŠ a SŠ →</a>
         </div>
       </div>
     </div>
@@ -194,12 +180,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
   .tiny-mockup { display: block; justify-self: start; }
   .tiny-mockup img { display: block; width: 100%; height: auto; }
   @media (max-width: 760px) { .tiny-uvod { grid-template-columns: minmax(0, 1fr); } .tiny-mockup { max-width: 260px; } }
-  .li { text-decoration: none; font-weight: 500; }
-  .li2 { text-decoration: none; display: flex; flex-direction: column; }
-  .li2 strong { font-weight: 600; }
-  .li2 span { font-size: 0.88rem; color: var(--muted); }
-  .ticks { margin: 0; padding-left: 18px; font-size: 0.93rem; display: flex; flex-direction: column; gap: 7px; }
-  .rules { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 40px; padding: 34px 36px; }
+  .vyuka-boxy { margin-top: 32px; }
   .big h2 { font-size: 1.5rem; }
   .big p { font-size: 1rem; }
   .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
