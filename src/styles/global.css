@@ -46,6 +46,9 @@ button { cursor: pointer; }
 .band--sky { background: var(--sky-light); }
 .band--white { background: var(--bg); }
 @media (max-width: 640px) { .wrap { padding-left: 16px; padding-right: 16px; } .band { padding: 60px 0; } }
+/* hlavní stránka: pruhy o třetinu vyšší odsazení (Eva 11. 11. 2026) */
+.band--hp { padding: 112px 0; }
+@media (max-width: 640px) { .band--hp { padding: 80px 0; } }
 .stack { display: flex; flex-direction: column; }
 .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); gap: 22px; }
 .grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 460px), 1fr)); gap: 20px; }
