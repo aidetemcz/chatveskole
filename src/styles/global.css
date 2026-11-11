@@ -160,7 +160,7 @@ a.card:hover { border-color: var(--sky-deep); }
 .nahledy { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 20px; }
 .prose .nahled { padding: 0 0 24px; overflow: hidden; gap: 10px; }
 .prose .nahled > :not(img):not(.nahled-tile) { margin: 0 22px; }
-.prose .nahled img, .nahled-tile { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 0; margin-bottom: 6px; }
+.prose .nahled img, .nahled-tile { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 0; margin-bottom: 6px; }
 .nahled-tile { display: grid; place-items: center; background: var(--sky-light); color: var(--sky-ink); }
 .prose .nahled h3 { margin-top: 0; font-size: 1.05rem; line-height: 1.3; }
 .prose .nahled h3 a { color: var(--ink); text-decoration: none; }

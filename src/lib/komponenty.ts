@@ -76,8 +76,8 @@ export function naZalozky(html: string, id: string): string {
 
 // Náhledové obrázky metodik podle adresy odkazu (public/img)
 const NAHLEDY: [string, string][] = [
-  ['chatboti-ve-vyuce-pracovni-listy', '/img/metodika-chatboti-ve-vyuce.png'],
-  ['rozvoj-mysleni', '/img/metodika-rozvoj-mysleni.png'],
+  ['chatboti-ve-vyuce-pracovni-listy', '/img/metodika-chatboti-ve-vyuce.jpg'],
+  ['rozvoj-mysleni', '/img/metodika-rozvoj-mysleni.jpg'],
   ['formativnim-hodnoceni', '/img/metodika-formativni-hodnoceni.jpg'],
 ];
 const IKONA_DOC = '<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><path d="M14 3v6h6M8 13h8M8 17h5"></path></svg>';
