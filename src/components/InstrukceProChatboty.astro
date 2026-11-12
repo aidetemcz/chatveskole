@@ -1,0 +1,767 @@
+---
+// Instrukce pro chatboty: krátký prompt → podrobný prompt → skill (→ pluginy), tři animace v canvasu.
+// Předloha: artifact https://claude.ai/artifact/G5qt2LLqKxcYXvAJ8Kokd4 (12. 11. 2026).
+// Skript animace je převzatý beze změny; písma jsou self-hostovaná (Inter, Space Grotesk, JetBrains Mono).
+import '@fontsource/jetbrains-mono/700.css';
+import { url } from '../lib/url';
+---
+<section class="band band--hp band--white instr-hlavicka" aria-labelledby="instr-h">
+  <div class="wrap">
+    <h2 id="instr-h">Instrukce <em>pro chatboty</em></h2>
+    <p class="lede">Instrukce chatbotu říkají, co přesně má udělat. Čím přesnější instrukce, tím přesnější výsledek. Podívejte se, jak to vypadá, když chatbota pošlete pro červenou rybu.</p>
+  </div>
+</section>
+
+<section class="band band--hp band--sky instr-faze" aria-labelledby="instr-f1">
+  <div class="wrap faze">
+    <div class="anim">
+      <canvas data-druh="1" aria-hidden="true"></canvas>
+      <button class="pauza" type="button" aria-pressed="false" aria-label="Pozastavit animaci" data-stav="bezi"><svg class="i-pauza" viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="2" width="2.4" height="8" rx="0.6"></rect><rect x="7.1" y="2" width="2.4" height="8" rx="0.6"></rect></svg><svg class="i-hrat" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg></button>
+    </div>
+    <div class="text">
+      <span class="krok" aria-hidden="true">1</span>
+      <h3 id="instr-f1">Krátký prompt</h3>
+      <p>Napíšete jen pár slov. Chatbot přesně neví, co chcete, a tak zkouší. Napoprvé se často netrefí.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band band--hp band--white instr-faze" aria-labelledby="instr-f2">
+  <div class="wrap faze">
+    <div class="anim">
+      <canvas data-druh="2" aria-hidden="true"></canvas>
+      <button class="pauza" type="button" aria-pressed="false" aria-label="Pozastavit animaci" data-stav="bezi"><svg class="i-pauza" viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="2" width="2.4" height="8" rx="0.6"></rect><rect x="7.1" y="2" width="2.4" height="8" rx="0.6"></rect></svg><svg class="i-hrat" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg></button>
+    </div>
+    <div class="text">
+      <span class="krok" aria-hidden="true">2</span>
+      <h3 id="instr-f2">Podrobný prompt</h3>
+      <p>Napíšete přesně, co chcete a jak na to. Chatbot se trefí napoprvé. Takhle dlouhý prompt ale musíte pokaždé napsat celý znovu.</p>
+          <a class="more" href={url('/prompty')}>Katalog promptů →</a>
+    </div>
+  </div>
+</section>
+
+<section class="band band--hp band--sky instr-faze" aria-labelledby="instr-f3">
+  <div class="wrap faze">
+    <div class="anim">
+      <canvas data-druh="3" aria-hidden="true"></canvas>
+      <button class="pauza" type="button" aria-pressed="false" aria-label="Pozastavit animaci" data-stav="bezi"><svg class="i-pauza" viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="2" width="2.4" height="8" rx="0.6"></rect><rect x="7.1" y="2" width="2.4" height="8" rx="0.6"></rect></svg><svg class="i-hrat" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg></button>
+    </div>
+    <div class="text">
+      <span class="krok" aria-hidden="true">3</span>
+      <h3 id="instr-f3">Skill</h3>
+      <p>Podrobné instrukce máte v chatbotu uložené jako skill. Napíšete jen pár slov a chatbot přesně ví, co a jak udělat.</p>
+          <a class="more" href={url('/skills')}>Katalog skills →</a>
+    </div>
+  </div>
+</section>
+
+<section class="band band--hp band--white instr-shrnuti" aria-label="Shrnutí">
+  <div class="wrap">
+    <p class="pointa">Prompt i skill jsou instrukce. Skill jen <em>nemusíte pokaždé psát znovu.</em></p>
+    <p class="pluginy">Víc skills pohromadě tvoří <strong>plugin</strong>: celou sadu nainstalujete najednou.</p>
+    <p class="odkazy"><a class="more" href={url('/prompty')}>Katalog promptů →</a><a class="more" href={url('/skills')}>Katalog skills →</a><a class="more" href={url('/funkce/pluginy')}>Co jsou pluginy →</a></p>
+  </div>
+</section>
+
+<style>
+  .instr-hlavicka { padding-bottom: 48px; }
+  .instr-hlavicka h2 { font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 700; margin: 0 0 14px; }
+  .instr-hlavicka h2 em { font-style: normal; color: var(--accent); }
+  .instr-hlavicka .lede { max-width: 70ch; font-size: 1.05rem; color: #1f3f4d; }
+  .faze { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 44px; align-items: center; }
+  .anim { position: relative; aspect-ratio: 4 / 3; border: 1px solid var(--sky); border-radius: var(--radius-lg); overflow: hidden; background: var(--sky-light); }
+  .anim canvas { display: block; width: 100%; height: 100%; }
+  .pauza { position: absolute; right: 14px; bottom: 14px; width: 26px; height: 26px; padding: 0; border: 0; border-radius: 50%; display: grid; place-items: center; background: rgba(255, 255, 255, 0.72); color: #1f3f4d; cursor: pointer; }
+  .pauza:hover { background: #fff; }
+  .pauza:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .pauza svg { width: 11px; height: 11px; fill: currentColor; }
+  .pauza[data-stav='bezi'] .i-hrat, .pauza[data-stav='stoji'] .i-pauza { display: none; }
+  .krok { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--accent); color: #fff; font: 600 1rem/1 var(--fh); margin-bottom: 14px; }
+  .text h3 { font-size: 1.7rem; font-weight: 600; margin: 0 0 12px; }
+  .text p { margin: 0; max-width: 42ch; font-size: 1.05rem; }
+  .text .more { display: inline-block; margin-top: 18px; }
+  .instr-shrnuti { text-align: center; }
+  .pointa { margin: 0 auto; max-width: 46ch; font: 600 1.5rem/1.35 var(--fh); color: var(--ink); text-wrap: balance; }
+  .pointa em { font-style: normal; color: var(--accent); }
+  .pluginy { margin: 18px auto 0; max-width: 56ch; font-size: 1.05rem; color: var(--muted); }
+  .odkazy { margin-top: 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 28px; }
+  @media (max-width: 860px) {
+    .faze { grid-template-columns: 1fr; gap: 24px; }
+  }
+</style>
+
+<script>
+(() => {
+  'use strict';
+  // ---------- barvy a rozměry (stejné jako HeroKrajina.astro) ----------
+  const B = { bg: '#e3f1f6', sky: '#b3cdd6', skyDeep: '#5f8c9b', skyInk: '#3f6b7a', navy: '#2f5868', navyDeep: '#1f3f4d',
+    red: '#dc5b5b', redDark: '#c24848', redLight: '#e88585', blue2: '#7fa6b4', white: '#ffffff' };
+  const VODA = ['#d3e6ed', '#c9dfe8', '#bfd7e1', '#b4cfdb', '#a8c6d3'];
+  const MONO = '"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace';
+  const SANS = 'Inter, system-ui, -apple-system, "Segoe UI", sans-serif';
+  const LW = 800, LH = 600;        // logické plátno 4:3
+  const S = 5;                     // velikost pixelu postav
+  const HL = 330;                  // hladina
+  const BX = 280;                  // střed loďky
+  const BOX = { x: 34, y: 20, w: 732, h: 112 };
+  const PROMPT_KRATKY = 'Červená ryba';
+  const PROMPT_DLOUHY = 'Červená ryba. Hoď síť tam, kde jich plave nejvíc, vytáhni ji nad hladinu, červené ryby dej do loďky a modré pusť zpátky do moře.';
+  const SKILL = 'Skill: Lov červených ryb';
+
+  // ---------- pomocné funkce ----------
+  const h3 = (x, y, s) => { let h = (Math.imul(x | 0, 374761393) + Math.imul(y | 0, 668265263) + Math.imul(s | 0, 2147483647)) | 0; h = Math.imul(h ^ (h >>> 13), 1274126177); return ((h ^ (h >>> 16)) >>> 0) / 4294967296; };
+  function rng(seed) { let a = seed >>> 0; return () => { a = (a + 0x6D2B79F5) >>> 0; let t = a; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+  const clamp = (v, a, b) => (v < a ? a : v > b ? b : v);
+  const ease = (u) => { u = clamp(u, 0, 1); return u * u * (3 - 2 * u); };
+  const lerp = (a, b, u) => a + (b - a) * u;
+  const mix = (p, q, u) => ({ x: lerp(p.x, q.x, u), y: lerp(p.y, q.y, u) });
+  const outBack = (u) => { u = clamp(u, 0, 1); const c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(u - 1, 3) + c1 * Math.pow(u - 1, 2); };
+  const vyber = (str, r) => str[Math.floor(r * str.length) % str.length];
+  const rnd = Math.random;
+
+  // robot z loga: maska hlavy s anténkou (jako v hero)
+  const MASKA = [], MSET = new Set();
+  for (let y = 3; y <= 13; y++) for (let x = 2; x <= 16; x++) if (Math.min(x - 2, 16 - x) + Math.min(y - 3, 13 - y) >= 2) { MASKA.push([x, y]); MSET.add(x + ',' + y); }
+  for (const [x, y] of [[9, 2], [9, 1], [8, 0], [9, 0], [10, 0]]) { MASKA.push([x, y]); MSET.add(x + ',' + y); }
+  const jeOkraj = (x, y) => !MSET.has((x + 1) + ',' + y) || !MSET.has((x - 1) + ',' + y) || !MSET.has(x + ',' + (y + 1)) || !MSET.has(x + ',' + (y - 1));
+
+  const IKONA_X = ['XX...XX', 'XXX.XXX', '.XXXXX.', '..XXX..', '.XXXXX.', 'XXX.XXX', 'XX...XX'];
+  const IKONA_OK = ['.......XX', '......XXX', '.....XXX.', 'XX..XXX..', 'XXXXXX...', '.XXXX....', '..XX.....'];
+  // místa pro ryby na palubě (vlevo od robota): střed x od BX, posun dna, směr
+  // modrý koš na palubě (vlevo od robota): střed od BX, šířka nahoře a dole v pixelech postav, výška
+  const KOS = { x: -20, w: 14, wd: 11, h: 6 };
+  // místa ryb v koši: posun od středu koše a od horního okraje (kladné = hlouběji v koši), směr
+  const HROMADA = [{ x: -16, y: -1, d: 1 }, { x: 10, y: -1, d: -1 }, { x: -3, y: -5, d: -1 }, { x: 18, y: -6, d: 1 }, { x: -14, y: -9, d: 1 }, { x: 5, y: -10, d: -1 }];
+  const ZAVINAC = ['.XXXXX.', 'X.....X', 'X.XXX.X', 'X.X.X.X', 'X.XXXX.', 'X......', '.XXXXX.'];
+  const NC = 10, NR = 7;           // síť: počet ok
+  const OX = 600, GX = 545, GY = 230; // síť ve vodě (střed) a vytažená síť (střed, horní okraj)
+
+  function animace(canvas, tlacitko, druh) {
+    const ctx = canvas.getContext('2d');
+    const prompt = druh === 2 ? PROMPT_DLOUHY : PROMPT_KRATKY;
+    const rychlostPsani = druh === 2 ? 0.028 : 0.09;
+    const tPsani = 0.6, tOdeslano = tPsani + prompt.length * rychlostPsani + 0.4;
+    let scale = 1, bezi = true, viditelna = true, posledni = 0;
+    const A = { T: 0 };
+
+    // ---------- stavba scény ----------
+    function novaRyba(r, cer, x, y, vx) {
+      const w = cer ? 5 : 4 + Math.floor(r() * 3), h = w >= 5 ? 3 : 2;
+      return { cer, x, y, hy: y, vx, w, h, f: r() * 6, seed: Math.floor(r() * 999), dir: vx >= 0 ? 1 : -1, vert: false, vy: 0, st: 'plave',
+        barva: cer ? B.red : [B.skyDeep, B.navy, B.blue2][Math.floor(r() * 3)] };
+    }
+    function noveDeti() {
+      const r = rng(2026), deti = [];
+      for (let i = 0; i < 5; i++) {
+        const w = 4, h = 2 + Math.floor(r() * 2), tvar = [];
+        for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { if (w > 3 && y === 0 && (x === 0 || x === w - 1) && r() < 0.7) continue; tvar.push([x, y]); }
+        if (r() < 0.55) tvar.push([Math.floor(w / 2), -1]);
+        deti.push({ i, w, h, tvar, faze: r() * 6.28, seed: 100 + i * 37, slotX: BX - 35 * S + i * 24, y: 0, vy: 0, naZemi: true,
+          dalsiSkok: 1 + r() * 5, st: 'paluba', x: 0, yb: 0, ryba: null, cil: null });
+      }
+      return deti;
+    }
+    function reset() {
+      const r = rng(7 + druh * 13);
+      A.t0 = A.T; A.s = 0; A.parts = []; A.hromada = []; A.bubliny = []; A.hotovo = false; A.konec = Infinity; A.zmizeni = 0;
+      A.robot = { skok: 0, vy: 0, vzduch: false, rukaP: 0, rukaL: 0, skokV: Infinity };
+      A.deti = noveDeti();
+      A.ryby = [];
+      const nahodne = (n, cer, oblast) => { for (let i = 0; i < n; i++) { const o = oblast || [0, LW, HL + 34, LH - 22]; A.ryby.push(novaRyba(r, cer, lerp(o[0], o[1], r()), lerp(o[2], o[3], r()), (12 + r() * 16) * (r() < 0.5 ? -1 : 1))); } };
+      if (druh === 1) {
+        nahodne(13, false); nahodne(3, true, [20, 420, HL + 60, LH - 30]);
+        A.ryba1 = novaRyba(r, false, 600, 402, -8); A.ryba1.w = 5; A.ryba1.h = 3; A.ryba1.barva = B.navy;
+        A.ryba2 = novaRyba(r, true, 660, 470, 7);
+        A.ryby.push(A.ryba1, A.ryba2);
+        A.prut = { st: 'klid', t0: 0, ang: 58, ohyb: 0, hacek: { x: 0, y: 0 }, ryba: null, hod: 0, cil: null };
+      } else if (druh === 2) {
+        nahodne(9, false); nahodne(2, true, [20, 400, HL + 60, LH - 30]);
+        for (const [x, y, vx] of [[540, 388, 6], [620, 432, -5], [572, 474, 4]]) A.ryby.push(novaRyba(r, true, x, y, vx));
+        for (const [x, y, vx] of [[515, 445, 5], [652, 396, -6], [598, 410, 7], [660, 468, -4]]) A.ryby.push(novaRyba(r, false, x, y, vx));
+        A.sit = { st: 'drzi', t0: 0, otevreni: 0, L: 0, F: 0, bx: 0, by: 0, chycene: [], tridit: 0, dalsi: 0 };
+      } else {
+        nahodne(14, false);
+        for (const [x, y, vx] of [[478, 384, 8], [568, 500, -7], [650, 418, 6], [728, 520, -6], [612, 556, 5]]) A.ryby.push(novaRyba(r, true, x, y, vx));
+      }
+    }
+
+    // ---------- souřadnice ----------
+    const paluba = () => HL - 3 * S + Math.round(Math.sin(A.T * 1.3) * 2);
+    const robotXY = () => ({ x0: BX + Math.round(4.5 * S), y0: Math.round(paluba() - 19 * S + A.robot.skok) });
+    const ruka = () => { const R = robotXY(); return { x: R.x0 + 18.5 * S, y: R.y0 + (8 - Math.round(A.robot.rukaP) + 0.5) * S }; };
+    const okrajKose = () => paluba() - KOS.h * S;
+    const hromadaPos = (i) => { const p = HROMADA[i % HROMADA.length]; return { x: BX + KOS.x + p.x, y: okrajKose() + p.y, dir: p.d }; };
+    const stredDitete = (d) => ({ x: d.x + d.w * S / 2, y: d.yb - (d.h + 2) * S / 2 });
+
+    // ---------- částice ----------
+    function cakanec(x, y, n) {
+      for (let i = 0; i < n; i++) A.parts.push({ x: x + (rnd() - 0.5) * 10, y: y - 2, vx: (rnd() - 0.5) * 110, vy: -50 - rnd() * 110, g: 420, t: 0, zivot: 0.6 + rnd() * 0.35, ch: vyber(".'`o:", rnd()), c: rnd() < 0.5 ? B.skyDeep : B.navy });
+      A.parts.push({ kruh: true, x, y: HL, t: 0, zivot: 0.9 });
+    }
+    const bublinka = (x, y) => A.parts.push({ x, y, vx: (rnd() - 0.5) * 8, vy: -26 - rnd() * 18, g: 0, t: 0, zivot: 1.4, ch: vyber('o.°', rnd()), c: B.white, voda: true });
+    const kapka = (x, y) => A.parts.push({ x, y, vx: (rnd() - 0.5) * 6, vy: 0, g: 520, t: 0, zivot: 0.9, ch: vyber(".'", rnd()), c: B.skyDeep, kapka: true });
+
+    function uspech() {
+      if (A.hotovo) return;
+      A.hotovo = true;
+      A.bubliny.push({ typ: 'ok', t0: A.T + 0.1, dur: 2.3 });
+      A.robot.skokV = A.T + 0.15;
+      A.deti.forEach((d, i) => { if (d.st === 'paluba') d.dalsiSkok = A.T + 0.25 + i * 0.12; });
+      A.konec = A.T + 3;
+    }
+
+    // ---------- ryby ----------
+    function plavej(f, dt, k = 1) {
+      f.x += f.vx * k * dt; f.dir = f.vx >= 0 ? 1 : -1;
+      f.y += (f.hy - f.y) * Math.min(1, dt * 0.6) + Math.sin(A.T * 1.2 + f.f) * 0.1;
+      if (f.x > LW + 40) f.x = -40; if (f.x < -40) f.x = LW + 40;
+    }
+    function ridit(o, tx, ty, v, dt) {
+      const dx = tx - o.x, dy = ty - o.y, d = Math.hypot(dx, dy);
+      if (d < 0.001) return 0;
+      const k = Math.min(1, (v * dt) / d); o.x += dx * k; o.y += dy * k;
+      if (Math.abs(dx) > 1.5) o.dir = dx > 0 ? 1 : -1;
+      return d;
+    }
+    function aktualizujRyby(dt) {
+      for (const f of A.ryby) {
+        if (f.st === 'plave') plavej(f, dt, f.cer && f.vybrana ? 0.5 : 1);
+        else if (f.st === 'pada') {
+          f.vy += 600 * dt; f.y += f.vy * dt;
+          if (f.y >= HL && f.vy > 0 && !f.dopad) { f.dopad = true; cakanec(f.x, HL, 8); }
+          if (f.y >= HL + 24) { f.st = 'plave'; f.vert = false; f.vy = 0; f.dopad = false; f.vx = 46; f.hy = HL + 70 + rnd() * 110; }
+        } else if (f.st === 'leti') {
+          const u = clamp((A.T - f.t0) / f.dur, 0, 1), cil = hromadaPos(f.slot);
+          f.x = lerp(f.od.x, cil.x, u); f.y = lerp(f.od.y, cil.y, u) - Math.sin(Math.PI * u) * f.oblouk; f.vert = false;
+          if (u >= 1) { f.st = 'hromada'; A.hromada.push(f); }
+        } else if (f.st === 'hromada') {
+          const p = hromadaPos(f.slot); f.x = p.x; f.y = p.y; f.dir = p.dir; f.vert = false;
+        }
+      }
+    }
+    function posliNaHromadu(f, oblouk, dur) {
+      f.st = 'leti'; f.t0 = A.T; f.dur = dur; f.od = { x: f.x, y: f.y }; f.oblouk = oblouk;
+      f.slot = A.hromada.length + A.ryby.filter((g) => g.st === 'leti').length - 1;
+    }
+
+    // ---------- fáze 1: prut ----------
+    function prutGeom() {
+      const R = robotXY(), P = A.prut;
+      const gx = 19, gy = 7 - Math.round(A.robot.rukaP), L = 26;
+      const a = (P.ang * Math.PI) / 180, dx = Math.cos(a), dy = -Math.sin(a), qx = Math.sin(a), qy = Math.cos(a);
+      const bunky = [], videne = new Set();
+      for (let i = 0; i <= L * 2; i++) {
+        const u = i / (L * 2);
+        const cx = Math.round(gx + u * L * dx + P.ohyb * u * u * qx), cy = Math.round(gy + u * L * dy + P.ohyb * u * u * qy);
+        const k = cx + ',' + cy; if (!videne.has(k)) { videne.add(k); bunky.push([cx, cy]); }
+      }
+      const posl = bunky[bunky.length - 1];
+      return { bunky, R, spicka: { x: R.x0 + (posl[0] + 0.5) * S, y: R.y0 + (posl[1] + 0.5) * S } };
+    }
+    function nahod(c) { const P = A.prut; P.st = 'naprah'; P.t0 = A.T; P.hod = c; P.cil = c === 1 ? A.ryba1 : A.ryba2; P.dopadX = c === 1 ? 560 : 640; P.hloubka = c === 1 ? 405 : 470; }
+    function faze1(dt) {
+      const P = A.prut;
+      if (A.s >= tOdeslano + 0.4 && P.hod === 0) nahod(1);
+      const sp = prutGeom().spicka, u = A.T - P.t0;
+      switch (P.st) {
+        case 'klid': P.ang = 58 + Math.sin(A.T * 1.3) * 3; P.ohyb = 0; A.robot.rukaP = lerp(A.robot.rukaP, 0, Math.min(1, dt * 6)); P.hacek = { x: sp.x + 4 + Math.sin(A.T * 2) * 2, y: sp.y + 30 }; break;
+        case 'naprah': { const k = ease(u / 0.45); P.ang = lerp(58, 125, k); A.robot.rukaP = 3 * k; P.hacek = { x: sp.x + 4, y: sp.y + 28 }; if (u >= 0.45) { P.st = 'svih'; P.t0 = A.T; } break; }
+        case 'svih': { const k = ease(u / 0.22); P.ang = lerp(125, 28, k); A.robot.rukaP = 3 * (1 - k); P.hacek = { x: sp.x + 6, y: sp.y + 20 }; if (u >= 0.22) { P.st = 'let'; P.t0 = A.T; P.od = { x: sp.x, y: sp.y }; } break; }
+        case 'let': { const k = Math.min(1, u / 0.8); P.ang = lerp(28, 40, ease(k)); P.hacek = { x: lerp(P.od.x, P.dopadX, k), y: lerp(P.od.y, HL, k) - Math.sin(Math.PI * k) * 70 }; if (k >= 1) { cakanec(P.dopadX, HL, 9); P.st = 'klesa'; P.t0 = A.T; } break; }
+        case 'klesa': {
+          const k = ease(u / 0.9); P.ang = 40 + Math.sin(A.T * 1.3) * 1.5;
+          P.hacek = { x: P.dopadX + Math.sin(A.T * 2) * 2, y: lerp(HL + 2, P.hloubka, k) };
+          if (u > 0.3 && P.cil.st === 'plave') { P.cil.st = 'jde'; P.cil.strana = P.cil.x >= P.hacek.x ? 1 : -1; }
+          if (P.cil.st === 'jde') {
+            const d = ridit(P.cil, P.hacek.x + P.cil.strana * (P.cil.w / 2) * S, P.hacek.y, 75, dt);
+            P.cil.dir = -P.cil.strana;
+            if (d < 4) { P.cil.st = 'hacek'; P.ryba = P.cil; P.st = 'zabral'; P.t0 = A.T; }
+          }
+          break;
+        }
+        case 'zabral': P.ohyb = 4 + Math.sin(A.T * 28); P.ang = 40; P.hacek = { x: P.hacek.x + Math.sin(A.T * 35) * 0.8, y: P.hacek.y }; if (u >= 0.5) { P.st = 'navijeni'; P.t0 = A.T; P.od = { ...P.hacek }; P.vynoreno = false; } break;
+        case 'navijeni': {
+          const k = ease(u / 1.1); P.ang = lerp(40, 30, k); P.ohyb = lerp(4, 2.5, k);
+          P.hacek = { x: lerp(P.od.x, sp.x + 6, k), y: lerp(P.od.y, sp.y + 52, k) };
+          if (!P.vynoreno && P.hacek.y < HL) { P.vynoreno = true; cakanec(P.hacek.x, HL, 10); }
+          if (u >= 1.1) { P.st = 'visi'; P.t0 = A.T; if (P.hod === 1) A.bubliny.push({ typ: 'x', t0: A.T + 0.1, dur: 1.6 }); }
+          break;
+        }
+        case 'visi':
+          P.ang = 30 + Math.sin(A.T * 1.3) * 2; P.ohyb = P.ryba ? 2.5 : 0.5;
+          P.hacek = { x: sp.x + 6 + Math.sin(A.T * 3) * 3, y: sp.y + 52 };
+          if (P.hod === 1) { if (P.ryba && u >= 1.0) { P.ryba.st = 'pada'; P.ryba.vy = 0; P.ryba = null; } if (u >= 2.0) nahod(2); }
+          else if (u >= 0.5) { P.st = 'prehoz'; P.t0 = A.T; P.od = { ...P.hacek }; }
+          break;
+        case 'prehoz': {
+          const k = ease(u / 0.9); P.ang = lerp(30, 108, k); P.ohyb = 0;
+          const c = hromadaPos(A.hromada.length);
+          P.hacek = { x: lerp(P.od.x, c.x, k), y: lerp(P.od.y, c.y - 9, k) - Math.sin(Math.PI * k) * 60 };
+          if (u >= 0.9) { const f = P.ryba; f.st = 'hromada'; f.slot = A.hromada.length; A.hromada.push(f); P.ryba = null; P.st = 'zpet'; P.t0 = A.T; uspech(); }
+          break;
+        }
+        case 'zpet': { const k = ease(u / 0.6); P.ang = lerp(108, 58, k); P.hacek = { x: sp.x + 4, y: sp.y + 30 }; if (u >= 0.6) P.st = 'klid'; break; }
+      }
+      if (P.ryba) {
+        const f = P.ryba;
+        if (P.hacek.y < HL - 4) { f.vert = true; f.x = P.hacek.x; f.y = P.hacek.y + (f.w / 2) * S + 2; }
+        else { f.vert = false; f.x = P.hacek.x - f.dir * (f.w / 2) * S; f.y = P.hacek.y; }
+      }
+    }
+
+    // ---------- fáze 2: síť ----------
+    function sitBod(u, v, i, j) {
+      const N = A.sit, sum = i === undefined ? 0 : 1;
+      const n1 = sum * (h3(i, j, 11) - 0.5) * 7, n2 = sum * (h3(i, j, 12) - 0.5) * 6;
+      const vln = Math.sin(A.T * 1.6 + u * 6 + v * 3) * 2;
+      const hl = N.st === 'otevira' ? N.otevreni : 1;
+      const O = { x: OX + (u - 0.5) * (210 - 40 * v) + n1 + vln * 0.5, y: HL + 4 + v * 170 * hl + n2 * hl + vln * v };
+      const G = { x: GX + (u - 0.5) * 130 * (1 - 0.5 * v * v) + n1 * 0.6 + Math.sin(A.T * 2) * 2 * v, y: GY + v * 70 + Math.sin(Math.PI * u) * 16 * v + n2 * 0.5 };
+      const Bp = { x: N.bx + (u - 0.5) * 16, y: N.by + (v - 0.5) * 12 };
+      if (N.st === 'otevira') return mix(Bp, O, N.otevreni);
+      if (N.st === 'ceka') return O;
+      if (N.st === 'zveda') return mix(O, G, N.L);
+      if (N.st === 'tridi') return G;
+      if (N.st === 'sklada') return mix(G, Bp, N.F);
+      return Bp;
+    }
+    const sitViditelna = () => ['otevira', 'ceka', 'zveda', 'tridi', 'sklada'].includes(A.sit.st);
+    function faze2(dt) {
+      const N = A.sit, u = A.T - N.t0, h = ruka();
+      if (N.st === 'drzi') { N.bx = h.x + 8; N.by = h.y - 6; if (A.s >= tOdeslano + 0.3 && !A.hotovo) { N.st = 'naprah'; N.t0 = A.T; } }
+      else if (N.st === 'naprah') { A.robot.rukaP = 3 * ease(u / 0.4); N.bx = h.x + 8; N.by = h.y - 6; if (u >= 0.4) { N.st = 'leti'; N.t0 = A.T; N.od = { x: N.bx, y: N.by }; } }
+      else if (N.st === 'leti') {
+        const k = Math.min(1, u / 0.85); A.robot.rukaP = 3 * (1 - ease(k));
+        N.bx = lerp(N.od.x, OX, k); N.by = lerp(N.od.y, HL + 4, k) - Math.sin(Math.PI * k) * 90;
+        if (k >= 1) { cakanec(OX, HL, 14); N.st = 'otevira'; N.t0 = A.T; N.otevreni = 0; }
+      } else if (N.st === 'otevira') {
+        N.otevreni = ease(u / 1.4);
+        if (u >= 1.4) {
+          N.st = 'ceka'; N.t0 = A.T; N.chycene = [];
+          for (const f of A.ryby) {
+            if (f.st !== 'plave') continue;
+            const v = (f.y - (HL + 4)) / 170; if (v < 0.08 || v > 0.94) continue;
+            const uu = (f.x - OX) / (210 - 40 * v) + 0.5; if (uu < 0.06 || uu > 0.94) continue;
+            f.st = 'sit'; f.nu = clamp(uu, 0.12, 0.88); f.nv = clamp(v, 0.15, 0.85); N.chycene.push(f);
+          }
+          const cer = N.chycene.filter((f) => f.cer), mod = N.chycene.filter((f) => !f.cer), pořadí = [];
+          while (cer.length || mod.length) { if (cer.length) pořadí.push(cer.shift()); if (mod.length) pořadí.push(mod.shift()); }
+          N.chycene = pořadí;
+        }
+      } else if (N.st === 'ceka') { if (u >= 0.3) { N.st = 'zveda'; N.t0 = A.T; } }
+      else if (N.st === 'zveda') {
+        N.L = ease(u / 1.5); A.robot.rukaP = 2.5 * N.L;
+        if (N.L > 0.55 && rnd() < 0.5) { const p = sitBod(0.2 + rnd() * 0.6, 1); kapka(p.x, p.y); }
+        if (u >= 1.5) { N.st = 'tridi'; N.t0 = A.T; N.dalsi = A.T + 0.3; N.tridit = 0; }
+      } else if (N.st === 'tridi') {
+        if (rnd() < 0.3) { const p = sitBod(0.2 + rnd() * 0.6, 1); kapka(p.x, p.y); }
+        if (A.T >= N.dalsi && N.tridit < N.chycene.length) {
+          const f = N.chycene[N.tridit++];
+          if (f.cer) posliNaHromadu(f, 70, 0.7); else { f.st = 'pada'; f.vy = -60; f.vert = false; }
+          N.dalsi = A.T + 0.45;
+        }
+        if (N.tridit >= N.chycene.length && A.T >= N.dalsi + 0.4) { N.st = 'sklada'; N.t0 = A.T; }
+      } else if (N.st === 'sklada') {
+        N.F = ease(u / 0.6); A.robot.rukaP = 2.5 * (1 - N.F); N.bx = h.x + 8; N.by = h.y - 6;
+        if (u >= 0.6) { N.st = 'drzi'; uspech(); }
+      }
+      for (const f of A.ryby) if (f.st === 'sit') { const p = sitBod(f.nu, f.nv); f.x = p.x + Math.sin(A.T * 3 + f.f) * 1.5; f.y = p.y; }
+    }
+
+    // ---------- fáze 3: blobíci ----------
+    function faze3(dt) {
+      const zacatek = tOdeslano + 0.9;
+      A.robot.rukaP = A.s > tOdeslano + 0.4 && A.s < zacatek + 2.6 ? lerp(A.robot.rukaP, 3, Math.min(1, dt * 8)) : lerp(A.robot.rukaP, 0, Math.min(1, dt * 6));
+      for (const d of A.deti) {
+        if (d.st === 'paluba' && !d.hotovy && A.s >= zacatek + d.i * 0.45) {
+          const vstup = 500 + d.i * 48, volne = A.ryby.filter((f) => f.cer && !f.vybrana && f.st === 'plave');
+          volne.sort((a, b) => Math.hypot(a.x - vstup, a.y - HL) - Math.hypot(b.x - vstup, b.y - HL));
+          d.cil = volne[0]; if (d.cil) d.cil.vybrana = true;
+          d.st = 'skok'; d.t0 = A.T; d.od = { x: d.slotX, y: paluba() + d.y }; d.kam = { x: vstup - (d.w * S) / 2, y: HL + 8 }; d.dur = 1.0; d.oblouk = 130;
+        }
+        if (d.st === 'skok' || d.st === 'skok2' || d.st === 'skok3') {
+          const u = clamp((A.T - d.t0) / d.dur, 0, 1), kam = d.st === 'skok3' ? { x: d.slotX, y: paluba() } : d.st === 'skok2' ? { x: hromadaPos(A.hromada.length).x - (d.w * S) / 2, y: okrajKose() } : d.kam;
+          d.x = lerp(d.od.x, kam.x, u); d.yb = lerp(d.od.y, kam.y, u) - Math.sin(Math.PI * u) * d.oblouk;
+          if (u >= 1) {
+            if (d.st === 'skok') { cakanec(d.x + (d.w * S) / 2, HL, 10); d.st = 'plave'; }
+            else if (d.st === 'skok2') { const f = d.ryba; f.st = 'hromada'; f.slot = A.hromada.length; A.hromada.push(f); d.ryba = null; d.st = 'skok3'; d.t0 = A.T; d.od = { x: d.x, y: d.yb }; d.dur = 0.55; d.oblouk = 34; }
+            else { d.st = 'paluba'; d.hotovy = true; d.y = 0; d.naZemi = true; d.dalsiSkok = A.T + 0.5 + rnd() * 2; }
+          }
+        } else if (d.st === 'plave' || d.st === 'nahoru') {
+          const c = stredDitete(d);
+          const cil = d.st === 'plave' ? { x: d.cil.x, y: d.cil.y } : { x: BX + 36 * S + 24 + d.i * 14, y: HL + 6 };
+          const p = { x: c.x, y: c.y };
+          const vzd = ridit(p, cil.x, cil.y, d.st === 'plave' ? 125 : 115, dt);
+          d.dir = p.x >= c.x ? 1 : -1;
+          d.x += p.x - c.x; d.yb += p.y - c.y;
+          if (rnd() < dt * 8) bublinka(c.x, c.y - 6);
+          if (d.st === 'plave' && vzd < 10) { d.ryba = d.cil; d.ryba.st = 'nese'; d.st = 'nahoru'; }
+          else if (d.st === 'nahoru' && vzd < 6) { cakanec(c.x, HL, 6); d.st = 'skok2'; d.t0 = A.T; d.od = { x: d.x, y: d.yb }; d.dur = 0.85; d.oblouk = 90; }
+        }
+        if (d.ryba) { const c = stredDitete(d), smer = d.dir || 1; d.ryba.dir = smer; d.ryba.vert = false; d.ryba.x = c.x + smer * ((d.w * S) / 2 + 12); d.ryba.y = c.y + 2; }
+      }
+      if (!A.hotovo && A.deti.every((d) => d.hotovy)) uspech();
+    }
+
+    // ---------- společná aktualizace ----------
+    function krok(dt) {
+      A.T += dt; A.s = A.T - A.t0;
+      if (druh === 1) faze1(dt); else if (druh === 2) faze2(dt); else faze3(dt);
+      aktualizujRyby(dt);
+      const R = A.robot;
+      if (!R.vzduch && A.T >= R.skokV) { R.vzduch = true; R.vy = -250; R.skokV = Infinity; }
+      if (R.vzduch) { R.vy += 900 * dt; R.skok += R.vy * dt; if (R.skok >= 0) { R.skok = 0; R.vy = 0; R.vzduch = false; } }
+      for (const d of A.deti) {
+        if (d.st !== 'paluba') continue;
+        if (d.naZemi && A.T >= d.dalsiSkok) { d.naZemi = false; d.vy = -Math.sqrt(2 * 900 * S * (3 + rnd() * 4)); d.dalsiSkok = A.T + 1.5 + rnd() * 4; }
+        if (!d.naZemi) { d.vy += 900 * dt; d.y += d.vy * dt; if (d.y >= 0) { d.y = 0; d.vy = 0; d.naZemi = true; } }
+      }
+      A.parts = A.parts.filter((p) => {
+        p.t += dt; if (p.kruh) return p.t < p.zivot;
+        p.vy += p.g * dt; p.x += p.vx * dt; p.y += p.vy * dt;
+        if (p.voda && p.y < HL + 3) return false;
+        if (p.kapka && p.y > HL) return false;
+        return p.t < p.zivot;
+      });
+      if (A.T >= A.konec) { A.zmizeni = Math.min(1, (A.T - A.konec) / 0.45); if (A.zmizeni >= 1) { reset(); A.objeveni = 1; } }
+      if (A.objeveni > 0) A.objeveni = Math.max(0, A.objeveni - dt / 0.45);
+    }
+
+    // ---------- kreslení ----------
+    function kresliMraky() {
+      ctx.font = '9px ' + MONO; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = B.skyDeep;
+      [[0.1, 160, 11, 3], [0.5, 182, 14, 3], [0.85, 150, 9, 2]].forEach(([fx, cy, rw, rh], j) => {
+        const cx = ((fx * LW + A.T * 3 * (j + 1)) % (LW + 160)) - 80;
+        for (let yy = -rh; yy <= rh; yy++) for (let xx = -rw; xx <= rw; xx++) {
+          const e = (xx / rw) ** 2 + (yy / rh) ** 2; if (e > 1) continue;
+          if (h3(xx + j * 40, yy + j * 9, 3) > 0.55) continue;
+          ctx.globalAlpha = 0.2 + 0.18 * (1 - e);
+          ctx.fillText("()/\\_-'`.:"[Math.floor(h3(xx, yy + j, 4) * 10)], cx + xx * 6, cy + yy * 9);
+        }
+      });
+      ctx.globalAlpha = 1;
+    }
+    function kresliMore(od = 0, doX = LW, jenHladina = false) {
+      const vh = LH - HL;
+      if (!jenHladina) for (let b = 0; b < 5; b++) { ctx.fillStyle = VODA[b]; const yy = HL + Math.round((b * vh) / 5); ctx.fillRect(0, yy, LW, LH - yy); }
+      ctx.font = '9px ' + MONO; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+      const cw = 6.5, ch = 11;
+      for (let r = 0; HL + r * ch < LH + ch; r++) {
+        if (jenHladina && r > 0) break;
+        const yy = HL + r * ch, hl = r / (vh / ch), off = A.T * (6 + r * 1.4), k = Math.floor(off / cw), fr = off - k * cw;
+        for (let c = -1; c * cw < LW + cw; c++) {
+          const id = c + k, xx = c * cw - fr;
+          if (xx < od - cw || xx > doX) continue;
+          if (r === 0) { ctx.globalAlpha = 0.9; ctx.fillStyle = B.skyDeep; ctx.fillText('~^~-~~'[((id % 6) + 6) % 6], xx, yy + Math.round(Math.sin(id * 0.5 + A.T * 2) * 1.5)); continue; }
+          if (h3(id, r, 9) > 0.14 + 0.3 * hl) continue;
+          ctx.globalAlpha = 0.26 + 0.34 * hl; ctx.fillStyle = hl > 0.5 ? B.navy : B.skyDeep;
+          ctx.fillText(vyber('~≈-~.:~', h3(id, r, 10)), xx, yy);
+        }
+      }
+      ctx.globalAlpha = 1;
+    }
+    function kresliLod() {
+      const d = paluba(), L = BX - 36 * S;
+      for (let r = -1; r < 5; r++) for (let c = 0; c < 72; c++) {
+        if (r === -1 && !(c < 2 || c > 69)) continue;
+        if (r >= 1 && (c < r || c > 71 - r)) continue;
+        ctx.fillStyle = r <= 0 ? B.navy : B.navyDeep; ctx.fillRect(L + c * S, d + r * S, S, S);
+      }
+      ctx.font = '8px ' + MONO; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = B.sky;
+      for (let r = 1; r < 5; r++) for (let c = r; c <= 71 - r; c++) if (h3(c, r, 77) < 0.1) { ctx.globalAlpha = 0.75; ctx.fillText(vyber("|:.'/\\#", h3(c, r, 78)), L + c * S + S / 2, d + r * S + S / 2); }
+      ctx.globalAlpha = 1;
+    }
+    function kresliPopredi() { // voda přes spodek trupu
+      ctx.globalAlpha = 0.55; ctx.fillStyle = VODA[0]; ctx.fillRect(BX - 36 * S - 4, HL + 2, 72 * S + 8, 3 * S); ctx.globalAlpha = 1;
+      kresliMore(BX - 36 * S - 8, BX + 36 * S + 8, true);
+    }
+    function kresliKos() { // modrý pletený koš, okraje se mírně přeskupují
+      const d = paluba(), cx = BX + KOS.x, tik = Math.floor(A.T * 3);
+      for (let r = 0; r < KOS.h; r++) {
+        const sirka = Math.round(lerp(KOS.w, KOS.wd, r / (KOS.h - 1))), x0 = cx - (sirka * S) / 2, y = d - (KOS.h - r) * S;
+        for (let c = 0; c < sirka; c++) {
+          const okraj = c === 0 || c === sirka - 1;
+          if (okraj && r > 0 && h3(c, r, tik) < 0.18) continue;
+          let col = r === 0 ? B.navy : (c + r) % 3 === 0 ? B.navy : B.skyDeep;
+          if (r > 0 && !okraj && h3(c + 7, r, tik >> 1) < 0.12) col = B.blue2;
+          ctx.fillStyle = col; ctx.fillRect(Math.round(x0 + c * S), y, S, S);
+        }
+        if (r === 0) { ctx.fillStyle = B.navy; if (h3(1, 9, tik) > 0.2) ctx.fillRect(Math.round(x0 - S), y - S, S, S); if (h3(2, 9, tik) > 0.2) ctx.fillRect(Math.round(x0 + sirka * S), y - S, S, S); }
+      }
+    }
+    function kresliRybu(f) {
+      const tik = Math.floor(A.T * 5) + f.seed, { w, h } = f;
+      const telo = [];
+      for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+        if (h === 3 && y !== 1 && (x === 0 || x === w - 1)) continue;
+        if (h === 2 && ((y === 0 && x === 0) || (y === 1 && x === w - 1))) continue;
+        telo.push([x, y, 0]);
+      }
+      const mav = Math.sin(A.T * 9 + f.f) > 0;
+      const ocas = h === 3 ? (mav ? [[-1, 1], [-2, 0], [-2, 2]] : [[-1, 0], [-1, 2], [-2, 1]]) : (mav ? [[-1, 0], [-2, 1]] : [[-1, 1], [-2, 0]]);
+      for (const [x, y, o] of telo.concat(ocas.map(([x, y]) => [x, y, 1]))) {
+        if (!o && (y === 0 || y === h - 1) && h3(x + f.seed, y, tik) < 0.1) continue;
+        let c = f.barva;
+        if (f.cer && !o) { if (y === h - 1) c = B.redDark; else if (y === 0 && x <= 2 && h3(x, y + f.seed, tik >> 1) < 0.5) c = B.redLight; }
+        else if (!f.cer && !o && y === h - 1 && h3(x, y + f.seed, tik >> 1) < 0.45) c = B.navyDeep;
+        let X = x - w / 2, Y = y - h / 2;
+        if (f.vert) { const nx = Y, ny = -X - 1; X = nx; Y = ny; } else if (f.dir < 0) X = -X - 1;
+        ctx.fillStyle = c; ctx.fillRect(Math.round(f.x + X * S), Math.round(f.y + Y * S), S, S);
+      }
+    }
+    function kresliDite(d, X, Yb, mod) {
+      const tik = Math.floor(A.T * 5) + d.seed, x0 = Math.round(X), y0 = Math.round(Yb - (d.h + 2) * S);
+      const px = (x, y) => ctx.fillRect(x0 + x * S, y0 + y * S, S, S);
+      const f = A.T * 5 + d.faze;
+      ctx.fillStyle = B.redDark;
+      (d.w <= 3 ? [0, 2] : [1, d.w - 2]).forEach((kx, i) => {
+        const s = i ? 1 : -1;
+        if (mod === 'plave') { const k = Math.sin(f * 2 + i * Math.PI) > 0 ? 1 : 0; px(kx, d.h); px(kx + s * k, d.h + 1); }
+        else if (mod === 'vzduch') px(kx + s, d.h);
+        else { px(kx, d.h); if (Math.sin(f + i * Math.PI) > 0.6) px(kx + s, d.h); else px(kx, d.h + 1); }
+      });
+      for (const [x, y] of d.tvar) {
+        const r = h3(x + d.seed, y, tik), r2 = h3(x + 50, y + d.seed, tik >> 1);
+        const okraj = y <= 0 || x === 0 || x === d.w - 1 || y === d.h - 1;
+        if (okraj && y >= 0 && r < 0.12) continue;
+        let c = B.red;
+        if (x >= d.w - 2 && y === d.h - 1) c = r2 < 0.5 ? B.redDark : B.red;
+        else if ((x === 0 || y === 0) && y >= 0) c = r2 < 0.35 ? B.redLight : B.red;
+        ctx.fillStyle = c; px(x, y);
+      }
+    }
+    function kresliRobota() {
+      const tik = Math.floor(A.T * 5), { x0, y0 } = robotXY(), R = A.robot;
+      const px = (x, y) => ctx.fillRect(x0 + Math.round(x) * S, y0 + Math.round(y) * S, S, S);
+      const cara = (xa, ya, xb, yb, tl) => { const n = Math.max(Math.abs(xb - xa), Math.abs(yb - ya), 1); for (let i = 0; i <= n; i++) for (let k = 0; k < tl; k++) px(xa + ((xb - xa) * i) / n + k, ya + ((yb - ya) * i) / n); };
+      ctx.fillStyle = B.redDark;
+      [[6, -1], [11, 1]].forEach(([kx, s]) => { const cx = kx + (R.vzduch ? s : 0), cy = 18 - (R.vzduch ? 1 : 0); cara(kx, 12, cx, cy, 2); px(cx + 2, cy); });
+      for (const [x, y] of MASKA) {
+        const r = h3(x, y, tik), r2 = h3(x + 50, y, tik >> 1);
+        if (jeOkraj(x, y) && y > 2 && r < 0.22) continue;
+        let c = B.red;
+        if ((x > 11 && y > 8) || y >= 12) c = r2 < 0.55 ? B.redDark : B.red;
+        else if (x < 7 && y < 8 && y > 2) c = r2 < 0.45 ? B.redLight : B.red;
+        else if (r2 < 0.07) c = B.redDark;
+        ctx.fillStyle = c; px(x, y);
+      }
+      ctx.fillStyle = B.red;
+      for (const [x, y] of MASKA) { if (!jeOkraj(x, y) || y < 3) continue; const r = h3(x, y, tik + 7); if (r < 0.1) px(x + (x < 9 ? -1 : 1), y); else if (r < 0.14) px(x, y + (y < 8 ? -1 : 1)); }
+      const aL = -Math.round(R.rukaL), aP = -Math.round(R.rukaP);
+      for (const [x, y] of [[0, 8 + aL], [1, 8 + aL], [1, 9 + aL]]) px(x, y);
+      for (const [x, y] of [[17, 8 + aP], [18, 8 + aP], [17, 9 + aP]]) px(x, y);
+    }
+    // vlasec a provaz: nepravidelné ASCII znaky po křivce
+    function kresliProvaz(a, b, c, znaky) {
+      const delka = Math.hypot(c.x - a.x, c.y - a.y) + Math.hypot(b.x - c.x, b.y - c.y), n = Math.max(2, Math.round(delka / 6));
+      const tik = Math.floor(A.T * 4);
+      ctx.font = '11px ' + MONO; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = B.navyDeep;
+      for (let i = 1; i < n; i++) {
+        const u = i / n, x = (1 - u) * (1 - u) * a.x + 2 * (1 - u) * u * c.x + u * u * b.x, y = (1 - u) * (1 - u) * a.y + 2 * (1 - u) * u * c.y + u * u * b.y;
+        if (h3(i, 3, tik) < 0.07) continue;
+        ctx.globalAlpha = 0.7 + 0.3 * h3(i, 4, tik);
+        ctx.fillText(vyber(znaky, h3(i, 5, tik >> 1)), x + (h3(i, 6, tik) - 0.5) * 1.6, y + (h3(i, 7, tik) - 0.5) * 1.6);
+      }
+      ctx.globalAlpha = 1;
+    }
+    function kresliPrut() {
+      const P = A.prut, g = prutGeom(), sp = g.spicka, { x0, y0 } = g.R;
+      ctx.fillStyle = B.navyDeep;
+      ctx.fillRect(x0 + 18 * S, y0 + (7 - Math.round(A.robot.rukaP)) * S, S, S); // úchop
+      for (const [x, y] of g.bunky) ctx.fillRect(x0 + x * S, y0 + y * S, S, S);
+      const hk = P.hacek;
+      const ctrl = hk.y > HL ? { x: lerp(sp.x, hk.x, 0.85), y: lerp(sp.y, HL, 0.35) } : { x: (sp.x + hk.x) / 2, y: Math.max(sp.y, hk.y) + 10 };
+      kresliProvaz(sp, hk, ctrl, ".:'`,");
+      ctx.fillStyle = B.navyDeep;
+      ctx.fillRect(Math.round(hk.x) - 1, Math.round(hk.y) - 4, 2, 7); ctx.fillRect(Math.round(hk.x) - 4, Math.round(hk.y) + 1, 3, 2); ctx.fillRect(Math.round(hk.x) - 4, Math.round(hk.y) - 1, 2, 2);
+    }
+    function kresliBalik(x, y) {
+      x = Math.round(x - 8); y = Math.round(y - 6);
+      ctx.font = '10px ' + MONO; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = B.navyDeep;
+      const tik = Math.floor(A.T * 3);
+      for (let j = 0; j < 3; j++) for (let i = 0; i < 4; i++) ctx.fillText(vyber('#x+*', h3(i, j, tik)), x + i * 5 + 1, y + j * 5 + 1);
+    }
+    function kresliSit() {
+      const N = A.sit;
+      if (!sitViditelna()) { if (N.st === 'drzi') { const h = ruka(); kresliBalik(h.x + 8, h.y - 6); } else if (N.st === 'naprah' || N.st === 'leti') kresliBalik(N.bx, N.by); return; }
+      const P = [];
+      for (let j = 0; j <= NR; j++) { P.push([]); for (let i = 0; i <= NC; i++) P[j].push(sitBod(i / NC, j / NR, i, j)); }
+      const tik = Math.floor(A.T * 3), a = N.st === 'sklada' ? 1 - N.F * 0.5 : 1;
+      ctx.font = '12px ' + MONO; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = B.navyDeep;
+      const spoj = (p, q, key) => {
+        const dx = q.x - p.x, dy = q.y - p.y, d = Math.hypot(dx, dy), n = Math.max(1, Math.round(d / 7)), vod = Math.abs(dx) >= Math.abs(dy);
+        for (let k = 1; k < n; k++) {
+          const t = k / n, r = h3(key * 31 + k, 5, tik); if (r < 0.06) continue;
+          ctx.globalAlpha = (0.5 + 0.35 * h3(key, k, 6)) * a;
+          ctx.fillText(vod ? (r < 0.3 ? '~' : '-') : (r < 0.3 ? ':' : '|'), p.x + dx * t + (h3(key, k, tik) - 0.5) * 1.5, p.y + dy * t + (h3(k, key, tik) - 0.5) * 1.5);
+        }
+      };
+      for (let j = 0; j <= NR; j++) for (let i = 0; i <= NC; i++) { if (i < NC) spoj(P[j][i], P[j][i + 1], j * 100 + i); if (j < NR) spoj(P[j][i], P[j + 1][i], 5000 + j * 100 + i); }
+      for (let j = 0; j <= NR; j++) for (let i = 0; i <= NC; i++) { ctx.globalAlpha = 0.9 * a; ctx.fillText(vyber('+x*+', h3(i, j, 13)), P[j][i].x, P[j][i].y); }
+      ctx.globalAlpha = a; ctx.fillStyle = B.red;
+      for (let i = 0; i <= NC; i += 2) { const p = P[0][i]; ctx.fillRect(Math.round(p.x) - 3, Math.round(p.y) - 6, 6, 4); }
+      ctx.globalAlpha = 1;
+      const h = ruka(), top = P[0][NC / 2];
+      kresliProvaz(h, top, { x: (h.x + top.x) / 2, y: Math.max(h.y, top.y) + (N.st === 'otevira' ? 30 : 8) }, '-~=');
+    }
+    function kresliBublinu(b, cx, cy) {
+      const u = A.T - b.t0; if (u < 0 || u > b.dur) return;
+      const k = outBack(Math.min(1, u / 0.35)), a = u > b.dur - 0.3 ? (b.dur - u) / 0.3 : 1, R = 22 * k, c = 3, tik = Math.floor(A.T * 5);
+      ctx.globalAlpha = a;
+      const n = Math.ceil(R / c) + 1;
+      for (let j = -n; j <= n; j++) for (let i = -n; i <= n; i++) {
+        const d = Math.hypot(i, j) * c; if (d > R) continue;
+        const okraj = d > R - c * 1.2; if (okraj && h3(i, j, tik) < 0.2) continue;
+        ctx.fillStyle = okraj ? B.sky : B.white; ctx.fillRect(Math.round(cx + i * c - c / 2), Math.round(cy + j * c - c / 2), c, c);
+      }
+      ctx.fillStyle = B.white; ctx.fillRect(Math.round(cx - 12), Math.round(cy + R - 1), c, c); ctx.fillRect(Math.round(cx - 15), Math.round(cy + R + 2), c, c);
+      if (k > 0.85) {
+        const P = b.typ === 'x' ? IKONA_X : IKONA_OK, ph = P.length, pw = P[0].length;
+        ctx.fillStyle = b.typ === 'x' ? B.navyDeep : B.red;
+        for (let j = 0; j < ph; j++) for (let i = 0; i < pw; i++) if (P[j][i] === 'X') ctx.fillRect(Math.round(cx + (i - pw / 2) * c), Math.round(cy + (j - ph / 2) * c), c, c);
+      }
+      ctx.globalAlpha = 1;
+    }
+    const PISMO = (druh === 2 ? 17 : 21) + 'px ' + MONO;
+    function zalamej(text, max) {
+      ctx.font = PISMO;
+      const slova = text.split(' '), radky = []; let r = '';
+      for (const s of slova) { const z = r ? r + ' ' + s : s; if (ctx.measureText(z).width > max && r) { radky.push(r); r = s; } else r = z; }
+      if (r) radky.push(r);
+      return radky;
+    }
+    function kresliChat() {
+      const { x, y, w, h } = BOX, tik = Math.floor(A.T * 3);
+      ctx.fillStyle = B.white; ctx.beginPath();
+      if (ctx.roundRect) ctx.roundRect(x + 3, y + 3, w - 6, h - 6, 12); else ctx.rect(x + 3, y + 3, w - 6, h - 6);
+      ctx.fill();
+      // nepravidelný ASCII rámeček
+      ctx.font = '15px ' + MONO; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = B.skyDeep; ctx.globalAlpha = 0.85;
+      for (let xx = x + 14, i = 0; xx < x + w - 10; xx += 9, i++) {
+        const r1 = h3(i, 1, tik), r2 = h3(i, 3, tik);
+        ctx.fillText(r1 < 0.08 ? '~' : r1 < 0.14 ? '_' : '-', xx, y + 3 + (h3(i, 2, tik) - 0.5) * 2);
+        ctx.fillText(r2 < 0.08 ? '~' : r2 < 0.14 ? '=' : '-', xx, y + h - 3 + (h3(i, 4, tik) - 0.5) * 2);
+      }
+      for (let yy = y + 16, i = 0; yy < y + h - 8; yy += 13, i++) {
+        const r1 = h3(i, 5, tik), r2 = h3(i, 7, tik);
+        ctx.fillText(r1 < 0.15 ? ':' : r1 < 0.25 ? '!' : '|', x + 4 + (h3(i, 6, tik) - 0.5) * 2, yy);
+        ctx.fillText(r2 < 0.15 ? ':' : r2 < 0.25 ? '!' : '|', x + w - 4 + (h3(i, 8, tik) - 0.5) * 2, yy);
+      }
+      ctx.fillText('.', x + 5, y - 1); ctx.fillText('.', x + w - 5, y - 1); ctx.fillText("'", x + 5, y + h + 1); ctx.fillText("'", x + w - 5, y + h + 1);
+      ctx.globalAlpha = 1;
+      // text s kurzorem
+      const s = A.s, n = clamp(Math.floor((s - tPsani) / rychlostPsani), 0, prompt.length), odeslano = s >= tOdeslano;
+      ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+      const tx = x + 24, ty = y + 30, lh = 25;
+      if (n === 0) { ctx.font = PISMO; ctx.fillStyle = B.skyDeep; ctx.globalAlpha = 0.8; ctx.fillText('Napište zprávu…', tx, ty); ctx.globalAlpha = 1; }
+      const radky = zalamej(prompt, w - 120);
+      let zbyva = n, kx = tx, ky = ty;
+      ctx.font = PISMO; ctx.fillStyle = B.navyDeep;
+      radky.forEach((r, i) => {
+        if (zbyva <= 0) return;
+        const cast = r.slice(0, zbyva); zbyva -= r.length + 1;
+        ctx.fillText(cast, tx, ty + i * lh);
+        kx = tx + ctx.measureText(cast).width + 2; ky = ty + i * lh;
+      });
+      const pise = s >= tPsani && n < prompt.length;
+      if (!odeslano && (pise || (A.T * 2) % 1 < 0.55)) { ctx.fillStyle = B.navyDeep; ctx.fillRect(Math.round(n === 0 ? tx : kx), Math.round(ky - 10), 2, 20); }
+      // skill: nepravidelný zavináč a tučný text, bez rámečku
+      if (druh === 3 && s >= tOdeslano + 0.3) {
+        const a = clamp((s - tOdeslano - 0.3) / 0.3, 0, 1), c = 3, iy = y + h - 30, ix = tx + 1;
+        ctx.globalAlpha = a; ctx.fillStyle = B.red;
+        ZAVINAC.forEach((radek, j) => { for (let i = 0; i < radek.length; i++) {
+          if (radek[i] !== 'X' || h3(i, j, tik + 40) < 0.1) continue;   // občas chybí pixel
+          ctx.fillRect(ix + i * c, Math.round(iy - 10 + j * c), c, c);
+          const r = h3(i, j, tik + 41);                                 // občas odskočí pixel ven
+          if ((i === 0 || i === 6 || j === 0 || j === 6) && r < 0.06) ctx.fillRect(ix + (i === 0 ? -1 : i === 6 ? 7 : i) * c, Math.round(iy - 10 + (j === 0 ? -1 : j === 6 ? 7 : j) * c), c, c);
+        } });
+        ctx.font = '700 18px ' + MONO; ctx.fillStyle = B.navyDeep; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+        ctx.fillText(SKILL, ix + 30, iy + 1);
+        ctx.globalAlpha = 1;
+      }
+      // tlačítko odeslat / zastavit
+      const bx = x + w - 44, by = y + h - 36, c = 3, blik = odeslano && s < tOdeslano + 0.15, pracuje = odeslano && !A.hotovo;
+      for (let j = -6; j <= 6; j++) for (let i = -6; i <= 6; i++) {
+        const d = Math.hypot(i, j); if (d > 5.8) continue;
+        if (d > 4.9 && h3(i, j, tik) < 0.2) continue;
+        ctx.fillStyle = n === 0 ? B.sky : blik ? B.redDark : B.red; ctx.fillRect(bx + i * c - 1, by + j * c - 1, c, c);
+      }
+      ctx.fillStyle = B.white;
+      if (pracuje && !blik) { for (let j = -2; j <= 1; j++) for (let i = -2; i <= 1; i++) ctx.fillRect(bx + i * c + 1, by + j * c + 1, c, c); }
+      else { for (let j = -3; j <= 3; j++) ctx.fillRect(bx - 1, by + j * c - 1, c, c); for (const [i, j] of [[-1, -2], [1, -2], [-2, -1], [2, -1]]) ctx.fillRect(bx + i * c - 1, by + j * c - 1, c, c); }
+    }
+    function kresliCastice() {
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      for (const p of A.parts) {
+        const u = p.t / p.zivot;
+        if (p.kruh) {
+          ctx.font = '11px ' + MONO; ctx.fillStyle = B.skyDeep; ctx.globalAlpha = 0.8 * (1 - u);
+          for (const s of [-1, 1]) { ctx.fillText('~', p.x + s * (8 + 40 * u), p.y + 1); ctx.fillText('~', p.x + s * (20 + 64 * u), p.y + 2); }
+          continue;
+        }
+        ctx.font = '10px ' + MONO; ctx.fillStyle = p.c; ctx.globalAlpha = 1 - u * u; ctx.fillText(p.ch, p.x, p.y);
+      }
+      ctx.globalAlpha = 1;
+    }
+
+    function kresli() {
+      ctx.setTransform(scale, 0, 0, scale, 0, 0);
+      ctx.globalAlpha = 1; ctx.fillStyle = B.bg; ctx.fillRect(0, 0, LW, LH);
+      kresliMraky();
+      kresliMore();
+      const vzduch = (f) => (f.st === 'hacek' && f.vert) || f.st === 'leti' || (f.st === 'pada' && f.y < HL) || f.st === 'hromada' || (f.st === 'sit' && druh === 2 && ['zveda', 'tridi', 'sklada'].includes(A.sit.st) && f.y < HL) || (f.st === 'nese' && f.y < HL);
+      for (const f of A.ryby) if (!vzduch(f) && f.st !== 'nese') kresliRybu(f);
+      for (const d of A.deti) if (d.st === 'plave' || d.st === 'nahoru') kresliDite(d, d.x, d.yb, 'plave');
+      for (const f of A.ryby) if (f.st === 'nese' && f.y >= HL) kresliRybu(f);
+      if (druh === 2) { for (const f of A.ryby) if (f.st === 'sit' && vzduch(f)) kresliRybu(f); kresliSit(); }
+      kresliLod();
+      kresliPopredi();
+      for (const f of A.ryby) if (f.st === 'hromada') kresliRybu(f);
+      kresliKos();
+      kresliRobota();
+      for (const d of A.deti) if (d.st === 'paluba') kresliDite(d, d.slotX, paluba() + d.y, d.naZemi ? 'stoji' : 'vzduch');
+      if (druh === 1) kresliPrut();
+      for (const f of A.ryby) if (vzduch(f) && f.st !== 'hromada' && f.st !== 'sit') kresliRybu(f);
+      for (const d of A.deti) if (d.st === 'skok' || d.st === 'skok2' || d.st === 'skok3') kresliDite(d, d.x, d.yb, 'vzduch');
+      for (const f of A.ryby) if (f.st === 'nese' && f.y < HL) kresliRybu(f);
+      kresliCastice();
+      const R = robotXY();
+      for (const b of A.bubliny) kresliBublinu(b, R.x0 + 9.5 * S + 34, R.y0 - 30);
+      kresliChat();
+      const z = Math.max(A.zmizeni || 0, A.objeveni || 0);
+      if (z > 0) { ctx.globalAlpha = z; ctx.fillStyle = B.bg; ctx.fillRect(0, 0, LW, LH); ctx.globalAlpha = 1; }
+    }
+
+    // ---------- běh ----------
+    function velikost() {
+      const r = canvas.getBoundingClientRect(), dpr = Math.min(2, window.devicePixelRatio || 1);
+      canvas.width = Math.max(1, Math.round(r.width * dpr)); canvas.height = Math.max(1, Math.round(r.height * dpr));
+      scale = canvas.width / LW; kresli();
+    }
+    function smycka(ted) {
+      const dt = posledni ? Math.min(0.05, (ted - posledni) / 1000) : 0; posledni = ted;
+      if (bezi && viditelna) { krok(dt); kresli(); }
+      requestAnimationFrame(smycka);
+    }
+    function nastavBeh(ano) { bezi = ano; tlacitko.setAttribute('aria-pressed', String(!ano)); tlacitko.setAttribute('aria-label', ano ? 'Pozastavit animaci' : 'Přehrát animaci'); tlacitko.dataset.stav = ano ? 'bezi' : 'stoji'; }
+    function simuluj(sekundy) { const n = Math.round(sekundy / 0.02); for (let i = 0; i < n; i++) krok(0.02); kresli(); }
+    tlacitko.addEventListener('click', () => nastavBeh(!bezi));
+    new IntersectionObserver((e) => { viditelna = e[0].isIntersecting; }).observe(canvas);
+    new ResizeObserver(() => velikost()).observe(canvas);
+    reset();
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      for (let i = 0; i < 1500 && !A.hotovo; i++) krok(0.02); for (let i = 0; i < 40; i++) krok(0.02);
+      nastavBeh(false);
+    }
+    velikost(); requestAnimationFrame(smycka);
+    return { reset: () => { reset(); kresli(); }, simuluj, stav: A, pauza: () => nastavBeh(false) };
+  }
+
+  const start = () => {
+    window.__animace = [...document.querySelectorAll('canvas[data-druh]')].map((c) => animace(c, c.parentElement.querySelector('.pauza'), Number(c.dataset.druh)));
+  };
+  const pismo = document.fonts && document.fonts.load ? Promise.race([Promise.all([document.fonts.load('17px "JetBrains Mono"'), document.fonts.load('13px Inter')]), new Promise((r) => setTimeout(r, 1500))]) : Promise.resolve();
+  pismo.then(start, start);
+})();
+</script>

@@ -4,7 +4,7 @@ import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import HeroKrajina from '../components/HeroKrajina.astro';
 import { url } from '../lib/url';
-import { sady, skills, pocet } from '../lib/data';
+import { pocet } from '../lib/data';
 
 const prompty = await getCollection('prompty');
 const nSkup = (s: string) => prompty.filter((p) => p.id.startsWith(s + '/')).length;
@@ -12,6 +12,7 @@ const nUcitele = nSkup('pedagogove');
 const nVedeni = nSkup('vedeni');
 const nZaci = nSkup('zaci');
 const nKatalog = nUcitele + nVedeni + nZaci;
+import InstrukceProChatboty from '../components/InstrukceProChatboty.astro';
 ---
 <Base title="Chatboti ve škole" description="Jak využívat chatboty ve škole: skills a prompty pro učitele a vedení škol, aktuální přehled funkcí, cen a věkových limitů, metodiky a doporučení.">
 
@@ -32,22 +33,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
     </div>
   </section>
 
-  <section class="band band--hp band--white" aria-labelledby="skills-h">
-    <div class="wrap stack" style="gap: 30px">
-      <div class="section-head">
-        <div><h2 id="skills-h">Skills (dovednosti)</h2><p style="max-width: none">Skills nahrazují v ChatGPT i Gemini AI asistenty a mohou zároveň sloužit také jako samotné prompty.<br />Připravili jsme pro vás několik sad, které dělíme do následujících kategorií:</p></div>
-        <a class="more" href={url('/skills')}>Katalog skills →</a>
-      </div>
-      <div class="grid-cards">
-        {sady.map((s) => (
-          <a class="card card--lg" href={url(`/sady/${s.slug}`)}>
-            <div class="card-top"><h3 style="font-size: 1.2rem">{s.title}</h3><span class="count" style="font-size: 0.78rem">{pocet(s.skills.length, 'skill', 'skills', 'skills')}</span></div>
-            <p>{s.popis}</p>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
+  <InstrukceProChatboty />
 
   <section class="band band--hp band--sky" aria-labelledby="prompty-h">
     <div class="wrap stack" style="gap: 30px">
