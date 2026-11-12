@@ -66,7 +66,7 @@ const stavK = datumCesky(F.stav_k);
   .legend { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 0.86rem; align-items: center; }
   .legend .i { display: inline-flex; align-items: center; gap: 7px; }
   .tool-radio, .mseg { display: none; }
-  .matrix { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg); }
+  .matrix { background: var(--panel); border: 1px solid var(--sky); border-radius: var(--radius-lg); }
   .mrow { display: grid; grid-template-columns: minmax(150px, 0.78fr) repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--line); }
   .mrow.mhead { border-top: none; position: sticky; top: 0; z-index: 3; background: var(--panel); border-radius: var(--radius-lg) var(--radius-lg) 0 0; border-bottom: 2px solid var(--sky); }
   .mrow.mhead + .mrow { border-top: none; }
@@ -99,7 +99,7 @@ const stavK = datumCesky(F.stav_k);
   @media (max-width: 860px) {
     .tool-radio { display: block; position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
     .mseg { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; position: sticky; top: 0; z-index: 4; background: var(--sky-light); padding-block: 8px; }
-    .mseg label { text-align: center; font-family: var(--fh); font-weight: 600; font-size: 0.86rem; padding: 9px 4px; border: 1px solid var(--line); border-radius: var(--pill); cursor: pointer; background: var(--panel); }
+    .mseg label { text-align: center; font-family: var(--fh); font-weight: 600; font-size: 0.86rem; padding: 9px 4px; border: 1px solid var(--sky); border-radius: var(--pill); cursor: pointer; background: var(--panel); }
     #mt-chatgpt:checked ~ .mseg label[for='mt-chatgpt'],
     #mt-gemini:checked ~ .mseg label[for='mt-gemini'],
     #mt-copilot:checked ~ .mseg label[for='mt-copilot'],

@@ -81,7 +81,7 @@ button { cursor: pointer; }
 .icon { width: 15px; height: 15px; flex: none; }
 
 /* karty */
-.card { background: var(--panel); border: 1px solid var(--line); border-radius: 9px; padding: 26px 28px; display: flex; flex-direction: column; gap: 14px; color: var(--ink); text-decoration: none; }
+.card { background: var(--panel); border: 1px solid var(--sky); border-radius: 9px; padding: 26px 28px; display: flex; flex-direction: column; gap: 14px; color: var(--ink); text-decoration: none; }
 .band--sky .card { border-color: var(--sky); }
 .card h3 { font-size: 1.3rem; font-weight: 700; }
 .card h3 a { color: var(--ink); text-decoration: none; }
@@ -104,10 +104,10 @@ a.card:hover { border-color: var(--sky-deep); }
 [data-group-view][hidden] { display: none !important; }
 
 /* blok promptu */
-.prompt-block { position: relative; background: var(--line-soft); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 24px 24px; }
+.prompt-block { position: relative; background: var(--line-soft); border: 1px solid var(--sky); border-radius: var(--radius); padding: 20px 24px 24px; }
 .prompt-block .copy-row { display: flex; justify-content: flex-end; margin-bottom: 6px; }
 .prompt-block pre { margin: 0; white-space: pre-wrap; font-family: var(--fm); font-size: 0.86rem; line-height: 1.65; max-height: 520px; overflow: auto; }
-.copy-btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: var(--pill); border: 1px solid var(--line); background: var(--panel); font-weight: 400; font-size: 0.85rem; }
+.copy-btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: var(--pill); border: 1px solid var(--sky); background: var(--panel); font-weight: 400; font-size: 0.85rem; }
 .copy-btn:hover { border-color: var(--sky-deep); }
 
 /* upozornění */
@@ -127,9 +127,9 @@ a.card:hover { border-color: var(--sky-deep); }
 .prose blockquote { margin-left: 0; margin-right: 0; background: var(--sky-light); border-radius: var(--radius); padding: 18px 22px; }
 .prose blockquote > * + * { margin-top: 0.6em; }
 .prose code { font-family: var(--fm); font-size: 0.88em; background: var(--line-soft); padding: 1px 5px; border-radius: 3px; }
-.prose pre { background: var(--line-soft); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 24px; white-space: pre-wrap; font-size: 0.86rem; line-height: 1.6; overflow: auto; }
+.prose pre { background: var(--line-soft); border: 1px solid var(--sky); border-radius: var(--radius); padding: 20px 24px; white-space: pre-wrap; font-size: 0.86rem; line-height: 1.6; overflow: auto; }
 .prose pre code { background: none; padding: 0; font-size: inherit; }
-.prose table { width: 100%; border-collapse: collapse; font-size: 0.93rem; display: block; overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius-lg); }
+.prose table { width: 100%; border-collapse: collapse; font-size: 0.93rem; display: block; overflow-x: auto; border: 1px solid var(--sky); border-radius: var(--radius-lg); }
 .prose th, .prose td { padding: 14px 18px; text-align: left; vertical-align: top; border-top: 1px solid var(--line); }
 .prose thead th { background: var(--line-soft); border-top: 0; font-weight: 600; }
 .prose hr { border: 0; border-top: 1px solid var(--line); margin: 2em 0; }
@@ -152,7 +152,7 @@ a.card:hover { border-color: var(--sky-deep); }
 /* záložky v textu (### sekce → přepínač) */
 .zalozky { display: flex; flex-direction: column; gap: 18px; }
 .zalozky .seg { align-self: flex-start; }
-.zalozky-panely > div { border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 24px 28px; }
+.zalozky-panely > div { border: 1px solid var(--sky); border-radius: var(--radius-lg); padding: 24px 28px; }
 .zalozky-panely > div > * + * { margin-top: 0.8em; }
 .zalozky-panely > div > :first-child { margin-top: 0; }
 
@@ -172,7 +172,7 @@ a.card:hover { border-color: var(--sky-deep); }
   .prose .tabulka-karty table { display: block; border: 0; border-radius: 0; overflow: visible; }
   .tabulka-karty thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
   .tabulka-karty tbody { display: flex; flex-direction: column; gap: 12px; }
-  .tabulka-karty tr { display: block; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  .tabulka-karty tr { display: block; border: 1px solid var(--sky); border-radius: var(--radius); overflow: hidden; }
   .prose .tabulka-karty td { display: grid; grid-template-columns: 7.5em minmax(0, 1fr); gap: 10px; border-top: 1px solid var(--line-soft); padding: 9px 14px; }
   .prose .tabulka-karty td:first-child { display: block; background: var(--sky-light); border-top: 0; font-family: var(--fh); font-weight: 700; }
   .tabulka-karty td::before { content: attr(data-label); font-size: 0.8rem; font-weight: 600; color: var(--muted); }
