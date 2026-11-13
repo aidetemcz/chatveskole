@@ -2,7 +2,7 @@
 menu:
   - title: Začínáme
     items:
-      - { title: Jak fungují chatboti, href: /zaciname/jak-funguji-chatboti }
+      - { title: Jak pracovat s chatboty, href: /zaciname/jak-pracovat-s-chatboty }
       - { title: Dostupné nástroje, href: /zaciname/dostupne-nastroje }
       - { title: Kolik stojí chatboti, href: /zaciname/kolik-stoji-chatboti }
       - { title: Registrace do chatbotů, href: /zaciname/registrace }

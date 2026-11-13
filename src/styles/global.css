@@ -57,7 +57,7 @@ button { cursor: pointer; }
 /* hlavička stránky */
 .page-head { display: flex; flex-direction: column; gap: 20px; }
 .page-head h1 { font-size: clamp(2rem, 4.2vw, 3rem); line-height: 1.08; font-weight: 700; }
-.page-head h1 em { font-style: normal; color: var(--accent-strong); }
+.page-head h1 em { font-style: normal; } /* nadpisy jen jednou barvou */
 .lede { font-size: 1.1rem; color: var(--muted); max-width: 62ch; }
 .crumbs { font-size: 0.85rem; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; }
 .crumbs a { color: var(--muted); }

@@ -12,7 +12,6 @@ const nUcitele = nSkup('pedagogove');
 const nVedeni = nSkup('vedeni');
 const nZaci = nSkup('zaci');
 const nKatalog = nUcitele + nVedeni + nZaci;
-import InstrukceProChatboty from '../components/InstrukceProChatboty.astro';
 ---
 <Base title="Chatboti ve škole" description="Jak využívat chatboty ve škole: skills a prompty pro učitele a vedení škol, aktuální přehled funkcí, cen a věkových limitů, metodiky a doporučení.">
 
@@ -33,7 +32,13 @@ import InstrukceProChatboty from '../components/InstrukceProChatboty.astro';
     </div>
   </section>
 
-  <InstrukceProChatboty />
+  <section class="band band--hp band--white" aria-labelledby="pracovat-h">
+    <div class="wrap stack" style="gap: 22px">
+      <h2 id="pracovat-h">Jak pracovat s chatboty</h2>
+      <p style="max-width: 72ch">Funkce chatbotů se od svého počátku výrazně proměnily. Dříve bylo třeba pro kvalitní výstup zadávat promyšlené instrukce (prompty), zatímco dnes hraje větší roli kontext (znalosti a dovednosti, které má chatbot k dispozici). Prozkoumejte různé přístupy, jak chatboty využívat. Připravili jsme pro vás srozumitelné vysvětlení.</p>
+      <p><a class="btn btn--primary" href={url('/zaciname/jak-pracovat-s-chatboty')}>Tohle by měl znát každý</a></p>
+    </div>
+  </section>
 
   <section class="band band--hp band--sky" aria-labelledby="prompty-h">
     <div class="wrap stack" style="gap: 30px">
