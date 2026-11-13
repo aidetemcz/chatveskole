@@ -10,7 +10,7 @@ stav: koncept
 
 Web Chatboti ve škole je uceleným rozcestníkem pro využití generativní AI v praxi vyučujících i vedení školy. Inspiraci zde najdou nejen úplní začátečníci, ale také pokročilí uživatelé.
 
-[Jak fungují chatboti](/zaciname/jak-funguji-chatboti) · [Katalog skills](/skills)
+[Jak pracovat s chatboty](/zaciname/jak-pracovat-s-chatboty) · [Katalog skills](/skills)
 
 ## Co se letos mění
 

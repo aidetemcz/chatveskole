@@ -12,7 +12,7 @@
     },
     {
       "source": "/jak-funguji-chatboti",
-      "destination": "/zaciname/jak-funguji-chatboti",
+      "destination": "/zaciname/jak-pracovat-s-chatboty",
       "permanent": true
     },
     {
@@ -873,6 +873,11 @@
     {
       "source": "/feed",
       "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/zaciname/jak-funguji-chatboti",
+      "destination": "/zaciname/jak-pracovat-s-chatboty",
       "permanent": true
     }
   ]

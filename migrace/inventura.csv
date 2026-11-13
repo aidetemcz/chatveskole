@@ -2,7 +2,7 @@ typ,stará URL,nová URL,akce,druh obsahu,poznámka
 stránka,https://chatveskole.cz/,/,přepsat,,Nová homepage podle nového menu
 stránka,https://chatveskole.cz/pruvodce-chatgpt-pro-ucitele/,/,smazat,,Duplikát homepage (stará verze)
 stránka,https://chatveskole.cz/jak-to-funguje/,/funkce/prompty,smazat,,"Stará stránka o ChatGPT, rozbitý obsah (lorem text), odkazy na gptveskole.cz"
-stránka,https://chatveskole.cz/jak-funguji-chatboti/,/zaciname/jak-funguji-chatboti,aktualizovat,,
+stránka,https://chatveskole.cz/jak-funguji-chatboti/,/zaciname/jak-pracovat-s-chatboty,přepsat,,Nahrazeno stránkou Jak pracovat s chatboty (animace prompt → podrobný prompt → skill)
 stránka,https://chatveskole.cz/dostupne-nastroje/,/zaciname/dostupne-nastroje,přepsat,,"Nová tabulka nástrojů 2026, bez Perplexity jako hlavního nástroje"
 stránka,https://chatveskole.cz/kolik-stoji/,/zaciname/kolik-stoji-chatboti,přepsat,,Ceny se na webu nezobrazují (0 Kč) — nová data z data/ceny.yaml
 stránka,https://chatveskole.cz/registrace-do-sluzeb/,/zaciname/registrace,aktualizovat,,

@@ -14,7 +14,7 @@ PAGES = {
     "": ("/", "přepsat", "Nová homepage podle nového menu"),
     "pruvodce-chatgpt-pro-ucitele": ("/", "smazat", "Duplikát homepage (stará verze)"),
     "jak-to-funguje": ("/funkce/prompty", "smazat", "Stará stránka o ChatGPT, rozbitý obsah (lorem text), odkazy na gptveskole.cz"),
-    "jak-funguji-chatboti": ("/zaciname/jak-funguji-chatboti", "aktualizovat", ""),
+    "jak-funguji-chatboti": ("/zaciname/jak-pracovat-s-chatboty", "přepsat", "Nahrazeno stránkou Jak pracovat s chatboty (animace prompt → podrobný prompt → skill)"),
     "dostupne-nastroje": ("/zaciname/dostupne-nastroje", "přepsat", "Nová tabulka nástrojů 2026, bez Perplexity jako hlavního nástroje"),
     "kolik-stoji": ("/zaciname/kolik-stoji-chatboti", "přepsat", "Ceny se na webu nezobrazují (0 Kč) — nová data z data/ceny.yaml"),
     "registrace-do-sluzeb": ("/zaciname/registrace", "aktualizovat", ""),
@@ -144,7 +144,7 @@ for slug, new in CATS.items():
     rows.append(["kategorie", f"{BASE}/dp/{slug}/", new, "přesměrovat", "", ""])
     presmeruj(f"/dp/{slug}", new)
 # zbytky WordPressu
-for src, dst in [("/databaze-promptu", "/prompty"), ("/dp", "/prompty"), ("/wp-content/uploads/:path*", "/archiv/uploads/:path*"), ("/feed", "/")]:
+for src, dst in [("/databaze-promptu", "/prompty"), ("/dp", "/prompty"), ("/wp-content/uploads/:path*", "/archiv/uploads/:path*"), ("/feed", "/"), ("/zaciname/jak-funguji-chatboti", "/zaciname/jak-pracovat-s-chatboty")]:
     presmeruj(src, dst)
 
 out = ROOT / "migrace"
