@@ -8,7 +8,7 @@ stav: koncept
 
 # Chatboti ve škole
 
-Web Chatboti ve škole je komplexním rozcestníkem pro začátečníky i pokročilé. Najdete zde aktuální přehledy funkcí, jejich vysvětlení, instruktážní videa, kvalitní prompty, skilly i pluginy ke stažení. V sekci Chatboti ve výuce nabízíme pedagogické metody, jak uchopit výuku s chatboty tak, aby podporovala rozvoj žáků.
+Web Chatboti ve škole je uceleným rozcestníkem pro využití generativní AI v praxi vyučujících i vedení školy. Inspiraci zde najdou nejen úplní začátečníci, ale také pokročilí uživatelé.
 
 [Jak fungují chatboti](/zaciname/jak-funguji-chatboti) · [Katalog skills](/skills)
 
