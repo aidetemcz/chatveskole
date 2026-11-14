@@ -36,6 +36,7 @@ menu:
 
   - title: O webu
     items:
+      - { title: Nový web, href: /o-webu/novy-web }
       - { title: Kdo za tím stojí, href: /o-webu/kdo-za-tim-stoji }
       - { title: Kontakt, href: /o-webu/kontakt }
 
