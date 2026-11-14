@@ -40,6 +40,7 @@ import { url } from '../lib/url';
       <span class="krok" aria-hidden="true">2</span>
       <h3 id="instr-f2">Podrobný prompt</h3>
       <p>Pokud si dáte práci s pořádným zadáním, výstup chatbota bývá o dost lepší. Podrobná zadání jsou ale časově náročná. Proto jsme je pro vás připravili a otestovali. Můžete je zkopírovat nebo použít pro inspiraci.</p>
+      <a class="more" href={url('/funkce/prompty')}>Co je to prompt a jak ho tvořit →</a>
       <a class="more" href={url('/prompty')}>Katalog promptů →</a>
     </div>
   </div>
@@ -56,6 +57,7 @@ import { url } from '../lib/url';
       <span class="krok" aria-hidden="true">3</span>
       <h3 id="instr-f3">Dovednosti (skill)</h3>
       <p>Tzv. dovednosti jsou kombinace podrobného zadání a znalostí (různých přiložených souborů). Vytvoří se jednou a pak je už jen vyvoláváte v chatu pomocí zavináče nebo lomítka. To vám při opakovaných činnostech ušetří spoustu času.</p>
+      <a class="more" href={url('/funkce/skills')}>Co je to dovednost a jak ji vytvořit →</a>
       <a class="more" href={url('/skills')}>Katalog dovedností →</a>
     </div>
   </div>
@@ -124,7 +126,8 @@ import { url } from '../lib/url';
   .krok { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--accent); color: #fff; font: 600 1rem/1 var(--fh); margin-bottom: 14px; }
   .text h3 { font-size: 1.7rem; font-weight: 600; margin: 0 0 12px; }
   .text p { margin: 0; max-width: 42ch; font-size: 1.05rem; }
-  .text .more { display: inline-block; margin-top: 18px; }
+  .text .more { display: block; width: fit-content; margin-top: 18px; }
+  .text .more + .more { margin-top: 8px; }
   @media (max-width: 860px) {
     .faze { grid-template-columns: 1fr; gap: 24px; }
   }
