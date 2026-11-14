@@ -24,7 +24,7 @@ nastroje:
         pozn: Pro náročné uživatele a programování.
       - nazev: Business
         cena: 25 USD za uživatele měsíčně (20 USD při ročním placení), min. 2 uživatelé
-        pozn: Data se nepoužívají k tréninku, samostatné skills, sdílení v rámci organizace.
+        pozn: Data se nepoužívají k tréninku, samostatné dovednosti, sdílení v rámci organizace.
       - nazev: Edu
         cena: na dotaz
         pozn: Jen pro vysoké školy.
@@ -41,7 +41,7 @@ nastroje:
     tarify:
       - nazev: Zdarma
         cena: 0 Kč
-        pozn: Hloubkový výzkum, obrázky, Canvas, Gemini Notebook (dříve NotebookLM), skills od 18 let.
+        pozn: Hloubkový výzkum, obrázky, Canvas, Gemini Notebook (dříve NotebookLM), dovednosti od 18 let.
       - nazev: Google AI Plus
         cena: 220 Kč měsíčně
         pozn: Vyšší limity, víc úložiště.
@@ -76,7 +76,7 @@ nastroje:
         pozn: Vyšší limity, výzkumní agenti.
       - nazev: Microsoft 365 Copilot (licence pro školy)
         cena: 18 USD za uživatele měsíčně
-        pozn: Copilot nad daty školy, Cowork, skills, Agent Builder s daty.
+        pozn: Copilot nad daty školy, Cowork, dovednosti, Agent Builder s daty.
     trenink: Na datech uživatelů z EU a uživatelů do 18 let Microsoft netrénuje.
     zdroje:
       - https://www.microsoft.com/cs-cz/microsoft-365/buy/compare-all-microsoft-365-products
@@ -89,7 +89,7 @@ nastroje:
     tarify:
       - nazev: Free
         cena: 0 Kč
-        pozn: Projekty (nejvýš 5), skills, konektory, paměť, Docs, Slides a Design. Bez Research a Claude Code.
+        pozn: Projekty (nejvýš 5), dovednosti, konektory, paměť, Docs, Slides a Design. Bez Research a Claude Code.
       - nazev: Pro
         cena: 20 USD měsíčně (17 USD při ročním placení)
         pozn: Research, Claude Code, samostatná práce na úkolech, pluginy, sdílení artefaktů odkazem.
@@ -101,7 +101,7 @@ nastroje:
         pozn: Desetinásobné limity proti Pro (dříve „Max 20x“).
       - nazev: Team
         cena: od 25 USD za uživatele měsíčně (20 USD ročně), 2–150 míst
-        pozn: Data se nepoužívají k tréninku, sdílení skills a pluginů v rámci organizace.
+        pozn: Data se nepoužívají k tréninku, sdílení dovedností a pluginů v rámci organizace.
       - nazev: Education
         cena: na dotaz
         pozn: Pro vysoké školy.

@@ -27,4 +27,4 @@ Cílem promptu je pomoci pedagogovi vytvořit jasně formulovaná hodnoticí kri
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte konkrétní výukový cíl, ke kterému potřebujete vytvořit hodnoticí kritéria. Prompt vám vygeneruje konkrétní, pozitivně formulovaná kritéria, která žákům jasně ukazují, co mají dělat a podle čeho poznají, že pracují správně. Kritéria můžete využít při zadávání úkolu, pro sebehodnocení žáků nebo jako podklad pro společnou reflexi.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Kritéria hodnocení](/skills/kriteria-hodnoceni), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Kritéria hodnocení](/skills/kriteria-hodnoceni), kterou si můžete nainstalovat do svého chatbota.

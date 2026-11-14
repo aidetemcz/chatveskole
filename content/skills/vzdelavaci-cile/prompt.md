@@ -64,4 +64,4 @@ Zachovej podstatu cíle (stejnou dovednost a kompetenci). Uprav jen způsob, jak
 Výstup: upravený cíl jako jedna věta a dvě až tři odrážky, co je jinak a proč.
 ```
 
-**Tip:** Z vybrané varianty cíle rovnou vytvořte kritéria hodnocení – navazuje na to skill Kritéria hodnocení. Cíl si držte déle než jednu hodinu a obměňujte jen kontext (téma, materiál), na kterém ho žáci procvičují.
+**Tip:** Z vybrané varianty cíle rovnou vytvořte kritéria hodnocení – navazuje na to dovednost Kritéria hodnocení. Cíl si držte déle než jednu hodinu a obměňujte jen kontext (téma, materiál), na kterém ho žáci procvičují.

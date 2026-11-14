@@ -90,4 +90,4 @@ Formy se mají lišit způsobem vyjádření (psaní, kresba nebo schéma, mluve
 U každé formy uveď: co žák vytvoří, jak dlouho to trvá, které kritérium ukáže a čeho si má učitel všímat, aby poznal, jak daleko žák je.
 ```
 
-**Tip:** Kritéria ukažte žákům na začátku práce, ne až při hodnocení. Sebehodnoticí list pak vyplní po práci a vy ho můžete použít jako podklad pro zpětnou vazbu nebo slovní hodnocení (navazuje skill Slovní hodnocení).
+**Tip:** Kritéria ukažte žákům na začátku práce, ne až při hodnocení. Sebehodnoticí list pak vyplní po práci a vy ho můžete použít jako podklad pro zpětnou vazbu nebo slovní hodnocení (navazuje dovednost Slovní hodnocení).

@@ -69,4 +69,4 @@ Cílem promptu „Návrh systému vnitřního hodnocení kvality výuky“ je us
 
 Text promptu jednoduše zkopírujte do své chatovací aplikace, doplňte požadované vstupní informace o škole (typ, současnou praxi, silné a slabé stránky, dostupné zdroje atd.) a odešlete; obratem obdržíte kompletní návrh systému v přehledné struktuře, který můžete s kolegy projít, upravit podle místního kontextu a poté vytisknout či sdílet online; kdykoli později stačí aktualizovat vstupní údaje a prompt spustit znovu, abyste udrželi dokument aktuální a v souladu s vývojem školy.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Strategické dokumenty](/skills/strategicke-dokumenty), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Strategické dokumenty](/skills/strategicke-dokumenty), kterou si můžete nainstalovat do svého chatbota.

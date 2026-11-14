@@ -38,9 +38,9 @@ Agent si na začátku každé práce přečte soubor s pravidly projektu — u C
 
 Ušetříte tím vysvětlování a agent dělá méně chyb.
 
-## Skills i pro programování
+## Dovednosti i pro programování
 
-Skills nejsou jen pro chatboty. Programovací agenti je používají také — třeba skill „jak u nás píšeme stránky“, „jak přidat nový skill na web“ nebo „kontrola přístupnosti“. Formát je stejný jako u [skills pro učitele](/funkce/skills).
+Dovednosti nejsou jen pro chatboty. Programovací agenti je používají také — třeba dovednost „jak u nás píšeme stránky“, „jak přidat novou dovednost na web“ nebo „kontrola přístupnosti“. Formát je stejný jako u [dovedností pro učitele](/funkce/skills).
 
 ## Bezpečnost
 
@@ -54,10 +54,10 @@ Skills nejsou jen pro chatboty. Programovací agenti je používají také — t
 Web Chatboti ve škole jsme v roce 2026 převedli z WordPressu na vibe coding:
 
 - **Všechny texty jsou soubory Markdown** v repozitáři [github.com/aidetemcz/chatveskole](https://github.com/aidetemcz/chatveskole). Úprava textu = úprava souboru.
-- **Každý skill je složka** se souborem `SKILL.md`, verzí promptu a metadaty. Web z ní sám vytvoří stránku, tlačítko Kopírovat a ZIP ke stažení.
+- **Každá dovednost je složka** se souborem `SKILL.md`, verzí promptu a metadaty. Web z ní sám vytvoří stránku, tlačítko Kopírovat a ZIP ke stažení.
 - **Data jsou v souborech YAML** — ceny chatbotů, přehled funkcí. Když se změní ceník, upravíme jeden soubor.
 - **Žádná databáze.** Web se sestaví do statických stránek a běží na Vercelu.
-- **Změny děláme hromadně přes Claude Code**, například „aktualizuj u všech skills věkové limity podle nového přehledu“.
+- **Změny děláme hromadně přes Claude Code**, například „aktualizuj u všech dovedností věkové limity podle nového přehledu“.
 
 Funkce chatbotů se mění každý měsíc. Udržovat obsah klikáním ve WordPressu nestíhal; s vibe codingem upravíme desítky stránek najednou.
 

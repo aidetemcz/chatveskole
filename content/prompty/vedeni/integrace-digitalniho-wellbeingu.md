@@ -91,4 +91,4 @@ Cílem promptu „Integrace digitálního wellbeingu“ je pomoci vedení školy
 
 Prompt použijete tak, že jeho text zkopírujete do své chatovací aplikace, doplníte požadované vstupní informace o škole (typ, velikost, stávající iniciativy, silné a slabé stránky, dostupné zdroje) a odešlete; okamžitě obdržíte ucelený návrh strategie členěný do přehledných částí, který můžete iterovat v další konverzaci s chatbotem.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Strategické dokumenty](/skills/strategicke-dokumenty), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Strategické dokumenty](/skills/strategicke-dokumenty), kterou si můžete nainstalovat do svého chatbota.

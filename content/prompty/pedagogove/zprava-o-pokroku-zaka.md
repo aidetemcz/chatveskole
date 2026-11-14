@@ -26,4 +26,4 @@ Cílem promptu je pomoci třídnímu učiteli vytvořit stručnou, konkrétní a
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Přiložte textové poznámky nebo jiný formát, ve kterém máte zaznamenané informace o žákovi. Prompt na jejich základě vytvoří jeden souvislý odstavec vhodný ke sdílení s rodiči. Text je formulován přístupným a empatickým jazykem a hodí se pro třídní schůzky, individuální konzultace nebo slovní hodnocení v žákovském portfoliu.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Komunikace s rodiči](/skills/komunikace-s-rodici), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici), kterou si můžete nainstalovat do svého chatbota.

@@ -13,7 +13,7 @@ menu:
     items:
       - { title: Změny ve funkcích 2026, href: /funkce/zmeny-2026, zvyraznit: true }
       - { title: Prompty, href: /funkce/prompty }
-      - { title: Skills (dovednosti), href: /funkce/skills }
+      - { title: Dovednosti (skills), href: /funkce/skills }
       - { title: Pluginy, href: /funkce/pluginy }
       - { title: Projekty, href: /funkce/projekty }
       - { title: Konektory, href: /funkce/konektory }
@@ -41,7 +41,7 @@ menu:
       - { title: Kontakt, href: /o-webu/kontakt }
 
 # Výrazné tlačítko v hlavičce (mimo rozbalovací menu)
-cta: { title: Katalog skills, href: /skills }
+cta: { title: Katalog dovedností, href: /skills }
 
 # Stránky generované z dat (nejsou .md v content/stranky):
 generovane:

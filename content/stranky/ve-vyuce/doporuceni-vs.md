@@ -41,5 +41,5 @@ Skupina si kladla otázky: Jaký dopad má a může mít nástroj typu ChatGPT n
 
 ## Pro vysokoškolské pedagogy na tomto webu
 
-- [Skills](/skills) fungují i pro vysokoškolskou výuku — studenti jsou dospělí a mohou je používat sami.
+- [Dovednosti](/skills) fungují i pro vysokoškolskou výuku — studenti jsou dospělí a mohou je používat sami.
 - [Prompty pro žáky](/funkce/prompty/zaci) jsou vhodné i pro studenty VŠ.

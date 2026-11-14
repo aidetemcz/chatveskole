@@ -1,6 +1,6 @@
 ---
 title: Chatboti ve škole
-popis: Praktický průvodce chatboty pro učitele a vedení škol. Skills a prompty pro formativní hodnocení, přípravu výuky i řízení školy. Vibe coding a pravidla pro AI.
+popis: Praktický průvodce chatboty pro učitele a vedení škol. Dovednosti a prompty pro formativní hodnocení, přípravu výuky i řízení školy. Vibe coding a pravidla pro AI.
 sablona: homepage
 aktualizovano: 2026-11-07
 stav: koncept
@@ -10,15 +10,15 @@ stav: koncept
 
 Web Chatboti ve škole je uceleným rozcestníkem pro využití generativní AI v praxi vyučujících i vedení školy. Inspiraci zde najdou nejen úplní začátečníci, ale také pokročilí uživatelé.
 
-[Jak pracovat s chatboty](/zaciname/jak-pracovat-s-chatboty) · [Katalog skills](/skills)
+[Jak pracovat s chatboty](/zaciname/jak-pracovat-s-chatboty) · [Katalog dovedností](/skills)
 
 ## Co se letos mění
 
-Hotoví asistenti na odkaz končí. Vlastní GPTs v ChatGPT přestanou fungovat 11. prosince 2026, Gems v Gemini mizí postupně od 17. listopadu 2026. Nahrazují je **skills** a **pluginy**. Všechny naše asistenty jsme proto převedli na skills — a ke každému je i prompt, který vložíte do jakéhokoli chatbota.
+Hotoví asistenti na odkaz končí. Vlastní GPTs v ChatGPT přestanou fungovat 11. prosince 2026, Gems v Gemini mizí postupně od 17. listopadu 2026. Nahrazují je **dovednosti** a **pluginy**. Všechny naše asistenty jsme proto převedli na dovednosti — a ke každému je i prompt, který vložíte do jakéhokoli chatbota.
 
 [Přehled změn ve funkcích chatbotů](/funkce/zmeny-2026)
 
-## Skills pro učitele a vedení škol
+## Dovednosti pro učitele a vedení škol
 
 <!-- komponenta: dlaždice sad z content/sady.yaml -->
 
@@ -28,9 +28,9 @@ Hotoví asistenti na odkaz končí. Vlastní GPTs v ChatGPT přestanou fungovat 
 - **Vedení školy** — mise a vize, školní pravidla, strategie, AI gramotnost v ŠVP.
 - **AI akcelerátor** — řízení změny a mapování procesů pro školy v programu.
 
-Každý skill můžete použít dvěma způsoby: **zkopírovat jako prompt** (funguje všude, i zdarma), nebo **stáhnout jako skill** a nainstalovat do Claude, Gemini, Copilotu nebo ChatGPT.
+Každou dovednost můžete použít dvěma způsoby: **zkopírovat jako prompt** (funguje všude, i zdarma), nebo **stáhnout jako dovednost** a nainstalovat do Claude, Gemini, Copilotu nebo ChatGPT.
 
-[Co jsou skills a jak je nainstalovat](/funkce/skills)
+[Co jsou dovednosti a jak je nainstalovat](/funkce/skills)
 
 ## Databáze promptů
 
@@ -49,7 +49,7 @@ Webová stránka, kvíz nebo malá aplikace do hodiny bez znalosti programován�
 <!-- komponenta: 3 karty s náhledy -->
 
 - [Chatboti ve výuce](https://kurikulum.aidetem.cz/knowledgebase/chatboti-ve-vyuce-pracovni-listy/) — úvod do promptování pro žáky od 13 let.
-- [Využití chatbotů ve formativním hodnocení](https://kurikulum.aidetem.cz/knowledgebase/vyuziti-chatbotu-ve-formativnim-hodnoceni/) — metodika k sadě skills.
+- [Využití chatbotů ve formativním hodnocení](https://kurikulum.aidetem.cz/knowledgebase/vyuziti-chatbotu-ve-formativnim-hodnoceni/) — metodika k sadě dovedností.
 - [Rozvoj myšlení s využitím chatbota](https://kurikulum.aidetem.cz/knowledgebase/rozvoj-mysleni-s-vyuzitim-chatbota/) — žáci rozvíjejí myšlení prostřednictvím otázek.
 
 [Všechny metodické materiály](/ve-vyuce/metodiky)

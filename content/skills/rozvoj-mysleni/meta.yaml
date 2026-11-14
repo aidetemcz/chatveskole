@@ -21,6 +21,6 @@ metodika:
   - nazev: Otázky učitele ve výukovém dialogu
     url: https://cs.wikipedia.org/wiki/Ot%C3%A1zky_u%C4%8Ditele_ve_v%C3%BDukov%C3%A9m_dialogu
   # Integrovaný model myšlení: dokument se nepodařilo najít na Disku — doplnit, pokud se má do skillu promítnout
-vek: dospělí (skills jsou v Gemini a Claude 18+); s mladšími žáky prompt pod dohledem učitele nebo aplikace Tiny
+vek: dospělí (dovednosti jsou v Gemini a Claude 18+); s mladšími žáky prompt pod dohledem učitele nebo aplikace Tiny
 stav: koncept
 aktualizovano: 2026-11-08

@@ -32,4 +32,4 @@ Vytvoř tabulku: Kompetence | Pokrytí (ano / částečně / ne) | Kde v úryvku
 Úryvek ŠVP: [vlož text]
 ```
 
-**Tip:** Hotové metodiky pro informatiku, mediální výchovu, wellbeing i další předměty najdete na kurikulum.aidetem.cz. Pravidla používání AI ve škole pomůže připravit skill „Školní pravidla“.
+**Tip:** Hotové metodiky pro informatiku, mediální výchovu, wellbeing i další předměty najdete na kurikulum.aidetem.cz. Pravidla používání AI ve škole pomůže připravit dovednost „Školní pravidla“.

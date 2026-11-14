@@ -53,4 +53,4 @@ Cílem promptu je pomoci pedagogovi nebo vedení školy připravit sadu přizpů
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte informace o chystané školní akci — název, datum, místo konání, stručný popis, cílovou skupinu a případná doporučení. Prompt vám vygeneruje různé formy pozvánky, které můžete ihned využít pro rozeslání e-mailem, zveřejnění na webu školy, sociálních sítích nebo vytisknutí jako plakát. Výstupy jsou formulovány přátelsky a srozumitelně, aby podpořily zapojení rodičů a posílily vztahy mezi školou a komunitou.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Komunikace s rodiči](/skills/komunikace-s-rodici), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici), kterou si můžete nainstalovat do svého chatbota.

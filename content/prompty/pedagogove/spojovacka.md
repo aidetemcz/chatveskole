@@ -33,4 +33,4 @@ Cílem promptu je vytvořit jednoduchý a efektivní pracovní list typu „spoj
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte téma, věk nebo ročník žáků, úroveň jazyka (např. A1, A2), počet slovíček a požadované jazyky. Prompt vám vygeneruje pracovní list ve formátu přehledné tabulky, který můžete vytisknout nebo promítnout. Cvičení je vhodné jako opakovací aktivita, rozcvička nebo součást domácího procvičování.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Pracovní listy](/skills/pracovni-listy), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.

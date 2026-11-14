@@ -15,4 +15,4 @@ Věk nebo stupeň žáků: [například 2. stupeň ZŠ]
 Navrhni gradaci v tabulce: úroveň — popis — příklady chování, aktivit nebo indikátorů žáka. Formulace piš tak, aby šly použít v učebních plánech, při hodnocení i v sebehodnocení žáků. Pokud existuje víc variant gradace, nabídni alternativu. Odpovídej konkrétně, ne teoreticky. Znění RVP si nevymýšlej. Jestli některý údaj chybí, nejdřív se mě zeptej.
 ```
 
-**Tip:** Z úrovní gradace můžete rovnou vytvořit kritéria a sebehodnoticí škálu se skillem Kritéria hodnocení.
+**Tip:** Z úrovní gradace můžete rovnou vytvořit kritéria a sebehodnoticí škálu s dovedností Kritéria hodnocení.

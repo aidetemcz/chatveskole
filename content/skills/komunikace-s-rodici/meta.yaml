@@ -35,6 +35,6 @@ puvodni_asistenti:
 google_doc: https://docs.google.com/document/d/1im5k0lxbdqdv0oN7HoSgTFVqeotW35aKN_ICGBLtcOY/edit
 google_slozka: https://drive.google.com/drive/folders/1HDcgeuiaF0KG5a-RhAYZHIn05lJf7XfC
 autori: [AI dětem, AI reaktor UJEP (Míša Liegertová)]   # ověřit: tři prompty z roku 2024 nejspíš z původní databáze AI reaktoru UJEP; doplnit jména
-vek: dospělí (skills jsou v Gemini a Claude 18+)
+vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
 stav: koncept
 aktualizovano: 2026-11-08

@@ -30,8 +30,8 @@ Doporučení jsou míněna jako inspirace. Školy si je mohou upravit a doplnit 
 
 1. **Projděte je na poradě** — každý si vezme leták pro svou roli.
 2. **Porovnejte s praxí školy** — co už děláte, co chybí.
-3. **Převeďte je do pravidel školy** — skill [Školní pravidla](/skills/skolni-pravidla) má režim přímo pro pravidla využívání AI a z doporučení NPI vychází.
-4. **Informujte rodiče** — leták pro rodiče a krátký dopis (pomůže skill [Komunikace s rodiči](/skills/komunikace-s-rodici)).
+3. **Převeďte je do pravidel školy** — dovednost [Školní pravidla](/skills/skolni-pravidla) má režim přímo pro pravidla využívání AI a z doporučení NPI vychází.
+4. **Informujte rodiče** — leták pro rodiče a krátký dopis (pomůže dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici)).
 
 ## Další zdroje
 

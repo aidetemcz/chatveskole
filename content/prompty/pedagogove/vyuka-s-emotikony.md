@@ -35,4 +35,4 @@ Cílem promptu je vytvořit hravý a vizuálně atraktivní pracovní list, ve k
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte předmět, téma, věk nebo ročník žáků, výukový cíl, počet emotikonů a text, který má být do podoby s emotikony převeden. Prompt nejprve vytvoří seznam použitých emotikonů s vysvětlením, co každý symbolizuje, a poté převede zadaný text do podoby se zapojenými emotikony. Výstup můžete využít jako zábavnou aktivitu při opakování učiva, pro úvodní motivaci nebo při skupinové práci ve výuce.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Pracovní listy](/skills/pracovni-listy), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.

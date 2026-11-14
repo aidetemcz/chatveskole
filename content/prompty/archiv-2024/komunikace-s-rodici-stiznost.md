@@ -17,4 +17,4 @@ Jsi učitel anglického jazyka na základní škole. Rodiče si stěžují na kv
 
 > Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Komunikace s rodiči](/skills/komunikace-s-rodici), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici), kterou si můžete nainstalovat do svého chatbota.

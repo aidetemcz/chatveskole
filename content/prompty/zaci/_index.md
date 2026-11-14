@@ -20,9 +20,9 @@ Těchto deset způsobů slouží učitelům, kteří přemýšlejí, jak využí
 
 **GenAI doporučujeme využívat hlavně se staršími žáky**, kteří už dokážou samostatně nebo s menší podporou posoudit, jestli jim AI v učení opravdu pomáhá.¹ Mladší žáci by s chatbotem měli pracovat jen s učitelem — třeba tak, že aplikaci ovládá učitel a otázky kladou žáci. Vždy zkontrolujte věkové podmínky konkrétního nástroje: [Věkové limity a legislativa](/zaciname/vekove-limity-a-legislativa).
 
-## Proč prompty, a ne skills
+## Proč prompty, a ne dovednosti
 
-Skills jsou v Gemini a Claude určené dospělým (18+). Žákovské aktivity proto nabízíme jako prompty ke zkopírování, které fungují v jakémkoli chatbotu, i v bezplatné verzi. Většina promptů má navíc hotového chatbota v aplikaci [Tiny](/ve-vyuce/tiny) — žák nic nekopíruje, nepotřebuje účet u velké firmy a učitel vidí průběh konverzace.
+Dovednosti jsou v Gemini a Claude určené dospělým (18+). Žákovské aktivity proto nabízíme jako prompty ke zkopírování, které fungují v jakémkoli chatbotu, i v bezplatné verzi. Většina promptů má navíc hotového chatbota v aplikaci [Tiny](/ve-vyuce/tiny) — žák nic nekopíruje, nepotřebuje účet u velké firmy a učitel vidí průběh konverzace.
 
 ## Deset způsobů
 

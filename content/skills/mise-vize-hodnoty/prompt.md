@@ -52,4 +52,4 @@ Pokud něco důležitého chybí, nejdřív se mě zeptej (nejvýš 5 otázek). 
 Piš srozumitelně pro celý sbor i rodiče, s nadpisy, krátkými odstavci a odrážkami. Nevymýšlej údaje o škole, které jsem neuvedl(a), ani konkrétní znění RVP.
 ```
 
-**Tip:** Návrh vezměte na poradu a nechte kolegy, aby u každé hodnoty nebo oblasti profilu doplnili jeden příklad z vlastní praxe. Na hotovou vizi navazuje skill „Strategické dokumenty“.
+**Tip:** Návrh vezměte na poradu a nechte kolegy, aby u každé hodnoty nebo oblasti profilu doplnili jeden příklad z vlastní praxe. Na hotovou vizi navazuje dovednost „Strategické dokumenty“.

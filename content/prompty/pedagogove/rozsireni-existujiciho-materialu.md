@@ -41,4 +41,4 @@ Cílem promptu je poskytnout pedagogům rychlý a praktický způsob, jak obohat
 
 Zkopírujte prompt do chatovací aplikace, vložte původní materiál a vyplňte požadované údaje v hranatých závorkách (věk nebo ročník žáků, předmět a téma, cíl rozšíření …). Asistent poté vygeneruje aktualizovaný materiál s označením nových úseků a stručnými pokyny pro učitele. Hotový text můžete hned vytisknout nebo sdílet v online prostředí (LMS, Google Classroom, Teams, Padlet …) a dále upravovat dle potřeb třídy.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Úprava materiálu](/skills/uprava-materialu), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Úprava materiálu](/skills/uprava-materialu), kterou si můžete nainstalovat do svého chatbota.

@@ -33,4 +33,4 @@ Cílem promptu je pomoci třídnímu učiteli vytvořit přehlednou a přátelsk
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte název projektu, jeho stručný popis, přínosy pro žáky a případné zapojení rodičů. Prompt vám vygeneruje sdělení ve formě jednoho uceleného odstavce a několika přehledných odrážek, které můžete použít v e-mailu, školním systému nebo tištěné informaci pro rodiče. Výstup je formulován srozumitelně, v přátelském tónu a slouží k informování i navázání partnerské komunikace.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Komunikace s rodiči](/skills/komunikace-s-rodici), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici), kterou si můžete nainstalovat do svého chatbota.

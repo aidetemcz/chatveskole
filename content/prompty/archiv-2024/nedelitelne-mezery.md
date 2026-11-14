@@ -28,4 +28,4 @@ V psaném textu považujeme za chybu, když jsou jednoznakové předložky na ko
 
 > Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Jazykový korektor](/skills/jazykovy-korektor), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Jazykový korektor](/skills/jazykovy-korektor), kterou si můžete nainstalovat do svého chatbota.

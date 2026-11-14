@@ -2,7 +2,7 @@
 title: Dostupné nástroje
 menu: Začínáme
 poradi: 2
-popis: ChatGPT, Gemini, Copilot, Claude a další chatboti v přehledu pro školy — věkové limity, co umí zdarma, skills, projekty a vytváření aplikací.
+popis: ChatGPT, Gemini, Copilot, Claude a další chatboti v přehledu pro školy — věkové limity, co umí zdarma, dovednosti, projekty a vytváření aplikací.
 aktualizovano: 2026-11-07
 stav: koncept
 zdroje:
@@ -27,9 +27,9 @@ Chatbotů je dnes desítky. Na tomto webu se věnujeme čtyřem, které školy p
 | Výrobce | OpenAI | Google | Microsoft | Anthropic |
 | Zdarma | ano | ano | ano | ano |
 | Školní verze v Česku | ne (Edu jen pro VŠ) | ano, v Google Workspace for Education | ano, Copilot Chat se školní licencí Microsoft 365 | ne (Education jen pro VŠ) |
-| Věk — osobní účet | 13+, do 18 let se souhlasem rodiče a v režimu pro teenagery | 13+ (v ČR samostatně od 15 let); placené tarify a skills 18+ | 13+ | 18+ |
+| Věk — osobní účet | 13+, do 18 let se souhlasem rodiče a v režimu pro teenagery | 13+ (v ČR samostatně od 15 let); placené tarify a dovednosti 18+ | 13+ | 18+ |
 | Věk — školní účet | — | všechny věky, zapíná správce, žáci do 18 let mají omezené funkce | 13+, zapíná správce | — |
-| Skills | uvnitř pluginů; samostatně jen Business, Enterprise, Edu | ano (18+) | ano, v Coworku a agentech (licence) | ano, i zdarma |
+| Dovednosti | uvnitř pluginů; samostatně jen Business, Enterprise, Edu | ano (18+) | ano, v Coworku a agentech (licence) | ano, i zdarma |
 | Projekty | ano | Notebooky | Notebooks | ano |
 | Tvorba dokumentů a aplikací | bloky, Sites (placené) | Canvas | Pages | artefakty, Docs, Slides, Design |
 | Hledá na internetu | ano | ano | ano | ano |
@@ -39,13 +39,13 @@ Podrobné srovnání funkcí a co se mění v roce 2027 najdete na stránce [Zm�
 
 ## ChatGPT
 
-Nejrozšířenější chatbot. Bezplatná verze má od srpna 2026 v Evropě reklamy (ne pro uživatele do 18 let). Uživatelé od 13 do 17 let mají automaticky režim pro teenagery s přísnějšími pravidly. Vlastní GPTs končí 11. 12. 2026, nahrazují je pluginy a skills.
+Nejrozšířenější chatbot. Bezplatná verze má od srpna 2026 v Evropě reklamy (ne pro uživatele do 18 let). Uživatelé od 13 do 17 let mají automaticky režim pro teenagery s přísnějšími pravidly. Vlastní GPTs končí 11. 12. 2026, nahrazují je pluginy a dovednosti.
 
 [chatgpt.com](https://chatgpt.com)
 
 ## Gemini
 
-Chatbot od Googlu. Pro školy je zajímavý tím, že ho mají zdarma v Google Workspace for Education — i pro žáky, s ochranou dat a omezeními podle věku. Umí Canvas (dokumenty, kvízy, malé aplikace) a Gemini Notebook pro práci s vlastními podklady. Gems končí, nahrazují je skills.
+Chatbot od Googlu. Pro školy je zajímavý tím, že ho mají zdarma v Google Workspace for Education — i pro žáky, s ochranou dat a omezeními podle věku. Umí Canvas (dokumenty, kvízy, malé aplikace) a Gemini Notebook pro práci s vlastními podklady. Gems končí, nahrazují je dovednosti.
 
 [gemini.google.com](https://gemini.google.com)
 
@@ -57,7 +57,7 @@ Chatbot od Microsoftu, postavený na modelech OpenAI. Školy s licencí Microsof
 
 ## Claude
 
-Chatbot od Anthropicu, silný v psaní, práci s dokumenty a programování. I v bezplatné verzi má skills, projekty a tvorbu dokumentů, prezentací a aplikací (artefakty). Je jen pro dospělé — se žáky ho používejte jen tak, že ho ovládá učitel.
+Chatbot od Anthropicu, silný v psaní, práci s dokumenty a programování. I v bezplatné verzi má dovednosti, projekty a tvorbu dokumentů, prezentací a aplikací (artefakty). Je jen pro dospělé — se žáky ho používejte jen tak, že ho ovládá učitel.
 
 [claude.ai](https://claude.ai)
 

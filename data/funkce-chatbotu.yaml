@@ -14,30 +14,30 @@ nastroje:
   - 'Canvas: skončil 28. 5. 2026'
   - 'ChatGPT agent: zrušen v létě 2026'
   pribyva:
-  - Pluginy a skills místo GPTs
+  - Pluginy a dovednosti místo GPTs
   - ChatGPT Work pro samostatnou práci (placené tarify)
   - Sites pro weby a malé aplikace (placené tarify)
   - ChatGPT for Teens pro 13–17 let
   skola:
   - Migrovaný plugin je soukromý. Vlastní akce, výběr modelu ani sdílení se nepřenesou.
-  - 'Veřejný odkaz na GPT zatím nic nenahrazuje: sdílený projekt ukáže všem členům všechny konverzace, pluginy jen se skills OpenAI do veřejného adresáře teď nepřijímá.'
+  - 'Veřejný odkaz na GPT zatím nic nenahrazuje: sdílený projekt ukáže všem členům všechny konverzace, pluginy jen s dovednostmi OpenAI do veřejného adresáře teď nepřijímá.'
   - ChatGPT for Teachers je jen pro učitele v USA.
 - id: gemini
   nazev: Gemini
   vyrobce: Google
-  posun: Gems se mění na skills
+  posun: Gems se mění na dovednosti
   konci:
   - 'Gems: osobní účty od 17. 11. 2026, firmy nejdříve 1. 3. 2027, školy nejdříve 1. 6. 2027'
   - 'Gems v Google Classroomu: se školním termínem'
   - 'Opal a Gems z Google Labs: 17. 11. 2026'
   pribyva:
-  - Skills ve formátu SKILL.md, nahrání i stažení jako ZIP
+  - Dovednosti ve formátu SKILL.md, nahrání i stažení jako ZIP
   - Notebooky propojené s Gemini Notebook
   - Workspace Studio; Gemini agent pro firmy zatím bez termínu
   skola:
-  - Gems se převedou jen na koncepty skills. Autor je musí zkontrolovat a zapnout.
-  - Skills zatím nefungují s Canvasem, Deep Research ani Guided Learning a nejdou zadat v Classroomu.
-  - 'Věk u skills: správcovská dokumentace uvádí všechny věky, nápověda Gemini 18+. Ověřte na žákovském účtu.'
+  - Gems se převedou jen na koncepty dovedností. Autor je musí zkontrolovat a zapnout.
+  - Dovednosti zatím nefungují s Canvasem, Deep Research ani Guided Learning a nejdou zadat v Classroomu.
+  - 'Věk u dovedností: správcovská dokumentace uvádí všechny věky, nápověda Gemini 18+. Ověřte na žákovském účtu.'
 - id: copilot
   nazev: Copilot
   vyrobce: Microsoft
@@ -47,7 +47,7 @@ nastroje:
   - 'Tlačítko Agenti v menu: do konce listopadu 2026 ho nahradí Pluginy'
   - 'Deep Research v osobním Copilotu: skončil 18. 8. 2026'
   pribyva:
-  - Pluginy a skills, Cowork přijme i balíčky z Claude
+  - Pluginy a dovednosti, Cowork přijme i balíčky z Claude
   - Home, Code a Autopilot (zatím v programu Frontier)
   - Paměť a Notebooks i bez placené licence
   skola:
@@ -66,7 +66,7 @@ nastroje:
   - Veřejný adresář pluginů od 25. 9. 2026
   skola:
   - Jen pro uživatele od 18 let, žákovský program není.
-  - Projekt ani skill nejdou poslat odkazem. Skill se předává jako ZIP.
+  - Projekt ani dovednost nejdou poslat odkazem. Dovednost se předává jako ZIP.
   - Pluginy, Research a naplánované úlohy jsou jen v placených tarifech.
 casova_osa:
 - datum: '2026-09-16'
@@ -74,7 +74,7 @@ casova_osa:
   text: Cowork je součástí běžného chatu (Pro, Max)
 - datum: '2026-09-30'
   nastroj: gemini
-  text: Spuštěny skills
+  text: Spuštěny dovednosti
 - datum: '2026-10-08'
   nastroj: claude
   text: Docs, Slides a Design ve všech tarifech
@@ -123,7 +123,7 @@ matice:
       '2027': ne
       zmena: down
       stitek: končí
-      nazev: Gems → skills
+      nazev: Gems → dovednosti
       poznamka: Osobní účty od 17. 11. 2026, firmy nejdříve 1. 3. 2027, školy nejdříve 1. 6. 2027.
     copilot:
       dnes: omezene
@@ -138,8 +138,8 @@ matice:
       zmena: same
       stitek: null
       nazev: Nemá a nechystá
-      poznamka: Roli asistenta plní projekt, skill nebo plugin.
-- funkce: Skills
+      poznamka: Roli asistenta plní projekt, dovednost nebo plugin.
+- funkce: Dovednosti (skills)
   popis: Znovupoužitelný návod uložený jako soubor SKILL.md
   nastroje:
     chatgpt:
@@ -147,31 +147,31 @@ matice:
       '2027': omezene
       zmena: same
       stitek: nové 2026
-      nazev: Skills uvnitř pluginů
-      poznamka: Samostatné Skills mají jen tarify Business, Enterprise a Edu.
+      nazev: Dovednosti uvnitř pluginů
+      poznamka: Samostatné dovednosti mají jen tarify Business, Enterprise a Edu.
     gemini:
       dnes: omezene
       '2027': omezene
       zmena: same
       stitek: nové 2026
-      nazev: Skills
+      nazev: Dovednosti
       poznamka: Od 30. 9. 2026, volají se lomítkem. Osobní účty 18+ a se zapnutou historií aktivity.
     copilot:
       dnes: omezene
       '2027': omezene
       zmena: same
       stitek: nové 2026
-      nazev: Skills v Coworku a v agentech
+      nazev: Dovednosti v Coworku a v agentech
       poznamka: Nahrání souboru .md nebo ZIP, až 50 vlastních. Cowork vyžaduje placenou licenci.
     claude:
       dnes: ano
       '2027': ano
       zmena: same
       stitek: null
-      nazev: Skills
+      nazev: Dovednosti
       poznamka: ZIP se SKILL.md nahrajete v Customize → Skills. U tarifu Free si oficiální stránky protiřečí.
 - funkce: Pluginy
-  popis: Balíček skills, konektorů a nástrojů k instalaci
+  popis: Balíček dovedností, konektorů a nástrojů k instalaci
   nastroje:
     chatgpt:
       dnes: ano
@@ -193,7 +193,7 @@ matice:
       zmena: up
       stitek: nové 2026
       nazev: Pluginy
-      poznamka: Do konce listopadu 2026 nahradí v menu tlačítko Agenti. Balí agenty, skills a konektory.
+      poznamka: Do konce listopadu 2026 nahradí v menu tlačítko Agenti. Balí agenty, dovednosti a konektory.
     claude:
       dnes: omezene
       '2027': omezene
@@ -303,14 +303,14 @@ matice:
       zmena: down
       stitek: končí
       nazev: Odkaz na GPT → odkaz na projekt
-      poznamka: Plugin se sdílí jen uvnitř workspace, veřejně až po schválení OpenAI (pluginy jen se skills teď nepřijímá). Sdílený projekt otevře každý přihlášený uživatel, ale všichni členové v něm vidí všechny konverzace.
+      poznamka: Plugin se sdílí jen uvnitř workspace, veřejně až po schválení OpenAI (pluginy jen s dovednostmi teď nepřijímá). Sdílený projekt otevře každý přihlášený uživatel, ale všichni členové v něm vidí všechny konverzace.
     gemini:
       dnes: ano
       '2027': omezene
       zmena: down
       stitek: končí
-      nazev: Gem přes Disk → skill odkazem
-      poznamka: Příjemce dostane kopii skillu. Sdílení mimo doménu povoluje správce, u osobních účtů teprve přijde.
+      nazev: Gem přes Disk → dovednost odkazem
+      poznamka: Příjemce dostane kopii dovednosti. Sdílení mimo doménu povoluje správce, u osobních účtů teprve přijde.
     copilot:
       dnes: ne
       '2027': ne
@@ -324,7 +324,7 @@ matice:
       zmena: same
       stitek: null
       nazev: Odkazem ne, souborem ano
-      poznamka: Skill pošlete jako ZIP, plugin jako soubor. Veřejný odkaz má jen artefakt.
+      poznamka: Dovednost pošlete jako ZIP, plugin jako soubor. Veřejný odkaz má jen artefakt.
 - funkce: Paměť
   popis: Nástroj si pamatuje, co jste mu řekli v dřívějších chatech
   nastroje:
@@ -496,7 +496,7 @@ matice:
       zmena: same
       stitek: null
       nazev: Nejlépe na školním účtu
-      poznamka: Osobní účet od 13 let (v ČR samostatně od 15), placené tarify a skills od 18 let. Ve škole Canvas, Guided Learning a do 1. 6. 2027 i Gems.   # upraveno 7. 11. 2026 podle support.google.com/gemini/answer/13278668 — artefakt uváděl „osobní účet v EU od 18 let“
+      poznamka: Osobní účet od 13 let (v ČR samostatně od 15), placené tarify a dovednosti od 18 let. Ve škole Canvas, Guided Learning a do 1. 6. 2027 i Gems.   # upraveno 7. 11. 2026 podle support.google.com/gemini/answer/13278668 — artefakt uváděl „osobní účet v EU od 18 let“
     copilot:
       dnes: omezene
       '2027': omezene

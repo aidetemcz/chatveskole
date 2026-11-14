@@ -22,4 +22,4 @@ Forma odpovědi:
 - Na konci nabídni číslovaný seznam toho, co mi můžeš vysvětlit podrobněji.
 ```
 
-**Tip:** Nové slovní hodnocení napíšete se skillem Slovní hodnocení.
+**Tip:** Nové slovní hodnocení napíšete s dovedností Slovní hodnocení.

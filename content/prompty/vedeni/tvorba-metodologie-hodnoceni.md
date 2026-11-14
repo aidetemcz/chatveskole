@@ -65,4 +65,4 @@ Cílem promptu „Tvorba metodologie hodnocení“ je podpořit školní vedení
 
 Prompt použijete tak, že jeho text zkopírujete do chatovací aplikace, doplníte požadované vstupní údaje (typ školy, současnou praxi hodnocení, silné a slabé stránky, dostupné zdroje apod.) a odešlete; obratem získáte kompletní návrh metodologie strukturovaný do přehledných částí, který lze s týmem projít, upravit podle místních specifik a poté vytisknout či sdílet online; kdykoliv později stačí aktualizovat vstupní informace a prompt spustit znovu, abyste dokument udrželi v souladu s vývojem školy i potřebami žáků.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Strategické dokumenty](/skills/strategicke-dokumenty), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Strategické dokumenty](/skills/strategicke-dokumenty), kterou si můžete nainstalovat do svého chatbota.

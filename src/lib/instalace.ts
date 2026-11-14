@@ -5,26 +5,26 @@ export const NASTROJE: Nastroj[] = [
   {
     id: 'claude', nazev: 'Claude', zip: 'skill',
     kroky: () => [
-      'Stáhněte ZIP skillu (nerozbalujte ho).',
+      'Stáhněte ZIP dovednosti (nerozbalujte ho).',
       'V Claude otevřete Customize → Skills, klikněte na + a zvolte Upload a skill.',
-      'Vyberte ZIP. Skill se objeví v seznamu a můžete ho zapnout nebo vypnout.',
-      'Pište normálně — Claude skill použije sám, když se k úkolu hodí.',
+      'Vyberte ZIP. Dovednost se objeví v seznamu a můžete ji zapnout nebo vypnout.',
+      'Pište normálně — Claude dovednost použije sám, když se k úkolu hodí.',
     ],
   },
   {
     id: 'gemini', nazev: 'Gemini', zip: 'skill',
     kroky: (slug) => [
-      'Stáhněte ZIP skillu.',
-      'V aplikaci Gemini otevřete správu skills a nahrajte ZIP, složku nebo samotný soubor SKILL.md.',
-      `Skill zavoláte lomítkem: /${slug}.`,
-      'Skills mají osobní účty od 18 let. Na školních účtech dostupnost řídí správce.',
+      'Stáhněte ZIP dovednosti.',
+      'V aplikaci Gemini otevřete správu dovedností a nahrajte ZIP, složku nebo samotný soubor SKILL.md.',
+      `Dovednost zavoláte lomítkem: /${slug}.`,
+      'Dovednosti mají osobní účty od 18 let. Na školních účtech dostupnost řídí správce.',
     ],
   },
   {
     id: 'copilot', nazev: 'Copilot', zip: 'copilot',
     kroky: () => [
       'Copilot Cowork: Customize → Skills → Add → Upload skill (soubor .md do 1 MB nebo ZIP do 10 MB). Vyžaduje licenci Microsoft 365 Copilot.',
-      'Agent Builder: ZIP přidáte do agenta, nejvýš 8 skills na agenta.',
+      'Agent Builder: ZIP přidáte do agenta, nejvýš 8 dovedností na agenta.',
       'Bez licence: v Copilot Chatu vytvořte agenta a do pokynů vložte systémový prompt z Google Docs.',
     ],
   },

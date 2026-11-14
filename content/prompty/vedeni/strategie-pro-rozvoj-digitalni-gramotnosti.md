@@ -63,4 +63,4 @@ Cílem promptu je pomoci vedení školy a pedagogickému týmu vytvořit přehle
 
 Prompt zkopírujte do své chatovací aplikace, doplňte požadované vstupní informace (například typ školy, aktuální digitální infrastrukturu, silné a slabé stránky) a odešlete. Obratem získáte ucelený návrh strategického dokumentu, který můžete v daném vlákně iterovat společně s chatovací aplikací.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Strategické dokumenty](/skills/strategicke-dokumenty), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Strategické dokumenty](/skills/strategicke-dokumenty), kterou si můžete nainstalovat do svého chatbota.
