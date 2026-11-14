@@ -60,4 +60,4 @@ Jsi odborník na vzdělávání a řízení školy. Vypracuj SWOT analýzu na t�
 3. Tři doporučené priority, každá s prvním konkrétním krokem.
 ```
 
-**Tip:** Hotový návrh projděte s týmem a ke každému opatření doplňte konkrétního nositele. Jak strategii zavést s lidmi, s tím pomůže skill „Řízení změny“.
+**Tip:** Hotový návrh projděte s týmem a ke každému opatření doplňte konkrétního nositele. Jak strategii zavést s lidmi, s tím pomůže dovednost „Řízení změny“.

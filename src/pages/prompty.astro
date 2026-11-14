@@ -43,6 +43,7 @@ const views = [
         <button type="button" data-target="ucel" aria-pressed="true">Řadit dle účelu</button>
         <button type="button" data-target="komu" aria-pressed="false">Řadit dle toho, komu slouží</button>
       </div>
+      <p class="filtr" hidden>Zobrazujeme jen prompty <strong data-filtr-nazev></strong>. <a href={url('/prompty')}>Zobrazit všechny prompty</a></p>
     </div>
   </div>
 
@@ -50,7 +51,7 @@ const views = [
     {views.map((v) => (
       <div data-group-view={v.id} hidden={v.id !== 'ucel'} data-pagefind-ignore={v.id !== 'ucel' ? '' : undefined}>
         {v.groups.map((g, i) => (
-          <section id={v.id === 'ucel' ? g.id : undefined} class={`band ${i % 2 === 0 ? 'band--sky' : 'band--white'}`} aria-label={g.title}>
+          <section id={v.id === 'ucel' ? g.id : undefined} data-skupina={v.id === 'komu' ? g.id.replace('pro-', '') : undefined} class={`band ${i % 2 === 0 ? 'band--sky' : 'band--white'}`} aria-label={g.title}>
             <div class="wrap stack" style="gap: 28px">
               <h2 style="font-size: 1.7rem">{g.title} <span class="count">{pocet(g.items.length, 'prompt', 'prompty', 'promptů')}</span></h2>
               <div class="grid-2">
@@ -69,3 +70,22 @@ const views = [
     </div>
   </div>
 </Base>
+
+<style>
+  .filtr { font-size: 1.05rem; }
+</style>
+
+<script>
+  // ?pro=pedagogove|vedeni|zaci (odkazy z hlavní stránky): zobrazí řazení „komu slouží“ jen s danou skupinou
+  const pro = new URLSearchParams(location.search).get('pro');
+  const skupina = pro ? document.querySelector<HTMLElement>(`[data-group-view="komu"] [data-skupina="${CSS.escape(pro)}"]`) : null;
+  if (skupina) {
+    document.querySelectorAll<HTMLElement>('#skupiny-promptu > [data-group-view]').forEach((v) => { v.hidden = v.dataset.groupView !== 'komu'; });
+    document.querySelectorAll<HTMLButtonElement>('[data-switch="skupiny-promptu"] button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.target === 'komu')));
+    skupina.parentElement!.querySelectorAll<HTMLElement>(':scope > [data-skupina]').forEach((sk) => { sk.hidden = sk !== skupina; });
+    skupina.classList.replace('band--white', 'band--sky');
+    const filtr = document.querySelector<HTMLElement>('.filtr')!;
+    filtr.querySelector('[data-filtr-nazev]')!.textContent = (skupina.getAttribute('aria-label') ?? '').toLowerCase();
+    filtr.hidden = false;
+  }
+</script>

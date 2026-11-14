@@ -33,7 +33,7 @@ Než začnete platit osobní předplatné, zeptejte se správce IT, co škola m�
 ## Co se vyplatí
 
 - **Na zkoušení a jednorázové úkoly** stačí bezplatná verze kteréhokoli chatbota.
-- **Na pravidelnou přípravu, skills a delší dokumenty** se vyplatí jeden placený tarif za zhruba 500 Kč měsíčně (ChatGPT Plus, Claude Pro nebo Google AI Pro). Vyberte ten, který vám sedí, nemusíte platit všechny.
+- **Na pravidelnou přípravu, dovednosti a delší dokumenty** se vyplatí jeden placený tarif za zhruba 500 Kč měsíčně (ChatGPT Plus, Claude Pro nebo Google AI Pro). Vyberte ten, který vám sedí, nemusíte platit všechny.
 - **Pro celou školu** se vyplatí řešit licence centrálně — kvůli ochraně dat i ceně.
 
 Platíte za službu zahraniční firmě a nejste plátci DPH? Přečtěte si [Zahraniční platby pro neplátce DPH](/zaciname/zahranicni-platby).

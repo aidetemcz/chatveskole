@@ -20,4 +20,4 @@ Postup:
 Nic si nevymýšlej – používej jen ověřená fakta.
 ```
 
-**Tip:** Se žáky použijte prompt nebo hotového chatbota v aplikaci Tiny. Skills jsou v Gemini a Claude určené dospělým.
+**Tip:** Se žáky použijte prompt nebo hotového chatbota v aplikaci Tiny. Dovednosti jsou v Gemini a Claude určené dospělým.

@@ -2,7 +2,7 @@
 title: Tvorba pravidel pro využívání AI
 menu: Chatboti ve výuce
 poradi: 3
-popis: Jak ve škole nastavit pravidla pro využívání umělé inteligence — pro učitele, žáky i rodiče. Postup, osnova pravidel, úrovně využití AI v úlohách a skill na pomoc.
+popis: Jak ve škole nastavit pravidla pro využívání umělé inteligence — pro učitele, žáky i rodiče. Postup, osnova pravidel, úrovně využití AI v úlohách a dovednost na pomoc.
 aktualizovano: 2026-11-07
 stav: koncept
 zdroje:
@@ -32,7 +32,7 @@ V praxi to znamená: začněte jasnými pravidly pro konkrétní úlohy a soubě
 
 1. **Zmapujte, co se děje.** Krátký dotazník pro učitele a žáky: kdo co používá, k čemu, s jakou zkušeností.
 2. **Domluvte se na hodnotách.** Co chceme, aby se žáci naučili? Kde AI pomáhá, kde škodí? Vyjděte z hodnot a vize školy.
-3. **Sepište pravidla** zvlášť pro učitele, žáky a rodiče — krátce a srozumitelně. Pomůže skill níže.
+3. **Sepište pravidla** zvlášť pro učitele, žáky a rodiče — krátce a srozumitelně. Pomůže dovednost níže.
 4. **Projednejte je** s učiteli, žákovským parlamentem a rodiči. Pravidla, která vzniknou v dialogu, se dodržují.
 5. **Vyhodnocujte a aktualizujte** aspoň jednou za pololetí. Nástroje se mění rychle.
 
@@ -62,10 +62,10 @@ Národní pedagogický institut vydal v roce 2025 doporučení **Jak na AI ve š
 
 [Doporučení pro ZŠ a SŠ →](/ve-vyuce/doporuceni-zs-ss)
 
-## Skill: Školní pravidla
+## Dovednost: Školní pravidla
 
-Skill vás provede tvorbou pravidel krok za krokem: zeptá se na oblasti, cílové skupiny a hodnoty školy, navrhne formulace, upozorní na rizika (příliš represivní nebo nevymahatelná pravidla) a poradí, jak je zavést. Má i režim přímo pro pravidla využívání AI.
+Dovednost vás provede tvorbou pravidel krok za krokem: zeptá se na oblasti, cílové skupiny a hodnoty školy, navrhne formulace, upozorní na rizika (příliš represivní nebo nevymahatelná pravidla) a poradí, jak je zavést. Má i režim přímo pro pravidla využívání AI.
 
-[Skill Školní pravidla →](/skills/skolni-pravidla)
+[Dovednost Školní pravidla →](/skills/skolni-pravidla)
 
-Potřebujete vysvětlit rodičům, proč škola AI zavádí? Použijte skill [Komunikace s rodiči](/skills/komunikace-s-rodici).
+Potřebujete vysvětlit rodičům, proč škola AI zavádí? Použijte dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici).

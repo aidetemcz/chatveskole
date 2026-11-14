@@ -2,7 +2,7 @@
 title: Kontakt
 menu: O webu
 poradi: 2
-popis: Napište nám — dotazy k webu, návrhy skills a promptů, chyby v textech, vzdělávací akce pro školy.
+popis: Napište nám — dotazy k webu, návrhy dovedností a promptů, chyby v textech, vzdělávací akce pro školy.
 aktualizovano: 2026-11-07
 stav: koncept
 ---
@@ -13,11 +13,11 @@ stav: koncept
 
 Našli jste chybu, zastaralou informaci nebo nefunkční odkaz? Máte nápad, co na webu chybí? Napište Evě Nečasové na [eva@aidetem.cz](mailto:eva@aidetem.cz), nebo obecně na [cau@aidetem.cz](mailto:cau@aidetem.cz).
 
-## Pošlete nám skill nebo prompt {#poslat}
+## Pošlete nám dovednost nebo prompt {#poslat}
 
-Používáte prompt nebo skill, který se vám osvědčil? Pošlete nám ho přes formulář. Projdeme ho, vyzkoušíme a s vaším souhlasem zveřejníme i s vaším jménem.
+Používáte dovednost nebo prompt, který se vám osvědčil? Pošlete nám ho přes formulář. Projdeme ho, vyzkoušíme a s vaším souhlasem zveřejníme i s vaším jménem.
 
-[Poslat skill nebo prompt](https://forms.gle/rn7SsvbmjJ43YZj29)
+[Poslat dovednost nebo prompt](https://forms.gle/rn7SsvbmjJ43YZj29)
 
 ## Školení a spolupráce
 

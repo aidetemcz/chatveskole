@@ -4,7 +4,7 @@ import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import HeroKrajina from '../components/HeroKrajina.astro';
 import { url } from '../lib/url';
-import { pocet } from '../lib/data';
+import { sady, pocet } from '../lib/data';
 
 const prompty = await getCollection('prompty');
 const nSkup = (s: string) => prompty.filter((p) => p.id.startsWith(s + '/')).length;
@@ -40,25 +40,38 @@ const nKatalog = nUcitele + nVedeni + nZaci;
     </div>
   </section>
 
-  <section class="band band--hp band--sky" aria-labelledby="prompty-h">
+  <section class="band band--hp band--sky" aria-labelledby="prompty-h dovednosti-h">
     <div class="wrap stack" style="gap: 30px">
       <div class="section-head">
         <div><h2 id="prompty-h">Katalog promptů</h2><p>Ověřené prompty pro učitele, vedení škol i žáky. Stačí zkopírovat do chatbota a doplnit údaje.</p></div>
         <a class="more" href={url('/prompty')}>Všech {nKatalog} promptů →</a>
       </div>
       <div class="grid-3">
-        <a class="card card--lg" href={url('/prompty')}>
+        <a class="card card--lg" href={url('/prompty?pro=pedagogove')}>
           <div class="card-top"><span class="title-row"><span class="tile-icon tile-icon--accent"><Icon name="chat" size={18} /></span><h3 style="font-size: 1.15rem">Pro učitele</h3></span><span class="count" style="font-size: 0.78rem">{pocet(nUcitele, 'prompt', 'prompty', 'promptů')}</span></div>
           <p>Formativní a slovní hodnocení, pracovní listy, úpravy materiálů a komunikace s rodiči.</p>
         </a>
-        <a class="card card--lg" href={url('/prompty')}>
+        <a class="card card--lg" href={url('/prompty?pro=vedeni')}>
           <div class="card-top"><span class="title-row"><span class="tile-icon tile-icon--accent"><Icon name="school" size={18} /></span><h3 style="font-size: 1.15rem">Pro vedení školy</h3></span><span class="count" style="font-size: 0.78rem">{pocet(nVedeni, 'prompt', 'prompty', 'promptů')}</span></div>
           <p>Strategie školy, hodnoty, mise a vize, profil absolventa, školní pravidla a hodnocení kvality výuky.</p>
         </a>
-        <a class="card card--lg" href={url('/funkce/prompty/zaci')}>
+        <a class="card card--lg" href={url('/prompty?pro=zaci')}>
           <div class="card-top"><span class="title-row"><span class="tile-icon tile-icon--sky"><Icon name="cap" size={18} /></span><h3 style="font-size: 1.15rem">Pro žáky</h3></span><span class="count" style="font-size: 0.78rem">{pocet(nZaci, 'prompt', 'prompty', 'promptů')}</span></div>
           <p>Argumentace, brainstorming, plánování nebo zpětná vazba — způsoby využití generativní AI ve výuce vytvořené s NPI ČR.</p>
         </a>
+      </div>
+
+      <div class="section-head" style="margin-top: 56px">
+        <div><h2 id="dovednosti-h">Katalog dovedností (skills)</h2><p>Hotové dovednosti pro učitele a vedení škol. Nainstalujete je do chatbota jednou a on je pak použije sám. Dělíme je do sad podle toho, k čemu slouží.</p></div>
+        <a class="more" href={url('/skills')}>Katalog dovedností →</a>
+      </div>
+      <div class="grid-cards">
+        {sady.map((s) => (
+          <a class="card card--lg" href={url(`/sady/${s.slug}`)}>
+            <div class="card-top"><h3 style="font-size: 1.15rem">{s.title}</h3><span class="count" style="font-size: 0.78rem">{pocet(s.skills.length, 'dovednost', 'dovednosti', 'dovedností')}</span></div>
+            <p>{s.popis}</p>
+          </a>
+        ))}
       </div>
     </div>
   </section>

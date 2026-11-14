@@ -47,4 +47,4 @@ Postup:
 - Piš přátelsky a jednoduše, bez odborných a cizích slov, přiměřeně věku.
 ```
 
-**Tip:** Kritéria k gradaci vytvoříte se skillem Kritéria hodnocení.
+**Tip:** Kritéria k gradaci vytvoříte s dovedností Kritéria hodnocení.

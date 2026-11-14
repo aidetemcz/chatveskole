@@ -84,4 +84,4 @@ Napiš jeden odstavec (3–6 vět) přímo žákovi: co se mu daří (s konkrét
 Pod odstavec zvlášť pro mě navrhni ke každému kritériu úroveň J–Č–T–Ú (J – ještě neosvojeno, Č – částečně, T – téměř, Ú – úplně osvojeno) s jednou větou zdůvodnění.
 ```
 
-**Tip:** Hotové hodnocení si nechte zkontrolovat variantou Kontrola formulací, nebo ho dejte přečíst kolegovi – víc očí víc vidí. Nejlepší podklad pro vysvědčení jsou průběžné zpětné vazby a sebehodnocení žáka (navazuje skill Kritéria hodnocení).
+**Tip:** Hotové hodnocení si nechte zkontrolovat variantou Kontrola formulací, nebo ho dejte přečíst kolegovi – víc očí víc vidí. Nejlepší podklad pro vysvědčení jsou průběžné zpětné vazby a sebehodnocení žáka (navazuje dovednost Kritéria hodnocení).

@@ -2,7 +2,7 @@
 title: Jak pracovat s chatboty
 menu: Začínáme
 poradi: 1
-popis: Krátký prompt, podrobný prompt, skill a plugin. Jaký je mezi nimi rozdíl a kdy který použít, vysvětleno na jednoduché animaci.
+popis: Krátký prompt, podrobný prompt, dovednost a plugin. Jaký je mezi nimi rozdíl a kdy který použít, vysvětleno na jednoduché animaci.
 aktualizovano: 2026-11-14
 stav: koncept
 ---

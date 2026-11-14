@@ -50,4 +50,4 @@ Vztah s kolegou/kolegyní: [například začínající učitel, má obavy z hosp
 Navrhni průběh rozhovoru: úvodní otázku na vlastní reflexi, popis pozorování bez hodnocení, dopad na učení žáků, 2–3 silné stránky, jednu oblast k rozvoji, společnou domluvu dalšího kroku a podpory. Napiš i konkrétní formulace vět, které můžu použít, a čemu se v rozhovoru vyhnout. Jména nepoužívej.
 ```
 
-**Tip:** Na větší úkoly (strategie, pravidla, řízení změny) jsou na webu samostatné skills ze sady Vedení školy – dají vám podrobnější postup.
+**Tip:** Na větší úkoly (strategie, pravidla, řízení změny) jsou na webu samostatné dovednosti ze sady Vedení školy – dají vám podrobnější postup.
