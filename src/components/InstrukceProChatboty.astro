@@ -1,5 +1,6 @@
 ---
-// Instrukce pro chatboty (stránka Jak pracovat s chatboty): krátký prompt → podrobný prompt → skill (→ pluginy), tři animace v canvasu.
+// Instrukce pro chatboty (stránka Jak pracovat s chatboty): krátký prompt → podrobný prompt → skill → projekty → pluginy, pět animací v canvasu.
+// 1–3 (moře a ryby) podle artifactu, 4–5 (projekty, pluginy) na bílém pozadí ve stejném pixelovém stylu, ve smyčce.
 // Předloha: artifact https://claude.ai/artifact/G5qt2LLqKxcYXvAJ8Kokd4 (12. 11. 2026).
 // Skript animace je převzatý z artifactu; změna: animace stojí, dokud ji uživatel nepustí (tlačítko Přehrát animaci); písma jsou self-hostovaná (Inter, Space Grotesk, JetBrains Mono).
 import '@fontsource/jetbrains-mono/700.css';
@@ -23,7 +24,7 @@ import { url } from '../lib/url';
     <div class="text">
       <span class="krok" aria-hidden="true">1</span>
       <h3 id="instr-f1">Krátký prompt</h3>
-      <p>Napíšete jen pár slov. Chatbot přesně neví, co chcete, a tak zkouší. Napoprvé se často netrefí.</p>
+      <p>Když napíšete jen pár slov do nového chatu, chatbot odhaduje, jaké bylo vaše zadání. Jeho výstup nebývá tedy často kvalitní.</p>
     </div>
   </div>
 </section>
@@ -38,8 +39,8 @@ import { url } from '../lib/url';
     <div class="text">
       <span class="krok" aria-hidden="true">2</span>
       <h3 id="instr-f2">Podrobný prompt</h3>
-      <p>Napíšete přesně, co chcete a jak na to. Chatbot se trefí napoprvé. Takhle dlouhý prompt ale musíte pokaždé napsat celý znovu.</p>
-          <a class="more" href={url('/prompty')}>Katalog promptů →</a>
+      <p>Pokud si dáte práci s pořádným zadáním, výstup chatbota bývá o dost lepší. Podrobná zadání jsou ale časově náročná. Proto jsme je pro vás připravili a otestovali. Můžete je zkopírovat nebo použít pro inspiraci.</p>
+      <a class="more" href={url('/prompty')}>Katalog promptů →</a>
     </div>
   </div>
 </section>
@@ -53,9 +54,41 @@ import { url } from '../lib/url';
     </div>
     <div class="text">
       <span class="krok" aria-hidden="true">3</span>
-      <h3 id="instr-f3">Skill</h3>
-      <p>Podrobné instrukce máte v chatbotu uložené jako skill. Napíšete jen pár slov a chatbot přesně ví, co a jak udělat.</p>
-          <a class="more" href={url('/skills')}>Katalog skills →</a>
+      <h3 id="instr-f3">Dovednosti (skill)</h3>
+      <p>Tzv. dovednosti jsou kombinace podrobného zadání a znalostí (různých přiložených souborů). Vytvoří se jednou a pak je už jen vyvoláváte v chatu pomocí zavináče nebo lomítka. To vám při opakovaných činnostech ušetří spoustu času.</p>
+      <a class="more" href={url('/skills')}>Katalog skills →</a>
+    </div>
+  </div>
+</section>
+
+<section class="instr-faze" aria-labelledby="instr-f4">
+  <div class="faze">
+    <div class="anim anim--bila">
+      <canvas data-druh="4" aria-hidden="true"></canvas>
+      <button class="spustit" type="button"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg>Přehrát animaci<span class="sr-only">: projekty</span></button>
+      <button class="pauza" type="button" aria-pressed="true" aria-label="Přehrát animaci" data-stav="stoji"><svg class="i-pauza" viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="2" width="2.4" height="8" rx="0.6"></rect><rect x="7.1" y="2" width="2.4" height="8" rx="0.6"></rect></svg><svg class="i-hrat" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg></button>
+    </div>
+    <div class="text">
+      <span class="krok" aria-hidden="true">4</span>
+      <h3 id="instr-f4">Projekty</h3>
+      <p>Projekty jsou podobné složkám. Každý má svůj kontext — např. projekt Grantové žádosti může obsahovat úspěšné žádosti, které jste podali v minulosti. Chatbot do nich vidí a čerpá z nich informace. Do projektů můžete volat také dovednosti (skills). Ty ještě zpřesňují vaše zadání. Do projektu Grantové žádosti můžete zavolat například předem vytvořenou dovednost na vyhodnocení kvality žádosti.</p>
+      <a class="more" href={url('/funkce/projekty')}>Co jsou projekty →</a>
+    </div>
+  </div>
+</section>
+
+<section class="instr-faze" aria-labelledby="instr-f5">
+  <div class="faze">
+    <div class="anim anim--bila">
+      <canvas data-druh="5" aria-hidden="true"></canvas>
+      <button class="spustit" type="button"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg>Přehrát animaci<span class="sr-only">: pluginy</span></button>
+      <button class="pauza" type="button" aria-pressed="true" aria-label="Přehrát animaci" data-stav="stoji"><svg class="i-pauza" viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="2" width="2.4" height="8" rx="0.6"></rect><rect x="7.1" y="2" width="2.4" height="8" rx="0.6"></rect></svg><svg class="i-hrat" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg></button>
+    </div>
+    <div class="text">
+      <span class="krok" aria-hidden="true">5</span>
+      <h3 id="instr-f5">Rozšíření (pluginy)</h3>
+      <p>Pluginy jsou kombinací dovedností a tzv. konektorů. Ty propojují chatbota s dalšími aplikacemi, například kalendářem, úložištěm, e-mailem nebo třeba Canvou. Díky pluginům můžete provádět pokročilé automatizace.</p>
+      <a class="more" href={url('/funkce/pluginy')}>Co jsou pluginy →</a>
     </div>
   </div>
 </section>
@@ -63,8 +96,7 @@ import { url } from '../lib/url';
 <section class="instr-shrnuti" aria-label="Shrnutí">
   <div>
     <p class="pointa">Prompt i skill jsou instrukce. Skill jen <em>nemusíte pokaždé psát znovu.</em></p>
-    <p class="pluginy">Víc skills pohromadě tvoří <strong>plugin</strong>: celou sadu nainstalujete najednou.</p>
-    <p class="odkazy"><a class="more" href={url('/prompty')}>Katalog promptů →</a><a class="more" href={url('/skills')}>Katalog skills →</a><a class="more" href={url('/funkce/pluginy')}>Co jsou pluginy →</a></p>
+    <p class="odkazy"><a class="more" href={url('/prompty')}>Katalog promptů →</a><a class="more" href={url('/skills')}>Katalog skills →</a><a class="more" href={url('/funkce/projekty')}>Projekty →</a><a class="more" href={url('/funkce/pluginy')}>Pluginy →</a></p>
   </div>
 </section>
 </div>
@@ -78,6 +110,8 @@ import { url } from '../lib/url';
   .instr-hlavicka .lede { max-width: 70ch; font-size: 1.05rem; color: #1f3f4d; }
   .faze { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 44px; align-items: center; }
   .anim { position: relative; aspect-ratio: 4 / 3; border: 1px solid var(--sky); border-radius: var(--radius-lg); overflow: hidden; background: var(--sky-light); }
+  .anim--bila { background: #fff; border: 0; border-radius: 0; }
+  .anim--bila .pauza { background: var(--sky-light); }
   .anim canvas { display: block; width: 100%; height: 100%; cursor: pointer; }
   .pauza { position: absolute; z-index: 1; right: 14px; bottom: 14px; width: 26px; height: 26px; padding: 0; border: 0; border-radius: 50%; display: grid; place-items: center; background: rgba(255, 255, 255, 0.72); color: #1f3f4d; cursor: pointer; }
   .pauza:hover { background: #fff; }
@@ -100,7 +134,6 @@ import { url } from '../lib/url';
   .instr-shrnuti { text-align: center; }
   .pointa { margin: 0 auto; max-width: 46ch; font: 600 1.5rem/1.35 var(--fh); color: var(--ink); text-wrap: balance; }
   .pointa em { font-style: normal; color: var(--accent); }
-  .pluginy { margin: 18px auto 0; max-width: 56ch; font-size: 1.05rem; color: var(--muted); }
   .odkazy { margin-top: 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 28px; }
   @media (max-width: 860px) {
     .faze { grid-template-columns: 1fr; gap: 24px; }
@@ -775,8 +808,247 @@ import { url } from '../lib/url';
     return { reset: () => { reset(); kresli(); }, simuluj, stav: A, pauza: () => nastavBeh(false) };
   }
 
+  // ---------- projekty (druh 4) a pluginy (druh 5): bílé pozadí, smyčka ----------
+  const SLOZKA = ['XXXXX.........', 'XoooXXXXXXXXXX', 'XooooooooooooX', 'XooooooooooooX', 'XooooooooooooX', 'XooooooooooooX', 'XooooooooooooX', 'XooooooooooooX', 'XXXXXXXXXXXXXX'];
+  const DOKUMENT = ['XXXX.', 'XooXX', 'XoooX', 'XoXoX', 'XoooX', 'XoXoX', 'XXXXX'];
+  const KURZOR = ['X..........', 'XX.........', 'XoX........', 'XooX.......', 'XoooX......', 'XooooX.....', 'XoooooX....', 'XooooooX...', 'XoooooooX..', 'XooooXXXXX.', 'XooXoX.....', 'XoX.XoX....', 'XX..XoX....', 'X....XoX...', '.....XX....'];
+  const KALENDAR = ['.X.....X.', 'XXXXXXXXX', 'XoooooooX', 'XoXoXoXoX', 'XoooooooX', 'XoXoXoXoX', 'XoooooooX', 'XXXXXXXXX'];
+  const OBALKA = ['XXXXXXXXXX', 'XXooooooXX', 'XoXooooXoX', 'XooXXXXooX', 'XooooooooX', 'XooooooooX', 'XXXXXXXXXX'];
+  const ZASTRCKA = ['.X...X.', '.X...X.', 'XXXXXXX', 'XoooooX', 'XoooooX', '.XoooX.', '..XXX..', '...X...', '...X...'];
+  const POLICKO = ['XXXXXXX', 'XoooooX', 'XoooooX', 'XoooooX', 'XoooooX', 'XoooooX', 'XXXXXXX'];
+
+  function scena(canvas, tlacitko, druh) {
+    const ctx = canvas.getContext('2d');
+    const DELKA = druh === 4 ? 10.5 : 12.5;
+    let scale = 1, bezi = false, viditelna = true, posledni = 0, T = 0;
+
+    // pixelový obrázek: X = obrys, o = výplň; občas chybí pixel obrysu (jako v ostatních animacích)
+    function obr(P, x, y, c, obrys, vypln, tik) {
+      for (let j = 0; j < P.length; j++) for (let i = 0; i < P[j].length; i++) {
+        const z = P[j][i]; if (z === '.') continue;
+        if (z === 'X' && tik !== undefined && h3(i, j, tik) < 0.05) continue;
+        ctx.fillStyle = z === 'X' ? obrys : vypln; ctx.fillRect(Math.round(x + i * c), Math.round(y + j * c), c, c);
+      }
+    }
+    function text(s, x, y, vel, barva, rez, zarovnani) {
+      ctx.font = (rez || 400) + ' ' + vel + 'px ' + MONO; ctx.fillStyle = barva; ctx.textAlign = zarovnani || 'left'; ctx.textBaseline = 'middle'; ctx.fillText(s, x, y);
+    }
+    // bílý box s nepravidelným ASCII rámečkem (jako okno chatu)
+    function ram(x, y, w, h, tik, barva, vypln) {
+      ctx.fillStyle = vypln || B.white; ctx.beginPath();
+      if (ctx.roundRect) ctx.roundRect(x + 3, y + 3, w - 6, h - 6, 10); else ctx.rect(x + 3, y + 3, w - 6, h - 6);
+      ctx.fill();
+      ctx.font = '15px ' + MONO; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = barva || B.skyDeep;
+      const a = ctx.globalAlpha; ctx.globalAlpha = a * 0.85;
+      for (let xx = x + 14, i = 0; xx < x + w - 10; xx += 9, i++) {
+        const r1 = h3(i, 1, tik), r2 = h3(i, 3, tik);
+        ctx.fillText(r1 < 0.08 ? '~' : r1 < 0.14 ? '_' : '-', xx, y + 3 + (h3(i, 2, tik) - 0.5) * 2);
+        ctx.fillText(r2 < 0.08 ? '~' : r2 < 0.14 ? '=' : '-', xx, y + h - 3 + (h3(i, 4, tik) - 0.5) * 2);
+      }
+      for (let yy = y + 16, i = 0; yy < y + h - 8; yy += 13, i++) {
+        const r1 = h3(i, 5, tik), r2 = h3(i, 7, tik);
+        ctx.fillText(r1 < 0.15 ? ':' : r1 < 0.25 ? '!' : '|', x + 4 + (h3(i, 6, tik) - 0.5) * 2, yy);
+        ctx.fillText(r2 < 0.15 ? ':' : r2 < 0.25 ? '!' : '|', x + w - 4 + (h3(i, 8, tik) - 0.5) * 2, yy);
+      }
+      ctx.globalAlpha = a;
+    }
+    // tečkovaná ASCII čára mezi dvěma body
+    function cara(p, q, tik, barva) {
+      const dx = q.x - p.x, dy = q.y - p.y, d = Math.hypot(dx, dy), n = Math.max(1, Math.round(d / 9));
+      ctx.font = '13px ' + MONO; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = barva || B.sky;
+      for (let k = 1; k < n; k++) { const r = h3(k, 9, tik); ctx.fillText(r < 0.5 ? '·' : r < 0.8 ? ':' : '.', p.x + dx * k / n, p.y + dy * k / n); }
+    }
+    function balicek(p, q, u) { // červený shluk pixelů letící po čáře
+      if (u <= 0 || u >= 1) return;
+      const k = ease(u), x = lerp(p.x, q.x, k), y = lerp(p.y, q.y, k);
+      ctx.fillStyle = B.red;
+      for (const [i, j] of [[0, 0], [1, 0], [0, 1], [1, 1], [-1, 0], [0, -1], [2, 1], [1, 2]]) ctx.fillRect(Math.round(x + i * 3 - 3), Math.round(y + j * 3 - 3), 3, 3);
+    }
+    function kurzor(x, y, klik) {
+      if (klik > 0 && klik < 1) { // kroužek kliknutí
+        ctx.globalAlpha = 1 - klik; ctx.font = '12px ' + MONO; ctx.fillStyle = B.red; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        for (let i = 0; i < 10; i++) { const a = (i / 10) * Math.PI * 2, r = 8 + 18 * klik; ctx.fillText('*', x + Math.cos(a) * r, y + Math.sin(a) * r); }
+        ctx.globalAlpha = 1;
+      }
+      obr(KURZOR, x, y, 3, B.navyDeep, B.white);
+    }
+    const okno = (a, b) => clamp((T - a) / (b - a), 0, 1);
+
+    // ---------- projekty ----------
+    const SLOZKY = [{ x: 170, nazev: 'Grantové žádosti' }, { x: 400, nazev: 'Třídní schůzky' }, { x: 630, nazev: 'Školní akce' }];
+    const SY = 200, SC = 6, SW = 14 * SC, SH = 9 * SC;
+    const PANEL = { x: 46, y: 34, w: 708, h: 532 };
+    const INSTRUKCE = ['Jsi grantový konzultant naší školy.', 'Piš věcně a drž se podmínek výzvy.'];
+    const SOUBORY = ['zadost-2024.pdf', 'zadost-2025.pdf', 'podminky-vyzvy.pdf', 'rozpocet.xlsx'];
+    function kresliProjekty() {
+      const tik = Math.floor(T * 3);
+      const otevreni = ease(okno(2.1, 2.6)) * (1 - ease(okno(8.0, 8.4)));
+      // složky
+      ctx.globalAlpha = 1 - 0.85 * otevreni;
+      text('Projekty', 60, 92, 22, B.navyDeep, 700);
+      SLOZKY.forEach((s, i) => {
+        const stisk = i === 0 ? Math.sin(Math.PI * okno(1.9, 2.1)) : 0, c = SC * (1 - 0.08 * stisk);
+        const w = 14 * c, h = 9 * c;
+        obr(SLOZKA, s.x - w / 2, SY - h / 2, c, i === 0 ? B.red : B.skyDeep, i === 0 ? '#f6d4d4' : B.bg, tik + i * 7);
+        text(s.nazev, s.x, SY + 48, 15, B.navyDeep, 400, 'center');
+      });
+      ctx.globalAlpha = 1;
+      // box projektu se rozjede ze složky
+      if (otevreni > 0) {
+        const z = { x: SLOZKY[0].x - SW / 2, y: SY - SH / 2, w: SW, h: SH }, k = otevreni;
+        const r = { x: lerp(z.x, PANEL.x, k), y: lerp(z.y, PANEL.y, k), w: lerp(z.w, PANEL.w, k), h: lerp(z.h, PANEL.h, k) };
+        ram(r.x, r.y, r.w, r.h, tik, B.skyDeep);
+        if (k > 0.97) {
+          const x0 = PANEL.x + 30;
+          obr(SLOZKA, x0, 62, 2.4, B.red, '#f6d4d4');
+          text('Grantové žádosti', x0 + 46, 74, 22, B.navyDeep, 700);
+          const krizek = okno(7.7, 7.75) > 0 && T < 8.1;
+          obr(IKONA_X, PANEL.x + PANEL.w - 52, 64, 3, krizek ? B.red : B.navyDeep, B.white);
+          cara({ x: PANEL.x + 20, y: 108 }, { x: PANEL.x + PANEL.w - 20, y: 108 }, tik);
+          // instrukce se píšou
+          text('INSTRUKCE', x0, 140, 13, B.skyInk, 700);
+          const celkem = INSTRUKCE.join(' ').length, n = Math.floor(okno(2.8, 4.4) * celkem);
+          let zbyva = n;
+          INSTRUKCE.forEach((r2, i) => { if (zbyva <= 0) return; text(r2.slice(0, zbyva), x0, 172 + i * 28, 17, B.navyDeep); zbyva -= r2.length + 1; });
+          // znalosti (soubory)
+          text('ZNALOSTI', x0, 252, 13, B.skyInk, 700);
+          SOUBORY.forEach((s, i) => {
+            const u = okno(4.6 + i * 0.3, 4.9 + i * 0.3); if (u <= 0) return;
+            const fx = x0 + (i % 2) * 330, fy = 280 + Math.floor(i / 2) * 52, k2 = outBack(u);
+            ctx.globalAlpha = u; ram(fx - 8, fy - 6, 300 * k2, 46, tik + i, B.sky);
+            if (u > 0.6) { obr(DOKUMENT, fx + 6, fy + 6, 3, B.skyDeep, B.bg); text(s, fx + 34, fy + 17, 16, B.navyDeep); }
+            ctx.globalAlpha = 1;
+          });
+          // dovednost (skill) zavolaná do projektu
+          text('DOVEDNOSTI (SKILLS)', x0, 410, 13, B.skyInk, 700);
+          const u = okno(5.9, 6.3);
+          if (u > 0) {
+            ctx.globalAlpha = u; ram(x0 - 8, 434, 420 * outBack(u), 50, tik + 9, B.red);
+            if (u > 0.6) { obr(ZAVINAC, x0 + 6, 449, 3, B.red, B.red, tik + 40); text('Hodnocení kvality žádosti', x0 + 36, 459, 17, B.navyDeep, 700); }
+            ctx.globalAlpha = 1;
+          }
+        }
+      }
+      // kurzor: ke složce, klik, ke křížku, klik, pryč
+      const start = { x: 640, y: 470 }, nadSlozkou = { x: SLOZKY[0].x + 6, y: SY + 2 }, nadKrizkem = { x: PANEL.x + PANEL.w - 44, y: 72 };
+      let p = start;
+      if (T < 1.9) p = mix(start, nadSlozkou, ease(okno(0.5, 1.8)));
+      else if (T < 6.6) p = nadSlozkou;
+      else if (T < 8.5) p = mix(nadSlozkou, nadKrizkem, ease(okno(6.6, 7.6)));
+      else p = mix(nadKrizkem, start, ease(okno(8.6, 9.6)));
+      const klik = T >= 1.9 && T < 2.5 ? (T - 1.9) / 0.6 : T >= 7.7 && T < 8.3 ? (T - 7.7) / 0.6 : 0;
+      kurzor(p.x, p.y, klik);
+    }
+
+    // ---------- pluginy ----------
+    const DOTAZ = 'Co dělám zítra?';
+    const HUB = { x: 250, y: 220, w: 300, h: 64 };
+    const CILE = [{ x: 145, ikona: ZAVINAC, nazev: 'Tvorba ToDo listu', stitek: 'skill' }, { x: 400, ikona: KALENDAR, nazev: 'Kalendář', stitek: 'konektor' }, { x: 655, ikona: OBALKA, nazev: 'E-mail', stitek: 'konektor' }];
+    const CY = 410, CW = 230, CH = 76;
+    const UKOLY = [['7:45', 'Porada pedagogického sboru', 'kalendář'], ['10:00', 'Hospitace v hodině češtiny', 'kalendář'], ['', 'Odpovědět rodičům k exkurzi', 'e-mail'], ['', 'Připravit test ze zlomků', 'úkoly']];
+    function kresliPluginy() {
+      const tik = Math.floor(T * 3);
+      // okno chatu s dotazem
+      const { x, y, w, h } = BOX;
+      ram(x, y, w, h, tik, B.skyDeep);
+      const n = Math.floor(okno(0.5, 1.8) * DOTAZ.length), odeslano = T >= 2.2;
+      if (n === 0) text('Napište zprávu…', x + 24, y + 34, 21, B.skyDeep);
+      text(DOTAZ.slice(0, n), x + 24, y + 34, 21, B.navyDeep);
+      if (!odeslano && (n < DOTAZ.length || (T * 2) % 1 < 0.55)) { ctx.font = '21px ' + MONO; ctx.fillStyle = B.navyDeep; ctx.fillRect(Math.round(x + 24 + (n ? ctx.measureText(DOTAZ.slice(0, n)).width + 2 : 0)), y + 24, 2, 20); }
+      obr(ZASTRCKA, x + 24, y + h - 40, 3, B.red, '#f6d4d4', tik + 3);
+      text('Plugin: Asistent učitele', x + 54, y + h - 27, 15, B.skyInk, 700);
+      const bx = x + w - 44, by = y + h - 36;
+      for (let j = -6; j <= 6; j++) for (let i = -6; i <= 6; i++) { const d = Math.hypot(i, j); if (d > 5.8 || (d > 4.9 && h3(i, j, tik) < 0.2)) continue; ctx.fillStyle = n === 0 ? B.sky : B.red; ctx.fillRect(bx + i * 3 - 1, by + j * 3 - 1, 3, 3); }
+      ctx.fillStyle = B.white; for (let j = -3; j <= 3; j++) ctx.fillRect(bx - 1, by + j * 3 - 1, 3, 3); for (const [i, j] of [[-1, -2], [1, -2], [-2, -1], [2, -1]]) ctx.fillRect(bx + i * 3 - 1, by + j * 3 - 1, 3, 3);
+
+      // plugin rozešle dotaz na skill, do kalendáře a e-mailu
+      const sit = okno(2.3, 2.7) * (1 - okno(6.0, 6.4));
+      if (sit > 0) {
+        ctx.globalAlpha = sit;
+        const zChatu = { x: 400, y: y + h + 4 }, hubNahore = { x: 400, y: HUB.y }, hubDole = { x: 400, y: HUB.y + HUB.h };
+        cara(zChatu, hubNahore, tik);
+        ram(HUB.x, HUB.y, HUB.w, HUB.h, tik, B.red);
+        obr(ZASTRCKA, HUB.x + 22, HUB.y + 18, 3, B.red, '#f6d4d4', tik + 5);
+        text('Asistent učitele', HUB.x + 56, HUB.y + 26, 17, B.navyDeep, 700);
+        text('plugin', HUB.x + 56, HUB.y + 46, 13, B.skyInk);
+        CILE.forEach((c, i) => {
+          const u = okno(2.8 + i * 0.2, 3.1 + i * 0.2); if (u <= 0) return;
+          const dole = { x: c.x, y: CY };
+          cara(hubDole, dole, tik + i);
+          const aktivni = T > 4.1 + i * 0.1 && T < 4.9 + i * 0.1;
+          ctx.globalAlpha = sit * u;
+          ram(c.x - CW / 2, CY, CW, CH, tik + i * 3, aktivni ? B.red : B.skyDeep, aktivni ? '#fdf1f1' : B.white);
+          obr(c.ikona, c.x - CW / 2 + 18, CY + 22, 3, i === 0 ? B.red : B.skyDeep, i === 0 ? B.red : B.bg, tik + 40 + i);
+          text(c.nazev, c.x - CW / 2 + 54, CY + 30, 15, B.navyDeep, 700);
+          text(c.stitek, c.x - CW / 2 + 54, CY + 52, 13, B.skyInk);
+          if (aktivni) text('...'.slice(0, 1 + (Math.floor(T * 6) % 3)), c.x + CW / 2 - 26, CY + 52, 15, B.red, 700);
+          ctx.globalAlpha = sit;
+        });
+        balicek(zChatu, hubNahore, okno(2.2, 2.6));
+        CILE.forEach((c, i) => {
+          balicek(hubDole, { x: c.x, y: CY }, okno(3.5 + i * 0.1, 4.1 + i * 0.1));
+          balicek({ x: c.x, y: CY }, hubDole, okno(4.9 + i * 0.1, 5.5 + i * 0.1));
+        });
+        ctx.globalAlpha = 1;
+      }
+
+      // vrátí se checklist
+      const u = okno(6.3, 6.7) * (1 - okno(11.8, 12.3));
+      if (u > 0) {
+        ctx.globalAlpha = u;
+        const k = outBack(okno(6.3, 6.8)), r = { x: 60, y: 168, w: 680, h: 400 };
+        ram(r.x, r.y + (1 - k) * 30, r.w, r.h, tik, B.skyDeep);
+        obr(IKONA_OK, r.x + 30, r.y + 30, 3, B.red, B.red);
+        text('Váš plán na zítra', r.x + 70, r.y + 40, 22, B.navyDeep, 700);
+        UKOLY.forEach(([cas, ukol, zdroj], i) => {
+          const v = okno(7.0 + i * 0.35, 7.3 + i * 0.35); if (v <= 0) return;
+          const yy = r.y + 100 + i * 70;
+          ctx.globalAlpha = u * v;
+          obr(POLICKO, r.x + 34, yy - 10, 3, B.skyDeep, B.white);
+          if (T > 9.0 + i * 0.5) obr(IKONA_OK, r.x + 33, yy - 12, 3, B.red, B.red);
+          if (cas) text(cas, r.x + 72, yy, 17, B.skyInk, 700);
+          text(ukol, r.x + (cas ? 140 : 72), yy, 17, B.navyDeep);
+          text(zdroj, r.x + r.w - 30, yy, 13, B.skyInk, 400, 'right');
+          if (i < UKOLY.length - 1) cara({ x: r.x + 30, y: yy + 35 }, { x: r.x + r.w - 30, y: yy + 35 }, tik + i);
+        });
+        ctx.globalAlpha = 1;
+      }
+    }
+
+    function kresli() {
+      ctx.setTransform(scale, 0, 0, scale, 0, 0);
+      ctx.globalAlpha = 1; ctx.fillStyle = B.white; ctx.fillRect(0, 0, LW, LH);
+      // plynulý přechod na začátek smyčky
+      const zac = Math.min(1, T / 0.35), kon = T > DELKA - 0.4 ? (DELKA - T) / 0.4 : 1;
+      ctx.globalAlpha = 1; ctx.save(); ctx.globalAlpha = 1;
+      if (druh === 4) kresliProjekty(); else kresliPluginy();
+      ctx.restore();
+      if (Math.min(zac, kon) < 1 && T > 0) { ctx.globalAlpha = 1 - Math.min(zac, kon); ctx.fillStyle = B.white; ctx.fillRect(0, 0, LW, LH); ctx.globalAlpha = 1; }
+    }
+    function velikost() {
+      const r = canvas.getBoundingClientRect(), dpr = Math.min(2, window.devicePixelRatio || 1);
+      canvas.width = Math.max(1, Math.round(r.width * dpr)); canvas.height = Math.max(1, Math.round(r.height * dpr));
+      scale = canvas.width / LW; kresli();
+    }
+    function smycka(ted) {
+      const dt = posledni ? Math.min(0.05, (ted - posledni) / 1000) : 0; posledni = ted;
+      if (bezi && viditelna) { T += dt; if (T >= DELKA) T = 0; kresli(); }
+      requestAnimationFrame(smycka);
+    }
+    function nastavBeh(ano) { bezi = ano; tlacitko.setAttribute('aria-pressed', String(!ano)); tlacitko.setAttribute('aria-label', ano ? 'Pozastavit animaci' : 'Přehrát animaci'); tlacitko.dataset.stav = ano ? 'bezi' : 'stoji'; canvas.parentElement.dataset.stav = tlacitko.dataset.stav; if (ano) posledni = 0; }
+    const spustit = canvas.parentElement.querySelector('.spustit');
+    tlacitko.addEventListener('click', () => { nastavBeh(!bezi); if (!bezi) spustit.focus(); });
+    spustit.addEventListener('click', () => { nastavBeh(true); tlacitko.focus(); });
+    canvas.addEventListener('click', () => { if (bezi) { nastavBeh(false); spustit.focus({ preventScroll: true }); } else { nastavBeh(true); } });
+    new IntersectionObserver((e) => { viditelna = e[0].isIntersecting; }).observe(canvas);
+    new ResizeObserver(() => velikost()).observe(canvas);
+    nastavBeh(false);
+    velikost(); requestAnimationFrame(smycka);
+    return { stav: { get T() { return T; } }, simuluj: (s) => { T = s % DELKA; kresli(); }, pauza: () => nastavBeh(false) };
+  }
+
   const start = () => {
-    window.__animace = [...document.querySelectorAll('canvas[data-druh]')].map((c) => animace(c, c.parentElement.querySelector('.pauza'), Number(c.dataset.druh)));
+    window.__animace = [...document.querySelectorAll('canvas[data-druh]')].map((c) => (Number(c.dataset.druh) >= 4 ? scena : animace)(c, c.parentElement.querySelector('.pauza'), Number(c.dataset.druh)));
   };
   const pismo = document.fonts && document.fonts.load ? Promise.race([Promise.all([document.fonts.load('17px "JetBrains Mono"'), document.fonts.load('13px Inter')]), new Promise((r) => setTimeout(r, 1500))]) : Promise.resolve();
   pismo.then(start, start);
