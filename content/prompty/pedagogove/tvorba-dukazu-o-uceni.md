@@ -38,4 +38,4 @@ Cílem promptu je nabídnout pedagogovi inspiraci k vytvoření rozmanitých for
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte vzdělávací cíl, věk nebo ročník žáků, předmět a téma. Prompt vám vygeneruje návrhy různých kreativních výstupů – např. vizuální práce, nahrávky, dramatizace, portfolia či deníky – které můžete nabídnout žákům jako možnosti, jak prokázat své porozumění. Výsledné formy výstupu můžete využít při skupinové i individuální práci, v portfoliích, v projektové výuce nebo jako součást formativního hodnocení.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Kritéria hodnocení](/skills/kriteria-hodnoceni), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Kritéria hodnocení](/skills/kriteria-hodnoceni), kterou si můžete nainstalovat do svého chatbota.

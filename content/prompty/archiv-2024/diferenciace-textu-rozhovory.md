@@ -17,4 +17,4 @@ Jsi učitel německého jazyka v 9. třídě základní školy. Vygeneruj mi dva
 
 > Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Úprava materiálu](/skills/uprava-materialu), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Úprava materiálu](/skills/uprava-materialu), kterou si můžete nainstalovat do svého chatbota.

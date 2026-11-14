@@ -15,6 +15,6 @@ autori: [AI dětem]          # ověřit autorství
 metodika:
   - nazev: Kurikulum umělé inteligence – Matematika pro život (AI dětem)
     url: https://kurikulum.aidetem.cz/metodicke-materialy/matematika-pro-zivot/
-vek: chatbot pro žáky 8. a 9. ročníku (13+); skills jsou v Gemini a Claude 18+, se žáky použijte prompt nebo aplikaci Tiny
+vek: chatbot pro žáky 8. a 9. ročníku (13+); dovednosti jsou v Gemini a Claude 18+, se žáky použijte prompt nebo aplikaci Tiny
 stav: koncept
 aktualizovano: 2026-11-08

@@ -63,4 +63,4 @@ Cílem promptu „Strategie pro podporu inkluze“ je podpořit vedení školy a
 
 Text promptu jednoduše zkopírujte do chatovací aplikace, doplňte požadované vstupní informace o škole (typ, velikost, silné a slabé stránky, dostupné zdroje, priority vedení) a odešlete; obratem získáte ucelený návrh strategie členěný do přehledných částí, který můžete se svým týmem projít, upravit podle místních podmínek a poté vytisknout či sdílet online; kdykoliv později stačí aktualizovat vstupní údaje a prompt spustit znovu, abyste dokument udrželi aktuální a v souladu s potřebami školy i žáků.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Strategické dokumenty](/skills/strategicke-dokumenty), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Strategické dokumenty](/skills/strategicke-dokumenty), kterou si můžete nainstalovat do svého chatbota.

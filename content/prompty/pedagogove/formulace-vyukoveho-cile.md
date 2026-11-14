@@ -37,4 +37,4 @@ Cílem promptu je pomoci pedagogovi formulovat konkrétní, smysluplný a kompet
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Upravte základní informace v hranatých závorkách — předmět, téma, popis konkrétní lekce, ročník a klíčovou kompetenci. Na základě těchto údajů získáte výukový cíl formulovaný tak, aby podporoval formativní hodnocení, rozvoj dovedností žáků a poskytování průběžné zpětné vazby. Výukový cíl můžete dál využít pro vytvoření kritérií hodnocení.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Vzdělávací cíle](/skills/vzdelavaci-cile), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Vzdělávací cíle](/skills/vzdelavaci-cile), kterou si můžete nainstalovat do svého chatbota.

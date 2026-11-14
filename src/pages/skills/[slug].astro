@@ -22,17 +22,17 @@ const varianty = skill.prompt.varianty;
 <Base title={skill.title} description={skill.kratky_popis}>
   <div class="band band--white" style="padding-bottom: 28px">
     <div class="wrap stack" style="gap: 32px">
-      <Crumbs items={[{ title: 'Katalog skills', href: '/skills' }, { title: skill.title }]} />
+      <Crumbs items={[{ title: 'Katalog dovedností', href: '/skills' }, { title: skill.title }]} />
       <header class="page-head">
         <h1>{skill.title}</h1>
         <p class="lede">{skill.kratky_popis}</p>
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px 30px; padding-top: 6px">
-          <a class="btn btn--primary" href="#instalace"><Icon name="download" size={16} />Stáhnout skill</a>
+          <a class="btn btn--primary" href="#instalace"><Icon name="download" size={16} />Stáhnout dovednost</a>
           <a class="linkbtn" href="#prompt" style="font-size: 1rem"><Icon name="copy" size={16} />Použít jako prompt</a>
         </div>
       </header>
 
-      <section class="info" aria-label="O skillu">
+      <section class="info" aria-label="O dovednosti">
         <div><h2>{sadyS.length > 1 ? 'Sady' : 'Sada'}</h2><p>{sadyS.map((s, i) => <>{i > 0 && ', '}<a href={url(`/sady/${s.slug}`)}>{s.title}</a></>)}</p></div>
         <div><h2>Pro koho</h2><p>{skill.pro_koho.map((p) => PRO_KOHO[p] ?? p).join(', ')}</p></div>
         {skill.metodika && skill.metodika.length > 0 && (
@@ -49,13 +49,13 @@ const varianty = skill.prompt.varianty;
 
       {skill.rezimy && skill.rezimy.length > 0 && (
         <section class="stack" style="gap: 18px" aria-labelledby="umi">
-          <h2 id="umi" class="h2">Co skill umí</h2>
+          <h2 id="umi" class="h2">Co dovednost umí</h2>
           <ol class="modes">{skill.rezimy.map((r, i) => <li><span>{i + 1}</span>{r}</li>)}</ol>
         </section>
       )}
 
       <section id="instalace" class="stack" style="gap: 18px" aria-labelledby="inst-h">
-        <div class="stack" style="gap: 8px"><h2 id="inst-h" class="h2">Nainstalovat jako skill</h2><p class="muted">Skill nainstalujete jednou a chatbot ho použije sám, kdykoli ho budete potřebovat.</p></div>
+        <div class="stack" style="gap: 8px"><h2 id="inst-h" class="h2">Nainstalovat jako dovednost</h2><p class="muted">Dovednost nainstalujete jednou a chatbot ji použije sám, kdykoli ji budete potřebovat.</p></div>
         <div class="seg tools" role="tablist" aria-label="Chatbot" data-switch="instalace-panely">
           {NASTROJE.map((n, i) => <button type="button" role="tab" data-target={n.id} aria-selected={i === 0 ? 'true' : 'false'}>{n.nazev}</button>)}
         </div>
@@ -68,7 +68,7 @@ const varianty = skill.prompt.varianty;
                   <span class="tile-icon tile-icon--sky"><Icon name="download" size={18} /></span>
                   <span class="stack"><strong>{zipLabel(n.zip, n.nazev)}</strong><span class="muted small">{zipNote(n.zip)}</span></span>
                 </a>
-                <p class="muted small">Skills jsou v Gemini a Claude určené uživatelům od 18 let. S žáky používejte verzi promptu nebo aplikaci <a href={url('/ve-vyuce/tiny')}>Tiny</a>.</p>
+                <p class="muted small">Dovednosti jsou v Gemini a Claude určené uživatelům od 18 let. S žáky používejte verzi promptu nebo aplikaci <a href={url('/ve-vyuce/tiny')}>Tiny</a>.</p>
               </div>
             </div>
           ))}
@@ -96,7 +96,7 @@ const varianty = skill.prompt.varianty;
       {(gpt.length > 0 || gem.length > 0) && (
         <section class="note note--warn stack" style="gap: 10px; padding: 22px 24px; border-radius: var(--radius-lg)" aria-labelledby="puvod-h">
           <div style="display: flex; align-items: center; gap: 14px"><span class="badge badge--end">končí</span><h2 id="puvod-h" style="font-size: 1.1rem">Používali jste původního asistenta?</h2></div>
-          <p>Skill nahrazuje původní {gpt.length > 0 && 'GPT'}{gpt.length > 0 && gem.length > 0 && ' a '}{gem.length > 0 && 'Gem'} z chatveskole.cz. GPTs přestanou fungovat 11. 12. 2026, Gems se od 17. 11. 2026 postupně mění na skills.</p>
+          <p>Dovednost nahrazuje původní {gpt.length > 0 && 'GPT'}{gpt.length > 0 && gem.length > 0 && ' a '}{gem.length > 0 && 'Gem'} z chatveskole.cz. GPTs přestanou fungovat 11. 12. 2026, Gems se od 17. 11. 2026 postupně mění na dovednosti.</p>
         </section>
       )}
     </div>

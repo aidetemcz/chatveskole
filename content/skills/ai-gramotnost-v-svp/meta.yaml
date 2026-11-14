@@ -21,6 +21,6 @@ metodika:
   - nazev: Kompetenční model Kurikula umělé inteligence pro ZŠ a SŠ (AI dětem ve spolupráci s NPI ČR)
     url: https://kurikulum.aidetem.cz/kompetencni-model/
 znalosti: [klicove-kompetence.md, prurezova-temata.md]
-vek: dospělí (skills jsou v Gemini a Claude 18+)
+vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
 stav: koncept
 aktualizovano: 2026-11-08

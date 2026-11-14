@@ -33,4 +33,4 @@ Cílem promptu je pomoci pedagogovi vytvořit pracovní list, který slouží k 
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte předmět, téma, věk nebo ročník žáků, výukový cíl a případné doplňující informace (např. kontext lekce nebo klíčové pojmy). Prompt vytvoří pracovní list v rozsahu jedné strany A4, vhodný pro tisk nebo online použití. Můžete ho využít na konci hodiny, jako domácí úkol nebo při skupinové reflexi, aby žáci aktivně zhodnotili, co si z učiva odnášejí a kde potřebují ještě podporu.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Pracovní listy](/skills/pracovni-listy), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.

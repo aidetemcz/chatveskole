@@ -37,4 +37,4 @@ Cílem promptu je pomoci učiteli vytvořit sadu kvalitních a věcně správný
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte předmět, téma, věk nebo ročník žáků, výukový cíl, typ otázek, počet otázek a jazyk. Prompt vám nejprve vygeneruje kvíz s odpověďmi a stručným odůvodněním správnosti. Na závěr vyzve k vytvoření verze bez odpovědí pro žáky, případně k úpravě podle vašich požadavků. Výstup můžete využít jako test, opakovací aktivitu nebo podklad k diskusi ve třídě.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Pracovní listy](/skills/pracovni-listy), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.

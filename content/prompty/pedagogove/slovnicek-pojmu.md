@@ -32,4 +32,4 @@ Cílem promptu je vytvořit pro žáky srozumitelný slovníček pojmů k probí
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte předmět, téma, věk nebo ročník žáků a seznam pojmů, které mají být ve slovníčku vysvětleny. Prompt vám vygeneruje slovníček ve formátu vhodném k vytištění nebo promítnutí – například jako podpůrný materiál do výuky, do pracovních listů, portfolií nebo při opakování. Slovníček slouží jako opora pro porozumění a rozvoj slovní zásoby žáků.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Pracovní listy](/skills/pracovni-listy), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.

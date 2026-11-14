@@ -43,4 +43,4 @@ Cílem promptu je pomoci pedagogovi vytvořit krátkou, věcnou a povzbudivou zp
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte věk žáka, předmět, téma, případně stručný popis lekce, konkrétní práci žáka (např. text nebo fotografii) a hodnoticí kritéria. Prompt vám vygeneruje zpětnou vazbu v jazyce přiměřeném věku žáka, která podpoří jeho další učení. Výstup můžete využít při individuálním hodnocení, v portfoliu žáka nebo jako podklad pro slovní hodnocení.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Slovní hodnocení](/skills/slovni-hodnoceni), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Slovní hodnocení](/skills/slovni-hodnoceni), kterou si můžete nainstalovat do svého chatbota.

@@ -15,7 +15,7 @@ const items = sada.skills.map(skillBySlug).filter(Boolean) as Skill[];
 <Base title={`Sada ${sada.title}`} description={sada.popis}>
   <div class="band band--white" style="padding-bottom: 32px">
     <div class="wrap stack" style="gap: 32px">
-      <Crumbs items={[{ title: 'Katalog skills', href: '/skills' }, { title: sada.title }]} />
+      <Crumbs items={[{ title: 'Katalog dovedností', href: '/skills' }, { title: sada.title }]} />
       <header class="page-head">
         <h1>{sada.title}</h1>
         <p class="lede">{sada.popis}</p>
@@ -26,9 +26,9 @@ const items = sada.skills.map(skillBySlug).filter(Boolean) as Skill[];
       </header>
     </div>
   </div>
-  <section class="band band--sky" aria-label="Skills v sadě">
+  <section class="band band--sky" aria-label="Dovednosti v sadě">
     <div class="wrap stack" style="gap: 28px">
-      <h2 style="font-size: 1.7rem">Skills v sadě <span class="count">{pocet(items.length, 'skill', 'skills', 'skills')}</span></h2>
+      <h2 style="font-size: 1.7rem">Dovednosti v sadě <span class="count">{pocet(items.length, 'dovednost', 'dovednosti', 'dovedností')}</span></h2>
       <div class="grid-2">{items.map((k) => <SkillCard skill={k} />)}</div>
     </div>
   </section>

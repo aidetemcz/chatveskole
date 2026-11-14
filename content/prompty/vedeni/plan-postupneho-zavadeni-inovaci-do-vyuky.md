@@ -47,4 +47,4 @@ Pomoci vedení školy nebo pedagogickému týmu vytvořit realistický a praktic
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte výukový text nebo popis aktivity a krátké charakteristiky jednotlivých žáků včetně jejich specifických potřeb. Prompt vám vygeneruje upravené verze obsahu – každou přizpůsobenou jednomu žákovi – včetně vysvětlení, jaké úpravy byly provedeny a proč. Výstup můžete rovnou použít ve výuce nebo jako inspiraci pro vlastní přizpůsobení učebních materiálů.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Strategické dokumenty](/skills/strategicke-dokumenty), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Strategické dokumenty](/skills/strategicke-dokumenty), kterou si můžete nainstalovat do svého chatbota.

@@ -31,4 +31,4 @@ Cílem promptu je pomoci pedagogovi vytvořit profesionální a empatickou odpov
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte znění e-mailu od rodiče a svůj pohled na situaci. Prompt vám vygeneruje návrh odpovědi, kterou můžete dále upravit a použít při komunikaci. Odpověď je formulována profesionálně, s důrazem na klidný tón, pochopení a ochotu spolupracovat. Využijete ji při řešení konfliktních situací nebo při budování důvěry mezi školou a rodiči.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Komunikace s rodiči](/skills/komunikace-s-rodici), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici), kterou si můžete nainstalovat do svého chatbota.

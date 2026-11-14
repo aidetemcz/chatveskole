@@ -36,9 +36,9 @@ const skill = prompt.data.skill ? skillBySlug(prompt.data.skill) : undefined;
       {skill && (
         <div class="skillbox">
           <span class="eyebrow">Používáte ho často?</span>
-          <h2>Nainstalujte skill {skill.title}</h2>
+          <h2>Nainstalujte dovednost {skill.title}</h2>
           <p>{skill.kratky_popis}</p>
-          <a class="btn btn--outline btn--small" href={url(`/skills/${skill.slug}`)} style="align-self: flex-start; background: var(--panel)">Zobrazit skill →</a>
+          <a class="btn btn--outline btn--small" href={url(`/skills/${skill.slug}`)} style="align-self: flex-start; background: var(--panel)">Zobrazit dovednost →</a>
         </div>
       )}
       {podobne.length > 0 && (

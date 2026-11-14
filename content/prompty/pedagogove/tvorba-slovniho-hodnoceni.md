@@ -73,4 +73,4 @@ Cílem promptu je pomoci pedagogovi vytvořit srozumitelné, strukturované a mo
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte informace o žákovi: iniciály, pohlaví, vyučované předměty, silné a slabší stránky, pokroky, přístup k výuce a doporučení. Uveďte také požadovanou délku textu. Prompt vám vygeneruje profesionální a individuálně cílené slovní hodnocení, vhodné pro vysvědčení nebo doprovodný komentář ke klasifikaci. Výstup zkontrolujte a upravte dle svého uvážení.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Slovní hodnocení](/skills/slovni-hodnoceni), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Slovní hodnocení](/skills/slovni-hodnoceni), kterou si můžete nainstalovat do svého chatbota.

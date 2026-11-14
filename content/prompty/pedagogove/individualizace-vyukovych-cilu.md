@@ -43,4 +43,4 @@ Cílem promptu je pomoci pedagogovi upravit zadaný výukový text nebo aktivitu
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte výukový text nebo popis aktivity a krátké charakteristiky jednotlivých žáků včetně jejich specifických potřeb. Prompt vám vygeneruje upravené verze obsahu – každou přizpůsobenou jednomu žákovi – včetně vysvětlení, jaké úpravy byly provedeny a proč. Výstup můžete rovnou použít ve výuce nebo jako inspiraci pro vlastní přizpůsobení učebních materiálů.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Úprava materiálu](/skills/uprava-materialu), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Úprava materiálu](/skills/uprava-materialu), kterou si můžete nainstalovat do svého chatbota.

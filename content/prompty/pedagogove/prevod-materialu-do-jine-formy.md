@@ -47,4 +47,4 @@ Cílem promptu „Převod materiálu do jiné formy“ je pomoci pedagogovi rych
 
 Prompt použijete tak, že jeho text zkopírujete do chatovací aplikace, vložíte původní materiál a doplníte instrukce o požadované cílové formě, rozsahu, stylu a technických limitech; po odeslání obdržíte kompletně přepracovaný materiál v nové podobě i se shrnutím provedených změn, který můžete ihned vytisknout, sdílet nebo importovat do vybrané platformy, a kdykoliv později stačí změnit vstupní parametry a prompt spustit znovu, abyste materiál dále upravili.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Úprava materiálu](/skills/uprava-materialu), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Úprava materiálu](/skills/uprava-materialu), kterou si můžete nainstalovat do svého chatbota.

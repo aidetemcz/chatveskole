@@ -37,4 +37,4 @@ Cílem promptu je vytvořit pracovní list typu doplňovačka, který pomáhá �
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte informace o předmětu, tématu, věku nebo ročníku žáků, výukovém cíli, seznam slov, která chcete z textu vynechat, počet vynechaných slov a jazyk textu. Prompt vytvoří dvě varianty textu – jednu k vyplnění a jednu řešenou – doplněné o krátký popis didaktického záměru. Výstup lze využít jako samostatnou aktivitu, opakovací úkol, rozcvičku nebo součást domácí přípravy.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Pracovní listy](/skills/pracovni-listy), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.

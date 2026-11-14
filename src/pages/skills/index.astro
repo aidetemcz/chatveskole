@@ -20,13 +20,13 @@ const views = [
   { id: 'komu', groups: podleKomu },
 ];
 ---
-<Base title="Katalog skills" description={`${skills.length} skills pro učitele a vedení škol ke stažení do Claude, Gemini, Copilotu a ChatGPT.`}>
+<Base title="Katalog dovedností" description={`${pocet(skills.length, 'dovednost', 'dovednosti', 'dovedností')} pro učitele a vedení škol ke stažení do Claude, Gemini, Copilotu a ChatGPT.`}>
   <div class="band band--white" style="padding-bottom: 32px">
     <div class="wrap stack" style="gap: 32px">
-      <Crumbs items={[{ title: 'Funkce', href: '/funkce/skills' }, { title: 'Katalog skills' }]} />
+      <Crumbs items={[{ title: 'Funkce', href: '/funkce/skills' }, { title: 'Katalog dovedností' }]} />
       <header class="page-head">
-        <h1>Katalog skills</h1>
-        <p class="lede">{skills.length} skills pro učitele a vedení škol. Stáhněte skill a nainstalujte ho do Claude, Gemini, Copilotu nebo ChatGPT — chatbot ho pak použije sám, kdykoli ho budete potřebovat.</p>
+        <h1>Katalog dovedností</h1>
+        <p class="lede">{pocet(skills.length, 'dovednost', 'dovednosti', 'dovedností')} pro učitele a vedení škol. Stáhněte dovednost a nainstalujte ji do Claude, Gemini, Copilotu nebo ChatGPT — chatbot ji pak použije sám, kdykoli ji budete potřebovat.</p>
       </header>
       <div class="seg" role="group" aria-label="Řazení" data-switch="skupiny-skills" style="align-self: flex-start">
         <button type="button" data-target="ucel" aria-pressed="true">Řadit dle účelu</button>
@@ -43,7 +43,7 @@ const views = [
             <div class="wrap stack" style="gap: 28px">
               <div class="section-head">
                 <div class="stack" style="gap: 8px; max-width: 70ch">
-                  <h2 style="font-size: 1.7rem">{g.title} <span class="count">{pocet(g.items.length, 'skill', 'skills', 'skills')}</span></h2>
+                  <h2 style="font-size: 1.7rem">{g.title} <span class="count">{pocet(g.items.length, 'dovednost', 'dovednosti', 'dovedností')}</span></h2>
                   {g.popis && <p style="margin-top: 0">{g.popis}</p>}
                 </div>
                 {g.sada && <a class="linkbtn" href={url(ZIP.plugin(g.sada))} download><Icon name="download" />Stáhnout celou sadu (plugin)</a>}

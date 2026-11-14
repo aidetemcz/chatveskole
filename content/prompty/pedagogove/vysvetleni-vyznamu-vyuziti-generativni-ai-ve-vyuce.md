@@ -26,4 +26,4 @@ Cílem promptu je pomoci řediteli školy formulovat srozumitelný a důvěryhod
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte konkrétní seznam aplikací, které se ve škole chystáte využívat, a ujistěte se, že splňují věkové limity pro žáky. Prompt vám vygeneruje jeden ucelený odstavec vhodný pro úvodní sdělení a následný výčet nástrojů s krátkými popisy jejich funkce. Výstup můžete použít v newsletteru, na webu školy nebo jako leták pro rodiče. Text je psán věcně, ale přístupně – tak, aby mu porozuměli i rodiče bez technického vzdělání.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Komunikace s rodiči](/skills/komunikace-s-rodici), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici), kterou si můžete nainstalovat do svého chatbota.

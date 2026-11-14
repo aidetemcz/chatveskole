@@ -47,4 +47,4 @@ Cílem promptu „Aktualizace tematického plánu“ je usnadnit pedagogovi syst
 
 Prompt použijete tak, že jeho text zkopírujete do chatovací aplikace, vložíte celý původní tematický plán a v jednom kroku doplníte požadované informace o předmětu, ročníku a směru aktualizace; po odeslání obdržíte kompletně přepracovaný plán se zvýrazněnými úpravami i stručným shrnutím změn, které můžete ihned vytisknout nebo sdílet, a kdykoliv později stačí příslušné vstupy upravit a prompt spustit znovu, abyste plán dále aktualizovali.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Úprava materiálu](/skills/uprava-materialu), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Úprava materiálu](/skills/uprava-materialu), kterou si můžete nainstalovat do svého chatbota.

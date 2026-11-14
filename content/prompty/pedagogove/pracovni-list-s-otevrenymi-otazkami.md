@@ -35,4 +35,4 @@ Cílem promptu je pomoci pedagogovi vytvořit kvalitní pracovní list obsahují
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte informace o předmětu, tématu, věku nebo ročníku žáků, vzdělávacím cíli a text, ze kterého má pracovní list vycházet. Uveďte také počet požadovaných otázek. Prompt vám vygeneruje pracovní list ve formátu srozumitelném pro žáky, který můžete rovnou vytisknout nebo sdílet v digitální podobě. Materiál podpoří nejen porozumění obsahu, ale i vyšší úrovně myšlení podle Bloomovy taxonomie.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Pracovní listy](/skills/pracovni-listy), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.

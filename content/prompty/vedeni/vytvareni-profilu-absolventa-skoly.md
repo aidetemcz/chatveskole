@@ -57,4 +57,4 @@ Cílem promptu „Vytváření profilu absolventa školy“ je usnadnit vedení 
 
 Prompt jednoduše použijete tak, že jej zkopírujete do chatovací aplikace, doplníte potřebné vstupní informace o škole, prioritách a specifických požadavcích a odešlete; ihned obdržíte hotový profil absolventa strukturovaný do přehledných částí, který můžete s kolegy projít, podle potřeby upravit a následně vytisknout či sdílet online; kdykoliv později stačí aktualizovat vstupní údaje a prompt spustit znovu, abyste dokument udrželi v souladu s vývojem školy a potřebami žáků.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Hodnoty, mise, vize a profil absolventa](/skills/mise-vize-hodnoty), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Hodnoty, mise, vize a profil absolventa](/skills/mise-vize-hodnoty), kterou si můžete nainstalovat do svého chatbota.

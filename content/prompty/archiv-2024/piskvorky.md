@@ -21,4 +21,4 @@ Je to překvapivé, ale jazykové modely umí piškvorky! Samozřejmě že jsou 
 
 > Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Aktivity s chatbotem](/skills/aktivity-s-chatbotem), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Aktivity s chatbotem](/skills/aktivity-s-chatbotem), kterou si můžete nainstalovat do svého chatbota.

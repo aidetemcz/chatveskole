@@ -17,4 +17,4 @@ Jsi učitel na základní škole. Navrhni otázky k závěrečné diskuzi hodiny
 
 > Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Didaktický rádce](/skills/didakticky-radce), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Didaktický rádce](/skills/didakticky-radce), kterou si můžete nainstalovat do svého chatbota.

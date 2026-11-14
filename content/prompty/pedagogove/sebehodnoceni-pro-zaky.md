@@ -63,4 +63,4 @@ Cílem promptu je pomoci pedagogovi vytvořit přehlednou a jazykově přívěti
 
 Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte věk nebo ročník žáka, předmět, téma a hodnoticí kritéria, která chcete převést do formy pro sebehodnocení. Prompt vytvoří přehledný a srozumitelný výstup, který mohou žáci snadno vyplnit. Výstup je vhodný k tisku nebo vložení do portfolia, pracovních listů či online výukového prostředí.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Kritéria hodnocení](/skills/kriteria-hodnoceni), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Kritéria hodnocení](/skills/kriteria-hodnoceni), kterou si můžete nainstalovat do svého chatbota.

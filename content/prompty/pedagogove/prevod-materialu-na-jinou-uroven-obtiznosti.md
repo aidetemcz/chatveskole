@@ -45,4 +45,4 @@ Cílem promptu je nabídnout pedagogům rychlý způsob, jak přizpůsobit stáv
 
 Zkopírujte celý prompt do chatovací aplikace, vložte původní materiál a doplňte požadované údaje v hranatých závorkách (cílová úroveň, věk žáků …). Asistent vygeneruje přepracovanou verzi s označením upravených částí a metodickými tipy. Hotový text můžete okamžitě vytisknout, nahrát do LMS nebo dále upravovat podle aktuálních potřeb své třídy.
 
-**Používáte tento prompt často?** Stejný úkol zvládne skill [Úprava materiálu](/skills/uprava-materialu), který si můžete nainstalovat do svého chatbota.
+**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Úprava materiálu](/skills/uprava-materialu), kterou si můžete nainstalovat do svého chatbota.
