@@ -78,7 +78,7 @@ import { url } from '../lib/url';
   .instr-hlavicka .lede { max-width: 70ch; font-size: 1.05rem; color: #1f3f4d; }
   .faze { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 44px; align-items: center; }
   .anim { position: relative; aspect-ratio: 4 / 3; border: 1px solid var(--sky); border-radius: var(--radius-lg); overflow: hidden; background: var(--sky-light); }
-  .anim canvas { display: block; width: 100%; height: 100%; }
+  .anim canvas { display: block; width: 100%; height: 100%; cursor: pointer; }
   .pauza { position: absolute; z-index: 1; right: 14px; bottom: 14px; width: 26px; height: 26px; padding: 0; border: 0; border-radius: 50%; display: grid; place-items: center; background: rgba(255, 255, 255, 0.72); color: #1f3f4d; cursor: pointer; }
   .pauza:hover { background: #fff; }
   .pauza:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -765,6 +765,8 @@ import { url } from '../lib/url';
     const spustit = canvas.parentElement.querySelector('.spustit');
     tlacitko.addEventListener('click', () => { nastavBeh(!bezi); if (!bezi) spustit.focus(); });
     spustit.addEventListener('click', () => { nastavBeh(true); tlacitko.focus(); });
+    // kliknutí kamkoli do animace ji zastaví (a zastavenou zase pustí)
+    canvas.addEventListener('click', () => { if (bezi) { nastavBeh(false); spustit.focus({ preventScroll: true }); } else { nastavBeh(true); } });
     new IntersectionObserver((e) => { viditelna = e[0].isIntersecting; }).observe(canvas);
     new ResizeObserver(() => velikost()).observe(canvas);
     reset();
