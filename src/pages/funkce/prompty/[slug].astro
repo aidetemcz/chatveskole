@@ -58,6 +58,9 @@ const skill = prompt.data.skill ? skillBySlug(prompt.data.skill) : undefined;
   .layout { display: flex; flex-wrap: wrap; gap: 28px 48px; align-items: flex-start; padding-top: 22px; padding-bottom: 84px; }
   /* boxy vpravo začínají v úrovni boxu s promptem (pod nadpisem „Prompt“) */
   .side { margin-top: 47px; }
+  /* box s promptem přes celou šířku levého sloupce (až k boxům vpravo), text dál nejvýš 72 znaků */
+  .main :global(.prose) { max-width: none; }
+  .main :global(.prose > :not(.prompt-block)) { max-width: 72ch; }
   @media (max-width: 990px) { .side { margin-top: 0; } }
   .main { flex: 999 1 600px; min-width: 0; display: flex; flex-direction: column; gap: 22px; }
   .side { flex: 1 1 300px; display: flex; flex-direction: column; gap: 14px; }
