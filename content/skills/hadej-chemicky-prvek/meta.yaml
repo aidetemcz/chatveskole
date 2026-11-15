@@ -1,6 +1,7 @@
 title: Hádej chemický prvek
 slug: hadej-chemicky-prvek
 kratky_popis: Hádací hra pro žáky 8. a 9. ročníku – chatbot popíše chemický prvek a žák hádá, o který jde.
+popis: "Hádací hra, ve které si žáci 8. a 9. ročníku zábavně procvičí chemické prvky a periodickou soustavu. Chatbot popíše vlastnosti, využití a místo prvku v periodické soustavě a žák hádá jeho název; po chybné odpovědi dostane konkrétnější indicii. Fakta bere z přiložené periodické tabulky a vybírá hlavně prvky, které žáci znají ze školy. Na začátku můžete hru omezit, třeba jen na prvních 20 prvků, na kovy nebo na počet kol. Chatbot se ptá jen na křestní jméno nebo název skupinky."
 pro_koho: [ucitele]
 sady: [priprava-vyuky]
 stitky: [chemie, periodická soustava prvků, hra, procvičování, žáci, Tiny]
