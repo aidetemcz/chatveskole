@@ -7,85 +7,52 @@ kategorie_slug: ["tvorba-strategickych-dokumentu"]
 skill: "mise-vize-hodnoty"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/formulace-hodnot-mise-a-vize-skoly/"
 puvodni_uprava: "2025-07-23T19:00:44"
-stav: prevzato
+stav: upraveno
+# Opraveno: text „Jak prompt použít“ byl na starém webu omylem převzatý z promptu Individualizace výukových cílů.
 ---
 ## Prompt
 
 ```text
-Pomoz mi vytvořit hodnoty, misi a vizi školy.
-Hledám srozumitelné a výstižné formulace, které budou odpovídat naší školní kultuře a pomohou nám jasně pojmenovat, kdo jsme, proč existujeme a kam směřujeme. Chci, aby výstup odrážel náš přístup k žákům, vztahy mezi lidmi i naši pedagogickou filozofii.
+Vystupuj jako zkušený konzultant pro řízení školy. Pomoz nám pojmenovat hodnoty, misi a vizi naší školy.
 
-Začni tím, že mi položíš několik vhodných otázek – podle toho, zda budeme tvořit nejdřív hodnoty, misi nebo vizi. Vždy mi nabídni 2–4 otázky, na které odpovím, a pak navrhni návrh textu, který můžeme společně upravovat.
+Co chceme vytvořit: [hodnoty / misi / vizi / všechno postupně]
+Škola: [například ZŠ s 1. i 2. stupněm, 380 žáků, menší město]
+Co už máme: [vložte stávající hodnoty, misi nebo vizi a napište, co se vám na nich nelíbí; nebo řádek smažte]
+Pro koho text bude: [například sbor, rodiče, web školy, ŠVP]
+Kdo na textu pracuje: [například ředitelka, lídr změny a tři vyučující]
+Co o škole víme: [pár vět, čím jste jiní a na čem vám záleží; nebo řádek smažte]
 
-Co jsou to hodnoty školy?
+Postup:
+1. Když chceme všechno, začni hodnotami, pak mise, pak vize. Každá část staví na předchozí.
+2. Ke každé části nám nejdřív polož 2–4 otázky, ne všechny najednou. Vyber ty, které dávají smysl podle toho, co už víš:
+   - hodnoty: Jak chcete, aby se u vás děti každý den cítily? Na čem vám záleží ve vztazích mezi lidmi? Jak chcete jednat v konfliktních situacích?
+   - mise: Proč byste svou školu doporučili rodičům? V čem se lišíte od škol v okolí? Čeho si na škole nejvíc ceníte?
+   - vize: Jak bude škola vypadat za 5–10 let, když se vše podaří? Jak mají absolventi přemýšlet a jednat? Jakou roli mají ve škole hrát technologie a AI a co z toho chcete u žáků rozvíjet?
+3. Když odpověď zní obecně, zeptej se: „Podle čeho byste to poznali v běžném dni ve škole?“
+4. Z odpovědí navrhni 2–3 varianty, které se liší stylem (heslovitá, větná, pro rodiče a web). U každé jednou větou napiš, ze které odpovědi vychází.
+5. Podle našich připomínek text dolaď.
 
-Hodnoty představují základní principy, které určují, jak škola jedná, učí a rozvíjí svou kulturu. Jsou to postoje a přesvědčení, které formují vztahy mezi žáky, vyučujícími, rodiči i celou komunitou.
+Pravidla:
+- Hodnoty: 3–6 hodnot po 1–3 slovech, pozitivně formulované, ke každé jedna věta, jak se projevuje v běžném dni. Ověř je otázkou: Poznal by návštěvník hodnotu během jednoho dne, aniž by si ji přečetl na zdi?
+- Mise: 1–3 věty o přítomnosti. Kdo jsme, co a pro koho děláme, čím se lišíme.
+- Vize: 1–2 věty o budoucnosti, přiměřeně náročná a srozumitelná rodičům i žákům. Vize není mise v budoucím čase ani seznam hodnot.
+- Žádné prázdné fráze, které by mohly viset na kterékoli škole („moderní škola 21. století“, „rozvíjíme potenciál každého“).
+- Drž se toho, co jsme řekli. Nevymýšlej programy, úspěchy ani zvláštnosti školy.
+- Jména žáků a zaměstnanců nepotřebuješ.
 
-Jak mají být hodnoty formulovány?
-
-– Pozitivně: vyjadřují, co chceme podporovat, ne čeho se obávat.
-
-– Jednoduše a srozumitelně: aby jim rozuměli děti, vyučující i rodiče.
-
-– Společně sdíleně: měly by vzniknout spoluprací a odrážet naši realitu.
-
-– Krátce a výstižně: ideálně 1–3 slova nebo pár vět.
-
-Otázky pro tvorbu hodnot (vyber 2 a polož mi je):
-
-V čem je naše škola jedinečná?
-
-Jak chceme, aby se u nás děti každý den cítily?
-
-Na čem nám záleží v mezilidských vztazích?
-
-Co je pro nás klíčové při učení a rozvoji žáků?
-
-Jak chceme jednat v náročných nebo konfliktních situacích?
-
-Co nejlépe vystihuje naši školní kulturu a atmosféru?
-
-Co je mise školy?
-
-Mise popisuje účel a smysl školy: kdo jsme, co děláme, pro koho to děláme a jakou přidanou hodnotu přinášíme. Odráží přítomnost školy a její identitu.
-
-Otázky pro tvorbu mise (vyber a polož mi 2–3):
-
-Kdyby se vás rodiče zeptali, proč jim doporučujete svou školu, co byste odpověděli?
-
-V čem je vaše škola originální nebo jiná než ostatní v okolí?
-
-Jaká 3 slova nebo hesla vystihují tým školy, vztah s dětmi, vztah s rodiči?
-
-Čeho si na své škole nejvíc ceníte?
-
-Co je vize školy?
-
-Vize ukazuje, kam škola směřuje, čeho chce dosáhnout v budoucnu. Měla by být srozumitelná, přiměřeně ambiciózní a sdílená všemi členy školní komunity.
-
-Otázky pro tvorbu vize (vyber a polož mi 2–3):
-
-Jaká věta by nás mohla každý den spojovat a motivovat?
-
-Jak může škola přispívat k udržitelnosti, demokracii a odpovědnosti?
-
-Jak chceme, aby naši žáci přemýšleli a jednali, až školu opustí?
-
-Jak bude naše škola vypadat za 5 až 10 let, pokud se nám vše podaří?
-
-Jaké hodnoty mají být ve škole denně viditelné?
-
-Jak bude vypadat vztah mezi žáky, vyučujícími a rodiči?
-
-Až ti odpovím na otázky, navrhni konkrétní návrh textu. Společně ho potom doladíme.
+U hotového textu navrhni, jak ho projednat se sborem, žáky a rodiči (například otázky na poradu, krátká anketa, žákovský parlament). Připomeň, že jde o návrh, který má projít diskusí ve škole. Na konci nabídni navazující část nebo profil absolventa.
 ```
 
 ## Co je cílem promptu
 
-Cílem promptu je pomoci ředitelům a školním týmům vytvořit nebo upravit hodnoty, misi a vizi školy tak, aby byly srozumitelné, výstižné a odpovídaly skutečné kultuře školy. Prompt využívá strukturované otázky k podpoře reflexe a navrhuje konkrétní formulace, které lze dále upravovat a sdílet napříč školní komunitou.
+Prompt vám pomůže pojmenovat hodnoty, misi a vizi školy. Nejdřív vám položí několik otázek, pak z vašich odpovědí navrhne dvě až tři varianty formulací, které spolu doladíte. Hlídá rozdíl mezi misí (kdo jsme dnes) a vizí (kam směřujeme) a vyhýbá se prázdným frázím, které by mohly viset na kterékoli škole.
+
+Dostanete i návrh, jak hotový text projednat se sborem, žáky a rodiči. Hodnoty, které vzniknou u jednoho počítače, škola za své nepřijme.
 
 ## Jak prompt použít
 
-Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte výukový text nebo popis aktivity a krátké charakteristiky jednotlivých žáků včetně jejich specifických potřeb. Prompt vám vygeneruje upravené verze obsahu – každou přizpůsobenou jednomu žákovi – včetně vysvětlení, jaké úpravy byly provedeny a proč. Výstup můžete rovnou použít ve výuce nebo jako inspiraci pro vlastní přizpůsobení učebních materiálů.
+Zkopírujte prompt do chatbota a doplňte, co o škole víte. Na otázky odpovídejte konkrétně, ideálně s příkladem z běžného dne. Nejlépe se s promptem pracuje ve dvojici nebo malé skupině, například ředitel s lídrem změny a několika vyučujícími.
+
+Návrh pak projednejte se sborem a podle možností i s žáky a rodiči. Jak je do takových rozhodnutí zapojit, popisuje kapitola [Participativní přístup na školách](https://aidetem.cz/participativni-pristup-skolach/) z metodiky AI akcelerátoru.
 
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Hodnoty, mise, vize a profil absolventa](/skills/mise-vize-hodnoty), kterou si můžete nainstalovat do svého chatbota.

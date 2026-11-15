@@ -7,44 +7,61 @@ kategorie_slug: ["tvorba-strategickych-dokumentu"]
 skill: "strategicke-dokumenty"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/plan-postupneho-zavadeni-inovaci-do-vyuky/"
 puvodni_uprava: "2025-07-23T19:11:16"
-stav: prevzato
+stav: upraveno
+# Opraveno: text „Jak prompt použít“ byl na starém webu omylem převzatý z promptu Individualizace výukových cílů.
 ---
 ## Prompt
 
 ```text
-Pomoz mi vytvořit plán postupného zavádění inovací do výuky. Informace o naší škole:
+Vystupuj jako zkušený průvodce řízením změny ve škole. Pomoz nám naplánovat postupné zavedení inovace do výuky.
 
-Typ školy: [např. základní škola, víceleté gymnázium…]
+Škola: [například ZŠ, 300 žáků, 24 pedagogů]
+Jakou inovaci chceme zavést: [například formativní hodnocení na 2. stupni / práci s AI při psaní slohu / projektové dny]
+Jaký problém má vyřešit: [například žáci nevědí, co se od nich čeká, a známky jim nepomáhají se zlepšit]
+Jak hodnotíme: [známkami / slovně / kombinovaně]
+Vybavení: [například wifi, mobilní učebna s 30 tablety]
+Mobily ve výuce: [žáci je smějí používat / nesmějí / jen s dovolením vyučujícího]
+Jak je sbor připravený: [například pět vyučujících to už zkouší, většina vyčkává, tři kolegové jsou proti]
+Kdo změnu povede: [například lídr změny s částí úvazku a zástupkyně ředitele; nebo řádek smažte]
+Kolik času mohou vyučující reálně věnovat: [například hodinu týdně na sdílení]
+Podle čeho poznáme, že inovace žákům pomáhá: [například víc žáků umí popsat, co se naučili; nebo nech na sobě]
+Další specifika: [například učíme v tematických blocích; nebo řádek smažte]
 
-Počet žáků: [doplňte]
+Postup:
+1. Nejdřív se doptej na to, co chybí nebo není jasné (nejvýš 5 otázek najednou). Pak ve 3–5 větách shrň výchozí stav a počkej, až ho potvrdím.
+2. Sestav rámec změny: popis současné situace, nejvýš 3 cíle s termínem, ke každému ukazatel (výchozí → cílový stav), nejvýš 3 hlavní překážky a zdroje (čas, lidé, peníze, nástroje).
+3. Naplánuj kroky v čase: příprava → ověření v malém (pár vyučujících, jedna až dvě třídy) → vyhodnocení → postupné rozšíření → ukotvení v ŠVP a v praxi školy.
+4. Naplánuj práci s lidmi v pěti fázích: zvýšení povědomí o změně (informovat, ne přesvědčovat), akceptace (prostor pro otázky, obavy i nesouhlas), důvěra v proces (vzdělávání, sdílení, bezpečí pro chyby), schopnost změnu provést (mentoring, tandemy, náslechy) a stvrzení (ŠVP, směrnice, sdílení úspěchů). Ke každé fázi navrhni 2–3 aktivity pro různé skupiny (vedení, vyučující podle postoje, žáci, rodiče) a jeden měřitelný cíl, například „80 % vyučujících ví, co a proč zavádíme“.
 
-Počet pedagogů: [doplňte]
+Pravidla:
+- Prioritizace je důležitější než rychlost. Raději jedna inovace dotažená než tři rozjeté.
+- Změna je hlavně práce s lidmi, technika je prostředek. Když chybí základ (síť, zařízení, péče o techniku), zařaď ho do přípravy.
+- Nemusíš přesvědčit všechny. Počítej se třemi úrovněmi zapojení: pozoruje → zkouší v pilotu → podporuje ostatní.
+- U ověření dopadu napiš, podle čeho pilot vyhodnotíme a kdy ho zastavíme nebo změníme.
+- Každý krok má nositele (funkci, ne jméno), termín a výstup. Kolegy neoznačuj jmény, pracuj s rolemi nebo skupinami.
+- Čísla, která jsem nezadal(a), nevymýšlej, napiš [doplnit].
 
-Jak hodnotíme: [například formativně, kombinovaně, známkami]
+Výstup:
+a) shrnutí na půl strany,
+b) rámec změny,
+c) časová osa: tabulka Kdy – Krok – Kdo odpovídá – Výstup,
+d) plán práce s lidmi: tabulka Fáze – Aktivity – Pro koho – Měřitelný cíl,
+e) jak ověříme dopad na žáky,
+f) rizika a jak jim předejdeme.
 
-Jaká jsou naše specifika: [například jazyková škola]
-
-Jaké máme vybavení: [např. mobilní učebna — 30 ks tabletů...]
-
-Dovolujeme používat žákům mobilní telefony při výuce: [ano/ne]
-
-Jak je na tom náš pedagogický sbor s digitální gramotností: [doplňte]
-
-Učíme v tematických integrovaných blocích: [ano/ne/částečně]
-
-Další doplnění: [doplňte, pokud je relevantní]
-
-Chceme promyšleně zavádět nové metody, technologie nebo přístupy, které zlepší výuku a zapojení žáků. Potřebuji, aby plán bral v úvahu naši současnou situaci, připravenost vyučujících, potřeby žáků i možnosti školy.
-
-Začni mi prosím klást otázky, které pomohou tento plán sestavit. Poté navrhni konkrétní kroky včetně časové osy, kdo bude za co odpovědný a jak budeme ověřovat dopad inovací.
+Na konci nabídni: 1) šablonu mapy aktérů (kdo změnu podporuje, kdo váhá a co komu pomůže), 2) komunikační plán pro sbor a rodiče, 3) verzi plánu k tisku.
 ```
 
 ## Co je cílem promptu
 
-Pomoci vedení školy nebo pedagogickému týmu vytvořit realistický a praktický plán postupného zavádění inovací do výuky. Chatbot uživateli pokládá promyšlené otázky, na základě odpovědí navrhne konkrétní kroky, časový rámec, odpovědnosti a způsoby evaluace. Plán zohledňuje školní kontext, připravenost týmu a udržitelnost změn.
+Prompt vám pomůže naplánovat, jak novou metodu, technologii nebo přístup zavést do výuky postupně a tak, aby se ujaly. Nejdřív se doptá na to, co chybí, pak sestaví rámec změny s cíli a ukazateli, naplánuje ověření v malém a postupné rozšíření a rozpracuje práci s lidmi v pěti fázích: od zvýšení povědomí po stvrzení změny.
+
+Plán vychází z metodiky řízení změny programu AI akcelerátor (AI dětem). Dostanete časovou osu s odpovědnostmi a návrh, podle čeho poznáte, že inovace žákům opravdu pomáhá.
 
 ## Jak prompt použít
 
-Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte výukový text nebo popis aktivity a krátké charakteristiky jednotlivých žáků včetně jejich specifických potřeb. Prompt vám vygeneruje upravené verze obsahu – každou přizpůsobenou jednomu žákovi – včetně vysvětlení, jaké úpravy byly provedeny a proč. Výstup můžete rovnou použít ve výuce nebo jako inspiraci pro vlastní přizpůsobení učebních materiálů.
+Zkopírujte prompt do chatbota a doplňte údaje o škole a o inovaci, kterou chcete zavést. Nejdůležitější je popsat, jaký problém má inovace vyřešit. Postoje kolegů popisujte souhrnně nebo po skupinách, nikdy jmény. Plán je nejlepší připravit ve dvojici vedení a lídra změny.
+
+Podrobnější postup najdete v kapitolách [Rámec změny](https://aidetem.cz/ai-akcelerator-ramec-zmeny/), [Mapa aktérů změny](https://aidetem.cz/ai-akcelerator-mapa-akteru-zmeny/) a [Plán změny](https://aidetem.cz/ai-akcelerator-plan-zmeny/) z metodiky AI akcelerátoru. Krok za krokem vás jimi provede dovednost [Řízení změny ve škole](/skills/rizeni-zmeny).
 
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Strategické dokumenty](/skills/strategicke-dokumenty), kterou si můžete nainstalovat do svého chatbota.

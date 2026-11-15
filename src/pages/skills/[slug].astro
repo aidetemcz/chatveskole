@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import Icon from '../../components/Icon.astro';
 import { url } from '../../lib/url';
-import { skills, sadaBySlug, asList, type Skill } from '../../lib/data';
+import { skills, sadaBySlug, type Skill } from '../../lib/data';
 import { NASTROJE } from '../../lib/instalace';
 import OdkazyKonec from '../../components/OdkazyKonec.astro';
 import QRCode from 'qrcode';
@@ -20,8 +20,6 @@ const skore = (s: Skill) => s.sady.filter((x) => skill.sady.includes(x)).length 
 // QR kód na složku dovednosti na Google Disku (vygeneruje se při buildu jako SVG)
 const qrSvg = skill.google_slozka ? await QRCode.toString(skill.google_slozka, { type: 'svg', margin: 1, errorCorrectionLevel: 'M', color: { dark: '#1c2530', light: '#ffffff' } }) : '';
 const podobne = ostatni.map((s, i) => ({ s, k: skore(s), i })).sort((a, b) => b.k - a.k || a.i - b.i).slice(0, 4).map((x) => x.s);
-const gpt = asList(skill.puvodni_asistenti?.gpt);
-const gem = asList(skill.puvodni_asistenti?.gem);
 const varianty = skill.prompt.varianty;
 ---
 <Base title={skill.title} description={skill.kratky_popis}>
@@ -104,12 +102,8 @@ const varianty = skill.prompt.varianty;
         {skill.google_data && <p><a class="zip zip--inline" href={skill.google_data}><span class="tile-icon tile-icon--sky"><Icon name="folder" size={18} /></span><span class="stack"><strong>Stáhnout znalosti (složka Data)</strong><span class="muted small">Google Disk · nahrajte soubory do chatu spolu s promptem</span></span></a></p>}
       </section>
 
-      {(gpt.length > 0 || gem.length > 0) && (
-        <section class="note note--warn stack" style="gap: 10px; padding: 22px 24px; border-radius: var(--radius-lg)" aria-labelledby="puvod-h">
-          <div style="display: flex; align-items: center; gap: 14px"><span class="badge badge--end">končí</span><h2 id="puvod-h" style="font-size: 1.1rem">Používali jste původního asistenta?</h2></div>
-          <p>Dovednost nahrazuje původní {gpt.length > 0 && 'GPT'}{gpt.length > 0 && gem.length > 0 && ' a '}{gem.length > 0 && 'Gem'} z chatveskole.cz. GPTs přestanou fungovat 11. 12. 2026, Gems se od 17. 11. 2026 postupně mění na dovednosti.</p>
-        </section>
-      )}
+
+      <p><a class="btn btn--primary" href={url('/skills')}>← Zpět na katalog dovedností</a></p>
     </div>
   </div>
 
@@ -125,7 +119,7 @@ const varianty = skill.prompt.varianty;
             </a>
           ))}
         </div>
-        <OdkazyKonec vSekci odkazy={[{ text: 'Katalog dovedností', href: url('/skills') }, ...skill.sady.map(sadaBySlug).filter(Boolean).map((x) => ({ text: `Sada ${x!.title}`, href: url(`/sady/${x!.slug}`) }))]} />
+        <OdkazyKonec vSekci odkazy={[...skill.sady.map(sadaBySlug).filter(Boolean).map((x) => ({ text: `Sada ${x!.title}`, href: url(`/sady/${x!.slug}`) }))]} />
       </div>
     </section>
   )}
