@@ -79,7 +79,6 @@ const varianty = skill.prompt.varianty;
           ))}
         </div>
         {skill.google_data && <p><a class="zip zip--inline" href={skill.google_data}><span class="tile-icon tile-icon--sky"><Icon name="folder" size={18} /></span><span class="stack"><strong>Stáhnout znalosti (složka Data)</strong><span class="muted small">Google Disk · nahrajte soubory do chatu spolu s promptem</span></span></a></p>}
-        {skill.prompt.tip && <p class="note note--info"><strong>Tip:</strong> {skill.prompt.tip.replace(/\*\*/g, '')}</p>}
       </section>
 
       {(gpt.length > 0 || gem.length > 0) && (
