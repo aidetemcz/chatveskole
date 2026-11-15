@@ -7,34 +7,45 @@ kategorie_slug: ["tvorba-materialu-do-vyuky"]
 skill: "pracovni-listy"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/doplnovacka/"
 puvodni_uprava: "2025-06-28T19:27:56"
-stav: prevzato
+stav: upraveno
 ---
 ## Prompt
 
 ```text
-Chovej se jako zkušený tvůrce vzdělávacích materiálů, který rozumí potřebám žáků i pedagogů. Vytvoř pracovní list ve formátu doplňovačky, kde z poskytnutého odborného nebo učebního textu automaticky vynecháš předem určená klíčová slova či pojmy a nahradíš je prázdnými políčky pro doplnění (konkrétně: _______________). Výsledný text by měl být přehledný, jasný a vhodný pro ověřování porozumění nebo opakování učiva. Odpovídej srozumitelně a ve věcném tónu. Výstupem bude text určený pro doplnění a jeden odstavec popisující danou doplňovačku včetně jejího didaktického záměru. Dbej na to, aby výsledná aktivita byla srozumitelná a snadno využitelná ve výuce. Doplňovačka je hravá, kombinuje v sobě vyprávění příběhu a fakticky správné informace. Vytvoř také variantu, kde jsou slova doplněna.
+Vystupuj jako zkušený učitel a tvůrce výukových materiálů. Vytvoř pracovní list s doplňovačkou.
 
-Předmět: [doplňte předmět]
+Předmět a téma: [například dějepis – Velká Morava]
+Ročník: [například 7. ročník ZŠ]
+Cíl – co si mají žáci upevnit: [například pojmy a osobnosti Velké Moravy]
+Text: [vložte vlastní text, nebo napište „vytvoř krátký příběh do 150 slov, který propojí fakta k tématu“]
+Slova k vynechání: [například Rastislav, Cyril, Metoděj, hlaholice; nebo napište „vyber sám 10 klíčových pojmů“]
+Obtížnost: [se zásobníkem slov / bez zásobníku / s prvním písmenem]
+Jazyk: [například čeština]
 
-Téma: [doplňte]
+Pravidla:
+1. Vynechávej jen slova, která nesou učivo (pojmy, jména, data, tvary sloves), ne náhodná slova. 8–15 mezer, u mladších žáků nejvýš jedna mezera ve větě.
+2. Mezery čísluj a dělej stejně dlouhé, aby neprozrazovaly délku slova: (1) __________
+3. Každá mezera musí mít jednoznačné řešení, které jde odvodit z kontextu věty.
+4. Zásobník slov zamíchej a přidej do něj 1–2 slova navíc.
+5. U gramatiky dej do závorky základní tvar, například (být), a žák doplní správný tvar.
+6. Když text píšeš sám, musí být věcně správný a přiměřený věku. Fakta, která si mám ověřit, vypiš zvlášť.
 
-Věk žáka nebo ročník: [doplňte]
+Výstup ve třech částech:
+1) PRO ŽÁKY: název, řádek „Jméno: __________“, instrukce v jedné větě, text s mezerami a případně zásobník slov.
+2) ŘEŠENÍ: číslovaný seznam, nebo celý text s doplněnými slovy tučně.
+3) POZNÁMKA PRO UČITELE: 2–3 věty, k čemu doplňovačka slouží a jak ji upravit pro žáky, kteří potřebují oporu, a pro rychlejší žáky.
 
-Výukový cíl: [doplňte srozumitelně formulovaný cíl]
-
-Slova, která budou vynechána: [doplňte]
-
-Počet vynechaných slov: [doplňte]
-
-Jazyk: [doplňte]
+Když chybí předmět, ročník nebo téma, nejdřív se mě zeptej.
 ```
 
 ## Co je cílem promptu
 
-Cílem promptu je vytvořit pracovní list typu doplňovačka, který pomáhá žákům upevnit klíčové pojmy a porozumět obsahu učebního nebo vyprávěcího textu. Aktivita rozvíjí přesnost, čtenářskou gramotnost, schopnost práce s kontextem a umožňuje opakování učiva zábavnou a smysluplnou formou. Výsledkem jsou dvě verze: jedna s prázdnými políčky pro žáky, druhá s doplněnými správnými odpověďmi.
+Prompt vytvoří pracovní list s doplňovačkou z vašeho textu, nebo napíše krátký příběh, který propojí fakta k tématu. Vynechává jen slova, která nesou učivo, mezery čísluje a dělá stejně dlouhé, aby neprozrazovaly odpověď.
+
+Dostanete verzi pro žáky, řešení zvlášť a krátkou poznámku, jak doplňovačku upravit pro různě pokročilé žáky. Obtížnost si zvolíte: se zásobníkem slov, bez něj, nebo s prvním písmenem.
 
 ## Jak prompt použít
 
-Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte informace o předmětu, tématu, věku nebo ročníku žáků, výukovém cíli, seznam slov, která chcete z textu vynechat, počet vynechaných slov a jazyk textu. Prompt vytvoří dvě varianty textu – jednu k vyplnění a jednu řešenou – doplněné o krátký popis didaktického záměru. Výstup lze využít jako samostatnou aktivitu, opakovací úkol, rozcvičku nebo součást domácí přípravy.
+Zkopírujte prompt do chatbota a doplňte předmět, ročník a téma. Vložte vlastní text, nebo nechte chatbota napsat příběh. Pokud ho píše chatbot, fakta před tiskem zkontrolujte, chatbot vám vypíše, co ověřit.
 
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.
