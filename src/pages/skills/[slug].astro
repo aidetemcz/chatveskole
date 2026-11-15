@@ -6,6 +6,7 @@ import { url } from '../../lib/url';
 import { skills, sadaBySlug, asList, type Skill } from '../../lib/data';
 import { NASTROJE } from '../../lib/instalace';
 import OdkazyKonec from '../../components/OdkazyKonec.astro';
+import QRCode from 'qrcode';
 
 export function getStaticPaths() {
   return skills.map((skill) => ({ params: { slug: skill.slug }, props: { skill } }));
@@ -16,6 +17,8 @@ const zipFor = (z: string | null) => (z ? skill.stahnout?.[z as 'claude' | 'gemi
 // podobné dovednosti: nejdřív ze stejné sady, pak pro stejnou cílovou skupinu
 const ostatni = skills.filter((s) => s.slug !== skill.slug);
 const skore = (s: Skill) => s.sady.filter((x) => skill.sady.includes(x)).length * 10 + s.pro_koho.filter((x) => skill.pro_koho.includes(x)).length;
+// QR kód na složku dovednosti na Google Disku (vygeneruje se při buildu jako SVG)
+const qrSvg = skill.google_slozka ? await QRCode.toString(skill.google_slozka, { type: 'svg', margin: 1, errorCorrectionLevel: 'M', color: { dark: '#1c2530', light: '#ffffff' } }) : '';
 const podobne = ostatni.map((s, i) => ({ s, k: skore(s), i })).sort((a, b) => b.k - a.k || a.i - b.i).slice(0, 4).map((x) => x.s);
 const gpt = asList(skill.puvodni_asistenti?.gpt);
 const gem = asList(skill.puvodni_asistenti?.gem);
@@ -25,13 +28,32 @@ const varianty = skill.prompt.varianty;
   <div class="band band--white" style="padding-bottom: 96px">
     <div class="wrap stack detail">
       <Crumbs items={[{ title: 'Katalog dovedností', href: '/skills' }, { title: skill.title }]} />
-      <header class="page-head">
-        <h1>{skill.title}</h1>
-        <p class="lede">{skill.popis ?? skill.kratky_popis}</p>
-        {skill.rezimy && skill.rezimy.length > 0 && (
-          <ul class="modes" aria-label="Co dovednost umí">{skill.rezimy.map((r) => <li>{r}</li>)}</ul>
+      <div class="hlava">
+        <header class="page-head">
+          <h1>{skill.title}</h1>
+          <p class="lede">{skill.popis ?? skill.kratky_popis}</p>
+          {skill.rezimy && skill.rezimy.length > 0 && (
+            <ul class="modes" aria-label="Co dovednost umí">{skill.rezimy.map((r) => <li>{r}</li>)}</ul>
+          )}
+        </header>
+        {qrSvg && (
+          <div class="qr">
+            <button type="button" class="qr-btn" aria-haspopup="dialog" aria-controls="qr-dialog" data-qr-otevrit>
+              <span class="qr-obr" set:html={qrSvg} aria-hidden="true" />
+              <span class="qr-popis">Soubory dovednosti na Google Disku<span class="qr-zvetsit">Klikněte pro zvětšení</span></span>
+            </button>
+            <dialog id="qr-dialog" class="qr-dialog" aria-labelledby="qr-dialog-h">
+              <h2 id="qr-dialog-h">{skill.title}: soubory na Google Disku</h2>
+              <p>Naskenujte QR kód telefonem, nebo otevřete složku přímo.</p>
+              <div class="qr-velky" set:html={qrSvg} role="img" aria-label={`QR kód s odkazem na složku dovednosti ${skill.title} na Google Disku`} />
+              <div class="qr-akce">
+                <a class="btn btn--primary" href={skill.google_slozka}>Otevřít složku</a>
+                <button type="button" class="btn btn--outline" data-qr-zavrit>Zavřít</button>
+              </div>
+            </dialog>
+          </div>
         )}
-      </header>
+      </div>
 
       <section id="instalace" class="stack sekce" aria-labelledby="inst-h">
         <div class="stack" style="gap: 10px"><h2 id="inst-h" class="h2">Nainstalovat dovednost</h2><p class="muted">Dovednost nainstalujete jednou a chatbot ji buď použije sám, kdykoli ji bude potřebovat, případně ji můžete vyvolat přímo v chatu pomocí zavináče nebo lomítka.</p></div>
@@ -109,11 +131,35 @@ const varianty = skill.prompt.varianty;
   )}
 </Base>
 
+<script>
+  // QR kód: na klik se otevře zvětšený v modálním okně (klávesa Esc i klik mimo okno ho zavřou)
+  const dlg = document.getElementById('qr-dialog') as HTMLDialogElement | null;
+  document.querySelector('[data-qr-otevrit]')?.addEventListener('click', () => dlg?.showModal());
+  document.querySelector('[data-qr-zavrit]')?.addEventListener('click', () => dlg?.close());
+  dlg?.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+</script>
+
 <style>
   .h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 700; }
   .muted { color: var(--muted); }
   .small { font-size: 0.86rem; }
   .detail { gap: 64px; }
+  .hlava { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 32px 56px; align-items: start; }
+  @media (max-width: 860px) { .hlava { grid-template-columns: 1fr; } }
+  .qr-btn { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 18px; border: 1px solid var(--sky); border-radius: var(--radius-lg); background: var(--panel); cursor: zoom-in; text-align: center; color: var(--ink); font: inherit; }
+  .qr-btn:hover { background: var(--sky-light); }
+  .qr-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .qr-obr { display: block; width: 150px; height: 150px; }
+  .qr-obr :global(svg), .qr-velky :global(svg) { display: block; width: 100%; height: 100%; }
+  .qr-popis { font-size: 0.88rem; font-weight: 600; line-height: 1.35; display: flex; flex-direction: column; gap: 4px; }
+  .qr-zvetsit { font-weight: 400; color: var(--muted); font-size: 0.8rem; }
+  @media (max-width: 860px) { .qr { max-width: 220px; } }
+  .qr-dialog { border: 0; border-radius: var(--radius-lg); padding: 32px; max-width: min(92vw, 440px); width: 100%; box-shadow: 0 20px 60px rgba(31, 63, 77, 0.25); }
+  .qr-dialog::backdrop { background: rgba(28, 37, 48, 0.55); }
+  .qr-dialog h2 { font-size: 1.25rem; margin-bottom: 8px; }
+  .qr-dialog p { font-size: 0.95rem; margin-bottom: 18px; }
+  .qr-velky { width: 100%; max-width: 320px; aspect-ratio: 1; margin: 0 auto 22px; }
+  .qr-akce { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
   .sekce { gap: 28px; }
   .page-head .lede { max-width: 72ch; }
   .modes { margin: 4px 0 0; padding-left: 1.3em; display: flex; flex-direction: column; gap: 8px; font-size: 1.05rem; }
