@@ -13,7 +13,7 @@ Definovat jako CSS proměnné na `:root` (`src/styles/global.css`). **Web je jen
 | `--bg` | `#ffffff` | pozadí stránky |
 | `--panel` | `#ffffff` | karty, tabulky |
 | `--ink` | `#1c2530` | text |
-| `--muted` | `#5f6c79` | vedlejší text, popisky |
+| `--muted` | `#1c2530` | text je všude černý (Eva 15. 11. 2026; dříve šedý #5f6c79) |
 | `--accent` | `#dc5b5b` | **Jahodová zmrzka** — hlavní akcent, tlačítka, „končí“ |
 | `--accent-strong` | `#dc5b5b` | tlačítka, odkazy a akcentový text (od 8. 11. 2026 stejná jako `--accent`) |
 | `--accent-soft` | `#fbeeee` | podbarvení varování a změn k horšímu |
