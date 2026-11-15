@@ -7,28 +7,46 @@ kategorie_slug: ["komunikace-s-rodici"]
 skill: "komunikace-s-rodici"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/reakce-na-stiznost-rodice/"
 puvodni_uprava: "2025-06-28T16:08:57"
-stav: prevzato
+stav: upraveno
 ---
 ## Prompt
 
 ```text
-Chovej se jako zkušený třídní pedagog, který dbá na dobrou spolupráci s rodiči a řešení problémů s respektem a porozuměním. Na základě níže přiloženého textu stížnosti od rodiče a mého kontextu vytvoř stručnou odpověď, která bude vstřícná, věcná a nekonfliktní. Zaměř se na konstruktivní komunikaci, vyjádři pochopení pro obavy rodiče, nabídni stručné vysvětlení situace a případně navrhni další postup nebo možnost osobního setkání. Odpověď formuluj profesionálně, s empatickým tónem a s důrazem na partnerský přístup ke spolupráci se zákonnými zástupci.
+Vystupuj jako zkušený třídní učitel, který řeší problémy s respektem a porozuměním a bere rodiče jako partnera. Pomoz mi odpovědět na stížnost rodiče.
 
-E-mail od rodiče:
+Zpráva od rodiče: [vložte text; jména nahraďte iniciálami]
+Můj pohled na situaci: [popište, co se stalo, konkrétně a bez hodnocení dítěte, například během posledního měsíce třikrát nepřinesla domácí úkol a v hodině často nedokončí práci]
+Co už jsem udělal(a): [například mluvila jsem s žákyní po hodině; nebo řádek smažte]
+Čeho chci dosáhnout: [například vysvětlit situaci a nabídnout schůzku / zdvořile odmítnout požadavek a vysvětlit proč]
+Kanál: [e-mail / zpráva do Bakalářů nebo EduPage]
 
-[sem vložte text — například e-mail zaslaný rodičem]
+Odpověď postav takto:
+1. Poděkuj za zprávu a vyjádři pochopení pro obavy rodiče.
+2. Stručně a věcně vysvětli situaci z pohledu školy. Popisuj chování a práci, ne osobnost dítěte.
+3. Pokud je stížnost v něčem oprávněná, přiznej to a napiš, co s tím uděláme.
+4. Navrhni další krok nebo osobní setkání (termíny označ [doplním]).
+5. Zakonči partnersky: jde nám o společné dobro dítěte.
 
-Můj kontext:
+Pravidla:
+- Bez obhajování, ironie, moralizování a výčtu prohřešků dítěte.
+- Neslibuj nic, co nemůžu splnit, a nepřiznávej vinu, kterou nevidím.
+- Nejvýš 150 slov. Píšu jako [jméno učitele].
+- Když stížnost míří na kolegu nebo vedení, nebo může skončit právním sporem, upozorni mě, že je dobré ji předat řediteli.
+- Když z popisu plyne podezření na šikanu nebo ohrožení dítěte, nepiš odpověď a navrhni mi postup (koho ve škole zapojit jako prvního).
 
-[Zde stručně uveďte vás pohled na problém, například: Žákyně dlouhodobě nepodává uspokojivé výkony, poslední dobou je velmi nesoustředěná.]
+Pod odpověď mi zvlášť napiš 2–3 věci, které si mám před odesláním ověřit. Pak nabídni úpravu tónu nebo délky.
 ```
 
 ## Co je cílem promptu
 
-Cílem promptu je pomoci pedagogovi vytvořit profesionální a empatickou odpověď na stížnost rodiče tak, aby podpořila konstruktivní komunikaci a vzájemnou důvěru. Výstupem je stručná a klidná reakce, která bere v potaz pohled rodiče i situaci ve třídě, nabízí věcné vysvětlení a případně další kroky k řešení situace. Prompt podporuje respektující a partnerský přístup mezi školou a rodinou.
+Prompt vám pomůže napsat klidnou, věcnou a vstřícnou odpověď na stížnost rodiče. Odpověď uzná obavy rodiče, vysvětlí situaci z pohledu školy, nabídne další krok a nic neslibuje naprázdno. Popisuje chování a práci dítěte, ne jeho osobnost.
+
+Když stížnost míří na kolegu nebo vedení, chatbot doporučí předat ji řediteli. Při podezření na šikanu nebo ohrožení dítěte místo odpovědi navrhne, koho ve škole zapojit.
 
 ## Jak prompt použít
 
-Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte znění e-mailu od rodiče a svůj pohled na situaci. Prompt vám vygeneruje návrh odpovědi, kterou můžete dále upravit a použít při komunikaci. Odpověď je formulována profesionálně, s důrazem na klidný tón, pochopení a ochotu spolupracovat. Využijete ji při řešení konfliktních situací nebo při budování důvěry mezi školou a rodiči.
+Zkopírujte prompt do chatbota, vložte zprávu od rodiče a popište svůj pohled na situaci. Jména žáků nahraďte iniciálami. Svůj pohled pište konkrétně: co se stalo a kdy, ne jaké dítě je.
+
+Odpověď si před odesláním přečtěte a případně ji nechte přečíst kolegovi nebo vedení. Pokud je situace vyhrocená, často pomůže nejdřív zavolat nebo nabídnout schůzku a e-mail použít jen jako potvrzení.
 
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici), kterou si můžete nainstalovat do svého chatbota.

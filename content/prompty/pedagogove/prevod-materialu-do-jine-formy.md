@@ -7,44 +7,46 @@ kategorie_slug: ["aktualizace-materialu"]
 skill: "uprava-materialu"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/prevod-materialu-do-jine-formy/"
 puvodni_uprava: "2025-07-30T17:39:28"
-stav: prevzato
+stav: upraveno
 ---
 ## Prompt
 
 ```text
-Vystupuj jako zkušený vzdělávací designér, který pomáhá pedagogům převádět stávající výukové materiály do nové, modernější podoby nebo jiné formy, například pracovní list na kvíz nebo část učebnice na pracovní list. Nejprve vyzvi pedagoga, aby vložit celý původní materiál (text, prezentaci, pracovní list, scénář apod.). Poté se doptej na podrobnosti, jakým způsobem chce materiál aktualizovat, zejména:
+Vystupuj jako zkušený vzdělávací designér. Převeď můj výukový materiál do jiné formy.
 
-Typ původního materiálu (pracovní list, text, prezentace, video-scénář…)
+Původní materiál: [vložte text, pracovní list, prezentaci nebo soubor]
+Nová forma: [například kvíz do Google Formulářů / prezentace / pracovní list / infografika / scénář podcastu / plakát]
+Ročník a předmět: [například 6. ročník ZŠ, dějepis]
+K čemu ho použiji: [například opakování před písemkou, 15 minut na začátku hodiny]
+Rozsah: [například 10 otázek / 8 snímků / 1 strana A4]
+Co musí zůstat: [například všechny pojmy a data; nebo řádek smažte]
+Další požadavky: [například jednodušší jazyk, úlohy pro rychlejší žáky; nebo řádek smažte]
 
-Cílová forma (interaktivní prezentace, digitální pracovní list, kvíz v Google Forms, infografika, podcastový scénář, grafický plakát…)
+Pravidla:
+1. Zachovej obsah a věcnou správnost. Forma se mění, učivo ne. Nic podstatného nevynechávej, a když musíš kvůli rozsahu krátit, napiš mi co.
+2. Přizpůsob jazyk věku žáků a nové formě (prezentace = krátké body, podcast = mluvená řeč, kvíz = jednoznačné otázky).
+3. Výstup dej tak, aby šel rovnou použít:
+   - kvíz: otázky s typem odpovědi a možnostmi, správná odpověď zvlášť; špatné možnosti věrohodné (typické chyby žáků),
+   - prezentace: snímek po snímku (nadpis, 3–5 bodů, návrh obrázku, poznámka pro mluvčího),
+   - infografika nebo plakát: textové bloky v pořadí, jak půjdou za sebou, a návrh rozvržení,
+   - podcast: scénář s rolemi a orientační délkou,
+   - pracovní list: část pro žáky a zvlášť řešení.
+4. Kromě vybavování zařaď aspoň jednu úlohu nebo otázku, při které žáci učivo použijí, porovnají nebo vysvětlí.
+5. Na zjevné věcné chyby v původním materiálu upozorni a navrhni opravu.
 
-Věk/ročník žáků a předmět
-
-Klíčové body, které musí zůstat zachovány či být zdůrazněny
-
-Požadovaný rozsah (počet slidů, úloh, minut…)
-
-Preferovaný styl a jazyk (formální × neformální, vizuální tón, barvy, piktogramy, jiný jazyk než stávající)
-
-Specifické metodické prvky (diferenciace, formativní hodnocení, gamifikace, inkluze, digitální nástroje)
-
-Jakmile obdržíš původní materiál a instrukce, proveď kompletní převod:
-
-Zachovej klíčový obsah, ale přizpůsob formu i jazyk cílovému publiku.
-
-Strukturu nového materiálu uspořádej přehledně (hlavní nadpisy, sekce, kroky).
-
-Doplň stručné shrnutí provedených změn a tipy k dalším úpravám či zapojení digitálních nástrojů.
-
-Výstup nabídni v požadovaném formátu tak, aby byl materiál ihned použitelný či snadno exportovatelný do dané platformy.
+Pod výstup dej krátké shrnutí: co jsi změnil a proč, a 1–2 tipy, jak materiál použít ve výuce. Když materiál nebo nová forma chybí, nejdřív se mě zeptej.
 ```
 
 ## Co je cílem promptu
 
-Cílem promptu „Převod materiálu do jiné formy“ je pomoci pedagogovi rychle a přehledně transformovat stávající výukové materiály do nové podoby, která lépe odpovídá potřebám žáků, moderním výukovým trendům i zvoleným digitálním nástrojům. Prompt vede uživatele k jasnému popsání cílové formy, stylu a metodických požadavků, takže výsledný dokument zachovává klíčový obsah a zároveň přináší atraktivnější, interaktivnější a didakticky promyšlenou strukturu.
+Prompt převede váš hotový materiál do jiné podoby: z textu udělá kvíz, z pracovního listu prezentaci, z kapitoly učebnice infografiku nebo scénář podcastu. Obsah a věcná správnost zůstanou, změní se forma a jazyk.
+
+Výstup dostanete rovnou ve tvaru, který jde použít: kvíz s odpověďmi zvlášť, prezentaci snímek po snímku, infografiku po blocích. Když chatbot musí kvůli rozsahu něco vynechat, řekne vám co.
 
 ## Jak prompt použít
 
-Prompt použijete tak, že jeho text zkopírujete do chatovací aplikace, vložíte původní materiál a doplníte instrukce o požadované cílové formě, rozsahu, stylu a technických limitech; po odeslání obdržíte kompletně přepracovaný materiál v nové podobě i se shrnutím provedených změn, který můžete ihned vytisknout, sdílet nebo importovat do vybrané platformy, a kdykoliv později stačí změnit vstupní parametry a prompt spustit znovu, abyste materiál dále upravili.
+Zkopírujte prompt do chatbota, vložte původní materiál a napište, do jaké formy ho chcete převést a pro koho. Rozsah uveďte konkrétně (počet otázek, snímků, stran), výsledek pak bude přesnější.
+
+Některé chatboty umí kvíz nebo prezentaci rovnou vytvořit jako soubor. Pokud to váš chatbot umí, požádejte ho o to v další zprávě.
 
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Úprava materiálu](/skills/uprava-materialu), kterou si můžete nainstalovat do svého chatbota.

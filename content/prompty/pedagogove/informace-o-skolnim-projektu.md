@@ -7,30 +7,44 @@ kategorie_slug: ["komunikace-s-rodici"]
 skill: "komunikace-s-rodici"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/informace-o-skolnim-projektu/"
 puvodni_uprava: "2025-06-28T16:24:47"
-stav: prevzato
+stav: upraveno
 ---
 ## Prompt
 
 ```text
-Chovej se jako třídní učitel, který chce rodiče informovat o chystaném školním projektu. Na základě vložených údajů o projektu:
+Vystupuj jako zkušený třídní učitel, který s rodiči jedná jako s partnery. Napiš rodičům zprávu o chystaném školním projektu.
 
-Název projektu: [sem vložte název projektu, například: Spoluprací k porozumění Evropě]
+Název projektu: [například Spoluprací k porozumění Evropě]
+Třída a termín: [například 8. A, 3.–7. března]
+O co v projektu jde: [stručný popis nebo klíčová slova, například žáci ve skupinách zastupují státy EU a hledají společné řešení fiktivního problému]
+Co si z něj žáci odnesou: [například naučí se diskutovat, hledat kompromis a vysvětlit, jak se v EU rozhoduje]
+Co potřebujeme od rodičů: [například přinést krabici od bot do 28. února; nebo řádek smažte]
+Praktické údaje: [například náklady, změna rozvrhu, co s sebou; nebo řádek smažte]
+Kontakt pro dotazy: [například e-mail třídní učitelky]
+Kanál: [e-mail / zpráva do Bakalářů nebo EduPage / tištěný leták]
 
-Stručný popis: [vložte stručný popis nebo klíčová slova, například: Projekt je zaměřen na rozvoj klíčových kompetencí ke spolupráci a hlubší porozumění fungování Evropské unie. Žáci pracují ve skupinách na řešení simulované situace — například rozhodují o fiktivním evropském problému (např. migrace, klima, rozpočet EU), kde zastupují různé členské státy. Učí se diskutovat, hledat kompromisy a chápat principy demokratického rozhodování v EU. Projekt propojuje občanskou výchovu, dějepis a zeměpis s důrazem na týmovou práci, argumentaci a schopnost naslouchat]
+Zpráva má mít:
+1. Krátký úvodní odstavec: o co v projektu jde a proč ho děláme.
+2. Odrážky s tím, co si žáci odnesou. Piš běžnou češtinou, bez školních pojmů jako „klíčové kompetence“ nebo „průřezová témata“. Popiš, co děti budou dělat a co se naučí.
+3. Odrážky s praktickými údaji a s tím, co potřebujeme od rodičů (co, do kdy).
+4. Kontakt a nabídku dotazů.
 
-Co bude přínosem projektu: [sem vložte specifika projektu — co konkrétně budou žáci v tomto projektu rozvíjet, například: projekt rozvíjí kompetence ke spolupráci a porozumění fungování EU]
+Pravidla:
+- Piš přátelsky, věcně a stručně. E-mail má oslovení, nejvýš 150 slov a podpis [jméno učitele]. Zpráva do školního systému je kratší, bez oslovení a podpisu.
+- Nevymýšlej údaje, které jsem nezadal(a). Chybějící označ hranatými závorkami.
+- Jména žáků do textu nepiš.
 
-Součinnost rodičů: [pokud je třeba, vložte popis sem, například: rodiče zajistí materiály]
-
-Napiš stručnou, srozumitelnou a přátelskou zprávu určenou rodičům. Cílem je poskytnout jasné informace, vzbudit zájem o projekt a případně podpořit spolupráci s rodinami. Zpráva by měla být psaná ve formě jednoho odstavce a několika odrážkami, který může být použit například v e-mailu nebo školním informačním systému.
+Pod zprávu navrhni předmět e-mailu. Pak nabídni úpravu tónu nebo délky.
 ```
 
 ## Co je cílem promptu
 
-Cílem promptu je pomoci třídnímu učiteli vytvořit přehlednou a přátelsky formulovanou zprávu pro rodiče, která stručně představí chystaný školní projekt. Zpráva vysvětluje, o co v projektu jde, jaký bude jeho přínos pro žáky, a případně informuje o potřebné součinnosti ze strany rodin. Slouží k posílení důvěry a spolupráce mezi školou a rodiči.
+Prompt vám napíše krátkou zprávu pro rodiče o chystaném školním projektu. Rodiče se dozvědí, o co jde, co si děti odnesou a co je potřeba od nich. Text je psaný běžnou češtinou, bez školní terminologie, které rodiče často nerozumějí.
+
+Zprávu dostanete v podobě pro e-mail, pro školní systém (Bakaláři, EduPage) nebo pro tištěný leták, včetně návrhu předmětu e-mailu.
 
 ## Jak prompt použít
 
-Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte název projektu, jeho stručný popis, přínosy pro žáky a případné zapojení rodičů. Prompt vám vygeneruje sdělení ve formě jednoho uceleného odstavce a několika přehledných odrážek, které můžete použít v e-mailu, školním systému nebo tištěné informaci pro rodiče. Výstup je formulován srozumitelně, v přátelském tónu a slouží k informování i navázání partnerské komunikace.
+Zkopírujte prompt do chatbota a doplňte údaje o projektu. Nejdůležitější jsou popis projektu a to, co potřebujete od rodičů (co a do kdy). U řádku Kanál nechte jen tu možnost, kterou použijete. Chybějící údaje chatbot nedomýšlí, označí je hranatými závorkami.
 
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici), kterou si můžete nainstalovat do svého chatbota.

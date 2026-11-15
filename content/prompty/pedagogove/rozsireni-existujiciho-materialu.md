@@ -7,38 +7,45 @@ kategorie_slug: ["aktualizace-materialu"]
 skill: "uprava-materialu"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/rozsireni-existujiciho-materialu/"
 puvodni_uprava: "2025-07-30T17:52:25"
-stav: prevzato
+stav: upraveno
 ---
 ## Prompt
 
 ```text
-Vystupuj jako kreativní metodik a vzdělávací designer, který pomáhá pedagogům aktualizovat a rozšířit jejich výukové materiály tak, aby byly moderní, poutavé a přizpůsobené potřebám konkrétních žáků. Na základě informací zadaných pedagogem přepiš nebo doplň původní materiál, začleň nové úkoly a aktivity podporující například kritické myšlení, spolupráci a digitální gramotnost, a případně navrhni diferenciaci pro různé úrovně pokročilosti. Používej přátelský a srozumitelný jazyk, vyhýbej se zbytečně odborným termínům. Nově přidané části zvýrazni tučně a/nebo uveď v rámečku „Nově přidáno“, aby byly jasně odlišitelné od původního textu.
+Vystupuj jako zkušený metodik a vzdělávací designér. Rozšiř můj výukový materiál o nové úlohy a aktivity.
 
-Požádej pedagoga, aby doplnil následující:
+Materiál: [vložte pracovní list, text, prezentaci nebo soubor]
+Ročník a předmět: [například 7. ročník ZŠ, dějepis – starověký Řím]
+Co chci přidat: [například otevřené úlohy na argumentaci / badatelskou aktivitu / práci ve skupinách / úlohy pro rychlejší žáky]
+Cíl hodiny: [například žák porovná život ve starověkém Římě s dneškem; nebo řádek smažte]
+Kolik přidat: [například 3 úlohy, 15 minut navíc]
+Podmínky: [například bez tabletů / máme Padlet / mezipředmětová vazba se zeměpisem; nebo řádek smažte]
 
-Nejprve, prosím, vložte stávající materiál (např. pracovní list, text, prezentace, video-scénář…)
+Pravidla:
+1. Nové úlohy navaž na obsah materiálu a na cíl. Nepřidávej aktivity jen pro zábavu.
+2. Přidávej hlavně úlohy, ve kterých žáci se znalostí něco dělají: porovnají, najdou chybu, zdůvodní, rozhodnou podle kritérií, vyřeší novou situaci. Ne víc stejných úloh na zapamatování.
+3. U skupinové práce popiš role nebo postup, aby se zapojil každý žák.
+4. Zadání pro žáky piš přátelsky a srozumitelně pro daný věk, bez zbytečných odborných pojmů.
+5. Původní text neměň. Nové části vlož na vhodné místo a uveď štítkem „Nově přidáno:“.
+6. U každé nové úlohy uveď orientační čas a co potřebuje (pomůcky, zařízení).
+7. Na zjevné věcné chyby v původním materiálu upozorni.
 
-Následně doplňte parametry pro aktualizaci:
+Výstup:
+a) celý materiál s vloženými novými částmi,
+b) řešení nebo znaky dobré odpovědi k novým úlohám,
+c) 2–3 poznámky pro učitele: kam nové části v hodině zařadit a jak je upravit pro žáky, kteří potřebují oporu.
 
-Hlavní cíl rozšíření: [např. přidat otevřené úlohy rozvíjející argumentaci]
-
-Věk/ročník žáků: [např. 7. ročník ZŠ]
-
-Předmět a téma: [např. dějepis — starověký Řím]
-
-Rozsah rozšíření: [počet stran, úloh nebo minut ve výuce]
-
-Speciální požadavky: [např. využít aplikaci Padlet, přidat badatelskou aktivitu, mezipředmětové vazby]
-
-Výstupem je kompletně aktualizovaný materiál připravený k tisku či sdílení online, s jasně vyznačenými novými částmi a stručnými instrukcemi pro učitele, jak rozšířené prvky zařadit do výuky.
+Když materiál chybí, nejdřív se mě zeptej. Na konci nabídni čistou verzi bez štítků k tisku.
 ```
 
 ## Co je cílem promptu
 
-Cílem promptu je poskytnout pedagogům rychlý a praktický způsob, jak obohatit či aktualizovat stávající výukové materiály. Výstup je přehledný, s jasně vyznačenými nově přidanými částmi, a šetří čas díky okamžité použitelnosti ve výuce.
+Prompt rozšíří váš hotový materiál o nové úlohy a aktivity, například otevřené otázky, badatelskou aktivitu nebo práci ve skupinách. Nové úlohy navazují na obsah a cíl hodiny a vedou žáky k tomu, aby učivo používali, ne jen opakovali.
+
+Původní text zůstane beze změny, nové části jsou označené štítkem „Nově přidáno“. Ke každé nové úloze dostanete čas, potřebné pomůcky a řešení.
 
 ## Jak prompt použít
 
-Zkopírujte prompt do chatovací aplikace, vložte původní materiál a vyplňte požadované údaje v hranatých závorkách (věk nebo ročník žáků, předmět a téma, cíl rozšíření …). Asistent poté vygeneruje aktualizovaný materiál s označením nových úseků a stručnými pokyny pro učitele. Hotový text můžete hned vytisknout nebo sdílet v online prostředí (LMS, Google Classroom, Teams, Padlet …) a dále upravovat dle potřeb třídy.
+Zkopírujte prompt do chatbota, vložte materiál a napište, co chcete přidat a kolik. Pokud uvedete cíl hodiny, nové úlohy na něj budou přesněji mířit. Hotový materiál můžete vytisknout nebo sdílet online, na přání i bez štítků.
 
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Úprava materiálu](/skills/uprava-materialu), kterou si můžete nainstalovat do svého chatbota.

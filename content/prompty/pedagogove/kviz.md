@@ -7,34 +7,47 @@ kategorie_slug: ["tvorba-materialu-do-vyuky"]
 skill: "pracovni-listy"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/kviz/"
 puvodni_uprava: "2025-06-28T19:37:15"
-stav: prevzato
+stav: upraveno
 ---
 ## Prompt
 
 ```text
-Vystupuj jako zkušený učitel daného předmětu, který připravuje sadu promyšlených kvízových otázek pro své žáky. Vytvoř otázky různé obtížnosti na zvolené téma tak, aby prověřily porozumění základním pojmům i hlubším souvislostem. U každé otázky uveď správnou odpověď a stručné vysvětlení, proč je právě tato odpověď správná. Styl formulace by měl být srozumitelný a věcný, vhodný pro žáky daného věku nebo ročníku. Nejprve vygeneruj otázky i se správnými odpověďmi a poté vyzvi pedagoga, zda-li máš připravit také pracovní list očištěný od správných odpovědí pro žáky nebo zda je třeba něco upravit.
+Vystupuj jako zkušený učitel daného předmětu. Vytvoř kvíz pro mé žáky.
 
-Předmět: [doplňte předmět]
+Předmět a téma: [například zeměpis – podnebné pásy]
+Ročník: [například 6. ročník ZŠ]
+Cíl – co má kvíz ověřit: [například žák zařadí krajinu do podnebného pásu podle popisu]
+Typy otázek: [například výběr ze 4 možností, pravda/nepravda, krátká odpověď; nebo vyber sám]
+Počet otázek: [například 10]
+Jazyk: [například čeština]
+K čemu kvíz použiji: [například opakování na začátku hodiny / online v Google Formulářích; nebo řádek smažte]
 
-Téma: [doplňte]
+Pravidla:
+1. Otázky musí být věcně správné, jednoznačné a přiměřené věku. Jedna otázka = jeden úkol, bez dvojího záporu.
+2. Zhruba polovina otázek ověří vybavení a porozumění, zbytek analýzu (porovnej, zařaď, najdi chybu, vyvoď pravidlo) a použití znalostí (rozhodni podle kritérií, vyřeš novou situaci). O úrovni rozhoduje, co otázka po žákovi skutečně chce, ne sloveso.
+3. U výběru z možností jen jedna správná odpověď. Špatné možnosti stav na chybách, které žáci opravdu dělají, ne na nesmyslech. Správná odpověď nesmí být nápadně delší ani pořád na stejném místě. „Všechny uvedené“ a „žádná z uvedených“ jen výjimečně.
+4. Pravda/nepravda: zhruba půl na půl, nepravdivá tvrzení podle častých mylných představ, bez slov „vždy“ a „nikdy“.
+5. U cizího jazyka piš zadání v cílovém jazyce, pokud nenapíšu jinak.
+6. Body ani známky nenavrhuj, pokud o ně nepožádám.
 
-Věk žáka nebo ročník: [doplňte]
+Výstup ve třech částech:
+1) KVÍZ PRO ŽÁKY bez odpovědí, s řádkem na jméno.
+2) KLÍČ: správné odpovědi a ke každé jedna věta proč. U špatných možností u výběru krátce, jakou chybu prozrazují.
+3) PRO UČITELE: tabulka otázka – co ověřuje – úroveň (vybavení a porozumění / analýza / použití znalostí).
 
-Výukový cíl: [doplňte srozumitelně formulovaný cíl]
-
-Typ otázek: [doplňte například výběr z možností, doplnění, pravda/nepravda, krátká odpověď]
-
-Počet otázek: [doplňte]
-
-Jazyk: [doplňte]
+Kde si nejsi jistý fakty, napiš mi to. Když chybí předmět, ročník nebo téma, nejdřív se mě zeptej. Na konci nabídni verzi pro Google Formuláře nebo jinou obtížnost.
 ```
 
 ## Co je cílem promptu
 
-Cílem promptu je pomoci učiteli vytvořit sadu kvalitních a věcně správných kvízových otázek, které ověřují jak základní porozumění pojmům, tak i hlubší souvislosti daného tématu. Každá otázka obsahuje správnou odpověď i stručné vysvětlení, které slouží jako podklad pro diskusi nebo formativní zpětnou vazbu. Otázky jsou formulovány srozumitelně, přiměřeně věku a jazykovým dovednostem žáků.
+Prompt vytvoří kvíz, který neověřuje jen zapamatované pojmy, ale i to, jestli žáci učivu rozumějí a umějí ho použít. Špatné odpovědi u výběru z možností odpovídají chybám, které žáci opravdu dělají. Podle toho, kterou možnost žák zvolí, poznáte, kde chybuje.
+
+Dostanete kvíz pro žáky bez odpovědí, klíč se zdůvodněním a tabulku, co která otázka ověřuje. Body ani známky prompt nenavrhuje, pokud o ně nepožádáte.
 
 ## Jak prompt použít
 
-Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte předmět, téma, věk nebo ročník žáků, výukový cíl, typ otázek, počet otázek a jazyk. Prompt vám nejprve vygeneruje kvíz s odpověďmi a stručným odůvodněním správnosti. Na závěr vyzve k vytvoření verze bez odpovědí pro žáky, případně k úpravě podle vašich požadavků. Výstup můžete využít jako test, opakovací aktivitu nebo podklad k diskusi ve třídě.
+Zkopírujte prompt do chatbota a doplňte předmět, ročník, téma a cíl. Typ otázek můžete nechat na chatbotovi. Fakta a správné odpovědi před použitím vždy zkontrolujte.
+
+Kvíz se hodí na opakování, na začátek hodiny nebo jako podklad pro diskusi o chybách. Na přání ho chatbot převede do podoby pro Google Formuláře.
 
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.

@@ -7,23 +7,45 @@ kategorie_slug: ["komunikace-s-rodici"]
 skill: "komunikace-s-rodici"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/vysvetleni-vyznamu-vyuziti-generativni-ai-ve-vyuce/"
 puvodni_uprava: "2025-06-28T16:16:13"
-stav: prevzato
+stav: upraveno
 ---
 ## Prompt
 
 ```text
-Vystupuj jako ředitel základní školy, který chce rodičům srozumitelně a otevřeně představit plánované využití generativní umělé inteligence ve výuce. Vysvětli, co generativní AI znamená, proč ji škola chce začít zařazovat do výuky a jaké výhody to přináší pro rozvoj žáků – například podpora tvořivosti, samostatnosti nebo personalizovaného učení. Používej věcný, ale přístupný tón, aby text oslovil i rodiče bez technického zázemí. Text by měl mít formu jednoho uceleného odstavce a výčtu aplikací s krátkými popisy, který lze využít například do školního newsletteru nebo informačního letáku. Podtrhni střízlivý přístup ke generativní umělé inteligenci — vysvětli, že bude GenAI užívána v případech, kdy podporuje rozvoj žáků, nikoliv nahodile. Uveď také to, že pedagogům pomůže GenAI individualizovat výuku.
+Vystupuj jako ředitel základní školy, který chce rodičům otevřeně a srozumitelně představit, jak bude škola ve výuce využívat generativní umělou inteligenci. Piš věcně a přístupně i pro rodiče bez technického zázemí.
 
-Které aplikace se chystáme použít (tyto aplikace krátce popiš):
-[uveďte konkrétní aplikace, které se chystáte ve škole využívat — prosím, nezapomeňte zkontrolovat věkové limity, často jsou aplikace dostupné až od 13ti let]
+Ročníky a předměty: [například 8. a 9. ročník, český jazyk a informatika]
+Aplikace, které chceme používat: [názvy konkrétních chatbotů a aplikací]
+Jak s AI budou žáci pracovat: [například mladší žáci jen společně s učitelem na jeho zařízení, starší se školním účtem; nebo řádek smažte]
+Pravidla školy: [například žáci do AI nevkládají osobní údaje, úkoly s AI označují; nebo řádek smažte]
+Kontakt pro dotazy: [například e-mail zástupkyně ředitele]
+Kde text vyjde: [newsletter / web školy / leták / e-mail]
+
+Text má mít:
+1. Úvodní odstavec: co je generativní AI (jednou dvěma větami bez odborných slov), proč ji škola zařazuje a co žákům přinese. Zdůrazni střízlivý přístup: AI použijeme tam, kde podporuje učení, ne nahodile a ne místo přemýšlení žáků. Uveď, že učitelům pomáhá lépe přizpůsobit výuku potřebám jednotlivých žáků.
+2. Odstavec o tom, jak žáky učíme s AI zacházet: ověřovat informace, poznat chybu AI, chránit své údaje.
+3. Výčet aplikací: u každé jedna věta, k čemu ji použijeme, a věková hranice podle podmínek služby.
+4. Krátký závěr s nabídkou dotazů a kontaktem.
+
+Pravidla:
+- Věkové hranice ani funkce aplikací nevymýšlej. Když si nejsi jistý, napiš [ověřit věkový limit] nebo [ověřit].
+- Nepřeháněj přínosy a nestraš riziky. Žádné marketingové fráze.
+- Nevymýšlej pravidla školy, která jsem nezadal(a). Chybějící údaje označ hranatými závorkami.
+- Délka nejvýš 300 slov, pokud nenapíšu jinak.
+
+Pod text mi zvlášť napiš, co si mám před zveřejněním ověřit. Pak nabídni kratší verzi nebo verzi pro rodiče mladších dětí.
 ```
 
 ## Co je cílem promptu
 
-Cílem promptu je pomoci řediteli školy formulovat srozumitelný a důvěryhodný text pro rodiče, ve kterém otevřeně vysvětluje, co je generativní umělá inteligence, proč ji škola plánuje zařadit do výuky a jaké výhody může přinést žákům. Text informuje rodiče, uklidňuje případné obavy a podporuje pozitivní vnímání inovací ve vzdělávání, přičemž zdůrazňuje uvážené a cílené využití AI.
+Prompt vám pomůže vysvětlit rodičům, jak a proč bude škola ve výuce používat generativní AI. Text je otevřený a střízlivý: nepřehání přínosy a nestraší riziky. Popíše, k čemu AI ve výuce slouží, jak žáky učíte s ní bezpečně a kriticky zacházet a které aplikace budete používat.
+
+Chatbot si nevymýšlí věkové limity ani pravidla školy. Co neví, označí k ověření.
 
 ## Jak prompt použít
 
-Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte konkrétní seznam aplikací, které se ve škole chystáte využívat, a ujistěte se, že splňují věkové limity pro žáky. Prompt vám vygeneruje jeden ucelený odstavec vhodný pro úvodní sdělení a následný výčet nástrojů s krátkými popisy jejich funkce. Výstup můžete použít v newsletteru, na webu školy nebo jako leták pro rodiče. Text je psán věcně, ale přístupně – tak, aby mu porozuměli i rodiče bez technického vzdělání.
+Zkopírujte prompt do chatbota a doplňte ročníky, aplikace a pravidla, která ve škole platí. Věkové limity před zveřejněním vždy ověřte, podmínky služeb se mění. Pomůže vám přehled [Věkové limity a legislativa](/zaciname/vekove-limity-a-legislativa).
+
+Text je dobré doplnit nabídkou, kde se rodiče mohou zeptat, například na třídní schůzce nebo konzultaci.
 
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici), kterou si můžete nainstalovat do svého chatbota.

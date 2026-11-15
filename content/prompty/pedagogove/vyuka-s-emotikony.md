@@ -7,32 +7,46 @@ kategorie_slug: ["tvorba-materialu-do-vyuky"]
 skill: "pracovni-listy"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/vyuka-s-emotikony/"
 puvodni_uprava: "2025-06-28T19:40:55"
-stav: prevzato
+stav: upraveno
 ---
 ## Prompt
 
 ```text
-Chovej se jako kreativní tvůrce vzdělávacích materiálů se zkušenostmi s vizuálními pomůckami pro žáky. Vytvoř pracovní list, ve kterém jsou klíčové události nebo prvky vybraného tématu (například historická událost, příběh, báseň, přírodní jev apod.) znázorněny pomocí emotikonů. Nejprve vygeneruj sadu emotikonů s krátkým popisem, co každý z nich představuje. Poté tyto emotikony začleň do textu místo slov, která zastupují (bez doprovodných textů), aby žáci mohli hádat nebo rekonstruovat děj podle vizuální nápovědy. Odpovídej přívětivým a hravým tónem. Výstup je určen pedagogům, kteří chtějí zatraktivnit učivo pomocí ikonického znázornění.
+Vystupuj jako kreativní tvůrce výukových materiálů. Vytvoř pracovní list, ve kterém žáci podle emotikonů rekonstruují děj, příběh nebo jev.
 
-Předmět: [doplňte předmět]
+Předmět a téma: [například dějepis – bitva na Bílé hoře / přírodopis – koloběh vody / literatura – pohádka O Smolíčkovi]
+Ročník: [například 4. ročník ZŠ]
+Cíl: [například žák převypráví příčiny a průběh události ve správném pořadí]
+Text: [vložte text, nebo napište „napiš krátký věcně správný text do 120 slov“]
+Typ úlohy: [emotikony místo klíčových slov v textu / řada emotikonů, ke které žáci napíšou příběh / přiřaď události k emotikonům]
+Počet emotikonů: [například 10]
 
-Téma: [doplňte]
+Pravidla:
+1. Emotikony nahrazují klíčová slova a události, které nesou učivo, ne výplňová slova. 8–15 emotikonů.
+2. Každý emotikon musí mít v daném textu jasný význam. Stejný emotikon nepoužívej pro dvě různé věci.
+3. Žákovská verze nesmí obsahovat legendu s významy. Legenda patří do řešení. Žákům ji dej jen jako nápovědu na konci listu, a to oddělenou a označenou „Nápověda“.
+4. Když text píšeš sám, musí být věcně správný. Fakta, která si mám ověřit, vypiš zvlášť.
+5. Emotikony se v některých aplikacích a při tisku nezobrazí. Proto přidej i záložní verzi, kde je u každého emotikonu v hranatých závorkách stručný popis obrázku (ne význam).
 
-Věk žáka nebo ročník: [doplňte]
+Výstup ve čtyřech částech:
+1) PRO ŽÁKY: název, řádek „Jméno: __________“, instrukce v jedné větě a úloha.
+2) NÁPOVĚDA (k odstřižení): emotikony s významem.
+3) ŘEŠENÍ: původní text, nebo vzorová odpověď.
+4) POZNÁMKA PRO UČITELE: 2–3 věty, jak úlohu použít (motivace, opakování, práce ve dvojicích) a jak ověřit, že žáci učivu rozumějí, ne jen hádají obrázky.
 
-Výukový cíl: [doplňte srozumitelně formulovaný cíl]
-
-Počet emotikonů: [doplňte]
-
-Text: [vložte text, který má být takto převeden, například část knihy, báseň, popis nějakého jevu apod.]
+Když chybí téma nebo ročník, nejdřív se mě zeptej.
 ```
 
 ## Co je cílem promptu
 
-Cílem promptu je vytvořit hravý a vizuálně atraktivní pracovní list, ve kterém jsou klíčové informace z vybraného tématu nahrazeny emotikony. Žáci podle nich rekonstruují děj, obsah nebo jev a zároveň si procvičují porozumění, představivost i schopnost interpretace. Aktivita podporuje aktivní zapojení, kreativitu a usnadňuje zapamatování důležitých informací pomocí vizuálních asociací.
+Prompt vytvoří hravý pracovní list, ve kterém žáci podle emotikonů rekonstruují děj, příběh nebo přírodní jev. Emotikony nahrazují klíčová slova a události, které nesou učivo, takže žáci při luštění opakují to podstatné.
+
+Legenda s významy emotikonů je až v řešení a v oddělené nápovědě, aby žákům neprozradila odpovědi. Protože se emotikony v některých aplikacích a při tisku nezobrazí, dostanete i záložní verzi s popisem obrázků.
 
 ## Jak prompt použít
 
-Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte předmět, téma, věk nebo ročník žáků, výukový cíl, počet emotikonů a text, který má být do podoby s emotikony převeden. Prompt nejprve vytvoří seznam použitých emotikonů s vysvětlením, co každý symbolizuje, a poté převede zadaný text do podoby se zapojenými emotikony. Výstup můžete využít jako zábavnou aktivitu při opakování učiva, pro úvodní motivaci nebo při skupinové práci ve výuce.
+Zkopírujte prompt do chatbota a doplňte předmět, téma, ročník a cíl. Vložte vlastní text, nebo nechte chatbota napsat krátký text. Ten si před tiskem zkontrolujte. Vytištěný list si prohlédněte, jestli se emotikony zobrazily. Pokud ne, použijte záložní verzi.
+
+Úloha se hodí jako motivace na začátek hodiny, na opakování nebo pro práci ve dvojicích.
 
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.

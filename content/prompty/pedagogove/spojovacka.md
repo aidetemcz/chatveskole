@@ -7,30 +7,45 @@ kategorie_slug: ["tvorba-materialu-do-vyuky"]
 skill: "pracovni-listy"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/spojovacka/"
 puvodni_uprava: "2025-06-28T19:33:42"
-stav: prevzato
+stav: upraveno
 ---
 ## Prompt
 
 ```text
-Chovej se jako zkušený lektor cizího jazyka, který připravuje interaktivní pracovní list pro žáky. Vytvoř cvičení typu spojovačka, v němž bude na jedné straně seznam slovíček z cizího a na druhé jejich překlady v mateřském (nebo jiném) jazyce, přičemž žáci mají správně propojit odpovídající dvojice. Výstup by měl být ve formátu přehledné tabulky a slova, která k sobě patří nesmí být na jednom společném řádku. Výstup je pracovní list určený k tisku nebo promítnutí na tabuli. Odpovídej jasně, přehledně a ve věcném tónu, vhodném pro učitele, kteří chtějí rychle získat použitelný výukový materiál.
+Vystupuj jako zkušený učitel a tvůrce výukových materiálů. Vytvoř pracovní list se spojovačkou.
 
-Téma: [doplňte]
+Předmět a téma: [například angličtina – jídlo]
+Ročník: [například 5. ročník ZŠ]
+Co se spojuje: [například slovíčko – překlad / pojem – vysvětlení / příčina – následek / osobnost – dílo]
+Jazyky: [například angličtina a čeština; u jiných předmětů řádek smažte]
+Úroveň jazyka: [například A1; nebo řádek smažte]
+Počet dvojic: [například 10]
+Obtížnost: [základní / s 1–2 položkami navíc v pravém sloupci]
 
-Věk žáka nebo ročník: [doplňte]
+Pravidla:
+1. Spojovačku dej do tabulky o dvou sloupcích: vlevo čísla 1, 2, 3…, vpravo písmena A, B, C…
+2. Dvojice, které k sobě patří, nikdy nejsou na stejném řádku a pořadí v pravém sloupci je náhodně promíchané.
+3. Každá položka vlevo musí mít právě jednu správnou dvojici vpravo. Vyhni se položkám, které by šly spojit víc způsoby.
+4. Slova a pojmy přiměřené ročníku a úrovni. U cizího jazyka používej slova a fráze tak, jak je rodilí mluvčí opravdu používají, a překlad, který odpovídá běžnému významu.
+5. Pokud má pravý sloupec položky navíc, upozorni na to žáky v instrukci.
+6. Překlady, definice a fakta si ověř. Kde si nejsi jistý, napiš mi to.
 
-Úroveň cizího jazyka: [doplňte]
+Výstup ve třech částech:
+1) PRO ŽÁKY: název, řádek „Jméno: __________“, instrukce v jedné větě a tabulka.
+2) ŘEŠENÍ: ve tvaru 1 – C, 2 – A…
+3) POZNÁMKA PRO UČITELE: 2–3 věty, jak spojovačku použít (rozcvička, opakování, ve dvojicích) a jak ji ztížit nebo usnadnit.
 
-Počet slovíček: [doplňte]
-
-Jazyky: [doplňte oba]
+Když chybí téma nebo ročník, nejdřív se mě zeptej. Na konci nabídni kartičky ke stříhání nebo verzi pro online kvíz.
 ```
 
 ## Co je cílem promptu
 
-Cílem promptu je vytvořit jednoduchý a efektivní pracovní list typu „spojovačka“, který pomáhá žákům procvičit slovní zásobu zvoleného tematického okruhu. Žáci spojují slovíčka s jejich ekvivalenty v dalším jazyce, přičemž odpovídající dvojice nejsou umístěny na stejném řádku. Aktivita podporuje rozvoj slovní zásoby, přesnost porozumění a vizuální paměť.
+Prompt vytvoří pracovní list se spojovačkou. Nemusí jít jen o slovíčka a překlady, spojovat se dají i pojmy a vysvětlení, příčiny a následky nebo osobnosti a jejich díla. Dvojice nikdy nejsou na stejném řádku a každá položka má právě jednu správnou dvojici.
+
+Dostanete list pro žáky, řešení zvlášť a tip, jak spojovačku ztížit nebo usnadnit. Na přání i kartičky ke stříhání.
 
 ## Jak prompt použít
 
-Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte téma, věk nebo ročník žáků, úroveň jazyka (např. A1, A2), počet slovíček a požadované jazyky. Prompt vám vygeneruje pracovní list ve formátu přehledné tabulky, který můžete vytisknout nebo promítnout. Cvičení je vhodné jako opakovací aktivita, rozcvička nebo součást domácího procvičování.
+Zkopírujte prompt do chatbota a doplňte předmět, téma, ročník, co se má spojovat a počet dvojic. U cizího jazyka doplňte i jazyky a úroveň, u jiných předmětů tyto řádky smažte. Překlady a fakta před tiskem zkontrolujte.
 
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.

@@ -7,50 +7,48 @@ kategorie_slug: ["komunikace-s-rodici"]
 skill: "komunikace-s-rodici"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/pozvanka-na-skolni-akci/"
 puvodni_uprava: "2025-06-28T16:20:49"
-stav: prevzato
+stav: upraveno
 ---
 ## Prompt
 
 ```text
-Vystupuj jako zástupce ředitele základní školy, který má zkušenosti s organizací školních akcí a komunikací s rodiči. Tvým úkolem je vytvořit návrh textu pozvánky na školní akci tak, aby oslovil rodiče a motivoval je k účasti. Připrav varianty pozvánky přizpůsobené pro čtyři různé komunikační kanály:
+Vystupuj jako zástupce ředitele základní školy se zkušenostmi s organizací školních akcí a komunikací s rodiči. Napiš pozvánku, která rodiče osloví a motivuje je přijít.
 
-Například:
+Název akce: [například Zahradní slavnost]
+Datum a čas: [například 10. června od 16 do 19 hodin]
+Místo: [například školní zahrada, vchod z ulice U Parku]
+Co se bude dít: [stručný popis nebo klíčová slova, například vystoupení tříd, opékání, dílny pro děti]
+Pro koho: [například rodiny žáků 1.–5. tříd i s mladšími sourozenci]
+Co s sebou, cena, přihlášení: [například deka, vstup zdarma; nebo řádek smažte]
+Kontakt: [například e-mail zástupkyně ředitele nebo web školy]
+Kanály: [e-mail / plakát / sociální sítě / školní newsletter / web školy – nechte jen ty, které potřebujete]
+Tón: [například přátelský a srdečný]
 
-[E-mail — stručný a informativní text]
+Pro každý zvolený kanál napiš samostatný text pod vlastním nadpisem:
+- E-mail: oslovení, 4–6 vět, všechny praktické údaje, podpis [jméno]. Navrhni i předmět.
+- Plakát: výrazný titulek a 4–6 krátkých řádků (co, kdy, kde, pro koho, kontakt).
+- Sociální sítě: 2–4 věty s výzvou k akci, nejvýš 3 emotikony.
+- Školní newsletter: delší text, který vysvětlí, co akce přinese dětem a školní komunitě.
+- Web školy: krátká informativní zpráva.
 
-[Texty pro plakát — stručný text]
+Pravidla:
+- Datum, čas a místo musí být ve všech verzích stejné a úplné.
+- Den v týdnu uveď, jen když ho napíšu já. Sám ho k datu nepočítej.
+- Nevymýšlej program, ceny ani jiné údaje, které jsem nezadal(a). Chybějící označ hranatými závorkami.
+- Do textů pro sociální sítě a web nepiš jména dětí.
+- Piš srdečně, ale věcně, bez přehnaných superlativů.
 
-[Příspěvek na sociální sítě — krátký, atraktivní text s výzvou k akci]
-
-[Text do školního newsletteru — delší, přehledný, s důrazem na přínos akce pro děti a školní komunitu.]
-
-[Text na školní web — krátký, informativní]
-
-Tón by měl být přátelský, srdečný a pozitivní, aby vyvolával zájem a podporoval zapojení. Text je určen rodičům školy, předpokládá se běžná znalost prostředí školy. Výstupem jsou různé formáty – každý přizpůsobený konkrétnímu zadání, přehledně oddělené a srozumitelné.
-
-Informace o školní akci:
-
-Datum: [vložte datum a čas]
-
-Místo: [upřesněte místo]
-
-Název akce: [vložte název akce]
-
-Popis akce: [vložte stručný popis akce nebo jen klíčová slova]
-
-Pro koho je akce určena: [vložte cílovou skupinu]
-
-Doporučení: [například: slunečníky s sebou!]
-
-Kontakt: [kontaktní osoba nebo webová stránky]
+Na konci nabídni úpravu tónu, zkrácení nebo verzi pro další kanál.
 ```
 
 ## Co je cílem promptu
 
-Cílem promptu je pomoci pedagogovi nebo vedení školy připravit sadu přizpůsobených textů pro propagaci školní akce, které osloví rodiče a podpoří jejich účast. Výstup zahrnuje varianty textů pro různé formáty (např. e-mail, plakát, příspěvek na sociální sítě, školní newsletter a web), přičemž každý text zohledňuje charakter daného kanálu. Výsledkem je profesionální, přehledná a poutavá komunikace směrem k rodičům.
+Prompt vám napíše pozvánku na školní akci rovnou pro několik kanálů: e-mail, plakát, sociální sítě, školní newsletter a web. Každá verze odpovídá svému kanálu, ale všechny mají stejné a úplné praktické údaje.
+
+Chatbot nedomýšlí program, ceny ani den v týdnu. Co chybí, označí hranatými závorkami, abyste to před zveřejněním doplnili.
 
 ## Jak prompt použít
 
-Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte informace o chystané školní akci — název, datum, místo konání, stručný popis, cílovou skupinu a případná doporučení. Prompt vám vygeneruje různé formy pozvánky, které můžete ihned využít pro rozeslání e-mailem, zveřejnění na webu školy, sociálních sítích nebo vytisknutí jako plakát. Výstupy jsou formulovány přátelsky a srozumitelně, aby podpořily zapojení rodičů a posílily vztahy mezi školou a komunitou.
+Zkopírujte prompt do chatbota a doplňte údaje o akci. U řádku Kanály nechte jen ty, které opravdu použijete, výstup bude kratší a přehlednější. Před zveřejněním zkontrolujte datum, čas a místo ve všech verzích.
 
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici), kterou si můžete nainstalovat do svého chatbota.
