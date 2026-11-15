@@ -31,7 +31,7 @@ Web Chatboti ve škole jsme od základu přepracovali. Má nový vzhled, přehle
 - **[Katalog dovedností](/skills)** — hotové dovednosti pro vyučující a vedení škol, seřazené do sad. Stáhnete je do chatbota, nebo je použijete jako prompt.
 - **[Katalog promptů](/prompty)** — ověřené prompty pro vyučující, vedení škol i žáky. Stačí je zkopírovat do chatbota a doplnit údaje.
 - **Vibe coding** — jak si s chatbotem vytvořit jednoduchou aplikaci nebo výukový materiál.
-- **Chatboti ve výuce** — aplikace Tiny, metodické materiály, tvorba školních pravidel a doporučení pro základní, střední i vysoké školy.
+- **Chatboti ve výuce** — aplikace Tiny, metodické materiály, tvorba školních pravidel a doporučení pro základní a střední školy.
 
 Hledáte něco konkrétního? Použijte [vyhledávání](/hledat) (lupa v pravém horním rohu).
 

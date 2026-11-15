@@ -10,6 +10,9 @@ zdroje:
   - https://digitalizace.rvp.cz/files/jak-na-ai-ve-skole-2025-plakat.pdf
   - https://digitalizace.rvp.cz/files/jak-na-ai-ve-skole-a4-letaky.pdf
   - https://digitalizace.rvp.cz/napric-predmety/ai
+odkazy:
+  - { text: Tvorba pravidel pro využívání AI, href: /ve-vyuce/pravidla-pro-ai }
+  - { text: Metodické materiály, href: /ve-vyuce/metodiky }
 ---
 
 # Doporučení pro využívání AI na ZŠ a SŠ
@@ -38,4 +41,3 @@ Doporučení jsou míněna jako inspirace. Školy si je mohou upravit a doplnit 
 - [Umělá inteligence napříč předměty](https://digitalizace.rvp.cz/napric-predmety/ai) — články a materiály NPI.
 - [4 kroky ke smysluplnému učení s AI](https://digitalizace.rvp.cz/clanky/4-kroky-ke-smysluplnemu-uceni-s-ai) — rámec, ze kterého vychází našich [10 způsobů využití AI ve výuce](/funkce/prompty/zaci).
 
-[Doporučení pro vysoké školy →](/ve-vyuce/doporuceni-vs)

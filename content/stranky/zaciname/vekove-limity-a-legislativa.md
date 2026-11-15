@@ -28,7 +28,7 @@ Nejsme právníci. Shrnujeme to podstatné a odkazujeme na zdroje — u konkrét
 
 | Nástroj | Osobní účet | Školní účet |
 |---|---|---|
-| ChatGPT | od 13 let, do 18 let se souhlasem rodiče; 13–17 let automaticky režim pro teenagery | není (Edu jen pro VŠ) |
+| ChatGPT | od 13 let, do 18 let se souhlasem rodiče; 13–17 let automaticky režim pro dospívající | není (Edu jen pro VŠ) |
 | Gemini | od 13 let, v Česku si účet Google spravuje dítě samo od 15 let; placené tarify a dovednosti od 18 let | všechny věky, zapíná správce; žáci do 18 let mají omezené funkce |
 | Copilot | od 13 let | Copilot Chat od 13 let, zapíná správce |
 | Claude | od 18 let | není (Education jen pro VŠ) |

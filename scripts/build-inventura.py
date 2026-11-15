@@ -36,7 +36,7 @@ PAGES = {
     "materialy-do-vyuky": ("/ve-vyuce/metodiky", "přepsat", "Metodické materiály: Tiny + AI kurikulum"),
     "strategie-vyuziti-umele-inteligence-ai-ve-skolach": ("/ve-vyuce/pravidla-pro-ai", "sloučit", "Tabulka J. Lodge jako podklad k volbě strategie"),
     "doporuceni-pro-vyuzivani-ai-na-zs-a-ss": ("/ve-vyuce/doporuceni-zs-ss", "aktualizovat", "NPI Jak na AI ve škole (2025)"),
-    "doporuceni-pro-vyuzivani-ai-na-vs": ("/ve-vyuce/doporuceni-vs", "aktualizovat", ""),
+    "doporuceni-pro-vyuzivani-ai-na-vs": ("/ve-vyuce/doporuceni-zs-ss", "smazat", "Doporučení pro VŠ zastaralé, smazáno 15. 11. 2026"),
     "kdo-za-tim-stoji": ("/o-webu/kdo-za-tim-stoji", "aktualizovat", ""),
     "kontakt": ("/o-webu/kontakt", "aktualizovat", "Sloučit s Pošlete nám prompt"),
     "poslete-nam-prompt": ("/o-webu/kontakt", "sloučit", "Formulář na návrhy skills/promptů"),
@@ -147,7 +147,7 @@ for slug, new in CATS.items():
     rows.append(["kategorie", f"{BASE}/dp/{slug}/", new, "přesměrovat", "", ""])
     presmeruj(f"/dp/{slug}", new)
 # zbytky WordPressu
-for src, dst in [("/databaze-promptu", "/prompty"), ("/dp", "/prompty"), ("/wp-content/uploads/:path*", "/archiv/uploads/:path*"), ("/feed", "/"), ("/zaciname/jak-funguji-chatboti", "/zaciname/jak-pracovat-s-chatboty"), ("/funkce/prompty/tvorba-slovniho-hodnoceni", "/skills/slovni-hodnoceni"), ("/funkce/prompty/pracovni-list-pro-reflexi-uciva", "/funkce/prompty/tvorba-exitek-a-propustek")]:
+for src, dst in [("/databaze-promptu", "/prompty"), ("/dp", "/prompty"), ("/wp-content/uploads/:path*", "/archiv/uploads/:path*"), ("/feed", "/"), ("/zaciname/jak-funguji-chatboti", "/zaciname/jak-pracovat-s-chatboty"), ("/funkce/prompty/tvorba-slovniho-hodnoceni", "/skills/slovni-hodnoceni"), ("/funkce/prompty/pracovni-list-pro-reflexi-uciva", "/funkce/prompty/tvorba-exitek-a-propustek"), ("/ve-vyuce/doporuceni-vs", "/ve-vyuce/doporuceni-zs-ss")]:
     presmeruj(src, dst)
 
 out = ROOT / "migrace"

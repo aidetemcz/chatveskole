@@ -32,7 +32,6 @@ menu:
       - { title: Metodické materiály, href: /ve-vyuce/metodiky }
       - { title: Tvorba pravidel pro využívání AI, href: /ve-vyuce/pravidla-pro-ai }
       - { title: Doporučení pro ZŠ a SŠ, href: /ve-vyuce/doporuceni-zs-ss }
-      - { title: Doporučení pro VŠ, href: /ve-vyuce/doporuceni-vs }
 
   - title: O webu
     items:
