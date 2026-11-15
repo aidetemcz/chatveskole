@@ -26,10 +26,12 @@ const archiv = prompt.id.startsWith('archiv-2024/');
 const skill = prompt.data.skill ? skillBySlug(prompt.data.skill) : undefined;
 ---
 <Base title={prompt.data.title} description={`Prompt ${prompt.data.title} — zkopírujte ho do chatbota a doplňte údaje.`} noindex={archiv}>
+  <div class="wrap hlavicka">
+    <Crumbs items={[{ title: 'Katalog promptů', href: '/prompty' }, { title: prompt.data.title }]} />
+    <header class="page-head"><h1>{prompt.data.title}</h1></header>
+  </div>
   <div class="wrap layout">
     <article class="main">
-      <Crumbs items={[{ title: 'Katalog promptů', href: '/prompty' }, { title: prompt.data.title }]} />
-      <header class="page-head"><h1>{prompt.data.title}</h1></header>
       {archiv && <p class="note note--info">Starší prompt z roku 2024. Zatím není v katalogu — procházíme, které staré prompty zůstanou.</p>}
       <div class="prose"><Content /></div>
       <div style="margin-top: 10px"><OdkazyKonec odkazy={[{ text: 'Katalog promptů', href: url('/prompty') }, ...(skill ? [{ text: `Dovednost ${skill.title}`, href: url(`/skills/${skill.slug}`) }] : []), { text: 'Jak psát prompty', href: url('/funkce/prompty') }]} /></div>
@@ -37,10 +39,8 @@ const skill = prompt.data.skill ? skillBySlug(prompt.data.skill) : undefined;
     <aside class="side">
       {skill && (
         <div class="skillbox">
-          <span class="eyebrow">Používáte ho často?</span>
-          <h2>Nainstalujte dovednost {skill.title}</h2>
-          <p>{skill.kratky_popis}</p>
-          <a class="btn btn--outline btn--small" href={url(`/skills/${skill.slug}`)} style="align-self: flex-start; background: var(--panel)">Zobrazit dovednost →</a>
+          <p class="skillbox-text">Používáte prompt často? Nainstalujte si dovednost.</p>
+          <a class="more" href={url(`/skills/${skill.slug}`)}>Dovednost {skill.title} →</a>
         </div>
       )}
       {podobne.length > 0 && (
@@ -54,13 +54,15 @@ const skill = prompt.data.skill ? skillBySlug(prompt.data.skill) : undefined;
 </Base>
 
 <style>
-  .layout { display: flex; flex-wrap: wrap; gap: 28px 48px; align-items: flex-start; padding-top: 36px; padding-bottom: 84px; }
+  .hlavicka { padding-top: 36px; display: flex; flex-direction: column; gap: 22px; }
+  .layout { display: flex; flex-wrap: wrap; gap: 28px 48px; align-items: flex-start; padding-top: 22px; padding-bottom: 84px; }
+  /* boxy vpravo začínají v úrovni boxu s promptem (pod nadpisem „Prompt“) */
+  .side { margin-top: 47px; }
+  @media (max-width: 990px) { .side { margin-top: 0; } }
   .main { flex: 999 1 600px; min-width: 0; display: flex; flex-direction: column; gap: 22px; }
   .side { flex: 1 1 300px; display: flex; flex-direction: column; gap: 14px; }
   .skillbox { background: var(--sky-light); border-radius: var(--radius-lg); padding: 22px 24px; display: flex; flex-direction: column; gap: 10px; }
-  .eyebrow { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--sky-ink); font-weight: 600; }
-  .skillbox h2 { font-size: 1.15rem; }
-  .skillbox p { font-size: 0.9rem; }
+  .skillbox-text { font-family: var(--fh); font-weight: 600; font-size: 1.05rem; line-height: 1.35; }
   .similar { border: 1px solid var(--sky); border-radius: var(--radius-lg); padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; }
   .similar h2 { font-size: 1rem; }
   .similar a { text-decoration: none; font-weight: 500; }
