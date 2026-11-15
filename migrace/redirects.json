@@ -442,7 +442,7 @@
     },
     {
       "source": "/databaze-promptu/pracovni-list-pro-reflexi-uciva",
-      "destination": "/funkce/prompty/pracovni-list-pro-reflexi-uciva",
+      "destination": "/funkce/prompty/tvorba-exitek-a-propustek",
       "permanent": true
     },
     {
@@ -642,7 +642,7 @@
     },
     {
       "source": "/databaze-promptu/tvorba-slovniho-hodnoceni",
-      "destination": "/funkce/prompty/tvorba-slovniho-hodnoceni",
+      "destination": "/skills/slovni-hodnoceni",
       "permanent": true
     },
     {
@@ -742,12 +742,12 @@
     },
     {
       "source": "/dp/formativni-hodnoceni",
-      "destination": "/prompty#formativni-hodnoceni",
+      "destination": "/prompty#podpora-formativniho-pristupu",
       "permanent": true
     },
     {
       "source": "/dp/slovni-hodnoceni-%e2%86%92",
-      "destination": "/prompty#slovni-hodnoceni",
+      "destination": "/prompty#podpora-formativniho-pristupu",
       "permanent": true
     },
     {
@@ -878,6 +878,16 @@
     {
       "source": "/zaciname/jak-funguji-chatboti",
       "destination": "/zaciname/jak-pracovat-s-chatboty",
+      "permanent": true
+    },
+    {
+      "source": "/funkce/prompty/tvorba-slovniho-hodnoceni",
+      "destination": "/skills/slovni-hodnoceni",
+      "permanent": true
+    },
+    {
+      "source": "/funkce/prompty/pracovni-list-pro-reflexi-uciva",
+      "destination": "/funkce/prompty/tvorba-exitek-a-propustek",
       "permanent": true
     }
   ]

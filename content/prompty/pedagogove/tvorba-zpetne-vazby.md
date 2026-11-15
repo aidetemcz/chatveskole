@@ -2,8 +2,8 @@
 title: "Tvorba zpětné vazby"
 slug: "tvorba-zpetne-vazby"
 skupina: pedagogove
-kategorie: ["Formativní hodnocení","Slovní hodnocení"]
-kategorie_slug: ["formativni-hodnoceni","slovni-hodnoceni"]
+kategorie: ["Podpora formativního přístupu"]
+kategorie_slug: ["podpora-formativniho-pristupu"]
 skill: "slovni-hodnoceni"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/tvorba-zpetne-vazby/"
 puvodni_uprava: "2025-06-29T13:25:02"

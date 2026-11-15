@@ -2,8 +2,8 @@
 title: "Tvorba kritérií hodnocení"
 slug: "tvorba-kriterii-hodnoceni"
 skupina: pedagogove
-kategorie: ["Formativní hodnocení"]
-kategorie_slug: ["formativni-hodnoceni"]
+kategorie: ["Podpora formativního přístupu"]
+kategorie_slug: ["podpora-formativniho-pristupu"]
 skill: "kriteria-hodnoceni"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/tvorba-kriterii-hodnoceni/"
 puvodni_uprava: "2025-06-29T12:38:12"

@@ -2,8 +2,8 @@
 title: "Sebehodnocení pro žáky"
 slug: "sebehodnoceni-pro-zaky"
 skupina: pedagogove
-kategorie: ["Formativní hodnocení","Slovní hodnocení"]
-kategorie_slug: ["formativni-hodnoceni","slovni-hodnoceni"]
+kategorie: ["Podpora formativního přístupu"]
+kategorie_slug: ["podpora-formativniho-pristupu"]
 skill: "kriteria-hodnoceni"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/sebehodnoceni-pro-zaky/"
 puvodni_uprava: "2025-11-02T10:19:26"
