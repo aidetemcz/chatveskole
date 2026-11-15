@@ -49,7 +49,7 @@ Chatboti v Tiny (Tinyboti) jsou postavení podle Bloomovy taxonomie. Každý roz
 
 ## Co dalšího Tiny nabízí
 
-Kromě Tinybotů najdete v Tiny sedm aktivit bez AI, ve kterých žáci pracují bez chatbota, a AI asistenty pro učitele, například pro formativní hodnocení.
+Kromě Tinybotů najdete v Tiny modelové lekce a AI asistenty pro učitele, například pro formativní hodnocení.
 
 ## Bezpečnost a pro koho je Tiny
 
