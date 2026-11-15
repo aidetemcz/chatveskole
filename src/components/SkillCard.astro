@@ -1,5 +1,4 @@
 ---
-import Icon from './Icon.astro';
 import { url } from '../lib/url';
 import { type Skill } from '../lib/data';
 interface Props { skill: Skill }
@@ -9,7 +8,6 @@ const { skill } = Astro.props;
   <h3><a href={url(`/skills/${skill.slug}`)}>{skill.title}</a></h3>
   <p>{skill.kratky_popis}</p>
   <div class="actions" data-pagefind-ignore>
-    <a class="btn btn--outline btn--small" href={url(`/skills/${skill.slug}`)}>Detail</a>
-    <a class="linkbtn" href={url(`/skills/${skill.slug}#instalace`)}><Icon name="download" />Nainstalovat</a>
+    <a class="linkbtn" href={url(`/skills/${skill.slug}`)}>Detail dovednosti →</a>
   </div>
 </article>
