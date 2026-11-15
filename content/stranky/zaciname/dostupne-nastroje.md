@@ -24,7 +24,7 @@ Chatbotů je dnes desítky. Na tomto webu se věnujeme čtyřem, které školy p
 
 | | ChatGPT | Gemini | Copilot | Claude |
 |---|---|---|---|---|
-| Výrobce | OpenAI | Google | Microsoft | Anthropic |
+| Vývojář | OpenAI | Google | Microsoft | Anthropic |
 | Zdarma | ano | ano | ano | ano |
 | Školní verze v Česku | ne (Edu jen pro VŠ) | ano, v Google Workspace for Education | ano, Copilot Chat se školní licencí Microsoft 365 | ne (Education jen pro VŠ) |
 | Věk — osobní účet | 13+, do 18 let se souhlasem rodiče a v režimu pro teenagery | 13+ (v ČR samostatně od 15 let); placené tarify a dovednosti 18+ | 13+ | 18+ |

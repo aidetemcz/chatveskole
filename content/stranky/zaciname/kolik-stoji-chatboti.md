@@ -15,7 +15,7 @@ Všechny chatovací aplikace mají bezplatnou verzi. Placená verze přidá vyš
 
 ## Co rozhoduje víc než cena
 
-**Komu patří vaše data.** U bezplatných a osobních tarifů může výrobce používat vaše konverzace k vylepšování modelů. U většiny to jde vypnout v nastavení. Tarify pro školy a organizace (Google Workspace for Education, Microsoft 365 se školní licencí, ChatGPT Business, Claude Team) data k tréninku nepoužívají.
+**Komu patří vaše data.** U bezplatných a osobních tarifů může vývojář používat vaše konverzace k vylepšování modelů. U většiny to jde vypnout v nastavení. Tarify pro školy a organizace (Google Workspace for Education, Microsoft 365 se školní licencí, ChatGPT Business, Claude Team) data k tréninku nepoužívají.
 
 **Pravidlo pro všechny tarify:** do chatbota nevkládejte jména žáků ani jiné osobní údaje. Pracujte s iniciálami nebo přezdívkami.
 

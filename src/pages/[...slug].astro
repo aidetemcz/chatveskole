@@ -61,7 +61,8 @@ const odkazy = [...zFm, ...zTextu.filter((o) => !zFm.some((f) => f.href === o.hr
   .content { min-width: 0; display: flex; flex-direction: column; gap: 32px; container-type: inline-size; }
   /* tabulky přes celou šířku obsahu (1140 px), ne jen sloupce textu (72 znaků) */
   @media (min-width: 861px) {
-    .content :global(.prose > table) { display: table; width: 100cqi; border-collapse: separate; border-spacing: 0; overflow: hidden; }
+    .content :global(.prose > table), .content :global(.prose > .tabulka-karty > table) { display: table; width: 100cqi; border-collapse: separate; border-spacing: 0; overflow: hidden; }
+    .content :global(.prose > .tabulka-karty) { width: 100cqi; max-width: none; }
     .content :global(.prose > .nahledy), .content :global(.prose > .karta-obrazek) { width: 100cqi; max-width: none; }
   }
   .page-head { align-items: flex-start; }

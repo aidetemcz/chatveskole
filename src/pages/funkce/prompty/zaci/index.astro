@@ -29,8 +29,8 @@ const zaci = (await getCollection('prompty')).filter((p) => p.id.startsWith('zac
   </section>
   <div class="band band--white">
     <div class="wrap stack" style="gap: 36px">
-      <div class="prose"><Content /></div>
-      <section class="stack" style="gap: 16px; max-width: 72ch" aria-labelledby="tiny-h">
+      <div class="prose prose--siroke-tabulky"><Content /></div>
+      <section class="stack siroka-tabulka" style="gap: 16px" aria-labelledby="tiny-h">
         <h2 id="tiny-h" style="font-size: 1.5rem">Prompty a chatboti v Tiny</h2>
         <p style="color: var(--muted)">Žáci pod věkovou hranicí chatbotů mohou stejné způsoby práce vyzkoušet v aplikaci <a href={url('/ve-vyuce/tiny')}>Tiny</a>.</p>
         <TinyTabulka />
@@ -39,3 +39,10 @@ const zaci = (await getCollection('prompty')).filter((p) => p.id.startsWith('zac
     </div>
   </div>
 </Base>
+
+<style>
+  /* tabulky přes celou šířku obsahu, text nejvýš 72 znaků */
+  .prose--siroke-tabulky { max-width: none; }
+  .prose--siroke-tabulky > :global(:not(table)), .siroka-tabulka > :global(:not(.prose)) { max-width: 72ch; }
+  @media (min-width: 861px) { .prose--siroke-tabulky > :global(table), .siroka-tabulka :global(table) { display: table; width: 100%; border-collapse: separate; border-spacing: 0; overflow: hidden; } }
+</style>

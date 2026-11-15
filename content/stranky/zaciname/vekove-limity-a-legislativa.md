@@ -35,7 +35,7 @@ Nejsme právníci. Shrnujeme to podstatné a odkazujeme na zdroje — u konkrét
 | Perplexity | od 13 let, nezletilí jen se souhlasem rodiče | — |
 | [Tiny](/ve-vyuce/tiny) | — | od 13 let; 11–12 let se souhlasem zákonného zástupce |
 
-Podmínky se mění. Před zavedením nástroje ve třídě je ověřte v aktuálních podmínkách výrobce.
+Podmínky se mění. Před zavedením nástroje ve třídě je ověřte v aktuálních podmínkách vývojáře.
 
 ## Naše doporučení pro výuku
 
@@ -60,7 +60,7 @@ Nařízení Digital Omnibus (EU 2026/1744), účinné od 27. 7. 2026, povinnost 
 
 **Obsah patří uživateli.** Podmínky ChatGPT, Gemini, Copilotu i Claude přiznávají práva k výstupům uživateli. Výstup ale obvykle není autorským dílem, protože ho nevytvořil člověk — nevydávejte ho proto za vlastní tvorbu.
 
-**S vlastnictvím se pojí odpovědnost.** Výrobci odpovědnost za obsah odmítají. Než výstup zveřejníte, zkontrolujte, zda neporušuje:
+**S vlastnictvím se pojí odpovědnost.** Vývojáři odpovědnost za obsah odmítají. Než výstup zveřejníte, zkontrolujte, zda neporušuje:
 
 1. autorská práva — chatbot může převzít části cizích děl,
 2. ochranu osobních údajů a osobnosti — výstup může obsahovat údaje o skutečných lidech,
