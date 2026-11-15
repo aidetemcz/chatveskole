@@ -5,7 +5,7 @@ poradi: 3
 popis: Ceny ChatGPT, Gemini, Copilotu, Claude a Perplexity pro vyučující a školy. Co dostanete zdarma, co se vyplatí zaplatit a jak chránit data.
 sablona: cenik            # karty tarifů se vykreslí z data/ceny.yaml
 data: data/ceny.yaml
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-15
 stav: koncept
 ---
 
