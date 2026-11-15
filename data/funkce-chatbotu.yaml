@@ -21,7 +21,7 @@ nastroje:
   skola:
   - Migrovaný plugin je soukromý. Vlastní akce, výběr modelu ani sdílení se nepřenesou.
   - 'Veřejný odkaz na GPT zatím nic nenahrazuje: sdílený projekt ukáže všem členům všechny konverzace, pluginy jen s dovednostmi OpenAI do veřejného adresáře teď nepřijímá.'
-  - ChatGPT for Teachers je jen pro učitele v USA.
+  - ChatGPT for Teachers je jen pro vyučující v USA.
 - id: gemini
   nazev: Gemini
   vyrobce: Google

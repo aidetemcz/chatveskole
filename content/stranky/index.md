@@ -1,6 +1,6 @@
 ---
 title: Chatboti ve škole
-popis: Praktický průvodce chatboty pro učitele a vedení škol. Dovednosti a prompty pro formativní hodnocení, přípravu výuky i řízení školy. Vibe coding a pravidla pro AI.
+popis: Praktický průvodce chatboty pro vyučující a vedení škol. Dovednosti a prompty pro formativní hodnocení, přípravu výuky i řízení školy. Vibe coding a pravidla pro AI.
 sablona: homepage
 aktualizovano: 2026-11-07
 stav: koncept
@@ -18,13 +18,13 @@ Hotoví asistenti na odkaz končí. Vlastní GPTs v ChatGPT přestanou fungovat 
 
 [Přehled změn ve funkcích chatbotů](/funkce/zmeny-2026)
 
-## Dovednosti pro učitele a vedení škol
+## Dovednosti pro vyučující a vedení škol
 
 <!-- komponenta: dlaždice sad z content/sady.yaml -->
 
 - **Formativní hodnocení** — cíle, kritéria, sebehodnocení a slovní hodnocení podle Vysvědčení jinak.
 - **Příprava výuky** — nápady na hodiny, pracovní listy, úpravy materiálů a aktivity, ve kterých s chatbotem pracují žáci.
-- **Komunikace a podpora učitele** — zprávy rodičům, jazyková kontrola, mentor pro náročné situace.
+- **Komunikace a podpora pedagoga** — zprávy rodičům, jazyková kontrola, mentor pro náročné situace.
 - **Vedení školy** — mise a vize, školní pravidla, strategie, AI gramotnost v ŠVP.
 - **AI akcelerátor** — řízení změny a mapování procesů pro školy v programu.
 
@@ -34,7 +34,7 @@ Každou dovednost můžete použít dvěma způsoby: **zkopírovat jako prompt**
 
 ## Databáze promptů
 
-Desítky ověřených promptů pro učitele, vedení škol i žáky. Stačí zkopírovat do chatbota a doplnit údaje.
+Desítky ověřených promptů pro vyučující, vedení škol i žáky. Stačí zkopírovat do chatbota a doplnit údaje.
 
 [Katalog promptů](/prompty) · [Prompty pro žáky](/funkce/prompty/zaci)
 

@@ -2,7 +2,7 @@
 title: Vibe coding — materiály do výuky
 menu: Vibe Coding
 poradi: 4
-popis: Metodiky AI dětem k vibe codingu a osm hotových zadání pro učitele — interaktivní časová osa, graf z dat, myšlenková mapa, simulace logické úlohy a další.
+popis: Metodiky AI dětem k vibe codingu a osm hotových zadání pro vyučující — interaktivní časová osa, graf z dat, myšlenková mapa, simulace logické úlohy a další.
 aktualizovano: 2026-11-07
 stav: koncept
 souvisejici_prompty:   # původní prompty z kategorií Vizualizace a Různé (2024) zůstávají v databázi promptů
@@ -29,7 +29,7 @@ souvisejici_prompty:   # původní prompty z kategorií Vizualizace a Různé (2
 
 Školení **[Vibecoding pro školy](https://vzdelavame.aidetem.cz/akce/sborovna/vibecoding-pro-skoly/)** přivezeme do vaší sborovny (3 hodiny, lze hradit ze šablon).
 
-## Osm zadání pro učitele
+## Osm zadání pro vyučující
 
 Dřív jsme v [databázi promptů](/funkce/prompty/graf-regiony) radili, jak nechat chatbota napsat kód pro graf a vložit ho do jiné aplikace. Dnes chatbot graf rovnou postaví a vy s ním můžete klikat. Zadání vložte do Gemini Canvas nebo Claude a upravte podle sebe.
 

@@ -2,7 +2,7 @@
 title: AI aplikace Tiny
 menu: Chatboti ve výuce
 poradi: 1
-popis: Tiny je česká aplikace s chatboty pro žáky, kteří vedou otázkami místo hotových odpovědí. Učitel vidí konverzace, data zůstávají v EU. Pro školy zdarma.
+popis: Tiny je česká aplikace s chatboty pro žáky, kteří vedou otázkami místo hotových odpovědí. Vyučující vidí konverzace, data zůstávají v EU. Pro školy zdarma.
 aktualizovano: 2026-11-15
 tlacitko: { text: Metodické materiály, href: /ve-vyuce/metodiky }
 stav: ke-kontrole   # ověřit ceny/tarify a věkové podmínky s týmem Tiny (web Tiny si v několika bodech protiřečí)
@@ -55,8 +55,8 @@ Chatboti v Tiny (Tinyboti) jsou postavení podle Bloomovy taxonomie. Každý roz
 
 ## Co dalšího Tiny nabízí
 
-Kromě Tinybotů najdete v Tiny modelové lekce a AI asistenty pro učitele, například pro formativní hodnocení.
+Kromě Tinybotů najdete v Tiny modelové lekce a AI asistenty pro vyučující, například pro formativní hodnocení.
 
 ## Bezpečnost a pro koho je Tiny
 
-Data se ukládají v EU a před odesláním jazykovému modelu se konverzace anonymizují. Smlouvu uzavírá škola. Tiny mohou používat žáci od 13 let a žáci ve věku 11–12 let se souhlasem zákonného zástupce, který zajišťuje učitel. Pro děti mladší 11 let Tiny není.
+Data se ukládají v EU a před odesláním jazykovému modelu se konverzace anonymizují. Smlouvu uzavírá škola. Tiny mohou používat žáci od 13 let a žáci ve věku 11–12 let se souhlasem zákonného zástupce, který zajišťuje vyučující. Pro děti mladší 11 let Tiny není.

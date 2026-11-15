@@ -2,7 +2,7 @@
 title: Kolik stojí chatboti
 menu: Začínáme
 poradi: 3
-popis: Ceny ChatGPT, Gemini, Copilotu, Claude a Perplexity pro učitele a školy. Co dostanete zdarma, co se vyplatí zaplatit a jak chránit data.
+popis: Ceny ChatGPT, Gemini, Copilotu, Claude a Perplexity pro vyučující a školy. Co dostanete zdarma, co se vyplatí zaplatit a jak chránit data.
 sablona: cenik            # karty tarifů se vykreslí z data/ceny.yaml
 data: data/ceny.yaml
 aktualizovano: 2026-11-07
@@ -21,8 +21,8 @@ Všechny velké chatboty mají bezplatnou verzi. Placená verze přidá vyšší
 
 ## Co má vaše škola možná zdarma
 
-- **Google Workspace for Education** — Gemini a Gemini Notebook pro učitele i žáky, data školy se nepoužívají k tréninku. Zapíná správce.
-- **Microsoft 365 se školní licencí (A1, A3, A5)** — Copilot Chat pro učitele i žáky od 13 let, data zůstávají ve škole. Zapíná správce.
+- **Google Workspace for Education** — Gemini a Gemini Notebook pro vyučující i žáky, data školy se nepoužívají k tréninku. Zapíná správce.
+- **Microsoft 365 se školní licencí (A1, A3, A5)** — Copilot Chat pro vyučující i žáky od 13 let, data zůstávají ve škole. Zapíná správce.
 
 Než začnete platit osobní předplatné, zeptejte se správce IT, co škola má.
 

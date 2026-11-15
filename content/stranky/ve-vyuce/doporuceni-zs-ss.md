@@ -2,7 +2,7 @@
 title: Doporučení pro využívání AI na ZŠ a SŠ
 menu: Chatboti ve výuce
 poradi: 4
-popis: Doporučení Národního pedagogického institutu „Jak na AI ve škole“ pro ředitele, učitele, žáky a rodiče — ke stažení a jak s nimi pracovat.
+popis: Doporučení Národního pedagogického institutu „Jak na AI ve škole“ pro ředitele, pedagogy, žáky a rodiče — ke stažení a jak s nimi pracovat.
 aktualizovano: 2026-11-07
 stav: ke-kontrole   # doplnit krátké shrnutí obsahu doporučení 2025 (plakát a letáky NPI)
 zdroje:
@@ -14,7 +14,7 @@ zdroje:
 
 # Doporučení pro využívání AI na ZŠ a SŠ
 
-Národní pedagogický institut ČR vychází z toho, že generativní umělá inteligence zásadně mění požadavky na výuku i její možnosti. Proto vydal pro základní a střední školy doporučení **Jak na AI ve škole**, zvlášť pro ředitele, učitele, žáky a rodiče.
+Národní pedagogický institut ČR vychází z toho, že generativní umělá inteligence zásadně mění požadavky na výuku i její možnosti. Proto vydal pro základní a střední školy doporučení **Jak na AI ve škole**, zvlášť pro ředitele, pedagogy, žáky a rodiče.
 
 Doporučení jsou míněna jako inspirace. Školy si je mohou upravit a doplnit podle svých potřeb — dobře poslouží jako základ [školních pravidel pro AI](/ve-vyuce/pravidla-pro-ai).
 
@@ -23,7 +23,7 @@ Doporučení jsou míněna jako inspirace. Školy si je mohou upravit a doplnit 
 ## Ke stažení
 
 - [Plakát Jak na AI ve škole (2025, PDF)](https://digitalizace.rvp.cz/files/jak-na-ai-ve-skole-2025-plakat.pdf)
-- [Letáky pro ředitele, učitele, žáky a rodiče (A4, PDF)](https://digitalizace.rvp.cz/files/jak-na-ai-ve-skole-a4-letaky.pdf)
+- [Letáky pro ředitele, pedagogy, žáky a rodiče (A4, PDF)](https://digitalizace.rvp.cz/files/jak-na-ai-ve-skole-a4-letaky.pdf)
 - [Všechny materiály NPI k umělé inteligenci](https://digitalizace.rvp.cz/ke-stazeni#doporuceni-pro-ai)
 
 ## Jak s doporučeními pracovat

@@ -38,7 +38,7 @@ Ke každému Tinybotovi jsme připravili metodiku s modelovými zadáními. Zač
 
 ### Jak začít s Tinyboty
 
-Úvodní metodika pro učitele, kterou doporučujeme projít jako první. Vysvětluje, čím se Tinyboti liší od běžných chatbotů, jak připravit aktivitu a jak vést hodinu. Obsahuje plán úvodní lekce a návrh pravidel pro práci s AI ve třídě.
+Úvodní metodika pro vyučující, kterou doporučujeme projít jako první. Vysvětluje, čím se Tinyboti liší od běžných chatbotů, jak připravit aktivitu a jak vést hodinu. Obsahuje plán úvodní lekce a návrh pravidel pro práci s AI ve třídě.
 
 [Otevřít metodiku](https://www.tiny.school/jak-zacit-s-tinyboty/)
 
@@ -62,6 +62,6 @@ Ke každému Tinybotovi jsme připravili metodiku s modelovými zadáními. Zač
 
 ### Nechte proškolit svou sborovnu
 
-V AI dětem nabízíme školení pro celé sborovny. Přijedeme za vámi do školy a ukážeme učitelům, jak chatboty smysluplně využít ve výuce i v každodenní práci. Nabízíme mimo jiné školení *AI v hodnocení* a *Vibecoding pro školy*.
+V AI dětem nabízíme školení pro celé sborovny. Přijedeme za vámi do školy a ukážeme pedagogům, jak chatboty smysluplně využít ve výuce i v každodenní práci. Nabízíme mimo jiné školení *AI v hodnocení* a *Vibecoding pro školy*.
 
 [Vybrat školení pro sborovnu](https://vzdelavame.aidetem.cz/kategorie-akce/sborovna/)

@@ -58,6 +58,6 @@ Chatboti umí hledat na internetu, ale na konkrétní webové stránky se spoleh
 
 Sdíleli jste s kolegy vlastní GPT odkazem? V ChatGPT můžete místo něj **sdílet projekt**. Kolegové v něm najdou stejné pokyny i soubory, jen každý musí být přihlášený.
 
-**Pozor: ve sdíleném projektu vidí všichni členové všechny konverzace** i nahrané soubory a nefunguje v něm paměť. Hodí se pro malý tým kolegů, kteří na něčem pracují společně, ne pro rozdávání asistenta desítkám učitelů. Pokud chcete, aby si asistenta mohl použít kdokoli, dejte mu systémový prompt (u našich dovedností je jako Google dokument) — každý si z něj založí vlastní projekt během dvou minut.
+**Pozor: ve sdíleném projektu vidí všichni členové všechny konverzace** i nahrané soubory a nefunguje v něm paměť. Hodí se pro malý tým kolegů, kteří na něčem pracují společně, ne pro rozdávání asistenta desítkám kolegů. Pokud chcete, aby si asistenta mohl použít kdokoli, dejte mu systémový prompt (u našich dovedností je jako Google dokument) — každý si z něj založí vlastní projekt během dvou minut.
 
 [Konektory →](/funkce/konektory)

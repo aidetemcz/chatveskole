@@ -2,7 +2,7 @@
 title: Tvorba pravidel pro využívání AI
 menu: Chatboti ve výuce
 poradi: 3
-popis: Jak ve škole nastavit pravidla pro využívání umělé inteligence — pro učitele, žáky i rodiče. Postup, osnova pravidel, úrovně využití AI v úlohách a dovednost na pomoc.
+popis: Jak ve škole nastavit pravidla pro využívání umělé inteligence — pro vyučující, žáky i rodiče. Postup, osnova pravidel, úrovně využití AI v úlohách a dovednost na pomoc.
 aktualizovano: 2026-11-07
 stav: koncept
 zdroje:
@@ -17,7 +17,7 @@ odkazy:
 
 # Tvorba pravidel pro využívání AI
 
-Žáci AI používají, ať to škola dovolí, nebo ne. Pravidla nejsou o zákazu, ale o tom, **kdy a jak AI učení pomáhá a kdy ho nahrazuje**. A o tom, aby všichni — učitelé, žáci i rodiče — věděli, co platí.
+Žáci AI používají, ať to škola dovolí, nebo ne. Pravidla nejsou o zákazu, ale o tom, **kdy a jak AI učení pomáhá a kdy ho nahrazuje**. A o tom, aby všichni — vyučující, žáci i rodiče — věděli, co platí.
 
 ## Jakou strategii zvolit
 
@@ -33,10 +33,10 @@ V praxi to znamená: začněte jasnými pravidly pro konkrétní úlohy a soubě
 
 ## Postup v pěti krocích
 
-1. **Zmapujte, co se děje.** Krátký dotazník pro učitele a žáky: kdo co používá, k čemu, s jakou zkušeností.
+1. **Zmapujte, co se děje.** Krátký dotazník pro vyučující a žáky: kdo co používá, k čemu, s jakou zkušeností.
 2. **Domluvte se na hodnotách.** Co chceme, aby se žáci naučili? Kde AI pomáhá, kde škodí? Vyjděte z hodnot a vize školy.
-3. **Sepište pravidla** zvlášť pro učitele, žáky a rodiče — krátce a srozumitelně. Pomůže dovednost níže.
-4. **Projednejte je** s učiteli, žákovským parlamentem a rodiči. Pravidla, která vzniknou v dialogu, se dodržují.
+3. **Sepište pravidla** zvlášť pro vyučující, žáky a rodiče — krátce a srozumitelně. Pomůže dovednost níže.
+4. **Projednejte je** s pedagogickým sborem, žákovským parlamentem a rodiči. Pravidla, která vzniknou v dialogu, se dodržují.
 5. **Vyhodnocujte a aktualizujte** aspoň jednou za pololetí. Nástroje se mění rychle.
 
 ## Co by pravidla měla obsahovat
@@ -46,7 +46,7 @@ V praxi to znamená: začněte jasnými pravidly pro konkrétní úlohy a soubě
 - **Kdy AI smí žák použít** — ideálně u každé úlohy označit úroveň (viz níže).
 - **Jak přiznat použití AI** — krátká poznámka, k čemu a jak.
 - **Co je podvod** — vydávání výstupu AI za vlastní práci tam, kde to zadání nedovoluje.
-- **Jak AI používají učitelé** — příprava, hodnocení (AI nikdy nerozhoduje o známce sama), komunikace.
+- **Jak AI používají vyučující** — příprava, hodnocení (AI nikdy nerozhoduje o známce sama), komunikace.
 - **Kdo se stará o aktualizaci** pravidel.
 
 ## Úrovně využití AI v úlohách
@@ -61,7 +61,7 @@ U každé úlohy žákům řekněte, jak smí AI použít. Inspirací je škála
 
 ## Doporučení NPI
 
-Národní pedagogický institut vydal v roce 2025 doporučení **Jak na AI ve škole** pro ředitele, učitele, žáky i rodiče. Jsou dobrým základem pro vlastní pravidla.
+Národní pedagogický institut vydal v roce 2025 doporučení **Jak na AI ve škole** pro ředitele, pedagogy, žáky i rodiče. Jsou dobrým základem pro vlastní pravidla.
 
 [Doporučení pro ZŠ a SŠ →](/ve-vyuce/doporuceni-zs-ss)
 

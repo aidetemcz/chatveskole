@@ -123,7 +123,7 @@ nastroje:
         pozn: Silnější modely, víc hloubkových rešerší.
       - nazev: Education Pro
         cena: 10 USD měsíčně ⚠
-        pozn: Pro studenty a učitele s ověřením.
+        pozn: Pro studenty a vyučující s ověřením.
     trenink: Ve výchozím stavu ano, dá se vypnout v Settings → Preferences.
     zdroje:
       - https://www.perplexity.ai/hub/legal/terms-of-service
