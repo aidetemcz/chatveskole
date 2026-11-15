@@ -28,8 +28,8 @@ const seznamTezi = teze(tezeHtml);
 const GLYFY = [['full', 'none'], ['none', 'full'], ['half', 'half']];
 
 const POPISY: Record<string, string> = {
-  'casova-osa': 'Ohlášené termíny výrobců. Svislá čára ukazuje dnešní den.',
-  matice: 'Každé pole ukazuje, jestli funkce existuje dnes a jestli ji výrobci chystají i pro rok 2027. Podbarvená pole se mění.',
+  'casova-osa': 'Ohlášené termíny vývojářů. Svislá čára ukazuje dnešní den.',
+  matice: 'Každé pole ukazuje, jestli funkce existuje dnes a jestli ji vývojáři chystají i pro rok 2027. Podbarvená pole se mění.',
 };
 const popisOddilu = (o: { casti: Cast[] }) => { const k = o.casti.find((c) => c.typ === 'komponenta'); return k && k.typ === 'komponenta' ? POPISY[k.klic] : undefined; };
 const datum = d.aktualizovano ? datumCesky(d.aktualizovano) : null;

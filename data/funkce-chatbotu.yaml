@@ -2,8 +2,8 @@
 # Zdroj: artefakt https://claude.ai/artifact/9ZyWLayjYG18oe6knwfvsi (stav 13. 10. 2026).
 # Při aktualizaci měň jen tento soubor; stránka se vykreslí z dat.
 stav_k: '2026-10-13'
-zdroj: Artefakt „Funkce chatbotů 2027“ (AI dětem), ověřeno v oficiálních nápovědách výrobců 13. 10. 2026
-poznamka: Výhled na rok 2027 vychází jen z toho, co výrobci oznámili do 13. 10. 2026. U Copilotu „zdarma“ = Copilot Chat se školním nebo pracovním účtem. Dostupnost se liší podle země a nastavení správce.
+zdroj: Artefakt „Funkce chatbotů 2027“ (AI dětem), ověřeno v oficiálních nápovědách vývojářů 13. 10. 2026
+poznamka: Výhled na rok 2027 vychází jen z toho, co vývojáři oznámili do 13. 10. 2026. U Copilotu „zdarma“ = Copilot Chat se školním nebo pracovním účtem. Dostupnost se liší podle země a nastavení správce.
 nastroje:
 - id: chatgpt
   nazev: ChatGPT

@@ -15,7 +15,7 @@ odkazy:
 
 # Jak se mění funkce chatbotů
 
-ChatGPT, Gemini, Copilot a Claude opouštějí hotové asistenty, které se otevřou jedním odkazem. Nahrazují je dovednosti, pluginy a samostatná práce na úkolech. Přehled ukazuje, co každý nástroj umí dnes a co má podle oznámení výrobců umět v roce 2027.
+ChatGPT, Gemini, Copilot a Claude opouštějí hotové asistenty, které se otevřou jedním odkazem. Nahrazují je dovednosti, pluginy a samostatná práce na úkolech. Přehled ukazuje, co každý nástroj umí dnes a co má podle oznámení vývojářů umět v roce 2027.
 
 <!-- komponenta: tři teze -->
 
@@ -44,4 +44,4 @@ ChatGPT, Gemini, Copilot a Claude opouštějí hotové asistenty, které se otev
 - **Sdílíte asistenta s kolegy nebo žáky odkazem?** Tahle cesta končí. Náhradou je sdílený [projekt](/funkce/projekty), dovednost poslaná jako soubor, nebo prompt.
 - **Pracujete s žáky?** Dovednosti jsou v Gemini a Claude jen pro dospělé. Pro žáky používejte [prompty](/funkce/prompty/zaci) nebo aplikaci [Tiny](/ve-vyuce/tiny).
 
-Funkce se mění každý měsíc. Údaje ověřujeme v oficiálních nápovědách výrobců, naposledy 13. 10. 2026.
+Funkce se mění každý měsíc. Údaje ověřujeme v oficiálních nápovědách vývojářů, naposledy 13. 10. 2026.
