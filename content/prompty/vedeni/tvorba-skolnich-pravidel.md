@@ -21,7 +21,7 @@ Co chceme: [školní pravidla / pravidla pro využívání AI / krátká pravidl
 Hodnoty školy, které mají pravidla podporovat: [například respekt, bezpečí, odpovědnost]
 Stávající pravidla a zkušenosti s nimi: [vložte text a napište, co funguje a co ne; nebo řádek smažte]
 Proč pravidla teď řešíme: [obecně, bez jmen a popisu konkrétních incidentů, například přibývá konfliktů kvůli natáčení spolužáků]
-Kdo se má do tvorby zapojit: [například žákovský parlament, učitelé, zástupci rodičů]
+Kdo se má do tvorby zapojit: [například žákovský parlament, vyučující, zástupci rodičů]
 Nástroje AI, které škola používá nebo zvažuje: [jen u pravidel pro AI, jinak řádek smažte]
 
 Pravidla:
@@ -29,7 +29,7 @@ Pravidla:
 2. U každého pravidla napiš, proč existuje a co se stane, když se nedodrží. Důsledky jsou přiměřené, předem známé, souvisejí s chováním a vedou k nápravě, ne k ponížení. Kolektivní tresty nenavrhuj.
 3. Pravidla platí pro všechny, kterých se týkají, včetně dospělých tam, kde to dává smysl (například mobily na poradě).
 4. Když vložím stávající pravidla, nejdřív je zhodnoť: co je nejasné, nevymahatelné, příliš represivní, nadbytečné nebo v rozporu s jiným pravidlem.
-5. U pravidel pro AI: AI plošně nezakazuj, řeš, kdy učení pomáhá a kdy ho nahrazuje. Zahrň, co se do AI nikdy nevkládá (osobní údaje), jak žáci uvádějí použití AI, jak učitel u úlohy označí povolené využití AI (od „bez AI“ po „plné využití AI“), že o hodnocení vždy rozhoduje učitel a které nástroje škola schválila. Věkové limity ani podmínky nástrojů nevymýšlej, napiš [ověřit]. Pokud škola zvažuje AI k hodnocení žáků nebo k hlídání testů, upozorni, že podle evropského nařízení o AI jde o vysoce rizikové použití, a doporuč konzultaci s pověřencem pro ochranu osobních údajů.
+5. U pravidel pro AI: AI plošně nezakazuj, řeš, kdy učení pomáhá a kdy ho nahrazuje. Zahrň, co se do AI nikdy nevkládá (osobní údaje), jak žáci uvádějí použití AI, jak vyučující u úlohy označí povolené využití AI (od „bez AI“ po „plné využití AI“), že o hodnocení vždy rozhoduje vyučující a které nástroje škola schválila. Věkové limity ani podmínky nástrojů nevymýšlej, napiš [ověřit]. Pokud škola zvažuje AI k hodnocení žáků nebo k hlídání testů, upozorni, že podle evropského nařízení o AI jde o vysoce rizikové použití, a doporuč konzultaci s pověřencem pro ochranu osobních údajů.
 6. Pravidla přímo pro žáky: nejvýš 10, v první osobě („Svoje heslo nikomu neříkám.“), bez strašení a moralizování.
 7. Nevymýšlej předpisy ani doporučení ministerstva. Školní řád vydává ředitel a schvaluje školská rada. Upozorni, co je potřeba do něj promítnout.
 8. Pokud z mého popisu plyne šikana, sebepoškozování nebo jiné ohrožení dítěte, neřeš to pravidly a doporuč hned zapojit metodika prevence, školní poradenské pracoviště nebo vedení.
@@ -38,7 +38,7 @@ Výstup:
 a) zhodnocení stávajících pravidel, pokud jsem je vložil(a),
 b) pravidla v tabulce Pravidlo – Proč – Co když se nedodrží (u pravidel pro žáky stačí pravidlo a krátké proč),
 c) rizika a doporučené úpravy,
-d) plán zavedení: jak pravidla vytvořit a projednat se žáky, učiteli a rodiči, jak je představit, jak sledovat jejich dodržování a kdy je vyhodnotit (například na konci pololetí).
+d) plán zavedení: jak pravidla vytvořit a projednat se žáky, vyučujícími a rodiči, jak je představit, jak sledovat jejich dodržování a kdy je vyhodnotit (například na konci pololetí).
 
 Když chybí téma nebo pro koho pravidla jsou, nejdřív se mě zeptej. Na konci nabídni: 1) verzi pro žáky na plakát, 2) informaci pro rodiče, 3) zkrácení.
 ```
@@ -47,7 +47,7 @@ Když chybí téma nebo pro koho pravidla jsou, nejdřív se mě zeptej. Na konc
 
 Prompt vám pomůže vytvořit nová pravidla nebo zkontrolovat ta, která už máte. Hlídá, aby byla krátká, kladně formulovaná, férová a vymahatelná, a ke každému pravidlu doplní, proč existuje a co se stane, když se nedodrží. Kolektivní tresty a zákazy bez náhrady nenavrhuje.
 
-Zvládne tři typy: školní pravidla (třeba k mobilům nebo natáčení spolužáků), pravidla pro využívání AI a krátká pravidla přímo pro žáky. Vždy dostanete i plán, jak pravidla vytvořit spolu se žáky, učiteli a rodiči a kdy je vyhodnotit.
+Zvládne tři typy: školní pravidla (třeba k mobilům nebo natáčení spolužáků), pravidla pro využívání AI a krátká pravidla přímo pro žáky. Vždy dostanete i plán, jak pravidla vytvořit spolu se žáky, vyučujícími a rodiči a kdy je vyhodnotit.
 
 ## Jak prompt použít
 

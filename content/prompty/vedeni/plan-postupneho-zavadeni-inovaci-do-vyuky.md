@@ -20,18 +20,18 @@ Jakou inovaci chceme zavést: [například formativní hodnocení na 2. stupni /
 Jaký problém má vyřešit: [například žáci nevědí, co se od nich čeká, a známky jim nepomáhají se zlepšit]
 Jak hodnotíme: [známkami / slovně / kombinovaně]
 Vybavení: [například wifi, mobilní učebna s 30 tablety]
-Mobily ve výuce: [žáci je smějí používat / nesmějí / jen s dovolením učitele]
-Jak je sbor připravený: [například pět učitelů to už zkouší, většina vyčkává, tři kolegové jsou proti]
+Mobily ve výuce: [žáci je smějí používat / nesmějí / jen s dovolením vyučujícího]
+Jak je sbor připravený: [například pět vyučujících to už zkouší, většina vyčkává, tři kolegové jsou proti]
 Kdo změnu povede: [například lídr změny s částí úvazku a zástupkyně ředitele; nebo řádek smažte]
-Kolik času mohou učitelé reálně věnovat: [například hodinu týdně na sdílení]
+Kolik času mohou vyučující reálně věnovat: [například hodinu týdně na sdílení]
 Podle čeho poznáme, že inovace žákům pomáhá: [například víc žáků umí popsat, co se naučili; nebo nech na sobě]
 Další specifika: [například učíme v tematických blocích; nebo řádek smažte]
 
 Postup:
 1. Nejdřív se doptej na to, co chybí nebo není jasné (nejvýš 5 otázek najednou). Pak ve 3–5 větách shrň výchozí stav a počkej, až ho potvrdím.
 2. Sestav rámec změny: popis současné situace, nejvýš 3 cíle s termínem, ke každému ukazatel (výchozí → cílový stav), nejvýš 3 hlavní překážky a zdroje (čas, lidé, peníze, nástroje).
-3. Naplánuj kroky v čase: příprava → ověření v malém (pár učitelů, jedna až dvě třídy) → vyhodnocení → postupné rozšíření → ukotvení v ŠVP a v praxi školy.
-4. Naplánuj práci s lidmi v pěti fázích: zvýšení povědomí o změně (informovat, ne přesvědčovat), akceptace (prostor pro otázky, obavy i nesouhlas), důvěra v proces (vzdělávání, sdílení, bezpečí pro chyby), schopnost změnu provést (mentoring, tandemy, náslechy) a stvrzení (ŠVP, směrnice, sdílení úspěchů). Ke každé fázi navrhni 2–3 aktivity pro různé skupiny (vedení, učitelé podle postoje, žáci, rodiče) a jeden měřitelný cíl, například „80 % učitelů ví, co a proč zavádíme“.
+3. Naplánuj kroky v čase: příprava → ověření v malém (pár vyučujících, jedna až dvě třídy) → vyhodnocení → postupné rozšíření → ukotvení v ŠVP a v praxi školy.
+4. Naplánuj práci s lidmi v pěti fázích: zvýšení povědomí o změně (informovat, ne přesvědčovat), akceptace (prostor pro otázky, obavy i nesouhlas), důvěra v proces (vzdělávání, sdílení, bezpečí pro chyby), schopnost změnu provést (mentoring, tandemy, náslechy) a stvrzení (ŠVP, směrnice, sdílení úspěchů). Ke každé fázi navrhni 2–3 aktivity pro různé skupiny (vedení, vyučující podle postoje, žáci, rodiče) a jeden měřitelný cíl, například „80 % vyučujících ví, co a proč zavádíme“.
 
 Pravidla:
 - Prioritizace je důležitější než rychlost. Raději jedna inovace dotažená než tři rozjeté.

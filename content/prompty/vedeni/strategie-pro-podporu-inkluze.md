@@ -18,7 +18,7 @@ Vystupuj jako zkušený školní stratég zaměřený na inkluzivní vzdělává
 Kdo potřebuje podporu: [jen souhrnné počty, například 41 žáků s podpůrnými opatřeními, 14 žáků s odlišným mateřským jazykem, skupina nadaných žáků]
 Školní poradenské pracoviště a podpora: [například výchovná poradkyně, metodik prevence, školní psycholožka na 0,5 úvazku, 6 asistentů pedagoga]
 Co už funguje: [například doučování, spolupráce s pedagogicko-psychologickou poradnou]
-Kde vidíme slabá místa: [například učitelé a asistenti spolu neplánují, nadaní žáci nemají výzvy]
+Kde vidíme slabá místa: [například vyučující a asistenti spolu neplánují, nadaní žáci nemají výzvy]
 Zdroje: [například rozpočet, čas na společné plánování, prostory]
 Priority vedení: [například začleňování žáků s odlišným mateřským jazykem, bezbariérovost]
 Na jak dlouho strategie platí: [například 3–5 let]
@@ -29,9 +29,9 @@ Pravidla:
    - pro všechny žáky: výuka srozumitelná pro různé žáky, jasné cíle a kritéria, formativní hodnocení, různé způsoby, jak žák ukáže, co umí,
    - pro skupiny: cílená podpora v malých skupinách, doučování, výuka češtiny jako druhého jazyka, výzvy pro nadané,
    - pro jednotlivce: podpůrná opatření, plán pedagogické podpory, individuální vzdělávací plán, spolupráce se školským poradenským zařízením.
-3. Počítej se spoluprací učitelů, asistentů pedagoga a školního poradenského pracoviště (společné plánování, předávání informací o potřebách žáků).
+3. Počítej se spoluprací vyučujících, asistentů pedagoga a školního poradenského pracoviště (společné plánování, předávání informací o potřebách žáků).
 4. Legislativní detaily (stupně podpůrných opatření, postupy, financování pozic) uváděj jen obecně a doporuč je ověřit v platných předpisech. Nevymýšlej paragrafy ani dotační výzvy.
-5. Kde to dává smysl, navrhni, jak může učitelům pomoci AI (například připravit materiál ve více úrovních obtížnosti nebo v jednodušší češtině). Údaje o konkrétních žácích do AI nepatří.
+5. Kde to dává smysl, navrhni, jak může vyučujícím pomoci AI (například připravit materiál ve více úrovních obtížnosti nebo v jednodušší češtině). Údaje o konkrétních žácích do AI nepatří.
 6. Pracuj jen se souhrnnými údaji. Když vložím jméno nebo diagnózu konkrétního žáka, upozorni mě a nepoužívej je.
 7. Nejvýš 5 priorit. Každé opatření má nositele (funkci, ne jméno), termín a výstup. Výchozí stav, který jsem nezadal(a), nevymýšlej, napiš [doplnit].
 
@@ -55,7 +55,7 @@ Když chybí typ školy nebo složení podpory, nejdřív se mě zeptej (nejvý�
 
 Prompt vám pomůže sestavit strategii podpory inkluze, která se netýká jen žáků s podpůrnými opatřeními, ale i nadaných, žáků s odlišným mateřským jazykem a dětí ze znevýhodněného prostředí. Podporu skládá po úrovních: co dostanou všichni žáci, co skupiny a co jednotlivci. Díky tomu se intenzivnější podpora dostane k těm, kdo ji opravdu potřebují.
 
-Strategie počítá se spoluprací učitelů, asistentů pedagoga a školního poradenského pracoviště. Legislativní detaily uvádí jen obecně, abyste si je ověřili.
+Strategie počítá se spoluprací vyučujících, asistentů pedagoga a školního poradenského pracoviště. Legislativní detaily uvádí jen obecně, abyste si je ověřili.
 
 ## Jak prompt použít
 

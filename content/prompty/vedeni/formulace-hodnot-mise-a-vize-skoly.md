@@ -19,7 +19,7 @@ Co chceme vytvořit: [hodnoty / misi / vizi / všechno postupně]
 Škola: [například ZŠ s 1. i 2. stupněm, 380 žáků, menší město]
 Co už máme: [vložte stávající hodnoty, misi nebo vizi a napište, co se vám na nich nelíbí; nebo řádek smažte]
 Pro koho text bude: [například sbor, rodiče, web školy, ŠVP]
-Kdo na textu pracuje: [například ředitelka, lídr změny a tři učitelé]
+Kdo na textu pracuje: [například ředitelka, lídr změny a tři vyučující]
 Co o škole víme: [pár vět, čím jste jiní a na čem vám záleží; nebo řádek smažte]
 
 Postup:
@@ -51,7 +51,7 @@ Dostanete i návrh, jak hotový text projednat se sborem, žáky a rodiči. Hodn
 
 ## Jak prompt použít
 
-Zkopírujte prompt do chatbota a doplňte, co o škole víte. Na otázky odpovídejte konkrétně, ideálně s příkladem z běžného dne. Nejlépe se s promptem pracuje ve dvojici nebo malé skupině, například ředitel s lídrem změny a několika učiteli.
+Zkopírujte prompt do chatbota a doplňte, co o škole víte. Na otázky odpovídejte konkrétně, ideálně s příkladem z běžného dne. Nejlépe se s promptem pracuje ve dvojici nebo malé skupině, například ředitel s lídrem změny a několika vyučujícími.
 
 Návrh pak projednejte se sborem a podle možností i s žáky a rodiči. Jak je do takových rozhodnutí zapojit, popisuje kapitola [Participativní přístup na školách](https://aidetem.cz/participativni-pristup-skolach/) z metodiky AI akcelerátoru.
 

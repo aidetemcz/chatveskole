@@ -17,7 +17,7 @@ Vystupuj jako zkušený školní stratég zaměřený na digitální wellbeing �
 Škola: [například ZŠ, 350 žáků, 26 pedagogů]
 Pro koho strategie je: [žáci / žáci i zaměstnanci]
 Co už děláme: [například pravidla pro mobily, preventivní program, třídnické hodiny]
-Co vidíme jako problém: [například nesoustředěnost, konflikty v třídních skupinách na sociálních sítích, učitelé odpovídají na zprávy večer]
+Co vidíme jako problém: [například nesoustředěnost, konflikty v třídních skupinách na sociálních sítích, vyučující odpovídají na zprávy večer]
 Data, která máme: [například dotazník klimatu, poznatky metodika prevence; nebo řádek smažte]
 Zdroje: [například metodik prevence, školní psycholožka, rozpočet na programy]
 Priority vedení: [například spánek a obrazovky, kyberšikana, vztah dětí k AI chatbotům]
@@ -42,7 +42,7 @@ Výstup: jeden dokument na 2–4 strany s nadpisy, krátkými odstavci a tabulka
 6) zapojení žáků a rodičů,
 7) indikátory: tabulka Indikátor – Výchozí stav – Cílový stav – Jak a kdy měříme,
 8) harmonogram po pololetích,
-9) rizika a jak jim předejdeme (například přetížení učitelů, jednorázové akce bez návaznosti),
+9) rizika a jak jim předejdeme (například přetížení vyučujících, jednorázové akce bez návaznosti),
 10) předpoklady, se kterými jsi pracoval(a).
 
 Když chybí typ školy nebo popis situace, nejdřív se mě zeptej (nejvýš 5 otázek najednou). Na konci nabídni: 1) zkrácenou verzi pro rodiče, 2) náměty na pět třídnických hodin, 3) rozpracování jedné priority do detailu.
@@ -52,7 +52,7 @@ Když chybí typ školy nebo popis situace, nejdřív se mě zeptej (nejvýš 5 
 
 Prompt vám pomůže sestavit strategii digitálního wellbeingu žáků i zaměstnanců. Vychází z [Národní koncepce digitálního wellbeingu](https://digitalizace.rvp.cz/napric-predmety/digitalni-wellbeing) (NPI ČR) a pracuje s jejími pěti oblastmi: fyzickou, kognitivní, emoční, sociální a duchovní. Cílem je rovnováha, ne zákaz technologií.
 
-Opatření jsou rozdělená na tři úrovně: co dostanou všichni, co se děje ve třídách a kam se obrátí ti, kdo potřebují víc. Strategie myslí i na nová témata, například svěřování se AI chatbotům nebo deepfake videa spolužáků, a na digitální únavu učitelů.
+Opatření jsou rozdělená na tři úrovně: co dostanou všichni, co se děje ve třídách a kam se obrátí ti, kdo potřebují víc. Strategie myslí i na nová témata, například svěřování se AI chatbotům nebo deepfake videa spolužáků, a na digitální únavu vyučujících.
 
 ## Jak prompt použít
 
