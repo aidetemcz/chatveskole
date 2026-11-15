@@ -33,6 +33,11 @@ puvodni_asistenti:
     - https://docs.google.com/document/d/1haOrj-3758yeBzmFJQeGJd-JjqAZb2f-EqawB8vwono/edit
 google_doc: https://docs.google.com/document/d/1r65QTk3-Q-qhcWDo1dHPSrCQPXmnNsjhT37mjIKDjBI/edit
 google_slozka: https://drive.google.com/drive/folders/1xfVr9r56k4yjkxvpKTeY_vODSeixx8lN
+google_data: https://drive.google.com/drive/folders/1WeYI2mGBy6uWl_2E79oWrAJF7xH5qgui
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1JSKGoN3JUc77rEsX_zSrsW28jrFIGjwb
+  gemini: https://drive.google.com/uc?export=download&id=1YgKpintoPm9lCVNR01zcoEs3kXxuKafj
+  chatgpt: https://drive.google.com/uc?export=download&id=1DzDeunHp_Diolzg47AG_YqeRpzajguTR
 autori:
   - Eva Nečasová (AI dětem)
   - Šárka Polanecká (ZŠ Pod Beckovem) – režim Kontrola formulací

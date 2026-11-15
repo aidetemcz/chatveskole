@@ -17,6 +17,11 @@ puvodni_asistenti:
     - https://docs.google.com/document/d/1Zw7UIHXLtKbEYf-eId0NHywp_D7WTEXV7_QYpcHhi2w/edit
 google_doc: https://docs.google.com/document/d/1Jrw1-QYxaEjlzWAVHKSAchVBuM-TplEb1xc_c3Yr9Lg/edit
 google_slozka: https://drive.google.com/drive/folders/1JlRSo74mR2rHMl2V_YDcM0yU0E5WULdW
+google_data: https://drive.google.com/drive/folders/1_gQUAqfg8xQ6S7ak71ZmbHCl5Sana0O8
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1N5au4cfvyGGKDVmcyPaFADRBjQGtUMq_
+  gemini: https://drive.google.com/uc?export=download&id=13frpjMZ2NIXKG7xvL57E_5sDOQvil8OS
+  chatgpt: https://drive.google.com/uc?export=download&id=125pE9Ss5cirR0Of4yIhSnI_0-oMnDVbB
 autori: [tým AI akcelerátoru (AI dětem)]   # doplnit jména autorů asistenta
 metodika:
   - nazev: AI akcelerátor – oblast Administrativa (AI dětem)

@@ -45,6 +45,11 @@ puvodni_asistenti:
     - https://docs.google.com/document/d/18UkBvuy0MOztMRLUuISkaGO-QU5NKCEU0fujJ-9CxZ0/edit
 google_doc: https://docs.google.com/document/d/1NLbFO0t7gcQGyn8ijywK9lrgDB4PuYEy3AUrMz1Sfug/edit
 google_slozka: https://drive.google.com/drive/folders/18KjVr2x7s05owPk_RY0Iplha29FYhzaD
+google_data: https://drive.google.com/drive/folders/1mwxujju3n0eGTaMDOf0s9hvGbjY71ahR
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1FvxvRXYGihLanA9_XgibP3k2oYKkfK90
+  gemini: https://drive.google.com/uc?export=download&id=100x6H1kwv0183ncQoDyprVqGIMU14KaY
+  chatgpt: https://drive.google.com/uc?export=download&id=1KRAEo0xgTa6wehnHMIILJULM5fbhucjs
 autori: [Eva Nečasová (AI dětem), AI reaktor UJEP (Míša Liegertová)]
 metodika:
   - nazev: Katalog aktivizačních výukových metod a Příručka aktivizační výuky (AI dětem)

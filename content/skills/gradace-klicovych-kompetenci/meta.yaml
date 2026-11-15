@@ -7,6 +7,11 @@ stitky: [klíčové kompetence, RVP, ŠVP, gradace, Skills Builder, sebehodnocen
 puvodni_obsah: []           # na starém webu nebyl
 google_doc: https://docs.google.com/document/d/1EfyY7MsppbJLY9kEZ6WYZm2ziuqVGq5VCEGFLcAvDWQ/edit
 google_slozka: https://drive.google.com/drive/folders/1tIFIAxgdqj2JPRRpmPnF0hkcA46lZgRJ
+google_data: https://drive.google.com/drive/folders/1uicKvSMlaKauGyP-uYdt5GOaBBh0nRG-
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1PRCh5D06AjstBAS2UbvkF4zw4zGCnkHx
+  gemini: https://drive.google.com/uc?export=download&id=1G7TekcKT31zuDpK8934PXCfeBwm-84J5
+  chatgpt: https://drive.google.com/uc?export=download&id=1EHP07gX2VvboOAoqVk2jOVfzhyhBIVsa
 autori: [AI dětem]          # ověřit autorství
 metodika:
   - nazev: Skills Builder Universal Framework (inspirace)

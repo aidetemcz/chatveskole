@@ -16,6 +16,10 @@ puvodni_asistenti:
   systemovy_prompt: https://docs.google.com/document/d/1AdLKeXAux0ykSgVIKZdZUDDzi--AZuuetjrDo9GannQ/edit
 google_doc: https://docs.google.com/document/d/169ApSelQyILOaVjvmrJ7HLnQHyrT-t8otEsXbROdrvM/edit
 google_slozka: https://drive.google.com/drive/folders/13TnLbBcspfjJLq-2MWkkxBZNMbWZYw7X
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=17giRjFc23CH78tEcKMJ0ZoU-AZssQQqg
+  gemini: https://drive.google.com/uc?export=download&id=1WI1NTggI2cC0hLsh9fEbc1BuPXKilI6G
+  chatgpt: https://drive.google.com/uc?export=download&id=1JcbM6uTfuXOB9Uc8jnn55nyUDLDJyyRS
 autori: [AI dětem]   # doplnit jména autorů asistenta
 metodika:
   - nazev: Otázky učitele ve výukovém dialogu

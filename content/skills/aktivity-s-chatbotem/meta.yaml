@@ -47,6 +47,11 @@ puvodni_asistenti:
         - https://docs.google.com/document/d/1-125LsGfhQ4Aq2MpXCQvGJ4YXI6pHuPh-RFdWxYV7ds/edit
 google_doc: https://docs.google.com/document/d/1V5j9bzVXhRUO3SRh3tGb_hrOTZ0weB1c4EV33QEFOm0/edit
 google_slozka: https://drive.google.com/drive/folders/1tSfbk5Sg2vYC5QzDARZm29Y2AL6oEvZg
+google_data: https://drive.google.com/drive/folders/1HpfnUiakWagLc3KDC_IlP2GQ4BQpMtuE
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1zJKDoWB17_0ag03XJ3ynPR8MC1FSQJR4
+  gemini: https://drive.google.com/uc?export=download&id=1sPyF4kM7X0tA9qnL7nPOj7sIf3UjoYG0
+  chatgpt: https://drive.google.com/uc?export=download&id=16_Pvz1QA5vJ59FZf466MBuVNShnxlO6K
 autori: [Eva Nečasová (AI dětem), AI reaktor UJEP (Míša Liegertová), Jan Jílek (Poznej svět)]
 metodika:
   - nazev: Kurikulum umělé inteligence – Matematika pro život (AI dětem)

@@ -37,7 +37,7 @@ Formát je otevřený standard [Agent Skills](https://agentskills.io), takže ho
 Všechny naše dřívější AI asistenty jsme převedli na dovednosti a přidali k nim to nejlepší z databáze promptů. Původní prompty zůstávají v [katalogu promptů](/prompty). U každé dovednosti najdete:
 
 - **Zkopírovat jako prompt** — funguje v jakémkoli chatbotu, i zdarma,
-- **Stáhnout dovednost (ZIP)** — k nahrání do vašeho chatbota,
+- **Stáhnout dovednost (ZIP)** — zvlášť pro Claude, Gemini a ChatGPT, k nahrání do vašeho chatbota. Pro Copilot si dovednost vytvoříte sami ze systémového promptu,
 - **Systémový prompt v Google Docs** — pro Copilot agenty, projekty v ChatGPT nebo k vlastní úpravě,
 - **Znalosti na Google Disku** — podklady, ze kterých dovednost čerpá (například klíčové kompetence z RVP). Nahrajte je k projektu nebo dovednosti, pokud chcete přesnější výstupy.
 

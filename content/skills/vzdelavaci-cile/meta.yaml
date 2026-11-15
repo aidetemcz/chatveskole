@@ -21,6 +21,11 @@ puvodni_asistenti:
   systemovy_prompt: https://docs.google.com/document/d/1CHi4vjGcVVyHDFOjVThW07Sya_dN0OlHrtJ0r6U5K9Q/edit?usp=sharing
 google_doc: https://docs.google.com/document/d/1-vbZS3R3KRhswZl0OPVJgCGn7Ye4or7DfgReqy9b8hs/edit
 google_slozka: https://drive.google.com/drive/folders/1_hfZUb5jOB2Riamh8EGISCQMsJhIpeBB
+google_data: https://drive.google.com/drive/folders/1fsoQZ0xAGuLLXBRRT_0kaeUJvLXe2PJv
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1iKLhff2zoIUhyvP45FiVEZu90vVY7HrY
+  gemini: https://drive.google.com/uc?export=download&id=1lXXU6RzbiqCN9vwEBUenohYU4pMkJKDF
+  chatgpt: https://drive.google.com/uc?export=download&id=1KUzQy2ohs0HGqbvesJRxYHAnPh5wRIYj
 autori: [Eva Nečasová (AI dětem)]
 metodika:
   - nazev: Vysvědčení jinak (PdF MU, Jana Kratochvílová)

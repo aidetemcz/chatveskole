@@ -23,7 +23,7 @@
   title: Vedení školy
   popis: Hodnoty, mise a vize, školní pravidla, strategické dokumenty, AI gramotnost v ŠVP a každodenní agenda ředitele.
   pro_koho: [vedeni]
-  skills: [mise-vize-hodnoty, skolni-pravidla, strategicke-dokumenty, ai-gramotnost-v-svp, gradace-klicovych-kompetenci, asistent-reditele, rizeni-zmeny]
+  skills: [mise-vize-hodnoty, skolni-pravidla, strategicke-dokumenty, ai-gramotnost-v-svp, gradace-klicovych-kompetenci, asistent-reditele, rizeni-zmeny, vizualizace-dat]
 
 - slug: ai-akcelerator
   title: AI akcelerátor

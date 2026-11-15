@@ -11,6 +11,11 @@ puvodni_asistenti:
   gpt: https://chatgpt.com/g/g-sTf7nS5F8-hadej-chemicky-prvek
 google_doc: https://docs.google.com/document/d/1au78J6jl80G1vYSOtzoOD_mIW8h16MiPuF7CdNGMpE8/edit
 google_slozka: https://drive.google.com/drive/folders/1PbiL0KG_eNlFE4MSF_BLcS9jjfcjxgpf
+google_data: https://drive.google.com/drive/folders/1B6ad0P4NLVNbEd2fQsQXtbEvrEw9XozN
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1siHfTsfMuXMq-p3Cz-CRJQB_i5LzkCyE
+  gemini: https://drive.google.com/uc?export=download&id=17QcGDBNWbrbsNoLTVegkVzdVNFu4sQ-3
+  chatgpt: https://drive.google.com/uc?export=download&id=11kHR6uePupE6gw84QEWNf66FUTD7IhWS
 autori: [AI dětem]          # ověřit autorství
 znalosti: [periodicka-tabulka-prvku.md]
 vek: chatbot pro žáky 12–15 let; dovednosti jsou v Gemini a Claude 18+, se žáky použijte prompt nebo aplikaci Tiny
