@@ -52,7 +52,10 @@ const tlacitko = d.tlacitko && typeof d.tlacitko === 'object' && d.tlacitko.href
   .layout { padding-top: 52px; padding-bottom: 96px; }
   .content { min-width: 0; display: flex; flex-direction: column; gap: 32px; container-type: inline-size; }
   /* tabulky přes celou šířku obsahu (1140 px), ne jen sloupce textu (72 znaků) */
-  @media (min-width: 861px) { .content :global(.prose > table) { display: table; width: 100cqi; border-collapse: separate; border-spacing: 0; overflow: hidden; } }
+  @media (min-width: 861px) {
+    .content :global(.prose > table) { display: table; width: 100cqi; border-collapse: separate; border-spacing: 0; overflow: hidden; }
+    .content :global(.prose > .nahledy), .content :global(.prose > .karta-obrazek) { width: 100cqi; max-width: none; }
+  }
   .page-head { align-items: flex-start; }
   .tlacitko-konec { padding: 0 0 8px; } /* od textu 32px (gap .content) */
   .meta { font-size: 0.85rem; color: var(--muted); display: flex; flex-direction: column; gap: 10px; max-width: 72ch; }

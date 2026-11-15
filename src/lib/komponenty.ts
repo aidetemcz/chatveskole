@@ -4,7 +4,7 @@ import { url } from './url';
 
 export type Klic =
   | 'cenik' | 'sady-skills' | 'pluginy' | 'tiny' | 'infografika-mcp' | 'instrukce' // datové komponenty (Astro)
-  | 'zalozky' | 'nahledy' | 'tabulka-karty' | 'tlacitko' // úprava následujícího HTML
+  | 'zalozky' | 'nahledy' | 'tabulka-karty' | 'tlacitko' | 'karta-obrazek' // úprava následujícího HTML
   | 'teze' | 'casova-osa' | 'matice' | 'karty-nastroju' | 'zdroje-nastroju'; // stránka Změny funkcí
 
 const MAPA: [RegExp, Klic][] = [
@@ -16,6 +16,7 @@ const MAPA: [RegExp, Klic][] = [
   [/tabulka žákovský prompt/, 'tiny'],
   [/záložky podle nástroje/, 'zalozky'],
   [/^\s*tlačítko\b/, 'tlacitko'],
+  [/karta s obrázkem/, 'karta-obrazek'],
   [/karty s náhledem/, 'nahledy'],
   [/tabulka, na mobilu karty/, 'tabulka-karty'],
   [/tři teze/, 'teze'],
@@ -32,6 +33,7 @@ const PREVOD: Partial<Record<Klic, (html: string, id: string) => string>> = {
   nahledy: naNahledy,
   'tabulka-karty': naTabulkuKaret,
   tlacitko: naTlacitko,
+  'karta-obrazek': naKartuSObrazkem,
 };
 
 export function rozdel(html: string): Cast[] {
@@ -65,7 +67,10 @@ const bezTagu = (s: string) => s.replace(/<[^>]+>/g, '').trim();
 
 // Sekce ### až do dalšího ## → záložky (přepínač [data-switch] v Base.astro)
 export function naZalozky(html: string, id: string): string {
-  const konec = html.search(/<h2[\s>]/);
+  // karta končí před dalším nadpisem (h2 nebo druhým h3)
+  const prvniH3 = html.search(/<h3[\s>]/);
+  const dalsi = html.slice(prvniH3 + 3).search(/<h[23][\s>]/);
+  const konec = prvniH3 === -1 || dalsi === -1 ? html.search(/<h2[\s>]/) : prvniH3 + 3 + dalsi;
   const blok = konec === -1 ? html : html.slice(0, konec);
   const zbytek = konec === -1 ? '' : html.slice(konec);
   const kusy = blok.split(/(?=<h3[\s>])/);
@@ -90,19 +95,32 @@ const NAHLEDY: [string, string][] = [
 ];
 const IKONA_DOC = '<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><path d="M14 3v6h6M8 13h8M8 17h5"></path></svg>';
 
-// První seznam odkazů → karty s náhledem
+// První seznam odkazů → karty s náhledem jako na hlavní stránce (celá karta je odkaz)
 export function naNahledy(html: string): string {
   const m = html.match(/^\s*<ul>([\s\S]*?)<\/ul>/);
   if (!m) return html;
   const karty = [...m[1].matchAll(/<li>([\s\S]*?)<\/li>/g)].map(([, li]) => {
     const a = li.match(/<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/);
-    if (!a) return `<article class="card nahled"><p>${li}</p></article>`;
-    const popis = li.replace(/^\s*<strong>[\s\S]*?<\/strong>\s*[—–-]?\s*/, '');
+    if (!a) return '';
+    const popis = bezTagu(li.replace(/^\s*<strong>[\s\S]*?<\/strong>\s*[—–-]?\s*/, ''));
     const obr = NAHLEDY.find(([k]) => a[1].includes(k))?.[1];
-    const nahled = obr ? `<img src="${url(obr)}" alt="" loading="lazy" />` : `<div class="nahled-tile" aria-hidden="true">${IKONA_DOC}</div>`;
-    return `<article class="card nahled">${nahled}<h3><a href="${a[1]}">${a[2]}</a></h3><p>${popis}</p></article>`;
+    const nahled = obr ? `<img src="${url(obr)}" alt="" loading="lazy" />` : `<span class="nahled-tile" aria-hidden="true">${IKONA_DOC}</span>`;
+    return `<a class="thumb" href="${a[1]}">${nahled}<span class="thumb-text"><span class="thumb-nazev">${bezTagu(a[2])}</span><span class="thumb-popis">${popis}</span></span></a>`;
   });
   return `<div class="nahledy">${karty.join('')}</div>` + html.slice(m.index! + m[0].length);
+}
+
+// Obrázek, nadpis ###, text a odkaz (do dalšího nadpisu) → karta s obrázkem vlevo; odkaz jako tlačítko
+export function naKartuSObrazkem(html: string): string {
+  // karta končí před dalším nadpisem (h2 nebo druhým h3)
+  const prvniH3 = html.search(/<h3[\s>]/);
+  const dalsi = html.slice(prvniH3 + 3).search(/<h[23][\s>]/);
+  const konec = prvniH3 === -1 || dalsi === -1 ? html.search(/<h2[\s>]/) : prvniH3 + 3 + dalsi;
+  const blok = konec === -1 ? html : html.slice(0, konec), zbytek = konec === -1 ? '' : html.slice(konec);
+  const img = blok.match(/<p>\s*(<img [^>]*>)\s*<\/p>/);
+  const text = (img ? blok.replace(img[0], '') : blok).replace(/<p>\s*<a /, '<p class="tlacitko-odstavec"><a class="btn btn--primary" ');
+  if (!img) return `<div class="karta-obrazek karta-bez-obrazku card"><div class="karta-obrazek-text">${text}</div></div>` + zbytek;
+  return `<div class="karta-obrazek card">${img[1]}<div class="karta-obrazek-text">${text}</div></div>` + zbytek;
 }
 
 // První tabulka → na mobilu karty (data-label s názvem sloupce u každé buňky)
