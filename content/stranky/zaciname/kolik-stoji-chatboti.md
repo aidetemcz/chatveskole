@@ -11,7 +11,7 @@ stav: koncept
 
 # Kolik stojí chatboti
 
-Všechny chatovací aplikace mají bezplatnou verzi. Placená verze přidá vyšší limity, silnější modely a funkce jako samostatná práce na úkolech, pluginy nebo hloubkový výzkum. Ceny se mění často — v přehledu najdete vždy odkaz na oficiální ceník.
+Všechny chatovací aplikace mají bezplatnou verzi. Placená verze přidá vyšší limity, silnější modely a funkce, jako je samostatná práce na úkolech, pluginy nebo hloubkový výzkum. Ceny se mění často — v přehledu najdete vždy odkaz na oficiální ceník.
 
 ## Co rozhoduje víc než cena
 
