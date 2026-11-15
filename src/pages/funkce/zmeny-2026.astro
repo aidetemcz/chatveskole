@@ -37,8 +37,10 @@ const datum = d.aktualizovano ? datumCesky(d.aktualizovano) : null;
 <Base title={d.title} description={d.popis ?? undefined}>
   <div class="band band--white">
     <div class="wrap page-head">
-      <Crumbs items={[{ title: 'Funkce' }, { title: d.title }]} />
-      {datum && <span class="draft" style="align-self: flex-start">Aktualizováno {datum}</span>}
+      <div class="zahlavi">
+        <Crumbs items={[{ title: 'Funkce' }, { title: d.title }]} />
+        {datum && <span class="draft">Aktualizováno {datum}</span>}
+      </div>
       <h1>{d.title}</h1>
       <div class="lede perex" set:html={perex} />
     </div>
