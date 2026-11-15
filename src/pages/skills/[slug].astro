@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import Icon from '../../components/Icon.astro';
 import { url } from '../../lib/url';
-import { skills, sadaBySlug, type Skill } from '../../lib/data';
+import { skills, sadaBySlug, datumCesky, type Skill } from '../../lib/data';
 import { NASTROJE } from '../../lib/instalace';
 import OdkazyKonec from '../../components/OdkazyKonec.astro';
 import QRCode from 'qrcode';
@@ -28,6 +28,7 @@ const varianty = skill.prompt.varianty;
       <Crumbs items={[{ title: 'Katalog dovedností', href: '/skills' }, { title: skill.title }]} />
       <div class="hlava">
         <header class="page-head">
+          {skill.aktualizovano && <span class="draft" style="align-self: flex-start">Aktualizováno {datumCesky(skill.aktualizovano as unknown as string | Date)}</span>}
           <h1>{skill.title}</h1>
           <p class="lede">{skill.popis ?? skill.kratky_popis}</p>
           {skill.rezimy && skill.rezimy.length > 0 && (
