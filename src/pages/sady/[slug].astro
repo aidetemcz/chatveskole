@@ -2,9 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import SkillCard from '../../components/SkillCard.astro';
-import Icon from '../../components/Icon.astro';
 import { url } from '../../lib/url';
-import { sady, skillBySlug, ZIP, pocet, type Sada, type Skill } from '../../lib/data';
+import { sady, skillBySlug, pocet, type Sada, type Skill } from '../../lib/data';
 
 export function getStaticPaths() {
   return sady.map((sada) => ({ params: { slug: sada.slug }, props: { sada } }));
@@ -19,10 +18,6 @@ const items = sada.skills.map(skillBySlug).filter(Boolean) as Skill[];
       <header class="page-head">
         <h1>{sada.title}</h1>
         <p class="lede">{sada.popis}</p>
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px 30px; padding-top: 6px">
-          <a class="btn btn--primary" href={url(ZIP.plugin(sada.slug))} download><Icon name="download" size={16} />Stáhnout celou sadu (plugin)</a>
-          <a class="linkbtn" href={url('/funkce/pluginy')} style="font-size: 1rem">Jak plugin nainstalovat →</a>
-        </div>
       </header>
     </div>
   </div>
