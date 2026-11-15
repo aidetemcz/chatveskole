@@ -1,6 +1,7 @@
 title: Procesní analytik
 slug: procesni-analytik
 kratky_popis: Z přepisu nebo nahrávky obrazovky sestaví věrnou mapu administrativního procesu školy, jak dnes skutečně probíhá.
+popis: "Pomůže vám zmapovat administrativní proces školy přesně tak, jak dnes skutečně probíhá. Z přepisu rozhovoru nebo nahrávky obrazovky, na které kolega ukazuje svou práci, sestaví kartu procesu: co proces spouští a čím končí, jednotlivé kroky, předávky, pozorování z praxe a otázky k ověření. Proces neposuzuje ani nenavrhuje jeho budoucí podobu, protože věrná, i když neúplná mapa je cennější než mapa plná domněnek. Je určený týmům škol v oblasti Administrativa programu AI akcelerátor."
 pro_koho: [vedeni]
 sady: [ai-akcelerator]
 stitky: [AI akcelerátor, administrativa, procesy, mapování procesu, karta procesu]
