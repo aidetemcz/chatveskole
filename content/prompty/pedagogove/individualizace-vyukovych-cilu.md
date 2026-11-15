@@ -7,40 +7,51 @@ kategorie_slug: ["podpora-formativniho-pristupu"]
 skill: "uprava-materialu"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/individualizace-vyukovych-cilu/"
 puvodni_uprava: "2025-06-29T13:09:05"
-stav: prevzato
+stav: upraveno
 ---
 ## Prompt
 
 ```text
-Chovej se jako zkušený speciální pedagog, který má mnohaletou praxi s úpravami vzdělávacích materiálů pro žáky se speciálními vzdělávacími potřebami. Na základě zadaného výukového textu nebo aktivity
+Vystupuj jako zkušený speciální pedagog s praxí ve formativním hodnocení. Pomoz mi přizpůsobit výukový cíl, kritéria a aktivitu žákům se speciálními vzdělávacími potřebami, nadaným žákům nebo žákům s odlišným mateřským jazykem.
 
-[sem vložte text nebo soubor (např. PDF…) s popisem aktivity]
+Ročník a předmět: [například 6. ročník ZŠ, zeměpis]
+Cíl hodiny pro třídu: [například Žák určí na mapě hlavní pohoří Evropy.]
+Kritéria hodnocení: [vložte, nebo řádek smažte]
+Aktivita nebo materiál: [vložte text, soubor nebo popis aktivity]
+Žáci – bez jmen, popište jen potřeby, diagnózu uvádět nemusíte:
+[Žák A: obtíže se čtením delšího textu a psaných pokynů; pomáhá čtení nahlas, kratší úseky, víc času, odpovídat ústně.]
+[Žák B: hůř udrží pozornost; pomáhají krátké kroky, pohyb, práce ve dvojici, častá zpětná vazba.]
+[Žák C: potřebuje jasnou strukturu, předem známý postup a obrázkovou oporu; lépe pracuje sám nebo ve dvojici.]
+[Žák D: učivo zvládá rychle a potřebuje větší výzvu.]
+Doporučení poradenského zařízení nebo IVP: [například zkrácený rozsah písemných úkolů; nebo řádek smažte]
 
-vytvoř různé verze obsahu tak, aby odpovídaly potřebám konkrétních žáků s odlišnými vzdělávacími potřebami. Před úpravou zohledni popis každého žáka:
+Pro každého žáka zvlášť:
+1. Cíl: zachovej jeho podstatu, tedy co má žák prokázat. Měň cestu k němu: způsob, jak výkon ukáže (ústně, kresbou, ukázáním), míru opory (vzor, osnova, obrázky, slovníček), rozsah a čas. Samotný cíl sniž, jen když to vyplývá z doporučení nebo IVP, a výslovně to uveď. Nadanému žákovi cíl prohlub (složitější znalost, nová situace, vlastní volba), nepřidávej jen víc stejných úloh.
+2. Napiš cíl pro učitele (3. osoba) a cíl pro žáka (1. osoba, „Učím se…“). Pokud se cíl nemění, napiš „Cíl stejný jako pro třídu“.
+3. Kritérium pro žáka v 1. osobě, s měřitelným slovesem (popíšu, ukážu, vysvětlím), ne „umím“.
+4. Upravená aktivita nebo materiál, připravené k použití, změny vyznač tučně.
+5. Tabulka: co se upravilo – proč (z popsané potřeby).
 
-Například:
+Pravidla:
+- Vycházej z popsaných potřeb, ne z nálepky. Nediagnostikuj a neurčuj stupeň podpůrných opatření.
+- Věcná správnost zůstává. Zjednodušit neznamená zkreslit.
+- Verze pojmenuj neutrálně (verze A, „s oporou“, „rozšiřující“), nikdy „pro slabé“.
+- Piš srozumitelně a vstřícně, bez odborného žargonu.
+- Když údaje nestačí, nejdřív se mě zeptej.
 
-[Žák 1, 6. ročník ZŠ
-
-Žák 1 má poruchu autistického spektra, vysoce funkční autismus. Potřebuje jasně strukturované úkoly, předem známý průběh hodiny a bezpečné prostředí bez překvapivých změn. Lépe pracuje samostatně nebo ve dvojici než ve větší skupině. Pomáhá mu vizuální podpora a konkrétní pokyny.]
-
-[Žák 2, 6. ročník ZŠ
-
-Žák 2 má diagnostikovanou dyslexii. Má obtíže s čtením delších textů a porozuměním psaným instrukcím. Potřebuje zadání číst nahlas, využívat audioverze textů a dostatek času na zpracování. Při písemném projevu jí pomáhá, když může odpovědi diktovat nebo používat počítač.]
-
-[Žák 3, 6. ročník ZŠ
-
-Žák 3 má ADHD. Hůře se soustředí, snadno se rozptýlí a potřebuje častější přestávky. Pomáhá mu, když je zapojen do aktivní práce (např. práce s mapou, pohybové aktivity, práce ve dvojici). Potřebuje častou zpětnou vazbu a motivaci za malé pokroky.]
-
-Uveď, jaké úpravy provádíš a proč. Uprav obsah tak, aby zůstal věcně správný, ale přístupný pro každého žáka podle jeho potřeb. Odpovídej srozumitelným a vstřícným tónem. Text je určen pedagogům, kteří chtějí materiály individualizovat podle potřeb svých žáků. Výstupem jsou krátké varianty výukového materiálu (nebo přetvořená aktivita) – každá pro jednoho žáka s popisem úpravy. Délka odpovědi přibližně 300–500 slov.
+Na konci jednou větou připomeň, že jde o návrh a závazná jsou doporučení poradenského zařízení a IVP. Nabídni: 1) úpravu jedné verze, 2) sebehodnocení J–Č–T–Ú k upraveným kritériím, 3) verzi pro dalšího žáka.
 ```
 
 ## Co je cílem promptu
 
-Cílem promptu je pomoci pedagogovi upravit zadaný výukový text nebo aktivitu tak, aby odpovídala konkrétním vzdělávacím potřebám různých žáků. Prompt zohledňuje individuální profily žáků a navrhuje praktické úpravy, které zajišťují přístupnost výuky, podporují porozumění a aktivní zapojení každého žáka bez snižování nároků na obsah. Umožňuje tak realizovat skutečně inkluzivní výuku.
+Prompt vám pomůže přizpůsobit hodinu žákům s odlišnými potřebami tak, aby všichni pracovali na stejném cíli, jen jinou cestou. Pro každého žáka navrhne cíl, kritérium, podle kterého se sám posoudí, a upravenou aktivitu nebo materiál. U každé úpravy vysvětlí, proč ji dělá.
+
+Cíl se mění jen tam, kde to říká doporučení poradenského zařízení nebo individuální vzdělávací plán. Nadaní žáci dostanou hlubší úkol, ne víc stejných úloh.
 
 ## Jak prompt použít
 
-Zkopírujte prompt a vložte ho do chatovací aplikace. Doplňte výukový text nebo popis aktivity a krátké charakteristiky jednotlivých žáků včetně jejich specifických potřeb. Prompt vám vygeneruje upravené verze obsahu – každou přizpůsobenou jednomu žákovi – včetně vysvětlení, jaké úpravy byly provedeny a proč. Výstup můžete rovnou použít ve výuce nebo jako inspiraci pro vlastní přizpůsobení učebních materiálů.
+Zkopírujte prompt do chatbota a doplňte cíl hodiny, aktivitu nebo materiál a krátký popis každého žáka. Ukázkové profily v hranatých závorkách přepište nebo smažte. Jména žáků nepište, stačí označení A, B, C. Diagnózu uvádět nemusíte, důležité je, co žákovi pomáhá.
+
+Pokud chcete kritéria k upraveným cílům rozepsat do úrovní pro sebehodnocení, použijte prompt [Sebehodnocení pro žáky](/funkce/prompty/sebehodnoceni-pro-zaky).
 
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Úprava materiálu](/skills/uprava-materialu), kterou si můžete nainstalovat do svého chatbota.
