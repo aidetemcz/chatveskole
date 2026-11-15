@@ -32,7 +32,7 @@ Dovednost je složka. Povinný je v ní jediný soubor `SKILL.md`:
 - **postup** — co se má zeptat, jak má pracovat, jak má vypadat výstup,
 - volitelně **podklady** (složka `references`) — škály, příklady, metodiky.
 
-Formát je otevřený standard [Agent Skills](https://agentskills.io), takže ho čtou všechny velké chatboty.
+Formát je otevřený standard [Agent Skills](https://agentskills.io), takže ho čtou všechny chatovací aplikace.
 
 ## Dovednosti z tohoto webu
 
