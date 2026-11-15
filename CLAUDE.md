@@ -40,6 +40,7 @@ Přečti:
 
 **Obsah**
 - Web je česky. Texty piš věcně, konkrétně, bez akademismů a anglicismů, krátké odstavce. Oslovujeme „vy“.
+- Názvosloví (Eva, 11/2026): „dovednost“ (ne skill; anglický název jen v závorce u vysvětlení), „vyučující“ nebo „pedagog“ (ne učitel), „chatovací aplikace“ (ne „velké chatboty“).
 - Neměň význam textů v `content/` bez zadání. Opravy překlepů a formátování jsou v pořádku, věcné změny jen na požádání.
 - Fakta o chatbotech (ceny, věk, funkce, data) ber jen z `data/*.yaml` nebo ze zdrojů ve frontmatteru. Když je měníš, aktualizuj i `aktualizovano` a zdroje. Nevymýšlej je.
 - Nikde nežádej po učitelích jména žáků; v příkladech používej iniciály.
