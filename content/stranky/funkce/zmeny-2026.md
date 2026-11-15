@@ -40,6 +40,4 @@ ChatGPT, Gemini, Copilot a Claude opouštějí hotové asistenty, které se otev
 - **Sdílíte asistenta s kolegy nebo žáky odkazem?** Tahle cesta končí. Náhradou je sdílený [projekt](/funkce/projekty), dovednost poslaná jako soubor, nebo prompt.
 - **Pracujete s žáky?** Dovednosti jsou v Gemini a Claude jen pro dospělé. Pro žáky používejte [prompty](/funkce/prompty/zaci) nebo aplikaci [Tiny](/ve-vyuce/tiny).
 
-<!-- komponenta: zdroje (data.zdroje) -->
-
 Funkce se mění každý měsíc. Údaje ověřujeme v oficiálních nápovědách výrobců, naposledy 13. 10. 2026.

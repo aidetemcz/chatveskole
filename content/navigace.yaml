@@ -28,7 +28,7 @@ menu:
 
   - title: Chatboti ve výuce
     items:
-      - { title: Aplikace Tiny, href: /ve-vyuce/tiny }
+      - { title: AI aplikace Tiny, href: /ve-vyuce/tiny }
       - { title: Metodické materiály, href: /ve-vyuce/metodiky }
       - { title: Tvorba pravidel pro využívání AI, href: /ve-vyuce/pravidla-pro-ai }
       - { title: Doporučení pro ZŠ a SŠ, href: /ve-vyuce/doporuceni-zs-ss }

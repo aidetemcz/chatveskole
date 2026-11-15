@@ -4,7 +4,7 @@ import { url } from './url';
 
 export type Klic =
   | 'cenik' | 'sady-skills' | 'pluginy' | 'tiny' | 'infografika-mcp' | 'instrukce' // datové komponenty (Astro)
-  | 'zalozky' | 'nahledy' | 'tabulka-karty' // úprava následujícího HTML
+  | 'zalozky' | 'nahledy' | 'tabulka-karty' | 'tlacitko' // úprava následujícího HTML
   | 'teze' | 'casova-osa' | 'matice' | 'karty-nastroju' | 'zdroje-nastroju'; // stránka Změny funkcí
 
 const MAPA: [RegExp, Klic][] = [
@@ -15,6 +15,7 @@ const MAPA: [RegExp, Klic][] = [
   [/karty sad/, 'pluginy'],
   [/tabulka žákovský prompt/, 'tiny'],
   [/záložky podle nástroje/, 'zalozky'],
+  [/^\s*tlačítko\b/, 'tlacitko'],
   [/karty s náhledem/, 'nahledy'],
   [/tabulka, na mobilu karty/, 'tabulka-karty'],
   [/tři teze/, 'teze'],
@@ -30,6 +31,7 @@ const PREVOD: Partial<Record<Klic, (html: string, id: string) => string>> = {
   zalozky: naZalozky,
   nahledy: naNahledy,
   'tabulka-karty': naTabulkuKaret,
+  tlacitko: naTlacitko,
 };
 
 export function rozdel(html: string): Cast[] {
@@ -52,6 +54,11 @@ export function rozdel(html: string): Cast[] {
   }
   pridejHtml(html.slice(posledni));
   return casti;
+}
+
+// Následující odstavec s odkazem → tlačítko (<!-- komponenta: tlačítko -->)
+export function naTlacitko(html: string): string {
+  return html.replace(/<p>\s*<a /, '<p class="tlacitko-odstavec"><a class="btn btn--primary" ');
 }
 
 const bezTagu = (s: string) => s.replace(/<[^>]+>/g, '').trim();

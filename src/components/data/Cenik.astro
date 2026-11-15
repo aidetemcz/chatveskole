@@ -30,9 +30,6 @@ const domena = (u: string) => u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/.
         ))}
       </ul>
       {n.trenink && <p class="trenink"><strong>Trénink na vašich konverzacích:</strong> {n.trenink}</p>}
-      {n.zdroje && n.zdroje.length > 0 && (
-        <p class="zdroje">Zdroje: {n.zdroje.map((z, i) => <>{i > 0 && ', '}<a href={z}>{domena(z)}</a></>)}</p>
-      )}
     </section>
   ))}
   <p class="stav">Ceny jsou orientační, stav k {datumCesky(new Date(ceny.aktualizovano))}. Spotřebitelské tarify v Kč jsou včetně DPH, ostatní bez DPH. Rozhoduje vždy oficiální ceník.</p>

@@ -10,6 +10,24 @@ const SITE = (process.env.SITE_URL || 'https://chatveskole.cz').replace(/\/$/, '
 const NAHLED = process.env.INDEXOVAT !== '1'; // indexuje se jen ostrý web na chatveskole.cz (build s INDEXOVAT=1)
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 
+// 0) odkazy mimo web se otevírají v nové kartě (Eva 15. 11. 2026); čtečkám obrazovky to řekne skrytý text
+const VNEJSI = /<a\b([^>]*?)\bhref="(https?:\/\/[^"]+)"([^>]*)>([\s\S]*?)<\/a>/g;
+let nOdkazu = 0;
+(function projdi(dir) {
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    const p = path.join(dir, e.name);
+    if (e.isDirectory()) { if (!['_astro', 'pagefind', 'download', 'archiv', 'img'].includes(e.name)) projdi(p); continue; }
+    if (!e.name.endsWith('.html')) continue;
+    const puvodni = fs.readFileSync(p, 'utf8');
+    const nove = puvodni.replace(VNEJSI, (cely, pred, href, po, obsah) => {
+      if (/\btarget=/.test(pred + po) || /^https?:\/\/(www\.)?chatveskole\.cz/.test(href)) return cely;
+      nOdkazu++;
+      return `<a${pred}href="${href}"${po} target="_blank" rel="noopener">${obsah}<span class="sr-only"> (otevře se v novém okně)</span></a>`;
+    });
+    if (nove !== puvodni) fs.writeFileSync(p, nove);
+  }
+})(DIST);
+
 // 1) přesměrování
 const { redirects } = JSON.parse(fs.readFileSync('migrace/redirects.json', 'utf8'));
 let nPres = 0;
@@ -57,5 +75,6 @@ fs.writeFileSync(path.join(DIST, 'robots.txt'), NAHLED
   ? 'User-agent: *\nDisallow: /\n'
   : `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
 
+console.log(`Odkazy mimo web v nové kartě: ${nOdkazu}`);
 console.log(`Přesměrování: ${nPres}, přeskočeno ${preskoceno.length}${preskoceno.length ? ' (' + preskoceno.join(', ') + ')' : ''}`);
 console.log(`Sitemap: ${urls.length} stránek${NAHLED ? ' · náhled: noindex na všech stránkách' : ''}`);
