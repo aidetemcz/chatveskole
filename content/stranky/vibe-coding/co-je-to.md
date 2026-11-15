@@ -3,7 +3,7 @@ title: Co je vibe coding
 menu: Vibe Coding
 poradi: 1
 popis: Vibe coding je tvorba aplikací popisem v běžné řeči. Co to je, co z toho má vyučující a žák a kde jsou hranice.
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-15
 stav: koncept
 ---
 
@@ -35,6 +35,8 @@ Vibe coding je skvělý způsob, jak rozvíjet **digitální kompetenci** a **in
 - tvoří něco užitečného pro sebe nebo spolužáky.
 
 Navazuje to na [Inovaci](/funkce/prompty/zaci) — jeden z deseti způsobů využití AI ve výuce, kdy se žák stává tvůrcem nástroje, ne jen uživatelem.
+
+Jak vibe coding vyzkoušet se žáky 8. a 9. ročníku a SŠ, popisuje krok za krokem naše metodika [Tvorba jednoduchých aplikací pomocí vibecodingu](/vibe-coding/materialy-do-vyuky).
 
 ## Kde jsou hranice
 
