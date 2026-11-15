@@ -28,6 +28,36 @@ let nOdkazu = 0;
   }
 })(DIST);
 
+// 0b) česká typografie: jednopísmenné předložky a spojky (v, k, s, z, o, u, a, i) nezůstanou na konci řádku
+// — mezeru za nimi nahradí nezlomitelnou (&nbsp;). Jen v textu, ne v <script>, <style>, <pre>, <code>, <textarea> ani v atributech.
+const JEDNOZNAKOVKY = /(^|[\s(„"\u00a0])([ksvzouiaKSVZOUIA])\s+(?=\S)/g;
+const BEZ_UPRAV = /^<(script|style|pre|code|textarea)\b/i;
+let nNbsp = 0;
+(function projdi(dir) {
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    const p = path.join(dir, e.name);
+    if (e.isDirectory()) { if (!['_astro', 'pagefind', 'download', 'archiv', 'img'].includes(e.name)) projdi(p); continue; }
+    if (!e.name.endsWith('.html')) continue;
+    const puvodni = fs.readFileSync(p, 'utf8');
+    const casti = puvodni.split(/(<[^>]*>)/);
+    let preskocit = null;
+    for (let i = 0; i < casti.length; i++) {
+      const c = casti[i];
+      if (c.startsWith('<')) {
+        if (preskocit) { if (new RegExp(`^</${preskocit}\\b`, 'i').test(c)) preskocit = null; }
+        else { const m = c.match(BEZ_UPRAV); if (m && !c.endsWith('/>')) preskocit = m[1]; }
+        continue;
+      }
+      if (preskocit || !c.trim()) continue;
+      let t = c, pred;
+      do { pred = t; t = t.replace(JEDNOZNAKOVKY, (_, a, b) => { nNbsp++; return `${a}${b}&nbsp;`; }); } while (t !== pred);
+      casti[i] = t;
+    }
+    const nove = casti.join('');
+    if (nove !== puvodni) fs.writeFileSync(p, nove);
+  }
+})(DIST);
+
 // 1) přesměrování
 const { redirects } = JSON.parse(fs.readFileSync('migrace/redirects.json', 'utf8'));
 let nPres = 0;
@@ -76,5 +106,6 @@ fs.writeFileSync(path.join(DIST, 'robots.txt'), NAHLED
   : `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
 
 console.log(`Odkazy mimo web v nové kartě: ${nOdkazu}`);
+console.log(`Nezlomitelné mezery za jednoznakovkami: ${nNbsp}`);
 console.log(`Přesměrování: ${nPres}, přeskočeno ${preskoceno.length}${preskoceno.length ? ' (' + preskoceno.join(', ') + ')' : ''}`);
 console.log(`Sitemap: ${urls.length} stránek${NAHLED ? ' · náhled: noindex na všech stránkách' : ''}`);
