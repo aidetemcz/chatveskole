@@ -47,6 +47,10 @@ Chatboti v Tiny (Tinyboti) jsou postavení podle Bloomovy taxonomie. Každý roz
 | Tvorba | Parťák pro brainstorming | Pomáhá vymýšlet nápady a řešení. |
 | | Tinybot pro plánování | Pomáhá rozvrhnout práci a konkrétní kroky. |
 
+<!-- komponenta: tlačítko -->
+
+[Návody na Tiny](https://www.tiny.school/navody/)
+
 ## Co dalšího Tiny nabízí
 
 Kromě Tinybotů najdete v Tiny modelové lekce a AI asistenty pro učitele, například pro formativní hodnocení.
