@@ -50,18 +50,18 @@ const odkazy = [...zFm, ...zTextu.filter((o) => !zFm.some((f) => f.href === o.hr
       {casti.map((c, i) => c.typ === 'html'
         ? <div class:list={['prose', { 'prose--dalsi': i > 0 }]} set:html={c.html} />
         : <Komponenta klic={c.klic} />)}
-      <OdkazyKonec odkazy={odkazy} />
       {datum && (
         <footer class="meta">
           {datum && <p>Aktualizováno {datum}</p>}
         </footer>
       )}
+      <OdkazyKonec odkazy={odkazy} />
     </article>
   </div>
 </Base>
 
 <style>
-  .layout { padding-top: 52px; padding-bottom: 96px; }
+  .layout { padding-top: 52px; padding-bottom: 84px; } /* stejně jako pruhy, viz docs/design.md */
   .content { min-width: 0; display: flex; flex-direction: column; gap: 32px; container-type: inline-size; }
   /* tabulky přes celou šířku obsahu (1140 px), ne jen sloupce textu (72 znaků) */
   @media (min-width: 861px) {

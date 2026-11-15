@@ -32,7 +32,7 @@ const skill = prompt.data.skill ? skillBySlug(prompt.data.skill) : undefined;
       <header class="page-head"><h1>{prompt.data.title}</h1></header>
       {archiv && <p class="note note--info">Starší prompt z roku 2024. Zatím není v katalogu — procházíme, které staré prompty zůstanou.</p>}
       <div class="prose"><Content /></div>
-      <OdkazyKonec odkazy={[{ text: 'Katalog promptů', href: url('/prompty') }, ...(skill ? [{ text: `Dovednost ${skill.title}`, href: url(`/skills/${skill.slug}`) }] : []), { text: 'Jak psát prompty', href: url('/funkce/prompty') }]} />
+      <div style="margin-top: 10px"><OdkazyKonec odkazy={[{ text: 'Katalog promptů', href: url('/prompty') }, ...(skill ? [{ text: `Dovednost ${skill.title}`, href: url(`/skills/${skill.slug}`) }] : []), { text: 'Jak psát prompty', href: url('/funkce/prompty') }]} /></div>
     </article>
     <aside class="side">
       {skill && (
@@ -54,7 +54,7 @@ const skill = prompt.data.skill ? skillBySlug(prompt.data.skill) : undefined;
 </Base>
 
 <style>
-  .layout { display: flex; flex-wrap: wrap; gap: 28px 48px; align-items: flex-start; padding-top: 36px; padding-bottom: 64px; }
+  .layout { display: flex; flex-wrap: wrap; gap: 28px 48px; align-items: flex-start; padding-top: 36px; padding-bottom: 84px; }
   .main { flex: 999 1 600px; min-width: 0; display: flex; flex-direction: column; gap: 22px; }
   .side { flex: 1 1 300px; display: flex; flex-direction: column; gap: 14px; }
   .skillbox { background: var(--sky-light); border-radius: var(--radius-lg); padding: 22px 24px; display: flex; flex-direction: column; gap: 10px; }

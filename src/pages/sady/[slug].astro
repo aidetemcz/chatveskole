@@ -26,9 +26,7 @@ const items = sada.skills.map(skillBySlug).filter(Boolean) as Skill[];
     <div class="wrap stack" style="gap: 28px">
       <h2 style="font-size: 1.7rem">Dovednosti v sadě <span class="count">{pocet(items.length, 'dovednost', 'dovednosti', 'dovedností')}</span></h2>
       <div class="grid-2">{items.map((k) => <SkillCard skill={k} />)}</div>
+      <OdkazyKonec vSekci odkazy={[{ text: 'Katalog dovedností', href: url('/skills') }, { text: 'Co jsou dovednosti a jak je nainstalovat', href: url('/funkce/skills') }, { text: 'Metodické materiály', href: url('/ve-vyuce/metodiky') }]} />
     </div>
   </section>
-  <div class="band band--white">
-    <div class="wrap"><OdkazyKonec odkazy={[{ text: 'Katalog dovedností', href: url('/skills') }, { text: 'Co jsou dovednosti a jak je nainstalovat', href: url('/funkce/skills') }, { text: 'Metodické materiály', href: url('/ve-vyuce/metodiky') }]} /></div>
-  </div>
 </Base>
