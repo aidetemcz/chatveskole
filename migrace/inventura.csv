@@ -89,7 +89,7 @@ databáze promptů,https://chatveskole.cz/databaze-promptu/planovac-vyuky/,/skil
 databáze promptů,https://chatveskole.cz/databaze-promptu/planovani/,/funkce/prompty/zaci/planovani,zachovat jako prompt,prompt,Žákovský prompt (skills jsou 18+)
 databáze promptů,https://chatveskole.cz/databaze-promptu/pozvanka-na-skolni-akci/,/funkce/prompty/pozvanka-na-skolni-akci,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem komunikace-s-rodici
 databáze promptů,https://chatveskole.cz/databaze-promptu/prace-s-textem-shrnuti/,/funkce/prompty/prace-s-textem-shrnuti,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem uprava-materialu
-databáze promptů,https://chatveskole.cz/databaze-promptu/pracovni-list-pro-reflexi-uciva/,/funkce/prompty/pracovni-list-pro-reflexi-uciva,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem pracovni-listy
+databáze promptů,https://chatveskole.cz/databaze-promptu/pracovni-list-pro-reflexi-uciva/,/funkce/prompty/tvorba-exitek-a-propustek,přepsat,prompt,Přepsáno na Tvorba exitek/propustek
 databáze promptů,https://chatveskole.cz/databaze-promptu/pracovni-list-s-otevrenymi-otazkami/,/funkce/prompty/pracovni-list-s-otevrenymi-otazkami,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem pracovni-listy
 databáze promptů,https://chatveskole.cz/databaze-promptu/prevod-materialu-do-jine-formy/,/funkce/prompty/prevod-materialu-do-jine-formy,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem uprava-materialu
 databáze promptů,https://chatveskole.cz/databaze-promptu/prevod-materialu-na-jinou-uroven-obtiznosti/,/funkce/prompty/prevod-materialu-na-jinou-uroven-obtiznosti,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem uprava-materialu
@@ -129,7 +129,7 @@ databáze promptů,https://chatveskole.cz/databaze-promptu/tvorba-kriterii-hodno
 databáze promptů,https://chatveskole.cz/databaze-promptu/tvorba-metodologie-hodnoceni/,/funkce/prompty/tvorba-metodologie-hodnoceni,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem strategicke-dokumenty
 databáze promptů,https://chatveskole.cz/databaze-promptu/tvorba-pravidel/,/funkce/prompty/tvorba-pravidel,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem skolni-pravidla
 databáze promptů,https://chatveskole.cz/databaze-promptu/tvorba-skolnich-pravidel/,/funkce/prompty/tvorba-skolnich-pravidel,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem skolni-pravidla
-databáze promptů,https://chatveskole.cz/databaze-promptu/tvorba-slovniho-hodnoceni/,/funkce/prompty/tvorba-slovniho-hodnoceni,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem slovni-hodnoceni
+databáze promptů,https://chatveskole.cz/databaze-promptu/tvorba-slovniho-hodnoceni/,/skills/slovni-hodnoceni,nahradit skillem,prompt,"Prompt smazán, náhradou je skill Slovní hodnocení"
 databáze promptů,https://chatveskole.cz/databaze-promptu/tvorba-testu-dedicnost/,/funkce/prompty/tvorba-testu-dedicnost,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem pracovni-listy
 databáze promptů,https://chatveskole.cz/databaze-promptu/tvorba-zpetne-vazby/,/funkce/prompty/tvorba-zpetne-vazby,zachovat jako prompt,prompt,zachovat v databázi promptů; souvisí se skillem slovni-hodnoceni
 databáze promptů,https://chatveskole.cz/databaze-promptu/ucitelsky-mentor/,/skills/ucitelsky-mentor,převést na skill,asistent,AI asistent (GPT/Gem) → skill; systémový prompt v Google Docs
@@ -149,8 +149,8 @@ databáze promptů,https://chatveskole.cz/databaze-promptu/zprava-o-pokroku-zaka
 databáze promptů,https://chatveskole.cz/databaze-promptu/zvladani-stresu/,/funkce/prompty/zvladani-stresu,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem ucitelsky-mentor
 databáze promptů,https://chatveskole.cz/databaze-promptu/zvyrazneni-chyb-v-textu/,/funkce/prompty/zvyrazneni-chyb-v-textu,zachovat jako prompt,prompt,zachovat v databázi promptů (starší prompty 2024); souvisí se skillem jazykovy-korektor
 kategorie,https://chatveskole.cz/dp/ai-asistenti-pro-hodnoceni-%e2%86%92/,/sady/formativni-hodnoceni,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/formativni-hodnoceni/,/prompty#formativni-hodnoceni,přesměrovat,,
-kategorie,https://chatveskole.cz/dp/slovni-hodnoceni-%e2%86%92/,/prompty#slovni-hodnoceni,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/formativni-hodnoceni/,/prompty#podpora-formativniho-pristupu,přesměrovat,,
+kategorie,https://chatveskole.cz/dp/slovni-hodnoceni-%e2%86%92/,/prompty#podpora-formativniho-pristupu,přesměrovat,,
 kategorie,https://chatveskole.cz/dp/hodnoceni/,/prompty#hodnoceni,přesměrovat,,
 kategorie,https://chatveskole.cz/dp/ai-asistenti-pro-rizeni-skoly/,/sady/vedeni-skoly,přesměrovat,,
 kategorie,https://chatveskole.cz/dp/tvorba-strategickych-dokumentu/,/prompty#tvorba-strategickych-dokumentu,přesměrovat,,

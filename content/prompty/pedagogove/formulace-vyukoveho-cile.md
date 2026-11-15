@@ -2,8 +2,8 @@
 title: "Formulace výukového cíle"
 slug: "formulace-vyukoveho-cile"
 skupina: pedagogove
-kategorie: ["Formativní hodnocení"]
-kategorie_slug: ["formativni-hodnoceni"]
+kategorie: ["Podpora formativního přístupu"]
+kategorie_slug: ["podpora-formativniho-pristupu"]
 skill: "vzdelavaci-cile"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/formulace-vyukoveho-cile/"
 puvodni_uprava: "2025-06-29T10:32:14"

@@ -1,5 +1,4 @@
 ---
-import Icon from './Icon.astro';
 import { url } from '../lib/url';
 interface Props { title: string; href: string; text: string; id: string; skill?: boolean }
 const { title, href, text, id, skill } = Astro.props;
@@ -9,9 +8,7 @@ const { title, href, text, id, skill } = Astro.props;
     <h3><a href={url(href)}>{title}</a></h3>
     {skill && <span class="badge badge--sky" data-pagefind-ignore>i jako dovednost</span>}
   </div>
-  <template id={id}>{text}</template>
   <div class="actions" data-pagefind-ignore>
     <a class="linkbtn" href={url(href)}>Detail promptu →</a>
-    {text && <button type="button" class="linkbtn" data-copy={id}><Icon name="copy" /><span data-label>Kopírovat</span></button>}
   </div>
 </article>

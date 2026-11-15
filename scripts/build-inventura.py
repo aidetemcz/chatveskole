@@ -95,14 +95,17 @@ for s in ZACI:
 for s in VIBE:
     KB[s] = (f"/funkce/prompty/{s}", "zachovat jako prompt", "prompt", "Starší prompt 2024; dnes vibe coding — odkaz na /vibe-coding/materialy-do-vyuky")
     MAPA[s] = {"skupina": "archiv-2024", "skill": None, "vibe": True}
+# úpravy katalogu promptů (Eva 15. 11. 2026)
+KB["tvorba-slovniho-hodnoceni"] = ("/skills/slovni-hodnoceni", "nahradit skillem", "prompt", "Prompt smazán, náhradou je skill Slovní hodnocení")
+KB["pracovni-list-pro-reflexi-uciva"] = ("/funkce/prompty/tvorba-exitek-a-propustek", "přepsat", "prompt", "Přepsáno na Tvorba exitek/propustek")
 KB["znalosti-zadna-ai"] = ("/funkce/prompty/zaci", "sloučit", "aktivita", "Jediná publikovaná úroveň AIAS; zbytek nikdy nevyšel")
 MAPA["znalosti-zadna-ai"] = {"skupina": "vynechat", "skill": None}
 
 # --- Kategorie (/dp/...) ---------------------------------------------------------
 CATS = {
     "ai-asistenti-pro-hodnoceni-%e2%86%92": "/sady/formativni-hodnoceni",
-    "formativni-hodnoceni": "/prompty#formativni-hodnoceni",
-    "slovni-hodnoceni-%e2%86%92": "/prompty#slovni-hodnoceni",
+    "formativni-hodnoceni": "/prompty#podpora-formativniho-pristupu",
+    "slovni-hodnoceni-%e2%86%92": "/prompty#podpora-formativniho-pristupu",
     "hodnoceni": "/prompty#hodnoceni",
     "ai-asistenti-pro-rizeni-skoly": "/sady/vedeni-skoly",
     "tvorba-strategickych-dokumentu": "/prompty#tvorba-strategickych-dokumentu",
@@ -144,7 +147,7 @@ for slug, new in CATS.items():
     rows.append(["kategorie", f"{BASE}/dp/{slug}/", new, "přesměrovat", "", ""])
     presmeruj(f"/dp/{slug}", new)
 # zbytky WordPressu
-for src, dst in [("/databaze-promptu", "/prompty"), ("/dp", "/prompty"), ("/wp-content/uploads/:path*", "/archiv/uploads/:path*"), ("/feed", "/"), ("/zaciname/jak-funguji-chatboti", "/zaciname/jak-pracovat-s-chatboty")]:
+for src, dst in [("/databaze-promptu", "/prompty"), ("/dp", "/prompty"), ("/wp-content/uploads/:path*", "/archiv/uploads/:path*"), ("/feed", "/"), ("/zaciname/jak-funguji-chatboti", "/zaciname/jak-pracovat-s-chatboty"), ("/funkce/prompty/tvorba-slovniho-hodnoceni", "/skills/slovni-hodnoceni"), ("/funkce/prompty/pracovni-list-pro-reflexi-uciva", "/funkce/prompty/tvorba-exitek-a-propustek")]:
     presmeruj(src, dst)
 
 out = ROOT / "migrace"

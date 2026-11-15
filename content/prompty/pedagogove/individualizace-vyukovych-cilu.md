@@ -2,8 +2,8 @@
 title: "Individualizace výukových cílů"
 slug: "individualizace-vyukovych-cilu"
 skupina: pedagogove
-kategorie: ["Formativní hodnocení"]
-kategorie_slug: ["formativni-hodnoceni"]
+kategorie: ["Podpora formativního přístupu"]
+kategorie_slug: ["podpora-formativniho-pristupu"]
 skill: "uprava-materialu"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/individualizace-vyukovych-cilu/"
 puvodni_uprava: "2025-06-29T13:09:05"

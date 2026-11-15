@@ -2,8 +2,8 @@
 title: "Tvorba důkazů o učení"
 slug: "tvorba-dukazu-o-uceni"
 skupina: pedagogove
-kategorie: ["Formativní hodnocení","Tvorba materiálů do výuky"]
-kategorie_slug: ["formativni-hodnoceni","tvorba-materialu-do-vyuky"]
+kategorie: ["Podpora formativního přístupu","Tvorba materiálů do výuky"]
+kategorie_slug: ["podpora-formativniho-pristupu","tvorba-materialu-do-vyuky"]
 skill: "kriteria-hodnoceni"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/tvorba-dukazu-o-uceni/"
 puvodni_uprava: "2025-08-08T18:37:47"

@@ -111,8 +111,7 @@ export const SKUPINY_PROMPTU: { id: string; title: string }[] = [
 export const KATEGORIE_ZACI = 'Práce žáků s chatbotem';
 // pořadí účelů v katalogu promptů
 export const PORADI_KATEGORII = [
-  'Formativní hodnocení',
-  'Slovní hodnocení',
+  'Podpora formativního přístupu',
   'Tvorba materiálů do výuky',
   'Aktualizace materiálů',
   'Komunikace s rodiči',
