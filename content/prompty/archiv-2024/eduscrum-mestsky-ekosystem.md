@@ -19,7 +19,7 @@ EduScrum je framework, díky kterému mohou studenti efektivně a zároveň krea
 
 [EduScrum](https://www.eduscrum.cz/co/) je vzdělávací metoda založena na frameworku Scrum. Je vhodná pro všechny druhy vzdělávání. Lze jej využívat na základních školách, středních školách a učilištích, univerzitách, zkrátka všude.
 
-Je procesně nenáročný, snadno pochopitelný a těžce ovladatelný, protože týmy studentů se řídí samy. Studenti plánují a vymezují své vlastní aktivity a zároveň sledují a ovládají vlastní pokrok. Učitel určuje obsah, koučuje a uděluje rady.
+Je procesně nenáročný, snadno pochopitelný a těžce ovladatelný, protože týmy studentů se řídí samy. Studenti plánují a vymezují své vlastní aktivity a zároveň sledují a ovládají vlastní pokrok. Vyučující určuje obsah, koučuje a uděluje rady.
 
 Můžete vyzkoušet generovat i další diagramy.
 

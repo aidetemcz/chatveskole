@@ -36,7 +36,7 @@ Ukážeme je na jednom příkladu, který postupně vylepšujeme.
 
 Řekněte chatbotu, v jaké roli má odpovídat.
 
-> **Jsi expert na české dějiny a empatický učitel se smyslem pro humor.** Napiš shrnutí českého národního obrození.
+> **Jsi expert na české dějiny a empatický pedagog se smyslem pro humor.** Napiš shrnutí českého národního obrození.
 
 #### 2. Cílová skupina a tón
 
@@ -74,7 +74,7 @@ Co ve výstupu být nemá.
 
 **Výsledný prompt:**
 
-> Jsi expert na české dějiny a empatický učitel se smyslem pro humor. Napiš neformální shrnutí českého národního obrození pro žáky ve věku 14 let ve formátu podkladů pro prezentaci o pěti snímcích. Cílem je, aby žáci pochopili, proč bylo národní obrození tak důležité pro českou kulturu a jazyk. Na každý snímek nejvýš tři krátké body. Nepoužívej letopočty, které se žáci nemusí učit nazpaměť, a vynech odborné termíny bez vysvětlení.
+> Jsi expert na české dějiny a empatický pedagog se smyslem pro humor. Napiš neformální shrnutí českého národního obrození pro žáky ve věku 14 let ve formátu podkladů pro prezentaci o pěti snímcích. Cílem je, aby žáci pochopili, proč bylo národní obrození tak důležité pro českou kulturu a jazyk. Na každý snímek nejvýš tři krátké body. Nepoužívej letopočty, které se žáci nemusí učit nazpaměť, a vynech odborné termíny bez vysvětlení.
 
 ### Tři tipy navíc
 
@@ -94,4 +94,4 @@ Ke každé [dovednosti](/skills) na tomto webu najdete i verzi promptu. Začnět
 
 ## Katalog promptů
 
-V katalogu najdete ověřené prompty pro učitele, vedení škol i žáky. Zkopírujte prompt do jakéhokoli chatbota a doplňte údaje v hranatých závorkách.
+V katalogu najdete ověřené prompty pro vyučující, vedení škol i žáky. Zkopírujte prompt do jakéhokoli chatbota a doplňte údaje v hranatých závorkách.

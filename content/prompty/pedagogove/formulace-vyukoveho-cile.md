@@ -32,7 +32,7 @@ Postup:
 Příklad dobrého cíle: Žák vysvětlí, co rostlina při fotosyntéze potřebuje a co vytváří.
 
 Výstup jako krátký seznam:
-- Cíl pro učitele
+- Cíl pro vyučující
 - Cíl pro žáky: kratší, v 1. osobě („Učím se…“)
 - Úroveň / proces / dimenze
 - Kontext učení: dvě různé varianty přiměřené věku

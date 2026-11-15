@@ -24,9 +24,9 @@ Hodnoticí kritéria a stupnice: jasně formulovaná kritéria pro hlavní před
 
 Nástroje a postupy: portfolia, testy, projekty, pozorování, digitální nástroje; kdo je používá a jak často.
 
-Role a odpovědnosti: rozdělení úkolů mezi vedení, učitele, žáky a rodiče.
+Role a odpovědnosti: rozdělení úkolů mezi vedení, vyučující, žáky a rodiče.
 
-Plán profesního rozvoje učitelů: jak se pedagogové budou vzdělávat v oblasti hodnocení.
+Plán profesního rozvoje vyučujících: jak se pedagogové budou vzdělávat v oblasti hodnocení.
 
 Měřitelné indikátory úspěchu: jak zjistíme, že metodologie funguje (zlepšení výsledků, motivace, zpětná vazba).
 
@@ -59,7 +59,7 @@ Odpovídej podpůrně, povzbuzuj k diskusi a dbej na to, aby dokument tvořil so
 
 ## Co je cílem promptu
 
-Cílem promptu „Tvorba metodologie hodnocení“ je podpořit školní vedení a pedagogický sbor při společném vytváření jasné, férové a motivační koncepce hodnocení, která sjednocuje přístupy napříč předměty a zároveň respektuje potřeby jednotlivých žáků. Prompt pomáhá definovat účel a principy hodnocení, propojit je s konkrétními formami, nástroji a měřitelnými ukazateli úspěchu, aby výsledný dokument sloužil jako praktický rámec pro každodenní práci učitelů i dlouhodobé strategické řízení školy.
+Cílem promptu „Tvorba metodologie hodnocení“ je podpořit školní vedení a pedagogický sbor při společném vytváření jasné, férové a motivační koncepce hodnocení, která sjednocuje přístupy napříč předměty a zároveň respektuje potřeby jednotlivých žáků. Prompt pomáhá definovat účel a principy hodnocení, propojit je s konkrétními formami, nástroji a měřitelnými ukazateli úspěchu, aby výsledný dokument sloužil jako praktický rámec pro každodenní práci vyučujících i dlouhodobé strategické řízení školy.
 
 ## Jak prompt použít
 

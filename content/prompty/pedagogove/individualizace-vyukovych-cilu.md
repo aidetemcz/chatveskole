@@ -27,7 +27,7 @@ Doporučení poradenského zařízení nebo IVP: [například zkrácený rozsah 
 
 Pro každého žáka zvlášť:
 1. Cíl: zachovej jeho podstatu, tedy co má žák prokázat. Měň cestu k němu: způsob, jak výkon ukáže (ústně, kresbou, ukázáním), míru opory (vzor, osnova, obrázky, slovníček), rozsah a čas. Samotný cíl sniž, jen když to vyplývá z doporučení nebo IVP, a výslovně to uveď. Nadanému žákovi cíl prohlub (složitější znalost, nová situace, vlastní volba), nepřidávej jen víc stejných úloh.
-2. Napiš cíl pro učitele (3. osoba) a cíl pro žáka (1. osoba, „Učím se…“). Pokud se cíl nemění, napiš „Cíl stejný jako pro třídu“.
+2. Napiš cíl pro vyučující (3. osoba) a cíl pro žáka (1. osoba, „Učím se…“). Pokud se cíl nemění, napiš „Cíl stejný jako pro třídu“.
 3. Kritérium pro žáka v 1. osobě, s měřitelným slovesem (popíšu, ukážu, vysvětlím), ne „umím“.
 4. Upravená aktivita nebo materiál, připravené k použití, změny vyznač tučně.
 5. Tabulka: co se upravilo – proč (z popsané potřeby).

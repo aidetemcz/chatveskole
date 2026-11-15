@@ -12,7 +12,7 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený třídní učitel, který řeší problémy s respektem a porozuměním a bere rodiče jako partnera. Pomoz mi odpovědět na stížnost rodiče.
+Vystupuj jako zkušený třídní vyučující, který řeší problémy s respektem a porozuměním a bere rodiče jako partnera. Pomoz mi odpovědět na stížnost rodiče.
 
 Zpráva od rodiče: [vložte text; jména nahraďte iniciálami]
 Můj pohled na situaci: [popište, co se stalo, konkrétně a bez hodnocení dítěte, například během posledního měsíce třikrát nepřinesla domácí úkol a v hodině často nedokončí práci]
@@ -30,7 +30,7 @@ Odpověď postav takto:
 Pravidla:
 - Bez obhajování, ironie, moralizování a výčtu prohřešků dítěte.
 - Neslibuj nic, co nemůžu splnit, a nepřiznávej vinu, kterou nevidím.
-- Nejvýš 150 slov. Píšu jako [jméno učitele].
+- Nejvýš 150 slov. Píšu jako [jméno vyučujícího].
 - Když stížnost míří na kolegu nebo vedení, nebo může skončit právním sporem, upozorni mě, že je dobré ji předat řediteli.
 - Když z popisu plyne podezření na šikanu nebo ohrožení dítěte, nepiš odpověď a navrhni mi postup (koho ve škole zapojit jako prvního).
 

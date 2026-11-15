@@ -34,7 +34,7 @@ Učíme v tematických integrovaných blocích: [ano/ne/částečně]
 
 Další doplnění: [doplňte, pokud je relevantní]
 
-Chceme promyšleně zavádět nové metody, technologie nebo přístupy, které zlepší výuku a zapojení žáků. Potřebuji, aby plán bral v úvahu naši současnou situaci, připravenost učitelů, potřeby žáků i možnosti školy.
+Chceme promyšleně zavádět nové metody, technologie nebo přístupy, které zlepší výuku a zapojení žáků. Potřebuji, aby plán bral v úvahu naši současnou situaci, připravenost vyučujících, potřeby žáků i možnosti školy.
 
 Začni mi prosím klást otázky, které pomohou tento plán sestavit. Poté navrhni konkrétní kroky včetně časové osy, kdo bude za co odpovědný a jak budeme ověřovat dopad inovací.
 ```

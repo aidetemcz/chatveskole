@@ -57,7 +57,7 @@ Chatbot od Microsoftu, postavený na modelech OpenAI. Školy s licencí Microsof
 
 ## Claude
 
-Chatbot od Anthropicu, silný v psaní, práci s dokumenty a programování. I v bezplatné verzi má dovednosti, projekty a tvorbu dokumentů, prezentací a aplikací (artefakty). Je jen pro dospělé — se žáky ho používejte jen tak, že ho ovládá učitel.
+Chatbot od Anthropicu, silný v psaní, práci s dokumenty a programování. I v bezplatné verzi má dovednosti, projekty a tvorbu dokumentů, prezentací a aplikací (artefakty). Je jen pro dospělé — se žáky ho používejte jen tak, že ho ovládá vyučující.
 
 [claude.ai](https://claude.ai)
 
@@ -65,7 +65,7 @@ Chatbot od Anthropicu, silný v psaní, práci s dokumenty a programování. I v
 
 - **[Perplexity](https://www.perplexity.ai)** — vyhledávač, který odpovídá s odkazy na zdroje. Hodí se na rešerše. Od 13 let, nezletilí jen se souhlasem rodiče.
 - **[Gemini Notebook](https://notebooklm.google.com)** (dříve NotebookLM) — odpovídá jen z podkladů, které nahrajete. Umí z nich udělat shrnutí, kvíz nebo podcast.
-- **[Tiny](/ve-vyuce/tiny)** — chatboti pro žáky od AI dětem: vedou otázkami, učitel vidí konverzace, data zůstávají v EU.
+- **[Tiny](/ve-vyuce/tiny)** — chatboti pro žáky od AI dětem: vedou otázkami, vyučující vidí konverzace, data zůstávají v EU.
 - Nástroje pro tvorbu aplikací najdete v sekci [Vibe coding](/vibe-coding/nastroje).
 
 [Kolik stojí chatboti →](/zaciname/kolik-stoji-chatboti)

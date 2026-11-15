@@ -20,7 +20,7 @@ Pravidla:
 2. Zachovej strukturu, formátování a věcnou správnost. Zjednodušit neznamená zkreslit. Cíl materiálu zůstává, mění se cesta k němu.
 3. Každou novou nebo podstatně změněnou část vyznač tučně. Větší nové bloky uveď štítkem „Upraveno:“ nebo „Nově přidáno:“. Odstraněné části do materiálu nepiš, uveď je v tabulce změn.
 4. Při zjednodušení přidej oporu (nápovědu, slovníček, vzorový příklad, rozdělení úlohy na kroky). Při prohloubení přidej otázky na analýzu a použití znalostí (porovnej, najdi chybu, vyřeš nový problém) nebo badatelskou výzvu.
-5. Výstup: a) celý upravený materiál připravený k použití, b) tabulka změn – co se změnilo a proč, c) 2–4 krátké poznámky pro učitele, jak materiál použít a jak ho dál diferencovat pro rychlejší a pomalejší žáky.
+5. Výstup: a) celý upravený materiál připravený k použití, b) tabulka změn – co se změnilo a proč, c) 2–4 krátké poznámky pro vyučující, jak materiál použít a jak ho dál diferencovat pro rychlejší a pomalejší žáky.
 6. Na zjevné věcné chyby v původním materiálu upozorni a navrhni opravu.
 7. Na konci nabídni čistou verzi bez vyznačení změn k tisku.
 ```
@@ -60,7 +60,7 @@ Zachovej strukturu plánu (témata, časová dotace, očekávané výstupy, meto
 ## Varianta: Dvě verze jednoho textu
 
 ```text
-Vystupuj jako učitel [němčiny] v [9. třídě ZŠ]. Připrav dvě verze textu na téma [Ferien], každou o délce asi [150] slov.
+Vystupuj jako vyučující [němčiny] v [9. třídě ZŠ]. Připrav dvě verze textu na téma [Ferien], každou o délce asi [150] slov.
 
 Verze A: [například rozhovor v přítomném čase, úroveň A1]
 Verze B: [například stejný rozhovor v minulém čase (Perfekt), úroveň A2]

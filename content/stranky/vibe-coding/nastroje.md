@@ -73,8 +73,8 @@ Pokud nástroj sám neumí sdílet odkazem, potřebujete hosting. Pro školní p
 
 ## Co doporučujeme
 
-- **Učitel, první pokus:** Gemini Canvas (zdarma, se školním účtem) nebo Claude artefakty.
-- **Žáci 13–17 let:** Gemini Canvas na školním účtu. Pro mladší pracujte společně, aplikaci ovládá učitel.
+- **Vyučující, první pokus:** Gemini Canvas (zdarma, se školním účtem) nebo Claude artefakty.
+- **Žáci 13–17 let:** Gemini Canvas na školním účtu. Pro mladší pracujte společně, aplikaci ovládá vyučující.
 - **Žáci 18+ a studenti:** cokoli z přehledu, ideálně s publikací na GitHub Pages.
 
 [Jak začít →](/vibe-coding/jak-zacit)

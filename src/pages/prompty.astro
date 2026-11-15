@@ -9,7 +9,7 @@ import { SKUPINY_PROMPTU, PORADI_KATEGORII, KATEGORIE_ZACI, promptText, pocet, s
 
 // Katalog promptů. Vysvětlení, co je prompt a jak ho psát, je na /funkce/prompty (content/stranky/funkce/prompty.md).
 const TITULEK = 'Katalog promptů';
-const POPIS = 'Ověřené prompty pro učitele, vedení škol i žáky. Zkopírujte prompt do jakéhokoli chatbota a doplňte údaje v hranatých závorkách.';
+const POPIS = 'Ověřené prompty pro vyučující, vedení škol i žáky. Zkopírujte prompt do jakéhokoli chatbota a doplňte údaje v hranatých závorkách.';
 const vse = (await getCollection('prompty')).filter((p) => !p.id.startsWith('archiv-2024/'));
 
 const polozka = (p: (typeof vse)[number]) => {

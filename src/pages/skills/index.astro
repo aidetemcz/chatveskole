@@ -20,13 +20,13 @@ const views = [
   { id: 'komu', groups: podleKomu },
 ];
 ---
-<Base title="Katalog dovedností" description={`${pocet(skills.length, 'dovednost', 'dovednosti', 'dovedností')} pro učitele a vedení škol ke stažení do Claude, Gemini, Copilotu a ChatGPT.`}>
+<Base title="Katalog dovedností" description={`${pocet(skills.length, 'dovednost', 'dovednosti', 'dovedností')} pro vyučující a vedení škol ke stažení do Claude, Gemini, Copilotu a ChatGPT.`}>
   <div class="band band--white" style="padding-bottom: 32px">
     <div class="wrap stack" style="gap: 32px">
       <Crumbs items={[{ title: 'Funkce', href: '/funkce/skills' }, { title: 'Katalog dovedností' }]} />
       <header class="page-head">
         <h1>Katalog dovedností</h1>
-        <p class="lede">{pocet(skills.length, 'dovednost', 'dovednosti', 'dovedností')} pro učitele a vedení škol. Stáhněte dovednost a nainstalujte ji do Claude, Gemini, Copilotu nebo ChatGPT — chatbot ji pak použije sám, kdykoli ji budete potřebovat.</p>
+        <p class="lede">{pocet(skills.length, 'dovednost', 'dovednosti', 'dovedností')} pro vyučující a vedení škol. Stáhněte dovednost a nainstalujte ji do Claude, Gemini, Copilotu nebo ChatGPT — chatbot ji pak použije sám, kdykoli ji budete potřebovat.</p>
       </header>
       <div class="seg" role="group" aria-label="Řazení" data-switch="skupiny-skills" style="align-self: flex-start">
         <button type="button" data-target="ucel" aria-pressed="true">Řadit dle účelu</button>

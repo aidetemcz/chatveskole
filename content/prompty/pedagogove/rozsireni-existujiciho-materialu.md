@@ -33,7 +33,7 @@ Pravidla:
 Výstup:
 a) celý materiál s vloženými novými částmi,
 b) řešení nebo znaky dobré odpovědi k novým úlohám,
-c) 2–3 poznámky pro učitele: kam nové části v hodině zařadit a jak je upravit pro žáky, kteří potřebují oporu.
+c) 2–3 poznámky pro vyučující: kam nové části v hodině zařadit a jak je upravit pro žáky, kteří potřebují oporu.
 
 Když materiál chybí, nejdřív se mě zeptej. Na konci nabídni čistou verzi bez štítků k tisku.
 ```

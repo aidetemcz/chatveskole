@@ -29,8 +29,8 @@ Pravidla:
 
 Výstup ve třech částech:
 1) PRO ŽÁKY: název, řádek „Jméno: __________“, krátká instrukce a otázky. Text dej nad otázky jen tehdy, pokud ho žáci nemají zvlášť.
-2) PRO UČITELE: u každé otázky body, které má dobrá odpověď obsahovat (ne jediná správná formulace), a co otázka ověřuje.
-3) POZNÁMKA PRO UČITELE: 2–3 věty, jak list použít (samostatně, ve dvojicích, jako podklad pro diskusi) a jak ho upravit pro žáky, kterým čtení dělá potíže.
+2) PRO VYUČUJÍCÍ: u každé otázky body, které má dobrá odpověď obsahovat (ne jediná správná formulace), a co otázka ověřuje.
+3) POZNÁMKA PRO VYUČUJÍCÍ: 2–3 věty, jak list použít (samostatně, ve dvojicích, jako podklad pro diskusi) a jak ho upravit pro žáky, kterým čtení dělá potíže.
 
 Když chybí text, ročník nebo předmět, nejdřív se mě zeptej.
 ```

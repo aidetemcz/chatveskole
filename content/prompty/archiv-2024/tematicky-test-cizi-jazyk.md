@@ -12,7 +12,7 @@ stav: prevzato
 ## Prompt
 
 ```text
-Jsi zkušený učitel [angličtiny]. Vytvoř mi test pro žáky [2. ročníku gymnázia] na téma: [Health]. Potřebuji [4] multiple choice otázky a [3] otevřené otázky.
+Jsi zkušený vyučující [angličtiny]. Vytvoř mi test pro žáky [2. ročníku gymnázia] na téma: [Health]. Potřebuji [4] multiple choice otázky a [3] otevřené otázky.
 
 Prompt lze aplikovat na libovolné téma i předmět.
 ```

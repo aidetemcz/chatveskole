@@ -33,7 +33,7 @@ Konektor napojí chatbota na jinou aplikaci — Google Disk, Gmail, kalendář, 
 
 ## Na co si dát pozor
 
-Konektor dává chatbotu přístup ke všemu, co vidíte vy. V e-mailu a na Disku učitele bývají osobní údaje žáků a rodičů.
+Konektor dává chatbotu přístup ke všemu, co vidíte vy. V e-mailu a na Disku vyučujícího bývají osobní údaje žáků a rodičů.
 
 - **Připojujte jen pracovní účet a jen tam, kde to škola povoluje.** Zeptejte se správce IT nebo pověřence pro ochranu osobních údajů.
 - **Preferujte školní verze nástrojů** (Google Workspace for Education, Microsoft 365), kde se data nepoužívají k tréninku.

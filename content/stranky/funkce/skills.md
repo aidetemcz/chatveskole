@@ -88,7 +88,7 @@ Nejjednodušší cesta: vezměte prompt, který se vám osvědčil, a požádejt
 
 Chatbot čte nejdřív jen název a popis. Popis proto musí říct, **co dovednost dělá a kdy ji použít**:
 
-> Pomáhá učitelům ZŠ formulovat vzdělávací cíle podle RVP. Použij, když učitel chce napsat nebo zkontrolovat cíl hodiny.
+> Pomáhá vyučujícím na ZŠ formulovat vzdělávací cíle podle RVP. Použij, když vyučující chce napsat nebo zkontrolovat cíl hodiny.
 
 ### 2. Postup krok za krokem
 

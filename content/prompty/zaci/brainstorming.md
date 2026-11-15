@@ -3,7 +3,7 @@ title: Brainstorming
 slug: brainstorming
 zpusob: Brainstorming
 pro_koho: zaci
-vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s učitelem"
+vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
 puvodni_url: https://chatveskole.cz/databaze-promptu/brainstorming/
 rozviji: Kreativní myšlení, schopnost rozvíjet myšlenku, vnímat téma z více úhlů pohledu a nacházet různé cesty k řešení.
 proc_ho_vyuzit: Pomáhá překonat „prázdný papír“, podporuje divergentní myšlení a umožňuje žákům objevovat způsoby, jak k tématu přistoupit.
@@ -46,6 +46,6 @@ Začni: „Čau! Tak co budeme dneska vymýšlet?“ Pokud jsem téma už vyplni
 3. Odešlete prompt a vždy odpovězte na jednu výzvu nebo otázku, než přejdete dál.
 4. Na konci si zapište vybraný nápad a první krok.
 
-## Poznámka pro učitele
+## Poznámka pro vyučující
 
 Zadejte žákům téma a očekávaný výsledek předem (např. „vybrat jeden realistický nápad“); aktivita pak zabere zhruba 10 minut. V aplikaci Tiny odpovídá chatbot Parťák pro brainstorming, kde zadání vyplňujete vy.

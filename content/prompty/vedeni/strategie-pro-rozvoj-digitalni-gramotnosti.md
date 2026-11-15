@@ -12,7 +12,7 @@ stav: prevzato
 ## Prompt
 
 ```text
-Vystupuj jako zkušený školní stratég se zaměřením na rozvoj digitální gramotnosti žáků i učitelů. Pomáháš vedení a pedagogům školy vytvořit přehlednou a realistickou strategii rozvoje digitálních kompetencí. Na základě zadaných vstupních informací sestav ucelený strategický dokument, který bude obsahovat:
+Vystupuj jako zkušený školní stratég se zaměřením na rozvoj digitální gramotnosti žáků i vyučujících. Pomáháš vedení a pedagogům školy vytvořit přehlednou a realistickou strategii rozvoje digitálních kompetencí. Na základě zadaných vstupních informací sestav ucelený strategický dokument, který bude obsahovat:
 
 Vizi a dlouhodobý cíl
 
@@ -22,7 +22,7 @@ Strategické priority (3—5 klíčových oblastí)
 
 Opatření a aktivity ke každé prioritě (zodpovědnost, zdroje, milníky)
 
-Podporu profesního rozvoje učitelů
+Podporu profesního rozvoje vyučujících
 
 Zapojení žáků a rodičů
 
@@ -34,7 +34,7 @@ Rizika a opatření k jejich minimalizaci
 
 Formátuj výstup přehledně pomocí číslovaných a odrážkových seznamů a krátkých odstavců. Piš srozumitelným, motivujícím jazykem a vyhýbej se zbytečné odborné terminologii a anglicismům, aby byl dokument pochopitelný celému pedagogickému týmu. Výstup bude jeden souvislý strategický dokument připravený k tisku nebo online sdílení.
 
-Vstupní informace, které učitel doplní před spuštěním promptu:
+Vstupní informace, které vyučující doplní před spuštěním promptu:
 
 Typ školy a počet žáků: [doplňte]
 
@@ -44,7 +44,7 @@ Silné stránky v oblasti digitálních dovedností: [doplňte]
 
 Slabé stránky a příležitosti ke zlepšení: [doplňte]
 
-Klíčové cílové skupiny (učitelé/žáci/rodiče): [doplňte]
+Klíčové cílové skupiny (vyučující/žáci/rodiče): [doplňte]
 
 Dostupné zdroje (rozpočet, personál, čas): [doplňte]
 
@@ -57,7 +57,7 @@ Odpovídej podpůrně, motivuj k diskuzi a dbej na to, aby dokument působil jak
 
 ## Co je cílem promptu
 
-Cílem promptu je pomoci vedení školy a pedagogickému týmu vytvořit přehlednou, realistickou a motivující strategii rozvoje digitální gramotnosti, která vychází z konkrétních potřeb žáků i učitelů. Prompt vede k jasnému stanovení vize, priorit a měřitelných ukazatelů úspěchu, zároveň podporuje společnou diskuzi, sdílení odpovědností a plánování konkrétních kroků v čase. Výsledkem je soudržný strategický dokument, který lze ihned použít k řízené implementaci a následnému vyhodnocování.
+Cílem promptu je pomoci vedení školy a pedagogickému týmu vytvořit přehlednou, realistickou a motivující strategii rozvoje digitální gramotnosti, která vychází z konkrétních potřeb žáků i vyučujících. Prompt vede k jasnému stanovení vize, priorit a měřitelných ukazatelů úspěchu, zároveň podporuje společnou diskuzi, sdílení odpovědností a plánování konkrétních kroků v čase. Výsledkem je soudržný strategický dokument, který lze ihned použít k řízené implementaci a následnému vyhodnocování.
 
 ## Jak prompt použít
 

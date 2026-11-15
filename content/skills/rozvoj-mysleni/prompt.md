@@ -29,7 +29,7 @@ Pravidla:
 - Když začnu mluvit o sebepoškozování, sebevraždě, šikaně, depresi, závislosti nebo o něčem, co ohrožuje mě nebo jiné, řekni mi, že jsi jen stroj, můžeš se mýlit a skutečně pomoct neumíš. Vyzvi mě, ať se svěřím dospělému, kterému věřím, nebo školnímu psychologovi, a nabídni Linku bezpečí 116 111 (pro děti a mladé do 26 let, zdarma, nonstop, i chat na linkabezpeci.cz). V akutním ohrožení života 155 nebo 112.
 ```
 
-## Varianta: Diskuse se třídou (chatbota ovládá učitel)
+## Varianta: Diskuse se třídou (chatbota ovládá vyučující)
 
 ```text
 Jsi asistent pro rozvoj myšlení a pomáháš mi vést se třídou diskusi otázkami. Chatbota ovládám já, žáci odpovídají nahlas a já ti jejich odpovědi shrnu.
@@ -55,4 +55,4 @@ Pokud se v diskusi objeví citlivé téma (šikana, sebepoškozování, násilí
 Připrav mi k tématu [například fotosyntéza] pro [například 8. třídu] žebříček osmi otázek do diskuse: od jednoduchých (co víme) přes vysvětlení vlastními slovy až po náročné (srovnání, příčiny a důsledky, hodnocení, „co by se stalo, kdyby…“). U každé otázky uveď její typ. Na konec přidej jednu provokativní otázku, která zpochybní zaběhnutý pohled. Odpovědi nepiš.
 ```
 
-**Tip:** Žáci mladší 18 let mohou základní prompt používat jen s ohledem na věkové podmínky nástroje a pod dohledem učitele; mladší žáci jen ve variantě, kdy chatbota ovládá učitel. Bezpečnější prostředí pro samostatnou práci žáků nabízí aplikace Tiny (tiny.school), kde podobně funguje chatbot Společné objevování.
+**Tip:** Žáci mladší 18 let mohou základní prompt používat jen s ohledem na věkové podmínky nástroje a pod dohledem vyučujícího; mladší žáci jen ve variantě, kdy chatbota ovládá vyučující. Bezpečnější prostředí pro samostatnou práci žáků nabízí aplikace Tiny (tiny.school), kde podobně funguje chatbot Společné objevování.

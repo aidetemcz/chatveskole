@@ -15,7 +15,7 @@ Když vám přestane stačit aplikace v okně chatbota — chcete web s více st
 
 | Nástroj | Pro koho | Cena |
 |---|---|---|
-| **Claude Code** (terminál, desktop, web) | učitelé informatiky, správci webů | tarif Claude Pro a vyšší |
+| **Claude Code** (terminál, desktop, web) | vyučující informatiky, správci webů | tarif Claude Pro a vyšší |
 | **OpenAI Codex** | totéž v prostředí ChatGPT | omezeně zdarma, plně v placených tarifech |
 | **Google Antigravity** | vývojové prostředí od Googlu | zdarma s limity, 18+ |
 | **Cursor** | editor kódu s AI | omezeně zdarma, 18+ |
@@ -40,7 +40,7 @@ Ušetříte tím vysvětlování a agent dělá méně chyb.
 
 ## Dovednosti i pro programování
 
-Dovednosti nejsou jen pro chatboty. Programovací agenti je používají také — třeba dovednost „jak u nás píšeme stránky“, „jak přidat novou dovednost na web“ nebo „kontrola přístupnosti“. Formát je stejný jako u [dovedností pro učitele](/funkce/skills).
+Dovednosti nejsou jen pro chatboty. Programovací agenti je používají také — třeba dovednost „jak u nás píšeme stránky“, „jak přidat novou dovednost na web“ nebo „kontrola přístupnosti“. Formát je stejný jako u [dovedností pro vyučující](/funkce/skills).
 
 ## Bezpečnost
 

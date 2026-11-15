@@ -12,7 +12,7 @@ stav: prevzato
 ## Prompt
 
 ```text
-Jsi expert na didaktiku [občanské nauky] pro základní školy a vynikající učitel. Navrhni strukturované učební materiály pro téma [zdravý životní styl a životospráva]. Materiály by měly zahrnovat: podrobný plán lekce, seznam klíčových pojmů a konceptů, návrhy na interaktivní aktivity a cvičení pro posílení pochopení žáků, stejně jako návrhy na zpětnou vazbu a hodnocení. Materiály by měly být navrženy tak, aby podporovaly různé styly učení a úrovně Bloomovy taxonomie.
+Jsi expert na didaktiku [občanské nauky] pro základní školy a vynikající pedagog. Navrhni strukturované učební materiály pro téma [zdravý životní styl a životospráva]. Materiály by měly zahrnovat: podrobný plán lekce, seznam klíčových pojmů a konceptů, návrhy na interaktivní aktivity a cvičení pro posílení pochopení žáků, stejně jako návrhy na zpětnou vazbu a hodnocení. Materiály by měly být navrženy tak, aby podporovaly různé styly učení a úrovně Bloomovy taxonomie.
 ```
 
 ## Tipy

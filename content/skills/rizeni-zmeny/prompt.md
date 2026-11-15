@@ -28,7 +28,7 @@ Odpověz v tomto formátu:
 – Ukazatele a jak je měřit (tabulka)
 – Co připravit do příští porady (kontrolní seznam)
 
-Počítej s reálnými limity české školy (rozvrh, suplování, vytížení učitelů, rozpočet). Nežádej osobní údaje žáků ani jména kolegů. Pokud jde o AI k hodnocení žáků, hlídání testů nebo rozpoznávání emocí, upozorni na vysoké riziko a doporuč posouzení s pověřencem pro ochranu osobních údajů. Piš česky, věcně, bez manažerského žargonu.
+Počítej s reálnými limity české školy (rozvrh, suplování, vytížení vyučujících, rozpočet). Nežádej osobní údaje žáků ani jména kolegů. Pokud jde o AI k hodnocení žáků, hlídání testů nebo rozpoznávání emocí, upozorni na vysoké riziko a doporuč posouzení s pověřencem pro ochranu osobních údajů. Piš česky, věcně, bez manažerského žargonu.
 ```
 
 ## Varianta: Rámec změny z dat dotazníku
@@ -37,7 +37,7 @@ Počítej s reálnými limity české školy (rozvrh, suplování, vytížení u
 Vystupuj jako průvodce vedení školy při proměně kultury a komunikace ve škole. Opírej se o principy respektující komunikace, participativního přístupu a spolupráce pedagogů. Vycházej výhradně z dat, ne z domněnek.
 
 Téma dotazníku: [například pocit bezpečí a respektu ve škole]
-Respondenti: [například žáci 6.–9. ročníku, učitelé, rodiče]
+Respondenti: [například žáci 6.–9. ročníku, vyučující, rodiče]
 Data: [vlož tabulku nebo přilož soubor; jeden řádek = odpověď jednoho respondenta, bez jmen]
 
 Postup:
@@ -60,7 +60,7 @@ Piš stručně, lidsky, bez akademického jazyka. Vystupuj jako partner školy, 
 Pomoz mi sestavit mapu aktérů změny pro naši školu. Mapa není hodnocení lidí, ale pomůcka, jak každému nabídnout vhodnou podporu.
 
 Změna: [například zavedení formativního hodnocení na 2. stupni]
-Co vím o lidech: [popiš skupiny nebo jednotlivce pomocí kódů či rolí, například „Ped_01, učitel matematiky, 25 let praxe, obává se ztráty času“; nepiš jména]
+Co vím o lidech: [popiš skupiny nebo jednotlivce pomocí kódů či rolí, například „Ped_01, vyučující matematiky, 25 let praxe, obává se ztráty času“; nepiš jména]
 
 Vytvoř tabulku se sloupci: Kód | Role | Postoj ke změně (nepodporuje / spíše nepodporuje / neutrální / spíše podporuje / podporuje) | Stav (nevyužívá / nemá dovednosti / využívá občas / má dovednosti a využívá / pravidelně využívá) | Komu důvěřuje | Obavy | Co by pomohlo.
 Co z mého popisu nevyplývá, nech prázdné a na konci se doptej (nejvýš 5 otázek).
@@ -77,7 +77,7 @@ Rámec změny: [vlož – vize, cíle, rozsah, omezení]
 Mapa aktérů: [vlož – skupiny, postoje, potřeby, bez jmen]
 Škola a kapacita týmu: [například ZŠ, 28 pedagogů, lídr změny má 4 hodiny měsíčně]
 
-Když něco chybí, polož mi nejvýš 5 cílených otázek. Pak pro každou fázi navrhni 2–4 aktivity na výběr, rozlišené podle skupin (vedení, učitelé podle postoje, žáci, rodiče):
+Když něco chybí, polož mi nejvýš 5 cílených otázek. Pak pro každou fázi navrhni 2–4 aktivity na výběr, rozlišené podle skupin (vedení, pedagogové podle postoje, žáci, rodiče):
 1. Zvýšení povědomí o změně – lidé vědí, že změna nastává a proč.
 2. Akceptace změny – prostor pro otázky, obavy i nesouhlas.
 3. Důvěra v proces změny – vzdělávání, sdílení praxe, osobní plány rozvoje.

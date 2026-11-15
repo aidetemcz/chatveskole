@@ -3,7 +3,7 @@ title: Role experta
 slug: role-experta
 zpusob: Role experta
 pro_koho: zaci
-vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s učitelem"
+vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
 puvodni_url: https://chatveskole.cz/databaze-promptu/role-experta/
 rozviji: Komunikační dovednosti, hlubší porozumění tématu a schopnost tázat se a interpretovat odpovědi z různých úhlů.
 proc_ho_vyuzit: Rozvíjí schopnost pracovat s odbornými informacemi a přibližuje žákům reálné aplikace poznatků.
@@ -47,6 +47,6 @@ Bezpečnost: Neptej se mě na osobní údaje. Kdyby se v rozhovoru objevilo něc
 4. Klidně požádejte o pohled jiného odborníka nebo současníka, ať vidíte víc názorů.
 5. Na konci si zapište, co jste se dozvěděli, a ověřte to v učebnici nebo jiném zdroji.
 
-## Poznámka pro učitele
+## Poznámka pro vyučující
 
 Chatbot může fakta zkreslit nebo si historku domyslet — nechte žáky informace z rozhovoru ověřit a porovnat s učebnicí. V aplikaci Tiny odpovídá Historická postava; pro předměty a jevy (buňka, sopka, atom) chatbot V hlavní roli…

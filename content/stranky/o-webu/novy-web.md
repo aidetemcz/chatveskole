@@ -28,8 +28,8 @@ Web Chatboti ve škole jsme od základu přepracovali. Má nový vzhled, přehle
 
 - **Začínáme** — [Jak pracovat s chatboty](/zaciname/jak-pracovat-s-chatboty) (rozdíl mezi promptem, podrobným promptem, dovedností, projektem a pluginem), přehled nástrojů, ceny, registrace, věkové limity a legislativa.
 - **Funkce** — [Změny ve funkcích 2026](/funkce/zmeny-2026) (co končí a co ho nahrazuje) a vysvětlení promptů, dovedností, pluginů, projektů a konektorů.
-- **[Katalog dovedností](/skills)** — hotové dovednosti pro učitele a vedení škol, seřazené do sad. Stáhnete je do chatbota, nebo je použijete jako prompt.
-- **[Katalog promptů](/prompty)** — ověřené prompty pro učitele, vedení škol i žáky. Stačí je zkopírovat do chatbota a doplnit údaje.
+- **[Katalog dovedností](/skills)** — hotové dovednosti pro vyučující a vedení škol, seřazené do sad. Stáhnete je do chatbota, nebo je použijete jako prompt.
+- **[Katalog promptů](/prompty)** — ověřené prompty pro vyučující, vedení škol i žáky. Stačí je zkopírovat do chatbota a doplnit údaje.
 - **Vibe coding** — jak si s chatbotem vytvořit jednoduchou aplikaci nebo výukový materiál.
 - **Chatboti ve výuce** — aplikace Tiny, metodické materiály, tvorba školních pravidel a doporučení pro základní, střední i vysoké školy.
 

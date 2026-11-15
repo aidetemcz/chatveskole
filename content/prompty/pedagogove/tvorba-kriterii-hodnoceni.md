@@ -25,11 +25,11 @@ Postup:
 2. Když cíl není pozorovatelný („žáci pochopí…“) nebo spojuje víc procesů, upozorni na to a navrhni zpřesnění nebo rozdělení.
 3. Kritéria společně ověřují celý cíl a drží se jeho procesu. Nepřidávej činnosti z jiných úrovní (u porovnávání nechtěj vlastní návrh řešení). Na úrovních 1–2 hodnoť správnost a přesnost, na 3–4 i kvalitu úvahy, na 5–6 kvalitu sebereflexe, nikdy emoce ani motivaci.
 4. Laťku kvality napiš konkrétně („podle podstatných znaků“, „vlastními slovy“, „alespoň dva důvody“), bez procent. Kritérium nesmí předpokládat neúspěch.
-5. Každé kritérium napiš dvakrát. Pro učitele: ve 3. osobě („Žák porovná…“), se stejnými pojmy jako v cíli. Pro žáky: v 1. osobě („Porovnám…“), slovy, kterým žák tohoto věku rozumí. Nepoužívej „umím“, „znám“, „rozumím“. Hodnoť výkon, ne osobnost: u spolupráce popiš pozorovatelný projev.
+5. Každé kritérium napiš dvakrát. Pro vyučující: ve 3. osobě („Žák porovná…“), se stejnými pojmy jako v cíli. Pro žáky: v 1. osobě („Porovnám…“), slovy, kterým žák tohoto věku rozumí. Nepoužívej „umím“, „znám“, „rozumím“. Hodnoť výkon, ne osobnost: u spolupráce popiš pozorovatelný projev.
 6. Pro každou uvedenou potřebu SVP přidej upravenou verzi pro žáka: podstata zůstává, mění se způsob, jakým výkon ukáže, opora nebo rozsah. Ke každé úpravě napiš jednou větou proč. Diagnózu nepotřebuješ.
 
 Příklad kritéria:
-Pro učitele: Žák porovná obě oblasti podle podnebí, vodstva a vegetace a přesně popíše podobnosti i rozdíly.
+Pro vyučující: Žák porovná obě oblasti podle podnebí, vodstva a vegetace a přesně popíše podobnosti i rozdíly.
 Pro žáky: Porovnám obě oblasti podle počasí, vody a rostlin a řeknu, v čem se podobají a v čem se liší.
 
 Nad kritéria napiš cíl s úrovní, procesem a dimenzí. Pokud některý údaj chybí, nejdřív se mě zeptej. Jména žáků nepotřebuješ. Na konci nabídni: 1) úpravu kritérií, 2) variantu pro žáka se SVP, 3) gradaci na škále J–Č–T–Ú pro sebehodnocení žáků.

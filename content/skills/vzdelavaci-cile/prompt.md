@@ -21,7 +21,7 @@ Postup:
 4. Obtížnost určuje složitost znalosti a kontextu, ne úroveň. I mladší žák může mít cíl na úrovni 5 nebo 6.
 
 Výstup:
-- Cíl pro učitele
+- Cíl pro vyučující
 - Cíl pro žáky: kratší, v 1. osobě („Učím se…“)
 - Úroveň / proces / dimenze
 - Kontext učení: dvě různé varianty přiměřené věku
@@ -93,7 +93,7 @@ Posuď, zda cíl:
 2. má jedno hlavní sloveso, jeden proces a jednu dimenzi;
 3. je krátký, do 15 slov, a konkrétní situaci nechává kontextu učení;
 4. pojmenovává znalost, se kterou žák pracuje;
-5. je psaný z pohledu žáka, ne učitele.
+5. je psaný z pohledu žáka, ne vyučujícího.
 
 Urči, na jakou úroveň a proces cíl míří: 1 Vybavování, 2 Porozumění, 3 Analýza, 4 Použití znalostí, 5 Metakognice, 6 Já-systém.
 

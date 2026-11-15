@@ -12,7 +12,7 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený učitel a tvůrce výukových materiálů. Vytvoř pracovní list se spojovačkou.
+Vystupuj jako zkušený pedagog a tvůrce výukových materiálů. Vytvoř pracovní list se spojovačkou.
 
 Předmět a téma: [například angličtina – jídlo]
 Ročník: [například 5. ročník ZŠ]
@@ -33,7 +33,7 @@ Pravidla:
 Výstup ve třech částech:
 1) PRO ŽÁKY: název, řádek „Jméno: __________“, instrukce v jedné větě a tabulka.
 2) ŘEŠENÍ: ve tvaru 1 – C, 2 – A…
-3) POZNÁMKA PRO UČITELE: 2–3 věty, jak spojovačku použít (rozcvička, opakování, ve dvojicích) a jak ji ztížit nebo usnadnit.
+3) POZNÁMKA PRO VYUČUJÍCÍ: 2–3 věty, jak spojovačku použít (rozcvička, opakování, ve dvojicích) a jak ji ztížit nebo usnadnit.
 
 Když chybí téma nebo ročník, nejdřív se mě zeptej. Na konci nabídni kartičky ke stříhání nebo verzi pro online kvíz.
 ```

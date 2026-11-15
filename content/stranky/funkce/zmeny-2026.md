@@ -2,7 +2,7 @@
 title: Změny ve funkcích chatbotů 2026
 menu: Funkce
 poradi: 1
-popis: GPTs a Gems končí, nastupují dovednosti a pluginy. Co který chatbot umí dnes a co má umět v roce 2027 — přehled pro učitele a školy.
+popis: GPTs a Gems končí, nastupují dovednosti a pluginy. Co který chatbot umí dnes a co má umět v roce 2027 — přehled pro vyučující a školy.
 sablona: zmeny-funkci        # vykreslí se z data/funkce-chatbotu.yaml podle vzoru docs/design/vzor-funkce-chatbotu-2027.html
 data: data/funkce-chatbotu.yaml
 aktualizovano: 2026-11-07

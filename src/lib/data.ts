@@ -17,12 +17,12 @@ export type Znalost = { nazev: string; url: string; verejne?: boolean };
 export const znalosti: Record<string, Znalost> = readYaml('content/znalosti/znalosti.yaml');
 
 export const PRO_KOHO: Record<string, string> = {
-  ucitele: 'Učitelé',
+  ucitele: 'Vyučující',
   vedeni: 'Vedení školy',
   'zaci-18plus': 'Studenti od 18 let',
 };
 export const PRO_KOHO_SKUPINA: Record<string, string> = {
-  ucitele: 'Pro učitele',
+  ucitele: 'Pro vyučující',
   vedeni: 'Pro vedení školy',
   'zaci-18plus': 'Pro studenty od 18 let',
 };
@@ -104,7 +104,7 @@ export const skillsVPoradi: Skill[] = (() => {
 
 // --- prompty: skupiny a kategorie ----------------------------------------------------
 export const SKUPINY_PROMPTU: { id: string; title: string }[] = [
-  { id: 'pedagogove', title: 'Pro učitele' },
+  { id: 'pedagogove', title: 'Pro vyučující' },
   { id: 'vedeni', title: 'Pro vedení školy' },
   { id: 'zaci', title: 'Pro žáky' },
 ];

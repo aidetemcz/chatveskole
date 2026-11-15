@@ -3,7 +3,7 @@ title: Vylepšení výstupu
 slug: vylepseni-vystupu
 zpusob: Vylepšení výstupu
 pro_koho: zaci
-vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s učitelem"
+vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
 puvodni_url: https://chatveskole.cz/databaze-promptu/vylepseni-vystupu/
 rozviji: Kritické myšlení, jazykovou kulturu a schopnost posoudit kvalitu informací.
 proc_ho_vyuzit: Učí žáky vnímat výstup GenAI ne jako hotový produkt, ale pouze jako výchozí bod pro další vylepšení.
@@ -40,13 +40,13 @@ Bezpečnost: Neptej se mě na osobní údaje. Kdyby se v rozhovoru objevilo něc
 
 ## Jak prompt použít
 
-1. Zkopírujte prompt do chatbota, kterého smíte ve škole používat (údaje může vyplnit i učitel).
+1. Zkopírujte prompt do chatbota, kterého smíte ve škole používat (údaje může vyplnit i vyučující).
 2. Místo textů v hranatých závorkách doplňte téma, ročník, typ textu, rozsah a počty chyb.
 3. Odešlete prompt; chatbot vytvoří text se skrytými chybami.
 4. Text pečlivě přečtěte a označte fakta k ověření, logické rozpory, jazykové chyby a stylistické odchylky. Fakta ověřte v učebnici nebo v důvěryhodném zdroji.
 5. Pošlete chatbotovi svůj seznam chyb a podle nápověd hledejte dál.
 6. Napište „ŘEŠENÍ“, porovnejte výsledky a navrhněte opravenou verzi textu.
 
-## Poznámka pro učitele
+## Poznámka pro vyučující
 
 Text můžete vygenerovat předem a rozdat vytištěný — žáci pak pracují bez chatbota. Chatbot občas udělá i chybu, kterou neplánoval, nebo plánovanou „zapomene“, proto řešení před hodinou zkontrolujte. V aplikaci Tiny odpovídá Chybující chatbot.

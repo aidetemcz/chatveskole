@@ -40,7 +40,7 @@ Podmínky se mění. Před zavedením nástroje ve třídě je ověřte v aktuá
 ## Naše doporučení pro výuku
 
 - **Používejte školní účty**, pokud je škola má (Google Workspace for Education, Microsoft 365). Data jsou lépe chráněná a správce může nastavit pravidla.
-- **Žáci pod věkovou hranicí** pracují s chatbotem společně: učitel ovládá aplikaci na projektoru, žáci kladou otázky a hodnotí odpovědi. Nebo použijte nástroj určený pro školy, jako je Tiny.
+- **Žáci pod věkovou hranicí** pracují s chatbotem společně: vyučující ovládá aplikaci na projektoru, žáci kladou otázky a hodnotí odpovědi. Nebo použijte nástroj určený pro školy, jako je Tiny.
 - **Nikdy nevkládejte osobní údaje žáků** — jména, známky, diagnózy. Pracujte s iniciálami.
 - **Dejte pravidla do školního řádu.** Pomůže vám stránka [Tvorba pravidel pro využívání AI](/ve-vyuce/pravidla-pro-ai).
 
@@ -54,7 +54,7 @@ Evropský zákon o umělé inteligenci (nařízení EU 2024/1689) ukládá od 2.
 
 Nařízení Digital Omnibus (EU 2026/1744), účinné od 27. 7. 2026, povinnost zmírnilo: škola musí přijímat opatření na podporu AI gramotnosti, ale nemusí zaručit určitou úroveň u každého zaměstnance. Zároveň posunulo termíny pro takzvané vysoce rizikové systémy — mezi ně patří i AI používaná ve vzdělávání k hodnocení nebo přijímání žáků — na 2. 12. 2027.
 
-**Co to znamená prakticky:** proškolte pedagogy, mějte pravidla používání AI a nenechávejte AI rozhodovat o hodnocení žáků bez kontroly učitele.
+**Co to znamená prakticky:** proškolte pedagogy, mějte pravidla používání AI a nenechávejte AI rozhodovat o hodnocení žáků bez kontroly vyučujícího.
 
 ## Komu patří vygenerovaný obsah
 

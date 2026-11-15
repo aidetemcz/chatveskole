@@ -3,14 +3,14 @@ title: Zpětná vazba
 slug: zpetna-vazba
 zpusob: Zpětná vazba
 pro_koho: zaci
-vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s učitelem"
+vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
 puvodni_url: https://chatveskole.cz/databaze-promptu/zpetna-vazba/
 rozviji: Schopnost reflektovat vlastní práci, porozumět hodnoticím kritériím a rozlišit relevantní doporučení.
 proc_ho_vyuzit: Umožňuje žákům dostat okamžitou zpětnou vazbu a učí je s ní pracovat. Výsledkem je kvalitnější výstup.
 tiny_chatbot: null   # v Tiny zatím odpovídající chatbot není
 ---
 
-Chatbot posoudí vaši práci podle kritérií od učitele, řekne, co se daří a co zlepšit, a nechá na vás, které úpravy uděláte.
+Chatbot posoudí vaši práci podle kritérií od vyučujícího, řekne, co se daří a co zlepšit, a nechá na vás, které úpravy uděláte.
 
 ## Prompt
 
@@ -18,7 +18,7 @@ Chatbot posoudí vaši práci podle kritérií od učitele, řekne, co se daří
 Vystupuj jako vstřícný, povzbudivý a zároveň věcný školní průvodce. Zhodnoť mou práci podle zadaných kritérií, dej mi jasnou a konkrétní zpětnou vazbu a navrhni, jak práci vylepšit. Cílem je, abych se zlepšil(a), ne známka — práci za mě nepiš ani nepřepisuj. Piš stručně, bez cizích a složitých slov.
 
 Moje práce: [vložte text nebo nahrajte soubor, například prezentaci, kód nebo obrázek]
-Hodnoticí kritéria: [vložte kritéria od učitele]
+Hodnoticí kritéria: [vložte kritéria od vyučujícího]
 Ročník: [například 9. třída]
 Kde sám/sama vidím prostor ke zlepšení: [nepovinné, například úvod je moc dlouhý]
 
@@ -42,11 +42,11 @@ Bezpečnost: Neptej se mě na osobní údaje. Kdyby se v rozhovoru objevilo něc
 ## Jak prompt použít
 
 1. Zkopírujte prompt do chatbota, kterého smíte ve škole používat.
-2. Vložte svou práci a kritéria od učitele. Z práce předem smažte jména a další osobní údaje.
+2. Vložte svou práci a kritéria od vyučujícího. Z práce předem smažte jména a další osobní údaje.
 3. Odešlete prompt a počkejte na první krok (shrnutí kritérií).
 4. Rozhodněte se, které rady přijmete — práce i rozhodnutí zůstávají vaše.
 5. Upravenou verzi můžete poslat ke druhé kontrole.
 
-## Poznámka pro učitele
+## Poznámka pro vyučující
 
 Kritéria dejte žákům vy, srozumitelně formulovaná a ideálně s ukázkou. Zpětná vazba chatbota je doplněk vaší, ne náhrada; vyplatí se probrat se žáky, které rady byly užitečné a které ne.

@@ -12,7 +12,7 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený třídní učitel, který s rodiči jedná jako s partnery. Napiš rodičům zprávu o chystaném školním projektu.
+Vystupuj jako zkušený třídní vyučující, který s rodiči jedná jako s partnery. Napiš rodičům zprávu o chystaném školním projektu.
 
 Název projektu: [například Spoluprací k porozumění Evropě]
 Třída a termín: [například 8. A, 3.–7. března]
@@ -20,7 +20,7 @@ O co v projektu jde: [stručný popis nebo klíčová slova, například žáci 
 Co si z něj žáci odnesou: [například naučí se diskutovat, hledat kompromis a vysvětlit, jak se v EU rozhoduje]
 Co potřebujeme od rodičů: [například přinést krabici od bot do 28. února; nebo řádek smažte]
 Praktické údaje: [například náklady, změna rozvrhu, co s sebou; nebo řádek smažte]
-Kontakt pro dotazy: [například e-mail třídní učitelky]
+Kontakt pro dotazy: [například e-mail třídního vyučujícího]
 Kanál: [e-mail / zpráva do Bakalářů nebo EduPage / tištěný leták]
 
 Zpráva má mít:
@@ -30,7 +30,7 @@ Zpráva má mít:
 4. Kontakt a nabídku dotazů.
 
 Pravidla:
-- Piš přátelsky, věcně a stručně. E-mail má oslovení, nejvýš 150 slov a podpis [jméno učitele]. Zpráva do školního systému je kratší, bez oslovení a podpisu.
+- Piš přátelsky, věcně a stručně. E-mail má oslovení, nejvýš 150 slov a podpis [jméno vyučujícího]. Zpráva do školního systému je kratší, bez oslovení a podpisu.
 - Nevymýšlej údaje, které jsem nezadal(a). Chybějící označ hranatými závorkami.
 - Jména žáků do textu nepiš.
 

@@ -2,7 +2,7 @@
 title: Co je vibe coding
 menu: Vibe Coding
 poradi: 1
-popis: Vibe coding je tvorba aplikací popisem v běžné řeči. Co to je, co z toho má učitel a žák a kde jsou hranice.
+popis: Vibe coding je tvorba aplikací popisem v běžné řeči. Co to je, co z toho má vyučující a žák a kde jsou hranice.
 aktualizovano: 2026-11-07
 stav: koncept
 ---
@@ -13,7 +13,7 @@ Vibe coding je tvorba webových stránek a aplikací tak, že **popíšete, co c
 
 Pojem v únoru 2025 zpopularizoval výzkumník Andrej Karpathy. Od té doby se z hříčky pro programátory stala běžná funkce chatbotů: Gemini má Canvas, Claude artefakty, ChatGPT Sites.
 
-## Co z toho má učitel
+## Co z toho má vyučující
 
 Za pár minut si můžete postavit pomůcku přesně podle své hodiny:
 
