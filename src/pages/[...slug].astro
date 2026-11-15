@@ -4,7 +4,7 @@ import Base from '../layouts/Base.astro';
 import Crumbs from '../components/Crumbs.astro';
 import Komponenta from '../components/Komponenta.astro';
 import { rozdel } from '../lib/komponenty';
-import { navigace, INTERNI_ZDROJE } from '../lib/data';
+import { navigace } from '../lib/data';
 import { url } from '../lib/url';
 
 export async function getStaticPaths() {
@@ -21,7 +21,6 @@ const href = '/' + stranka.id;
 const skupina = navigace.menu.find((g) => g.items.some((i) => i.href === href));
 const d = stranka.data;
 const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
-const zdroje: string[] = Array.isArray(d.zdroje) ? d.zdroje.filter((z: unknown) => typeof z === 'string') : [];
 const koncept = d.stav === 'koncept' || d.stav === 'ke-kontrole';
 // tlačítko na konci stránky (frontmatter: tlacitko: { text, href }), např. „Přejít na Katalog promptů“
 const tlacitko = d.tlacitko && typeof d.tlacitko === 'object' && d.tlacitko.href ? (d.tlacitko as { text: string; href: string }) : null;
@@ -40,19 +39,8 @@ const tlacitko = d.tlacitko && typeof d.tlacitko === 'object' && d.tlacitko.href
       {tlacitko && (
         <p class="tlacitko-konec"><a class="btn btn--primary" href={url(tlacitko.href)}>{tlacitko.text} →</a></p>
       )}
-      {(zdroje.length > 0 || datum) && (
+      {datum && (
         <footer class="meta">
-          {zdroje.length > 0 && (
-            <details>
-              <summary>Zdroje ({zdroje.length})</summary>
-              <ul>{zdroje.map((z) => {
-                const interni = INTERNI_ZDROJE[z];
-                if (interni) return <li><a href={url(interni.href)}>{interni.title}</a></li>;
-                if (/^https?:/.test(z)) return <li><a href={z}>{z.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')}</a></li>;
-                return <li>{z}</li>;
-              })}</ul>
-            </details>
-          )}
           {datum && <p>Aktualizováno {datum}</p>}
         </footer>
       )}
