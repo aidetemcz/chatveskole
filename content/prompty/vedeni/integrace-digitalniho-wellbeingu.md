@@ -7,88 +7,57 @@ kategorie_slug: ["tvorba-strategickych-dokumentu"]
 skill: "strategicke-dokumenty"
 puvodni_url: "https://chatveskole.cz/databaze-promptu/integrace-digitalniho-wellbeingu/"
 puvodni_uprava: "2025-07-30T17:01:37"
-stav: prevzato
+stav: upraveno
 ---
 ## Prompt
 
 ```text
-Vystupuj jako zkušený školní stratég zaměřený na digitální wellbeing žáků (i zaměstnanců) podle Národního rámce digitálního wellbeingu (fyzická, kognitivní, emoční, sociální a duchovní dimenze).
+Vystupuj jako zkušený školní stratég zaměřený na digitální wellbeing žáků i zaměstnanců. Navrhni strategii digitálního wellbeingu naší školy.
 
-Pomáháš vedení školy a pedagogickému týmu vytvořit přehlednou, realistickou a motivační strategii, která systematicky rozvíjí pohodu a rovnováhu ve vzdělávacím prostředí. Na základě zadaných vstupních informací sestav ucelený strategický dokument, který bude obsahovat:
+Škola: [například ZŠ, 350 žáků, 26 pedagogů]
+Pro koho strategie je: [žáci / žáci i zaměstnanci]
+Co už děláme: [například pravidla pro mobily, preventivní program, třídnické hodiny]
+Co vidíme jako problém: [například nesoustředěnost, konflikty v třídních skupinách na sociálních sítích, učitelé odpovídají na zprávy večer]
+Data, která máme: [například dotazník klimatu, poznatky metodika prevence; nebo řádek smažte]
+Zdroje: [například metodik prevence, školní psycholožka, rozpočet na programy]
+Priority vedení: [například spánek a obrazovky, kyberšikana, vztah dětí k AI chatbotům]
+Na jak dlouho strategie platí: [například 3 roky]
 
-Vizi a dlouhodobé cíle wellbeingu: proč je digitální wellbeing pro školu klíčový a jaký stav chce škola dosáhnout.
+Pravidla:
+1. Vycházej z Národní koncepce digitálního wellbeingu (NPI ČR) a pracuj se všemi pěti oblastmi: fyzickou (pohyb, spánek, denní režim), kognitivní (pozornost, kritické a tvůrčí myšlení, práce s informacemi), emoční (sebepojetí, zvládání emocí, odolnost), sociální (vztahy, respekt a spolupráce online i offline) a duchovní (hodnoty, etika, smysl).
+2. Cílem je rovnováha a vědomé používání technologií, ne zákaz. Piš podpůrně, bez moralizování a strašení.
+3. Opatření rozděl na tři úrovně: pro všechny (klima školy, pravidla, informace pro rodiče), pro třídy (pravidelné aktivity v třídnických hodinách a ve výuce, ne jednorázové přednášky) a pro žáky, kteří potřebují víc (školní poradenské pracoviště, odborná pomoc mimo školu). Navrhni, jak se žáci i rodiče dozvědí, na koho se obrátit.
+4. Pokud to odpovídá situaci školy, zahrň i nová témata: jak se děti svěřují AI chatbotům nebo je berou jako kamarády a jak se šíří upravené fotky a deepfake videa spolužáků.
+5. Když se strategie týká zaměstnanců, řeš digitální únavu a dostupnost mimo pracovní dobu (například pravidla, kdy se odpovídá rodičům).
+6. Navrhni, jak do tvorby a zavádění zapojit žáky (žákovský parlament, třídní dohody) a rodiče.
+7. Nejvýš 5 priorit. Každé opatření má nositele (funkci, ne jméno), termín a výstup. Výchozí stav, který jsem nezadal(a), nevymýšlej, napiš [doplnit].
+8. Pracuj obecně, bez jmen a popisů konkrétních žáků. Pokud z mého popisu plyne ohrožení konkrétního dítěte, upozorni mě, že to patří hned metodikovi prevence nebo školnímu poradenskému pracovišti, ne do strategie.
 
-Analýzu současného stavu: stručné SWOT shrnutí fyzické, kognitivní, emoční, sociální a duchovní oblasti ve výuce a školním klimatu.
+Výstup: jeden dokument na 2–4 strany s nadpisy, krátkými odstavci a tabulkami:
+1) vize a dlouhodobé cíle,
+2) současný stav: tabulka pět oblastí × silné stránky, slabé stránky, příležitosti, hrozby,
+3) priority,
+4) opatření po úrovních: tabulka Opatření – Úroveň – Kdo odpovídá – Termín,
+5) rozvoj pedagogů,
+6) zapojení žáků a rodičů,
+7) indikátory: tabulka Indikátor – Výchozí stav – Cílový stav – Jak a kdy měříme,
+8) harmonogram po pololetích,
+9) rizika a jak jim předejdeme (například přetížení učitelů, jednorázové akce bez návaznosti),
+10) předpoklady, se kterými jsi pracoval(a).
 
-Strategické priority: 3—5 klíčových oblastí (např. bezpečné digitální prostředí, psychohygiena žáků, etická práce s AI).
-
-Opatření a konkrétní aktivity ke každé prioritě (zodpovědné osoby, potřebné zdroje, milníky).
-
-Podporu profesního rozvoje zaměstnanců: školení, mentoring a sdílení dobré praxe v oblasti wellbeingových a digitálních kompetencí.
-
-Zapojení žáků a rodičů: participativní aktivity, workshopy a komunikační kanály na podporu digitálního wellbeingu.
-
-Měřitelné indikátory úspěchu: jak škola pozná, že se strategie daří (např. úroveň spokojenosti, snížení absence, bezpečnostní incidenty, kvalita spánkových návyků).
-
-Časový harmonogram implementace: klíčové kroky rozdělené do školních let/pololetí.
-
-Rizika a preventivní opatření: možné překážky (přetížení personálu, nedostatek času, digitální únava) a způsoby jejich řešení.
-
-Formátuj výstup přehledně pomocí nadpisů, krátkých odstavců a odrážkových seznamů. Piš srozumitelným, podpůrným jazykem bez zbytečných odborných termínů, aby dokument snadno pochopili všichni členové školního týmu i rodiče. Výsledkem je kompaktní strategický dokument připravený k tisku nebo online sdílení.
-
-Vstupní informace, které uživatel doplní před spuštěním promptu:
-
-Typ a velikost školy (např. ZŠ, SŠ, VOŠ; počet žáků):  [doplňte]
-
-Současné wellbeingové iniciativy a jejich výsledky: [doplňte]
-
-Silné stránky školy v péči o žáky a pedagogy: [doplňte]
-
-Slabé stránky a příležitosti ke zlepšení: [doplňte]
-
-Dostupné zdroje (personál, finance, materiální vybavení): [doplňte]
-
-Specifické priority vedení školy (např. spánek, kyberprevence, klima třídy): [doplňte]
-
-Časový horizont platnosti strategie (např. 3—5 let): [doplňte]
-
-Odpovídej podpůrně, povzbuzuj k diskusi a dbej na to, aby dokument tvořil soudržný celek připravený k okamžitému využití.
-
-Využij Národní koncepci digitálního wellbeingu ČR:
-
-Digitální wellbeing
-
-Digitální wellbeing je stav, ve kterém rozpoznáváme přínosy a rizika  našeho vlastního způsobu užívání digitálních technologií v aktuálních podmínkách. Na základě toho digitální technologie zapojujeme do svého života způsobem podporujícím naše celkové zdraví, osobnostní rozvoj a odpovědnost vůči sobě, svému okolí a světu.
-
-Fyzická oblast
-
-Ve fyzické oblasti se projevuje schopností smysluplně a přiměřeným způsobem využívat digitální technologie pro rozvoj zdravého životního stylu a fyzického zdraví, zejména ve vztahu k pohybovým aktivitám, spánkovému a dennímu režimu či způsobu stravování. Závisí na péči o zdravý životní styl obecně.
-
-Kognitivní oblast
-
-V kognitivní oblasti se projevuje schopností rozvíjet vlastní poznání, kritické a tvůrčí myšlení a dosahovat stanovených cílů. Prostředkem k tomu je získávání, zaznamenávaní, vytváření a vyhodnocovaní informací v digitálním prostředí. Závisí na obecném kognitivním rozvoji nutném pro orientaci a porozumění světu. 
-
-Emocionální oblast
-
-V emocionální oblasti se projevuje schopností používat digitální technologie pro podporu budování pozitivního sebepojetí a regulace emocí tak, aby člověk zdravě naplňoval své potřeby a nabýval důvěru v sebe i druhé. Závisí na porozumění vlastním emocím, rozvoji seberegulace a odolnosti obecně, včetně využívání funkčních strategií pro zvládání různých životních situací s cílem udržení emočního zdraví a celkové pohody.
-
-Sociální oblast
-
-V sociální oblasti se projevuje schopností využívat digitální technologie pro komunikaci a sdílení způsobem, který pomáhá navazovat a udržovat kontakty, rozvíjet smysluplné mezilidské vztahy a podporovat vzájemný respekt, spolupráci a důvěru ve společnosti. Závisí na rozvoji vztahů a komunikačních a sociálních dovedností obecně.
-
-Duchovní oblast
-
-V duchovní oblasti se projevuje schopností smysluplně využívat digitální technologie pro poznávání, sdílení a uplatňování hodnot, etických principů a norem tak, aby přispívaly k naplňování smyslu našeho života v souladu s odpovědností vůči sobě samým, našemu okolí a světu. Závisí na celkovém rozvoji duchovního života.
-
-Při tvorbě promptu jsme vycházeli z [Národní koncepce digitálního wellbeingu České republiky](https://digitalizace.rvp.cz/napric-predmety/digitalni-wellbeing), která definuje pět vzájemně propojených dimenzí (fyzickou, kognitivní, emoční, sociální a duchovní) a poskytuje rámec pro jejich rozvoj ve školním i digitálním prostředí.
+Když chybí typ školy nebo popis situace, nejdřív se mě zeptej (nejvýš 5 otázek najednou). Na konci nabídni: 1) zkrácenou verzi pro rodiče, 2) náměty na pět třídnických hodin, 3) rozpracování jedné priority do detailu.
 ```
 
 ## Co je cílem promptu
 
-Cílem promptu „Integrace digitálního wellbeingu“ je pomoci vedení školy a pedagogickému sboru vytvořit srozumitelnou a realistickou strategii, která systematicky podporuje fyzickou, kognitivní, emoční, sociální a duchovní pohodu žáků (i zaměstnanců). Prompt vede k jasnému pojmenování dlouhodobých cílů, k analýze současného stavu a k určení konkrétních opatření, takže výsledný dokument slouží jako praktický plán pro koordinaci podpůrných aktivit, profesního rozvoje i spolupráce s rodiči a komunitou.
+Prompt vám pomůže sestavit strategii digitálního wellbeingu žáků i zaměstnanců. Vychází z [Národní koncepce digitálního wellbeingu](https://digitalizace.rvp.cz/napric-predmety/digitalni-wellbeing) (NPI ČR) a pracuje s jejími pěti oblastmi: fyzickou, kognitivní, emoční, sociální a duchovní. Cílem je rovnováha, ne zákaz technologií.
+
+Opatření jsou rozdělená na tři úrovně: co dostanou všichni, co se děje ve třídách a kam se obrátí ti, kdo potřebují víc. Strategie myslí i na nová témata, například svěřování se AI chatbotům nebo deepfake videa spolužáků, a na digitální únavu učitelů.
 
 ## Jak prompt použít
 
-Prompt použijete tak, že jeho text zkopírujete do své chatovací aplikace, doplníte požadované vstupní informace o škole (typ, velikost, stávající iniciativy, silné a slabé stránky, dostupné zdroje) a odešlete; okamžitě obdržíte ucelený návrh strategie členěný do přehledných částí, který můžete iterovat v další konverzaci s chatbotem.
+Zkopírujte prompt do chatbota a doplňte údaje o škole. Pokud máte data (dotazník klimatu, poznatky metodika prevence), uveďte je, strategie bude přesnější. O žácích pište jen obecně, bez jmen a konkrétních příběhů.
+
+Pravidla pro mobily a sociální sítě připravíte s promptem [Tvorba školních pravidel](/funkce/prompty/tvorba-skolnich-pravidel), práci s klimatem třídy podpoří dovednost [Lepší třídní klima](/skills/lepsi-tridni-klima).
 
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Strategické dokumenty](/skills/strategicke-dokumenty), kterou si můžete nainstalovat do svého chatbota.
