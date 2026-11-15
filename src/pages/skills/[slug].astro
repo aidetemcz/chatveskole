@@ -12,12 +12,16 @@ export function getStaticPaths() {
 const { skill } = Astro.props as { skill: Skill };
 // ZIPy pro jednotlivé chatboty jsou na Google Disku (meta.yaml → stahnout)
 const zipFor = (z: string | null) => (z ? skill.stahnout?.[z as 'claude' | 'gemini' | 'chatgpt'] : undefined);
+// podobné dovednosti: nejdřív ze stejné sady, pak pro stejnou cílovou skupinu
+const ostatni = skills.filter((s) => s.slug !== skill.slug);
+const skore = (s: Skill) => s.sady.filter((x) => skill.sady.includes(x)).length * 10 + s.pro_koho.filter((x) => skill.pro_koho.includes(x)).length;
+const podobne = ostatni.map((s, i) => ({ s, k: skore(s), i })).sort((a, b) => b.k - a.k || a.i - b.i).slice(0, 4).map((x) => x.s);
 const gpt = asList(skill.puvodni_asistenti?.gpt);
 const gem = asList(skill.puvodni_asistenti?.gem);
 const varianty = skill.prompt.varianty;
 ---
 <Base title={skill.title} description={skill.kratky_popis}>
-  <div class="band band--white" style="padding-bottom: 120px">
+  <div class="band band--white" style="padding-bottom: 96px">
     <div class="wrap stack detail">
       <Crumbs items={[{ title: 'Katalog dovedností', href: '/skills' }, { title: skill.title }]} />
       <header class="page-head">
@@ -86,6 +90,22 @@ const varianty = skill.prompt.varianty;
       )}
     </div>
   </div>
+
+  {podobne.length > 0 && (
+    <section class="band band--sky podobne" aria-labelledby="podobne-h">
+      <div class="wrap stack" style="gap: 30px">
+        <h2 id="podobne-h" class="h2">Podobné dovednosti</h2>
+        <div class="podobne-mrizka">
+          {podobne.map((p) => (
+            <a class="podobna" href={url(`/skills/${p.slug}`)}>
+              <span class="podobna-nazev">{p.title}</span>
+              <span class="podobna-popis">{p.kratky_popis}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 </Base>
 
 <style>
@@ -110,6 +130,13 @@ const varianty = skill.prompt.varianty;
   .steps { margin: 0; padding: 26px 30px 26px 50px; border: 1px solid var(--sky); border-radius: var(--radius); display: flex; flex-direction: column; gap: 14px; }
   .zip { border: 1px solid var(--sky); border-radius: var(--radius); padding: 18px 22px; display: flex; gap: 14px; align-items: center; text-decoration: none; color: var(--ink); }
   .zip--inline { display: inline-flex; }
+  .podobne-mrizka { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
+  @media (max-width: 1000px) { .podobne-mrizka { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 560px) { .podobne-mrizka { grid-template-columns: minmax(0, 1fr); } }
+  .podobna { background: var(--panel); border: 1px solid var(--sky); border-radius: var(--radius-lg); padding: 26px; display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: var(--ink); }
+  .podobna-nazev { font-family: var(--fh); font-weight: 700; font-size: 1.1rem; line-height: 1.3; }
+  .podobna:hover .podobna-nazev { color: var(--accent-strong); }
+  .podobna-popis { font-size: 0.92rem; line-height: 1.5; }
   .zip:hover { background: var(--sky-light); color: var(--ink); }
   .tabs { display: flex; flex-wrap: wrap; gap: 4px; border-bottom: 1px solid var(--line); }
   .tabs button { padding: 10px 14px; border: 0; background: none; font-weight: 600; color: var(--muted); border-bottom: 2px solid transparent; margin-bottom: -1px; }
