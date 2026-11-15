@@ -58,6 +58,7 @@ const views = [
               <div class="grid-2">
                 {g.items.map((p) => <PromptCard title={p.title} href={p.href} text={p.text} id={`${v.id}-${p.id.replace('/', '-')}`} skill={p.skill} />)}
               </div>
+              {i === v.groups.length - 1 && <OdkazyKonec vSekci odkazy={[{ text: 'Jak prompt napsat nebo upravit', href: url('/funkce/prompty') }, { text: 'Katalog dovedností', href: url('/skills') }]} />}
             </div>
           </section>
         ))}
@@ -65,11 +66,6 @@ const views = [
     ))}
   </div>
 
-  <div class="band band--white">
-    <div class="wrap">
-      <OdkazyKonec odkazy={[{ text: 'Jak prompt napsat nebo upravit', href: url('/funkce/prompty') }, { text: 'Katalog dovedností', href: url('/skills') }]} />
-    </div>
-  </div>
 </Base>
 
 <style>
@@ -88,5 +84,8 @@ const views = [
     const filtr = document.querySelector<HTMLElement>('.filtr')!;
     filtr.querySelector('[data-filtr-nazev]')!.textContent = (skupina.getAttribute('aria-label') ?? '').toLowerCase();
     filtr.hidden = false;
+    // tlačítka na konci jsou v posledním pruhu; když je vidět jen jedna skupina, přesuneme je do ní
+    const konec = document.querySelector('[data-group-view="komu"] .odkazy-konec');
+    if (konec && !skupina.contains(konec)) skupina.querySelector('.wrap')?.appendChild(konec);
   }
 </script>

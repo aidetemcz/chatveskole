@@ -103,7 +103,7 @@ const varianty = skill.prompt.varianty;
             </a>
           ))}
         </div>
-        <OdkazyKonec odkazy={[{ text: 'Katalog dovedností', href: url('/skills') }, ...skill.sady.map(sadaBySlug).filter(Boolean).map((x) => ({ text: `Sada ${x!.title}`, href: url(`/sady/${x!.slug}`) }))]} />
+        <OdkazyKonec vSekci odkazy={[{ text: 'Katalog dovedností', href: url('/skills') }, ...skill.sady.map(sadaBySlug).filter(Boolean).map((x) => ({ text: `Sada ${x!.title}`, href: url(`/sady/${x!.slug}`) }))]} />
       </div>
     </section>
   )}

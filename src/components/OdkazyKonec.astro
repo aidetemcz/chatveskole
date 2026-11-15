@@ -1,16 +1,19 @@
 ---
 // Odkazy na konci stránky jako tlačítka (Eva 15. 11. 2026): první je hlavní, ostatní s obrysem.
 // href musí být hotová adresa (u interních odkazů už s base, tedy přes url()).
-interface Props { odkazy: { text: string; href: string }[] }
-const { odkazy } = Astro.props;
+// vSekci: tlačítka uvnitř posledního pruhu stránky — mezera nad nimi je stejná jako pod nimi (84 px), viz docs/design.md
+interface Props { odkazy: { text: string; href: string }[]; vSekci?: boolean }
+const { odkazy, vSekci } = Astro.props;
 const sipka = (t: string) => (/[→←]\s*$/.test(t) ? t : `${t} →`);
 ---
 {odkazy.length > 0 && (
-  <nav class="odkazy-konec" aria-label="Kam dál">
+  <nav class:list={['odkazy-konec', { 'odkazy-konec--sekce': vSekci }]} aria-label="Kam dál">
     {odkazy.map((o, i) => <a class:list={['btn', i === 0 ? 'btn--primary' : 'btn--outline']} href={o.href}>{sipka(o.text)}</a>)}
   </nav>
 )}
 
 <style>
   .odkazy-konec { display: flex; flex-wrap: wrap; gap: 12px 14px; padding-top: 8px; }
+  .odkazy-konec--sekce { padding-top: 0; margin-top: 56px; } /* + mezera 28 px ve sloupci = 84 px jako odsazení pruhu */
+  @media (max-width: 640px) { .odkazy-konec--sekce { margin-top: 32px; } }
 </style>

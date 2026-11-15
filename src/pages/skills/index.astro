@@ -50,13 +50,11 @@ const views = [
               <div class="grid-2">
                 {g.items.map((k) => <SkillCard skill={k} />)}
               </div>
+              {i === v.groups.length - 1 && <OdkazyKonec vSekci odkazy={[{ text: 'Co jsou dovednosti a jak je nainstalovat', href: url('/funkce/skills') }, { text: 'Katalog promptů', href: url('/prompty') }, { text: 'Pluginy', href: url('/funkce/pluginy') }]} />}
             </div>
           </section>
         ))}
       </div>
     ))}
-  </div>
-  <div class="band band--white">
-    <div class="wrap"><OdkazyKonec odkazy={[{ text: 'Co jsou dovednosti a jak je nainstalovat', href: url('/funkce/skills') }, { text: 'Katalog promptů', href: url('/prompty') }, { text: 'Pluginy', href: url('/funkce/pluginy') }]} /></div>
   </div>
 </Base>
