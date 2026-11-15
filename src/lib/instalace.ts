@@ -4,24 +4,6 @@ export type Nastroj = { id: string; nazev: string; kroky: string[]; zip: 'claude
 
 export const NASTROJE: Nastroj[] = [
   {
-    id: 'claude', nazev: 'Claude', zip: 'claude',
-    kroky: [
-      'Stáhněte ZIP dovednosti pro Claude (nerozbalujte ho).',
-      'V Claude otevřete Customize → Skills, klikněte na + a zvolte Upload a skill.',
-      'Vyberte ZIP. Dovednost se objeví v seznamu a můžete ji zapnout nebo vypnout.',
-      'Pište normálně — Claude dovednost použije sám, když se k úkolu hodí.',
-    ],
-  },
-  {
-    id: 'gemini', nazev: 'Gemini', zip: 'gemini',
-    kroky: [
-      'Stáhněte ZIP dovednosti pro Gemini.',
-      'V aplikaci Gemini otevřete správu dovedností a nahrajte ZIP.',
-      'Dovednost zavoláte lomítkem a jejím názvem.',
-      'Dovednosti mají osobní účty od 18 let. Na školních účtech dostupnost řídí správce.',
-    ],
-  },
-  {
     id: 'chatgpt', nazev: 'ChatGPT', zip: 'chatgpt',
     kroky: [
       'Stáhněte ZIP dovednosti pro ChatGPT.',
@@ -31,7 +13,25 @@ export const NASTROJE: Nastroj[] = [
     ],
   },
   {
-    id: 'copilot', nazev: 'Copilot', zip: null,
+    id: 'gemini', nazev: 'Gemini', zip: 'gemini',
+    kroky: [
+      'Stáhněte ZIP dovednosti pro Gemini.',
+      'V aplikaci Gemini otevřete správu dovedností a nahrajte ZIP.',
+      'Dovednost zavoláte tak, že napíšete zavináč a začnete psát její název.',
+      'Dovednosti mají osobní účty od 18 let. Na školních účtech dostupnost řídí správce.',
+    ],
+  },
+  {
+    id: 'claude', nazev: 'Claude', zip: 'claude',
+    kroky: [
+      'Stáhněte ZIP dovednosti pro Claude (nerozbalujte ho).',
+      'V Claude otevřete Customize → Skills, klikněte na + a zvolte Upload a skill.',
+      'Vyberte ZIP. Dovednost se objeví v seznamu a můžete ji zapnout nebo vypnout.',
+      'Pište normálně — Claude dovednost použije sám, když se k úkolu hodí. Případně můžete dovednost vyvolat lomítkem v chatu. Volat dovednosti můžete také do projektů.',
+    ],
+  },
+  {
+    id: 'copilot', nazev: 'MS Copilot', zip: null,
     kroky: [
       'Hotovou dovednost pro Copilot ke stažení nenabízíme, vytvoříte si ji sami.',
       'V Copilot Chatu vytvořte agenta a do jeho pokynů vložte systémový prompt z Google Docs.',
