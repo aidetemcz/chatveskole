@@ -2,9 +2,12 @@
 title: Vibe coding — materiály do výuky
 menu: Vibe Coding
 poradi: 4
-popis: Metodiky AI dětem k vibe codingu a osm hotových zadání pro vyučující — interaktivní časová osa, graf z dat, myšlenková mapa, simulace logické úlohy a další.
-aktualizovano: 2026-11-07
+popis: Metodika AI dětem Tvorba jednoduchých aplikací pomocí vibecodingu, školení Vibecoding pro školy a osm hotových zadání pro vyučující — interaktivní časová osa, graf z dat, myšlenková mapa, simulace logické úlohy a další.
+aktualizovano: 2026-11-15
 stav: koncept
+zdroje:
+  - https://kurikulum.aidetem.cz/knowledgebase/vibecoding-01-tvorba-jednoduchych-aplikaci/
+  - https://vzdelavame.aidetem.cz/akce/sborovna/vibecoding-pro-skoly/
 souvisejici_prompty:   # původní prompty z kategorií Vizualizace a Různé (2024) zůstávají v databázi promptů
   - https://chatveskole.cz/databaze-promptu/tabulky/
   - https://chatveskole.cz/databaze-promptu/sekvencni-diagram/
@@ -20,14 +23,44 @@ souvisejici_prompty:   # původní prompty z kategorií Vizualizace a Různé (2
 
 # Vibe coding ve výuce
 
-## Metodiky AI dětem
+## Metodika AI dětem
 
-- **[Vibecoding 01 — Tvorba jednoduchých aplikací](https://kurikulum.aidetem.cz/knowledgebase/vibecoding-01-tvorba-jednoduchych-aplikaci/)** — žáci 8.–9. třídy a SŠ si postaví vlastní aplikaci. 90–160 minut.
-- **[Data 02 — Interpretace dat pomocí chatbotů](https://kurikulum.aidetem.cz/knowledgebase/data-02-vizualizace-dat-casova-rada/)** — práce s daty a jejich vizualizací.
-- **[Vytváření AI asistentů — školní hackaton](https://kurikulum.aidetem.cz/knowledgebase/vytvareni-ai-asistentu-skolni-hackaton/)** — žáci navrhují a testují vlastního asistenta. 4 × 45 minut.
-- **[MňauCoder](https://mnaucoder.cz)** — pro mladší: vlastní model strojového učení a AI pomocník ve Scratchi.
+<!-- komponenta: karta s obrázkem -->
 
-Školení **[Vibecoding pro školy](https://vzdelavame.aidetem.cz/akce/sborovna/vibecoding-pro-skoly/)** přivezeme do vaší sborovny (3 hodiny, lze hradit ze šablon).
+![Obálka metodiky Tvorba jednoduchých aplikací pomocí vibecodingu](/img/metodika-vibecoding-01.jpg)
+
+### Tvorba jednoduchých aplikací pomocí vibecodingu
+
+Žáci si bez psaní kódu navrhnou a postaví vlastní aplikaci, jednoduchou hru nebo web. Nejdřív si ujasní, pro koho aplikace bude, co má umět a jak má vypadat. Pak napíšou zadání pro AI, výsledek testují a postupně vylepšují. Hotové aplikace zveřejní a na „tržišti aplikací“ si je navzájem vyzkouší a dají si zpětnou vazbu.
+
+- **Pro koho:** 8. a 9. ročník ZŠ a SŠ, informatika
+- **Délka:** 90–160 minut
+- **Nástroj:** Macaly od českých vývojářů (žáci od 13 let se souhlasem zákonného zástupce), jako alternativa Canva Kódování
+- **Co v ní najdete:** plán lekce, prezentaci k promítání, pracovní tabuli v Canvě pro návrh aplikace, 22minutové video s ukázkou tvorby v Macaly a nápady na žákovské projekty
+
+Metodika je součástí Kurikula umělé inteligence pro ZŠ a SŠ, které vytváříme ve spolupráci s Národním pedagogickým institutem.
+
+[Otevřít metodiku](https://kurikulum.aidetem.cz/knowledgebase/vibecoding-01-tvorba-jednoduchych-aplikaci/)
+
+## Školení pro sborovny
+
+<!-- komponenta: karta s obrázkem (bez obrázku) -->
+
+### Vibecoding pro školy
+
+Přijedeme za vámi do školy a za tři hodiny celé sborovně ukážeme, jak s AI tvořit jednoduché aplikace a jak vibe coding smysluplně zařadit do výuky. Nejde o to naučit se programovat, ale o tvořivost, spolupráci a práci s chybou.
+
+- **Úvod:** co je vibe coding a čím se liší od klasické výuky informatiky.
+- **Praktická část:** sami si vyzkoušíte tvorbu jednoduchých digitálních výstupů s pomocí AI. Důraz je na postup, testování a vylepšování, ne na technickou dokonalost.
+- **Metodická část:** jak vibe coding zařadit podle věku a digitálních dovedností žáků. Přínosy, limity a rizika AI, bezpečnost, autorská práva a odpovědnost.
+
+Odnesete si konkrétní příklady výukových scénářů, nápady na projekty s AI a jistotu při tvůrčí práci s digitálními nástroji.
+
+**Pro koho:** pedagogové a vedení škol, nejvýš 26 účastníků<br>
+**Kde a kdy:** prezenčně ve vaší sborovně, termín po domluvě<br>
+**Cena:** 23 600 Kč s DPH. Školení je s certifikátem, lze ho hradit ze šablon.
+
+[Objednat školení](https://vzdelavame.aidetem.cz/akce/sborovna/vibecoding-pro-skoly/)
 
 ## Osm zadání pro vyučující
 
