@@ -11,6 +11,10 @@ puvodni_asistenti:
   gpt: https://chatgpt.com/g/g-tpHY1HiGh-karierni-poradce-se-zamerenim-na-matematiku
 google_doc: https://docs.google.com/document/d/1lbj2cC8Z_T_b34AKIlJFR3jx9eG0o8HVTwhY0ycN1Qo/edit
 google_slozka: https://drive.google.com/drive/folders/1a4lhmY5I3qOVEzlSC09iSPx6dOvnhTTM
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=15wOKXUsj2tbABV5JSyqC1ES-6I2s0awi
+  gemini: https://drive.google.com/uc?export=download&id=1SFts4FGVLq4-A6gdL1plV7Viif5VUNZy
+  chatgpt: https://drive.google.com/uc?export=download&id=1vaOCdBEXYOIjv3Oe6PKH6eRWiIOS_I55
 autori: [AI dětem]          # ověřit autorství
 metodika:
   - nazev: Kurikulum umělé inteligence – Matematika pro život (AI dětem)

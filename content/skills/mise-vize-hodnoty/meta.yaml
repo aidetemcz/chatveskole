@@ -23,6 +23,11 @@ puvodni_asistenti:
   systemovy_prompt: https://docs.google.com/document/d/17NSQ7PsiJsQNBKefkIgtOUJaDg8e7fHbiUx36v9BvDc/edit?usp=sharing
 google_doc: https://docs.google.com/document/d/1c2MPDXW7omQE9laZaG8F0R8aX8gE4kzyxi7qWV0eIf0/edit
 google_slozka: https://drive.google.com/drive/folders/1872qWtzNRB5EygB4WLc55InQRP3k3_D-
+google_data: https://drive.google.com/drive/folders/1e5Xs1-ASsgq8qYhTi41RcXBQIDmym1Xv
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1NhS5oQ5gncgp8UEau4iJCqURP65-vzSp
+  gemini: https://drive.google.com/uc?export=download&id=1ne67T6mBUlzzkOSHn87MLR-LjO4_szok
+  chatgpt: https://drive.google.com/uc?export=download&id=1Trq20DjsrxzbEl-kvpUik7s2PRo2XQK3
 autori: [AI dětem]
 metodika:
   - nazev: Strategické plánování (NPI ČR, Vedeme školu)

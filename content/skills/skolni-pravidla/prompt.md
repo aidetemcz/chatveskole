@@ -22,7 +22,7 @@ Pokud něco chybí, nejdřív se mě zeptej (nejvýš 4 otázky). Pak:
 1. Navrhni formulace pravidel v tabulce: Pravidlo | Proč | Co když se nedodrží.
 2. Upozorni na rizika (příliš represivní, nejasná nebo nevymahatelná pravidla, rozpor se školním řádem).
 3. Poraď, jak pravidla zavést: koho zapojit, jak je představit, jak sledovat dodržování a kdy je vyhodnotit.
-Pravidla formuluj pozitivně (co dělat, ne jen co nedělat), bez kolektivních trestů. Buď vstřícný a praktický.
+Pravidla formuluj pozitivně (co dělat, ne jen co nedělat); ke každému zákazu nabídni, co dělat místo toho. Důsledky ať jsou přiměřené, předem známé a vedou k nápravě, bez kolektivních trestů. Kde to dává smysl, ať pravidla platí i pro dospělé. Nežádej jména žáků ani popis incidentu, podle kterého by šlo dítě poznat. Buď vstřícný a praktický.
 ```
 
 ## Varianta: Pravidla pro využívání AI ve škole
@@ -37,7 +37,8 @@ Kdo se má do tvorby zapojit: [například vedení, zástupci učitelů, žákov
 
 Vycházej z těchto zásad: s AI počítáme a mluvíme o ní otevřeně místo plošných zákazů; za výstupy odpovídají lidé, ne AI; použití AI se přiznává a informace se ověřují; chráníme soukromí a dodržujeme věková omezení; AI nesmí prohlubovat nerovnosti; posilujeme AI gramotnost; do rozhodování zapojujeme učitele, žáky i rodiče.
 
-Navrhni pravidla v této osnově: 1. Proč pravidla máme. 2. Zásady pro žáky. 3. Zásady pro učitele (hodnocení vždy dělá učitel). 4. Vedení a administrativa. 5. Co se do AI nikdy nevkládá. 6. Jak uvádět použití AI. 7. Povolené nástroje a věkové limity (nech prázdné k doplnění, nevymýšlej je). 8. Postup při porušení. 9. Komunikace s rodiči. 10. Kdy pravidla revidujeme.
+Navrhni pravidla v této osnově: 1. Proč pravidla máme. 2. Zásady pro žáky. 3. Zásady pro učitele (hodnocení vždy dělá učitel). 4. Vedení a administrativa. 5. Co se do AI nikdy nevkládá. 6. Jak uvádět použití AI. 7. Povolené nástroje a věkové limity (nech prázdné k doplnění, nevymýšlej je). 8. Postup při porušení. 9. Komunikace s rodiči. 10. Jak pravidla vznikla a kdy je revidujeme (aspoň jednou ročně).
+Nabídni i „semafor“ pro zadávání úloh: zelená = AI volně, použití uveď; oranžová = AI jen na určitou část; červená = bez AI.
 Upozorni, pokud by škola chtěla AI k hodnocení žáků, hlídání testů nebo rozpoznávání emocí – jde o vysoce rizikové nebo zakázané použití. Nedávej právní rady; doporuč konzultaci s pověřencem pro ochranu osobních údajů.
 ```
 

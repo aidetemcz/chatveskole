@@ -26,6 +26,10 @@ puvodni_asistenti:
   # systémový prompt v Google Docs zatím neexistuje
 google_doc: https://docs.google.com/document/d/1hOLVAluQ-wQyU8LCKCXyjXmicAD9SAT5tSA8FxUa8nc/edit
 google_slozka: https://drive.google.com/drive/folders/143QCVYHP2DkNpeSoFw1-fBnX9X_JO8m8
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=16zZpSe-UpT3G9eLErksD9pBMMHZrwdb-
+  gemini: https://drive.google.com/uc?export=download&id=1Q1-ISth6qflQWOvy4fIx979egF82jK-J
+  chatgpt: https://drive.google.com/uc?export=download&id=1YVB88scq0wI_wyqpGv569q35YXq8ygtP
 autori: [AI dětem, AI reaktor UJEP (Míša Liegertová)]   # ověřit: čtyři prompty z roku 2024 nejspíš z původní databáze AI reaktoru UJEP; doplnit jména
 metodika:
   - nazev: Internetová jazyková příručka (ÚJČ AV ČR)

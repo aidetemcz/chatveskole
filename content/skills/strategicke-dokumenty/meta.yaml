@@ -30,6 +30,11 @@ puvodni_obsah:
 puvodni_asistenti: {}
 google_doc: https://docs.google.com/document/d/1RwNaT2_ND4qc7gzWBT5EGJr8DBsIg-WKzb9mjnrMpLs/edit
 google_slozka: https://drive.google.com/drive/folders/1oXr0RKTC8j01hPRBlr9fszK7wEbsB0qY
+google_data: https://drive.google.com/drive/folders/1OORuHMGj1_mTPvoKn-x_3-URvtClBK-T
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1z6Mw3DPXFIiD9PeFe5qoq0F3H7T5joU4
+  gemini: https://drive.google.com/uc?export=download&id=1AgPIsUaOEmzHI7-XeZf1x6_pb-EoTWEI
+  chatgpt: https://drive.google.com/uc?export=download&id=1lLAbVmqIwidGIxT9BCkHr-Le_U_lLX0E
 autori: [AI dětem]
 metodika:
   - nazev: Strategické plánování (NPI ČR, Vedeme školu)

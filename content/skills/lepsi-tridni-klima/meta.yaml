@@ -14,6 +14,11 @@ puvodni_asistenti:
   gpt: https://chatgpt.com/g/g-69efa987d5488191b76b566a789c3355-poradce-pro-lepsi-tridni-klima
 google_doc: https://docs.google.com/document/d/1cwIBXQGFgCsFmYEPbfsRoiHAvBsqjBi2C753t35BN3A/edit
 google_slozka: https://drive.google.com/drive/folders/11xGfGjPpuG6kaovWbWmItpfvEYtLZc8H
+google_data: https://drive.google.com/drive/folders/1jMoiq4BR_-1UgE4LAFkGZihtZ18Jv5bY
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=12keGtIA8HEe4v1DfV2PMBy9rmXDsaEs9
+  gemini: https://drive.google.com/uc?export=download&id=1jYT7IeqOhUHpu6uDNkPLDPVZu0t3zKep
+  chatgpt: https://drive.google.com/uc?export=download&id=1DzhiQ1n0kRjf09uMMJpzSl4ZTcJAnEga
 autori: [AI dětem]          # ověřit autorství
 metodika:
   - nazev: Metodické příručky AI akcelerátoru (AI dětem)

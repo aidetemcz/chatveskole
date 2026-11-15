@@ -1,14 +1,12 @@
 title: Kritéria hodnocení
 slug: kriteria-hodnoceni
-kratky_popis: Z cíle vytvoří kritéria pro učitele i žáky, gradaci J–Č–T–Ú, sebehodnoticí list a nápady na důkazy o učení.
+kratky_popis: Z cíle podle Nové taxonomie vytvoří kritéria hodnocení pro učitele i žáky, včetně úprav pro žáky se SVP.
 pro_koho: [ucitele]
 sady: [formativni-hodnoceni]
 stitky: [formativní hodnocení, kritéria hodnocení, sebehodnocení, J–Č–T–Ú, důkazy o učení, SVP]
 rezimy:
-  - Kritéria z cíle
-  - Gradace J–Č–T–Ú
-  - Sebehodnoticí list pro žáky
-  - Důkazy o učení
+  - Kritéria z cíle (pro učitele i pro žáky)
+  - Úprava kritérií pro žáky se SVP
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/tvorba-kriterii-hodnoceni/
     typ: prompt
@@ -25,6 +23,11 @@ puvodni_asistenti:
   systemovy_prompt: https://docs.google.com/document/d/1aaepsHxOf-W5mc-ff3gdRFluTzJkCqMk7dAhnL2FIsI/edit?usp=sharing
 google_doc: https://docs.google.com/document/d/1UUhFUc8PfWJVqfB9g16j3-WDiTOrRQvfy_aB_yxYYjs/edit
 google_slozka: https://drive.google.com/drive/folders/1AXAp1yrnNUiUSwTjQdwcV-PLLUU6LKNF
+google_data: https://drive.google.com/drive/folders/1_UEbLgZ5LKggoYxBAtatvEW246LUoyRP
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1kALz3amRw72K7BkEq9doHqQNGPiQYe-H
+  gemini: https://drive.google.com/uc?export=download&id=1zQbRiWgM6PalNAqhq1T56V4VeY4NLJmO
+  chatgpt: https://drive.google.com/uc?export=download&id=1Mfg2pQHDspFXJBYDkxCSmr8ubeQASJ3K
 autori: [Eva Nečasová (AI dětem)]
 metodika:
   - nazev: Vysvědčení jinak (PdF MU, Jana Kratochvílová)

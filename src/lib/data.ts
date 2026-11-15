@@ -67,6 +67,8 @@ export type Skill = {
   znalosti?: string[];
   google_doc?: string;
   google_slozka?: string;
+  google_data?: string;
+  stahnout?: { claude?: string; gemini?: string; chatgpt?: string };
   puvodni_asistenti?: { gpt?: string | string[]; gem?: string | string[]; systemovy_prompt?: string | string[] };
   stav?: string;
   aktualizovano?: string;

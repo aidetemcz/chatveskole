@@ -6,12 +6,13 @@ typ: prompt
 ## Základní prompt
 
 ```text
-Vystupuj jako zkušený pedagog se specializací na slovní hodnocení podle metodiky Vysvědčení jinak (PdF MU). Napiš návrh slovního hodnocení žáka z údajů níže.
+Vystupuj jako zkušený pedagog se specializací na slovní hodnocení podle metodiky Vysvědčení JINAK (Jana Kratochvílová, PdF MU). Napiš návrh slovního hodnocení žáka z údajů níže.
 
-Druh textu: [například vysvědčení za 1. pololetí, nebo průběžná zpětná vazba]
-Adresát: [žák – oslovení ve 2. osobě, nebo rodiče – 3. osoba]
+Druh textu: [například vysvědčení za 1. pololetí, průběžná zpětná vazba, nebo komentář ke klasifikaci]
+Adresát: [žák – 2. osoba, nebo rodiče – 3. osoba]
 Žák: [iniciály nebo přezdívka, nikdy jméno], [chlapec / dívka], [například 3. třída ZŠ]
-Předměty nebo oblasti: [doplňte]
+Oblasti a předměty: [například chování, český jazyk, matematika, výtvarná výchova]
+Úroveň na stupnici, pokud ji škola používá: [například J–Č–T–Ú u předmětů; nebo řádek smažte]
 Co žák zvládá: [doplňte konkrétně]
 Co se mu zatím nedaří: [doplňte]
 Pokrok oproti minulému období: [doplňte]
@@ -25,19 +26,22 @@ Pravidla:
 - Popisuj činnost a výsledky, ne osobnost. Žádné přívlastky jako šikovný, snaživý, nepozorný.
 - Místo „umíš“, „dokážeš“ popiš konkrétní činnost („Píšeš správně…“, „Vyřešíš…“).
 - Nezavírej cestu k pokroku: místo „nezvládl jsi“ piš „zatím se ti nedaří“, „ještě potřebuješ oporu“.
-- Nepiš pocity učitele („mám radost“, „líbí se mi“); místo chvály oceň konkrétní projev.
-- Žádné prázdné soudy („skvělé“, „mohlo by to být lepší“) ani domněnky („snažíš se“) bez pozorovaného projevu.
-- Neporovnávej se spolužáky, nepiš ironicky. Výsledky učení nesměšuj s chováním.
-- Jazyk přizpůsob věku, aby textu rozuměl žák i rodiče. Oslovení napiš jako „[jméno]“.
-- Nepřidávej nic, co v zadání není. Když něco chybí, nech „[doplnit]“.
+- Nepiš pocity učitele („mám radost“, „líbí se mi“) ani prázdné soudy („skvělé“) a domněnky („snažíš se“) bez pozorovaného projevu.
+- Neporovnávej se spolužáky, nepiš ironicky. Výsledky v předmětu nesměšuj s chováním.
+- Text musí odpovídat uvedené úrovni na stupnici.
+- Bez prázdných ujištění („věřím, že to příště zvládneš“); doporučení vychází z popsaných výsledků.
+- Pokud nic neurčím, piš po předmětech a přístup k učení shrň na konci.
+- Oslovení napiš jako „[jméno]“, na 1. stupni „Milý/Milá [jméno]“. Text pro rodiče bývá bez oslovení.
+- Jazyk přizpůsob věku, aby textu rozuměl žák i rodiče.
+- Nepřidávej nic, co v zadání není. Když něco chybí, nech „[doplnit: …]“.
 
-Pod text napiš, co mám ještě ověřit. Pokud chybí důležité údaje, nejdřív se mě zeptej.
+Pod text napiš „K ověření:“ a seznam chybějících nebo nejistých údajů. Pak mi nabídni číslovaný seznam úprav (kratší verze, verze pro rodiče, jiná struktura). Pokud chybí důležité údaje, nejdřív se mě zeptej.
 ```
 
 ## Varianta: Shrnutí více hodnocení do jednoho
 
 ```text
-Vystupuj jako zkušený pedagog se specializací na slovní hodnocení podle metodiky Vysvědčení jinak (PdF MU). Z dřívějších slovních hodnocení níže vytvoř jedno souhrnné hodnocení na konec roku.
+Vystupuj jako zkušený pedagog se specializací na slovní hodnocení podle metodiky Vysvědčení JINAK (PdF MU). Z dřívějších slovních hodnocení níže vytvoř jedno souhrnné hodnocení na konec roku.
 
 Ročník: [například 4. třída ZŠ]
 Adresát: [žák, nebo rodiče]
@@ -49,23 +53,27 @@ Zachyť vývoj: co žák zvládal dřív a kam se posunul. Zahrň úroveň výsl
 Formulace, které hodnotí osobnost, vyjadřují pocity učitele („mám radost“), používají obecné „umíš“ a „dokážeš“ nebo uzavírají cestu k pokroku („nezvládl“), převeď do popisného jazyka. Pod textem jednou větou uveď, co jsi takto upravil.
 ```
 
-## Varianta: Kontrola formulací (Rádce)
+## Varianta: Hodnocení chování
 
 ```text
-Jsi specialista na slovní hodnocení podle metodiky Vysvědčení jinak (PdF MU). Tvým úkolem NENÍ psát ani přepisovat hodnocení, ale dát mi stručnou odbornou zpětnou vazbu k textu, který jsem napsal/a.
+Vystupuj jako zkušený pedagog se specializací na slovní hodnocení podle metodiky Vysvědčení JINAK (PdF MU). Napiš slovní hodnocení oblasti chování žáka na vysvědčení.
 
-Ročník žáka: [například 2. třída ZŠ]
-Moje slovní hodnocení: [vložte text; jméno žáka nahraďte iniciálou]
+Žák: [iniciály nebo přezdívka, nikdy jméno], [chlapec / dívka], [například 5. třída ZŠ]
+Adresát: [žák, nebo rodiče]
+Kritéria a úroveň u každého z nich: [například Přiměřeně situaci vyjadřuje své myšlenky – Často; Spolupracuje ve skupině – Občas]
+Co jsem pozoroval/a: [konkrétní projevy a situace]
+Délka: [například 80 slov]
 
-Sleduj: věty, které hodnotí osobnost místo činnosti; „umíš“, „dokážeš“, „nezvládáš“; pocity učitele („mám radost“, „líbí se mi“, „mrzí mě“); obecné soudy bez opory v činnosti; domněnky o snaze či zájmu bez doloženého projevu; zda text říká, co žák zvládá a na jaké úrovni a jak přistupuje k učení; prázdná ujištění o budoucnosti; přiměřenost věku; pravopis a stylistiku.
+Úrovně chování: Velmi zřídka (zatím potřebuje soustavné vedení) – Občas (s pobídkou v běžných situacích) – Často (patrné v běžných situacích) – Téměř vždy (samostatně a v různých situacích).
 
-Forma odpovědi:
-- Žádný úvod ani shrnutí, rovnou konkrétní připomínky.
-- Nejvýše čtyři věty; komentuj jen to, co je potřeba změnit. Když je problémů hodně, zmiň i to, co se povedlo.
-- Návrh zlepšení ukaž jen na podobném příkladu z jiného předmětu, ne přepisem mé věty.
-- Piš jako kolega z praxe, bez odborných termínů, věcně a podpůrně. Nehodnoť mě.
-- Jazykové chyby vypiš zvlášť krátkým seznamem.
-- Na konci nabídni číslovaný seznam toho, co mi můžeš vysvětlit podrobněji.
+Pravidla:
+- Popisuj pozorované projevy chování, ne osobnost. Text musí odpovídat uvedeným úrovním.
+- Nesměšuj chování s výsledky v předmětech.
+- Žádné pocity učitele, prázdné soudy ani domněnky o tom, co žák prožívá.
+- Přidej jedno až dvě konkrétní doporučení, jak pokračovat.
+- Oslovení napiš jako „[jméno]“. Co chybí, nech „[doplnit: …]“.
+
+Pod text napiš, co mám ještě ověřit. Pokud chybí důležité údaje, nejdřív se mě zeptej.
 ```
 
 ## Varianta: Zpětná vazba k práci žáka
@@ -81,7 +89,7 @@ Popis hodiny: [nepovinné, nebo řádek smažte]
 
 Napiš jeden odstavec (3–6 vět) přímo žákovi: co se mu daří (s konkrétním dokladem z práce), co může zlepšit (nejvýš dvě věci) a jaký konkrétní další krok udělat. Posuzuj jen podle zadaných kritérií. Piš popisně, věcně a povzbudivě, jazykem pro jeho věk; žádné „skvělé“, „šikovný“, „umíš“, žádné pocity učitele ani srovnávání se spolužáky. Co na fotografii nejde přečíst, nedomýšlej a napiš mi to.
 
-Pod odstavec zvlášť pro mě navrhni ke každému kritériu úroveň J–Č–T–Ú (J – ještě neosvojeno, Č – částečně, T – téměř, Ú – úplně osvojeno) s jednou větou zdůvodnění.
+Pod odstavec zvlášť pro mě navrhni ke každému kritériu úroveň J–Č–T–Ú (J – ještě neosvojeno, Č – částečně osvojeno, T – téměř osvojeno, Ú – úplně osvojeno) s jednou větou zdůvodnění.
 ```
 
-**Tip:** Hotové hodnocení si nechte zkontrolovat variantou Kontrola formulací, nebo ho dejte přečíst kolegovi – víc očí víc vidí. Nejlepší podklad pro vysvědčení jsou průběžné zpětné vazby a sebehodnocení žáka (navazuje dovednost Kritéria hodnocení).
+**Tip:** Hotové hodnocení si nechte zkontrolovat dovedností Rádce pro formulace slovního hodnocení, nebo ho dejte přečíst kolegovi – víc očí víc vidí. Nejlepší podklad pro vysvědčení jsou průběžné zpětné vazby a sebehodnocení žáka (navazuje dovednost Kritéria hodnocení).

@@ -12,6 +12,7 @@ rezimy:
   - Informace o školním projektu
   - Pozvánka na třídní schůzku
   - Promyslet postup v citlivé situaci
+  - Příprava telefonátu nebo schůzky s rodiči
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/reakce-na-stiznost-rodice/
     typ: prompt
@@ -34,6 +35,10 @@ puvodni_asistenti:
   systemovy_prompt: https://docs.google.com/document/d/1DqhA9y-K-UZVOoVmdwkEZ81oKO7bFZZxykwOM3Twajo/edit
 google_doc: https://docs.google.com/document/d/1im5k0lxbdqdv0oN7HoSgTFVqeotW35aKN_ICGBLtcOY/edit
 google_slozka: https://drive.google.com/drive/folders/1HDcgeuiaF0KG5a-RhAYZHIn05lJf7XfC
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=10wh3s5Tr2acHfz1bh82vBACfHaCbsD7z
+  gemini: https://drive.google.com/uc?export=download&id=1fuGUgdzAUoJ4eGV4LlLTqBVvH7Ige6X-
+  chatgpt: https://drive.google.com/uc?export=download&id=1wIYGrS4GG2aURJKJg-uwgDEfu8SpbZ8E
 autori: [AI dětem, AI reaktor UJEP (Míša Liegertová)]   # ověřit: tři prompty z roku 2024 nejspíš z původní databáze AI reaktoru UJEP; doplnit jména
 vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
 stav: koncept

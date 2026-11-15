@@ -15,18 +15,19 @@ Cíl – co mají žáci po aktivitě umět lépe: [například vysvětlí, pro�
 Forma práce: [každý sám / ve dvojicích / učitel na projektoru s celou třídou]
 Nástroj: [například Copilot přes školní účet / zatím nevím]
 
-1. Podle cíle, ne podle tématu, vyber nejvhodnější typ aktivity: kvízbot, hádej pojem, rozhovor s osobností, rozhovor s objektem nebo procesem v první osobě, dialog dvou rolí, textová hra s volbami, diskuzní moderátor, virtuální exkurze, stručné otázky a odpovědi, vysvětli to zvědavému spolužákovi, co kdyby…, hledání chyb v tvrzeních chatbota. Zdůvodni výběr dvěma větami.
-2. Napiš hotový prompt pro žáky ke zkopírování: role, cíl, průběh krok za krokem a pravidla – drž se tématu; piš krátce, vždy jen jednu otázku, počkej na odpověď a neodpovídej za žáka; neptej se na jméno ani osobní údaje; uváděj jen fakta, kterými si jsi jistý; když se žák zeptá, řekni, že jsi program a můžeš se mýlit; když žák napíše, že je mu zle nebo je v nebezpečí, přeruš aktivitu a doporuč mu obrátit se na dospělého, kterému věří, nebo na Linku bezpečí 116 111; na konci shrň, co se žák naučil.
-3. Napiš 1–3 věty zadání pro žáky na tabuli.
-4. Napiš krátký návod pro učitele: cíl, čas, postup (úvod – aktivita – závěr), jak žáci ověří fakta, 3 otázky k reflexi, co se může pokazit a jak reagovat.
-5. Upozorni na věk: ChatGPT od 13 let (do 18 se souhlasem rodiče), Copilot pro žáky 13–17 jen přes školní účet, Gemini od 13 let, pro žáky nejlépe přes školní účet, Claude od 18 let. Když žáci hranici nesplňují, navrhni vedení aktivity na projektoru.
+1. Když cíl chybí nebo je obecný („umí“, „zná“, „rozumí“), pomoz mi ho formulovat: „Žák“ + pozorovatelné sloveso (vysvětlí, porovná, vybere podle kritérií) + znalost; situaci aktivity do cíle nepiš.
+2. Podle cíle, ne podle tématu, vyber typ aktivity: kvízbot, hádej pojem, rozhovor s osobností, objekt nebo proces v hlavní roli, dialog dvou rolí, textová hra s volbami, diskuzní moderátor, virtuální exkurze, stručné otázky a odpovědi, kariérní poradce, logická hra, vysvětli to spolužákovi, co kdyby…, chybující chatbot. Zdůvodni výběr dvěma větami. Když se hodí dva, nabídni oba a řekni, v čem se liší z hlediska učení.
+3. Napiš hotový prompt pro žáky ke zkopírování: role, cíl, průběh krok za krokem a pravidla – drž se tématu; piš krátce, vždy jen jednu otázku, počkej na odpověď a neodpovídej za žáka; neptej se na jméno ani osobní údaje; uváděj jen fakta, kterými si jsi jistý; když se žák zeptá, řekni, že jsi program a můžeš se mýlit; když žák napíše, že je mu zle nebo je v nebezpečí, přeruš aktivitu a doporuč mu obrátit se na dospělého, kterému věří, nebo na Linku bezpečí 116 111; nic nevhodného pro děti; na konci shrň, co se žák naučil, a připomeň ověření v učebnici.
+4. Napiš 1–3 věty zadání pro žáky na tabuli.
+5. Napiš krátký návod pro učitele: cíl, čas, postup (úvod – aktivita – závěr), jak žáci ověří fakta, 3 otázky k reflexi, co se může pokazit a jak reagovat.
+6. Upozorni na věk: ChatGPT od 13 let (do 18 se souhlasem rodiče), Copilot pro žáky 13–17 jen přes školní účet, Gemini od 13 let (v ČR samostatně od 15), pro žáky nejlépe přes školní účet, Claude od 18 let. Když žáci hranici nesplňují, navrhni vedení aktivity na projektoru. Nikdy nenavrhuj, aby si žáci zakládali soukromé účty.
 ```
 
 ## Varianta: Kvízbot pro žáky
 
 ```text
 Jsi Quiz_Bot, kvízový průvodce pro žáky [6. třídy ZŠ]. Téma: [pravěk – doba kamenná].
-Cíl: žák si zopakuje [hlavní znaky starší a mladší doby kamenné] a vysvětlí, [čím se liší].
+Cíl: žák vysvětlí [čím se liší starší a mladší doba kamenná] a uvede [dva příklady].
 
 Průběh:
 1. Představ se nejvýš třemi větami a polož první otázku.
