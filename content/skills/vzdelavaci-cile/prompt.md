@@ -6,62 +6,98 @@ typ: prompt
 ## Základní prompt
 
 ```text
-Vystupuj jako zkušený didaktik, který pomáhá učitelům plánovat kompetenčně orientovanou výuku. Pomoz mi formulovat vzdělávací cíl pro formativní hodnocení.
+Vystupuj jako zkušený didaktik. Pomoz mi formulovat vzdělávací cíl pro formativní hodnocení podle Nové taxonomie vzdělávacích cílů (Marzano a Kendall). Nepoužívej Bloomovu taxonomii ani její úrovně.
+
+Předmět: [například přírodopis]
+Ročník: [například 6. ročník ZŠ]
+Výstup z RVP ZV nebo ŠVP: [vložte text, nebo řádek smažte]
+Téma, tedy co se žáci učí: [například fotosyntéza]
+Co mají žáci se znalostí dělat: [například vysvětlit, porovnat, vyřešit problém; nebo řádek smažte]
+
+Postup:
+1. Urči dimenzi znalosti: deklarativní znalosti, myšlenkové postupy, nebo psychomotorické dovednosti. Dimenzi určuje znalost, ne činnost žáka.
+2. Vyber úroveň a proces. Úrovně: 1 Vybavování (rozpoznání, vybavení, provedení – jen u postupů), 2 Porozumění (integrace, symbolizace), 3 Analýza (porovnávání, třídění, analýza chyb, zobecňování, specifikace), 4 Použití znalostí (rozhodování, řešení problému, experimentování, zkoumání), 5 Metakognice (stanovení cílů, sledování průběhu, jasnosti a přesnosti), 6 Já-systém (důležitost, vlastní účinnost, emoční reakce, motivace). Když nevím, navrhni nejpřirozenější proces a jednou větou uveď proč.
+3. Napiš cíl: Žák + sloveso ve 3. osobě + znalost (+ nezbytná podmínka). Jedno hlavní sloveso, do 15 slov. Bez „dokáže“, „umí“, „zná“, „rozumí“, „pochopí“. Konkrétní situace a materiál nepatří do cíle, ale do kontextu učení.
+4. Obtížnost určuje složitost znalosti a kontextu, ne úroveň. I mladší žák může mít cíl na úrovni 5 nebo 6.
+
+Výstup:
+- Cíl pro učitele
+- Cíl pro žáky: kratší, v 1. osobě („Učím se…“)
+- Úroveň / proces / dimenze
+- Kontext učení: dvě různé varianty přiměřené věku
+- Kritérium splnění: jedna věta, podle které poznám, že žák cíl splnil
+- Kompetence nebo průřezové téma, pokud je cíl rozvíjí, a podle čeho se to pozná (nevkládej je do cíle jako další sloveso)
+
+Pokud některý údaj chybí, nejdřív se mě na něj zeptej. Znění výstupů RVP si nevymýšlej.
+```
+
+## Varianta: Sada cílů pro tematický plán
+
+```text
+Vystupuj jako zkušený didaktik. Navrhni sadu vzdělávacích cílů pro tematický celek podle Nové taxonomie vzdělávacích cílů (Marzano a Kendall). Nepoužívej Bloomovu taxonomii.
 
 Předmět: [například informatika]
-Ročník: [například 7. třída ZŠ]
-Výstup z RVP nebo ŠVP: [vložte text výstupu]
-Kontext učení (téma, popis hodiny): [například strojové učení – žáci učí model v Teachable Machine rozpoznávat kostky lega]
-Klíčová kompetence: [například kompetence k řešení problémů, nebo „navrhni“]
+Ročník: [například 8. ročník ZŠ]
+Tematický celek a období: [například ladění programů, 1. pololetí]
+Výstup z RVP ZV nebo ŠVP: [vložte text, nebo řádek smažte]
 
-Navrhni tři varianty cíle, které se liší náročností nebo zaměřením. Každá varianta:
-- je jedna věta, začíná „Žáci“ a činnostním slovesem v přítomném čase (popíší, porovnají, vyřeší, navrhnou…);
-- popisuje činnost žáků, ne učitele, a to, jak mají postupovat, ne jen výsledek;
-- je ověřitelná – nepoužívej slovesa zná, rozumí, chápe, pochopí, seznámí se, umí, dokáže;
-- vychází z uvedeného výstupu, je přiměřená věku a míří na porozumění a použití, ne jen na zapamatování faktů;
-- propojuje kognitivní složku (co žák pozná, vysvětlí, vyřeší), afektivní (postoj, spolupráce, zodpovědnost) a psychomotorickou (praktická činnost); pokud některá složka do hodiny nepatří, nevnucuj ji;
-- rozvíjí jednu klíčovou kompetenci a jednu hlavní znalost nebo dovednost;
-- je pozitivní, věcná a stručná.
+Vytvoř šest cílů, jeden na každou úroveň:
+1 Vybavování (rozpoznání, vybavení, provedení – jen u postupů)
+2 Porozumění (integrace, symbolizace)
+3 Analýza (porovnávání, třídění, analýza chyb, zobecňování, specifikace)
+4 Použití znalostí (rozhodování, řešení problému, experimentování, zkoumání)
+5 Metakognice (stanovení cílů, sledování průběhu, jasnosti, přesnosti)
+6 Já-systém (důležitost, vlastní účinnost, emoční reakce, motivace)
 
-Pod každou variantu napiš jedním řádkem, jak jsou v ní zastoupené jednotlivé složky a jakou kompetenci rozvíjí. Cíl nesmí být jen přepsané téma: téma je kontext, cíl je dovednost, kterou si žák odnese.
+U každé úrovně vyber proces, který se k tématu hodí nejvíc. U každého cíle urči dimenzi: deklarativní znalosti, myšlenkové postupy, nebo psychomotorické dovednosti.
 
-Jestli některý údaj chybí, nejdřív se mě na něj zeptej. Znění výstupů RVP si nevymýšlej.
+Pravidla pro cíl: Žák + sloveso ve 3. osobě + znalost. Jedno hlavní sloveso, do 15 slov, bez „dokáže“, „umí“, „zná“, „rozumí“. Konkrétní situaci dej do kontextu učení. Úrovně 5 a 6 nesmí po žácích chtít sdílení soukromých informací.
+
+Výstup jako tabulka se sloupci: Úroveň, Proces, Dimenze, Cíl, Pro žáky (v 1. osobě, „Učím se…“), Kontext učení (dvě varianty), Kritérium splnění (jedna věta).
+
+Pokud něco chybí, nejdřív se mě zeptej.
+```
+
+## Varianta: Rozbor výstupu z RVP nebo ŠVP
+
+```text
+Vystupuj jako zkušený didaktik. Rozeber výstup z RVP ZV nebo ŠVP podle Nové taxonomie vzdělávacích cílů (Marzano a Kendall). Nepoužívej Bloomovu taxonomii.
+
+Výstup: [vložte doslovné znění]
+Ročník: [například 5. ročník ZŠ]
+Předmět: [například matematika]
+
+Postup:
+1. Rozlož výstup na výkony. Výkon je sloveso, jehož podmětem je žák. Slovesa ve vedlejších větách a přívlastcích popisují znalost, nejsou to výkony.
+2. U každého výkonu urči dimenzi: deklarativní znalosti, myšlenkové postupy, nebo psychomotorické dovednosti.
+3. Urči úroveň a proces: 1 Vybavování (rozpoznání, vybavení, provedení), 2 Porozumění (integrace, symbolizace), 3 Analýza (porovnávání, třídění, analýza chyb, zobecňování, specifikace), 4 Použití znalostí (rozhodování, řešení problému, experimentování, zkoumání), 5 Metakognice, 6 Já-systém.
+4. Úroveň určuje to, co úloha po žákovi skutečně chce, ne sloveso. Zvol nejnižší úroveň, kterou formulace připouští. Vyšší přiřaď, jen když ji výslovně vyžaduje (nové příklady, výběr podle kritérií, zdůvodnění, předpověď).
+5. Styl výstupu nehodnoť. Výstupy z RVP mají vlastní styl.
+
+Výstup: tabulka se sloupci Výkon (citace), Dimenze, Úroveň, Proces, Zdůvodnění (jedna věta). Pod ni: slovesa, která nejsou výkonem, a případně rozumný alternativní výklad.
+
+Potom mi nabídni, že k výstupu navrhneš vzdělávací cíle s kontextem učení a kritériem splnění.
 ```
 
 ## Varianta: Kontrola cíle, který už mám
 
 ```text
-Vystupuj jako zkušený didaktik. Zkontroluj můj vzdělávací cíl pro formativní hodnocení.
+Vystupuj jako zkušený didaktik. Zkontroluj můj vzdělávací cíl podle Nové taxonomie vzdělávacích cílů (Marzano a Kendall). Nepoužívej Bloomovu taxonomii.
 
-Ročník: [například 4. třída ZŠ]
+Ročník: [například 4. ročník ZŠ]
 Předmět: [například přírodověda]
 Můj cíl: [například Žáci pochopí koloběh vody v přírodě.]
 
 Posuď, zda cíl:
-1. popisuje činnost žáka, ne učitele;
-2. obsahuje ověřitelné sloveso (ne zná, rozumí, chápe, pochopí, seznámí se, umí, dokáže);
-3. je konkrétní (co, jak, v jaké kvalitě) a přiměřený věku;
-4. míří na porozumění a použití, ne jen na zapamatování;
-5. je jedna věta s jednou hlavní dovedností a jednou klíčovou kompetencí;
-6. je odlišený od tématu hodiny.
+1. začíná „Žák“ a pokračuje pozorovatelným slovesem ve 3. osobě (ne zná, ví, rozumí, chápe, pochopí, umí, dokáže);
+2. má jedno hlavní sloveso, jeden proces a jednu dimenzi;
+3. je krátký, do 15 slov, a konkrétní situaci nechává kontextu učení;
+4. pojmenovává znalost, se kterou žák pracuje;
+5. je psaný z pohledu žáka, ne učitele.
 
-Vypiš jen to, co je potřeba změnit, každý bod jednou větou. Pak nabídni jednu až dvě upravené verze cíle a ke každé jednou větou uveď, co se změnilo. Pokud je cíl v pořádku, řekni to.
+Urči, na jakou úroveň a proces cíl míří: 1 Vybavování, 2 Porozumění, 3 Analýza, 4 Použití znalostí, 5 Metakognice, 6 Já-systém.
+
+Vypiš jen to, co je potřeba změnit, každý bod jednou větou. Pak navrhni upravený cíl a k němu cíl pro žáky (v 1. osobě), dvě varianty kontextu učení a kritérium splnění. Pokud je cíl v pořádku, řekni to.
 ```
 
-## Varianta: Cíl pro žáka se SVP
-
-```text
-Vystupuj jako zkušený speciální pedagog a didaktik. Uprav vzdělávací cíl pro žáka se speciálními vzdělávacími potřebami.
-
-Původní cíl: [vložte cíl]
-Ročník: [například 6. třída ZŠ]
-Žák: [iniciály, nikdy jméno]
-Co žákovi pomáhá a co mu dělá potíže: [například obtíže se čtením delších textů, pomáhá mu poslech a obrazová opora]
-Doporučení školského poradenského zařízení: [stručně, nebo řádek smažte]
-
-Zachovej podstatu cíle (stejnou dovednost a kompetenci). Uprav jen způsob, jakým žák cíle dosáhne a jak ho prokáže, míru opory nebo rozsah. Pokud by úprava znamenala jiný cíl, upozorni mě na to.
-
-Výstup: upravený cíl jako jedna věta a dvě až tři odrážky, co je jinak a proč.
-```
-
-**Tip:** Z vybrané varianty cíle rovnou vytvořte kritéria hodnocení – navazuje na to dovednost Kritéria hodnocení. Cíl si držte déle než jednu hodinu a obměňujte jen kontext (téma, materiál), na kterém ho žáci procvičují.
+**Tip:** K vybranému cíli rovnou vytvořte kritéria hodnocení – navazuje na to dovednost Kritéria hodnocení. Cíl si držte déle než jednu hodinu a obměňujte jen kontext učení.

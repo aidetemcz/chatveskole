@@ -28,7 +28,7 @@ Text: [vložte text]
 
 Postup:
 1. Krátce shrň hlavní stylistické slabiny (nejvýš 5 bodů).
-2. Navrhni přepracovanou verzi. Zachovej význam a všechny informace.
+2. Navrhni přepracovanou verzi celého textu nebo jen problémových vět. Zachovej význam a všechny informace. Když jde o práci žáka, celý text nepřepisuj: ukaž problémová místa a jako vzor přepiš nejvýš 2–3 věty, aby se autor učil sám.
 3. U větších změn jednou větou vysvětli proč.
 ```
 

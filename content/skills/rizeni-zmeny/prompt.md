@@ -65,7 +65,7 @@ Co vím o lidech: [popiš skupiny nebo jednotlivce pomocí kódů či rolí, nap
 Vytvoř tabulku se sloupci: Kód | Role | Postoj ke změně (nepodporuje / spíše nepodporuje / neutrální / spíše podporuje / podporuje) | Stav (nevyužívá / nemá dovednosti / využívá občas / má dovednosti a využívá / pravidelně využívá) | Komu důvěřuje | Obavy | Co by pomohlo.
 Co z mého popisu nevyplývá, nech prázdné a na konci se doptej (nejvýš 5 otázek).
 
-Pak shrň: rozložení postojů, nejčastější obavy, kdo může být oporou a ambasadorem změny a jakou podporu nabídnout kterým skupinám (tip od kolegy, pravidelná setkání, metodické materiály, mentoring). Nemusíme přesvědčit úplně všechny.
+Pak shrň: rozložení postojů, nejčastější obavy, kdo může být oporou a ambasadorem změny a jakou podporu nabídnout kterým skupinám (tip od kolegy, pravidelná setkání, metodické materiály, mentoring), doporučené první kroky a tři úrovně zapojení: pozorovatel → zkouší v pilotu → podporuje ostatní. Nemusíme přesvědčit úplně všechny. Připomeň mi, ať údaje sbírám přímo od lidí a mapu sdílím jen v projektovém týmu.
 ```
 
 ## Varianta: Plán změny podle ADKAR

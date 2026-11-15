@@ -18,8 +18,8 @@ Text, ze kterého vycházet (nepovinné): [vložte text]
 
 Pravidla:
 - Když chybí údaj, bez kterého list nejde udělat, nejdřív se zeptej. Jinak rovnou tvoř.
-- Výstup rozděl na tři části: 1) PRO ŽÁKY – název, řádek na jméno, krátké instrukce a úlohy bez řešení, prázdná místa jednotně __________; 2) ŘEŠENÍ PRO UČITELE – klíč a u každé úlohy jedna věta proč; 3) POZNÁMKA PRO UČITELE – 2–3 věty, k čemu list slouží a jak ho použít.
-- Úlohy musí být jednoznačné, věcně správné a přiměřené věku. Kromě zapamatování přidej úlohy na porozumění a použití v nové situaci.
+- Výstup rozděl na tři části: 1) PRO ŽÁKY – název, řádek na jméno, krátké instrukce a úlohy bez řešení, prázdná místa jednotně __________; 2) ŘEŠENÍ PRO UČITELE – klíč a u každé úlohy jedna věta proč, u otevřených otázek body, které má dobrá odpověď obsahovat; 3) POZNÁMKA PRO UČITELE – 2–4 věty, k čemu list slouží, jak ho použít a co upravit pro jinou třídu.
+- Úlohy musí být jednoznačné, věcně správné a přiměřené věku. Kromě vybavování a porozumění zařaď aspoň čtvrtinu úloh na analýzu (porovnej, zařaď, najdi chybu, vyvoď pravidlo) a použití znalostí (rozhodni podle kritérií, vyřeš nový problém).
 - Spojovačku dej do tabulky, ve které dvojice nejsou na stejném řádku. U výběru z možností dej věrohodné špatné odpovědi, jaké žáci opravdu volí.
 - Rozsah jedna strana A4. Pokud umíš vytvářet dokumenty, dej žákovskou verzi a řešení jako dva samostatné dokumenty.
 - Výpočty přepočítej. Kde si nejsi jistý fakty, upozorni mě v poznámce.
@@ -37,9 +37,10 @@ Jazyk zadání: [například angličtina]
 Bodování: [například ano, celkem 20 bodů / ne]
 
 Požadavky:
-- Otázky na různých úrovních: zapamatování, porozumění, použití v nové situaci, zdůvodnění.
+- Otázky na různých úrovních Nové taxonomie vzdělávacích cílů (Marzano a Kendall): orientačně 40 % vybavování a porozumění, 40 % analýza (porovnej, zařaď, najdi chybu, vyvoď pravidlo, předpověz) a 20 % použití znalostí (rozhodni podle kritérií, vyřeš problém s překážkou). O úrovni rozhoduje, co úloha po žákovi skutečně chce, ne sloveso.
+- Body uveď, jen když o ně stojím. Známky nenavrhuj.
 - U výběru z možností jen jedna správná odpověď, pokud výslovně nenapíšeš „Může být správně víc odpovědí.“ Špatné možnosti věrohodné, správná odpověď nesmí být nápadně delší ani pořád na stejném místě.
-- Výstup: 1) TEST PRO ŽÁKY bez odpovědí; 2) KLÍČ – správné odpovědi a ke každé jedna věta proč, u otevřených otázek body, které má dobrá odpověď obsahovat; 3) tabulka pro učitele: otázka – úroveň – co ověřuje.
+- Výstup: 1) TEST PRO ŽÁKY bez odpovědí; 2) KLÍČ – správné odpovědi a ke každé jedna věta proč, u otevřených otázek body, které má dobrá odpověď obsahovat; 3) tabulka pro učitele: otázka – úroveň a proces Nové taxonomie – co ověřuje.
 ```
 
 ## Varianta: Doplňovačka z mého textu
@@ -51,7 +52,7 @@ Cíl: [například žák si upevní pojmy k Velké Moravě]
 Vynech tato slova: [například Rastislav, Cyril, Metoděj, hlaholice – nebo vyber 10 klíčových pojmů sám]
 Obtížnost: [se zásobníkem slov / bez zásobníku / s prvním písmenem]
 
-Vynechávej jen slova, která nesou učivo. Mezery čísluj a dělej stejně dlouhé: (1) __________. Výstup: 1) TEXT PRO ŽÁKY s mezerami a případně se zásobníkem slov (zamíchaným, se 2 slovy navíc); 2) ŘEŠENÍ – číslovaný seznam; 3) jedna věta o didaktickém záměru.
+Vynechávej jen slova, která nesou učivo, 8–15 mezer; u mladších žáků nejvýš jednu mezeru ve větě. Mezery čísluj a dělej stejně dlouhé: (1) __________. Výstup: 1) TEXT PRO ŽÁKY s mezerami a případně se zásobníkem slov (zamíchaným, o 1–2 slova delším); 2) ŘEŠENÍ – číslovaný seznam; 3) POZNÁMKA PRO UČITELE – k čemu doplňovačka slouží a jak ji upravit pro žáky, kteří potřebují oporu.
 
 Text: [vložte text – nebo napište: „vytvoř krátký věcně správný příběh do 150 slov a označ fakta, která mám ověřit“]
 ```
@@ -65,7 +66,7 @@ Předmět a téma: [například zeměpis – střídání ročních období]
 Ročník: [například 6. třída ZŠ]
 Cíl, ke kterému se žáci vracejí: [například žák vysvětlí, proč se na Zemi střídají roční období]
 
-Obsah listu: 4 krátké otázky s výběrem odpovědi, 4 tvrzení pravda/nepravda, 2 otevřené otázky na přemýšlení a vlastní názor, sebehodnoticí tabulka se 3 výroky odvozenými z cíle (sloupce: zatím ne – s pomocí – sám/sama – umím to vysvětlit spolužákovi) a na závěr „Ještě se chci zeptat na…“.
+Obsah listu: 3–5 krátkých otázek s výběrem odpovědi, 3–4 tvrzení pravda/nepravda, 2 otevřené otázky na přemýšlení a vlastní názor, sebehodnoticí tabulka se 3–4 výroky odvozenými z cíle a na závěr „Ještě se chci zeptat na…“. Sloupce sebehodnocení podle škály z metodiky Vysvědčení JINAK: ještě mi to nejde – trochu mi to jde, ale dělám chyby – skoro to zvládnu sám/sama – zvládnu to sám/sama i v nové situaci. Výroky popisují, co žák zvládne, ne jaký je.
 
 Tón přátelský a srozumitelný pro daný věk, list se neznámkuje. Řešení uzavřených úloh dej zvlášť až za žákovskou verzi.
 ```

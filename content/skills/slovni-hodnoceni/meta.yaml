@@ -1,13 +1,13 @@
 title: Slovní hodnocení
 slug: slovni-hodnoceni
-kratky_popis: Napíše, shrne nebo zkontroluje slovní hodnocení podle Vysvědčení jinak a dá žákovi zpětnou vazbu k práci podle kritérií.
+kratky_popis: Napíše návrh slovního hodnocení na vysvědčení nebo průběžnou zpětnou vazbu podle Vysvědčení JINAK, shrne i dřívější hodnocení.
 pro_koho: [ucitele]
 sady: [formativni-hodnoceni]
 stitky: [formativní hodnocení, slovní hodnocení, zpětná vazba, vysvědčení, Vysvědčení jinak]
 rezimy:
   - Napsat slovní hodnocení (vysvědčení, průběžná zpětná vazba)
   - Shrnout více hodnocení do jednoho
-  - Kontrola formulací (Rádce)
+  - Hodnocení chování
   - Zpětná vazba k práci žáka
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/tvorba-slovniho-hodnoceni/

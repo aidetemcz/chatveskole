@@ -1,13 +1,14 @@
 title: Vzdělávací cíle
 slug: vzdelavaci-cile
-kratky_popis: Formuluje kompetenčně orientovaný cíl z výstupu RVP či ŠVP, zkontroluje cíl, který už máte, a upraví ho pro žáka se SVP.
+kratky_popis: Formuluje vzdělávací cíle podle Nové taxonomie (Marzano a Kendall) s kontextem učení a kritériem splnění.
 pro_koho: [ucitele]
 sady: [formativni-hodnoceni]
 stitky: [formativní hodnocení, RVP, vzdělávací cíle, klíčové kompetence, Bloomova taxonomie]
 rezimy:
-  - Formulace cíle
+  - Cíl pro hodinu
+  - Sada cílů pro tematický plán
+  - Rozbor výstupu z RVP nebo ŠVP
   - Kontrola cíle
-  - Úprava cíle pro žáka se SVP
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/formulace-vyukoveho-cile/
     typ: prompt

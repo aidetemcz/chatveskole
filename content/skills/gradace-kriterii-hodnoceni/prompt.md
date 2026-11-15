@@ -8,20 +8,23 @@ typ: prompt
 ```text
 Vystupuj jako zkušený pedagog se zaměřením na formativní hodnocení. Ke každému mému kritériu hodnocení vytvoř čtyři úrovně podle škály J–Č–T–Ú z metodiky Vysvědčení jinak (PdF MU). Nejde o známky, ale o popis pokroku.
 
-Škála:
-J – Ještě neosvojeno – Ještě mi to nejde a stále se učím.
-Č – Částečně osvojeno – Trochu mi to jde, ale dělám chyby.
-T – Téměř osvojeno – Skoro už to zvládnu sám/sama, jen s drobnou pomocí.
-Ú – Úplně osvojeno – Úplně to umím sám/sama.
+Škála (vždy v pořadí J → Č → T → Ú, od nejnižší úrovně):
+J – Ještě neosvojeno. Pro žáky: Ještě mi to nejde a stále se učím.
+Č – Částečně osvojeno, i známé situace činí potíže, potřebuje dopomoc. Pro žáky: Trochu mi to jde, ale dělám chyby.
+T – Téměř osvojeno, uplatňuje ve známých situacích s připomenutím nebo mírnou dopomocí. Pro žáky: Skoro už to zvládnu sám/sama, jen s drobnou pomocí.
+Ú – Úplně osvojeno, uplatňuje samostatně v běžných i nových situacích. Pro žáky: Úplně to umím sám/sama.
 
 Ročník: [například 2. třída ZŠ]
 Kritéria: [vložte kritéria, každé na nový řádek]
 
 Pravidla:
 - Piš v 1. osobě, konkrétně k danému kritériu, slovy, kterým žák rozumí, bez cizích slov.
-- Úrovně se posouvají v míře pomoci (s pomocí → s připomenutím → samostatně), v přesnosti (s chybami → většinou → spolehlivě) a v situacích (známé → nové). Úroveň Ú zahrnuje použití v nové situaci nebo vysvětlení postupu.
+- Všechny úrovně zůstávají u stejného výkonu, na který kritérium míří. Vyšší úroveň není jiný, náročnější úkol (třeba vysvětlování u kritéria na rozpoznání), ale méně opory, větší přesnost a přenos do nové situace: s pomocí → s připomenutím → samostatně; s chybami → většinou → spolehlivě; známá situace → i nová situace.
 - Úroveň J formuluj se slovy „zatím“ nebo „ještě“, aby cesta zůstala otevřená.
+- U kritérií na stanovení cíle nebo sledování vlastního postupu stupňuj kvalitu sebereflexe (jak je konkrétní a čím ji žák dokládá), nikdy motivaci ani emoce.
 - Nehodnoť vlastnosti ani chování a nezůstávej jen u faktů.
+- Když je kritérium příliš obecné („rozumím zlomkům“), upozorni na to a navrhni zpřesnění. Když popisuje chování (spolupráce, dodržování pravidel), upozorni, že metodika hodnotí chování zvlášť, na stupnici Velmi zřídka – Občas – Často – Téměř vždy, a nabídni gradaci na ní nebo přeformulování kritéria.
+- Na konci nabídni: 1) úpravu gradace, 2) gradaci dalšího kritéria, 3) sebehodnoticí list pro žáky.
 
 Příklad:
 Kritérium: Najdu a přečtu slovo s měkkou hláskou ve větě nebo krátkém textu.
