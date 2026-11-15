@@ -58,6 +58,7 @@ export type Skill = {
   slug: string;
   title: string;
   kratky_popis: string;
+  popis?: string;
   pro_koho: string[];
   sady: string[];
   stitky?: string[];

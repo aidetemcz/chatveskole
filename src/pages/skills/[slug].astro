@@ -3,15 +3,13 @@ import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import Icon from '../../components/Icon.astro';
 import { url } from '../../lib/url';
-import { skills, sadaBySlug, PRO_KOHO, asList, type Skill } from '../../lib/data';
+import { skills, asList, type Skill } from '../../lib/data';
 import { NASTROJE } from '../../lib/instalace';
 
 export function getStaticPaths() {
   return skills.map((skill) => ({ params: { slug: skill.slug }, props: { skill } }));
 }
 const { skill } = Astro.props as { skill: Skill };
-const sadyS = skill.sady.map(sadaBySlug).filter(Boolean) as { slug: string; title: string }[];
-const hlavniSada = sadyS[0];
 // ZIPy pro jednotlivé chatboty jsou na Google Disku (meta.yaml → stahnout)
 const zipFor = (z: string | null) => (z ? skill.stahnout?.[z as 'claude' | 'gemini' | 'chatgpt'] : undefined);
 const gpt = asList(skill.puvodni_asistenti?.gpt);
@@ -20,44 +18,23 @@ const varianty = skill.prompt.varianty;
 ---
 <Base title={skill.title} description={skill.kratky_popis}>
   <div class="band band--white" style="padding-bottom: 28px">
-    <div class="wrap stack" style="gap: 32px">
+    <div class="wrap stack detail">
       <Crumbs items={[{ title: 'Katalog dovedností', href: '/skills' }, { title: skill.title }]} />
       <header class="page-head">
         <h1>{skill.title}</h1>
-        <p class="lede">{skill.kratky_popis}</p>
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px 30px; padding-top: 6px">
-          <a class="btn btn--primary" href="#instalace"><Icon name="download" size={16} />Stáhnout dovednost</a>
-          <a class="linkbtn" href="#prompt" style="font-size: 1rem"><Icon name="copy" size={16} />Použít jako prompt</a>
-        </div>
+        <p class="lede">{skill.popis ?? skill.kratky_popis}</p>
+        {skill.rezimy && skill.rezimy.length > 0 && (
+          <ul class="modes" aria-label="Co dovednost umí">{skill.rezimy.map((r) => <li>{r}</li>)}</ul>
+        )}
       </header>
 
-      <section class="info" aria-label="O dovednosti">
-        <div><h2>{sadyS.length > 1 ? 'Sady' : 'Sada'}</h2><p>{sadyS.map((s, i) => <>{i > 0 && ', '}<a href={url(`/sady/${s.slug}`)}>{s.title}</a></>)}</p></div>
-        <div><h2>Pro koho</h2><p>{skill.pro_koho.map((p) => PRO_KOHO[p] ?? p).join(', ')}</p></div>
-        {skill.metodika && skill.metodika.length > 0 && (
-          <div><h2>Metodika</h2><p>{skill.metodika.map((m, i) => <>{i > 0 && '; '}{m.url ? <a href={m.url}>{m.nazev}</a> : m.nazev}</>)}</p></div>
-        )}
-        {skill.autori && <div><h2>{skill.autori.length > 1 ? 'Autoři' : 'Autor'}</h2><p>{skill.autori.join(', ')}</p></div>}
-        {(skill.google_doc || skill.google_slozka) && (
-          <div class="docs">
-            {skill.google_doc && <a href={skill.google_doc}><Icon name="doc" size={18} />Systémový prompt (Google Docs)</a>}
-            {skill.google_data && <a href={skill.google_data}><Icon name="folder" size={18} />Znalosti (složka Data)</a>}
-            {skill.google_slozka && <a href={skill.google_slozka}><Icon name="folder" size={18} />Všechny soubory na Google Disku</a>}
+      <section id="instalace" class="stack sekce" aria-labelledby="inst-h">
+        <div class="stack" style="gap: 10px"><h2 id="inst-h" class="h2">Nainstalovat dovednost</h2><p class="muted">Dovednost nainstalujete jednou a chatbot ji buď použije sám, kdykoli ji bude potřebovat, případně ji můžete vyvolat přímo v chatu pomocí zavináče nebo lomítka.</p></div>
+        <div class="stack" style="gap: 12px">
+          <p id="nastroj-h" class="vyber">Vyberte chatovací nástroj, který používáte.</p>
+          <div class="tools" role="tablist" aria-labelledby="nastroj-h" data-switch="instalace-panely">
+            {NASTROJE.map((n, i) => <button type="button" role="tab" data-target={n.id} aria-selected={i === 0 ? 'true' : 'false'}>{n.nazev}</button>)}
           </div>
-        )}
-      </section>
-
-      {skill.rezimy && skill.rezimy.length > 0 && (
-        <section class="stack" style="gap: 18px" aria-labelledby="umi">
-          <h2 id="umi" class="h2">Co dovednost umí</h2>
-          <ol class="modes">{skill.rezimy.map((r, i) => <li><span>{i + 1}</span>{r}</li>)}</ol>
-        </section>
-      )}
-
-      <section id="instalace" class="stack" style="gap: 18px" aria-labelledby="inst-h">
-        <div class="stack" style="gap: 8px"><h2 id="inst-h" class="h2">Nainstalovat jako dovednost</h2><p class="muted">Dovednost nainstalujete jednou a chatbot ji použije sám, kdykoli ji budete potřebovat.</p></div>
-        <div class="seg tools" role="tablist" aria-label="Chatbot" data-switch="instalace-panely">
-          {NASTROJE.map((n, i) => <button type="button" role="tab" data-target={n.id} aria-selected={i === 0 ? 'true' : 'false'}>{n.nazev}</button>)}
         </div>
         <div id="instalace-panely">
           {NASTROJE.map((n, i) => (
@@ -82,7 +59,7 @@ const varianty = skill.prompt.varianty;
         </div>
       </section>
 
-      <section id="prompt" class="stack" style="gap: 18px" aria-labelledby="prompt-h">
+      <section id="prompt" class="stack sekce" aria-labelledby="prompt-h">
         <div class="stack" style="gap: 8px"><h2 id="prompt-h" class="h2">Použít jako prompt</h2><p class="muted">Funguje v jakémkoli chatbotu, i v bezplatné verzi. Údaje v hranatých závorkách nahraďte svými.{skill.google_doc && <> Celé instrukce dovednosti najdete v <a href={skill.google_doc}>systémovém promptu v Google Docs</a>.</>}</p></div>
         {varianty.length > 1 && (
           <div class="tabs" role="tablist" aria-label="Varianta promptu" data-switch="varianty">
@@ -97,6 +74,7 @@ const varianty = skill.prompt.varianty;
             </div>
           ))}
         </div>
+        {skill.google_data && <p><a class="zip zip--inline" href={skill.google_data}><span class="tile-icon tile-icon--sky"><Icon name="folder" size={18} /></span><span class="stack"><strong>Stáhnout znalosti (složka Data)</strong><span class="muted small">Google Disk · nahrajte soubory do chatu spolu s promptem</span></span></a></p>}
         {skill.prompt.tip && <p class="note note--info"><strong>Tip:</strong> {skill.prompt.tip.replace(/\*\*/g, '')}</p>}
       </section>
 
@@ -114,18 +92,24 @@ const varianty = skill.prompt.varianty;
   .h2 { font-size: 1.5rem; font-weight: 700; }
   .muted { color: var(--muted); }
   .small { font-size: 0.86rem; }
-  .info { border: 1px solid var(--sky); border-radius: var(--radius-lg); padding: 28px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 22px 36px; font-size: 0.92rem; }
-  .info h2 { font-family: var(--fb); font-size: 0.78rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  .detail { gap: 64px; }
+  .sekce { gap: 28px; }
+  .page-head .lede { max-width: 72ch; }
+  .modes { margin: 4px 0 0; padding-left: 1.3em; display: flex; flex-direction: column; gap: 8px; font-size: 1.05rem; }
+  .modes li::marker { color: var(--accent); }
   .docs { display: flex; flex-direction: column; gap: 8px; }
-  .docs a { display: flex; align-items: center; gap: 8px; font-weight: 600; text-decoration: none; }
-  .modes { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 16px; }
-  .modes li { border: 1px solid var(--sky); border-radius: var(--radius); padding: 18px 22px; display: flex; gap: 12px; align-items: center; font-weight: 600; }
-  .modes span { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--sky-light); color: var(--sky-ink); display: grid; place-items: center; font-family: var(--fh); font-weight: 700; font-size: 0.9rem; }
-  .tools { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); max-width: 560px; }
-  .tools button { padding: 9px 6px; }
-  .inst { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 22px; align-items: start; }
-  .steps { margin: 0; padding: 24px 28px 24px 48px; border: 1px solid var(--sky); border-radius: var(--radius); display: flex; flex-direction: column; gap: 12px; }
+  .vyber { font-weight: 600; }
+  .tools { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; max-width: 680px; }
+  .tools button { padding: 14px 10px; border: 1px solid var(--sky); border-radius: var(--pill); background: var(--panel); font-weight: 600; font-size: 1rem; color: var(--ink); cursor: pointer; }
+  .tools button:hover { background: var(--sky-light); }
+  .tools button[aria-selected='true'] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .tools button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  @media (max-width: 560px) { .tools { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .inst { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+  @media (max-width: 860px) { .inst { grid-template-columns: 1fr; } }
+  .steps { margin: 0; padding: 26px 30px 26px 50px; border: 1px solid var(--sky); border-radius: var(--radius); display: flex; flex-direction: column; gap: 14px; }
   .zip { border: 1px solid var(--sky); border-radius: var(--radius); padding: 18px 22px; display: flex; gap: 14px; align-items: center; text-decoration: none; color: var(--ink); }
+  .zip--inline { display: inline-flex; }
   .zip:hover { background: var(--sky-light); color: var(--ink); }
   .tabs { display: flex; flex-wrap: wrap; gap: 4px; border-bottom: 1px solid var(--line); }
   .tabs button { padding: 10px 14px; border: 0; background: none; font-weight: 600; color: var(--muted); border-bottom: 2px solid transparent; margin-bottom: -1px; }
