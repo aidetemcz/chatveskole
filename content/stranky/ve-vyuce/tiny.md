@@ -23,7 +23,7 @@ Tiny je AI aplikace s jedenácti vzdělávacími chatboty do hodiny. Říkáme j
 ## Jak Tiny funguje
 
 1. **Připravíte lekci.** Na **teacher.tiny.school** vyberete chatbota a zadáte téma.
-2. **Žáci se připojí kódem.** Otevřou **student.tiny.school** a zadají kód lekce. Nepotřebují vlastní účet u velké technologické firmy.
+2. **Žáci se připojí kódem.** Otevřou **student.tiny.school** a zadají kód lekce.
 3. **Každý žák vede vlastní rozhovor.** Chatbot nedává hotové odpovědi, ale klade otázky, které žáka vedou k vlastnímu přemýšlení.
 4. **Máte přehled.** Konverzace vidíte v reálném čase, dostáváte upozornění na problematické situace a na konci hodiny shrnutí.
 
