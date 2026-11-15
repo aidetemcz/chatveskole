@@ -25,10 +25,12 @@ const varianty = skill.prompt.varianty;
 <Base title={skill.title} description={skill.kratky_popis}>
   <div class="band band--white" style="padding-bottom: 96px">
     <div class="wrap stack detail">
-      <Crumbs items={[{ title: 'Katalog dovedností', href: '/skills' }, { title: skill.title }]} />
+      <div class="zahlavi">
+        <Crumbs items={[{ title: 'Katalog dovedností', href: '/skills' }, { title: skill.title }]} />
+        {skill.aktualizovano && <span class="draft">Aktualizováno {datumCesky(skill.aktualizovano as unknown as string | Date)}</span>}
+      </div>
       <div class="hlava">
         <header class="page-head">
-          {skill.aktualizovano && <span class="draft" style="align-self: flex-start">Aktualizováno {datumCesky(skill.aktualizovano as unknown as string | Date)}</span>}
           <h1>{skill.title}</h1>
           <p class="lede">{skill.popis ?? skill.kratky_popis}</p>
           {skill.rezimy && skill.rezimy.length > 0 && (

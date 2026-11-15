@@ -139,6 +139,8 @@ a.card:hover { border-color: var(--sky-deep); }
 .prose a { text-underline-offset: 2px; }
 
 /* koncept */
+/* drobečková navigace a pod ní štítek s datem aktualizace */
+.zahlavi { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
 .draft { display: inline-block; font-size: 0.72rem; font-weight: 600; padding: 2px 10px; border-radius: var(--pill); background: var(--accent-soft); color: var(--accent-ink); }
 .prose .prompt-block pre { background: none; border: 0; padding: 20px 24px; border-radius: 0; }
 .prose > .prompt-block { margin-top: 1em; }
