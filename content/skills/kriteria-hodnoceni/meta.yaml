@@ -1,14 +1,12 @@
 title: Kritéria hodnocení
 slug: kriteria-hodnoceni
-kratky_popis: Z cíle vytvoří kritéria pro učitele i žáky, gradaci J–Č–T–Ú, sebehodnoticí list a nápady na důkazy o učení.
+kratky_popis: Z cíle podle Nové taxonomie vytvoří kritéria hodnocení pro učitele i žáky, včetně úprav pro žáky se SVP.
 pro_koho: [ucitele]
 sady: [formativni-hodnoceni]
 stitky: [formativní hodnocení, kritéria hodnocení, sebehodnocení, J–Č–T–Ú, důkazy o učení, SVP]
 rezimy:
-  - Kritéria z cíle
-  - Gradace J–Č–T–Ú
-  - Sebehodnoticí list pro žáky
-  - Důkazy o učení
+  - Kritéria z cíle (pro učitele i pro žáky)
+  - Úprava kritérií pro žáky se SVP
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/tvorba-kriterii-hodnoceni/
     typ: prompt

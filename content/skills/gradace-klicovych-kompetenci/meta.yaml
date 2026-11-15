@@ -3,7 +3,7 @@ slug: gradace-klicovych-kompetenci
 kratky_popis: Rozpracuje klíčovou kompetenci nebo dovednost do návazných úrovní s pozorovatelnými projevy žáka podle Carnegie Skills Progressions.
 pro_koho: [ucitele, vedeni]
 sady: [vedeni-skoly]
-stitky: [klíčové kompetence, RVP, ŠVP, gradace, Skills Builder, sebehodnocení]
+stitky: [klíčové kompetence, RVP, ŠVP, gradace, Carnegie Skills Progressions, sebehodnocení]
 rezimy:
   - Gradace kompetence do úrovní
   - Žákovská verze „Dokážu…“
@@ -18,7 +18,7 @@ stahnout:
   chatgpt: https://drive.google.com/uc?export=download&id=1EHP07gX2VvboOAoqVk2jOVfzhyhBIVsa
 autori: [AI dětem]          # ověřit autorství
 metodika:
-  - nazev: Skills Builder Universal Framework (inspirace)
+  - nazev: Carnegie Skills Progressions (Carnegie Foundation for the Advancement of Teaching; znalostní graf Learning Commons, CC BY 4.0)
 znalosti: [klicove-kompetence-disk-gradace.md]
 vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
 stav: koncept

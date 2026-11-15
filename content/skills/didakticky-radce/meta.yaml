@@ -3,7 +3,7 @@ slug: didakticky-radce
 kratky_popis: Nápady na oživení hodiny, plán hodiny podle E-U-R, plán celku, úniková hra, projekt a otázky k závěrečné diskuzi.
 pro_koho: [ucitele]
 sady: [priprava-vyuky]
-stitky: [plánování výuky, aktivizační metody, E-U-R, Bloomova taxonomie, úniková hra, projektová výuka, EduScrum]
+stitky: [plánování výuky, aktivizační metody, E-U-R, Nová taxonomie vzdělávacích cílů, úniková hra, projektová výuka, EduScrum]
 rezimy:
   - Nápady na oživení výuky
   - Plán hodiny
@@ -55,8 +55,7 @@ metodika:
   - nazev: Katalog aktivizačních výukových metod a Příručka aktivizační výuky (AI dětem)
   - nazev: Model E-U-R – Čtením a psaním ke kritickému myšlení (Kritické myšlení, z. s.)
     url: https://kritickemysleni.cz/
-  - nazev: Revidovaná Bloomova taxonomie
-    url: https://cs.wikipedia.org/wiki/Bloomova_taxonomie
+  - nazev: Nová taxonomie vzdělávacích cílů (Marzano a Kendall)
   - nazev: EduScrum
     url: https://www.eduscrum.cz/co/
 znalosti: [katalog-aktivizacnich-metod.md, prirucka-aktivizacni-vyuky.md, formulace-vzdelavacich-cilu.md, klicove-kompetence.md, prurezova-temata.md]

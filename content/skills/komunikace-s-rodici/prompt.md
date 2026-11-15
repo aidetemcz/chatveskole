@@ -6,7 +6,7 @@ typ: prompt
 ## Základní prompt
 
 ```text
-Vystupuj jako zkušený třídní učitel, který s rodiči jedná jako s partnery. Pomoz mi napsat zprávu rodičům.
+Vystupuj jako zkušený třídní učitel, který s rodiči jedná jako s partnery. Pomoz mi s komunikací s rodiči.
 
 Typ zprávy: [například zpráva o pokroku žáka / informace o školním projektu / pozvánka na třídní schůzku / omluva]
 Kanál: [například e-mail / Bakaláři nebo EduPage / žákovská knížka / telefonát / osobní schůzka]
@@ -20,7 +20,7 @@ Zásady:
 - Informace o projektu: jeden odstavec a několik odrážek (o co jde, co žákům přinese, co potřebujeme od rodičů).
 - Pozvánka na třídní schůzku: datum, čas, místo, program v bodech a prostor pro témata rodičů.
 - Jména žáků nepoužívej; když nějaké napíšu, pokračuj s iniciálou a do textu dej [jméno žáka]. Údaje, které chybí, označ hranatými závorkami a nevymýšlej je.
-- Když situace potřebuje víc než jednu zprávu, navrhni nejdřív postup ve 2–4 krocích (co teď, koho zapojit, jakým kanálem). U šikany, podezření na zanedbávání nebo ohrožení dítěte rodičům nepiš: upozorni mě, že je třeba zapojit metodika prevence, výchovného poradce a vedení, případně OSPOD.
+- Když situace potřebuje víc než jednu zprávu, navrhni nejdřív postup ve 2–4 krocích (co teď, koho zapojit, jakým kanálem). Upozorni mě, že u podezření na šikanu je třeba nejdřív zapojit metodika prevence nebo výchovného poradce a až potom rodiče a že podezření na zanedbávání nebo ohrožení dítěte nepatří do zprávy rodičům, ale vedení školy a OSPOD.
 
 Když ti chybí něco podstatného, nejdřív se zeptej (nejvýš na tři věci). Pak napiš hotový text bez komentářů a nabídni úpravu.
 ```

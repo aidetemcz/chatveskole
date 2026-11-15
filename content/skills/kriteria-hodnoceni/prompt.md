@@ -6,56 +6,22 @@ typ: prompt
 ## Základní prompt
 
 ```text
-Vystupuj jako zkušený pedagog se zaměřením na formativní hodnocení. Z mého vzdělávacího cíle vytvoř tři kritéria hodnocení.
+Vystupuj jako zkušený pedagog se zaměřením na formativní hodnocení. Z mého vzdělávacího cíle vytvoř tři kritéria hodnocení. Vycházej z Nové taxonomie vzdělávacích cílů (Marzano a Kendall): cíl říká, co žák se znalostí udělá, laťku kvality nesou až kritéria.
 
-Vzdělávací cíl: [například Žáci s pomocí map a textů popíší hlavní přírodní podmínky Afriky a ve skupině porovnají, jak ovlivňují život lidí.]
+Vzdělávací cíl: [například Žák porovná přírodní podmínky dvou oblastí Afriky podle jejich vlivu na život lidí.]
 Ročník: [například 7. třída ZŠ]
 Předmět: [například zeměpis]
-Žáci se SVP: [například jeden žák s obtížemi s psaním, nebo řádek smažte]
+Žáci se SVP: [stačí popis potřeby, například obtíže s psaním – nebo řádek smažte]
 
-Každé kritérium napiš ve dvou verzích:
-1. Pro učitele – ve 3. osobě („Žák vysvětlí…“) a se stejnými pojmy jako v cíli.
-2. Pro žáky – v 1. osobě („Vysvětlím…“), se stejným obsahem, ale slovy, kterým žák tohoto věku rozumí, aby podle něj sám posoudil, jak se mu daří.
+Postup:
+1. Urči úroveň cíle (1 vybavování, 2 porozumění, 3 analýza, 4 použití znalostí, 5 metakognice, 6 já-systém), proces (například porovnávání, analýza chyb, rozhodování) a dimenzi (deklarativní znalosti, myšlenkové postupy, psychomotorické dovednosti). Vyjdi z nejnižší úrovně, kterou formulace připouští, a napiš to jedním řádkem, ať to můžu opravit.
+2. Když cíl není pozorovatelný („žáci pochopí…“) nebo spojuje víc procesů, upozorni na to a navrhni zpřesnění nebo rozdělení.
+3. Kritéria společně ověřují celý cíl a drží se jeho procesu – nepřidávej činnosti z jiných úrovní (u porovnávání nechtěj vlastní návrh řešení). Rozlož proces na pozorovatelné části. Na úrovních 1–2 hodnoť správnost a přesnost, na 3–4 i kvalitu úvahy, na 5–6 kvalitu sebereflexe, nikdy emoce ani motivaci.
+4. Laťku kvality napiš konkrétně („podle podstatných znaků“, „vlastními slovy“, „alespoň dva důvody“), bez procent. Kritérium nesmí předpokládat neúspěch.
+5. Každé kritérium napiš dvakrát: Pro učitele – ve 3. osobě („Žák porovná…“) se stejnými pojmy jako v cíli. Pro žáky – v 1. osobě („Porovnám…“), slovy, kterým žák tohoto věku rozumí. Nepoužívej „umím“, „znám“, „rozumím“. Hodnoť výkon, ne osobnost.
+6. Pro každou uvedenou potřebu SVP přidej upravenou verzi pro žáka: podstata zůstává, mění se způsob, jakým výkon ukáže, opora nebo rozsah. Ke každé úpravě napiš jednou větou proč. Diagnózu nepotřebuješ.
 
-Pravidla:
-- Kritéria společně pokrývají celý cíl, nic navíc.
-- Každé obsahuje činnostní sloveso, které lze pozorovat (popíšu, vysvětlím, porovnám, vypočítám, navrhnu). Nepoužívej „umím“, „znám“, „rozumím“.
-- Buď konkrétní: co přesně a v jaké kvalitě (například „alespoň dva důvody“, „vlastními slovy“).
-- Hodnoť výkon, ne osobnost. Spolupráci popiš jako pozorovatelný projev.
-- Mysli i na porozumění a použití, ne jen na fakta.
-- Tón neutrální a podporující; ve verzi pro žáky žádná odborná a cizí slova.
-
-Pokud jsou uvedeni žáci se SVP, přidej pro každou potřebu zvlášť upravenou verzi kritéria pro žáka: podstata zůstává, mění se způsob, jakým výkon ukáže, opora nebo rozsah. Ke každé úpravě napiš jednou větou proč.
-
-Jestli některý údaj chybí, nejdřív se mě zeptej.
-```
-
-## Varianta: Gradace J–Č–T–Ú
-
-```text
-Vystupuj jako zkušený pedagog se zaměřením na formativní hodnocení. Ke každému mému kritériu hodnocení vytvoř čtyři úrovně podle škály J–Č–T–Ú z metodiky Vysvědčení jinak (PdF MU). Nejde o známky, ale o popis pokroku.
-
-Škála:
-J – Ještě neosvojeno – Ještě mi to nejde a stále se učím.
-Č – Částečně osvojeno – Trochu mi to jde, ale dělám chyby.
-T – Téměř osvojeno – Skoro už to zvládnu sám/sama, jen s drobnou pomocí.
-Ú – Úplně osvojeno – Úplně to umím sám/sama.
-
-Ročník: [například 2. třída ZŠ]
-Kritéria: [vložte kritéria, každé na nový řádek]
-
-Pravidla:
-- Piš v 1. osobě, konkrétně k danému kritériu, slovy, kterým žák rozumí, bez cizích slov.
-- Úrovně se posouvají v míře pomoci (s pomocí → s připomenutím → samostatně), v přesnosti (s chybami → většinou → spolehlivě) a v situacích (známé → nové). Úroveň Ú zahrnuje použití v nové situaci nebo vysvětlení postupu.
-- Úroveň J formuluj se slovy „zatím“ nebo „ještě“, aby cesta zůstala otevřená.
-- Nehodnoť vlastnosti ani chování a nezůstávej jen u faktů.
-
-Příklad:
-Kritérium: Najdu a přečtu slovo s měkkou hláskou ve větě nebo krátkém textu.
-J – Slovo v textu zatím nepoznám nebo ho ještě nepřečtu.
-Č – Najdu slovo, když mě někdo nasměruje, a přečtu ho s pomocí.
-T – Většinou najdu a přečtu slovo s Ď, Ť, Ň v textu samostatně.
-Ú – Bez problémů najdu a přečtu slova s měkkými hláskami v jakémkoli textu.
+Nad kritéria napiš cíl s úrovní, procesem a dimenzí. Na konci nabídni: 1) úpravu kritérií, 2) variantu pro žáka se SVP, 3) gradaci na škále J–Č–T–Ú pro sebehodnocení. Jestli některý údaj chybí, nejdřív se mě zeptej. Jména žáků nepotřebuješ.
 ```
 
 ## Varianta: Sebehodnoticí list pro žáky
@@ -90,4 +56,4 @@ Formy se mají lišit způsobem vyjádření (psaní, kresba nebo schéma, mluve
 U každé formy uveď: co žák vytvoří, jak dlouho to trvá, které kritérium ukáže a čeho si má učitel všímat, aby poznal, jak daleko žák je.
 ```
 
-**Tip:** Kritéria ukažte žákům na začátku práce, ne až při hodnocení. Sebehodnoticí list pak vyplní po práci a vy ho můžete použít jako podklad pro zpětnou vazbu nebo slovní hodnocení (navazuje dovednost Slovní hodnocení).
+**Tip:** Kritéria ukažte žákům na začátku práce, ne až při hodnocení. Rozepsat je do úrovní J–Č–T–Ú pomůže dovednost Gradace kritérií hodnocení. Sebehodnoticí list pak žáci vyplní po práci a vy ho můžete použít jako podklad pro zpětnou vazbu nebo slovní hodnocení.
