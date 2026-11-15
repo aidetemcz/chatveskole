@@ -6,6 +6,8 @@ popis: Co je prompt, jak ho napsat, aby chatbot odpověděl dobře, a kdy místo
 tlacitko: { text: Přejít na Katalog promptů, href: /prompty }
 aktualizovano: 2026-11-08
 stav: koncept
+odkazy:
+  - { text: Dovednosti (skills), href: /funkce/skills }
 ---
 
 ## Co je prompt

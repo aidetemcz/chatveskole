@@ -1,4 +1,5 @@
 ---
+import OdkazyKonec from '../../../../components/OdkazyKonec.astro';
 import { getCollection, getEntry, render } from 'astro:content';
 import Base from '../../../../layouts/Base.astro';
 import Crumbs from '../../../../components/Crumbs.astro';
@@ -34,6 +35,7 @@ const zaci = (await getCollection('prompty')).filter((p) => p.id.startsWith('zac
         <p style="color: var(--muted)">Žáci pod věkovou hranicí chatbotů mohou stejné způsoby práce vyzkoušet v aplikaci <a href={url('/ve-vyuce/tiny')}>Tiny</a>.</p>
         <TinyTabulka />
       </section>
+      <OdkazyKonec odkazy={[{ text: 'AI aplikace Tiny', href: url('/ve-vyuce/tiny') }, { text: 'Katalog promptů', href: url('/prompty') }]} />
     </div>
   </div>
 </Base>

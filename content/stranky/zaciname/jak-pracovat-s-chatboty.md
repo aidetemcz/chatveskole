@@ -5,6 +5,10 @@ poradi: 1
 popis: Krátký prompt, podrobný prompt, dovednost a plugin. Jaký je mezi nimi rozdíl a kdy který použít, vysvětleno na jednoduché animaci.
 aktualizovano: 2026-11-14
 stav: koncept
+odkazy:
+  - { text: Katalog promptů, href: /prompty }
+  - { text: Katalog dovedností, href: /skills }
+  - { text: Dostupné nástroje, href: /zaciname/dostupne-nastroje }
 ---
 
 # Jak pracovat s chatboty

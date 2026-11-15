@@ -7,6 +7,9 @@ popis: Proč jsme web Chatboti ve škole přepracovali a co kde najdete — pře
 aktualizovano: 2026-11-14
 stav: ke-kontrole
 tlacitko: { text: Napsat nám, href: /o-webu/kontakt }
+odkazy:
+  - { text: Jak pracovat s chatboty, href: /zaciname/jak-pracovat-s-chatboty }
+  - { text: Katalog dovedností, href: /skills }
 ---
 
 # Web Chatboti má nový vzhled i obsah

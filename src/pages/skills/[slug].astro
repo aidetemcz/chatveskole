@@ -3,8 +3,9 @@ import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import Icon from '../../components/Icon.astro';
 import { url } from '../../lib/url';
-import { skills, asList, type Skill } from '../../lib/data';
+import { skills, sadaBySlug, asList, type Skill } from '../../lib/data';
 import { NASTROJE } from '../../lib/instalace';
+import OdkazyKonec from '../../components/OdkazyKonec.astro';
 
 export function getStaticPaths() {
   return skills.map((skill) => ({ params: { slug: skill.slug }, props: { skill } }));
@@ -102,6 +103,7 @@ const varianty = skill.prompt.varianty;
             </a>
           ))}
         </div>
+        <OdkazyKonec odkazy={[{ text: 'Katalog dovedností', href: url('/skills') }, ...skill.sady.map(sadaBySlug).filter(Boolean).map((x) => ({ text: `Sada ${x!.title}`, href: url(`/sady/${x!.slug}`) }))]} />
       </div>
     </section>
   )}

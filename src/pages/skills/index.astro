@@ -1,4 +1,5 @@
 ---
+import OdkazyKonec from '../../components/OdkazyKonec.astro';
 import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import SkillCard from '../../components/SkillCard.astro';
@@ -54,5 +55,8 @@ const views = [
         ))}
       </div>
     ))}
+  </div>
+  <div class="band band--white">
+    <div class="wrap"><OdkazyKonec odkazy={[{ text: 'Co jsou dovednosti a jak je nainstalovat', href: url('/funkce/skills') }, { text: 'Katalog promptů', href: url('/prompty') }, { text: 'Pluginy', href: url('/funkce/pluginy') }]} /></div>
   </div>
 </Base>

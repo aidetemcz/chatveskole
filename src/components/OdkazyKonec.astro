@@ -1,0 +1,16 @@
+---
+// Odkazy na konci stránky jako tlačítka (Eva 15. 11. 2026): první je hlavní, ostatní s obrysem.
+// href musí být hotová adresa (u interních odkazů už s base, tedy přes url()).
+interface Props { odkazy: { text: string; href: string }[] }
+const { odkazy } = Astro.props;
+const sipka = (t: string) => (/[→←]\s*$/.test(t) ? t : `${t} →`);
+---
+{odkazy.length > 0 && (
+  <nav class="odkazy-konec" aria-label="Kam dál">
+    {odkazy.map((o, i) => <a class:list={['btn', i === 0 ? 'btn--primary' : 'btn--outline']} href={o.href}>{sipka(o.text)}</a>)}
+  </nav>
+)}
+
+<style>
+  .odkazy-konec { display: flex; flex-wrap: wrap; gap: 12px 14px; padding-top: 8px; }
+</style>

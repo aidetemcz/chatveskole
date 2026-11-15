@@ -1,4 +1,5 @@
 ---
+import OdkazyKonec from '../../../components/OdkazyKonec.astro';
 import { getCollection, render } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import Crumbs from '../../../components/Crumbs.astro';
@@ -31,6 +32,7 @@ const skill = prompt.data.skill ? skillBySlug(prompt.data.skill) : undefined;
       <header class="page-head"><h1>{prompt.data.title}</h1></header>
       {archiv && <p class="note note--info">Starší prompt z roku 2024. Zatím není v katalogu — procházíme, které staré prompty zůstanou.</p>}
       <div class="prose"><Content /></div>
+      <OdkazyKonec odkazy={[{ text: 'Katalog promptů', href: url('/prompty') }, ...(skill ? [{ text: `Dovednost ${skill.title}`, href: url(`/skills/${skill.slug}`) }] : []), { text: 'Jak psát prompty', href: url('/funkce/prompty') }]} />
     </article>
     <aside class="side">
       {skill && (

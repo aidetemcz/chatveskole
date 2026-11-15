@@ -5,6 +5,9 @@ poradi: 2
 popis: Napište nám — dotazy k webu, návrhy dovedností a promptů, chyby v textech, vzdělávací akce pro školy.
 aktualizovano: 2026-11-07
 stav: koncept
+odkazy:
+  - { text: Kdo za tím stojí, href: /o-webu/kdo-za-tim-stoji }
+  - { text: Katalog dovedností, href: /skills }
 ---
 
 # Kontakt
