@@ -1,8 +1,8 @@
 # Data pro stránku Funkce → Změny ve funkcích 2026 (a pro tabulky na dalších stránkách).
 # Zdroj: artefakt https://claude.ai/artifact/9ZyWLayjYG18oe6knwfvsi (stav 13. 10. 2026).
 # Při aktualizaci měň jen tento soubor; stránka se vykreslí z dat.
-stav_k: '2026-10-13'
-zdroj: Artefakt „Funkce chatbotů 2027“ (AI dětem), ověřeno v oficiálních nápovědách vývojářů 13. 10. 2026
+stav_k: '2026-11-15'
+zdroj: Artefakt „Funkce chatbotů 2027“ (AI dětem), ověřeno v oficiálních nápovědách vývojářů 13. 10. 2026, část údajů aktualizována 15. 11. 2026
 poznamka: Výhled na rok 2027 vychází jen z toho, co vývojáři oznámili do 13. 10. 2026. U Copilotu „zdarma“ = Copilot Chat se školním nebo pracovním účtem. Dostupnost se liší podle země a nastavení správce.
 nastroje:
 - id: chatgpt
@@ -27,7 +27,7 @@ nastroje:
   vyrobce: Google
   posun: Gems se mění na dovednosti
   konci:
-  - 'Gems: osobní účty od 17. 11. 2026, firmy nejdříve 1. 3. 2027, školy nejdříve 1. 6. 2027'
+  - 'Gems: osobní účty jen ke čtení od 17. 11. 2026, smazání 17. 12. 2026; firmy nejdříve 1. 3. 2027, školy nejdříve 1. 6. 2027'
   - 'Gems v Google Classroomu: se školním termínem'
   - 'Opal a Gems z Google Labs: 17. 11. 2026'
   pribyva:
@@ -51,7 +51,7 @@ nastroje:
   - Home, Code a Autopilot (zatím v programu Frontier)
   - Paměť a Notebooks i bez placené licence
   skola:
-  - Cowork, Code a Autopilot se platí kredity nad rámec licence a školám se zatím nenabízejí.
+  - Cowork mohou ve škole používat vyučující a zaměstnanci s licencí Microsoft 365 Copilot, navíc se platí kredity. Žáci a studenti ho používat nesmějí.
   - Agenta nelze sdílet mimo školu. Jiné škole předáte jen návod.
   - 'Zdarma se školní licencí: Study and Learn (od 13 let), Teach a Notebooks.'
 - id: claude
@@ -61,7 +61,7 @@ nastroje:
   konci:
   - Žádná funkce nemá ohlášený konec.
   pribyva:
-  - Samostatná práce přímo v chatu od 16. 9. 2026 (Pro a Max)
+  - Samostatná práce přímo v chatu od 16. 9. 2026 (Pro, Max, Ultra, později Team a Enterprise)
   - Docs, Slides a Design ve všech tarifech od 8. 10. 2026
   - Veřejný adresář pluginů od 25. 9. 2026
   skola:
@@ -71,7 +71,7 @@ nastroje:
 casova_osa:
 - datum: '2026-09-16'
   nastroj: claude
-  text: Cowork je součástí běžného chatu (Pro, Max)
+  text: Cowork je součástí běžného chatu (Pro, Max, Ultra)
 - datum: '2026-09-30'
   nastroj: gemini
   text: Spuštěny dovednosti
@@ -83,8 +83,11 @@ casova_osa:
   text: 'Enterprise: plánovaný konec tvorby nových GPTs'
 - datum: '2026-11-17'
   nastroj: gemini
-  text: Gems začínají mizet z osobních účtů, končí Opal
+  text: Gems v osobních účtech jen ke čtení, končí Opal
   klicove: true
+- datum: '2026-12-17'
+  nastroj: gemini
+  text: Gems zmizí z osobních účtů
 - datum: '2026-11-30'
   nastroj: copilot
   text: Končí App Builder; tlačítko Agenti nahradí Pluginy (do konce listopadu)
@@ -124,7 +127,7 @@ matice:
       zmena: down
       stitek: končí
       nazev: Gems → dovednosti
-      poznamka: Osobní účty od 17. 11. 2026, firmy nejdříve 1. 3. 2027, školy nejdříve 1. 6. 2027.
+      poznamka: Osobní účty jen ke čtení od 17. 11. 2026, smazání 17. 12. 2026. Firmy nejdříve 1. 3. 2027, školy nejdříve 1. 6. 2027.
     copilot:
       dnes: omezene
       '2027': omezene
@@ -169,7 +172,7 @@ matice:
       zmena: same
       stitek: null
       nazev: Dovednosti
-      poznamka: ZIP se SKILL.md nahrajete v Customize → Skills. U tarifu Free si oficiální stránky protiřečí.
+      poznamka: Ve všech tarifech včetně Free, musí být zapnuté spouštění kódu. ZIP se SKILL.md nahrajete v Customize → Skills.
 - funkce: Pluginy
   popis: Balíček dovedností, konektorů a nástrojů k instalaci
   nastroje:
@@ -255,14 +258,14 @@ matice:
       zmena: same
       stitek: nové 2026
       nazev: Cowork → Home, Code, Autopilot
-      poznamka: Placená licence a navíc kredity. Školám se zatím nenabízí.
+      poznamka: Licence Microsoft 365 Copilot a navíc kredity. Ve škole jen pro vyučující a zaměstnance, ne pro žáky.
     claude:
       dnes: omezene
       '2027': omezene
       zmena: same
       stitek: nové 2026
       nazev: Přímo v chatu (dříve Cowork)
-      poznamka: Od 16. 9. 2026 v tarifech Pro a Max. Free a Team mají následovat, termín není.
+      poznamka: Od 16. 9. 2026 v Pro, Max a Ultra, nově i v Team a Enterprise. Free má následovat, termín není.
 - funkce: Konektory
   popis: Napojení na Disk, e-mail, kalendář a další aplikace
   nastroje:
@@ -533,6 +536,9 @@ zdroje:
   - https://mc.merill.net/message/MC1479277
   - https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-share-manage-agents
   - https://learn.microsoft.com/en-us/microsoft-365/education/guide/1-reference/enable-copilot-chat-for-learners
+  - https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-faq
+  - https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/get-started
+  - https://techcommunity.microsoft.com/blog/educationblog/introducing-education-for-cowork/4565876
   claude:
   - https://claude.com/blog/cowork-is-now-claude/
   - https://support.claude.com/en/articles/12512180-use-skills-in-claude
@@ -540,3 +546,4 @@ zdroje:
   - https://support.claude.com/en/articles/9517075-what-are-projects
   - https://support.claude.com/en/articles/9547008-publish-and-share-artifacts
   - https://www.anthropic.com/news/claude-for-teachers
+  - https://claude.com/pricing

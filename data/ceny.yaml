@@ -52,7 +52,7 @@ nastroje:
         pozn: Obrázky, Canvas, Gemini Notebook (dříve NotebookLM), hloubkový výzkum s denním limitem. Hloubkový výzkum a dovednosti jen od 18 let.
       - nazev: Google AI Plus
         cena: 149,99 Kč měsíčně
-        pozn: Dvojnásobné limity proti verzi zdarma, 400 GB úložiště. Jen 18+.
+        pozn: Dvojnásobné limity proti verzi zdarma, 400 GB úložiště. Jen 18+. Studenti vysokých škol v ČR (18+, ověření přes SheerID, jen osobní účet Google) ho mají rok zdarma, pokud nabídku uplatní do 31. 12. 2026; pak se platí běžná cena.
       - nazev: Google AI Pro
         cena: 549,99 Kč měsíčně
         pozn: Model Pro, čtyřnásobné limity, video, 5 TB úložiště. Jen 18+.
@@ -66,6 +66,9 @@ nastroje:
     zdroje:
       - https://gemini.google/cz/subscriptions/?hl=cs
       - https://gemini.google/subscriptions/
+      - https://gemini.google/cz/students/?hl=cs
+      - https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/
+      - https://support.google.com/googleone/answer/17422238?hl=cs
       - https://support.google.com/gemini/answer/15719111
       - https://support.google.com/gemini/answer/17094296
       - https://support.google.com/googleone/answer/16548195
@@ -87,6 +90,9 @@ nastroje:
       - nazev: Microsoft 365 Premium
         cena: 549 Kč měsíčně / 5 489 Kč ročně
         pozn: Vyšší limity, agenti pro výzkum a analýzu. Pro až 6 osob, Copilot ale jen pro vlastníka předplatného.
+      - nazev: Microsoft 365 Pro
+        cena: 2 699 Kč měsíčně, jen měsíční platba
+        pozn: Jako Premium, ale nejvyšší limity Copilotu a 5 TB úložiště (Premium 2 TB). Copilot jen pro vlastníka předplatného, roční platba není.
       - nazev: Microsoft 365 Copilot (licence pro školy)
         cena: 18 USD za uživatele měsíčně
         pozn: Copilot nad daty školy, dovednosti, Agent Builder s daty. Cowork jen pro vyučující a zaměstnance, navíc za kredity.
@@ -143,6 +149,9 @@ nastroje:
       - nazev: Pro
         cena: 20 USD měsíčně nebo 200 USD ročně
         pozn: Silnější modely, víc hloubkových rešerší, projekty a práce se soubory.
+      - nazev: Max
+        cena: 200 USD měsíčně nebo 2 000 USD ročně (roční platba jen na webu)
+        pozn: Vše z Pro, navíc nejsilnější modely, vyšší limity a nové funkce dřív.
       - nazev: Education Pro
         cena: 10 USD měsíčně ⚠
         pozn: Pro studenty a vyučující s ověřením (SheerID), obsahuje vše z Pro.
@@ -150,6 +159,7 @@ nastroje:
     zdroje:
       - https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you
       - https://www.perplexity.ai/help-center/en/articles/12590157-what-is-education-pro
+      - https://www.perplexity.ai/help-center/en/articles/11680686-perplexity-max
       - https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity
       - https://www.perplexity.ai/hub/legal/terms-of-service
 
