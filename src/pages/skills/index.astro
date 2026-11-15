@@ -2,9 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import SkillCard from '../../components/SkillCard.astro';
-import Icon from '../../components/Icon.astro';
 import { url } from '../../lib/url';
-import { sady, skills, skillBySlug, PRO_KOHO_SKUPINA, ZIP, pocet, type Skill } from '../../lib/data';
+import { sady, skills, skillBySlug, PRO_KOHO_SKUPINA, pocet, type Skill } from '../../lib/data';
 
 const podleUcelu = sady.map((s) => ({
   title: s.title, popis: s.popis, sada: s.slug,
@@ -46,7 +45,6 @@ const views = [
                   <h2 style="font-size: 1.7rem">{g.title} <span class="count">{pocet(g.items.length, 'dovednost', 'dovednosti', 'dovedností')}</span></h2>
                   {g.popis && <p style="margin-top: 0">{g.popis}</p>}
                 </div>
-                {g.sada && <a class="linkbtn" href={url(ZIP.plugin(g.sada))} download><Icon name="download" />Stáhnout celou sadu (plugin)</a>}
               </div>
               <div class="grid-2">
                 {g.items.map((k) => <SkillCard skill={k} />)}
