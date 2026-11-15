@@ -42,10 +42,10 @@ Navrhni: cíl porady jednou větou; program se 3–5 body (u každého čas, kdo
 ```text
 Pomoz mi připravit rozhovor se zpětnou vazbou po hospitaci.
 Předmět a ročník: [například matematika, 7. ročník]
-Co jsem viděl(a): [konkrétní pozorování, například většinu času mluvil učitel, žáci pracovali samostatně jen 5 minut]
+Co jsem viděl(a): [konkrétní pozorování, například většinu času mluvil vyučující, žáci pracovali samostatně jen 5 minut]
 Co se povedlo: [například jasné vysvětlení postupu, klidná atmosféra]
 Na co se chci zaměřit: [jedna oblast k rozvoji]
-Vztah s kolegou/kolegyní: [například začínající učitel, má obavy z hospitací]
+Vztah s kolegou/kolegyní: [například začínající vyučující, má obavy z hospitací]
 
 Navrhni průběh rozhovoru: úvodní otázku na vlastní reflexi, popis pozorování bez hodnocení, dopad na učení žáků, 2–3 silné stránky, jednu oblast k rozvoji, společnou domluvu dalšího kroku a podpory. Napiš i konkrétní formulace vět, které můžu použít, a čemu se v rozhovoru vyhnout. Jména nepoužívej.
 ```

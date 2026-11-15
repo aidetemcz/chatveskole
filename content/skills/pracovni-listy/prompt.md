@@ -6,7 +6,7 @@ typ: prompt
 ## Základní prompt
 
 ```text
-Vystupuj jako zkušený učitel a tvůrce výukových materiálů. Vytvoř pracovní list.
+Vystupuj jako zkušený pedagog a tvůrce výukových materiálů. Vytvoř pracovní list.
 
 Předmět a téma: [například přírodopis – dědičnost]
 Ročník: [například 8. třída ZŠ]
@@ -18,7 +18,7 @@ Text, ze kterého vycházet (nepovinné): [vložte text]
 
 Pravidla:
 - Když chybí údaj, bez kterého list nejde udělat, nejdřív se zeptej. Jinak rovnou tvoř.
-- Výstup rozděl na tři části: 1) PRO ŽÁKY – název, řádek na jméno, krátké instrukce a úlohy bez řešení, prázdná místa jednotně __________; 2) ŘEŠENÍ PRO UČITELE – klíč a u každé úlohy jedna věta proč, u otevřených otázek body, které má dobrá odpověď obsahovat; 3) POZNÁMKA PRO UČITELE – 2–4 věty, k čemu list slouží, jak ho použít a co upravit pro jinou třídu.
+- Výstup rozděl na tři části: 1) PRO ŽÁKY – název, řádek na jméno, krátké instrukce a úlohy bez řešení, prázdná místa jednotně __________; 2) ŘEŠENÍ PRO VYUČUJÍCÍ – klíč a u každé úlohy jedna věta proč, u otevřených otázek body, které má dobrá odpověď obsahovat; 3) POZNÁMKA PRO VYUČUJÍCÍ – 2–4 věty, k čemu list slouží, jak ho použít a co upravit pro jinou třídu.
 - Úlohy musí být jednoznačné, věcně správné a přiměřené věku. Kromě vybavování a porozumění zařaď aspoň čtvrtinu úloh na analýzu (porovnej, zařaď, najdi chybu, vyvoď pravidlo) a použití znalostí (rozhodni podle kritérií, vyřeš nový problém).
 - Spojovačku dej do tabulky, ve které dvojice nejsou na stejném řádku. U výběru z možností dej věrohodné špatné odpovědi, jaké žáci opravdu volí.
 - Rozsah jedna strana A4. Pokud umíš vytvářet dokumenty, dej žákovskou verzi a řešení jako dva samostatné dokumenty.
@@ -28,7 +28,7 @@ Pravidla:
 ## Varianta: Test s klíčem
 
 ```text
-Vystupuj jako zkušený učitel [angličtiny]. Vytvoř test pro [2. ročník gymnázia] na téma [Health].
+Vystupuj jako zkušený vyučující [angličtiny]. Vytvoř test pro [2. ročník gymnázia] na téma [Health].
 
 Cíl: [například žák používá slovní zásobu tématu ve větách a rozumí krátkému textu]
 Složení: [například 6 otázek s výběrem ze 4 možností, 4 pravda/nepravda, 3 otevřené otázky]
@@ -40,7 +40,7 @@ Požadavky:
 - Otázky na různých úrovních Nové taxonomie vzdělávacích cílů (Marzano a Kendall): orientačně 40 % vybavování a porozumění, 40 % analýza (porovnej, zařaď, najdi chybu, vyvoď pravidlo, předpověz) a 20 % použití znalostí (rozhodni podle kritérií, vyřeš problém s překážkou). O úrovni rozhoduje, co úloha po žákovi skutečně chce, ne sloveso.
 - Body uveď, jen když o ně stojím. Známky nenavrhuj.
 - U výběru z možností jen jedna správná odpověď, pokud výslovně nenapíšeš „Může být správně víc odpovědí.“ Špatné možnosti věrohodné, správná odpověď nesmí být nápadně delší ani pořád na stejném místě.
-- Výstup: 1) TEST PRO ŽÁKY bez odpovědí; 2) KLÍČ – správné odpovědi a ke každé jedna věta proč, u otevřených otázek body, které má dobrá odpověď obsahovat; 3) tabulka pro učitele: otázka – úroveň a proces Nové taxonomie – co ověřuje.
+- Výstup: 1) TEST PRO ŽÁKY bez odpovědí; 2) KLÍČ – správné odpovědi a ke každé jedna věta proč, u otevřených otázek body, které má dobrá odpověď obsahovat; 3) tabulka pro vyučující: otázka – úroveň a proces Nové taxonomie – co ověřuje.
 ```
 
 ## Varianta: Doplňovačka z mého textu
@@ -52,7 +52,7 @@ Cíl: [například žák si upevní pojmy k Velké Moravě]
 Vynech tato slova: [například Rastislav, Cyril, Metoděj, hlaholice – nebo vyber 10 klíčových pojmů sám]
 Obtížnost: [se zásobníkem slov / bez zásobníku / s prvním písmenem]
 
-Vynechávej jen slova, která nesou učivo, 8–15 mezer; u mladších žáků nejvýš jednu mezeru ve větě. Mezery čísluj a dělej stejně dlouhé: (1) __________. Výstup: 1) TEXT PRO ŽÁKY s mezerami a případně se zásobníkem slov (zamíchaným, o 1–2 slova delším); 2) ŘEŠENÍ – číslovaný seznam; 3) POZNÁMKA PRO UČITELE – k čemu doplňovačka slouží a jak ji upravit pro žáky, kteří potřebují oporu.
+Vynechávej jen slova, která nesou učivo, 8–15 mezer; u mladších žáků nejvýš jednu mezeru ve větě. Mezery čísluj a dělej stejně dlouhé: (1) __________. Výstup: 1) TEXT PRO ŽÁKY s mezerami a případně se zásobníkem slov (zamíchaným, o 1–2 slova delším); 2) ŘEŠENÍ – číslovaný seznam; 3) POZNÁMKA PRO VYUČUJÍCÍ – k čemu doplňovačka slouží a jak ji upravit pro žáky, kteří potřebují oporu.
 
 Text: [vložte text – nebo napište: „vytvoř krátký věcně správný příběh do 150 slov a označ fakta, která mám ověřit“]
 ```

@@ -32,7 +32,7 @@ Výstup ve čtyřech částech:
 1) PRO ŽÁKY: název, řádek „Jméno: __________“, instrukce v jedné větě a úloha.
 2) NÁPOVĚDA (k odstřižení): emotikony s významem.
 3) ŘEŠENÍ: původní text, nebo vzorová odpověď.
-4) POZNÁMKA PRO UČITELE: 2–3 věty, jak úlohu použít (motivace, opakování, práce ve dvojicích) a jak ověřit, že žáci učivu rozumějí, ne jen hádají obrázky.
+4) POZNÁMKA PRO VYUČUJÍCÍ: 2–3 věty, jak úlohu použít (motivace, opakování, práce ve dvojicích) a jak ověřit, že žáci učivu rozumějí, ne jen hádají obrázky.
 
 Když chybí téma nebo ročník, nejdřív se mě zeptej.
 ```

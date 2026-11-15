@@ -3,7 +3,7 @@ title: Argumentace
 slug: argumentace
 zpusob: Argumentace
 pro_koho: zaci
-vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s učitelem"
+vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
 puvodni_url: https://chatveskole.cz/databaze-promptu/argumentace/
 rozviji: "Argumentační dovednosti: schopnost vybudovat argumentaci, formulovat odpověď a reagovat na oponenturu; kritické myšlení."
 proc_ho_vyuzit: Umožňuje bezpečně trénovat diskusi, tříbit myšlenky a učit se rozpoznat nekvalitní nebo nepravdivé argumenty.
@@ -46,6 +46,6 @@ Bezpečnost: Neptej se mě na osobní údaje. Kdyby se v rozhovoru objevilo něc
 3. Odešlete prompt a na každou repliku odpovězte co nejpřesněji — fakty, příkladem nebo zkušeností.
 4. Na konci si zapište dva tipy, jak argumenty posílit, a použijte je třeba v debatě se spolužáky.
 
-## Poznámka pro učitele
+## Poznámka pro vyučující
 
 Témata volte přiměřená věku a bezpečná pro třídu; u citlivých témat (migrace, náboženství, identita) debatu se žáky proberte i osobně. V aplikaci Tiny odpovídá Argumentační partner, kde téma a cíl zadáváte vy.

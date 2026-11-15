@@ -26,7 +26,7 @@ Pravidla:
 - Popisuj činnost a výsledky, ne osobnost. Žádné přívlastky jako šikovný, snaživý, nepozorný.
 - Místo „umíš“, „dokážeš“ popiš konkrétní činnost („Píšeš správně…“, „Vyřešíš…“).
 - Nezavírej cestu k pokroku: místo „nezvládl jsi“ piš „zatím se ti nedaří“, „ještě potřebuješ oporu“.
-- Nepiš pocity učitele („mám radost“, „líbí se mi“) ani prázdné soudy („skvělé“) a domněnky („snažíš se“) bez pozorovaného projevu.
+- Nepiš pocity vyučujícího („mám radost“, „líbí se mi“) ani prázdné soudy („skvělé“) a domněnky („snažíš se“) bez pozorovaného projevu.
 - Neporovnávej se spolužáky, nepiš ironicky. Výsledky v předmětu nesměšuj s chováním.
 - Text musí odpovídat uvedené úrovni na stupnici.
 - Bez prázdných ujištění („věřím, že to příště zvládneš“); doporučení vychází z popsaných výsledků.
@@ -50,7 +50,7 @@ Dřívější hodnocení: [vložte texty; jména žáků nahraďte iniciálami]
 
 Zachyť vývoj: co žák zvládal dřív a kam se posunul. Zahrň úroveň výsledků, přístup k učení a konkrétní doporučení. Nepřidávej nic, co v podkladech není; rozpory mezi podklady mi vypiš zvlášť.
 
-Formulace, které hodnotí osobnost, vyjadřují pocity učitele („mám radost“), používají obecné „umíš“ a „dokážeš“ nebo uzavírají cestu k pokroku („nezvládl“), převeď do popisného jazyka. Pod textem jednou větou uveď, co jsi takto upravil.
+Formulace, které hodnotí osobnost, vyjadřují pocity vyučujícího („mám radost“), používají obecné „umíš“ a „dokážeš“ nebo uzavírají cestu k pokroku („nezvládl“), převeď do popisného jazyka. Pod textem jednou větou uveď, co jsi takto upravil.
 ```
 
 ## Varianta: Hodnocení chování
@@ -69,7 +69,7 @@ Délka: [například 80 slov]
 Pravidla:
 - Popisuj pozorované projevy chování, ne osobnost. Text musí odpovídat uvedeným úrovním.
 - Nesměšuj chování s výsledky v předmětech.
-- Žádné pocity učitele, prázdné soudy ani domněnky o tom, co žák prožívá.
+- Žádné pocity vyučujícího, prázdné soudy ani domněnky o tom, co žák prožívá.
 - Přidej jedno až dvě konkrétní doporučení, jak pokračovat.
 - Oslovení napiš jako „[jméno]“. Co chybí, nech „[doplnit: …]“.
 
@@ -87,7 +87,7 @@ Ročník: [například 8. třída ZŠ]
 Předmět a téma: [například dějepis – národní obrození]
 Popis hodiny: [nepovinné, nebo řádek smažte]
 
-Napiš jeden odstavec (3–6 vět) přímo žákovi: co se mu daří (s konkrétním dokladem z práce), co může zlepšit (nejvýš dvě věci) a jaký konkrétní další krok udělat. Posuzuj jen podle zadaných kritérií. Piš popisně, věcně a povzbudivě, jazykem pro jeho věk; žádné „skvělé“, „šikovný“, „umíš“, žádné pocity učitele ani srovnávání se spolužáky. Co na fotografii nejde přečíst, nedomýšlej a napiš mi to.
+Napiš jeden odstavec (3–6 vět) přímo žákovi: co se mu daří (s konkrétním dokladem z práce), co může zlepšit (nejvýš dvě věci) a jaký konkrétní další krok udělat. Posuzuj jen podle zadaných kritérií. Piš popisně, věcně a povzbudivě, jazykem pro jeho věk; žádné „skvělé“, „šikovný“, „umíš“, žádné pocity vyučujícího ani srovnávání se spolužáky. Co na fotografii nejde přečíst, nedomýšlej a napiš mi to.
 
 Pod odstavec zvlášť pro mě navrhni ke každému kritériu úroveň J–Č–T–Ú (J – ještě neosvojeno, Č – částečně osvojeno, T – téměř osvojeno, Ú – úplně osvojeno) s jednou větou zdůvodnění.
 ```

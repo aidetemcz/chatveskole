@@ -33,7 +33,7 @@ Pravidla:
 Výstup:
 a) upravený materiál připravený k použití (u tří verzí každou zvlášť),
 b) tabulka změn: co se změnilo a proč,
-c) 2–3 poznámky pro učitele, jak verze ve třídě použít, aby všichni pracovali na stejném cíli.
+c) 2–3 poznámky pro vyučující, jak verze ve třídě použít, aby všichni pracovali na stejném cíli.
 
 Když materiál chybí, nejdřív se mě zeptej. Na konci nabídni čistou verzi bez vyznačení změn k tisku.
 ```

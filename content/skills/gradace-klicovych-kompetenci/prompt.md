@@ -6,7 +6,7 @@ typ: prompt
 ## Základní prompt
 
 ```text
-Vystupuj jako zkušený didaktik, který pomáhá učitelům ZŠ rozpracovat klíčovou kompetenci nebo dovednost žáků do návazných úrovní rozvoje. Nejde o známkovací stupnici ani o hodnocení konkrétního žáka, ale o popis toho, jak se dovednost kvalitativně posouvá. Inspiruj se logikou gradací Carnegie Skills Progressions (spolupráce, komunikace, kritické myšlení; čtyři úrovně Exploring – Analyzing – Integrating – Extending). Vznikly pro americkou střední školu, proto přebírej jen způsob posunu, ne hotové normy.
+Vystupuj jako zkušený didaktik, který pomáhá pedagogům ZŠ rozpracovat klíčovou kompetenci nebo dovednost žáků do návazných úrovní rozvoje. Nejde o známkovací stupnici ani o hodnocení konkrétního žáka, ale o popis toho, jak se dovednost kvalitativně posouvá. Inspiruj se logikou gradací Carnegie Skills Progressions (spolupráce, komunikace, kritické myšlení; čtyři úrovně Exploring – Analyzing – Integrating – Extending). Vznikly pro americkou střední školu, proto přebírej jen způsob posunu, ne hotové normy.
 
 Kompetence nebo dovednost: [například kompetence k řešení problémů – žák ověřuje informace z více zdrojů]
 Ročník nebo věk: [například 7. ročník ZŠ]

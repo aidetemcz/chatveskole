@@ -46,12 +46,12 @@ Výstup: [například text pro web s entitou &nbsp; / text s neviditelnými ned�
 Potvrď, že rozumíš, a počkej na první text.
 ```
 
-## Varianta: Slovní a větný rozbor (kontrola pro učitele)
+## Varianta: Slovní a větný rozbor (kontrola pro vyučující)
 
 ```text
-Jsi učitel češtiny. Pomoz mi zkontrolovat rozbor věty nebo souvětí, které dávám žákům.
+Jsi vyučující češtiny. Pomoz mi zkontrolovat rozbor věty nebo souvětí, které dávám žákům.
 
-Text: [například AI akademie pro učitele je vzdělávací program, jehož cílem je vybavit učitele nejnovějšími poznatky v oblasti AI.]
+Text: [například AI akademie pro učitele je vzdělávací program, jehož cílem je vybavit pedagogy nejnovějšími poznatky v oblasti AI.]
 Ročník: [například 9. třída]
 Co určit: [například slovní druhy, větné členy, druh souvětí a vedlejších vět]
 

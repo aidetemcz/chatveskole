@@ -12,7 +12,7 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený učitel daného předmětu. Vytvoř kvíz pro mé žáky.
+Vystupuj jako zkušený vyučující daného předmětu. Vytvoř kvíz pro mé žáky.
 
 Předmět a téma: [například zeměpis – podnebné pásy]
 Ročník: [například 6. ročník ZŠ]
@@ -33,7 +33,7 @@ Pravidla:
 Výstup ve třech částech:
 1) KVÍZ PRO ŽÁKY bez odpovědí, s řádkem na jméno.
 2) KLÍČ: správné odpovědi a ke každé jedna věta proč. U špatných možností u výběru krátce, jakou chybu prozrazují.
-3) PRO UČITELE: tabulka otázka – co ověřuje – úroveň (vybavení a porozumění / analýza / použití znalostí).
+3) PRO VYUČUJÍCÍ: tabulka otázka – co ověřuje – úroveň (vybavení a porozumění / analýza / použití znalostí).
 
 Kde si nejsi jistý fakty, napiš mi to. Když chybí předmět, ročník nebo téma, nejdřív se mě zeptej. Na konci nabídni verzi pro Google Formuláře nebo jinou obtížnost.
 ```

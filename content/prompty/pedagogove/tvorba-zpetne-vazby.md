@@ -31,7 +31,7 @@ Pravidla:
 - Popisuj práci, ne žáka: žádné „šikovný“, „snaživý“, „skvělé“, „výborně“.
 - Místo „umíš“, „dokážeš“ popiš činnost („Uvádíš dva důvody…“, „Správně řadíš…“).
 - Nezavírej cestu: „zatím“, „ještě“, „příště zkus“, ne „nezvládl jsi“.
-- Žádné pocity učitele („mám radost“, „líbí se mi“), domněnky („snažil ses“) ani srovnávání se spolužáky.
+- Žádné pocity vyučujícího („mám radost“, „líbí se mi“), domněnky („snažil ses“) ani srovnávání se spolužáky.
 - Jazyk přizpůsob věku.
 
 Pod odstavec zvlášť pro mě:

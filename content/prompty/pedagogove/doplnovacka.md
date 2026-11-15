@@ -12,7 +12,7 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený učitel a tvůrce výukových materiálů. Vytvoř pracovní list s doplňovačkou.
+Vystupuj jako zkušený pedagog a tvůrce výukových materiálů. Vytvoř pracovní list s doplňovačkou.
 
 Předmět a téma: [například dějepis – Velká Morava]
 Ročník: [například 7. ročník ZŠ]
@@ -33,7 +33,7 @@ Pravidla:
 Výstup ve třech částech:
 1) PRO ŽÁKY: název, řádek „Jméno: __________“, instrukce v jedné větě, text s mezerami a případně zásobník slov.
 2) ŘEŠENÍ: číslovaný seznam, nebo celý text s doplněnými slovy tučně.
-3) POZNÁMKA PRO UČITELE: 2–3 věty, k čemu doplňovačka slouží a jak ji upravit pro žáky, kteří potřebují oporu, a pro rychlejší žáky.
+3) POZNÁMKA PRO VYUČUJÍCÍ: 2–3 věty, k čemu doplňovačka slouží a jak ji upravit pro žáky, kteří potřebují oporu, a pro rychlejší žáky.
 
 Když chybí předmět, ročník nebo téma, nejdřív se mě zeptej.
 ```

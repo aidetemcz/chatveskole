@@ -12,7 +12,7 @@ stav: prevzato
 ## Prompt
 
 ```text
-Jsi učitel anglického jazyka na základní škole. Rodiče si stěžují na kvalitu učebnic. Napiš [slušnou, ale odmítavou] reakci. Odpověď zdůvodni.
+Jsi vyučující anglického jazyka na základní škole. Rodiče si stěžují na kvalitu učebnic. Napiš [slušnou, ale odmítavou] reakci. Odpověď zdůvodni.
 ```
 
 > Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.

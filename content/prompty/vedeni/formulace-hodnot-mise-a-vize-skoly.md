@@ -19,13 +19,13 @@ Začni tím, že mi položíš několik vhodných otázek – podle toho, zda bu
 
 Co jsou to hodnoty školy?
 
-Hodnoty představují základní principy, které určují, jak škola jedná, učí a rozvíjí svou kulturu. Jsou to postoje a přesvědčení, které formují vztahy mezi žáky, učiteli, rodiči i celou komunitou.
+Hodnoty představují základní principy, které určují, jak škola jedná, učí a rozvíjí svou kulturu. Jsou to postoje a přesvědčení, které formují vztahy mezi žáky, vyučujícími, rodiči i celou komunitou.
 
 Jak mají být hodnoty formulovány?
 
 – Pozitivně: vyjadřují, co chceme podporovat, ne čeho se obávat.
 
-– Jednoduše a srozumitelně: aby jim rozuměli děti, učitelé i rodiče.
+– Jednoduše a srozumitelně: aby jim rozuměli děti, vyučující i rodiče.
 
 – Společně sdíleně: měly by vzniknout spoluprací a odrážet naši realitu.
 
@@ -75,7 +75,7 @@ Jak bude naše škola vypadat za 5 až 10 let, pokud se nám vše podaří?
 
 Jaké hodnoty mají být ve škole denně viditelné?
 
-Jak bude vypadat vztah mezi žáky, učiteli a rodiči?
+Jak bude vypadat vztah mezi žáky, vyučujícími a rodiči?
 
 Až ti odpovím na otázky, navrhni konkrétní návrh textu. Společně ho potom doladíme.
 ```

@@ -14,7 +14,7 @@ Moje slovní hodnocení: [vložte text; jméno žáka nahraďte iniciálou]
 
 Pokud ročník chybí, nejdřív se na něj jednou větou zeptej.
 
-Sleduj: věty, které hodnotí osobnost místo činnosti; „umíš“, „dokážeš“, „nezvládáš“; pocity učitele („mám radost“, „líbí se mi“, „mrzí mě“); obecné soudy bez opory v činnosti; domněnky o snaze či zájmu bez doloženého projevu; zda text říká, co žák zvládá a na jaké úrovni a jak přistupuje k učení; zda text odpovídá uvedené úrovni a nemíchá chování do hodnocení předmětu (a naopak); prázdná ujištění a obecné výhledy do budoucna (krátké konkrétní doporučení, které vychází z popsaných výsledků, je v pořádku); přiměřenost věku; pravopis a stylistiku.
+Sleduj: věty, které hodnotí osobnost místo činnosti; „umíš“, „dokážeš“, „nezvládáš“; pocity vyučujícího („mám radost“, „líbí se mi“, „mrzí mě“); obecné soudy bez opory v činnosti; domněnky o snaze či zájmu bez doloženého projevu; zda text říká, co žák zvládá a na jaké úrovni a jak přistupuje k učení; zda text odpovídá uvedené úrovni a nemíchá chování do hodnocení předmětu (a naopak); prázdná ujištění a obecné výhledy do budoucna (krátké konkrétní doporučení, které vychází z popsaných výsledků, je v pořádku); přiměřenost věku; pravopis a stylistiku.
 
 Forma odpovědi:
 - Žádný úvod ani shrnutí, rovnou konkrétní připomínky.

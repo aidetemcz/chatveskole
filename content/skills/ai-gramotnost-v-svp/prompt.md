@@ -50,7 +50,7 @@ Připrav:
 2. Přehled: oblast × předměty nebo stupně, kde se která oblast nejpřirozeněji rozvíjí (například český jazyk a mediální výchova – ověřování zdrojů, občanská výchova – dopady na společnost, matematika a přírodní vědy – data a předpovědi, výchova ke zdraví – pohoda). Řekni, že rozložení je tvůj návrh, protože model věkové úrovně neuvádí.
 3. 3–5 otázek k diskusi předmětových komisí.
 4. Oddíl „Co ověřit v platném RVP“. Znění RVP si nevymýšlej.
-Když něco chybí, nejdřív se zeptej. Jména učitelů ani žáků nepotřebuješ.
+Když něco chybí, nejdřív se zeptej. Jména vyučujících ani žáků nepotřebuješ.
 ```
 
 **Tip:** Hotové metodiky pro informatiku, mediální výchovu, wellbeing i další předměty najdete na kurikulum.aidetem.cz. Pravidla používání AI ve škole pomůže připravit dovednost „Školní pravidla“.

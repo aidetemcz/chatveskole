@@ -3,7 +3,7 @@ title: Obsahová struktura
 slug: obsahova-struktura
 zpusob: Obsahová struktura
 pro_koho: zaci
-vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s učitelem"
+vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
 puvodni_url: https://chatveskole.cz/databaze-promptu/obsahova-struktura/
 rozviji: Porozumění komplexitě tématu, schopnost třídit a prioritizovat informace a vytvářet logickou strukturu.
 proc_ho_vyuzit: Pomáhá žákům pojmout téma komplexněji a předem si promyslet obsahovou stavbu výstupu.
@@ -43,6 +43,6 @@ Bezpečnost: Neptej se mě na osobní údaje. Kdyby se v rozhovoru objevilo něc
 3. Odešlete prompt a odpovídejte na otázky postupně.
 4. Hotovou osnovu si uložte, zkontrolujte a podle potřeby upravte. Samotnou práci pak pište sami.
 
-## Poznámka pro učitele
+## Poznámka pro vyučující
 
 Výstupem je jen kostra — obsah a formulace mají být práce žáka. Osnovu můžete chtít odevzdat spolu s výsledkem, abyste viděli, jak žák o struktuře přemýšlel.

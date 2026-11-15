@@ -14,7 +14,7 @@ Vystupuj jako zkušený školský poradce pro tvorbu školních pravidel. Pomoz 
 – doplněná o způsob, jak je sledovat a pravidelně aktualizovat.
 
 Čeho se pravidla týkají: [například používání mobilů o přestávkách]
-Pro koho jsou: [například žáci 2. stupně a učitelé]
+Pro koho jsou: [například žáci 2. stupně a vyučující]
 Hodnoty školy, které mají podporovat: [například respekt, bezpečí, odpovědnost]
 Stávající pravidla a zkušenosti s nimi: [vlož text, nebo napiš „zatím nemáme“]
 
@@ -32,12 +32,12 @@ Vystupuj jako poradce pro digitalizaci školy. Pomoz mi připravit pravidla pro 
 
 Škola: [například ZŠ, 1.–9. ročník]
 AI nástroje, které používáme nebo zvažujeme: [například žádné oficiálně / školní účty Microsoft 365]
-Co nás trápí: [například opisování úkolů, nejistota učitelů]
-Kdo se má do tvorby zapojit: [například vedení, zástupci učitelů, žákovský parlament, rodiče]
+Co nás trápí: [například opisování úkolů, nejistota vyučujících]
+Kdo se má do tvorby zapojit: [například vedení, zástupci pedagogů, žákovský parlament, rodiče]
 
-Vycházej z těchto zásad: s AI počítáme a mluvíme o ní otevřeně místo plošných zákazů; za výstupy odpovídají lidé, ne AI; použití AI se přiznává a informace se ověřují; chráníme soukromí a dodržujeme věková omezení; AI nesmí prohlubovat nerovnosti; posilujeme AI gramotnost; do rozhodování zapojujeme učitele, žáky i rodiče.
+Vycházej z těchto zásad: s AI počítáme a mluvíme o ní otevřeně místo plošných zákazů; za výstupy odpovídají lidé, ne AI; použití AI se přiznává a informace se ověřují; chráníme soukromí a dodržujeme věková omezení; AI nesmí prohlubovat nerovnosti; posilujeme AI gramotnost; do rozhodování zapojujeme vyučující, žáky i rodiče.
 
-Navrhni pravidla v této osnově: 1. Proč pravidla máme. 2. Zásady pro žáky. 3. Zásady pro učitele (hodnocení vždy dělá učitel). 4. Vedení a administrativa. 5. Co se do AI nikdy nevkládá. 6. Jak uvádět použití AI. 7. Povolené nástroje a věkové limity (nech prázdné k doplnění, nevymýšlej je). 8. Postup při porušení. 9. Komunikace s rodiči. 10. Jak pravidla vznikla a kdy je revidujeme (aspoň jednou ročně).
+Navrhni pravidla v této osnově: 1. Proč pravidla máme. 2. Zásady pro žáky. 3. Zásady pro pedagogy (hodnocení vždy dělá vyučující). 4. Vedení a administrativa. 5. Co se do AI nikdy nevkládá. 6. Jak uvádět použití AI. 7. Povolené nástroje a věkové limity (nech prázdné k doplnění, nevymýšlej je). 8. Postup při porušení. 9. Komunikace s rodiči. 10. Jak pravidla vznikla a kdy je revidujeme (aspoň jednou ročně).
 Nabídni i „semafor“ pro zadávání úloh: zelená = AI volně, použití uveď; oranžová = AI jen na určitou část; červená = bez AI.
 Upozorni, pokud by škola chtěla AI k hodnocení žáků, hlídání testů nebo rozpoznávání emocí – jde o vysoce rizikové nebo zakázané použití. Nedávej právní rady; doporuč konzultaci s pověřencem pro ochranu osobních údajů.
 ```
@@ -45,7 +45,7 @@ Upozorni, pokud by škola chtěla AI k hodnocení žáků, hlídání testů neb
 ## Varianta: Pravidla pro žáky (desatero)
 
 ```text
-Vystupuj jako zkušený učitel a odborník na téma [například bezpečnost na internetu]. Vytvoř desatero pro žáky [například 2. stupně ZŠ], které jim pomůže [například chovat se bezpečně v online prostoru].
+Vystupuj jako zkušený pedagog a odborník na téma [například bezpečnost na internetu]. Vytvoř desatero pro žáky [například 2. stupně ZŠ], které jim pomůže [například chovat se bezpečně v online prostoru].
 
 Znáš nejčastější chyby, které žáci v tomto tématu dělají, a pravidla na ně cílí.
 – Nejvýš 10 pravidel, krátké věty v první osobě a kladně („Svoje heslo nikomu neříkám“).
@@ -54,4 +54,4 @@ Znáš nejčastější chyby, které žáci v tomto tématu dělají, a pravidla
 – Na konci navrhni, jak desatero se třídou vytvořit nebo projít (třídnická hodina, hlasování, plakát), aby ho žáci přijali za své.
 ```
 
-**Tip:** Návrh pravidel nejdřív projděte se zástupci žáků a učitelů. U školního řádu nezapomeňte, že ho schvaluje školská rada.
+**Tip:** Návrh pravidel nejdřív projděte se zástupci žáků a vyučujících. U školního řádu nezapomeňte, že ho schvaluje školská rada.

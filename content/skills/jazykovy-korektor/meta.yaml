@@ -1,7 +1,7 @@
 title: Jazykový korektor
 slug: jazykovy-korektor
 kratky_popis: Rychle zkontroluje český text — pravopis, gramatiku, styl i typografii — a ke každé opravě připíše krátký důvod.
-popis: "Rychle zkontroluje český text, který posíláte rodičům, dáváte na web nebo do pracovního listu: pravopis, tvarosloví, interpunkci, styl i typografii. Dostanete opravený text se změnami vyznačenými tučně a ke každé opravě krátký důvod. Sporná místa otevřeně označí, protože nejde o profesionální korekturu. Hodí se pro učitele, vedení školy i studenty."
+popis: "Rychle zkontroluje český text, který posíláte rodičům, dáváte na web nebo do pracovního listu: pravopis, tvarosloví, interpunkci, styl i typografii. Dostanete opravený text se změnami vyznačenými tučně a ke každé opravě krátký důvod. Sporná místa otevřeně označí, protože nejde o profesionální korekturu. Hodí se pro vyučující, vedení školy i studenty."
 pro_koho: [ucitele, vedeni, zaci-18plus]
 sady: [komunikace-a-podpora-ucitele]
 stitky: [čeština, pravopis, korektura, stylistika, typografie, nedělitelné mezery, větný rozbor]
@@ -9,7 +9,7 @@ rezimy:
   - Oprava s vyznačením změn
   - Stylistické hodnocení
   - Typografie a nedělitelné mezery
-  - Slovní a větný rozbor (kontrola pro učitele)
+  - Slovní a větný rozbor (kontrola pro vyučující)
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/jazykovy-ai-korektor/
     typ: asistent

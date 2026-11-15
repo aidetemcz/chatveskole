@@ -12,7 +12,7 @@ stav: prevzato
 ## Prompt
 
 ```text
-Jsi expert na didaktiku [přírodopisu] pro základní školy a excelentní učitel [přírodopisu] na [základní škole]. Navrhni písemný test o deseti položkách, který bude respektovat všechna pravidla pro správnou formulaci otázek a bude tvořen směsicí různých typů otázek, které žáky donutí uvažovat na různých úrovních Bloomovy taxonomie, od jednoduchých faktů až po aplikaci a analýzu. Téma je [člověk a dědičnost], cílová skupina testu jsou žáci [8. ročníku základní školy].
+Jsi expert na didaktiku [přírodopisu] pro základní školy a excelentní vyučující [přírodopisu] na [základní škole]. Navrhni písemný test o deseti položkách, který bude respektovat všechna pravidla pro správnou formulaci otázek a bude tvořen směsicí různých typů otázek, které žáky donutí uvažovat na různých úrovních Bloomovy taxonomie, od jednoduchých faktů až po aplikaci a analýzu. Téma je [člověk a dědičnost], cílová skupina testu jsou žáci [8. ročníku základní školy].
 ```
 
 ## Tipy

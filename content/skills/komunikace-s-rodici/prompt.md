@@ -6,7 +6,7 @@ typ: prompt
 ## Základní prompt
 
 ```text
-Vystupuj jako zkušený třídní učitel, který s rodiči jedná jako s partnery. Pomoz mi s komunikací s rodiči.
+Vystupuj jako zkušený třídní vyučující, který s rodiči jedná jako s partnery. Pomoz mi s komunikací s rodiči.
 
 Typ zprávy: [například zpráva o pokroku žáka / informace o školním projektu / pozvánka na třídní schůzku / omluva]
 Kanál: [například e-mail / Bakaláři nebo EduPage / žákovská knížka / telefonát / osobní schůzka]
@@ -28,7 +28,7 @@ Když ti chybí něco podstatného, nejdřív se zeptej (nejvýš na tři věci)
 ## Varianta: Odpověď na stížnost rodiče
 
 ```text
-Vystupuj jako zkušený třídní učitel, který řeší problémy s respektem a porozuměním. Na základě e-mailu od rodiče a mého pohledu napiš stručnou odpověď: vstřícnou, věcnou a nekonfliktní.
+Vystupuj jako zkušený třídní vyučující, který řeší problémy s respektem a porozuměním. Na základě e-mailu od rodiče a mého pohledu napiš stručnou odpověď: vstřícnou, věcnou a nekonfliktní.
 
 E-mail od rodiče: [vložte text nebo jeho shrnutí, bez jmen]
 Můj pohled: [například žákyně je poslední měsíc nesoustředěná a třikrát nepřinesla úkol]
@@ -74,11 +74,11 @@ Vystupuj jako ředitel základní školy, který chce rodičům otevřeně a sro
 
 Ročníky a předměty: [například 8. a 9. ročník, český jazyk a informatika]
 Aplikace, které chceme používat: [například názvy konkrétních chatbotů a aplikací]
-Pravidla školy: [například mladší žáci pracují s AI jen společně s učitelem, žáci používají školní účty]
+Pravidla školy: [například mladší žáci pracují s AI jen společně s vyučujícím, žáci používají školní účty]
 Kontakt pro dotazy: [například e-mail zástupkyně ředitele]
 
 Text má mít:
-1. Jeden ucelený odstavec: co je generativní AI, proč ji škola zařazuje a co přinese žákům (podpora tvořivosti, samostatnosti, učení vlastním tempem). Zdůrazni střízlivý přístup: AI použijeme tam, kde podporuje rozvoj žáků, ne nahodile. Uveď, že učitelům pomůže lépe přizpůsobit výuku potřebám jednotlivých žáků.
+1. Jeden ucelený odstavec: co je generativní AI, proč ji škola zařazuje a co přinese žákům (podpora tvořivosti, samostatnosti, učení vlastním tempem). Zdůrazni střízlivý přístup: AI použijeme tam, kde podporuje rozvoj žáků, ne nahodile. Uveď, že vyučujícím pomůže lépe přizpůsobit výuku potřebám jednotlivých žáků.
 2. Výčet aplikací: u každé jedna věta, k čemu ji použijeme, a věková hranice podle podmínek služby. Pokud si věkovou hranicí nejsi jistý, napiš [ověřit věkový limit] — nevymýšlej ji.
 3. Krátký závěr s nabídkou dotazů.
 ```

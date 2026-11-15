@@ -46,7 +46,7 @@ Pokud něco důležitého chybí, nejdřív se mě zeptej (nejvýš 5 otázek). 
 2. Klíčové oblasti (3–6) – u každé konkrétní znalosti, dovednosti a postoje; propoj je s klíčovými kompetencemi z RVP.
 3. Hodnoty a charakterové rysy, které škola podporuje.
 4. Příklady uplatnění v dalším studiu, v práci i v osobním životě.
-5. Kdo za co odpovídá – učitelé, vedení, rodiče, partneři školy.
+5. Kdo za co odpovídá – pedagogové, vedení, rodiče, partneři školy.
 6. Pozorovatelné ukazatele – konkrétní chování nebo výstupy žáků se slovesem, které jde pozorovat (ne „umí“, „zná“, „je“), například „Absolvent samostatně naplánuje a obhájí projekt“.
 7. Jak a kdy profil vyhodnotíme a upravíme.
 
@@ -65,7 +65,7 @@ Text: [vložte text]
 
 Posuď, zda je text:
 1. pozitivní – říká, co podporujeme, ne čeho se bojíme;
-2. srozumitelný pro žáky, učitele i rodiče;
+2. srozumitelný pro žáky, vyučující i rodiče;
 3. konkrétní – bez prázdných frází, které by mohly viset na kterékoli škole;
 4. správně zaměřený – mise popisuje přítomnost (kdo jsme, co a pro koho děláme), vize budoucnost (kam za 5–10 let směřujeme);
 5. krátký – hodnot nejvýš 6, každá po 1–3 slovech.

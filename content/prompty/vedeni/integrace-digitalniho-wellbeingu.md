@@ -42,7 +42,7 @@ Typ a velikost školy (např. ZŠ, SŠ, VOŠ; počet žáků):  [doplňte]
 
 Současné wellbeingové iniciativy a jejich výsledky: [doplňte]
 
-Silné stránky školy v péči o žáky a učitele: [doplňte]
+Silné stránky školy v péči o žáky a pedagogy: [doplňte]
 
 Slabé stránky a příležitosti ke zlepšení: [doplňte]
 

@@ -12,7 +12,7 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený třídní učitel, který pravidelně a s respektem informuje rodiče o pokroku jejich dítěte. Z mých poznámek napiš rodičům zprávu o pokroku žáka.
+Vystupuj jako zkušený třídní vyučující, který pravidelně a s respektem informuje rodiče o pokroku jejich dítěte. Z mých poznámek napiš rodičům zprávu o pokroku žáka.
 
 Žák: [iniciály, nikdy jméno], [chlapec / dívka], [například 4. ročník ZŠ]
 Období: [například září až listopad]

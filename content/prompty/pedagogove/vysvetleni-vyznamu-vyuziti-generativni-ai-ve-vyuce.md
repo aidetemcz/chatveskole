@@ -16,13 +16,13 @@ Vystupuj jako ředitel základní školy, který chce rodičům otevřeně a sro
 
 Ročníky a předměty: [například 8. a 9. ročník, český jazyk a informatika]
 Aplikace, které chceme používat: [názvy konkrétních chatbotů a aplikací]
-Jak s AI budou žáci pracovat: [například mladší žáci jen společně s učitelem na jeho zařízení, starší se školním účtem; nebo řádek smažte]
+Jak s AI budou žáci pracovat: [například mladší žáci jen společně s vyučujícím na jeho zařízení, starší se školním účtem; nebo řádek smažte]
 Pravidla školy: [například žáci do AI nevkládají osobní údaje, úkoly s AI označují; nebo řádek smažte]
 Kontakt pro dotazy: [například e-mail zástupkyně ředitele]
 Kde text vyjde: [newsletter / web školy / leták / e-mail]
 
 Text má mít:
-1. Úvodní odstavec: co je generativní AI (jednou dvěma větami bez odborných slov), proč ji škola zařazuje a co žákům přinese. Zdůrazni střízlivý přístup: AI použijeme tam, kde podporuje učení, ne nahodile a ne místo přemýšlení žáků. Uveď, že učitelům pomáhá lépe přizpůsobit výuku potřebám jednotlivých žáků.
+1. Úvodní odstavec: co je generativní AI (jednou dvěma větami bez odborných slov), proč ji škola zařazuje a co žákům přinese. Zdůrazni střízlivý přístup: AI použijeme tam, kde podporuje učení, ne nahodile a ne místo přemýšlení žáků. Uveď, že vyučujícím pomáhá lépe přizpůsobit výuku potřebám jednotlivých žáků.
 2. Odstavec o tom, jak žáky učíme s AI zacházet: ověřovat informace, poznat chybu AI, chránit své údaje.
 3. Výčet aplikací: u každé jedna věta, k čemu ji použijeme, a věková hranice podle podmínek služby.
 4. Krátký závěr s nabídkou dotazů a kontaktem.

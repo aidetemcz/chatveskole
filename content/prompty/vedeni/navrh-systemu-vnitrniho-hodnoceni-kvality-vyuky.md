@@ -20,13 +20,13 @@ Základní principy: např. transparentnost, participace, podpora profesního r�
 
 Strukturu systému: přehled procesů, datových zdrojů, nástrojů a odpovědností.
 
-Metody sběru dat: hospitace, vzájemná návštěva hodin, dotazníky pro žáky a rodiče, analýza výsledků žáků, sebehodnocení učitelů, digitální platformy.
+Metody sběru dat: hospitace, vzájemná návštěva hodin, dotazníky pro žáky a rodiče, analýza výsledků žáků, sebehodnocení vyučujících, digitální platformy.
 
 Kritéria a ukazatele kvality výuky: jasně formulované deskriptory pro klíčové oblasti (plánování, řízení třídy, aktivizace žáků, využití technologií, klima).
 
 Postupy vyhodnocování a interpretace dat: kdo vyhodnocuje, jak často, jak se data triangulují a prezentují.
 
-Zpětnou vazbu a podporu učitelům: formáty konzultací, mentoring, akční plány profesního rozvoje.
+Zpětnou vazbu a podporu vyučujícím: formáty konzultací, mentoring, akční plány profesního rozvoje.
 
 Akční plán zlepšování: konkrétní opatření, termíny, zodpovědné osoby a potřebné zdroje.
 
@@ -63,7 +63,7 @@ Odpovídej podpůrně, povzbuzuj k diskusi a dbej na to, aby dokument tvořil so
 
 ## Co je cílem promptu
 
-Cílem promptu „Návrh systému vnitřního hodnocení kvality výuky“ je usnadnit vedení školy a pedagogickému týmu vytvoření jasného, transparentního a motivačního rámce, který sjednocuje procesy sledování, vyhodnocování a zlepšování výuky. Prompt pomáhá definovat společnou vizi, klíčová kritéria a sběr dat, propojuje je se zpětnou vazbou pro učitele a s akčními kroky k profesnímu rozvoji, aby celý systém podporoval kulturu neustálého učení a zvyšování kvality prospěchu žáků.
+Cílem promptu „Návrh systému vnitřního hodnocení kvality výuky“ je usnadnit vedení školy a pedagogickému týmu vytvoření jasného, transparentního a motivačního rámce, který sjednocuje procesy sledování, vyhodnocování a zlepšování výuky. Prompt pomáhá definovat společnou vizi, klíčová kritéria a sběr dat, propojuje je se zpětnou vazbou pro vyučující a s akčními kroky k profesnímu rozvoji, aby celý systém podporoval kulturu neustálého učení a zvyšování kvality prospěchu žáků.
 
 ## Jak prompt použít
 

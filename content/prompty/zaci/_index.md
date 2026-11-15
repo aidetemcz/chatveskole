@@ -2,7 +2,7 @@
 title: Prompty pro žáky
 popis: Deset způsobů, jak mohou žáci využívat generativní AI, aby jim pomáhala v učení, a ne myslela za ně. K osmi z nich prompt ke zkopírování. Připraveno s NPI ČR.
 pro_koho: zaci
-vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s učitelem"
+vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
 puvodni_url: https://chatveskole.cz/zpusoby-vyuziti-genai-ve-vyuce/
 aktualizovano: 2026-11-07
 stav: koncept
@@ -16,13 +16,13 @@ zdroje:
 
 # 10 způsobů využití generativní AI ve výuce na ZŠ a SŠ
 
-Těchto deset způsobů slouží učitelům, kteří přemýšlejí, jak využít generativní AI (GenAI) pro rozvoj žáků — tak, aby jim pomáhala v učení, a ne myslela za ně. K osmi způsobům máme prompt, který žák zkopíruje do chatbota. Inovace a Reflexe přínosu jsou spíš typy aktivit, které vede učitel, proto k nim prompt není.
+Těchto deset způsobů slouží vyučujícím, kteří přemýšlejí, jak využít generativní AI (GenAI) pro rozvoj žáků — tak, aby jim pomáhala v učení, a ne myslela za ně. K osmi způsobům máme prompt, který žák zkopíruje do chatbota. Inovace a Reflexe přínosu jsou spíš typy aktivit, které vede vyučující, proto k nim prompt není.
 
-**GenAI doporučujeme využívat hlavně se staršími žáky**, kteří už dokážou samostatně nebo s menší podporou posoudit, jestli jim AI v učení opravdu pomáhá.¹ Mladší žáci by s chatbotem měli pracovat jen s učitelem — třeba tak, že aplikaci ovládá učitel a otázky kladou žáci. Vždy zkontrolujte věkové podmínky konkrétního nástroje: [Věkové limity a legislativa](/zaciname/vekove-limity-a-legislativa).
+**GenAI doporučujeme využívat hlavně se staršími žáky**, kteří už dokážou samostatně nebo s menší podporou posoudit, jestli jim AI v učení opravdu pomáhá.¹ Mladší žáci by s chatbotem měli pracovat jen s vyučujícím — třeba tak, že aplikaci ovládá vyučující a otázky kladou žáci. Vždy zkontrolujte věkové podmínky konkrétního nástroje: [Věkové limity a legislativa](/zaciname/vekove-limity-a-legislativa).
 
 ## Proč prompty, a ne dovednosti
 
-Dovednosti jsou v Gemini a Claude určené dospělým (18+). Žákovské aktivity proto nabízíme jako prompty ke zkopírování, které fungují v jakémkoli chatbotu, i v bezplatné verzi. Většina promptů má navíc hotového chatbota v aplikaci [Tiny](/ve-vyuce/tiny) — žák nic nekopíruje, nepotřebuje účet u velké firmy a učitel vidí průběh konverzace.
+Dovednosti jsou v Gemini a Claude určené dospělým (18+). Žákovské aktivity proto nabízíme jako prompty ke zkopírování, které fungují v jakémkoli chatbotu, i v bezplatné verzi. Většina promptů má navíc hotového chatbota v aplikaci [Tiny](/ve-vyuce/tiny) — žák nic nekopíruje, nepotřebuje účet u velké firmy a vyučující vidí průběh konverzace.
 
 ## Deset způsobů
 

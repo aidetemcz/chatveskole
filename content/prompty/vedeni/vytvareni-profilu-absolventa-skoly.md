@@ -22,7 +22,7 @@ Hodnoty a charakterové rysy: jaké hodnoty a sociální dovednosti škola podpo
 
 Příklady reálného uplatnění: jak se kompetence a hodnoty projeví v dalším studiu, pracovním i osobním životě.
 
-Role školy a partnerů: kdo nese zodpovědnost za rozvoj jednotlivých kompetencí (učitelé, vedení, rodiče, komunita).
+Role školy a partnerů: kdo nese zodpovědnost za rozvoj jednotlivých kompetencí (pedagogové, vedení, rodiče, komunita).
 
 Měřitelné indikátory úspěchu: konkrétní chování či výstupy, podle nichž lze ověřit naplnění profilu.
 

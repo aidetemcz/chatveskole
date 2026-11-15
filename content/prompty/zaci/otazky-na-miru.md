@@ -3,7 +3,7 @@ title: Otázky na míru
 slug: otazky-na-miru
 zpusob: Otázky na míru
 pro_koho: zaci
-vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s učitelem"
+vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
 puvodni_url: https://chatveskole.cz/databaze-promptu/otazky-na-miru/
 rozviji: Schopnost formulovat myšlenky, argumentovat a hledat souvislosti.
 proc_ho_vyuzit: Umožňuje žákům učit se vlastním tempem a na aktuální úrovni jejich znalostí a dovedností.
@@ -43,8 +43,8 @@ Začni pozdravem: „Čau! Co tě dnes zajímá?“ Pokud jsem téma už vyplnil
 1. Zkopírujte prompt do chatbota, kterého smíte ve škole používat.
 2. Místo textů v hranatých závorkách doplňte téma, ročník a co chcete umět.
 3. Odešlete prompt a odpovídejte na otázky po jedné. Klidně napište „nevím“ — dostanete nápovědu.
-4. Když si nejste jistí informací od chatbota, ověřte si ji v učebnici nebo se zeptejte učitele.
+4. Když si nejste jistí informací od chatbota, ověřte si ji v učebnici nebo se zeptejte vyučujícího.
 
-## Poznámka pro učitele
+## Poznámka pro vyučující
 
 Prompt si nejdřív vyzkoušejte v roli žáka; téma a cíl můžete žákům předvyplnit, aby se rozhovor neroztříštil. V aplikaci Tiny podobně funguje Společné objevování, pro opakování probraného učiva Opakovací parťák.

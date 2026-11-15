@@ -3,7 +3,7 @@ title: Plánování
 slug: planovani
 zpusob: Plánování
 pro_koho: zaci
-vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s učitelem"
+vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
 puvodni_url: https://chatveskole.cz/databaze-promptu/planovani/
 rozviji: Schopnost organizace a realistického plánování cílů.
 proc_ho_vyuzit: Pomáhá žákům rozvrhnout si práci na základě konkrétních možností.
@@ -47,6 +47,6 @@ Bezpečnost: Neptej se mě na osobní údaje. Kdyby se v rozhovoru objevilo něc
 4. Nebojte se plán průběžně měnit, když zjistíte něco nového.
 5. Hotový harmonogram si uložte (třeba jako seznam úkolů s termíny) a sledujte podle něj, jak postupujete.
 
-## Poznámka pro učitele
+## Poznámka pro vyučující
 
 Prompt se hodí i pro skupinové projekty — skupina vyplní jeden prompt a role si rozdělí v kroku 7. V aplikaci Tiny odpovídá Chatbot pro plánování.
