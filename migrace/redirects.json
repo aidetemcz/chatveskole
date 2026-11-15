@@ -117,7 +117,7 @@
     },
     {
       "source": "/doporuceni-pro-vyuzivani-ai-na-vs",
-      "destination": "/ve-vyuce/doporuceni-vs",
+      "destination": "/ve-vyuce/doporuceni-zs-ss",
       "permanent": true
     },
     {
@@ -888,6 +888,11 @@
     {
       "source": "/funkce/prompty/pracovni-list-pro-reflexi-uciva",
       "destination": "/funkce/prompty/tvorba-exitek-a-propustek",
+      "permanent": true
+    },
+    {
+      "source": "/ve-vyuce/doporuceni-vs",
+      "destination": "/ve-vyuce/doporuceni-zs-ss",
       "permanent": true
     }
   ]
