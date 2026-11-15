@@ -35,8 +35,8 @@ souvisejici_prompty:   # původní prompty z kategorií Vizualizace a Různé (2
 
 - **Pro koho:** 8. a 9. ročník ZŠ a SŠ, informatika
 - **Délka:** 90–160 minut
-- **Nástroj:** Macaly od českých vývojářů (žáci od 13 let se souhlasem zákonného zástupce), jako alternativa Canva Kódování
-- **Co v ní najdete:** plán lekce, prezentaci k promítání, pracovní tabuli v Canvě pro návrh aplikace, 22minutové video s ukázkou tvorby v Macaly a nápady na žákovské projekty
+- **Nástroj:** ChatGPT Sites nebo Gemini Canvas a Canva Kódování
+- **Co v ní najdete:** plán lekce, prezentaci k promítání, pracovní tabuli v Canvě pro návrh aplikace, 22minutové video s ukázkou tvorby aplikace a nápady na žákovské projekty
 
 Metodika je součástí Kurikula umělé inteligence pro ZŠ a SŠ, které vytváříme ve spolupráci s Národním pedagogickým institutem.
 
