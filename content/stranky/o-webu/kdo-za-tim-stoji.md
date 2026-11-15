@@ -5,6 +5,9 @@ poradi: 1
 popis: Web Chatboti ve škole provozuje nezisková organizace AI dětem. Dovednosti a prompty vznikají ve spolupráci s učiteli, NPI, AI reaktorem UJEP a PdF MU.
 aktualizovano: 2026-11-07
 stav: ke-kontrole   # doplnit aktuální tým a spolupracovníky
+odkazy:
+  - { text: Kontakt, href: /o-webu/kontakt }
+  - { text: Nový web, href: /o-webu/novy-web }
 ---
 
 # Kdo stojí za stránkami Chatboti ve škole

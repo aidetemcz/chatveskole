@@ -10,6 +10,9 @@ zdroje:
   - https://digitalizace.rvp.cz/files/jak-na-ai-ve-skole-2025-plakat.pdf
   - https://aiassessmentscale.com/
   - https://www.linkedin.com/pulse/assessment-redesign-generative-ai-taxonomy-options-viability-lodge/
+odkazy:
+  - { text: Dovednost Školní pravidla, href: /skills/skolni-pravidla }
+  - { text: Doporučení pro ZŠ a SŠ, href: /ve-vyuce/doporuceni-zs-ss }
 ---
 
 # Tvorba pravidel pro využívání AI

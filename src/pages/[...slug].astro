@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Crumbs from '../components/Crumbs.astro';
 import Komponenta from '../components/Komponenta.astro';
+import OdkazyKonec from '../components/OdkazyKonec.astro';
 import { rozdel } from '../lib/komponenty';
 import { navigace } from '../lib/data';
 import { url } from '../lib/url';
@@ -24,6 +25,19 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 const koncept = d.stav === 'koncept' || d.stav === 'ke-kontrole';
 // tlačítko na konci stránky (frontmatter: tlacitko: { text, href }), např. „Přejít na Katalog promptů“
 const tlacitko = d.tlacitko && typeof d.tlacitko === 'object' && d.tlacitko.href ? (d.tlacitko as { text: string; href: string }) : null;
+// odkazy na konci stránky jako tlačítka: frontmatter tlacitko + odkazy: [{ text, href }] + poslední odstavec, který obsahuje jen interní odkazy
+type Odkaz = { text: string; href: string };
+const zFm: Odkaz[] = [tlacitko, ...(Array.isArray(d.odkazy) ? d.odkazy : [])].filter((o): o is Odkaz => !!o && !!o.href).map((o) => ({ text: o.text, href: url(o.href) }));
+const posledni = casti[casti.length - 1];
+let zTextu: Odkaz[] = [];
+if (posledni && posledni.typ === 'html') {
+  const m = posledni.html.match(/<p>((?:\s*<a [^>]*>[^<]*<\/a>\s*[·|]?)+)\s*<\/p>\s*$/);
+  if (m) {
+    const odk = [...m[1].matchAll(/<a [^>]*href="([^"]+)"[^>]*>([^<]*)<\/a>/g)].map(([, h, t]) => ({ href: h, text: t.trim() }));
+    if (odk.length && odk.every((o) => o.href.startsWith('/'))) { zTextu = odk; posledni.html = posledni.html.slice(0, m.index); }
+  }
+}
+const odkazy = [...zFm, ...zTextu.filter((o) => !zFm.some((f) => f.href === o.href))];
 ---
 <Base title={d.title} description={d.popis}>
   <div class="wrap layout">
@@ -36,9 +50,7 @@ const tlacitko = d.tlacitko && typeof d.tlacitko === 'object' && d.tlacitko.href
       {casti.map((c, i) => c.typ === 'html'
         ? <div class:list={['prose', { 'prose--dalsi': i > 0 }]} set:html={c.html} />
         : <Komponenta klic={c.klic} />)}
-      {tlacitko && (
-        <p class="tlacitko-konec"><a class="btn btn--primary" href={url(tlacitko.href)}>{tlacitko.text} →</a></p>
-      )}
+      <OdkazyKonec odkazy={odkazy} />
       {datum && (
         <footer class="meta">
           {datum && <p>Aktualizováno {datum}</p>}

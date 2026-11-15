@@ -7,6 +7,10 @@ sablona: zmeny-funkci        # vykreslí se z data/funkce-chatbotu.yaml podle vz
 data: data/funkce-chatbotu.yaml
 aktualizovano: 2026-11-07
 stav: koncept
+odkazy:
+  - { text: Co jsou dovednosti, href: /funkce/skills }
+  - { text: Pluginy, href: /funkce/pluginy }
+  - { text: Katalog dovedností, href: /skills }
 ---
 
 # Jak se mění funkce chatbotů

@@ -11,6 +11,10 @@ zdroje:
   - https://support.claude.com/en/articles/13837440-use-plugins-in-claude
   - https://claude.com/docs/plugins/overview
   - https://mc.merill.net/message/MC1484008
+odkazy:
+  - { text: Katalog dovedností, href: /skills }
+  - { text: Co jsou dovednosti, href: /funkce/skills }
+  - { text: Konektory, href: /funkce/konektory }
 ---
 
 # Pluginy

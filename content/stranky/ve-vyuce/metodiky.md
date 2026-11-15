@@ -8,6 +8,8 @@ stav: koncept
 zdroje:
   - https://kurikulum.aidetem.cz/vypis-vseho/
   - https://www.tiny.school/metodiky/
+odkazy:
+  - { text: AI aplikace Tiny, href: /ve-vyuce/tiny }
 ---
 
 # Metodické materiály

@@ -1,4 +1,5 @@
 ---
+import OdkazyKonec from '../../components/OdkazyKonec.astro';
 import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import SkillCard from '../../components/SkillCard.astro';
@@ -27,4 +28,7 @@ const items = sada.skills.map(skillBySlug).filter(Boolean) as Skill[];
       <div class="grid-2">{items.map((k) => <SkillCard skill={k} />)}</div>
     </div>
   </section>
+  <div class="band band--white">
+    <div class="wrap"><OdkazyKonec odkazy={[{ text: 'Katalog dovedností', href: url('/skills') }, { text: 'Co jsou dovednosti a jak je nainstalovat', href: url('/funkce/skills') }, { text: 'Metodické materiály', href: url('/ve-vyuce/metodiky') }]} /></div>
+  </div>
 </Base>

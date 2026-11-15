@@ -1,4 +1,5 @@
 ---
+import OdkazyKonec from '../components/OdkazyKonec.astro';
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Crumbs from '../components/Crumbs.astro';
@@ -66,7 +67,7 @@ const views = [
 
   <div class="band band--white">
     <div class="wrap">
-      <p style="color: var(--muted)">Jak prompt napsat nebo upravit pro svou třídu, popisujeme na stránce <a href={url('/funkce/prompty')}>Prompty</a>.</p>
+      <OdkazyKonec odkazy={[{ text: 'Jak prompt napsat nebo upravit', href: url('/funkce/prompty') }, { text: 'Katalog dovedností', href: url('/skills') }]} />
     </div>
   </div>
 </Base>

@@ -1,4 +1,6 @@
 ---
+import OdkazyKonec from '../../components/OdkazyKonec.astro';
+import { url } from '../../lib/url';
 // Změny ve funkcích chatbotů — celostránková šablona (sablona: zmeny-funkci).
 // Texty z content/stranky/funkce/zmeny-2026.md, data z data/funkce-chatbotu.yaml.
 import { getEntry } from 'astro:content';
@@ -73,11 +75,10 @@ const datum = d.aktualizovano ? datumCesky(d.aktualizovano) : null;
     </section>
   ))}
 
-  {datum && (
-    <div class="wrap">
-      <p class="aktualizace">Aktualizováno {datum}</p>
-    </div>
-  )}
+  <div class="wrap stack" style="gap: 24px; padding-top: 48px">
+    <OdkazyKonec odkazy={(Array.isArray(d.odkazy) ? d.odkazy : []).map((o: { text: string; href: string }) => ({ text: o.text, href: url(o.href) }))} />
+    {datum && <p class="aktualizace">Aktualizováno {datum}</p>}
+  </div>
 </Base>
 
 <style>

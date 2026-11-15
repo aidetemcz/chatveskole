@@ -5,6 +5,9 @@ poradi: 5
 popis: Doporučení pracovní skupiny prg.ai a Univerzity Karlovy pro využívání generativní AI na vysokých školách — pro studenty, pedagogy, výzkumníky i vedení.
 aktualizovano: 2026-11-07
 stav: ke-kontrole   # ověřit, zda pracovní skupina nevydala novější verzi
+odkazy:
+  - { text: Doporučení pro ZŠ a SŠ, href: /ve-vyuce/doporuceni-zs-ss }
+  - { text: Tvorba pravidel pro využívání AI, href: /ve-vyuce/pravidla-pro-ai }
 ---
 
 # Doporučení pro využívání generativní AI na vysokých školách

@@ -10,6 +10,8 @@ zdroje:
   - https://tiny.school
   - https://www.tiny.school/popis-sluzby/
   - https://www.tiny.school/podminky-uziti/
+odkazy:
+  - { text: Prompty pro žáky, href: /funkce/prompty/zaci }
 ---
 
 # AI aplikace Tiny
