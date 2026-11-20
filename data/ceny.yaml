@@ -1,7 +1,7 @@
 # Ceny a tarify chatbotů pro stránku Začínáme → Kolik stojí chatboti.
 # Stav: 15. 11. 2026, ověřeno v oficiálních cenících a nápovědách vývojářů (část jen z výsledků vyhledávání, stránky chatgpt.com, help.openai.com, gemini.google a perplexity.ai nešly přímo otevřít). Ceny jsou orientační, vč. DPH u spotřebitelských tarifů v Kč, jinak bez DPH.
 # ⚠ = údaj z neoficiálního nebo staršího zdroje, před zveřejněním ověřit.
-# Dovednosti v ChatGPT od tarifu Plus: opraveno podle Evy 20. 11. 2026.
+# Dovednosti v ChatGPT od tarifu Plus a pluginy z adresáře i ve Free a Go: opraveno podle Evy 20. 11. 2026.
 # Trénink = zda vývojář smí použít vaše konverzace k učení modelů.
 
 aktualizovano: 2026-11-20
@@ -13,10 +13,10 @@ nastroje:
     tarify:
       - nazev: Free
         cena: 0 Kč
-        pozn: Omezený počet zpráv, obrázků a souborů, projekty (5 souborů na projekt). S reklamami (ne pro uživatele do 18 let), bez pluginů, samostatných dovedností a Sites.
+        pozn: Omezený počet zpráv, obrázků a souborů, projekty (5 souborů na projekt). S reklamami (ne pro uživatele do 18 let), pluginy jen z adresáře, bez samostatných dovedností a Sites.
       - nazev: Go
         cena: 249 Kč měsíčně ⚠
-        pozn: Víc zpráv a souborů než Free, bez nejsilnějšího modelu, s reklamami. Bez pluginů, samostatných dovedností a Sites, hloubkový výzkum jen omezeně.
+        pozn: Víc zpráv a souborů než Free, bez nejsilnějšího modelu, s reklamami. Pluginy jen z adresáře, bez samostatných dovedností a Sites, hloubkový výzkum jen omezeně.
       - nazev: Plus
         cena: 499 Kč měsíčně ⚠
         pozn: Bez reklam, s hloubkovým výzkumem, pluginy, dovednostmi a ChatGPT Work.
