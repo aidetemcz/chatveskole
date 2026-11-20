@@ -173,7 +173,7 @@ matice:
       stitek: null
       nazev: Dovednosti
       poznamka: Ve všech tarifech včetně Free, musí být zapnuté spouštění kódu. ZIP se SKILL.md nahrajete v Customize → Skills. Volají se lomítkem.
-- funkce: Pluginy
+- funkce: Sady dovedností (pluginy)
   popis: Balíček dovedností, konektorů a nástrojů k instalaci
   nastroje:
     chatgpt:

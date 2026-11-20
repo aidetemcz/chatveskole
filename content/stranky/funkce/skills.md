@@ -16,7 +16,7 @@ zdroje:
   - https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-add-skills
   - https://help.openai.com/en/articles/20001066-skills-in-chatgpt
 odkazy:
-  - { text: Pluginy, href: /funkce/pluginy }
+  - { text: Sady dovedností (pluginy), href: /funkce/pluginy }
 ---
 
 # Dovednosti (skills)

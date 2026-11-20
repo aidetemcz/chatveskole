@@ -9,7 +9,7 @@ aktualizovano: 2026-11-20
 stav: koncept
 odkazy:
   - { text: Co jsou dovednosti, href: /funkce/skills }
-  - { text: Pluginy, href: /funkce/pluginy }
+  - { text: Sady dovedností (pluginy), href: /funkce/pluginy }
   - { text: Katalog dovedností, href: /skills }
 ---
 
@@ -19,7 +19,7 @@ ChatGPT, Gemini, Copilot a Claude opouštějí hotové asistenty, které se otev
 
 <!-- komponenta: tři teze -->
 
-**AI asistenti končí.** AI asistenti, které jste možná znali jako Modely GPT nebo Google Gem, končí a nastupují tzv. dovednosti (skills) a rozšíření (pluginy). V Google se Gems převedou na dovednosti samy, stačí je zkontrolovat a zapnout. V ChatGPT je třeba je přemigrovat ručně.
+**AI asistenti končí.** AI asistenti, které jste možná znali jako Modely GPT nebo Google Gem, končí a nastupují tzv. dovednosti (skills) a sady dovedností (pluginy). V Google se Gems převedou na dovednosti samy, stačí je zkontrolovat a zapnout. V ChatGPT je třeba je přemigrovat ručně.
 
 **Nastupují dovednosti a pluginy.** Dovednosti nebo pluginy jsou instrukce pro chatbota zabalené do funkce, kterou si kdykoliv vyvoláte přes lomítko nebo zavináč a šetří velké množství času.
 

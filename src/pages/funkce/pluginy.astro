@@ -27,7 +27,7 @@ const bloky = (h: string) => h.split(/(?=<h3[\s>])/).filter((k) => /^\s*<h3/.tes
 const body = (h: string) => [...(h.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').matchAll(/<li>([\s\S]*?)<\/li>/g)].map(([, t]) => t.trim());
 
 // Prompt / dovednost / plugin
-const srovnani = najdi(/nebo plugin/i);
+const srovnani = najdi(/^Prompt, dovednost/i);
 const srovnaniHtml = htmlOddilu(srovnani);
 const STITKY_SROVNANI = ['1 zadání', '1 úkol', 'celá oblast'];
 const cesty = polozky(srovnaniHtml);
