@@ -812,7 +812,7 @@ import { url } from '../lib/url';
 
   function scena(canvas, tlacitko, druh) {
     const ctx = canvas.getContext('2d');
-    const DELKA = druh === 4 ? 10.5 : 12.5;
+    const DELKA = druh === 4 ? 14 : 12.5;
     let scale = 1, bezi = false, viditelna = true, posledni = 0, T = 0;
 
     // pixelový obrázek: X = obrys, o = výplň; občas chybí pixel obrysu (jako v ostatních animacích)
@@ -871,11 +871,13 @@ import { url } from '../lib/url';
     const SLOZKY = [{ x: 170, nazev: 'Grantové žádosti' }, { x: 400, nazev: 'Třídní schůzky' }, { x: 630, nazev: 'Školní akce' }];
     const SY = 200, SC = 6, SW = 14 * SC, SH = 9 * SC;
     const PANEL = { x: 46, y: 34, w: 708, h: 532 };
-    const INSTRUKCE = ['Jsi grantový konzultant naší školy.', 'Piš věcně a drž se podmínek výzvy.'];
+    // instrukce projektu: delší prompt, zobrazí se jen začátek a tři tečky
+    const INSTRUKCE = ['Jsi grantový konzultant naší školy. Pomáháš psát', 'žádosti o dotace pro ZŠ. Drž se podmínek výzvy,', 'piš věcně a konkrétně, u každé aktivity uveď cíl,', 'výstup a rozpočet. Vycházej z našich úspěšných…'];
     const SOUBORY = ['zadost-2024.pdf', 'zadost-2025.pdf', 'podminky-vyzvy.pdf', 'rozpocet.xlsx'];
+    const VOLANI = 'Hodnocení kvality žádosti', DOTAZ_P = 'zkontroluj novou žádost';
     function kresliProjekty() {
       const tik = Math.floor(T * 3);
-      const otevreni = ease(okno(2.1, 2.6)) * (1 - ease(okno(8.0, 8.4)));
+      const otevreni = ease(okno(2.1, 2.6)) * (1 - ease(okno(13.0, 13.4)));
       // složky
       ctx.globalAlpha = 1 - 0.85 * otevreni;
       text('Projekty', 60, 92, 22, B.navyDeep, 700);
@@ -886,50 +888,77 @@ import { url } from '../lib/url';
         text(s.nazev, s.x, SY + 48, 15, B.navyDeep, 400, 'center');
       });
       ctx.globalAlpha = 1;
+      const x0 = PANEL.x + 30, tlac = { x: x0 - 8, y: 470, w: 290, h: 48 }, chat = { x: x0 - 8, y: 466, w: PANEL.w - 44, h: 70 };
       // box projektu se rozjede ze složky
       if (otevreni > 0) {
         const z = { x: SLOZKY[0].x - SW / 2, y: SY - SH / 2, w: SW, h: SH }, k = otevreni;
         const r = { x: lerp(z.x, PANEL.x, k), y: lerp(z.y, PANEL.y, k), w: lerp(z.w, PANEL.w, k), h: lerp(z.h, PANEL.h, k) };
         ram(r.x, r.y, r.w, r.h, tik, B.skyDeep);
         if (k > 0.97) {
-          const x0 = PANEL.x + 30;
           obr(SLOZKA, x0, 62, 2.4, B.red, '#f6d4d4');
           text('Grantové žádosti', x0 + 46, 74, 22, B.navyDeep, 700);
-          const krizek = okno(7.7, 7.75) > 0 && T < 8.1;
-          obr(IKONA_X, PANEL.x + PANEL.w - 52, 64, 3, krizek ? B.red : B.navyDeep, B.white);
           cara({ x: PANEL.x + 20, y: 108 }, { x: PANEL.x + PANEL.w - 20, y: 108 }, tik);
-          // instrukce se píšou
-          text('INSTRUKCE', x0, 140, 13, B.skyInk, 700);
-          const celkem = INSTRUKCE.join(' ').length, n = Math.floor(okno(2.8, 4.4) * celkem);
+          // instrukce (dlouhý prompt) se píšou
+          text('INSTRUKCE', x0, 136, 13, B.skyInk, 700);
+          const celkem = INSTRUKCE.join(' ').length, n = Math.floor(okno(2.8, 5.0) * celkem);
           let zbyva = n;
-          INSTRUKCE.forEach((r2, i) => { if (zbyva <= 0) return; text(r2.slice(0, zbyva), x0, 172 + i * 28, 17, B.navyDeep); zbyva -= r2.length + 1; });
+          INSTRUKCE.forEach((r2, i) => { if (zbyva <= 0) return; text(r2.slice(0, zbyva), x0, 164 + i * 25, 16, B.navyDeep); zbyva -= r2.length + 1; });
           // znalosti (soubory)
-          text('ZNALOSTI', x0, 252, 13, B.skyInk, 700);
+          text('ZNALOSTI', x0, 284, 13, B.skyInk, 700);
           SOUBORY.forEach((s, i) => {
-            const u = okno(4.6 + i * 0.3, 4.9 + i * 0.3); if (u <= 0) return;
-            const fx = x0 + (i % 2) * 330, fy = 280 + Math.floor(i / 2) * 52, k2 = outBack(u);
+            const u = okno(5.1 + i * 0.3, 5.4 + i * 0.3); if (u <= 0) return;
+            const fx = x0 + (i % 2) * 330, fy = 306 + Math.floor(i / 2) * 52, k2 = outBack(u);
             ctx.globalAlpha = u; ram(fx - 8, fy - 6, 300 * k2, 46, tik + i, B.sky);
             if (u > 0.6) { obr(DOKUMENT, fx + 6, fy + 6, 3, B.skyDeep, B.bg); text(s, fx + 34, fy + 17, 16, B.navyDeep); }
             ctx.globalAlpha = 1;
           });
-          // dovednost (skill) zavolaná do projektu
-          text('DOVEDNOSTI', x0, 410, 13, B.skyInk, 700);
-          const u = okno(5.9, 6.3);
-          if (u > 0) {
-            ctx.globalAlpha = u; ram(x0 - 8, 434, 420 * outBack(u), 50, tik + 9, B.red);
-            if (u > 0.6) { obr(ZAVINAC, x0 + 6, 449, 3, B.red, B.red, tik + 40); text('Hodnocení kvality žádosti', x0 + 36, 459, 17, B.navyDeep, 700); }
+          // tlačítko „Nový chat v projektu“, po kliknutí chat, do kterého se zavolá dovednost
+          const uTl = okno(6.4, 6.7), uChat = okno(7.7, 8.0);
+          if (uTl > 0 && uChat < 1) {
+            ctx.globalAlpha = uTl * (1 - uChat);
+            const stisk = T > 7.5 && T < 7.7;
+            ram(tlac.x, tlac.y, tlac.w, tlac.h, tik + 11, stisk ? B.red : B.skyDeep, stisk ? '#fdf1f1' : B.white);
+            text('+ Nový chat v projektu', tlac.x + 20, tlac.y + 25, 16, B.navyDeep, 700);
+            ctx.globalAlpha = 1;
+          }
+          if (uChat > 0) {
+            ctx.globalAlpha = uChat;
+            ram(chat.x, chat.y, chat.w, chat.h, tik + 12, B.skyDeep);
+            const tx = chat.x + 22, ty = chat.y + 36;
+            // zavolání dovednosti: zavináč, název se doplní, pak vlastní zadání
+            const nZav = okno(8.2, 8.4), nNazev = Math.floor(okno(8.4, 9.4) * VOLANI.length), nDotaz = Math.floor(okno(9.6, 11.0) * DOTAZ_P.length);
+            let kx = tx;
+            if (nZav > 0) {
+              obr(ZAVINAC, tx, ty - 11, 3, B.red, B.red, tik + 40);
+              kx = tx + 28;
+              ctx.font = '700 17px ' + MONO;
+              text(VOLANI.slice(0, nNazev), kx, ty, 17, B.navyDeep, 700);
+              kx += ctx.measureText(VOLANI.slice(0, nNazev)).width + 10;
+            }
+            if (nDotaz > 0) { text(DOTAZ_P.slice(0, nDotaz), kx, ty, 17, B.navyDeep); ctx.font = '17px ' + MONO; kx += ctx.measureText(DOTAZ_P.slice(0, nDotaz)).width + 2; }
+            const odeslano = T > 11.6;
+            if (!odeslano && (T < 11.0 || (T * 2) % 1 < 0.55)) { ctx.fillStyle = B.navyDeep; ctx.fillRect(Math.round(nZav > 0 ? kx : tx), ty - 10, 2, 20); }
+            if (nZav <= 0) text('Napište zprávu…', tx, ty, 17, B.skyDeep);
+            // tlačítko odeslat
+            const bx = chat.x + chat.w - 36, by = chat.y + 35;
+            for (let j = -6; j <= 6; j++) for (let i = -6; i <= 6; i++) { const d = Math.hypot(i, j); if (d > 5.8 || (d > 4.9 && h3(i, j, tik) < 0.2)) continue; ctx.fillStyle = nDotaz > 0 ? (odeslano && T < 11.8 ? B.redDark : B.red) : B.sky; ctx.fillRect(bx + i * 3 - 1, by + j * 3 - 1, 3, 3); }
+            ctx.fillStyle = B.white; for (let j = -3; j <= 3; j++) ctx.fillRect(bx - 1, by + j * 3 - 1, 3, 3); for (const [i, j] of [[-1, -2], [1, -2], [-2, -1], [2, -1]]) ctx.fillRect(bx + i * 3 - 1, by + j * 3 - 1, 3, 3);
+            if (odeslano) text('Dovednost pracuje s instrukcemi a znalostmi projektu…', tx, chat.y - 16, 14, B.skyInk);
             ctx.globalAlpha = 1;
           }
         }
       }
-      // kurzor: ke složce, klik, ke křížku, klik, pryč
-      const start = { x: 640, y: 470 }, nadSlozkou = { x: SLOZKY[0].x + 6, y: SY + 2 }, nadKrizkem = { x: PANEL.x + PANEL.w - 44, y: 72 };
+      // kurzor: ke složce, klik, k tlačítku Nový chat, klik, k odeslání, klik, pryč
+      const start = { x: 640, y: 470 }, nadSlozkou = { x: SLOZKY[0].x + 6, y: SY + 2 }, nadTlac = { x: tlac.x + 120, y: tlac.y + 26 }, nadOdeslat = { x: chat.x + chat.w - 32, y: chat.y + 38 }, stranou = { x: chat.x + chat.w - 160, y: chat.y + 84 };
       let p = start;
       if (T < 1.9) p = mix(start, nadSlozkou, ease(okno(0.5, 1.8)));
       else if (T < 6.6) p = nadSlozkou;
-      else if (T < 8.5) p = mix(nadSlozkou, nadKrizkem, ease(okno(6.6, 7.6)));
-      else p = mix(nadKrizkem, start, ease(okno(8.6, 9.6)));
-      const klik = T >= 1.9 && T < 2.5 ? (T - 1.9) / 0.6 : T >= 7.7 && T < 8.3 ? (T - 7.7) / 0.6 : 0;
+      else if (T < 7.6) p = mix(nadSlozkou, nadTlac, ease(okno(6.6, 7.4)));
+      else if (T < 8.2) p = nadTlac;
+      else if (T < 11.0) p = mix(nadTlac, stranou, ease(okno(8.2, 8.8)));
+      else if (T < 12.0) p = mix(stranou, nadOdeslat, ease(okno(11.0, 11.5)));
+      else p = mix(nadOdeslat, start, ease(okno(12.2, 13.0)));
+      const klik = T >= 1.9 && T < 2.5 ? (T - 1.9) / 0.6 : T >= 7.5 && T < 8.1 ? (T - 7.5) / 0.6 : T >= 11.6 && T < 12.2 ? (T - 11.6) / 0.6 : 0;
       kurzor(p.x, p.y, klik);
     }
 
