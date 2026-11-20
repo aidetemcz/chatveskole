@@ -1,13 +1,16 @@
 ---
 title: Plánování
 slug: planovani
-zpusob: Plánování
+zpusob: Plánování a struktura
 pro_koho: zaci
 vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
 puvodni_url: https://chatveskole.cz/databaze-promptu/planovani/
-rozviji: Schopnost organizace a realistického plánování cílů.
-proc_ho_vyuzit: Pomáhá žákům rozvrhnout si práci na základě konkrétních možností.
 tiny_chatbot: Chatbot pro plánování
+zpusob_odkaz: /ve-vyuce/zpusoby-vyuziti-ai#plánování-a-struktura
+perex: "Žák si rozvrhne práci nebo osnovu dřív, než začne tvořit."
+pojistka: "Chatbot nevypíše osnovu ani plán najednou a čeká na návrh žáka."
+jak_poznate: "Předloží první návrh i konečnou verzi a vysvětlí, co změnil a proč."
+aktualizovano: 2026-11-20
 ---
 
 Chatbot vám pomůže proměnit velký úkol v realistický plán: kroky, odhad času, priority, rizika a harmonogram. Plán sestavujete vy, chatbot se ptá.

@@ -24,7 +24,7 @@ PAGES = {
     "jak-vytvaret-prompt": ("/funkce/prompty", "sloučit", "Sloučeno do stránky Prompty"),
     "prompty": ("/prompty", "přesunout", "Databáze promptů → Katalog promptů"),
     "prompty-pro-pedagogy": ("/prompty", "přesunout", "Databáze promptů → Katalog promptů"),
-    "zpusoby-vyuziti-genai-ve-vyuce": ("/funkce/prompty/zaci", "přesunout", "10 způsobů využití GenAI + žákovské prompty (s NPI)"),
+    "zpusoby-vyuziti-genai-ve-vyuce": ("/ve-vyuce/zpusoby-vyuziti-ai", "přepsat", "Nahrazeno stránkou Způsoby využití AI ve výuce (10 způsobů ve 4 skupinách); žákovské prompty na /funkce/prompty/zaci"),
     "co-jsou-ai-asistenti": ("/funkce/zmeny-2026", "nahradit", "Asistenti (GPTs, Gems) končí — vysvětlení na stránce změn"),
     "jak-vyuzivat-ai-asistenty": ("/funkce/skills", "nahradit", "Instalace skills místo GPTs/Gems"),
     "jak-vytvaret-ai-asistenty": ("/funkce/skills", "nahradit", "Jak napsat vlastní skill"),

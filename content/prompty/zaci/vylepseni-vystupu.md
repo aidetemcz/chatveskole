@@ -1,13 +1,16 @@
 ---
 title: Vylepšení výstupu
 slug: vylepseni-vystupu
-zpusob: Vylepšení výstupu
+zpusob: Hledání chyb
 pro_koho: zaci
 vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
 puvodni_url: https://chatveskole.cz/databaze-promptu/vylepseni-vystupu/
-rozviji: Kritické myšlení, jazykovou kulturu a schopnost posoudit kvalitu informací.
-proc_ho_vyuzit: Učí žáky vnímat výstup GenAI ne jako hotový produkt, ale pouze jako výchozí bod pro další vylepšení.
 tiny_chatbot: Chybující chatbot
+zpusob_odkaz: /ve-vyuce/zpusoby-vyuziti-ai#hledání-chyb
+perex: "Žák kontroluje text, ve kterém AI záměrně chybuje."
+pojistka: "Chatbot chyby neoznačuje. Vyučující má jejich přehled a na závěr je se třídou projde."
+jak_poznate: "Najde podstatné chyby a umí zdůvodnit, proč jde o chybu."
+aktualizovano: 2026-11-20
 ---
 
 Chatbot napíše text, který vypadá věrohodně, ale schválně obsahuje chyby. Vaším úkolem je je najít, ověřit a opravit — a zažít, že výstup AI není hotová pravda.

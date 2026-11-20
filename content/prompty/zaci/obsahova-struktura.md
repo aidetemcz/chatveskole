@@ -1,13 +1,16 @@
 ---
 title: Obsahová struktura
 slug: obsahova-struktura
-zpusob: Obsahová struktura
+zpusob: Plánování a struktura
 pro_koho: zaci
 vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
 puvodni_url: https://chatveskole.cz/databaze-promptu/obsahova-struktura/
-rozviji: Porozumění komplexitě tématu, schopnost třídit a prioritizovat informace a vytvářet logickou strukturu.
-proc_ho_vyuzit: Pomáhá žákům pojmout téma komplexněji a předem si promyslet obsahovou stavbu výstupu.
-tiny_chatbot: null   # v Tiny zatím odpovídající chatbot není
+tiny_chatbot: Chatbot pro plánování
+zpusob_odkaz: /ve-vyuce/zpusoby-vyuziti-ai#plánování-a-struktura
+perex: "Žák si rozvrhne práci nebo osnovu dřív, než začne tvořit."
+pojistka: "Chatbot nevypíše osnovu ani plán najednou a čeká na návrh žáka."
+jak_poznate: "Předloží první návrh i konečnou verzi a vysvětlí, co změnil a proč."
+aktualizovano: 2026-11-20
 ---
 
 Chatbot vás krok za krokem provede návrhem osnovy pro prezentaci, slohovou práci nebo myšlenkovou mapu. Myšlenky vymýšlíte vy, chatbot se ptá a pomáhá je uspořádat.

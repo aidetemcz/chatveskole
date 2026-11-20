@@ -10,7 +10,11 @@ import { promptText } from '../../../../lib/data';
 
 const uvod = (await getEntry('promptyUvod', 'zaci/_index'))!;
 const { Content } = await render(uvod);
-const zaci = (await getCollection('prompty')).filter((p) => p.id.startsWith('zaci/')).sort((a, b) => a.data.title.localeCompare(b.data.title, 'cs'));
+// pořadí podle stránky Způsoby využití AI ve výuce
+const PORADI = ['Opakování', 'Rozhovor v roli', 'Argumentace', 'Hledání chyb', 'Brainstorming', 'Plánování a struktura', 'Zpětná vazba'];
+const misto = (z?: string | null) => { const i = PORADI.indexOf(z ?? ''); return i === -1 ? 99 : i; };
+const zaci = (await getCollection('prompty')).filter((p) => p.id.startsWith('zaci/'))
+  .sort((a, b) => misto(a.data.zpusob) - misto(b.data.zpusob) || a.data.title.localeCompare(b.data.title, 'cs'));
 ---
 <Base title={uvod.data.title} description={uvod.data.popis}>
   <div class="band band--white" style="padding-bottom: 32px">
@@ -24,7 +28,7 @@ const zaci = (await getCollection('prompty')).filter((p) => p.id.startsWith('zac
   </div>
   <section class="band band--sky" aria-label="Prompty pro žáky">
     <div class="wrap grid-2">
-      {zaci.map((p) => <PromptCard title={p.data.title} href={`/funkce/prompty/zaci/${p.id.split('/')[1]}`} text={promptText(p.body ?? '')} id={`zaci-${p.id.split('/')[1]}`} />)}
+      {zaci.map((p) => <PromptCard title={p.data.title} href={`/funkce/prompty/zaci/${p.id.split('/')[1]}`} text={promptText(p.body ?? '')} id={`zaci-${p.id.split('/')[1]}`} popis={p.data.zpusob ? `Způsob: ${p.data.zpusob}` : null} />)}
     </div>
   </section>
   <div class="band band--white">

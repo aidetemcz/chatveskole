@@ -3,7 +3,7 @@ title: Tvorba pravidel pro využívání AI
 menu: Chatboti ve výuce
 poradi: 3
 popis: Jak ve škole nastavit pravidla pro využívání AI a digitálních technologií — společně se žáky, nebo jako vedení školy. Workshop, návrhy formulací, osnova pravidel a dovednost na pomoc.
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-20
 stav: koncept
 zdroje:
   - https://digitalizace.rvp.cz/ke-stazeni#doporuceni-pro-ai
@@ -96,7 +96,7 @@ Provede vás tvorbou pravidel krok za krokem: zeptá se na oblasti, cílové sku
 
 ### Úrovně využití AI v úlohách
 
-U každé úlohy žákům řekněte, jak smí AI použít. Inspirací je škála AI Assessment Scale Leona Furzeho, ze které vychází i našich [10 způsobů využití AI ve výuce](/funkce/prompty/zaci):
+U každé úlohy žákům řekněte, jak smí AI použít. Inspirací je škála AI Assessment Scale Leona Furzeho, ze které vychází i našich [10 způsobů využití AI ve výuce](/ve-vyuce/zpusoby-vyuziti-ai):
 
 1. **Bez AI** — žák pracuje sám (například písemná práce ve třídě).
 2. **AI pro plánování** — nápady, osnova, plán; samotnou práci dělá žák.

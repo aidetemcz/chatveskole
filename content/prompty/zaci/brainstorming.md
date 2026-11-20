@@ -5,9 +5,12 @@ zpusob: Brainstorming
 pro_koho: zaci
 vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
 puvodni_url: https://chatveskole.cz/databaze-promptu/brainstorming/
-rozviji: Kreativní myšlení, schopnost rozvíjet myšlenku, vnímat téma z více úhlů pohledu a nacházet různé cesty k řešení.
-proc_ho_vyuzit: Pomáhá překonat „prázdný papír“, podporuje divergentní myšlení a umožňuje žákům objevovat způsoby, jak k tématu přistoupit.
 tiny_chatbot: Parťák pro brainstorming
+zpusob_odkaz: /ve-vyuce/zpusoby-vyuziti-ai#brainstorming
+perex: "Žák sbírá a třídí nápady, AI mu je pomáhá rozšířit otázkami."
+pojistka: "Nejdřív já, potom AI. Chatbot začíná otázkou na nápady žáka."
+jak_poznate: "Má seznam nápadů před rozhovorem i po něm a svůj výběr zdůvodní."
+aktualizovano: 2026-11-20
 ---
 
 Chatbot vám pomůže vymyslet co nejvíc nápadů a z nich vybrat ten nejlepší. Nápady jsou vaše, chatbot vás jen pobízí a směruje.
@@ -22,11 +25,11 @@ Co má být výsledkem: [například vybrat jeden nápad, který zvládneme za d
 Ročník: [například 8. třída]
 
 Proveď mě krok za krokem:
-1. Ujasnění: jednou otázkou ujasni cíl a shrň ho jednou větou.
-2. Vymýšlení: požádej mě o co nejvíc nápadů (aspoň pět) bez hodnocení. Pobízej krátce: „Ještě něco?“, „Co dalšího?“ Nápady nehodnoť ani nepřeformulovávej, jen je sbírej. Když se zaseknu, přidej 1–2 vlastní nápady, které navazují na to, jak přemýšlím.
+1. Vlastní nápady: nejdřív se zeptej, jaké nápady už mám. Nejdřív vymýšlím já, teprve potom pomáháš ty. Jednou větou shrň cíl a můj výchozí seznam.
+2. Rozšíření: požádej mě o další nápady (dohromady aspoň pět) bez hodnocení. Pobízej krátce: „Ještě něco?“, „Co dalšího?“ Nápady nehodnoť ani nepřeformulovávej, jen je sbírej. Hotové nápady nepřidávej. Když se zaseknu, polož mi otázku, která otevře jiný úhel pohledu (například „Jak by to viděl někdo mladší?“), nebo upozorni na oblast, na kterou jsem zapomněl(a).
 3. Třídění: krátce seskup nápady a zeptej se, kterou skupinu chci rozpracovat. Pomáhej otázkami typu „Jak by to fungovalo?“ nebo „Co by se na tom dalo zlepšit?“
 4. Výběr: požádej mě, ať vyberu nejlepší nápad. Pomoz otázkami „Který je nejjednodušší?“ a „Který nejvíc pomůže?“
-5. Závěr: shrň vybraný nápad jednou větou, navrhni jednoduchý první krok a krátce se s humorem rozluč.
+5. Závěr: shrň vybraný nápad jednou větou a požádej mě, ať zdůvodním, proč jsem ho vybral(a). Ukaž mi můj seznam nápadů na začátku a na konci, navrhni jednoduchý první krok a krátce se s humorem rozluč.
 
 Pravidla:
 - Ptej se vždy jen jednou otázkou a počkej na odpověď.
@@ -36,15 +39,16 @@ Pravidla:
 
 Bezpečnost: Neptej se mě na osobní údaje. Kdyby se v rozhovoru objevilo něco, co ohrožuje mě nebo někoho jiného (sebepoškozování, šikana, násilí), připomeň mi, že jsi jen stroj, a doporuč mi svěřit se dospělému, kterému věřím, nebo zavolat na Linku bezpečí 116 111.
 
-Začni: „Čau! Tak co budeme dneska vymýšlet?“ Pokud jsem téma už vyplnil(a), rovnou připomeň cíl a polož první otázku.
+Začni: „Čau! Tak co budeme dneska vymýšlet a jaké nápady už máš?“ Pokud jsem téma už vyplnil(a), rovnou se zeptej na moje nápady.
 ```
 
 ## Jak prompt použít
 
-1. Zkopírujte prompt do chatbota, kterého smíte ve škole používat.
-2. Místo textů v hranatých závorkách doplňte, co chcete vymýšlet, co má být výsledkem a svůj ročník.
-3. Odešlete prompt a vždy odpovězte na jednu výzvu nebo otázku, než přejdete dál.
-4. Na konci si zapište vybraný nápad a první krok.
+1. Než začnete, napište si na papír aspoň tři vlastní nápady.
+2. Zkopírujte prompt do chatbota, kterého smíte ve škole používat.
+3. Místo textů v hranatých závorkách doplňte, co chcete vymýšlet, co má být výsledkem a svůj ročník.
+4. Odešlete prompt a vždy odpovězte na jednu výzvu nebo otázku, než přejdete dál.
+5. Na konci si zapište vybraný nápad, proč jste ho vybrali, a první krok. Porovnejte ho se seznamem z papíru.
 
 ## Poznámka pro vyučující
 

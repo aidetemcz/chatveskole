@@ -1,13 +1,16 @@
 ---
 title: Otázky na míru
 slug: otazky-na-miru
-zpusob: Otázky na míru
+zpusob: Opakování
 pro_koho: zaci
 vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
 puvodni_url: https://chatveskole.cz/databaze-promptu/otazky-na-miru/
-rozviji: Schopnost formulovat myšlenky, argumentovat a hledat souvislosti.
-proc_ho_vyuzit: Umožňuje žákům učit se vlastním tempem a na aktuální úrovni jejich znalostí a dovedností.
-tiny_chatbot: Společné objevování
+tiny_chatbot: Opakovací parťák nebo Testovací chatbot
+zpusob_odkaz: /ve-vyuce/zpusoby-vyuziti-ai#opakování
+perex: "Žák si vybavuje učivo a hned zjišťuje, co už umí a kde má mezery."
+pojistka: "Chatbot neprozrazuje hotové odpovědi."
+jak_poznate: "Zvládne obtížnější otázky než na začátku a dokáže říct, co si potřebuje zopakovat."
+aktualizovano: 2026-11-20
 ---
 
 Chatbot vám klade otázky přesně na vaši úroveň — začne jednoduchými a postupně přidává. Hotové odpovědi nedává, ale pomůže vám k nim dojít.

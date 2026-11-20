@@ -41,6 +41,11 @@ const prompty = defineCollection({
       rozviji: z.string().nullable().optional(),
       proc_ho_vyuzit: z.string().nullable().optional(),
       tiny_chatbot: z.string().nullable().optional(),
+      // prompty pro žáky: způsob podle stránky /ve-vyuce/zpusoby-vyuziti-ai
+      zpusob_odkaz: z.string().nullable().optional(),
+      perex: z.string().nullable().optional(),
+      pojistka: z.string().nullable().optional(),
+      jak_poznate: z.string().nullable().optional(),
     })
     .passthrough(),
 });
