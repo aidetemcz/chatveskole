@@ -132,7 +132,6 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
               <div class="vysledek-tlacitka">
                 <button type="button" class="btn btn--outline btn--sm" data-postupne>▶ Ukázat postupně</button>
                 <button type="button" class="btn btn--outline btn--sm" data-nic>Začít znovu</button>
-                <button type="button" class="btn btn--primary btn--sm vysledek-kopirovat" data-copy-text="">Kopírovat</button>
               </div>
             </div>
             <div class="prose" set:html={technikyPoznamka} />
@@ -202,18 +201,15 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 </Base>
 
 <script>
-  // Skládačka promptu: tlačítka zapínají a vypínají části promptu; Kopírovat bere jen viditelný text (data-copy-text, obsluha v Base.astro)
+  // Skládačka promptu: tlačítka zapínají a vypínají části promptu
   document.querySelectorAll<HTMLElement>('[data-skladacka]').forEach((s) => {
     const tlacitka = [...s.querySelectorAll<HTMLButtonElement>('[data-technika]')];
     const kusy = [...s.querySelectorAll<HTMLElement>('[data-kus]')];
-    const text = s.querySelector<HTMLElement>('[data-prompt]')!;
     const pocet = s.querySelector<HTMLElement>('[data-pocet]')!;
-    const kopirovat = s.querySelector<HTMLButtonElement>('.vysledek-kopirovat')!;
     const obnov = () => {
       const zap = new Set(tlacitka.filter((b) => b.getAttribute('aria-pressed') === 'true').map((b) => b.dataset.technika));
       kusy.forEach((k) => { k.hidden = !zap.has(k.dataset.kus); });
       pocet.textContent = `Zapnuto ${zap.size} z ${tlacitka.length} technik`;
-      kopirovat.dataset.copyText = [...text.children].filter((c) => !(c as HTMLElement).hidden).map((c) => c.textContent).join('').trim();
     };
     const napoveda = s.querySelector<HTMLElement>('[data-napoveda]')!;
     const postupne = s.querySelector<HTMLButtonElement>('[data-postupne]')!;
@@ -232,7 +228,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
       const dalsi = () => {
         tlacitka[i].setAttribute('aria-pressed', 'true'); obnov(); obnovNapovedu();
         i++;
-        if (i < tlacitka.length) casovac = setTimeout(dalsi, 1300); else zastav();
+        if (i < tlacitka.length) casovac = setTimeout(dalsi, 2800); else zastav();
       };
       casovac = setTimeout(dalsi, 500);
     });
@@ -275,7 +271,6 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .vysledek-tlacitka { display: flex; flex-wrap: wrap; gap: 10px; }
   .vysledek-napoveda { margin: -6px 0 0; font-size: 0.9rem; color: var(--sky-ink); }
   .vysledek-napoveda[hidden] { display: none; }
-  .vysledek-kopirovat { margin-left: auto; }
   .vysledek-obal .prose :global(p) { font-size: 0.9rem; }
 
   .tipy { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
