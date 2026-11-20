@@ -23,6 +23,9 @@ odkazy:
 
 Dovednost je návod, který si chatbot vytáhne, když ho potřebuje. Jako recept v šuplíku: nemusíte ho pokaždé diktovat. Nahrazuje GPTs a Gems a **stejná dovednost funguje v Claude, Gemini, Copilotu i ChatGPT**.
 
+<!-- komponenta: video -->
+[Průvodce instalací a využitím dovednosti](https://www.loom.com/share/14a4cf1510e6458a82058811435b7d59)
+
 ## Z čeho se dovednost skládá
 
 Dovednost si můžete představit jako složku, která obsahuje instrukce a volitelně soubory, ze kterých čerpá. Můžete si ji vytvořit sami nebo požádat chatbota, ať ji vytvoří za vás.
@@ -48,6 +51,8 @@ Všechny naše dřívější AI asistenty jsme převedli na dovednosti a přidal
 - **Ostatní tarify:** nainstalujte [plugin](/funkce/pluginy), do kterého jsou dovednosti zabalené, nebo vložte systémový prompt do instrukcí [projektu](/funkce/projekty).
 - **Zdarma a pro žáky:** použijte verzi promptu.
 
+Dovednost vyvoláte v chatu zavináčem, například `@slovni-hodnoceni`.
+
 Samostatné dovednosti mají zatím jen tarify Business, Enterprise a Edu.
 
 ### Gemini
@@ -65,7 +70,7 @@ Co se stane s vašimi Gems: na osobních účtech se od 17. 11. 2026 samy převe
 1. Stáhněte ZIP dovednosti (nerozbalujte ho).
 2. V Claude otevřete **Customize → Skills**, klikněte na **+** a zvolte **Upload a skill**.
 3. Vyberte ZIP. Dovednost se objeví v seznamu a můžete ji zapnout nebo vypnout.
-4. Pište normálně, například „Napiš slovní hodnocení pro žáka 3. třídy“. Claude dovednost použije sám.
+4. Dovednost vyvoláte v chatu lomítkem, například `/slovni-hodnoceni`. Claude ji umí použít i sám, když napíšete třeba „Napiš slovní hodnocení pro žáka 3. třídy“.
 
 Funguje ve všech tarifech včetně bezplatného, musí být zapnuté spouštění kódu.
 
@@ -76,6 +81,8 @@ Claude je pro uživatele od 18 let.
 - **Copilot Cowork:** **Customize → Skills → Add → Upload skill.** Nahrajete soubor `.md` (do 1 MB) nebo ZIP (do 10 MB).
 - **Agent Builder:** dovednost (ZIP) přidáte do agenta, nejvýš 8 dovedností na agenta.
 - **Bez licence:** v bezplatném Copilot Chatu vytvořte agenta a do jeho pokynů vložte systémový prompt z Google Docs.
+
+Agenta vyvoláte v Copilot Chatu zavináčem, například `@Slovní hodnocení`, nebo ho otevřete v seznamu agentů.
 
 Copilot Cowork vyžaduje placenou licenci Microsoft 365 Copilot.
 

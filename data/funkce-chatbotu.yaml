@@ -2,7 +2,7 @@
 # Zdroj: artefakt https://claude.ai/artifact/9ZyWLayjYG18oe6knwfvsi (stav 13. 10. 2026).
 # Při aktualizaci měň jen tento soubor; stránka se vykreslí z dat.
 stav_k: '2026-11-15'
-zdroj: Artefakt „Funkce chatbotů 2027“ (AI dětem), ověřeno v oficiálních nápovědách vývojářů 13. 10. 2026, část údajů aktualizována 15. 11. 2026, volání dovedností v Gemini (zavináčem) opraveno podle Evy 20. 11. 2026
+zdroj: Artefakt „Funkce chatbotů 2027“ (AI dětem), ověřeno v oficiálních nápovědách vývojářů 13. 10. 2026, část údajů aktualizována 15. 11. 2026, volání dovedností (Gemini a ChatGPT zavináčem, Claude lomítkem) doplněno podle Evy a videa z 20. 11. 2026
 poznamka: Výhled na rok 2027 vychází jen z toho, co vývojáři oznámili do 13. 10. 2026. U Copilotu „zdarma“ = Copilot Chat se školním nebo pracovním účtem. Dostupnost se liší podle země a nastavení správce.
 nastroje:
 - id: chatgpt
@@ -151,7 +151,7 @@ matice:
       zmena: same
       stitek: nové 2026
       nazev: Dovednosti uvnitř pluginů
-      poznamka: Samostatné dovednosti mají jen tarify Business, Enterprise a Edu.
+      poznamka: Samostatné dovednosti mají jen tarify Business, Enterprise a Edu. Volají se zavináčem.
     gemini:
       dnes: omezene
       '2027': omezene
@@ -172,7 +172,7 @@ matice:
       zmena: same
       stitek: null
       nazev: Dovednosti
-      poznamka: Ve všech tarifech včetně Free, musí být zapnuté spouštění kódu. ZIP se SKILL.md nahrajete v Customize → Skills.
+      poznamka: Ve všech tarifech včetně Free, musí být zapnuté spouštění kódu. ZIP se SKILL.md nahrajete v Customize → Skills. Volají se lomítkem.
 - funkce: Pluginy
   popis: Balíček dovedností, konektorů a nástrojů k instalaci
   nastroje:
