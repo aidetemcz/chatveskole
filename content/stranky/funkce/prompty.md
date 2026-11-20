@@ -23,7 +23,7 @@ Máte k dispozici odborníky z jakéhokoli oboru, od zahradníka po fyzika. Aby 
 
 ## Sedm technik, jak dát chatbotu kontext
 
-Začněte holým zadáním a přidávejte techniky. Každá barva v promptu odpovídá jedné technice.
+Začněte holým zadáním a klikáním přidávejte techniky, nebo si nechte prompt poskládat postupně. Každá barva v promptu odpovídá jedné technice.
 
 <!-- komponenta: skládačka promptu (data/skladacka-promptu.yaml) -->
 

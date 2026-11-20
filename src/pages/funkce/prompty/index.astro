@@ -128,8 +128,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
                   ? <span data-kus={k.technika} style={`background: ${barva[k.technika]}`} hidden={!zap.has(k.technika)}>{k.text}</span>
                   : <span>{k.text}</span>)}
               </p>
+              <p class="vysledek-napoveda" data-napoveda>Klikněte na kteroukoli techniku a sledujte, jak se prompt mění.</p>
               <div class="vysledek-tlacitka">
-                <button type="button" class="btn btn--outline btn--sm" data-vse>Zapnout všechny</button>
+                <button type="button" class="btn btn--outline btn--sm" data-postupne>▶ Ukázat postupně</button>
                 <button type="button" class="btn btn--outline btn--sm" data-nic>Začít znovu</button>
                 <button type="button" class="btn btn--primary btn--sm vysledek-kopirovat" data-copy-text="">Kopírovat</button>
               </div>
@@ -214,11 +215,29 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
       pocet.textContent = `Zapnuto ${zap.size} z ${tlacitka.length} technik`;
       kopirovat.dataset.copyText = [...text.children].filter((c) => !(c as HTMLElement).hidden).map((c) => c.textContent).join('').trim();
     };
-    const nastav = (on: boolean) => { tlacitka.forEach((b) => b.setAttribute('aria-pressed', String(on))); obnov(); };
-    tlacitka.forEach((b) => b.addEventListener('click', () => { b.setAttribute('aria-pressed', String(b.getAttribute('aria-pressed') !== 'true')); obnov(); }));
-    s.querySelector('[data-vse]')?.addEventListener('click', () => nastav(true));
+    const napoveda = s.querySelector<HTMLElement>('[data-napoveda]')!;
+    const postupne = s.querySelector<HTMLButtonElement>('[data-postupne]')!;
+    const obnovNapovedu = () => { napoveda.hidden = tlacitka.some((b) => b.getAttribute('aria-pressed') === 'true'); };
+    // „Ukázat postupně“: od holého zadání zapíná techniky jednu po druhé (při omezení pohybu všechny najednou)
+    let casovac: ReturnType<typeof setTimeout> | undefined;
+    const zastav = () => { if (casovac) clearTimeout(casovac); casovac = undefined; postupne.textContent = '▶ Ukázat postupně'; };
+    const nastav = (on: boolean) => { zastav(); tlacitka.forEach((b) => b.setAttribute('aria-pressed', String(on))); obnov(); obnovNapovedu(); };
+    tlacitka.forEach((b) => b.addEventListener('click', () => { zastav(); b.setAttribute('aria-pressed', String(b.getAttribute('aria-pressed') !== 'true')); obnov(); obnovNapovedu(); }));
+    postupne.addEventListener('click', () => {
+      if (casovac) { zastav(); return; }
+      nastav(false);
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) { nastav(true); return; }
+      postupne.textContent = '❚❚ Zastavit';
+      let i = 0;
+      const dalsi = () => {
+        tlacitka[i].setAttribute('aria-pressed', 'true'); obnov(); obnovNapovedu();
+        i++;
+        if (i < tlacitka.length) casovac = setTimeout(dalsi, 1300); else zastav();
+      };
+      casovac = setTimeout(dalsi, 500);
+    });
     s.querySelector('[data-nic]')?.addEventListener('click', () => nastav(false));
-    obnov();
+    obnov(); obnovNapovedu();
   });
 </script>
 
@@ -251,7 +270,11 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .vysledek-titulek { font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
   .vysledek-text { margin: 0; font-family: var(--fm); font-size: 0.95rem; line-height: 1.75; }
   .vysledek-text [data-kus] { border-radius: 3px; padding: 1px 2px; }
+  @media (prefers-reduced-motion: no-preference) { .vysledek-text [data-kus]:not([hidden]) { animation: objev 0.5s ease-out; } }
+  @keyframes objev { from { opacity: 0; } to { opacity: 1; } }
   .vysledek-tlacitka { display: flex; flex-wrap: wrap; gap: 10px; }
+  .vysledek-napoveda { margin: -6px 0 0; font-size: 0.9rem; color: var(--sky-ink); }
+  .vysledek-napoveda[hidden] { display: none; }
   .vysledek-kopirovat { margin-left: auto; }
   .vysledek-obal .prose :global(p) { font-size: 0.9rem; }
 
