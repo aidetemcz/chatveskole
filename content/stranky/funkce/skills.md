@@ -42,6 +42,24 @@ Všechny naše dřívější AI asistenty jsme převedli na dovednosti a přidal
 
 ## Jak dovednost nainstalovat
 
+### ChatGPT
+
+- **Tarify Business, Enterprise a Edu:** **Plugins → Skills → Create → Upload from your computer.**
+- **Ostatní tarify:** nainstalujte [plugin](/funkce/pluginy), do kterého jsou dovednosti zabalené, nebo vložte systémový prompt do instrukcí [projektu](/funkce/projekty).
+- **Zdarma a pro žáky:** použijte verzi promptu.
+
+Samostatné dovednosti mají zatím jen tarify Business, Enterprise a Edu.
+
+### Gemini
+
+1. V aplikaci Gemini otevřete **Více… → Přizpůsobit → Dovednosti**.
+2. Nahrajte ZIP, složku nebo samotný soubor `SKILL.md` (do 100 MB).
+3. Dovednost zavoláte zavináčem v jakémkoli chatu, například `@slovni-hodnoceni`.
+
+Dovednosti mají osobní účty od 18 let se zapnutou historií aktivity, předplatné není potřeba. Na školních účtech (Google Workspace for Education) dostupnost řídí správce — ověřte u něj.
+
+Co se stane s vašimi Gems: na osobních účtech se od 17. 11. 2026 samy převedou na dovednosti (Gems pak zůstanou jen pro čtení a 17. 12. 2026 zmizí). Ve školách a firmách z nich vzniknou neaktivní koncepty dovedností, které musí autor zkontrolovat a zapnout — ve školách nejdříve 1. 6. 2027.
+
 ### Claude
 
 1. Stáhněte ZIP dovednosti (nerozbalujte ho).
@@ -53,16 +71,6 @@ Funguje ve všech tarifech včetně bezplatného, musí být zapnuté spouštěn
 
 Claude je pro uživatele od 18 let.
 
-### Gemini
-
-1. V aplikaci Gemini otevřete správu dovedností.
-2. Nahrajte ZIP, složku nebo samotný soubor `SKILL.md` (do 100 MB).
-3. Dovednost zavoláte lomítkem, například `/slovni-hodnoceni`.
-
-Dovednosti mají osobní účty od 18 let se zapnutou historií aktivity, předplatné není potřeba. Na školních účtech (Google Workspace for Education) dostupnost řídí správce — ověřte u něj.
-
-Co se stane s vašimi Gems: na osobních účtech se od 17. 11. 2026 samy převedou na dovednosti (Gems pak zůstanou jen pro čtení a 17. 12. 2026 zmizí). Ve školách a firmách z nich vzniknou neaktivní koncepty dovedností, které musí autor zkontrolovat a zapnout — ve školách nejdříve 1. 6. 2027.
-
 ### Microsoft Copilot
 
 - **Copilot Cowork:** **Customize → Skills → Add → Upload skill.** Nahrajete soubor `.md` (do 1 MB) nebo ZIP (do 10 MB).
@@ -70,14 +78,6 @@ Co se stane s vašimi Gems: na osobních účtech se od 17. 11. 2026 samy převe
 - **Bez licence:** v bezplatném Copilot Chatu vytvořte agenta a do jeho pokynů vložte systémový prompt z Google Docs.
 
 Copilot Cowork vyžaduje placenou licenci Microsoft 365 Copilot.
-
-### ChatGPT
-
-- **Tarify Business, Enterprise a Edu:** **Plugins → Skills → Create → Upload from your computer.**
-- **Ostatní tarify:** nainstalujte [plugin](/funkce/pluginy), do kterého jsou dovednosti zabalené, nebo vložte systémový prompt do instrukcí [projektu](/funkce/projekty).
-- **Zdarma a pro žáky:** použijte verzi promptu.
-
-Samostatné dovednosti mají zatím jen tarify Business, Enterprise a Edu.
 
 ## Jak napsat vlastní dovednost
 

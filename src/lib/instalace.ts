@@ -16,7 +16,7 @@ export const NASTROJE: Nastroj[] = [
     id: 'gemini', nazev: 'Gemini', zip: 'gemini',
     kroky: [
       'Stáhněte ZIP dovednosti pro Gemini.',
-      'V aplikaci Gemini otevřete správu dovedností a nahrajte ZIP.',
+      'V aplikaci Gemini otevřete Více… → Přizpůsobit → Dovednosti a nahrajte ZIP.',
       'Dovednost zavoláte tak, že napíšete zavináč a začnete psát její název.',
       'Dovednosti mají osobní účty od 18 let. Na školních účtech dostupnost řídí správce.',
     ],
