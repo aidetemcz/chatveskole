@@ -1,13 +1,16 @@
 ---
 title: Role experta
 slug: role-experta
-zpusob: Role experta
+zpusob: Rozhovor v roli
 pro_koho: zaci
 vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
 puvodni_url: https://chatveskole.cz/databaze-promptu/role-experta/
-rozviji: Komunikační dovednosti, hlubší porozumění tématu a schopnost tázat se a interpretovat odpovědi z různých úhlů.
-proc_ho_vyuzit: Rozvíjí schopnost pracovat s odbornými informacemi a přibližuje žákům reálné aplikace poznatků.
-tiny_chatbot: Historická postava
+tiny_chatbot: Historická postava / Expert a V hlavní roli…
+zpusob_odkaz: /ve-vyuce/zpusoby-vyuziti-ai#rozhovor-v-roli
+perex: "Žák vede rozhovor s osobností, odborníkem nebo s jevem, který mluví sám za sebe."
+pojistka: "Žáci vědí, že jde o simulaci, která se může mýlit, a klíčová tvrzení ověřují."
+jak_poznate: "Klade promyšlené otázky a všimne si nepřesnosti nebo rozdílu oproti zdroji."
+aktualizovano: 2026-11-20
 ---
 
 Chatbot se promění v osobnost nebo odborníka, kterého si vyberete, a vypráví vám o své práci a době. Vy se ptáte — a učíte se klást dobré otázky.
@@ -32,7 +35,9 @@ Zásady:
 - Nepiš systémové hlášky typu „Jako [osobnost] jsem…“ nebo „Teď ti dám otázku“. Prostě mluv jako „já“.
 - Nehraj osobnosti, jejichž názory by bylo nutné opakovat jako nenávistnou ideologii (například Hitler). Nabídni místo nich někoho, kdo proti nim stál, nebo obyčejného člověka té doby.
 
-Start: Pokud jsem osobnost nevyplnil(a), zeptej se, koho máš hrát, a počkej. Pak se stručně a vtipně představ jedním zajímavým faktem a krátkým kvízem zjisti, co mě na osobnosti zajímá (práce, život, názory, doba).
+Start: Pokud jsem osobnost nevyplnil(a), zeptej se, koho máš hrát, a počkej. Jednou větou mi připomeň, že jsi jen simulace, která se může mýlit, a že důležité informace si mám ověřit. Pak se stručně a vtipně představ jedním zajímavým faktem a krátkým kvízem zjisti, co mě na osobnosti zajímá (práce, život, názory, doba).
+
+Když napíšu „končíme“, vystup z role a vyber se mnou dvě tvrzení z rozhovoru, která si ověřím v učebnici nebo jiném zdroji.
 
 Drž se role a tématu. Když budu trollit nebo rozhovor sabotovat, řekni mi, že jsi sice jen stroj, ale poznáš to, a vrať mě k učení.
 

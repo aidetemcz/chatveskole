@@ -61,7 +61,7 @@ Jak to může vypadat, ukazují projekty žáků v kategorii Startup Lab AI olym
 
 [Projekty žáků z AI olympiády](https://aidetem.cz/dataviz/startup-lab.html)
 
-Vibe coding rozvíjí **digitální kompetenci** a **informatické myšlení**: žáci musí přesně popsat, co chtějí, testují, hledají chyby a rozhodují o podobě a použitelnosti aplikace. Navazuje to na [Inovaci](/funkce/prompty/zaci) — jeden z deseti způsobů využití AI ve výuce, kdy se žák stává tvůrcem nástroje, ne jen uživatelem.
+Vibe coding rozvíjí **digitální kompetenci** a **informatické myšlení**: žáci musí přesně popsat, co chtějí, testují, hledají chyby a rozhodují o podobě a použitelnosti aplikace. Navazuje to na skupinu Žák tvoří z našich [způsobů využití AI ve výuce](/ve-vyuce/zpusoby-vyuziti-ai): žák se stává tvůrcem nástroje, ne jen uživatelem.
 
 Jak vibe coding vyzkoušet se žáky 8. a 9. ročníku a SŠ, popisuje krok za krokem naše metodika [Tvorba jednoduchých aplikací pomocí vibecodingu](/vibe-coding/materialy-do-vyuky).
 

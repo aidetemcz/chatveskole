@@ -39,5 +39,5 @@ Doporučení jsou míněna jako inspirace. Školy si je mohou upravit a doplnit 
 ## Další zdroje
 
 - [Umělá inteligence napříč předměty](https://digitalizace.rvp.cz/napric-predmety/ai) — články a materiály NPI.
-- [4 kroky ke smysluplnému učení s AI](https://digitalizace.rvp.cz/clanky/4-kroky-ke-smysluplnemu-uceni-s-ai) — rámec, ze kterého vychází našich [10 způsobů využití AI ve výuce](/funkce/prompty/zaci).
+- [4 kroky ke smysluplnému učení s AI](https://digitalizace.rvp.cz/clanky/4-kroky-ke-smysluplnemu-uceni-s-ai) — rámec, ze kterého vychází našich [10 způsobů využití AI ve výuce](/ve-vyuce/zpusoby-vyuziti-ai).
 

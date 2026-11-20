@@ -5,9 +5,12 @@ zpusob: Argumentace
 pro_koho: zaci
 vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
 puvodni_url: https://chatveskole.cz/databaze-promptu/argumentace/
-rozviji: "Argumentační dovednosti: schopnost vybudovat argumentaci, formulovat odpověď a reagovat na oponenturu; kritické myšlení."
-proc_ho_vyuzit: Umožňuje bezpečně trénovat diskusi, tříbit myšlenky a učit se rozpoznat nekvalitní nebo nepravdivé argumenty.
 tiny_chatbot: Argumentační partner
+zpusob_odkaz: /ve-vyuce/zpusoby-vyuziti-ai#argumentace
+perex: "Žák hájí stanovisko proti oponentovi, který se nenechá odbýt."
+pojistka: "Cílem není vyhrát. Chatbot posuzuje kvalitu argumentů, ne názor žáka."
+jak_poznate: "Uvádí důkazy, vyrovná se s protiargumentem a pojmenuje nejslabší místo vlastní pozice."
+aktualizovano: 2026-11-20
 ---
 
 Chatbot s vámi vede debatu: předkládá protiargumenty, ptá se na důkazy a upozorní na argumentační klamy. Nechce vás přesvědčit — pomáhá vám vaše stanovisko zpřesnit.
