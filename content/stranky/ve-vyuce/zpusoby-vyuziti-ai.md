@@ -36,18 +36,20 @@ Vycházejte z cíle hodiny, ne z nástroje. Podívejte se na sloveso, kterým c�
 
 | Skupina | Cíl hodiny zní | Způsoby |
 | --- | --- | --- |
-| A. Žák si vybavuje a vysvětluje | vybaví si, popíše, vysvětlí vlastními slovy | 1. Opakování · 2. Společné objevování · 3. Vysvětlování |
-| B. Žák zkoumá souvislosti | použije, porovná pohledy, odvodí důsledky | 4. Rozhovor v roli · 5. Co kdyby |
-| C. Žák posuzuje | posoudí, zdůvodní, vyvrátí, najde chybu | 6. Argumentace · 7. Hledání chyb |
-| D. Žák tvoří | navrhne, naplánuje, vylepší vlastní práci | 8. Brainstorming · 9. Plánování a struktura · 10. Zpětná vazba |
+| Žák si vybavuje a vysvětluje | vybaví si, popíše, vysvětlí vlastními slovy | Opakování · Společné objevování · Vysvětlování |
+| Žák zkoumá souvislosti | použije, porovná pohledy, odvodí důsledky | Rozhovor v roli · Co kdyby |
+| Žák posuzuje | posoudí, zdůvodní, vyvrátí, najde chybu | Argumentace · Hledání chyb |
+| Žák tvoří | navrhne, naplánuje, vylepší vlastní práci | Brainstorming · Plánování a struktura · Zpětná vazba |
 
-Pokud s AI ve třídě začínáte, vyberte si nejdřív některý způsob ze skupiny A. Náročnější způsoby zařazujte postupně.
+Pokud s AI ve třídě začínáte, vyberte si nejdřív některý způsob ze skupiny Žák si vybavuje a vysvětluje. Náročnější způsoby zařazujte postupně.
 
 Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, diskusi nebo práci s textem. Každý způsob můžete vyzkoušet v [aplikaci Tiny](/ve-vyuce/tiny), kde je připravený jako vzdělávací chatbot, nebo v běžném chatbotu s promptem z [katalogu promptů](/prompty).
 
-## A. Žák si vybavuje a vysvětluje
+## Žák si vybavuje a vysvětluje
 
-### 1. Opakování
+<!-- komponenta: karty způsobů -->
+
+### Opakování
 
 **Žák si vybavuje učivo a hned zjišťuje, co už umí a kde má mezery.**
 
@@ -61,7 +63,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Příklad:** Opakování slovních druhů před čtvrtletní prací.
 - **Kde to spustit:** V Tiny Opakovací parťák nebo Testovací chatbot, v běžném chatbotu prompt [Otázky na míru](/funkce/prompty/zaci/otazky-na-miru).
 
-### 2. Společné objevování
+### Společné objevování
 
 **Žák dochází k novému poznatku vlastním uvažováním.**
 
@@ -75,7 +77,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Příklad:** Proč se na Zemi střídají roční období.
 - **Kde to spustit:** V Tiny Společné objevování.
 
-### 3. Vysvětlování
+### Vysvětlování
 
 **Žák učí chatbot, který látce nerozumí, a tím si ji sám ujasňuje.**
 
@@ -89,9 +91,11 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Příklad:** Fotosyntéza vysvětlená někomu, kdo nikdy neviděl rostlinu.
 - **Kde to spustit:** V Tiny Zvědavý mimoň.
 
-## B. Žák zkoumá souvislosti
+## Žák zkoumá souvislosti
 
-### 4. Rozhovor v roli
+<!-- komponenta: karty způsobů -->
+
+### Rozhovor v roli
 
 **Žák vede rozhovor s osobností, odborníkem nebo s jevem, který mluví sám za sebe.**
 
@@ -105,7 +109,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Příklad:** Rozhovor s Marií Terezií o školní reformě nebo s kapkou vody o koloběhu vody.
 - **Kde to spustit:** V Tiny Historická postava / Expert a V hlavní roli…, v běžném chatbotu prompt [Role experta](/funkce/prompty/zaci/role-experta).
 
-### 5. Co kdyby
+### Co kdyby
 
 **Žák domýšlí, co by se stalo, kdyby se jedna věc změnila.**
 
@@ -119,9 +123,11 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Příklad:** Co kdyby zemská osa nebyla nakloněná.
 - **Kde to spustit:** V Tiny Co kdyby…
 
-## C. Žák posuzuje
+## Žák posuzuje
 
-### 6. Argumentace
+<!-- komponenta: karty způsobů -->
+
+### Argumentace
 
 **Žák hájí stanovisko proti oponentovi, který se nenechá odbýt.**
 
@@ -135,7 +141,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Příklad:** Mají být mobilní telefony o přestávkách zakázané?
 - **Kde to spustit:** V Tiny Argumentační partner, v běžném chatbotu prompt [Argumentace](/funkce/prompty/zaci/argumentace).
 
-### 7. Hledání chyb
+### Hledání chyb
 
 **Žák kontroluje text, ve kterém AI záměrně chybuje.**
 
@@ -149,9 +155,11 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Příklad:** Odstavec o sluneční soustavě se třemi chybami.
 - **Kde to spustit:** V Tiny Chybující chatbot, v běžném chatbotu prompt [Vylepšení výstupu](/funkce/prompty/zaci/vylepseni-vystupu).
 
-## D. Žák tvoří
+## Žák tvoří
 
-### 8. Brainstorming
+<!-- komponenta: karty způsobů -->
+
+### Brainstorming
 
 **Žák sbírá a třídí nápady, AI mu je pomáhá rozšířit otázkami.**
 
@@ -165,7 +173,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Příklad:** Náměty na třídní projekt ke Dni Země.
 - **Kde to spustit:** V Tiny Parťák pro brainstorming, v běžném chatbotu prompt [Brainstorming](/funkce/prompty/zaci/brainstorming).
 
-### 9. Plánování a struktura
+### Plánování a struktura
 
 **Žák si rozvrhne práci nebo osnovu dřív, než začne tvořit.**
 
@@ -179,7 +187,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Příklad:** Osnova referátu nebo harmonogram skupinového projektu.
 - **Kde to spustit:** V Tiny Chatbot pro plánování, v běžném chatbotu prompty [Plánování](/funkce/prompty/zaci/planovani) a [Obsahová struktura](/funkce/prompty/zaci/obsahova-struktura).
 
-### 10. Zpětná vazba
+### Zpětná vazba
 
 **Žák porovnává vlastní hodnocení své práce s hodnocením AI a rozhoduje, co upraví.**
 

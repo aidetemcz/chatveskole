@@ -4,7 +4,7 @@ import { url } from './url';
 
 export type Klic =
   | 'cenik' | 'sady-skills' | 'pluginy' | 'tiny' | 'infografika-mcp' | 'instrukce' // datové komponenty (Astro)
-  | 'zalozky' | 'nahledy' | 'tabulka-karty' | 'tlacitko' | 'karta-obrazek' // úprava následujícího HTML
+  | 'zalozky' | 'nahledy' | 'tabulka-karty' | 'tlacitko' | 'karta-obrazek' | 'karty-zpusobu' // úprava následujícího HTML
   | 'teze' | 'casova-osa' | 'matice' | 'karty-nastroju' | 'zdroje-nastroju'; // stránka Změny funkcí
 
 const MAPA: [RegExp, Klic][] = [
@@ -17,6 +17,7 @@ const MAPA: [RegExp, Klic][] = [
   [/záložky podle nástroje/, 'zalozky'],
   [/^\s*tlačítko\b/, 'tlacitko'],
   [/karta s obrázkem/, 'karta-obrazek'],
+  [/karty způsobů/, 'karty-zpusobu'],
   [/karty s náhledem/, 'nahledy'],
   [/tabulka, na mobilu karty/, 'tabulka-karty'],
   [/tři teze/, 'teze'],
@@ -34,6 +35,7 @@ const PREVOD: Partial<Record<Klic, (html: string, id: string) => string>> = {
   'tabulka-karty': naTabulkuKaret,
   tlacitko: naTlacitko,
   'karta-obrazek': naKartuSObrazkem,
+  'karty-zpusobu': naKartyZpusobu,
 };
 
 export function rozdel(html: string): Cast[] {
@@ -121,6 +123,38 @@ export function naKartuSObrazkem(html: string): string {
   const text = (img ? blok.replace(img[0], '') : blok).replace(/<p>\s*<a /, '<p class="tlacitko-odstavec"><a class="btn btn--primary" ');
   if (!img) return `<div class="karta-obrazek karta-bez-obrazku card"><div class="karta-obrazek-text">${text}</div></div>` + zbytek;
   return `<div class="karta-obrazek card">${img[1]}<div class="karta-obrazek-text">${text}</div></div>` + zbytek;
+}
+
+// Sekce ### až do dalšího ## → karty ve dvou sloupcích (stránka Způsoby využití AI ve výuce):
+// nadpis v červeném pruhu, tučný odstavec jako perex, položky seznamu „**Štítek:** text“ oddělené čárou;
+// položka „Kde to spustit“ jde do patičky karty a odkazy z ní se zobrazí jako tlačítka.
+export function naKartyZpusobu(html: string): string {
+  const konec = html.search(/<h2[\s>]/);
+  const blok = konec === -1 ? html : html.slice(0, konec), zbytek = konec === -1 ? '' : html.slice(konec);
+  const kusy = blok.split(/(?=<h3[\s>])/);
+  const uvod = /^\s*<h3/.test(kusy[0]) ? '' : kusy.shift()!;
+  if (!kusy.length) return html;
+  const karty = kusy.map((k) => {
+    const h = k.match(/^\s*<h3([^>]*)>([\s\S]*?)<\/h3>/);
+    const perex = k.match(/<p>\s*<strong>([\s\S]*?)<\/strong>\s*<\/p>/)?.[1] ?? '';
+    const polozky = [...(k.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').matchAll(/<li>\s*<strong>([\s\S]*?)<\/strong>\s*([\s\S]*?)<\/li>/g)]
+      .map(([, s, x]) => ({ stitek: bezTagu(s).replace(/:\s*$/, ''), text: x.trim() }));
+    const spustit = polozky.find((p) => /^Kde to spustit/i.test(p.stitek));
+    const radky = polozky.filter((p) => p !== spustit)
+      .map((p) => `<div class="zpusob-radek"><dt>${p.stitek}</dt><dd>${p.text}</dd></div>`).join('');
+    let paticka = '';
+    if (spustit) {
+      const odkazy = [...spustit.text.matchAll(/<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)];
+      const tiny = spustit.text.split(/,?\s*v běžném chatbotu/i)[0].trim();
+      const tinyText = /^V Tiny/i.test(tiny) ? `<p class="zpusob-tiny"><strong>Kde to spustit:</strong> ${bezTagu(tiny).replace(/[.,]\s*$/, '')}.</p>` : '<p class="zpusob-tiny"><strong>Kde to spustit:</strong> v běžném chatbotu s promptem.</p>';
+      const tlacitka = odkazy.map(([, href, nazev]) => `<a class="btn btn--outline btn--sm" href="${href}">Prompt ${bezTagu(nazev)} →</a>`).join('');
+      paticka = `<div class="zpusob-paticka">${tinyText}${tlacitka ? `<div class="zpusob-tlacitka">${tlacitka}</div>` : ''}</div>`;
+    }
+    return `<article class="zpusob"><h3${h?.[1] ?? ''} class="zpusob-nazev">${h?.[2] ?? ''}</h3>`
+      + (perex ? `<p class="zpusob-perex">${perex}</p>` : '')
+      + `<dl class="zpusob-telo">${radky}</dl>${paticka}</article>`;
+  });
+  return `${uvod}<div class="zpusoby">${karty.join('')}</div>${zbytek}`;
 }
 
 // První tabulka → na mobilu karty (data-label s názvem sloupce u každé buňky)
