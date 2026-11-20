@@ -57,7 +57,7 @@ Naše dovednosti jsou rozdělené do pěti sad. Každou sadu připravujeme i jak
 
 - **Claude (placené tarify):** v **Customize → Plugins → Add marketplace** zadejte `aidetemcz/chatveskole`. Zobrazí se všechny naše sady a vyberete si, které chcete. Výhoda: když dovednosti aktualizujeme, aktualizují se i vám.
 - **Claude, Copilot Cowork:** stáhněte ZIP pluginu a nahrajte ho.
-- **ChatGPT:** plugin AI dětem podáváme ke schválení do veřejného adresáře. Do té doby použijte jednotlivé dovednosti (Business, Enterprise, Edu), [projekt](/funkce/projekty) se systémovým promptem, nebo prompt.
+- **ChatGPT:** plugin AI dětem podáváme ke schválení do veřejného adresáře. Do té doby použijte jednotlivé dovednosti (placené tarify od Plus), [projekt](/funkce/projekty) s instrukcemi dovednosti, nebo prompt.
 - **Gemini:** pluginy nemá — nainstalujte jednotlivé dovednosti ze sady.
 
 ## Plugin, dovednost, nebo prompt?

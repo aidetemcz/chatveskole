@@ -3,7 +3,7 @@ title: Dostupné nástroje
 menu: Začínáme
 poradi: 2
 popis: ChatGPT, Gemini, Copilot, Claude a další chatboti v přehledu pro školy — věkové limity, co umí zdarma, dovednosti, projekty a vytváření aplikací.
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-20
 stav: koncept
 zdroje:
   - data/funkce-chatbotu.yaml
@@ -48,7 +48,7 @@ Chatbotů jsou dnes desítky. Na tomto webu se věnujeme čtyřem, které školy
 | Školní verze v Česku | ne (Edu jen pro VŠ) | ano, v Google Workspace for Education | ano, Copilot Chat se školní licencí Microsoft 365 | ne (Education jen pro VŠ) |
 | Věk — osobní účet | 13+, do 18 let se souhlasem rodiče a v režimu pro dospívající | 13+ (v ČR samostatně od 15 let); placené tarify a dovednosti 18+ | 13+ | 18+ |
 | Věk — školní účet | — | všechny věky, zapíná správce, žáci do 18 let mají omezené funkce | 13+, zapíná správce | — |
-| Dovednosti | uvnitř pluginů; samostatně jen Business, Enterprise, Edu | ano (18+) | ano, v Coworku a agentech (licence) | ano, i zdarma |
+| Dovednosti | od tarifu Plus; zdarma a v Go ne | ano (18+) | jen s placenou licencí Microsoft 365 Copilot | ano, i zdarma |
 | Projekty | ano | Notebooky | Notebooks | ano |
 | Tvorba dokumentů a aplikací | bloky, Sites (placené) | Canvas | Pages | artefakty, Docs, Slides, Design |
 | Hledá na internetu | ano | ano | ano | ano |

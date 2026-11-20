@@ -21,7 +21,7 @@ odkazy:
 
 # Dovednosti (skills)
 
-Dovednost je návod, který si chatbot vytáhne, když ho potřebuje. Jako recept v šuplíku: nemusíte ho pokaždé diktovat. Nahrazuje GPTs a Gems a **stejná dovednost funguje v Claude, Gemini, Copilotu i ChatGPT**.
+Dovednost je návod, který si chatbot vytáhne, když ho potřebuje. Jako recept v šuplíku: nemusíte ho pokaždé diktovat. Nahrazuje GPTs a Gems. **Stejnou dovednost nahrajete do Claude, Gemini, ChatGPT i Copilotu, ne každý tarif ale dovednosti má.** Kde je nemáte, použijte dovednost jako prompt.
 
 <!-- komponenta: video -->
 [Průvodce instalací a využitím dovednosti](https://www.loom.com/share/14a4cf1510e6458a82058811435b7d59)
@@ -39,21 +39,21 @@ Dovednost si můžete představit jako složku, která obsahuje instrukce a voli
 Všechny naše dřívější AI asistenty jsme převedli na dovednosti a přidali k nim to nejlepší z databáze promptů. Původní prompty zůstávají v [katalogu promptů](/prompty). U každé dovednosti najdete čtyři cesty, jak ji použít:
 
 - **Zkopírovat jako prompt** — Funguje v jakémkoli chatbotu, i zdarma.
-- **Stáhnout dovednost** — ZIP zvlášť pro Claude, Gemini a ChatGPT k nahrání do chatbota. Pro Copilot si dovednost vytvoříte sami ze systémového promptu.
-- **Systémový prompt** — V Google Docs pro Copilot agenty, projekty v ChatGPT nebo k vlastní úpravě.
+- **Stáhnout dovednost** — ZIP zvlášť pro Claude, Gemini a ChatGPT k nahrání do chatbota. Pro Copilot si z instrukcí vytvoříte agenta.
+- **Instrukce** — V Google Docs pro Copilot agenty, projekty v ChatGPT nebo k vlastní úpravě.
 - **Znalosti na Disku** — Podklady, ze kterých dovednost čerpá (například klíčové kompetence z RVP). Nahrajte je k projektu nebo dovednosti, pokud chcete přesnější výstupy.
 
 ## Jak dovednost nainstalovat
 
 ### ChatGPT
 
-- **Tarify Business, Enterprise a Edu:** **Plugins → Skills → Create → Upload from your computer.**
-- **Ostatní tarify:** nainstalujte [plugin](/funkce/pluginy), do kterého jsou dovednosti zabalené, nebo vložte systémový prompt do instrukcí [projektu](/funkce/projekty).
-- **Zdarma a pro žáky:** použijte verzi promptu.
+- **Placené tarify od Plus:** **Plugins → Skills → Create → Upload from your computer.**
+- **Zdarma a tarif Go:** dovednosti nemají. Vložte instrukce dovednosti do pokynů [projektu](/funkce/projekty), nebo použijte verzi promptu.
+- **Pro žáky:** použijte verzi promptu.
 
 Dovednost vyvoláte v chatu zavináčem, například `@slovni-hodnoceni`.
 
-Samostatné dovednosti mají zatím jen tarify Business, Enterprise a Edu.
+Dovednosti mají placené tarify od Plus. Ve verzi zdarma a v tarifu Go nejsou.
 
 ### Gemini
 
@@ -80,11 +80,11 @@ Claude je pro uživatele od 18 let.
 
 - **Copilot Cowork:** **Customize → Skills → Add → Upload skill.** Nahrajete soubor `.md` (do 1 MB) nebo ZIP (do 10 MB).
 - **Agent Builder:** dovednost (ZIP) přidáte do agenta, nejvýš 8 dovedností na agenta.
-- **Bez licence:** v bezplatném Copilot Chatu vytvořte agenta a do jeho pokynů vložte systémový prompt z Google Docs.
+- **Bez licence:** v bezplatném Copilot Chatu vytvořte agenta a do jeho pokynů vložte instrukce dovednosti z Google Docs.
 
 Agenta vyvoláte v Copilot Chatu zavináčem, například `@Slovní hodnocení`, nebo ho otevřete v seznamu agentů.
 
-Copilot Cowork vyžaduje placenou licenci Microsoft 365 Copilot.
+Dovednosti (Cowork i Agent Builder) má jen placená licence Microsoft 365 Copilot. V bezplatném Copilot Chatu a v Copilotu pro osobní účty nejsou.
 
 ## Jak napsat vlastní dovednost
 
