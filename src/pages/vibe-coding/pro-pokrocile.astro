@@ -1,0 +1,280 @@
+---
+// Vibe coding pro pokročilé (sablona: pokrocili-pruvodce): programovací agenti, sestava, instrukce, bezpečnost, případová studie.
+// Texty jsou v content/stranky/vibe-coding/pro-pokrocile.md (oddíly podle ##), grafika stejná jako u stránky Projekty.
+import { getEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import { rozdel, naOddily } from '../../lib/komponenty';
+import { navigace } from '../../lib/data';
+
+const stranka = (await getEntry('stranky', 'vibe-coding/pro-pokrocile'))!;
+const d = stranka.data;
+const skupina = navigace.menu.find((g) => g.items.some((i) => i.href === '/' + stranka.id));
+const { uvod, oddily } = naOddily(rozdel(stranka.rendered?.html ?? ''));
+const htmlOddilu = (o?: { casti: { typ: string; html?: string }[] }) => (o?.casti ?? []).filter((x) => x.typ === 'html').map((x) => x.html ?? '').join('');
+const perex = uvod.map((c) => (c.typ === 'html' ? c.html : '')).join('');
+const najdi = (r: RegExp) => oddily.find((o) => r.test(o.nadpis));
+const bezTagu = (s: string) => s.replace(/<[^>]+>/g, '').trim();
+const velke = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+const uvodOddilu = (h: string) => h.split(/<(?:ul|ol|h3|table)[\s>]/)[0];
+const seznam = (h: string) => [...(h.match(/<(ul|ol)>([\s\S]*?)<\/\1>/)?.[2] ?? '').matchAll(/<li>([\s\S]*?)<\/li>/g)].map(([, t]) => t.trim());
+// položky „**Název** — text“ z prvního seznamu
+const polozky = (h: string) => seznam(h).map((li) => li.match(/^<strong>([\s\S]*?)<\/strong>\s*[—–-]?\s*([\s\S]*)$/))
+  .filter((m): m is RegExpMatchArray => !!m)
+  .map(([, n, t]) => ({ nazev: bezTagu(n).replace(/[.:]$/, ''), text: velke(t.trim()) }));
+const odstavce = (h: string) => [...h.replace(/<(ul|ol)>[\s\S]*?<\/\1>/g, '').matchAll(/<p>([\s\S]*?)<\/p>/g)].map(([, t]) => t.trim());
+
+// Programovací agenti: tabulka Nástroj | Pro koho | Cena → řádky
+const agenti = najdi(/agenti/i);
+const agentiHtml = htmlOddilu(agenti);
+const hlavicka = [...(agentiHtml.match(/<thead>([\s\S]*?)<\/thead>/)?.[1] ?? '').matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map(([, t]) => bezTagu(t));
+const radky = [...(agentiHtml.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? '').matchAll(/<tr>([\s\S]*?)<\/tr>/g)]
+  .map(([, r]) => [...r.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(([, t]) => t.trim()))
+  .map(([nastroj, ...zbytek]) => {
+    const m = nastroj.match(/^<strong>([\s\S]*?)<\/strong>\s*([\s\S]*)$/);
+    return { nazev: m ? bezTagu(m[1]) : bezTagu(nastroj), pozn: m ? m[2].replace(/^\(|\)$/g, '') : '', bunky: zbytek.map(velke) };
+  });
+
+const sestava = najdi(/sestava/i);
+const kroky = polozky(htmlOddilu(sestava));
+
+// Instrukce: odstavec končící „…:“ → štítek nad seznamem, seznam → odškrtávací body
+const instrukce = najdi(/Instrukce/i);
+const instrukceHtml = htmlOddilu(instrukce);
+const instrukceOdst = odstavce(instrukceHtml);
+const dvojtecka = instrukceOdst[0]?.match(/^([\s\S]*?)\s*([^.]*:)$/);
+const instrukceText = dvojtecka ? [dvojtecka[1], ...instrukceOdst.slice(1)] : instrukceOdst;
+const instrukceStitek = dvojtecka ? dvojtecka[2].replace(/:$/, '') : '';
+const instrukceBody = seznam(instrukceHtml).map((t) => velke(t.replace(/[,.;]\s*$/, '')));
+
+// Dovednosti: příklady v „…“ → čipy
+const dovednosti = najdi(/Dovednosti/i);
+const dovednostiHtml = htmlOddilu(dovednosti);
+const priklady = [...bezTagu(dovednostiHtml).matchAll(/„([^“]+)“/g)].map(([, t]) => t);
+
+const bezpecnost = najdi(/Bezpečnost/i);
+const pravidla = polozky(htmlOddilu(bezpecnost));
+
+// Případová studie: úvod, body (celé položky jako karty), závěrečný odstavec jako tip, poslední odstavec jen s odkazem → tlačítko
+const studie = najdi(/Případová studie/i);
+let studieHtml = htmlOddilu(studie);
+const zpet = studieHtml.match(/<p>\s*<a href="([^"]+)"[^>]*>([^<]*)<\/a>\s*<\/p>\s*$/);
+if (zpet) studieHtml = studieHtml.slice(0, zpet.index);
+const [studieUvod, ...studieZaver] = odstavce(studieHtml);
+const studieBody = seznam(studieHtml);
+
+const IKONY = [
+  '<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><path d="M14 3v6h6M8 13h8M8 17h5"></path>',
+  '<path d="M3 6h6l2 2h10v11H3z"></path>',
+  '<path d="M4 6h16M4 12h16M4 18h10"></path>',
+  '<ellipse cx="12" cy="6" rx="8" ry="3"></ellipse><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6"></path>',
+  '<path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 6l-2 12"></path>',
+];
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+---
+<Base title={d.title} description={d.popis ?? undefined}>
+  <div class="band band--white">
+    <div class="wrap hero">
+      <div class="page-head">
+        <div class="zahlavi">
+          <Crumbs items={[{ title: skupina?.title ?? 'Vibe Coding' }, { title: d.menu_titulek ?? d.title }]} />
+          {datum && <span class="draft">Aktualizováno {datum}</span>}
+        </div>
+        <h1>{d.title}</h1>
+        {perex && <div class="lede perex" set:html={perex} />}
+        <div class="tlacitka">
+          {sestava && <a class="btn btn--primary" href={`#${sestava.id}`}>{sestava.nadpis} ↓</a>}
+          {bezpecnost && <a class="btn btn--outline" href={`#${bezpecnost.id}`}>{bezpecnost.nadpis}</a>}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {agenti && (
+    <section class="band band--sky" aria-labelledby={agenti.id || undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <div class="hlava">
+          <h2 id={agenti.id || undefined}>{agenti.nadpis}</h2>
+          {uvodOddilu(agentiHtml).trim() && <div class="prose" set:html={uvodOddilu(agentiHtml)} />}
+        </div>
+        <div class="tabulka" role="table" aria-label={agenti.nadpis}>
+          <div class="radek radek--hlavicka" role="row">
+            {hlavicka.map((h) => <div role="columnheader">{h}</div>)}
+          </div>
+          {radky.map((r) => (
+            <div class="radek" role="row">
+              <div class="radek-nazev" role="rowheader"><strong>{r.nazev}</strong>{r.pozn && <span set:html={r.pozn} />}</div>
+              {r.bunky.map((t, i) => <div role="cell"><span class="popisek">{hlavicka[i + 1]}: </span><span set:html={t} /></div>)}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {sestava && (
+    <section class="band band--white" id={sestava.id || undefined} aria-labelledby={sestava.id ? `${sestava.id}-h` : undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <div class="hlava">
+          <h2 id={sestava.id ? `${sestava.id}-h` : undefined}>{sestava.nadpis}</h2>
+          {uvodOddilu(htmlOddilu(sestava)).trim() && <div class="prose" set:html={uvodOddilu(htmlOddilu(sestava))} />}
+        </div>
+        <ol class="postup">
+          {kroky.map((k, i) => (
+            <li class:list={['postup-krok', { 'postup-krok--prvni': i === 0 }]}>
+              <span class="postup-cislo" aria-hidden="true">{i + 1}</span>
+              <h3>{k.nazev}</h3>
+              <p set:html={k.text} />
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  )}
+
+  {instrukce && (
+    <section class="band band--sky" aria-labelledby={instrukce.id || undefined}>
+      <div class="wrap dva-sloupce">
+        <div class="hlava">
+          <h2 id={instrukce.id || undefined}>{instrukce.nadpis}</h2>
+          <div class="prose">{instrukceText.map((p) => <p set:html={p} />)}</div>
+        </div>
+        <div class="card seznam-karta">
+          {instrukceStitek && <div class="titulek">{instrukceStitek}</div>}
+          <ul class="odskrtnuti">
+            {instrukceBody.map((b) => (
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>
+                <span set:html={b} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {dovednosti && (
+    <section class="band band--white" aria-labelledby={dovednosti.id || undefined}>
+      <div class="wrap dva-sloupce">
+        <div class="hlava">
+          <h2 id={dovednosti.id || undefined}>{dovednosti.nadpis}</h2>
+          <div class="prose" set:html={dovednostiHtml} />
+        </div>
+        {priklady.length > 0 && (
+          <div class="podminky">
+            <div class="titulek">Příklady dovedností</div>
+            <ul class="cipy">{priklady.map((p) => <li class="cip">{p}</li>)}</ul>
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+
+  {bezpecnost && (
+    <section class="band band--sky" id={bezpecnost.id || undefined} aria-labelledby={bezpecnost.id ? `${bezpecnost.id}-h` : undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <h2 id={bezpecnost.id ? `${bezpecnost.id}-h` : undefined}>{bezpecnost.nadpis}</h2>
+        <div class="pravidla">
+          {pravidla.map((p) => (
+            <div class="pravidlo">
+              <strong>{p.nazev}</strong>
+              <span set:html={p.text} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {studie && (
+    <section class="band band--white" aria-labelledby={studie.id || undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <div class="hlava">
+          <h2 id={studie.id || undefined}>{studie.nadpis}</h2>
+          {studieUvod && <p class="uvod" set:html={studieUvod} />}
+        </div>
+        <div class="karty">
+          {studieBody.map((b, i) => (
+            <div class="card">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ikona" set:html={IKONY[i % IKONY.length]}></svg>
+              <p set:html={b} />
+            </div>
+          ))}
+        </div>
+        {studieZaver.map((t) => (
+          <div class="tip">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v4M12 16h.01"></path></svg>
+            <p set:html={t} />
+          </div>
+        ))}
+        {zpet && (
+          <div class="tlacitka">
+            <a class="btn btn--outline" href={zpet[1]}>{zpet[2]}</a>
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
+  .hlava { display: flex; flex-direction: column; gap: 14px; max-width: 64ch; }
+  .tlacitka { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+  .perex :global(p) { font-size: 1.15rem; }
+  .dva-sloupce { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 48px; align-items: start; }
+  .titulek { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); }
+  .uvod { font-size: 1.05rem; margin: 0; }
+
+  .tabulka { border: 1px solid var(--sky); border-radius: 9px; overflow: hidden; background: var(--panel); }
+  .radek { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .radek + .radek { border-top: 1px solid #d5e5eb; }
+  .radek > div { padding: 22px 26px; }
+  .radek--hlavicka { background: var(--sky-light); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); }
+  .radek--hlavicka > div { padding: 14px 26px; }
+  .radek-nazev { background: #f6fafc; display: flex; flex-direction: column; }
+  .radek-nazev strong { font-family: var(--fh); font-size: 1.1rem; }
+  .radek-nazev span { font-size: 0.88rem; }
+  .popisek { display: none; font-weight: 600; }
+  @media (max-width: 700px) {
+    .radek { grid-template-columns: 1fr; }
+    .radek--hlavicka { display: none; }
+    .radek > div:not(.radek-nazev) { padding-top: 6px; padding-bottom: 6px; }
+    .radek > div:last-child { padding-bottom: 20px; }
+    .radek-nazev { margin-bottom: 8px; }
+    .popisek { display: inline; }
+  }
+
+  .postup { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 22px; }
+  .postup-krok { border: 1px solid var(--sky); border-radius: 9px; padding: 26px 28px; display: flex; flex-direction: column; gap: 12px; background: var(--panel); }
+  .postup-krok--prvni { background: var(--accent-soft); }
+  .postup-cislo { font-family: var(--fh); font-size: 1.75rem; font-weight: 700; color: var(--accent); line-height: 1; }
+  .postup-krok h3 { font-size: 1.1rem; }
+  .postup-krok > p { margin: 0; font-size: 0.93rem; line-height: 1.6; }
+
+  .seznam-karta { gap: 16px; }
+  .odskrtnuti { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .odskrtnuti li { display: flex; gap: 10px; align-items: flex-start; line-height: 1.55; }
+  .odskrtnuti svg { flex: none; margin-top: 3px; color: var(--sky-ink); }
+
+  .podminky { display: flex; flex-direction: column; gap: 14px; background: #f6fafc; border: 1px solid var(--sky); border-radius: 9px; padding: 22px 26px; }
+  .cipy { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+  .cip { font-size: 0.88rem; padding: 5px 12px; border-radius: var(--pill); background: var(--panel); border: 1px solid #d5e5eb; }
+
+  .pravidla { background: var(--accent-soft); border-radius: 12px; padding: 30px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 16px; }
+  .pravidlo { background: var(--panel); border-radius: 9px; padding: 18px 20px; display: flex; flex-direction: column; gap: 4px; }
+  .pravidlo strong { font-weight: 600; }
+  .pravidlo span { font-size: 0.95rem; }
+  @media (max-width: 640px) { .pravidla { padding: 24px 20px; } }
+
+  .karty { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 20px; }
+  .karty .ikona { color: var(--sky-ink); }
+  .karty .card p { font-size: 0.93rem; line-height: 1.6; margin: 0; }
+  .karty .card p :global(strong) { font-family: var(--fh); font-size: 1.05rem; color: var(--ink); }
+  .karty .card p :global(code) { overflow-wrap: anywhere; }
+
+  .tip { background: var(--sky-light); border-radius: 9px; padding: 22px 26px; display: flex; gap: 14px; align-items: flex-start; max-width: 80ch; }
+  .tip svg { flex: none; margin-top: 2px; color: var(--sky-ink); }
+  .tip p { margin: 0; font-size: 0.98rem; }
+</style>

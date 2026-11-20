@@ -3,7 +3,8 @@ title: Kdo za tím stojí
 menu: O webu
 poradi: 1
 popis: Web Chatboti ve škole provozuje nezisková organizace AI dětem. Dovednosti a prompty vznikají ve spolupráci s pedagogy, NPI, AI reaktorem UJEP a PdF MU.
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-20
+sablona: kdo-za-tim-stoji-pruvodce   # vlastní šablona src/pages/o-webu/kdo-za-tim-stoji.astro
 stav: ke-kontrole   # doplnit aktuální tým a spolupracovníky
 odkazy:
   - { text: Kontakt, href: /o-webu/kontakt }
@@ -21,7 +22,7 @@ Web je kolaborativní projekt neziskové organizace [AI dětem](https://aidetem.
 - **Pedagogická fakulta Masarykovy univerzity** — dovednosti pro formativní a slovní hodnocení stojí na metodice [Vysvědčení jinak](https://vysvedcenijinak.ped.muni.cz) Jany Kratochvílové a jejího týmu.
 - **Pedagogové z praxe** — například Šárka Polanecká (ZŠ Pod Beckovem), autorka Rádce pro správné formulace slovního hodnocení, nebo Jan Jílek, autor zeměpisného kvízu Poznej svět.
 
-## Přidejte se
+## Přidejte se {#pridejte-se}
 
 Používáte dovednost nebo prompt, který vám šetří čas? Podělte se o něj s dalšími vyučujícími. Každý příspěvek projdeme a s vaším souhlasem zveřejníme i s vaším jménem.
 

@@ -1,0 +1,224 @@
+---
+// Vibe coding — materiály do výuky (sablona: materialy-pruvodce): metodika, školení pro sborovny a osm zadání.
+// Texty jsou v content/stranky/vibe-coding/materialy-do-vyuky.md (oddíly podle ##), grafika stejná jako u stránky Projekty.
+import { getEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import { rozdel, naOddily } from '../../lib/komponenty';
+import { navigace } from '../../lib/data';
+
+const stranka = (await getEntry('stranky', 'vibe-coding/materialy-do-vyuky'))!;
+const d = stranka.data;
+const skupina = navigace.menu.find((g) => g.items.some((i) => i.href === '/' + stranka.id));
+const { uvod, oddily } = naOddily(rozdel(stranka.rendered?.html ?? ''));
+const htmlOddilu = (o?: { casti: { typ: string; html?: string }[] }) => (o?.casti ?? []).filter((x) => x.typ === 'html').map((x) => x.html ?? '').join('');
+const perex = uvod.map((c) => (c.typ === 'html' ? c.html : '')).join('');
+const najdi = (r: RegExp) => oddily.find((o) => r.test(o.nadpis));
+const bezTagu = (s: string) => s.replace(/<[^>]+>/g, '').trim();
+const velke = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+// položky „**Název** — text“ (nebo „**Název:** text“) z prvního seznamu
+const polozky = (h: string) => [...(h.match(/<(ul|ol)>([\s\S]*?)<\/\1>/)?.[2] ?? '').matchAll(/<li>\s*<strong>([\s\S]*?)<\/strong>\s*[—–-]?\s*([\s\S]*?)<\/li>/g)]
+  .map(([, n, t]) => ({ nazev: bezTagu(n).replace(/[.:]$/, ''), text: velke(t.trim()) }));
+const nadpisH3 = (h: string) => h.match(/<h3[^>]*>([\s\S]*?)<\/h3>/)?.[1] ?? '';
+// obyčejné odstavce (bez tlačítka, obrázku a odstavců začínajících tučným štítkem)
+const odstavce = (h: string) => [...h.replace(/<(ul|ol)>[\s\S]*?<\/\1>/g, '').matchAll(/<p>([\s\S]*?)<\/p>/g)].map(([, t]) => t.trim())
+  .filter((t) => !/^<img /.test(t) && !/^<strong>[^<]*:<\/strong>/.test(t));
+const tlacitko = (h: string) => h.match(/<p class="tlacitko-odstavec">([\s\S]*?)<\/p>/)?.[1] ?? '';
+
+// Metodika: obrázek, nadpis, popis, údaje (seznam „**Pro koho:** …“), poznámka, tlačítko
+const metodika = najdi(/Metodika/i);
+const metodikaHtml = htmlOddilu(metodika);
+const metodikaObr = metodikaHtml.match(/<img [^>]*>/)?.[0] ?? '';
+const metodikaText = odstavce(metodikaHtml);
+
+// Školení: nadpis, úvod, tři části programu (seznam), „Odnesete si…“, údaje „**Pro koho:** …<br>“, tlačítko
+const skoleni = najdi(/Školení/i);
+const skoleniHtml = htmlOddilu(skoleni);
+const skoleniText = odstavce(skoleniHtml);
+const skoleniUdaje = (skoleniHtml.match(/<p>\s*(<strong>[^<]*:<\/strong>[\s\S]*?)<\/p>/)?.[1] ?? '').split(/<br\s*\/?>/)
+  .map((r) => r.trim().match(/^<strong>([\s\S]*?)<\/strong>\s*([\s\S]*)$/)).filter((m): m is RegExpMatchArray => !!m)
+  .map((m) => ({ nazev: bezTagu(m[1]).replace(/:$/, ''), text: velke(m[2].trim()) }));
+
+// Zadání: úvodní odstavec, pak ### „Název (předměty)“ → karta s promptem a poznámkou; poslední odstavec jen s odkazem → tlačítko
+const zadani = najdi(/zadání/i);
+let zadaniHtml = htmlOddilu(zadani);
+const dalsi = zadaniHtml.match(/<p>\s*<a href="([^"]+)"[^>]*>([^<]*)<\/a>\s*<\/p>\s*$/);
+if (dalsi) zadaniHtml = zadaniHtml.slice(0, dalsi.index);
+const zadaniUvod = zadaniHtml.split(/<h3[\s>]/)[0];
+const karty = zadaniHtml.split(/(?=<h3[\s>])/).filter((k) => /^\s*<h3/.test(k)).map((k) => {
+  const m = k.match(/^\s*<h3[^>]*>([\s\S]*?)<\/h3>/)!;
+  const nazev = bezTagu(m[1]);
+  const predmety = nazev.match(/\(([^)]+)\)\s*$/);
+  const telo = k.slice(m.index! + m[0].length);
+  const prompt = telo.match(/<pre>[\s\S]*?<\/pre>/)?.[0] ?? '';
+  const poznamky = [...telo.replace(prompt, '').matchAll(/<p>([\s\S]*?)<\/p>/g)].map(([, t]) => t.trim());
+  return {
+    nazev: predmety ? nazev.slice(0, predmety.index).trim() : nazev,
+    predmety: predmety ? predmety[1].split(/,\s*/).map(velke) : [],
+    prompt,
+    poznamky,
+  };
+});
+
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+---
+<Base title={d.title} description={d.popis ?? undefined}>
+  <div class="band band--white">
+    <div class="wrap hero">
+      <div class="page-head">
+        <div class="zahlavi">
+          <Crumbs items={[{ title: skupina?.title ?? 'Vibe Coding' }, { title: d.menu_titulek ?? d.title }]} />
+          {datum && <span class="draft">Aktualizováno {datum}</span>}
+        </div>
+        <h1>{d.title}</h1>
+        {perex && <div class="lede perex" set:html={perex} />}
+        <div class="tlacitka">
+          {zadani && <a class="btn btn--primary" href={`#${zadani.id}`}>{zadani.nadpis} ↓</a>}
+          {skoleni && <a class="btn btn--outline" href={`#${skoleni.id}`}>{skoleni.nadpis}</a>}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {metodika && (
+    <section class="band band--sky" aria-labelledby={metodika.id || undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <h2 id={metodika.id || undefined}>{metodika.nadpis}</h2>
+        <div class="metodika">
+          {metodikaObr && <div class="metodika-obr" set:html={metodikaObr} />}
+          <div class="stack" style="gap: 18px">
+            <h3 class="nazev" set:html={nadpisH3(metodikaHtml)} />
+            {metodikaText[0] && <p set:html={metodikaText[0]} />}
+            <dl class="udaje">
+              {polozky(metodikaHtml).map((u) => (
+                <div class="udaj">
+                  <dt class="titulek">{u.nazev}</dt>
+                  <dd set:html={u.text} />
+                </div>
+              ))}
+            </dl>
+            {metodikaText.slice(1).map((t) => <p class="poznamka" set:html={t} />)}
+            {tlacitko(metodikaHtml) && <p class="akce" set:html={tlacitko(metodikaHtml)} />}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {skoleni && (
+    <section class="band band--white" id={skoleni.id || undefined} aria-labelledby={skoleni.id ? `${skoleni.id}-h` : undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <div class="hlava">
+          <h2 id={skoleni.id ? `${skoleni.id}-h` : undefined}>{skoleni.nadpis}</h2>
+          <h3 class="nazev" set:html={nadpisH3(skoleniHtml)} />
+          {skoleniText[0] && <p set:html={skoleniText[0]} />}
+        </div>
+        <ol class="postup">
+          {polozky(skoleniHtml).map((k, i) => (
+            <li class:list={['postup-krok', { 'postup-krok--prvni': i === 0 }]}>
+              <span class="postup-cislo" aria-hidden="true">{i + 1}</span>
+              <h4>{k.nazev}</h4>
+              <p set:html={k.text} />
+            </li>
+          ))}
+        </ol>
+        <div class="dva-sloupce">
+          <div class="prose">{skoleniText.slice(1).map((t) => <p set:html={t} />)}</div>
+          <div class="pravidla">
+            <div class="udaje udaje--skoleni">
+              {skoleniUdaje.map((u) => (
+                <div class="pravidlo">
+                  <span class="titulek titulek--cerveny">{u.nazev}</span>
+                  <span set:html={u.text} />
+                </div>
+              ))}
+            </div>
+            {tlacitko(skoleniHtml) && <p class="akce" set:html={tlacitko(skoleniHtml)} />}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {zadani && (
+    <section class="band band--sky" id={zadani.id || undefined} aria-labelledby={zadani.id ? `${zadani.id}-h` : undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <div class="hlava">
+          <h2 id={zadani.id ? `${zadani.id}-h` : undefined}>{zadani.nadpis}</h2>
+          <div class="prose" set:html={zadaniUvod} />
+        </div>
+        <div class="zadani">
+          {karty.map((k) => (
+            <article class="card zadani-karta">
+              <div class="stack" style="gap: 10px">
+                <h3>{k.nazev}</h3>
+                {k.predmety.length > 0 && (
+                  <ul class="cipy" aria-label="Předměty">{k.predmety.map((p) => <li class="cip">{p}</li>)}</ul>
+                )}
+              </div>
+              <div class="prose" set:html={k.prompt} />
+              {k.poznamky.map((p) => (
+                <div class="tip">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v4M12 16h.01"></path></svg>
+                  <p set:html={p} />
+                </div>
+              ))}
+            </article>
+          ))}
+        </div>
+        {dalsi && (
+          <div class="tlacitka">
+            <a class="btn btn--outline btn--bila" href={dalsi[1]}>{dalsi[2]}</a>
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
+  .hlava { display: flex; flex-direction: column; gap: 14px; max-width: 64ch; }
+  .tlacitka { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+  .perex :global(p) { font-size: 1.15rem; }
+  .dva-sloupce { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 48px; align-items: start; }
+  .titulek { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); }
+  .titulek--cerveny { color: var(--accent-strong); }
+  .nazev { font-size: 1.3rem; }
+  .akce { margin: 8px 0 0; }
+
+  .metodika { background: var(--panel); border: 1px solid var(--sky); border-radius: 12px; padding: 32px; display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 40px; align-items: center; }
+  .metodika p { margin: 0; }
+  .metodika-obr :global(img) { display: block; width: 100%; height: auto; border-radius: 9px; }
+  .poznamka { font-size: 0.93rem; }
+  .udaje { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 12px; }
+  .udaj { background: #f6fafc; border: 1px solid #d5e5eb; border-radius: 9px; padding: 14px 18px; display: flex; flex-direction: column; gap: 4px; }
+  .udaj dd { margin: 0; font-size: 0.95rem; line-height: 1.5; }
+  @media (max-width: 760px) { .metodika { grid-template-columns: 1fr; padding: 24px 20px; gap: 24px; } .metodika-obr { max-width: 320px; } }
+
+  .postup { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 22px; }
+  .postup-krok { border: 1px solid var(--sky); border-radius: 9px; padding: 26px 28px; display: flex; flex-direction: column; gap: 12px; background: var(--panel); }
+  .postup-krok--prvni { background: var(--accent-soft); }
+  .postup-cislo { font-family: var(--fh); font-size: 1.75rem; font-weight: 700; color: var(--accent); line-height: 1; }
+  .postup-krok h4 { font-size: 1.1rem; }
+  .postup-krok > p { margin: 0; font-size: 0.93rem; line-height: 1.6; }
+
+  .pravidla { background: var(--accent-soft); border-radius: 12px; padding: 30px 32px; display: flex; flex-direction: column; gap: 18px; }
+  .udaje--skoleni { grid-template-columns: 1fr; }
+  .pravidlo { background: var(--panel); border-radius: 9px; padding: 16px 20px; display: flex; flex-direction: column; gap: 4px; }
+  .pravidlo span:last-child { font-size: 0.95rem; }
+  @media (max-width: 640px) { .pravidla { padding: 24px 20px; } }
+
+  .zadani { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 22px; align-items: start; }
+  .zadani-karta { min-width: 0; }
+  .zadani-karta h3 { font-size: 1.15rem; }
+  .zadani-karta .prose { max-width: none; }
+  .zadani-karta .prose :global(pre) { margin: 0; }
+  .cipy { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+  .cip { display: inline-block; font-size: 0.82rem; padding: 3px 10px; border-radius: var(--pill); background: #f6fafc; border: 1px solid #d5e5eb; color: var(--ink); line-height: 1.5; }
+  .tip { background: #f6fafc; border-radius: 9px; padding: 14px 18px; display: flex; gap: 12px; align-items: flex-start; }
+  .tip svg { flex: none; margin-top: 1px; color: var(--sky-ink); }
+  .tip p { margin: 0; font-size: 0.93rem; color: var(--ink); }
+
+  .btn--bila { background: var(--panel); }
+</style>

@@ -3,6 +3,7 @@ title: Nástroje pro vibe coding
 menu: Vibe Coding
 poradi: 2
 popis: Gemini Canvas, Claude artefakty, ChatGPT Sites, Macaly, Canva Kódování, Lovable, Bolt, v0 a další — co je zdarma, od kolika let a jak výsledek sdílet.
+sablona: vibe-coding-nastroje-pruvodce   # vlastní šablona src/pages/vibe-coding/nastroje.astro
 aktualizovano: 2026-11-20
 stav: koncept
 zdroje:

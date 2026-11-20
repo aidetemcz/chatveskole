@@ -1,0 +1,174 @@
+---
+// Metodické materiály — AI kurikulum, metodiky k chatbotům, metodiky k Tiny, školení pro sborovny (sablona: metodiky-pruvodce).
+// Texty jsou v content/stranky/ve-vyuce/metodiky.md (oddíly podle ##), grafika stejná jako u stránky Projekty (src/pages/funkce/projekty.astro).
+import { getEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import { rozdel, naOddily } from '../../lib/komponenty';
+import { url } from '../../lib/url';
+
+const stranka = (await getEntry('stranky', 've-vyuce/metodiky'))!;
+const d = stranka.data;
+const { uvod, oddily } = naOddily(rozdel(stranka.rendered?.html ?? ''));
+const htmlOddilu = (o?: { casti: { typ: string; html?: string }[] }) => (o?.casti ?? []).filter((x) => x.typ === 'html').map((x) => x.html ?? '').join('');
+const uvodHtml = uvod.map((c) => (c.typ === 'html' ? c.html : '')).join('');
+const najdi = (r: RegExp) => oddily.find((o) => r.test(o.nadpis));
+const bezTagu = (s: string) => s.replace(/<[^>]+>/g, '').trim();
+const velke = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+// odstavec s tlačítkem (komponenta „tlačítko“ a „karta s obrázkem“) → { text, href }
+const RE_TLACITKO = /<p class="tlacitko-odstavec">\s*<a [^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*<\/p>/;
+const tlacitkoZ = (h: string) => { const m = h.match(RE_TLACITKO); return m ? { href: m[1], text: bezTagu(m[2]) } : null; };
+const bezTlacitka = (h: string) => h.replace(RE_TLACITKO, '');
+const uvodOddilu = (h: string) => h.split(/<(?:ul|ol|h3|table|div)[\s>]/)[0];
+const bloky = (h: string) => h.split(/(?=<h3[\s>])/).filter((k) => /^\s*<h3/.test(k)).map((k) => {
+  const m = k.match(/^\s*<h3[^>]*>([\s\S]*?)<\/h3>/)!;
+  return { nazev: bezTagu(m[1]), html: k.slice(m.index! + m[0].length).trim() };
+});
+
+const kurikulum = tlacitkoZ(uvodHtml);
+const perex = bezTlacitka(uvodHtml);
+
+// Chatboti ve výuce: karty s náhledem (komponenta „karty s náhledem“ už převedla seznam na <div class="nahledy">)
+const vyuka = najdi(/^Chatboti ve výuce/i);
+const vyukaHtml = htmlOddilu(vyuka);
+
+// Metodiky k Tiny: úvodní text, karta s obrázkem (úvodní metodika), ### Metodiky k jednotlivým Tinybotům (seznam odkazů)
+const tiny = najdi(/aplikaci Tiny/i);
+const tinyHtml = htmlOddilu(tiny);
+const karta = tinyHtml.match(/<div class="karta-obrazek card">\s*(<img [^>]*>)\s*<div class="karta-obrazek-text">([\s\S]*?)<\/div><\/div>/);
+const uvodni = karta ? (() => {
+  const text = karta[2];
+  const h = text.match(/<h3([^>]*)>([\s\S]*?)<\/h3>/);
+  return { img: karta[1], h3: h ? bezTagu(h[2]) : '', id: h?.[1].match(/id="([^"]+)"/)?.[1], text: bezTlacitka(text.replace(h?.[0] ?? '', '')), tlacitko: tlacitkoZ(text) };
+})() : null;
+const jednotlive = bloky(tinyHtml.replace(karta?.[0] ?? '', '')).find((b) => /jednotlivým/i.test(b.nazev));
+const metodiky = [...(jednotlive?.html.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').matchAll(/<li>\s*<strong>\s*<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*<\/strong>\s*[—–-]?\s*([\s\S]*?)<\/li>/g)]
+  .map(([, href, nazev, t]) => {
+    const [druh, ...zbytek] = t.trim().split(/(?<=\.)\s+/);
+    return { href, nazev: bezTagu(nazev), druh: velke(druh.replace(/\.$/, '')), popis: zbytek.join(' ') };
+  });
+
+// Školení: karta bez obrázku (### nadpis, text, odkaz) → závěrečná výzva
+const skoleni = najdi(/Školení/i);
+const skoleniHtml = htmlOddilu(skoleni);
+const skoleniBlok = bloky(skoleniHtml.replace(/<\/?div[^>]*>/g, ''))[0];
+const skoleniTlacitko = tlacitkoZ(skoleniHtml);
+
+type Odkaz = { text: string; href: string };
+const odkazy: Odkaz[] = (Array.isArray(d.odkazy) ? d.odkazy : []).filter((o: Odkaz) => o && o.href);
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+---
+<Base title={d.title} description={d.popis ?? undefined}>
+  <div class="band band--white">
+    <div class="wrap hero">
+      <div class="page-head">
+        <div class="zahlavi">
+          <Crumbs items={[{ title: 'Chatboti ve výuce' }, { title: d.title }]} />
+          {datum && <span class="draft">Aktualizováno {datum}</span>}
+        </div>
+        <h1>{d.title}</h1>
+        <div class="lede perex" set:html={perex} />
+        <div class="tlacitka">
+          {kurikulum && <a class="btn btn--primary" href={kurikulum.href}>{kurikulum.text} →</a>}
+          {tiny && <a class="btn btn--outline" href={`#${tiny.id}`}>{tiny.nadpis} ↓</a>}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {vyuka && (
+    <section class="band band--sky" aria-labelledby={vyuka.id || undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <div class="hlava">
+          <h2 id={vyuka.id || undefined}>{vyuka.nadpis}</h2>
+          {uvodOddilu(vyukaHtml).trim() && <div class="prose" set:html={uvodOddilu(vyukaHtml)} />}
+        </div>
+        <div class="nahledy-obal" set:html={vyukaHtml.slice(uvodOddilu(vyukaHtml).length)} />
+      </div>
+    </section>
+  )}
+
+  {tiny && (
+    <section class="band band--white" id={tiny.id || undefined} aria-labelledby={tiny.id ? `${tiny.id}-h` : undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <div class="hlava">
+          <h2 id={tiny.id ? `${tiny.id}-h` : undefined}>{tiny.nadpis}</h2>
+          <div class="prose" set:html={uvodOddilu(tinyHtml)} />
+        </div>
+        {uvodni && (
+          <div class="uvodni">
+            <div class="uvodni-obrazek" set:html={uvodni.img} />
+            <div class="stack" style="gap: 14px">
+              <span class="termin">Začněte zde</span>
+              <h3 id={uvodni.id}>{uvodni.h3}</h3>
+              <div class="prose" set:html={uvodni.text} />
+              {uvodni.tlacitko && <a class="btn btn--primary" href={uvodni.tlacitko.href}>{uvodni.tlacitko.text} →</a>}
+            </div>
+          </div>
+        )}
+        {jednotlive && (
+          <div class="stack" style="gap: 22px">
+            <h3 class="podnadpis">{jednotlive.nazev}</h3>
+            <ul class="metodiky">
+              {metodiky.map((m) => (
+                <li>
+                  <a class="card metodika" href={m.href}>
+                    <span class="titulek">{m.druh}</span>
+                    <span class="metodika-nazev">{m.nazev}</span>
+                    {m.popis && <span class="metodika-popis" set:html={m.popis} />}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+
+  {skoleni && (
+    <section class="band band--sky" aria-labelledby={skoleni.id || undefined}>
+      <div class="wrap vyzva">
+        <div class="hlava">
+          <span class="titulek">{skoleni.nadpis}</span>
+          <h2 id={skoleni.id || undefined}>{skoleniBlok?.nazev ?? skoleni.nadpis}</h2>
+          {skoleniBlok && <div class="prose" set:html={bezTlacitka(skoleniBlok.html.replace(/<p>\s*<a [^>]*>[\s\S]*?<\/a>\s*<\/p>\s*$/, ''))} />}
+        </div>
+        <div class="tlacitka">
+          {skoleniTlacitko && <a class="btn btn--primary" href={skoleniTlacitko.href}>{skoleniTlacitko.text} →</a>}
+          {odkazy.map((o) => <a class="btn btn--outline btn--bila" href={url(o.href)}>{o.text}</a>)}
+        </div>
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
+  .hlava { display: flex; flex-direction: column; gap: 14px; max-width: 64ch; }
+  .tlacitka { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+  .perex :global(p) { font-size: 1.15rem; }
+  .perex :global(p + p) { margin-top: 0.6em; }
+  .titulek { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); }
+  .hlava .prose > :global(p:first-child) { font-size: 1rem; }
+
+  .nahledy-obal :global(.nahledy) { grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); }
+
+  .uvodni { background: var(--accent-soft); border-radius: 12px; padding: 36px 40px; display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 40px; align-items: center; }
+  .uvodni-obrazek :global(img) { display: block; width: 100%; height: auto; }
+  .uvodni h3 { font-size: clamp(1.4rem, 2.4vw, 1.75rem); }
+  .uvodni .btn { align-self: flex-start; margin-top: 6px; }
+  .termin { align-self: flex-start; font-size: 0.8rem; font-weight: 600; padding: 3px 10px; border-radius: var(--pill); background: var(--panel); color: var(--accent-strong); }
+  @media (max-width: 760px) { .uvodni { grid-template-columns: 1fr; padding: 26px 22px; gap: 24px; } .uvodni-obrazek { max-width: 360px; } }
+
+  .podnadpis { font-size: 1.3rem; }
+  .metodiky { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); gap: 18px; }
+  .metodiky li { display: flex; }
+  .metodika { flex: 1; gap: 8px; padding: 22px 24px; }
+  .metodika-nazev { font-family: var(--fh); font-size: 1.1rem; font-weight: 700; line-height: 1.3; color: var(--ink); }
+  .metodika:hover .metodika-nazev { color: var(--accent-strong); }
+  .metodika-popis { font-size: 0.9rem; line-height: 1.55; }
+
+  .vyzva { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; }
+  .btn--bila { background: var(--panel); }
+</style>

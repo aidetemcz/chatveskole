@@ -3,7 +3,8 @@ title: Metodické materiály
 menu: Chatboti ve výuce
 poradi: 2
 popis: Metodiky AI dětem k chatbotům ve výuce — Kurikulum umělé inteligence pro ZŠ a SŠ, metodiky k aplikaci Tiny a školení pro sborovny.
-aktualizovano: 2026-11-15
+sablona: metodiky-pruvodce   # vlastní šablona src/pages/ve-vyuce/metodiky.astro
+aktualizovano: 2026-11-20
 stav: koncept
 zdroje:
   - https://kurikulum.aidetem.cz/vypis-vseho/

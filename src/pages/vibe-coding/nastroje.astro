@@ -1,0 +1,200 @@
+---
+// Nástroje pro vibe coding — přehled nástrojů ve třech skupinách, hosting a doporučení (sablona: vibe-coding-nastroje-pruvodce).
+// Texty a tabulky jsou v content/stranky/vibe-coding/nastroje.md (oddíly podle ##), grafika stejná jako u stránky Projekty.
+import { getEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import { rozdel, naOddily } from '../../lib/komponenty';
+import { url } from '../../lib/url';
+
+const stranka = (await getEntry('stranky', 'vibe-coding/nastroje'))!;
+const d = stranka.data;
+const { uvod, oddily } = naOddily(rozdel(stranka.rendered?.html ?? ''));
+const htmlOddilu = (o?: { casti: { typ: string; html?: string }[] }) => (o?.casti ?? []).filter((x) => x.typ === 'html').map((x) => x.html ?? '').join('');
+const perex = uvod.map((c) => (c.typ === 'html' ? c.html : '')).join('');
+const najdi = (r: RegExp) => oddily.find((o) => r.test(o.nadpis));
+const bezTagu = (s: string) => s.replace(/<[^>]+>/g, '').trim();
+const velke = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+const uvodOddilu = (h: string) => h.split(/<(?:ul|ol|h3|table)[\s>]/)[0];
+const zaTabulkou = (h: string) => h.split(/<\/table>/)[1] ?? '';
+// odstavec, který obsahuje jen odkaz(y) → tlačítka
+const jenOdkazy = /<p>\s*((?:<a [^>]*>[^<]*<\/a>\s*)+)<\/p>/g;
+const odkazyZ = (h: string) => [...h.matchAll(jenOdkazy)]
+  .flatMap(([, p]) => [...p.matchAll(/<a [^>]*href="([^"]+)"[^>]*>([^<]*)<\/a>/g)].map(([, href, text]) => ({ href, text: text.trim() })));
+
+// Tabulka nástrojů → řádky: první sloupec (název s odkazem) a Poznámka vlevo, ostatní sloupce vedle
+type Tabulka = { hlavicka: string[]; radky: { nazev: string; pozn: string; bunky: string[] }[] };
+const tabulka = (h: string): Tabulka => {
+  const hl = [...(h.match(/<thead>([\s\S]*?)<\/thead>/)?.[1] ?? '').matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map(([, t]) => bezTagu(t));
+  const iPozn = hl.findIndex((x) => /^Poznámka/i.test(x));
+  const radky = [...(h.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? '').matchAll(/<tr>([\s\S]*?)<\/tr>/g)]
+    .map(([, r]) => [...r.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(([, t]) => t.trim()))
+    .map((b) => ({ nazev: b[0], pozn: iPozn > 0 ? b[iPozn] : '', bunky: b.slice(1).filter((_, i) => i + 1 !== iPozn).map(velke) }));
+  return { hlavicka: hl.filter((_, i) => i !== iPozn), radky };
+};
+
+const zacatek = najdi(/Pro začátek/i);
+const generatory = najdi(/generátory/i);
+const pokrocile = najdi(/pokročilé/i);
+const skupiny = [zacatek, generatory, pokrocile].filter((o) => !!o).map((o, i) => {
+  const h = htmlOddilu(o);
+  return { oddil: o!, uvod: uvodOddilu(h), tab: tabulka(h), pod: zaTabulkou(h).trim(), sky: i % 2 === 0 };
+});
+
+// Hosting: „**[Název](odkaz)** — text“ → karty (odkaz v nadpisu zůstává)
+const hosting = najdi(/zveřejnit/i);
+const hostingHtml = htmlOddilu(hosting);
+const hostingKarty = [...(hostingHtml.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').matchAll(/<li>\s*<strong>([\s\S]*?)<\/strong>\s*[—–-]?\s*([\s\S]*?)<\/li>/g)]
+  .map(([, n, t]) => ({ nazev: n.trim(), text: velke(t.trim()) }));
+
+// Doporučení: „**Pro koho:** text“ → karty, odkaz na konci jako tlačítko
+const doporuceni = najdi(/doporučujeme/i);
+const doporuceniHtml = htmlOddilu(doporuceni);
+const doporuceniKarty = [...(doporuceniHtml.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').matchAll(/<li>\s*<strong>([\s\S]*?)<\/strong>\s*([\s\S]*?)<\/li>/g)]
+  .map(([, n, t]) => ({ nazev: bezTagu(n).replace(/:$/, ''), text: velke(t.trim()) }));
+const doporuceniOdkazy = odkazyZ(doporuceniHtml.split(/<\/ul>/).pop() ?? '');
+
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+---
+<Base title={d.title} description={d.popis ?? undefined}>
+  <div class="band band--white">
+    <div class="wrap hero">
+      <div class="page-head">
+        <div class="zahlavi">
+          <Crumbs items={[{ title: 'Vibe Coding' }, { title: d.title }]} />
+          {datum && <span class="draft">Aktualizováno {datum}</span>}
+        </div>
+        <h1>{d.title}</h1>
+        <div class="lede perex" set:html={perex} />
+        {skupiny.length > 0 && (
+          <ul class="cipy" aria-label="Skupiny nástrojů">
+            {skupiny.map((s) => <li><a class="cip" href={`#${s.oddil.id}`}>{s.oddil.nadpis}</a></li>)}
+            {hosting && <li><a class="cip" href={`#${hosting.id}`}>{hosting.nadpis}</a></li>}
+          </ul>
+        )}
+        <div class="tlacitka">
+          {doporuceni && <a class="btn btn--primary" href={`#${doporuceni.id}`}>{doporuceni.nadpis} ↓</a>}
+          <a class="btn btn--outline" href={url('/vibe-coding/jak-zacit')}>Jak začít</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {skupiny.map((s) => (
+    <section class:list={['band', s.sky ? 'band--sky' : 'band--white']} aria-labelledby={s.oddil.id || undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <div class="hlava">
+          <h2 id={s.oddil.id || undefined}>{s.oddil.nadpis}</h2>
+          <div class="prose" set:html={s.uvod} />
+        </div>
+        <div class="tabulka" role="table" aria-label={s.oddil.nadpis} style={`--sloupce: ${s.tab.hlavicka.length - 1}`}>
+          <div class="radek radek--hlavicka" role="row">
+            {s.tab.hlavicka.map((h) => <div role="columnheader">{h}</div>)}
+          </div>
+          {s.tab.radky.map((r) => (
+            <div class="radek" role="row">
+              <div class="radek-nazev" role="rowheader">
+                <span class="nazev" set:html={r.nazev} />
+                {r.pozn && <span class="pozn" set:html={r.pozn} />}
+              </div>
+              {r.bunky.map((t, i) => (
+                <div role="cell" class:list={{ prazdna: bezTagu(t) === '—' }}><span class="popisek">{s.tab.hlavicka[i + 1]}: </span><span set:html={t} /></div>
+              ))}
+            </div>
+          ))}
+        </div>
+        {s.pod && (
+          <div class:list={['tip', { 'tip--bila': !s.sky }]}>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v4M12 16h.01"></path></svg>
+            <div class="tip-text" set:html={s.pod} />
+          </div>
+        )}
+      </div>
+    </section>
+  ))}
+
+  {hosting && (
+    <section class="band band--white" aria-labelledby={hosting.id || undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <div class="hlava">
+          <h2 id={hosting.id || undefined}>{hosting.nadpis}</h2>
+          <div class="prose" set:html={uvodOddilu(hostingHtml)} />
+        </div>
+        <div class="karty">
+          {hostingKarty.map((c) => (
+            <div class="card">
+              <h3 set:html={c.nazev} />
+              <p set:html={c.text} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {doporuceni && (
+    <section class="band band--sky" id={doporuceni.id || undefined} aria-labelledby={doporuceni.id ? `${doporuceni.id}-h` : undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <h2 id={doporuceni.id ? `${doporuceni.id}-h` : undefined}>{doporuceni.nadpis}</h2>
+        <div class="karty">
+          {doporuceniKarty.map((c, i) => (
+            <div class:list={['card', { 'card--prvni': i === 0 }]}>
+              <h3>{c.nazev}</h3>
+              <p set:html={c.text} />
+            </div>
+          ))}
+        </div>
+        {doporuceniOdkazy.length > 0 && (
+          <div class="tlacitka">
+            {doporuceniOdkazy.map((o, i) => <a class:list={['btn', i === 0 ? 'btn--primary' : 'btn--outline btn--bila']} href={o.href}>{/[→←]\s*$/.test(o.text) ? o.text : `${o.text} →`}</a>)}
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
+  .hlava { display: flex; flex-direction: column; gap: 14px; max-width: 64ch; }
+  .tlacitka { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+  .perex :global(p) { font-size: 1.15rem; }
+  .btn--bila { background: var(--panel); }
+
+  .cipy { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+  .cip { display: inline-block; font-size: 0.88rem; padding: 5px 12px; border-radius: var(--pill); background: #f6fafc; border: 1px solid #d5e5eb; color: var(--ink); text-decoration: none; line-height: 1.5; }
+  a.cip:hover { border-color: var(--sky-deep); color: var(--ink); }
+
+  .tabulka { border: 1px solid var(--sky); border-radius: 9px; overflow: hidden; background: var(--panel); }
+  .radek { display: grid; grid-template-columns: minmax(0, 1.7fr) repeat(var(--sloupce), minmax(0, 1fr)); }
+  .radek + .radek { border-top: 1px solid #d5e5eb; }
+  .radek > div { padding: 22px 26px; }
+  .radek--hlavicka { background: var(--sky-light); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); }
+  .radek--hlavicka > div { padding: 14px 26px; }
+  .radek-nazev { background: #f6fafc; display: flex; flex-direction: column; gap: 6px; }
+  .nazev { font-family: var(--fh); font-size: 1.1rem; }
+  .nazev :global(strong) { font-weight: 700; }
+  .pozn { font-size: 0.88rem; line-height: 1.55; }
+  .pozn :global(strong) { color: var(--accent-strong); }
+  .popisek { display: none; font-weight: 600; }
+  @media (max-width: 760px) {
+    .radek { grid-template-columns: 1fr; }
+    .radek--hlavicka { display: none; }
+    .radek > div:not(.radek-nazev) { padding-top: 6px; padding-bottom: 6px; }
+    .radek > div:last-child { padding-bottom: 20px; }
+    .radek-nazev { margin-bottom: 8px; }
+    .radek > .prazdna { display: none; }
+    .popisek { display: inline; }
+  }
+
+  .tip { background: var(--panel); border-radius: 9px; padding: 22px 26px; display: flex; gap: 14px; align-items: flex-start; }
+  .tip--bila { background: #f6fafc; border: 1px solid var(--sky); }
+  .tip svg { flex: none; margin-top: 2px; color: var(--sky-ink); }
+  .tip-text :global(p) { margin: 0; font-size: 0.95rem; }
+
+  .karty { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 22px; }
+  .karty .card h3 { font-size: 1.15rem; }
+  .karty .card p { font-size: 0.93rem; line-height: 1.6; }
+  .karty .card h3 :global(a) { text-decoration: underline; text-underline-offset: 3px; }
+  .card--prvni { background: var(--accent-soft); }
+</style>

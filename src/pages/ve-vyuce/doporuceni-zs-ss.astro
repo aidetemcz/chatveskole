@@ -1,0 +1,155 @@
+---
+// Doporučení NPI pro využívání AI na ZŠ a SŠ — ke stažení, jak s nimi pracovat, další zdroje (sablona: doporuceni-pruvodce).
+// Texty jsou v content/stranky/ve-vyuce/doporuceni-zs-ss.md (oddíly podle ##), grafika stejná jako u stránky Projekty (src/pages/funkce/projekty.astro).
+import { getEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import { rozdel, naOddily } from '../../lib/komponenty';
+import { url } from '../../lib/url';
+
+const stranka = (await getEntry('stranky', 've-vyuce/doporuceni-zs-ss'))!;
+const d = stranka.data;
+const { uvod, oddily } = naOddily(rozdel(stranka.rendered?.html ?? ''));
+const htmlOddilu = (o?: { casti: { typ: string; html?: string }[] }) => (o?.casti ?? []).filter((x) => x.typ === 'html').map((x) => x.html ?? '').join('');
+const perex = uvod.map((c) => (c.typ === 'html' ? c.html : '')).join('');
+const najdi = (r: RegExp) => oddily.find((o) => r.test(o.nadpis));
+const bezTagu = (s: string) => s.replace(/<[^>]+>/g, '').trim();
+const velke = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+const uvodOddilu = (h: string) => h.split(/<(?:ul|ol|h3|table)[\s>]/)[0];
+const polozkySeznamu = (h: string) => [...(h.match(/<(ul|ol)>([\s\S]*?)<\/\1>/)?.[2] ?? '').matchAll(/<li>([\s\S]*?)<\/li>/g)].map(([, t]) => t.trim());
+// položky „**Název** — text“ z prvního seznamu (ul i ol)
+const polozky = (h: string) => [...(h.match(/<(ul|ol)>([\s\S]*?)<\/\1>/)?.[2] ?? '').matchAll(/<li>\s*<strong>([\s\S]*?)<\/strong>\s*[—–-]?\s*([\s\S]*?)<\/li>/g)]
+  .map(([, n, t]) => ({ nazev: bezTagu(n).replace(/[.:]$/, ''), text: t.trim() }));
+
+// Ke stažení: seznam odkazů „Název (poznámka)“ → karty; poznámka v závorce jako štítek
+const stazeni = najdi(/Ke stažení/i);
+const stazeniHtml = htmlOddilu(stazeni);
+const soubory = polozkySeznamu(stazeniHtml).map((li) => {
+  const a = li.match(/<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/);
+  const text = bezTagu(a?.[2] ?? li);
+  const m = text.match(/^(.*?)\s*\(([^)]*)\)$/);
+  return { href: a?.[1] ?? '', nazev: m ? m[1] : text, pozn: m ? m[2] : '', pdf: /\.pdf(?:$|[?#])/i.test(a?.[1] ?? '') };
+});
+const IKONA_PDF = '<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><path d="M14 3v6h6M12 11v6M9 14l3 3 3-3"></path>';
+const IKONA_WEB = '<circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path>';
+
+const jak = najdi(/pracovat/i);
+const kroky = polozky(htmlOddilu(jak));
+
+// Další zdroje: „[Název](odkaz) — popis“ → karty
+const zdroje = najdi(/Další zdroje/i);
+const zdrojeKarty = polozkySeznamu(htmlOddilu(zdroje)).map((li) => {
+  const a = li.match(/^\s*<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*[—–-]?\s*/);
+  return { href: a?.[1] ?? '', nazev: bezTagu(a?.[2] ?? ''), text: velke(a ? li.slice(a[0].length).trim() : li) };
+});
+
+type Odkaz = { text: string; href: string };
+const odkazy: Odkaz[] = (Array.isArray(d.odkazy) ? d.odkazy : []).filter((o: Odkaz) => o && o.href);
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+---
+<Base title={d.title} description={d.popis ?? undefined}>
+  <div class="band band--white">
+    <div class="wrap hero">
+      <div class="page-head">
+        <div class="zahlavi">
+          <Crumbs items={[{ title: 'Chatboti ve výuce' }, { title: d.title }]} />
+          {datum && <span class="draft">Aktualizováno {datum}</span>}
+        </div>
+        <h1>{d.title}</h1>
+        <div class="lede perex" set:html={perex} />
+        <div class="tlacitka">
+          {stazeni && <a class="btn btn--primary" href={`#${stazeni.id}`}>{stazeni.nadpis} ↓</a>}
+          {jak && <a class="btn btn--outline" href={`#${jak.id}`}>{jak.nadpis} ↓</a>}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {stazeni && (
+    <section class="band band--sky" id={stazeni.id || undefined} aria-labelledby={stazeni.id ? `${stazeni.id}-h` : undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <div class="hlava">
+          <h2 id={stazeni.id ? `${stazeni.id}-h` : undefined}>{stazeni.nadpis}</h2>
+          {uvodOddilu(stazeniHtml).trim() && <div class="prose" set:html={uvodOddilu(stazeniHtml)} />}
+        </div>
+        <ul class="karty">
+          {soubory.map((s) => (
+            <li>
+              <a class="card soubor" href={s.href}>
+                <span class="tile-icon tile-icon--sky"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={s.pdf ? IKONA_PDF : IKONA_WEB}></svg></span>
+                <span class="soubor-nazev">{s.nazev}</span>
+                {s.pozn && <span class="stitek">{s.pozn}</span>}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  {jak && (
+    <section class="band band--white" id={jak.id || undefined} aria-labelledby={jak.id ? `${jak.id}-h` : undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <h2 id={jak.id ? `${jak.id}-h` : undefined}>{jak.nadpis}</h2>
+        <ol class="postup">
+          {kroky.map((k, i) => (
+            <li class:list={['postup-krok', { 'postup-krok--prvni': i === 0 }]}>
+              <span class="postup-cislo" aria-hidden="true">{i + 1}</span>
+              <h3>{k.nazev}</h3>
+              <p set:html={velke(k.text)} />
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  )}
+
+  {zdroje && (
+    <section class="band band--sky" aria-labelledby={zdroje.id || undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <h2 id={zdroje.id || undefined}>{zdroje.nadpis}</h2>
+        <div class="zdroje">
+          {zdrojeKarty.map((z) => (
+            <div class="card">
+              <h3><a href={z.href}>{z.nazev}</a></h3>
+              <p set:html={z.text} />
+            </div>
+          ))}
+        </div>
+        {odkazy.length > 0 && (
+          <div class="tlacitka">
+            {odkazy.map((o, i) => <a class:list={['btn', i === 0 ? 'btn--primary' : 'btn--outline btn--bila']} href={url(o.href)}>{o.text}{i === 0 && ' →'}</a>)}
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
+  .hlava { display: flex; flex-direction: column; gap: 14px; max-width: 64ch; }
+  .tlacitka { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+  .perex :global(p) { font-size: 1.15rem; }
+  .perex :global(p + p) { margin-top: 0.6em; }
+
+  .karty { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 22px; }
+  .karty li { display: flex; }
+  .soubor { flex: 1; }
+  .soubor-nazev { font-family: var(--fh); font-size: 1.15rem; font-weight: 700; line-height: 1.3; color: var(--ink); }
+  .soubor:hover .soubor-nazev { color: var(--accent-strong); }
+  .stitek { align-self: flex-start; margin-top: auto; font-size: 0.75rem; padding: 2px 8px; border-radius: var(--pill); background: var(--sky-light); }
+
+  .postup { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 22px; }
+  .postup-krok { border: 1px solid var(--sky); border-radius: 9px; padding: 26px 28px; display: flex; flex-direction: column; gap: 12px; background: var(--panel); }
+  .postup-krok--prvni { background: var(--accent-soft); }
+  .postup-cislo { font-family: var(--fh); font-size: 1.75rem; font-weight: 700; color: var(--accent); line-height: 1; }
+  .postup-krok h3 { font-size: 1.1rem; }
+  .postup-krok > p { margin: 0; font-size: 0.93rem; line-height: 1.6; }
+
+  .zdroje { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 22px; }
+  .zdroje .card h3 { font-size: 1.15rem; }
+  .zdroje .card p { font-size: 0.93rem; line-height: 1.6; }
+
+  .btn--bila { background: var(--panel); }
+</style>
