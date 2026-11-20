@@ -38,10 +38,10 @@ Dovednost si můžete představit jako složku, která obsahuje instrukce a voli
 
 Všechny naše dřívější AI asistenty jsme převedli na dovednosti a přidali k nim to nejlepší z databáze promptů. Původní prompty zůstávají v [katalogu promptů](/prompty). U každé dovednosti najdete čtyři cesty, jak ji použít:
 
-- **Zkopírovat jako prompt** — Funguje v jakémkoli chatbotu, i zdarma.
-- **Stáhnout dovednost** — ZIP zvlášť pro Claude, Gemini a ChatGPT k nahrání do chatbota. Pro Copilot si z instrukcí vytvoříte agenta.
-- **Instrukce** — V Google Docs pro Copilot agenty, projekty v ChatGPT nebo k vlastní úpravě.
-- **Znalosti na Disku** — Podklady, ze kterých dovednost čerpá (například klíčové kompetence z RVP). Nahrajte je k projektu nebo dovednosti, pokud chcete přesnější výstupy.
+- **Zkopírovat jako prompt** — Prompt vložíte do jakéhokoli chatbota a funguje i v bezplatné verzi.
+- **Stáhnout dovednost** — Stáhnete si ZIP pro Claude, Gemini nebo ChatGPT a nahrajete ho do chatbota. Pro Copilot si z instrukcí vytvoříte agenta.
+- **Instrukce** — Instrukce dovednosti otevřete v Google Docs. Vložíte je do agenta v Copilotu nebo do projektu v ChatGPT, případně si je upravíte podle sebe.
+- **Znalosti na Disku** — Na Google Disku najdete podklady, ze kterých dovednost čerpá, například klíčové kompetence z RVP. Když je nahrajete k projektu nebo dovednosti, dostanete přesnější výstupy.
 
 ## Jak dovednost nainstalovat
 
