@@ -8,7 +8,7 @@ export const NASTROJE: Nastroj[] = [
     kroky: [
       'Stáhněte ZIP dovednosti pro ChatGPT.',
       'Placené tarify od Plus: Plugins → Skills → Create → Upload from your computer. Celou sadu může správce přidat do pracovního prostoru jako plugin.',
-      'Zdarma a tarif Go dovednosti nemají: vložte systémový prompt z Google Docs do pokynů projektu a nahrajte soubory ze složky Data.',
+      'Zdarma a tarif Go dovednosti nemají: vložte instrukce dovednosti z Google Docs do pokynů projektu a nahrajte soubory ze složky Data.',
       'Dovednost vyvoláte v chatu zavináčem: napište @ a začněte psát její název.',
       'Zdarma a pro žáky: použijte verzi promptu níže.',
     ],
@@ -35,7 +35,7 @@ export const NASTROJE: Nastroj[] = [
     id: 'copilot', nazev: 'MS Copilot', zip: null,
     kroky: [
       'Dovednosti má Copilot jen s placenou licencí Microsoft 365 Copilot. Hotovou dovednost pro Copilot ke stažení nenabízíme, místo ní si vytvoříte agenta.',
-      'V Copilot Chatu vytvořte agenta a do jeho pokynů vložte systémový prompt z Google Docs.',
+      'V Copilot Chatu vytvořte agenta a do jeho pokynů vložte instrukce dovednosti z Google Docs.',
       'Má-li dovednost podklady, nahrajte do agenta i soubory ze složky Data na Google Disku.',
       'Agenta vyvoláte v Copilot Chatu zavináčem, nebo ho otevřete v seznamu agentů.',
     ],

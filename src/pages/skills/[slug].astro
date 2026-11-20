@@ -76,7 +76,7 @@ const varianty = skill.prompt.varianty;
                   </a>
                 ) : (
                   <div class="stack" style="gap: 10px">
-                    {skill.google_doc && <a class="zip" href={skill.google_doc}><span class="tile-icon tile-icon--sky"><Icon name="doc" size={18} /></span><span class="stack"><strong>Systémový prompt</strong><span class="muted small">Google Docs · vložte do pokynů agenta</span></span></a>}
+                    {skill.google_doc && <a class="zip" href={skill.google_doc}><span class="tile-icon tile-icon--sky"><Icon name="doc" size={18} /></span><span class="stack"><strong>Instrukce</strong><span class="muted small">Google Docs · vložte do pokynů agenta</span></span></a>}
                     {skill.google_data && <a class="zip" href={skill.google_data}><span class="tile-icon tile-icon--sky"><Icon name="folder" size={18} /></span><span class="stack"><strong>Znalosti (složka Data)</strong><span class="muted small">Google Disk · nahrajte do agenta</span></span></a>}
                   </div>
                 )}
@@ -88,7 +88,7 @@ const varianty = skill.prompt.varianty;
       </section>
 
       <section id="prompt" class="stack sekce" aria-labelledby="prompt-h">
-        <div class="stack" style="gap: 8px"><h2 id="prompt-h" class="h2">Použít jako prompt</h2><p class="muted">Funguje v jakémkoli chatbotu, i v bezplatné verzi. Údaje v hranatých závorkách nahraďte svými.{skill.google_doc && <> Celé instrukce dovednosti najdete v <a href={skill.google_doc}>systémovém promptu v Google Docs</a>.</>}</p></div>
+        <div class="stack" style="gap: 8px"><h2 id="prompt-h" class="h2">Použít jako prompt</h2><p class="muted">Funguje v jakémkoli chatbotu, i v bezplatné verzi. Údaje v hranatých závorkách nahraďte svými.{skill.google_doc && <> Celé instrukce dovednosti najdete v <a href={skill.google_doc}>Google Docs</a>.</>}</p></div>
         {varianty.length > 1 && (
           <div class="tabs" role="tablist" aria-label="Varianta promptu" data-switch="varianty">
             {varianty.map((v, i) => <button type="button" role="tab" data-target={`v${i}`} aria-selected={i === 0 ? 'true' : 'false'}>{v.nazev}</button>)}

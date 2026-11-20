@@ -39,8 +39,8 @@ Dovednost si můžete představit jako složku, která obsahuje instrukce a voli
 Všechny naše dřívější AI asistenty jsme převedli na dovednosti a přidali k nim to nejlepší z databáze promptů. Původní prompty zůstávají v [katalogu promptů](/prompty). U každé dovednosti najdete čtyři cesty, jak ji použít:
 
 - **Zkopírovat jako prompt** — Funguje v jakémkoli chatbotu, i zdarma.
-- **Stáhnout dovednost** — ZIP zvlášť pro Claude, Gemini a ChatGPT k nahrání do chatbota. Pro Copilot si dovednost vytvoříte sami ze systémového promptu.
-- **Systémový prompt** — V Google Docs pro Copilot agenty, projekty v ChatGPT nebo k vlastní úpravě.
+- **Stáhnout dovednost** — ZIP zvlášť pro Claude, Gemini a ChatGPT k nahrání do chatbota. Pro Copilot si z instrukcí vytvoříte agenta.
+- **Instrukce** — V Google Docs pro Copilot agenty, projekty v ChatGPT nebo k vlastní úpravě.
 - **Znalosti na Disku** — Podklady, ze kterých dovednost čerpá (například klíčové kompetence z RVP). Nahrajte je k projektu nebo dovednosti, pokud chcete přesnější výstupy.
 
 ## Jak dovednost nainstalovat
@@ -48,7 +48,7 @@ Všechny naše dřívější AI asistenty jsme převedli na dovednosti a přidal
 ### ChatGPT
 
 - **Placené tarify od Plus:** **Plugins → Skills → Create → Upload from your computer.**
-- **Zdarma a tarif Go:** dovednosti nemají. Vložte systémový prompt do instrukcí [projektu](/funkce/projekty), nebo použijte verzi promptu.
+- **Zdarma a tarif Go:** dovednosti nemají. Vložte instrukce dovednosti do pokynů [projektu](/funkce/projekty), nebo použijte verzi promptu.
 - **Pro žáky:** použijte verzi promptu.
 
 Dovednost vyvoláte v chatu zavináčem, například `@slovni-hodnoceni`.
@@ -80,7 +80,7 @@ Claude je pro uživatele od 18 let.
 
 - **Copilot Cowork:** **Customize → Skills → Add → Upload skill.** Nahrajete soubor `.md` (do 1 MB) nebo ZIP (do 10 MB).
 - **Agent Builder:** dovednost (ZIP) přidáte do agenta, nejvýš 8 dovedností na agenta.
-- **Bez licence:** v bezplatném Copilot Chatu vytvořte agenta a do jeho pokynů vložte systémový prompt z Google Docs.
+- **Bez licence:** v bezplatném Copilot Chatu vytvořte agenta a do jeho pokynů vložte instrukce dovednosti z Google Docs.
 
 Agenta vyvoláte v Copilot Chatu zavináčem, například `@Slovní hodnocení`, nebo ho otevřete v seznamu agentů.
 
