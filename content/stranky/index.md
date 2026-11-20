@@ -2,7 +2,7 @@
 title: Chatboti ve škole
 popis: Praktický průvodce chatboty pro vyučující a vedení škol. Dovednosti a prompty pro formativní hodnocení, přípravu výuky i řízení školy. Vibe coding a pravidla pro AI.
 sablona: homepage
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-20
 stav: koncept
 ---
 
@@ -28,7 +28,7 @@ Hotoví asistenti na odkaz končí. Vlastní GPTs v ChatGPT přestanou fungovat 
 - **Vedení školy** — mise a vize, školní pravidla, strategie, AI gramotnost v ŠVP.
 - **AI akcelerátor** — řízení změny a mapování procesů pro školy v programu.
 
-Každou dovednost můžete použít dvěma způsoby: **zkopírovat jako prompt** (funguje všude, i zdarma), nebo **stáhnout jako dovednost** a nainstalovat do Claude, Gemini, Copilotu nebo ChatGPT.
+Každou dovednost můžete použít dvěma způsoby: **zkopírovat jako prompt** (funguje všude, i zdarma), nebo **stáhnout jako dovednost** a nainstalovat do Claude, Gemini, ChatGPT nebo Copilotu (dovednosti ale nemá každý tarif).
 
 [Co jsou dovednosti a jak je nainstalovat](/funkce/skills)
 

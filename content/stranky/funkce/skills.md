@@ -21,7 +21,7 @@ odkazy:
 
 # Dovednosti (skills)
 
-Dovednost je návod, který si chatbot vytáhne, když ho potřebuje. Jako recept v šuplíku: nemusíte ho pokaždé diktovat. Nahrazuje GPTs a Gems a **stejná dovednost funguje v Claude, Gemini, Copilotu i ChatGPT**.
+Dovednost je návod, který si chatbot vytáhne, když ho potřebuje. Jako recept v šuplíku: nemusíte ho pokaždé diktovat. Nahrazuje GPTs a Gems. **Stejnou dovednost nahrajete do Claude, Gemini, ChatGPT i Copilotu, ne každý tarif ale dovednosti má.** Kde je nemáte, použijte dovednost jako prompt.
 
 <!-- komponenta: video -->
 [Průvodce instalací a využitím dovednosti](https://www.loom.com/share/14a4cf1510e6458a82058811435b7d59)
@@ -47,13 +47,13 @@ Všechny naše dřívější AI asistenty jsme převedli na dovednosti a přidal
 
 ### ChatGPT
 
-- **Tarify Business, Enterprise a Edu:** **Plugins → Skills → Create → Upload from your computer.**
-- **Ostatní tarify:** nainstalujte [plugin](/funkce/pluginy), do kterého jsou dovednosti zabalené, nebo vložte systémový prompt do instrukcí [projektu](/funkce/projekty).
-- **Zdarma a pro žáky:** použijte verzi promptu.
+- **Placené tarify od Plus:** **Plugins → Skills → Create → Upload from your computer.**
+- **Zdarma a tarif Go:** dovednosti nemají. Vložte systémový prompt do instrukcí [projektu](/funkce/projekty), nebo použijte verzi promptu.
+- **Pro žáky:** použijte verzi promptu.
 
 Dovednost vyvoláte v chatu zavináčem, například `@slovni-hodnoceni`.
 
-Samostatné dovednosti mají zatím jen tarify Business, Enterprise a Edu.
+Dovednosti mají placené tarify od Plus. Ve verzi zdarma a v tarifu Go nejsou.
 
 ### Gemini
 
@@ -84,7 +84,7 @@ Claude je pro uživatele od 18 let.
 
 Agenta vyvoláte v Copilot Chatu zavináčem, například `@Slovní hodnocení`, nebo ho otevřete v seznamu agentů.
 
-Copilot Cowork vyžaduje placenou licenci Microsoft 365 Copilot.
+Dovednosti (Cowork i Agent Builder) má jen placená licence Microsoft 365 Copilot. V bezplatném Copilot Chatu a v Copilotu pro osobní účty nejsou.
 
 ## Jak napsat vlastní dovednost
 

@@ -26,7 +26,7 @@ const views = [
       <Crumbs items={[{ title: 'Funkce', href: '/funkce/skills' }, { title: 'Katalog dovedností' }]} />
       <header class="page-head">
         <h1>Katalog dovedností</h1>
-        <p class="lede">{pocet(skills.length, 'dovednost', 'dovednosti', 'dovedností')} pro vyučující a vedení škol. Stáhněte dovednost a nainstalujte ji do Claude, Gemini, Copilotu nebo ChatGPT — chatbot ji pak použije sám, kdykoli ji budete potřebovat.</p>
+        <p class="lede">{pocet(skills.length, 'dovednost', 'dovednosti', 'dovedností')} pro vyučující a vedení škol. Stáhněte dovednost a nainstalujte ji do Claude, Gemini, ChatGPT nebo Copilotu — chatbot ji pak použije, kdykoli ji budete potřebovat. Dovednosti nemá každý tarif; kde chybí, zkopírujte si dovednost jako prompt.</p>
       </header>
       <div class="seg" role="group" aria-label="Řazení" data-switch="skupiny-skills" style="align-self: flex-start">
         <button type="button" data-target="ucel" aria-pressed="true">Řadit dle účelu</button>
