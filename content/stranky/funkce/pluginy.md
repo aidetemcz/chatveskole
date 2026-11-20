@@ -3,7 +3,8 @@ title: Pluginy
 menu: Funkce
 poradi: 4
 popis: Co jsou pluginy v ChatGPT, Claude a Copilotu, čím se liší od dovedností a jak nainstalovat sady dovedností od AI dětem.
-aktualizovano: 2026-11-15
+sablona: pluginy-pruvodce   # vlastní šablona src/pages/funkce/pluginy.astro (návrh z Claude Design, 20. 11. 2026)
+aktualizovano: 2026-11-20
 stav: koncept
 zdroje:
   - https://help.openai.com/en/articles/20001256-plugins-in-chatgpt
@@ -13,7 +14,6 @@ zdroje:
   - https://mc.merill.net/message/MC1484008
 odkazy:
   - { text: Katalog dovedností, href: /skills }
-  - { text: Co jsou dovednosti, href: /funkce/skills }
   - { text: Konektory, href: /funkce/konektory }
 ---
 
@@ -21,50 +21,77 @@ odkazy:
 
 Plugin je **balíček**, který do chatbota nainstalujete jedním krokem. Může obsahovat několik [dovedností](/funkce/skills), napojení na další aplikace ([konektory](/funkce/konektory)) a další nástroje. Zatímco dovednost naučí chatbota jeden úkol, plugin mu přidá celou sadu dovedností pro určitou oblast — třeba vše, co potřebujete k formativnímu hodnocení.
 
+## Prompt, dovednost, nebo plugin?
+
+Všechny tři cesty vedou ke stejnému cíli. Liší se tím, kolik práce vám ušetří a kde fungují.
+
+- **Prompt** — Použijte ho, když chcete něco **vyzkoušet**, nebo když to má fungovat i v bezplatné verzi a pro žáky.
+- **Dovednost** — Použijte ji na **jeden úkol, který děláte často**, třeba slovní hodnocení nebo pracovní listy.
+- **Plugin** — Použijte ho, když chcete mít **celou oblast práce** (hodnocení, vedení školy) pohromadě a vždy aktuální.
+
 ## Pluginy v jednotlivých nástrojích
 
 ### ChatGPT
 
-- Pluginy jsou v ChatGPT od července 2026 a nahrazují vlastní GPTs. Adresář pluginů vidí všechny tarify, co si můžete nainstalovat, záleží na tarifu a regionu.
-- Plugin zavoláte zavináčem, například `@Formativní hodnocení`.
-- **Máte vlastní GPT?** V *My GPTs* zvolte **Migrate to plugin**. Pokyny se změní na dovednost a soubory na podklady. Nepřenese se výběr modelu, vlastní akce ani sdílení. Nový plugin je soukromý a původní GPT zůstane jen pro čtení. GPTs přestanou fungovat 11. 12. 2026.
-- **Sdílení:** plugin sdílíte jen uvnitř pracovního prostoru (tarify Business, Enterprise, Edu). Do veřejného adresáře se dostane až po schválení OpenAI.
+- Pluginy jsou v ChatGPT od července 2026 a nahrazují vlastní GPTs.
+- Adresář pluginů vidí všechny tarify. Co si můžete nainstalovat, záleží na tarifu a regionu.
+- Plugin sdílíte jen uvnitř pracovního prostoru (tarify Business, Enterprise, Edu). Do veřejného adresáře se dostane až po schválení OpenAI.
+
+**Jak plugin zavoláte:** napište v chatu zavináč a název pluginu, například `@Formativní hodnocení`.
 
 ### Claude
 
 - Pluginy mají placené tarify (Pro, Max, Ultra, Team, Enterprise).
-- Instalace: **Customize → Plugins → Add**. Plugin nahrajete jako soubor, nebo přidáte celý „marketplace“ — repozitář na GitHubu, ze kterého pak instalujete jednotlivé pluginy.
 - Od září 2026 má Claude veřejný adresář pluginů.
 - V týmových tarifech může správce plugin zpřístupnit celé organizaci.
 
+**Kde je najdete:** v **Customize → Plugins → Add**. Plugin nahrajete jako soubor, nebo přidáte celý „marketplace“, tedy sadu, ze které pak instalujete jednotlivé pluginy.
+
 ### Microsoft Copilot
 
-- Do konce listopadu 2026 nahradí v menu tlačítko **Agenti** tlačítko **Pluginy**. Pluginy balí agenty, dovednosti a konektory.
+- Do konce listopadu 2026 nahradí v menu tlačítko **Agenti** tlačítko **Pluginy**.
+- Pluginy balí agenty, dovednosti a konektory.
 - Copilot Cowork umí nainstalovat i balíčky připravené pro Claude.
-- Plné využití vyžaduje licenci Microsoft 365 Copilot.
+
+**Co potřebujete:** plné využití vyžaduje placenou licenci Microsoft 365 Copilot.
 
 ### Gemini
 
-Gemini pluginy nemá. Nejblíž jsou **Připojené aplikace** (Gmail, Disk, Kalendář, YouTube a aplikace třetích stran) a [dovednosti](/funkce/skills).
+- Gemini pluginy nemá.
+- Nejblíž jsou **Připojené aplikace**: Gmail, Disk, Kalendář, YouTube a aplikace třetích stran.
+
+**Co použít místo pluginu:** nainstalujte jednotlivé [dovednosti](/funkce/skills).
+
+## Máte vlastní GPT?
+
+**GPTs přestanou fungovat 11. 12. 2026.**
+
+V ChatGPT ho převedete na plugin jedním tlačítkem: v *My GPTs* zvolte **Migrate to plugin**. Nový plugin je soukromý a původní GPT zůstane jen pro čtení.
+
+### Přenese se
+
+- pokyny (změní se na dovednost)
+- soubory (změní se na podklady)
+
+### Nepřenese se
+
+- výběr modelu
+- vlastní akce
+- sdílení
 
 ## Sady dovedností od AI dětem
 
-Naše dovednosti jsou rozdělené do pěti sad. Každou sadu připravujeme i jako plugin.
+Naše dovednosti jsou rozdělené do pěti sad. Každou sadu si můžete nainstalovat jako plugin, nebo z ní vybrat jednotlivé dovednosti.
 
-<!-- komponenta: karty sad z content/sady.yaml, u každé: seznam skills, tlačítka Stáhnout plugin (ZIP), Přidat do Claude (marketplace), odkaz na ChatGPT adresář, až bude schválený -->
+## Jak nainstalovat sadu
 
-### Jak nainstalovat
+Postup se liší podle aplikace a tarifu.
 
-- **Claude (placené tarify):** v **Customize → Plugins → Add marketplace** zadejte `aidetemcz/chatveskole`. Zobrazí se všechny naše sady a vyberete si, které chcete. Výhoda: když dovednosti aktualizujeme, aktualizují se i vám.
-- **Claude, Copilot Cowork:** stáhněte ZIP pluginu a nahrajte ho.
-- **ChatGPT:** plugin AI dětem podáváme ke schválení do veřejného adresáře. Do té doby použijte jednotlivé dovednosti (placené tarify od Plus), [projekt](/funkce/projekty) s instrukcemi dovednosti, nebo prompt.
-- **Gemini:** pluginy nemá — nainstalujte jednotlivé dovednosti ze sady.
+- **Claude (placené tarify):** v **Customize → Plugins → Add marketplace** zadejte `aidetemcz/chatveskole`. Zobrazí se všechny naše sady a vyberete si, které chcete. Když dovednosti aktualizujeme, aktualizují se i vám.
+- **Claude, Copilot Cowork (nahrání souboru):** stáhněte ZIP pluginu u sady výše a nahrajte ho.
+- **ChatGPT (čeká na schválení):** plugin AI dětem podáváme ke schválení do veřejného adresáře. Do té doby použijte jednotlivé dovednosti (placené tarify od Plus), [projekt](/funkce/projekty) s instrukcemi dovednosti, nebo prompt.
+- **Gemini (pluginy nemá):** nainstalujte jednotlivé dovednosti ze sady.
 
-## Plugin, dovednost, nebo prompt?
+## Stačí vám jedna dovednost?
 
-| Chci… | Použijte |
-|---|---|
-| vyzkoušet, jestli mi to pomůže | prompt |
-| jeden úkol, který dělám často | dovednost |
-| celou oblast práce (hodnocení, vedení školy) a mít ji vždy aktuální | plugin |
-| aby to fungovalo i v bezplatné verzi nebo pro žáky | prompt |
+V katalogu si každou dovednost stáhnete zvlášť, nebo ji zkopírujete jako prompt.
