@@ -21,7 +21,7 @@ ChatGPT, Gemini, Copilot a Claude opouštějí hotové asistenty, které se otev
 
 **Asistent na odkaz končí.** AI asistenti, které jste možná znali jako Modely GPT nebo Google Gem, končí a nastupují tzv. dovednosti (skills) a rozšíření (pluginy).
 
-**Nastupují dovednosti a pluginy.** Dovednosti jsou instrukce pro chatbota zabalené do funkce, kterou si kdykoliv vyvoláte přes lomítko nebo zavináč a šetří velké množství času.
+**Nastupují dovednosti a pluginy.** Dovednosti nebo pluginy jsou instrukce pro chatbota zabalené do funkce, kterou si kdykoliv vyvoláte přes lomítko nebo zavináč a šetří velké množství času.
 
 **Agenti jsou už jen jako placená funkce.** Agenti jsou funkce, kterým když zadáte úkol, tak si jeho řešení samostatně rozplánují. Šetří velké množství času, ale stávají se pouze placeným doplňkem.
 
