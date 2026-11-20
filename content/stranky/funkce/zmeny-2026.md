@@ -5,7 +5,7 @@ poradi: 1
 popis: GPTs a Gems končí, nastupují dovednosti a pluginy. Co který chatbot umí dnes a co má umět v roce 2027 — přehled pro vyučující a školy.
 sablona: zmeny-funkci        # vykreslí se z data/funkce-chatbotu.yaml podle vzoru docs/design/vzor-funkce-chatbotu-2027.html
 data: data/funkce-chatbotu.yaml
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-20
 stav: koncept
 odkazy:
   - { text: Co jsou dovednosti, href: /funkce/skills }
@@ -24,6 +24,10 @@ ChatGPT, Gemini, Copilot a Claude opouštějí hotové asistenty, které se otev
 **Nastupují dovednosti a pluginy.** Dovednosti už mají všechny čtyři nástroje. Balíček se souborem SKILL.md nahrajete do Claude, Gemini i Copilotu, v ChatGPT je dovednost součástí pluginu.
 
 **Samostatná práce je placená.** ChatGPT Work, Copilot Cowork i samostatná práce v Claude jsou zatím jen v placených tarifech. Gemini Spark v Evropě není vůbec.
+
+<!-- komponenta: video -->
+
+[Video: Jak se mění funkce chatbotů](https://www.loom.com/share/a57780bf97fe42ff8d264bd5ad6ffe4b)
 
 ## Kdy se co stane
 

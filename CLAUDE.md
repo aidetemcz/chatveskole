@@ -20,7 +20,7 @@ Přečti:
 - `content/prompty/{pedagogove,vedeni,zaci,archiv-2024}/` — katalog promptů (původní prompty, převedené `scripts/prevod-promptu.mjs`); katalog je na `/prompty` (`src/pages/prompty.astro`), vysvětlení „co je prompt“ na `/funkce/prompty`; `archiv-2024` se v katalogu nezobrazuje, stránky existují kvůli starým odkazům
 - `content/znalosti/znalosti.yaml` — odkazy na znalostní soubory na Google Disku
 - `data/*.yaml` — data pro tabulky (funkce chatbotů, ceny); text s dvojtečkou dávejte do uvozovek, jinak build skončí chybou
-- `<!-- komponenta: … -->` v Markdownu = místo pro datovou komponentu nebo úpravu následujícího textu (záložky, karty); seznam značek v `src/lib/komponenty.ts`
+- `<!-- komponenta: … -->` v Markdownu = místo pro datovou komponentu nebo úpravu následujícího textu (záložky, karty); seznam značek v `src/lib/komponenty.ts`. Video: `<!-- komponenta: video -->` a pod ním odkaz `[Název videa](https://www.loom.com/share/…)` (Loom i YouTube) → vložené video vždy na šířku textu
 - `migrace/redirects.json` — přesměrování starých URL (generuje `scripts/build-inventura.py`); z něj `vercel.json` se skutečnými 301 pro Vercel (`node scripts/build-vercel.mjs`, `npm run check` hlídá, že sedí)
 - `archiv/` — export starého WordPressu (`node scripts/export-wordpress.mjs --images`)
 - `migrace/mapa-promptu.json` — který záznam staré databáze je prompt, žákovský prompt, nebo asistent (→ skill)
