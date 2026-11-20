@@ -125,9 +125,14 @@ export function naKartuSObrazkem(html: string): string {
   return `<div class="karta-obrazek card">${img[1]}<div class="karta-obrazek-text">${text}</div></div>` + zbytek;
 }
 
-// Sekce ### až do dalšího ## → karty ve dvou sloupcích (stránka Způsoby využití AI ve výuce):
-// nadpis v červeném pruhu, tučný odstavec jako perex, položky seznamu „**Štítek:** text“ oddělené čárou;
-// položka „Kde to spustit“ jde do patičky karty a odkazy z ní se zobrazí jako tlačítka.
+// Sekce ### až do dalšího ## → karty ve dvou sloupcích (stránka Způsoby využití AI ve výuce, varianta A z Claude Design):
+// nadpis a tučný perex; „Co dělá žák“ a „Co dělá AI“ vedle sebe; „Hodí se / Nehodí se“ s ikonami;
+// zvýrazněná pojistka; ostatní položky jako řádky „Štítek: text“; v patičce Tiny a prompty jako tlačítka.
+const IKONA_ANO = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>';
+const IKONA_NE = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>';
+const IKONA_STIT = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"></path></svg>';
+const KRATCE: Record<string, string> = { 'Jak poznáte, že se žák učí': 'Jak poznáte, že se učí', 'Otázka k reflexi': 'Reflexe' };
+
 export function naKartyZpusobu(html: string): string {
   const konec = html.search(/<h2[\s>]/);
   const blok = konec === -1 ? html : html.slice(0, konec), zbytek = konec === -1 ? '' : html.slice(konec);
@@ -137,22 +142,32 @@ export function naKartyZpusobu(html: string): string {
   const karty = kusy.map((k) => {
     const h = k.match(/^\s*<h3([^>]*)>([\s\S]*?)<\/h3>/);
     const perex = k.match(/<p>\s*<strong>([\s\S]*?)<\/strong>\s*<\/p>/)?.[1] ?? '';
-    const polozky = [...(k.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').matchAll(/<li>\s*<strong>([\s\S]*?)<\/strong>\s*([\s\S]*?)<\/li>/g)]
-      .map(([, s, x]) => ({ stitek: bezTagu(s).replace(/:\s*$/, ''), text: x.trim() }));
-    const spustit = polozky.find((p) => /^Kde to spustit/i.test(p.stitek));
-    const radky = polozky.filter((p) => p !== spustit)
-      .map((p) => `<div class="zpusob-radek"><dt>${p.stitek}</dt><dd>${p.text}</dd></div>`).join('');
-    let paticka = '';
+    const polozky = new Map([...(k.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').matchAll(/<li>\s*<strong>([\s\S]*?)<\/strong>\s*([\s\S]*?)<\/li>/g)]
+      .map(([, s, x]) => [bezTagu(s).replace(/:\s*$/, ''), x.trim()] as [string, string]));
+    const vezmi = (stitek: string) => { const v = polozky.get(stitek); polozky.delete(stitek); return v; };
+    const zak = vezmi('Co dělá žák'), ai = vezmi('Co dělá AI');
+    const hodi = vezmi('Hodí se, když'), nehodi = vezmi('Nehodí se, když');
+    const pojistka = vezmi('Pojistka'), spustit = vezmi('Kde to spustit');
+    let out = `<article class="zpusob"><div class="zpusob-hlava"><h3${h?.[1] ?? ''}>${h?.[2] ?? ''}</h3>`
+      + (perex ? `<p class="zpusob-perex">${perex}</p>` : '') + '</div>';
+    if (zak || ai) out += '<div class="zpusob-role">'
+      + (zak ? `<div><span class="zpusob-role-kdo">Žák</span><p>${zak}</p></div>` : '')
+      + (ai ? `<div><span class="zpusob-role-kdo">AI</span><p>${ai}</p></div>` : '') + '</div>';
+    if (hodi || nehodi) out += '<div class="zpusob-kdy">'
+      + (hodi ? `<p>${IKONA_ANO}<span><strong>Hodí se, když</strong> ${hodi}</span></p>` : '')
+      + (nehodi ? `<p>${IKONA_NE}<span><strong>Nehodí se, když</strong> ${nehodi}</span></p>` : '') + '</div>';
+    if (pojistka) out += `<p class="zpusob-pojistka">${IKONA_STIT}<span><strong>Pojistka:</strong> ${pojistka}</span></p>`;
+    if (polozky.size) out += '<div class="zpusob-dalsi">'
+      + [...polozky].map(([s, x]) => `<p><strong>${KRATCE[s] ?? s}:</strong> ${x}</p>`).join('') + '</div>';
     if (spustit) {
-      const odkazy = [...spustit.text.matchAll(/<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)];
-      const tiny = spustit.text.split(/,?\s*v běžném chatbotu/i)[0].trim();
-      const tinyText = /^V Tiny/i.test(tiny) ? `<p class="zpusob-tiny"><strong>Kde to spustit:</strong> ${bezTagu(tiny).replace(/[.,]\s*$/, '')}.</p>` : '<p class="zpusob-tiny"><strong>Kde to spustit:</strong> v běžném chatbotu s promptem.</p>';
+      const odkazy = [...spustit.matchAll(/<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)];
+      const tiny = spustit.split(/,?\s*v běžném chatbotu/i)[0].trim().match(/^V Tiny\s+([\s\S]*)$/i);
       const tlacitka = odkazy.map(([, href, nazev]) => `<a class="btn btn--outline btn--sm" href="${href}">Prompt ${bezTagu(nazev)} →</a>`).join('');
-      paticka = `<div class="zpusob-paticka">${tinyText}${tlacitka ? `<div class="zpusob-tlacitka">${tlacitka}</div>` : ''}</div>`;
+      out += '<div class="zpusob-paticka">'
+        + (tiny ? `<p class="zpusob-tiny"><strong>V Tiny:</strong> ${bezTagu(tiny[1]).replace(/[.,]\s*$/, '')}</p>` : '')
+        + tlacitka + '</div>';
     }
-    return `<article class="zpusob"><h3${h?.[1] ?? ''} class="zpusob-nazev">${h?.[2] ?? ''}</h3>`
-      + (perex ? `<p class="zpusob-perex">${perex}</p>` : '')
-      + `<dl class="zpusob-telo">${radky}</dl>${paticka}</article>`;
+    return out + '</article>';
   });
   return `${uvod}<div class="zpusoby">${karty.join('')}</div>${zbytek}`;
 }
