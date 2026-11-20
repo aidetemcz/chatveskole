@@ -127,7 +127,15 @@ CATS = {
     "principy-vyuziti-genai-ve-vyuce": "/funkce/prompty/zaci",
     "prompty-pro-zaky": "/funkce/prompty/zaci",
     "prompty-pro-pedagogy": "/prompty",
+    # doplněno 20. 11. 2026 po kontrole živého webu (Eva odsouhlasila)
+    "ai-asistenti": "/skills",
+    "ai-asistenti-%e2%86%92": "/skills",
+    "ai-asistenti-pro-formativni-hodnoceni-%e2%86%92": "/sady/formativni-hodnoceni",
 }
+
+# --- Štítky předmětů (/tagy/...) — nový web filtr podle předmětu nemá → katalog promptů
+TAGY = ["anglicky-jazyk", "biologie", "cesky-jazyk", "chemie", "dejepis", "fyzika", "historie",
+        "informatika", "logika", "matematika", "obcanska-nauka", "prirodopis", "zemepis"]
 
 rows, redirects = [], []
 def presmeruj(src, dst):
@@ -146,8 +154,11 @@ for slug, (new, akce, typ, note) in sorted(KB.items()):
 for slug, new in CATS.items():
     rows.append(["kategorie", f"{BASE}/dp/{slug}/", new, "přesměrovat", "", ""])
     presmeruj(f"/dp/{slug}", new)
+for slug in TAGY:
+    rows.append(["štítek", f"{BASE}/tagy/{slug}/", "/prompty", "přesměrovat", "", "Štítek předmětu; nový web filtr podle předmětu nemá"])
+    presmeruj(f"/tagy/{slug}", "/prompty")
 # zbytky WordPressu
-for src, dst in [("/databaze-promptu", "/prompty"), ("/dp", "/prompty"), ("/wp-content/uploads/:path*", "/archiv/uploads/:path*"), ("/feed", "/"), ("/zaciname/jak-funguji-chatboti", "/zaciname/jak-pracovat-s-chatboty"), ("/funkce/prompty/tvorba-slovniho-hodnoceni", "/skills/slovni-hodnoceni"), ("/funkce/prompty/pracovni-list-pro-reflexi-uciva", "/funkce/prompty/tvorba-exitek-a-propustek"), ("/ve-vyuce/doporuceni-vs", "/ve-vyuce/doporuceni-zs-ss")]:
+for src, dst in [("/databaze-promptu", "/prompty"), ("/dp", "/prompty"), ("/wp-content/uploads/:path*", "/archiv/uploads/:path*"), ("/feed", "/"), ("/zaciname/jak-funguji-chatboti", "/zaciname/jak-pracovat-s-chatboty"), ("/funkce/prompty/tvorba-slovniho-hodnoceni", "/skills/slovni-hodnoceni"), ("/funkce/prompty/pracovni-list-pro-reflexi-uciva", "/funkce/prompty/tvorba-exitek-a-propustek"), ("/ve-vyuce/doporuceni-vs", "/ve-vyuce/doporuceni-zs-ss"), ("/databaze-promptu/didaktik-genius", "/skills/didakticky-radce")]:
     presmeruj(src, dst)
 
 out = ROOT / "migrace"
