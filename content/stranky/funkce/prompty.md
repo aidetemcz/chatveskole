@@ -3,95 +3,48 @@ title: Prompty
 menu: Funkce
 poradi: 2
 popis: Co je prompt, jak ho napsat, aby chatbot odpověděl dobře, a kdy místo promptu použít dovednost. Na konci odkaz na katalog ověřených promptů.
+sablona: prompty-pruvodce   # vlastní šablona src/pages/funkce/prompty/index.astro (návrh z Claude Design, 20. 11. 2026)
 tlacitko: { text: Přejít na Katalog promptů, href: /prompty }
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-20
 stav: koncept
 odkazy:
   - { text: Dovednosti (skills), href: /funkce/skills }
 ---
 
-## Co je prompt
+Prompt je zadání, které chatbotu napíšete: otázka, pokyn, popis úkolu. Čím jasněji a konkrétněji napíšete, co chcete, tím lépe chatbot pochopí, co od něj čekáte.
 
-Prompt je zadání, které chatbotu napíšete: otázka, pokyn, popis úkolu. Může to být jedno slovo, nebo stránka textu s přiloženými soubory. Čím jasněji a konkrétněji napíšete, co chcete, tím lépe chatbot pochopí, co od něj čekáte.
+## Chatbot jako miliony expertů
 
-## Jak napsat dobrý prompt
-
-### Chatbot jako miliony expertů
-
-Představte si, že máte k dispozici odborníky z jakéhokoli oboru — od zahradníka po fyzika, od didaktika po právníka. Aby vám ale mohli opravdu pomoct, potřebují kontext. Zkuste porovnat:
+Máte k dispozici odborníky z jakéhokoli oboru, od zahradníka po fyzika. Aby vám ale pomohli, potřebují kontext. Stačí změnit jedno slovo a dostanete úplně jinou odpověď. Zkuste oba prompty a porovnejte.
 
 > Jsi sečtělý akademik. Vymysli mi program na odpoledne.
 
 > Jsi rozpustilá holčička. Vymysli mi program na odpoledne.
 
-### Sedm technik, jak dát chatbotu kontext
+## Sedm technik, jak dát chatbotu kontext
 
-Ukážeme je na jednom příkladu, který postupně vylepšujeme.
+Začněte holým zadáním a přidávejte techniky. Každá barva v promptu odpovídá jedné technice.
 
-**Výchozí prompt:**
+<!-- komponenta: skládačka promptu (data/skladacka-promptu.yaml) -->
 
-> Napiš shrnutí českého národního obrození.
+Prompt nemusí obsahovat všech sedm technik. Vyberte ty, které pro váš úkol dávají smysl.
 
-#### 1. Role
-
-Řekněte chatbotu, v jaké roli má odpovídat.
-
-> **Jsi expert na české dějiny a empatický pedagog se smyslem pro humor.** Napiš shrnutí českého národního obrození.
-
-#### 2. Cílová skupina a tón
-
-Pro koho text je a jakým stylem má být napsaný.
-
-> … Napiš **neformální** shrnutí českého národního obrození **pro žáky ve věku 14 let**.
-
-#### 3. Formát
-
-Esej, tabulka, osnova, rozhovor, kvíz, podklady pro prezentaci…
-
-> … **ve formátu podkladů pro prezentaci o pěti snímcích**.
-
-#### 4. Cíl
-
-K čemu výstup poslouží. Chatbot pak sám vybere, co je podstatné.
-
-> … **Cílem je, aby žáci pochopili, proč bylo národní obrození tak důležité pro českou kulturu a jazyk.**
-
-#### 5. Délka
-
-> … **Na každý snímek nejvýš tři krátké body.**
-
-#### 6. Příklad
-
-Máte-li konkrétní představu, ukažte ji.
-
-> Vygeneruj text o každodenním životě, ve kterém slovesa v minulém čase nahradíš mezerou ___ a za ni do závorky napíšeš infinitiv. **Příklad: Otec ___ (vejít) do školy.**
-
-#### 7. Omezení
-
-Co ve výstupu být nemá.
-
-> … **Nepoužívej letopočty, které se žáci nemusí učit nazpaměť, a vynech odborné termíny bez vysvětlení.**
-
-**Výsledný prompt:**
-
-> Jsi expert na české dějiny a empatický pedagog se smyslem pro humor. Napiš neformální shrnutí českého národního obrození pro žáky ve věku 14 let ve formátu podkladů pro prezentaci o pěti snímcích. Cílem je, aby žáci pochopili, proč bylo národní obrození tak důležité pro českou kulturu a jazyk. Na každý snímek nejvýš tři krátké body. Nepoužívej letopočty, které se žáci nemusí učit nazpaměť, a vynech odborné termíny bez vysvětlení.
-
-### Tři tipy navíc
+## Tři tipy navíc
 
 - **Nechte se doptávat.** Přidejte na konec: „Než začneš, zeptej se mě na všechno, co potřebuješ vědět.“
-- **Pokračujte v konverzaci.** První odpověď je návrh. Řekněte, co upravit: „Zkrať to na polovinu“, „Přidej otázky k diskuzi“, „Udělej verzi pro žáky bez správných odpovědí.“
-- **Přiložte podklady.** Pracovní list, ŠVP, fotku tabule. Nikdy ale nevkládejte jména žáků ani jiné osobní údaje — místo nich používejte iniciály nebo přezdívky.
+- **Pokračujte v konverzaci.** První odpověď je návrh. Řekněte, co upravit: „Zkrať to na polovinu“, „Přidej otázky k diskuzi“.
+- **Přiložte podklady.** Pracovní list, ŠVP, fotku tabule. Nikdy ale ne jména žáků ani jiné osobní údaje, místo nich iniciály.
 
 ## Prompt, nebo dovednost?
 
+Začněte promptem. Když ho používáte často, uložte si ho jako dovednost.
+
 | | Prompt | Dovednost |
 |---|---|---|
-| Co to je | Text, který vložíte do chatu | Uložený návod (soubor SKILL.md), který si chatbot sám použije, když ho potřebuje |
-| Kde funguje | Všude, i v bezplatných verzích a pro žáky | V Claude, Gemini, Copilotu a ChatGPT (v pluginu); většinou jen pro dospělé |
-| Kdy se hodí | Jednorázový úkol, výuka se žáky, vyzkoušení | Úkol, který opakujete — hodnocení, přípravy, zprávy rodičům |
+| Co to je | Text, který vložíte do chatu | Instrukce zabalené do funkce, kterou vyvoláte přes lomítko nebo zavináč |
+| Kde funguje | Všude, i v bezplatných verzích a pro žáky | V placených i některých bezplatných verzích, většinou jen pro dospělé |
+| Kdy se hodí | Jednorázový úkol, výuka se žáky, vyzkoušení | Úkol, který opakujete: hodnocení, přípravy, zprávy rodičům |
 
-Ke každé [dovednosti](/skills) na tomto webu najdete i verzi promptu. Začněte promptem, a když se vám osvědčí, nainstalujte si dovednost.
+## Nechcete začínat od nuly?
 
-## Katalog promptů
-
-V katalogu najdete ověřené prompty pro vyučující, vedení škol i žáky. Zkopírujte prompt do jakéhokoli chatbota a doplňte údaje v hranatých závorkách.
+V katalogu najdete ověřené prompty pro vyučující, vedení škol i žáky. Zkopírujte prompt a doplňte údaje v hranatých závorkách.
