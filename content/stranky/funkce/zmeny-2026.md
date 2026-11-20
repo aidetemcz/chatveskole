@@ -23,7 +23,7 @@ ChatGPT, Gemini, Copilot a Claude opouštějí hotové asistenty, které se otev
 
 **Nastupují dovednosti a pluginy.** Dovednosti jsou instrukce pro chatbota zabalené do funkce, kterou si kdykoliv vyvoláte přes lomítko nebo zavináč a šetří velké množství času.
 
-**Chatbot pracující samostatně je za příplatek.** Nově umí chatbot dotáhnout delší úkol sám: naplánuje si postup, dohledá informace a vytvoří soubory. Tento režim (agent) je v ChatGPT (Work), Copilotu (Cowork) i v Claude zatím jen v placených tarifech. Osobní agent Gemini Spark v Evropě není vůbec.
+**Agenti jsou už jen jako placená funkce.** Agenti jsou funkce, kterým když zadáte úkol, tak si jeho řešení samostatně rozplánují. Šetří velké množství času, ale stávají se pouze placeným doplňkem.
 
 <!-- komponenta: video -->
 
