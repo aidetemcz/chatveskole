@@ -50,7 +50,7 @@ Specializované služby na stavbu aplikací. Umí víc než chatboty, ale bezpla
 | **[Bolt.new](https://bolt.new)** | denní a měsíční limit, hosting v ceně | 18+ | ano |
 | **[v0](https://v0.app)** od Vercelu | 7 zpráv denně | 16+ (podmínky Vercelu) | ano, adresa vercel.app |
 | **[Replit](https://replit.com)** | omezený Free Mode | 13+, do 18 let se souhlasem rodiče | ověřte |
-| **[Macaly](https://macaly.com)** | ano, měsíční kredity, 1 zveřejněná aplikace | ověřte v podmínkách služby | ano, ve Free jen veřejně na adrese macaly.app |
+| **[Macaly](https://macaly.com)** | ano, měsíční kredity, 1 zveřejněná aplikace | 18+ (13+ jen v rámci AI olympiády) | ano, ve Free jen veřejně na adrese macaly.app |
 | **Canva Kódování** | ano, i v Canvě pro vzdělávání | 13+, mladší jen v Canvě pro vzdělávání na pozvánku vyučujícího | ano, na doméně Canvy |
 
 Naše metodika [Tvorba jednoduchých aplikací pomocí vibecodingu](/vibe-coding/materialy-do-vyuky) pracuje s nástroji ChatGPT Sites nebo Gemini Canvas a s Canva Kódováním, které školy s Canvou pro vzdělávání mají zdarma.
