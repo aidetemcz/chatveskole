@@ -65,7 +65,12 @@ const datum = d.aktualizovano ? datumCesky(d.aktualizovano) : null;
   {oddily.map((o, i) => (
     <section class:list={['band', (i + (seznamTezi.length ? 1 : 0)) % 2 === 0 ? 'band--sky' : 'band--white']} aria-labelledby={o.id || undefined}>
       <div class="wrap stack" style="gap: 30px">
-        {i === 0 && videoHtml && <div class="video-uvod" set:html={videoHtml} />}
+        {i === 0 && videoHtml && (
+          <div class="video-uvod stack" style="gap: 30px">
+            <div class="section-head"><div><h2 id="pruvodce">Průvodce novými funkcemi</h2></div></div>
+            <div set:html={videoHtml} />
+          </div>
+        )}
         <div class="section-head">
           <div>
             <h2 id={o.id || undefined}>{o.nadpis}</h2>
@@ -97,7 +102,7 @@ const datum = d.aktualizovano ? datumCesky(d.aktualizovano) : null;
   .ball.none { border-color: var(--muted); opacity: 0.55; }
   .arrow { display: inline-block; width: 14px; height: 2px; background: var(--sky-deep); position: relative; flex-shrink: 0; margin-right: 3px; }
   .arrow::after { content: ''; position: absolute; right: -3px; top: -3px; border-left: 6px solid var(--sky-deep); border-top: 4px solid transparent; border-bottom: 4px solid transparent; }
-  .video-uvod { margin-bottom: 26px; }
+  .video-uvod { margin-bottom: 40px; }
   .aktualizace { font-size: 0.85rem; color: var(--muted); padding: 24px 0 0; }
   @media (max-width: 860px) { .shifts { grid-template-columns: 1fr; gap: 18px; } }
 </style>
