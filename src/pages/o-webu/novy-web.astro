@@ -1,0 +1,178 @@
+---
+// Nový web — proč jsme web měnili, co kde najdete, co se stalo s asistenty (sablona: novy-web-pruvodce).
+// Texty jsou v content/stranky/o-webu/novy-web.md (oddíly podle ##), grafika stejná jako u stránky Projekty.
+import { getEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import { rozdel, naOddily } from '../../lib/komponenty';
+import { url } from '../../lib/url';
+
+const stranka = (await getEntry('stranky', 'o-webu/novy-web'))!;
+const d = stranka.data;
+const { uvod, oddily } = naOddily(rozdel(stranka.rendered?.html ?? ''));
+const htmlOddilu = (o?: { casti: { typ: string; html?: string }[] }) => (o?.casti ?? []).filter((x) => x.typ === 'html').map((x) => x.html ?? '').join('');
+const perex = uvod.map((c) => (c.typ === 'html' ? c.html : '')).join('');
+const najdi = (r: RegExp) => oddily.find((o) => r.test(o.nadpis));
+const bezTagu = (s: string) => s.replace(/<[^>]+>/g, '').trim();
+const velke = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+const odstavce = (h: string) => [...h.matchAll(/<p>([\s\S]*?)<\/p>/g)].map(([, t]) => t.trim());
+// odstavec „**Nadpis.** text“ → { nazev, text }
+const zvyrazneny = (p: string) => {
+  const m = p.match(/^<strong>([\s\S]*?)<\/strong>\s*[—–-]?\s*([\s\S]*)$/);
+  return m ? { nazev: bezTagu(m[1]).replace(/[.:]$/, ''), text: velke(m[2].trim()) } : null;
+};
+// položky „**Název** — text“ ze seznamu; název může být odkaz
+const polozky = (h: string) => [...(h.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').matchAll(/<li>\s*<strong>([\s\S]*?)<\/strong>\s*[—–-]?\s*([\s\S]*?)<\/li>/g)]
+  .map(([, n, t]) => ({ nazev: bezTagu(n), href: n.match(/<a [^>]*href="([^"]+)"/)?.[1] ?? null, text: velke(t.trim()) }));
+
+const IKONY = [
+  '<path d="M21 12a8 8 0 0 1-11.8 7L4 20l1.1-4.6A8 8 0 1 1 21 12z"></path>',
+  '<circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path>',
+  '<path d="M3 6h6l2 2h10v11H3z"></path>',
+];
+
+// Proč: odstavce „**Důvod.** text“ → karty
+const proc = najdi(/Proč/i);
+const duvody = odstavce(htmlOddilu(proc)).map(zvyrazneny).filter((x): x is NonNullable<typeof x> => !!x);
+
+// Co kde najdete: seznam → karty, odstavec „**Hledáte…?** text“ → tip
+const kde = najdi(/Co kde/i);
+const kdeHtml = htmlOddilu(kde);
+const sekce = polozky(kdeHtml);
+const hledani = odstavce(kdeHtml.split('</ul>').slice(1).join('</ul>')).map(zvyrazneny).find(Boolean);
+
+// Asistenti: obyčejné odstavce vlevo, „**Nadpis.** text“ jako zvýrazněný box vpravo
+const asistenti = najdi(/asistenty/i);
+const asistentiOdstavce = odstavce(htmlOddilu(asistenti));
+const asistentiText = asistentiOdstavce.filter((p) => !zvyrazneny(p));
+const asistentiBox = asistentiOdstavce.map(zvyrazneny).find(Boolean);
+
+const vyzva = najdi(/Chybí/i);
+type Odkaz = { text: string; href: string };
+const tlacitko = d.tlacitko && typeof d.tlacitko === 'object' && d.tlacitko.href ? (d.tlacitko as Odkaz) : null;
+const odkazy: Odkaz[] = [tlacitko, ...(Array.isArray(d.odkazy) ? d.odkazy : [])].filter((o): o is Odkaz => !!o && !!o.href);
+const katalog = odkazy.find((o) => o.href === '/skills');
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+---
+<Base title={d.title} description={d.popis ?? undefined}>
+  <div class="band band--white">
+    <div class="wrap hero">
+      <div class="page-head">
+        <div class="zahlavi">
+          <Crumbs items={[{ title: d.menu ?? 'O webu' }, { title: d.menu_titulek ?? d.title }]} />
+          {datum && <span class="draft">Aktualizováno {datum}</span>}
+        </div>
+        <h1>{d.title}</h1>
+        <div class="lede perex" set:html={perex} />
+        <div class="tlacitka">
+          {kde && <a class="btn btn--primary" href={`#${kde.id}`}>{kde.nadpis} ↓</a>}
+          {katalog && <a class="btn btn--outline" href={url(katalog.href)}>{katalog.text}</a>}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {proc && (
+    <section class="band band--sky" aria-labelledby="proc-h">
+      <div class="wrap stack" style="gap: 32px">
+        <h2 id="proc-h">{proc.nadpis}</h2>
+        <div class="karty karty--tri">
+          {duvody.map((c, i) => (
+            <div class="card">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ikona" set:html={IKONY[i % IKONY.length]}></svg>
+              <h3>{c.nazev}</h3>
+              <p set:html={c.text} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {kde && (
+    <section class="band band--white" id={kde.id || undefined} aria-labelledby="kde-h">
+      <div class="wrap stack" style="gap: 32px">
+        <h2 id="kde-h">{kde.nadpis}</h2>
+        <ul class="karty sekce">
+          {sekce.map((c) => (
+            <li class="card">
+              <h3>{c.href ? <a href={c.href}>{c.nazev}</a> : c.nazev}</h3>
+              <p set:html={c.text} />
+            </li>
+          ))}
+        </ul>
+        {hledani && (
+          <div class="tip">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+            <div class="stack" style="gap: 4px">
+              <strong>{hledani.nazev}</strong>
+              <p set:html={hledani.text} />
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+
+  {asistenti && (
+    <section class="band band--white band--navazuje" aria-labelledby="asistenti-h">
+      <div class="wrap dva-sloupce">
+        <div class="hlava">
+          <h2 id="asistenti-h">{asistenti.nadpis}</h2>
+          <div class="prose">{asistentiText.map((p) => <p set:html={p} />)}</div>
+        </div>
+        {asistentiBox && (
+          <div class="pozor">
+            <div class="titulek titulek--cerveny">{asistentiBox.nazev}</div>
+            <p set:html={asistentiBox.text} />
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+
+  {vyzva && (
+    <section class="band band--sky" aria-labelledby="vyzva-h">
+      <div class="wrap vyzva">
+        <div class="hlava">
+          <h2 id="vyzva-h">{vyzva.nadpis}</h2>
+          <div class="prose" set:html={htmlOddilu(vyzva)} />
+        </div>
+        <div class="tlacitka">
+          {odkazy.map((o, i) => <a class:list={['btn', i === 0 ? 'btn--primary' : 'btn--outline btn--bila']} href={url(o.href)}>{o.text}{i === 0 && ' →'}</a>)}
+        </div>
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
+  .hlava { display: flex; flex-direction: column; gap: 14px; max-width: 64ch; }
+  .tlacitka { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+  .perex :global(p) { font-size: 1.15rem; }
+  .perex :global(p + p) { margin-top: 0.6em; }
+  .dva-sloupce { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 48px; align-items: start; }
+  .titulek { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); }
+  .titulek--cerveny { color: var(--accent-strong); }
+  .band--navazuje { padding-top: 0; }
+
+  .karty { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 22px; margin: 0; padding: 0; list-style: none; }
+  .karty--tri { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+  .sekce { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+  .karty .ikona { color: var(--sky-ink); }
+  .karty .card h3 { font-size: 1.15rem; }
+  .karty .card h3 a { text-decoration: underline; text-decoration-color: var(--sky-deep); text-underline-offset: 4px; }
+  .karty .card p { font-size: 0.93rem; line-height: 1.6; }
+
+  .tip { background: var(--sky-light); border-radius: 9px; padding: 22px 26px; display: flex; gap: 14px; align-items: flex-start; }
+  .tip svg { flex: none; margin-top: 2px; color: var(--sky-ink); }
+  .tip strong { font-weight: 600; }
+  .tip p { margin: 0; font-size: 0.95rem; }
+
+  .pozor { background: var(--accent-soft); border-radius: 12px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px; }
+  .pozor p { margin: 0; }
+
+  .vyzva { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; }
+  .btn--bila { background: var(--panel); }
+</style>
