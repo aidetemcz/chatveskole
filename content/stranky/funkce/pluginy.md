@@ -52,7 +52,7 @@ Všechny tři cesty vedou ke stejnému cíli. Liší se tím, kolik práce vám 
 
 ### Microsoft Copilot
 
-- Do konce listopadu 2026 nahradí v menu tlačítko **Agenti** tlačítko **Pluginy**.
+- Od konce listopadu 2026 najdete v menu místo tlačítka **Agenti** tlačítko **Pluginy**.
 - Pluginy balí agenty, dovednosti a konektory.
 - Copilot Cowork umí nainstalovat i balíčky připravené pro Claude.
 
@@ -86,13 +86,16 @@ V ChatGPT ho převedete na plugin jedním tlačítkem: v *My GPTs* zvolte **Migr
 
 Naše dovednosti jsou rozdělené do pěti sad. Každou sadu si můžete nainstalovat jako plugin, nebo z ní vybrat jednotlivé dovednosti.
 
+V chatu sadu vyvoláte zavináčem a jejím názvem, například `@Formativní hodnocení`. V Claude vyvoláte dovednosti ze sady lomítkem. Sadu můžete vyvolat i uvnitř [projektu](/funkce/projekty) a spojit tak podklady projektu s dovednostmi ze sady.
+
 ## Jak nainstalovat sadu
 
 Postup se liší podle aplikace a tarifu.
 
-- **Claude (placené tarify):** v **Customize → Plugins → Add marketplace** zadejte `aidetemcz/chatveskole`. Zobrazí se všechny naše sady a vyberete si, které chcete. Když dovednosti aktualizujeme, aktualizují se i vám.
-- **Claude, Copilot Cowork (nahrání souboru):** stáhněte ZIP pluginu u sady výše a nahrajte ho.
-- **ChatGPT (čeká na schválení):** plugin AI dětem podáváme ke schválení do veřejného adresáře. Do té doby použijte jednotlivé dovednosti (placené tarify od Plus), [projekt](/funkce/projekty) s instrukcemi dovednosti, nebo prompt.
+- **Claude (placené tarify):** v **Customize → Plugins → Add marketplace** zadejte `aidetemcz/chatveskole`. Zobrazí se všechny naše sady a vyberete si, které chcete. Když dovednosti aktualizujeme, aktualizují se i vám. Sady jsme podali také do adresáře pluginů v Claude, po schválení je najdete přímo tam.
+- **ChatGPT (tarify Business, Enterprise, Edu):** stáhněte ZIP u sady výše (nerozbalujte ho), otevřete **Plugins → Přidat → Nahrát archiv pluginu** a pak plugin nainstalujte. Sdílet ho můžete s kolegy v pracovním prostoru školy. Do veřejného adresáře ChatGPT jsme sady podali ke schválení.
+- **Claude, Copilot Cowork (nahrání souboru):** stáhněte ZIP u sady výše a nahrajte ho.
+- **ChatGPT zdarma a Go (pluginy nemá):** vložte instrukce dovednosti do [projektu](/funkce/projekty), nebo použijte prompt.
 - **Gemini (pluginy nemá):** nainstalujte jednotlivé dovednosti ze sady.
 
 ## Stačí vám jedna dovednost?

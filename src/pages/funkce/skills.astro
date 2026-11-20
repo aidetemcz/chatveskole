@@ -52,8 +52,19 @@ const nastroje = bloky(htmlOddilu(instalace)).map((b, i) => {
 });
 
 // Vlastní dovednost: ### krok → první odstavec na kartu, citace jako ukázka, zbytek do „Podrobnosti“
-const vlastni = najdi(/vlastní/i);
+// Vlastní Gem: termín (odstavec jen s tučným textem), text, dva seznamy
+const gem = najdi(/vlastní Gem/i);
+const gemHtml = htmlOddilu(gem);
+const gemTermin = gemHtml.match(/<p>\s*<strong>([^<]*)<\/strong>\s*<\/p>/);
+const gemText = uvodOddilu(gemHtml).replace(gemTermin?.[0] ?? '', '');
+const seznam = (h: string) => [...(h.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').matchAll(/<li>([\s\S]*?)<\/li>/g)].map(([, t]) => t.trim());
+const gemSloupce = bloky(gemHtml).map((b) => ({ nazev: b.nazev, body: seznam(b.html) }));
+
+const vlastni = najdi(/napsat vlastní/i);
 const vlastniHtml = htmlOddilu(vlastni);
+const cestyVytvoreni = polozky(vlastniHtml.split(/<h3[\s>]/)[0]);
+const sdileni = najdi(/dovednost sdílet/i);
+const sdileniHtml = htmlOddilu(sdileni);
 const kroky = bloky(vlastniHtml).map((b) => {
   const prvni = b.html.match(/^\s*<p>([\s\S]*?)<\/p>/);
   const ukazka = b.html.match(/<blockquote>\s*<p>([\s\S]*?)<\/p>\s*<\/blockquote>/);
@@ -168,13 +179,45 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
     </section>
   )}
 
+  {gem && (
+    <section class="band band--white" aria-labelledby={gem.id || undefined}>
+      <div class="wrap">
+        <div class="gem">
+          <div class="stack" style="gap: 14px">
+            {gemTermin && <span class="termin">{gemTermin[1].replace(/\.$/, '')}</span>}
+            <h2 id={gem.id || undefined}>{gem.nadpis}</h2>
+            <div class="prose" set:html={gemText} />
+          </div>
+          <div class="gem-sloupce">
+            {gemSloupce.map((c) => (
+              <div class="gem-sloupec">
+                <strong>{c.nazev}</strong>
+                <ul>{c.body.map((b) => <li set:html={b} />)}</ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
   {vlastni && (
-    <section class="band band--white" aria-labelledby={vlastni.id || undefined}>
+    <section class="band band--sky" aria-labelledby={vlastni.id || undefined}>
       <div class="wrap stack" style="gap: 32px">
         <div class="hlava">
           <h2 id={vlastni.id || undefined}>{vlastni.nadpis}</h2>
           <div class="prose" set:html={uvodOddilu(vlastniHtml)} />
         </div>
+        {cestyVytvoreni.length > 0 && (
+          <div class="cesty cesty--3">
+            {cestyVytvoreni.map((c) => (
+              <div class="card">
+                <h3>{c.nazev}</h3>
+                <p set:html={c.text} />
+              </div>
+            ))}
+          </div>
+        )}
         <ol class="postup">
           {kroky.map((k, i) => (
             <li class:list={['postup-krok', { 'postup-krok--prvni': i === 0 }]}>
@@ -202,7 +245,26 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
     </section>
   )}
 
-  {vyzva && vyzva !== vlastni && (
+  {sdileni && (
+    <section class="band band--white" aria-labelledby={sdileni.id || undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <div class="hlava">
+          <h2 id={sdileni.id || undefined}>{sdileni.nadpis}</h2>
+          <div class="prose" set:html={uvodOddilu(sdileniHtml)} />
+        </div>
+        <div class="tabulka-sdileni">
+          {polozky(sdileniHtml).map((r) => (
+            <div class="radek">
+              <div class="radek-nazev"><strong>{r.nazev}</strong></div>
+              <p set:html={r.text} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {vyzva && vyzva !== vlastni && vyzva !== sdileni && (
     <section class="band band--sky" aria-labelledby={vyzva.id || undefined}>
       <div class="wrap vyzva">
         <div class="hlava">
@@ -224,6 +286,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .hlava { display: flex; flex-direction: column; gap: 14px; max-width: 64ch; }
   .tlacitka { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
   .perex :global(p) { font-size: 1.15rem; }
+  .perex :global(p + p) { margin-top: 0.6em; }
 
   
   .podminky-titulek, .ukazka figcaption { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); }
@@ -258,7 +321,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .podminky p { margin: 0; display: flex; gap: 10px; align-items: flex-start; font-size: 0.93rem; }
   .podminky svg { flex: none; margin-top: 3px; color: var(--sky-ink); }
 
-  .postup { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; align-items: start; }
+  .postup { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 22px; align-items: start; }
   .postup-krok { border: 1px solid var(--sky); border-radius: 9px; padding: 26px 28px; display: flex; flex-direction: column; gap: 12px; background: var(--panel); }
   .postup-krok--prvni { background: var(--accent-soft); }
   .postup-cislo { font-family: var(--fh); font-size: 1.75rem; font-weight: 700; color: var(--accent); line-height: 1; }
@@ -272,6 +335,21 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .ukazka { margin: 0; background: #f6fafc; border: 1px solid var(--sky); border-radius: 10px; padding: 22px 24px; display: flex; flex-direction: column; gap: 10px; }
   .ukazka p { margin: 0; font-family: var(--fm); font-size: 0.9rem; line-height: 1.6; }
 
+  .cesty--3 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+  .gem { background: var(--accent-soft); border-radius: 12px; padding: 36px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 32px; align-items: start; }
+  .termin { align-self: flex-start; font-size: 0.8rem; font-weight: 600; padding: 3px 10px; border-radius: var(--pill); background: var(--panel); color: var(--accent-strong); }
+  .gem h2 { font-size: clamp(1.5rem, 2.6vw, 1.9rem); }
+  .gem-sloupce { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; }
+  .gem-sloupec { background: var(--panel); border-radius: 9px; padding: 18px 20px; display: flex; flex-direction: column; gap: 8px; }
+  .gem-sloupec ul { margin: 0; padding-left: 18px; font-size: 0.95rem; line-height: 1.55; }
+  @media (max-width: 640px) { .gem { padding: 26px 22px; } }
+  .tabulka-sdileni { border: 1px solid var(--sky); border-radius: 9px; overflow: hidden; background: var(--panel); }
+  .tabulka-sdileni .radek { display: grid; grid-template-columns: minmax(180px, 1fr) 3fr; }
+  .tabulka-sdileni .radek + .radek { border-top: 1px solid #d5e5eb; }
+  .tabulka-sdileni .radek-nazev { background: #f6fafc; padding: 20px 26px; }
+  .tabulka-sdileni .radek-nazev strong { font-family: var(--fh); font-size: 1.1rem; }
+  .tabulka-sdileni .radek p { margin: 0; padding: 20px 26px; }
+  @media (max-width: 640px) { .tabulka-sdileni .radek { grid-template-columns: 1fr; } .tabulka-sdileni .radek-nazev { padding-bottom: 8px; } .tabulka-sdileni .radek p { padding-top: 8px; } }
   .vyzva { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; }
   .btn--bila { background: var(--panel); }
 </style>
