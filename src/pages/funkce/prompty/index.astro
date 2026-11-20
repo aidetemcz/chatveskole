@@ -239,6 +239,8 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
 <style>
   .perex :global(p) { font-size: 1.15rem; max-width: 62ch; }
+  /* nadpis oddílu a text pod ním: stejná mezera jako v modrém pásu „Chatbot jako miliony expertů“ (Eva 20. 11. 2026) */
+  .section-head > div { display: flex; flex-direction: column; gap: 14px; }
   .hero-btns { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
   h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
   .experti { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center; }
