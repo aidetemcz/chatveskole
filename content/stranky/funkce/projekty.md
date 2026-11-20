@@ -74,19 +74,19 @@ Hodí se:
 
 Chatbot nejlépe rozumí jednoduchému textu.
 
-- **Volte jednoduché formáty** — Text ukládejte jako `.txt`, `.md` nebo `.docx`, tabulky jako `.csv` nebo `.xlsx`.
-- **Pozor na PDF** — PDF s tabulkami a sloupci chatbot často přečte špatně a poplete, co k čemu patří. Pokud můžete, převeďte ho na text.
-- **Dlouhé dokumenty rozdělte** — Dlouhý dokument rozdělte na menší soubory podle témat.
+- **Volte jednoduché formáty** — Chatbot nejlépe pracuje s malými textovými soubory: text ukládejte jako `.txt` nebo `.md` (Markdown), tabulky jako `.csv`. Formáty `.docx` a `.xlsx` použijte, jen když to jinak nejde. Šetří to i limity a zrychluje práci.
+- **Pozor na PDF** — PDF s tabulkami a sloupci chatbot často přečte špatně a poplete, co k čemu patří. Nahrajte ho do chatu v projektu a požádejte chatbota, ať ho převede na Markdown. Výsledný soubor pak přidejte do projektu.
+- **Dlouhé dokumenty rozdělte** — Dlouhý dokument rozdělte na menší soubory podle témat. Rozdělení můžete nechat na chatbotovi, třeba po kapitolách.
 
 ### Projekt, nebo odkaz na web?
 
-Chatboti umí hledat na internetu, ale na konkrétní webové stránky se spolehlivě neodkazují. Pokud chcete, aby chatbot čerpal z určité stránky, uložte její text jako soubor a nahrajte ho do projektu.
+Chatboti umí hledat na internetu, ale na konkrétní webové stránky se spolehlivě neodkazují. Pokud chcete, aby chatbot čerpal z určité stránky, požádejte ho v projektu, ať text stránky převede na Markdown, a soubor přidejte do projektu. Odkaz v pokynech nestačí: chatbot může tvrdit, že stránku přečetl, i když to není pravda.
 
 ## Projekt jako náhrada sdíleného asistenta
 
 Sdíleli jste s kolegy vlastní GPT odkazem? V ChatGPT můžete místo něj **sdílet projekt**. Kolegové v něm najdou stejné pokyny i soubory. Sdílet ho ale můžete jen v rámci pracovního prostoru vaší školy, ne s lidmi mimo něj.
 
-**Pozor:** ve sdíleném projektu vidí všichni členové všechny konverzace i nahrané soubory a nefunguje v něm paměť. Hodí se pro malý tým kolegů, kteří na něčem pracují společně, ne pro rozdávání asistenta desítkám kolegů.
+**Pozor:** ve sdíleném projektu vidí všichni členové všechny konverzace i nahrané soubory a nefunguje v něm paměť. Hodí se pro malý tým kolegů, kteří na něčem pracují společně, ne pro rozdávání asistenta desítkám kolegů. Pokud je projekt propojený s Google Diskem nebo OneDrivem, uvidí kolegové i tato data, i když do příslušných složek sami přístup nemají.
 
 **Chcete asistenta pro kohokoli?** Dejte kolegům instrukce (u našich dovedností jsou jako Google dokument). Každý si z nich založí vlastní projekt během dvou minut.
 
