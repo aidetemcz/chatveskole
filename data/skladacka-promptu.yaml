@@ -10,7 +10,7 @@ techniky:
   - { id: delka, cislo: 5, nazev: Délka, popis: "Kolik textu chcete.", barva: "#e2dbf5" }
   - { id: priklad, cislo: 6, nazev: Příklad, popis: "Máte-li konkrétní představu, ukažte ji.", barva: "#ecdcf0" }
   - { id: omezeni, cislo: 7, nazev: Omezení, popis: "Co ve výstupu být nemá.", barva: "#f6d6c2" }
-zapnuto: [role, ton]
+zapnuto: []   # stránka začíná holým zadáním (Eva 20. 11. 2026)
 kusy:
   - { technika: role, text: "Jsi expert na české dějiny a empatický pedagog se smyslem pro humor. " }
   - { technika: null, text: "Napiš " }
