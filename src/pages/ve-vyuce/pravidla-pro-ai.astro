@@ -138,7 +138,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
         {lekce && (
           <div class="card lekce">
-            {lekceSrc && <img src={url(lekceSrc)} alt={lekceAlt} loading="lazy" />}
+            {lekceSrc && <img src={lekceSrc} alt={lekceAlt} loading="lazy" />}
             <div class="stack" style="gap: 14px">
               <div class="krok-hlava">
                 <span class="postup-cislo" aria-hidden="true">1</span>
@@ -215,7 +215,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
               <div class="titulek titulek--cerveny">Dovednost</div>
               <h3>{dovednost.nazev.replace(/^Dovednost\s+/i, '')}</h3>
               <div class="dovednost-text" set:html={dovednostCast.zbytek} />
-              {dovednostCast.odkaz && <a class="btn btn--primary" style="align-self: flex-start" href={url(dovednostCast.odkaz.href)}>{dovednostCast.odkaz.text} →</a>}
+              {dovednostCast.odkaz && <a class="btn btn--primary" style="align-self: flex-start" href={dovednostCast.odkaz.href}>{dovednostCast.odkaz.text} →</a>}
             </div>
           )}
         </div>
@@ -280,7 +280,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
               <div class="titulek">{k.stitek}</div>
               <h3>{k.nazev}</h3>
               <div class="karta-text" set:html={k.zbytek} />
-              {k.odkaz && <a class="more" href={url(k.odkaz.href)} style="margin-top: auto">{k.odkaz.text} →</a>}
+              {k.odkaz && <a class="more" href={k.odkaz.href} style="margin-top: auto">{k.odkaz.text} →</a>}
             </div>
           ))}
         </div>
