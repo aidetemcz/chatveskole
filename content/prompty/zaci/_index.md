@@ -1,6 +1,6 @@
 ---
 title: Prompty pro žáky
-popis: Prompty ke zkopírování pro sedm z deseti způsobů využití AI ve výuce. Pomáhají žákům v učení a nemyslí za ně.
+popis: Prompty ke zkopírování pro všech deset způsobů využití AI ve výuce. Pomáhají žákům v učení a nemyslí za ně.
 pro_koho: zaci
 vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
 puvodni_url: https://chatveskole.cz/zpusoby-vyuziti-genai-ve-vyuce/
@@ -29,15 +29,22 @@ Dovednosti jsou v Gemini a Claude určené dospělým (18+). Žákovské aktivit
 | Skupina | Způsob | Prompt |
 |---|---|---|
 | Žák si vybavuje a vysvětluje | [Opakování](/ve-vyuce/zpusoby-vyuziti-ai#opakování) | [Otázky na míru](/funkce/prompty/zaci/otazky-na-miru) |
-| | [Společné objevování](/ve-vyuce/zpusoby-vyuziti-ai#společné-objevování) | jen v Tiny |
-| | [Vysvětlování](/ve-vyuce/zpusoby-vyuziti-ai#vysvětlování) | jen v Tiny |
+| | [Společné objevování](/ve-vyuce/zpusoby-vyuziti-ai#společné-objevování) | [Společné objevování](/funkce/prompty/zaci/spolecne-objevovani) |
+| | [Vysvětlování](/ve-vyuce/zpusoby-vyuziti-ai#vysvětlování) | [Vysvětlování](/funkce/prompty/zaci/vysvetlovani) |
 | Žák zkoumá souvislosti | [Rozhovor v roli](/ve-vyuce/zpusoby-vyuziti-ai#rozhovor-v-roli) | [Role experta](/funkce/prompty/zaci/role-experta) |
-| | [Co kdyby](/ve-vyuce/zpusoby-vyuziti-ai#co-kdyby) | jen v Tiny |
+| | [Co kdyby](/ve-vyuce/zpusoby-vyuziti-ai#co-kdyby) | [Co kdyby](/funkce/prompty/zaci/co-kdyby) |
 | Žák posuzuje | [Argumentace](/ve-vyuce/zpusoby-vyuziti-ai#argumentace) | [Argumentace](/funkce/prompty/zaci/argumentace) |
 | | [Hledání chyb](/ve-vyuce/zpusoby-vyuziti-ai#hledání-chyb) | [Vylepšení výstupu](/funkce/prompty/zaci/vylepseni-vystupu) |
 | Žák tvoří | [Brainstorming](/ve-vyuce/zpusoby-vyuziti-ai#brainstorming) | [Brainstorming](/funkce/prompty/zaci/brainstorming) |
 | | [Plánování a struktura](/ve-vyuce/zpusoby-vyuziti-ai#plánování-a-struktura) | [Plánování](/funkce/prompty/zaci/planovani), [Obsahová struktura](/funkce/prompty/zaci/obsahova-struktura) |
 | | [Zpětná vazba](/ve-vyuce/zpusoby-vyuziti-ai#zpětná-vazba) | [Zpětná vazba](/funkce/prompty/zaci/zpetna-vazba) |
+
+## Co mají prompty společné
+
+- **Chybějící zadání.** Když žák nechá v hranatých závorkách jen příklad, chatbot se na téma nejdřív zeptá.
+- **Práce zůstává na žákovi.** Chatbot za něj nevymýšlí odpovědi, nápady ani osnovu, ani když o to žák požádá. Nabídne nápovědu nebo otázku.
+- **Ukončení.** Většinu rozhovorů žák ukončí slovem „končíme“. Chatbot pak shrne, co se povedlo, a položí otázku k reflexi. Shrnutí si žák může zkopírovat a odevzdat.
+- **Ověřování.** Chatbot se může mýlit. Důležité informace si žáci ověřují v učebnici nebo u vyučujícího.
 
 Po každé aktivitě nechte žáky krátce zhodnotit, jestli jim AI pomohla. Otázky k reflexi najdete na stránce [Způsoby využití AI ve výuce](/ve-vyuce/zpusoby-vyuziti-ai#ke-každému-způsobu-patří-reflexe).
 

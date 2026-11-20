@@ -9,7 +9,7 @@ Tento dokument je pro Evu (jak práci spustit) i pro Claude Code (co dělat a v 
 - [x] Nové menu — `content/navigace.yaml`
 - [x] Texty všech 24 stránek nového menu + homepage — `content/stranky/`
 - [x] 18 skills ve 5 sadách (koncepty ke kontrole) — `content/skills/`, `content/sady.yaml`
-- [x] 8 žákovských promptů + úvod — `content/prompty/zaci/`
+- [x] 11 žákovských promptů + úvod — `content/prompty/zaci/` (8 původních, 20. 11. 2026 přepsané podle pojistek ze stránky Způsoby využití AI ve výuce; nové Společné objevování, Vysvětlování a Co kdyby)
 - [x] Export starého webu (7. 11. 2026, `archiv/`) a převod 88 promptů do databáze — `content/prompty/pedagogove` (32) a `archiv-2024` (56), obrázky z tipů v `archiv/uploads`. Dva prompty ručně opravené (Slovníček pojmů, Nápadníček — geografie), proto převod znovu spouštět **bez** `--prepsat`.
 - [x] Složky pro Google Disk (systémové prompty + data) — `google-drive/`, nahrané na sdílený disk, odkazy v `meta.yaml`
 - [x] Pluginy pro sady a marketplace — `scripts/build-plugins.py` → `plugins/`, `.claude-plugin/marketplace.json`, ZIPy v `dist/pluginy/` (build webu je má jen spouštět a ZIPy publikovat)

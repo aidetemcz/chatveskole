@@ -5,7 +5,7 @@ poradi: 2
 popis: Deset způsobů, jak zapojit generativní AI do výuky tak, aby žákům pomáhala přemýšlet a nepřemýšlela za ně. Ke každému co dělá žák a co AI, pojistka a jak poznáte, že se žák učí.
 aktualizovano: 2026-11-20
 tlacitko: { text: AI aplikace Tiny, href: /ve-vyuce/tiny }
-stav: ke-kontrole   # před zveřejněním: upravit prompty Brainstorming, Zpětná vazba a Role experta podle pojistek; ověřit čísla ze studií v původních článcích; věta o 4 krocích jen o návaznosti (s NPI nedohodnuto)
+stav: ke-kontrole   # před zveřejněním: ověřit čísla ze studií v původních článcích; věta o 4 krocích jen o návaznosti (s NPI nedohodnuto)
 zdroje:
   - https://digitalizace.rvp.cz/clanky/4-kroky-ke-smysluplnemu-uceni-s-ai
   - https://aiassessmentscale.com/
@@ -75,7 +75,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Jak poznáte, že se žák učí:** Shrne nový poznatek vlastními slovy bez pomoci chatbota.
 - **Otázka k reflexi:** Na co jsem přišel sám a kde mě chatbot navedl?
 - **Příklad:** Proč se na Zemi střídají roční období.
-- **Kde to spustit:** V Tiny Společné objevování.
+- **Kde to spustit:** V Tiny Společné objevování, v běžném chatbotu prompt [Společné objevování](/funkce/prompty/zaci/spolecne-objevovani).
 
 ### Vysvětlování
 
@@ -89,7 +89,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Jak poznáte, že se žák učí:** Jeho vysvětlení je věcně správné, srozumitelné a obstojí i při doplňujících otázkách.
 - **Otázka k reflexi:** Co se mi vysvětlovalo nejhůř a co to říká o tom, jak látce rozumím?
 - **Příklad:** Fotosyntéza vysvětlená někomu, kdo nikdy neviděl rostlinu.
-- **Kde to spustit:** V Tiny Zvědavý mimoň.
+- **Kde to spustit:** V Tiny Zvědavý mimoň, v běžném chatbotu prompt [Vysvětlování](/funkce/prompty/zaci/vysvetlovani).
 
 ## Žák zkoumá souvislosti
 
@@ -121,7 +121,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Jak poznáte, že se žák učí:** Jeho řetězec úvah je logický a opírá se o učivo.
 - **Otázka k reflexi:** Který z mých závěrů stojí na znalosti a který na odhadu?
 - **Příklad:** Co kdyby zemská osa nebyla nakloněná.
-- **Kde to spustit:** V Tiny Co kdyby…
+- **Kde to spustit:** V Tiny Co kdyby…, v běžném chatbotu prompt [Co kdyby](/funkce/prompty/zaci/co-kdyby).
 
 ## Žák posuzuje
 

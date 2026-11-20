@@ -11,7 +11,7 @@ import { promptText } from '../../../../lib/data';
 const uvod = (await getEntry('promptyUvod', 'zaci/_index'))!;
 const { Content } = await render(uvod);
 // pořadí podle stránky Způsoby využití AI ve výuce
-const PORADI = ['Opakování', 'Rozhovor v roli', 'Argumentace', 'Hledání chyb', 'Brainstorming', 'Plánování a struktura', 'Zpětná vazba'];
+const PORADI = ['Opakování', 'Společné objevování', 'Vysvětlování', 'Rozhovor v roli', 'Co kdyby', 'Argumentace', 'Hledání chyb', 'Brainstorming', 'Plánování a struktura', 'Zpětná vazba'];
 const misto = (z?: string | null) => { const i = PORADI.indexOf(z ?? ''); return i === -1 ? 99 : i; };
 const zaci = (await getCollection('prompty')).filter((p) => p.id.startsWith('zaci/'))
   .sort((a, b) => misto(a.data.zpusob) - misto(b.data.zpusob) || a.data.title.localeCompare(b.data.title, 'cs'));
