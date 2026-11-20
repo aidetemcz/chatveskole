@@ -24,6 +24,9 @@ Projekt je složka v chatbotu, ve které máte **pokyny, soubory a konverzace k 
 
 Projekty jsou také nejjednodušší náhradou za vlastní GPTs a Gems, které končí.
 
+<!-- komponenta: video -->
+[Průvodce založením a využitím projektu](https://www.loom.com/share/3b77f24d7e85482eaca0a3a6a9c3c69f)
+
 ## Co je v projektu
 
 Všechno k jednomu tématu na jednom místě. Chatbot to má k dispozici v každé konverzaci uvnitř projektu.
