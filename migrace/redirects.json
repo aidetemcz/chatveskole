@@ -856,6 +856,86 @@
       "permanent": true
     },
     {
+      "source": "/dp/ai-asistenti",
+      "destination": "/skills",
+      "permanent": true
+    },
+    {
+      "source": "/dp/ai-asistenti-%e2%86%92",
+      "destination": "/skills",
+      "permanent": true
+    },
+    {
+      "source": "/dp/ai-asistenti-pro-formativni-hodnoceni-%e2%86%92",
+      "destination": "/sady/formativni-hodnoceni",
+      "permanent": true
+    },
+    {
+      "source": "/tagy/anglicky-jazyk",
+      "destination": "/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/tagy/biologie",
+      "destination": "/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/tagy/cesky-jazyk",
+      "destination": "/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/tagy/chemie",
+      "destination": "/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/tagy/dejepis",
+      "destination": "/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/tagy/fyzika",
+      "destination": "/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/tagy/historie",
+      "destination": "/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/tagy/informatika",
+      "destination": "/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/tagy/logika",
+      "destination": "/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/tagy/matematika",
+      "destination": "/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/tagy/obcanska-nauka",
+      "destination": "/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/tagy/prirodopis",
+      "destination": "/prompty",
+      "permanent": true
+    },
+    {
+      "source": "/tagy/zemepis",
+      "destination": "/prompty",
+      "permanent": true
+    },
+    {
       "source": "/databaze-promptu",
       "destination": "/prompty",
       "permanent": true
@@ -893,6 +973,11 @@
     {
       "source": "/ve-vyuce/doporuceni-vs",
       "destination": "/ve-vyuce/doporuceni-zs-ss",
+      "permanent": true
+    },
+    {
+      "source": "/databaze-promptu/didaktik-genius",
+      "destination": "/skills/didakticky-radce",
       "permanent": true
     }
   ]
