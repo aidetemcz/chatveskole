@@ -61,7 +61,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Jak poznáte, že se žák učí:** Zvládne obtížnější otázky než na začátku a dokáže říct, co si potřebuje zopakovat.
 - **Otázka k reflexi:** Na kterou otázku bych příště odpověděl bez nápovědy?
 - **Příklad:** Opakování slovních druhů před čtvrtletní prací.
-- **Kde to spustit:** V Tiny Opakovací parťák nebo Testovací chatbot, v běžném chatbotu prompt [Otázky na míru](/funkce/prompty/zaci/otazky-na-miru).
+- **Kde to spustit:** V Tiny Opakovací parťák nebo Testovací chatbot, v běžném chatbotu prompt [Opakování](/funkce/prompty/zaci/opakovani).
 
 ### Společné objevování
 
@@ -107,7 +107,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Jak poznáte, že se žák učí:** Klade promyšlené otázky a všimne si nepřesnosti nebo rozdílu oproti zdroji.
 - **Otázka k reflexi:** Čemu z rozhovoru věřím a podle čeho?
 - **Příklad:** Rozhovor s Marií Terezií o školní reformě nebo s kapkou vody o koloběhu vody.
-- **Kde to spustit:** V Tiny Historická postava / Expert a V hlavní roli…, v běžném chatbotu prompt [Role experta](/funkce/prompty/zaci/role-experta).
+- **Kde to spustit:** V Tiny Historická postava / Expert a V hlavní roli…, v běžném chatbotu prompt [Rozhovor v roli](/funkce/prompty/zaci/rozhovor-v-roli).
 
 ### Co kdyby
 
@@ -153,7 +153,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Jak poznáte, že se žák učí:** Najde podstatné chyby a umí zdůvodnit, proč jde o chybu.
 - **Otázka k reflexi:** Kterou chybu jsem přehlédl a proč působila věrohodně?
 - **Příklad:** Odstavec o sluneční soustavě se třemi chybami.
-- **Kde to spustit:** V Tiny Chybující chatbot, v běžném chatbotu prompt [Vylepšení výstupu](/funkce/prompty/zaci/vylepseni-vystupu).
+- **Kde to spustit:** V Tiny Chybující chatbot, v běžném chatbotu prompt [Hledání chyb](/funkce/prompty/zaci/hledani-chyb).
 
 ## Žák tvoří
 
@@ -185,7 +185,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Jak poznáte, že se žák učí:** Předloží první návrh i konečnou verzi a vysvětlí, co změnil a proč.
 - **Otázka k reflexi:** Co jsem v plánu podcenil?
 - **Příklad:** Osnova referátu nebo harmonogram skupinového projektu.
-- **Kde to spustit:** V Tiny Chatbot pro plánování, v běžném chatbotu prompty [Plánování](/funkce/prompty/zaci/planovani) a [Obsahová struktura](/funkce/prompty/zaci/obsahova-struktura).
+- **Kde to spustit:** V Tiny Chatbot pro plánování, v běžném chatbotu prompt [Plánování a struktura](/funkce/prompty/zaci/planovani-a-struktura).
 
 ### Zpětná vazba
 

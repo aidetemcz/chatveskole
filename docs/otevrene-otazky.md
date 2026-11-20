@@ -56,7 +56,7 @@
 23. **Integrovaný model myšlení** (zdroj v projektu) není přes konektor Google Drive dostupný — skill `rozvoj-mysleni` proto stojí jen na původním systémovém promptu. Pošlete dokument, doplníme.
 24. **Ohlašovací povinnost vůči OSPOD** v `ucitelsky-mentor/references/krizove-situace.md` — nechat ověřit někým znalým práva.
 25. **Autorství starých promptů** (2024) je v `meta.yaml` připsané AI reaktoru UJEP s poznámkou „ověřit“.
-26. **Tiny chatboti k žákovským promptům** — mapování je v `content/prompty/zaci/*.md` (pole `tiny_chatbot`); pro *Obsahovou strukturu* a *Zpětnou vazbu* chatbot v Tiny zatím není.
+26. **Tiny chatboti k žákovským promptům** — mapování je v `content/prompty/zaci/*.md` (pole `tiny_chatbot`); pro *Zpětnou vazbu* chatbot v Tiny zatím není.
 27. **Podpůrná opatření:** stupně v `uprava-materialu/references/podpurna-opatreni.md` jsou doplněné podle vyhlášky č. 27/2016 Sb. z obecné znalosti (PDF MŠMT popisuje jen druhy SVP) — zkontrolovat, co patří do kterého stupně.
 28. **Seznam Tinybotů** ve skillu `aktivity-s-chatbotem` (režim „Zadání pro Tiny“) je podle dokumentu 08/2026 — ověřit proti dnešní nabídce Tiny.
 29. **Věcné opravy starých promptů:** RPG simulátor (nově elektron v obvodu místo proton/neutron), Hádej prvek se neptá na jméno, Kariérní poradce se ptá jen na zájmy.

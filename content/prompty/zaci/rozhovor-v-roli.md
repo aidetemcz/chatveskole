@@ -1,6 +1,6 @@
 ---
-title: Role experta
-slug: role-experta
+title: Rozhovor v roli
+slug: rozhovor-v-roli
 zpusob: Rozhovor v roli
 pro_koho: zaci
 vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"

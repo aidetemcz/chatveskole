@@ -1,6 +1,6 @@
 ---
-title: Vylepšení výstupu
-slug: vylepseni-vystupu
+title: Hledání chyb
+slug: hledani-chyb
 zpusob: Hledání chyb
 pro_koho: zaci
 vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"

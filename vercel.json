@@ -784,12 +784,12 @@
     },
     {
       "source": "/databaze-promptu/obsahova-struktura",
-      "destination": "/funkce/prompty/zaci/obsahova-struktura/",
+      "destination": "/funkce/prompty/zaci/planovani-a-struktura/",
       "permanent": true
     },
     {
       "source": "/databaze-promptu/obsahova-struktura/",
-      "destination": "/funkce/prompty/zaci/obsahova-struktura/",
+      "destination": "/funkce/prompty/zaci/planovani-a-struktura/",
       "permanent": true
     },
     {
@@ -814,12 +814,12 @@
     },
     {
       "source": "/databaze-promptu/otazky-na-miru",
-      "destination": "/funkce/prompty/zaci/otazky-na-miru/",
+      "destination": "/funkce/prompty/zaci/opakovani/",
       "permanent": true
     },
     {
       "source": "/databaze-promptu/otazky-na-miru/",
-      "destination": "/funkce/prompty/zaci/otazky-na-miru/",
+      "destination": "/funkce/prompty/zaci/opakovani/",
       "permanent": true
     },
     {
@@ -854,12 +854,12 @@
     },
     {
       "source": "/databaze-promptu/planovani",
-      "destination": "/funkce/prompty/zaci/planovani/",
+      "destination": "/funkce/prompty/zaci/planovani-a-struktura/",
       "permanent": true
     },
     {
       "source": "/databaze-promptu/planovani/",
-      "destination": "/funkce/prompty/zaci/planovani/",
+      "destination": "/funkce/prompty/zaci/planovani-a-struktura/",
       "permanent": true
     },
     {
@@ -1014,12 +1014,12 @@
     },
     {
       "source": "/databaze-promptu/role-experta",
-      "destination": "/funkce/prompty/zaci/role-experta/",
+      "destination": "/funkce/prompty/zaci/rozhovor-v-roli/",
       "permanent": true
     },
     {
       "source": "/databaze-promptu/role-experta/",
-      "destination": "/funkce/prompty/zaci/role-experta/",
+      "destination": "/funkce/prompty/zaci/rozhovor-v-roli/",
       "permanent": true
     },
     {
@@ -1334,12 +1334,12 @@
     },
     {
       "source": "/databaze-promptu/vylepseni-vystupu",
-      "destination": "/funkce/prompty/zaci/vylepseni-vystupu/",
+      "destination": "/funkce/prompty/zaci/hledani-chyb/",
       "permanent": true
     },
     {
       "source": "/databaze-promptu/vylepseni-vystupu/",
-      "destination": "/funkce/prompty/zaci/vylepseni-vystupu/",
+      "destination": "/funkce/prompty/zaci/hledani-chyb/",
       "permanent": true
     },
     {
@@ -1955,6 +1955,56 @@
     {
       "source": "/databaze-promptu/didaktik-genius/",
       "destination": "/skills/didakticky-radce/",
+      "permanent": true
+    },
+    {
+      "source": "/funkce/prompty/zaci/otazky-na-miru",
+      "destination": "/funkce/prompty/zaci/opakovani/",
+      "permanent": true
+    },
+    {
+      "source": "/funkce/prompty/zaci/otazky-na-miru/",
+      "destination": "/funkce/prompty/zaci/opakovani/",
+      "permanent": true
+    },
+    {
+      "source": "/funkce/prompty/zaci/role-experta",
+      "destination": "/funkce/prompty/zaci/rozhovor-v-roli/",
+      "permanent": true
+    },
+    {
+      "source": "/funkce/prompty/zaci/role-experta/",
+      "destination": "/funkce/prompty/zaci/rozhovor-v-roli/",
+      "permanent": true
+    },
+    {
+      "source": "/funkce/prompty/zaci/vylepseni-vystupu",
+      "destination": "/funkce/prompty/zaci/hledani-chyb/",
+      "permanent": true
+    },
+    {
+      "source": "/funkce/prompty/zaci/vylepseni-vystupu/",
+      "destination": "/funkce/prompty/zaci/hledani-chyb/",
+      "permanent": true
+    },
+    {
+      "source": "/funkce/prompty/zaci/planovani",
+      "destination": "/funkce/prompty/zaci/planovani-a-struktura/",
+      "permanent": true
+    },
+    {
+      "source": "/funkce/prompty/zaci/planovani/",
+      "destination": "/funkce/prompty/zaci/planovani-a-struktura/",
+      "permanent": true
+    },
+    {
+      "source": "/funkce/prompty/zaci/obsahova-struktura",
+      "destination": "/funkce/prompty/zaci/planovani-a-struktura/",
+      "permanent": true
+    },
+    {
+      "source": "/funkce/prompty/zaci/obsahova-struktura/",
+      "destination": "/funkce/prompty/zaci/planovani-a-struktura/",
       "permanent": true
     }
   ]
