@@ -1,0 +1,291 @@
+---
+// Prompty — co je prompt a jak ho napsat (sablona: prompty-pruvodce). Návrh z Claude Design (20. 11. 2026).
+// Texty jsou v content/stranky/funkce/prompty.md (oddíly podle ##), skládačka promptu v data/skladacka-promptu.yaml.
+import fs from 'node:fs';
+import path from 'node:path';
+import YAML from 'yaml';
+import { getEntry } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import Crumbs from '../../../components/Crumbs.astro';
+import { rozdel, naOddily } from '../../../lib/komponenty';
+import { url } from '../../../lib/url';
+
+type Technika = { id: string; cislo: number; nazev: string; popis: string; barva: string };
+type Kus = { technika: string | null; text: string };
+const sk: { techniky: Technika[]; priklad: { cislo: number; nazev: string; popis: string; ukazka: string }; zapnuto: string[]; kusy: Kus[] } =
+  YAML.parse(fs.readFileSync(path.join(process.cwd(), 'data/skladacka-promptu.yaml'), 'utf8'));
+const barva = Object.fromEntries(sk.techniky.map((t) => [t.id, t.barva]));
+const zap = new Set(sk.zapnuto);
+
+const stranka = (await getEntry('stranky', 'funkce/prompty'))!;
+const d = stranka.data;
+const { uvod, oddily } = naOddily(rozdel(stranka.rendered?.html ?? ''));
+const html = (c: { casti: { typ: string; html?: string }[] } | undefined, i?: number) =>
+  (c?.casti ?? []).filter((x) => x.typ === 'html').map((x) => x.html ?? '').filter((_, j) => i === undefined || j === i).join('');
+const perex = uvod.map((c) => (c.typ === 'html' ? c.html : '')).join('');
+const najdi = (slovo: RegExp) => oddily.find((o) => slovo.test(o.nadpis));
+const bezTagu = (s: string) => s.replace(/<[^>]+>/g, '').trim();
+
+// Chatbot jako miliony expertů: odstavce = text, citace = karty (první věta zvýrazněná)
+const experti = najdi(/expert/i);
+const expertiHtml = html(experti);
+const expertiText = expertiHtml.replace(/<blockquote>[\s\S]*?<\/blockquote>/g, '');
+const role = [...expertiHtml.matchAll(/<blockquote>\s*<p>([\s\S]*?)<\/p>\s*<\/blockquote>/g)].map(([, t]) => {
+  const m = bezTagu(t).match(/^([^.]*\.)\s*([\s\S]*)$/);
+  return m ? { zvyraznit: m[1], zbytek: m[2] } : { zvyraznit: '', zbytek: bezTagu(t) };
+});
+
+// Sedm technik: text před skládačkou a po ní
+const techniky = najdi(/techni/i);
+const technikyUvod = html(techniky, 0), technikyPoznamka = html(techniky, 1);
+
+// Tři tipy: položky „**Nadpis.** text“
+const tipy = najdi(/tip/i);
+const seznamTipu = [...html(tipy).matchAll(/<li>\s*<strong>([\s\S]*?)<\/strong>\s*([\s\S]*?)<\/li>/g)].map(([, n, t]) => ({ nadpis: bezTagu(n).replace(/\.$/, ''), text: t }));
+const IKONY_TIPU = [
+  '<path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2.5-3 4.5"></path><path d="M12 18h.01"></path><circle cx="12" cy="12" r="9.5"></circle>',
+  '<path d="M4 5h16v10H9l-5 4z"></path><path d="M8 9h8M8 12h5"></path>',
+  '<path d="M20 12.5 12.5 20a5 5 0 0 1-7-7L13 5.5a3.3 3.3 0 0 1 4.7 4.7L10.4 17.5a1.7 1.7 0 0 1-2.4-2.4l6.8-6.8"></path>',
+];
+
+// Prompt, nebo dovednost: tabulka → dvě karty
+const srovnani = najdi(/dovednost/i);
+const srovnaniHtml = html(srovnani);
+const srovnaniText = srovnaniHtml.replace(/<table>[\s\S]*?<\/table>/, '');
+const radky = [...(srovnaniHtml.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? '').matchAll(/<tr>([\s\S]*?)<\/tr>/g)]
+  .map(([, r]) => [...r.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(([, c]) => c.trim()));
+const karty = [
+  { nazev: 'Prompt', sloupec: 1, odkaz: { text: 'Katalog promptů', href: url('/prompty') }, hlavni: false },
+  { nazev: 'Dovednost', sloupec: 2, odkaz: { text: 'Co je dovednost', href: url('/funkce/skills') }, hlavni: true },
+];
+
+// Závěrečná výzva: poslední oddíl
+const vyzva = oddily[oddily.length - 1];
+const tlacitko = d.tlacitko && typeof d.tlacitko === 'object' && (d.tlacitko as { href?: string }).href ? (d.tlacitko as { text: string; href: string }) : { text: 'Přejít na Katalog promptů', href: '/prompty' };
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+---
+<Base title={d.title} description={d.popis ?? undefined}>
+  <div class="band band--white">
+    <div class="wrap page-head">
+      <div class="zahlavi">
+        <Crumbs items={[{ title: 'Funkce' }, { title: d.title }]} />
+        {datum && <span class="draft">Aktualizováno {datum}</span>}
+      </div>
+      <h1>{d.title}</h1>
+      <div class="lede perex" set:html={perex} />
+      <div class="hero-btns">
+        <a class="btn btn--primary" href="#skladacka">Poskládejte si prompt ↓</a>
+        <a class="btn btn--outline" href={url(tlacitko.href)}>Katalog promptů →</a>
+      </div>
+    </div>
+  </div>
+
+  {experti && (
+    <section class="band band--sky" aria-labelledby={experti.id || undefined}>
+      <div class="wrap experti">
+        <div class="stack" style="gap: 14px">
+          <h2 id={experti.id || undefined}>{experti.nadpis}</h2>
+          <div class="prose" set:html={expertiText} />
+        </div>
+        <div class="role">
+          {role.map((r, i) => (
+            <figure class="role-karta">
+              <figcaption>Role {String.fromCharCode(65 + i)}</figcaption>
+              <p><mark>{r.zvyraznit}</mark> {r.zbytek}</p>
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {techniky && (
+    <section class="band band--white" id="skladacka" aria-labelledby={techniky.id || undefined}>
+      <div class="wrap stack" style="gap: 28px">
+        <div class="section-head"><div>
+          <h2 id={techniky.id || undefined}>{techniky.nadpis}</h2>
+          <div class="prose" set:html={technikyUvod} />
+        </div></div>
+        <div class="skladacka" data-skladacka>
+          <ol class="techniky">
+            {sk.techniky.map((t) => (<>
+              {t.cislo === sk.priklad.cislo + 1 && (
+                <li class="technika-priklad">
+                  <span class="technika-cislo" aria-hidden="true">{sk.priklad.cislo}</span>
+                  <span class="technika-text">
+                    <span class="technika-nazev">{sk.priklad.cislo}. {sk.priklad.nazev}</span>
+                    <span>{sk.priklad.popis}</span>
+                    <code>{sk.priklad.ukazka}</code>
+                  </span>
+                </li>
+              )}
+              <li>
+                <button type="button" class="technika" data-technika={t.id} aria-pressed={zap.has(t.id) ? 'true' : 'false'} style={`--barva: ${t.barva}`}>
+                  <span class="technika-cislo" aria-hidden="true">{t.cislo}</span>
+                  <span class="technika-text"><span class="technika-nazev">{t.cislo}. {t.nazev}</span><span>{t.popis}</span></span>
+                </button>
+              </li>
+            </>))}
+          </ol>
+          <div class="vysledek-obal">
+            <div class="vysledek">
+              <div class="vysledek-hlava">
+                <span class="vysledek-titulek">Váš prompt</span>
+                <span class="vysledek-pocet" data-pocet aria-live="polite"></span>
+              </div>
+              <p class="vysledek-text" data-prompt>
+                {sk.kusy.map((k) => k.technika
+                  ? <span data-kus={k.technika} style={`background: ${barva[k.technika]}`} hidden={!zap.has(k.technika)}>{k.text}</span>
+                  : <span>{k.text}</span>)}
+              </p>
+              <div class="vysledek-tlacitka">
+                <button type="button" class="btn btn--outline btn--sm" data-vse>Zapnout všechny</button>
+                <button type="button" class="btn btn--outline btn--sm" data-nic>Začít znovu</button>
+                <button type="button" class="btn btn--primary btn--sm vysledek-kopirovat" data-copy-text="">Kopírovat</button>
+              </div>
+            </div>
+            <div class="prose" set:html={technikyPoznamka} />
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {tipy && (
+    <section class="band band--sky" aria-labelledby={tipy.id || undefined}>
+      <div class="wrap stack" style="gap: 24px">
+        <h2 id={tipy.id || undefined}>{tipy.nadpis}</h2>
+        <div class="tipy">
+          {seznamTipu.map((t, i) => (
+            <div class="card">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="tip-ikona" set:html={IKONY_TIPU[i % IKONY_TIPU.length]}></svg>
+              <h3>{t.nadpis}</h3>
+              <p set:html={t.text} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {srovnani && (
+    <section class="band band--white" aria-labelledby={srovnani.id || undefined}>
+      <div class="wrap stack" style="gap: 24px">
+        <div class="section-head"><div>
+          <h2 id={srovnani.id || undefined}>{srovnani.nadpis}</h2>
+          <div class="prose" set:html={srovnaniText} />
+        </div></div>
+        <div class="srovnani">
+          {karty.map((k) => (
+            <div class:list={['srovnani-karta', { 'srovnani-karta--hlavni': k.hlavni }]}>
+              <div class="srovnani-hlava">
+                <span class="srovnani-ikona" aria-hidden="true">
+                  {k.hlavni
+                    ? <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7l8-4 8 4-8 4z"></path><path d="M4 12l8 4 8-4"></path><path d="M4 17l8 4 8-4"></path></svg>
+                    : <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14v16H5z"></path><path d="M8 8h8M8 12h8M8 16h5"></path></svg>}
+                </span>
+                <h3>{k.nazev}</h3>
+              </div>
+              <dl>
+                {radky.map((r) => <><dt set:html={r[0]} /><dd set:html={r[k.sloupec] ?? ''} /></>)}
+              </dl>
+              <a class:list={['btn', k.hlavni ? 'btn--primary' : 'btn--outline']} href={k.odkaz.href}>{k.odkaz.text} →</a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {vyzva && vyzva !== srovnani && (
+    <section class="band band--sky" aria-labelledby={vyzva.id || undefined}>
+      <div class="wrap vyzva">
+        <div class="stack" style="gap: 8px">
+          <h2 id={vyzva.id || undefined}>{vyzva.nadpis}</h2>
+          <div class="prose" set:html={html(vyzva)} />
+        </div>
+        <a class="btn btn--primary" href={url(tlacitko.href)}>{tlacitko.text} →</a>
+      </div>
+    </section>
+  )}
+</Base>
+
+<script>
+  // Skládačka promptu: tlačítka zapínají a vypínají části promptu; Kopírovat bere jen viditelný text (data-copy-text, obsluha v Base.astro)
+  document.querySelectorAll<HTMLElement>('[data-skladacka]').forEach((s) => {
+    const tlacitka = [...s.querySelectorAll<HTMLButtonElement>('[data-technika]')];
+    const kusy = [...s.querySelectorAll<HTMLElement>('[data-kus]')];
+    const text = s.querySelector<HTMLElement>('[data-prompt]')!;
+    const pocet = s.querySelector<HTMLElement>('[data-pocet]')!;
+    const kopirovat = s.querySelector<HTMLButtonElement>('.vysledek-kopirovat')!;
+    const obnov = () => {
+      const zap = new Set(tlacitka.filter((b) => b.getAttribute('aria-pressed') === 'true').map((b) => b.dataset.technika));
+      kusy.forEach((k) => { k.hidden = !zap.has(k.dataset.kus); });
+      pocet.textContent = `Zapnuto ${zap.size} z ${tlacitka.length} technik`;
+      kopirovat.dataset.copyText = [...text.children].filter((c) => !(c as HTMLElement).hidden).map((c) => c.textContent).join('').trim();
+    };
+    const nastav = (on: boolean) => { tlacitka.forEach((b) => b.setAttribute('aria-pressed', String(on))); obnov(); };
+    tlacitka.forEach((b) => b.addEventListener('click', () => { b.setAttribute('aria-pressed', String(b.getAttribute('aria-pressed') !== 'true')); obnov(); }));
+    s.querySelector('[data-vse]')?.addEventListener('click', () => nastav(true));
+    s.querySelector('[data-nic]')?.addEventListener('click', () => nastav(false));
+    obnov();
+  });
+</script>
+
+<style>
+  .perex :global(p) { font-size: 1.15rem; max-width: 62ch; }
+  .hero-btns { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+  h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
+  .experti { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center; }
+  .experti .prose { max-width: 46ch; }
+  .role { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+  .role-karta { margin: 0; background: var(--panel); border: 1px solid var(--sky); border-radius: 9px; padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; }
+  .role-karta figcaption { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--sky-ink); }
+  .role-karta p { margin: 0; font-family: var(--fm); font-size: 0.9rem; line-height: 1.55; }
+  .role-karta mark { background: var(--accent-soft); color: var(--ink); padding: 1px 3px; border-radius: 3px; }
+
+  .skladacka { display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start; }
+  .techniky { flex: 1 1 360px; margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .technika, .technika-priklad { width: 100%; min-height: 44px; display: flex; gap: 14px; align-items: flex-start; padding: 14px 16px; border-radius: 9px; font: inherit; color: var(--ink); text-align: left; border: 1px solid var(--sky); background: var(--panel); }
+  .technika { cursor: pointer; }
+  .technika:hover { border-color: var(--sky-deep); }
+  .technika[aria-pressed='true'] { background: var(--barva); border-color: var(--sky-deep); }
+  .technika-cislo { flex: none; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; background: var(--panel); border: 1px solid var(--sky); }
+  .technika[aria-pressed='true'] .technika-cislo { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+  .technika-text { display: flex; flex-direction: column; gap: 2px; font-size: 0.9rem; line-height: 1.45; }
+  .technika-nazev { font-weight: 600; font-size: 1rem; }
+  .technika-priklad { border-style: dashed; }
+  .technika-priklad code { font-family: var(--fm); font-size: 0.82rem; background: var(--line-soft); padding: 8px 10px; border-radius: 6px; line-height: 1.5; margin-top: 4px; }
+
+  .vysledek-obal { flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 14px; position: sticky; top: 96px; }
+  .vysledek { background: #f6fafc; border: 1px solid var(--sky); border-radius: var(--radius-lg); padding: 24px 26px; display: flex; flex-direction: column; gap: 16px; }
+  .vysledek-hlava { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 0.82rem; color: var(--sky-ink); }
+  .vysledek-titulek { font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+  .vysledek-text { margin: 0; font-family: var(--fm); font-size: 0.95rem; line-height: 1.75; }
+  .vysledek-text [data-kus] { border-radius: 3px; padding: 1px 2px; }
+  .vysledek-tlacitka { display: flex; flex-wrap: wrap; gap: 10px; }
+  .vysledek-kopirovat { margin-left: auto; }
+  .vysledek-obal .prose :global(p) { font-size: 0.9rem; }
+
+  .tipy { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+  .tip-ikona { color: var(--sky-ink); }
+  .tipy .card h3 { font-size: 1.2rem; }
+  .tipy .card p { font-size: 0.95rem; }
+
+  .srovnani { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+  .srovnani-karta { border: 1px solid var(--sky); border-radius: 9px; padding: 26px 28px; display: flex; flex-direction: column; gap: 16px; background: var(--panel); }
+  .srovnani-karta--hlavni { background: var(--accent-soft); }
+  .srovnani-hlava { display: flex; align-items: center; gap: 12px; }
+  .srovnani-hlava h3 { font-size: 1.5rem; }
+  .srovnani-ikona { width: 44px; height: 44px; border-radius: 10px; background: var(--sky-light); color: var(--sky-ink); display: inline-flex; align-items: center; justify-content: center; }
+  .srovnani-karta--hlavni .srovnani-ikona { background: var(--panel); color: var(--accent); }
+  .srovnani-karta dl { margin: 0; display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 10px 16px; font-size: 0.95rem; }
+  .srovnani-karta dt { font-weight: 600; }
+  .srovnani-karta dd { margin: 0; }
+  .srovnani-karta .btn { margin-top: auto; align-self: flex-start; }
+
+  .vyzva { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; }
+  .vyzva .prose { max-width: 56ch; }
+  @media (max-width: 860px) { .vysledek-obal { position: static; } }
+  @media (max-width: 480px) { .srovnani-karta dl { grid-template-columns: 1fr; gap: 2px; } .srovnani-karta dd { margin-bottom: 8px; } }
+</style>

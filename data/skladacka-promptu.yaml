@@ -1,0 +1,28 @@
+# Skládačka promptu na stránce /funkce/prompty (sekce „Sedm technik, jak dát chatbotu kontext“).
+# techniky: tlačítka k zapnutí/vypnutí; barva = podbarvení části promptu (světlé, text zůstává černý).
+# kusy: výsledný prompt po částech; technika: null = základ, který je vidět vždy.
+# zapnuto: techniky zapnuté po načtení stránky.
+techniky:
+  - { id: role, cislo: 1, nazev: Role, popis: "V jaké roli má chatbot odpovídat.", barva: "#f7d9d9" }
+  - { id: ton, cislo: 2, nazev: Cílová skupina a tón, popis: "Pro koho text je a jakým stylem má být napsaný.", barva: "#cfe5ee" }
+  - { id: format, cislo: 3, nazev: Formát, popis: "Esej, tabulka, osnova, kvíz, podklady pro prezentaci…", barva: "#f6e7b8" }
+  - { id: cil, cislo: 4, nazev: Cíl, popis: "K čemu výstup poslouží. Chatbot pak vybere, co je podstatné.", barva: "#cfe9d6" }
+  - { id: delka, cislo: 5, nazev: Délka, popis: "Kolik textu chcete.", barva: "#e2dbf5" }
+  - { id: omezeni, cislo: 7, nazev: Omezení, popis: "Co ve výstupu být nemá.", barva: "#f6d6c2" }
+priklad:
+  cislo: 6
+  nazev: Příklad
+  popis: "Máte-li konkrétní představu, ukažte ji. Hodí se hlavně u cvičení:"
+  ukazka: "… slovesa v minulém čase nahraď mezerou ___ a za ni do závorky napiš infinitiv. Příklad: Otec ___ (vejít) do školy."
+zapnuto: [role, ton]
+kusy:
+  - { technika: role, text: "Jsi expert na české dějiny a empatický pedagog se smyslem pro humor. " }
+  - { technika: null, text: "Napiš " }
+  - { technika: ton, text: "neformální " }
+  - { technika: null, text: "shrnutí českého národního obrození" }
+  - { technika: ton, text: " pro žáky ve věku 14 let" }
+  - { technika: format, text: " ve formátu podkladů pro prezentaci o pěti snímcích" }
+  - { technika: null, text: ". " }
+  - { technika: cil, text: "Cílem je, aby žáci pochopili, proč bylo národní obrození tak důležité pro českou kulturu a jazyk. " }
+  - { technika: delka, text: "Na každý snímek nejvýš tři krátké body. " }
+  - { technika: omezeni, text: "Nepoužívej letopočty, které se žáci nemusí učit nazpaměť, a vynech odborné termíny bez vysvětlení." }
