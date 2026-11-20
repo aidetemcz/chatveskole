@@ -21,7 +21,7 @@ Projekty jsou také nejjednodušší náhradou za vlastní GPTs a Gems, které k
 
 | Nástroj | Jak se jmenují | Zdarma | Sdílení |
 |---|---|---|---|
-| ChatGPT | Projekty | ano, ve Free 5 souborů na projekt | odkazem — otevře ho každý přihlášený uživatel |
+| ChatGPT | Projekty | ano, ve Free 5 souborů na projekt | jen v rámci pracovního prostoru (školní domény) |
 | Claude | Projekty | ano, ve Free nejvýš 5 projektů | jen uvnitř týmu (placené týmové tarify) |
 | Gemini | Notebooky (propojené s Gemini Notebook, dříve NotebookLM) | ano | v rámci Google Workspace |
 | Copilot | Notebooks | ano, i v bezplatném Copilot Chatu | v rámci organizace |
@@ -56,7 +56,7 @@ Chatboti umí hledat na internetu, ale na konkrétní webové stránky se spoleh
 
 ## Projekt jako náhrada sdíleného asistenta
 
-Sdíleli jste s kolegy vlastní GPT odkazem? V ChatGPT můžete místo něj **sdílet projekt**. Kolegové v něm najdou stejné pokyny i soubory, jen každý musí být přihlášený.
+Sdíleli jste s kolegy vlastní GPT odkazem? V ChatGPT můžete místo něj **sdílet projekt**. Kolegové v něm najdou stejné pokyny i soubory. Sdílet ho ale můžete jen v rámci pracovního prostoru vaší školy, ne s lidmi mimo něj.
 
 **Pozor: ve sdíleném projektu vidí všichni členové všechny konverzace** i nahrané soubory a nefunguje v něm paměť. Hodí se pro malý tým kolegů, kteří na něčem pracují společně, ne pro rozdávání asistenta desítkám kolegů. Pokud chcete, aby si asistenta mohl použít kdokoli, dejte mu instrukce (u našich dovedností jsou jako Google dokument) — každý si z nich založí vlastní projekt během dvou minut.
 
