@@ -21,6 +21,9 @@ odkazy:
 
 Sada dovedností (plugin) je **balíček**, který do chatbota nainstalujete jedním krokem. Může obsahovat několik [dovedností](/funkce/skills), napojení na další aplikace ([konektory](/funkce/konektory)) a další nástroje. Zatímco dovednost naučí chatbota jeden úkol, plugin mu přidá celou sadu dovedností pro určitou oblast — třeba vše, co potřebujete k formativnímu hodnocení.
 
+<!-- komponenta: video -->
+[Průvodce instalací a využitím sady dovedností](https://www.loom.com/share/a31b377de7704e17a9e1e4b63534add3)
+
 ## Prompt, dovednost, nebo sada dovedností?
 
 Všechny tři cesty vedou ke stejnému cíli. Liší se tím, kolik práce vám ušetří a kde fungují.

@@ -13,7 +13,10 @@ const stranka = (await getEntry('stranky', 'funkce/pluginy'))!;
 const d = stranka.data;
 const { uvod, oddily } = naOddily(rozdel(stranka.rendered?.html ?? ''));
 const htmlOddilu = (o?: { casti: { typ: string; html?: string }[] }) => (o?.casti ?? []).filter((x) => x.typ === 'html').map((x) => x.html ?? '').join('');
-const perex = uvod.map((c) => (c.typ === 'html' ? c.html : '')).join('');
+const uvodHtml = uvod.map((c) => (c.typ === 'html' ? c.html : '')).join('');
+// video (komponenta „video“) v úvodu se ukáže pod tlačítky s vlastním nadpisem
+const videoHtml = (uvodHtml.match(/<div class="video">[\s\S]*?<\/div>/) ?? [''])[0];
+const perex = videoHtml ? uvodHtml.replace(videoHtml, '') : uvodHtml;
 const najdi = (r: RegExp) => oddily.find((o) => r.test(o.nadpis));
 const bezTagu = (s: string) => s.replace(/<[^>]+>/g, '').trim();
 const uvodOddilu = (h: string) => h.split(/<(?:ul|ol|h3)[\s>]/)[0];
@@ -87,6 +90,12 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
           <a class="btn btn--outline" href={url('/funkce/skills')}>Co jsou dovednosti</a>
         </div>
       </div>
+      {videoHtml && (
+        <div class="video-uvod stack" style="gap: 30px">
+          <h2 id="pruvodce">Průvodce instalací a využitím sady dovedností</h2>
+          <div set:html={videoHtml} />
+        </div>
+      )}
     </div>
   </div>
 
@@ -233,6 +242,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 </Base>
 
 <style>
+  .video-uvod { margin-top: 56px; }
   h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
   .hlava { display: flex; flex-direction: column; gap: 14px; max-width: 64ch; }
   .tlacitka { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
