@@ -95,7 +95,7 @@ Postup se liší podle aplikace a tarifu.
 - **Claude (placené tarify):** v **Customize → Plugins → Add marketplace** zadejte `aidetemcz/chatveskole`. Zobrazí se všechny naše sady a vyberete si, které chcete. Když dovednosti aktualizujeme, aktualizují se i vám. Sady jsme podali také do adresáře pluginů v Claude, po schválení je najdete přímo tam.
 - **ChatGPT (tarify Business, Enterprise, Edu):** stáhněte ZIP u sady výše (nerozbalujte ho), otevřete **Plugins → Přidat → Nahrát archiv pluginu** a pak plugin nainstalujte. Sdílet ho můžete s kolegy v pracovním prostoru školy. Do veřejného adresáře ChatGPT jsme sady podali ke schválení.
 - **Claude, Copilot Cowork (nahrání souboru):** stáhněte ZIP u sady výše a nahrajte ho.
-- **ChatGPT zdarma a Go (pluginy nemá):** vložte instrukce dovednosti do [projektu](/funkce/projekty), nebo použijte prompt.
+- **ChatGPT zdarma a Go (jen z adresáře):** nainstalujte plugin z adresáře pluginů v ChatGPT, vlastní ZIP ale nahrát nejde. Naše sady tam najdete po schválení. Do té doby vložte instrukce dovednosti do [projektu](/funkce/projekty), nebo použijte prompt.
 - **Gemini (pluginy nemá):** nainstalujte jednotlivé dovednosti ze sady.
 
 ## Stačí vám jedna dovednost?
