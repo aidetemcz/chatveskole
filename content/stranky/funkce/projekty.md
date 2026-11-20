@@ -9,6 +9,9 @@ stav: koncept
 zdroje:
   - https://help.openai.com/en/articles/10169521-projects-in-chatgpt
   - https://support.claude.com/en/articles/9517075-what-are-projects
+  - https://help.openai.com/en/articles/8555545-file-uploads-faq
+  - https://9to5google.com/2026/04/17/gemini-notebooks-free/
+  - https://support.microsoft.com/en-us/microsoft-365-copilot/frequently-asked-questions-about-microsoft-365-copilot-notebooks
   - data/funkce-chatbotu.yaml
 odkazy:
   - { text: Konektory, href: /funkce/konektory }
@@ -35,10 +38,10 @@ Projekty mají všechny čtyři chatovací aplikace, jen se jinak jmenují.
 
 | Nástroj | Jak se jmenují | Zdarma | Sdílení |
 |---|---|---|---|
-| ChatGPT | Projekty | ano, ve Free 5 souborů na projekt | jen v rámci pracovního prostoru (školní domény) |
+| ChatGPT | Projekty | ano, projektů bez omezení, ve Free 5 souborů na projekt | jen v rámci pracovního prostoru (školní domény) |
 | Claude | Projekty | ano, ve Free nejvýš 5 projektů | jen uvnitř týmu (placené týmové tarify) |
-| Gemini | Notebooky (propojené s Gemini Notebook, dříve NotebookLM) | ano | v rámci Google Workspace |
-| Copilot | Notebooks | ano, i v bezplatném Copilot Chatu | v rámci organizace |
+| Gemini | Notebooky (propojené s Gemini Notebook, dříve NotebookLM) | ano, na webu, ve Free až 50 zdrojů na notebook | v rámci Google Workspace |
+| Copilot | Notebooks | ano, v bezplatném Copilot Chatu se školním nebo pracovním účtem | v rámci organizace |
 
 ## Jak projekt založit
 
