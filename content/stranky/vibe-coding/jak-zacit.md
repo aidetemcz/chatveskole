@@ -3,7 +3,8 @@ title: Jak začít s vibe codingem
 menu: Vibe Coding
 poradi: 3
 popis: Postup krok za krokem, jak si postavit první aplikaci do výuky. Vzorový prompt, jak popsat chybu a jak se nezaseknout.
-aktualizovano: 2026-11-07
+sablona: vibe-coding-jak-zacit-pruvodce   # vlastní šablona src/pages/vibe-coding/jak-zacit.astro
+aktualizovano: 2026-11-20
 stav: koncept
 ---
 
