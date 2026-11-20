@@ -4,7 +4,7 @@ import { url } from './url';
 
 export type Klic =
   | 'cenik' | 'sady-skills' | 'pluginy' | 'tiny' | 'infografika-mcp' | 'instrukce' // datové komponenty (Astro)
-  | 'zalozky' | 'nahledy' | 'tabulka-karty' | 'tlacitko' | 'karta-obrazek' | 'karty-zpusobu' // úprava následujícího HTML
+  | 'zalozky' | 'nahledy' | 'tabulka-karty' | 'tlacitko' | 'karta-obrazek' | 'karty-zpusobu' | 'video' // úprava následujícího HTML
   | 'teze' | 'casova-osa' | 'matice' | 'karty-nastroju' | 'zdroje-nastroju'; // stránka Změny funkcí
 
 const MAPA: [RegExp, Klic][] = [
@@ -18,6 +18,7 @@ const MAPA: [RegExp, Klic][] = [
   [/^\s*tlačítko\b/, 'tlacitko'],
   [/karta s obrázkem/, 'karta-obrazek'],
   [/karty způsobů/, 'karty-zpusobu'],
+  [/^\s*video\b/, 'video'],
   [/karty s náhledem/, 'nahledy'],
   [/tabulka, na mobilu karty/, 'tabulka-karty'],
   [/tři teze/, 'teze'],
@@ -36,6 +37,7 @@ const PREVOD: Partial<Record<Klic, (html: string, id: string) => string>> = {
   tlacitko: naTlacitko,
   'karta-obrazek': naKartuSObrazkem,
   'karty-zpusobu': naKartyZpusobu,
+  video: naVideo,
 };
 
 export function rozdel(html: string): Cast[] {
@@ -58,6 +60,24 @@ export function rozdel(html: string): Cast[] {
   }
   pridejHtml(html.slice(posledni));
   return casti;
+}
+
+// Následující odstavec s odkazem na video (Loom, YouTube) → vložené video na šířku textu (<!-- komponenta: video -->)
+// V Markdownu: [Název videa](https://www.loom.com/share/…) — text odkazu je titulek přehrávače pro čtečky.
+export function embedVidea(href: string): string | null {
+  const loom = href.match(/loom\.com\/(?:share|embed)\/([0-9a-f]+)/i);
+  if (loom) return `https://www.loom.com/embed/${loom[1]}`;
+  const yt = href.match(/(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([\w-]{6,})/);
+  if (yt) return `https://www.youtube-nocookie.com/embed/${yt[1]}`;
+  return null;
+}
+export function naVideo(html: string): string {
+  const m = html.match(/<p>\s*<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*<\/p>/);
+  const src = m && embedVidea(m[1]);
+  if (!m || !src) return html;
+  const nazev = bezTagu(m[2]).replace(/"/g, '&quot;');
+  const video = `<div class="video"><iframe src="${src}" title="${nazev}" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>`;
+  return html.slice(0, m.index) + video + html.slice(m.index! + m[0].length);
 }
 
 // Následující odstavec s odkazem → tlačítko (<!-- komponenta: tlačítko -->)

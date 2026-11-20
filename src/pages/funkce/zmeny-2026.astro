@@ -25,6 +25,8 @@ const iTeze = uvod.findIndex((c) => c.typ === 'komponenta' && c.klic === 'teze')
 const perex = uvod.slice(0, iTeze === -1 ? uvod.length : iTeze).filter((c): c is Extract<Cast, { typ: 'html' }> => c.typ === 'html').map((c) => c.html).join('');
 const tezeHtml = iTeze === -1 ? '' : uvod.slice(iTeze + 1).filter((c): c is Extract<Cast, { typ: 'html' }> => c.typ === 'html').map((c) => c.html).join('');
 const seznamTezi = teze(tezeHtml);
+// video (komponenta „video“) v úvodu za tezemi se ukáže nad prvním oddílem
+const videoHtml = (tezeHtml.match(/<div class="video">[\s\S]*?<\/div>/) ?? [''])[0];
 const GLYFY = [['full', 'none'], ['none', 'full'], ['half', 'half']];
 
 const POPISY: Record<string, string> = {
@@ -63,6 +65,7 @@ const datum = d.aktualizovano ? datumCesky(d.aktualizovano) : null;
   {oddily.map((o, i) => (
     <section class:list={['band', (i + (seznamTezi.length ? 1 : 0)) % 2 === 0 ? 'band--sky' : 'band--white']} aria-labelledby={o.id || undefined}>
       <div class="wrap stack" style="gap: 30px">
+        {i === 0 && videoHtml && <div class="video-uvod" set:html={videoHtml} />}
         <div class="section-head">
           <div>
             <h2 id={o.id || undefined}>{o.nadpis}</h2>
@@ -94,6 +97,7 @@ const datum = d.aktualizovano ? datumCesky(d.aktualizovano) : null;
   .ball.none { border-color: var(--muted); opacity: 0.55; }
   .arrow { display: inline-block; width: 14px; height: 2px; background: var(--sky-deep); position: relative; flex-shrink: 0; margin-right: 3px; }
   .arrow::after { content: ''; position: absolute; right: -3px; top: -3px; border-left: 6px solid var(--sky-deep); border-top: 4px solid transparent; border-bottom: 4px solid transparent; }
+  .video-uvod { margin-bottom: 26px; }
   .aktualizace { font-size: 0.85rem; color: var(--muted); padding: 24px 0 0; }
   @media (max-width: 860px) { .shifts { grid-template-columns: 1fr; gap: 18px; } }
 </style>
