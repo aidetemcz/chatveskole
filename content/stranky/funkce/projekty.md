@@ -3,7 +3,7 @@ title: Projekty
 menu: Funkce
 poradi: 5
 popis: Projekty v ChatGPT a Claude, notebooky v Gemini a Copilotu — jak mít pokyny, soubory a konverzace k jednomu tématu na jednom místě a co do nich nahrávat.
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-15
 stav: koncept
 zdroje:
   - https://help.openai.com/en/articles/10169521-projects-in-chatgpt

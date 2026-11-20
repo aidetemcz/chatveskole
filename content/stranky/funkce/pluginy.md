@@ -3,7 +3,7 @@ title: Pluginy
 menu: Funkce
 poradi: 4
 popis: Co jsou pluginy v ChatGPT, Claude a Copilotu, čím se liší od dovedností a jak nainstalovat sady dovedností od AI dětem.
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-15
 stav: koncept
 zdroje:
   - https://help.openai.com/en/articles/20001256-plugins-in-chatgpt

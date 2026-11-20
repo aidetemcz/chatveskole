@@ -3,7 +3,7 @@ title: Konektory
 menu: Funkce
 poradi: 6
 popis: Jak napojit chatbota na Google Disk, e-mail, kalendář nebo Microsoft 365, k čemu je to ve škole dobré a na co si dát pozor kvůli ochraně dat.
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-15
 stav: koncept
 zdroje:
   - data/funkce-chatbotu.yaml

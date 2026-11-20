@@ -10,7 +10,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "node scripts/check-links.mjs && python3 scripts/check-skills.py",
-    "postbuild": "node scripts/po-buildu.mjs && pagefind --site dist"
+    "postbuild": "node scripts/po-buildu.mjs && pagefind --site dist",
+    "datum": "node scripts/aktualizuj-datum.mjs"
   },
   "dependencies": {
     "@fontsource/inter": "^5.2.8",

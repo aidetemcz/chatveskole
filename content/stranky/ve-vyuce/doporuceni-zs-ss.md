@@ -3,7 +3,7 @@ title: Doporučení pro využívání AI na ZŠ a SŠ
 menu: Chatboti ve výuce
 poradi: 4
 popis: Doporučení Národního pedagogického institutu „Jak na AI ve škole“ pro ředitele, pedagogy, žáky a rodiče — ke stažení a jak s nimi pracovat.
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-15
 stav: ke-kontrole   # doplnit krátké shrnutí obsahu doporučení 2025 (plakát a letáky NPI)
 zdroje:
   - https://digitalizace.rvp.cz/ke-stazeni#doporuceni-pro-ai

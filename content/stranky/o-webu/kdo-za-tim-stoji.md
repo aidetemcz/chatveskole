@@ -3,7 +3,7 @@ title: Kdo za tím stojí
 menu: O webu
 poradi: 1
 popis: Web Chatboti ve škole provozuje nezisková organizace AI dětem. Dovednosti a prompty vznikají ve spolupráci s pedagogy, NPI, AI reaktorem UJEP a PdF MU.
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-15
 stav: ke-kontrole   # doplnit aktuální tým a spolupracovníky
 odkazy:
   - { text: Kontakt, href: /o-webu/kontakt }

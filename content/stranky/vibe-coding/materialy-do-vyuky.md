@@ -3,7 +3,7 @@ title: Vibe coding — materiály do výuky
 menu: Vibe Coding
 poradi: 4
 popis: Metodika AI dětem Tvorba jednoduchých aplikací pomocí vibecodingu, školení Vibecoding pro školy a osm hotových zadání pro vyučující — interaktivní časová osa, graf z dat, myšlenková mapa, simulace logické úlohy a další.
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-20
 stav: koncept
 zdroje:
   - https://kurikulum.aidetem.cz/knowledgebase/vibecoding-01-tvorba-jednoduchych-aplikaci/
