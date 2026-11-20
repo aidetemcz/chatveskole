@@ -1,5 +1,5 @@
 ---
-title: Pluginy
+title: Sady dovedností (pluginy)
 menu: Funkce
 poradi: 4
 popis: Co jsou pluginy v ChatGPT, Claude a Copilotu, čím se liší od dovedností a jak nainstalovat sady dovedností od AI dětem.
@@ -17,17 +17,17 @@ odkazy:
   - { text: Konektory, href: /funkce/konektory }
 ---
 
-# Pluginy
+# Sady dovedností (pluginy)
 
-Plugin je **balíček**, který do chatbota nainstalujete jedním krokem. Může obsahovat několik [dovedností](/funkce/skills), napojení na další aplikace ([konektory](/funkce/konektory)) a další nástroje. Zatímco dovednost naučí chatbota jeden úkol, plugin mu přidá celou sadu dovedností pro určitou oblast — třeba vše, co potřebujete k formativnímu hodnocení.
+Sada dovedností (plugin) je **balíček**, který do chatbota nainstalujete jedním krokem. Může obsahovat několik [dovedností](/funkce/skills), napojení na další aplikace ([konektory](/funkce/konektory)) a další nástroje. Zatímco dovednost naučí chatbota jeden úkol, plugin mu přidá celou sadu dovedností pro určitou oblast — třeba vše, co potřebujete k formativnímu hodnocení.
 
-## Prompt, dovednost, nebo plugin?
+## Prompt, dovednost, nebo sada dovedností?
 
 Všechny tři cesty vedou ke stejnému cíli. Liší se tím, kolik práce vám ušetří a kde fungují.
 
 - **Prompt** — Použijte ho, když chcete něco **vyzkoušet**, nebo když to má fungovat i v bezplatné verzi a pro žáky.
 - **Dovednost** — Použijte ji na **jeden úkol, který děláte často**, třeba slovní hodnocení nebo pracovní listy.
-- **Plugin** — Použijte ho, když chcete mít **celou oblast práce** (hodnocení, vedení školy) pohromadě a vždy aktuální.
+- **Sada dovedností (plugin)** — Použijte ji, když chcete mít **celou oblast práce** (hodnocení, vedení školy) pohromadě a vždy aktuální.
 
 ## Pluginy v jednotlivých nástrojích
 

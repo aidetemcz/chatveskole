@@ -14,7 +14,7 @@ menu:
       - { title: Změny ve funkcích 2026, href: /funkce/zmeny-2026, zvyraznit: true }
       - { title: Prompty, href: /funkce/prompty }
       - { title: Dovednosti (skills), href: /funkce/skills }
-      - { title: Pluginy, href: /funkce/pluginy }
+      - { title: Sady dovedností (pluginy), href: /funkce/pluginy }
       - { title: Projekty, href: /funkce/projekty }
       - { title: Konektory, href: /funkce/konektory }
 
