@@ -59,6 +59,8 @@ button { cursor: pointer; }
 .page-head h1 { font-size: clamp(2rem, 4.2vw, 3rem); line-height: 1.08; font-weight: 700; }
 .page-head h1 em { font-style: normal; } /* nadpisy jen jednou barvou */
 .lede { font-size: 1.1rem; color: var(--muted); max-width: 62ch; }
+/* perex v záhlaví stránky: dvě třetiny šířky obsahu */
+.page-head .lede, .instr-hlavicka .lede { max-width: calc((var(--wrap) - 40px) * 2 / 3); }
 .crumbs { font-size: 0.85rem; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; }
 .crumbs a { color: var(--muted); }
 .section-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 32px; }
