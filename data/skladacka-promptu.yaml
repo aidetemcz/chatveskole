@@ -8,12 +8,8 @@ techniky:
   - { id: format, cislo: 3, nazev: Formát, popis: "Esej, tabulka, osnova, kvíz, podklady pro prezentaci…", barva: "#f6e7b8" }
   - { id: cil, cislo: 4, nazev: Cíl, popis: "K čemu výstup poslouží. Chatbot pak vybere, co je podstatné.", barva: "#cfe9d6" }
   - { id: delka, cislo: 5, nazev: Délka, popis: "Kolik textu chcete.", barva: "#e2dbf5" }
+  - { id: priklad, cislo: 6, nazev: Příklad, popis: "Máte-li konkrétní představu, ukažte ji.", barva: "#ecdcf0" }
   - { id: omezeni, cislo: 7, nazev: Omezení, popis: "Co ve výstupu být nemá.", barva: "#f6d6c2" }
-priklad:
-  cislo: 6
-  nazev: Příklad
-  popis: "Máte-li konkrétní představu, ukažte ji. Hodí se hlavně u cvičení:"
-  ukazka: "… slovesa v minulém čase nahraď mezerou ___ a za ni do závorky napiš infinitiv. Příklad: Otec ___ (vejít) do školy."
 zapnuto: [role, ton]
 kusy:
   - { technika: role, text: "Jsi expert na české dějiny a empatický pedagog se smyslem pro humor. " }
@@ -25,4 +21,5 @@ kusy:
   - { technika: null, text: ". " }
   - { technika: cil, text: "Cílem je, aby žáci pochopili, proč bylo národní obrození tak důležité pro českou kulturu a jazyk. " }
   - { technika: delka, text: "Na každý snímek nejvýš tři krátké body. " }
+  - { technika: priklad, text: "Příklad snímku: nadpis „Proč na jazyce záleželo“ a body „Němčina vládne úřadům a školám“, „Obrozenci píšou slovníky a mluvnice“, „Čeština se vrací do divadla a novin“. " }
   - { technika: omezeni, text: "Nepoužívej letopočty, které se žáci nemusí učit nazpaměť, a vynech odborné termíny bez vysvětlení." }

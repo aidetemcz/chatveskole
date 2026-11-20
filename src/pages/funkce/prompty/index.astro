@@ -12,7 +12,7 @@ import { url } from '../../../lib/url';
 
 type Technika = { id: string; cislo: number; nazev: string; popis: string; barva: string };
 type Kus = { technika: string | null; text: string };
-const sk: { techniky: Technika[]; priklad: { cislo: number; nazev: string; popis: string; ukazka: string }; zapnuto: string[]; kusy: Kus[] } =
+const sk: { techniky: Technika[]; zapnuto: string[]; kusy: Kus[] } =
   YAML.parse(fs.readFileSync(path.join(process.cwd(), 'data/skladacka-promptu.yaml'), 'utf8'));
 const barva = Object.fromEntries(sk.techniky.map((t) => [t.id, t.barva]));
 const zap = new Set(sk.zapnuto);
@@ -108,24 +108,14 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
         </div></div>
         <div class="skladacka" data-skladacka>
           <ol class="techniky">
-            {sk.techniky.map((t) => (<>
-              {t.cislo === sk.priklad.cislo + 1 && (
-                <li class="technika-priklad">
-                  <span class="technika-cislo" aria-hidden="true">{sk.priklad.cislo}</span>
-                  <span class="technika-text">
-                    <span class="technika-nazev">{sk.priklad.cislo}. {sk.priklad.nazev}</span>
-                    <span>{sk.priklad.popis}</span>
-                    <code>{sk.priklad.ukazka}</code>
-                  </span>
-                </li>
-              )}
+            {sk.techniky.map((t) => (
               <li>
                 <button type="button" class="technika" data-technika={t.id} aria-pressed={zap.has(t.id) ? 'true' : 'false'} style={`--barva: ${t.barva}`}>
                   <span class="technika-cislo" aria-hidden="true">{t.cislo}</span>
                   <span class="technika-text"><span class="technika-nazev">{t.cislo}. {t.nazev}</span><span>{t.popis}</span></span>
                 </button>
               </li>
-            </>))}
+            ))}
           </ol>
           <div class="vysledek-obal">
             <div class="vysledek">
@@ -246,7 +236,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   .skladacka { display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start; }
   .techniky { flex: 1 1 360px; margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
-  .technika, .technika-priklad { width: 100%; min-height: 44px; display: flex; gap: 14px; align-items: flex-start; padding: 14px 16px; border-radius: 9px; font: inherit; color: var(--ink); text-align: left; border: 1px solid var(--sky); background: var(--panel); }
+  .technika { width: 100%; min-height: 44px; display: flex; gap: 14px; align-items: flex-start; padding: 14px 16px; border-radius: 9px; font: inherit; color: var(--ink); text-align: left; border: 1px solid var(--sky); background: var(--panel); }
   .technika { cursor: pointer; }
   .technika:hover { border-color: var(--sky-deep); }
   .technika[aria-pressed='true'] { background: var(--barva); border-color: var(--sky-deep); }
@@ -254,8 +244,6 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .technika[aria-pressed='true'] .technika-cislo { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
   .technika-text { display: flex; flex-direction: column; gap: 2px; font-size: 0.9rem; line-height: 1.45; }
   .technika-nazev { font-weight: 600; font-size: 1rem; }
-  .technika-priklad { border-style: dashed; }
-  .technika-priklad code { font-family: var(--fm); font-size: 0.82rem; background: var(--line-soft); padding: 8px 10px; border-radius: 6px; line-height: 1.5; margin-top: 4px; }
 
   .vysledek-obal { flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 14px; position: sticky; top: 96px; }
   .vysledek { background: #f6fafc; border: 1px solid var(--sky); border-radius: var(--radius-lg); padding: 24px 26px; display: flex; flex-direction: column; gap: 16px; }
