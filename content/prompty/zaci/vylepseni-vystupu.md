@@ -52,4 +52,6 @@ Bezpečnost: Neptej se mě na osobní údaje. Kdyby se v rozhovoru objevilo něc
 
 ## Poznámka pro vyučující
 
+Žák si může kdykoli napsat „ŘEŠENÍ“ a chatbot mu vypíše všechny chyby i s opravou. Domluvte se se žáky předem, kdy smí řešení zobrazit, třeba až po odevzdání vlastního seznamu chyb, nebo chyby projděte společně se třídou na závěr.
+
 Text můžete vygenerovat předem a rozdat vytištěný — žáci pak pracují bez chatbota. Chatbot občas udělá i chybu, kterou neplánoval, nebo plánovanou „zapomene“, proto řešení před hodinou zkontrolujte. V aplikaci Tiny odpovídá Chybující chatbot.
