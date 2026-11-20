@@ -3,7 +3,8 @@ title: Vibe coding pro pokročilé
 menu: Vibe Coding
 poradi: 5
 popis: Claude Code, Codex, Antigravity a Cursor, GitHub, Vercel a Supabase, instrukce pro agenta v CLAUDE.md a bezpečnost. Jak stavíme web Chatboti ve škole.
-aktualizovano: 2026-11-15
+sablona: pokrocili-pruvodce   # vlastní šablona src/pages/vibe-coding/pro-pokrocile.astro
+aktualizovano: 2026-11-20
 zdroje:
   - https://supabase.com/pricing
   - https://supabase.com/docs/guides/database/postgres/row-level-security
@@ -30,7 +31,7 @@ Když vám přestane stačit aplikace v okně chatbota — chcete web s více st
 1. **GitHub** — úložiště kódu s historií všech změn. Když agent něco rozbije, vrátíte se zpět.
 2. **Programovací agent** — upravuje soubory podle vašich pokynů.
 3. **Hosting** — [Vercel](https://vercel.com), [Netlify](https://www.netlify.com) nebo [GitHub Pages](https://pages.github.com). Po každé změně na GitHubu se web sám znovu zveřejní.
-4. **Databáze a přihlašování** (když aplikace potřebuje ukládat data nebo přihlašovat uživatele) — [Supabase](https://supabase.com), případně [Firebase](https://firebase.google.com) od Googlu nebo [Neon](https://neon.com). Nabízejí databázi, přihlašování uživatelů a ukládání souborů a mají bezplatný tarif s limity. Při zakládání projektu zvolte umístění dat v EU.
+4. **Databáze a přihlašování** — Když aplikace potřebuje ukládat data nebo přihlašovat uživatele: [Supabase](https://supabase.com), případně [Firebase](https://firebase.google.com) od Googlu nebo [Neon](https://neon.com). Nabízejí databázi, přihlašování uživatelů a ukládání souborů a mají bezplatný tarif s limity. Při zakládání projektu zvolte umístění dat v EU.
 
 ## Instrukce pro agenta
 
