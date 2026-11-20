@@ -1,6 +1,6 @@
 ---
-title: Otázky na míru
-slug: otazky-na-miru
+title: Opakování
+slug: opakovani
 zpusob: Opakování
 pro_koho: zaci
 vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"

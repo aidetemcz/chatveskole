@@ -1,6 +1,6 @@
 ---
 title: Prompty pro žáky
-popis: Prompty ke zkopírování pro všech deset způsobů využití AI ve výuce. Pomáhají žákům v učení a nemyslí za ně.
+popis: Deset promptů ke zkopírování, jeden ke každému způsobu využití AI ve výuce. Pomáhají žákům v učení a nemyslí za ně.
 pro_koho: zaci
 vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
 puvodni_url: https://chatveskole.cz/zpusoby-vyuziti-genai-ve-vyuce/
@@ -26,18 +26,20 @@ Dovednosti jsou v Gemini a Claude určené dospělým (18+). Žákovské aktivit
 
 ## Způsoby a prompty
 
-| Skupina | Způsob | Prompt |
-|---|---|---|
-| Žák si vybavuje a vysvětluje | [Opakování](/ve-vyuce/zpusoby-vyuziti-ai#opakování) | [Otázky na míru](/funkce/prompty/zaci/otazky-na-miru) |
-| | [Společné objevování](/ve-vyuce/zpusoby-vyuziti-ai#společné-objevování) | [Společné objevování](/funkce/prompty/zaci/spolecne-objevovani) |
-| | [Vysvětlování](/ve-vyuce/zpusoby-vyuziti-ai#vysvětlování) | [Vysvětlování](/funkce/prompty/zaci/vysvetlovani) |
-| Žák zkoumá souvislosti | [Rozhovor v roli](/ve-vyuce/zpusoby-vyuziti-ai#rozhovor-v-roli) | [Role experta](/funkce/prompty/zaci/role-experta) |
-| | [Co kdyby](/ve-vyuce/zpusoby-vyuziti-ai#co-kdyby) | [Co kdyby](/funkce/prompty/zaci/co-kdyby) |
-| Žák posuzuje | [Argumentace](/ve-vyuce/zpusoby-vyuziti-ai#argumentace) | [Argumentace](/funkce/prompty/zaci/argumentace) |
-| | [Hledání chyb](/ve-vyuce/zpusoby-vyuziti-ai#hledání-chyb) | [Vylepšení výstupu](/funkce/prompty/zaci/vylepseni-vystupu) |
-| Žák tvoří | [Brainstorming](/ve-vyuce/zpusoby-vyuziti-ai#brainstorming) | [Brainstorming](/funkce/prompty/zaci/brainstorming) |
-| | [Plánování a struktura](/ve-vyuce/zpusoby-vyuziti-ai#plánování-a-struktura) | [Plánování](/funkce/prompty/zaci/planovani), [Obsahová struktura](/funkce/prompty/zaci/obsahova-struktura) |
-| | [Zpětná vazba](/ve-vyuce/zpusoby-vyuziti-ai#zpětná-vazba) | [Zpětná vazba](/funkce/prompty/zaci/zpetna-vazba) |
+Každý z deseti způsobů má jeden prompt se stejným názvem.
+
+| Skupina | Prompt |
+|---|---|
+| Žák si vybavuje a vysvětluje | [Opakování](/funkce/prompty/zaci/opakovani) |
+| | [Společné objevování](/funkce/prompty/zaci/spolecne-objevovani) |
+| | [Vysvětlování](/funkce/prompty/zaci/vysvetlovani) |
+| Žák zkoumá souvislosti | [Rozhovor v roli](/funkce/prompty/zaci/rozhovor-v-roli) |
+| | [Co kdyby](/funkce/prompty/zaci/co-kdyby) |
+| Žák posuzuje | [Argumentace](/funkce/prompty/zaci/argumentace) |
+| | [Hledání chyb](/funkce/prompty/zaci/hledani-chyb) |
+| Žák tvoří | [Brainstorming](/funkce/prompty/zaci/brainstorming) |
+| | [Plánování a struktura](/funkce/prompty/zaci/planovani-a-struktura) |
+| | [Zpětná vazba](/funkce/prompty/zaci/zpetna-vazba) |
 
 ## Co mají prompty společné
 

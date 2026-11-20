@@ -69,7 +69,8 @@ SKILL_MAP = {
     "procesni-analytik": ["procesni-analytik-ai-detem"],
     "ai-gramotnost-v-svp": ["ai-gramotnost-v-rvp-a-svp"],
 }
-ZACI = ["otazky-na-miru", "obsahova-struktura", "brainstorming", "planovani", "vylepseni-vystupu", "zpetna-vazba", "argumentace", "role-experta"]
+# žákovské prompty: starý slug -> nový slug (20. 11. 2026 přejmenované podle způsobů využití AI; Plánování a Obsahová struktura sloučené)
+ZACI = {"otazky-na-miru": "opakovani", "obsahova-struktura": "planovani-a-struktura", "brainstorming": "brainstorming", "planovani": "planovani-a-struktura", "vylepseni-vystupu": "hledani-chyb", "zpetna-vazba": "zpetna-vazba", "argumentace": "argumentace", "role-experta": "rozhovor-v-roli"}
 VIBE = ["tabulky", "sekvencni-diagram", "myslenkove-mapy-dreviny", "kolacovy-graf-vitaminy", "graf-regiony", "derivace-latex", "casove-osy", "srdce-ve-formatu-svg", "kostka-format-stl", "3d-model-kvetu"]
 ASISTENTI = {"formulace-vyukoveho-cile-2", "formulace-kriterii-hodnoceni", "vytvareni-sebehodnotici-skaly-pro-zaky", "generovani-slovniho-hodnoceni", "radce-pro-spravne-formulace-slovniho-hodnoceni", "didakticky-radce", "planovac-vyuky", "ucitelsky-mentor", "jazykovy-ai-korektor", "asistent-pro-rozvoj-mysleni", "asistent-pro-definici-hodnot-mise-a-vize-skoly", "radce-pro-tvorbu-skolnich-pravidel", "asistent-reditele", "strategicky-radce-pro-rizeni-zmeny", "ai-gramotnost-v-rvp-a-svp", "pruvodce-rizenim-zmeny-adkar", "radce-pro-zlepseni-kultury-skoly", "kultura-a-komunikace-skoly-adkar", "procesni-analytik-ai-detem", "asistent-poznej-svet-zemepisny-kviz", "hadej-chemicke-prvky-asistent", "karierni-poradce-se-zamerenim-na-matematiku"}
 OLD_2024 = set(VIBE) | {"slovni-a-vetny-rozbor", "diferenciace-textu-rozhovory", "zmena-textu-strucne-a-jasne", "prace-s-textem-shrnuti", "zvyrazneni-chyb-v-textu", "k-cemu-mi-to-je", "otazky-k-diskuzi", "komunikace-s-rodici-pozvanka", "komunikace-s-rodici-stiznost", "tematicky-test-cizi-jazyk", "nedelitelne-mezery", "chatboti-ve-skole-analogie", "zvladani-stresu", "slepe-skrvny", "slovicka-nalady", "piskvorky", "protiklady-prid-jmena", "komunikace-s-rodici", "eduscrum-mestsky-ekosystem", "tvorba-pravidel", "matematicke-priklady", "cool_bot_vynalezy", "pruvodce-biotopy", "diskuzni-bot-genetika", "quiz_bot", "wikichat-hardware", "unikovka-elektromagnetismus", "strukturovany-ucebni-plan", "tvorba-testu-dedicnost", "swot-analyza", "napadnicek-geografie", "didaktik-konzultant", "hadej-chemicke-prvky", "rpg-simulator-el-castice", "hrani-dvou-roli-bunka", "simulator-darwin", "zpetnovazebni-otazky-polymeraza", "hraj-roli-chloroplast", "doplnovacka_slovesa", "emotikony-zivot-vaclava-havla", "stylistika", "textova-hra-karel-iv", "vyukovy-plan-bloomova-taxonomie", "osnova-lekce-informatika", "kviz-historie", "slovnicky-pojmu"}
@@ -89,8 +90,8 @@ for skill, slugs in SKILL_MAP.items():
             note = "zachovat v databázi promptů (starší prompty 2024)" if skupina == "archiv-2024" else "zachovat v databázi promptů"
             KB[s] = (f"/funkce/prompty/{s}", "zachovat jako prompt", "prompt", note + f"; souvisí se skillem {skill}")
             MAPA[s] = {"skupina": skupina, "skill": skill}
-for s in ZACI:
-    KB[s] = (f"/funkce/prompty/zaci/{s}", "zachovat jako prompt", "prompt", "Žákovský prompt (skills jsou 18+)")
+for s, novy in ZACI.items():
+    KB[s] = (f"/funkce/prompty/zaci/{novy}", "zachovat jako prompt", "prompt", "Žákovský prompt (skills jsou 18+)")
     MAPA[s] = {"skupina": "zaci", "skill": None}
 for s in VIBE:
     KB[s] = (f"/funkce/prompty/{s}", "zachovat jako prompt", "prompt", "Starší prompt 2024; dnes vibe coding — odkaz na /vibe-coding/materialy-do-vyuky")
@@ -158,7 +159,9 @@ for slug in TAGY:
     rows.append(["štítek", f"{BASE}/tagy/{slug}/", "/prompty", "přesměrovat", "", "Štítek předmětu; nový web filtr podle předmětu nemá"])
     presmeruj(f"/tagy/{slug}", "/prompty")
 # zbytky WordPressu
-for src, dst in [("/databaze-promptu", "/prompty"), ("/dp", "/prompty"), ("/wp-content/uploads/:path*", "/archiv/uploads/:path*"), ("/feed", "/"), ("/zaciname/jak-funguji-chatboti", "/zaciname/jak-pracovat-s-chatboty"), ("/funkce/prompty/tvorba-slovniho-hodnoceni", "/skills/slovni-hodnoceni"), ("/funkce/prompty/pracovni-list-pro-reflexi-uciva", "/funkce/prompty/tvorba-exitek-a-propustek"), ("/ve-vyuce/doporuceni-vs", "/ve-vyuce/doporuceni-zs-ss"), ("/databaze-promptu/didaktik-genius", "/skills/didakticky-radce")]:
+for src, dst in [("/databaze-promptu", "/prompty"), ("/dp", "/prompty"), ("/wp-content/uploads/:path*", "/archiv/uploads/:path*"), ("/feed", "/"), ("/zaciname/jak-funguji-chatboti", "/zaciname/jak-pracovat-s-chatboty"), ("/funkce/prompty/tvorba-slovniho-hodnoceni", "/skills/slovni-hodnoceni"), ("/funkce/prompty/pracovni-list-pro-reflexi-uciva", "/funkce/prompty/tvorba-exitek-a-propustek"), ("/ve-vyuce/doporuceni-vs", "/ve-vyuce/doporuceni-zs-ss"), ("/databaze-promptu/didaktik-genius", "/skills/didakticky-radce"),
+                 # žákovské prompty přejmenované 20. 11. 2026 (adresy z náhledu nového webu)
+                 ("/funkce/prompty/zaci/otazky-na-miru", "/funkce/prompty/zaci/opakovani"), ("/funkce/prompty/zaci/role-experta", "/funkce/prompty/zaci/rozhovor-v-roli"), ("/funkce/prompty/zaci/vylepseni-vystupu", "/funkce/prompty/zaci/hledani-chyb"), ("/funkce/prompty/zaci/planovani", "/funkce/prompty/zaci/planovani-a-struktura"), ("/funkce/prompty/zaci/obsahova-struktura", "/funkce/prompty/zaci/planovani-a-struktura")]:
     presmeruj(src, dst)
 
 out = ROOT / "migrace"
