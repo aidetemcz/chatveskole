@@ -1,13 +1,14 @@
 // Po buildu Astra: přesměrovací stránky starých URL, sitemap.xml a robots.txt v dist/.
 // GitHub Pages neumí skutečná přesměrování (301), proto pro každou starou adresu vznikne
-// malá stránka s okamžitým přesměrováním (meta refresh + odkaz). Na Vercelu/Netlify by šlo použít migrace/redirects.json přímo.
+// malá stránka s okamžitým přesměrováním (meta refresh + odkaz). Na Vercelu platí skutečná přesměrování z vercel.json (scripts/build-vercel.mjs) a mají přednost před těmito stránkami.
 import fs from 'node:fs';
 import path from 'node:path';
+import { indexovat } from '../src/lib/indexovat.mjs';
 
 const DIST = path.resolve('dist');
 const BASE = (process.env.BASE_PATH || '/').replace(/\/?$/, '/');
 const SITE = (process.env.SITE_URL || 'https://chatveskole.cz').replace(/\/$/, '');
-const NAHLED = process.env.INDEXOVAT !== '1'; // indexuje se jen ostrý web na chatveskole.cz (build s INDEXOVAT=1)
+const NAHLED = !indexovat; // indexuje se jen ostrý web na chatveskole.cz (viz src/lib/indexovat.mjs)
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 
 // 0) odkazy mimo web se otevírají v nové kartě (Eva 15. 11. 2026); čtečkám obrazovky to řekne skrytý text

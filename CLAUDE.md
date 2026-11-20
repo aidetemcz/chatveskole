@@ -21,7 +21,7 @@ Přečti:
 - `content/znalosti/znalosti.yaml` — odkazy na znalostní soubory na Google Disku
 - `data/*.yaml` — data pro tabulky (funkce chatbotů, ceny); text s dvojtečkou dávejte do uvozovek, jinak build skončí chybou
 - `<!-- komponenta: … -->` v Markdownu = místo pro datovou komponentu nebo úpravu následujícího textu (záložky, karty); seznam značek v `src/lib/komponenty.ts`
-- `migrace/redirects.json` — přesměrování starých URL (generuje `scripts/build-inventura.py`)
+- `migrace/redirects.json` — přesměrování starých URL (generuje `scripts/build-inventura.py`); z něj `vercel.json` se skutečnými 301 pro Vercel (`node scripts/build-vercel.mjs`, `npm run check` hlídá, že sedí)
 - `archiv/` — export starého WordPressu (`node scripts/export-wordpress.mjs --images`)
 - `migrace/mapa-promptu.json` — který záznam staré databáze je prompt, žákovský prompt, nebo asistent (→ skill)
 - `google-drive/` — složky pro Google Disk (systémový prompt + Data ke každému skillu), generuje `python3 scripts/build-google-drive.py`; není v gitu
@@ -32,7 +32,7 @@ Přečti:
 - `npm install` — jednou po stažení
 - `npm run dev` — vývojový server (http://localhost:4321)
 - `npm run build` — ZIPy skills a pluginů (`scripts/build-downloads.mjs`), statický web do `dist/`, pak přesměrovací stránky starých URL, sitemap a robots.txt (`scripts/po-buildu.mjs`) a index vyhledávání (Pagefind)
-- `INDEXOVAT=1 npm run build` — build pro ostrý web na chatveskole.cz; bez `INDEXOVAT=1` mají všechny stránky `noindex` (náhledy na github.io a vercel.app)
+- `INDEXOVAT=1 npm run build` — build pro ostrý web na chatveskole.cz; bez `INDEXOVAT=1` mají všechny stránky `noindex` (náhledy na github.io a vercel.app). Na Vercelu se indexování zapne samo, jakmile je produkční doménou chatveskole.cz (`src/lib/indexovat.mjs`)
 - `npm run datum` — nastaví `aktualizovano` na dnešek u všech stránek v `content/stranky`, které se změnily oproti `origin/main`; spouštět před každým commitem
 - `npm run check` — kontrola interních odkazů v `dist/` a SKILL.md (`scripts/check-links.mjs`, `scripts/check-skills.py`)
 - `BASE_PATH=/chatveskole npm run build` — build pro GitHub Pages (tak to dělá workflow `.github/workflows/deploy.yml`)

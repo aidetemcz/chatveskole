@@ -752,7 +752,7 @@
     },
     {
       "source": "/dp/hodnoceni",
-      "destination": "/prompty#hodnoceni",
+      "destination": "/prompty#podpora-formativniho-pristupu",
       "permanent": true
     },
     {
@@ -767,7 +767,7 @@
     },
     {
       "source": "/dp/rizeni-a-administrativa-%e2%86%92",
-      "destination": "/prompty#rizeni-a-administrativa",
+      "destination": "/prompty#tvorba-strategickych-dokumentu",
       "permanent": true
     },
     {
@@ -787,7 +787,7 @@
     },
     {
       "source": "/dp/adaptivni-vzdelavani",
-      "destination": "/prompty#adaptivni-vzdelavani",
+      "destination": "/prompty#aktualizace-materialu",
       "permanent": true
     },
     {
@@ -797,7 +797,7 @@
     },
     {
       "source": "/dp/prace-s-textem",
-      "destination": "/prompty#prace-s-textem",
+      "destination": "/prompty#aktualizace-materialu",
       "permanent": true
     },
     {
@@ -812,32 +812,32 @@
     },
     {
       "source": "/dp/vytvareni-pracovnich-listu",
-      "destination": "/prompty#vytvareni-pracovnich-listu",
+      "destination": "/prompty#tvorba-materialu-do-vyuky",
       "permanent": true
     },
     {
       "source": "/dp/vytvareni-lekci",
-      "destination": "/prompty#vytvareni-lekci",
+      "destination": "/prompty#tvorba-materialu-do-vyuky",
       "permanent": true
     },
     {
       "source": "/dp/projektova-vyuka",
-      "destination": "/prompty#projektova-vyuka",
+      "destination": "/prompty#tvorba-materialu-do-vyuky",
       "permanent": true
     },
     {
       "source": "/dp/seberozvoj-%e2%86%92",
-      "destination": "/prompty#seberozvoj",
+      "destination": "/prompty",
       "permanent": true
     },
     {
       "source": "/dp/vizualizace",
-      "destination": "/prompty#vizualizace",
+      "destination": "/prompty#tvorba-materialu-do-vyuky",
       "permanent": true
     },
     {
       "source": "/dp/ruzne",
-      "destination": "/prompty#ruzne",
+      "destination": "/prompty",
       "permanent": true
     },
     {

@@ -7,6 +7,7 @@
 - **7. 11. 2026 — Všechny znalostní soubory jsou veřejné** včetně Katalogu aktivizačních metod a Příručky aktivizační výuky (Didaktický rádce).
 - **8. 11. 2026 — Design schválen** (plátno Claude Design, pravidla v `docs/design.md`). Stránka promptů se jmenuje *Katalog promptů*, skupiny Pro učitele / Pro vedení školy / Pro žáky.
 - **8. 11. 2026 — Starší prompty 2024 se v katalogu nezobrazují**, dokud je Eva s Coworkem neprojde; jejich stránky zůstávají kvůli starým odkazům.
+- **20. 11. 2026 — Doména chatveskole.cz poběží na Vercelu** (Eva: „Tak přes Vercel. Máme ho placený“). Přesměrování 301 jsou ve `vercel.json` (generuje `scripts/build-vercel.mjs` z `migrace/redirects.json`); indexování se zapne samo, až bude produkční doménou chatveskole.cz.
 - **8. 11. 2026 — Hosting zatím GitHub Pages** z větve `main`. Před přepnutím domény rozhodnout definitivně (GitHub Pages neumí skutečná přesměrování 301, jen přesměrovací stránky).
 - **8. 11. 2026 — Jen světlý režim.** Web se zobrazuje vždy světle, i když má návštěvník v systému tmavý režim.
 - **8. 11. 2026 — Analytika: GA4 až při spuštění na chatveskole.cz** (AI dětem GA4 používá). S vlastní lištou se souhlasem v designu webu, GA4 se načte až po souhlasu, v patičce odkaz „Nastavení cookies“. Do té doby web žádné měření ani cookies nemá. Potřeba: ID měření `G-…` (nejlépe ze stávající služby chatveskole.cz) a odkaz na zásady ochrany osobních údajů AI dětem.
@@ -16,7 +17,7 @@
 ## Blokují stavbu webu
 
 1. **Framework:** Astro (doporučeno pro obsahový web) vs. Next.js (stejný jako ostatní appky AI dětem). — *7. 11. Eva v jiné relaci: „nechme Astro“.*
-2. **Hosting pro doménu chatveskole.cz:** *(7. 11. Eva v jiné relaci: „máme placený Vercel“ — náhledy už běží na Vercelu, přesměrování by pak mohla být skutečná 301 přes vercel.json)* GitHub Pages (zdarma, jen přesměrovací stránky místo 301) vs. Vercel Pro / Netlify / Cloudflare Pages (skutečná přesměrování, náhledy větví).
+2. ~~**Hosting pro doménu chatveskole.cz:**~~ *Rozhodnuto 20. 11.: Vercel.* *(7. 11. Eva v jiné relaci: „máme placený Vercel“ — náhledy už běží na Vercelu, přesměrování by pak mohla být skutečná 301 přes vercel.json)* GitHub Pages (zdarma, jen přesměrovací stránky místo 301) vs. Vercel Pro / Netlify / Cloudflare Pages (skutečná přesměrování, náhledy větví).
 4. **Sdílení složek na Disku:** od 8. 11. 2026 je místem pravdy složka *Skills* na sdíleném disku (https://drive.google.com/drive/folders/1AZy-XZ4PYPWCCB-LVVwy96FfQ2i1G4Ai) — 24 skills, u každého dokument se systémovým promptem a Data. Odkazy v `meta.yaml` (`google_doc`, `google_slozka`), přehled v `migrace/google-drive.json`. Ověřit, že je složka sdílená „Kdokoli s odkazem – čtenář“. Starší složka *Zdroje k stažení* se už nepoužívá.
 
 ## Obsah
