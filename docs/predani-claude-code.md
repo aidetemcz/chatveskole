@@ -102,7 +102,7 @@ v docs/otevrene-otazky.md). Spusť kontrolu všech interních i externích odkaz
 1. Eva a tým projdou náhled, hlavně skills (stav `koncept` → `hotovo`).
 2. Claude Code přepne stránky `ke-kontrole` podle schválení.
 3. Závěrečná kontrola přesměrování: projít živý chatveskole.cz, porovnat s novým webem, doplnit `migrace/redirects.json` a dát Evě tabulku stará → nová adresa.
-4. Rozhodnout hosting (návrh: Vercel kvůli skutečným přesměrováním 301 a pravidlu pro `/wp-content/uploads/*`; GitHub Pages pak vypnout) a připravit soubor přesměrování pro něj.
+4. ~~Rozhodnout hosting~~ — Vercel (20. 11. 2026); `vercel.json` s přesměrováními 301 je hotový (`node scripts/build-vercel.mjs`).
 5. GA4 s lištou souhlasu (viz rozhodnutí v `docs/otevrene-otazky.md`).
 6. V produkčním buildu nastavit `INDEXOVAT=1` (jinak mají stránky `noindex`).
 7. DNS chatveskole.cz u Váš hosting → nový hosting (záznamy ukáže hosting v nastavení domény).
