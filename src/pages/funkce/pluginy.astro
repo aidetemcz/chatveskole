@@ -58,8 +58,6 @@ const sadyOddil = najdi(/^Sady/i);
 const PRO_KOHO: Record<string, string> = { ucitele: 'vyučující', vedeni: 'vedení' };
 const proKoho = (p: string[]) => 'Pro ' + p.map((x) => PRO_KOHO[x] ?? x).join(' i ');
 const pocet = (n: number) => `${n} ${n === 1 ? 'dovednost' : n < 5 ? 'dovednosti' : 'dovedností'}`;
-const ukazka = sady[0];
-const ukazkaSkills = ukazka ? ukazka.skills.map((s) => skillBySlug(s)?.title).filter(Boolean) as string[] : [];
 
 // Instalace sady: „**Nástroj (poznámka):** text“
 const instalace = najdi(/nainstalovat sadu/i);
@@ -76,7 +74,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 ---
 <Base title={d.title} description={d.popis ?? undefined}>
   <div class="band band--white">
-    <div class="wrap hero dva-sloupce">
+    <div class="wrap hero">
       <div class="page-head">
         <div class="zahlavi">
           <Crumbs items={[{ title: 'Funkce' }, { title: d.title }]} />
@@ -89,26 +87,6 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
           <a class="btn btn--outline" href={url('/funkce/skills')}>Co jsou dovednosti</a>
         </div>
       </div>
-      {ukazka && (
-        <figure class="balicek">
-          <figcaption class="titulek">Co je v pluginu</figcaption>
-          <div class="balicek-obal">
-            <div class="balicek-nazev"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8l-9-5-9 5 9 5 9-5z"></path><path d="M3 8v8l9 5 9-5V8"></path><path d="M12 13v8"></path></svg>Plugin {ukazka.title}</div>
-            <div class="stack" style="gap: 8px">
-              <div class="balicek-skupina">Dovednosti</div>
-              <div class="cipy">
-                {ukazkaSkills.slice(0, 4).map((t) => <span class="cip cip--cerveny">{t}</span>)}
-                {ukazkaSkills.length > 4 && <span class="cip cip--cerveny">+ {ukazkaSkills.length - 4} další</span>}
-              </div>
-            </div>
-            <div class="balicek-dalsi">
-              <div><strong>Konektory</strong><span>napojení na další aplikace</span></div>
-              <div><strong>Další nástroje</strong><span>podle toho, co plugin potřebuje</span></div>
-            </div>
-          </div>
-          <p class="balicek-pozn">Instalujete jednou, celý balíček najednou.</p>
-        </figure>
-      )}
     </div>
   </div>
 
@@ -238,7 +216,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   )}
 
   {vyzva && (
-    <section class="band band--white band--navazuje" aria-labelledby={vyzva.id || undefined}>
+    <section class="band band--sky" aria-labelledby={vyzva.id || undefined}>
       <div class="wrap">
         <div class="vyzva">
           <div class="hlava">
@@ -259,32 +237,18 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .hlava { display: flex; flex-direction: column; gap: 14px; max-width: 64ch; }
   .tlacitka { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
   .perex :global(p) { font-size: 1.15rem; max-width: 52ch; }
-  .dva-sloupce { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 56px; align-items: center; }
   .titulek { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); }
-  .stitek { align-self: flex-start; font-size: 0.8rem; padding: 3px 10px; border-radius: var(--pill); background: var(--sky-light); color: var(--sky-ink); }
-  .stitek--cerveny { background: var(--accent-soft); color: var(--accent-strong); }
+  .stitek { align-self: flex-start; font-family: var(--fb); font-size: 0.75rem; padding: 2px 8px; border-radius: var(--pill); background: var(--sky-light); }
+  .stitek--cerveny { background: var(--accent-soft); }
 
-  .balicek { margin: 0; background: #f6fafc; border: 1px solid var(--sky); border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 16px; }
-  .balicek-obal { background: var(--panel); border: 2px solid var(--accent); border-radius: 14px; padding: 20px 22px; display: flex; flex-direction: column; gap: 16px; }
-  .balicek-nazev { display: flex; gap: 10px; align-items: center; font-family: var(--fh); font-weight: 600; font-size: 1.1rem; }
-  .balicek-nazev svg { color: var(--accent); flex: none; }
-  .balicek-skupina { font-size: 0.8rem; font-weight: 600; color: var(--sky-ink); }
-  .balicek-dalsi { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
-  .balicek-dalsi div { border: 1px dashed var(--sky); border-radius: 10px; padding: 10px 12px; font-size: 0.88rem; display: flex; flex-direction: column; }
-  .balicek-dalsi span { color: var(--muted); }
-  .balicek-pozn { margin: 0; font-size: 0.88rem; color: var(--sky-ink); }
   .cipy { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
   .cip { display: inline-block; font-size: 0.82rem; padding: 3px 10px; border-radius: var(--pill); background: #f6fafc; border: 1px solid #d5e5eb; color: var(--ink); text-decoration: none; line-height: 1.5; }
   a.cip:hover { border-color: var(--sky-deep); }
-  .cip--cerveny { background: var(--accent-soft); border-color: transparent; font-size: 0.88rem; }
 
-  .schody { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 22px; align-items: end; }
-  .schod--0 { min-height: 210px; }
-  .schod--1 { min-height: 250px; }
-  .schod--2 { min-height: 290px; }
-  .schod--hlavni { border: 2px solid var(--accent); }
-  .schod h3 { font-size: 1.4rem; }
-  .schod p { font-size: 0.98rem; color: var(--ink); }
+  .schody { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 22px; }
+  .schod--hlavni { border-color: var(--accent); }
+  .schod h3, .sada h3 { font-size: 1.15rem; }
+  .schod p { font-size: 0.93rem; line-height: 1.6; }
 
   .zalozky-nastroju { display: flex; flex-wrap: wrap; gap: 10px; }
   .zalozky-nastroju button { min-height: 44px; padding: 0 20px; border-radius: var(--pill); font: inherit; font-size: 0.95rem; cursor: pointer; border: 1px solid var(--sky); background: var(--panel); color: var(--ink); }
@@ -292,29 +256,28 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .panel { background: var(--panel); border: 1px solid var(--sky); border-radius: 12px; padding: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 36px; margin-top: -8px; }
   .panel[hidden] { display: none; }
   .panel-hlava { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-  .panel-hlava h3 { font-size: 1.4rem; }
+  .panel-hlava h3 { font-size: 1.15rem; }
   .panel-hlava .stitek { align-self: center; }
   .body { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; line-height: 1.55; }
   .podminky { display: flex; flex-direction: column; gap: 10px; background: #f6fafc; border-radius: 10px; padding: 22px 24px; align-self: start; }
   .podminky p { margin: 0; }
 
   .band--navazuje { padding-top: 0; }
-  .gpt { background: var(--accent-soft); border-radius: 16px; padding: 36px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 32px; align-items: start; }
-  .termin { align-self: flex-start; font-size: 0.82rem; font-weight: 600; padding: 4px 12px; border-radius: var(--pill); background: var(--panel); color: var(--accent-strong); }
+  .gpt { background: var(--accent-soft); border-radius: 12px; padding: 36px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 32px; align-items: start; }
+  .termin { align-self: flex-start; font-size: 0.8rem; font-weight: 600; padding: 3px 10px; border-radius: var(--pill); background: var(--panel); color: var(--accent-strong); }
   .gpt h2 { font-size: clamp(1.5rem, 2.6vw, 1.9rem); }
   .gpt-sloupce { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; }
-  .gpt-sloupec { background: var(--panel); border-radius: 12px; padding: 18px 20px; display: flex; flex-direction: column; gap: 8px; }
+  .gpt-sloupec { background: var(--panel); border-radius: 9px; padding: 18px 20px; display: flex; flex-direction: column; gap: 8px; }
   .gpt-sloupec ul { margin: 0; padding-left: 18px; font-size: 0.95rem; line-height: 1.55; }
   @media (max-width: 640px) { .gpt { padding: 26px 22px; } }
 
   .sady { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 22px; }
-  .sada h3 { font-size: 1.25rem; }
   .sada-hlava { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
   .pocet { font-size: 0.82rem; color: var(--muted); }
   .sada-akce { margin-top: auto; padding-top: 6px; display: flex; flex-wrap: wrap; gap: 10px; }
   .soubor { font-size: 0.76rem; }
 
-  .tabulka-instalace { border: 1px solid var(--sky); border-radius: 12px; overflow: hidden; background: var(--panel); }
+  .tabulka-instalace { border: 1px solid var(--sky); border-radius: 9px; overflow: hidden; background: var(--panel); }
   .radek { display: grid; grid-template-columns: minmax(200px, 1fr) 2fr; }
   .radek + .radek { border-top: 1px solid #d5e5eb; }
   .radek-nazev { background: #f6fafc; padding: 22px 26px; display: flex; flex-direction: column; }
@@ -323,7 +286,6 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .radek p { margin: 0; padding: 22px 26px; }
   @media (max-width: 640px) { .radek { grid-template-columns: 1fr; } .radek-nazev { padding-bottom: 12px; } .radek p { padding-top: 12px; } }
 
-  .vyzva { background: var(--sky-light); border-radius: 16px; padding: 40px; display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; }
-  @media (max-width: 640px) { .vyzva { padding: 28px 22px; } }
+  .vyzva { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; }
   .btn--bila { background: var(--panel); }
 </style>
