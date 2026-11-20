@@ -21,9 +21,9 @@ ChatGPT, Gemini, Copilot a Claude opouštějí hotové asistenty, které se otev
 
 **Asistent na odkaz končí.** Vlastní GPTs přestanou fungovat 11. 12. 2026. Gems mizí postupně: osobní účty od 17. 11. 2026, školy nejdříve 1. 6. 2027.
 
-**Nastupují dovednosti a pluginy.** Dovednosti už mají všechny čtyři nástroje. Balíček se souborem SKILL.md nahrajete do Claude, Gemini i Copilotu, v ChatGPT je dovednost součástí pluginu.
+**Nastupují dovednosti a pluginy.** Dovednosti jsou instrukce pro chatbota zabalené do funkce, kterou si kdykoliv vyvoláte přes lomítko nebo zavináč a šetří velké množství času.
 
-**Samostatná práce je placená.** ChatGPT Work, Copilot Cowork i samostatná práce v Claude jsou zatím jen v placených tarifech. Gemini Spark v Evropě není vůbec.
+**Chatbot pracující samostatně je za příplatek.** Nově umí chatbot dotáhnout delší úkol sám: naplánuje si postup, dohledá informace a vytvoří soubory. Tento režim (agent) je v ChatGPT (Work), Copilotu (Cowork) i v Claude zatím jen v placených tarifech. Osobní agent Gemini Spark v Evropě není vůbec.
 
 <!-- komponenta: video -->
 
