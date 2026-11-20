@@ -19,7 +19,7 @@ ChatGPT, Gemini, Copilot a Claude opouštějí hotové asistenty, které se otev
 
 <!-- komponenta: tři teze -->
 
-**Asistent na odkaz končí.** Vlastní GPTs přestanou fungovat 11. 12. 2026. Gems mizí postupně: osobní účty od 17. 11. 2026, školy nejdříve 1. 6. 2027.
+**Asistent na odkaz končí.** AI asistenti, které jste možná znali jako Modely GPT nebo Google Gem, končí a nastupují tzv. dovednosti (skills) a rozšíření (pluginy).
 
 **Nastupují dovednosti a pluginy.** Dovednosti jsou instrukce pro chatbota zabalené do funkce, kterou si kdykoliv vyvoláte přes lomítko nebo zavináč a šetří velké množství času.
 
