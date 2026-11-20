@@ -4,7 +4,7 @@ menu: Funkce
 poradi: 2
 popis: Co je prompt, jak ho napsat, aby chatbot odpověděl dobře, a kdy místo promptu použít dovednost. Na konci odkaz na katalog ověřených promptů.
 tlacitko: { text: Přejít na Katalog promptů, href: /prompty }
-aktualizovano: 2026-11-08
+aktualizovano: 2026-11-15
 stav: koncept
 odkazy:
   - { text: Dovednosti (skills), href: /funkce/skills }

@@ -4,7 +4,7 @@ menu: Funkce
 poradi: 3
 popis: Co jsou dovednosti (skills), jak je nainstalovat do Claude, Gemini, Copilotu a ChatGPT a jak napsat vlastní. Náhrada za GPTs a Gems.
 tlacitko: { text: Přejít na Katalog dovedností, href: /skills }
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-15
 stav: koncept
 zdroje:
   - https://agentskills.io/specification

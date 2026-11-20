@@ -3,7 +3,7 @@ title: Kontakt
 menu: O webu
 poradi: 2
 popis: Napište nám — dotazy k webu, návrhy dovedností a promptů, chyby v textech, vzdělávací akce pro školy.
-aktualizovano: 2026-11-07
+aktualizovano: 2026-11-15
 stav: koncept
 odkazy:
   - { text: Kdo za tím stojí, href: /o-webu/kdo-za-tim-stoji }

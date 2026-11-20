@@ -4,7 +4,7 @@ menu_titulek: Nový web
 menu: O webu
 poradi: 0
 popis: Proč jsme web Chatboti ve škole přepracovali a co kde najdete — přehled sekcí, katalogů dovedností a promptů a co se stalo s původními AI asistenty.
-aktualizovano: 2026-11-14
+aktualizovano: 2026-11-15
 stav: ke-kontrole
 tlacitko: { text: Napsat nám, href: /o-webu/kontakt }
 odkazy:

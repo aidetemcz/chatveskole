@@ -33,6 +33,7 @@ Přečti:
 - `npm run dev` — vývojový server (http://localhost:4321)
 - `npm run build` — ZIPy skills a pluginů (`scripts/build-downloads.mjs`), statický web do `dist/`, pak přesměrovací stránky starých URL, sitemap a robots.txt (`scripts/po-buildu.mjs`) a index vyhledávání (Pagefind)
 - `INDEXOVAT=1 npm run build` — build pro ostrý web na chatveskole.cz; bez `INDEXOVAT=1` mají všechny stránky `noindex` (náhledy na github.io a vercel.app)
+- `npm run datum` — nastaví `aktualizovano` na dnešek u všech stránek v `content/stranky`, které se změnily oproti `origin/main`; spouštět před každým commitem
 - `npm run check` — kontrola interních odkazů v `dist/` a SKILL.md (`scripts/check-links.mjs`, `scripts/check-skills.py`)
 - `BASE_PATH=/chatveskole npm run build` — build pro GitHub Pages (tak to dělá workflow `.github/workflows/deploy.yml`)
 
@@ -44,6 +45,7 @@ Přečti:
 - Neměň význam textů v `content/` bez zadání. Opravy překlepů a formátování jsou v pořádku, věcné změny jen na požádání.
 - Fakta o chatbotech (ceny, věk, funkce, data) ber jen z `data/*.yaml` nebo ze zdrojů ve frontmatteru. Když je měníš, aktualizuj i `aktualizovano` a zdroje. Nevymýšlej je.
 - Nikde nežádej po učitelích jména žáků; v příkladech používej iniciály.
+- Při každé změně stránky aktualizuj `aktualizovano` ve frontmatteru (zobrazuje se v pillu „Aktualizováno“) — před commitem spusť `npm run datum`.
 - Stránky se stavem `ke-kontrole` zobraz na náhledu se štítkem „Koncept“, v produkci jen po schválení.
 
 **Skills**
