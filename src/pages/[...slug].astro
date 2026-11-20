@@ -12,7 +12,7 @@ export async function getStaticPaths() {
   const stranky = await getCollection('stranky');
   // vlastní šablony: index = hlavní stránka, zmeny-funkci = funkce/zmeny-2026
   return stranky
-    .filter((s) => s.id !== 'index' && s.data.sablona !== 'zmeny-funkci' && s.data.sablona !== 'prompty-pruvodce')
+    .filter((s) => s.id !== 'index' && s.data.sablona !== 'zmeny-funkci' && s.data.sablona !== 'prompty-pruvodce' && s.data.sablona !== 'dovednosti-pruvodce')
     .map((s) => ({ params: { slug: s.id }, props: { stranka: s } }));
 }
 
