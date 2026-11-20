@@ -79,15 +79,6 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
           {instalace && <a class="btn btn--outline" href={`#${instalace.id}`}>Jak ji nainstalovat ↓</a>}
         </div>
       </div>
-      <figure class="chat-ukazka">
-        <figcaption>Jak to vypadá v chatu</figcaption>
-        <div class="chat-pole"><span class="chat-prikaz">/slovni-hodnoceni</span> žák T. K., 3. třída, čtení a psaní</div>
-        <ul class="chat-kroky">
-          <li><span class="tecka tecka--cervena" aria-hidden="true"></span>Chatbot načte postup a podklady dovednosti</li>
-          <li><span class="tecka" aria-hidden="true"></span>Doptá se, co mu chybí</li>
-          <li><span class="tecka" aria-hidden="true"></span>Napíše hodnocení podle vašich pravidel</li>
-        </ul>
-      </figure>
     </div>
   </div>
 
@@ -121,7 +112,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {zWebu && (
     <section class="band band--white" aria-labelledby={zWebu.id || undefined}>
-      <div class="wrap stack" style="gap: 24px">
+      <div class="wrap stack" style="gap: 32px">
         <div class="hlava">
           <h2 id={zWebu.id || undefined}>{zWebu.nadpis}</h2>
           <div class="prose" set:html={uvodOddilu(zWebuHtml)} />
@@ -142,7 +133,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {instalace && (
     <section class="band band--sky" id={instalace.id || undefined} aria-labelledby={instalace.id ? `${instalace.id}-h` : undefined}>
-      <div class="wrap stack" style="gap: 22px">
+      <div class="wrap stack" style="gap: 32px">
         <h2 id={instalace.id ? `${instalace.id}-h` : undefined}>{instalace.nadpis}</h2>
         <div class="zalozky-nastroju" role="tablist" aria-label="Chatovací aplikace" data-switch="instalace-panely">
           {nastroje.map((n, i) => <button type="button" role="tab" id={`${n.id}-tab`} aria-controls={n.id} aria-selected={i === 0 ? 'true' : 'false'} data-target={n.id}>{n.nazev}</button>)}
@@ -170,7 +161,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {vlastni && (
     <section class="band band--white" aria-labelledby={vlastni.id || undefined}>
-      <div class="wrap stack" style="gap: 26px">
+      <div class="wrap stack" style="gap: 32px">
         <div class="hlava">
           <h2 id={vlastni.id || undefined}>{vlastni.nadpis}</h2>
           <div class="prose" set:html={uvodOddilu(vlastniHtml)} />
@@ -221,61 +212,54 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 <style>
   h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
   .hlava { display: flex; flex-direction: column; gap: 14px; max-width: 64ch; }
-  .tlacitka { display: flex; flex-wrap: wrap; gap: 12px; }
+  .tlacitka { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
   .perex :global(p) { font-size: 1.15rem; max-width: 52ch; }
 
-  .hero { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 48px; align-items: center; }
-  .chat-ukazka { margin: 0; background: #f6fafc; border: 1px solid var(--sky); border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 14px; }
-  .chat-ukazka figcaption, .podminky-titulek, .ukazka figcaption { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); }
-  .chat-pole { background: var(--panel); border: 1px solid var(--sky); border-radius: 12px; padding: 14px 16px; font-family: var(--fm); font-size: 0.95rem; }
-  .chat-prikaz { background: var(--accent-soft); padding: 2px 6px; border-radius: 6px; }
-  .chat-kroky { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; font-size: 0.9rem; }
-  .chat-kroky li { display: flex; gap: 10px; align-items: center; }
-  .tecka { width: 8px; height: 8px; border-radius: 50%; background: var(--sky-deep); flex: none; }
-  .tecka--cervena { background: var(--accent); }
+  
+  .podminky-titulek, .ukazka figcaption { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); }
 
-  .dva-sloupce { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; align-items: start; }
-  .strom { background: var(--panel); border: 1px solid var(--sky); border-radius: 12px; padding: 22px 24px; display: flex; flex-direction: column; gap: 4px; font-size: 0.95rem; }
+  .dva-sloupce { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: start; }
+  .strom { background: var(--panel); border: 1px solid var(--sky); border-radius: 12px; padding: 26px 28px; display: flex; flex-direction: column; gap: 8px; font-size: 0.95rem; }
   .strom-slozka, .strom-nazev { display: flex; gap: 10px; align-items: center; font-family: var(--fm); }
   .strom-slozka svg { color: var(--sky-ink); }
-  .strom-obsah { margin-left: 28px; border-left: 2px solid var(--sky-light); padding: 8px 0 0 16px; display: flex; flex-direction: column; gap: 14px; }
-  .strom-soubor { display: flex; flex-direction: column; gap: 6px; }
-  .strom-casti { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 8px; }
-  .strom-cast { background: #f6fafc; border-radius: 8px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; font-size: 0.9rem; }
+  .strom-obsah { margin-left: 28px; border-left: 2px solid var(--sky-light); padding: 10px 0 0 18px; display: flex; flex-direction: column; gap: 20px; }
+  .strom-soubor { display: flex; flex-direction: column; gap: 10px; }
+  .strom-casti { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .strom-cast { background: #f6fafc; border-radius: 8px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; font-size: 0.9rem; line-height: 1.55; }
   .strom-cast strong { font-size: 0.95rem; font-weight: 600; }
   .stitek { font-family: var(--fb); font-size: 0.75rem; padding: 2px 8px; border-radius: var(--pill); background: var(--sky-light); }
   .stitek--cerveny { background: var(--accent-soft); }
 
-  .cesty { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .cesty { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; }
   .cesty .ikona { color: var(--sky-ink); }
   .cesty .card h3 { font-size: 1.15rem; }
-  .cesty .card p { font-size: 0.93rem; }
+  .cesty .card p { font-size: 0.93rem; line-height: 1.6; }
 
-  .zalozky-nastroju { display: flex; flex-wrap: wrap; gap: 8px; }
+  .zalozky-nastroju { display: flex; flex-wrap: wrap; gap: 10px; }
   .zalozky-nastroju button { min-height: 44px; padding: 0 20px; border-radius: var(--pill); font: inherit; font-size: 0.95rem; cursor: pointer; border: 1px solid var(--sky); background: var(--panel); color: var(--ink); }
   .zalozky-nastroju button[aria-selected='true'] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
-  .panel { background: var(--panel); border: 1px solid var(--sky); border-radius: 12px; padding: 28px 30px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
+  .panel { background: var(--panel); border: 1px solid var(--sky); border-radius: 12px; padding: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 36px; margin-top: -8px; }
   .panel[hidden] { display: none; }
-  .kroky { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; }
+  .kroky { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 18px; }
   .kroky li { display: flex; gap: 14px; align-items: flex-start; }
   .kroky-cislo { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: var(--on-accent); display: inline-flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; }
   .kroky li > span:last-child { padding-top: 3px; }
-  .podminky { display: flex; flex-direction: column; gap: 10px; background: #f6fafc; border-radius: 10px; padding: 18px 20px; align-self: start; }
+  .podminky { display: flex; flex-direction: column; gap: 14px; background: #f6fafc; border-radius: 10px; padding: 22px 24px; align-self: start; }
   .podminky p { margin: 0; display: flex; gap: 10px; align-items: flex-start; font-size: 0.93rem; }
   .podminky svg { flex: none; margin-top: 3px; color: var(--sky-ink); }
 
-  .postup { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; align-items: start; }
-  .postup-krok { border: 1px solid var(--sky); border-radius: 9px; padding: 20px; display: flex; flex-direction: column; gap: 8px; background: var(--panel); }
+  .postup { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; align-items: start; }
+  .postup-krok { border: 1px solid var(--sky); border-radius: 9px; padding: 26px 28px; display: flex; flex-direction: column; gap: 12px; background: var(--panel); }
   .postup-krok--prvni { background: var(--accent-soft); }
   .postup-cislo { font-family: var(--fh); font-size: 1.75rem; font-weight: 700; color: var(--accent); line-height: 1; }
   .postup-krok h3 { font-size: 1.1rem; }
-  .postup-krok > p { margin: 0; font-size: 0.9rem; }
+  .postup-krok > p { margin: 0; font-size: 0.93rem; line-height: 1.6; }
   .postup-krok details { font-size: 0.88rem; }
   .postup-krok summary { cursor: pointer; color: var(--accent-strong); font-weight: 600; min-height: 32px; display: flex; align-items: center; }
   .postup-krok details .prose :global(p), .postup-krok details .prose :global(li) { font-size: 0.88rem; line-height: 1.55; }
   .postup-krok details .prose :global(ul) { margin-top: 0.5em; }
-  .ukazky { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
-  .ukazka { margin: 0; background: #f6fafc; border: 1px solid var(--sky); border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; gap: 8px; }
+  .ukazky { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 22px; }
+  .ukazka { margin: 0; background: #f6fafc; border: 1px solid var(--sky); border-radius: 10px; padding: 22px 24px; display: flex; flex-direction: column; gap: 10px; }
   .ukazka p { margin: 0; font-family: var(--fm); font-size: 0.9rem; line-height: 1.6; }
 
   .vyzva { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; }

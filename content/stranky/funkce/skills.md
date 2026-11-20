@@ -25,11 +25,11 @@ Dovednost je návod, který si chatbot vytáhne, když ho potřebuje. Jako recep
 
 ## Z čeho se dovednost skládá
 
-Dovednost je složka. Povinný je v ní jediný soubor `SKILL.md`. Formát je otevřený standard [Agent Skills](https://agentskills.io), takže ho čtou všechny chatovací aplikace.
+Dovednost si můžete představit jako složku, která obsahuje instrukce a volitelně soubory, ze kterých čerpá. Můžete si ji vytvořit sami nebo požádat chatbota, ať ji vytvoří za vás.
 
 - **Název a popis** — Podle popisu chatbot pozná, kdy dovednost použít.
 - **Postup** — Na co se zeptat, jak pracovat, jak má vypadat výstup.
-- **Podklady** — Škály, příklady, metodiky. Patří do volitelné složky `references`.
+- **Podklady** — Mohou být různé textové nebo tabulkové formáty, obrázky…
 
 ## Dovednosti z tohoto webu
 
