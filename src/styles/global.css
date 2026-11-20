@@ -125,7 +125,9 @@ a.card:hover { border-color: var(--sky-deep); }
 .prose h3 { font-size: 1.2rem; font-weight: 700; margin-top: 1.8em; }
 .prose h4 { font-size: 1.02rem; font-weight: 700; margin-top: 1.5em; }
 .prose ul, .prose ol { padding-left: 1.3em; }
-.prose li + li { margin-top: 0.5em; }
+.prose li { line-height: 1.55; }
+.prose li + li { margin-top: 0.3em; }
+.prose > p + ul, .prose > p + ol { margin-top: 0.6em; } /* seznam navazuje na úvodní větu (Eva 20. 11. 2026: kompaktnější odrážky) */
 .prose blockquote { margin-left: 0; margin-right: 0; background: var(--sky-light); border-radius: var(--radius); padding: 18px 22px; }
 .prose blockquote > * + * { margin-top: 0.6em; }
 .prose code { font-family: var(--fm); font-size: 0.88em; background: var(--line-soft); padding: 1px 5px; border-radius: 3px; }
