@@ -175,9 +175,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {formulace && (
     <section class="band band--sky" aria-labelledby={formulace.id || undefined}>
-      <div class="wrap dva-sloupce dva-sloupce--nadpis">
-        <h2 class="nadpis-sloupcu" id={formulace.id || undefined}>{formulace.nadpis}</h2>
+      <div class="wrap dva-sloupce">
         <div class="stack" style="gap: 20px">
+          <h2 id={formulace.id || undefined}>{formulace.nadpis}</h2>
           <div class="prose" set:html={uvodOddilu(formulaceHtml)} />
           <ul class="formulace">{seznam(predH3(formulaceHtml)).map((t) => <li set:html={t} />)}</ul>
         </div>
