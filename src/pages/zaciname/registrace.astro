@@ -1,0 +1,158 @@
+---
+// Registrace do chatbotů (sablona: registrace-pruvodce). Návrh z Claude Design (21. 11. 2026).
+// Texty jsou v content/stranky/zaciname/registrace.md: ### aplikace = záložka, číslovaný seznam = kroky, odstavce „**Nadpis** — text“ = boxy.
+import { getEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import { rozdel, naOddily } from '../../lib/komponenty';
+import { navigace } from '../../lib/data';
+
+const stranka = (await getEntry('stranky', 'zaciname/registrace'))!;
+const d = stranka.data;
+const { uvod, oddily } = naOddily(rozdel(stranka.rendered?.html ?? ''));
+const htmlOddilu = (o?: { casti: { typ: string; html?: string }[] }) => (o?.casti ?? []).filter((x) => x.typ === 'html').map((x) => x.html ?? '').join('');
+const najdi = (r: RegExp) => oddily.find((o) => r.test(o.nadpis));
+const bezTagu = (s: string) => s.replace(/<[^>]+>/g, '').trim();
+const velke = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
+const bloky = (h: string) => h.split(/(?=<h3[\s>])/).filter((k) => /^\s*<h3/.test(k)).map((k) => {
+  const m = k.match(/^\s*<h3[^>]*>([\s\S]*?)<\/h3>/)!;
+  return { nazev: bezTagu(m[1]), html: k.slice(m.index! + m[0].length).trim() };
+});
+// odstavec „**Nadpis** — text“ → { nadpis, text }
+const box = (p: string) => {
+  const m = p.match(/^<strong>([\s\S]*?)<\/strong>\s*[—–-]?\s*([\s\S]*)$/);
+  return m ? { nadpis: bezTagu(m[1]).replace(/[.:]$/, ''), text: velke(m[2].trim()) } : null;
+};
+const odstavce = (h: string) => [...h.matchAll(/<p>([\s\S]*?)<\/p>/g)].map(([, t]) => t.trim());
+
+// úvod: první odstavec = perex, odstavec s tučným nadpisem = tip
+const uvodHtml = uvod.map((c) => (c.typ === 'html' ? c.html : '')).join('');
+const uvodOdst = odstavce(uvodHtml);
+const perex = uvodOdst.filter((p) => !box(p)).map((p) => `<p>${p}</p>`).join('');
+const tip = uvodOdst.map(box).find(Boolean);
+
+// věk podle stránky Věkové limity a legislativa
+const VEK: Record<string, string> = { ChatGPT: 'od 13 let', 'Google Gemini': 'od 13 let, školní účet bez omezení', 'Microsoft Copilot': 'od 13 let', Claude: 'od 18 let', Perplexity: 'od 13 let' };
+const postup = najdi(/zaregistrovat/i);
+const postupHtml = htmlOddilu(postup);
+const nastroje = bloky(postupHtml).map((b, i) => {
+  const seznam = b.html.match(/<ol>([\s\S]*?)<\/ol>/);
+  const kroky = seznam ? [...seznam[1].matchAll(/<li>([\s\S]*?)<\/li>/g)].map(([, t]) => t.trim()) : [];
+  const web = seznam?.[1].match(/<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/);
+  // upozornění (blokace účtu nebo registrací) růžově, ostatní poznámky modře
+  const boxy = odstavce(b.html.replace(seznam?.[0] ?? '', '')).map(box).filter((x): x is { nadpis: string; text: string } => !!x)
+    .map((x) => ({ ...x, pozor: /blok/i.test(x.text) }));
+  return { id: `registrace-${i}`, nazev: b.nazev, vek: VEK[b.nazev], kroky, boxy, web: web ? { href: web[1], text: bezTagu(web[2]).replace(/^www\./, '') } : null };
+});
+
+const zaver = najdi(/změnil/i);
+const zaverHtml = htmlOddilu(zaver);
+const tlacitka = [...zaverHtml.matchAll(/<p>\s*<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*<\/p>/g)].map(([, href, t]) => ({ href, text: bezTagu(t) }));
+const zaverText = zaverHtml.replace(/<p>\s*<a href="[^"]+"[^>]*>[\s\S]*?<\/a>\s*<\/p>/g, '');
+
+const skupina = navigace.menu.find((g) => g.items.some((it) => it.href === '/' + stranka.id));
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+---
+<Base title={d.title} description={d.popis ?? undefined}>
+  <div class="band band--white">
+    <div class="wrap hero">
+      <div class="page-head">
+        <div class="zahlavi">
+          <Crumbs items={[...(skupina ? [{ title: skupina.title }] : []), { title: d.title }]} />
+          {datum && <span class="draft">Aktualizováno {datum}</span>}
+        </div>
+        <h1>{d.title}</h1>
+        <div class="lede perex" set:html={perex} />
+        {tip && (
+          <div class="tip-skola">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path></svg>
+            <span><strong>{tip.nadpis}:</strong> <span set:html={tip.text} /></span>
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+
+  {postup && (
+    <section class="band band--sky" aria-labelledby={postup.id || undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <div class="hlava">
+          <h2 id={postup.id || undefined}>{postup.nadpis}</h2>
+          <div class="prose" set:html={postupHtml.split(/<h3[\s>]/)[0]} />
+        </div>
+        <div class="zalozky-nastroju" role="tablist" aria-label="Chatovací aplikace" data-switch="registrace-panely">
+          {nastroje.map((n, i) => <button type="button" role="tab" id={`${n.id}-tab`} aria-controls={n.id} aria-selected={i === 0 ? 'true' : 'false'} data-target={n.id}>{n.nazev}</button>)}
+        </div>
+        <div id="registrace-panely">
+          {nastroje.map((n, i) => (
+            <div class="panel" data-group-view={n.id} id={n.id} role="tabpanel" aria-labelledby={`${n.id}-tab`} hidden={i !== 0}>
+              <div class="stack" style="gap: 18px">
+                <div class="panel-hlava">
+                  <h3>{n.nazev}</h3>
+                  {n.vek && <span class="stitek">{n.vek}</span>}
+                </div>
+                <ol class="kroky">
+                  {n.kroky.map((k, j) => <li><span class="kroky-cislo" aria-hidden="true">{j + 1}</span><span set:html={k} /></li>)}
+                </ol>
+                {n.web && <a class="more" href={n.web.href}>{n.web.text} ↗</a>}
+              </div>
+              {n.boxy.length > 0 && (
+                <div class="stack" style="gap: 14px">
+                  {n.boxy.map((b) => (
+                    <div class:list={['poznamka', { 'poznamka--pozor': b.pozor }]}>
+                      <strong>{b.nadpis}</strong>
+                      <span set:html={b.text} />
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {zaver && (
+    <section class="band band--white" aria-labelledby={zaver.id || undefined}>
+      <div class="wrap vyzva">
+        <div class="hlava">
+          <h2 id={zaver.id || undefined}>{zaver.nadpis}</h2>
+          <div class="prose" set:html={zaverText} />
+        </div>
+        <div class="tlacitka">
+          {tlacitka.map((o, i) => <a class:list={['btn', i === 0 ? 'btn--primary' : 'btn--outline']} href={o.href}>{o.text}{i === 0 && ' →'}</a>)}
+        </div>
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
+  .hlava { display: flex; flex-direction: column; gap: 14px; max-width: var(--dve-tretiny); }
+  .tlacitka { display: flex; flex-wrap: wrap; gap: 12px; }
+  .perex :global(p) { font-size: 1.15rem; }
+  .tip-skola { max-width: var(--dve-tretiny); background: var(--sky-light); border-radius: 9px; padding: 18px 22px; display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; }
+  .tip-skola svg { flex: none; margin-top: 3px; color: var(--sky-ink); }
+  .stitek { font-family: var(--fb); font-size: 0.75rem; padding: 2px 8px; border-radius: var(--pill); background: var(--sky-light); }
+
+  .zalozky-nastroju { display: flex; flex-wrap: wrap; gap: 10px; }
+  .zalozky-nastroju button { min-height: 44px; padding: 0 20px; border-radius: var(--pill); font: inherit; font-size: 0.95rem; cursor: pointer; border: 1px solid var(--sky); background: var(--panel); color: var(--ink); }
+  .zalozky-nastroju button[aria-selected='true'] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+  .panel { background: var(--panel); border: 1px solid var(--sky); border-radius: 12px; padding: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 36px; margin-top: -8px; align-items: start; }
+  .panel[hidden] { display: none; }
+  .panel-hlava { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .panel-hlava h3 { font-size: 1.35rem; }
+  .kroky { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 16px; }
+  .kroky li { display: flex; gap: 14px; align-items: flex-start; }
+  .kroky-cislo { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: var(--on-accent); display: inline-flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; }
+  .kroky li > span:last-child { padding-top: 3px; }
+  .more { align-self: flex-start; }
+  .poznamka { background: #f6fafc; border-radius: 9px; padding: 20px 22px; display: flex; flex-direction: column; gap: 6px; font-size: 0.95rem; line-height: 1.6; }
+  .poznamka strong { font-weight: 600; }
+  .poznamka--pozor { background: var(--accent-soft); }
+  @media (max-width: 640px) { .panel { padding: 22px 20px; } }
+
+  .vyzva { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; }
+</style>
