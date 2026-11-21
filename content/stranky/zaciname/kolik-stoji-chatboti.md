@@ -40,9 +40,9 @@ Ceny jsou orientační a často se mění. U každé aplikace proto najdete odka
 
 ## Co se vyplatí
 
-- **Na zkoušení** — Na zkoušení a jednorázové úkoly stačí bezplatná verze kteréhokoli chatbota.
-- **Na pravidelnou práci** — Na přípravu, dovednosti a delší dokumenty se vyplatí jeden placený tarif za zhruba 500 Kč měsíčně (ChatGPT Plus, Claude Pro nebo Google AI Pro). Vyberte ten, který vám sedí, nemusíte platit všechny.
-- **Pro celou školu** — Vyplatí se řešit licence centrálně, kvůli ochraně dat i ceně.
+- **Pro celou školu** — Vyplatí se řešit licence centrálně, jako týmové licence pod školní doménou. Kolegové pak mohou sdílet projekty, dovednosti a sady dovedností (pluginy) v rámci školy, data se nepoužívají k tréninku a správce má přehled o účtech. Školní a týmové licence navíc vycházejí levněji než osobní předplatné pro každého zvlášť.
+- **Začínáte?** — Otestujte si nejprve více nástrojů ve verzi zdarma a vyberte si ten, který vám nejvíce vyhovuje.
+- **Vyplatí se využívat placené licence?** — Pokud AI využíváte ve své praxi pravidelně, placená licence se vyplatí. Nabízí lepší modely, a proto bývají i výstupy chatbota kvalitnější. Často už ale školy mají chatboty dostupné v rámci jiných služeb. Zeptejte se správce IT.
 
 ## Nejste plátci DPH?
 
