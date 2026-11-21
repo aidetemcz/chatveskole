@@ -59,7 +59,7 @@ Dovednosti nejsou jen pro chatboty. Programovací agenti je používají také �
 
 ## Případová studie: tento web
 
-Web Chatboti ve škole jsme v roce 2026 převedli z WordPressu na vibe coding:
+Web Chatboti ve škole jsme v roce 2026 převedli z WordPressu na Vibe Coding:
 
 - **Všechny texty jsou soubory Markdown** v repozitáři [github.com/aidetemcz/chatveskole](https://github.com/aidetemcz/chatveskole). Když chceme změnit text, upravíme soubor.
 - **Každá dovednost je složka** se souborem `SKILL.md`, verzí promptu a metadaty. Web z ní sám vytvoří stránku, tlačítko Kopírovat a ZIP ke stažení.
@@ -67,6 +67,6 @@ Web Chatboti ve škole jsme v roce 2026 převedli z WordPressu na vibe coding:
 - **Žádná databáze.** Web se sestaví do statických stránek a běží na Vercelu.
 - **Změny děláme hromadně přes Claude Code**, například „aktualizuj u všech dovedností věkové limity podle nového přehledu“.
 
-Funkce chatbotů se mění každý měsíc. Udržovat obsah klikáním ve WordPressu jsme nestíhali. S vibe codingem upravíme desítky stránek najednou.
+Funkce chatbotů se mění každý měsíc. Udržovat obsah klikáním ve WordPressu jsme nestíhali. S Vibe Codingem upravíme desítky stránek najednou.
 
-[Zpět na Co je vibe coding](/vibe-coding/co-je-to)
+[Zpět na Co je Vibe Coding](/vibe-coding/co-je-to)

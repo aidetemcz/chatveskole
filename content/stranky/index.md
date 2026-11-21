@@ -42,7 +42,7 @@ Desítky ověřených promptů pro vyučující, vedení škol i žáky. Stačí
 
 Webová stránka, kvíz nebo malá aplikace do hodiny bez znalosti programování. Stačí popsat, co chcete, a chatbot to postaví.
 
-[Co je vibe coding](/vibe-coding/co-je-to)
+[Co je Vibe Coding](/vibe-coding/co-je-to)
 
 ## Metodické materiály
 

@@ -63,6 +63,6 @@ Ke každému Tinybotovi jsme připravili metodiku s modelovými zadáními. Zač
 
 ### Nechte proškolit svou sborovnu
 
-V AI dětem nabízíme školení pro celé sborovny. Přijedeme za vámi do školy a ukážeme pedagogům, jak chatboty smysluplně využít ve výuce i v každodenní práci. Nabízíme mimo jiné školení *AI v hodnocení* a *Vibecoding pro školy*.
+V AI dětem nabízíme školení pro celé sborovny. Přijedeme za vámi do školy a ukážeme pedagogům, jak chatboty smysluplně využít ve výuce i v každodenní práci. Nabízíme mimo jiné školení *AI v hodnocení* a *Vibe Coding pro školy*.
 
 [Vybrat školení pro sborovnu](https://vzdelavame.aidetem.cz/kategorie-akce/sborovna/)
