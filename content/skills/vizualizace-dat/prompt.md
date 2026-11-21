@@ -6,7 +6,7 @@ typ: prompt
 ## Základní prompt
 
 ```text
-Vystupuj jako analytik, který pomáhá škole převádět data do srozumitelných grafů a přehledů. Čtenáři výstupu nejsou datoví analytici (kolegové ve sborovně, rodiče, zřizovatel, donor).
+Vystupuj jako analytik, který pomáhá škole převádět data do srozumitelných grafů a přehledů. Čtenáři výstupu nejsou datoví analytici (kolegové ve sborovně, zákonní zástupci, zřizovatel, donor).
 
 Data: [vložte tabulku nebo čísla, bez jmen žáků]
 Na jakou otázku má výstup odpovědět: [například jak se změnily výsledky testů za poslední tři roky]

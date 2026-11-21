@@ -12,13 +12,13 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený třídní vyučující, který pravidelně a s respektem informuje rodiče o pokroku jejich dítěte. Z mých poznámek napiš rodičům zprávu o pokroku žáka.
+Vystupuj jako zkušený třídní vyučující, který pravidelně a s respektem informuje zákonné zástupce o pokroku jejich dítěte. Z mých poznámek napiš zákonným zástupcům zprávu o pokroku žáka.
 
 Žák: [iniciály, nikdy jméno], [chlapec / dívka], [například 4. ročník ZŠ]
 Období: [například září až listopad]
 Moje poznámky: [vložte text, fotografii poznámek nebo soubor; jména nahraďte iniciálami]
 K čemu zpráva slouží: [například podklad pro konzultaci / průběžná informace e-mailem]
-Jak mohou pomoci rodiče: [například číst s dítětem 10 minut denně; nebo řádek smažte]
+Jak mohou pomoci zákonní zástupci: [například číst s dítětem 10 minut denně; nebo řádek smažte]
 
 Zpráva má mít jeden souvislý odstavec, 5–8 vět, ve 3. osobě:
 1. Co se daří: konkrétní silné stránky a pokroky z poznámek (co dítě dělá, ne jaké je).
@@ -38,7 +38,7 @@ Pod zprávu mi zvlášť napiš, co si mám ověřit. Pak nabídni: 1) kratší 
 
 ## Co je cílem promptu
 
-Prompt z vašich poznámek napíše rodičům krátkou zprávu o pokroku jejich dítěte. Zpráva pojmenuje, co se daří, na čem dál pracovat a jak může pomoct rodina. Popisuje, co dítě dělá, ne jaké je, a nic si nevymýšlí.
+Prompt z vašich poznámek napíše zákonným zástupcům krátkou zprávu o pokroku jejich dítěte. Zpráva pojmenuje, co se daří, na čem dál pracovat a jak může pomoct rodina. Popisuje, co dítě dělá, ne jaké je, a nic si nevymýšlí.
 
 Hodí se jako průběžná informace e-mailem nebo jako podklad pro konzultaci. Na přání z ní chatbot udělá i body pro ústní rozhovor. Pro slovní hodnocení na vysvědčení je vhodnější dovednost [Slovní hodnocení](/skills/slovni-hodnoceni).
 

@@ -1,19 +1,19 @@
 title: Komunikace s rodiči
 slug: komunikace-s-rodici
-kratky_popis: Napíše zprávu rodičům — od odpovědi na stížnost po pozvánku na akci — nebo pomůže promyslet postup v citlivé situaci.
-popis: "Pomůže vám s písemnou i ústní komunikací s rodiči, od krátké informace po citlivé situace. Funguje jako zkušený kolega: když situace není jednoduchá, nejdřív s vámi promyslí, co a jak rodičům sdělit, jinak rovnou napíše text k použití. Stojí na partnerství s rodiči, na popisném jazyce o chování a práci žáka místo nálepek a na respektu k pohledu rodiče. Je určený třídním i předmětovým vyučujícím, výchovným poradcům, ředitelům a asistentům pedagoga."
+kratky_popis: Napíše zprávu zákonným zástupcům — od odpovědi na stížnost po pozvánku na akci — nebo pomůže promyslet postup v citlivé situaci.
+popis: "Pomůže vám s písemnou i ústní komunikací se zákonnými zástupci, od krátké informace po citlivé situace. Funguje jako zkušený kolega: když situace není jednoduchá, nejdřív s vámi promyslí, co a jak zákonným zástupcům sdělit, jinak rovnou napíše text k použití. Stojí na partnerství se zákonnými zástupci, na popisném jazyce o chování a práci žáka místo nálepek a na respektu k pohledu zákonného zástupce. Je určený třídním i předmětovým vyučujícím, výchovným poradcům, ředitelům a asistentům pedagoga."
 pro_koho: [ucitele, vedeni]
 sady: [komunikace-a-podpora-ucitele]
-stitky: [komunikace s rodiči, třídní vyučující, stížnost, pozvánka, třídní schůzka, generativní AI]
+stitky: [komunikace se zákonnými zástupci, třídní vyučující, stížnost, pozvánka, třídní schůzka, generativní AI]
 rezimy:
-  - Odpověď na stížnost rodiče
+  - Odpověď na stížnost zákonného zástupce
   - Zpráva o pokroku žáka
   - Vysvětlení využití generativní AI ve výuce
   - Pozvánka na školní akci (e-mail, plakát, sociální sítě, newsletter, web)
   - Informace o školním projektu
   - Pozvánka na třídní schůzku
   - Promyslet postup v citlivé situaci
-  - Příprava telefonátu nebo schůzky s rodiči
+  - Příprava telefonátu nebo schůzky se zákonnými zástupci
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/reakce-na-stiznost-rodice/
     typ: prompt
@@ -43,4 +43,4 @@ stahnout:
 autori: [AI dětem, AI reaktor UJEP (Míša Liegertová)]   # ověřit: tři prompty z roku 2024 nejspíš z původní databáze AI reaktoru UJEP; doplnit jména
 vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-21

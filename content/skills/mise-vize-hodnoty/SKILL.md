@@ -23,10 +23,10 @@ Když uživatel chce všechno, navrhnu pořadí hodnoty → mise → vize → pr
 
 ### Definice a zásady formulace
 
-**Hodnoty školy** představují základní principy, které určují, jakým způsobem škola jedná, učí a rozvíjí svou kulturu. Jsou to postoje a přesvědčení, které formují vztahy mezi žáky, učiteli, rodiči a celou komunitou školy. Hodnoty formuluji:
+**Hodnoty školy** představují základní principy, které určují, jakým způsobem škola jedná, učí a rozvíjí svou kulturu. Jsou to postoje a přesvědčení, které formují vztahy mezi žáky, učiteli, zákonnými zástupci a celou komunitou školy. Hodnoty formuluji:
 
 - **pozitivně** – vyjadřují, co chceme podporovat, ne čeho se obáváme,  
-- **jednoduše a srozumitelně** – aby jim rozuměli žáci, učitelé i rodiče,  
+- **jednoduše a srozumitelně** – aby jim rozuměli žáci, učitelé i zákonní zástupci,  
 - **společně sdíleně** – mají být výsledkem spolupráce a odrážet skutečnou kulturu školy,  
 - **krátce a výstižně** – ideálně 1–3 slova nebo krátká věta.
 
@@ -34,7 +34,7 @@ Kontrolní otázka: Poznal by návštěvník školy tuto hodnotu během jednoho 
 
 **Mise** představuje konkrétní poslání školy: její účel, smysl a identitu. Odpovídá na otázky „Kdo jsme?“, „Co je účelem naší činnosti?“, „Co a pro koho děláme?“ a „Jakou přidanou hodnotu nabízíme?“. Mise popisuje hlavně přítomnost školy, tedy jaká škola je nyní, s důrazem na sdílené hodnoty.
 
-**Vize** je plán, jakým směrem se bude škola ubírat do budoucna. Má být přiměřeně náročná, aby byla dosažitelná a zároveň motivovala pracovníky k jejímu naplnění. Musí být srozumitelná nejen pedagogům, ale také rodičům, žákům a veřejnosti.
+**Vize** je plán, jakým směrem se bude škola ubírat do budoucna. Má být přiměřeně náročná, aby byla dosažitelná a zároveň motivovala pracovníky k jejímu naplnění. Musí být srozumitelná nejen pedagogům, ale také zákonným zástupcům, žákům a veřejnosti.
 
 **Profil absolventa** je jasný a srozumitelný popis toho, jakého člověka škola formuje. Vychází z hodnot, mise a priorit školy a má být živým dokumentem, který se pravidelně reviduje.
 
@@ -42,11 +42,11 @@ Kontrolní otázka: Poznal by návštěvník školy tuto hodnotu během jednoho 
 
 1. Ve 2–3 větách vysvětlím, co daná část je a jak má být formulovaná.  
 2. Položím 2–4 otázky z banky níže (u hodnot začnu nejvýš dvěma). Vybírám ty, které dávají smysl podle toho, co už vím. Nikdy nepokládám všechny najednou.  
-3. Z odpovědí navrhnu 2–3 varianty, které se liší stylem (například heslovitá, větná, pro rodiče a veřejnost). U každé jednou větou uvedu, z které odpovědi vychází.  
+3. Z odpovědí navrhnu 2–3 varianty, které se liší stylem (například heslovitá, větná, pro zákonné zástupce a veřejnost). U každé jednou větou uvedu, z které odpovědi vychází.  
 4. Zeptám se, co upravit (slova, tón, délku), a text doladím. Pokud něco podstatného chybí, položím 1–2 doplňující otázky.  
-5. Navrhnu, jak text ověřit se sborem, žáky a rodiči, a nabídnu navazující část.
+5. Navrhnu, jak text ověřit se sborem, žáky a zákonnými zástupci, a nabídnu navazující část.
 
-Pokud to nevyplývá z rozhovoru, zjistím také typ a velikost školy, zda už škola nějaké hodnoty, misi nebo vizi má (a co se jí na nich nelíbí), pro koho je text určen (sbor, rodiče, web, ŠVP, žádost o grant) a kdo se na tvorbě podílí.
+Pokud to nevyplývá z rozhovoru, zjistím také typ a velikost školy, zda už škola nějaké hodnoty, misi nebo vizi má (a co se jí na nich nelíbí), pro koho je text určen (sbor, zákonní zástupci, web, ŠVP, žádost o grant) a kdo se na tvorbě podílí.
 
 ### Banka otázek
 
@@ -61,9 +61,9 @@ Pokud to nevyplývá z rozhovoru, zjistím také typ a velikost školy, zda už 
 
 **Mise**
 
-- Kdyby se vás rodiče zeptali, proč jim svou školu doporučujete, co byste jim odpověděli?  
+- Kdyby se vás zákonní zástupci zeptali, proč jim svou školu doporučujete, co byste jim odpověděli?  
 - V čem je vaše škola originální nebo jiná než ostatní v okolí?  
-- Která 3 slova nebo hesla nejlépe vystihují tým pracovníků vaší školy, vztah s žáky a vztah s rodiči?  
+- Která 3 slova nebo hesla nejlépe vystihují tým pracovníků vaší školy, vztah s žáky a vztah se zákonnými zástupci?  
 - Čeho si na své škole nejvíce ceníte?
 
 **Vize**
@@ -73,7 +73,7 @@ Pokud to nevyplývá z rozhovoru, zjistím také typ a velikost školy, zda už 
 - Jak chcete, aby vaši žáci přemýšleli, chovali se a jednali, až školu opustí?  
 - Jak bude vaše škola vypadat za 5 až 10 let, pokud se vám všechno podaří?  
 - Jaké hodnoty mají být ve škole viditelné každý den?  
-- Jak bude vypadat vztah mezi žáky, pedagogy a rodiči?
+- Jak bude vypadat vztah mezi žáky, pedagogy a zákonnými zástupci?
 
 **Profil absolventa**
 
@@ -81,7 +81,7 @@ Pokud to nevyplývá z rozhovoru, zjistím také typ a velikost školy, zda už 
 - Kam vaši absolventi nejčastěji pokračují a co tam potřebují?  
 - Které kompetence chcete rozvíjet víc než jiné školy?  
 - Co dnes vaši absolventi umějí dobře a kde vám chybí?  
-- Kdo kromě učitelů se na rozvoji žáků podílí (rodiče, partneři, obec, firmy)?
+- Kdo kromě učitelů se na rozvoji žáků podílí (zákonní zástupci, partneři, obec, firmy)?
 
 **Když odpověď zní obecně**
 
@@ -98,7 +98,7 @@ Struktura profilu absolventa:
 2. **Klíčové oblasti** (3–6) – u každé konkrétní znalosti, dovednosti a postoje a jejich propojení s klíčovými kompetencemi. U základních škol vycházím z přiloženého souboru references/Klicove_kompetence.md (klíčové kompetence RVP ZV včetně digitální). U jiných typů škol znění RVP nevymýšlím a vyznačím, co je potřeba ověřit.  
 3. **Hodnoty a charakterové rysy**, které škola podporuje.  
 4. **Příklady uplatnění** v dalším studiu, v práci i v osobním životě.  
-5. **Role školy a partnerů** – kdo za co odpovídá (učitelé, vedení, rodiče, partneři školy).  
+5. **Role školy a partnerů** – kdo za co odpovídá (učitelé, vedení, zákonní zástupci, partneři školy).  
 6. **Pozorovatelné ukazatele** – konkrétní chování nebo výstupy žáků formulované slovesem, které jde pozorovat (ne „umí“, „zná“, „je“), například „Absolvent samostatně naplánuje a obhájí projekt“ místo „Absolvent je samostatný“.  
 7. **Vyhodnocení a revize** – kdy a jak se profil aktualizuje.
 
@@ -115,7 +115,7 @@ Posoudím text podle zásad (pozitivní, srozumitelný, konkrétní, odlišuje m
 - **Vize:** 1–2 věty, volitelně 3–5 odrážek „podle čeho poznáme, že se nám to daří“.  
 - **Profil absolventa:** dokument podle struktury výše.  
 - Vždy nejdřív 2–3 varianty k výběru, pak jedna doladěná verze.  
-- Krátký návrh, jak text projednat se školní komunitou (otázky na poradu, anketa pro rodiče, třídnická hodina, žákovský parlament).
+- Krátký návrh, jak text projednat se školní komunitou (otázky na poradu, anketa pro zákonné zástupce, třídnická hodina, žákovský parlament).
 
 Jednou nenápadně připomenu, že jde o návrh, který má projít diskusí ve škole.
 
@@ -136,7 +136,7 @@ Hodnoty jako souvislý text: „Naše škola stojí na důvěře, respektu a rad
 Rozdíl mezi misí a vizí:
 
 - Mise: „Jsme malá škola, kde se všichni známe. Učíme děti přemýšlet, spolupracovat a starat se o místo, kde žijí.“  
-- Vize: „Za pět let od nás budou odcházet samostatní a zvídaví lidé, kteří se umí učit a nebojí se chyb. Rodiče budou školu vnímat jako partnera.“
+- Vize: „Za pět let od nás budou odcházet samostatní a zvídaví lidé, kteří se umí učit a nebojí se chyb. Zákonní zástupci budou školu vnímat jako partnera.“
 
 ### Zdroj
 

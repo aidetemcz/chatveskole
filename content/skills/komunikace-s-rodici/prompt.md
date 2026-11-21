@@ -6,7 +6,7 @@ typ: prompt
 ## Základní prompt
 
 ```text
-Vystupuj jako zkušený třídní vyučující, který s rodiči jedná jako s partnery. Pomoz mi s komunikací s rodiči.
+Vystupuj jako zkušený třídní vyučující, který se zákonnými zástupci jedná jako s partnery. Pomoz mi s komunikací se zákonnými zástupci.
 
 Typ zprávy: [například zpráva o pokroku žáka / informace o školním projektu / pozvánka na třídní schůzku / omluva]
 Kanál: [například e-mail / Bakaláři nebo EduPage / žákovská knížka / telefonát / osobní schůzka]
@@ -14,29 +14,29 @@ Tón: [například přátelský, ale věcný]
 Podklady: [například moje poznámky o žákovi, popis projektu nebo datum, čas, místo a témata schůzky]
 
 Zásady:
-- Rodič je partner. Popisuj chování a práci žáka, ne jeho osobnost.
+- Zákonný zástupce je partner. Popisuj chování a práci žáka, ne jeho osobnost.
 - Piš stručně a konkrétně, bez obecných frází a školních zkratek. E-mail má oslovení, 5–8 vět a podpis; zpráva do školního systému je kratší, bez oslovení a podpisu. U telefonátu nebo schůzky připrav body: jak začít, co říct, jak reagovat na emoce, jak skončit a co si zapsat.
 - Zpráva o pokroku: jen z mých poznámek, jeden souvislý odstavec (5–8 vět), konkrétní silné stránky a další krok, laskavě a pravdivě.
-- Informace o projektu: jeden odstavec a několik odrážek (o co jde, co žákům přinese, co potřebujeme od rodičů).
-- Pozvánka na třídní schůzku: datum, čas, místo, program v bodech a prostor pro témata rodičů.
+- Informace o projektu: jeden odstavec a několik odrážek (o co jde, co žákům přinese, co potřebujeme od zákonných zástupců).
+- Pozvánka na třídní schůzku: datum, čas, místo, program v bodech a prostor pro témata zákonných zástupců.
 - Jména žáků nepoužívej; když nějaké napíšu, pokračuj s iniciálou a do textu dej [jméno žáka]. Údaje, které chybí, označ hranatými závorkami a nevymýšlej je.
-- Když situace potřebuje víc než jednu zprávu, navrhni nejdřív postup ve 2–4 krocích (co teď, koho zapojit, jakým kanálem). Upozorni mě, že u podezření na šikanu je třeba nejdřív zapojit metodika prevence nebo výchovného poradce a až potom rodiče a že podezření na zanedbávání nebo ohrožení dítěte nepatří do zprávy rodičům, ale vedení školy a OSPOD.
+- Když situace potřebuje víc než jednu zprávu, navrhni nejdřív postup ve 2–4 krocích (co teď, koho zapojit, jakým kanálem). Upozorni mě, že u podezření na šikanu je třeba nejdřív zapojit metodika prevence nebo výchovného poradce a až potom zákonné zástupce a že podezření na zanedbávání nebo ohrožení dítěte nepatří do zprávy zákonným zástupcům, ale vedení školy a OSPOD.
 
 Když ti chybí něco podstatného, nejdřív se zeptej (nejvýš na tři věci). Pak napiš hotový text bez komentářů a nabídni úpravu.
 ```
 
-## Varianta: Odpověď na stížnost rodiče
+## Varianta: Odpověď na stížnost zákonného zástupce
 
 ```text
-Vystupuj jako zkušený třídní vyučující, který řeší problémy s respektem a porozuměním. Na základě e-mailu od rodiče a mého pohledu napiš stručnou odpověď: vstřícnou, věcnou a nekonfliktní.
+Vystupuj jako zkušený třídní vyučující, který řeší problémy s respektem a porozuměním. Na základě e-mailu od zákonného zástupce a mého pohledu napiš stručnou odpověď: vstřícnou, věcnou a nekonfliktní.
 
-E-mail od rodiče: [vložte text nebo jeho shrnutí, bez jmen]
+E-mail od zákonného zástupce: [vložte text nebo jeho shrnutí, bez jmen]
 Můj pohled: [například žákyně je poslední měsíc nesoustředěná a třikrát nepřinesla úkol]
 Čeho chci dosáhnout: [například vysvětlit situaci a nabídnout schůzku / zdvořile odmítnout požadavek a vysvětlit proč]
 Kanál: [například e-mail]
 
 Odpověď postav takto:
-1. Poděkuj za zprávu a vyjádři pochopení pro obavy rodiče.
+1. Poděkuj za zprávu a vyjádři pochopení pro obavy zákonného zástupce.
 2. Stručně a věcně vysvětli situaci z pohledu školy. Popisuj chování, ne osobnost dítěte.
 3. Navrhni další krok nebo osobní setkání (termíny označ [doplním]).
 4. Zakonči partnersky — jde nám o společné dobro dítěte.
@@ -47,7 +47,7 @@ Neobhajuj se, nemoralizuj a neslibuj nic, co nemůžu splnit. Pokud stížnost m
 ## Varianta: Pozvánka na školní akci
 
 ```text
-Vystupuj jako zástupce ředitele, který má zkušenosti s organizací školních akcí a komunikací s rodiči. Napiš pozvánku, která rodiče osloví a motivuje k účasti. Tón: [například přátelský a srdečný / neformální].
+Vystupuj jako zástupce ředitele, který má zkušenosti s organizací školních akcí a komunikací se zákonnými zástupci. Napiš pozvánku, která zákonné zástupce osloví a motivuje k účasti. Tón: [například přátelský a srdečný / neformální].
 
 Název akce: [například Zahradní slavnost]
 Datum a čas: [například 12. června 2027 od 16 hodin]
@@ -70,7 +70,7 @@ Nevymýšlej údaje, které jsem nezadal(a); chybějící označ hranatými záv
 ## Varianta: Vysvětlení využití AI ve výuce
 
 ```text
-Vystupuj jako ředitel základní školy, který chce rodičům otevřeně a srozumitelně představit, jak bude škola ve výuce využívat generativní umělou inteligenci. Piš věcně, ale přístupně i pro rodiče bez technického zázemí.
+Vystupuj jako ředitel základní školy, který chce zákonným zástupcům otevřeně a srozumitelně představit, jak bude škola ve výuce využívat generativní umělou inteligenci. Piš věcně, ale přístupně i pro zákonné zástupce bez technického zázemí.
 
 Ročníky a předměty: [například 8. a 9. ročník, český jazyk a informatika]
 Aplikace, které chceme používat: [například názvy konkrétních chatbotů a aplikací]
@@ -83,4 +83,4 @@ Text má mít:
 3. Krátký závěr s nabídkou dotazů.
 ```
 
-**Tip:** Věkové limity před odesláním vždy ověřte, podmínky služeb se mění (přehled na chatveskole.cz/zaciname/vekove-limity-a-legislativa). Když nevíte, jestli rodičům vůbec psát, popište chatbotovi situaci a požádejte ho nejdřív o postup, ne o text.
+**Tip:** Věkové limity před odesláním vždy ověřte, podmínky služeb se mění (přehled na chatveskole.cz/zaciname/vekove-limity-a-legislativa). Když nevíte, jestli zákonným zástupcům vůbec psát, popište chatbotovi situaci a požádejte ho nejdřív o postup, ne o text.

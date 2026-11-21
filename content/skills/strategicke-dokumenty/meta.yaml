@@ -1,7 +1,7 @@
 title: Strategické dokumenty
 slug: strategicke-dokumenty
 kratky_popis: Sestaví návrh strategie školy se SWOT, prioritami, opatřeními, indikátory a harmonogramem; umí i samostatnou SWOT analýzu.
-popis: "Pomůže vedení školy rychle připravit srozumitelný a realistický strategický dokument, který můžete projednat ve sborovně a ukázat rodičům i zřizovateli. Dostanete návrh se SWOT analýzou, prioritami, opatřeními, indikátory a harmonogramem. Všechny typy dokumentů mají společnou kostru, podle které zpracuje i jiný strategický dokument, třeba strategii spolupráce s rodiči. Vychází z materiálu NPI ČR Strategické plánování (portál Vedeme školu)."
+popis: "Pomůže vedení školy rychle připravit srozumitelný a realistický strategický dokument, který můžete projednat ve sborovně a ukázat zákonným zástupcům i zřizovateli. Dostanete návrh se SWOT analýzou, prioritami, opatřeními, indikátory a harmonogramem. Všechny typy dokumentů mají společnou kostru, podle které zpracuje i jiný strategický dokument, třeba strategii spolupráce se zákonnými zástupci. Vychází z materiálu NPI ČR Strategické plánování (portál Vedeme školu)."
 pro_koho: [vedeni]
 sady: [vedeni-skoly]
 stitky: [strategické plánování, SWOT, digitální gramotnost, inkluze, digitální wellbeing, hodnocení, kvalita výuky, inovace]
@@ -45,4 +45,4 @@ metodika:
 znalosti: []
 vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-21

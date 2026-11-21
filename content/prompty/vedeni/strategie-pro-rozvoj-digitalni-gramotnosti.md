@@ -39,18 +39,18 @@ Výstup: jeden dokument na 2–4 strany s nadpisy, krátkými odstavci a tabulka
 3) priority,
 4) opatření: tabulka Opatření – Kdo odpovídá – Zdroje – Termín,
 5) rozvoj pedagogů,
-6) zapojení žáků a rodičů,
+6) zapojení žáků a zákonných zástupců,
 7) indikátory: tabulka Indikátor – Výchozí stav – Cílový stav – Jak a kdy měříme,
 8) harmonogram po pololetích,
 9) rizika a jak jim předejdeme,
 10) předpoklady, se kterými jsi pracoval(a).
 
-Když chybí typ školy nebo vybavení, nejdřív se mě zeptej (nejvýš 5 otázek najednou). Na konci nabídni: 1) zkrácenou verzi pro rodiče a web, 2) tři otázky k diskusi ve sborovně, 3) rozpracování jedné priority do plánu změny.
+Když chybí typ školy nebo vybavení, nejdřív se mě zeptej (nejvýš 5 otázek najednou). Na konci nabídni: 1) zkrácenou verzi pro zákonné zástupce a web, 2) tři otázky k diskusi ve sborovně, 3) rozpracování jedné priority do plánu změny.
 ```
 
 ## Co je cílem promptu
 
-Prompt vám pomůže sestavit strategii rozvoje digitální gramotnosti, kterou můžete projednat ve sborovně a ukázat rodičům i zřizovateli. Pracuje s digitální kompetencí žáků, s dovednostmi pedagogů i s podmínkami školy. AI gramotnost bere jako součást digitální gramotnosti, ne jako samostatné téma.
+Prompt vám pomůže sestavit strategii rozvoje digitální gramotnosti, kterou můžete projednat ve sborovně a ukázat zákonným zástupcům i zřizovateli. Pracuje s digitální kompetencí žáků, s dovednostmi pedagogů i s podmínkami školy. AI gramotnost bere jako součást digitální gramotnosti, ne jako samostatné téma.
 
 Strategie začíná u pevného základu (síť, účty, bezpečnost) a doporučí, na co se soustředit v prvním roce. Čísla, která nemáte, chatbot nedomýšlí a nechá je k doplnění.
 

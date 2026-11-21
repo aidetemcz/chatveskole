@@ -38,7 +38,7 @@ Pod odstavec zvlášť pro mě:
 - Ke každému kritériu návrh úrovně J–Č–T–Ú (J ještě neosvojeno, Č částečně, T téměř, Ú úplně osvojeno) a jednu větu zdůvodnění s odkazem na místo v práci.
 - Co si mám ověřit, než zpětnou vazbu předám.
 
-Když vložím víc prací najednou, napiš zpětnou vazbu ke každé zvlášť (práce 1, 2, 3…) a na konci shrň 2–3 věci, které se opakují u více žáků a vyplatí se je probrat s celou třídou. Pokud chybí kritéria nebo ročník, nejdřív se mě zeptej. Na konci nabídni: 1) kratší nebo jednodušší verzi, 2) verzi pro rodiče, 3) otázku k zamyšlení pro žáka.
+Když vložím víc prací najednou, napiš zpětnou vazbu ke každé zvlášť (práce 1, 2, 3…) a na konci shrň 2–3 věci, které se opakují u více žáků a vyplatí se je probrat s celou třídou. Pokud chybí kritéria nebo ročník, nejdřív se mě zeptej. Na konci nabídni: 1) kratší nebo jednodušší verzi, 2) verzi pro zákonné zástupce, 3) otázku k zamyšlení pro žáka.
 ```
 
 ## Co je cílem promptu

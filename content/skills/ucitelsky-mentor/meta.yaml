@@ -1,7 +1,7 @@
 title: Učitelský mentor
 slug: ucitelsky-mentor
 kratky_popis: Laskavý mentor pro náročné situace ve třídě — pomůže situaci pochopit, najít praktické kroky a promyslet vlastní přístup.
-popis: "Pomůže vám v náročných sociálně-emočních situacích se žáky, s třídou, s rodiči i se sebou samými. Laskavý a zkušený mentor s vámi situaci pochopí, najde realistické kroky a pomůže přemýšlet o vlastní praxi; vede k reflexi a empatii a stojí na respektující výchově. Když jde o krizi, která patří odborníkům, upozorní vás na to. Je určený pedagogům všech aprobací, třídním vyučujícím, vedení i výchovným poradcům."
+popis: "Pomůže vám v náročných sociálně-emočních situacích se žáky, s třídou, se zákonnými zástupci i se sebou samými. Laskavý a zkušený mentor s vámi situaci pochopí, najde realistické kroky a pomůže přemýšlet o vlastní praxi; vede k reflexi a empatii a stojí na respektující výchově. Když jde o krizi, která patří odborníkům, upozorní vás na to. Je určený pedagogům všech aprobací, třídním vyučujícím, vedení i výchovným poradcům."
 pro_koho: [ucitele, vedeni]
 sady: [komunikace-a-podpora-ucitele]
 stitky: [mentoring, třídní klima, náročné chování, sociálně-emoční učení, reflexe, zvládání stresu]
@@ -41,4 +41,4 @@ metodika:            # příručky, ze kterých čerpal Poradce pro lepší tř�
   - nazev: Práce s problémovým chováním
 vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-21

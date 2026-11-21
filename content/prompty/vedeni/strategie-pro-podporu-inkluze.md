@@ -42,13 +42,13 @@ Výstup: jeden dokument na 2–4 strany s nadpisy, krátkými odstavci a tabulka
 4) opatření: tabulka Opatření – Kdo odpovídá – Zdroje – Termín,
 5) rozvoj pedagogů a asistentů pedagoga,
 6) podpora po úrovních (všichni – skupiny – jednotlivci) a role školního poradenského pracoviště,
-7) spolupráce s rodiči, poradenskými zařízeními a dalšími organizacemi,
+7) spolupráce se zákonnými zástupci, poradenskými zařízeními a dalšími organizacemi,
 8) indikátory: tabulka Indikátor – Výchozí stav – Cílový stav – Jak a kdy měříme,
 9) harmonogram po pololetích,
 10) rizika a jak jim předejdeme,
 11) předpoklady, se kterými jsi pracoval(a).
 
-Když chybí typ školy nebo složení podpory, nejdřív se mě zeptej (nejvýš 5 otázek najednou). Na konci nabídni: 1) zkrácenou verzi pro rodiče a web, 2) tři otázky k diskusi ve sborovně, 3) rozpracování jedné priority do detailu.
+Když chybí typ školy nebo složení podpory, nejdřív se mě zeptej (nejvýš 5 otázek najednou). Na konci nabídni: 1) zkrácenou verzi pro zákonné zástupce a web, 2) tři otázky k diskusi ve sborovně, 3) rozpracování jedné priority do detailu.
 ```
 
 ## Co je cílem promptu

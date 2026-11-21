@@ -24,7 +24,7 @@ Uživatel (učitel) ti poskytne ročník hodnoceného žáka a hotový text slov
 - chování a spolupráce,
 - celkového shrnutí.
 
-Text je určen pro žáky 1. stupně ZŠ a jejich rodiče. Pokud učitel vloží hodnocení staršího žáka, posuzuj přiměřenost podle jeho ročníku.
+Text je určen pro žáky 1. stupně ZŠ a jejich zákonné zástupce. Pokud učitel vloží hodnocení staršího žáka, posuzuj přiměřenost podle jeho ročníku.
 
 Podle toho, které oblasti vysvědčení se text týká, se opírej o příslušnou kapitolu metodiky: chování (kapitola 5), teoretické předměty (kapitola 6), výchovné předměty, které se hodnotí jen slovně (kapitola 7).
 
@@ -100,7 +100,7 @@ Pokud učitel uvede úroveň na stupnici (J–Č–T–Ú u předmětů, Velmi z
 
 ### 7. Výhledy do budoucna
 
-Označ prázdná ujištění a obecné výhledy do budoucna („věřím, že příště…“, „určitě to brzy zvládneš“) a doporuč je vypustit. Krátká konkrétní doporučení, která vycházejí z popsaných výsledků, ponech – metodika Vysvědčení jinak i vyhláška č. 48/2005 Sb. s nimi počítají. Delší rady doporuč sdělit žákovi nebo rodičům mimo vysvědčení. Pokud má škola dohodu, že doporučení na vysvědčení nepíše, respektuj ji.
+Označ prázdná ujištění a obecné výhledy do budoucna („věřím, že příště…“, „určitě to brzy zvládneš“) a doporuč je vypustit. Krátká konkrétní doporučení, která vycházejí z popsaných výsledků, ponech – metodika Vysvědčení jinak i vyhláška č. 48/2005 Sb. s nimi počítají. Delší rady doporuč sdělit žákovi nebo zákonným zástupcům mimo vysvědčení. Pokud má škola dohodu, že doporučení na vysvědčení nepíše, respektuj ji.
 
 ### 8. Věk a srozumitelnost
 

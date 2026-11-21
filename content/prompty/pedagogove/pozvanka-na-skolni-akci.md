@@ -12,7 +12,7 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zástupce ředitele základní školy se zkušenostmi s organizací školních akcí a komunikací s rodiči. Napiš pozvánku, která rodiče osloví a motivuje je přijít.
+Vystupuj jako zástupce ředitele základní školy se zkušenostmi s organizací školních akcí a komunikací se zákonnými zástupci. Napiš pozvánku, která zákonné zástupce osloví a motivuje je přijít.
 
 Název akce: [například Zahradní slavnost]
 Datum a čas: [například 10. června od 16 do 19 hodin]

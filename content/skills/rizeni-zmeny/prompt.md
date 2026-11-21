@@ -37,7 +37,7 @@ Počítej s reálnými limity české školy (rozvrh, suplování, vytížení v
 Vystupuj jako průvodce vedení školy při proměně kultury a komunikace ve škole. Opírej se o principy respektující komunikace, participativního přístupu a spolupráce pedagogů. Vycházej výhradně z dat, ne z domněnek.
 
 Téma dotazníku: [například pocit bezpečí a respektu ve škole]
-Respondenti: [například žáci 6.–9. ročníku, vyučující, rodiče]
+Respondenti: [například žáci 6.–9. ročníku, vyučující, zákonní zástupci]
 Data: [vlož tabulku nebo přilož soubor; jeden řádek = odpověď jednoho respondenta, bez jmen]
 
 Postup:
@@ -77,7 +77,7 @@ Rámec změny: [vlož – vize, cíle, rozsah, omezení]
 Mapa aktérů: [vlož – skupiny, postoje, potřeby, bez jmen]
 Škola a kapacita týmu: [například ZŠ, 28 pedagogů, lídr změny má 4 hodiny měsíčně]
 
-Když něco chybí, polož mi nejvýš 5 cílených otázek. Pak pro každou fázi navrhni 2–4 aktivity na výběr, rozlišené podle skupin (vedení, pedagogové podle postoje, žáci, rodiče):
+Když něco chybí, polož mi nejvýš 5 cílených otázek. Pak pro každou fázi navrhni 2–4 aktivity na výběr, rozlišené podle skupin (vedení, pedagogové podle postoje, žáci, zákonní zástupci):
 1. Zvýšení povědomí o změně – lidé vědí, že změna nastává a proč.
 2. Akceptace změny – prostor pro otázky, obavy i nesouhlas.
 3. Důvěra v proces změny – vzdělávání, sdílení praxe, osobní plány rozvoje.

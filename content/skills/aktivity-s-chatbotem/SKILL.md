@@ -27,7 +27,7 @@ Nejdřív si odpověz: co mají žáci po aktivitě umět lépe než před ní? 
 
 | Nástroj | Pro žáky (stav k 10/2026 – podmínky se mění, doporuč učiteli ověřit aktuální podmínky výrobce) |
 | :---- | :---- |
-| ChatGPT | od 13 let; do 18 let se souhlasem rodiče, 13–17 let v režimu pro teenagery |
+| ChatGPT | od 13 let; do 18 let se souhlasem zákonného zástupce, 13–17 let v režimu pro teenagery |
 | Gemini | osobní účet od 13 let (v ČR samostatně od 15); pro žáky doporučujeme školní účet Google Workspace for Education – zapíná správce, žáci do 18 let mají omezené funkce |
 | Microsoft Copilot | do 13 let blokováno; 13–17 let jen přes školní účet, Copilot Chat musí zapnout správce |
 | Claude | od 18 let, žákovský program není |
