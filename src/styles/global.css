@@ -231,4 +231,4 @@ a.card:hover { border-color: var(--sky-deep); }
 @media (max-width: 760px) { .dva-sloupce.dva-sloupce--nadpis.dva-sloupce--nadpis { grid-template-columns: minmax(0, 1fr); } }
 
 /* Tlačítka za textem: vždy dost místa nad nimi, na celém webu (Eva 21. 11. 2026) */
-:is(p, .prose, ul, ol, dl, .lede, .perex, [class$="-text"]) + :is(.tlacitka, .btn, .akce) { margin-top: 24px !important; }
+main :is(p, .prose, ul, ol, dl, .lede, .perex, [class$="-text"]) + :is(.tlacitka, .btn, .akce) { margin-top: 24px !important; }
