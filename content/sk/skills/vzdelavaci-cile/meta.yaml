@@ -1,15 +1,15 @@
-title: Vzdělávací cíle
+title: Vzdelávacie ciele
 slug: vzdelavaci-cile
-kratky_popis: Formuluje vzdělávací cíle podle Nové taxonomie (Marzano a Kendall) s kontextem učení a kritériem splnění.
-popis: "Pomůže vám formulovat vzdělávací cíle pro formativní hodnocení podle Nové taxonomie vzdělávacích cílů (Marzano a Kendall). Cíl říká, co žák se znalostí udělá, a je pozorovatelný, takže vy i žák poznáte, zda ho dosáhl, a můžete na něj navázat kritérii hodnocení. Ke každému cíli dostanete kontext učení a kritérium splnění. Využijete ho při plánování hodin i při psaní ŠVP."
+kratky_popis: Formuluje vzdelávacie ciele podľa Novej taxonómie (Marzano a Kendall) s kontextom učenia a kritériom splnenia.
+popis: "Pomôže vám formulovať vzdelávacie ciele pre formatívne hodnotenie podľa Novej taxonómie vzdelávacích cieľov (Marzano a Kendall). Cieľ hovorí, čo žiak s vedomosťou urobí, a je pozorovateľný, takže vy aj žiak spoznáte, či ho dosiahol, a môžete naň naviazať kritériá hodnotenia. Ku každému cieľu dostanete kontext učenia a kritérium splnenia. Využijete ho pri plánovaní hodín aj pri písaní školského vzdelávacieho programu."
 pro_koho: [ucitele]
 sady: [formativni-hodnoceni]
-stitky: [formativní hodnocení, RVP, vzdělávací cíle, klíčové kompetence, Nová taxonomie vzdělávacích cílů]
+stitky: [formatívne hodnotenie, ŠVP, vzdelávacie ciele, kľúčové kompetencie, Nová taxonómia vzdelávacích cieľov]
 rezimy:
-  - Cíl pro hodinu
-  - Sada cílů pro tematický plán
-  - Rozbor výstupu z RVP nebo ŠVP
-  - Kontrola cíle
+  - Cieľ pre hodinu
+  - Sada cieľov pre tematický plán
+  - Rozbor výkonového štandardu zo ŠVP
+  - Kontrola cieľa
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/formulace-vyukoveho-cile/
     typ: prompt
@@ -30,9 +30,9 @@ stahnout:
   chatgpt: https://drive.google.com/uc?export=download&id=1KUzQy2ohs0HGqbvesJRxYHAnPh5wRIYj
 autori: [Eva Nečasová (AI dětem)]
 metodika:
-  - nazev: Vysvědčení jinak (PdF MU, Jana Kratochvílová)
+  - nazev: Vysvědčení jinak (PdF MU, Jana Kratochvílová; v češtine)
     url: https://vysvedcenijinak.ped.muni.cz/
 znalosti: [formulace-vzdelavacich-cilu.md, klicove-kompetence.md, prurezova-temata.md]
-vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+vek: dospelí (zručnosti sú v Gemini a Claude 18+)
 stav: koncept
 aktualizovano: 2026-11-15
