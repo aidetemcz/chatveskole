@@ -22,7 +22,7 @@ const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
           <img src={url('/img/logo-ai-detem.png')} alt="" width="56" height="56" loading="lazy" />
           <span><strong>{t('Chatboti ve škole')}</strong><span>{t('AI dětem')}</span></span>
         </a>
-        <p set:html={t('Praktický průvodce chatboty pro vyučující a vedení škol. Projekt neziskové organizace <a href="https://aidetem.cz">AI dětem, z. s.</a>')} />
+        <p>{t('Praktický průvodce chatboty pro vyučující a vedení škol. Projekt neziskové organizace')} <a href="https://aidetem.cz">{t('AI dětem, z. s.')}</a></p>
         <div class="site">
           <a href="https://www.facebook.com/groups/aidetem" aria-label={t('AI dětem na Facebooku')}><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.5 1.6-1.5h1.6V4.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.4H7.6V14h2.7v8z"></path></svg></a>
           <a href="https://www.linkedin.com/company/aidetem/" aria-label={t('AI dětem na LinkedInu')}><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"></path></svg></a>
@@ -49,7 +49,7 @@ const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
   </div>
   <div class="sign">
     <div class="wrap sign-obsah">
-      <span class="sign-text" set:html={t('Funkce chatovacích aplikací se mění každý den.<br />Když najdete nepřesnost, dejte nám prosím vědět na e-mail <a href="mailto:eva@aidetem.cz">eva@aidetem.cz</a>. Děkujeme!')} />
+      <span class="sign-text">{t('Funkce chatovacích aplikací se mění každý den.')}<br />{t('Když najdete nepřesnost, dejte nám prosím vědět na e-mail')} <a href="mailto:eva@aidetem.cz">eva@aidetem.cz</a>. {t('Děkujeme!')}</span>
       <span class="sign-odkazy"><a href={url('/o-webu/kontakt')}>{t('Kontakt')}</a><a href={url('/o-webu/kdo-za-tim-stoji')}>{t('Kdo za tím stojí')}</a><a href={url('/o-webu/ochrana-soukromi')}>{t('Ochrana soukromí')}</a><button type="button" class="odkaz-tlacitko" data-cookies-nastaveni>{t('Nastavení cookies')}</button><span>© {rok} {t('AI dětem, z. s.')}</span></span>
     </div>
   </div>
