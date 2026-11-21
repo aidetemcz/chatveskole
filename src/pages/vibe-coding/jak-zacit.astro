@@ -1,5 +1,5 @@
 ---
-// Jak začít s Vibe Codingem — šest kroků k první aplikaci, když se zaseknete, pravidla (sablona: vibe-coding-jak-zacit-pruvodce).
+// Jak začít s Vibe Codingem — šest kroků k první aplikaci, když se zaseknete (sablona: vibe-coding-jak-zacit-pruvodce).
 // Texty jsou v content/stranky/vibe-coding/jak-zacit.md (kroky = oddíly „## 1. …“), grafika stejná jako u stránky Projekty.
 import { getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
@@ -17,9 +17,6 @@ const bezTagu = (s: string) => s.replace(/<[^>]+>/g, '').trim();
 const velke = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 const polozky = (h: string) => [...(h.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').matchAll(/<li>\s*<strong>([\s\S]*?)<\/strong>\s*[—–-]?\s*([\s\S]*?)<\/li>/g)]
   .map(([, n, t]) => ({ nazev: bezTagu(n).replace(/[.:]$/, ''), text: t.trim() }));
-const body = (h: string) => [...(h.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').matchAll(/<li>([\s\S]*?)<\/li>/g)].map(([, t]) => t.trim());
-const odkazyZ = (h: string) => [...h.matchAll(/<p>\s*((?:<a [^>]*>[^<]*<\/a>\s*)+)<\/p>/g)]
-  .flatMap(([, p]) => [...p.matchAll(/<a [^>]*href="([^"]+)"[^>]*>([^<]*)<\/a>/g)].map(([, href, text]) => ({ href, text: text.trim() })));
 
 // Kroky: „## 1. Název“ → číslo, název, obsah; vzorový prompt (pre) a tabulka „Místo… | Napište…“ zvlášť
 const kroky = oddily.filter((o) => /^\d+\.\s/.test(o.nadpis)).map((o) => {
@@ -37,12 +34,7 @@ const kroky = oddily.filter((o) => /^\d+\.\s/.test(o.nadpis)).map((o) => {
 const zasek = najdi(/zasekn/i);
 const tipy = polozky(htmlOddilu(zasek));
 
-const pravidla = najdi(/Pravidla/i);
-const pravidlaHtml = htmlOddilu(pravidla);
-const pravidlaBody = body(pravidlaHtml);
-const odkazy = odkazyZ(pravidlaHtml.split(/<\/ul>/).pop() ?? '');
 
-const IKONA_STIT = '<path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"></path><path d="M9 12l2 2 4-4"></path>';
 const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
 ---
 <Base title={d.title} description={d.popis ?? undefined}>
@@ -120,36 +112,12 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
     </section>
   )}
 
-  {pravidla && (
-    <section class="band band--sky" aria-labelledby={pravidla.id || undefined}>
-      <div class="wrap dva-sloupce dva-sloupce--nadpis">
-        <h2 class="nadpis-sloupcu" id={pravidla.id || undefined}>{pravidla.nadpis}</h2>
-        <div class="stack" style="gap: 20px">
-          {odkazy.length > 0 && (
-            <div class="tlacitka">
-              {odkazy.map((o, i) => <a class:list={['btn', i === 0 ? 'btn--primary' : 'btn--outline btn--bila']} href={o.href}>{/[→←]\s*$/.test(o.text) ? o.text : `${o.text} →`}</a>)}
-            </div>
-          )}
-        </div>
-        <ul class="pravidla">
-          {pravidlaBody.map((p) => (
-            <li class="pravidlo">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={IKONA_STIT}></svg>
-              <span set:html={p} />
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
-  )}
 </Base>
 
 <style>
   h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
   .tlacitka { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
   .perex :global(p) { font-size: 1.15rem; }
-  .btn--bila { background: var(--panel); }
-  .dva-sloupce { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 48px; align-items: start; }
 
   .postup { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 22px; }
   .krok { border: 1px solid var(--sky); border-radius: 9px; padding: 26px 28px; background: var(--panel); display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 8px 16px; }
@@ -190,7 +158,4 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .karty .card h3 { font-size: 1.15rem; }
   .karty .card p { font-size: 0.93rem; line-height: 1.6; }
 
-  .pravidla { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
-  .pravidlo { background: var(--panel); border: 1px solid var(--sky); border-radius: 9px; padding: 18px 20px; display: flex; gap: 12px; align-items: flex-start; }
-  .pravidlo svg { flex: none; color: var(--accent); }
 </style>
