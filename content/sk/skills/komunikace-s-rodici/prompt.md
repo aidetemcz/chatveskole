@@ -1,86 +1,86 @@
 ---
-title: Komunikace s rodiči
+title: Komunikácia so zákonnými zástupcami
 typ: prompt
 ---
 
-## Základní prompt
+## Základný prompt
 
 ```text
-Vystupuj jako zkušený třídní vyučující, který se zákonnými zástupci jedná jako s partnery. Pomoz mi s komunikací se zákonnými zástupci.
+Vystupuj ako skúsený triedny vyučujúci, ktorý so zákonnými zástupcami jedná ako s partnermi. Pomôž mi s komunikáciou so zákonnými zástupcami.
 
-Typ zprávy: [například zpráva o pokroku žáka / informace o školním projektu / pozvánka na třídní schůzku / omluva]
-Kanál: [například e-mail / Bakaláři nebo EduPage / žákovská knížka / telefonát / osobní schůzka]
-Tón: [například přátelský, ale věcný]
-Podklady: [například moje poznámky o žákovi, popis projektu nebo datum, čas, místo a témata schůzky]
+Typ správy: [napríklad správa o pokroku žiaka / informácia o školskom projekte / pozvánka na triedne aktívum / ospravedlnenie]
+Kanál: [napríklad e-mail / EduPage alebo iný školský systém / žiacka knižka / telefonát / osobné stretnutie]
+Tón: [napríklad priateľský, ale vecný]
+Podklady: [napríklad moje poznámky o žiakovi, opis projektu alebo dátum, čas, miesto a témy stretnutia]
 
 Zásady:
-- Zákonný zástupce je partner. Popisuj chování a práci žáka, ne jeho osobnost.
-- Piš stručně a konkrétně, bez obecných frází a školních zkratek. E-mail má oslovení, 5–8 vět a podpis; zpráva do školního systému je kratší, bez oslovení a podpisu. U telefonátu nebo schůzky připrav body: jak začít, co říct, jak reagovat na emoce, jak skončit a co si zapsat.
-- Zpráva o pokroku: jen z mých poznámek, jeden souvislý odstavec (5–8 vět), konkrétní silné stránky a další krok, laskavě a pravdivě.
-- Informace o projektu: jeden odstavec a několik odrážek (o co jde, co žákům přinese, co potřebujeme od zákonných zástupců).
-- Pozvánka na třídní schůzku: datum, čas, místo, program v bodech a prostor pro témata zákonných zástupců.
-- Jména žáků nepoužívej; když nějaké napíšu, pokračuj s iniciálou a do textu dej [jméno žáka]. Údaje, které chybí, označ hranatými závorkami a nevymýšlej je.
-- Když situace potřebuje víc než jednu zprávu, navrhni nejdřív postup ve 2–4 krocích (co teď, koho zapojit, jakým kanálem). Upozorni mě, že u podezření na šikanu je třeba nejdřív zapojit metodika prevence nebo výchovného poradce a až potom zákonné zástupce a že podezření na zanedbávání nebo ohrožení dítěte nepatří do zprávy zákonným zástupcům, ale vedení školy a OSPOD.
+- Zákonný zástupca je partner. Opisuj správanie a prácu žiaka, nie jeho osobnosť.
+- Píš stručne a konkrétne, bez všeobecných fráz a školských skratiek. E-mail má oslovenie, 5–8 viet a podpis; správa do školského systému je kratšia, bez oslovenia a podpisu. Pri telefonáte alebo stretnutí priprav body: ako začať, čo povedať, ako reagovať na emócie, ako skončiť a čo si zapísať.
+- Správa o pokroku: len z mojich poznámok, jeden súvislý odsek (5–8 viet), konkrétne silné stránky a ďalší krok, láskavo a pravdivo.
+- Informácia o projekte: jeden odsek a niekoľko odrážok (o čo ide, čo žiakom prinesie, čo potrebujeme od zákonných zástupcov).
+- Pozvánka na triedne aktívum: dátum, čas, miesto, program v bodoch a priestor pre témy zákonných zástupcov.
+- Mená žiakov nepoužívaj; keď nejaké napíšem, pokračuj s iniciálou a do textu daj [meno žiaka]. Údaje, ktoré chýbajú, označ hranatými zátvorkami a nevymýšľaj ich.
+- Keď situácia potrebuje viac než jednu správu, navrhni najprv postup v 2–4 krokoch (čo teraz, koho zapojiť, akým kanálom). Upozorni ma, že pri podozrení na šikanovanie treba najprv zapojiť koordinátora prevencie alebo výchovného poradcu a až potom zákonných zástupcov a že podozrenie na zanedbávanie alebo ohrozenie dieťaťa nepatrí do správy zákonným zástupcom, ale vedeniu školy a orgánu sociálnoprávnej ochrany detí.
 
-Když ti chybí něco podstatného, nejdřív se zeptej (nejvýš na tři věci). Pak napiš hotový text bez komentářů a nabídni úpravu.
+Keď ti chýba niečo podstatné, najprv sa opýtaj (najviac na tri veci). Potom napíš hotový text bez komentárov a ponúkni úpravu.
 ```
 
-## Varianta: Odpověď na stížnost zákonného zástupce
+## Varianta: Odpoveď na sťažnosť zákonného zástupcu
 
 ```text
-Vystupuj jako zkušený třídní vyučující, který řeší problémy s respektem a porozuměním. Na základě e-mailu od zákonného zástupce a mého pohledu napiš stručnou odpověď: vstřícnou, věcnou a nekonfliktní.
+Vystupuj ako skúsený triedny vyučujúci, ktorý rieši problémy s rešpektom a porozumením. Na základe e-mailu od zákonného zástupcu a môjho pohľadu napíš stručnú odpoveď: ústretovú, vecnú a nekonfliktnú.
 
-E-mail od zákonného zástupce: [vložte text nebo jeho shrnutí, bez jmen]
-Můj pohled: [například žákyně je poslední měsíc nesoustředěná a třikrát nepřinesla úkol]
-Čeho chci dosáhnout: [například vysvětlit situaci a nabídnout schůzku / zdvořile odmítnout požadavek a vysvětlit proč]
-Kanál: [například e-mail]
+E-mail od zákonného zástupcu: [vložte text alebo jeho zhrnutie, bez mien]
+Môj pohľad: [napríklad žiačka je posledný mesiac nesústredená a trikrát nepriniesla úlohu]
+Čo chcem dosiahnuť: [napríklad vysvetliť situáciu a ponúknuť stretnutie / zdvorilo odmietnuť požiadavku a vysvetliť prečo]
+Kanál: [napríklad e-mail]
 
-Odpověď postav takto:
-1. Poděkuj za zprávu a vyjádři pochopení pro obavy zákonného zástupce.
-2. Stručně a věcně vysvětli situaci z pohledu školy. Popisuj chování, ne osobnost dítěte.
-3. Navrhni další krok nebo osobní setkání (termíny označ [doplním]).
-4. Zakonči partnersky — jde nám o společné dobro dítěte.
+Odpoveď postav takto:
+1. Poďakuj za správu a vyjadri pochopenie pre obavy zákonného zástupcu.
+2. Stručne a vecne vysvetli situáciu z pohľadu školy. Opisuj správanie, nie osobnosť dieťaťa.
+3. Navrhni ďalší krok alebo osobné stretnutie (termíny označ [doplním]).
+4. Ukonči partnersky — ide nám o spoločné dobro dieťaťa.
 
-Neobhajuj se, nemoralizuj a neslibuj nic, co nemůžu splnit. Pokud stížnost míří na kolegu nebo vedení, nebo může skončit právním sporem, upozorni mě, že je dobré ji předat řediteli. Po textu nabídni úpravu tónu nebo délky.
+Neobhajuj sa, nemoralizuj a nesľubuj nič, čo nemôžem splniť. Ak sťažnosť mieri na kolegu alebo vedenie, alebo môže skončiť právnym sporom, upozorni ma, že je dobré postúpiť ju riaditeľovi. Po texte ponúkni úpravu tónu alebo dĺžky.
 ```
 
-## Varianta: Pozvánka na školní akci
+## Varianta: Pozvánka na školské podujatie
 
 ```text
-Vystupuj jako zástupce ředitele, který má zkušenosti s organizací školních akcí a komunikací se zákonnými zástupci. Napiš pozvánku, která zákonné zástupce osloví a motivuje k účasti. Tón: [například přátelský a srdečný / neformální].
+Vystupuj ako zástupca riaditeľa, ktorý má skúsenosti s organizáciou školských podujatí a komunikáciou so zákonnými zástupcami. Napíš pozvánku, ktorá zákonných zástupcov osloví a motivuje k účasti. Tón: [napríklad priateľský a srdečný / neformálny].
 
-Název akce: [například Zahradní slavnost]
-Datum a čas: [například 12. června 2027 od 16 hodin]
-Místo: [například školní zahrada]
-Popis: [stručný popis nebo klíčová slova, například vystoupení tříd, opékání, dílny]
-Pro koho: [například rodiny žáků 1.–5. tříd]
-Doporučení: [například slunečníky a deky s sebou]
-Kontakt: [například kontaktní osoba nebo web školy]
+Názov podujatia: [napríklad Záhradná slávnosť]
+Dátum a čas: [napríklad 12. júna 2027 od 16.00 h]
+Miesto: [napríklad školská záhrada]
+Opis: [stručný opis alebo kľúčové slová, napríklad vystúpenia tried, opekanie, tvorivé dielne]
+Pre koho: [napríklad rodiny žiakov 1. – 5. ročníka]
+Odporúčanie: [napríklad slnečníky a deky so sebou]
+Kontakt: [napríklad kontaktná osoba alebo web školy]
 
-Připrav tyto varianty, každou pod vlastním nadpisem:
-1. E-mail — stručný a informativní, se všemi praktickými údaji.
-2. Plakát — titulek a několik krátkých řádků (co, kdy, kde, pro koho).
-3. Sociální sítě — krátký, poutavý text s výzvou k akci.
-4. Školní newsletter — delší, s důrazem na přínos akce pro děti a školní komunitu.
-5. Školní web — krátká informativní zpráva.
+Priprav tieto varianty, každú pod vlastným nadpisom:
+1. E-mail — stručný a informatívny, so všetkými praktickými údajmi.
+2. Plagát — titulok a niekoľko krátkych riadkov (čo, kedy, kde, pre koho).
+3. Sociálne siete — krátky, pútavý text s výzvou k akcii.
+4. Školský newsletter — dlhší, s dôrazom na prínos podujatia pre deti a školskú komunitu.
+5. Školský web — krátka informatívna správa.
 
-Nevymýšlej údaje, které jsem nezadal(a); chybějící označ hranatými závorkami.
+Nevymýšľaj údaje, ktoré som nezadal(a); chýbajúce označ hranatými zátvorkami.
 ```
 
-## Varianta: Vysvětlení využití AI ve výuce
+## Varianta: Vysvetlenie využitia AI vo vyučovaní
 
 ```text
-Vystupuj jako ředitel základní školy, který chce zákonným zástupcům otevřeně a srozumitelně představit, jak bude škola ve výuce využívat generativní umělou inteligenci. Piš věcně, ale přístupně i pro zákonné zástupce bez technického zázemí.
+Vystupuj ako riaditeľ základnej školy, ktorý chce zákonným zástupcom otvorene a zrozumiteľne predstaviť, ako bude škola vo vyučovaní využívať generatívnu umelú inteligenciu. Píš vecne, ale prístupne aj pre zákonných zástupcov bez technického zázemia.
 
-Ročníky a předměty: [například 8. a 9. ročník, český jazyk a informatika]
-Aplikace, které chceme používat: [například názvy konkrétních chatbotů a aplikací]
-Pravidla školy: [například mladší žáci pracují s AI jen společně s vyučujícím, žáci používají školní účty]
-Kontakt pro dotazy: [například e-mail zástupkyně ředitele]
+Ročníky a predmety: [napríklad 8. a 9. ročník, slovenský jazyk a informatika]
+Aplikácie, ktoré chceme používať: [napríklad názvy konkrétnych chatbotov a aplikácií]
+Pravidlá školy: [napríklad mladší žiaci pracujú s AI len spolu s vyučujúcim, žiaci používajú školské účty]
+Kontakt na otázky: [napríklad e-mail zástupkyne riaditeľa]
 
-Text má mít:
-1. Jeden ucelený odstavec: co je generativní AI, proč ji škola zařazuje a co přinese žákům (podpora tvořivosti, samostatnosti, učení vlastním tempem). Zdůrazni střízlivý přístup: AI použijeme tam, kde podporuje rozvoj žáků, ne nahodile. Uveď, že vyučujícím pomůže lépe přizpůsobit výuku potřebám jednotlivých žáků.
-2. Výčet aplikací: u každé jedna věta, k čemu ji použijeme, a věková hranice podle podmínek služby. Pokud si věkovou hranicí nejsi jistý, napiš [ověřit věkový limit] — nevymýšlej ji.
-3. Krátký závěr s nabídkou dotazů.
+Text má mať:
+1. Jeden ucelený odsek: čo je generatívna AI, prečo ju škola zaraďuje a čo prinesie žiakom (podpora tvorivosti, samostatnosti, učenia sa vlastným tempom). Zdôrazni triezvy prístup: AI použijeme tam, kde podporuje rozvoj žiakov, nie náhodne. Uveď, že vyučujúcim pomôže lepšie prispôsobiť vyučovanie potrebám jednotlivých žiakov.
+2. Zoznam aplikácií: pri každej jedna veta, na čo ju použijeme, a veková hranica podľa podmienok služby. Ak si vekovou hranicou nie si istý, napíš [overiť vekový limit] — nevymýšľaj ju.
+3. Krátky záver s ponukou otázok.
 ```
 
-**Tip:** Věkové limity před odesláním vždy ověřte, podmínky služeb se mění (přehled na chatveskole.cz/zaciname/vekove-limity-a-legislativa). Když nevíte, jestli zákonným zástupcům vůbec psát, popište chatbotovi situaci a požádejte ho nejdřív o postup, ne o text.
+**Tip:** Vekové limity pred odoslaním vždy overte, podmienky služieb sa menia (prehľad na chatveskole.cz/sk/zaciname/vekove-limity-a-legislativa). Keď neviete, či zákonným zástupcom vôbec písať, opíšte chatbotu situáciu a požiadajte ho najprv o postup, nie o text.

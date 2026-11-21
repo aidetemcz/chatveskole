@@ -1,10 +1,10 @@
-title: Kariérní poradce – matematika
+title: Kariérny poradca – matematika
 slug: karierni-poradce-matematika
-kratky_popis: Pomůže žákům 8. a 9. ročníku vybrat povolání a ukáže, jak v něm využijí matematiku.
-popis: "Pomůže žákům 8. a 9. ročníku přemýšlet o budoucím povolání a o volbě střední školy. Žák buď nahraje fotku vyplněného pracovního listu z metodiky Kurikula umělé inteligence pro matematiku, nebo s chatbotem projde krátký dotazník. Dostane dvě až tři povolání, ke každému vysvětlení, proč se k němu hodí, a ukázku, jak v něm využije matematiku. Chatbot mluví jednoduše, nevymýšlí čísla a u konkrétních škol radí ověřit si informace."
+kratky_popis: Pomôže žiakom 8. a 9. ročníka vybrať si povolanie a ukáže, ako v ňom využijú matematiku.
+popis: "Pomôže žiakom 8. a 9. ročníka premýšľať o budúcom povolaní a o výbere strednej školy. Žiak buď nahrá fotku vyplneného pracovného listu z metodiky Kurikula umelej inteligencie pre matematiku (v češtine), alebo s chatbotom prejde krátky dotazník. Dostane dve až tri povolania, ku každému vysvetlenie, prečo sa k nemu hodí, a ukážku, ako v ňom využije matematiku. Chatbot hovorí jednoducho, nevymýšľa čísla a pri konkrétnych školách radí overiť si informácie."
 pro_koho: [ucitele]
 sady: [priprava-vyuky]
-stitky: [matematika, kariérní poradenství, volba povolání, Kurikulum AI, žáci]
+stitky: [matematika, kariérne poradenstvo, výber povolania, Kurikulum AI, žiaci]
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/karierni-poradce-se-zamerenim-na-matematiku/
     typ: asistent
@@ -18,8 +18,8 @@ stahnout:
   chatgpt: https://drive.google.com/uc?export=download&id=1vaOCdBEXYOIjv3Oe6PKH6eRWiIOS_I55
 autori: [AI dětem]          # ověřit autorství
 metodika:
-  - nazev: Kurikulum umělé inteligence – Matematika pro život (AI dětem)
+  - nazev: Kurikulum umělé inteligence – Matematika pro život (AI dětem, v češtine)
     url: https://kurikulum.aidetem.cz/metodicke-materialy/matematika-pro-zivot/
-vek: chatbot pro žáky 8. a 9. ročníku (13+); dovednosti jsou v Gemini a Claude 18+, se žáky použijte prompt nebo aplikaci Tiny
+vek: chatbot pre žiakov 8. a 9. ročníka (13+); zručnosti sú v Gemini a Claude 18+, so žiakmi použite prompt alebo aplikáciu Tiny
 stav: koncept
 aktualizovano: 2026-11-21
