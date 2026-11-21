@@ -31,6 +31,4 @@ Poté soubor uložte a přepište jeho příponu z .TXT na .STL. Takto pak vypad
 
 ![](/archiv/uploads/2023/08/kostka-1024x550.jpg)
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Dnes už i jako aplikace:** podívejte se, jak podobnou vizualizaci postavit přímo v chatbotu — [Vibe Coding: materiály do výuky](/vibe-coding/materialy-do-vyuky).

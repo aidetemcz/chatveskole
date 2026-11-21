@@ -19,6 +19,4 @@ Snažím se lépe poznat historickou postavu českého krále Karla IV. a porozu
 
 Textové hry pomohou zábavnou formou porozumět učivu. Chcete-li, aby hra byla zábavnější a akčnější, uveďte například „dobrodružná a kreativní textová hra“ nebo „akční textová hra“.
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Aktivity s chatbotem](/skills/aktivity-s-chatbotem), kterou si můžete nainstalovat do svého chatbota.

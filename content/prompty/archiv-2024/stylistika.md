@@ -23,6 +23,4 @@ a případně text přepiš do lepší podoby.
 
 Hranaté závorky nahraďte vlastním textem.
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Jazykový korektor](/skills/jazykovy-korektor), kterou si můžete nainstalovat do svého chatbota.

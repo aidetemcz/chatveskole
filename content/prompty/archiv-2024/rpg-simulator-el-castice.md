@@ -20,6 +20,4 @@ Představ sebe – proton, zmiň se velmi stručně o své funkci. Nabídni žá
 
 RPG je zkratka z anglického role-playing game, v češtině se často setkáte s označením „hra na hrdiny“. Jako RPG označujeme hry, ve kterých hrajete za fiktivní postavu (charakter). Právě okolo postav, do kterých se vtělíte, se točí celá hra.
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Aktivity s chatbotem](/skills/aktivity-s-chatbotem), kterou si můžete nainstalovat do svého chatbota.

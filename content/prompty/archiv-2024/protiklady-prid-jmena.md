@@ -19,6 +19,4 @@ Vytvoř tabulku do pracovního listu o 10 řádcích a 2 sloupcích. V prvním s
 
 V navazujícím promptu vyzvěte jazykový model, aby odstranil slova v pravém sloupci. Poté tabulku zkopírujte a vložte do textového editoru, kde ji můžete dále upravovat. Vhodné nejen pro výuku jazyků. Vložte prompt do jazykového modelu:
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.

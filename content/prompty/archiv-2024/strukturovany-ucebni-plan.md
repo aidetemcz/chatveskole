@@ -23,6 +23,4 @@ Vložte prompt do jazykového modelu.
 
 Následně vyzvěte nástroj aby odstranil věty v prostředním sloupci a nechal prostor na doplnění. Žáci poté v pracovním listu doplní empatické reakce v angličtině (nebo jiném jazyce).
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Didaktický rádce](/skills/didakticky-radce), kterou si můžete nainstalovat do svého chatbota.

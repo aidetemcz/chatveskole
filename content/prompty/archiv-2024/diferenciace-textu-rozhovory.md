@@ -15,6 +15,4 @@ stav: prevzato
 Jsi vyučující německého jazyka v 9. třídě základní školy. Vygeneruj mi dva rozhovory v délce 150 slov na téma Ferien. Jeden v přítomném čase a druhý v minulém čase. Piš německy a používej co nejednodušší slovní zásobu.
 ```
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Úprava materiálu](/skills/uprava-materialu), kterou si můžete nainstalovat do svého chatbota.

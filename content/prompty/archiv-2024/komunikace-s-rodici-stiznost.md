@@ -15,6 +15,4 @@ stav: prevzato
 Jsi vyučující anglického jazyka na základní škole. Rodiče si stěžují na kvalitu učebnic. Napiš [slušnou, ale odmítavou] reakci. Odpověď zdůvodni.
 ```
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici), kterou si můžete nainstalovat do svého chatbota.

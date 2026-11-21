@@ -23,6 +23,4 @@ Zkopírujte kód pomocí příkazu „Copy code“ a přejděte  do aplikace [Me
 
 Můžete vyzkoušet generovat i další diagramy.
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Dnes už i jako aplikace:** podívejte se, jak podobnou vizualizaci postavit přímo v chatbotu — [Vibe Coding: materiály do výuky](/vibe-coding/materialy-do-vyuky).

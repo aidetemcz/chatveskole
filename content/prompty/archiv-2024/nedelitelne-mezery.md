@@ -26,6 +26,4 @@ Půjde to?
 
 V psaném textu považujeme za chybu, když jsou jednoznakové předložky na konci řádku. Tímto způsobem si můžeme urychlit úpravu textů, které chceme vkládat na web ve formátu html.
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Jazykový korektor](/skills/jazykovy-korektor), kterou si můžete nainstalovat do svého chatbota.

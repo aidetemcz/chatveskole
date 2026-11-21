@@ -19,6 +19,4 @@ Zahraj si se mnou piškvorky v tabulce o 3 řádcích a 3 sloupcích. Začíná�
 
 Je to překvapivé, ale jazykové modely umí piškvorky! Samozřejmě že jsou na to lepší aplikace, ale… Vložte prompt do jazykového modelu:
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Aktivity s chatbotem](/skills/aktivity-s-chatbotem), kterou si můžete nainstalovat do svého chatbota.

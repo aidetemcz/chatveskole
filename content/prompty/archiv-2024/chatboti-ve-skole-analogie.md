@@ -19,6 +19,4 @@ Jsi psycholog a expert na respektující výchovu a rodičovství. Pomoz mi vytv
 
 Chatbot jako osobní kouč.
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Učitelský mentor](/skills/ucitelsky-mentor), kterou si můžete nainstalovat do svého chatbota.
