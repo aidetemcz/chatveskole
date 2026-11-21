@@ -1,5 +1,5 @@
 ---
-title: "Pozvánka na školní akci"
+title: "Pozvánka na školské podujatie"
 slug: "pozvanka-na-skolni-akci"
 skupina: pedagogove
 kategorie: ["Komunikace s rodiči"]
@@ -12,43 +12,43 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zástupce ředitele základní školy se zkušenostmi s organizací školních akcí a komunikací se zákonnými zástupci. Napiš pozvánku, která zákonné zástupce osloví a motivuje je přijít.
+Vystupuj ako zástupca riaditeľa základnej školy so skúsenosťami s organizáciou školských podujatí a komunikáciou so zákonnými zástupcami. Napíš pozvánku, ktorá zákonných zástupcov osloví a motivuje ich prísť.
 
-Název akce: [například Zahradní slavnost]
-Datum a čas: [například 10. června od 16 do 19 hodin]
-Místo: [například školní zahrada, vchod z ulice U Parku]
-Co se bude dít: [stručný popis nebo klíčová slova, například vystoupení tříd, opékání, dílny pro děti]
-Pro koho: [například rodiny žáků 1.–5. tříd i s mladšími sourozenci]
-Co s sebou, cena, přihlášení: [například deka, vstup zdarma; nebo řádek smažte]
-Kontakt: [například e-mail zástupkyně ředitele nebo web školy]
-Kanály: [e-mail / plakát / sociální sítě / školní newsletter / web školy – nechte jen ty, které potřebujete]
-Tón: [například přátelský a srdečný]
+Názov podujatia: [napríklad Záhradná slávnosť]
+Dátum a čas: [napríklad 10. júna od 16. do 19. hodiny]
+Miesto: [napríklad školská záhrada, vchod z Parkovej ulice]
+Čo sa bude diať: [stručný opis alebo kľúčové slová, napríklad vystúpenia tried, opekačka, tvorivé dielne pre deti]
+Pre koho: [napríklad rodiny žiakov 1. – 4. ročníka aj s mladšími súrodencami]
+Čo so sebou, cena, prihlásenie: [napríklad deka, vstup zadarmo; alebo riadok vymažte]
+Kontakt: [napríklad e-mail zástupkyne riaditeľa alebo web školy]
+Kanály: [e-mail / plagát / sociálne siete / školský newsletter / web školy – nechajte len tie, ktoré potrebujete]
+Tón: [napríklad priateľský a srdečný]
 
-Pro každý zvolený kanál napiš samostatný text pod vlastním nadpisem:
-- E-mail: oslovení, 4–6 vět, všechny praktické údaje, podpis [jméno]. Navrhni i předmět.
-- Plakát: výrazný titulek a 4–6 krátkých řádků (co, kdy, kde, pro koho, kontakt).
-- Sociální sítě: 2–4 věty s výzvou k akci, nejvýš 3 emotikony.
-- Školní newsletter: delší text, který vysvětlí, co akce přinese dětem a školní komunitě.
-- Web školy: krátká informativní zpráva.
+Pre každý zvolený kanál napíš samostatný text pod vlastným nadpisom:
+- E-mail: oslovenie, 4 – 6 viet, všetky praktické údaje, podpis [meno]. Navrhni aj predmet.
+- Plagát: výrazný titulok a 4 – 6 krátkych riadkov (čo, kedy, kde, pre koho, kontakt).
+- Sociálne siete: 2 – 4 vety s výzvou na akciu, najviac 3 emotikony.
+- Školský newsletter: dlhší text, ktorý vysvetlí, čo podujatie prinesie deťom a školskej komunite.
+- Web školy: krátka informatívna správa.
 
-Pravidla:
-- Datum, čas a místo musí být ve všech verzích stejné a úplné.
-- Den v týdnu uveď, jen když ho napíšu já. Sám ho k datu nepočítej.
-- Nevymýšlej program, ceny ani jiné údaje, které jsem nezadal(a). Chybějící označ hranatými závorkami.
-- Do textů pro sociální sítě a web nepiš jména dětí.
-- Piš srdečně, ale věcně, bez přehnaných superlativů.
+Pravidlá:
+- Dátum, čas a miesto musia byť vo všetkých verziách rovnaké a úplné.
+- Deň v týždni uveď, len keď ho napíšem ja. Sám ho k dátumu nepočítaj.
+- Nevymýšľaj program, ceny ani iné údaje, ktoré som nezadal(a). Chýbajúce označ hranatými zátvorkami.
+- Do textov pre sociálne siete a web nepíš mená detí.
+- Píš srdečne, ale vecne, bez prehnaných superlatívov.
 
-Na konci nabídni úpravu tónu, zkrácení nebo verzi pro další kanál.
+Na konci ponúkni úpravu tónu, skrátenie alebo verziu pre ďalší kanál.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vám napíše pozvánku na školní akci rovnou pro několik kanálů: e-mail, plakát, sociální sítě, školní newsletter a web. Každá verze odpovídá svému kanálu, ale všechny mají stejné a úplné praktické údaje.
+Prompt vám napíše pozvánku na školské podujatie rovno pre niekoľko kanálov: e-mail, plagát, sociálne siete, školský newsletter a web. Každá verzia zodpovedá svojmu kanálu, ale všetky majú rovnaké a úplné praktické údaje.
 
-Chatbot nedomýšlí program, ceny ani den v týdnu. Co chybí, označí hranatými závorkami, abyste to před zveřejněním doplnili.
+Chatbot nedomýšľa program, ceny ani deň v týždni. Čo chýba, označí hranatými zátvorkami, aby ste to pred zverejnením doplnili.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte údaje o akci. U řádku Kanály nechte jen ty, které opravdu použijete, výstup bude kratší a přehlednější. Před zveřejněním zkontrolujte datum, čas a místo ve všech verzích.
+Skopírujte prompt do chatbota a doplňte údaje o podujatí. Pri riadku Kanály nechajte len tie, ktoré naozaj použijete, výstup bude kratší a prehľadnejší. Pred zverejnením skontrolujte dátum, čas a miesto vo všetkých verziách.
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Komunikácia so zákonnými zástupcami](/skills/komunikace-s-rodici), ktorú si môžete nainštalovať do svojho chatbota.

@@ -1,5 +1,5 @@
 ---
-title: "Integrace digitálního wellbeingu"
+title: "Integrácia digitálneho wellbeingu"
 slug: "integrace-digitalniho-wellbeingu"
 skupina: vedeni
 kategorie: ["Tvorba strategických dokumentů"]
@@ -12,52 +12,52 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený školní stratég zaměřený na digitální wellbeing žáků i zaměstnanců. Navrhni strategii digitálního wellbeingu naší školy.
+Vystupuj ako skúsený školský stratég zameraný na digitálny wellbeing žiakov aj zamestnancov. Navrhni stratégiu digitálneho wellbeingu našej školy.
 
-Škola: [například ZŠ, 350 žáků, 26 pedagogů]
-Pro koho strategie je: [žáci / žáci i zaměstnanci]
-Co už děláme: [například pravidla pro mobily, preventivní program, třídnické hodiny]
-Co vidíme jako problém: [například nesoustředěnost, konflikty v třídních skupinách na sociálních sítích, vyučující odpovídají na zprávy večer]
-Data, která máme: [například dotazník klimatu, poznatky metodika prevence; nebo řádek smažte]
-Zdroje: [například metodik prevence, školní psycholožka, rozpočet na programy]
-Priority vedení: [například spánek a obrazovky, kyberšikana, vztah dětí k AI chatbotům]
-Na jak dlouho strategie platí: [například 3 roky]
+Škola: [napríklad ZŠ, 350 žiakov, 26 pedagógov]
+Pre koho je stratégia: [žiaci / žiaci aj zamestnanci]
+Čo už robíme: [napríklad pravidlá pre mobily, preventívny program, triednické hodiny]
+Čo vidíme ako problém: [napríklad nesústredenosť, konflikty v triednych skupinách na sociálnych sieťach, vyučujúci odpovedajú na správy večer]
+Údaje, ktoré máme: [napríklad dotazník klímy, poznatky koordinátora prevencie; alebo riadok vymažte]
+Zdroje: [napríklad koordinátor prevencie, školská psychologička, rozpočet na programy]
+Priority vedenia: [napríklad spánok a obrazovky, kyberšikanovanie, vzťah detí k AI chatbotom]
+Na ako dlho stratégia platí: [napríklad 3 roky]
 
-Pravidla:
-1. Vycházej z Národní koncepce digitálního wellbeingu (NPI ČR) a pracuj se všemi pěti oblastmi: fyzickou (pohyb, spánek, denní režim), kognitivní (pozornost, kritické a tvůrčí myšlení, práce s informacemi), emoční (sebepojetí, zvládání emocí, odolnost), sociální (vztahy, respekt a spolupráce online i offline) a duchovní (hodnoty, etika, smysl).
-2. Cílem je rovnováha a vědomé používání technologií, ne zákaz. Piš podpůrně, bez moralizování a strašení.
-3. Opatření rozděl na tři úrovně: pro všechny (klima školy, pravidla, informace pro zákonné zástupce), pro třídy (pravidelné aktivity v třídnických hodinách a ve výuce, ne jednorázové přednášky) a pro žáky, kteří potřebují víc (školní poradenské pracoviště, odborná pomoc mimo školu). Navrhni, jak se žáci i zákonní zástupci dozvědí, na koho se obrátit.
-4. Pokud to odpovídá situaci školy, zahrň i nová témata: jak se děti svěřují AI chatbotům nebo je berou jako kamarády a jak se šíří upravené fotky a deepfake videa spolužáků.
-5. Když se strategie týká zaměstnanců, řeš digitální únavu a dostupnost mimo pracovní dobu (například pravidla, kdy se odpovídá zákonným zástupcům).
-6. Navrhni, jak do tvorby a zavádění zapojit žáky (žákovský parlament, třídní dohody) a zákonné zástupce.
-7. Nejvýš 5 priorit. Každé opatření má nositele (funkci, ne jméno), termín a výstup. Výchozí stav, který jsem nezadal(a), nevymýšlej, napiš [doplnit].
-8. Pracuj obecně, bez jmen a popisů konkrétních žáků. Pokud z mého popisu plyne ohrožení konkrétního dítěte, upozorni mě, že to patří hned metodikovi prevence nebo školnímu poradenskému pracovišti, ne do strategie.
+Pravidlá:
+1. Pracuj so všetkými piatimi oblasťami digitálneho wellbeingu (podľa českej Národnej koncepcie digitálneho wellbeingu, NPI ČR): fyzickou (pohyb, spánok, denný režim), kognitívnou (pozornosť, kritické a tvorivé myslenie, práca s informáciami), emocionálnou (sebaponímanie, zvládanie emócií, odolnosť), sociálnou (vzťahy, rešpekt a spolupráca online aj offline) a duchovnou (hodnoty, etika, zmysel).
+2. Cieľom je rovnováha a vedomé používanie technológií, nie zákaz. Píš podporne, bez moralizovania a strašenia.
+3. Opatrenia rozdeľ na tri úrovne: pre všetkých (klíma školy, pravidlá, informácie pre zákonných zástupcov), pre triedy (pravidelné aktivity na triednických hodinách a vo vyučovaní, nie jednorazové prednášky) a pre žiakov, ktorí potrebujú viac (školský podporný tím, odborná pomoc mimo školy). Navrhni, ako sa žiaci aj zákonní zástupcovia dozvedia, na koho sa obrátiť.
+4. Ak to zodpovedá situácii školy, zahrň aj nové témy: ako sa deti zdôverujú AI chatbotom alebo ich berú ako kamarátov a ako sa šíria upravené fotky a deepfake videá spolužiakov.
+5. Keď sa stratégia týka zamestnancov, rieš digitálnu únavu a dostupnosť mimo pracovného času (napríklad pravidlá, kedy sa odpovedá zákonným zástupcom).
+6. Navrhni, ako do tvorby a zavádzania zapojiť žiakov (žiacky parlament, triedne dohody) a zákonných zástupcov.
+7. Najviac 5 priorít. Každé opatrenie má nositeľa (funkciu, nie meno), termín a výstup. Východiskový stav, ktorý som nezadal(a), nevymýšľaj, napíš [doplniť].
+8. Pracuj všeobecne, bez mien a opisov konkrétnych žiakov. Ak z môjho opisu vyplýva ohrozenie konkrétneho dieťaťa, upozorni ma, že to patrí hneď koordinátorovi prevencie alebo školskému podpornému tímu, nie do stratégie.
 
-Výstup: jeden dokument na 2–4 strany s nadpisy, krátkými odstavci a tabulkami:
-1) vize a dlouhodobé cíle,
-2) současný stav: tabulka pět oblastí × silné stránky, slabé stránky, příležitosti, hrozby,
+Výstup: jeden dokument na 2 – 4 strany s nadpismi, krátkymi odsekmi a tabuľkami:
+1) vízia a dlhodobé ciele,
+2) súčasný stav: tabuľka päť oblastí × silné stránky, slabé stránky, príležitosti, hrozby,
 3) priority,
-4) opatření po úrovních: tabulka Opatření – Úroveň – Kdo odpovídá – Termín,
-5) rozvoj pedagogů,
-6) zapojení žáků a zákonných zástupců,
-7) indikátory: tabulka Indikátor – Výchozí stav – Cílový stav – Jak a kdy měříme,
-8) harmonogram po pololetích,
-9) rizika a jak jim předejdeme (například přetížení vyučujících, jednorázové akce bez návaznosti),
-10) předpoklady, se kterými jsi pracoval(a).
+4) opatrenia po úrovniach: tabuľka Opatrenie – Úroveň – Kto zodpovedá – Termín,
+5) rozvoj pedagógov,
+6) zapojenie žiakov a zákonných zástupcov,
+7) indikátory: tabuľka Indikátor – Východiskový stav – Cieľový stav – Ako a kedy meriame,
+8) harmonogram po polrokoch,
+9) riziká a ako im predídeme (napríklad preťaženie vyučujúcich, jednorazové akcie bez nadväznosti),
+10) predpoklady, s ktorými si pracoval(a).
 
-Když chybí typ školy nebo popis situace, nejdřív se mě zeptej (nejvýš 5 otázek najednou). Na konci nabídni: 1) zkrácenou verzi pro zákonné zástupce, 2) náměty na pět třídnických hodin, 3) rozpracování jedné priority do detailu.
+Keď chýba typ školy alebo opis situácie, najprv sa ma opýtaj (najviac 5 otázok naraz). Na konci ponúkni: 1) skrátenú verziu pre zákonných zástupcov, 2) námety na päť triednických hodín, 3) rozpracovanie jednej priority do detailu.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vám pomůže sestavit strategii digitálního wellbeingu žáků i zaměstnanců. Vychází z [Národní koncepce digitálního wellbeingu](https://digitalizace.rvp.cz/napric-predmety/digitalni-wellbeing) (NPI ČR) a pracuje s jejími pěti oblastmi: fyzickou, kognitivní, emoční, sociální a duchovní. Cílem je rovnováha, ne zákaz technologií.
+Prompt vám pomôže zostaviť stratégiu digitálneho wellbeingu žiakov aj zamestnancov. Pracuje s piatimi oblasťami digitálneho wellbeingu – fyzickou, kognitívnou, emocionálnou, sociálnou a duchovnou – tak, ako ich opisuje česká [Národní koncepce digitálního wellbeingu](https://digitalizace.rvp.cz/napric-predmety/digitalni-wellbeing) (NPI ČR, v češtine). Cieľom je rovnováha, nie zákaz technológií.
 
-Opatření jsou rozdělená na tři úrovně: co dostanou všichni, co se děje ve třídách a kam se obrátí ti, kdo potřebují víc. Strategie myslí i na nová témata, například svěřování se AI chatbotům nebo deepfake videa spolužáků, a na digitální únavu vyučujících.
+Opatrenia sú rozdelené na tri úrovne: čo dostanú všetci, čo sa deje v triedach a kam sa obrátia tí, ktorí potrebujú viac. Stratégia myslí aj na nové témy, napríklad zdôverovanie sa AI chatbotom alebo deepfake videá spolužiakov, a na digitálnu únavu vyučujúcich.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte údaje o škole. Pokud máte data (dotazník klimatu, poznatky metodika prevence), uveďte je, strategie bude přesnější. O žácích pište jen obecně, bez jmen a konkrétních příběhů.
+Skopírujte prompt do chatbota a doplňte údaje o škole. Ak máte údaje (dotazník klímy, poznatky koordinátora prevencie), uveďte ich, stratégia bude presnejšia. O žiakoch píšte len všeobecne, bez mien a konkrétnych príbehov.
 
-Pravidla pro mobily a sociální sítě připravíte s promptem [Tvorba školních pravidel](/funkce/prompty/tvorba-skolnich-pravidel), práci s klimatem třídy podpoří dovednost [Lepší třídní klima](/skills/lepsi-tridni-klima).
+Pravidlá pre mobily a sociálne siete pripravíte s promptom [Tvorba školských pravidiel](/funkce/prompty/tvorba-skolnich-pravidel), prácu s klímou triedy podporí zručnosť [Lepšia triedna klíma](/skills/lepsi-tridni-klima).
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Strategické dokumenty](/skills/strategicke-dokumenty), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Strategické dokumenty](/skills/strategicke-dokumenty), ktorú si môžete nainštalovať do svojho chatbota.

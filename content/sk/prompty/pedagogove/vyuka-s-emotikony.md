@@ -1,5 +1,5 @@
 ---
-title: "Výuka s emotikony"
+title: "Vyučovanie s emotikonmi"
 slug: "vyuka-s-emotikony"
 skupina: pedagogove
 kategorie: ["Tvorba materiálů do výuky"]
@@ -12,41 +12,41 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako kreativní tvůrce výukových materiálů. Vytvoř pracovní list, ve kterém žáci podle emotikonů rekonstruují děj, příběh nebo jev.
+Vystupuj ako kreatívny tvorca vyučovacích materiálov. Vytvor pracovný list, v ktorom žiaci podľa emotikonov rekonštruujú dej, príbeh alebo jav.
 
-Předmět a téma: [například dějepis – bitva na Bílé hoře / přírodopis – koloběh vody / literatura – pohádka O Smolíčkovi]
-Ročník: [například 4. ročník ZŠ]
-Cíl: [například žák převypráví příčiny a průběh události ve správném pořadí]
-Text: [vložte text, nebo napište „napiš krátký věcně správný text do 120 slov“]
-Typ úlohy: [emotikony místo klíčových slov v textu / řada emotikonů, ke které žáci napíšou příběh / přiřaď události k emotikonům]
-Počet emotikonů: [například 10]
+Predmet a téma: [napríklad dejepis – bitka pri Moháči / prírodoveda – kolobeh vody / literatúra – rozprávka Soľ nad zlato]
+Ročník: [napríklad 4. ročník ZŠ]
+Cieľ: [napríklad žiak prerozpráva príčiny a priebeh udalosti v správnom poradí]
+Text: [vložte text, alebo napíšte „napíš krátky vecne správny text do 120 slov“]
+Typ úlohy: [emotikony namiesto kľúčových slov v texte / rad emotikonov, ku ktorému žiaci napíšu príbeh / priraď udalosti k emotikonom]
+Počet emotikonov: [napríklad 10]
 
-Pravidla:
-1. Emotikony nahrazují klíčová slova a události, které nesou učivo, ne výplňová slova. 8–15 emotikonů.
-2. Každý emotikon musí mít v daném textu jasný význam. Stejný emotikon nepoužívej pro dvě různé věci.
-3. Žákovská verze nesmí obsahovat legendu s významy. Legenda patří do řešení. Žákům ji dej jen jako nápovědu na konci listu, a to oddělenou a označenou „Nápověda“.
-4. Když text píšeš sám, musí být věcně správný. Fakta, která si mám ověřit, vypiš zvlášť.
-5. Emotikony se v některých aplikacích a při tisku nezobrazí. Proto přidej i záložní verzi, kde je u každého emotikonu v hranatých závorkách stručný popis obrázku (ne význam).
+Pravidlá:
+1. Emotikony nahrádzajú kľúčové slová a udalosti, ktoré nesú učivo, nie výplňové slová. 8 – 15 emotikonov.
+2. Každý emotikon musí mať v danom texte jasný význam. Rovnaký emotikon nepoužívaj na dve rôzne veci.
+3. Žiacka verzia nesmie obsahovať legendu s významami. Legenda patrí do riešenia. Žiakom ju daj len ako nápovedu na konci listu, a to oddelenú a označenú „Nápoveda“.
+4. Keď text píšeš sám, musí byť vecne správny. Fakty, ktoré si mám overiť, vypíš zvlášť.
+5. Emotikony sa v niektorých aplikáciách a pri tlači nezobrazia. Preto pridaj aj záložnú verziu, kde je pri každom emotikone v hranatých zátvorkách stručný opis obrázka (nie význam).
 
-Výstup ve čtyřech částech:
-1) PRO ŽÁKY: název, řádek „Jméno: __________“, instrukce v jedné větě a úloha.
-2) NÁPOVĚDA (k odstřižení): emotikony s významem.
-3) ŘEŠENÍ: původní text, nebo vzorová odpověď.
-4) POZNÁMKA PRO VYUČUJÍCÍ: 2–3 věty, jak úlohu použít (motivace, opakování, práce ve dvojicích) a jak ověřit, že žáci učivu rozumějí, ne jen hádají obrázky.
+Výstup v štyroch častiach:
+1) PRE ŽIAKOV: názov, riadok „Meno: __________“, inštrukcia v jednej vete a úloha.
+2) NÁPOVEDA (na odstrihnutie): emotikony s významom.
+3) RIEŠENIE: pôvodný text, alebo vzorová odpoveď.
+4) POZNÁMKA PRE VYUČUJÚCICH: 2 – 3 vety, ako úlohu použiť (motivácia, opakovanie, práca vo dvojiciach) a ako overiť, že žiaci učivu rozumejú, nie len hádajú obrázky.
 
-Když chybí téma nebo ročník, nejdřív se mě zeptej.
+Keď chýba téma alebo ročník, najprv sa ma opýtaj.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vytvoří hravý pracovní list, ve kterém žáci podle emotikonů rekonstruují děj, příběh nebo přírodní jev. Emotikony nahrazují klíčová slova a události, které nesou učivo, takže žáci při luštění opakují to podstatné.
+Prompt vytvorí hravý pracovný list, v ktorom žiaci podľa emotikonov rekonštruujú dej, príbeh alebo prírodný jav. Emotikony nahrádzajú kľúčové slová a udalosti, ktoré nesú učivo, takže žiaci pri lúštení opakujú to podstatné.
 
-Legenda s významy emotikonů je až v řešení a v oddělené nápovědě, aby žákům neprozradila odpovědi. Protože se emotikony v některých aplikacích a při tisku nezobrazí, dostanete i záložní verzi s popisem obrázků.
+Legenda s významami emotikonov je až v riešení a v oddelenej nápovede, aby žiakom neprezradila odpovede. Keďže sa emotikony v niektorých aplikáciách a pri tlači nezobrazia, dostanete aj záložnú verziu s opisom obrázkov.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte předmět, téma, ročník a cíl. Vložte vlastní text, nebo nechte chatbota napsat krátký text. Ten si před tiskem zkontrolujte. Vytištěný list si prohlédněte, jestli se emotikony zobrazily. Pokud ne, použijte záložní verzi.
+Skopírujte prompt do chatbota a doplňte predmet, tému, ročník a cieľ. Vložte vlastný text, alebo nechajte chatbota napísať krátky text. Ten si pred tlačou skontrolujte. Vytlačený list si prezrite, či sa emotikony zobrazili. Ak nie, použite záložnú verziu.
 
-Úloha se hodí jako motivace na začátek hodiny, na opakování nebo pro práci ve dvojicích.
+Úloha sa hodí ako motivácia na začiatok hodiny, na opakovanie alebo na prácu vo dvojiciach.
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Pracovné listy](/skills/pracovni-listy), ktorú si môžete nainštalovať do svojho chatbota.

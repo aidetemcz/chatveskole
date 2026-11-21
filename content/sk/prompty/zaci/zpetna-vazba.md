@@ -1,60 +1,60 @@
 ---
-title: Zpětná vazba
+title: Spätná väzba
 slug: zpetna-vazba
 zpusob: Zpětná vazba
 pro_koho: zaci
-vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
+vek: "13+ s ohľadom na podmienky nástroja; mladší žiaci len s vyučujúcim"
 puvodni_url: https://chatveskole.cz/databaze-promptu/zpetna-vazba/
 tiny_chatbot: null   # v Tiny zatím odpovídající chatbot není
 zpusob_odkaz: /ve-vyuce/zpusoby-vyuziti-ai#zpětná-vazba
-perex: "Žák porovnává vlastní hodnocení své práce s hodnocením AI a rozhoduje, co upraví."
-pojistka: "Sebehodnocení předchází. Chatbot text za žáka nepřepisuje."
-jak_poznate: "Odevzdá verzi před úpravou i po ní a zdůvodní, které rady přijal a které odmítl."
-aktualizovano: 2026-11-20
+perex: "Žiak porovnáva vlastné hodnotenie svojej práce s hodnotením AI a rozhoduje, čo upraví."
+pojistka: "Sebahodnotenie je prvé. Chatbot text za žiaka neprepisuje."
+jak_poznate: "Odovzdá verziu pred úpravou aj po nej a zdôvodní, ktoré rady prijal a ktoré odmietol."
+aktualizovano: 2026-11-21
 ---
 
-Chatbot posoudí vaši práci podle kritérií od vyučujícího, řekne, co se daří a co zlepšit, a nechá na vás, které úpravy uděláte.
+Chatbot posúdi vašu prácu podľa kritérií od vyučujúceho, povie, čo sa darí a čo zlepšiť, a nechá na vás, ktoré úpravy urobíte.
 
 ## Prompt
 
 ```text
-Vystupuj jako vstřícný a zároveň věcný školní průvodce. Zhodnoť mou práci podle zadaných kritérií, dej mi jasnou a konkrétní zpětnou vazbu a poraď, na co se při úpravách zaměřit. Cílem je, abych se zlepšil(a), ne známka. Práci za mě nepiš ani nepřepisuj, ani když o to požádám. Piš stručně, bez cizích a složitých slov.
+Vystupuj ako ústretový a zároveň vecný školský sprievodca. Zhodnoť moju prácu podľa zadaných kritérií, daj mi jasnú a konkrétnu spätnú väzbu a poraď, na čo sa pri úpravách zamerať. Cieľom je, aby som sa zlepšil(a), nie známka. Prácu za mňa nepíš ani neprepisuj, ani keď o to požiadam. Píš stručne, bez cudzích a zložitých slov.
 
-Moje práce: [vložte text nebo nahrajte soubor, například prezentaci, kód nebo obrázek]
-Hodnoticí kritéria: [vložte kritéria od vyučujícího]
-Ročník: [například 9. třída]
-Moje sebehodnocení: [ke každému kritériu napište, jak ho podle vás splňujete a co byste zlepšili]
+Moja práca: [vložte text alebo nahrajte súbor, napríklad prezentáciu, kód alebo obrázok]
+Hodnotiace kritériá: [vložte kritériá od vyučujúceho]
+Ročník: [napríklad 9. ročník]
+Moje sebahodnotenie: [ku každému kritériu napíšte, ako ho podľa vás spĺňate a čo by ste zlepšili]
 
 Postupuj takto:
-1. Stručně shrň, co budeš posuzovat. Pokud chybí práce, kritéria nebo sebehodnocení, požádej mě o ně a dál nepokračuj, dokud je nedostaneš.
-2. Ke každému kritériu napiš:
-   a) Plus: co se daří, s konkrétním místem z mé práce (1–2 věty),
-   b) Mínus: co lze zlepšit, s konkrétním místem z mé práce (1–2 věty),
-   c) Tip: na co se zaměřit a proč,
-   d) Srovnání: v čem se moje sebehodnocení liší od tvého.
-3. V krátkém odstavci shrň největší přednosti a nejdůležitější oblasti ke zlepšení.
-4. Zeptej se mě, které dvě úpravy považuji za nejdůležitější a proč. Počkej na odpověď.
-5. Podle mé odpovědi nabídni nejvýš tři konkrétní kroky. Napiš, co upravit a proč, ale hotové formulace ani přepsaný text mi nedávej.
-6. Když pošlu upravenou verzi, zopakuj kroky 2–3 a řekni, v čem jsem se posunul(a).
-7. Na závěr se zeptej: „V čem se tvoje hodnocení lišilo od mého a kdo z nás měl podle tebe pravdu?“
+1. Stručne zhrň, čo budeš posudzovať. Ak chýba práca, kritériá alebo sebahodnotenie, požiadaj ma o ne a ďalej nepokračuj, kým ich nedostaneš.
+2. Ku každému kritériu napíš:
+   a) Plus: čo sa darí, s konkrétnym miestom z mojej práce (1 – 2 vety),
+   b) Mínus: čo možno zlepšiť, s konkrétnym miestom z mojej práce (1 – 2 vety),
+   c) Tip: na čo sa zamerať a prečo,
+   d) Porovnanie: v čom sa moje sebahodnotenie líši od tvojho.
+3. V krátkom odseku zhrň najväčšie prednosti a najdôležitejšie oblasti na zlepšenie.
+4. Opýtaj sa ma, ktoré dve úpravy považujem za najdôležitejšie a prečo. Počkaj na odpoveď.
+5. Podľa mojej odpovede ponúkni najviac tri konkrétne kroky. Napíš, čo upraviť a prečo, ale hotové formulácie ani prepísaný text mi nedávaj.
+6. Keď pošlem upravenú verziu, zopakuj kroky 2 – 3 a povedz, v čom som sa posunul(a).
+7. Na záver sa opýtaj: „V čom sa tvoje hodnotenie líšilo od môjho a kto z nás mal podľa teba pravdu?“
 
-Pravidla:
-- Hodnoť jen podle zadaných kritérií, nepřidávej vlastní. Nedávej známky ani body.
-- Buď upřímný. Když kritérium nesplňuji, řekni to jasně a nechval jen ze zdvořilosti.
-- Když si posouzením nejsi jistý, napiš to a doporuč mi zeptat se vyučujícího.
+Pravidlá:
+- Hodnoť len podľa zadaných kritérií, nepridávaj vlastné. Nedávaj známky ani body.
+- Buď úprimný. Keď kritérium nespĺňam, povedz to jasne a nechváľ len zo zdvorilosti.
+- Keď si posúdením nie si istý, napíš to a odporuč mi opýtať sa vyučujúceho.
 
-Bezpečnost: Neptej se mě na osobní údaje. Kdyby se v rozhovoru objevilo něco, co ohrožuje mě nebo někoho jiného (sebepoškozování, šikana, násilí), připomeň mi, že jsi jen stroj, a doporuč mi svěřit se dospělému, kterému věřím, nebo zavolat na Linku bezpečí 116 111.
+Bezpečnosť: Nepýtaj sa ma na osobné údaje. Keby sa v rozhovore objavilo niečo, čo ohrozuje mňa alebo niekoho iného (sebapoškodzovanie, šikanovanie, násilie), pripomeň mi, že si len stroj, a odporuč mi zdôveriť sa dospelému, ktorému verím, alebo zavolať na linku pomoci pre deti a mladých 116 111.
 ```
 
-## Jak prompt použít
+## Ako prompt použiť
 
-1. Projděte si kritéria od vyučujícího a ke každému si napište, jak ho podle vás splňujete.
-2. Zkopírujte prompt do chatbota, kterého smíte ve škole používat.
-3. Vložte svou práci, kritéria a své sebehodnocení. Z práce předem smažte jména a další osobní údaje.
-4. Odešlete prompt a porovnejte zpětnou vazbu chatbota se svým hodnocením.
-5. Rozhodněte se, které rady přijmete — práce i rozhodnutí zůstávají vaše.
-6. Upravenou verzi můžete poslat ke druhé kontrole.
+1. Prejdite si kritériá od vyučujúceho a ku každému si napíšte, ako ho podľa vás spĺňate.
+2. Skopírujte prompt do chatbota, ktorého smiete v škole používať.
+3. Vložte svoju prácu, kritériá a svoje sebahodnotenie. Z práce vopred vymažte mená a ďalšie osobné údaje.
+4. Odošlite prompt a porovnajte spätnú väzbu chatbota so svojím hodnotením.
+5. Rozhodnite sa, ktoré rady prijmete — práca aj rozhodnutia zostávajú vaše.
+6. Upravenú verziu môžete poslať na druhú kontrolu.
 
-## Poznámka pro vyučující
+## Poznámka pre vyučujúcich
 
-Kritéria dejte žákům vy, srozumitelně formulovaná a ideálně s ukázkou. Bez sebehodnocení chatbot zpětnou vazbu nedá. Zpětná vazba chatbota je doplněk vaší, ne náhrada; vyplatí se probrat se žáky, které rady byly užitečné a které ne. Nechte si odevzdat verzi před úpravou i po ní.
+Kritériá dajte žiakom vy, zrozumiteľne sformulované a ideálne s ukážkou. Bez sebahodnotenia chatbot spätnú väzbu nedá. Spätná väzba chatbota je doplnok vašej, nie náhrada; oplatí sa prebrať so žiakmi, ktoré rady boli užitočné a ktoré nie. Nechajte si odovzdať verziu pred úpravou aj po nej.

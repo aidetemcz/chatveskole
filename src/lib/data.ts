@@ -109,7 +109,8 @@ export const SKUPINY_PROMPTU: { id: string; title: string }[] = [
   { id: 'vedeni', title: t('Pro vedení školy') },
   { id: 'zaci', title: t('Pro žáky') },
 ];
-export const KATEGORIE_ZACI = t('Práce žáků s chatbotem');
+// hodnoty kategorií jsou klíče (česky i ve slovenském obsahu); zobrazují se přes t()
+export const KATEGORIE_ZACI = 'Práce žáků s chatbotem';
 // pořadí účelů v katalogu promptů
 export const PORADI_KATEGORII = [
   'Tvorba materiálů do výuky',

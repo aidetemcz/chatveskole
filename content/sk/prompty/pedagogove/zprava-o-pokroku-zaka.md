@@ -1,5 +1,5 @@
 ---
-title: "Zpráva o pokroku žáka"
+title: "Správa o pokroku žiaka"
 slug: "zprava-o-pokroku-zaka"
 skupina: pedagogove
 kategorie: ["Komunikace s rodiči"]
@@ -12,40 +12,40 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený třídní vyučující, který pravidelně a s respektem informuje zákonné zástupce o pokroku jejich dítěte. Z mých poznámek napiš zákonným zástupcům zprávu o pokroku žáka.
+Vystupuj ako skúsený triedny vyučujúci, ktorý pravidelne a s rešpektom informuje zákonných zástupcov o pokroku ich dieťaťa. Z mojich poznámok napíš zákonným zástupcom správu o pokroku žiaka.
 
-Žák: [iniciály, nikdy jméno], [chlapec / dívka], [například 4. ročník ZŠ]
-Období: [například září až listopad]
-Moje poznámky: [vložte text, fotografii poznámek nebo soubor; jména nahraďte iniciálami]
-K čemu zpráva slouží: [například podklad pro konzultaci / průběžná informace e-mailem]
-Jak mohou pomoci zákonní zástupci: [například číst s dítětem 10 minut denně; nebo řádek smažte]
+Žiak: [iniciály, nikdy meno], [chlapec / dievča], [napríklad 4. ročník ZŠ]
+Obdobie: [napríklad september až november]
+Moje poznámky: [vložte text, fotografiu poznámok alebo súbor; mená nahraďte iniciálami]
+Na čo správa slúži: [napríklad podklad na konzultáciu / priebežná informácia e-mailom]
+Ako môžu pomôcť zákonní zástupcovia: [napríklad čítať s dieťaťom 10 minút denne; alebo riadok vymažte]
 
-Zpráva má mít jeden souvislý odstavec, 5–8 vět, ve 3. osobě:
-1. Co se daří: konkrétní silné stránky a pokroky z poznámek (co dítě dělá, ne jaké je).
-2. Na čem dál pracovat: nejvýš dvě oblasti, každá formulovaná jako další krok.
-3. Jak můžeme spolupracovat: co děláme ve škole a čím může pomoct rodina.
+Správa má mať jeden súvislý odsek, 5 – 8 viet, v 3. osobe:
+1. Čo sa darí: konkrétne silné stránky a pokroky z poznámok (čo dieťa robí, nie aké je).
+2. Na čom ďalej pracovať: najviac dve oblasti, každá sformulovaná ako ďalší krok.
+3. Ako môžeme spolupracovať: čo robíme v škole a čím môže pomôcť rodina.
 
-Pravidla:
-- Vycházej jen z mých poznámek, nic nevymýšlej. Co v poznámkách chybí, označ [doplnit: …]. Co na fotografii nejde přečíst, nedomýšlej a napiš mi to.
-- Popisuj chování a práci, ne osobnost: místo „je nepozorná“ napiš, co se konkrétně děje („při samostatné práci často nedokončí poslední úlohu“).
-- Pravdivě, ale laskavě. Nezavírej cestu: „zatím“, „ještě“, „potřebuje víc času“.
-- Bez prázdných frází („je to šikovné dítě“), bez srovnávání se spolužáky a bez domněnek o tom, co se děje doma.
-- Diagnózy ani rodinné okolnosti do textu nepiš, i když jsou v poznámkách.
-- V textu použij [jméno žáka]. Jméno doplním sám/sama.
+Pravidlá:
+- Vychádzaj len z mojich poznámok, nič nevymýšľaj. Čo v poznámkach chýba, označ [doplniť: …]. Čo sa na fotografii nedá prečítať, nedomýšľaj a napíš mi to.
+- Opisuj správanie a prácu, nie osobnosť: namiesto „je nepozorná“ napíš, čo sa konkrétne deje („pri samostatnej práci často nedokončí poslednú úlohu“).
+- Pravdivo, ale láskavo. Nezatváraj cestu: „zatiaľ“, „ešte“, „potrebuje viac času“.
+- Bez prázdnych fráz („je to šikovné dieťa“), bez porovnávania so spolužiakmi a bez domnienok o tom, čo sa deje doma.
+- Diagnózy ani rodinné okolnosti do textu nepíš, aj keď sú v poznámkach.
+- V texte použi [meno žiaka]. Meno doplním sám/sama.
 
-Pod zprávu mi zvlášť napiš, co si mám ověřit. Pak nabídni: 1) kratší verzi, 2) body pro ústní rozhovor na konzultaci, 3) verzi přímo pro žáka.
+Pod správu mi zvlášť napíš, čo si mám overiť. Potom ponúkni: 1) kratšiu verziu, 2) body na ústny rozhovor na konzultácii, 3) verziu priamo pre žiaka.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt z vašich poznámek napíše zákonným zástupcům krátkou zprávu o pokroku jejich dítěte. Zpráva pojmenuje, co se daří, na čem dál pracovat a jak může pomoct rodina. Popisuje, co dítě dělá, ne jaké je, a nic si nevymýšlí.
+Prompt z vašich poznámok napíše zákonným zástupcom krátku správu o pokroku ich dieťaťa. Správa pomenuje, čo sa darí, na čom ďalej pracovať a ako môže pomôcť rodina. Opisuje, čo dieťa robí, nie aké je, a nič si nevymýšľa.
 
-Hodí se jako průběžná informace e-mailem nebo jako podklad pro konzultaci. Na přání z ní chatbot udělá i body pro ústní rozhovor. Pro slovní hodnocení na vysvědčení je vhodnější dovednost [Slovní hodnocení](/skills/slovni-hodnoceni).
+Hodí sa ako priebežná informácia e-mailom alebo ako podklad na konzultáciu. Na požiadanie z nej chatbot urobí aj body na ústny rozhovor. Na slovné hodnotenie na vysvedčení je vhodnejšia zručnosť [Slovné hodnotenie](/skills/slovni-hodnoceni).
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a vložte své poznámky o žákovi: text, fotografii nebo soubor. Místo jména použijte iniciály, jméno doplníte do hotového textu sami. Diagnózy ani rodinné okolnosti chatbotu nesdělujte, pokud nejsou nutné.
+Skopírujte prompt do chatbota a vložte svoje poznámky o žiakovi: text, fotografiu alebo súbor. Namiesto mena použite iniciály, meno doplníte do hotového textu sami. Diagnózy ani rodinné okolnosti chatbotu neoznamujte, ak nie sú nevyhnutné.
 
-Čím konkrétnější poznámky (co žák udělal, kdy a jak často), tím lepší zpráva. Před odesláním si ji vždy přečtěte a upravte.
+Čím konkrétnejšie poznámky (čo žiak urobil, kedy a ako často), tým lepšia správa. Pred odoslaním si ju vždy prečítajte a upravte.
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Komunikácia so zákonnými zástupcami](/skills/komunikace-s-rodici), ktorú si môžete nainštalovať do svojho chatbota.

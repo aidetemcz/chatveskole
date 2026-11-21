@@ -1,5 +1,5 @@
 ---
-title: "Převod materiálu do jiné formy"
+title: "Prevod materiálu do inej formy"
 slug: "prevod-materialu-do-jine-formy"
 skupina: pedagogove
 kategorie: ["Aktualizace materiálů"]
@@ -12,41 +12,41 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený vzdělávací designér. Převeď můj výukový materiál do jiné formy.
+Vystupuj ako skúsený vzdelávací dizajnér. Preveď môj vyučovací materiál do inej formy.
 
-Původní materiál: [vložte text, pracovní list, prezentaci nebo soubor]
-Nová forma: [například kvíz do Google Formulářů / prezentace / pracovní list / infografika / scénář podcastu / plakát]
-Ročník a předmět: [například 6. ročník ZŠ, dějepis]
-K čemu ho použiji: [například opakování před písemkou, 15 minut na začátku hodiny]
-Rozsah: [například 10 otázek / 8 snímků / 1 strana A4]
-Co musí zůstat: [například všechny pojmy a data; nebo řádek smažte]
-Další požadavky: [například jednodušší jazyk, úlohy pro rychlejší žáky; nebo řádek smažte]
+Pôvodný materiál: [vložte text, pracovný list, prezentáciu alebo súbor]
+Nová forma: [napríklad kvíz do Google Formulárov / prezentácia / pracovný list / infografika / scenár podcastu / plagát]
+Ročník a predmet: [napríklad 6. ročník ZŠ, dejepis]
+Na čo ho použijem: [napríklad opakovanie pred písomkou, 15 minút na začiatku hodiny]
+Rozsah: [napríklad 10 otázok / 8 snímok / 1 strana A4]
+Čo musí zostať: [napríklad všetky pojmy a dátumy; alebo riadok vymažte]
+Ďalšie požiadavky: [napríklad jednoduchší jazyk, úlohy pre rýchlejších žiakov; alebo riadok vymažte]
 
-Pravidla:
-1. Zachovej obsah a věcnou správnost. Forma se mění, učivo ne. Nic podstatného nevynechávej, a když musíš kvůli rozsahu krátit, napiš mi co.
-2. Přizpůsob jazyk věku žáků a nové formě (prezentace = krátké body, podcast = mluvená řeč, kvíz = jednoznačné otázky).
-3. Výstup dej tak, aby šel rovnou použít:
-   - kvíz: otázky s typem odpovědi a možnostmi, správná odpověď zvlášť; špatné možnosti věrohodné (typické chyby žáků),
-   - prezentace: snímek po snímku (nadpis, 3–5 bodů, návrh obrázku, poznámka pro mluvčího),
-   - infografika nebo plakát: textové bloky v pořadí, jak půjdou za sebou, a návrh rozvržení,
-   - podcast: scénář s rolemi a orientační délkou,
-   - pracovní list: část pro žáky a zvlášť řešení.
-4. Kromě vybavování zařaď aspoň jednu úlohu nebo otázku, při které žáci učivo použijí, porovnají nebo vysvětlí.
-5. Na zjevné věcné chyby v původním materiálu upozorni a navrhni opravu.
+Pravidlá:
+1. Zachovaj obsah a vecnú správnosť. Forma sa mení, učivo nie. Nič podstatné nevynechávaj, a keď musíš kvôli rozsahu skracovať, napíš mi čo.
+2. Prispôsob jazyk veku žiakov a novej forme (prezentácia = krátke body, podcast = hovorená reč, kvíz = jednoznačné otázky).
+3. Výstup daj tak, aby sa dal rovno použiť:
+   - kvíz: otázky s typom odpovede a možnosťami, správna odpoveď zvlášť; nesprávne možnosti vierohodné (typické chyby žiakov),
+   - prezentácia: snímka po snímke (nadpis, 3 – 5 bodov, návrh obrázka, poznámka pre rečníka),
+   - infografika alebo plagát: textové bloky v poradí, ako pôjdu za sebou, a návrh rozloženia,
+   - podcast: scenár s rolami a orientačnou dĺžkou,
+   - pracovný list: časť pre žiakov a zvlášť riešenie.
+4. Okrem vybavovania zaraď aspoň jednu úlohu alebo otázku, pri ktorej žiaci učivo použijú, porovnajú alebo vysvetlia.
+5. Na zjavné vecné chyby v pôvodnom materiáli upozorni a navrhni opravu.
 
-Pod výstup dej krátké shrnutí: co jsi změnil a proč, a 1–2 tipy, jak materiál použít ve výuce. Když materiál nebo nová forma chybí, nejdřív se mě zeptej.
+Pod výstup daj krátke zhrnutie: čo si zmenil a prečo, a 1 – 2 tipy, ako materiál použiť vo vyučovaní. Keď materiál alebo nová forma chýba, najprv sa ma opýtaj.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt převede váš hotový materiál do jiné podoby: z textu udělá kvíz, z pracovního listu prezentaci, z kapitoly učebnice infografiku nebo scénář podcastu. Obsah a věcná správnost zůstanou, změní se forma a jazyk.
+Prompt prevedie váš hotový materiál do inej podoby: z textu urobí kvíz, z pracovného listu prezentáciu, z kapitoly učebnice infografiku alebo scenár podcastu. Obsah a vecná správnosť zostanú, zmení sa forma a jazyk.
 
-Výstup dostanete rovnou ve tvaru, který jde použít: kvíz s odpověďmi zvlášť, prezentaci snímek po snímku, infografiku po blocích. Když chatbot musí kvůli rozsahu něco vynechat, řekne vám co.
+Výstup dostanete rovno v tvare, ktorý sa dá použiť: kvíz s odpoveďami zvlášť, prezentáciu snímku po snímke, infografiku po blokoch. Keď chatbot musí kvôli rozsahu niečo vynechať, povie vám čo.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota, vložte původní materiál a napište, do jaké formy ho chcete převést a pro koho. Rozsah uveďte konkrétně (počet otázek, snímků, stran), výsledek pak bude přesnější.
+Skopírujte prompt do chatbota, vložte pôvodný materiál a napíšte, do akej formy ho chcete previesť a pre koho. Rozsah uveďte konkrétne (počet otázok, snímok, strán), výsledok potom bude presnejší.
 
-Některé chatboty umí kvíz nebo prezentaci rovnou vytvořit jako soubor. Pokud to váš chatbot umí, požádejte ho o to v další zprávě.
+Niektoré chatboty vedia kvíz alebo prezentáciu rovno vytvoriť ako súbor. Ak to váš chatbot vie, požiadajte ho o to v ďalšej správe.
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Úprava materiálu](/skills/uprava-materialu), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Úprava materiálu](/skills/uprava-materialu), ktorú si môžete nainštalovať do svojho chatbota.

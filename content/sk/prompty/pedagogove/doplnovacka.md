@@ -12,40 +12,40 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený pedagog a tvůrce výukových materiálů. Vytvoř pracovní list s doplňovačkou.
+Vystupuj ako skúsený pedagóg a tvorca vyučovacích materiálov. Vytvor pracovný list s doplňovačkou.
 
-Předmět a téma: [například dějepis – Velká Morava]
-Ročník: [například 7. ročník ZŠ]
-Cíl – co si mají žáci upevnit: [například pojmy a osobnosti Velké Moravy]
-Text: [vložte vlastní text, nebo napište „vytvoř krátký příběh do 150 slov, který propojí fakta k tématu“]
-Slova k vynechání: [například Rastislav, Cyril, Metoděj, hlaholice; nebo napište „vyber sám 10 klíčových pojmů“]
-Obtížnost: [se zásobníkem slov / bez zásobníku / s prvním písmenem]
-Jazyk: [například čeština]
+Predmet a téma: [napríklad dejepis – Veľká Morava]
+Ročník: [napríklad 7. ročník ZŠ]
+Cieľ – čo si majú žiaci upevniť: [napríklad pojmy a osobnosti Veľkej Moravy]
+Text: [vložte vlastný text, alebo napíšte „vytvor krátky príbeh do 150 slov, ktorý prepojí fakty k téme“]
+Slová na vynechanie: [napríklad Rastislav, Konštantín, Metod, hlaholika; alebo napíšte „vyber sám 10 kľúčových pojmov“]
+Náročnosť: [so zásobníkom slov / bez zásobníka / s prvým písmenom]
+Jazyk: [napríklad slovenčina]
 
-Pravidla:
-1. Vynechávej jen slova, která nesou učivo (pojmy, jména, data, tvary sloves), ne náhodná slova. 8–15 mezer, u mladších žáků nejvýš jedna mezera ve větě.
-2. Mezery čísluj a dělej stejně dlouhé, aby neprozrazovaly délku slova: (1) __________
-3. Každá mezera musí mít jednoznačné řešení, které jde odvodit z kontextu věty.
-4. Zásobník slov zamíchej a přidej do něj 1–2 slova navíc.
-5. U gramatiky dej do závorky základní tvar, například (být), a žák doplní správný tvar.
-6. Když text píšeš sám, musí být věcně správný a přiměřený věku. Fakta, která si mám ověřit, vypiš zvlášť.
+Pravidlá:
+1. Vynechávaj len slová, ktoré nesú učivo (pojmy, mená, dátumy, tvary slovies), nie náhodné slová. 8 – 15 medzier, pri mladších žiakoch najviac jedna medzera vo vete.
+2. Medzery čísluj a rob rovnako dlhé, aby neprezrádzali dĺžku slova: (1) __________
+3. Každá medzera musí mať jednoznačné riešenie, ktoré sa dá odvodiť z kontextu vety.
+4. Zásobník slov zamiešaj a pridaj doň 1 – 2 slová navyše.
+5. Pri gramatike daj do zátvorky základný tvar, napríklad (byť), a žiak doplní správny tvar.
+6. Keď text píšeš sám, musí byť vecne správny a primeraný veku. Fakty, ktoré si mám overiť, vypíš zvlášť.
 
-Výstup ve třech částech:
-1) PRO ŽÁKY: název, řádek „Jméno: __________“, instrukce v jedné větě, text s mezerami a případně zásobník slov.
-2) ŘEŠENÍ: číslovaný seznam, nebo celý text s doplněnými slovy tučně.
-3) POZNÁMKA PRO VYUČUJÍCÍ: 2–3 věty, k čemu doplňovačka slouží a jak ji upravit pro žáky, kteří potřebují oporu, a pro rychlejší žáky.
+Výstup v troch častiach:
+1) PRE ŽIAKOV: názov, riadok „Meno: __________“, inštrukcia v jednej vete, text s medzerami a prípadne zásobník slov.
+2) RIEŠENIE: číslovaný zoznam, alebo celý text s doplnenými slovami tučne.
+3) POZNÁMKA PRE VYUČUJÚCICH: 2 – 3 vety, na čo doplňovačka slúži a ako ju upraviť pre žiakov, ktorí potrebujú oporu, a pre rýchlejších žiakov.
 
-Když chybí předmět, ročník nebo téma, nejdřív se mě zeptej.
+Keď chýba predmet, ročník alebo téma, najprv sa ma opýtaj.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vytvoří pracovní list s doplňovačkou z vašeho textu, nebo napíše krátký příběh, který propojí fakta k tématu. Vynechává jen slova, která nesou učivo, mezery čísluje a dělá stejně dlouhé, aby neprozrazovaly odpověď.
+Prompt vytvorí pracovný list s doplňovačkou z vášho textu, alebo napíše krátky príbeh, ktorý prepojí fakty k téme. Vynecháva len slová, ktoré nesú učivo, medzery čísluje a robí rovnako dlhé, aby neprezrádzali odpoveď.
 
-Dostanete verzi pro žáky, řešení zvlášť a krátkou poznámku, jak doplňovačku upravit pro různě pokročilé žáky. Obtížnost si zvolíte: se zásobníkem slov, bez něj, nebo s prvním písmenem.
+Dostanete verziu pre žiakov, riešenie zvlášť a krátku poznámku, ako doplňovačku upraviť pre rôzne pokročilých žiakov. Náročnosť si zvolíte: so zásobníkom slov, bez neho, alebo s prvým písmenom.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte předmět, ročník a téma. Vložte vlastní text, nebo nechte chatbota napsat příběh. Pokud ho píše chatbot, fakta před tiskem zkontrolujte, chatbot vám vypíše, co ověřit.
+Skopírujte prompt do chatbota a doplňte predmet, ročník a tému. Vložte vlastný text, alebo nechajte chatbota napísať príbeh. Ak ho píše chatbot, fakty pred tlačou skontrolujte, chatbot vám vypíše, čo overiť.
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Pracovné listy](/skills/pracovni-listy), ktorú si môžete nainštalovať do svojho chatbota.

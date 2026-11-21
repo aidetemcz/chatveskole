@@ -1,5 +1,5 @@
 ---
-title: "Sebehodnocení pro žáky"
+title: "Sebahodnotenie pre žiakov"
 slug: "sebehodnoceni-pro-zaky"
 skupina: pedagogove
 kategorie: ["Podpora formativního přístupu"]
@@ -12,51 +12,51 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený pedagog se zaměřením na formativní hodnocení. Z mých kritérií hodnocení vytvoř sebehodnoticí list pro žáky na škále J–Č–T–Ú z metodiky Vysvědčení JINAK (PdF MU). Nejde o známky, ale o popis pokroku: co už žák zvládne sám a co se ještě učí.
+Vystupuj ako skúsený pedagóg so zameraním na formatívne hodnotenie. Z mojich kritérií hodnotenia vytvor sebahodnotiaci list pre žiakov na škále J–Č–T–Ú z metodiky Vysvědčení JINAK (PdF MU). Nejde o známky, ale o opis pokroku: čo už žiak zvládne sám a čo sa ešte učí.
 
-Ročník: [například 6. ročník ZŠ]
-Předmět a téma: [například fyzika – hustota látek]
-Kritéria hodnocení: [vložte 1–4 kritéria, každé na nový řádek; pokud je nemáte, vložte výukový cíl]
-Kdy žáci list vyplní: [například po laboratorní práci; nebo řádek smažte]
+Ročník: [napríklad 6. ročník ZŠ]
+Predmet a téma: [napríklad fyzika – hustota látok]
+Kritériá hodnotenia: [vložte 1 – 4 kritériá, každé na nový riadok; ak ich nemáte, vložte vyučovací cieľ]
+Kedy žiaci list vyplnia: [napríklad po laboratórnej práci; alebo riadok vymažte]
 
-Škála (vždy v pořadí J → Č → T → Ú):
-J – Ještě neosvojeno. Pro žáky: Ještě mi to nejde a stále se učím.
-Č – Částečně osvojeno, i známé situace činí potíže, potřebuje dopomoc. Pro žáky: Trochu mi to jde, ale dělám chyby.
-T – Téměř osvojeno, ve známých situacích s připomenutím nebo mírnou dopomocí. Pro žáky: Skoro už to zvládnu sám/sama, jen s drobnou pomocí.
-Ú – Úplně osvojeno, samostatně v běžných i nových situacích. Pro žáky: Úplně to umím sám/sama.
+Škála (vždy v poradí J → Č → T → Ú):
+J – Ešte neosvojené. Pre žiakov: Ešte mi to nejde a stále sa učím.
+Č – Čiastočne osvojené, aj známe situácie robia ťažkosti, potrebuje pomoc. Pre žiakov: Trochu mi to ide, ale robím chyby.
+T – Takmer osvojené, v známych situáciách s pripomenutím alebo miernou pomocou. Pre žiakov: Skoro to už zvládnem sám/sama, len s drobnou pomocou.
+Ú – Úplne osvojené, samostatne v bežných aj nových situáciách. Pre žiakov: Úplne to viem sám/sama.
 
 Postup:
-1. Pokud máš jen cíl, navrhni z něj nejdřív tři kritéria v 1. osobě a pokračuj s nimi.
-2. Ke každému kritériu napiš čtyři úrovně v 1. osobě, konkrétně k danému kritériu. Všechny úrovně zůstávají u stejného výkonu. Vyšší úroveň není jiný úkol, ale méně opory (s pomocí → s připomenutím → samostatně), větší přesnost (s chybami → většinou → spolehlivě) a přenos (známá situace → i nová). Úroveň J formuluj se slovem „zatím“ nebo „ještě“.
-3. Sestav list k vytištění: nadpis „Jak se mi dařilo?“, pod ním jedna věta, jak list vyplnit. Pak tabulka: v řádcích kritéria přeformulovaná na otázku („Jak se mi dařilo…?“), ve sloupcích ☐ J, ☐ Č, ☐ T, ☐ Ú s krátkým popisem úrovně. Na konec řádky „Co mi pomohlo:“ a „Na čem chci ještě pracovat:“.
-4. Pod list zvlášť pro mě 2–3 tipy, jak s listem pracovat (kdy ho vyplnit, jak výsledky porovnat se svým pozorováním, jak o rozdílech mluvit se žákem).
+1. Ak máš len cieľ, navrhni z neho najprv tri kritériá v 1. osobe a pokračuj s nimi.
+2. Ku každému kritériu napíš štyri úrovne v 1. osobe, konkrétne k danému kritériu. Všetky úrovne zostávajú pri rovnakom výkone. Vyššia úroveň nie je iná úloha, ale menej opory (s pomocou → s pripomenutím → samostatne), väčšia presnosť (s chybami → väčšinou → spoľahlivo) a prenos (známa situácia → aj nová). Úroveň J formuluj so slovom „zatiaľ“ alebo „ešte“.
+3. Zostav list na vytlačenie: nadpis „Ako sa mi darilo?“, pod ním jedna veta, ako list vyplniť. Potom tabuľka: v riadkoch kritériá preformulované na otázku („Ako sa mi darilo…?“), v stĺpcoch ☐ J, ☐ Č, ☐ T, ☐ Ú s krátkym opisom úrovne. Na koniec riadky „Čo mi pomohlo:“ a „Na čom chcem ešte pracovať:“.
+4. Pod list zvlášť pre mňa 2 – 3 tipy, ako s listom pracovať (kedy ho vyplniť, ako výsledky porovnať so svojím pozorovaním, ako o rozdieloch hovoriť so žiakom).
 
-Pravidla:
-- Slova přiměřená věku, bez cizích a odborných výrazů, u 1. stupně jedna krátká věta na úroveň.
-- Hodnoť výkon v učení, ne vlastnosti ani chování, a nezůstávej jen u faktů.
-- Když je kritérium příliš obecné („rozumím zlomkům“), upozorni na to a navrhni zpřesnění.
-- Když kritérium popisuje chování (spolupráce, dodržování pravidel), upozorni, že metodika hodnotí chování zvlášť, na stupnici Velmi zřídka – Občas – Často – Téměř vždy, a nabídni přeformulování.
+Pravidlá:
+- Slová primerané veku, bez cudzích a odborných výrazov, na 1. stupni jedna krátka veta na úroveň.
+- Hodnoť výkon v učení, nie vlastnosti ani správanie, a nezostávaj len pri faktoch.
+- Keď je kritérium príliš všeobecné („rozumiem zlomkom“), upozorni na to a navrhni spresnenie.
+- Keď kritérium opisuje správanie (spolupráca, dodržiavanie pravidiel), upozorni, že metodika hodnotí správanie zvlášť, na stupnici Veľmi zriedka – Občas – Často – Takmer vždy, a ponúkni preformulovanie.
 
-Příklad úrovní:
-Kritérium: Najdu a přečtu slovo s měkkou hláskou ve větě nebo krátkém textu.
-J – Slovo v textu zatím nepoznám nebo ho ještě nepřečtu.
-Č – Najdu slovo, když mě někdo nasměruje, a přečtu ho s pomocí.
-T – Většinou najdu a přečtu slovo s Ď, Ť, Ň v textu samostatně.
-Ú – Bez problémů najdu a přečtu slova s měkkými hláskami v jakémkoli textu.
+Príklad úrovní:
+Kritérium: Nájdem a prečítam slovo s mäkkou spoluhláskou vo vete alebo krátkom texte.
+J – Slovo v texte zatiaľ nespoznám alebo ho ešte neprečítam.
+Č – Nájdem slovo, keď ma niekto nasmeruje, a prečítam ho s pomocou.
+T – Väčšinou nájdem a prečítam slovo s ď, ť, ň, ľ v texte samostatne.
+Ú – Bez problémov nájdem a prečítam slová s mäkkými spoluhláskami v akomkoľvek texte.
 
-Na konci nabídni: 1) úpravu úrovní, 2) jednodušší verzi s obrázky pro mladší žáky, 3) verzi do online formuláře.
+Na konci ponúkni: 1) úpravu úrovní, 2) jednoduchšiu verziu s obrázkami pre mladších žiakov, 3) verziu do online formulára.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt z vašich kritérií hodnocení vytvoří sebehodnoticí list „Jak se mi dařilo?“, připravený k vytištění. Ke každému kritériu napíše čtyři úrovně na škále J–Č–T–Ú z metodiky [Vysvědčení JINAK](https://vysvedcenijinak.ped.muni.cz/) (PdF MU). Úrovně popisují, co žák zvládne s pomocí a co už sám, takže si žák snadno vybere, kde je.
+Prompt z vašich kritérií hodnotenia vytvorí sebahodnotiaci list „Ako sa mi darilo?“, pripravený na vytlačenie. Ku každému kritériu napíše štyri úrovne na škále J–Č–T–Ú z metodiky [Vysvědčení JINAK](https://vysvedcenijinak.ped.muni.cz/) (PdF MU, v češtine). Úrovne opisujú, čo žiak zvládne s pomocou a čo už sám, takže si žiak ľahko vyberie, kde je.
 
-Škála má záměrně čtyři stupně bez středu, aby se nepřeváděla na známky. Pod listem dostanete tipy, jak výsledky porovnat se svým pozorováním. Rozdíl mezi sebehodnocením žáka a vaším hodnocením je dobrý námět na rozhovor.
+Škála má zámerne štyri stupne bez stredu, aby sa neprevádzala na známky. Písmená J–Č–T–Ú pochádzajú z českej metodiky (J – ešte neosvojené, Č – čiastočne, T – takmer, Ú – úplne). Pod listom dostanete tipy, ako výsledky porovnať so svojím pozorovaním. Rozdiel medzi sebahodnotením žiaka a vaším hodnotením je dobrý námet na rozhovor.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte ročník, předmět a kritéria hodnocení. Pokud kritéria ještě nemáte, vložte výukový cíl a chatbot je nejdřív navrhne. Kritéria můžete připravit i promptem [Tvorba kritérií hodnocení](/funkce/prompty/tvorba-kriterii-hodnoceni).
+Skopírujte prompt do chatbota a doplňte ročník, predmet a kritériá hodnotenia. Ak kritériá ešte nemáte, vložte vyučovací cieľ a chatbot ich najprv navrhne. Kritériá môžete pripraviť aj promptom [Tvorba kritérií hodnotenia](/funkce/prompty/tvorba-kriterii-hodnoceni).
 
-List dejte žákům po práci, ke které se kritéria vztahují. Kritéria jim ale ukažte už na začátku, aby věděli, k čemu míří.
+List dajte žiakom po práci, ku ktorej sa kritériá vzťahujú. Kritériá im však ukážte už na začiatku, aby vedeli, k čomu smerujú.
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Gradace kritérií hodnocení (J–Č–T–Ú)](/skills/gradace-kriterii-hodnoceni), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Gradácia kritérií hodnotenia (J–Č–T–Ú)](/skills/gradace-kriterii-hodnoceni), ktorú si môžete nainštalovať do svojho chatbota.

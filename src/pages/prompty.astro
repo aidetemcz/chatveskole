@@ -26,10 +26,10 @@ const polozka = (p: (typeof vse)[number]) => {
 const items = vse.map(polozka).sort((a, b) => a.title.localeCompare(b.title, LOCALE));
 const kategorie = [...new Set(items.map((i) => i.kategorie))].sort((a, b) => {
   const ia = PORADI_KATEGORII.indexOf(a), ib = PORADI_KATEGORII.indexOf(b);
-  return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib) || a.localeCompare(b, LOCALE);
+  return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib) || t(a).localeCompare(t(b), LOCALE);
 });
 const views = [
-  { id: 'ucel', groups: kategorie.map((k) => ({ id: slugify(k), title: k, items: items.filter((i) => i.kategorie === k) })) },
+  { id: 'ucel', groups: kategorie.map((k) => ({ id: slugify(k), title: t(k), items: items.filter((i) => i.kategorie === k) })) },
   { id: 'komu', groups: SKUPINY_PROMPTU.map((s) => ({ id: `pro-${s.id}`, title: s.title, items: items.filter((i) => i.skupina === s.id) })).filter((g) => g.items.length) },
 ];
 ---

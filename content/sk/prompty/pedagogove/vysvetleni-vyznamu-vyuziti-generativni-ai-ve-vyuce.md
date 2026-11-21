@@ -1,5 +1,5 @@
 ---
-title: "Vysvětlení významu využití generativní AI ve výuce"
+title: "Vysvetlenie významu využitia generatívnej AI vo vyučovaní"
 slug: "vysvetleni-vyznamu-vyuziti-generativni-ai-ve-vyuce"
 skupina: pedagogove
 kategorie: ["Komunikace s rodiči"]
@@ -12,40 +12,40 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako ředitel základní školy, který chce zákonným zástupcům otevřeně a srozumitelně představit, jak bude škola ve výuce využívat generativní umělou inteligenci. Piš věcně a přístupně i pro zákonné zástupce bez technického zázemí.
+Vystupuj ako riaditeľ základnej školy, ktorý chce zákonným zástupcom otvorene a zrozumiteľne predstaviť, ako bude škola vo vyučovaní využívať generatívnu umelú inteligenciu. Píš vecne a prístupne aj pre zákonných zástupcov bez technického zázemia.
 
-Ročníky a předměty: [například 8. a 9. ročník, český jazyk a informatika]
-Aplikace, které chceme používat: [názvy konkrétních chatbotů a aplikací]
-Jak s AI budou žáci pracovat: [například mladší žáci jen společně s vyučujícím na jeho zařízení, starší se školním účtem; nebo řádek smažte]
-Pravidla školy: [například žáci do AI nevkládají osobní údaje, úkoly s AI označují; nebo řádek smažte]
-Kontakt pro dotazy: [například e-mail zástupkyně ředitele]
+Ročníky a predmety: [napríklad 8. a 9. ročník, slovenský jazyk a informatika]
+Aplikácie, ktoré chceme používať: [názvy konkrétnych chatbotov a aplikácií]
+Ako budú žiaci s AI pracovať: [napríklad mladší žiaci len spolu s vyučujúcim na jeho zariadení, starší so školským účtom; alebo riadok vymažte]
+Pravidlá školy: [napríklad žiaci do AI nevkladajú osobné údaje, úlohy s AI označujú; alebo riadok vymažte]
+Kontakt pre otázky: [napríklad e-mail zástupkyne riaditeľa]
 Kde text vyjde: [newsletter / web školy / leták / e-mail]
 
-Text má mít:
-1. Úvodní odstavec: co je generativní AI (jednou dvěma větami bez odborných slov), proč ji škola zařazuje a co žákům přinese. Zdůrazni střízlivý přístup: AI použijeme tam, kde podporuje učení, ne nahodile a ne místo přemýšlení žáků. Uveď, že vyučujícím pomáhá lépe přizpůsobit výuku potřebám jednotlivých žáků.
-2. Odstavec o tom, jak žáky učíme s AI zacházet: ověřovat informace, poznat chybu AI, chránit své údaje.
-3. Výčet aplikací: u každé jedna věta, k čemu ji použijeme, a věková hranice podle podmínek služby.
-4. Krátký závěr s nabídkou dotazů a kontaktem.
+Text má mať:
+1. Úvodný odsek: čo je generatívna AI (jednou dvoma vetami bez odborných slov), prečo ju škola zaraďuje a čo žiakom prinesie. Zdôrazni triezvy prístup: AI použijeme tam, kde podporuje učenie, nie náhodne a nie namiesto premýšľania žiakov. Uveď, že vyučujúcim pomáha lepšie prispôsobiť vyučovanie potrebám jednotlivých žiakov.
+2. Odsek o tom, ako žiakov učíme s AI zaobchádzať: overovať informácie, spoznať chybu AI, chrániť svoje údaje.
+3. Zoznam aplikácií: pri každej jedna veta, na čo ju použijeme, a veková hranica podľa podmienok služby.
+4. Krátky záver s ponukou otázok a kontaktom.
 
-Pravidla:
-- Věkové hranice ani funkce aplikací nevymýšlej. Když si nejsi jistý, napiš [ověřit věkový limit] nebo [ověřit].
-- Nepřeháněj přínosy a nestraš riziky. Žádné marketingové fráze.
-- Nevymýšlej pravidla školy, která jsem nezadal(a). Chybějící údaje označ hranatými závorkami.
-- Délka nejvýš 300 slov, pokud nenapíšu jinak.
+Pravidlá:
+- Vekové hranice ani funkcie aplikácií nevymýšľaj. Keď si nie si istý, napíš [overiť vekový limit] alebo [overiť].
+- Nepreháňaj prínosy a nestraš rizikami. Žiadne marketingové frázy.
+- Nevymýšľaj pravidlá školy, ktoré som nezadal(a). Chýbajúce údaje označ hranatými zátvorkami.
+- Dĺžka najviac 300 slov, ak nenapíšem inak.
 
-Pod text mi zvlášť napiš, co si mám před zveřejněním ověřit. Pak nabídni kratší verzi nebo verzi pro zákonné zástupce mladších dětí.
+Pod text mi zvlášť napíš, čo si mám pred zverejnením overiť. Potom ponúkni kratšiu verziu alebo verziu pre zákonných zástupcov mladších detí.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vám pomůže vysvětlit zákonným zástupcům, jak a proč bude škola ve výuce používat generativní AI. Text je otevřený a střízlivý: nepřehání přínosy a nestraší riziky. Popíše, k čemu AI ve výuce slouží, jak žáky učíte s ní bezpečně a kriticky zacházet a které aplikace budete používat.
+Prompt vám pomôže vysvetliť zákonným zástupcom, ako a prečo bude škola vo vyučovaní používať generatívnu AI. Text je otvorený a triezvy: nepreháňa prínosy a nestraší rizikami. Opíše, na čo AI vo vyučovaní slúži, ako žiakov učíte s ňou bezpečne a kriticky zaobchádzať a ktoré aplikácie budete používať.
 
-Chatbot si nevymýšlí věkové limity ani pravidla školy. Co neví, označí k ověření.
+Chatbot si nevymýšľa vekové limity ani pravidlá školy. Čo nevie, označí na overenie.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte ročníky, aplikace a pravidla, která ve škole platí. Věkové limity před zveřejněním vždy ověřte, podmínky služeb se mění. Pomůže vám přehled [Věkové limity a legislativa](/zaciname/vekove-limity-a-legislativa).
+Skopírujte prompt do chatbota a doplňte ročníky, aplikácie a pravidlá, ktoré v škole platia. Vekové limity pred zverejnením vždy overte, podmienky služieb sa menia. Pomôže vám prehľad [Vekové limity a legislatíva](/zaciname/vekove-limity-a-legislativa).
 
-Text je dobré doplnit nabídkou, kde se zákonní zástupci mohou zeptat, například na třídní schůzce nebo konzultaci.
+Text je dobré doplniť ponukou, kde sa zákonní zástupcovia môžu opýtať, napríklad na triednom aktíve alebo konzultácii.
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Komunikácia so zákonnými zástupcami](/skills/komunikace-s-rodici), ktorú si môžete nainštalovať do svojho chatbota.
