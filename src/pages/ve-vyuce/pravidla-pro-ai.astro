@@ -31,15 +31,8 @@ const odkazOdstavec = (h: string) => {
   return { odkaz: m ? { href: m[1], text: bezTagu(m[2]) } : null, zbytek: m ? h.replace(m[0], '') : h };
 };
 
-// Dvě cesty
-const cesty = najdi(/Dvě cesty/i);
-const cestyHtml = htmlOddilu(cesty);
 const seZaky = najdi(/společně se žáky/i);
 const vedeni = najdi(/připraví vedení/i);
-const CESTY_CIL = [
-  { id: seZaky?.id, odkaz: 'Lekce a workshop ↓', stitek: 'se žáky' },
-  { id: vedeni?.id, odkaz: 'Postup a obsah pravidel ↓', stitek: 'pro vedení školy' },
-];
 
 // Se žáky: lekce (obrázek, text, odkaz) a workshop (tabulka)
 const seZakyHtml = htmlOddilu(seZaky);
@@ -99,32 +92,8 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
     </div>
   </div>
 
-  {cesty && (
-    <section class="band band--sky" aria-labelledby={cesty.id || undefined}>
-      <div class="wrap stack" style="gap: 32px">
-        <div class="hlava">
-          <h2 id={cesty.id || undefined}>{cesty.nadpis}</h2>
-          <div class="prose" set:html={uvodOddilu(cestyHtml)} />
-        </div>
-        <div class="cesty">
-          {polozky(cestyHtml).map((c, i) => {
-            const cil = CESTY_CIL[i];
-            return (
-              <a class="card cesta" href={cil?.id ? `#${cil.id}` : undefined}>
-                {cil && <span class="stitek">{cil.stitek}</span>}
-                <h3>{c.nazev}</h3>
-                <p set:html={c.text} />
-                {cil && <span class="cesta-odkaz">{cil.odkaz}</span>}
-              </a>
-            );
-          })}
-        </div>
-      </div>
-    </section>
-  )}
-
   {seZaky && (
-    <section class="band band--white" id={seZaky.id || undefined} aria-labelledby={seZaky.id ? `${seZaky.id}-h` : undefined}>
+    <section class="band band--sky" id={seZaky.id || undefined} aria-labelledby={seZaky.id ? `${seZaky.id}-h` : undefined}>
       <div class="wrap stack" style="gap: 32px">
         <div class="hlava">
           <h2 id={seZaky.id ? `${seZaky.id}-h` : undefined}>{seZaky.nadpis}</h2>
@@ -184,7 +153,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   )}
 
   {vedeni && (
-    <section class="band band--sky" id={vedeni.id || undefined} aria-labelledby={vedeni.id ? `${vedeni.id}-h` : undefined}>
+    <section class="band band--white" id={vedeni.id || undefined} aria-labelledby={vedeni.id ? `${vedeni.id}-h` : undefined}>
       <div class="wrap stack" style="gap: 48px">
         <div class="dva-sloupce dva-sloupce--nadpis">
           <h2 class="nadpis-sloupcu" id={vedeni.id ? `${vedeni.id}-h` : undefined}>{vedeni.nadpis}</h2>
@@ -231,7 +200,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   )}
 
   {urovne && (
-    <section class="band band--white" aria-labelledby={urovne.id || undefined}>
+    <section class="band band--sky" aria-labelledby={urovne.id || undefined}>
       <div class="wrap stack" style="gap: 32px">
         <div class="hlava">
           <h2 id={urovne.id || undefined}>{urovne.nadpis}</h2>
@@ -252,7 +221,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   )}
 
   {dalsi && (
-    <section class="band band--sky" aria-labelledby={dalsi.id || undefined}>
+    <section class="band band--white" aria-labelledby={dalsi.id || undefined}>
       <div class="wrap stack" style="gap: 32px">
         <h2 id={dalsi.id || undefined} class="sr-only">{dalsi.nadpis}</h2>
         <div class="karty-2">
@@ -270,14 +239,14 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   )}
 
   {vyzva && (
-    <section class="band band--white" aria-labelledby={vyzva.id || undefined}>
+    <section class="band band--sky" aria-labelledby={vyzva.id || undefined}>
       <div class="wrap vyzva">
         <div class="hlava">
           <h2 id={vyzva.id || undefined}>{vyzva.nadpis}</h2>
           <div class="prose" set:html={htmlOddilu(vyzva)} />
         </div>
         <div class="tlacitka">
-          {odkazy.map((o, i) => <a class:list={['btn', i === 0 ? 'btn--primary' : 'btn--outline']} href={url(o.href)}>{o.text}{i === 0 && ' →'}</a>)}
+          {odkazy.map((o, i) => <a class:list={['btn', i === 0 ? 'btn--primary' : 'btn--outline btn--bila']} href={url(o.href)}>{o.text}{i === 0 && ' →'}</a>)}
         </div>
       </div>
     </section>
@@ -298,11 +267,6 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .h3-oddil { font-size: 1.35rem; }
   .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
-  .cesty { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 22px; }
-  .cesta h3 { font-size: 1.25rem; }
-  .cesta p { font-size: 0.93rem; line-height: 1.6; }
-  a.cesta:hover { border-color: var(--accent); }
-  .cesta-odkaz { margin-top: auto; font-weight: 600; color: var(--accent-strong); }
 
   .lekce { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 32px; align-items: center; }
   .lekce img { width: 100%; max-width: 360px; border-radius: 8px; border: 1px solid var(--line); }
@@ -313,6 +277,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .cast h3 { font-size: 1.35rem; }
   .cast-hlava { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
   .cast-hlava .stitek { align-self: center; }
+  .band--sky .cast .stitek { background: var(--panel); }
   .workshop-kroky { margin: 16px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 32px 40px; }
   .workshop-kroky li { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
   .workshop-kroky strong { font-family: var(--fh); font-weight: 600; font-size: 1.05rem; }
@@ -334,7 +299,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .postup-krok p { margin: 0; font-size: 0.9rem; line-height: 1.55; }
 
   .kontrolni { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 12px; }
-  .kontrolni li { background: var(--panel); border-radius: 9px; padding: 16px 18px; font-size: 0.95rem; line-height: 1.55; }
+  .kontrolni li { background: #f6fafc; border-radius: 9px; padding: 16px 18px; font-size: 0.95rem; line-height: 1.55; }
 
   .urovne { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); gap: 16px; }
   .urovne .card { padding: 22px; gap: 12px; }
