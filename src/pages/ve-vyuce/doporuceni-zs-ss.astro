@@ -23,7 +23,7 @@ const polozky = (h: string) => [...(h.match(/<(ul|ol)>([\s\S]*?)<\/\1>/)?.[2] ??
   .map(([, n, t]) => ({ nazev: bezTagu(n).replace(/[.:]$/, ''), text: t.trim() }));
 
 // Ke stažení: seznam odkazů „Název (poznámka)“ → karty; poznámka v závorce jako štítek
-const stazeni = najdi(/Ke stažení/i);
+const stazeni = najdi(/Ke stažení|Na stiahnutie/i);
 const stazeniHtml = htmlOddilu(stazeni);
 const soubory = polozkySeznamu(stazeniHtml).map((li) => {
   const a = li.match(/<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/);
@@ -34,11 +34,11 @@ const soubory = polozkySeznamu(stazeniHtml).map((li) => {
 const IKONA_PDF = '<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><path d="M14 3v6h6M12 11v6M9 14l3 3 3-3"></path>';
 const IKONA_WEB = '<circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path>';
 
-const jak = najdi(/pracovat/i);
+const jak = najdi(/pracovat|pracovať/i);
 const kroky = polozky(htmlOddilu(jak));
 
 // Další zdroje: „[Název](odkaz) — popis“ → karty
-const zdroje = najdi(/Další zdroje/i);
+const zdroje = najdi(/Další zdroje|Ďalšie zdroje/i);
 const zdrojeKarty = polozkySeznamu(htmlOddilu(zdroje)).map((li) => {
   const a = li.match(/^\s*<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*[—–-]?\s*/);
   return { href: a?.[1] ?? '', nazev: bezTagu(a?.[2] ?? ''), text: velke(a ? li.slice(a[0].length).trim() : li) };

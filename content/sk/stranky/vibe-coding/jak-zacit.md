@@ -1,60 +1,60 @@
 ---
-title: Jak začít s Vibe Codingem
+title: Ako začať s Vibe Codingom
 menu: Vibe Coding
 poradi: 3
-popis: Postup krok za krokem, jak si postavit první aplikaci do výuky. Vzorový prompt, jak popsat chybu a jak se nezaseknout.
+popis: Postup krok za krokom, ako si postaviť prvú aplikáciu do vyučovania. Vzorový prompt, ako opísať chybu a ako sa nezaseknúť.
 sablona: vibe-coding-jak-zacit-pruvodce   # vlastní šablona src/pages/vibe-coding/jak-zacit.astro
 aktualizovano: 2026-11-21
-stav: koncept
+stav: ke-kontrole   # slovenský preklad, kontrola korektorom
 ---
 
-# Jak začít s Vibe Codingem
+# Ako začať s Vibe Codingom
 
-Vaše první aplikace bude hotová za deset minut. Ukážeme to na kvízu, ale postup je stejný pro cokoli.
+Vaša prvá aplikácia bude hotová za desať minút. Ukážeme to na kvíze, ale postup je rovnaký pre čokoľvek.
 
-## 1. Otevřete nástroj
+## 1. Otvorte nástroj
 
-Pro začátek doporučujeme **Gemini Canvas** (v Gemini zvolte nástroj Canvas) nebo **Claude** (stačí napsat, že chcete aplikaci). Obojí funguje zdarma. Další nástroje najdete v [přehledu nástrojů](/vibe-coding/nastroje).
+Na začiatok odporúčame **Gemini Canvas** (v Gemini zvoľte nástroj Canvas) alebo **Claude** (stačí napísať, že chcete aplikáciu). Oboje funguje zadarmo. Ďalšie nástroje nájdete v [prehľade nástrojov](/vibe-coding/nastroje).
 
-## 2. Popište, co chcete
+## 2. Opíšte, čo chcete
 
-Dobrý popis odpovídá na pět otázek: **pro koho** to je, **k čemu** to slouží, **co** to má umět, **jak** se to ovládá a **jak** to má vypadat.
+Dobrý opis odpovedá na päť otázok: **pre koho** to je, **na čo** to slúži, **čo** to má vedieť, **ako** sa to ovláda a **ako** to má vyzerať.
 
 ```text
-Vytvoř interaktivní kvíz pro žáky 7. třídy na téma vodní cyklus.
-- 10 otázek s výběrem ze 4 možností, otázky se zobrazují po jedné.
-- Po odpovědi hned ukaž, jestli je správně, a jednou větou vysvětli proč.
-- Na konci ukaž počet bodů a tlačítko „Hrát znovu“, které otázky zamíchá.
-- Velká tlačítka, aby to šlo ovládat na tabletu a interaktivní tabuli.
-- Veselé barvy, ale dobře čitelný text.
-- Nesbírej žádné údaje o hráčích.
+Vytvor interaktívny kvíz pre žiakov 7. ročníka na tému kolobeh vody.
+- 10 otázok s výberom zo 4 možností, otázky sa zobrazujú po jednej.
+- Po odpovedi hneď ukáž, či je správna, a jednou vetou vysvetli prečo.
+- Na konci ukáž počet bodov a tlačidlo „Hrať znova“, ktoré otázky zamieša.
+- Veľké tlačidlá, aby sa to dalo ovládať na tablete a interaktívnej tabuli.
+- Veselé farby, ale dobre čitateľný text.
+- Nezbieraj žiadne údaje o hráčoch.
 ```
 
-## 3. Vyzkoušejte to
+## 3. Vyskúšajte to
 
-Projděte aplikaci jako žák. Klikejte i tam, kam se klikat nemá. Zkuste ji na telefonu.
+Prejdite aplikáciu ako žiak. Klikajte aj tam, kam sa klikať nemá. Skúste ju na telefóne.
 
-## 4. Řekněte, co upravit — konkrétně
+## 4. Povedzte, čo upraviť — konkrétne
 
-| Místo… | Napište… |
+| Namiesto… | Napíšte… |
 |---|---|
-| „Nefunguje to.“ | „Po kliknutí na odpověď se nic nestane. Má se zobrazit, jestli je správně.“ |
-| „Je to ošklivé.“ | „Tlačítka jsou moc malá a text splývá s pozadím. Zvětši tlačítka a použij tmavý text na světlém pozadí.“ |
-| „Udělej to lepší.“ | „Přidej časomíru 20 sekund na otázku.“ |
+| „Nefunguje to.“ | „Po kliknutí na odpoveď sa nič nestane. Má sa zobraziť, či je správna.“ |
+| „Je to škaredé.“ | „Tlačidlá sú príliš malé a text splýva s pozadím. Zväčši tlačidlá a použi tmavý text na svetlom pozadí.“ |
+| „Urob to lepšie.“ | „Pridaj časomieru 20 sekúnd na otázku.“ |
 
-Pokud pracujete s nástroji pro začátečníky, upravujte pouze jednu věc. Když jich chcete změnit více najednou, AI často některou z nich rozbije.
+Ak pracujete s nástrojmi pre začiatočníkov, upravujte iba jednu vec. Keď ich chcete zmeniť viac naraz, AI často niektorú z nich pokazí.
 
-## 5. Zkontrolujte obsah
+## 5. Skontrolujte obsah
 
-AI píše kód i otázky. Otázky a odpovědi zkontrolujte stejně pečlivě jako cokoli jiného, co vytvořil chatbot.
+AI píše kód aj otázky. Otázky a odpovede skontrolujte rovnako starostlivo ako čokoľvek iné, čo vytvoril chatbot.
 
-## 6. Sdílejte
+## 6. Zdieľajte
 
-V Gemini Canvas i v Claude (placené tarify) vytvoříte odkaz, který pošlete žákům nebo promítnete. Odkaz je veřejný — kdo ho má, aplikaci otevře.
+V Gemini Canvas aj v Claude (platené tarify) vytvoríte odkaz, ktorý pošlete žiakom alebo premietnete. Odkaz je verejný — kto ho má, aplikáciu otvorí.
 
-## Když se zaseknete
+## Keď sa zaseknete
 
-- **Nechte si nejdřív udělat plán.** „Než začneš programovat, popiš mi, jak bude aplikace fungovat, a počkej na můj souhlas.“
-- **Nechte si vysvětlit chybu.** „Proč se to děje? Vysvětli mi to jednoduše a pak to oprav.“
-- **Vraťte se o krok zpět.** Většina nástrojů ukládá verze. Když se oprava nepovede, vraťte předchozí.
-- **Začněte znovu s lepším zadáním.** Po třech neúspěšných opravách je často rychlejší nová konverzace s přesnějším popisem — už víte, co chcete.
+- **Nechajte si najprv urobiť plán.** „Skôr ako začneš programovať, opíš mi, ako bude aplikácia fungovať, a počkaj na môj súhlas.“
+- **Nechajte si vysvetliť chybu.** „Prečo sa to deje? Vysvetli mi to jednoducho a potom to oprav.“
+- **Vráťte sa o krok späť.** Väčšina nástrojov ukladá verzie. Keď sa oprava nepodarí, vráťte predchádzajúcu.
+- **Začnite znova s lepším zadaním.** Po troch neúspešných opravách je často rýchlejšia nová konverzácia s presnejším opisom — už viete, čo chcete.

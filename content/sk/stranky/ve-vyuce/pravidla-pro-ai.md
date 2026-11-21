@@ -1,120 +1,120 @@
 ---
-title: Tvorba pravidel pro využívání AI
-menu: Chatboti ve výuce
+title: Tvorba pravidiel pre využívanie AI
+menu: Chatboty vo vyučovaní
 poradi: 3
-popis: Jak ve škole vytvořit pravidla pro využívání AI společně se žáky, nebo jako vedení školy. Workshop, návrhy formulací a osnova pravidel.
+popis: Ako v škole vytvoriť pravidlá pre využívanie AI spoločne so žiakmi alebo ako vedenie školy. Workshop, návrhy formulácií a osnova pravidiel.
 aktualizovano: 2026-11-21
 sablona: pravidla-pruvodce   # vlastní šablona src/pages/ve-vyuce/pravidla-pro-ai.astro (návrh z Claude Design, 20. 11. 2026)
-stav: koncept
+stav: ke-kontrole   # slovenský preklad; české odkazy nahradené usmernením MŠVVaM SR
 zdroje:
-  - https://digitalizace.rvp.cz/ke-stazeni#doporuceni-pro-ai
-  - https://digitalizace.rvp.cz/files/jak-na-ai-ve-skole-2025-plakat.pdf
+  - https://ai.iedu.sk/aktuality/
+  - https://www.minedu.sk/data/files/13424_uiv-a3_ria_biela.pdf
   - https://aiassessmentscale.com/
   - https://aidetem.cz/tvorba-skolnich-pravidel-pro-vyuzivani-digitalnich-technologii/
   - https://kurikulum.aidetem.cz/knowledgebase/etika-01-etika-vyvoje-a-vyuziti-technologii/
 odkazy:
-  - { text: Dovednost Školní pravidla, href: /skills/skolni-pravidla }
-  - { text: Způsoby využití AI ve výuce, href: /ve-vyuce/zpusoby-vyuziti-ai }
+  - { text: Zručnosť Školské pravidlá, href: /skills/skolni-pravidla }
+  - { text: Spôsoby využitia AI vo vyučovaní, href: /ve-vyuce/zpusoby-vyuziti-ai }
 ---
-# Tvorba pravidel pro využívání AI
+# Tvorba pravidiel pre využívanie AI
 
-Žáci AI používají, ať to škola dovolí, nebo ne. Pravidla nejsou o zákazu, ale o tom, **kdy a jak AI učení pomáhá a kdy ho nahrazuje**. A o tom, aby všichni, vyučující, žáci i zákonní zástupci, věděli, co platí.
+Žiaci AI používajú, či to škola dovolí, alebo nie. Pravidlá nie sú o zákaze, ale o tom, **kedy a ako AI učeniu pomáha a kedy ho nahrádza**. A o tom, aby všetci, vyučujúci, žiaci aj zákonní zástupcovia, vedeli, čo platí.
 
-Pravidla můžete vytvořit participativně, tedy společně se žáky, nebo shora, kdy je připraví jen vedení školy. Popisujeme obě cesty a dají se i kombinovat.
+Pravidlá môžete vytvoriť participatívne, teda spoločne so žiakmi, alebo zhora, keď ich pripraví len vedenie školy. Opisujeme obe cesty a dajú sa aj kombinovať.
 
-## Pravidla společně se žáky
+## Pravidlá spoločne so žiakmi
 
-Školní pravidla nejsou souborem zákazů, ale odrazem hodnot, na kterých škola stojí. Jejich tvorba je příležitostí k otevřenému dialogu mezi pedagogy, vedením, žáky i zákonnými zástupci. Když se na nich podílejí ti, kterých se týkají, roste jejich srozumitelnost i přijetí.
+Školské pravidlá nie sú súborom zákazov, ale odrazom hodnôt, na ktorých škola stojí. Ich tvorba je príležitosťou na otvorený dialóg medzi pedagógmi, vedením, žiakmi aj zákonnými zástupcami. Keď sa na nich podieľajú tí, ktorých sa týkajú, rastie ich zrozumiteľnosť aj prijatie.
 
-### Začněte lekcí o etice technologií
+### Začnite lekciou o etike technológií
 
 ![Obálka metodiky Etika vývoje a využití technologií](/img/metodika-etika-technologii.jpg)
 
-Metodika Etika vývoje a využití technologií pomáhá žákům zohlednit různé perspektivy (postoje vyučujících nebo vedení školy), porozumět možným konfliktům a spolupodílet se na hledání řešení, která jsou srozumitelná, spravedlivá a udržitelná. Lekce trvá 45 minut. Doporučujeme projít ji se žáky a potom navázat tvorbou školních pravidel.
+Metodika Etika vývoje a využití technologií (v češtine) pomáha žiakom zohľadniť rôzne perspektívy (postoje vyučujúcich alebo vedenia školy), porozumieť možným konfliktom a spolupodieľať sa na hľadaní riešení, ktoré sú zrozumiteľné, spravodlivé a udržateľné. Lekcia trvá 45 minút. Odporúčame prejsť ju so žiakmi a potom nadviazať tvorbou školských pravidiel.
 
-[Stáhnout metodiku](https://kurikulum.aidetem.cz/knowledgebase/etika-01-etika-vyvoje-a-vyuziti-technologii/)
+[Stiahnuť metodiku (v češtine)](https://kurikulum.aidetem.cz/knowledgebase/etika-01-etika-vyvoje-a-vyuziti-technologii/)
 
-### Workshop na tvorbu pravidel
+### Workshop na tvorbu pravidiel
 
-Cílem workshopu je, aby žáci sami navrhli a odhlasovali pravidla pro využívání AI ve škole. Pojmenují, kdy jim AI pomáhá učit se a kdy učení nahrazuje, a dohodnou se na pravidlech, kterým rozumějí a která považují za spravedlivá. Workshop je pro žáky 2. stupně ZŠ a SŠ a navazuje na lekci o etice technologií.
+Cieľom workshopu je, aby žiaci sami navrhli a odhlasovali pravidlá pre využívanie AI v škole. Pomenujú, kedy im AI pomáha učiť sa a kedy učenie nahrádza, a dohodnú sa na pravidlách, ktorým rozumejú a ktoré považujú za spravodlivé. Workshop je pre žiakov 2. stupňa ZŠ a SŠ a nadväzuje na lekciu o etike technológií.
 
-| Část | Čas | Co děláte |
+| Časť | Čas | Čo robíte |
 |---|---|---|
-| Úvod | 10 minut | Krátce vysvětlete cíl: „Dnes se společně domluvíme na pravidlech pro využívání AI ve škole. Nechceme zákazy, ale dohody, které dávají smysl.“ Pravidla workshopu: respektujeme názor ostatních, každý může mluvit, nasloucháme. |
-| Individuální reflexe | 15 minut | Každý žák dostane zelené a červené lístečky. Na zelený napíše, kdy mu AI pomáhá učit se, na červený, kdy mu učení nahrazuje nebo škodí (1 lístek = 1 nápad). Lístečky nalepí na dvě části tabule nebo papíru: POMÁHÁ, ŠKODÍ. |
-| Třídění a pojmenování témat | 15 minut | Společně roztřiďte lístečky do tematických oblastí, například domácí úkoly, psaní textů, hledání informací, testy a písemky, osobní údaje. Pojmenujte kategorie a shrňte: „Zdá se, že nás nejvíc trápí…“, „Nejčastěji AI pomáhá, když…“ |
-| Návrhy pravidel | 25 minut | Rozdělte žáky do skupin po 3–4. Každá skupina si vybere jednu oblast (například domácí úkoly) a na lístečky napíše návrhy pravidel. Pravidla formulují pozitivně a srozumitelně (pomozte jim, pokud je to třeba), například „AI můžeme použít, abychom pochopili látku, ale odevzdáváme vlastní práci.“ |
-| Hlasování a ladění | 30 minut | Všechny návrhy vyvěste. Žáci dostanou 3 hlasovací body (samolepky nebo fixy) a vyberou pravidla, která považují za nejdůležitější a nejsmysluplnější. Společně doladíte finální znění, vyučující zapisuje čistou verzi na tabuli. |
-| Dohoda a závěr | 20 minut | Projděte znovu finální znění vybraných pravidel. Domluvte se, jak zajistíte, aby se pravidla dodržovala (připomenutí při zadávání úloh, plakát ve třídě), a jak je vyhodnotíte (například za měsíc si je znovu přečtete a zhodnotíte, co funguje). |
+| Úvod | 10 minút | Krátko vysvetlite cieľ: „Dnes sa spoločne dohodneme na pravidlách pre využívanie AI v škole. Nechceme zákazy, ale dohody, ktoré dávajú zmysel.“ Pravidlá workshopu: rešpektujeme názor ostatných, každý môže hovoriť, počúvame sa. |
+| Individuálna reflexia | 15 minút | Každý žiak dostane zelené a červené lístočky. Na zelený napíše, kedy mu AI pomáha učiť sa, na červený, kedy mu učenie nahrádza alebo škodí (1 lístok = 1 nápad). Lístočky nalepí na dve časti tabule alebo papiera: POMÁHA, ŠKODÍ. |
+| Triedenie a pomenovanie tém | 15 minút | Spoločne roztrieďte lístočky do tematických oblastí, napríklad domáce úlohy, písanie textov, hľadanie informácií, testy a písomky, osobné údaje. Pomenujte kategórie a zhrňte: „Zdá sa, že nás najviac trápi…“, „Najčastejšie AI pomáha, keď…“ |
+| Návrhy pravidiel | 25 minút | Rozdeľte žiakov do skupín po 3 – 4. Každá skupina si vyberie jednu oblasť (napríklad domáce úlohy) a na lístočky napíše návrhy pravidiel. Pravidlá formulujú pozitívne a zrozumiteľne (pomôžte im, ak je to potrebné), napríklad „AI môžeme použiť, aby sme pochopili učivo, ale odovzdávame vlastnú prácu.“ |
+| Hlasovanie a ladenie | 30 minút | Všetky návrhy vyveste. Žiaci dostanú 3 hlasovacie body (nálepky alebo fixky) a vyberú pravidlá, ktoré považujú za najdôležitejšie a najzmysluplnejšie. Spoločne doladíte konečné znenie, vyučujúci zapisuje čistú verziu na tabuľu. |
+| Dohoda a záver | 20 minút | Prejdite znova konečné znenie vybraných pravidiel. Dohodnite sa, ako zabezpečíte, aby sa pravidlá dodržiavali (pripomenutie pri zadávaní úloh, plagát v triede), a ako ich vyhodnotíte (napríklad o mesiac si ich znova prečítate a zhodnotíte, čo funguje). |
 
-### Návrh formulací pravidel
+### Návrh formulácií pravidiel
 
-Inspirace pro pravidla využívání AI. Pozitivní, krátké, srozumitelné.
+Inšpirácia pre pravidlá využívania AI. Pozitívne, krátke, zrozumiteľné.
 
-- AI je pomocníkem při učení, ne náhradou vlastního přemýšlení.
-- AI používáme jen u úloh, u kterých to vyučující dovolí.
-- Když AI použijeme, napíšeme, k čemu a jak.
-- Do chatbotů nevkládáme osobní údaje svoje ani spolužáků.
-- Odpovědi AI si ověřujeme, protože AI dělá chyby.
+- AI je pomocníkom pri učení, nie náhradou vlastného premýšľania.
+- AI používame len pri úlohách, pri ktorých to vyučujúci dovolí.
+- Keď AI použijeme, napíšeme, na čo a ako.
+- Do chatbotov nevkladáme osobné údaje svoje ani spolužiakov.
+- Odpovede AI si overujeme, pretože AI robí chyby.
 
-### Zavádění do praxe
+### Zavádzanie do praxe
 
-Pravidla vyvěste ve třídách nebo na chodbách jako jednoduchý plakát, ať jsou stále na očích a připomínají dohodu, na které se žáci podíleli. Sdílejte je také se zákonnými zástupci.
+Pravidlá vyveste v triedach alebo na chodbách ako jednoduchý plagát, nech sú stále na očiach a pripomínajú dohodu, na ktorej sa žiaci podieľali. Zdieľajte ich aj so zákonnými zástupcami.
 
-Po čase je se žáky zhodnoťte: co funguje, co je třeba upravit. Pravidla nejsou trest, ale živá dohoda, kterou můžete společně vylepšovat.
+Po čase ich so žiakmi zhodnoťte: čo funguje, čo treba upraviť. Pravidlá nie sú trest, ale živá dohoda, ktorú môžete spoločne vylepšovať.
 
-**Plakát s pomocí AI:** pro tvorbu plakátu můžete využít generativní AI v aplikaci Canva, která je pro školy zdarma. Návody najdete v [databázi návodů AI dětem](https://aidetem.cz/databaze-navodu/).
+**Plagát s pomocou AI:** na tvorbu plagátu môžete využiť generatívnu AI v aplikácii Canva, ktorá je pre školy zadarmo. Návody nájdete v [databáze návodov AI dětem](https://aidetem.cz/databaze-navodu/) (v češtine).
 
-## Pravidla připraví vedení školy
+## Pravidlá pripraví vedenie školy
 
-Pokud nechcete pravidla vytvářet se žáky, může je připravit vedení školy. Pomůže vám s tím naše dovednost Školní pravidla. Hodí se i k ověření nebo aktualizaci pravidel, která už máte.
+Ak nechcete pravidlá vytvárať so žiakmi, môže ich pripraviť vedenie školy. Pomôže vám s tým naša zručnosť Školské pravidlá. Hodí sa aj na overenie alebo aktualizáciu pravidiel, ktoré už máte.
 
-Dovednost vás provede tvorbou pravidel krok za krokem: zeptá se na oblasti, cílové skupiny a hodnoty školy, navrhne formulace, upozorní na rizika (příliš represivní nebo nevymahatelná pravidla) a poradí, jak pravidla zavést. Má i režim přímo pro pravidla využívání AI.
+Zručnosť vás prevedie tvorbou pravidiel krok za krokom: opýta sa na oblasti, cieľové skupiny a hodnoty školy, navrhne formulácie, upozorní na riziká (príliš represívne alebo nevymáhateľné pravidlá) a poradí, ako pravidlá zaviesť. Má aj režim priamo pre pravidlá využívania AI.
 
-[Otevřít dovednost](/skills/skolni-pravidla)
+[Otvoriť zručnosť](/skills/skolni-pravidla)
 
-### Postup v pěti krocích
+### Postup v piatich krokoch
 
-1. **Zmapujte stav využívání AI ve škole** — Krátký dotazník pro vyučující a žáky: kdo co používá, k čemu, s jakou zkušeností.
-2. **Domluvte se na hodnotách** — Co chceme, aby se žáci naučili? Kde AI pomáhá, kde škodí? Vyjděte z hodnot a vize školy.
-3. **Sepište pravidla** — Zvlášť pro vyučující, žáky a zákonné zástupce, krátce a srozumitelně. Pomůže dovednost Školní pravidla.
-4. **Projednejte je** — S pedagogickým sborem, žákovským parlamentem a zákonnými zástupci. Pravidla, která vzniknou v dialogu, se dodržují.
-5. **Vyhodnocujte a aktualizujte** — Aspoň jednou za pololetí. Nástroje se mění rychle.
+1. **Zmapujte stav využívania AI v škole** — Krátky dotazník pre vyučujúcich a žiakov: kto čo používa, na čo, s akou skúsenosťou.
+2. **Dohodnite sa na hodnotách** — Čo chceme, aby sa žiaci naučili? Kde AI pomáha, kde škodí? Vyjdite z hodnôt a vízie školy.
+3. **Spíšte pravidlá** — Zvlášť pre vyučujúcich, žiakov a zákonných zástupcov, stručne a zrozumiteľne. Pomôže zručnosť Školské pravidlá.
+4. **Prerokujte ich** — S pedagogickým zborom, žiackou školskou radou a zákonnými zástupcami. Pravidlá, ktoré vzniknú v dialógu, sa dodržiavajú.
+5. **Vyhodnocujte a aktualizujte** — Aspoň raz za polrok. Nástroje sa menia rýchlo.
 
-### Co by pravidla měla obsahovat
+### Čo by pravidlá mali obsahovať
 
-- **Které nástroje** škola doporučuje a s jakými účty (školní účty, věkové limity).
-- **Ochrana dat:** žádné osobní údaje žáků v chatbotech.
-- **Kdy AI smí žák použít:** ideálně u každé úlohy označit úroveň (viz níže) nebo [způsob jejího využití](/ve-vyuce/zpusoby-vyuziti-ai).
-- **Jak přiznat použití AI:** krátká poznámka, k čemu a jak.
-- **Co je podvod:** vydávání výstupu AI za vlastní práci tam, kde to zadání nedovoluje.
-- **Jak AI používají vyučující:** v přípravě, při hodnocení, v komunikaci se zákonnými zástupci a podobně.
-- **Kdo se stará o aktualizaci** pravidel.
+- **Ktoré nástroje** škola odporúča a s akými účtami (školské účty, vekové limity).
+- **Ochrana údajov:** žiadne osobné údaje žiakov v chatbotoch.
+- **Kedy smie žiak AI použiť:** ideálne pri každej úlohe označiť úroveň (pozri nižšie) alebo [spôsob jej využitia](/ve-vyuce/zpusoby-vyuziti-ai).
+- **Ako priznať použitie AI:** krátka poznámka, na čo a ako.
+- **Čo je podvod:** vydávanie výstupu AI za vlastnú prácu tam, kde to zadanie nedovoľuje.
+- **Ako AI používajú vyučujúci:** v príprave, pri hodnotení, v komunikácii so zákonnými zástupcami a podobne.
+- **Kto sa stará o aktualizáciu** pravidiel.
 
-## Úrovně využití AI v úlohách
+## Úrovne využitia AI v úlohách
 
-U každé úlohy žákům řekněte, jak smí AI použít. Inspirací je škála AI Assessment Scale Leona Furzeho, ze které vychází i našich [10 způsobů využití AI ve výuce](/ve-vyuce/zpusoby-vyuziti-ai).
+Pri každej úlohe žiakom povedzte, ako smú AI použiť. Inšpiráciou je škála AI Assessment Scale Leona Furzeho, z ktorej vychádza aj našich [10 spôsobov využitia AI vo vyučovaní](/ve-vyuce/zpusoby-vyuziti-ai).
 
-1. **Bez AI** — Žák pracuje sám, například písemná práce ve třídě.
-2. **AI pro plánování** — Nápady, osnova, plán. Samotnou práci dělá žák.
-3. **AI pro spolupráci** — AI pomáhá při práci, žák ji vede a hodnotí.
-4. **Plné využití AI** — AI je nástroj, hodnotí se, jak s ní žák pracoval.
-5. **AI jako téma** — Žák s AI tvoří nové nástroje a postupy.
+1. **Bez AI** — Žiak pracuje sám, napríklad písomná práca v triede.
+2. **AI na plánovanie** — Nápady, osnova, plán. Samotnú prácu robí žiak.
+3. **AI na spoluprácu** — AI pomáha pri práci, žiak ju vedie a hodnotí.
+4. **Plné využitie AI** — AI je nástroj, hodnotí sa, ako s ňou žiak pracoval.
+5. **AI ako téma** — Žiak s AI tvorí nové nástroje a postupy.
 
-## Doporučení a zákonní zástupci
+## Usmernenie a zákonní zástupcovia
 
-### Jak na AI ve škole
+### Usmernenie ministerstva
 
-Národní pedagogický institut vydal v roce 2025 doporučení **Jak na AI ve škole** pro ředitele, pedagogy, žáky i zákonné zástupce. Jsou dobrým základem pro vlastní pravidla.
+Ministerstvo školstva, výskumu, vývoja a mládeže SR vydalo **Usmernenie pre využívanie umelej inteligencie na základných a stredných školách** pre riaditeľov, pedagógov, žiakov aj zákonných zástupcov. Je dobrým základom pre vlastné pravidlá.
 
-[Doporučení pro ZŠ a SŠ](/ve-vyuce/doporuceni-zs-ss)
+[Usmernenie pre ZŠ a SŠ](/ve-vyuce/doporuceni-zs-ss)
 
-### Proč škola AI zavádí
+### Prečo škola AI zavádza
 
-Potřebujete to vysvětlit zákonným zástupcům? Pomůže dovednost Komunikace s rodiči.
+Potrebujete to vysvetliť zákonným zástupcom? Pomôže zručnosť Komunikácia so zákonnými zástupcami.
 
-[Dovednost Komunikace s rodiči](/skills/komunikace-s-rodici)
+[Zručnosť Komunikácia so zákonnými zástupcami](/skills/komunikace-s-rodici)
 
-## Pusťte se do toho
+## Pustite sa do toho
 
-Dovednost Školní pravidla vám pomůže s prvním návrhem za pár minut.
+Zručnosť Školské pravidlá vám pomôže s prvým návrhom za pár minút.

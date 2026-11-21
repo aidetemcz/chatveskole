@@ -37,20 +37,20 @@ const radky = [...(agentiHtml.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? '').ma
     return { nazev: m ? bezTagu(m[1]) : bezTagu(nastroj), pozn: m ? m[2].replace(/^\(|\)$/g, '') : '', bunky: zbytek.map(velke) };
   });
 
-const sestava = najdi(/sestava/i);
+const sestava = najdi(/sestava|zostava/i);
 const kroky = polozky(htmlOddilu(sestava));
 
 // Jak napojit agenta na GitHub: úvod, číslované kroky „**Název** — text“ ve čtyřech sloupcích, pod nimi animace na celou šířku
-const napojeni = najdi(/napojit/i);
+const napojeni = najdi(/napojit|napojiť/i);
 const napojeniHtml = htmlOddilu(napojeni);
 const napojeniUvod = odstavce(uvodOddilu(napojeniHtml));
 const napojeniKroky = polozky(napojeniHtml);
 
-const bezpecnost = najdi(/Bezpečnost/i);
+const bezpecnost = najdi(/Bezpečnost|Bezpečnosť/i);
 const pravidla = polozky(htmlOddilu(bezpecnost));
 
 // Případová studie: úvod, body (celé položky jako karty), závěrečný odstavec jako tip, poslední odstavec jen s odkazem → tlačítko
-const studie = najdi(/Případová studie/i);
+const studie = najdi(/Případová studie|Prípadová štúdia/i);
 let studieHtml = htmlOddilu(studie);
 const zpet = studieHtml.match(/<p>\s*<a href="([^"]+)"[^>]*>([^<]*)<\/a>\s*<\/p>\s*$/);
 if (zpet) studieHtml = studieHtml.slice(0, zpet.index);

@@ -1,68 +1,68 @@
 ---
 title: Metodické materiály
-menu: Chatboti ve výuce
+menu: Chatboty vo vyučovaní
 poradi: 2
-popis: Metodiky AI dětem k chatbotům ve výuce — Kurikulum umělé inteligence pro ZŠ a SŠ, metodiky k aplikaci Tiny a školení pro sborovny.
+popis: Metodiky AI dětem k chatbotom vo vyučovaní — Kurikulum umelej inteligencie pre ZŠ a SŠ, metodiky k aplikácii Tiny a školenia pre zborovne. Materiály sú v češtine.
 sablona: metodiky-pruvodce   # vlastní šablona src/pages/ve-vyuce/metodiky.astro
 aktualizovano: 2026-11-21
-stav: koncept
+stav: ke-kontrole   # slovenský preklad; metodiky a školenia sú len v češtine
 zdroje:
   - https://kurikulum.aidetem.cz/vypis-vseho/
   - https://www.tiny.school/metodiky/
 odkazy:
-  - { text: AI aplikace Tiny, href: /ve-vyuce/tiny }
+  - { text: AI aplikácia Tiny, href: /ve-vyuce/tiny }
 ---
 
 # Metodické materiály
 
-V AI dětem vyvíjíme Kurikulum umělé inteligence pro ZŠ a SŠ. Je to koncepce výuky umělé inteligence pro informatiku i pro rozvoj digitální kompetence ve všech ostatních předmětech. Najdete v něm přes 50 metodických materiálů s plány vyučovacích bloků, díky kterým výuku AI snadno uchopíte. K aplikaci [Tiny](/ve-vyuce/tiny) jsme připravili metodický materiál s modelovými zadáními pro většinu předmětů.
+V AI dětem vyvíjame Kurikulum umelej inteligencie pre ZŠ a SŠ. Je to koncepcia vyučovania umelej inteligencie pre informatiku aj pre rozvoj digitálnej kompetencie vo všetkých ostatných predmetoch. Nájdete v ňom vyše 50 metodických materiálov s plánmi vyučovacích blokov, vďaka ktorým vyučovanie AI ľahko uchopíte. K aplikácii [Tiny](/ve-vyuce/tiny) sme pripravili metodický materiál s modelovými zadaniami pre väčšinu predmetov. Všetky materiály na tejto stránke sú v češtine a vychádzajú z českého kurikula.
 
 <!-- komponenta: tlačítko -->
 
-[Přejít na AI kurikulum](https://kurikulum.aidetem.cz/)
+[Prejsť na AI kurikulum (v češtine)](https://kurikulum.aidetem.cz/)
 
-## Chatboti ve výuce
+## Chatboty vo vyučovaní
 
 <!-- komponenta: karty s náhledem -->
 
-- **[Využití chatbotů ve formativním hodnocení](https://kurikulum.aidetem.cz/knowledgebase/vyuziti-chatbotu-ve-formativnim-hodnoceni/)** — Metodika k sadě dovedností Formativní hodnocení.
-- **[Chatboti ve výuce](https://kurikulum.aidetem.cz/knowledgebase/chatboti-ve-vyuce-pracovni-listy/)** — Úvod do promptování pro žáky od 13 let.
-- **[Rozvoj myšlení s využitím chatbota](https://kurikulum.aidetem.cz/knowledgebase/rozvoj-mysleni-s-vyuzitim-chatbota/)** — Žáci rozvíjejí myšlení pomocí otázek.
+- **[Využitie chatbotov vo formatívnom hodnotení](https://kurikulum.aidetem.cz/knowledgebase/vyuziti-chatbotu-ve-formativnim-hodnoceni/)** — Metodika k sade zručností Formatívne hodnotenie (v češtine).
+- **[Chatboty vo vyučovaní](https://kurikulum.aidetem.cz/knowledgebase/chatboti-ve-vyuce-pracovni-listy/)** — Úvod do promptovania pre žiakov od 13 rokov (v češtine).
+- **[Rozvoj myslenia s využitím chatbota](https://kurikulum.aidetem.cz/knowledgebase/rozvoj-mysleni-s-vyuzitim-chatbota/)** — Žiaci rozvíjajú myslenie pomocou otázok (v češtine).
 
-## Metodiky k aplikaci Tiny
+## Metodiky k aplikácii Tiny
 
-Ke každému Tinybotovi jsme připravili metodiku s modelovými zadáními. Začněte úvodní metodikou.
+Ku každému Tinybotovi sme pripravili metodiku s modelovými zadaniami. Začnite úvodnou metodikou. Metodiky sú v češtine.
 
 <!-- komponenta: karta s obrázkem -->
 
 ![Obálka metodiky Jak začít s Tinyboty](/img/metodika-jak-zacit-s-tinyboty.png)
 
-### Jak začít s Tinyboty
+### Ako začať s Tinybotmi
 
-Úvodní metodika pro vyučující, kterou doporučujeme projít jako první. Vysvětluje, čím se Tinyboti liší od běžných chatbotů, jak připravit aktivitu a jak vést hodinu. Obsahuje plán úvodní lekce a návrh pravidel pro práci s AI ve třídě.
+Úvodná metodika pre vyučujúcich, ktorú odporúčame prejsť ako prvú. Vysvetľuje, čím sa Tinyboti líšia od bežných chatbotov, ako pripraviť aktivitu a ako viesť hodinu. Obsahuje plán úvodnej lekcie a návrh pravidiel pre prácu s AI v triede.
 
-[Otevřít metodiku](https://www.tiny.school/jak-zacit-s-tinyboty/)
+[Otvoriť metodiku (v češtine)](https://www.tiny.school/jak-zacit-s-tinyboty/)
 
-### Metodiky k jednotlivým Tinybotům
+### Metodiky k jednotlivým Tinybotom
 
-- **[Testovací chatbot](https://www.tiny.school/testovaci-chatbot/)** — metodika na ověření znalostí. Tinybot krátkými úlohami zjišťuje, co žák umí a kde má mezery.
-- **[Opakovací parťák](https://www.tiny.school/opakovaci-partak/)** — metodika pro opakování učiva. Opakuje učivo otázkami, od jednodušších úloh ke složitějším.
-- **[Společné objevování](https://www.tiny.school/spolecne-objevovani/)** — metodika pro porozumění. Slouží pro samostatné vzdělávání v hodinách i doma.
-- **[Zvědavý mimoň](https://www.tiny.school/zvedavy-mimon/)** — metodika na vysvětlování učiva. Předstírá nevědomost a vyzývá žáky k vysvětlení.
-- **[Historická postava a Expert](https://www.tiny.school/historicka-postava-expert/)** — metodika pro dialog. Mluví jako historická postava nebo odborník a přibližuje kontext.
-- **[V hlavní roli](https://www.tiny.school/v-hlavni-roli/)** — metodika na abstraktní pojmy. Vtělí se do zadané role a odpovídá z její perspektivy.
-- **[Co kdyby](https://www.tiny.school/co-kdyby/)** — metodika na domýšlení důsledků. Postaví hypotetickou změnu a otázkami vede žáky k domýšlení důsledků.
-- **[Argumentační partner](https://www.tiny.school/argumentacni-partner/)** — metodika pro kritické myšlení. Nabízí protiargumenty a ptá se po důkazech.
-- **[Chybující chatbot](https://www.tiny.school/chybujici-chatbot/)** — metodika na ověřování informací. Záměrně chybuje a žáci chyby hledají a vysvětlují.
-- **[Parťák pro brainstorming](https://www.tiny.school/partak-pro-brainstorming/)** — metodika na hledání nápadů. Rozšiřuje uvažování žáků otázkami.
-- **[Chatbot pro plánování](https://www.tiny.school/chatbot-pro-planovani/)** — metodika na projekty a práce. Pomáhá rozvrhnout práci a konkrétní kroky.
+- **[Testovací chatbot](https://www.tiny.school/testovaci-chatbot/)** — metodika na overenie vedomostí. Tinybot krátkymi úlohami zisťuje, čo žiak vie a kde má medzery.
+- **[Opakovací parťák](https://www.tiny.school/opakovaci-partak/)** — metodika na opakovanie učiva. Opakuje učivo otázkami, od jednoduchších úloh k zložitejším.
+- **[Společné objevování](https://www.tiny.school/spolecne-objevovani/)** — metodika na porozumenie. Slúži na samostatné vzdelávanie na hodinách aj doma.
+- **[Zvědavý mimoň](https://www.tiny.school/zvedavy-mimon/)** — metodika na vysvetľovanie učiva. Predstiera nevedomosť a vyzýva žiakov, aby učivo vysvetlili.
+- **[Historická postava a Expert](https://www.tiny.school/historicka-postava-expert/)** — metodika na dialóg. Hovorí ako historická postava alebo odborník a približuje kontext.
+- **[V hlavní roli](https://www.tiny.school/v-hlavni-roli/)** — metodika na abstraktné pojmy. Vžije sa do zadanej roly a odpovedá z jej perspektívy.
+- **[Co kdyby](https://www.tiny.school/co-kdyby/)** — metodika na domýšľanie dôsledkov. Postaví hypotetickú zmenu a otázkami vedie žiakov k domýšľaniu dôsledkov.
+- **[Argumentační partner](https://www.tiny.school/argumentacni-partner/)** — metodika na kritické myslenie. Ponúka protiargumenty a pýta sa na dôkazy.
+- **[Chybující chatbot](https://www.tiny.school/chybujici-chatbot/)** — metodika na overovanie informácií. Zámerne robí chyby a žiaci ich hľadajú a vysvetľujú.
+- **[Parťák pro brainstorming](https://www.tiny.school/partak-pro-brainstorming/)** — metodika na hľadanie nápadov. Rozširuje uvažovanie žiakov otázkami.
+- **[Chatbot pro plánování](https://www.tiny.school/chatbot-pro-planovani/)** — metodika na projekty a práce. Pomáha rozvrhnúť prácu a konkrétne kroky.
 
-## Školení pro sborovny
+## Školenia pre zborovne
 
 <!-- komponenta: karta s obrázkem (bez obrázku) -->
 
-### Nechte proškolit svou sborovnu
+### Nechajte vyškoliť svoju zborovňu
 
-V AI dětem nabízíme školení pro celé sborovny. Přijedeme za vámi do školy a ukážeme pedagogům, jak chatboty smysluplně využít ve výuce i v každodenní práci. Nabízíme mimo jiné školení *AI v hodnocení* a *Vibe Coding pro školy*.
+V AI dětem ponúkame školenia pre celé zborovne v Česku, v češtine. Prídeme za vami do školy a ukážeme pedagógom, ako chatboty zmysluplne využiť vo vyučovaní aj v každodennej práci. Ponúkame okrem iného školenie *AI v hodnotení* a *Vibe Coding pre školy*.
 
-[Vybrat školení pro sborovnu](https://vzdelavame.aidetem.cz/kategorie-akce/sborovna/)
+[Vybrať školenie pre zborovňu (v češtine)](https://vzdelavame.aidetem.cz/kategorie-akce/sborovna/)
