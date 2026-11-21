@@ -33,6 +33,8 @@ zdroje:
   - https://support.claude.com/en/articles/10684626-enable-and-use-web-search
   - https://claude.com/solutions/education
   - https://www.perplexity.ai/hub/legal/terms-of-service
+  - https://digitalizace.rvp.cz/files/2025-faq-ai-umela-inteligence-jako-asistent-ucitele.pdf
+  - https://cnn.iprima.cz/pouzivani-ai-zaky-naskok-maji-pred-rodici-i-uciteli-zapojeni-do-vyuky-komplikuji-bariery-483936
 odkazy:
   - { text: Kolik stojí chatboti, href: /zaciname/kolik-stoji-chatboti }
   - { text: Změny ve funkcích 2026, href: /funkce/zmeny-2026 }
@@ -91,8 +93,8 @@ Podrobné srovnání funkcí a přehled toho, co se mění v roce 2027, najdete 
 ## Další nástroje
 
 - **[Perplexity](https://www.perplexity.ai)** — vyhledávač, který odpovídá s odkazy na zdroje. Hodí se na rešerše. Od 13 let, nezletilí jen se souhlasem rodiče.
-- **[Gemini Notebook](https://notebooklm.google.com)** (dříve NotebookLM) — odpovídá jen z podkladů, které nahrajete. Umí z nich udělat shrnutí, kvíz nebo podcast.
-- **[Tiny](/ve-vyuce/tiny)** — chatboti pro žáky od AI dětem: vedou otázkami, vyučující vidí konverzace, data zůstávají v EU.
+- **[AI aplikace Tiny](/ve-vyuce/tiny)** — chatboti pro žáky od AI dětem: vedou otázkami, vyučující vidí konverzace, data zůstávají v EU.
+- **[Sciobot](https://sciobot.cz)** — AI asistent pro vyučující od společnosti Scio. Pomáhá připravit plány hodin a materiály do výuky. Základní verze je pro vyučující a školy zdarma.
 - Nástroje pro tvorbu aplikací najdete v sekci [Vibe Coding](/vibe-coding/nastroje).
 
 ## Kolik to stojí?

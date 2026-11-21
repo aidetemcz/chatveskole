@@ -147,7 +147,7 @@ const sipka = '<path d="M7 17L17 7M9 7h8v8"></path>';
         <h2 id={dalsi.id || undefined}>{dalsi.nadpis}</h2>
         <div class="karty karty--3">
           {dalsiKarty.map((k) => (
-            <div class:list={['card', { 'karta--nase': k.nase }]}>
+            <div class="card">
               <h3>{k.nazev}</h3>
               {k.pozn && <span class="stitek">{k.pozn}</span>}
               <p set:html={k.text} />
