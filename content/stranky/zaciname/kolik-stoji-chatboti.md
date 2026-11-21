@@ -15,9 +15,7 @@ Všechny chatovací aplikace mají bezplatnou verzi. Placená verze přidá vyš
 
 ## Co zohlednit kromě ceny
 
-U bezplatných a osobních tarifů může vývojář používat vaše konverzace k vylepšování modelů. U většiny to jde vypnout v nastavení. Tarify pro školy a organizace (Google Workspace for Education, Microsoft 365 se školní licencí, ChatGPT Business, Claude Team) data k tréninku nepoužívají.
-
-Ať používáte jakýkoli tarif, do chatbota nevkládejte jména žáků ani jiné osobní údaje. Pracujte s iniciálami nebo přezdívkami.
+U bezplatných a osobních tarifů mohou vývojáři využívat vaše konverzace k vylepšování modelů. U většiny to jde vypnout v nastavení. U tarifů pro školy a organizace (Google Workspace for Education, Microsoft 365 se školní licencí, ChatGPT Business, Claude Team) se data k tréninku nepoužívají. Ať používáte jakýkoliv tarif, do chatbota nevkládejte jména žáků ani jiné osobní údaje. Pracujte s iniciály nebo přezdívkami.
 
 ## Co je zdarma nebo se slevou
 
