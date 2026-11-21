@@ -62,14 +62,12 @@ Dovednosti nejsou jen pro chatboty, používají je i programovací agenti. Dove
 
 ## Případová studie: tento web
 
-Web Chatboti ve škole jsme v roce 2026 převedli z WordPressu a od té doby ho stavíme Vibe Codingem.
+Web Chatboti ve škole jsme v roce 2026 převedli ze systému WordPress na Astro pomocí Vibe Codingu. Pokud proběhne ve funkcích nějaká další změna, stačí, když ji v přirozeném jazyce popíšeme Claude Code a on udělá změny za nás. My je pak jen zkontrolujeme, případně informace upřesníme.
 
-- **Všechny texty jsou soubory Markdown**, tedy obyčejný text s jednoduchými značkami pro nadpisy a seznamy. Jsou uložené v repozitáři (úložišti projektu) [github.com/aidetemcz/chatveskole](https://github.com/aidetemcz/chatveskole). Když chceme změnit text, upravíme soubor.
+- **Všechny texty jsou soubory Markdown**, tedy obyčejný text s jednoduchými značkami pro nadpisy a seznamy. Jsou uložené v repozitáři (úložišti projektu). Když chceme změnit text, upravíme soubor.
 - **Každá dovednost je složka** se souborem `SKILL.md`, verzí ve formě promptu a údaji pro web, jako je popis a štítky. Web z ní sám vytvoří stránku, tlačítko Kopírovat a ZIP ke stažení.
 - **Data jsou v souborech YAML**, tedy v textových souborech s přehledně zapsanými údaji. Máme v nich ceny chatbotů a přehled funkcí. Když se změní ceník, upravíme jeden soubor.
 - **Nemáme žádnou databázi.** Web se předem sestaví do hotových (statických) stránek a běží na Vercelu.
 - **Změny děláme hromadně přes Claude Code.** Stačí mu napsat například „aktualizuj u všech dovedností věkové limity podle nového přehledu“.
-
-Funkce chatbotů se mění každý měsíc. Udržovat obsah klikáním ve WordPressu jsme nestíhali. S Vibe Codingem upravíme desítky stránek najednou.
 
 [Zpět na Co je Vibe Coding](/vibe-coding/co-je-to)
