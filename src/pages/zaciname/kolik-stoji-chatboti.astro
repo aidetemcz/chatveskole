@@ -24,6 +24,7 @@ const bezTlacitek = (h: string) => h.replace(/<p>\s*<a href="[^"]+"[^>]*>[\s\S]*
 
 const data = najdi(/kromě ceny/i);
 const zdarma = najdi(/zdarma/i);
+const nadpisZdarma = zdarma ? zdarma.nadpis : '';
 const zdarmaHtml = htmlOddilu(zdarma);
 // „Zapíná správce.“ na konci textu → štítek
 const kartyZdarma = polozky(zdarmaHtml).map((k) => {
@@ -53,7 +54,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
         <div class="lede perex" set:html={perex} />
         <div class="tlacitka">
           {tarify && <a class="btn btn--primary" href={`#${tarify.id}`}>{tarify.nadpis} ↓</a>}
-          {zdarma && <a class="btn btn--outline" href={`#${zdarma.id}`}>Co má škola zdarma ↓</a>}
+          {zdarma && <a class="btn btn--outline" href={`#${zdarma.id}`}>{nadpisZdarma} ↓</a>}
         </div>
       </div>
     </div>
