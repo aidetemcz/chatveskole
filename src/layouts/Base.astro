@@ -19,6 +19,8 @@ const fullTitle = title === 'Chatboti ve škole' ? title : `${title} | Chatboti 
 const canonical = new URL(Astro.url.pathname.replace(/\/?$/, '/'), Astro.site);
 // indexovat jen ostrý web na chatveskole.cz (viz src/lib/indexovat.mjs); náhledy na github.io a vercel.app ne
 const nahled = !indexovat;
+// Vercel Web Analytics (bez cookies, schválila Eva 21. 11. 2026): jen v produkčním buildu na Vercelu, jinde skript neexistuje
+const mereni = process.env.VERCEL_ENV === 'production';
 const ogImage = new URL(url('/img/og-chatveskole.jpg'), Astro.site);
 const domov = new URL(url('/'), Astro.site).href;
 // Strukturovaná data pro vyhledávače: provozovatel a web s vyhledáváním (schema.org)
@@ -82,6 +84,8 @@ const jsonLd = JSON.stringify({
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
     <script type="application/ld+json" set:html={jsonLd} />
+    {mereni && <script is:inline>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>}
+    {mereni && <script is:inline defer src="/_vercel/insights/script.js"></script>}
   </head>
   <body>
     <a class="skip" href="#obsah">Přeskočit na obsah</a>
