@@ -41,8 +41,6 @@ Nejjednodušší cesta: aplikaci vytvoříte ve stejném okně, kde s chatbotem 
 | **ChatGPT Sites** | ne, jen v placených tarifech | 13+, do 18 let se souhlasem zákonného zástupce | ano | Hodí se pro tvorbu webů a jednoduchých aplikací. Weby najdete v levém panelu. |
 | **Copilot App Builder** | — | — | — | **Končí 30. 11. 2026.** Nezačínejte s ním. |
 
-Údaje na této stránce jsou k 7. 11. 2026, u Canva Kódování k 15. 11. 2026. Ceny, limity a věkové hranice se mění, před použitím se žáky je proto ověřte.
-
 ## Webové generátory aplikací
 
 Tyto služby jsou určené přímo ke stavbě aplikací. Umí víc než chatboti, ale bezplatné verze mají limity.
