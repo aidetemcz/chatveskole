@@ -25,7 +25,7 @@ const d = prompt.data;
     <aside class="side">
       {d.zpusob && (
         <div class="box">
-          <div><h2>{t('Způsob využití AI')}</h2><p>{d.zpusob_odkaz ? <a href={url(d.zpusob_odkaz)}>{d.zpusob}</a> : d.zpusob}{d.perex && <> — {d.perex}</>}</p></div>
+          <div><h2>{t('Způsob využití AI')}</h2><p>{d.zpusob_odkaz ? <a href={url(d.zpusob_odkaz)}>{t(d.zpusob)}</a> : t(d.zpusob)}{d.perex && <> — {d.perex}</>}</p></div>
           {d.pojistka && <div><h2>{t('Pojistka')}</h2><p>{d.pojistka}</p></div>}
           {d.jak_poznate && <div><h2>{t('Jak poznáte, že se žák učí')}</h2><p>{d.jak_poznate}</p></div>}
           {d.zpusob_odkaz && <a class="more" href={url('/ve-vyuce/zpusoby-vyuziti-ai')}>{t('Všechny způsoby využití AI →')}</a>}

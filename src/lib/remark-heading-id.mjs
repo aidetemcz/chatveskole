@@ -4,7 +4,7 @@ export default function remarkHeadingId() {
     const visit = (node) => {
       if (node.type === 'heading') {
         const last = node.children[node.children.length - 1];
-        const m = last && last.type === 'text' && last.value.match(/\s*\{#([\w-]+)\}\s*$/);
+        const m = last && last.type === 'text' && last.value.match(/\s*\{#([\p{L}\p{N}_-]+)\}\s*$/u);
         if (m) {
           last.value = last.value.slice(0, m.index);
           node.data = { ...(node.data || {}), hProperties: { ...((node.data || {}).hProperties || {}), id: m[1] } };

@@ -12,7 +12,7 @@ export default function rehypeBase(options = {}) {
         if (NOVE_OKNO.test(String(node.properties.href ?? ''))) {
           node.properties.target = '_blank';
           node.properties.rel = ['noopener'];
-          node.children.push({ type: 'element', tagName: 'span', properties: { className: ['sr-only'] }, children: [{ type: 'text', value: ' (otevře se v novém okně)' }] });
+          node.children.push({ type: 'element', tagName: 'span', properties: { className: ['sr-only'] }, children: [{ type: 'text', value: process.env.JAZYK === 'sk' ? ' (otvorí sa v novom okne)' : ' (otevře se v novém okně)' }] });
         }
       }
       if (node.tagName === 'img') node.properties.src = fix(node.properties.src);

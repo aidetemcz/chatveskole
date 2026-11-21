@@ -1,5 +1,5 @@
 ---
-title: "Tvorba důkazů o učení"
+title: "Tvorba dôkazov o učení"
 slug: "tvorba-dukazu-o-uceni"
 skupina: pedagogove
 kategorie: ["Podpora formativního přístupu","Tvorba materiálů do výuky"]
@@ -12,42 +12,42 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený pedagog se zaměřením na formativní hodnocení. Navrhni pět různých způsobů, jak mohou žáci ukázat, že dosáhli výukového cíle. Každý návrh musí sloužit jako důkaz o učení: podle něj poznám, jak daleko žák je.
+Vystupuj ako skúsený pedagóg so zameraním na formatívne hodnotenie. Navrhni päť rôznych spôsobov, ako môžu žiaci ukázať, že dosiahli vyučovací cieľ. Každý návrh musí slúžiť ako dôkaz o učení: podľa neho spoznám, ako ďaleko žiak je.
 
-Výukový cíl: [například Žák vysvětlí, jak přírodní podmínky ovlivňují způsob života lidí v různých oblastech Afriky.]
-Kritéria hodnocení: [vložte kritéria, nebo řádek smažte]
-Ročník: [například 7. ročník ZŠ]
-Předmět a téma: [například zeměpis – Afrika]
-Popis hodiny nebo celku: [nepovinné, nebo řádek smažte]
-Čas a podmínky: [například 2 vyučovací hodiny, bez tabletů; nebo řádek smažte]
+Vyučovací cieľ: [napríklad Žiak vysvetlí, ako prírodné podmienky ovplyvňujú spôsob života ľudí v rôznych oblastiach Afriky.]
+Kritériá hodnotenia: [vložte kritériá, alebo riadok vymažte]
+Ročník: [napríklad 7. ročník ZŠ]
+Predmet a téma: [napríklad geografia – Afrika]
+Opis hodiny alebo celku: [nepovinné, alebo riadok vymažte]
+Čas a podmienky: [napríklad 2 vyučovacie hodiny, bez tabletov; alebo riadok vymažte]
 
-Pravidla:
-1. Každá forma musí ukázat přesně to, co žádá cíl (jeho činnost a znalost), ne jen zopakování učiva nebo zručnost v kreslení či hraní. Ohlídej, aby se v žádné formě nedalo uspět bez porozumění.
-2. Důkazy získávej ze tří zdrojů: rozhovor (žák vysvětluje, odpovídá na doplňující otázky), pozorování (sleduji, jak žák postupuje), výtvor (text, schéma, mapa, nahrávka, model, komiks). Zařaď aspoň jeden návrh z každého zdroje.
-3. Formy se mají lišit nároky na psaní, čtení a mluvení, aby porozumění mohl ukázat každý žák.
-4. Aspoň jedna forma trvá do 10 minut a dá se použít v hodině u celé třídy najednou, aspoň jedna je delší.
-5. Výběr formy zdůvodni cílem a potřebami žáků, ne učebními styly.
+Pravidlá:
+1. Každá forma musí ukázať presne to, čo žiada cieľ (jeho činnosť a poznatok), nie len zopakovanie učiva alebo zručnosť v kreslení či hraní. Postaraj sa, aby sa v žiadnej forme nedalo uspieť bez porozumenia.
+2. Dôkazy získavaj z troch zdrojov: rozhovor (žiak vysvetľuje, odpovedá na doplňujúce otázky), pozorovanie (sledujem, ako žiak postupuje), výtvor (text, schéma, mapa, nahrávka, model, komiks). Zaraď aspoň jeden návrh z každého zdroja.
+3. Formy sa majú líšiť nárokmi na písanie, čítanie a hovorenie, aby porozumenie mohol ukázať každý žiak.
+4. Aspoň jedna forma trvá do 10 minút a dá sa použiť v hodine pri celej triede naraz, aspoň jedna je dlhšia.
+5. Výber formy zdôvodni cieľom a potrebami žiakov, nie učebnými štýlmi.
 
-U každé formy uveď:
-- Zadání pro žáky: 1–3 věty v tykání.
-- Čas a potřebné pomůcky.
-- Které kritérium forma ukáže.
-- Čeho si všímat: podle čeho poznám, že žák je teprve na začátku, a podle čeho, že cíl splnil.
-- Jak důkaz uchovat (fotka, nahrávka, poznámka do tabulky).
+Pri každej forme uveď:
+- Zadanie pre žiakov: 1 – 3 vety v tykaní.
+- Čas a potrebné pomôcky.
+- Ktoré kritérium forma ukáže.
+- Čoho si všímať: podľa čoho spoznám, že žiak je ešte len na začiatku, a podľa čoho, že cieľ splnil.
+- Ako dôkaz uchovať (fotka, nahrávka, poznámka do tabuľky).
 
-Na konec dej přehledovou tabulku: forma – zdroj – kritérium – čas. Pokud chybí cíl nebo ročník, nejdřív se mě zeptej. Nabídni: 1) podrobné zadání k vybrané formě, 2) sebehodnocení J–Č–T–Ú ke kritériím, 3) úpravu pro žáka, který potřebuje podporu.
+Na koniec daj prehľadovú tabuľku: forma – zdroj – kritérium – čas. Ak chýba cieľ alebo ročník, najprv sa ma opýtaj. Ponúkni: 1) podrobné zadanie k vybranej forme, 2) sebahodnotenie J–Č–T–Ú ku kritériám, 3) úpravu pre žiaka, ktorý potrebuje podporu.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vám navrhne pět různých způsobů, jak mohou žáci ukázat, čemu se naučili. Každý návrh je navázaný na výukový cíl a kritéria, takže z něj opravdu poznáte, jak daleko žák je. Kreslení, hraní nebo nahrávka nejsou samoúčelné, vždy musí ukázat porozumění.
+Prompt vám navrhne päť rôznych spôsobov, ako môžu žiaci ukázať, čo sa naučili. Každý návrh je naviazaný na vyučovací cieľ a kritériá, takže z neho naozaj spoznáte, ako ďaleko žiak je. Kreslenie, hranie alebo nahrávka nie sú samoúčelné, vždy musia ukázať porozumenie.
 
-Návrhy pokrývají tři zdroje důkazů: rozhovor se žákem, pozorování jeho práce a hotový výtvor. Formy se liší nároky na psaní, čtení a mluvení, aby porozumění mohl ukázat i žák, kterému psaní nejde. U každé formy dostanete zadání pro žáky, čas, vazbu na kritérium, na co se dívat a jak důkaz uchovat.
+Návrhy pokrývajú tri zdroje dôkazov: rozhovor so žiakom, pozorovanie jeho práce a hotový výtvor. Formy sa líšia nárokmi na písanie, čítanie a hovorenie, aby porozumenie mohol ukázať aj žiak, ktorému písanie nejde. Pri každej forme dostanete zadanie pre žiakov, čas, väzbu na kritérium, na čo sa pozerať a ako dôkaz uchovať.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte výukový cíl, ročník, předmět a téma. Kritéria hodnocení a podmínky výuky přidejte, pokud je máte, návrhy pak budou přesnější. Cíl si můžete připravit promptem [Formulace výukového cíle](/funkce/prompty/formulace-vyukoveho-cile).
+Skopírujte prompt do chatbota a doplňte vyučovací cieľ, ročník, predmet a tému. Kritériá hodnotenia a podmienky vyučovania pridajte, ak ich máte, návrhy potom budú presnejšie. Cieľ si môžete pripraviť promptom [Formulácia vyučovacieho cieľa](/funkce/prompty/formulace-vyukoveho-cile).
 
-Žákům můžete nabídnout dvě nebo tři formy na výběr. Důkazy pak použijete jako podklad pro zpětnou vazbu, pro portfolio nebo pro slovní hodnocení.
+Žiakom môžete ponúknuť dve alebo tri formy na výber. Dôkazy potom použijete ako podklad na spätnú väzbu, do portfólia alebo na slovné hodnotenie.
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Kritéria hodnocení](/skills/kriteria-hodnoceni), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Kritériá hodnotenia](/skills/kriteria-hodnoceni), ktorú si môžete nainštalovať do svojho chatbota.

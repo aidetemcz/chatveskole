@@ -28,11 +28,11 @@ const polozky = (h: string) => [...(h.match(/<(ul|ol)>([\s\S]*?)<\/\1>/)?.[2] ??
 const vyzkouset = tlacitkoZ(uvodHtml);
 const perex = bezTlacitka(uvodHtml);
 
-const jak = najdi(/Jak Tiny funguje/i);
+const jak = najdi(/Jak Tiny funguje|Ako Tiny funguje/i);
 const kroky = polozky(htmlOddilu(jak));
 
 // Tinyboti: velký obrázek (diagram) a pod ním sloupec pro každou úroveň; tabulka Kognitivní proces | Tinybot | Popis | Metodika | Vyzkoušet
-const boti = najdi(/chatbotů podle/i);
+const boti = najdi(/chatbotů podle|chatbotov podľa/i);
 const botiHtml = htmlOddilu(boti);
 const diagram = botiHtml.match(/<img [^>]*>/)?.[0] ?? '';
 // sloupce Metodika a Vyzkoušet (nepovinné): odkaz v buňce → tlačítko u Tinybota
@@ -45,10 +45,10 @@ for (const [, r] of (botiHtml.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? '').ma
 }
 const navody = tlacitkoZ(botiHtml);
 
-const bezpecnost = najdi(/Bezpečnost/i);
+const bezpecnost = najdi(/Bezpečnost|Bezpečnosť/i);
 const bezpecnostHtml = htmlOddilu(bezpecnost);
 
-const dalsi = najdi(/Co dalšího/i);
+const dalsi = najdi(/Co dalšího|Čo ďalšie/i);
 type Odkaz = { text: string; href: string };
 const tlacitko = d.tlacitko && typeof d.tlacitko === 'object' && d.tlacitko.href ? (d.tlacitko as Odkaz) : null;
 const odkazy: Odkaz[] = [tlacitko, ...(Array.isArray(d.odkazy) ? d.odkazy : [])].filter((o): o is Odkaz => !!o && !!o.href);

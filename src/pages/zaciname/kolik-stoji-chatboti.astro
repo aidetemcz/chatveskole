@@ -23,19 +23,19 @@ const polozky = (h: string) => [...(h.match(/<(ul|ol)>([\s\S]*?)<\/\1>/)?.[2] ??
 const tlacitka = (h: string) => [...h.matchAll(/<p>\s*<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*<\/p>/g)].map(([, href, t]) => ({ href, text: bezTagu(t).replace(/\s*→$/, '') }));
 const bezTlacitek = (h: string) => h.replace(/<p>\s*<a href="[^"]+"[^>]*>[\s\S]*?<\/a>\s*<\/p>/g, '');
 
-const data = najdi(/kromě ceny/i);
-const zdarma = najdi(/zdarma/i);
+const data = najdi(/kromě ceny|okrem ceny/i);
+const zdarma = najdi(/zdarma|zadarmo/i);
 const nadpisZdarma = zdarma ? zdarma.nadpis : '';
 const zdarmaHtml = htmlOddilu(zdarma);
 // „Zapíná správce.“ na konci textu → štítek
 const kartyZdarma = polozky(zdarmaHtml).map((k) => {
-  const m = k.text.match(/\s*(Zapíná správce)\.?\s*$/);
+  const m = k.text.match(/\s*(Zapíná správce|Zapína správca)\.?\s*$/);
   return { ...k, text: m ? k.text.slice(0, m.index) : k.text, stitek: m ? m[1] : '' };
 });
-const claude = najdi(/Claude se slevou/i);
+const claude = najdi(/Claude se slevou|Claude so zľavou/i);
 const claudeHtml = htmlOddilu(claude);
 const tarify = najdi(/^Tarify/i);
-const vyplati = najdi(/vyplatí/i);
+const vyplati = najdi(/vyplatí|oplatí/i);
 const STITKY_VYPLATI = [t('školní licence'), t('zdarma'), t('placená verze')];
 const dph = najdi(/DPH/i);
 const dphHtml = htmlOddilu(dph);

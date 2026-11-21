@@ -33,22 +33,22 @@ const tabulka = (h: string): Tabulka => {
   return { hlavicka: hl.filter((_, i) => i !== iPozn), radky };
 };
 
-const zacatek = najdi(/Pro začátek/i);
+const zacatek = najdi(/Pro začátek|Na začiatok/i);
 const generatory = najdi(/generátory/i);
-const pokrocile = najdi(/pokročilé/i);
+const pokrocile = najdi(/pokročilé|pokročilých/i);
 const skupiny = [zacatek, generatory, pokrocile].filter((o) => !!o).map((o, i) => {
   const h = htmlOddilu(o);
   return { oddil: o!, uvod: uvodOddilu(h), tab: tabulka(h), pod: zaTabulkou(h).trim(), sky: i % 2 === 0 };
 });
 
 // Hosting: „**[Název](odkaz)** — text“ → karty (odkaz v nadpisu zůstává)
-const hosting = najdi(/zveřejnit/i);
+const hosting = najdi(/zveřejnit|zverejniť/i);
 const hostingHtml = htmlOddilu(hosting);
 const hostingKarty = [...(hostingHtml.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').matchAll(/<li>\s*<strong>([\s\S]*?)<\/strong>\s*[—–-]?\s*([\s\S]*?)<\/li>/g)]
   .map(([, n, t]) => ({ nazev: n.trim(), text: velke(t.trim()) }));
 
 // Doporučení: „**Pro koho:** text“ → karty, odkaz na konci jako tlačítko
-const doporuceni = najdi(/doporučujeme/i);
+const doporuceni = najdi(/doporučujeme|odporúčame/i);
 const doporuceniHtml = htmlOddilu(doporuceni);
 const doporuceniKarty = [...(doporuceniHtml.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').matchAll(/<li>\s*<strong>([\s\S]*?)<\/strong>\s*([\s\S]*?)<\/li>/g)]
   .map(([, n, t]) => ({ nazev: bezTagu(n).replace(/:$/, ''), text: velke(t.trim()) }));

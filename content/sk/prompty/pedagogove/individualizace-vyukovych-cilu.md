@@ -1,5 +1,5 @@
 ---
-title: "Individualizace výukových cílů"
+title: "Individualizácia vyučovacích cieľov"
 slug: "individualizace-vyukovych-cilu"
 skupina: pedagogove
 kategorie: ["Podpora formativního přístupu"]
@@ -12,46 +12,46 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený speciální pedagog s praxí ve formativním hodnocení. Pomoz mi přizpůsobit výukový cíl, kritéria a aktivitu žákům se speciálními vzdělávacími potřebami, nadaným žákům nebo žákům s odlišným mateřským jazykem.
+Vystupuj ako skúsený špeciálny pedagóg s praxou vo formatívnom hodnotení. Pomôž mi prispôsobiť vyučovací cieľ, kritériá a aktivitu žiakom so špeciálnymi výchovno-vzdelávacími potrebami, nadaným žiakom alebo žiakom s odlišným materinským jazykom.
 
-Ročník a předmět: [například 6. ročník ZŠ, zeměpis]
-Cíl hodiny pro třídu: [například Žák určí na mapě hlavní pohoří Evropy.]
-Kritéria hodnocení: [vložte, nebo řádek smažte]
-Aktivita nebo materiál: [vložte text, soubor nebo popis aktivity]
-Žáci – bez jmen, popište jen potřeby, diagnózu uvádět nemusíte:
-[Žák A: obtíže se čtením delšího textu a psaných pokynů; pomáhá čtení nahlas, kratší úseky, víc času, odpovídat ústně.]
-[Žák B: hůř udrží pozornost; pomáhají krátké kroky, pohyb, práce ve dvojici, častá zpětná vazba.]
-[Žák C: potřebuje jasnou strukturu, předem známý postup a obrázkovou oporu; lépe pracuje sám nebo ve dvojici.]
-[Žák D: učivo zvládá rychle a potřebuje větší výzvu.]
-Doporučení poradenského zařízení nebo IVP: [například zkrácený rozsah písemných úkolů; nebo řádek smažte]
+Ročník a predmet: [napríklad 6. ročník ZŠ, geografia]
+Cieľ hodiny pre triedu: [napríklad Žiak určí na mape hlavné pohoria Európy.]
+Kritériá hodnotenia: [vložte, alebo riadok vymažte]
+Aktivita alebo materiál: [vložte text, súbor alebo opis aktivity]
+Žiaci – bez mien, opíšte len potreby, diagnózu uvádzať nemusíte:
+[Žiak A: ťažkosti s čítaním dlhšieho textu a písaných pokynov; pomáha čítanie nahlas, kratšie úseky, viac času, odpovedať ústne.]
+[Žiak B: horšie udrží pozornosť; pomáhajú krátke kroky, pohyb, práca vo dvojici, častá spätná väzba.]
+[Žiak C: potrebuje jasnú štruktúru, vopred známy postup a obrázkovú oporu; lepšie pracuje sám alebo vo dvojici.]
+[Žiak D: učivo zvláda rýchlo a potrebuje väčšiu výzvu.]
+Odporúčanie poradenského zariadenia alebo IVVP: [napríklad skrátený rozsah písomných úloh; alebo riadok vymažte]
 
-Pro každého žáka zvlášť:
-1. Cíl: zachovej jeho podstatu, tedy co má žák prokázat. Měň cestu k němu: způsob, jak výkon ukáže (ústně, kresbou, ukázáním), míru opory (vzor, osnova, obrázky, slovníček), rozsah a čas. Samotný cíl sniž, jen když to vyplývá z doporučení nebo IVP, a výslovně to uveď. Nadanému žákovi cíl prohlub (složitější znalost, nová situace, vlastní volba), nepřidávej jen víc stejných úloh.
-2. Napiš cíl pro vyučující (3. osoba) a cíl pro žáka (1. osoba, „Učím se…“). Pokud se cíl nemění, napiš „Cíl stejný jako pro třídu“.
-3. Kritérium pro žáka v 1. osobě, s měřitelným slovesem (popíšu, ukážu, vysvětlím), ne „umím“.
-4. Upravená aktivita nebo materiál, připravené k použití, změny vyznač tučně.
-5. Tabulka: co se upravilo – proč (z popsané potřeby).
+Pre každého žiaka zvlášť:
+1. Cieľ: zachovaj jeho podstatu, teda čo má žiak preukázať. Meň cestu k nemu: spôsob, ako výkon ukáže (ústne, kresbou, ukázaním), mieru opory (vzor, osnova, obrázky, slovníček), rozsah a čas. Samotný cieľ zníž, len keď to vyplýva z odporúčania alebo IVVP, a výslovne to uveď. Nadanému žiakovi cieľ prehĺb (zložitejší poznatok, nová situácia, vlastná voľba), nepridávaj len viac rovnakých úloh.
+2. Napíš cieľ pre vyučujúcich (3. osoba) a cieľ pre žiaka (1. osoba, „Učím sa…“). Ak sa cieľ nemení, napíš „Cieľ rovnaký ako pre triedu“.
+3. Kritérium pre žiaka v 1. osobe, s merateľným slovesom (opíšem, ukážem, vysvetlím), nie „viem“.
+4. Upravená aktivita alebo materiál, pripravené na použitie, zmeny vyznač tučne.
+5. Tabuľka: čo sa upravilo – prečo (z opísanej potreby).
 
-Pravidla:
-- Vycházej z popsaných potřeb, ne z nálepky. Nediagnostikuj a neurčuj stupeň podpůrných opatření.
-- Věcná správnost zůstává. Zjednodušit neznamená zkreslit.
-- Verze pojmenuj neutrálně (verze A, „s oporou“, „rozšiřující“), nikdy „pro slabé“.
-- Piš srozumitelně a vstřícně, bez odborného žargonu.
-- Když údaje nestačí, nejdřív se mě zeptej.
+Pravidlá:
+- Vychádzaj z opísaných potrieb, nie z nálepky. Nediagnostikuj a neurčuj mieru podporných opatrení.
+- Vecná správnosť zostáva. Zjednodušiť neznamená skresliť.
+- Verzie pomenuj neutrálne (verzia A, „s oporou“, „rozširujúca“), nikdy „pre slabých“.
+- Píš zrozumiteľne a ústretovo, bez odborného žargónu.
+- Keď údaje nestačia, najprv sa ma opýtaj.
 
-Na konci jednou větou připomeň, že jde o návrh a závazná jsou doporučení poradenského zařízení a IVP. Nabídni: 1) úpravu jedné verze, 2) sebehodnocení J–Č–T–Ú k upraveným kritériím, 3) verzi pro dalšího žáka.
+Na konci jednou vetou pripomeň, že ide o návrh a záväzné sú odporúčania poradenského zariadenia a IVVP. Ponúkni: 1) úpravu jednej verzie, 2) sebahodnotenie J–Č–T–Ú k upraveným kritériám, 3) verziu pre ďalšieho žiaka.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vám pomůže přizpůsobit hodinu žákům s odlišnými potřebami tak, aby všichni pracovali na stejném cíli, jen jinou cestou. Pro každého žáka navrhne cíl, kritérium, podle kterého se sám posoudí, a upravenou aktivitu nebo materiál. U každé úpravy vysvětlí, proč ji dělá.
+Prompt vám pomôže prispôsobiť hodinu žiakom s odlišnými potrebami tak, aby všetci pracovali na rovnakom cieli, len inou cestou. Pre každého žiaka navrhne cieľ, kritérium, podľa ktorého sa sám posúdi, a upravenú aktivitu alebo materiál. Pri každej úprave vysvetlí, prečo ju robí.
 
-Cíl se mění jen tam, kde to říká doporučení poradenského zařízení nebo individuální vzdělávací plán. Nadaní žáci dostanou hlubší úkol, ne víc stejných úloh.
+Cieľ sa mení len tam, kde to hovorí odporúčanie poradenského zariadenia alebo individuálny výchovno-vzdelávací program. Nadaní žiaci dostanú hlbšiu úlohu, nie viac rovnakých úloh.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte cíl hodiny, aktivitu nebo materiál a krátký popis každého žáka. Ukázkové profily v hranatých závorkách přepište nebo smažte. Jména žáků nepište, stačí označení A, B, C. Diagnózu uvádět nemusíte, důležité je, co žákovi pomáhá.
+Skopírujte prompt do chatbota a doplňte cieľ hodiny, aktivitu alebo materiál a krátky opis každého žiaka. Ukážkové profily v hranatých zátvorkách prepíšte alebo vymažte. Mená žiakov nepíšte, stačí označenie A, B, C. Diagnózu uvádzať nemusíte, dôležité je, čo žiakovi pomáha.
 
-Pokud chcete kritéria k upraveným cílům rozepsat do úrovní pro sebehodnocení, použijte prompt [Sebehodnocení pro žáky](/funkce/prompty/sebehodnoceni-pro-zaky).
+Ak chcete kritériá k upraveným cieľom rozpísať do úrovní na sebahodnotenie, použite prompt [Sebahodnotenie pre žiakov](/funkce/prompty/sebehodnoceni-pro-zaky).
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Úprava materiálu](/skills/uprava-materialu), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Úprava materiálu](/skills/uprava-materialu), ktorú si môžete nainštalovať do svojho chatbota.

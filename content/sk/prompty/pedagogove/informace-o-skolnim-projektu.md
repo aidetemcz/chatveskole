@@ -1,5 +1,5 @@
 ---
-title: "Informace o školním projektu"
+title: "Informácia o školskom projekte"
 slug: "informace-o-skolnim-projektu"
 skupina: pedagogove
 kategorie: ["Komunikace s rodiči"]
@@ -12,39 +12,39 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený třídní vyučující, který se zákonnými zástupci jedná jako s partnery. Napiš zákonným zástupcům zprávu o chystaném školním projektu.
+Vystupuj ako skúsený triedny vyučujúci, ktorý so zákonnými zástupcami jedná ako s partnermi. Napíš zákonným zástupcom správu o pripravovanom školskom projekte.
 
-Název projektu: [například Spoluprací k porozumění Evropě]
-Třída a termín: [například 8. A, 3.–7. března]
-O co v projektu jde: [stručný popis nebo klíčová slova, například žáci ve skupinách zastupují státy EU a hledají společné řešení fiktivního problému]
-Co si z něj žáci odnesou: [například naučí se diskutovat, hledat kompromis a vysvětlit, jak se v EU rozhoduje]
-Co potřebujeme od zákonných zástupců: [například přinést krabici od bot do 28. února; nebo řádek smažte]
-Praktické údaje: [například náklady, změna rozvrhu, co s sebou; nebo řádek smažte]
-Kontakt pro dotazy: [například e-mail třídního vyučujícího]
-Kanál: [e-mail / zpráva do Bakalářů nebo EduPage / tištěný leták]
+Názov projektu: [napríklad Spoluprácou k porozumeniu Európe]
+Trieda a termín: [napríklad 8. A, 3. – 7. marca]
+O čo v projekte ide: [stručný opis alebo kľúčové slová, napríklad žiaci v skupinách zastupujú štáty EÚ a hľadajú spoločné riešenie fiktívneho problému]
+Čo si z neho žiaci odnesú: [napríklad naučia sa diskutovať, hľadať kompromis a vysvetliť, ako sa v EÚ rozhoduje]
+Čo potrebujeme od zákonných zástupcov: [napríklad priniesť škatuľu od topánok do 28. februára; alebo riadok vymažte]
+Praktické údaje: [napríklad náklady, zmena rozvrhu, čo so sebou; alebo riadok vymažte]
+Kontakt pre otázky: [napríklad e-mail triedneho vyučujúceho]
+Kanál: [e-mail / správa do EduPage alebo iného školského systému / tlačený leták]
 
-Zpráva má mít:
-1. Krátký úvodní odstavec: o co v projektu jde a proč ho děláme.
-2. Odrážky s tím, co si žáci odnesou. Piš běžnou češtinou, bez školních pojmů jako „klíčové kompetence“ nebo „průřezová témata“. Popiš, co děti budou dělat a co se naučí.
-3. Odrážky s praktickými údaji a s tím, co potřebujeme od zákonných zástupců (co, do kdy).
-4. Kontakt a nabídku dotazů.
+Správa má mať:
+1. Krátky úvodný odsek: o čo v projekte ide a prečo ho robíme.
+2. Odrážky s tým, čo si žiaci odnesú. Píš bežnou slovenčinou, bez školských pojmov ako „kľúčové kompetencie“ alebo „prierezové témy“. Opíš, čo deti budú robiť a čo sa naučia.
+3. Odrážky s praktickými údajmi a s tým, čo potrebujeme od zákonných zástupcov (čo, dokedy).
+4. Kontakt a ponuku otázok.
 
-Pravidla:
-- Piš přátelsky, věcně a stručně. E-mail má oslovení, nejvýš 150 slov a podpis [jméno vyučujícího]. Zpráva do školního systému je kratší, bez oslovení a podpisu.
-- Nevymýšlej údaje, které jsem nezadal(a). Chybějící označ hranatými závorkami.
-- Jména žáků do textu nepiš.
+Pravidlá:
+- Píš priateľsky, vecne a stručne. E-mail má oslovenie, najviac 150 slov a podpis [meno vyučujúceho]. Správa do školského systému je kratšia, bez oslovenia a podpisu.
+- Nevymýšľaj údaje, ktoré som nezadal(a). Chýbajúce označ hranatými zátvorkami.
+- Mená žiakov do textu nepíš.
 
-Pod zprávu navrhni předmět e-mailu. Pak nabídni úpravu tónu nebo délky.
+Pod správu navrhni predmet e-mailu. Potom ponúkni úpravu tónu alebo dĺžky.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vám napíše krátkou zprávu pro zákonné zástupce o chystaném školním projektu. Zákonní zástupci se dozvědí, o co jde, co si děti odnesou a co je potřeba od nich. Text je psaný běžnou češtinou, bez školní terminologie, které zákonní zástupci často nerozumějí.
+Prompt vám napíše krátku správu pre zákonných zástupcov o pripravovanom školskom projekte. Zákonní zástupcovia sa dozvedia, o čo ide, čo si deti odnesú a čo je potrebné od nich. Text je písaný bežnou slovenčinou, bez školskej terminológie, ktorej zákonní zástupcovia často nerozumejú.
 
-Zprávu dostanete v podobě pro e-mail, pro školní systém (Bakaláři, EduPage) nebo pro tištěný leták, včetně návrhu předmětu e-mailu.
+Správu dostanete v podobe pre e-mail, pre školský systém (napríklad EduPage) alebo pre tlačený leták, vrátane návrhu predmetu e-mailu.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte údaje o projektu. Nejdůležitější jsou popis projektu a to, co potřebujete od zákonných zástupců (co a do kdy). U řádku Kanál nechte jen tu možnost, kterou použijete. Chybějící údaje chatbot nedomýšlí, označí je hranatými závorkami.
+Skopírujte prompt do chatbota a doplňte údaje o projekte. Najdôležitejšie sú opis projektu a to, čo potrebujete od zákonných zástupcov (čo a dokedy). Pri riadku Kanál nechajte len tú možnosť, ktorú použijete. Chýbajúce údaje chatbot nedomýšľa, označí ich hranatými zátvorkami.
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Komunikácia so zákonnými zástupcami](/skills/komunikace-s-rodici), ktorú si môžete nainštalovať do svojho chatbota.

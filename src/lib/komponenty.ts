@@ -150,7 +150,11 @@ export function naKartuSObrazkem(html: string): string {
 // Sekce ### až do dalšího ## → karty ve dvou sloupcích (stránka Způsoby využití AI ve výuce, varianta A z Claude Design):
 // nadpis a tučný perex; „Co dělá žák“ a „Co dělá AI“ vedle sebe;
 // Hodí se / Nehodí se a ostatní položky jako řádky „Štítek: text“ (pojistka se nezobrazuje); v patičce Tiny a prompty jako tlačítka.
-const KRATCE: Record<string, string> = { 'Jak poznáte, že se žák učí': t('Hodnoticí kritérium'), 'Otázka k reflexi': t('Reflexe') };
+const KRATCE: Record<string, string> = {
+  'Jak poznáte, že se žák učí': t('Hodnoticí kritérium'), 'Otázka k reflexi': t('Reflexe'),
+  // slovenské štítky v content/sk
+  'Ako spoznáte, že sa žiak učí': t('Hodnoticí kritérium'), 'Otázka na reflexiu': t('Reflexe'),
+};
 
 export function naKartyZpusobu(html: string): string {
   const konec = html.search(/<h2[\s>]/);
@@ -163,11 +167,12 @@ export function naKartyZpusobu(html: string): string {
     const perex = k.match(/<p>\s*<strong>([\s\S]*?)<\/strong>\s*<\/p>/)?.[1] ?? '';
     const polozky = new Map([...(k.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').matchAll(/<li>\s*<strong>([\s\S]*?)<\/strong>\s*([\s\S]*?)<\/li>/g)]
       .map(([, s, x]) => [bezTagu(s).replace(/:\s*$/, ''), x.trim()] as [string, string]));
-    const vezmi = (stitek: string) => { const v = polozky.get(stitek); polozky.delete(stitek); return v; };
-    const zak = vezmi('Co dělá žák'), ai = vezmi('Co dělá AI');
-    const hodi = vezmi('Hodí se, když'), nehodi = vezmi('Nehodí se, když');
-    vezmi('Pojistka');
-    const spustit = vezmi('Kde to spustit');
+    // štítek česky nebo slovensky (content/sk)
+    const vezmi = (...stitky: string[]) => { let v: string | undefined; for (const s of stitky) { v ??= polozky.get(s); polozky.delete(s); } return v; };
+    const zak = vezmi('Co dělá žák', 'Čo robí žiak'), ai = vezmi('Co dělá AI', 'Čo robí AI');
+    const hodi = vezmi('Hodí se, když', 'Hodí sa, keď'), nehodi = vezmi('Nehodí se, když', 'Nehodí sa, keď');
+    vezmi('Pojistka', 'Poistka');
+    const spustit = vezmi('Kde to spustit', 'Kde to spustiť');
     let out = `<article class="zpusob"><div class="zpusob-hlava"><h3${h?.[1] ?? ''}>${h?.[2] ?? ''}</h3>`
       + (perex ? `<p class="zpusob-perex">${perex}</p>` : '') + '</div>';
     if (zak || ai) out += '<div class="zpusob-role">'
@@ -178,7 +183,7 @@ export function naKartyZpusobu(html: string): string {
     if (radky.length) out += '<div class="zpusob-dalsi">'
       + radky.map(([s, x]) => `<p><strong>${KRATCE[s] ?? s}:</strong> ${x}</p>`).join('') + '</div>';
     if (spustit) {
-      const [tinyCast, chatbotCast = ''] = spustit.split(/,?\s*v běžném chatbotu/i);
+      const [tinyCast, chatbotCast = ''] = spustit.split(/,?\s*v (?:běžném chatbotu|bežnom chatbote)/i);
       const odkazy = [...(/^V Tiny/i.test(tinyCast.trim()) ? chatbotCast : spustit).matchAll(/<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)];
       const tiny = tinyCast.trim().match(/^V Tiny\s+([\s\S]*)$/i);
       const tlacitka = odkazy.map(([, href, nazev]) => `<a class="btn btn--outline btn--sm" href="${href}">${tf('Prompt {nazev} →', { nazev: bezTagu(nazev) })}</a>`).join('');

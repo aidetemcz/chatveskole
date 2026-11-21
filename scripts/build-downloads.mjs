@@ -5,8 +5,10 @@ import path from 'node:path';
 import { zipSync, strToU8 } from 'fflate';
 
 const ROOT = process.cwd();
-const OUT = path.join(ROOT, 'public', 'download');
-const SKILLS = path.join(ROOT, 'content', 'skills');
+// Slovenská verze (JAZYK=sk): zručnosti z content/sk/skills, výstup do dist/sk/download (volá scripts/build-sk.mjs)
+const SK = process.env.JAZYK === 'sk';
+const OUT = SK ? path.join(ROOT, 'dist', 'sk', 'download') : path.join(ROOT, 'public', 'download');
+const SKILLS = path.join(ROOT, SK ? 'content/sk' : 'content', 'skills');
 const PLUGINS = path.join(ROOT, 'plugins');
 
 const walk = (dir) => fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
@@ -50,7 +52,8 @@ if (fs.existsSync(PLUGINS)) {
     nPlugins++;
   }
 }
-console.log(`ZIPy: ${nSkills} skills (×2), ${nPlugins} pluginů → public/download/`);
+console.log(`ZIPy: ${nSkills} skills (×2), ${nPlugins} pluginů → ${path.relative(ROOT, OUT)}/`);
+if (SK) process.exit(0); // obrázky archivu jen pro českou verzi
 
 // Obrázky ze starého webu (archiv/uploads), na které odkazuje obsah → public/archiv/uploads/
 const ARCHIV = path.join(ROOT, 'archiv', 'uploads');

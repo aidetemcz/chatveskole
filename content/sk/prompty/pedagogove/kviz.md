@@ -12,42 +12,42 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený vyučující daného předmětu. Vytvoř kvíz pro mé žáky.
+Vystupuj ako skúsený vyučujúci daného predmetu. Vytvor kvíz pre mojich žiakov.
 
-Předmět a téma: [například zeměpis – podnebné pásy]
-Ročník: [například 6. ročník ZŠ]
-Cíl – co má kvíz ověřit: [například žák zařadí krajinu do podnebného pásu podle popisu]
-Typy otázek: [například výběr ze 4 možností, pravda/nepravda, krátká odpověď; nebo vyber sám]
-Počet otázek: [například 10]
-Jazyk: [například čeština]
-K čemu kvíz použiji: [například opakování na začátku hodiny / online v Google Formulářích; nebo řádek smažte]
+Predmet a téma: [napríklad geografia – podnebné pásma]
+Ročník: [napríklad 6. ročník ZŠ]
+Cieľ – čo má kvíz overiť: [napríklad žiak zaradí krajinu do podnebného pásma podľa opisu]
+Typy otázok: [napríklad výber zo 4 možností, pravda/nepravda, krátka odpoveď; alebo vyber sám]
+Počet otázok: [napríklad 10]
+Jazyk: [napríklad slovenčina]
+Na čo kvíz použijem: [napríklad opakovanie na začiatku hodiny / online v Google Formulároch; alebo riadok vymažte]
 
-Pravidla:
-1. Otázky musí být věcně správné, jednoznačné a přiměřené věku. Jedna otázka = jeden úkol, bez dvojího záporu.
-2. Zhruba polovina otázek ověří vybavení a porozumění, zbytek analýzu (porovnej, zařaď, najdi chybu, vyvoď pravidlo) a použití znalostí (rozhodni podle kritérií, vyřeš novou situaci). O úrovni rozhoduje, co otázka po žákovi skutečně chce, ne sloveso.
-3. U výběru z možností jen jedna správná odpověď. Špatné možnosti stav na chybách, které žáci opravdu dělají, ne na nesmyslech. Správná odpověď nesmí být nápadně delší ani pořád na stejném místě. „Všechny uvedené“ a „žádná z uvedených“ jen výjimečně.
-4. Pravda/nepravda: zhruba půl na půl, nepravdivá tvrzení podle častých mylných představ, bez slov „vždy“ a „nikdy“.
-5. U cizího jazyka piš zadání v cílovém jazyce, pokud nenapíšu jinak.
-6. Body ani známky nenavrhuj, pokud o ně nepožádám.
+Pravidlá:
+1. Otázky musia byť vecne správne, jednoznačné a primerané veku. Jedna otázka = jedna úloha, bez dvojitého záporu.
+2. Zhruba polovica otázok overí vybavenie a porozumenie, zvyšok analýzu (porovnaj, zaraď, nájdi chybu, vyvoď pravidlo) a použitie poznatkov (rozhodni podľa kritérií, vyrieš novú situáciu). O úrovni rozhoduje, čo otázka od žiaka naozaj chce, nie sloveso.
+3. Pri výbere z možností len jedna správna odpoveď. Nesprávne možnosti stavaj na chybách, ktoré žiaci naozaj robia, nie na nezmysloch. Správna odpoveď nesmie byť nápadne dlhšia ani stále na rovnakom mieste. „Všetky uvedené“ a „žiadna z uvedených“ len výnimočne.
+4. Pravda/nepravda: zhruba pol na pol, nepravdivé tvrdenia podľa častých mylných predstáv, bez slov „vždy“ a „nikdy“.
+5. Pri cudzom jazyku píš zadanie v cieľovom jazyku, ak nenapíšem inak.
+6. Body ani známky nenavrhuj, ak o ne nepožiadam.
 
-Výstup ve třech částech:
-1) KVÍZ PRO ŽÁKY bez odpovědí, s řádkem na jméno.
-2) KLÍČ: správné odpovědi a ke každé jedna věta proč. U špatných možností u výběru krátce, jakou chybu prozrazují.
-3) PRO VYUČUJÍCÍ: tabulka otázka – co ověřuje – úroveň (vybavení a porozumění / analýza / použití znalostí).
+Výstup v troch častiach:
+1) KVÍZ PRE ŽIAKOV bez odpovedí, s riadkom na meno.
+2) KĽÚČ: správne odpovede a ku každej jedna veta prečo. Pri nesprávnych možnostiach pri výbere krátko, akú chybu prezrádzajú.
+3) PRE VYUČUJÚCICH: tabuľka otázka – čo overuje – úroveň (vybavenie a porozumenie / analýza / použitie poznatkov).
 
-Kde si nejsi jistý fakty, napiš mi to. Když chybí předmět, ročník nebo téma, nejdřív se mě zeptej. Na konci nabídni verzi pro Google Formuláře nebo jinou obtížnost.
+Kde si nie si istý faktami, napíš mi to. Keď chýba predmet, ročník alebo téma, najprv sa ma opýtaj. Na konci ponúkni verziu pre Google Formuláre alebo inú náročnosť.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vytvoří kvíz, který neověřuje jen zapamatované pojmy, ale i to, jestli žáci učivu rozumějí a umějí ho použít. Špatné odpovědi u výběru z možností odpovídají chybám, které žáci opravdu dělají. Podle toho, kterou možnost žák zvolí, poznáte, kde chybuje.
+Prompt vytvorí kvíz, ktorý neoveruje len zapamätané pojmy, ale aj to, či žiaci učivu rozumejú a vedia ho použiť. Nesprávne odpovede pri výbere z možností zodpovedajú chybám, ktoré žiaci naozaj robia. Podľa toho, ktorú možnosť žiak zvolí, spoznáte, kde robí chybu.
 
-Dostanete kvíz pro žáky bez odpovědí, klíč se zdůvodněním a tabulku, co která otázka ověřuje. Body ani známky prompt nenavrhuje, pokud o ně nepožádáte.
+Dostanete kvíz pre žiakov bez odpovedí, kľúč so zdôvodnením a tabuľku, čo ktorá otázka overuje. Body ani známky prompt nenavrhuje, ak o ne nepožiadate.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte předmět, ročník, téma a cíl. Typ otázek můžete nechat na chatbotovi. Fakta a správné odpovědi před použitím vždy zkontrolujte.
+Skopírujte prompt do chatbota a doplňte predmet, ročník, tému a cieľ. Typ otázok môžete nechať na chatbota. Fakty a správne odpovede pred použitím vždy skontrolujte.
 
-Kvíz se hodí na opakování, na začátek hodiny nebo jako podklad pro diskusi o chybách. Na přání ho chatbot převede do podoby pro Google Formuláře.
+Kvíz sa hodí na opakovanie, na začiatok hodiny alebo ako podklad na diskusiu o chybách. Na požiadanie ho chatbot prevedie do podoby pre Google Formuláre.
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Pracovné listy](/skills/pracovni-listy), ktorú si môžete nainštalovať do svojho chatbota.

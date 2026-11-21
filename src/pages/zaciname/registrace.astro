@@ -34,7 +34,7 @@ const tip = uvodOdst.map(box).find(Boolean);
 
 // věk podle stránky Věkové limity a legislativa
 const VEK: Record<string, string> = { ChatGPT: t('od 13 let'), 'Google Gemini': t('od 13 let, školní účet bez omezení'), 'Microsoft Copilot': t('od 13 let'), Claude: t('od 18 let'), Perplexity: t('od 13 let'), Tiny: t('od 11 let') };
-const postup = najdi(/zaregistrovat/i);
+const postup = najdi(/zaregistrovat|zaregistrovať/i);
 const postupHtml = htmlOddilu(postup);
 const nastroje = bloky(postupHtml).map((b, i) => {
   const seznam = b.html.match(/<ol>([\s\S]*?)<\/ol>/);
@@ -46,7 +46,7 @@ const nastroje = bloky(postupHtml).map((b, i) => {
   return { id: `registrace-${i}`, nazev: b.nazev, vek: VEK[b.nazev], kroky, boxy, web: web ? { href: web[1], text: bezTagu(web[2]).replace(/^www\./, '') } : null };
 });
 
-const zaver = najdi(/změnil/i);
+const zaver = najdi(/změnil|zmenil/i);
 const zaverHtml = htmlOddilu(zaver);
 const tlacitka = [...zaverHtml.matchAll(/<p>\s*<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*<\/p>/g)].map(([, href, t]) => ({ href, text: bezTagu(t) }));
 const zaverText = zaverHtml.replace(/<p>\s*<a href="[^"]+"[^>]*>[\s\S]*?<\/a>\s*<\/p>/g, '');

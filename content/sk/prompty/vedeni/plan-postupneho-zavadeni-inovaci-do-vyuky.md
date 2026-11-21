@@ -1,5 +1,5 @@
 ---
-title: "Plán postupného zavádění inovací do výuky"
+title: "Plán postupného zavádzania inovácií do vyučovania"
 slug: "plan-postupneho-zavadeni-inovaci-do-vyuky"
 skupina: vedeni
 kategorie: ["Tvorba strategických dokumentů"]
@@ -13,55 +13,55 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený průvodce řízením změny ve škole. Pomoz nám naplánovat postupné zavedení inovace do výuky.
+Vystupuj ako skúsený sprievodca riadením zmeny v škole. Pomôž nám naplánovať postupné zavedenie inovácie do vyučovania.
 
-Škola: [například ZŠ, 300 žáků, 24 pedagogů]
-Jakou inovaci chceme zavést: [například formativní hodnocení na 2. stupni / práci s AI při psaní slohu / projektové dny]
-Jaký problém má vyřešit: [například žáci nevědí, co se od nich čeká, a známky jim nepomáhají se zlepšit]
-Jak hodnotíme: [známkami / slovně / kombinovaně]
-Vybavení: [například wifi, mobilní učebna s 30 tablety]
-Mobily ve výuce: [žáci je smějí používat / nesmějí / jen s dovolením vyučujícího]
-Jak je sbor připravený: [například pět vyučujících to už zkouší, většina vyčkává, tři kolegové jsou proti]
-Kdo změnu povede: [například lídr změny s částí úvazku a zástupkyně ředitele; nebo řádek smažte]
-Kolik času mohou vyučující reálně věnovat: [například hodinu týdně na sdílení]
-Podle čeho poznáme, že inovace žákům pomáhá: [například víc žáků umí popsat, co se naučili; nebo nech na sobě]
-Další specifika: [například učíme v tematických blocích; nebo řádek smažte]
+Škola: [napríklad ZŠ, 300 žiakov, 24 pedagógov]
+Akú inováciu chceme zaviesť: [napríklad formatívne hodnotenie na 2. stupni / prácu s AI pri písaní slohu / projektové dni]
+Aký problém má vyriešiť: [napríklad žiaci nevedia, čo sa od nich očakáva, a známky im nepomáhajú zlepšiť sa]
+Ako hodnotíme: [známkami / slovne / kombinovane]
+Vybavenie: [napríklad wifi, mobilná učebňa s 30 tabletmi]
+Mobily vo vyučovaní: [žiaci ich smú používať / nesmú / len s dovolením vyučujúceho]
+Ako je pedagogický zbor pripravený: [napríklad päť vyučujúcich to už skúša, väčšina vyčkáva, traja kolegovia sú proti]
+Kto zmenu povedie: [napríklad líder zmeny s časťou úväzku a zástupkyňa riaditeľa; alebo riadok vymažte]
+Koľko času môžu vyučujúci reálne venovať: [napríklad hodinu týždenne na zdieľanie]
+Podľa čoho spoznáme, že inovácia žiakom pomáha: [napríklad viac žiakov vie opísať, čo sa naučili; alebo nechaj na sebe]
+Ďalšie špecifiká: [napríklad učíme v tematických blokoch; alebo riadok vymažte]
 
 Postup:
-1. Nejdřív se doptej na to, co chybí nebo není jasné (nejvýš 5 otázek najednou). Pak ve 3–5 větách shrň výchozí stav a počkej, až ho potvrdím.
-2. Sestav rámec změny: popis současné situace, nejvýš 3 cíle s termínem, ke každému ukazatel (výchozí → cílový stav), nejvýš 3 hlavní překážky a zdroje (čas, lidé, peníze, nástroje).
-3. Naplánuj kroky v čase: příprava → ověření v malém (pár vyučujících, jedna až dvě třídy) → vyhodnocení → postupné rozšíření → ukotvení v ŠVP a v praxi školy.
-4. Naplánuj práci s lidmi v pěti fázích: zvýšení povědomí o změně (informovat, ne přesvědčovat), akceptace (prostor pro otázky, obavy i nesouhlas), důvěra v proces (vzdělávání, sdílení, bezpečí pro chyby), schopnost změnu provést (mentoring, tandemy, náslechy) a stvrzení (ŠVP, směrnice, sdílení úspěchů). Ke každé fázi navrhni 2–3 aktivity pro různé skupiny (vedení, vyučující podle postoje, žáci, zákonní zástupci) a jeden měřitelný cíl, například „80 % vyučujících ví, co a proč zavádíme“.
+1. Najprv sa dopytuj na to, čo chýba alebo nie je jasné (najviac 5 otázok naraz). Potom v 3 – 5 vetách zhrň východiskový stav a počkaj, kým ho potvrdím.
+2. Zostav rámec zmeny: opis súčasnej situácie, najviac 3 ciele s termínom, ku každému ukazovateľ (východiskový → cieľový stav), najviac 3 hlavné prekážky a zdroje (čas, ľudia, peniaze, nástroje).
+3. Naplánuj kroky v čase: príprava → overenie v malom (pár vyučujúcich, jedna až dve triedy) → vyhodnotenie → postupné rozšírenie → ukotvenie v ŠkVP a v praxi školy.
+4. Naplánuj prácu s ľuďmi v piatich fázach: zvýšenie povedomia o zmene (informovať, nie presviedčať), akceptácia (priestor na otázky, obavy aj nesúhlas), dôvera v proces (vzdelávanie, zdieľanie, bezpečie pre chyby), schopnosť zmenu uskutočniť (mentoring, tandemy, náčuvy) a potvrdenie (ŠkVP, smernice, zdieľanie úspechov). Ku každej fáze navrhni 2 – 3 aktivity pre rôzne skupiny (vedenie, vyučujúci podľa postoja, žiaci, zákonní zástupcovia) a jeden merateľný cieľ, napríklad „80 % vyučujúcich vie, čo a prečo zavádzame“.
 
-Pravidla:
-- Prioritizace je důležitější než rychlost. Raději jedna inovace dotažená než tři rozjeté.
-- Změna je hlavně práce s lidmi, technika je prostředek. Když chybí základ (síť, zařízení, péče o techniku), zařaď ho do přípravy.
-- Nemusíš přesvědčit všechny. Počítej se třemi úrovněmi zapojení: pozoruje → zkouší v pilotu → podporuje ostatní.
-- U ověření dopadu napiš, podle čeho pilot vyhodnotíme a kdy ho zastavíme nebo změníme.
-- Každý krok má nositele (funkci, ne jméno), termín a výstup. Kolegy neoznačuj jmény, pracuj s rolemi nebo skupinami.
-- Čísla, která jsem nezadal(a), nevymýšlej, napiš [doplnit].
+Pravidlá:
+- Prioritizácia je dôležitejšia ako rýchlosť. Radšej jedna inovácia dotiahnutá ako tri rozbehnuté.
+- Zmena je hlavne práca s ľuďmi, technika je prostriedok. Keď chýba základ (sieť, zariadenia, starostlivosť o techniku), zaraď ho do prípravy.
+- Nemusíš presvedčiť všetkých. Počítaj s tromi úrovňami zapojenia: pozoruje → skúša v pilote → podporuje ostatných.
+- Pri overení dopadu napíš, podľa čoho pilot vyhodnotíme a kedy ho zastavíme alebo zmeníme.
+- Každý krok má nositeľa (funkciu, nie meno), termín a výstup. Kolegov neoznačuj menami, pracuj s rolami alebo skupinami.
+- Čísla, ktoré som nezadal(a), nevymýšľaj, napíš [doplniť].
 
 Výstup:
-a) shrnutí na půl strany,
-b) rámec změny,
-c) časová osa: tabulka Kdy – Krok – Kdo odpovídá – Výstup,
-d) plán práce s lidmi: tabulka Fáze – Aktivity – Pro koho – Měřitelný cíl,
-e) jak ověříme dopad na žáky,
-f) rizika a jak jim předejdeme.
+a) zhrnutie na pol strany,
+b) rámec zmeny,
+c) časová os: tabuľka Kedy – Krok – Kto zodpovedá – Výstup,
+d) plán práce s ľuďmi: tabuľka Fáza – Aktivity – Pre koho – Merateľný cieľ,
+e) ako overíme dopad na žiakov,
+f) riziká a ako im predídeme.
 
-Na konci nabídni: 1) šablonu mapy aktérů (kdo změnu podporuje, kdo váhá a co komu pomůže), 2) komunikační plán pro sbor a zákonné zástupce, 3) verzi plánu k tisku.
+Na konci ponúkni: 1) šablónu mapy aktérov (kto zmenu podporuje, kto váha a čo komu pomôže), 2) komunikačný plán pre pedagogický zbor a zákonných zástupcov, 3) verziu plánu na tlač.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vám pomůže naplánovat, jak novou metodu, technologii nebo přístup zavést do výuky postupně a tak, aby se ujaly. Nejdřív se doptá na to, co chybí, pak sestaví rámec změny s cíli a ukazateli, naplánuje ověření v malém a postupné rozšíření a rozpracuje práci s lidmi v pěti fázích: od zvýšení povědomí po stvrzení změny.
+Prompt vám pomôže naplánovať, ako novú metódu, technológiu alebo prístup zaviesť do vyučovania postupne a tak, aby sa ujali. Najprv sa dopytuje na to, čo chýba, potom zostaví rámec zmeny s cieľmi a ukazovateľmi, naplánuje overenie v malom a postupné rozšírenie a rozpracuje prácu s ľuďmi v piatich fázach: od zvýšenia povedomia po potvrdenie zmeny.
 
-Plán vychází z metodiky řízení změny programu AI akcelerátor (AI dětem). Dostanete časovou osu s odpovědnostmi a návrh, podle čeho poznáte, že inovace žákům opravdu pomáhá.
+Plán vychádza z metodiky riadenia zmeny programu AI akcelerátor (AI dětem). Dostanete časovú os so zodpovednosťami a návrh, podľa čoho spoznáte, že inovácia žiakom naozaj pomáha.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte údaje o škole a o inovaci, kterou chcete zavést. Nejdůležitější je popsat, jaký problém má inovace vyřešit. Postoje kolegů popisujte souhrnně nebo po skupinách, nikdy jmény. Plán je nejlepší připravit ve dvojici vedení a lídra změny.
+Skopírujte prompt do chatbota a doplňte údaje o škole a o inovácii, ktorú chcete zaviesť. Najdôležitejšie je opísať, aký problém má inovácia vyriešiť. Postoje kolegov opisujte súhrnne alebo po skupinách, nikdy menami. Plán je najlepšie pripraviť vo dvojici vedenia a lídra zmeny.
 
-Podrobnější postup najdete v kapitolách [Rámec změny](https://aidetem.cz/ai-akcelerator-ramec-zmeny/), [Mapa aktérů změny](https://aidetem.cz/ai-akcelerator-mapa-akteru-zmeny/) a [Plán změny](https://aidetem.cz/ai-akcelerator-plan-zmeny/) z metodiky AI akcelerátoru. Krok za krokem vás jimi provede dovednost [Řízení změny ve škole](/skills/rizeni-zmeny).
+Podrobnejší postup nájdete v kapitolách [Rámec změny](https://aidetem.cz/ai-akcelerator-ramec-zmeny/), [Mapa aktérů změny](https://aidetem.cz/ai-akcelerator-mapa-akteru-zmeny/) a [Plán změny](https://aidetem.cz/ai-akcelerator-plan-zmeny/) z metodiky AI akcelerátora (v češtine). Krok za krokom vás nimi prevedie zručnosť [Riadenie zmeny v škole](/skills/rizeni-zmeny).
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Strategické dokumenty](/skills/strategicke-dokumenty), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Strategické dokumenty](/skills/strategicke-dokumenty), ktorú si môžete nainštalovať do svojho chatbota.

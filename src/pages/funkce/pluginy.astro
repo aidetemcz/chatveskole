@@ -31,7 +31,7 @@ const bloky = (h: string) => h.split(/(?=<h3[\s>])/).filter((k) => /^\s*<h3/.tes
 const body = (h: string) => [...(h.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').matchAll(/<li>([\s\S]*?)<\/li>/g)].map(([, t]) => t.trim());
 
 // Prompt / dovednost / plugin
-const srovnani = najdi(/^Prompt, dovednost/i);
+const srovnani = najdi(/^Prompt, dovednost|^Prompt, zručnosť/i);
 const srovnaniHtml = htmlOddilu(srovnani);
 const STITKY_SROVNANI = [t('1 zadání'), t('1 úkol'), t('celá oblast')];
 const cesty = polozky(srovnaniHtml);
@@ -43,7 +43,7 @@ const STAV: Record<string, { text: string; ma: boolean }> = {
   'Microsoft Copilot': { text: t('Od konce listopadu 2026'), ma: true },
   Gemini: { text: t('Nemá'), ma: false },
 };
-const vNastrojich = najdi(/jednotlivých nástrojích/i);
+const vNastrojich = najdi(/jednotlivých nástrojích|jednotlivých nástrojoch/i);
 const nastroje = bloky(htmlOddilu(vNastrojich)).map((b, i) => {
   const box = b.html.match(/<p>\s*<strong>([\s\S]*?)<\/strong>\s*([\s\S]*?)<\/p>/);
   const text = box?.[2].trim() ?? '';
@@ -59,14 +59,14 @@ const proKoho = (p: string[]) => tf('Pro {komu}', { komu: p.map((x) => PRO_KOHO[
 const pocet = (n: number) => `${n} ${n === 1 ? t('dovednost') : n < 5 ? t('dovednosti') : t('dovedností')}`;
 
 // Instalace sady: „**Nástroj (poznámka):** text“
-const instalace = najdi(/nainstalovat sadu/i);
+const instalace = najdi(/nainstalovat sadu|nainštalovať sadu/i);
 const instalaceHtml = htmlOddilu(instalace);
 const radky = polozky(instalaceHtml).map((r) => {
   const m = r.nazev.match(/^(.*?)\s*\((.*)\)$/);
   return { nazev: m ? m[1] : r.nazev, pozn: m ? m[2] : '', text: r.text.charAt(0).toUpperCase() + r.text.slice(1) };
 });
 
-const vyzva = najdi(/jedna dovednost/i);
+const vyzva = najdi(/jedna dovednost|jedna zručnosť/i);
 type Odkaz = { text: string; href: string };
 const odkazy: Odkaz[] = (Array.isArray(d.odkazy) ? d.odkazy : []).filter((o: Odkaz) => o && o.href);
 const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString(LOCALE, { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;

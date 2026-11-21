@@ -1,11 +1,11 @@
 ---
-title: Vibe Coding — materiály do výuky
+title: Vibe Coding — materiály do vyučovania
 menu: Vibe Coding
 poradi: 4
-popis: Metodika AI dětem pro Vibe Coding se žáky, osm hotových zadání, ve kterých chatbot rovnou postaví aplikaci, a školení pro sborovny.
+popis: Metodika AI dětem na Vibe Coding so žiakmi, osem hotových zadaní, v ktorých chatbot rovno postaví aplikáciu, a školenie pre zborovne.
 sablona: materialy-pruvodce   # vlastní šablona src/pages/vibe-coding/materialy-do-vyuky.astro
 aktualizovano: 2026-11-21
-stav: koncept
+stav: ke-kontrole   # slovenský preklad; školenie je len pre české školy (cena v Kč)
 zdroje:
   - https://kurikulum.aidetem.cz/knowledgebase/vibecoding-01-tvorba-jednoduchych-aplikaci/
   - https://vzdelavame.aidetem.cz/akce/sborovna/vibecoding-pro-skoly/
@@ -22,124 +22,124 @@ souvisejici_prompty:   # původní prompty z kategorií Vizualizace a Různé (2
   - https://chatveskole.cz/databaze-promptu/3d-model-kvetu/
 ---
 
-# Vibe Coding ve výuce
+# Vibe Coding vo vyučovaní
 
-Metodika pro žáky, školení pro celou sborovnu a osm zadání, která si můžete rovnou vyzkoušet v chatovací aplikaci.
+Metodika pre žiakov, školenie pre celú zborovňu a osem zadaní, ktoré si môžete rovno vyskúšať v chatovacej aplikácii.
 
 ## Metodika AI dětem
 
 <!-- komponenta: karta s obrázkem -->
 
-![Obálka metodiky Tvorba jednoduchých aplikací pomocí Vibe Codingu](/img/metodika-vibecoding-01.jpg)
+![Obálka metodiky Tvorba jednoduchých aplikácií pomocou Vibe Codingu](/img/metodika-vibecoding-01.jpg)
 
-### Tvorba jednoduchých aplikací pomocí Vibe Codingu
+### Tvorba jednoduchých aplikácií pomocou Vibe Codingu
 
-Žáci si bez psaní kódu navrhnou a postaví vlastní aplikaci, jednoduchou hru nebo web. Nejdřív si ujasní, pro koho aplikace bude, co má umět a jak má vypadat. Pak napíšou zadání pro AI, výsledek testují a postupně vylepšují. Hotové aplikace zveřejní a na „tržišti aplikací“ si je navzájem vyzkouší a dají si zpětnou vazbu.
+Žiaci si bez písania kódu navrhnú a postavia vlastnú aplikáciu, jednoduchú hru alebo web. Najprv si ujasnia, pre koho bude aplikácia určená, čo má vedieť a ako má vyzerať. Potom napíšu zadanie pre AI, výsledok testujú a postupne vylepšujú. Hotové aplikácie zverejnia a na „trhovisku aplikácií“ si ich navzájom vyskúšajú a dajú si spätnú väzbu.
 
-- **Pro koho:** 8. a 9. ročník ZŠ a SŠ, informatika
-- **Délka:** 90–160 minut
+- **Pre koho:** 8. a 9. ročník ZŠ a SŠ, informatika
+- **Dĺžka:** 90–160 minút
 
-Metodika je součástí Kurikula umělé inteligence pro ZŠ a SŠ, které vytváříme ve spolupráci s Národním pedagogickým institutem.
+Metodika je súčasťou Kurikula umelej inteligencie pre ZŠ a SŠ, ktoré vytvárame v spolupráci s Národným pedagogickým inštitútom Českej republiky. Metodika je v češtine.
 
-[Otevřít metodiku](https://kurikulum.aidetem.cz/knowledgebase/vibecoding-01-tvorba-jednoduchych-aplikaci/)
+[Otvoriť metodiku (v češtine)](https://kurikulum.aidetem.cz/knowledgebase/vibecoding-01-tvorba-jednoduchych-aplikaci/)
 
-## Osm zadání pro vyučující
+## Osem zadaní pre vyučujúcich
 
-Dříve jsme v [databázi promptů](https://chatveskole.cz/funkce/prompty/graf-regiony/) radili, jak napsat zadání pro chatbota tak, aby vytvořil kód, který vizualizuje například graf. Dnes ho chatbot rovnou postaví sám. Zadání vyzkoušejte například v Gemini Canvas nebo v Canva Code.
+Kedysi sme v [databáze promptov](https://chatveskole.cz/funkce/prompty/graf-regiony/) (v češtine) radili, ako napísať zadanie pre chatbota tak, aby vytvoril kód, ktorý vizualizuje napríklad graf. Dnes ho chatbot rovno postaví sám. Zadania vyskúšajte napríklad v Gemini Canvas alebo v Canva Code.
 
-### Interaktivní časová osa (dějepis, zeměpis)
-
-```text
-Vytvoř interaktivní časovou osu prezidentů České republiky od roku 1993 do dneška.
-Každé funkční období ukaž jako barevný pruh. Po kliknutí na pruh se zobrazí jméno,
-roky ve funkci a tři nejdůležitější události. Přidej tlačítko, které přepne osu
-na období Československa (1918–1992). Uveď jen data, kterými si jsi jistý; nejistá označ.
-```
-
-### Graf z dat (zeměpis, občanská výchova)
+### Interaktívna časová os (dejepis, geografia)
 
 ```text
-Vytvoř interaktivní sloupcový graf počtu obyvatel krajů České republiky.
-Data ti vložím jako tabulku z Českého statistického úřadu. Kraje seřaď od největšího.
-Přidej přepínač „počet obyvatel / hustota zalidnění“ a po najetí myší ukaž přesné číslo.
-[sem vložte tabulku z ČSÚ]
+Vytvor interaktívnu časovú os prezidentov Slovenskej republiky od roku 1993 po dnešok.
+Každé funkčné obdobie ukáž ako farebný pruh. Po kliknutí na pruh sa zobrazí meno,
+roky vo funkcii a tri najdôležitejšie udalosti. Pridaj tlačidlo, ktoré prepne os
+na obdobie Československa (1918 – 1992). Uveď len údaje, ktorými si si istý; neisté označ.
 ```
 
-Tip: data vždy dodejte z ověřeného zdroje. Když je chatbot „doplní sám“, často si je vymyslí.
-
-### Myšlenková mapa (přírodopis)
+### Graf z údajov (geografia, občianska náuka)
 
 ```text
-Vytvoř interaktivní myšlenkovou mapu dřevin střední Evropy pro 6. třídu.
-Uprostřed „Dřeviny“, větve: jehličnaté stromy, listnaté stromy, keře.
-Ke každé větvi 4–6 příkladů. Po kliknutí na druh se zobrazí krátký popis
-a podle čeho ho poznám v přírodě. Větve jdou sbalit a rozbalit.
+Vytvor interaktívny stĺpcový graf počtu obyvateľov krajov Slovenskej republiky.
+Údaje ti vložím ako tabuľku zo Štatistického úradu SR. Kraje zoraď od najväčšieho.
+Pridaj prepínač „počet obyvateľov / hustota zaľudnenia“ a po prejdení myšou ukáž presné číslo.
+[sem vložte tabuľku zo Štatistického úradu SR]
 ```
 
-### Koláčový graf (biologie, výchova ke zdraví)
+Tip: údaje vždy dodajte z overeného zdroja. Keď ich chatbot „doplní sám“, často si ich vymyslí.
+
+### Myšlienková mapa (biológia)
 
 ```text
-Vytvoř koláčový graf, který porovná obsah vitamínů ve 100 g borůvek, jahod a jablek.
-Ovoce se přepíná tlačítky. Pod grafem jedna věta, k čemu tělo daný vitamín potřebuje.
-Uveď zdroj dat; pokud si hodnotami nejsi jistý, napiš to.
+Vytvor interaktívnu myšlienkovú mapu drevín strednej Európy pre 6. ročník.
+V strede „Dreviny“, vetvy: ihličnaté stromy, listnaté stromy, kry.
+Ku každej vetve 4 – 6 príkladov. Po kliknutí na druh sa zobrazí krátky opis
+a podľa čoho ho spoznám v prírode. Vetvy sa dajú zbaliť a rozbaliť.
 ```
 
-### Přehled vzorců (matematika, fyzika)
+### Koláčový graf (biológia, výchova k zdraviu)
 
 ```text
-Vytvoř přehlednou stránku „Derivace základních funkcí“ pro maturanty.
-Dvě tabulky: derivace základních funkcí (f(x), f′(x), podmínky) a pravidla derivování
-(součet, součin, podíl, složená funkce). Vzorce zapiš matematickou sazbou.
-Přidej tlačítko „Procvičit“, které ukáže náhodnou funkci a po kliknutí její derivaci.
+Vytvor koláčový graf, ktorý porovná obsah vitamínov v 100 g čučoriedok, jahôd a jabĺk.
+Ovocie sa prepína tlačidlami. Pod grafom jedna veta, na čo telo daný vitamín potrebuje.
+Uveď zdroj údajov; ak si hodnotami nie si istý, napíš to.
 ```
 
-Výstup pečlivě zkontrolujte — chatboti v matematice stále chybují.
-
-### Simulace logické úlohy (informatika, matematika)
+### Prehľad vzorcov (matematika, fyzika)
 
 ```text
-Vytvoř hru „Vlk, koza a zelí“: převozník musí přepravit vlka, kozu a zelí přes řeku,
-do člunu se vejde jen jedna věc. Koza nesmí zůstat sama se zelím, vlk ne s kozou.
-Postavy přetahuji myší nebo prstem. Při prohře ukaž, co se stalo, a nabídni nový pokus.
-Počítej tahy a po výhře ukaž, jestli šlo o nejkratší řešení.
+Vytvor prehľadnú stránku „Derivácie elementárnych funkcií“ pre maturantov.
+Dve tabuľky: derivácie elementárnych funkcií (f(x), f′(x), podmienky) a pravidlá derivovania
+(súčet, súčin, podiel, zložená funkcia). Vzorce zapíš matematickou sadzbou.
+Pridaj tlačidlo „Precvičiť“, ktoré ukáže náhodnú funkciu a po kliknutí jej deriváciu.
 ```
 
-Se žáky pak můžete řešení zakreslit jako sekvenční diagram nebo algoritmus.
+Výstup starostlivo skontrolujte — chatboty v matematike stále robia chyby.
 
-### Vlastní ikona (výtvarná výchova, informatika)
+### Simulácia logickej úlohy (informatika, matematika)
 
 ```text
-Nakresli jako vektorový obrázek (SVG) jednoduchou ikonu červeného srdce
-v plochém stylu. Pak přidej tlačítka pro změnu barvy a velikosti
-a tlačítko „Stáhnout SVG“.
+Vytvor hru „Vlk, koza a kapusta“: prievozník musí previezť vlka, kozu a kapustu cez rieku,
+do člna sa zmestí len jedna vec. Koza nesmie zostať sama s kapustou, vlk nie s kozou.
+Postavy presúvam myšou alebo prstom. Pri prehre ukáž, čo sa stalo, a ponúkni nový pokus.
+Počítaj ťahy a po výhre ukáž, či išlo o najkratšie riešenie.
 ```
 
-### 3D model pro tiskárnu (informatika, technika)
+So žiakmi potom môžete riešenie zakresliť ako sekvenčný diagram alebo algoritmus.
+
+### Vlastná ikona (výtvarná výchova, informatika)
 
 ```text
-Vytvoř v OpenSCADu parametrický model krabičky s víčkem. Parametry: šířka, délka,
-výška a tloušťka stěny v milimetrech. Vysvětli, jak model otevřu v OpenSCADu
-(je zdarma) a exportuji do STL pro 3D tisk.
+Nakresli ako vektorový obrázok (SVG) jednoduchú ikonu červeného srdca
+v plochom štýle. Potom pridaj tlačidlá na zmenu farby a veľkosti
+a tlačidlo „Stiahnuť SVG“.
 ```
 
-U 3D modelů začněte jednoduchým tvarem a vylepšujte ho postupně — přesné popisy složitých tvarů zatím selhávají.
+### 3D model pre tlačiareň (informatika, technika)
 
-[Pro pokročilé →](/vibe-coding/pro-pokrocile)
+```text
+Vytvor v OpenSCADe parametrický model škatuľky s vekom. Parametre: šírka, dĺžka,
+výška a hrúbka steny v milimetroch. Vysvetli, ako model otvorím v OpenSCADe
+(je zadarmo) a exportujem do STL na 3D tlač.
+```
 
-## Školení pro sborovny
+Pri 3D modeloch začnite jednoduchým tvarom a vylepšujte ho postupne — presné opisy zložitých tvarov zatiaľ zlyhávajú.
 
-### Vibe Coding pro školy
+[Pre pokročilých →](/vibe-coding/pro-pokrocile)
 
-Přijedeme za vámi do školy a za tři hodiny celé sborovně ukážeme, jak s AI tvořit jednoduché aplikace a jak Vibe Coding smysluplně zařadit do výuky. Nejde o to naučit se programovat, ale o tvořivost, spolupráci a práci s chybou.
+## Školenie pre zborovne
 
-- **Úvod:** co je Vibe Coding a čím se liší od klasické výuky informatiky.
-- **Praktická část:** sami si vyzkoušíte tvorbu jednoduchých digitálních výstupů s pomocí AI. Důraz je na postup, testování a vylepšování, ne na technickou dokonalost.
-- **Metodická část:** jak Vibe Coding zařadit podle věku a digitálních dovedností žáků. Přínosy, limity a rizika AI, bezpečnost, autorská práva a odpovědnost.
+### Vibe Coding pre školy
 
-Odnesete si konkrétní příklady výukových scénářů, nápady na projekty s AI a jistotu při tvůrčí práci s digitálními nástroji.
+Školenie ponúkame školám v Česku, v češtine. Prídeme za vami do školy a za tri hodiny celej zborovni ukážeme, ako s AI tvoriť jednoduché aplikácie a ako Vibe Coding zmysluplne zaradiť do vyučovania. Nejde o to naučiť sa programovať, ale o tvorivosť, spoluprácu a prácu s chybou.
 
-**Pro koho:** pedagogové a vedení škol, nejvýš 26 účastníků<br>
-**Kde a kdy:** prezenčně ve vaší sborovně, termín po domluvě<br>
-**Cena:** 23 600 Kč s DPH. Školení je s certifikátem, lze ho hradit ze šablon.
+- **Úvod:** čo je Vibe Coding a čím sa líši od klasického vyučovania informatiky.
+- **Praktická časť:** sami si vyskúšate tvorbu jednoduchých digitálnych výstupov s pomocou AI. Dôraz je na postup, testovanie a vylepšovanie, nie na technickú dokonalosť.
+- **Metodická časť:** ako Vibe Coding zaradiť podľa veku a digitálnych zručností žiakov. Prínosy, limity a riziká AI, bezpečnosť, autorské práva a zodpovednosť.
 
-[Objednat školení](https://vzdelavame.aidetem.cz/akce/sborovna/vibecoding-pro-skoly/)
+Odnesiete si konkrétne príklady scenárov do vyučovania, nápady na projekty s AI a istotu pri tvorivej práci s digitálnymi nástrojmi.
+
+**Pre koho:** pedagógovia a vedenie škôl, najviac 26 účastníkov<br>
+**Kde a kedy:** prezenčne vo vašej zborovni, termín po dohode<br>
+**Cena:** 23 600 Kč s DPH (cena pre školy v Česku). Školenie je s certifikátom, české školy ho môžu hradiť zo šablón.
+
+[Objednať školenie (v češtine)](https://vzdelavame.aidetem.cz/akce/sborovna/vibecoding-pro-skoly/)

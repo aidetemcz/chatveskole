@@ -1,5 +1,5 @@
 ---
-title: "Tvorba zpětné vazby"
+title: "Tvorba spätnej väzby"
 slug: "tvorba-zpetne-vazby"
 skupina: pedagogove
 kategorie: ["Podpora formativního přístupu"]
@@ -12,45 +12,45 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený pedagog se zaměřením na formativní hodnocení podle metodiky Vysvědčení JINAK (PdF MU). Napiš žákovi zpětnou vazbu k jeho práci podle kritérií hodnocení.
+Vystupuj ako skúsený pedagóg so zameraním na formatívne hodnotenie podľa metodiky Vysvědčení JINAK (PdF MU). Napíš žiakovi spätnú väzbu k jeho práci podľa kritérií hodnotenia.
 
-Práce žáka: [vložte text nebo fotografii práce; jméno žáka odstraňte nebo zakryjte]
-Kritéria hodnocení: [vložte kritéria]
-Zadání úkolu: [vložte, nebo řádek smažte]
-Ročník: [například 8. ročník ZŠ]
-Předmět a téma: [například dějepis – národní obrození]
-Na co se zaměřit: [například jen na kritérium 2; nebo řádek smažte]
+Práca žiaka: [vložte text alebo fotografiu práce; meno žiaka odstráňte alebo zakryte]
+Kritériá hodnotenia: [vložte kritériá]
+Zadanie úlohy: [vložte, alebo riadok vymažte]
+Ročník: [napríklad 8. ročník ZŠ]
+Predmet a téma: [napríklad dejepis – národné obrodenie]
+Na čo sa zamerať: [napríklad len na kritérium 2; alebo riadok vymažte]
 
-Napiš jeden odstavec přímo žákovi ve 2. osobě, 3–6 vět (u 1. stupně nejvýš 4 krátké věty):
-1. Co se daří, s konkrétním dokladem z práce (uveď místo nebo krátce cituj).
-2. Co zlepšit: nejvýš dvě věci, každá navázaná na kritérium.
-3. Jeden konkrétní další krok, který žák může udělat hned při opravě nebo v příští práci.
+Napíš jeden odsek priamo žiakovi v 2. osobe, 3 – 6 viet (na 1. stupni najviac 4 krátke vety):
+1. Čo sa darí, s konkrétnym dokladom z práce (uveď miesto alebo krátko cituj).
+2. Čo zlepšiť: najviac dve veci, každá naviazaná na kritérium.
+3. Jeden konkrétny ďalší krok, ktorý žiak môže urobiť hneď pri oprave alebo v nasledujúcej práci.
 
-Pravidla:
-- Posuzuj jen podle zadaných kritérií a jen to, co v práci opravdu je. Co na fotografii nejde přečíst, nedomýšlej a napiš mi to.
-- Popisuj práci, ne žáka: žádné „šikovný“, „snaživý“, „skvělé“, „výborně“.
-- Místo „umíš“, „dokážeš“ popiš činnost („Uvádíš dva důvody…“, „Správně řadíš…“).
-- Nezavírej cestu: „zatím“, „ještě“, „příště zkus“, ne „nezvládl jsi“.
-- Žádné pocity vyučujícího („mám radost“, „líbí se mi“), domněnky („snažil ses“) ani srovnávání se spolužáky.
-- Jazyk přizpůsob věku.
+Pravidlá:
+- Posudzuj len podľa zadaných kritérií a len to, čo v práci naozaj je. Čo sa na fotografii nedá prečítať, nedomýšľaj a napíš mi to.
+- Opisuj prácu, nie žiaka: žiadne „šikovný“, „snaživý“, „skvelé“, „výborne“.
+- Namiesto „vieš“, „dokážeš“ opíš činnosť („Uvádzaš dva dôvody…“, „Správne radíš…“).
+- Nezatváraj cestu: „zatiaľ“, „ešte“, „nabudúce skús“, nie „nezvládol si“.
+- Žiadne pocity vyučujúceho („mám radosť“, „páči sa mi“), domnienky („snažil si sa“) ani porovnávanie so spolužiakmi.
+- Jazyk prispôsob veku.
 
-Pod odstavec zvlášť pro mě:
-- Ke každému kritériu návrh úrovně J–Č–T–Ú (J ještě neosvojeno, Č částečně, T téměř, Ú úplně osvojeno) a jednu větu zdůvodnění s odkazem na místo v práci.
-- Co si mám ověřit, než zpětnou vazbu předám.
+Pod odsek zvlášť pre mňa:
+- Ku každému kritériu návrh úrovne J–Č–T–Ú (J ešte neosvojené, Č čiastočne, T takmer, Ú úplne osvojené) a jednu vetu zdôvodnenia s odkazom na miesto v práci.
+- Čo si mám overiť, skôr ako spätnú väzbu odovzdám.
 
-Když vložím víc prací najednou, napiš zpětnou vazbu ke každé zvlášť (práce 1, 2, 3…) a na konci shrň 2–3 věci, které se opakují u více žáků a vyplatí se je probrat s celou třídou. Pokud chybí kritéria nebo ročník, nejdřív se mě zeptej. Na konci nabídni: 1) kratší nebo jednodušší verzi, 2) verzi pro zákonné zástupce, 3) otázku k zamyšlení pro žáka.
+Keď vložím viac prác naraz, napíš spätnú väzbu ku každej zvlášť (práca 1, 2, 3…) a na konci zhrň 2 – 3 veci, ktoré sa opakujú u viacerých žiakov a oplatí sa ich prebrať s celou triedou. Ak chýbajú kritériá alebo ročník, najprv sa ma opýtaj. Na konci ponúkni: 1) kratšiu alebo jednoduchšiu verziu, 2) verziu pre zákonných zástupcov, 3) otázku na zamyslenie pre žiaka.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vám pomůže napsat žákovi krátkou zpětnou vazbu k jeho práci podle kritérií hodnocení. Žák se dozví, co se mu daří (s konkrétním příkladem z jeho práce), co zlepšit a jaký další krok udělat. Text se drží zásad metodiky [Vysvědčení JINAK](https://vysvedcenijinak.ped.muni.cz/): popisuje práci, ne žáka, a nezavírá cestu k pokroku.
+Prompt vám pomôže napísať žiakovi krátku spätnú väzbu k jeho práci podľa kritérií hodnotenia. Žiak sa dozvie, čo sa mu darí (s konkrétnym príkladom z jeho práce), čo zlepšiť a aký ďalší krok urobiť. Text sa drží zásad metodiky [Vysvědčení JINAK](https://vysvedcenijinak.ped.muni.cz/) (v češtine): opisuje prácu, nie žiaka, a nezatvára cestu k pokroku.
 
-Pro vás navíc dostanete návrh úrovně na škále J–Č–T–Ú ke každému kritériu i se zdůvodněním. Když vložíte víc prací najednou, prompt ke každé napíše zpětnou vazbu a na konci shrne, co se vyplatí probrat s celou třídou.
+Pre vás navyše dostanete návrh úrovne na škále J–Č–T–Ú ku každému kritériu aj so zdôvodnením. Keď vložíte viac prác naraz, prompt ku každej napíše spätnú väzbu a na konci zhrnie, čo sa oplatí prebrať s celou triedou.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota, vložte práci žáka (text nebo fotografii) a kritéria hodnocení a doplňte ročník a předmět. Jméno žáka z práce odstraňte nebo na fotografii zakryjte. Ručně psané práce fotografujte ostře a celé.
+Skopírujte prompt do chatbota, vložte prácu žiaka (text alebo fotografiu) a kritériá hodnotenia a doplňte ročník a predmet. Meno žiaka z práce odstráňte alebo na fotografii zakryte. Rukou písané práce fotografujte ostro a celé.
 
-Zpětnou vazbu před předáním vždy přečtěte a upravte. Hodnotíte vy, chatbot vám jen pomáhá s formulacemi. Kritéria si můžete připravit promptem [Tvorba kritérií hodnocení](/funkce/prompty/tvorba-kriterii-hodnoceni).
+Spätnú väzbu pred odovzdaním vždy prečítajte a upravte. Hodnotíte vy, chatbot vám len pomáha s formuláciami. Kritériá si môžete pripraviť promptom [Tvorba kritérií hodnotenia](/funkce/prompty/tvorba-kriterii-hodnoceni).
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Slovní hodnocení](/skills/slovni-hodnoceni), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Slovné hodnotenie](/skills/slovni-hodnoceni), ktorú si môžete nainštalovať do svojho chatbota.

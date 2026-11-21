@@ -1,5 +1,5 @@
 ---
-title: "Rozšíření existujícího materiálu"
+title: "Rozšírenie existujúceho materiálu"
 slug: "rozsireni-existujiciho-materialu"
 skupina: pedagogove
 kategorie: ["Aktualizace materiálů"]
@@ -12,40 +12,40 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený metodik a vzdělávací designér. Rozšiř můj výukový materiál o nové úlohy a aktivity.
+Vystupuj ako skúsený metodik a vzdelávací dizajnér. Rozšír môj vyučovací materiál o nové úlohy a aktivity.
 
-Materiál: [vložte pracovní list, text, prezentaci nebo soubor]
-Ročník a předmět: [například 7. ročník ZŠ, dějepis – starověký Řím]
-Co chci přidat: [například otevřené úlohy na argumentaci / badatelskou aktivitu / práci ve skupinách / úlohy pro rychlejší žáky]
-Cíl hodiny: [například žák porovná život ve starověkém Římě s dneškem; nebo řádek smažte]
-Kolik přidat: [například 3 úlohy, 15 minut navíc]
-Podmínky: [například bez tabletů / máme Padlet / mezipředmětová vazba se zeměpisem; nebo řádek smažte]
+Materiál: [vložte pracovný list, text, prezentáciu alebo súbor]
+Ročník a predmet: [napríklad 7. ročník ZŠ, dejepis – staroveký Rím]
+Čo chcem pridať: [napríklad otvorené úlohy na argumentáciu / bádateľskú aktivitu / prácu v skupinách / úlohy pre rýchlejších žiakov]
+Cieľ hodiny: [napríklad žiak porovná život v starovekom Ríme s dneškom; alebo riadok vymažte]
+Koľko pridať: [napríklad 3 úlohy, 15 minút navyše]
+Podmienky: [napríklad bez tabletov / máme Padlet / medzipredmetový vzťah s geografiou; alebo riadok vymažte]
 
-Pravidla:
-1. Nové úlohy navaž na obsah materiálu a na cíl. Nepřidávej aktivity jen pro zábavu.
-2. Přidávej hlavně úlohy, ve kterých žáci se znalostí něco dělají: porovnají, najdou chybu, zdůvodní, rozhodnou podle kritérií, vyřeší novou situaci. Ne víc stejných úloh na zapamatování.
-3. U skupinové práce popiš role nebo postup, aby se zapojil každý žák.
-4. Zadání pro žáky piš přátelsky a srozumitelně pro daný věk, bez zbytečných odborných pojmů.
-5. Původní text neměň. Nové části vlož na vhodné místo a uveď štítkem „Nově přidáno:“.
-6. U každé nové úlohy uveď orientační čas a co potřebuje (pomůcky, zařízení).
-7. Na zjevné věcné chyby v původním materiálu upozorni.
+Pravidlá:
+1. Nové úlohy nadviaž na obsah materiálu a na cieľ. Nepridávaj aktivity len pre zábavu.
+2. Pridávaj hlavne úlohy, v ktorých žiaci s poznatkom niečo robia: porovnajú, nájdu chybu, zdôvodnia, rozhodnú podľa kritérií, vyriešia novú situáciu. Nie viac rovnakých úloh na zapamätanie.
+3. Pri skupinovej práci opíš roly alebo postup, aby sa zapojil každý žiak.
+4. Zadanie pre žiakov píš priateľsky a zrozumiteľne pre daný vek, bez zbytočných odborných pojmov.
+5. Pôvodný text nemeň. Nové časti vlož na vhodné miesto a uveď štítkom „Novo pridané:“.
+6. Pri každej novej úlohe uveď orientačný čas a čo potrebuje (pomôcky, zariadenia).
+7. Na zjavné vecné chyby v pôvodnom materiáli upozorni.
 
 Výstup:
-a) celý materiál s vloženými novými částmi,
-b) řešení nebo znaky dobré odpovědi k novým úlohám,
-c) 2–3 poznámky pro vyučující: kam nové části v hodině zařadit a jak je upravit pro žáky, kteří potřebují oporu.
+a) celý materiál s vloženými novými časťami,
+b) riešenie alebo znaky dobrej odpovede k novým úlohám,
+c) 2 – 3 poznámky pre vyučujúcich: kam nové časti v hodine zaradiť a ako ich upraviť pre žiakov, ktorí potrebujú oporu.
 
-Když materiál chybí, nejdřív se mě zeptej. Na konci nabídni čistou verzi bez štítků k tisku.
+Keď materiál chýba, najprv sa ma opýtaj. Na konci ponúkni čistú verziu bez štítkov na tlač.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt rozšíří váš hotový materiál o nové úlohy a aktivity, například otevřené otázky, badatelskou aktivitu nebo práci ve skupinách. Nové úlohy navazují na obsah a cíl hodiny a vedou žáky k tomu, aby učivo používali, ne jen opakovali.
+Prompt rozšíri váš hotový materiál o nové úlohy a aktivity, napríklad otvorené otázky, bádateľskú aktivitu alebo prácu v skupinách. Nové úlohy nadväzujú na obsah a cieľ hodiny a vedú žiakov k tomu, aby učivo používali, nie len opakovali.
 
-Původní text zůstane beze změny, nové části jsou označené štítkem „Nově přidáno“. Ke každé nové úloze dostanete čas, potřebné pomůcky a řešení.
+Pôvodný text zostane bez zmeny, nové časti sú označené štítkom „Novo pridané“. Ku každej novej úlohe dostanete čas, potrebné pomôcky a riešenie.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota, vložte materiál a napište, co chcete přidat a kolik. Pokud uvedete cíl hodiny, nové úlohy na něj budou přesněji mířit. Hotový materiál můžete vytisknout nebo sdílet online, na přání i bez štítků.
+Skopírujte prompt do chatbota, vložte materiál a napíšte, čo chcete pridať a koľko. Ak uvediete cieľ hodiny, nové úlohy naň budú presnejšie mieriť. Hotový materiál môžete vytlačiť alebo zdieľať online, na požiadanie aj bez štítkov.
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Úprava materiálu](/skills/uprava-materialu), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Úprava materiálu](/skills/uprava-materialu), ktorú si môžete nainštalovať do svojho chatbota.

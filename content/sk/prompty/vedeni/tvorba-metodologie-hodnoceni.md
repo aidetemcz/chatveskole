@@ -1,5 +1,5 @@
 ---
-title: "Tvorba metodologie hodnocení"
+title: "Tvorba metodológie hodnotenia"
 slug: "tvorba-metodologie-hodnoceni"
 skupina: vedeni
 kategorie: ["Tvorba strategických dokumentů"]
@@ -12,53 +12,53 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený školní stratég zaměřený na formativní hodnocení. Navrhni metodologii hodnocení žáků pro naši školu.
+Vystupuj ako skúsený školský stratég zameraný na formatívne hodnotenie. Navrhni metodológiu hodnotenia žiakov pre našu školu.
 
-Škola: [například ZŠ s 1. i 2. stupněm, 400 žáků]
-Jak dnes hodnotíme: [například známky, na 1. stupni slovní hodnocení v pololetí, část vyučujících pracuje s kritérii a sebehodnocením]
-Co chceme změnit: [například sjednotit práci s kritérii, neznámkovat průběžné práce, zavést portfolio]
-Co funguje a kde jsou problémy: [například zákonní zástupci chtějí známky, vyučující nemají čas na zpětnou vazbu]
-Pravidla hodnocení ve školním řádu: [vložte současné znění, nebo řádek smažte]
-Na které ročníky nebo předměty se zaměřit: [například 6.–7. ročník, český jazyk a matematika]
-Zdroje: [například čas na společné plánování, vzdělávání pedagogů]
-Na jak dlouho metodologie platí: [například 3 roky]
+Škola: [napríklad ZŠ s 1. aj 2. stupňom, 400 žiakov]
+Ako dnes hodnotíme: [napríklad známky, na 1. stupni slovné hodnotenie v polroku, časť vyučujúcich pracuje s kritériami a sebahodnotením]
+Čo chceme zmeniť: [napríklad zjednotiť prácu s kritériami, neznámkovať priebežné práce, zaviesť portfólio]
+Čo funguje a kde sú problémy: [napríklad zákonní zástupcovia chcú známky, vyučujúci nemajú čas na spätnú väzbu]
+Pravidlá hodnotenia v školskom poriadku: [vložte súčasné znenie, alebo riadok vymažte]
+Na ktoré ročníky alebo predmety sa zamerať: [napríklad 6. – 7. ročník, slovenský jazyk a matematika]
+Zdroje: [napríklad čas na spoločné plánovanie, vzdelávanie pedagógov]
+Na ako dlho metodológia platí: [napríklad 3 roky]
 
-Pravidla:
-1. Hodnocení slouží hlavně učení. Převažuje formativní hodnocení (cíle a kritéria předem, zpětná vazba, sebehodnocení a vzájemné hodnocení), sumativní tam, kde je potřeba souhrnná informace. Sumativní hodnocení zařaď až poté, co žáci pracovali se zpětnou vazbou.
-2. Cíle a kritéria formuluj podle Nové taxonomie vzdělávacích cílů (Marzano a Kendall), ne podle Bloomovy taxonomie. Kritéria popisují kvalitu výkonu, ne osobnost žáka.
-3. Pro sebehodnocení a průběžné hodnocení použij čtyřúrovňovou škálu J–Č–T–Ú z metodiky Vysvědčení JINAK (J ještě neosvojeno, Č částečně, T téměř, Ú úplně osvojeno), pokud nenapíšu jinak.
-4. Popiš, jak se informace o pokroku dostanou k žákům a zákonným zástupcům (průběžně, na konzultacích, na vysvědčení) a jak se převádějí na známku nebo slovní hodnocení, pokud škola obojí kombinuje.
-5. Pravidla hodnocení jsou součástí školního řádu, který vydává ředitel a schvaluje školská rada. Upozorni, co je potřeba do něj promítnout. Legislativní detaily uváděj jen obecně a doporuč je ověřit.
-6. O hodnocení žáka vždy rozhoduje vyučující, ne AI. AI může vyučujícím pomoci s přípravou kritérií nebo návrhem zpětné vazby, údaje žáků do ní nepatří. Pokud škola zvažuje AI přímo k hodnocení výsledků učení, upozorni, že podle evropského nařízení o AI jde o vysoce rizikové použití.
-7. Zaváděj po krocích: ověření v několika třídách, společné vyhodnocení, rozšíření. Méně změn najednou. Každé opatření má nositele (funkci, ne jméno), termín a výstup. Výchozí stav, který jsem nezadal(a), nevymýšlej, napiš [doplnit].
+Pravidlá:
+1. Hodnotenie slúži hlavne učeniu. Prevažuje formatívne hodnotenie (ciele a kritériá vopred, spätná väzba, sebahodnotenie a vzájomné hodnotenie), sumatívne tam, kde je potrebná súhrnná informácia. Sumatívne hodnotenie zaraď až potom, ako žiaci pracovali so spätnou väzbou.
+2. Ciele a kritériá formuluj podľa Novej taxonómie vzdelávacích cieľov (Marzano a Kendall), nie podľa Bloomovej taxonómie. Kritériá opisujú kvalitu výkonu, nie osobnosť žiaka.
+3. Na sebahodnotenie a priebežné hodnotenie použi štvorúrovňovú škálu J–Č–T–Ú z metodiky Vysvědčení JINAK (J ešte neosvojené, Č čiastočne, T takmer, Ú úplne osvojené), ak nenapíšem inak.
+4. Opíš, ako sa informácie o pokroku dostanú k žiakom a zákonným zástupcom (priebežne, na konzultáciách, na vysvedčení) a ako sa prevádzajú na známku alebo slovné hodnotenie, ak škola oboje kombinuje.
+5. Pravidlá hodnotenia sú súčasťou školského poriadku. Upozorni, čo je potrebné do neho premietnuť. Postup jeho schvaľovania a legislatívne podrobnosti uvádzaj len všeobecne a odporuč ich overiť v platných predpisoch.
+6. O hodnotení žiaka vždy rozhoduje vyučujúci, nie AI. AI môže vyučujúcim pomôcť s prípravou kritérií alebo návrhom spätnej väzby, údaje žiakov do nej nepatria. Ak škola zvažuje AI priamo na hodnotenie výsledkov učenia, upozorni, že podľa európskeho nariadenia o AI ide o vysokorizikové použitie.
+7. Zavádzaj po krokoch: overenie v niekoľkých triedach, spoločné vyhodnotenie, rozšírenie. Menej zmien naraz. Každé opatrenie má nositeľa (funkciu, nie meno), termín a výstup. Východiskový stav, ktorý som nezadal(a), nevymýšľaj, napíš [doplniť].
 
-Výstup: jeden dokument na 2–4 strany s nadpisy, krátkými odstavci a tabulkami:
-1) současný stav: krátká SWOT v tabulce 2 × 2,
-2) účel a vize hodnocení,
-3) zásady (spravedlnost, srozumitelnost, motivace, individuální pokrok),
-4) formy hodnocení: kdy a k čemu formativní, sumativní, sebehodnocení a vzájemné hodnocení,
-5) kritéria a škála: jak je vyučující tvoří a sjednocují a 1–2 příklady kritérií s úrovněmi J–Č–T–Ú,
-6) nástroje (důkazy o učení, portfolio, testy, projekty, pozorování): kdo je používá a jak často,
-7) role a odpovědnosti vedení, vyučujících, žáků a zákonných zástupců,
-8) rozvoj pedagogů (společné posuzování prací žáků, vzájemné náslechy, sdílení kritérií),
-9) indikátory: tabulka Indikátor – Výchozí stav – Cílový stav – Jak a kdy měříme,
-10) harmonogram zavádění po pololetích,
-11) rizika a jak jim předejdeme,
-12) předpoklady, se kterými jsi pracoval(a).
+Výstup: jeden dokument na 2 – 4 strany s nadpismi, krátkymi odsekmi a tabuľkami:
+1) súčasný stav: krátka SWOT v tabuľke 2 × 2,
+2) účel a vízia hodnotenia,
+3) zásady (spravodlivosť, zrozumiteľnosť, motivácia, individuálny pokrok),
+4) formy hodnotenia: kedy a na čo formatívne, sumatívne, sebahodnotenie a vzájomné hodnotenie,
+5) kritériá a škála: ako ich vyučujúci tvoria a zjednocujú a 1 – 2 príklady kritérií s úrovňami J–Č–T–Ú,
+6) nástroje (dôkazy o učení, portfólio, testy, projekty, pozorovanie): kto ich používa a ako často,
+7) roly a zodpovednosti vedenia, vyučujúcich, žiakov a zákonných zástupcov,
+8) rozvoj pedagógov (spoločné posudzovanie prác žiakov, vzájomné náčuvy, zdieľanie kritérií),
+9) indikátory: tabuľka Indikátor – Východiskový stav – Cieľový stav – Ako a kedy meriame,
+10) harmonogram zavádzania po polrokoch,
+11) riziká a ako im predídeme,
+12) predpoklady, s ktorými si pracoval(a).
 
-Když chybí typ školy nebo současná praxe, nejdřív se mě zeptej (nejvýš 5 otázek najednou). Na konci nabídni: 1) návrh textu do školního řádu k právní kontrole, 2) vysvětlení pro zákonné zástupce, 3) kritéria pro jeden předmět a ročník.
+Keď chýba typ školy alebo súčasná prax, najprv sa ma opýtaj (najviac 5 otázok naraz). Na konci ponúkni: 1) návrh textu do školského poriadku na právnu kontrolu, 2) vysvetlenie pre zákonných zástupcov, 3) kritériá pre jeden predmet a ročník.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vám pomůže sestavit metodologii hodnocení, která slouží hlavně učení žáků. Staví na formativním hodnocení: cíle a kritéria podle Nové taxonomie, zpětná vazba a sebehodnocení na škále J–Č–T–Ú z metodiky [Vysvědčení JINAK](https://vysvedcenijinak.ped.muni.cz/) (PdF MU). Popíše i to, jak se informace o pokroku dostanou k zákonným zástupcům a jak se převádějí na známky nebo slovní hodnocení.
+Prompt vám pomôže zostaviť metodológiu hodnotenia, ktorá slúži hlavne učeniu žiakov. Stavia na formatívnom hodnotení: ciele a kritériá podľa Novej taxonómie, spätná väzba a sebahodnotenie na škále J–Č–T–Ú z metodiky [Vysvědčení JINAK](https://vysvedcenijinak.ped.muni.cz/) (PdF MU, v češtine). Opíše aj to, ako sa informácie o pokroku dostanú k zákonným zástupcom a ako sa prevádzajú na známky alebo slovné hodnotenie.
 
-Metodologie počítá se zaváděním po krocích a upozorní, co je potřeba promítnout do školního řádu. O hodnocení žáka vždy rozhoduje vyučující, ne AI.
+Metodológia počíta so zavádzaním po krokoch a upozorní, čo je potrebné premietnuť do školského poriadku. O hodnotení žiaka vždy rozhoduje vyučujúci, nie AI.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte, jak dnes hodnotíte a co chcete změnit. Pokud vložíte současná pravidla hodnocení ze školního řádu, chatbot na ně naváže. Návrh textu do školního řádu nechte před schválením zkontrolovat.
+Skopírujte prompt do chatbota a doplňte, ako dnes hodnotíte a čo chcete zmeniť. Ak vložíte súčasné pravidlá hodnotenia zo školského poriadku, chatbot na ne nadviaže. Návrh textu do školského poriadku dajte pred schválením skontrolovať.
 
-Kritéria pro konkrétní předmět připravíte s promptem [Tvorba kritérií hodnocení](/funkce/prompty/tvorba-kriterii-hodnoceni) nebo s dovednostmi [Kritéria hodnocení](/skills/kriteria-hodnoceni) a [Gradace kritérií hodnocení (J–Č–T–Ú)](/skills/gradace-kriterii-hodnoceni). Jak s formativním přístupem pracovat ve třídě a jak ho zavádět ve škole, popisuje článek [Formativní přístup v praxi](https://aidetem.cz/formativni-pristup-v-praxi/) na webu AI dětem.
+Kritériá pre konkrétny predmet pripravíte s promptom [Tvorba kritérií hodnotenia](/funkce/prompty/tvorba-kriterii-hodnoceni) alebo so zručnosťami [Kritériá hodnotenia](/skills/kriteria-hodnoceni) a [Gradácia kritérií hodnotenia (J–Č–T–Ú)](/skills/gradace-kriterii-hodnoceni). Ako s formatívnym prístupom pracovať v triede a ako ho zavádzať v škole, opisuje článok [Formativní přístup v praxi](https://aidetem.cz/formativni-pristup-v-praxi/) na webe AI dětem (v češtine).
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Strategické dokumenty](/skills/strategicke-dokumenty), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Strategické dokumenty](/skills/strategicke-dokumenty), ktorú si môžete nainštalovať do svojho chatbota.

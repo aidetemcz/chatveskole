@@ -39,12 +39,12 @@ const IKONY = [
 ];
 
 // Pro vyučující a vedení: úvod a skupiny ### se seznamem
-const ucitele = najdi(/vyučující/i);
+const ucitele = najdi(/vyučující|vyučujúcich/i);
 const uciteleHtml = htmlOddilu(ucitele);
 const skupiny = bloky(uciteleHtml).map((b) => ({ ...b, body: body(b.html) }));
 
 // Pro žáky: odstavce před ###, poslední jako box (metodika); ### projekty žáků jako karty
-const zaci = najdi(/pro žáky/i);
+const zaci = najdi(/pro žáky|pre žiakov/i);
 const zaciHtml = htmlOddilu(zaci);
 const zaciOdstavce = odstavce(predH3(zaciHtml));
 const zaciText = zaciOdstavce.slice(0, -1);

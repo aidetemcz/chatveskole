@@ -32,18 +32,18 @@ const odkazOdstavec = (h: string) => {
   return { odkaz: m ? { href: m[1], text: bezTagu(m[2]) } : null, zbytek: m ? h.replace(m[0], '') : h };
 };
 
-const seZaky = najdi(/společně se žáky/i);
-const vedeni = najdi(/připraví vedení/i);
+const seZaky = najdi(/společně se žáky|spoločne so žiakmi/i);
+const vedeni = najdi(/připraví vedení|pripraví vedenie/i);
 
 // Se žáky: lekce (obrázek, text, odkaz) a workshop (tabulka)
 const seZakyHtml = htmlOddilu(seZaky);
 const seZakyBloky = bloky(seZakyHtml);
-const lekce = najdiBlok(seZakyBloky, /lekcí/i);
+const lekce = najdiBlok(seZakyBloky, /lekcí|lekciou/i);
 const lekceImg = lekce?.html.match(/<img[^>]*>/)?.[0] ?? '';
 const lekceSrc = lekceImg.match(/src="([^"]+)"/)?.[1] ?? '';
 const lekceAlt = lekceImg.match(/alt="([^"]*)"/)?.[1] ?? '';
 const lekceCast = odkazOdstavec((lekce?.html ?? '').replace(/<p>\s*<img[^>]*>\s*<\/p>/, ''));
-const lekceMinuty = bezTagu(lekceCast.zbytek).match(/(\d+)\s*minut/)?.[1];
+const lekceMinuty = bezTagu(lekceCast.zbytek).match(/(\d+)\s*min[uú]t/)?.[1];
 const workshop = najdiBlok(seZakyBloky, /Workshop/i);
 const workshopUvod = (workshop?.html ?? '').split(/<table[\s>]/)[0];
 const workshopRadky = [...((workshop?.html ?? '').match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? '').matchAll(/<tr>([\s\S]*?)<\/tr>/g)]
@@ -56,26 +56,26 @@ const osa = workshopRadky.map((r) => { const od = start; start += parseInt(r.cas
 const hodiny = (m: number) => (m >= 90 ? (Math.round(m / 60) < 5 ? tf('asi {h} hodiny ({m} minut)', { h: Math.round(m / 60), m }) : tf('asi {h} hodin ({m} minut)', { h: Math.round(m / 60), m })) : tf('{m} minut', { m }));
 
 // Formulace a zavádění (### v oddílu Pravidla společně se žáky): prostý text bez boxů
-const formulace = najdiBlok(seZakyBloky, /formulací/i);
-const zavadeni = najdiBlok(seZakyBloky, /Zavádění/i);
+const formulace = najdiBlok(seZakyBloky, /formulací|formulácií/i);
+const zavadeni = najdiBlok(seZakyBloky, /Zavádění|Zavádzanie/i);
 
 // Vedení: dovednost, postup, obsah
 const vedeniHtml = htmlOddilu(vedeni);
 const vedeniBloky = bloky(vedeniHtml);
 const vedeniUvod = odkazOdstavec(predH3(vedeniHtml));
 const postup = najdiBlok(vedeniBloky, /Postup/i);
-const obsah = najdiBlok(vedeniBloky, /obsahovat/i);
+const obsah = najdiBlok(vedeniBloky, /obsahovat|obsahovať/i);
 
 // Úrovně
-const urovne = najdi(/Úrovně/i);
+const urovne = najdi(/Úrovně|Úrovne/i);
 const urovneHtml = htmlOddilu(urovne);
 const urovnePolozky = polozky(urovneHtml);
 
 // Doporučení a zákonní zástupci: dvě karty
-const dalsi = najdi(/Doporučení a zákonní zástupci/i);
+const dalsi = najdi(/Doporučení a zákonní zástupci|Usmernenie a zákonní zástupcovia/i);
 const dalsiKarty = bloky(htmlOddilu(dalsi)).map((b, i) => ({ ...b, ...odkazOdstavec(b.html), stitek: [t('Doporučení NPI'), t('Komunikace s rodiči')][i] ?? '' }));
 
-const vyzva = najdi(/Pusťte se/i);
+const vyzva = najdi(/Pusťte se|Pustite sa/i);
 type Odkaz = { text: string; href: string };
 const odkazy: Odkaz[] = (Array.isArray(d.odkazy) ? d.odkazy : []).filter((o: Odkaz) => o && o.href);
 const skupina = navigace.menu.find((g) => g.items.some((i) => i.href === '/' + stranka.id));

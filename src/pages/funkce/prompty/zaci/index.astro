@@ -29,7 +29,7 @@ const zaci = (await getCollection('prompty')).filter((p) => p.id.startsWith('zac
   </div>
   <section class="band band--sky" aria-label={t('Prompty pro žáky')}>
     <div class="wrap grid-2">
-      {zaci.map((p) => <PromptCard title={p.data.title} href={`/funkce/prompty/zaci/${p.id.split('/')[1]}`} text={promptText(p.body ?? '')} id={`zaci-${p.id.split('/')[1]}`} popis={p.data.zpusob ? tf('Způsob: {zpusob}', { zpusob: p.data.zpusob }) : null} />)}
+      {zaci.map((p) => <PromptCard title={p.data.title} href={`/funkce/prompty/zaci/${p.id.split('/')[1]}`} text={promptText(p.body ?? '')} id={`zaci-${p.id.split('/')[1]}`} popis={p.data.zpusob ? tf('Způsob: {zpusob}', { zpusob: t(p.data.zpusob) }) : null} />)}
     </div>
   </section>
   <div class="band band--white">

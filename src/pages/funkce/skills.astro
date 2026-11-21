@@ -29,11 +29,11 @@ const bloky = (h: string) => h.split(/(?=<h3[\s>])/).filter((k) => /^\s*<h3/.tes
   return { nazev: bezTagu(m[1]), html: k.slice(m.index! + m[0].length).trim() };
 });
 
-const skladba = najdi(/skládá/i);
+const skladba = najdi(/skládá|skladá/i);
 const skladbaHtml = htmlOddilu(skladba);
 const castiSkladby = polozky(skladbaHtml);
 
-const zWebu = najdi(/z tohoto webu/i);
+const zWebu = najdi(/z tohoto webu|z tohto webu/i);
 const zWebuHtml = htmlOddilu(zWebu);
 const cesty = polozky(zWebuHtml);
 const IKONY_CEST = [
@@ -44,7 +44,7 @@ const IKONY_CEST = [
 ];
 
 // Instalace: ### nástroj → kroky (seznam) a podmínky (odstavce)
-const instalace = najdi(/nainstalovat/i);
+const instalace = najdi(/nainstalovat|nainštalovať/i);
 const nastroje = bloky(htmlOddilu(instalace)).map((b, i) => {
   const seznam = b.html.match(/<(ol|ul)>([\s\S]*?)<\/\1>/);
   const kroky = seznam ? [...seznam[2].matchAll(/<li>([\s\S]*?)<\/li>/g)].map(([, t]) => t.trim()) : [];
@@ -53,13 +53,13 @@ const nastroje = bloky(htmlOddilu(instalace)).map((b, i) => {
 });
 
 
-const vlastni = najdi(/napsat vlastní/i);
+const vlastni = najdi(/napsat vlastní|napísať vlastnú/i);
 const vlastniHtml = htmlOddilu(vlastni);
 const cestyVytvoreni = polozky(vlastniHtml.split(/<h3[\s>]/)[0]);
-const sdileni = najdi(/dovednost sdílet/i);
+const sdileni = najdi(/dovednost sdílet|zručnosť zdieľať/i);
 const sdileniHtml = htmlOddilu(sdileni);
 
-const vyzva = najdi(/vlastní dovednost\?/i) ?? oddily[oddily.length - 1];
+const vyzva = najdi(/vlastní dovednost\?|vlastnú zručnosť\?/i) ?? oddily[oddily.length - 1];
 const katalog = d.tlacitko && typeof d.tlacitko === 'object' && (d.tlacitko as { href?: string }).href ? (d.tlacitko as { text: string; href: string }) : { text: t('Katalog dovedností'), href: '/skills' };
 const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString(LOCALE, { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
 ---

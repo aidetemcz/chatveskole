@@ -34,7 +34,7 @@ const IKONY = [
   '<path d="M21 12a8 8 0 0 1-11.8 7L4 20l1.1-4.6A8 8 0 1 1 21 12z"></path>',
 ];
 
-const obsah = najdi(/Co je v projektu/i);
+const obsah = najdi(/Co je v projektu|Čo je v projekte/i);
 const obsahHtml = htmlOddilu(obsah);
 
 // Tabulka: Nástroj | Jak se jmenují | Zdarma | Sdílení
@@ -45,30 +45,30 @@ const radky = [...(kdeHtml.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? '').match
   .map(([, r]) => [...r.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(([, t]) => t.trim()))
   .map((b) => b.map((t, i) => (i > 1 ? t.charAt(0).toUpperCase() + t.slice(1) : t)));
 
-const zalozit = najdi(/založit/i);
+const zalozit = najdi(/založit|založiť/i);
 const kroky = polozky(htmlOddilu(zalozit));
 
-const nahravat = najdi(/nahrávat/i);
+const nahravat = najdi(/nahrávat|nahrávať/i);
 const nahravatHtml = htmlOddilu(nahravat);
 const hodiSeUvod = uvodOddilu(nahravatHtml);
 const hodiSe = [...(predH3(nahravatHtml).match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').matchAll(/<li>([\s\S]*?)<\/li>/g)].map(([, t]) => t.trim());
 const pravidla = bloky(nahravatHtml)[0];
 const pravidlaPolozky = pravidla ? polozky(pravidla.html) : [];
 
-const format = najdi(/formátu/i);
+const format = najdi(/formátu|formáte/i);
 const formatHtml = htmlOddilu(format);
 const formatKarty = polozky(predH3(formatHtml));
 const formatTip = bloky(formatHtml)[0];
 
 // Sdílení: první odstavec vlevo, „**Pozor:**“ jako varování, „**Otázka?** text“ jako tip
-const sdileni = najdi(/sdíleného asistenta/i);
+const sdileni = najdi(/sdíleného asistenta|zdieľaného asistenta/i);
 const odstavce = [...htmlOddilu(sdileni).matchAll(/<p>([\s\S]*?)<\/p>/g)].map(([, t]) => t.trim());
 const zvyrazneny = (p: string) => p.match(/^<strong>([\s\S]*?)<\/strong>\s*([\s\S]*)$/);
 const sdileniText = odstavce.filter((p) => !zvyrazneny(p));
 const sdileniBoxy = odstavce.map(zvyrazneny).filter((m): m is RegExpMatchArray => !!m)
   .map((m) => ({ nazev: bezTagu(m[1]).replace(/:$/, ''), text: m[2].charAt(0).toUpperCase() + m[2].slice(1) }));
 
-const vyzva = najdi(/Propojte/i);
+const vyzva = najdi(/Propojte|Prepojte/i);
 type Odkaz = { text: string; href: string };
 const odkazy: Odkaz[] = (Array.isArray(d.odkazy) ? d.odkazy : []).filter((o: Odkaz) => o && o.href);
 const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString(LOCALE, { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;

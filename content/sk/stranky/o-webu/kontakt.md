@@ -1,35 +1,35 @@
 ---
 title: Kontakt
-menu: O webu
+menu: O webe
 poradi: 2
-popis: Napište nám — dotazy k webu, návrhy dovedností a promptů, chyby v textech, vzdělávací akce pro školy.
+popis: Napíšte nám — otázky k webu, návrhy zručností a promptov, chyby v textoch, vzdelávacie podujatia pre školy.
 aktualizovano: 2026-11-21
 sablona: kontakt-pruvodce   # vlastní šablona src/pages/o-webu/kontakt.astro
-stav: koncept
+stav: ke-kontrole
 ---
 
 # Kontakt
 
-Máte dotaz k webu, našli jste chybu v textu, nebo chcete navrhnout dovednost či prompt? Napište nám. Ozvat se můžete i tehdy, když hledáte vzdělávací akci pro svou sborovnu nebo máte zájem o spolupráci.
+Máte otázku k webu, našli ste chybu v texte, alebo chcete navrhnúť zručnosť či prompt? Napíšte nám. Ozvať sa môžete aj vtedy, keď hľadáte vzdelávacie podujatie pre svoju zborovňu alebo máte záujem o spoluprácu.
 
-Web připravuje Eva Nečasová z neziskové organizace [AI dětem](https://aidetem.cz). Napište jí na [eva@aidetem.cz](mailto:eva@aidetem.cz).
+Web pripravuje Eva Nečasová z neziskovej organizácie [AI dětem](https://aidetem.cz). Napíšte jej na [eva@aidetem.cz](mailto:eva@aidetem.cz).
 
 ## Web a obsah
 
-Našli jste chybu, zastaralou informaci nebo nefunkční odkaz? Máte nápad, co na webu chybí? Napište Evě Nečasové na [eva@aidetem.cz](mailto:eva@aidetem.cz), nebo obecně na [cau@aidetem.cz](mailto:cau@aidetem.cz).
+Našli ste chybu, zastaranú informáciu alebo nefunkčný odkaz? Máte nápad, čo na webe chýba? Napíšte Eve Nečasovej na [eva@aidetem.cz](mailto:eva@aidetem.cz), alebo všeobecne na [cau@aidetem.cz](mailto:cau@aidetem.cz).
 
-## Pošlete nám dovednost nebo prompt {#poslat}
+## Pošlite nám zručnosť alebo prompt {#poslat}
 
-Používáte dovednost nebo prompt, který se vám osvědčil? Pošlete nám ho přes formulář. Projdeme ho, vyzkoušíme a s vaším souhlasem zveřejníme i s vaším jménem.
+Používate zručnosť alebo prompt, ktorý sa vám osvedčil? Pošlite nám ho cez formulár. Prejdeme ho, vyskúšame a s vaším súhlasom zverejníme aj s vaším menom.
 
-[Poslat dovednost nebo prompt](https://forms.gle/rn7SsvbmjJ43YZj29)
+[Poslať zručnosť alebo prompt](https://forms.gle/rn7SsvbmjJ43YZj29)
 
-## Školení a spolupráce
+## Školenia a spolupráca
 
-Hledáte vzdělávací akci pro sborovnu nebo máte zájem o spolupráci? Ozvěte se Kláře na [klara@aidetem.cz](mailto:klara@aidetem.cz), nebo se podívejte na [nabídku vzdělávacích akcí](https://vzdelavame.aidetem.cz).
+Hľadáte vzdelávacie podujatie pre zborovňu alebo máte záujem o spoluprácu? Ozvite sa Kláre na [klara@aidetem.cz](mailto:klara@aidetem.cz), alebo sa pozrite na [ponuku vzdelávacích podujatí](https://vzdelavame.aidetem.cz) (v češtine).
 
 ## Novinky do e-mailu
 
-Jednou za čas vám pošleme, co je nového v umělé inteligenci a ve vzdělávání.
+Raz za čas vám pošleme, čo je nové v umelej inteligencii a vo vzdelávaní.
 
-[Přihlásit se k odběru](https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f9d89c882af9a3a8b)
+[Prihlásiť sa na odber](https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f9d89c882af9a3a8b)

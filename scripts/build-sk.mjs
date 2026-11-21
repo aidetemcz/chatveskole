@@ -16,4 +16,6 @@ fs.rmSync(cil, { recursive: true, force: true });
 fs.renameSync('dist-sk', cil);
 // export starého WordPressu patří jen k české verzi
 fs.rmSync(path.join(cil, 'archiv'), { recursive: true, force: true });
+// ZIPy zručností ze slovenského obsahu (pluginy zatím z české verze — plugins/ se generuje z content/)
+execSync('node scripts/build-downloads.mjs', { stdio: 'inherit', env: { ...process.env, JAZYK: 'sk' } });
 console.log('Slovenská verze: dist/sk/');

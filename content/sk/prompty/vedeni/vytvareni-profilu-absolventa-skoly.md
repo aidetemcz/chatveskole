@@ -1,5 +1,5 @@
 ---
-title: "Vytváření profilu absolventa školy"
+title: "Vytváranie profilu absolventa školy"
 slug: "vytvareni-profilu-absolventa-skoly"
 skupina: vedeni
 kategorie: ["Tvorba strategických dokumentů"]
@@ -12,46 +12,46 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený školní stratég. Pomoz nám sestavit profil absolventa naší školy.
+Vystupuj ako skúsený školský stratég. Pomôž nám zostaviť profil absolventa našej školy.
 
-Škola: [například ZŠ s 1. i 2. stupněm, 450 žáků]
-Naše hodnoty, mise a vize: [vložte, nebo řádek smažte]
-Kam absolventi nejčastěji pokračují: [například gymnázia a odborné školy v okrese]
-Na co se chceme zvlášť zaměřit: [například samostatnost v učení, spolupráce, práce s informacemi a s AI]
-Co absolventi dnes umějí dobře a kde jim něco chybí: [například dobře spolupracují, ale neumějí si naplánovat učení]
-Region a partneři školy: [například spolupráce s místními firmami a knihovnou; nebo řádek smažte]
-Text z RVP nebo ŠVP, se kterým má profil ladit: [vložte doslovné znění, nebo řádek smažte]
-Na jak dlouho profil platí: [například 4 roky]
+Škola: [napríklad ZŠ s 1. aj 2. stupňom, 450 žiakov]
+Naše hodnoty, misia a vízia: [vložte, alebo riadok vymažte]
+Kam absolventi najčastejšie pokračujú: [napríklad gymnáziá a stredné odborné školy v okrese]
+Na čo sa chceme zvlášť zamerať: [napríklad samostatnosť v učení, spolupráca, práca s informáciami a s AI]
+Čo absolventi dnes vedia dobre a kde im niečo chýba: [napríklad dobre spolupracujú, ale nevedia si naplánovať učenie]
+Región a partneri školy: [napríklad spolupráca s miestnymi firmami a knižnicou; alebo riadok vymažte]
+Text zo ŠVP alebo ŠkVP, s ktorým má profil ladiť: [vložte doslovné znenie, alebo riadok vymažte]
+Na ako dlho profil platí: [napríklad 4 roky]
 
-Pravidla:
-1. Profil vychází z hodnot, mise a vize. Když jsem je vložil(a), odkazuj na ně.
-2. Vyber 3–6 klíčových oblastí, ne všechno. Méně oblastí si sbor zapamatuje a bude s nimi pracovat.
-3. U základní školy propoj oblasti s klíčovými kompetencemi RVP ZV (kompetence k učení, k řešení problémů, komunikativní, sociální a personální, občanské, pracovní a digitální). Znění kompetencí ani očekávaných výstupů necituj zpaměti, používej jen text, který jsem vložil(a). U jiných typů škol napiš [ověřit v RVP].
-4. Práce s technologiemi a AI patří do digitální kompetence. Popiš, co absolvent s AI zvládne (rozhodne, kdy ji použít a kdy ne, ověří její výstup, chrání své údaje), ne jaké nástroje zná.
-5. Ukazatele piš jako pozorovatelné chování nebo výstup žáka („Absolvent samostatně naplánuje a obhájí projekt“), ne „umí“, „zná“, „je“.
-6. Bez prázdných frází („úspěšný člověk 21. století“). Nevymýšlej programy, úspěchy ani zvláštnosti školy.
-7. U každé oblasti uveď, kde ji žáci ve škole rozvíjejí (předměty, projekty, život školy) a kdo za ni odpovídá (funkce, ne jména).
+Pravidlá:
+1. Profil vychádza z hodnôt, misie a vízie. Keď som ich vložil(a), odkazuj na ne.
+2. Vyber 3 – 6 kľúčových oblastí, nie všetko. Menej oblastí si pedagogický zbor zapamätá a bude s nimi pracovať.
+3. Prepoj oblasti s kľúčovými kompetenciami zo ŠVP. Ich zoznam ani znenie kompetencií a výkonových štandardov necituj spamäti, používaj len text, ktorý som vložil(a). Kde chýba, napíš [overiť v ŠVP].
+4. Práca s technológiami a AI patrí do digitálnej kompetencie. Opíš, čo absolvent s AI zvládne (rozhodne, kedy ju použiť a kedy nie, overí jej výstup, chráni svoje údaje), nie aké nástroje pozná.
+5. Ukazovatele píš ako pozorovateľné správanie alebo výstup žiaka („Absolvent samostatne naplánuje a obháji projekt“), nie „vie“, „pozná“, „je“.
+6. Bez prázdnych fráz („úspešný človek 21. storočia“). Nevymýšľaj programy, úspechy ani zvláštnosti školy.
+7. Pri každej oblasti uveď, kde ju žiaci v škole rozvíjajú (predmety, projekty, život školy) a kto za ňu zodpovedá (funkcie, nie mená).
 
 Výstup:
-a) vize absolventa ve 2–3 větách,
-b) tabulka: Oblast – Co absolvent dělá a jaké má postoje – Klíčová kompetence – Podle čeho to poznáme – Kde to ve škole rozvíjíme,
-c) hodnoty a postoje, které škola podporuje,
-d) příklady uplatnění v dalším studiu, v práci a v osobním životě,
-e) jak a kdy profil vyhodnotíme a upravíme (například podle zpětné vazby absolventů a navazujících škol).
+a) vízia absolventa v 2 – 3 vetách,
+b) tabuľka: Oblasť – Čo absolvent robí a aké má postoje – Kľúčová kompetencia – Podľa čoho to spoznáme – Kde to v škole rozvíjame,
+c) hodnoty a postoje, ktoré škola podporuje,
+d) príklady uplatnenia v ďalšom štúdiu, v práci a v osobnom živote,
+e) ako a kedy profil vyhodnotíme a upravíme (napríklad podľa spätnej väzby absolventov a nadväzujúcich škôl).
 
-Když chybí typ školy, nejdřív se mě zeptej. Na konci nabídni: 1) verzi pro zákonné zástupce a web, 2) rozpracování jedné oblasti do úrovní po ročnících, 3) návrh, jak profil promítnout do ŠVP a do hodnocení žáků.
+Keď chýba typ školy, najprv sa ma opýtaj. Na konci ponúkni: 1) verziu pre zákonných zástupcov a web, 2) rozpracovanie jednej oblasti do úrovní po ročníkoch, 3) návrh, ako profil premietnuť do ŠkVP a do hodnotenia žiakov.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vám pomůže sestavit profil absolventa: jakého člověka škola formuje a podle čeho poznáte, že se to daří. Místo obecných přání („samostatný“, „kreativní“) popisuje, co absolvent konkrétně udělá, a ke každé oblasti uvádí, kde ji žáci ve škole rozvíjejí.
+Prompt vám pomôže zostaviť profil absolventa: akého človeka škola formuje a podľa čoho spoznáte, že sa to darí. Namiesto všeobecných prianí („samostatný“, „kreatívny“) opisuje, čo absolvent konkrétne urobí, a ku každej oblasti uvádza, kde ju žiaci v škole rozvíjajú.
 
-U základních škol profil propojí s klíčovými kompetencemi RVP včetně digitální. Práci s AI chápe jako součást digitální kompetence: jde o to, aby žák uměl AI rozumně použít a ověřit, ne o seznam aplikací.
+Profil prepojí s kľúčovými kompetenciami zo ŠVP vrátane digitálnej. Prácu s AI chápe ako súčasť digitálnej kompetencie: ide o to, aby žiak vedel AI rozumne použiť a overiť, nie o zoznam aplikácií.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte údaje o škole. Nejlepší výsledek dostanete, když už máte hodnoty, misi a vizi (pomůže prompt [Formulace hodnot, mise a vize školy](/funkce/prompty/formulace-hodnot-mise-a-vize-skoly)). Profil se hodí připravit i při úpravě ŠVP. Pokud ho chcete sladit s RVP, vložte doslovné znění kompetencí, chatbot je pak nebude domýšlet.
+Skopírujte prompt do chatbota a doplňte údaje o škole. Najlepší výsledok dostanete, keď už máte hodnoty, misiu a víziu (pomôže prompt [Formulácia hodnôt, misie a vízie školy](/funkce/prompty/formulace-hodnot-mise-a-vize-skoly)). Profil sa hodí pripraviť aj pri úprave ŠkVP. Ak ho chcete zosúladiť so ŠVP, vložte doslovné znenie kompetencií, chatbot ich potom nebude domýšľať.
 
-Oblasti z profilu můžete rozpracovat do úrovní po ročnících s dovedností [Gradace klíčových kompetencí](/skills/gradace-klicovych-kompetenci).
+Oblasti z profilu môžete rozpracovať do úrovní po ročníkoch so zručnosťou [Gradácia kľúčových kompetencií](/skills/gradace-klicovych-kompetenci).
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Hodnoty, mise, vize a profil absolventa](/skills/mise-vize-hodnoty), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Hodnoty, misia, vízia a profil absolventa](/skills/mise-vize-hodnoty), ktorú si môžete nainštalovať do svojho chatbota.

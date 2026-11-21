@@ -1,76 +1,76 @@
 ---
-title: Ochrana soukromí
-menu: O webu
+title: Ochrana súkromia
+menu: O webe
 poradi: 3
-popis: Jaké údaje web Chatboti ve škole zpracovává, k čemu slouží cookies a měření návštěvnosti a jak můžete svůj souhlas změnit nebo uplatnit svá práva.
+popis: Aké údaje web Chatboty v škole spracúva, na čo slúžia cookies a meranie návštevnosti a ako môžete svoj súhlas zmeniť alebo uplatniť svoje práva.
 aktualizovano: 2026-11-21
-stav: ke-kontrole   # vychází ze zásad AI dětem zkontrolovaných právníkem (aidetem.cz/zasady-ochrany-osobnich-udaju); doba uchovávání v GA4: 14 měsíců (Eva 21. 11. 2026)
+stav: ke-kontrole   # překlad české stránky (vychází ze zásad AI dětem zkontrolovaných právníkem, aidetem.cz/zasady-ochrany-osobnich-udaju); právní text ke kontrole slovenským korektorem/právníkem; slovenský úřad (ÚOOÚ SR) neuveden — bez ověřeného zdroje
 zdroje:
   - https://aidetem.cz/zasady-ochrany-osobnich-udaju/
 ---
 
-# Ochrana soukromí
+# Ochrana súkromia
 
-Rádi bychom se s vámi podělili o základní informace o tom, jaké osobní údaje web Chatboti ve škole zpracovává, za jakým účelem a proč. Údaje nezpracováváme pro jiné účely, než jsou uvedené, a jakmile je už nepotřebujeme, vymažeme je. Tato stránka se týká webu chatveskole.cz. Ostatní činnost spolku, například vzdělávací akce, školení nebo newsletter, popisují [Zásady ochrany osobních údajů AI dětem](https://aidetem.cz/zasady-ochrany-osobnich-udaju/).
+Radi by sme sa s vami podelili o základné informácie o tom, aké osobné údaje web Chatboty v škole spracúva, na aký účel a prečo. Údaje nespracúvame na iné účely, než sú uvedené, a keď ich už nepotrebujeme, vymažeme ich. Táto stránka sa týka webu chatveskole.cz vrátane jeho slovenskej verzie. Ostatnú činnosť spolku, napríklad vzdelávacie podujatia, školenia alebo newsletter, opisujú [Zásady ochrany osobních údajů AI dětem](https://aidetem.cz/zasady-ochrany-osobnich-udaju/) (v češtine).
 
-## Správce osobních údajů
+## Prevádzkovateľ osobných údajov
 
-Správcem vašich osobních údajů je spolek AI dětem, z. s., se sídlem Kozinovo náměstí 1534/7, Hostivař, 102 00 Praha 10, IČ 17914582, zapsaný ve spolkovém rejstříku vedeném Městským soudem v Praze, spisová značka L 77130.
+Prevádzkovateľom vašich osobných údajov je český spolok AI dětem, z. s., so sídlom Kozinovo náměstí 1534/7, Hostivař, 102 00 Praha 10, Česká republika, IČ 17914582, zapísaný v spolkovom registri vedenom Mestským súdom v Prahe, spisová značka L 77130.
 
-AI dětem nejmenuje pověřence pro ochranu osobních údajů, protože jeho činnost nespadá pod čl. 37 odst. 1 obecného nařízení o ochraně osobních údajů (GDPR). Svá práva můžete uplatnit na adrese sídla nebo e-mailem na [cau@aidetem.cz](mailto:cau@aidetem.cz).
+AI dětem nemenuje zodpovednú osobu (pověřence pro ochranu osobních údajů), pretože jeho činnosť nespadá pod čl. 37 ods. 1 všeobecného nariadenia o ochrane údajov (GDPR). Svoje práva môžete uplatniť na adrese sídla alebo e-mailom na [cau@aidetem.cz](mailto:cau@aidetem.cz).
 
-## Jaké údaje zpracováváme
+## Aké údaje spracúvame
 
-Web nemá registraci ani přihlašování. Zpracováváme jen údaje, které vznikají při vaší návštěvě webu:
+Web nemá registráciu ani prihlasovanie. Spracúvame len údaje, ktoré vznikajú pri vašej návšteve webu:
 
-- **IP adresa a technické údaje o požadavku** (čas, prohlížeč, navštívená adresa). Zpracovává je hostingová služba Vercel kvůli provozu a zabezpečení webu.
-- **Soubory cookies a online identifikátor Google Analytics 4**, ale jen pokud k tomu dáte souhlas v liště cookies. Google Analytics zaznamenává, které stránky čtete, odkud jste na web přišli, jaké používáte zařízení a prohlížeč a přibližné místo podle IP adresy.
-- **Souhrnné statistiky návštěvnosti z Vercel Web Analytics.** Nepoužívají cookies ani údaje, podle kterých by šlo poznat konkrétního návštěvníka.
-- **Údaje uložené ve vašem prohlížeči** (localStorage): jen vaše volba cookies a to, že jste už viděli uvítací okno. Tyto údaje neodcházejí z vašeho zařízení.
+- **IP adresa a technické údaje o požiadavke** (čas, prehliadač, navštívená adresa). Spracúva ich hostingová služba Vercel kvôli prevádzke a zabezpečeniu webu.
+- **Súbory cookies a online identifikátor Google Analytics 4**, ale len ak na to dáte súhlas v lište cookies. Google Analytics zaznamenáva, ktoré stránky čítate, odkiaľ ste na web prišli, aké používate zariadenie a prehliadač a približné miesto podľa IP adresy.
+- **Súhrnné štatistiky návštevnosti z Vercel Web Analytics.** Nepoužívajú cookies ani údaje, podľa ktorých by sa dal spoznať konkrétny návštevník.
+- **Údaje uložené vo vašom prehliadači** (localStorage): len vaša voľba cookies a to, že ste už videli uvítacie okno. Tieto údaje neodchádzajú z vášho zariadenia.
 
-Přihlášení k odběru novinek a formulář pro zaslání dovednosti nebo promptu vedou na samostatné služby (Ecomail a Google Forms). Údaje, které tam vyplníte, zpracováváme podle [Zásad ochrany osobních údajů AI dětem](https://aidetem.cz/zasady-ochrany-osobnich-udaju/).
+Prihlásenie na odber noviniek a formulár na zaslanie zručnosti alebo promptu vedú na samostatné služby (Ecomail a Google Forms). Údaje, ktoré tam vyplníte, spracúvame podľa [Zásad ochrany osobních údajů AI dětem](https://aidetem.cz/zasady-ochrany-osobnich-udaju/) (v češtine).
 
-## Účely a právní základ
+## Účely a právny základ
 
-- **Provozování a zabezpečení webu** — na základě našeho oprávněného zájmu.
-- **Souhrnné statistiky návštěvnosti** (Vercel Web Analytics) — na základě našeho oprávněného zájmu vědět, které stránky vyučujícím pomáhají.
-- **Měření návštěvnosti přes Google Analytics 4** — jen na základě vašeho souhlasu.
+- **Prevádzka a zabezpečenie webu** — na základe nášho oprávneného záujmu.
+- **Súhrnné štatistiky návštevnosti** (Vercel Web Analytics) — na základe nášho oprávneného záujmu vedieť, ktoré stránky vyučujúcim pomáhajú.
+- **Meranie návštevnosti cez Google Analytics 4** — len na základe vášho súhlasu.
 
-## Přístup k údajům
+## Prístup k údajom
 
-Údaje předáváme jen pečlivě vybraným partnerům, kteří zajistí jejich technické a organizační zabezpečení a jsou vázáni mlčenlivostí. Jsou to:
+Údaje odovzdávame len starostlivo vybraným partnerom, ktorí zabezpečia ich technickú a organizačnú ochranu a sú viazaní mlčanlivosťou. Sú to:
 
-- **Vercel Inc.**, který provozuje hosting webu a souhrnné statistiky návštěvnosti;
-- **Google Ireland Limited**, který provozuje Google Analytics 4.
+- **Vercel Inc.**, ktorý prevádzkuje hosting webu a súhrnné štatistiky návštevnosti;
+- **Google Ireland Limited**, ktorý prevádzkuje Google Analytics 4.
 
-Údaje mohou být předávány do USA v rámci rámce pro ochranu osobních údajů mezi EU a USA (EU–US Data Privacy Framework). Za jasně definovaných podmínek jsme povinni některé údaje předat na základě právních předpisů, například Policii ČR nebo jiným orgánům veřejné moci.
+Údaje môžu byť prenášané do USA v rámci rámca na ochranu osobných údajov medzi EÚ a USA (EU–US Data Privacy Framework). Za jasne definovaných podmienok sme povinní niektoré údaje odovzdať na základe právnych predpisov, napríklad Polícii ČR alebo iným orgánom verejnej moci.
 
 ## Cookies
 
-Cookies jsou malé datové soubory, které si webová stránka ukládá do vašeho prohlížeče. Web Chatboti ve škole využívá pouze analytické cookies pro měření návštěvnosti (Google Analytics 4, soubory `_ga` a `_ga_G1NT8MV18D`), a to jen s vaším souhlasem. Cookies nepoužíváme ke zjištění vaší totožnosti ani k zobrazování cílené reklamy. Reklamní funkce Google Analytics máme vypnuté. Podrobné údaje o návštěvách uchovává Google Analytics 14 měsíců, pak je automaticky smaže.
+Cookies sú malé dátové súbory, ktoré si webová stránka ukladá do vášho prehliadača. Web Chatboty v škole využíva iba analytické cookies na meranie návštevnosti (Google Analytics 4, súbory `_ga` a `_ga_G1NT8MV18D`), a to len s vaším súhlasom. Cookies nepoužívame na zistenie vašej totožnosti ani na zobrazovanie cielenej reklamy. Reklamné funkcie Google Analytics máme vypnuté. Podrobné údaje o návštevách uchováva Google Analytics 14 mesiacov, potom ich automaticky vymaže.
 
-Souhlas s analytickými cookies můžete kdykoli změnit nebo odvolat tlačítkem **Nastavení cookies** v patičce webu. Cookies můžete také smazat v nastavení svého prohlížeče.
+Súhlas s analytickými cookies môžete kedykoľvek zmeniť alebo odvolať tlačidlom **Nastavenie cookies** v päte webu. Cookies môžete aj vymazať v nastaveniach svojho prehliadača.
 
-## Zabezpečení
+## Zabezpečenie
 
-Údaje chráníme standardními postupy a technologiemi a web běží výhradně přes šifrované spojení (HTTPS). Stejně jako nikdo jiný ale nemůžeme bezpečnost údajů zaručit na sto procent.
+Údaje chránime štandardnými postupmi a technológiami a web beží výhradne cez šifrované spojenie (HTTPS). Rovnako ako nikto iný však nemôžeme bezpečnosť údajov zaručiť na sto percent.
 
-## Odvolání souhlasu a vaše práva
+## Odvolanie súhlasu a vaše práva
 
-Souhlas s analytickými cookies můžete kdykoli odvolat v **Nastavení cookies** v patičce webu. Odvolání nemá vliv na zpracování, které proběhlo před ním, ani na zpracování na jiném právním základu.
+Súhlas s analytickými cookies môžete kedykoľvek odvolať v **Nastavení cookies** v päte webu. Odvolanie nemá vplyv na spracúvanie, ktoré prebehlo pred ním, ani na spracúvanie na inom právnom základe.
 
-Ve vztahu ke svým osobním údajům máte zejména tato práva:
+Vo vzťahu k svojim osobným údajom máte najmä tieto práva:
 
-- právo souhlas kdykoli odvolat;
-- právo na přístup k osobním údajům;
-- právo osobní údaje opravit či doplnit;
-- právo požadovat omezení zpracování;
-- právo na výmaz osobních údajů v určitých případech;
-- právo vznést námitku proti zpracování v určitých případech;
-- právo požadovat přenesení údajů;
-- právo být informován o porušení zabezpečení osobních údajů v určitých případech;
-- právo podat stížnost u [Úřadu pro ochranu osobních údajů](https://uoou.gov.cz).
+- právo súhlas kedykoľvek odvolať;
+- právo na prístup k osobným údajom;
+- právo osobné údaje opraviť alebo doplniť;
+- právo požadovať obmedzenie spracúvania;
+- právo na vymazanie osobných údajov v určitých prípadoch;
+- právo namietať proti spracúvaniu v určitých prípadoch;
+- právo požadovať prenesenie údajov;
+- právo byť informovaný o porušení ochrany osobných údajov v určitých prípadoch;
+- právo podať sťažnosť na českom [Úřadu pro ochranu osobních údajů](https://uoou.gov.cz), ktorý je dozorným orgánom pre nášho prevádzkovateľa.
 
 ## Kontakt
 
-S dotazy k ochraně osobních údajů se obraťte na [cau@aidetem.cz](mailto:cau@aidetem.cz) nebo písemně na adresu AI dětem, z. s., Kozinovo náměstí 1534/7, 102 00 Praha 10. Abychom zabránili přístupu neoprávněných osob k vašim údajům, můžeme vás požádat, abyste nám vhodným způsobem prokázali svou totožnost.
+S otázkami k ochrane osobných údajov sa obráťte na [cau@aidetem.cz](mailto:cau@aidetem.cz) alebo písomne na adresu AI dětem, z. s., Kozinovo náměstí 1534/7, 102 00 Praha 10, Česká republika. Aby sme zabránili prístupu neoprávnených osôb k vašim údajom, môžeme vás požiadať, aby ste nám vhodným spôsobom preukázali svoju totožnosť.
