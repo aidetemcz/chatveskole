@@ -15,13 +15,11 @@ stav: koncept
 
 # Vibe Coding pro pokročilé
 
-Aplikace v okně chatbota vám přestane stačit ve chvíli, kdy chcete web s více stránkami, vlastní doménu, data ze souborů nebo spolupráci v týmu. Pak je čas na **programovací agenty**. Jsou to AI nástroje, které pracují přímo se soubory vašeho projektu: spouštějí ho, testují a opravují.
-
-Najdete tu, co k tomu potřebujete, jak agentovi zadat pravidla a na co si dát pozor.
+Po nějaké době využívání Vibe Coding aplikací pro začátečníky pravděpodobně zjistíte, že mnohem lépe fungují agentní řešení jako Claude Code, OpenAI Codex nebo Google Antigravity. V následujícím přehledu popisujeme, jak je propojit do základní sestavy a na co si dát pozor.
 
 ## Programovací agenti
 
-Vyberte si podle toho, co už používáte a kolik chcete platit.
+Programovací agenti jsou AI nástroje, které pracují přímo se soubory vašeho projektu: spouštějí ho, testují a opravují. Vyberte si podle toho, co už používáte a kolik chcete platit.
 
 | Nástroj | Pro koho | Cena |
 |---|---|---|
@@ -32,7 +30,7 @@ Vyberte si podle toho, co už používáte a kolik chcete platit.
 
 ## Základní sestava
 
-Po nějaké době využívání Vibe Coding aplikací pro začátečníky pravděpodobně zjistíte, že mnohem lépe fungují agentní řešení jako Claude Code, OpenAI Codex nebo Google Antigravity. V následujícím přehledu popisujeme, jak je propojit do základní sestavy a na co si dát pozor.
+Základní sestava (anglicky stack) je soubor nástrojů a služeb, na kterých vaše aplikace stojí. Patří do ní agent, který kód píše, úložiště, kde je kód uložený, služba, která aplikaci zveřejní, a případně databáze pro data a přihlašování.
 
 1. **Programovací agent** — Agent čte a upravuje soubory projektu podle vašich pokynů. Vy mu běžnou řečí popíšete, co chcete změnit, a on to naprogramuje, spustí a otestuje.
 2. **Úložiště kódu** — Kód aplikace potřebuje místo, kde je uložený i s historií všech změn. Nejčastěji je to [GitHub](https://github.com), může to být ale i vlastní server. Když agent něco rozbije, snadno se vrátíte k předchozí verzi.
