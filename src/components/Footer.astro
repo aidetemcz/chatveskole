@@ -5,10 +5,11 @@ import { url } from '../lib/url';
 
 const skupina = (nazev: string) => navigace.menu.find((g) => g.title === nazev);
 // první sloupec: značka a novinky; skupiny menu ve dvou dalších sloupcích; skupiny, které tu nejsou, se přidají na konec
-const SLOUPCE = [['Začínáme', 'Funkce'], ['Vibe Coding', 'Chatboti ve výuce', 'O webu']];
+const SLOUPCE = [['Začínáme', 'Funkce'], ['Vibe Coding', 'Chatboti ve výuce']];
+const VYNECHAT = new Set(['O webu']); // odkazy na Kontakt a Kdo za tím stojí jsou ve spodní liště
 const umistene = new Set(SLOUPCE.flat());
 const sloupce = SLOUPCE.map((s) => s.map(skupina).filter((g): g is NonNullable<typeof g> => !!g));
-sloupce[sloupce.length - 1].push(...navigace.menu.filter((g) => !umistene.has(g.title)));
+sloupce[sloupce.length - 1].push(...navigace.menu.filter((g) => !umistene.has(g.title) && !VYNECHAT.has(g.title)));
 const rok = new Date().getFullYear();
 const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
 ---
@@ -28,7 +29,7 @@ const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
         </div>
         <div class="novinky">
           <h2>Novinky do e-mailu</h2>
-          <p>Funkce chatbotů se mění každý měsíc. Pošleme vám, co je pro školy důležité.</p>
+          <p>Jednou za čas vám zašleme, co je nového v oblasti umělé inteligence a vzdělávání.</p>
           <a class="btn btn--primary" href="https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f9d89c882af9a3a8b">Přihlásit se k odběru</a>
         </div>
       </div>
@@ -46,7 +47,7 @@ const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
   </div>
   <div class="sign">
     <div class="wrap sign-obsah">
-      <span>Funkce chatovacích aplikací se mění každý den. Pokud najdete nepřesnost, pomůže nám, když nám dáte vědět na e-mail <a href="mailto:eva@aidetem.cz">eva@aidetem.cz</a>. Děkujeme!</span>
+      <span class="sign-text">Funkce chatovacích aplikací se mění každý den.<br />Pokud najdete nepřesnost, pomůže nám, když nám dáte vědět na e-mail <a href="mailto:eva@aidetem.cz">eva@aidetem.cz</a>. Děkujeme!</span>
       <span class="sign-odkazy"><a href={url('/o-webu/kontakt')}>Kontakt</a><a href={url('/o-webu/kdo-za-tim-stoji')}>Kdo za tím stojí</a><span>© {rok} AI dětem, z. s.</span></span>
     </div>
   </div>
@@ -81,6 +82,7 @@ const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
   .novinky p { margin: 0 0 10px; font-size: 0.88rem; }
   .novinky .btn { align-self: flex-start; color: var(--on-accent); }
   .sign { border-top: 1px solid var(--sky); }
-  .sign-obsah { padding-top: 22px; padding-bottom: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 32px; font-size: 0.82rem; }
-  .sign-odkazy { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+  .sign-obsah { padding-top: 22px; padding-bottom: 28px; display: grid; grid-template-columns: 2fr 1fr; align-items: start; gap: 8px 40px; font-size: 0.82rem; }
+  @media (max-width: 760px) { .sign-obsah { grid-template-columns: 1fr; } .sign-odkazy { justify-content: flex-start; } }
+  .sign-odkazy { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 24px; }
 </style>
