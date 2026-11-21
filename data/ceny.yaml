@@ -142,7 +142,7 @@ nastroje:
     tarify:
       - nazev: Free
         cena: 0 Kč
-        pozn: Vyhledávání s citacemi zdrojů, hloubkový výzkum jen jednou měsíčně. Od 13 let, nezletilí se souhlasem rodiče.
+        pozn: Vyhledávání s citacemi zdrojů, hloubkový výzkum jen jednou měsíčně. Od 13 let, nezletilí se souhlasem zákonného zástupce.
       - nazev: Pro
         cena: 20 $ měsíčně nebo 200 $ ročně
         pozn: Silnější modely, víc hloubkových rešerší, projekty a práce se soubory.

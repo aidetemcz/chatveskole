@@ -24,7 +24,7 @@ Hotoví asistenti na odkaz končí. Vlastní GPTs v ChatGPT přestanou fungovat 
 
 - **Formativní hodnocení** — cíle, kritéria, sebehodnocení a slovní hodnocení podle Vysvědčení jinak.
 - **Příprava výuky** — nápady na hodiny, pracovní listy, úpravy materiálů a aktivity, ve kterých s chatbotem pracují žáci.
-- **Komunikace a podpora pedagoga** — zprávy rodičům, jazyková kontrola, mentor pro náročné situace.
+- **Komunikace a podpora pedagoga** — zprávy zákonným zástupcům, jazyková kontrola, mentor pro náročné situace.
 - **Vedení školy** — mise a vize, školní pravidla, strategie, AI gramotnost v ŠVP.
 - **AI akcelerátor** — řízení změny a mapování procesů pro školy v programu.
 

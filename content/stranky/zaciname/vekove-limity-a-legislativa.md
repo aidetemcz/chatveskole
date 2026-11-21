@@ -32,11 +32,11 @@ Podmínky se mění. Než nástroj ve třídě zavedete, ověřte si je přímo 
 
 | Nástroj | Osobní účet | Školní účet |
 |---|---|---|
-| ChatGPT | od 13 let, do 18 let se souhlasem rodiče; 13–17 let automaticky režim pro dospívající | nemá (ChatGPT Edu je jen pro vysoké školy) |
+| ChatGPT | od 13 let, do 18 let se souhlasem zákonného zástupce; 13–17 let automaticky režim pro dospívající | nemá (ChatGPT Edu je jen pro vysoké školy) |
 | Gemini | od 13 let, v Česku si účet Google spravuje dítě samo od 15 let; placené tarify a dovednosti od 18 let | bez věkového omezení, pokud ho správce školy zapne; žákům do 18 let omezí některé funkce |
 | Copilot | od 13 let | Copilot Chat od 13 let, zapíná správce |
 | Claude | od 18 let | jen pro vedení a pedagogy od 18 let, se slevou přes Claude for Nonprofits |
-| Perplexity | od 13 let, nezletilí jen se souhlasem rodiče | — |
+| Perplexity | od 13 let, nezletilí jen se souhlasem zákonného zástupce | — |
 | [Tiny](/ve-vyuce/tiny) | — | od 13 let; 11–12 let se souhlasem zákonného zástupce |
 
 ## Naše doporučení pro výuku
@@ -46,15 +46,15 @@ Podmínky se mění. Než nástroj ve třídě zavedete, ověřte si je přímo 
 - **Žádné osobní údaje žáků** — Nikdy nevkládejte jména, známky ani diagnózy. Pracujte s iniciály.
 - **Vytvořte pravidla pro využívání AI** — To, jak využívat ve škole umělou inteligenci, je třeba promyslet a popsat. Pomůže vám stránka [Tvorba pravidel pro využívání AI](/ve-vyuce/pravidla-pro-ai).
 
-## GDPR a souhlas rodičů
+## GDPR a souhlas zákonných zástupců
 
-Souhlas rodičů k práci s AI ve výuce nepotřebujete, pokud platí tři věci. Žáci používají účty zřízené školou. Škola dodržuje podmínky aplikací včetně věkových limitů. A s AI pracujete podle školního vzdělávacího programu. Vysvětlují to [otázky a odpovědi NPI ČR k AI a právu](https://digitalizace.rvp.cz/napric-predmety/ai/faq-umela-inteligence/bezpecnost).
+Souhlas zákonných zástupců k práci s AI ve výuce nepotřebujete, pokud platí tři věci. Žáci používají účty zřízené školou. Škola dodržuje podmínky aplikací včetně věkových limitů. A s AI pracujete podle školního vzdělávacího programu. Vysvětlují to [otázky a odpovědi NPI ČR k AI a právu](https://digitalizace.rvp.cz/napric-predmety/ai/faq-umela-inteligence/bezpecnost).
 
-Rodiče přesto informujte, které nástroje používáte a jak v nich chráníte údaje žáků.
+Zákonné zástupce přesto informujte, které nástroje používáte a jak v nich chráníte údaje žáků.
 
 **15 let** — Od tohoto věku dává dítě v Česku souhlas se zpracováním osobních údajů v online službách samo, jak stanoví [zákon o zpracování osobních údajů](https://www.zakonyprolidi.cz/cs/2019-110#p7). U mladších dětí souhlasí zákonný zástupce.
 
-**Zakládají si žáci vlastní účet?** — Pokud škola zadává práci v nástroji, kde si žák zakládá vlastní účet, informujte rodiče a ověřte, kdo je správcem dat.
+**Zakládají si žáci vlastní účet?** — Pokud škola zadává práci v nástroji, kde si žák zakládá vlastní účet, informujte zákonné zástupce a ověřte, kdo je správcem dat.
 
 ## AI Act a AI gramotnost
 
@@ -64,7 +64,7 @@ Evropský akt o umělé inteligenci (AI Act, nařízení EU 2024/1689) zavádí 
 - **27. 7. 2026: Digital Omnibus povinnost zmírnil** — Škola dál musí AI gramotnost podporovat. Nemusí ale zaručit určitou úroveň u každého zaměstnance (nařízení EU 2026/1744).
 - **2. 12. 2027: Vysoce rizikové systémy** — Nový termín pro přísnější pravidla takzvaných vysoce rizikových systémů. Ve vzdělávání je to AI, která rozhoduje o přijetí žáků, hodnotí je, určuje jejich vzdělávací úroveň nebo hlídá zkoušky. Škola u ní zajistí lidský dohled, posoudí dopady na základní práva a povede záznamy.
 
-**Co to znamená prakticky** — Projděte si, které AI nástroje škola používá. Proškolte pedagogy a mějte pravidla používání AI. Chraňte osobní údaje žáků a řekněte rodičům otevřeně, jak AI ve výuce používáte. O hodnocení žáků nenechávejte AI rozhodovat bez kontroly vyučujícího.
+**Co to znamená prakticky** — Projděte si, které AI nástroje škola používá. Proškolte pedagogy a mějte pravidla používání AI. Chraňte osobní údaje žáků a řekněte zákonným zástupcům otevřeně, jak AI ve výuce používáte. O hodnocení žáků nenechávejte AI rozhodovat bez kontroly vyučujícího.
 
 ## Komu patří vygenerovaný obsah
 
