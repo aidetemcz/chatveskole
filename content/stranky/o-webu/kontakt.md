@@ -6,9 +6,6 @@ popis: Napište nám — dotazy k webu, návrhy dovedností a promptů, chyby v 
 aktualizovano: 2026-11-21
 sablona: kontakt-pruvodce   # vlastní šablona src/pages/o-webu/kontakt.astro
 stav: koncept
-odkazy:
-  - { text: Kdo za tím stojí, href: /o-webu/kdo-za-tim-stoji }
-  - { text: Katalog dovedností, href: /skills }
 ---
 
 # Kontakt
@@ -33,10 +30,6 @@ Hledáte vzdělávací akci pro sborovnu nebo máte zájem o spolupráci? Ozvět
 
 ## Novinky do e-mailu
 
-Funkce chatbotů se mění každý měsíc. Pošleme vám, co je pro školy důležité.
+Jednou za čas vám pošleme, co je nového v umělé inteligenci a ve vzdělávání.
 
 [Přihlásit se k odběru](https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f9d89c882af9a3a8b)
-
-## AI dětem, z. s.
-
-IČ: 17914582 · Datová schránka: 4czjq6u · Číslo účtu: 2002446742/2010

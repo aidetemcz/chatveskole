@@ -172,8 +172,8 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .postup-krok h3 { font-size: 1.1rem; }
   .postup-krok > p { margin: 0; font-size: 0.93rem; line-height: 1.6; }
 
-  .diagram { background: var(--panel); border: 1px solid var(--sky); border-radius: 9px; padding: 32px; }
-  .diagram :global(img) { display: block; width: 100%; max-width: 980px; height: auto; margin: 0 auto; }
+  .diagram { background: var(--panel); border: 1px solid var(--sky); border-radius: 9px; padding: 28px; max-width: var(--dve-tretiny); box-sizing: border-box; }
+  .diagram :global(img) { display: block; width: 100%; height: auto; margin: 0 auto; }
   @media (max-width: 640px) { .diagram { padding: 16px; } }
 
   .urovne { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 16px; align-items: stretch; }
