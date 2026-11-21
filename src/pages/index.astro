@@ -5,6 +5,7 @@ import HeroKrajina from '../components/HeroKrajina.astro';
 import Blobici from '../components/Blobici.astro';
 import { url } from '../lib/url';
 import { sady, pocet } from '../lib/data';
+import { t, tf } from '../lib/jazyk';
 
 const prompty = await getCollection('prompty');
 const nSkup = (s: string) => prompty.filter((p) => p.id.startsWith(s + '/')).length;
@@ -13,62 +14,62 @@ const nVedeni = nSkup('vedeni');
 const nZaci = nSkup('zaci');
 const nKatalog = nUcitele + nVedeni + nZaci;
 ---
-<Base title="Chatboti ve škole" description="Jak využívat chatboty ve škole: dovednosti a prompty pro vyučující a vedení škol, aktuální přehled funkcí, cen a věkových limitů, metodiky a doporučení.">
+<Base title={t('Chatboti ve škole')} description={t('Jak využívat chatboty ve škole: dovednosti a prompty pro vyučující a vedení škol, aktuální přehled funkcí, cen a věkových limitů, metodiky a doporučení.')}>
 
-  <section class="hero" aria-label="Úvod">
+  <section class="hero" aria-label={t('Úvod')}>
     <HeroKrajina />
     <div class="wrap hero-in">
       <div class="page-head hero-text">
-        <h1>Chatboti <em>ve škole</em></h1>
-        <p class="lede">Web Chatboti ve škole je ucelený rozcestník pro vyučující i vedení škol, kteří chtějí generativní AI využít ve své práci. Inspiraci tu najdou úplní začátečníci i pokročilí.</p>
+        <h1>{t('Chatboti')} <em>{t('ve škole')}</em></h1>
+        <p class="lede">{t('Web Chatboti ve škole je ucelený rozcestník pro vyučující i vedení škol, kteří chtějí generativní AI využít ve své práci. Inspiraci tu najdou úplní začátečníci i pokročilí.')}</p>
         <div class="hero-btns">
-          <a class="btn btn--primary" href={url('/skills')}>Katalog dovedností</a>
-          <a class="btn btn--outline" href={url('/prompty')}>Katalog promptů</a>
+          <a class="btn btn--primary" href={url('/skills')}>{t('Katalog dovedností')}</a>
+          <a class="btn btn--outline" href={url('/prompty')}>{t('Katalog promptů')}</a>
         </div>
       </div>
       <a class="sticker" href={url('/o-webu/novy-web')}>
-        <span>Web<br />Chatboti ve škole<br />má nový vzhled<br />i obsah!</span>
+        <span>{t('Web')}<br />{t('Chatboti ve škole')}<br />{t('má nový vzhled')}<br />{t('i obsah!')}</span>
       </a>
     </div>
   </section>
 
   <section class="band band--hp band--white" aria-labelledby="pracovat-h">
     <div class="wrap stack" style="gap: 22px">
-      <h2 id="pracovat-h" style="font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 700">Jak pracovat s chatboty</h2>
-      <p style="max-width: var(--dve-tretiny); font-size: 1.15rem">Chatboti se od svých začátků hodně změnili. Dřív jste pro dobrý výsledek museli psát promyšlené instrukce (prompty). Dnes hraje větší roli kontext, tedy znalosti a dovednosti, které má chatbot k dispozici. Podívejte se, jakými způsoby se dá s chatboty pracovat. Připravili jsme pro vás srozumitelné vysvětlení.</p>
-      <p style="margin-top: 10px"><a class="btn btn--primary" href={url('/zaciname/jak-pracovat-s-chatboty')}>Tohle by měl znát každý</a></p>
+      <h2 id="pracovat-h" style="font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 700">{t('Jak pracovat s chatboty')}</h2>
+      <p style="max-width: var(--dve-tretiny); font-size: 1.15rem">{t('Chatboti se od svých začátků hodně změnili. Dřív jste pro dobrý výsledek museli psát promyšlené instrukce (prompty). Dnes hraje větší roli kontext, tedy znalosti a dovednosti, které má chatbot k dispozici. Podívejte se, jakými způsoby se dá s chatboty pracovat. Připravili jsme pro vás srozumitelné vysvětlení.')}</p>
+      <p style="margin-top: 10px"><a class="btn btn--primary" href={url('/zaciname/jak-pracovat-s-chatboty')}>{t('Tohle by měl znát každý')}</a></p>
     </div>
   </section>
 
   <section class="band band--hp band--sky" aria-labelledby="prompty-h dovednosti-h">
     <div class="wrap stack" style="gap: 30px">
       <div class="section-head">
-        <div><h2 id="prompty-h">Katalog promptů</h2><p class="hp-uvod">Ověřené prompty pro vyučující, vedení škol i žáky. Stačí je zkopírovat do chatbota a doplnit údaje.</p></div>
-        <a class="more" href={url('/prompty')}>Všech {nKatalog} promptů →</a>
+        <div><h2 id="prompty-h">{t('Katalog promptů')}</h2><p class="hp-uvod">{t('Ověřené prompty pro vyučující, vedení škol i žáky. Stačí je zkopírovat do chatbota a doplnit údaje.')}</p></div>
+        <a class="more" href={url('/prompty')}>{tf('Všech {n} promptů →', { n: nKatalog })}</a>
       </div>
       <div class="grid-3">
         <a class="card card--lg" href={url('/prompty?pro=pedagogove')}>
-          <div class="card-top"><span class="title-row"><h3 style="font-size: 1.15rem">Pro vyučující</h3></span><span class="count" style="font-size: 0.78rem">{pocet(nUcitele, 'prompt', 'prompty', 'promptů')}</span></div>
-          <p>Formativní a slovní hodnocení, pracovní listy, úpravy materiálů a komunikace se zákonnými zástupci.</p>
+          <div class="card-top"><span class="title-row"><h3 style="font-size: 1.15rem">{t('Pro vyučující')}</h3></span><span class="count" style="font-size: 0.78rem">{pocet(nUcitele, t('prompt'), t('prompty'), t('promptů'))}</span></div>
+          <p>{t('Formativní a slovní hodnocení, pracovní listy, úpravy materiálů a komunikace se zákonnými zástupci.')}</p>
         </a>
         <a class="card card--lg" href={url('/prompty?pro=vedeni')}>
-          <div class="card-top"><span class="title-row"><h3 style="font-size: 1.15rem">Pro vedení školy</h3></span><span class="count" style="font-size: 0.78rem">{pocet(nVedeni, 'prompt', 'prompty', 'promptů')}</span></div>
-          <p>Strategie školy, hodnoty, mise a vize, profil absolventa, školní pravidla a hodnocení kvality výuky.</p>
+          <div class="card-top"><span class="title-row"><h3 style="font-size: 1.15rem">{t('Pro vedení školy')}</h3></span><span class="count" style="font-size: 0.78rem">{pocet(nVedeni, t('prompt'), t('prompty'), t('promptů'))}</span></div>
+          <p>{t('Strategie školy, hodnoty, mise a vize, profil absolventa, školní pravidla a hodnocení kvality výuky.')}</p>
         </a>
         <a class="card card--lg" href={url('/prompty?pro=zaci')}>
-          <div class="card-top"><span class="title-row"><h3 style="font-size: 1.15rem">Pro žáky</h3></span><span class="count" style="font-size: 0.78rem">{pocet(nZaci, 'prompt', 'prompty', 'promptů')}</span></div>
-          <p>Argumentace, brainstorming, plánování nebo zpětná vazba — způsoby využití generativní AI ve výuce vytvořené s NPI ČR.</p>
+          <div class="card-top"><span class="title-row"><h3 style="font-size: 1.15rem">{t('Pro žáky')}</h3></span><span class="count" style="font-size: 0.78rem">{pocet(nZaci, t('prompt'), t('prompty'), t('promptů'))}</span></div>
+          <p>{t('Argumentace, brainstorming, plánování nebo zpětná vazba — způsoby využití generativní AI ve výuce vytvořené s NPI ČR.')}</p>
         </a>
       </div>
 
       <div class="section-head" style="margin-top: 56px">
-        <div><h2 id="dovednosti-h">Katalog dovedností (skills)</h2><p class="hp-uvod">Hotové dovednosti pro vyučující a vedení škol. Nainstalujete je do chatbota jednou a on je pak použije sám. Dělíme je do kategorií podle účelu využití.</p></div>
-        <a class="more" href={url('/skills')}>Katalog dovedností →</a>
+        <div><h2 id="dovednosti-h">{t('Katalog dovedností (skills)')}</h2><p class="hp-uvod">{t('Hotové dovednosti pro vyučující a vedení škol. Nainstalujete je do chatbota jednou a on je pak použije sám. Dělíme je do kategorií podle účelu využití.')}</p></div>
+        <a class="more" href={url('/skills')}>{t('Katalog dovedností →')}</a>
       </div>
       <div class="grid-cards">
         {sady.map((s) => (
           <a class="card card--lg" href={url(`/sady/${s.slug}`)}>
-            <div class="card-top"><h3 style="font-size: 1.15rem">{s.title}</h3><span class="count" style="font-size: 0.78rem">{pocet(s.skills.length, 'dovednost', 'dovednosti', 'dovedností')}</span></div>
+            <div class="card-top"><h3 style="font-size: 1.15rem">{s.title}</h3><span class="count" style="font-size: 0.78rem">{pocet(s.skills.length, t('dovednost'), t('dovednosti'), t('dovedností'))}</span></div>
             <p>{s.popis}</p>
           </a>
         ))}
@@ -79,44 +80,44 @@ const nKatalog = nUcitele + nVedeni + nZaci;
   <section class="band band--hp band--white" aria-labelledby="vyuka-h">
     <div class="wrap stack" style="gap: 32px">
       <div class="tiny-uvod">
-        <a href="https://tiny.school" class="tiny-mockup"><img src={url('/img/tiny-mockup.png')} alt="Aplikace Tiny v mobilu (tiny.school)" width="579" height="535" loading="lazy" /></a>
+        <a href="https://tiny.school" class="tiny-mockup"><img src={url('/img/tiny-mockup.png')} alt={t('Aplikace Tiny v mobilu (tiny.school)')} width="579" height="535" loading="lazy" /></a>
         <div class="section-head">
-          <div><h2 id="vyuka-h">Chatboti ve výuce</h2><p>Tiny je AI aplikace s jedenácti vzdělávacími chatboty do hodiny. Připravili je didaktici AI dětem. Vy zadáte jen téma (například „opakování přítomného času“) a Tiny se postará o zbytek. Každý žák pak vede vlastní rozhovor k tématu. Místo odpovědí mu chatbot klade otázky, které ho posouvají v přemýšlení dál. Všechny konverzace vidíte a na konci hodiny dostanete od Tiny jejich shrnutí. Pro vyučující i žáky je Tiny zdarma.</p><p style="margin-top: 32px"><a class="btn btn--primary" href="https://tiny.school" target="_blank" rel="noopener">Vyzkoušet Tiny<span class="sr-only"> (otevře se v novém okně)</span></a></p></div>
+          <div><h2 id="vyuka-h">{t('Chatboti ve výuce')}</h2><p>{t('Tiny je AI aplikace s jedenácti vzdělávacími chatboty do hodiny. Připravili je didaktici AI dětem. Vy zadáte jen téma (například „opakování přítomného času“) a Tiny se postará o zbytek. Každý žák pak vede vlastní rozhovor k tématu. Místo odpovědí mu chatbot klade otázky, které ho posouvají v přemýšlení dál. Všechny konverzace vidíte a na konci hodiny dostanete od Tiny jejich shrnutí. Pro vyučující i žáky je Tiny zdarma.')}</p><p style="margin-top: 32px"><a class="btn btn--primary" href="https://tiny.school" target="_blank" rel="noopener">{t('Vyzkoušet Tiny')}<span class="sr-only">{t(' (otevře se v novém okně)')}</span></a></p></div>
         </div>
       </div>
       <div class="grid-3 vyuka-boxy">
         <div class="card card--lg">
-          <h3 style="font-size: 1.15rem">Metodické materiály pro Tiny</h3>
-          <p>Materiály k aplikaci Tiny: jak její chatboty zařadit do hodiny a jak s nimi žáci pracují.</p>
-          <a class="more" href="https://www.tiny.school/metodiky/" style="margin-top: auto">Metodiky k Tiny →</a>
+          <h3 style="font-size: 1.15rem">{t('Metodické materiály pro Tiny')}</h3>
+          <p>{t('Materiály k aplikaci Tiny: jak její chatboty zařadit do hodiny a jak s nimi žáci pracují.')}</p>
+          <a class="more" href="https://www.tiny.school/metodiky/" style="margin-top: auto">{t('Metodiky k Tiny →')}</a>
         </div>
         <div class="card card--lg">
-          <h3 style="font-size: 1.15rem">Tvorba školních pravidel pro využívání AI</h3>
-          <p>Pravidla nejsou souborem zákazů, ale odrazem hodnot školy. Lekce na 45 minut a plán workshopu ukazují, jak je vytvořit společně se žáky.</p>
-          <a class="more" href="https://aidetem.cz/tvorba-skolnich-pravidel-pro-vyuzivani-digitalnich-technologii/" style="margin-top: auto">Jak na pravidla →</a>
+          <h3 style="font-size: 1.15rem">{t('Tvorba školních pravidel pro využívání AI')}</h3>
+          <p>{t('Pravidla nejsou souborem zákazů, ale odrazem hodnot školy. Lekce na 45 minut a plán workshopu ukazují, jak je vytvořit společně se žáky.')}</p>
+          <a class="more" href="https://aidetem.cz/tvorba-skolnich-pravidel-pro-vyuzivani-digitalnich-technologii/" style="margin-top: auto">{t('Jak na pravidla →')}</a>
         </div>
         <div class="card card--lg">
-          <h3 style="font-size: 1.15rem">Způsoby využití AI ve výuce</h3>
-          <p>Deset způsobů, jak zapojit AI do výuky tak, aby žáky rozvíjela.</p>
-          <a class="more" href={url('/ve-vyuce/zpusoby-vyuziti-ai')} style="margin-top: auto">Způsoby využití AI →</a>
+          <h3 style="font-size: 1.15rem">{t('Způsoby využití AI ve výuce')}</h3>
+          <p>{t('Deset způsobů, jak zapojit AI do výuky tak, aby žáky rozvíjela.')}</p>
+          <a class="more" href={url('/ve-vyuce/zpusoby-vyuziti-ai')} style="margin-top: auto">{t('Způsoby využití AI →')}</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="band band--hp band--sky" style="padding-bottom: 0" aria-label="Sady dovedností (pluginy) a Vibe Coding">
+  <section class="band band--hp band--sky" style="padding-bottom: 0" aria-label={t('Sady dovedností (pluginy) a Vibe Coding')}>
     <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 22px">
       <a class="card card--lg big" href={url('/funkce/pluginy')}>
         
-        <h2>Sady dovedností (pluginy)</h2>
-        <p>Sada dovedností je balíček, který do chatbota nainstalujete jedním krokem. Může obsahovat několik dovedností, napojení na další aplikace (konektory) a další nástroje.</p>
-        <span class="more" style="margin-top: auto">Co jsou pluginy →</span>
+        <h2>{t('Sady dovedností (pluginy)')}</h2>
+        <p>{t('Sada dovedností je balíček, který do chatbota nainstalujete jedním krokem. Může obsahovat několik dovedností, napojení na další aplikace (konektory) a další nástroje.')}</p>
+        <span class="more" style="margin-top: auto">{t('Co jsou pluginy →')}</span>
       </a>
       <a class="card card--lg big" href={url('/vibe-coding/co-je-to')}>
         
-        <h2>Vibe Coding</h2>
-        <p>Webovou stránku, kvíz nebo malou aplikaci do hodiny vytvoříte i bez znalosti programování. Stačí popsat, co chcete, a chatbot to postaví.</p>
-        <span class="more" style="margin-top: auto">Co je Vibe Coding →</span>
+        <h2>{t('Vibe Coding')}</h2>
+        <p>{t('Webovou stránku, kvíz nebo malou aplikaci do hodiny vytvoříte i bez znalosti programování. Stačí popsat, co chcete, a chatbot to postaví.')}</p>
+        <span class="more" style="margin-top: auto">{t('Co je Vibe Coding →')}</span>
       </a>
     </div>
     <Blobici />
@@ -125,33 +126,33 @@ const nKatalog = nUcitele + nVedeni + nZaci;
   <section class="band band--hp band--white" aria-labelledby="metodiky-h">
     <div class="wrap stack" style="gap: 30px">
       <div class="section-head">
-        <h2 id="metodiky-h">Metodické materiály</h2>
-        <a class="more" href={url('/ve-vyuce/metodiky')}>Všechny metodické materiály →</a>
+        <h2 id="metodiky-h">{t('Metodické materiály')}</h2>
+        <a class="more" href={url('/ve-vyuce/metodiky')}>{t('Všechny metodické materiály →')}</a>
       </div>
       <div class="grid-4">
-        <a class="thumb" href="https://kurikulum.aidetem.cz/knowledgebase/vyuziti-chatbotu-ve-formativnim-hodnoceni/"><img src={url('/img/metodika-formativni-hodnoceni.jpg')} alt="" loading="lazy" /><div><h3>Využití chatbotů ve formativním hodnocení</h3><p>Metodika k sadě dovedností Formativní hodnocení.</p></div></a>
-        <a class="thumb" href="https://kurikulum.aidetem.cz/knowledgebase/chatboti-ve-vyuce-pracovni-listy/"><img src={url('/img/metodika-chatboti-ve-vyuce.jpg')} alt="" loading="lazy" /><div><h3>Chatboti ve výuce</h3><p>Úvod do promptování pro žáky od 13 let.</p></div></a>
-        <a class="thumb" href="https://kurikulum.aidetem.cz/knowledgebase/rozvoj-mysleni-s-vyuzitim-chatbota/"><img src={url('/img/metodika-rozvoj-mysleni.jpg')} alt="" loading="lazy" /><div><h3>Rozvoj myšlení s využitím chatbota</h3><p>Žáci rozvíjejí myšlení pomocí otázek.</p></div></a>
-        <a class="thumb" href="https://www.tiny.school/metodiky/"><img src={url('/img/metodika-tiny.jpg')} alt="" loading="lazy" /><div><h3>Metodiky k aplikaci Tiny</h3><p>Materiály, které vám pomohou využívat aplikaci Tiny ve výuce.</p></div></a>
+        <a class="thumb" href="https://kurikulum.aidetem.cz/knowledgebase/vyuziti-chatbotu-ve-formativnim-hodnoceni/"><img src={url('/img/metodika-formativni-hodnoceni.jpg')} alt="" loading="lazy" /><div><h3>{t('Využití chatbotů ve formativním hodnocení')}</h3><p>{t('Metodika k sadě dovedností Formativní hodnocení.')}</p></div></a>
+        <a class="thumb" href="https://kurikulum.aidetem.cz/knowledgebase/chatboti-ve-vyuce-pracovni-listy/"><img src={url('/img/metodika-chatboti-ve-vyuce.jpg')} alt="" loading="lazy" /><div><h3>{t('Chatboti ve výuce')}</h3><p>{t('Úvod do promptování pro žáky od 13 let.')}</p></div></a>
+        <a class="thumb" href="https://kurikulum.aidetem.cz/knowledgebase/rozvoj-mysleni-s-vyuzitim-chatbota/"><img src={url('/img/metodika-rozvoj-mysleni.jpg')} alt="" loading="lazy" /><div><h3>{t('Rozvoj myšlení s využitím chatbota')}</h3><p>{t('Žáci rozvíjejí myšlení pomocí otázek.')}</p></div></a>
+        <a class="thumb" href="https://www.tiny.school/metodiky/"><img src={url('/img/metodika-tiny.jpg')} alt="" loading="lazy" /><div><h3>{t('Metodiky k aplikaci Tiny')}</h3><p>{t('Materiály, které vám pomohou využívat aplikaci Tiny ve výuce.')}</p></div></a>
       </div>
     </div>
   </section>
 
-  <section class="band band--hp band--sky" aria-label="Kniha a novinky">
+  <section class="band band--hp band--sky" aria-label={t('Kniha a novinky')}>
     <div class="wrap" style="display: flex; flex-wrap: wrap; gap: 22px">
       <div class="card card--lg book">
-        <img src={url('/img/kniha-ai-ve-skole-prakticky.jpg')} alt="Obálka knihy AI ve škole prakticky" loading="lazy" />
+        <img src={url('/img/kniha-ai-ve-skole-prakticky.jpg')} alt={t('Obálka knihy AI ve škole prakticky')} loading="lazy" />
         <div class="stack" style="gap: 14px; flex: 1 1 240px">
-          <h2 style="font-size: 1.35rem">Kniha AI ve škole prakticky</h2>
-          <p>Srozumitelný průvodce generativní umělou inteligencí pro všechny, kdo se věnují vzdělávání — od základních škol po univerzity.</p>
-          <a class="more" href="https://vzdelavame.aidetem.cz/akce/publikace/ai-ve-skole-prakticky/">Objednat knihu →</a>
+          <h2 style="font-size: 1.35rem">{t('Kniha AI ve škole prakticky')}</h2>
+          <p>{t('Srozumitelný průvodce generativní umělou inteligencí pro všechny, kdo se věnují vzdělávání — od základních škol po univerzity.')}</p>
+          <a class="more" href="https://vzdelavame.aidetem.cz/akce/publikace/ai-ve-skole-prakticky/">{t('Objednat knihu →')}</a>
         </div>
       </div>
       <div class="newsletter">
-        <h2 style="font-size: 1.25rem">Novinky do e-mailu</h2>
-        <p>Jednou za čas vám pošleme, co je nového v umělé inteligenci a ve vzdělávání.</p>
+        <h2 style="font-size: 1.25rem">{t('Novinky do e-mailu')}</h2>
+        <p>{t('Jednou za čas vám pošleme, co je nového v umělé inteligenci a ve vzdělávání.')}</p>
         <!-- Odběr přes veřejný formulář Ecomailu (žádný skript ani cookies na našem webu). -->
-        <div><a class="btn btn--primary" href="https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f9d89c882af9a3a8b" target="_blank" rel="noopener">Přihlásit se k odběru<span class="sr-only"> (otevře se v novém okně)</span></a></div>
+        <div><a class="btn btn--primary" href="https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f9d89c882af9a3a8b" target="_blank" rel="noopener">{t('Přihlásit se k odběru')}<span class="sr-only">{t(' (otevře se v novém okně)')}</span></a></div>
       </div>
     </div>
   </section>

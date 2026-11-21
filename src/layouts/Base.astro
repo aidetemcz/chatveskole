@@ -13,13 +13,19 @@ import NovyWebModal from '../components/NovyWebModal.astro';
 import CookieLista from '../components/CookieLista.astro';
 import { url } from '../lib/url';
 import { indexovat } from '../lib/indexovat.mjs';
+import { t, SK, JAZYK, SK_ZVEREJNENO, urlJazyka } from '../lib/jazyk';
 
 interface Props { title: string; description?: string; noindex?: boolean }
 const { title, description, noindex } = Astro.props;
-const fullTitle = title === 'Chatboti ve škole' ? title : `${title} | Chatboti ve škole`;
+const nazevWebu = t('Chatboti ve škole');
+const fullTitle = title === nazevWebu ? title : `${title} | ${nazevWebu}`;
 const canonical = new URL(Astro.url.pathname.replace(/\/?$/, '/'), Astro.site);
 // indexovat jen ostrý web na chatveskole.cz (viz src/lib/indexovat.mjs); náhledy na github.io a vercel.app ne
-const nahled = !indexovat;
+// slovenská verze se indexuje až po zveřejnění (SK_ZVEREJNENO v src/lib/jazyk.ts)
+const nahled = !indexovat || (SK && !SK_ZVEREJNENO);
+// odkazy na stejnou stránku v druhém jazyce (hreflang), jen když je slovenská verze zveřejněná
+const cesta = Astro.url.pathname.slice(import.meta.env.BASE_URL.replace(/\/$/, '').length).replace(/\/?$/, '/');
+const alternativy = SK_ZVEREJNENO ? (['cs', 'sk'] as const).map((j) => ({ j, href: new URL(urlJazyka(j, cesta), Astro.site).href })) : [];
 // Vercel Web Analytics (bez cookies, schválila Eva 21. 11. 2026): jen v produkčním buildu na Vercelu, jinde skript neexistuje
 const mereni = process.env.VERCEL_ENV === 'production';
 const ogImage = new URL(url('/img/og-chatveskole.jpg'), Astro.site);
@@ -44,10 +50,10 @@ const jsonLd = JSON.stringify({
     {
       '@type': 'WebSite',
       '@id': domov + '#web',
-      name: 'Chatboti ve škole',
-      description: 'Dovednosti, prompty a návody pro vyučující a vedení škol',
+      name: nazevWebu,
+      description: t('Dovednosti, prompty a návody pro vyučující a vedení škol'),
       url: domov,
-      inLanguage: 'cs',
+      inLanguage: JAZYK,
       publisher: { '@id': 'https://aidetem.cz/#organizace' },
       potentialAction: {
         '@type': 'SearchAction',
@@ -59,7 +65,7 @@ const jsonLd = JSON.stringify({
 });
 ---
 <!doctype html>
-<html lang="cs">
+<html lang={JAZYK}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -69,18 +75,20 @@ const jsonLd = JSON.stringify({
     {noindex && <meta name="robots" content="noindex" data-stranka />}
     {nahled && !noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
+    {alternativy.map((a) => <link rel="alternate" hreflang={a.j} href={a.href} />)}
+    {alternativy.length > 0 && <link rel="alternate" hreflang="x-default" href={alternativy[0].href} />}
     <link rel="icon" type="image/png" sizes="32x32" href={url('/img/favicon-32.png')} />
     <link rel="icon" type="image/png" sizes="48x48" href={url('/img/favicon-48.png')} />
     <link rel="apple-touch-icon" href={url('/img/apple-touch-icon.png')} />
     <meta property="og:title" content={fullTitle} />
     {description && <meta property="og:description" content={description} />}
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content="cs_CZ" />
+    <meta property="og:locale" content={SK ? 'sk_SK' : 'cs_CZ'} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:site_name" content="Chatboti ve škole" />
+    <meta property="og:site_name" content={nazevWebu} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:alt" content="Chatboti ve škole – ucelený rozcestník pro vyučující i vedení škol, kteří chtějí generativní AI využít ve své práci" />
+    <meta property="og:image:alt" content={t('Chatboti ve škole – ucelený rozcestník pro vyučující i vedení škol, kteří chtějí generativní AI využít ve své práci')} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -88,14 +96,14 @@ const jsonLd = JSON.stringify({
     {mereni && <script is:inline>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>}
     {mereni && <script is:inline defer src="/_vercel/insights/script.js"></script>}
   </head>
-  <body>
-    <a class="skip" href="#obsah">Přeskočit na obsah</a>
+  <body data-text-zkopirovano={SK ? t('Zkopírováno') : undefined} data-text-kopirovat={SK ? t('Kopírovat') : undefined}>
+    <a class="skip" href="#obsah">{t('Přeskočit na obsah')}</a>
     <Header />
     <main id="obsah" data-pagefind-body={noindex ? undefined : ''}>
       <slot />
     </main>
     <Footer />
-    <NovyWebModal />
+    {!SK && <NovyWebModal />}
     <CookieLista zapnuto={mereni} />
     <script>
       // Kopírování: tlačítko s data-copy="id elementu s textem" nebo data-copy-text
@@ -110,7 +118,7 @@ const jsonLd = JSON.stringify({
           const label = btn.querySelector('[data-label]');
           if (label) {
             const orig = label.textContent;
-            label.textContent = 'Zkopírováno';
+            label.textContent = document.body.dataset.textZkopirovano ?? 'Zkopírováno';
             setTimeout(() => { label.textContent = orig; }, 2000);
           }
         } catch { /* schránka nedostupná */ }
@@ -121,7 +129,7 @@ const jsonLd = JSON.stringify({
         code.id = code.id || `prompt-${i}`;
         const wrap = document.createElement('div');
         wrap.className = 'prompt-block';
-        wrap.innerHTML = `<div class="copy-row"><button type="button" class="copy-btn" data-copy="${code.id}"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"></rect><path d="M5 15V6a2 2 0 0 1 2-2h9"></path></svg><span data-label>Kopírovat</span></button></div>`;
+        wrap.innerHTML = `<div class="copy-row"><button type="button" class="copy-btn" data-copy="${code.id}"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"></rect><path d="M5 15V6a2 2 0 0 1 2-2h9"></path></svg><span data-label>${document.body.dataset.textKopirovat ?? 'Kopírovat'}</span></button></div>`;
         pre.replaceWith(wrap);
         wrap.appendChild(pre);
       });

@@ -3,6 +3,7 @@
 // Texty jsou v content/stranky/zaciname/dostupne-nastroje.md: ### nástroj = karta, tabulka = srovnání, seznam = další nástroje.
 import { getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { t, tf, LOCALE } from '../../lib/jazyk';
 import Crumbs from '../../components/Crumbs.astro';
 import { rozdel, naOddily } from '../../lib/komponenty';
 import { navigace } from '../../lib/data';
@@ -32,7 +33,7 @@ const radkyVse = [...(tabulkaHtml.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? ''
 const radek = (r: RegExp) => radkyVse.find((x) => r.test(x.nazev));
 // skupiny řádků; Vývojář se ukazuje v kartách
 const FUNKCE_OD = radkyVse.findIndex((x) => /Dovednosti/i.test(x.nazev));
-const radky = radkyVse.filter((x) => !/Vývojář/i.test(x.nazev)).map((x) => ({ ...x, skupina: x === radkyVse.find((y) => /Zdarma/i.test(y.nazev)) ? 'Dostupnost' : x === radkyVse[FUNKCE_OD] ? 'Funkce' : '' }));
+const radky = radkyVse.filter((x) => !/Vývojář/i.test(x.nazev)).map((x) => ({ ...x, skupina: x === radkyVse.find((y) => /Zdarma/i.test(y.nazev)) ? t('Dostupnost') : x === radkyVse[FUNKCE_OD] ? t('Funkce') : '' }));
 const bunka = (t: string) => velke(t.trim());
 
 // Karty nástrojů: ### název → popis a odkaz; štítky z tabulky
@@ -67,7 +68,7 @@ const vyzva = najdi(/Kolik to stojí/i);
 type Odkaz = { text: string; href: string };
 const odkazy: Odkaz[] = (Array.isArray(d.odkazy) ? d.odkazy : []).filter((o: Odkaz) => o && o.href);
 const skupina = navigace.menu.find((g) => g.items.some((i) => i.href === '/' + stranka.id));
-const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString(LOCALE, { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
 const sipka = '<path d="M7 17L17 7M9 7h8v8"></path>';
 ---
 <Base title={d.title} description={d.popis ?? undefined}>
@@ -76,7 +77,7 @@ const sipka = '<path d="M7 17L17 7M9 7h8v8"></path>';
       <div class="page-head">
         <div class="zahlavi">
           <Crumbs items={[...(skupina ? [{ title: skupina.title }] : []), { title: d.title }]} />
-          {datum && <span class="draft">Aktualizováno {datum}</span>}
+          {datum && <span class="draft">{tf('Aktualizováno {datum}', { datum })}</span>}
         </div>
         <h1>{d.title}</h1>
         <div class="lede perex" set:html={perex} />
@@ -102,7 +103,7 @@ const sipka = '<path d="M7 17L17 7M9 7h8v8"></path>';
                 <h3>{k.nazev}</h3>
                 {k.vyvojar && <span class="vyvojar">{k.vyvojar}</span>}
               </div>
-              {k.vek && <div class="stitky">{k.skolniVse ? <><span class="stitek">Osobní účet {k.vek}</span><span class="stitek">Školní účet bez omezení věku</span></> : <span class="stitek">Věk {k.vek}</span>}</div>}
+              {k.vek && <div class="stitky">{k.skolniVse ? <><span class="stitek">{tf('Osobní účet {vek}', { vek: k.vek })}</span><span class="stitek">{t('Školní účet bez omezení věku')}</span></> : <span class="stitek">{tf('Věk {vek}', { vek: k.vek })}</span>}</div>}
               <div class="nastroj-popis" set:html={k.popis} />
               {k.odkaz && <a class="more" href={k.odkaz.href} style="margin-top: auto">{k.odkaz.text} ↗</a>}
             </article>

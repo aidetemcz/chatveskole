@@ -5,36 +5,37 @@
 // Volba se ukládá v localStorage; změnit ji jde tlačítkem „Nastavení cookies“ v patičce ([data-cookies-nastaveni]).
 // Lišta i měření jen v produkčním buildu na Vercelu (prop zapnuto).
 import { url } from '../lib/url';
+import { t } from '../lib/jazyk';
 interface Props { zapnuto: boolean }
 const { zapnuto } = Astro.props;
 const GA_ID = 'G-G1NT8MV18D';
 ---
 {zapnuto && (
   <>
-    <div class="cookie-lista" id="cookie-lista" role="region" aria-label="Souhlas s cookies" hidden data-pagefind-ignore>
-      <p>Rádi bychom měřili návštěvnost pomocí Google Analytics, abychom věděli, které stránky vám pomáhají. Analytické cookies použijeme jen s vaším souhlasem. Volbu můžete kdykoli změnit v patičce webu. Více v <a href={url('/o-webu/ochrana-soukromi')}>Ochraně soukromí</a>.</p>
+    <div class="cookie-lista" id="cookie-lista" role="region" aria-label={t('Souhlas s cookies')} hidden data-pagefind-ignore>
+      <p>{t('Rádi bychom měřili návštěvnost pomocí Google Analytics, abychom věděli, které stránky vám pomáhají. Analytické cookies použijeme jen s vaším souhlasem. Volbu můžete kdykoli změnit v patičce webu. Více v')} <a href={url('/o-webu/ochrana-soukromi')}>{t('Ochraně soukromí')}</a>.</p>
       <div class="cookie-tlacitka" data-cookies-zaklad>
-        <button type="button" class="btn btn--primary" data-cookies="ano">Přijmout</button>
-        <button type="button" class="btn btn--outline" data-cookies-prizpusobit>Přizpůsobit</button>
+        <button type="button" class="btn btn--primary" data-cookies="ano">{t('Přijmout')}</button>
+        <button type="button" class="btn btn--outline" data-cookies-prizpusobit>{t('Přizpůsobit')}</button>
       </div>
       <div class="cookie-nastaveni" data-cookies-panel hidden>
         <div class="cookie-volba">
           <div>
-            <strong>Nezbytné</strong>
-            <span>Web si pamatuje jen vaši volbu cookies a to, že jste viděli uvítací okno. Bez nich web nefunguje správně.</span>
+            <strong>{t('Nezbytné')}</strong>
+            <span>{t('Web si pamatuje jen vaši volbu cookies a to, že jste viděli uvítací okno. Bez nich web nefunguje správně.')}</span>
           </div>
-          <span class="cookie-stav">Vždy zapnuto</span>
+          <span class="cookie-stav">{t('Vždy zapnuto')}</span>
         </div>
         <label class="cookie-volba">
           <div>
-            <strong>Analytické (Google Analytics)</strong>
-            <span>Měříme, které stránky čtete a odkud přicházíte. Data nepoužíváme k reklamě.</span>
+            <strong>{t('Analytické (Google Analytics)')}</strong>
+            <span>{t('Měříme, které stránky čtete a odkud přicházíte. Data nepoužíváme k reklamě.')}</span>
           </div>
           <input type="checkbox" data-cookies-analytika />
         </label>
         <div class="cookie-tlacitka">
-          <button type="button" class="btn btn--primary" data-cookies-ulozit>Uložit volbu</button>
-          <button type="button" class="btn btn--outline" data-cookies="ano">Přijmout vše</button>
+          <button type="button" class="btn btn--primary" data-cookies-ulozit>{t('Uložit volbu')}</button>
+          <button type="button" class="btn btn--outline" data-cookies="ano">{t('Přijmout vše')}</button>
         </div>
       </div>
     </div>

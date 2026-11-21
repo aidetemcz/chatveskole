@@ -3,6 +3,7 @@
 // Texty jsou v content/stranky/zaciname/registrace.md: ### aplikace = záložka, číslovaný seznam = kroky, odstavce „**Nadpis** — text“ = boxy.
 import { getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { t, tf, LOCALE } from '../../lib/jazyk';
 import Crumbs from '../../components/Crumbs.astro';
 import { rozdel, naOddily } from '../../lib/komponenty';
 import { navigace } from '../../lib/data';
@@ -32,7 +33,7 @@ const perex = uvodOdst.filter((p) => !box(p)).map((p) => `<p>${p}</p>`).join('')
 const tip = uvodOdst.map(box).find(Boolean);
 
 // věk podle stránky Věkové limity a legislativa
-const VEK: Record<string, string> = { ChatGPT: 'od 13 let', 'Google Gemini': 'od 13 let, školní účet bez omezení', 'Microsoft Copilot': 'od 13 let', Claude: 'od 18 let', Perplexity: 'od 13 let', Tiny: 'od 11 let' };
+const VEK: Record<string, string> = { ChatGPT: t('od 13 let'), 'Google Gemini': t('od 13 let, školní účet bez omezení'), 'Microsoft Copilot': t('od 13 let'), Claude: t('od 18 let'), Perplexity: t('od 13 let'), Tiny: t('od 11 let') };
 const postup = najdi(/zaregistrovat/i);
 const postupHtml = htmlOddilu(postup);
 const nastroje = bloky(postupHtml).map((b, i) => {
@@ -51,7 +52,7 @@ const tlacitka = [...zaverHtml.matchAll(/<p>\s*<a href="([^"]+)"[^>]*>([\s\S]*?)
 const zaverText = zaverHtml.replace(/<p>\s*<a href="[^"]+"[^>]*>[\s\S]*?<\/a>\s*<\/p>/g, '');
 
 const skupina = navigace.menu.find((g) => g.items.some((it) => it.href === '/' + stranka.id));
-const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString(LOCALE, { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
 ---
 <Base title={d.title} description={d.popis ?? undefined}>
   <div class="band band--white">
@@ -59,7 +60,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
       <div class="page-head">
         <div class="zahlavi">
           <Crumbs items={[...(skupina ? [{ title: skupina.title }] : []), { title: d.title }]} />
-          {datum && <span class="draft">Aktualizováno {datum}</span>}
+          {datum && <span class="draft">{tf('Aktualizováno {datum}', { datum })}</span>}
         </div>
         <h1>{d.title}</h1>
         <div class="lede perex" set:html={perex} />
@@ -80,7 +81,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
           <h2 id={postup.id || undefined}>{postup.nadpis}</h2>
           <div class="prose" set:html={postupHtml.split(/<h3[\s>]/)[0]} />
         </div>
-        <div class="zalozky-nastroju" role="tablist" aria-label="Chatovací aplikace" data-switch="registrace-panely">
+        <div class="zalozky-nastroju" role="tablist" aria-label={t('Chatovací aplikace')} data-switch="registrace-panely">
           {nastroje.map((n, i) => <button type="button" role="tab" id={`${n.id}-tab`} aria-controls={n.id} aria-selected={i === 0 ? 'true' : 'false'} data-target={n.id}>{n.nazev}</button>)}
         </div>
         <div id="registrace-panely">

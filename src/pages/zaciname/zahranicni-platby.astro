@@ -5,6 +5,7 @@
 // „Jak na to“ = číslovaný seznam „**Termín: Krok** — text“ (další odstavec = podrobnosti), box = tip, odkazy = tlačítka.
 import { getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { t, tf, LOCALE } from '../../lib/jazyk';
 import Crumbs from '../../components/Crumbs.astro';
 import { rozdel, naOddily } from '../../lib/komponenty';
 import { navigace } from '../../lib/data';
@@ -56,7 +57,7 @@ const tip = odstavce(zbytek).map(box).find(jeBox);
 const tlacitka = [...zbytek.matchAll(/<p>\s*<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*<\/p>/g)].map(([, href, t]) => ({ href, text: bezTagu(t) }));
 
 const skupina = navigace.menu.find((g) => g.items.some((it) => it.href === '/' + stranka.id));
-const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString(LOCALE, { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
 ---
 <Base title={d.title} description={d.popis ?? undefined}>
   <div class="band band--white">
@@ -64,7 +65,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
       <div class="page-head">
         <div class="zahlavi">
           <Crumbs items={[...(skupina ? [{ title: skupina.title }] : []), { title: d.title }]} />
-          {datum && <span class="draft">Aktualizováno {datum}</span>}
+          {datum && <span class="draft">{tf('Aktualizováno {datum}', { datum })}</span>}
         </div>
         <h1>{nadpis}</h1>
         <div class="lede perex" set:html={perex} />
@@ -129,7 +130,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
       <div class="wrap stack" style="gap: 28px">
         {tip && (
           <div class="card tip">
-            <span class="nadtitulek">Tip</span>
+            <span class="nadtitulek">{t('Tip')}</span>
             <h3>{tip.nadpis}</h3>
             <p set:html={tip.text} />
           </div>

@@ -4,6 +4,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { indexovat } from '../src/lib/indexovat.mjs';
+import { SK_ZVEREJNENO } from '../src/lib/zverejneni.mjs';
+const DIST_SK = path.resolve('dist', 'sk');
 
 const DIST = path.resolve('dist');
 const BASE = (process.env.BASE_PATH || '/').replace(/\/?$/, '/');
@@ -20,10 +22,11 @@ let nOdkazu = 0;
     if (e.isDirectory()) { if (!['_astro', 'pagefind', 'download', 'archiv', 'img'].includes(e.name)) projdi(p); continue; }
     if (!e.name.endsWith('.html')) continue;
     const puvodni = fs.readFileSync(p, 'utf8');
+    const noveOkno = p.startsWith(DIST_SK + path.sep) ? ' (otvorí sa v novom okne)' : ' (otevře se v novém okně)';
     const nove = puvodni.replace(VNEJSI, (cely, pred, href, po, obsah) => {
       if (/\btarget=/.test(pred + po) || /^https?:\/\/(www\.)?chatveskole\.cz/.test(href)) return cely;
       nOdkazu++;
-      return `<a${pred}href="${href}"${po} target="_blank" rel="noopener">${obsah}<span class="sr-only"> (otevře se v novém okně)</span></a>`;
+      return `<a${pred}href="${href}"${po} target="_blank" rel="noopener">${obsah}<span class="sr-only">${noveOkno}</span></a>`;
     });
     if (nove !== puvodni) fs.writeFileSync(p, nove);
   }
@@ -86,7 +89,8 @@ const stranky = [];
 (function walk(dir) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
     const p = path.join(dir, e.name);
-    if (e.isDirectory()) { if (!['_astro', 'pagefind', 'download', 'archiv', 'img'].includes(e.name)) walk(p); }
+    // slovenská verze do sitemapy až po zveřejnění (src/lib/zverejneni.mjs)
+    if (e.isDirectory()) { if (!['_astro', 'pagefind', 'download', 'archiv', 'img'].includes(e.name) && (SK_ZVEREJNENO || p !== DIST_SK)) walk(p); }
     else if (e.name === 'index.html') stranky.push(p);
   }
 })(DIST);

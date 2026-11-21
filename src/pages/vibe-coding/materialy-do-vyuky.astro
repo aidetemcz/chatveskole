@@ -3,6 +3,7 @@
 // Texty jsou v content/stranky/vibe-coding/materialy-do-vyuky.md (oddíly podle ##), grafika stejná jako u stránky Projekty.
 import { getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { t, tf, LOCALE } from '../../lib/jazyk';
 import Crumbs from '../../components/Crumbs.astro';
 import { rozdel, naOddily } from '../../lib/komponenty';
 import { navigace } from '../../lib/data';
@@ -60,15 +61,15 @@ const karty = zadaniHtml.split(/(?=<h3[\s>])/).filter((k) => /^\s*<h3/.test(k)).
   };
 });
 
-const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString(LOCALE, { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
 ---
 <Base title={d.title} description={d.popis ?? undefined}>
   <div class="band band--white">
     <div class="wrap hero">
       <div class="page-head">
         <div class="zahlavi">
-          <Crumbs items={[{ title: skupina?.title ?? 'Vibe Coding' }, { title: d.menu_titulek ?? d.title }]} />
-          {datum && <span class="draft">Aktualizováno {datum}</span>}
+          <Crumbs items={[{ title: skupina?.title ?? t('Vibe Coding') }, { title: d.menu_titulek ?? d.title }]} />
+          {datum && <span class="draft">{tf('Aktualizováno {datum}', { datum })}</span>}
         </div>
         <h1>{d.title}</h1>
         {perex && <div class="lede perex" set:html={perex} />}
@@ -118,7 +119,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
               <div class="stack" style="gap: 10px">
                 <h3>{k.nazev}</h3>
                 {k.predmety.length > 0 && (
-                  <ul class="cipy" aria-label="Předměty">{k.predmety.map((p) => <li class="cip">{p}</li>)}</ul>
+                  <ul class="cipy" aria-label={t('Předměty')}>{k.predmety.map((p) => <li class="cip">{p}</li>)}</ul>
                 )}
               </div>
               <div class="prose" set:html={k.prompt} />

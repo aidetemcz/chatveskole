@@ -1,6 +1,7 @@
 ---
 // Karty tarifů z data/ceny.yaml. Údaj s ⚠ se zobrazí se štítkem „ověřujeme“.
 import { ceny, datumCesky } from '../../lib/data';
+import { t, tf } from '../../lib/jazyk';
 const overit = (s: string) => s.includes('⚠');
 const cist = (s: string) => s.replace(/\s*⚠\s*/g, ' ').trim();
 // cena do karty: částka velkým písmem, zbytek (období, podmínky) menším pod ní
@@ -11,7 +12,7 @@ const rozdel = (s: string) => {
 };
 ---
 <div class="cenik">
-  <nav class="skok" aria-label="Nástroje v ceníku">
+  <nav class="skok" aria-label={t('Nástroje v ceníku')}>
     {ceny.nastroje.map((n) => <a href={`#cenik-${n.id}`}>{n.nazev}</a>)}
   </nav>
   {ceny.nastroje.map((n) => (
@@ -21,26 +22,26 @@ const rozdel = (s: string) => {
           <h3 id={`cenik-${n.id}-h`}>{n.nazev}</h3>
           <span class="vyrobce">{n.vyrobce}</span>
         </div>
-        <a class="linkbtn" href={n.cenik}>Oficiální ceník →</a>
+        <a class="linkbtn" href={n.cenik}>{t('Oficiální ceník →')}</a>
       </header>
       <ul class="tarify">
-        {n.tarify.map((t) => {
-          const c = rozdel(t.cena);
+        {n.tarify.map((tarif) => {
+          const c = rozdel(tarif.cena);
           return (
             <li class="tarif">
-              <span class="tarif-nazev">{t.nazev}</span>
+              <span class="tarif-nazev">{tarif.nazev}</span>
               <span class="tarif-cena">{c.castka}</span>
               {c.zbytek && <span class="tarif-obdobi">{c.zbytek}</span>}
-              {overit(t.cena) && <span class="overujeme" title="Údaj z neoficiálního nebo staršího zdroje, ověřujeme">ověřujeme</span>}
-              {t.pozn && <p class="tarif-pozn">{t.pozn}</p>}
+              {overit(tarif.cena) && <span class="overujeme" title={t('Údaj z neoficiálního nebo staršího zdroje, ověřujeme')}>{t('ověřujeme')}</span>}
+              {tarif.pozn && <p class="tarif-pozn">{tarif.pozn}</p>}
             </li>
           );
         })}
       </ul>
-      {n.trenink && <p class="trenink"><strong>Trénink na vašich konverzacích:</strong> {n.trenink}</p>}
+      {n.trenink && <p class="trenink"><strong>{t('Trénink na vašich konverzacích:')}</strong> {n.trenink}</p>}
     </section>
   ))}
-  <p class="stav">Ceny jsou orientační, stav k {datumCesky(new Date(ceny.aktualizovano))}. Spotřebitelské tarify v Kč jsou včetně DPH, ostatní bez DPH. Rozhoduje vždy oficiální ceník.</p>
+  <p class="stav">{tf('Ceny jsou orientační, stav k {datum}. Spotřebitelské tarify v Kč jsou včetně DPH, ostatní bez DPH. Rozhoduje vždy oficiální ceník.', { datum: datumCesky(new Date(ceny.aktualizovano)) })}</p>
 </div>
 
 <style>

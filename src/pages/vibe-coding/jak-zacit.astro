@@ -3,6 +3,7 @@
 // Texty jsou v content/stranky/vibe-coding/jak-zacit.md (kroky = oddíly „## 1. …“), grafika stejná jako u stránky Projekty.
 import { getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { t, tf, LOCALE } from '../../lib/jazyk';
 import Crumbs from '../../components/Crumbs.astro';
 import { rozdel, naOddily } from '../../lib/komponenty';
 import { url } from '../../lib/url';
@@ -35,28 +36,28 @@ const zasek = najdi(/zasekn/i);
 const tipy = polozky(htmlOddilu(zasek));
 
 
-const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString(LOCALE, { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
 ---
 <Base title={d.title} description={d.popis ?? undefined}>
   <div class="band band--white">
     <div class="wrap hero">
       <div class="page-head">
         <div class="zahlavi">
-          <Crumbs items={[{ title: 'Vibe Coding' }, { title: d.title }]} />
-          {datum && <span class="draft">Aktualizováno {datum}</span>}
+          <Crumbs items={[{ title: t('Vibe Coding') }, { title: d.title }]} />
+          {datum && <span class="draft">{tf('Aktualizováno {datum}', { datum })}</span>}
         </div>
         <h1>{d.title}</h1>
         <div class="lede perex" set:html={perex} />
         <div class="tlacitka">
-          {kroky[0] && <a class="btn btn--primary" href={`#${kroky[0].id}`}>Postup krok za krokem ↓</a>}
-          <a class="btn btn--outline" href={url('/vibe-coding/nastroje')}>Dostupné nástroje</a>
+          {kroky[0] && <a class="btn btn--primary" href={`#${kroky[0].id}`}>{t('Postup krok za krokem')} ↓</a>}
+          <a class="btn btn--outline" href={url('/vibe-coding/nastroje')}>{t('Dostupné nástroje')}</a>
         </div>
       </div>
     </div>
   </div>
 
   {kroky.length > 0 && (
-    <section class="band band--sky" aria-label="Postup krok za krokem">
+    <section class="band band--sky" aria-label={t('Postup krok za krokem')}>
       <div class="wrap">
         <ol class="postup">
           {kroky.map((k, i) => (

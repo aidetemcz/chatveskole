@@ -3,6 +3,7 @@
 // Texty jsou v content/stranky/o-webu/kontakt.md (oddíly podle ##), grafika stejná jako u stránky Projekty.
 import { getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { t, tf, LOCALE } from '../../lib/jazyk';
 import Crumbs from '../../components/Crumbs.astro';
 import { rozdel, naOddily } from '../../lib/komponenty';
 
@@ -31,15 +32,15 @@ const karty = oddily.filter((o) => !jeSpolek(o)).map((o) => {
 // první oddíl s tlačítkem (formulář pro dovednosti) je zvýrazněný
 const akce = karty.find((k) => k.tlacitka.length);
 if (akce) akce.akce = true;
-const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString(LOCALE, { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
 ---
 <Base title={d.title} description={d.popis ?? undefined}>
   <div class="band band--white">
     <div class="wrap hero">
       <div class="page-head">
         <div class="zahlavi">
-          <Crumbs items={[{ title: d.menu ?? 'O webu' }, { title: d.menu_titulek ?? d.title }]} />
-          {datum && <span class="draft">Aktualizováno {datum}</span>}
+          <Crumbs items={[{ title: d.menu ?? t('O webu') }, { title: d.menu_titulek ?? d.title }]} />
+          {datum && <span class="draft">{tf('Aktualizováno {datum}', { datum })}</span>}
         </div>
         <h1>{d.title}</h1>
         {uvodHtml ? <div class="lede perex" set:html={uvodHtml} /> : d.popis && <p class="lede perex">{d.popis}</p>}
@@ -47,7 +48,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
     </div>
   </div>
 
-  <section class="band band--white navazuje" aria-label="Komu napsat">
+  <section class="band band--white navazuje" aria-label={t('Komu napsat')}>
     <div class="wrap">
       <div class="oddily">
         {karty.map((k) => (

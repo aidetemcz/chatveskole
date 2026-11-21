@@ -6,26 +6,27 @@ import Crumbs from '../components/Crumbs.astro';
 import PromptCard from '../components/PromptCard.astro';
 import { url } from '../lib/url';
 import { SKUPINY_PROMPTU, PORADI_KATEGORII, KATEGORIE_ZACI, promptText, pocet, slugify } from '../lib/data';
+import { t, LOCALE } from '../lib/jazyk';
 
 // Katalog promptů. Vysvětlení, co je prompt a jak ho psát, je na /funkce/prompty (content/stranky/funkce/prompty.md).
-const TITULEK = 'Katalog promptů';
-const POPIS = 'Ověřené prompty pro vyučující, vedení škol i žáky. Zkopírujte prompt do jakéhokoli chatbota a doplňte údaje v hranatých závorkách.';
+const TITULEK = t('Katalog promptů');
+const POPIS = t('Ověřené prompty pro vyučující, vedení škol i žáky. Zkopírujte prompt do jakéhokoli chatbota a doplňte údaje v hranatých závorkách.');
 const vse = (await getCollection('prompty')).filter((p) => !p.id.startsWith('archiv-2024/'));
 
 const polozka = (p: (typeof vse)[number]) => {
   const [skupina, slug] = p.id.split('/');
   return {
     id: p.id, skupina, title: p.data.title,
-    kategorie: skupina === 'zaci' ? KATEGORIE_ZACI : (p.data.kategorie?.[0] ?? 'Ostatní'),
+    kategorie: skupina === 'zaci' ? KATEGORIE_ZACI : (p.data.kategorie?.[0] ?? t('Ostatní')),
     href: skupina === 'zaci' ? `/funkce/prompty/zaci/${slug}` : `/funkce/prompty/${slug}`,
     text: promptText(p.body ?? ''),
     skill: !!p.data.skill,
   };
 };
-const items = vse.map(polozka).sort((a, b) => a.title.localeCompare(b.title, 'cs'));
+const items = vse.map(polozka).sort((a, b) => a.title.localeCompare(b.title, LOCALE));
 const kategorie = [...new Set(items.map((i) => i.kategorie))].sort((a, b) => {
   const ia = PORADI_KATEGORII.indexOf(a), ib = PORADI_KATEGORII.indexOf(b);
-  return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib) || a.localeCompare(b, 'cs');
+  return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib) || a.localeCompare(b, LOCALE);
 });
 const views = [
   { id: 'ucel', groups: kategorie.map((k) => ({ id: slugify(k), title: k, items: items.filter((i) => i.kategorie === k) })) },
@@ -35,16 +36,16 @@ const views = [
 <Base title={TITULEK} description={POPIS}>
   <div class="band band--white" style="padding-bottom: 32px">
     <div class="wrap stack" style="gap: 32px">
-      <Crumbs items={[{ title: 'Prompty', href: '/funkce/prompty' }, { title: TITULEK }]} />
+      <Crumbs items={[{ title: t('Prompty'), href: '/funkce/prompty' }, { title: TITULEK }]} />
       <header class="page-head">
         <h1>{TITULEK}</h1>
         <p class="lede">{POPIS}</p>
       </header>
-      <div class="seg" role="group" aria-label="Řazení" data-switch="skupiny-promptu" style="align-self: flex-start">
-        <button type="button" data-target="ucel" aria-pressed="true">Řadit podle účelu</button>
-        <button type="button" data-target="komu" aria-pressed="false">Řadit podle toho, komu slouží</button>
+      <div class="seg" role="group" aria-label={t('Řazení')} data-switch="skupiny-promptu" style="align-self: flex-start">
+        <button type="button" data-target="ucel" aria-pressed="true">{t('Řadit podle účelu')}</button>
+        <button type="button" data-target="komu" aria-pressed="false">{t('Řadit podle toho, komu slouží')}</button>
       </div>
-      <p class="filtr" hidden>Zobrazujeme jen prompty <strong data-filtr-nazev></strong>. <a href={url('/prompty')}>Zobrazit všechny prompty</a></p>
+      <p class="filtr" hidden>{t('Zobrazujeme jen prompty')} <strong data-filtr-nazev></strong>. <a href={url('/prompty')}>{t('Zobrazit všechny prompty')}</a></p>
     </div>
   </div>
 
@@ -54,11 +55,11 @@ const views = [
         {v.groups.map((g, i) => (
           <section id={v.id === 'ucel' ? g.id : undefined} data-skupina={v.id === 'komu' ? g.id.replace('pro-', '') : undefined} class={`band ${i % 2 === 0 ? 'band--sky' : 'band--white'}`} aria-label={g.title}>
             <div class="wrap stack" style="gap: 28px">
-              <h2 style="font-size: 1.7rem">{g.title} <span class="count">{pocet(g.items.length, 'prompt', 'prompty', 'promptů')}</span></h2>
+              <h2 style="font-size: 1.7rem">{g.title} <span class="count">{pocet(g.items.length, t('prompt'), t('prompty'), t('promptů'))}</span></h2>
               <div class="grid-2">
                 {g.items.map((p) => <PromptCard title={p.title} href={p.href} text={p.text} id={`${v.id}-${p.id.replace('/', '-')}`} skill={p.skill} />)}
               </div>
-              {i === v.groups.length - 1 && <OdkazyKonec vSekci odkazy={[{ text: 'Jak prompt napsat nebo upravit', href: url('/funkce/prompty') }, { text: 'Katalog dovedností', href: url('/skills') }]} />}
+              {i === v.groups.length - 1 && <OdkazyKonec vSekci odkazy={[{ text: t('Jak prompt napsat nebo upravit'), href: url('/funkce/prompty') }, { text: t('Katalog dovedností'), href: url('/skills') }]} />}
             </div>
           </section>
         ))}

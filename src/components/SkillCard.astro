@@ -1,5 +1,6 @@
 ---
 import { url } from '../lib/url';
+import { t } from '../lib/jazyk';
 import { type Skill } from '../lib/data';
 interface Props { skill: Skill }
 const { skill } = Astro.props;
@@ -8,6 +9,6 @@ const { skill } = Astro.props;
   <h3><a href={url(`/skills/${skill.slug}`)}>{skill.title}</a></h3>
   <p>{skill.kratky_popis}</p>
   <div class="actions" data-pagefind-ignore>
-    <a class="linkbtn" href={url(`/skills/${skill.slug}`)}>Detail dovednosti →</a>
+    <a class="linkbtn" href={url(`/skills/${skill.slug}`)}>{t('Detail dovednosti →')}</a>
   </div>
 </article>

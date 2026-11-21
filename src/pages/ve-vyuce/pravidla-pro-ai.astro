@@ -3,6 +3,7 @@
 // Texty jsou v content/stranky/ve-vyuce/pravidla-pro-ai.md (oddíly podle ##, části podle ###), grafika stejná jako u stránky Projekty.
 import { getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { t, tf, LOCALE } from '../../lib/jazyk';
 import Crumbs from '../../components/Crumbs.astro';
 import { rozdel, naOddily } from '../../lib/komponenty';
 import { navigace } from '../../lib/data';
@@ -52,7 +53,7 @@ const workshopMinut = workshopRadky.reduce((s, r) => s + (parseInt(r.cas, 10) ||
 // časová osa: od–do v minutách
 let start = 0;
 const osa = workshopRadky.map((r) => { const od = start; start += parseInt(r.cas, 10) || 0; return { ...r, od, do: start }; });
-const hodiny = (m: number) => (m >= 90 ? `asi ${Math.round(m / 60)} ${Math.round(m / 60) < 5 ? 'hodiny' : 'hodin'} (${m} minut)` : `${m} minut`);
+const hodiny = (m: number) => (m >= 90 ? (Math.round(m / 60) < 5 ? tf('asi {h} hodiny ({m} minut)', { h: Math.round(m / 60), m }) : tf('asi {h} hodin ({m} minut)', { h: Math.round(m / 60), m })) : tf('{m} minut', { m }));
 
 // Formulace a zavádění (### v oddílu Pravidla společně se žáky): prostý text bez boxů
 const formulace = najdiBlok(seZakyBloky, /formulací/i);
@@ -72,13 +73,13 @@ const urovnePolozky = polozky(urovneHtml);
 
 // Doporučení a zákonní zástupci: dvě karty
 const dalsi = najdi(/Doporučení a zákonní zástupci/i);
-const dalsiKarty = bloky(htmlOddilu(dalsi)).map((b, i) => ({ ...b, ...odkazOdstavec(b.html), stitek: ['Doporučení NPI', 'Komunikace s rodiči'][i] ?? '' }));
+const dalsiKarty = bloky(htmlOddilu(dalsi)).map((b, i) => ({ ...b, ...odkazOdstavec(b.html), stitek: [t('Doporučení NPI'), t('Komunikace s rodiči')][i] ?? '' }));
 
 const vyzva = najdi(/Pusťte se/i);
 type Odkaz = { text: string; href: string };
 const odkazy: Odkaz[] = (Array.isArray(d.odkazy) ? d.odkazy : []).filter((o: Odkaz) => o && o.href);
 const skupina = navigace.menu.find((g) => g.items.some((i) => i.href === '/' + stranka.id));
-const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString(LOCALE, { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
 ---
 <Base title={d.title} description={d.popis ?? undefined}>
   <div class="band band--white">
@@ -86,7 +87,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
       <div class="page-head">
         <div class="zahlavi">
           <Crumbs items={[...(skupina ? [{ title: skupina.title }] : []), { title: d.title }]} />
-          {datum && <span class="draft">Aktualizováno {datum}</span>}
+          {datum && <span class="draft">{tf('Aktualizováno {datum}', { datum })}</span>}
         </div>
         <h1>{d.title}</h1>
         <div class="lede perex" set:html={perex} />
@@ -107,7 +108,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
             {lekceSrc && <img src={lekceSrc} alt={lekceAlt} loading="lazy" />}
             <div class="stack" style="gap: 14px">
               <h3>{lekce.nazev}</h3>
-              {lekceMinuty && <span class="stitek">{lekceMinuty} minut</span>}
+              {lekceMinuty && <span class="stitek">{tf('{m} minut', { m: lekceMinuty })}</span>}
               <div class="lekce-text" set:html={lekceCast.zbytek} />
               {lekceCast.odkaz && <a class="btn btn--outline btn--small" style="align-self: flex-start" href={lekceCast.odkaz.href}>{lekceCast.odkaz.text}</a>}
             </div>
@@ -131,7 +132,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
         <ol class="osa">
           {osa.map((r) => (
             <li>
-              <span class="osa-cas">{r.od}.–{r.do}. minuta</span>
+              <span class="osa-cas">{tf('{od}.–{do}. minuta', { od: r.od, do: r.do })}</span>
               <span class="osa-bod" aria-hidden="true"></span>
               <div class="osa-obsah">
                 <strong>{r.nazev}</strong>
@@ -174,7 +175,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   )}
 
   {vedeni && (postup || obsah) && (
-    <section class="band band--white" aria-label="Postup a obsah pravidel">
+    <section class="band band--white" aria-label={t('Postup a obsah pravidel')}>
       <div class="wrap stack" style="gap: 48px">
         {postup && (
           <div class="stack" style="gap: 18px">
@@ -216,7 +217,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
           {urovnePolozky.map((u, i) => (
             <li class="card">
               <div class="meridlo" aria-hidden="true">{[0, 1, 2, 3].map((j) => <span class:list={{ plne: j < i }} />)}</div>
-              <span class="uroven">Úroveň {i + 1}</span>
+              <span class="uroven">{tf('Úroveň {n}', { n: i + 1 })}</span>
               <h3>{u.nazev}</h3>
               <p set:html={u.text} />
             </li>

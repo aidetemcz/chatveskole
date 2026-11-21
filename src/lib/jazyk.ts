@@ -30,3 +30,13 @@ export const LOCALE = SK ? 'sk-SK' : 'cs-CZ';
 export function tf(text: string, promenne: Record<string, string | number>): string {
   return t(text).replace(/\{(\w+)\}/g, (cely, k) => (k in promenne ? String(promenne[k]) : cely));
 }
+
+export { SK_ZVEREJNENO } from './zverejneni.mjs';
+import { SK_ZVEREJNENO } from './zverejneni.mjs';
+/** Ukázat přepínač CZ/SK: ve slovenské verzi vždy (odkaz zpět), v české až po zveřejnění. */
+export const PREPINAC = SK || SK_ZVEREJNENO;
+const ZAKLAD = (process.env.BASE_PATH || '/').replace(/\/?$/, '/');
+/** Adresa stejné stránky v daném jazyce; cesta je bez base (např. /funkce/skills/). */
+export function urlJazyka(jazyk: Jazyk, cesta: string): string {
+  return ZAKLAD + (jazyk === 'sk' ? 'sk/' : '') + cesta.replace(/^\//, '');
+}

@@ -1,23 +1,28 @@
 ---
 import { navigace } from '../lib/data';
 import { url } from '../lib/url';
+import { t, SK, PREPINAC, urlJazyka } from '../lib/jazyk';
 const current = Astro.url.pathname.replace(import.meta.env.BASE_URL.replace(/\/$/, ''), '') || '/';
+// přepínač jazyků: stejná stránka v druhém jazyce
+const cestaBezBase = current.replace(/\/?$/, '/');
+const druhy = SK ? { href: urlJazyka('cs', cestaBezBase), kod: 'CZ', jazyk: 'cs', popis: 'Čeština' } : { href: urlJazyka('sk', cestaBezBase), kod: 'SK', jazyk: 'sk', popis: 'Slovenčina' };
 const isIn = (g: { items: { href: string }[] }) => g.items.some((i) => current.startsWith(i.href));
 ---
 <header class="site-header">
   <div class="wrap bar">
     <a class="brand" href={url('/')}>
       <img src={url('/img/logo-ai-detem.png')} alt="" width="44" height="44" />
-      <span><strong>Chatboti ve škole</strong><span>AI dětem</span></span>
+      <span><strong>{t('Chatboti ve škole')}</strong><span>{t('AI dětem')}</span></span>
     </a>
-    <a class="search-link" href={url('/hledat')} aria-label="Hledat na webu" title="Hledat">
+    <a class="search-link" href={url('/hledat')} aria-label={t('Hledat na webu')} title={t('Hledat')}>
       <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
     </a>
+    {PREPINAC && <a class="jazyk-link" href={druhy.href} hreflang={druhy.jazyk} lang={druhy.jazyk} title={druhy.popis} aria-label={druhy.popis}>{druhy.kod}</a>}
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hlavni-menu">
       <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
-      Menu
+      {t('Menu')}
     </button>
-    <nav id="hlavni-menu" class="nav" aria-label="Hlavní menu">
+    <nav id="hlavni-menu" class="nav" aria-label={t('Hlavní menu')}>
       <ul>
         {navigace.menu.map((g, i) => (
           <li class="nav-group">
@@ -66,10 +71,13 @@ const isIn = (g: { items: { href: string }[] }) => g.items.some((i) => current.s
   .search-link { order: 1; display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: var(--pill); color: var(--ink); }
   .search-link:hover { background: var(--line-soft); color: var(--ink); }
   .search-link .icon { width: 19px; height: 19px; }
+  .jazyk-link { order: 1; display: inline-grid; place-items: center; min-width: 40px; height: 40px; padding: 0 8px; border-radius: var(--pill); color: var(--ink); font-family: var(--fh); font-weight: 600; font-size: 0.9rem; text-decoration: none; border: 1px solid var(--sky); }
+  .jazyk-link:hover { background: var(--line-soft); color: var(--ink); }
   .menu-toggle { display: none; align-items: center; gap: 8px; padding: 10px 14px; border-radius: var(--pill); border: 1px solid var(--sky); background: var(--panel); font-weight: 600; }
   @media (max-width: 1020px) {
     .menu-toggle { display: inline-flex; }
     .search-link { order: 0; }
+    .jazyk-link { order: 0; }
     .nav { display: none; width: 100%; flex-direction: column; align-items: stretch; padding-bottom: 8px; }
     .nav.is-open { display: flex; }
     .nav > ul { flex-direction: column; }
