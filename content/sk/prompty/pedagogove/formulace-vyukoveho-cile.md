@@ -1,5 +1,5 @@
 ---
-title: "Formulace výukového cíle"
+title: "Formulácia vyučovacieho cieľa"
 slug: "formulace-vyukoveho-cile"
 skupina: pedagogove
 kategorie: ["Podpora formativního přístupu"]
@@ -12,46 +12,46 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený didaktik a pedagogický konzultant. Pomoz mi formulovat výukový cíl pro formativní hodnocení podle Nové taxonomie vzdělávacích cílů (Marzano a Kendall). Nepoužívej Bloomovu taxonomii ani její úrovně.
+Vystupuj ako skúsený didaktik a pedagogický konzultant. Pomôž mi sformulovať vyučovací cieľ pre formatívne hodnotenie podľa Novej taxonómie vzdelávacích cieľov (Marzano a Kendall). Nepoužívaj Bloomovu taxonómiu ani jej úrovne.
 
-Předmět: [například přírodopis]
-Ročník: [například 6. ročník ZŠ]
-Téma, tedy co se žáci učí: [například fotosyntéza]
-Popis hodiny: [například žáci porovnávají rostliny pěstované na světle a ve tmě; nebo řádek smažte]
-Výstup z RVP ZV nebo ŠVP: [vložte doslovné znění, nebo řádek smažte]
-Co mají žáci se znalostí dělat: [například vysvětlit, porovnat, vyřešit problém; nebo řádek smažte]
-Kompetence, kterou chci rozvíjet: [například kompetence k učení; nebo řádek smažte]
+Predmet: [napríklad biológia]
+Ročník: [napríklad 6. ročník ZŠ]
+Téma, teda čo sa žiaci učia: [napríklad fotosyntéza]
+Opis hodiny: [napríklad žiaci porovnávajú rastliny pestované na svetle a v tme; alebo riadok vymažte]
+Výkonový štandard zo ŠVP alebo ŠkVP: [vložte doslovné znenie, alebo riadok vymažte]
+Čo majú žiaci s poznatkom robiť: [napríklad vysvetliť, porovnať, vyriešiť problém; alebo riadok vymažte]
+Kompetencia, ktorú chcem rozvíjať: [napríklad kompetencia učiť sa; alebo riadok vymažte]
 
 Postup:
-1. Urči dimenzi znalosti: deklarativní znalosti, myšlenkové postupy, nebo psychomotorické dovednosti. Dimenzi určuje znalost, ne činnost žáka.
-2. Vyber úroveň a proces: 1 Vybavování (rozpoznání, vybavení, provedení), 2 Porozumění (integrace, symbolizace), 3 Analýza (porovnávání, třídění, analýza chyb, zobecňování, specifikace), 4 Použití znalostí (rozhodování, řešení problému, experimentování, zkoumání), 5 Metakognice (stanovení cílů, sledování průběhu, jasnosti a přesnosti), 6 Já-systém (důležitost, vlastní účinnost, emoční reakce, motivace). Když to ze zadání neplyne, zvol nejpřirozenější proces a jednou větou uveď proč.
-3. Napiš cíl: Žák + sloveso ve 3. osobě + znalost (+ nezbytná podmínka). Jedno hlavní sloveso, nejvýš 15 slov. Bez „dokáže“, „umí“, „zná“, „ví“, „rozumí“, „pochopí“. Konkrétní situace a materiál z hodiny nepatří do cíle, ale do kontextu učení.
-4. Kompetenci nevkládej do cíle jako další sloveso. Pod cíl napiš, kterou kompetenci rozvíjí a podle čeho se to v hodině pozná.
-5. Obtížnost přizpůsob věku složitostí znalosti a kontextu, ne nižší úrovní. I mladší žák může mít cíl na úrovni 5 nebo 6. Na úrovních 5 a 6 nežádej sdílení soukromých informací.
+1. Urči dimenziu poznatku: deklaratívne poznatky, myšlienkové postupy, alebo psychomotorické zručnosti. Dimenziu určuje poznatok, nie činnosť žiaka.
+2. Vyber úroveň a proces: 1 Vybavovanie (rozpoznanie, vybavenie, vykonanie), 2 Porozumenie (integrácia, symbolizácia), 3 Analýza (porovnávanie, triedenie, analýza chýb, zovšeobecňovanie, špecifikácia), 4 Použitie poznatkov (rozhodovanie, riešenie problému, experimentovanie, skúmanie), 5 Metakognícia (stanovenie cieľov, sledovanie priebehu, jasnosti a presnosti), 6 Systém ja (dôležitosť, vlastná účinnosť, emocionálna reakcia, motivácia). Keď to zo zadania nevyplýva, zvoľ najprirodzenejší proces a jednou vetou uveď prečo.
+3. Napíš cieľ: Žiak + sloveso v 3. osobe + poznatok (+ nevyhnutná podmienka). Jedno hlavné sloveso, najviac 15 slov. Bez „dokáže“, „vie“, „pozná“, „rozumie“, „pochopí“. Konkrétna situácia a materiál z hodiny nepatria do cieľa, ale do kontextu učenia.
+4. Kompetenciu nevkladaj do cieľa ako ďalšie sloveso. Pod cieľ napíš, ktorú kompetenciu rozvíja a podľa čoho sa to v hodine pozná.
+5. Náročnosť prispôsob veku zložitosťou poznatku a kontextu, nie nižšou úrovňou. Aj mladší žiak môže mať cieľ na úrovni 5 alebo 6. Na úrovniach 5 a 6 nežiadaj zdieľanie súkromných informácií.
 
-Příklad dobrého cíle: Žák vysvětlí, co rostlina při fotosyntéze potřebuje a co vytváří.
+Príklad dobrého cieľa: Žiak vysvetlí, čo rastlina pri fotosyntéze potrebuje a čo vytvára.
 
-Výstup jako krátký seznam:
-- Cíl pro vyučující
-- Cíl pro žáky: kratší, v 1. osobě („Učím se…“)
-- Úroveň / proces / dimenze
-- Kontext učení: dvě různé varianty přiměřené věku
-- Kritérium splnění: jedna věta, podle které poznám, že žák cíl splnil (pozorovatelný projev, bez procent)
-- Kompetence a podle čeho se pozná (jen pokud ji cíl rozvíjí)
+Výstup ako krátky zoznam:
+- Cieľ pre vyučujúcich
+- Cieľ pre žiakov: kratší, v 1. osobe („Učím sa…“)
+- Úroveň / proces / dimenzia
+- Kontext učenia: dve rôzne varianty primerané veku
+- Kritérium splnenia: jedna veta, podľa ktorej spoznám, že žiak cieľ splnil (pozorovateľný prejav, bez percent)
+- Kompetencia a podľa čoho sa pozná (len ak ju cieľ rozvíja)
 
-Znění výstupů z RVP si nevymýšlej. Pokud chybí předmět, ročník nebo téma, nejdřív se mě zeptej. Na konci nabídni: 1) úpravu cíle, 2) cíl na jiné úrovni, 3) kritéria hodnocení k tomuto cíli.
+Znenie výkonových štandardov zo ŠVP si nevymýšľaj. Ak chýba predmet, ročník alebo téma, najprv sa ma opýtaj. Na konci ponúkni: 1) úpravu cieľa, 2) cieľ na inej úrovni, 3) kritériá hodnotenia k tomuto cieľu.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vám pomůže napsat výukový cíl, na který jde navázat kritérii hodnocení a sebehodnocením žáků. Cíl říká, co žák se znalostí udělá, a je pozorovatelný, takže vy i žák poznáte, jestli ho dosáhl. Prompt vychází z Nové taxonomie vzdělávacích cílů (Marzano a Kendall), stejně jako metodika AI dětem k formativnímu hodnocení.
+Prompt vám pomôže napísať vyučovací cieľ, na ktorý sa dajú nadviazať kritériá hodnotenia a sebahodnotenie žiakov. Cieľ hovorí, čo žiak s poznatkom urobí, a je pozorovateľný, takže vy aj žiak spoznáte, či ho dosiahol. Prompt vychádza z Novej taxonómie vzdelávacích cieľov (Marzano a Kendall), rovnako ako metodika AI dětem k formatívnemu hodnoteniu.
 
-Dostanete cíl pro sebe i pro žáky („Učím se…“), dvě varianty kontextu učení a kritérium splnění. Když cíl rozvíjí klíčovou kompetenci, prompt ji uvede pod cílem i s tím, podle čeho se v hodině pozná.
+Dostanete cieľ pre seba aj pre žiakov („Učím sa…“), dve varianty kontextu učenia a kritérium splnenia. Keď cieľ rozvíja kľúčovú kompetenciu, prompt ju uvedie pod cieľom aj s tým, podľa čoho sa v hodine pozná.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte údaje v hranatých závorkách. Povinné jsou předmět, ročník a téma, ostatní řádky můžete smazat. Pokud máte výstup z RVP nebo ŠVP, vložte ho doslova, cíl pak bude přesnější.
+Skopírujte prompt do chatbota a doplňte údaje v hranatých zátvorkách. Povinné sú predmet, ročník a téma, ostatné riadky môžete vymazať. Ak máte výkonový štandard zo ŠVP alebo ŠkVP, vložte ho doslova, cieľ potom bude presnejší.
 
-Cíl si můžete nechat déle než jednu hodinu a obměňovat jen kontext učení. K hotovému cíli rovnou požádejte o kritéria hodnocení (chatbot vám to nabídne), nebo použijte prompt [Tvorba kritérií hodnocení](/funkce/prompty/tvorba-kriterii-hodnoceni).
+Cieľ si môžete nechať dlhšie ako jednu hodinu a obmieňať len kontext učenia. K hotovému cieľu rovno požiadajte o kritériá hodnotenia (chatbot vám to ponúkne), alebo použite prompt [Tvorba kritérií hodnotenia](/funkce/prompty/tvorba-kriterii-hodnoceni).
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Vzdělávací cíle](/skills/vzdelavaci-cile), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Vzdelávacie ciele](/skills/vzdelavaci-cile), ktorú si môžete nainštalovať do svojho chatbota.

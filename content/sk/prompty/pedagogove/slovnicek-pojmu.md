@@ -1,5 +1,5 @@
 ---
-title: "Slovníček pojmů"
+title: "Slovníček pojmov"
 slug: "slovnicek-pojmu"
 skupina: pedagogove
 kategorie: ["Tvorba materiálů do výuky"]
@@ -13,38 +13,38 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený pedagog, který umí vysvětlovat učivo dětem různého věku. Vytvoř slovníček pojmů k probíranému tématu.
+Vystupuj ako skúsený pedagóg, ktorý vie vysvetľovať učivo deťom rôzneho veku. Vytvor slovníček pojmov k preberanej téme.
 
-Předmět a téma: [například přírodopis – buňka]
-Ročník: [například 6. ročník ZŠ]
-Pojmy: [vypište pojmy, nebo napište „vyber sám 10 nejdůležitějších pojmů k tématu“]
-Pro koho hlavně: [všichni žáci / žáci s odlišným mateřským jazykem / žáci, kterým dělá potíže delší text]
-Text, ze kterého pojmy pocházejí: [vložte, nebo řádek smažte]
+Predmet a téma: [napríklad biológia – bunka]
+Ročník: [napríklad 6. ročník ZŠ]
+Pojmy: [vypíšte pojmy, alebo napíšte „vyber sám 10 najdôležitejších pojmov k téme“]
+Pre koho hlavne: [všetci žiaci / žiaci s odlišným materinským jazykom / žiaci, ktorým robí ťažkosti dlhší text]
+Text, z ktorého pojmy pochádzajú: [vložte, alebo riadok vymažte]
 
-Pravidla:
-1. Každý pojem vysvětli jednou až dvěma větami, slovy, která žáci tohoto věku znají. Vysvětlení nesmí obsahovat vysvětlovaný pojem ani jiný nevysvětlený odborný pojem.
-2. Ke každému pojmu přidej konkrétní příklad nebo přirovnání ze života dětí.
-3. Vysvětlení musí být věcně správné. Zjednodušit můžeš, zkreslit ne. Když zjednodušení něco vynechává, co se žáci naučí později, je to v pořádku, ale nesmí být v rozporu s pravdou.
-4. U žáků s odlišným mateřským jazykem: jednoduchá čeština, krátké věty, jedna informace ve větě. U podstatných jmen uveď rod (ten, ta, to).
-5. Pokud jsem vložil(a) text, vysvětluj pojmy tak, jak jsou v něm použité.
-6. Pojmy seřaď podle abecedy, nebo tak, jak na sebe navazují, pokud to dává větší smysl. Napiš, jak jsi je seřadil.
+Pravidlá:
+1. Každý pojem vysvetli jednou až dvoma vetami, slovami, ktoré žiaci tohto veku poznajú. Vysvetlenie nesmie obsahovať vysvetľovaný pojem ani iný nevysvetlený odborný pojem.
+2. Ku každému pojmu pridaj konkrétny príklad alebo prirovnanie zo života detí.
+3. Vysvetlenie musí byť vecne správne. Zjednodušiť môžeš, skresliť nie. Keď zjednodušenie niečo vynecháva, čo sa žiaci naučia neskôr, je to v poriadku, ale nesmie byť v rozpore s pravdou.
+4. Pri žiakoch s odlišným materinským jazykom: jednoduchá slovenčina, krátke vety, jedna informácia vo vete. Pri podstatných menách uveď rod (ten, tá, to).
+5. Ak som vložil(a) text, vysvetľuj pojmy tak, ako sú v ňom použité.
+6. Pojmy zoraď podľa abecedy, alebo tak, ako na seba nadväzujú, ak to dáva väčší zmysel. Napíš, ako si ich zoradil.
 
 Výstup:
-1) SLOVNÍČEK: tabulka se sloupci Pojem – Co to je – Příklad nebo přirovnání – Moje poznámka (prázdný sloupec pro žáka).
-2) CVIČENÍ (nepovinné): stejné pojmy bez vysvětlení, aby si je žáci mohli doplnit sami, nebo spojovačka pojem – vysvětlení.
-3) Kde si nejsi jistý fakty, napiš mi to.
+1) SLOVNÍČEK: tabuľka so stĺpcami Pojem – Čo to je – Príklad alebo prirovnanie – Moja poznámka (prázdny stĺpec pre žiaka).
+2) CVIČENIE (nepovinné): rovnaké pojmy bez vysvetlenia, aby si ich žiaci mohli doplniť sami, alebo spájačka pojem – vysvetlenie.
+3) Kde si nie si istý faktami, napíš mi to.
 
-Když chybí předmět, ročník nebo téma, nejdřív se mě zeptej.
+Keď chýba predmet, ročník alebo téma, najprv sa ma opýtaj.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vytvoří slovníček pojmů k probíranému tématu. Každý pojem vysvětlí jednou až dvěma větami, slovy, kterým žáci rozumějí, a přidá příklad nebo přirovnání. Vysvětlení nikdy nepoužívá jiný nevysvětlený odborný pojem.
+Prompt vytvorí slovníček pojmov k preberanej téme. Každý pojem vysvetlí jednou až dvoma vetami, slovami, ktorým žiaci rozumejú, a pridá príklad alebo prirovnanie. Vysvetlenie nikdy nepoužíva iný nevysvetlený odborný pojem.
 
-Slovníček dostanete jako tabulku se sloupcem na vlastní poznámky žáka. Na přání i jako cvičení, ve kterém si žáci vysvětlení doplní sami. Hodí se i pro žáky s odlišným mateřským jazykem, pro ně prompt píše jednoduchou češtinou.
+Slovníček dostanete ako tabuľku so stĺpcom na vlastné poznámky žiaka. Na požiadanie aj ako cvičenie, v ktorom si žiaci vysvetlenie doplnia sami. Hodí sa aj pre žiakov s odlišným materinským jazykom, pre nich prompt píše jednoduchou slovenčinou.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte předmět, ročník, téma a pojmy. Pokud pojmy pocházejí z konkrétního textu, vložte ho, vysvětlení pak budou odpovídat tomu, jak jsou v textu použité. Slovníček můžete vytisknout, promítnout nebo dát žákům do sešitu či portfolia.
+Skopírujte prompt do chatbota a doplňte predmet, ročník, tému a pojmy. Ak pojmy pochádzajú z konkrétneho textu, vložte ho, vysvetlenia potom budú zodpovedať tomu, ako sú v texte použité. Slovníček môžete vytlačiť, premietnuť alebo dať žiakom do zošita či portfólia.
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Pracovné listy](/skills/pracovni-listy), ktorú si môžete nainštalovať do svojho chatbota.

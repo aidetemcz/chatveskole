@@ -1,5 +1,5 @@
 ---
-title: "Pracovní list s otevřenými otázkami"
+title: "Pracovný list s otvorenými otázkami"
 slug: "pracovni-list-s-otevrenymi-otazkami"
 skupina: pedagogove
 kategorie: ["Tvorba materiálů do výuky"]
@@ -12,37 +12,37 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený pedagog se zaměřením na čtenářskou gramotnost a kritické myšlení. Vytvoř pracovní list s otevřenými otázkami k textu.
+Vystupuj ako skúsený pedagóg so zameraním na čitateľskú gramotnosť a kritické myslenie. Vytvor pracovný list s otvorenými otázkami k textu.
 
-Předmět a téma: [například český jazyk – pověst o Libuši]
-Ročník: [například 6. ročník ZŠ]
-Cíl: [například žák vyvodí z textu, proč se postavy rozhodly, a svůj názor zdůvodní]
-Počet otázek: [například 6]
-Text: [vložte text nebo soubor]
+Predmet a téma: [napríklad slovenský jazyk a literatúra – povesť o Jánošíkovi]
+Ročník: [napríklad 6. ročník ZŠ]
+Cieľ: [napríklad žiak vyvodí z textu, prečo sa postavy rozhodli, a svoj názor zdôvodní]
+Počet otázok: [napríklad 6]
+Text: [vložte text alebo súbor]
 
-Pravidla:
-1. Otázky řaď od nejjednodušší po nejnáročnější: vyhledání informace v textu → vysvětlení vlastními slovy → vyvození závěru nebo souvislosti → porovnání nebo posouzení → vlastní názor se zdůvodněním a přenos do jiné situace.
-2. Každá otázka musí jít zodpovědět z textu nebo z vlastního zdůvodněného názoru. Bez otázek, na které stačí ano/ne; když je potřebuješ, přidej „Proč?“.
-3. U otázek na názor chtěj zdůvodnění opřené o text. Nežádej po žácích sdílení soukromých nebo citlivých zážitků.
-4. Jazyk otázek přiměřený věku, krátké a jednoznačné zadání.
-5. Pod každou otázkou nech místo na odpověď (3–5 řádků __________).
+Pravidlá:
+1. Otázky raď od najjednoduchšej po najnáročnejšiu: vyhľadanie informácie v texte → vysvetlenie vlastnými slovami → vyvodenie záveru alebo súvislosti → porovnanie alebo posúdenie → vlastný názor so zdôvodnením a prenos do inej situácie.
+2. Každá otázka sa musí dať zodpovedať z textu alebo z vlastného zdôvodneného názoru. Bez otázok, na ktoré stačí áno/nie; keď ich potrebuješ, pridaj „Prečo?“.
+3. Pri otázkach na názor chci zdôvodnenie opreté o text. Nežiadaj od žiakov zdieľanie súkromných alebo citlivých zážitkov.
+4. Jazyk otázok primeraný veku, krátke a jednoznačné zadanie.
+5. Pod každou otázkou nechaj miesto na odpoveď (3 – 5 riadkov __________).
 
-Výstup ve třech částech:
-1) PRO ŽÁKY: název, řádek „Jméno: __________“, krátká instrukce a otázky. Text dej nad otázky jen tehdy, pokud ho žáci nemají zvlášť.
-2) PRO VYUČUJÍCÍ: u každé otázky body, které má dobrá odpověď obsahovat (ne jediná správná formulace), a co otázka ověřuje.
-3) POZNÁMKA PRO VYUČUJÍCÍ: 2–3 věty, jak list použít (samostatně, ve dvojicích, jako podklad pro diskusi) a jak ho upravit pro žáky, kterým čtení dělá potíže.
+Výstup v troch častiach:
+1) PRE ŽIAKOV: názov, riadok „Meno: __________“, krátka inštrukcia a otázky. Text daj nad otázky len vtedy, ak ho žiaci nemajú zvlášť.
+2) PRE VYUČUJÚCICH: pri každej otázke body, ktoré má dobrá odpoveď obsahovať (nie jediná správna formulácia), a čo otázka overuje.
+3) POZNÁMKA PRE VYUČUJÚCICH: 2 – 3 vety, ako list použiť (samostatne, vo dvojiciach, ako podklad na diskusiu) a ako ho upraviť pre žiakov, ktorým čítanie robí ťažkosti.
 
-Když chybí text, ročník nebo předmět, nejdřív se mě zeptej.
+Keď chýba text, ročník alebo predmet, najprv sa ma opýtaj.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vytvoří k textu pracovní list s otevřenými otázkami. Otázky jdou od vyhledání informace přes vysvětlení vlastními slovy a vyvození závěru až po zdůvodněný názor a přenos do jiné situace. Žáci tak text nejen přečtou, ale přemýšlejí o něm.
+Prompt vytvorí k textu pracovný list s otvorenými otázkami. Otázky idú od vyhľadania informácie cez vysvetlenie vlastnými slovami a vyvodenie záveru až po zdôvodnený názor a prenos do inej situácie. Žiaci tak text nielen prečítajú, ale premýšľajú o ňom.
 
-Pro sebe dostanete ke každé otázce body, které má dobrá odpověď obsahovat, a tip, jak list upravit pro žáky, kterým čtení dělá potíže.
+Pre seba dostanete ku každej otázke body, ktoré má dobrá odpoveď obsahovať, a tip, ako list upraviť pre žiakov, ktorým čítanie robí ťažkosti.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota, vložte text (nebo soubor) a doplňte předmět, ročník, cíl a počet otázek. List můžete použít pro samostatnou práci, práci ve dvojicích nebo jako podklad pro diskusi ve třídě.
+Skopírujte prompt do chatbota, vložte text (alebo súbor) a doplňte predmet, ročník, cieľ a počet otázok. List môžete použiť na samostatnú prácu, prácu vo dvojiciach alebo ako podklad na diskusiu v triede.
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Pracovné listy](/skills/pracovni-listy), ktorú si môžete nainštalovať do svojho chatbota.

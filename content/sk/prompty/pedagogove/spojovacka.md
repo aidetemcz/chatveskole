@@ -1,5 +1,5 @@
 ---
-title: "Spojovačka"
+title: "Spájačka"
 slug: "spojovacka"
 skupina: pedagogove
 kategorie: ["Tvorba materiálů do výuky"]
@@ -12,40 +12,40 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený pedagog a tvůrce výukových materiálů. Vytvoř pracovní list se spojovačkou.
+Vystupuj ako skúsený pedagóg a tvorca vyučovacích materiálov. Vytvor pracovný list so spájačkou.
 
-Předmět a téma: [například angličtina – jídlo]
-Ročník: [například 5. ročník ZŠ]
-Co se spojuje: [například slovíčko – překlad / pojem – vysvětlení / příčina – následek / osobnost – dílo]
-Jazyky: [například angličtina a čeština; u jiných předmětů řádek smažte]
-Úroveň jazyka: [například A1; nebo řádek smažte]
-Počet dvojic: [například 10]
-Obtížnost: [základní / s 1–2 položkami navíc v pravém sloupci]
+Predmet a téma: [napríklad angličtina – jedlo]
+Ročník: [napríklad 5. ročník ZŠ]
+Čo sa spája: [napríklad slovíčko – preklad / pojem – vysvetlenie / príčina – následok / osobnosť – dielo]
+Jazyky: [napríklad angličtina a slovenčina; pri iných predmetoch riadok vymažte]
+Úroveň jazyka: [napríklad A1; alebo riadok vymažte]
+Počet dvojíc: [napríklad 10]
+Náročnosť: [základná / s 1 – 2 položkami navyše v pravom stĺpci]
 
-Pravidla:
-1. Spojovačku dej do tabulky o dvou sloupcích: vlevo čísla 1, 2, 3…, vpravo písmena A, B, C…
-2. Dvojice, které k sobě patří, nikdy nejsou na stejném řádku a pořadí v pravém sloupci je náhodně promíchané.
-3. Každá položka vlevo musí mít právě jednu správnou dvojici vpravo. Vyhni se položkám, které by šly spojit víc způsoby.
-4. Slova a pojmy přiměřené ročníku a úrovni. U cizího jazyka používej slova a fráze tak, jak je rodilí mluvčí opravdu používají, a překlad, který odpovídá běžnému významu.
-5. Pokud má pravý sloupec položky navíc, upozorni na to žáky v instrukci.
-6. Překlady, definice a fakta si ověř. Kde si nejsi jistý, napiš mi to.
+Pravidlá:
+1. Spájačku daj do tabuľky s dvoma stĺpcami: vľavo čísla 1, 2, 3…, vpravo písmená A, B, C…
+2. Dvojice, ktoré k sebe patria, nikdy nie sú v rovnakom riadku a poradie v pravom stĺpci je náhodne premiešané.
+3. Každá položka vľavo musí mať práve jednu správnu dvojicu vpravo. Vyhni sa položkám, ktoré by sa dali spojiť viacerými spôsobmi.
+4. Slová a pojmy primerané ročníku a úrovni. Pri cudzom jazyku používaj slová a frázy tak, ako ich rodení hovoriaci naozaj používajú, a preklad, ktorý zodpovedá bežnému významu.
+5. Ak má pravý stĺpec položky navyše, upozorni na to žiakov v inštrukcii.
+6. Preklady, definície a fakty si over. Kde si nie si istý, napíš mi to.
 
-Výstup ve třech částech:
-1) PRO ŽÁKY: název, řádek „Jméno: __________“, instrukce v jedné větě a tabulka.
-2) ŘEŠENÍ: ve tvaru 1 – C, 2 – A…
-3) POZNÁMKA PRO VYUČUJÍCÍ: 2–3 věty, jak spojovačku použít (rozcvička, opakování, ve dvojicích) a jak ji ztížit nebo usnadnit.
+Výstup v troch častiach:
+1) PRE ŽIAKOV: názov, riadok „Meno: __________“, inštrukcia v jednej vete a tabuľka.
+2) RIEŠENIE: v tvare 1 – C, 2 – A…
+3) POZNÁMKA PRE VYUČUJÚCICH: 2 – 3 vety, ako spájačku použiť (rozcvička, opakovanie, vo dvojiciach) a ako ju sťažiť alebo uľahčiť.
 
-Když chybí téma nebo ročník, nejdřív se mě zeptej. Na konci nabídni kartičky ke stříhání nebo verzi pro online kvíz.
+Keď chýba téma alebo ročník, najprv sa ma opýtaj. Na konci ponúkni kartičky na strihanie alebo verziu pre online kvíz.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vytvoří pracovní list se spojovačkou. Nemusí jít jen o slovíčka a překlady, spojovat se dají i pojmy a vysvětlení, příčiny a následky nebo osobnosti a jejich díla. Dvojice nikdy nejsou na stejném řádku a každá položka má právě jednu správnou dvojici.
+Prompt vytvorí pracovný list so spájačkou. Nemusí ísť len o slovíčka a preklady, spájať sa dajú aj pojmy a vysvetlenia, príčiny a následky alebo osobnosti a ich diela. Dvojice nikdy nie sú v rovnakom riadku a každá položka má práve jednu správnu dvojicu.
 
-Dostanete list pro žáky, řešení zvlášť a tip, jak spojovačku ztížit nebo usnadnit. Na přání i kartičky ke stříhání.
+Dostanete list pre žiakov, riešenie zvlášť a tip, ako spájačku sťažiť alebo uľahčiť. Na požiadanie aj kartičky na strihanie.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte předmět, téma, ročník, co se má spojovat a počet dvojic. U cizího jazyka doplňte i jazyky a úroveň, u jiných předmětů tyto řádky smažte. Překlady a fakta před tiskem zkontrolujte.
+Skopírujte prompt do chatbota a doplňte predmet, tému, ročník, čo sa má spájať a počet dvojíc. Pri cudzom jazyku doplňte aj jazyky a úroveň, pri iných predmetoch tieto riadky vymažte. Preklady a fakty pred tlačou skontrolujte.
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Pracovné listy](/skills/pracovni-listy), ktorú si môžete nainštalovať do svojho chatbota.

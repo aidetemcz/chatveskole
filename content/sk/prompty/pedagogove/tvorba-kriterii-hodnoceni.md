@@ -1,5 +1,5 @@
 ---
-title: "Tvorba kritérií hodnocení"
+title: "Tvorba kritérií hodnotenia"
 slug: "tvorba-kriterii-hodnoceni"
 skupina: pedagogove
 kategorie: ["Podpora formativního přístupu"]
@@ -12,39 +12,39 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený pedagog se zaměřením na formativní hodnocení. Z mého výukového cíle vytvoř kritéria hodnocení. Vycházej z Nové taxonomie vzdělávacích cílů (Marzano a Kendall): cíl říká, co žák se znalostí udělá, laťku kvality nesou až kritéria.
+Vystupuj ako skúsený pedagóg so zameraním na formatívne hodnotenie. Z môjho vyučovacieho cieľa vytvor kritériá hodnotenia. Vychádzaj z Novej taxonómie vzdelávacích cieľov (Marzano a Kendall): cieľ hovorí, čo žiak s poznatkom urobí, latku kvality nesú až kritériá.
 
-Výukový cíl: [například Žák porovná přírodní podmínky dvou oblastí Afriky podle jejich vlivu na život lidí.]
-Ročník: [například 7. ročník ZŠ]
-Předmět: [například zeměpis]
+Vyučovací cieľ: [napríklad Žiak porovná prírodné podmienky dvoch oblastí Afriky podľa ich vplyvu na život ľudí.]
+Ročník: [napríklad 7. ročník ZŠ]
+Predmet: [napríklad geografia]
 Počet kritérií: [3]
-Žáci se SVP: [stačí popis potřeby, například obtíže s psaním; nebo řádek smažte]
+Žiaci so ŠVVP: [stačí opis potreby, napríklad ťažkosti s písaním; alebo riadok vymažte]
 
 Postup:
-1. Urči úroveň cíle (1 vybavování, 2 porozumění, 3 analýza, 4 použití znalostí, 5 metakognice, 6 já-systém), proces (například porovnávání, analýza chyb, rozhodování) a dimenzi (deklarativní znalosti, myšlenkové postupy, psychomotorické dovednosti). Vyjdi z nejnižší úrovně, kterou formulace připouští, a napiš to jedním řádkem, ať to můžu opravit.
-2. Když cíl není pozorovatelný („žáci pochopí…“) nebo spojuje víc procesů, upozorni na to a navrhni zpřesnění nebo rozdělení.
-3. Kritéria společně ověřují celý cíl a drží se jeho procesu. Nepřidávej činnosti z jiných úrovní (u porovnávání nechtěj vlastní návrh řešení). Na úrovních 1–2 hodnoť správnost a přesnost, na 3–4 i kvalitu úvahy, na 5–6 kvalitu sebereflexe, nikdy emoce ani motivaci.
-4. Laťku kvality napiš konkrétně („podle podstatných znaků“, „vlastními slovy“, „alespoň dva důvody“), bez procent. Kritérium nesmí předpokládat neúspěch.
-5. Každé kritérium napiš dvakrát. Pro vyučující: ve 3. osobě („Žák porovná…“), se stejnými pojmy jako v cíli. Pro žáky: v 1. osobě („Porovnám…“), slovy, kterým žák tohoto věku rozumí. Nepoužívej „umím“, „znám“, „rozumím“. Hodnoť výkon, ne osobnost: u spolupráce popiš pozorovatelný projev.
-6. Pro každou uvedenou potřebu SVP přidej upravenou verzi pro žáka: podstata zůstává, mění se způsob, jakým výkon ukáže, opora nebo rozsah. Ke každé úpravě napiš jednou větou proč. Diagnózu nepotřebuješ.
+1. Urči úroveň cieľa (1 vybavovanie, 2 porozumenie, 3 analýza, 4 použitie poznatkov, 5 metakognícia, 6 systém ja), proces (napríklad porovnávanie, analýza chýb, rozhodovanie) a dimenziu (deklaratívne poznatky, myšlienkové postupy, psychomotorické zručnosti). Vychádzaj z najnižšej úrovne, ktorú formulácia pripúšťa, a napíš to jedným riadkom, aby som to mohol (mohla) opraviť.
+2. Keď cieľ nie je pozorovateľný („žiaci pochopia…“) alebo spája viac procesov, upozorni na to a navrhni spresnenie alebo rozdelenie.
+3. Kritériá spoločne overujú celý cieľ a držia sa jeho procesu. Nepridávaj činnosti z iných úrovní (pri porovnávaní nechci vlastný návrh riešenia). Na úrovniach 1 – 2 hodnoť správnosť a presnosť, na 3 – 4 aj kvalitu úvahy, na 5 – 6 kvalitu sebareflexie, nikdy emócie ani motiváciu.
+4. Latku kvality napíš konkrétne („podľa podstatných znakov“, „vlastnými slovami“, „aspoň dva dôvody“), bez percent. Kritérium nesmie predpokladať neúspech.
+5. Každé kritérium napíš dvakrát. Pre vyučujúcich: v 3. osobe („Žiak porovná…“), s rovnakými pojmami ako v cieli. Pre žiakov: v 1. osobe („Porovnám…“), slovami, ktorým žiak tohto veku rozumie. Nepoužívaj „viem“, „poznám“, „rozumiem“. Hodnoť výkon, nie osobnosť: pri spolupráci opíš pozorovateľný prejav.
+6. Pre každú uvedenú potrebu ŠVVP pridaj upravenú verziu pre žiaka: podstata zostáva, mení sa spôsob, akým výkon ukáže, opora alebo rozsah. Ku každej úprave napíš jednou vetou prečo. Diagnózu nepotrebuješ.
 
-Příklad kritéria:
-Pro vyučující: Žák porovná obě oblasti podle podnebí, vodstva a vegetace a přesně popíše podobnosti i rozdíly.
-Pro žáky: Porovnám obě oblasti podle počasí, vody a rostlin a řeknu, v čem se podobají a v čem se liší.
+Príklad kritéria:
+Pre vyučujúcich: Žiak porovná obe oblasti podľa podnebia, vodstva a vegetácie a presne opíše podobnosti aj rozdiely.
+Pre žiakov: Porovnám obe oblasti podľa počasia, vody a rastlín a poviem, v čom sa podobajú a v čom sa líšia.
 
-Nad kritéria napiš cíl s úrovní, procesem a dimenzí. Pokud některý údaj chybí, nejdřív se mě zeptej. Jména žáků nepotřebuješ. Na konci nabídni: 1) úpravu kritérií, 2) variantu pro žáka se SVP, 3) gradaci na škále J–Č–T–Ú pro sebehodnocení žáků.
+Nad kritériá napíš cieľ s úrovňou, procesom a dimenziou. Ak niektorý údaj chýba, najprv sa ma opýtaj. Mená žiakov nepotrebuješ. Na konci ponúkni: 1) úpravu kritérií, 2) variant pre žiaka so ŠVVP, 3) gradáciu na škále J–Č–T–Ú na sebahodnotenie žiakov.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt z vašeho výukového cíle vytvoří kritéria hodnocení: podle čeho vy i žáci poznáte, že žák cíl splnil. Každé kritérium dostanete ve dvou verzích, odbornou pro vás a srozumitelnou pro žáky v 1. osobě („Porovnám…“, „Vysvětlím…“). Žáci pak vědí, co se od nich čeká, a mohou se sami posoudit.
+Prompt z vášho vyučovacieho cieľa vytvorí kritériá hodnotenia: podľa čoho vy aj žiaci spoznáte, že žiak cieľ splnil. Každé kritérium dostanete v dvoch verziách, odbornú pre vás a zrozumiteľnú pre žiakov v 1. osobe („Porovnám…“, „Vysvetlím…“). Žiaci potom vedia, čo sa od nich očakáva, a môžu sa sami posúdiť.
 
-Kritéria se drží toho, co cíl opravdu žádá, a konkrétně říkají, v jaké kvalitě. Pokud uvedete žáky se speciálními vzdělávacími potřebami, prompt pro ně přidá upravenou verzi, která zachová podstatu kritéria a změní jen cestu.
+Kritériá sa držia toho, čo cieľ naozaj žiada, a konkrétne hovoria, v akej kvalite. Ak uvediete žiakov so špeciálnymi výchovno-vzdelávacími potrebami, prompt pre nich pridá upravenú verziu, ktorá zachová podstatu kritéria a zmení len cestu.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte výukový cíl, ročník a předmět. Cíl si můžete připravit promptem [Formulace výukového cíle](/funkce/prompty/formulace-vyukoveho-cile). U žáků se SVP stačí popsat potřebu, jména ani diagnózy nepište.
+Skopírujte prompt do chatbota a doplňte vyučovací cieľ, ročník a predmet. Cieľ si môžete pripraviť promptom [Formulácia vyučovacieho cieľa](/funkce/prompty/formulace-vyukoveho-cile). Pri žiakoch so ŠVVP stačí opísať potrebu, mená ani diagnózy nepíšte.
 
-Kritéria ukažte žákům na začátku práce, ne až při hodnocení. Rozepsat je do úrovní pro sebehodnocení vám pomůže prompt [Sebehodnocení pro žáky](/funkce/prompty/sebehodnoceni-pro-zaky).
+Kritériá ukážte žiakom na začiatku práce, nie až pri hodnotení. Rozpísať ich do úrovní na sebahodnotenie vám pomôže prompt [Sebahodnotenie pre žiakov](/funkce/prompty/sebehodnoceni-pro-zaky).
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Kritéria hodnocení](/skills/kriteria-hodnoceni), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Kritériá hodnotenia](/skills/kriteria-hodnoceni), ktorú si môžete nainštalovať do svojho chatbota.

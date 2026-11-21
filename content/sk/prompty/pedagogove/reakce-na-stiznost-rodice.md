@@ -1,5 +1,5 @@
 ---
-title: "Reakce na stížnost zákonného zástupce"
+title: "Reakcia na sťažnosť zákonného zástupcu"
 slug: "reakce-na-stiznost-rodice"
 skupina: pedagogove
 kategorie: ["Komunikace s rodiči"]
@@ -12,41 +12,41 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený třídní vyučující, který řeší problémy s respektem a porozuměním a bere zákonného zástupce jako partnera. Pomoz mi odpovědět na stížnost zákonného zástupce.
+Vystupuj ako skúsený triedny vyučujúci, ktorý rieši problémy s rešpektom a porozumením a berie zákonného zástupcu ako partnera. Pomôž mi odpovedať na sťažnosť zákonného zástupcu.
 
-Zpráva od zákonného zástupce: [vložte text; jména nahraďte iniciálami]
-Můj pohled na situaci: [popište, co se stalo, konkrétně a bez hodnocení dítěte, například během posledního měsíce třikrát nepřinesla domácí úkol a v hodině často nedokončí práci]
-Co už jsem udělal(a): [například mluvila jsem s žákyní po hodině; nebo řádek smažte]
-Čeho chci dosáhnout: [například vysvětlit situaci a nabídnout schůzku / zdvořile odmítnout požadavek a vysvětlit proč]
-Kanál: [e-mail / zpráva do Bakalářů nebo EduPage]
+Správa od zákonného zástupcu: [vložte text; mená nahraďte iniciálami]
+Môj pohľad na situáciu: [opíšte, čo sa stalo, konkrétne a bez hodnotenia dieťaťa, napríklad počas posledného mesiaca trikrát nepriniesla domácu úlohu a na hodine často nedokončí prácu]
+Čo som už urobil(a): [napríklad hovorila som so žiačkou po hodine; alebo riadok vymažte]
+Čo chcem dosiahnuť: [napríklad vysvetliť situáciu a ponúknuť stretnutie / zdvorilo odmietnuť požiadavku a vysvetliť prečo]
+Kanál: [e-mail / správa do EduPage alebo iného školského systému]
 
-Odpověď postav takto:
-1. Poděkuj za zprávu a vyjádři pochopení pro obavy zákonného zástupce.
-2. Stručně a věcně vysvětli situaci z pohledu školy. Popisuj chování a práci, ne osobnost dítěte.
-3. Pokud je stížnost v něčem oprávněná, přiznej to a napiš, co s tím uděláme.
-4. Navrhni další krok nebo osobní setkání (termíny označ [doplním]).
-5. Zakonči partnersky: jde nám o společné dobro dítěte.
+Odpoveď postav takto:
+1. Poďakuj za správu a vyjadri pochopenie pre obavy zákonného zástupcu.
+2. Stručne a vecne vysvetli situáciu z pohľadu školy. Opisuj správanie a prácu, nie osobnosť dieťaťa.
+3. Ak je sťažnosť v niečom oprávnená, priznaj to a napíš, čo s tým urobíme.
+4. Navrhni ďalší krok alebo osobné stretnutie (termíny označ [doplním]).
+5. Zakonči partnersky: ide nám o spoločné dobro dieťaťa.
 
-Pravidla:
-- Bez obhajování, ironie, moralizování a výčtu prohřešků dítěte.
-- Neslibuj nic, co nemůžu splnit, a nepřiznávej vinu, kterou nevidím.
-- Nejvýš 150 slov. Píšu jako [jméno vyučujícího].
-- Když stížnost míří na kolegu nebo vedení, nebo může skončit právním sporem, upozorni mě, že je dobré ji předat řediteli.
-- Když z popisu plyne podezření na šikanu nebo ohrožení dítěte, nepiš odpověď a navrhni mi postup (koho ve škole zapojit jako prvního).
+Pravidlá:
+- Bez obhajovania, irónie, moralizovania a vymenúvania prehreškov dieťaťa.
+- Nesľubuj nič, čo nemôžem splniť, a nepriznávaj vinu, ktorú nevidím.
+- Najviac 150 slov. Píšem ako [meno vyučujúceho].
+- Keď sťažnosť mieri na kolegu alebo vedenie, alebo môže skončiť právnym sporom, upozorni ma, že je dobré odovzdať ju riaditeľovi.
+- Keď z opisu vyplýva podozrenie na šikanovanie alebo ohrozenie dieťaťa, nepíš odpoveď a navrhni mi postup (koho v škole zapojiť ako prvého).
 
-Pod odpověď mi zvlášť napiš 2–3 věci, které si mám před odesláním ověřit. Pak nabídni úpravu tónu nebo délky.
+Pod odpoveď mi zvlášť napíš 2 – 3 veci, ktoré si mám pred odoslaním overiť. Potom ponúkni úpravu tónu alebo dĺžky.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vám pomůže napsat klidnou, věcnou a vstřícnou odpověď na stížnost zákonného zástupce. Odpověď uzná obavy zákonného zástupce, vysvětlí situaci z pohledu školy, nabídne další krok a nic neslibuje naprázdno. Popisuje chování a práci dítěte, ne jeho osobnost.
+Prompt vám pomôže napísať pokojnú, vecnú a ústretovú odpoveď na sťažnosť zákonného zástupcu. Odpoveď uzná obavy zákonného zástupcu, vysvetlí situáciu z pohľadu školy, ponúkne ďalší krok a nič nesľubuje naprázdno. Opisuje správanie a prácu dieťaťa, nie jeho osobnosť.
 
-Když stížnost míří na kolegu nebo vedení, chatbot doporučí předat ji řediteli. Při podezření na šikanu nebo ohrožení dítěte místo odpovědi navrhne, koho ve škole zapojit.
+Keď sťažnosť mieri na kolegu alebo vedenie, chatbot odporučí odovzdať ju riaditeľovi. Pri podozrení na šikanovanie alebo ohrozenie dieťaťa namiesto odpovede navrhne, koho v škole zapojiť.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota, vložte zprávu od zákonného zástupce a popište svůj pohled na situaci. Jména žáků nahraďte iniciálami. Svůj pohled pište konkrétně: co se stalo a kdy, ne jaké dítě je.
+Skopírujte prompt do chatbota, vložte správu od zákonného zástupcu a opíšte svoj pohľad na situáciu. Mená žiakov nahraďte iniciálami. Svoj pohľad píšte konkrétne: čo sa stalo a kedy, nie aké je dieťa.
 
-Odpověď si před odesláním přečtěte a případně ji nechte přečíst kolegovi nebo vedení. Pokud je situace vyhrocená, často pomůže nejdřív zavolat nebo nabídnout schůzku a e-mail použít jen jako potvrzení.
+Odpoveď si pred odoslaním prečítajte a prípadne ju dajte prečítať kolegovi alebo vedeniu. Ak je situácia vyhrotená, často pomôže najprv zavolať alebo ponúknuť stretnutie a e-mail použiť len ako potvrdenie.
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Komunikácia so zákonnými zástupcami](/skills/komunikace-s-rodici), ktorú si môžete nainštalovať do svojho chatbota.
