@@ -32,12 +32,12 @@ const skill = prompt.data.skill ? skillBySlug(prompt.data.skill) : undefined;
   </div>
   <div class="wrap layout">
     <article class="main">
-      {archiv && <p class="note note--info">Starší prompt z roku 2024. Zatím není v katalogu — procházíme, které staré prompty zůstanou.</p>}
+      {archiv && <p class="note note--info">Toto je starý prompt, který jsme z katalogu vyřadili. Prohlédněte si novější <a href={url('/prompty')}>prompty</a> nebo <a href={url('/skills')}>dovednosti</a>.</p>}
       <div class="prose"><Content /></div>
       <div style="margin-top: 10px"><OdkazyKonec odkazy={[{ text: 'Katalog promptů', href: url('/prompty') }, ...(skill ? [{ text: `Dovednost ${skill.title}`, href: url(`/skills/${skill.slug}`) }] : []), { text: 'Jak psát prompty', href: url('/funkce/prompty') }]} /></div>
     </article>
     <aside class="side">
-      {skill && (
+      {skill && !archiv && (
         <div class="skillbox">
           <p class="skillbox-text">Používáte prompt často? Nainstalujte si dovednost.</p>
           <a class="more" href={url(`/skills/${skill.slug}`)}>Dovednost {skill.title} →</a>
