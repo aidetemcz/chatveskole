@@ -13,6 +13,8 @@ zdroje:
 
 Konektor napojí chatbota na jinou aplikaci — Google Disk, Gmail, kalendář, Microsoft 365, Notion a další. Chatbot pak může s vaším svolením hledat ve vašich dokumentech, číst e-maily nebo zakládat události v kalendáři.
 
+## Jak fungují konektory
+
 <!-- komponenta: infografika konektoru (src/components/data/InfografikaKonektor.astro) -->
 
 ## K čemu je to ve škole dobré
