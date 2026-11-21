@@ -1,7 +1,21 @@
 ---
+// Drobečková navigace + strukturovaná data BreadcrumbList pro Google (schema.org).
+// Položky bez odkazu (rubriky menu) se do strukturovaných dat nedávají, poslední položka je aktuální stránka.
 import { url } from '../lib/url';
 interface Props { items: { title: string; href?: string }[] }
 const { items } = Astro.props;
+const abs = (h: string) => new URL(url(h).replace(/^([^#?]*?)\/?(#|\?|$)/, '$1/$2'), Astro.site).href;
+const tady = new URL(Astro.url.pathname.replace(/\/?$/, '/'), Astro.site).href;
+const cesta = [
+  { name: 'Domů', item: abs('/') },
+  ...items.slice(0, -1).filter((it) => it.href).map((it) => ({ name: it.title, item: abs(it.href!) })),
+  ...(items.length ? [{ name: items[items.length - 1].title, item: tady }] : []),
+];
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: cesta.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: c.item })),
+});
 ---
 <nav class="crumbs" aria-label="Drobečková navigace" data-pagefind-ignore>
   <a href={url('/')}>Domů</a>
@@ -12,3 +26,4 @@ const { items } = Astro.props;
     </>
   ))}
 </nav>
+<script type="application/ld+json" set:html={jsonLd} />
