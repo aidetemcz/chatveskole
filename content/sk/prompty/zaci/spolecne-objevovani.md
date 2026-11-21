@@ -5,7 +5,7 @@ zpusob: Společné objevování
 pro_koho: zaci
 vek: "13+ s ohľadom na podmienky nástroja; mladší žiaci len s vyučujúcim"
 puvodni_url: null   # nový prompt (11/2026), na starém webu nebyl
-tiny_chatbot: Společné objevování
+tiny_chatbot: Spoločné objavovanie
 zpusob_odkaz: /ve-vyuce/zpusoby-vyuziti-ai#společné-objevování
 perex: "Žiak dospieva k novému poznatku vlastnou úvahou."
 pojistka: "Chatbot nevysvetľuje skôr, ako sa o to pokúsi žiak."
@@ -53,4 +53,4 @@ Bezpečnosť: Nepýtaj sa ma na osobné údaje. Keby sa v rozhovore objavilo nie
 
 ## Poznámka pre vyučujúcich
 
-Prompt sa hodí na látku, ktorú možno odvodiť úvahou (príčiny, súvislosti, princípy), nie na fakty na zapamätanie. Cieľ sformulujte ako otázku „prečo“ alebo „ako“. Záverečné zhrnutie píše žiak sám — nechajte si ho odovzdať. Chatbot môže žiaka naviesť aj nepresne, zhrnutie preto porovnajte s učivom. V aplikácii Tiny zodpovedá chatbot Společné objevování.
+Prompt sa hodí na látku, ktorú možno odvodiť úvahou (príčiny, súvislosti, princípy), nie na fakty na zapamätanie. Cieľ sformulujte ako otázku „prečo“ alebo „ako“. Záverečné zhrnutie píše žiak sám — nechajte si ho odovzdať. Chatbot môže žiaka naviesť aj nepresne, zhrnutie preto porovnajte s učivom. V aplikácii Tiny zodpovedá chatbot Spoločné objavovanie.

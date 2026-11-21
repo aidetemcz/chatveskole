@@ -5,7 +5,7 @@ zpusob: Hledání chyb
 pro_koho: zaci
 vek: "13+ s ohľadom na podmienky nástroja; mladší žiaci len s vyučujúcim"
 puvodni_url: https://chatveskole.cz/databaze-promptu/vylepseni-vystupu/
-tiny_chatbot: Chybující chatbot
+tiny_chatbot: Chybujúci chatbot
 zpusob_odkaz: /ve-vyuce/zpusoby-vyuziti-ai#hledání-chyb
 perex: "Žiak kontroluje text, v ktorom AI zámerne robí chyby."
 pojistka: "Chatbot chyby neoznačuje. Vyučujúci má ich prehľad a na záver ich s triedou prejde."
@@ -62,4 +62,4 @@ Bezpečnosť: Nepýtaj sa ma na osobné údaje. Keby sa v rozhovore objavilo nie
 
 Chatbot vypíše riešenie až potom, ako mu žiak pošle vlastný zoznam chýb. Dohodnite sa so žiakmi, kedy smú riešenie zobraziť, alebo chyby prejdite spoločne s triedou na záver.
 
-Text môžete vygenerovať vopred a rozdať vytlačený — žiaci potom pracujú bez chatbota. Aby ste dostali riešenie hneď, vymažte z promptu vetu „Ak som ti predtým neposlal(a) žiadny vlastný zoznam chýb…“. Chatbot občas urobí aj chybu, ktorú neplánoval, alebo plánovanú „zabudne“, preto riešenie pred hodinou skontrolujte. V aplikácii Tiny zodpovedá Chybující chatbot.
+Text môžete vygenerovať vopred a rozdať vytlačený — žiaci potom pracujú bez chatbota. Aby ste dostali riešenie hneď, vymažte z promptu vetu „Ak som ti predtým neposlal(a) žiadny vlastný zoznam chýb…“. Chatbot občas urobí aj chybu, ktorú neplánoval, alebo plánovanú „zabudne“, preto riešenie pred hodinou skontrolujte. V aplikácii Tiny zodpovedá Chybujúci chatbot.

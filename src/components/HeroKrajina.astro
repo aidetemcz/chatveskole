@@ -4,11 +4,11 @@
 // Kreslí se na <canvas>, je jen dekorace (aria-hidden). Pauza tlačítkem vpravo dole; při „omezit pohyb“ v systému stojí.
 // Skrytá hříčka: kliknutí do krajiny = robot poskočí a děti po něm, pak skáče i na šipku nahoru a mezerník.
 // Výšku země určuje CSS proměnná --zeme zděděná z rodiče (v index.astro na .hero); zbytek je nebe s textem.
-import { t } from '../lib/jazyk';
+import { t, SK } from '../lib/jazyk';
 ---
 <div class="krajina" id="krajina" tabindex="-1">
   <canvas id="krajina-platno" aria-hidden="true"></canvas>
-  <button class="krajina-pauza" id="krajina-pauza" type="button" aria-pressed="false" aria-label={t('Pozastavit animaci')} title={t('Pozastavit / přehrát animaci')} data-stav="bezi">
+  <button class="krajina-pauza" id="krajina-pauza" type="button" aria-pressed="false" aria-label={t('Pozastavit animaci')} title={t('Pozastavit / přehrát animaci')} data-stav="bezi" data-l-pauza={SK ? t('Pozastavit animaci') : undefined} data-l-prehrat={SK ? t('Přehrát animaci') : undefined}>
     <svg class="i-pauza" viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="2" width="2.4" height="8" rx="0.6"></rect><rect x="7.1" y="2" width="2.4" height="8" rx="0.6"></rect></svg>
     <svg class="i-hrat" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg>
   </button>
@@ -377,7 +377,7 @@ import { t } from '../lib/jazyk';
     if (bezi && viditelna) { t += dt; fyzika(dt); vykresli(); }
     requestAnimationFrame(smycka);
   }
-  function nastavBeh(ano) { bezi = ano; tlacitko.setAttribute('aria-pressed', String(!ano)); tlacitko.setAttribute('aria-label', ano ? 'Pozastavit animaci' : 'Přehrát animaci'); tlacitko.dataset.stav = ano ? 'bezi' : 'stoji'; }
+  function nastavBeh(ano) { bezi = ano; tlacitko.setAttribute('aria-pressed', String(!ano)); tlacitko.setAttribute('aria-label', ano ? (tlacitko.dataset.lPauza ?? 'Pozastavit animaci') : (tlacitko.dataset.lPrehrat ?? 'Přehrát animaci')); tlacitko.dataset.stav = ano ? 'bezi' : 'stoji'; }
   tlacitko.addEventListener('click', (e) => { e.stopPropagation(); nastavBeh(!bezi); });
   // skrytá hříčka: kliknutí do krajiny = skok; pak skáče i na šipku nahoru a mezerník (jen když je krajina zaměřená)
   obal.addEventListener('pointerdown', () => { obal.focus({ preventScroll: true }); skok(); });

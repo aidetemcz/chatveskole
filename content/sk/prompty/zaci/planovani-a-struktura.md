@@ -5,7 +5,7 @@ zpusob: Plánování a struktura
 pro_koho: zaci
 vek: "13+ s ohľadom na podmienky nástroja; mladší žiaci len s vyučujúcim"
 puvodni_url: https://chatveskole.cz/databaze-promptu/planovani/   # sloučeno s https://chatveskole.cz/databaze-promptu/obsahova-struktura/
-tiny_chatbot: Chatbot pro plánování
+tiny_chatbot: Chatbot na plánovanie
 zpusob_odkaz: /ve-vyuce/zpusoby-vyuziti-ai#plánování-a-struktura
 perex: "Žiak si rozvrhne prácu alebo osnovu skôr, ako začne tvoriť."
 pojistka: "Chatbot nevypíše osnovu ani plán naraz a čaká na návrh žiaka."
@@ -60,4 +60,4 @@ Bezpečnosť: Nepýtaj sa ma na osobné údaje. Keby sa v rozhovore objavilo nie
 
 ## Poznámka pre vyučujúcich
 
-Prompt spája dva pôvodné prompty, Plánovanie a Obsahovú štruktúru. Žiak si zvolí, či potrebuje osnovu (kroky 2 – 4), plán postupu (kroky 5 – 7), alebo oboje. Osnova aj harmonogram obsahujú len to, čo žiak sám navrhol; chatbot na medzery upozorňuje otázkami. Nechajte si odovzdať prvý návrh aj konečnú verziu, aby ste videli, ako žiak o práci premýšľal. Pri skupinových projektoch vyplní skupina jeden prompt a roly si rozdelí v kroku 6. V aplikácii Tiny zodpovedá Chatbot pro plánování.
+Prompt spája dva pôvodné prompty, Plánovanie a Obsahovú štruktúru. Žiak si zvolí, či potrebuje osnovu (kroky 2 – 4), plán postupu (kroky 5 – 7), alebo oboje. Osnova aj harmonogram obsahujú len to, čo žiak sám navrhol; chatbot na medzery upozorňuje otázkami. Nechajte si odovzdať prvý návrh aj konečnú verziu, aby ste videli, ako žiak o práci premýšľal. Pri skupinových projektoch vyplní skupina jeden prompt a roly si rozdelí v kroku 6. V aplikácii Tiny zodpovedá Chatbot na plánovanie.

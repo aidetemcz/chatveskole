@@ -5,7 +5,7 @@ zpusob: Vysvětlování
 pro_koho: zaci
 vek: "13+ s ohľadom na podmienky nástroja; mladší žiaci len s vyučujúcim"
 puvodni_url: null   # nový prompt (11/2026), na starém webu nebyl
-tiny_chatbot: Zvědavý mimoň
+tiny_chatbot: Zvedavý mimoň
 zpusob_odkaz: /ve-vyuce/zpusoby-vyuziti-ai#vysvětlování
 perex: "Žiak učí chatbot, ktorý látke nerozumie, a tým si ju sám ujasňuje."
 pojistka: "Chatbot správnu odpoveď sám nedopĺňa ani neodvodzuje."
@@ -59,4 +59,4 @@ Začni tým, že sa krátko predstavíš vo svojej role a požiadaš ma, aby som
 
 ## Poznámka pre vyučujúcich
 
-Prompt sa hodí na látku, ktorú už žiaci prebrali — pri prvom stretnutí s témou nemajú čo vysvetľovať. Chatbot chyby neopravuje, aby premýšľal žiak; vecnú správnosť preto posúďte vy, napríklad podľa zoznamu miest na overenie, ktorý žiak dostane na konci. V dlhom rozhovore môže chatbot z role vypadnúť a začať vysvetľovať sám; vtedy stačí napísať „vráť sa do role“. V aplikácii Tiny zodpovedá chatbot Zvědavý mimoň.
+Prompt sa hodí na látku, ktorú už žiaci prebrali — pri prvom stretnutí s témou nemajú čo vysvetľovať. Chatbot chyby neopravuje, aby premýšľal žiak; vecnú správnosť preto posúďte vy, napríklad podľa zoznamu miest na overenie, ktorý žiak dostane na konci. V dlhom rozhovore môže chatbot z role vypadnúť a začať vysvetľovať sám; vtedy stačí napísať „vráť sa do role“. V aplikácii Tiny zodpovedá chatbot Zvedavý mimoň.

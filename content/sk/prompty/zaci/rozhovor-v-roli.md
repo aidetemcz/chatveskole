@@ -5,7 +5,7 @@ zpusob: Rozhovor v roli
 pro_koho: zaci
 vek: "13+ s ohľadom na podmienky nástroja; mladší žiaci len s vyučujúcim"
 puvodni_url: https://chatveskole.cz/databaze-promptu/role-experta/
-tiny_chatbot: Historická postava / Expert a V hlavní roli…
+tiny_chatbot: Historická postava / Expert a V hlavnej úlohe…
 zpusob_odkaz: /ve-vyuce/zpusoby-vyuziti-ai#rozhovor-v-roli
 perex: "Žiak vedie rozhovor s osobnosťou, odborníkom alebo s javom, ktorý hovorí sám za seba."
 pojistka: "Žiaci vedia, že ide o simuláciu, ktorá sa môže mýliť, a kľúčové tvrdenia si overujú."
@@ -54,4 +54,4 @@ Bezpečnosť: Nepýtaj sa ma na osobné údaje. Keby sa v rozhovore objavilo nie
 
 ## Poznámka pre vyučujúcich
 
-Chatbot môže fakty skresliť alebo si historku domyslieť — nechajte žiakov informácie z rozhovoru overiť a porovnať s učebnicou. Žijúce osoby chatbot nehrá; ponúkne odborníka z ich odboru. V aplikácii Tiny zodpovedá Historická postava / Expert; pre predmety a javy (bunka, sopka, atóm) chatbot V hlavní roli…
+Chatbot môže fakty skresliť alebo si historku domyslieť — nechajte žiakov informácie z rozhovoru overiť a porovnať s učebnicou. Žijúce osoby chatbot nehrá; ponúkne odborníka z ich odboru. V aplikácii Tiny zodpovedá Historická postava / Expert; pre predmety a javy (bunka, sopka, atóm) chatbot V hlavnej úlohe…

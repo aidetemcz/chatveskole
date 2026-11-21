@@ -58,7 +58,7 @@ metodika:
   - nazev: Kurikulum umělé inteligence – Matematika pro život (AI dětem; v češtine)
     url: https://kurikulum.aidetem.cz/metodicke-materialy/matematika-pro-zivot/
   - nazev: Aplikácia Tiny (AI dětem)
-    url: https://tiny.school
+    url: https://www.tiny.school/sk/
   - nazev: Linka detskej istoty
     url: https://www.ldi.sk/
 vek: dospelí (zručnosti sú v Gemini a Claude od 18 rokov); prompty z výstupu sú pre žiakov podľa vekových hraníc nástroja
