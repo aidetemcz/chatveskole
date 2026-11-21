@@ -1,24 +1,16 @@
 ---
 // Infografika „Jak konektor funguje“ pro stránku Konektory (značka <!-- komponenta: infografika konektoru -->).
-// Původně spodní část InfografikaMcp, 21. 11. 2026 přesunutá pod perex a zjednodušená (menší nadpisy a čipy).
+// Původně spodní část InfografikaMcp, 21. 11. 2026 přesunutá pod perex: kroky vlevo, ukázka nastavení vpravo, nadpis je v Markdownu.
 ---
-<section class="konektor" aria-label="Jak konektor funguje">
-  <p class="rovnice" role="img" aria-label="Konektor se rovná MCP server plus vaše přihlášení">
-    <span class="cip cip-konektor" aria-hidden="true">Konektor</span>
-    <span class="op" aria-hidden="true">=</span>
-    <span class="cip cip-mcp" aria-hidden="true">
-      <svg class="ikona" viewBox="0 0 48 48"><path d="M18 4v10M30 4v10"/><rect x="11" y="14" width="26" height="16" rx="4"/><path d="M24 30v6a6 6 0 0 1-6 6h-6"/></svg>
-      MCP server
-    </span>
-    <span class="op" aria-hidden="true">+</span>
-    <span class="cip" aria-hidden="true">
-      <svg class="ikona" viewBox="0 0 48 48"><circle cx="14" cy="24" r="9"/><path d="M23 24h21M36 24v8M43 24v6"/></svg>
-      Vaše přihlášení
-    </span>
-  </p>
-  <p class="vysvetleni">Hotové propojení přímo v aplikaci AI. Uvnitř je MCP server, vy jen kliknete a přihlásíte se.</p>
-
+<div class="konektor">
   <div class="mrizka">
+    <ol class="nastaveni">
+      <li><span class="cislo" aria-hidden="true">1</span><p>V aplikaci AI otevřete <strong>Nastavení › Konektory</strong>.</p></li>
+      <li><span class="cislo" aria-hidden="true">2</span><p>Vyberete aplikaci, kterou chcete připojit, třeba <strong>kalendář</strong>.</p></li>
+      <li><span class="cislo" aria-hidden="true">3</span><p><strong>Přihlásíte se</strong> svým účtem a povolíte, co AI smí: jen číst, nebo i měnit.</p></li>
+      <li class="hotovo"><p>Hotovo. Když AI bude potřebovat kalendář, použije sama jeho MCP server.</p></li>
+    </ol>
+
     <div class="panel" role="img" aria-label="Ukázka nastavení: kalendář a e-mail připojené, disk vypnutý">
       <div class="panel-hlava" aria-hidden="true"><span>Nastavení › Konektory</span><span>ukázka</span></div>
       <ul class="radky" aria-hidden="true">
@@ -27,35 +19,18 @@
         <li><span class="nazev">Disk s dokumenty</span><span class="stav">vypnuto</span><span class="prepinac"></span></li>
       </ul>
     </div>
-
-    <ol class="nastaveni">
-      <li><span class="cislo" aria-hidden="true">1</span><p>V aplikaci AI otevřete <strong>Nastavení › Konektory</strong>.</p></li>
-      <li><span class="cislo" aria-hidden="true">2</span><p>Vyberete aplikaci, kterou chcete připojit, třeba <strong>kalendář</strong>.</p></li>
-      <li><span class="cislo" aria-hidden="true">3</span><p><strong>Přihlásíte se</strong> svým účtem a povolíte, co AI smí: jen číst, nebo i měnit.</p></li>
-      <li class="hotovo"><p>Hotovo. Když AI bude potřebovat kalendář, použije sama jeho MCP server.</p></li>
-    </ol>
   </div>
 
   <p class="poznamka"><strong>Důležité:</strong> Vy rozhodujete, které aplikace k&nbsp;AI připojíte a&nbsp;co v&nbsp;nich smí dělat.</p>
-</section>
+</div>
 
 <style>
-  .konektor { display: grid; gap: 18px; margin: 32px 0 40px; padding: 26px 28px; border: 1px solid var(--sky); border-radius: var(--radius-lg); background: var(--panel); }
+  .konektor { display: grid; gap: 22px; margin: 0 0 24px; }
   .konektor p { margin: 0; }
   .konektor strong { font-weight: 600; }
 
-  .rovnice { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; }
-  .cip { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--sky); border-radius: var(--pill); padding: 4px 14px; font-family: var(--fh); font-weight: 600; font-size: 1rem; line-height: 1.3; background: var(--bg); }
-  .ikona { width: 20px; height: auto; flex: none; color: var(--sky-deep); }
-  .ikona * { fill: none; stroke: currentColor; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
-  .cip-konektor { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
-  .cip-mcp { background: var(--accent-soft); border-color: var(--accent); }
-  .cip-mcp .ikona { color: var(--accent); }
-  .op { font-family: var(--fh); font-weight: 700; font-size: 1.1rem; color: var(--muted); }
-  .vysvetleni { font-size: 0.97rem; max-width: var(--dve-tretiny); }
-
-  .mrizka { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 24px; align-items: start; }
-  .panel { border: 1px solid var(--sky); border-radius: var(--radius); overflow: hidden; background: var(--bg); font-size: 0.93rem; }
+  .mrizka { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+  .panel { border: 1px solid var(--sky); border-radius: var(--radius); overflow: hidden; background: var(--panel); font-size: 0.93rem; }
   .panel-hlava { background: var(--sky-light); padding: 8px 14px; font-weight: 600; font-size: 0.85rem; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
   .panel-hlava span:last-child { color: var(--sky-ink); font-weight: 500; }
   .radky { list-style: none; margin: 0; padding: 0; }
@@ -68,7 +43,7 @@
   .prepinac.zap { background: var(--accent); border-color: var(--accent); }
   .prepinac.zap::after { left: auto; right: 2px; border-color: var(--accent); }
 
-  .nastaveni { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; font-size: 0.93rem; }
+  .nastaveni { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; font-size: 1rem; }
   .nastaveni li { display: flex; align-items: flex-start; gap: 10px; }
   .cislo { flex: none; width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: var(--on-accent); display: inline-flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.8rem; }
   .nastaveni p { padding-top: 2px; }
@@ -77,7 +52,6 @@
   .poznamka { font-size: 0.93rem; padding: 10px 14px; background: var(--accent-soft); border-radius: var(--radius); }
 
   @media (max-width: 760px) {
-    .konektor { padding: 20px 18px; }
     .mrizka { grid-template-columns: minmax(0, 1fr); }
   }
 </style>
