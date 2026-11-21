@@ -107,44 +107,11 @@ V Gemini se Gems převádějí na dovednosti samy. Stačí je zkontrolovat a zap
 
 ## Jak napsat vlastní dovednost
 
-Dovednost nemusíte psát od nuly. Nechte ji vytvořit chatbota a výsledek pak upravte podle čtyř kroků níže.
+Dovednost nemusíte psát od nuly. Nechte ji vytvořit chatbota a výsledek pak upravte.
 
 - **Z promptu** — Vezměte prompt, který se vám osvědčil, a napište „Udělej z tohoto promptu dovednost (skill) ve formátu SKILL.md“.
 - **Z popisu** — Popište chatbotovi, co má dovednost dělat, a požádejte ho, ať ji vytvoří. ChatGPT i Claude k tomu mají vestavěného pomocníka (Skill Creator).
 - **Z konverzace** — Když se vám nějaká konverzace povede, požádejte chatbota, ať z ní vytvoří dovednost.
-
-### Popis rozhoduje
-
-Chatbot čte nejdřív jen název a popis. Popis proto musí říct, co dovednost dělá a kdy ji použít.
-
-> Pomáhá vyučujícím na ZŠ formulovat vzdělávací cíle podle RVP. Použij, když vyučující chce napsat nebo zkontrolovat cíl hodiny.
-
-### Postup krok za krokem
-
-Na co se zeptat (nikdy na jména žáků), v jakém pořadí postupovat, jak má vypadat výstup a jakým tónem komunikovat.
-
-Pokud má rozhovor pevnou posloupnost, napište ji jako číslovaný seznam.
-
-> Například: 1) Zeptej se na ročník a předmět. 2) Počkej na odpověď. 3) Navrhni tři varianty cíle.
-
-### Podklady
-
-Do složky `references` patří to, z čeho má dovednost čerpat: hodnoticí škály, ŠVP, modelové příklady, seznamy pojmů.
-
-- **Nahrávejte jen to, co smíte** — žádné osobní údaje, žádné materiály, u kterých to zakazují autorská práva.
-- **Volte jednoduché formáty** — text jako `.txt` nebo `.md` (Markdown), tabulky jako `.csv`. PDF nechte chatbota převést na Markdown.
-- **Dlouhé dokumenty rozdělte** — nechte chatbota rozdělit je na menší soubory, třeba po kapitolách, a v postupu napište, kdy který použít.
-
-### Testování
-
-Vyzkoušejte dovednost na několika skutečných situacích a nechte ji otestovat i kolegy.
-
-- Reaguje správně na zadání?
-- Jsou odpovědi věcně správné a srozumitelné?
-- Drží se postupu?
-- Co udělá, když uživatel zadá něco mimo téma?
-
-Jako podklad poslouží [pracovní list pro testování AI asistentů](https://kurikulum.aidetem.cz/metodiky/digikomp/Digitalni-kompetence-AI_skolni-hackaton_AI-asistenti_pracovni-list-01.pdf) z AI kurikula.
 
 ## Jak dovednost sdílet
 

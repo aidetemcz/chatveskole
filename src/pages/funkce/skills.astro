@@ -51,7 +51,6 @@ const nastroje = bloky(htmlOddilu(instalace)).map((b, i) => {
   return { ...b, id: `nastroj-${i}`, kroky, podminky };
 });
 
-// Vlastní dovednost: ### krok → první odstavec na kartu, citace jako ukázka, zbytek do „Podrobnosti“
 // Vlastní Gem: termín (odstavec jen s tučným textem), text, dva seznamy
 const gem = najdi(/vlastní Gem/i);
 const gemHtml = htmlOddilu(gem);
@@ -65,14 +64,6 @@ const vlastniHtml = htmlOddilu(vlastni);
 const cestyVytvoreni = polozky(vlastniHtml.split(/<h3[\s>]/)[0]);
 const sdileni = najdi(/dovednost sdílet/i);
 const sdileniHtml = htmlOddilu(sdileni);
-const kroky = bloky(vlastniHtml).map((b) => {
-  const prvni = b.html.match(/^\s*<p>([\s\S]*?)<\/p>/);
-  const ukazka = b.html.match(/<blockquote>\s*<p>([\s\S]*?)<\/p>\s*<\/blockquote>/);
-  let zbytek = b.html;
-  if (prvni) zbytek = zbytek.replace(prvni[0], '');
-  if (ukazka) zbytek = zbytek.replace(ukazka[0], '');
-  return { nazev: b.nazev, perex: prvni?.[1] ?? '', ukazka: ukazka?.[1] ?? '', zbytek: zbytek.trim() };
-});
 
 const vyzva = najdi(/vlastní dovednost\?/i) ?? oddily[oddily.length - 1];
 const katalog = d.tlacitko && typeof d.tlacitko === 'object' && (d.tlacitko as { href?: string }).href ? (d.tlacitko as { text: string; href: string }) : { text: 'Katalog dovedností', href: '/skills' };
@@ -218,29 +209,6 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
             ))}
           </div>
         )}
-        <ol class="postup">
-          {kroky.map((k, i) => (
-            <li class:list={['postup-krok', { 'postup-krok--prvni': i === 0 }]}>
-              <span class="postup-cislo" aria-hidden="true">{i + 1}</span>
-              <h3>{k.nazev}</h3>
-              <p set:html={k.perex} />
-              {k.zbytek && (
-                <details>
-                  <summary>Podrobnosti</summary>
-                  <div class="prose" set:html={k.zbytek} />
-                </details>
-              )}
-            </li>
-          ))}
-        </ol>
-        <div class="ukazky">
-          {kroky.filter((k) => k.ukazka).map((k) => (
-            <figure class="ukazka">
-              <figcaption>{k.nazev}: ukázka</figcaption>
-              <p set:html={k.ukazka} />
-            </figure>
-          ))}
-        </div>
       </div>
     </section>
   )}
@@ -289,7 +257,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .perex :global(p + p) { margin-top: 0.6em; }
 
   
-  .podminky-titulek, .ukazka figcaption { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); }
+  .podminky-titulek { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); }
 
   .dva-sloupce { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: start; }
   .strom { background: var(--panel); border: 1px solid var(--sky); border-radius: 12px; padding: 26px 28px; display: flex; flex-direction: column; gap: 8px; font-size: 0.95rem; }
@@ -321,19 +289,6 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .podminky p { margin: 0; display: flex; gap: 10px; align-items: flex-start; font-size: 0.93rem; }
   .podminky svg { flex: none; margin-top: 3px; color: var(--sky-ink); }
 
-  .postup { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 22px; align-items: start; }
-  .postup-krok { border: 1px solid var(--sky); border-radius: 9px; padding: 26px 28px; display: flex; flex-direction: column; gap: 12px; background: var(--panel); }
-  .postup-krok--prvni { background: var(--accent-soft); }
-  .postup-cislo { font-family: var(--fh); font-size: 1.75rem; font-weight: 700; color: var(--accent); line-height: 1; }
-  .postup-krok h3 { font-size: 1.1rem; }
-  .postup-krok > p { margin: 0; font-size: 0.93rem; line-height: 1.6; }
-  .postup-krok details { font-size: 0.88rem; }
-  .postup-krok summary { cursor: pointer; color: var(--accent-strong); font-weight: 600; min-height: 32px; display: flex; align-items: center; }
-  .postup-krok details .prose :global(p), .postup-krok details .prose :global(li) { font-size: 0.88rem; line-height: 1.55; }
-  .postup-krok details .prose :global(ul) { margin-top: 0.5em; }
-  .ukazky { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 22px; }
-  .ukazka { margin: 0; background: #f6fafc; border: 1px solid var(--sky); border-radius: 10px; padding: 22px 24px; display: flex; flex-direction: column; gap: 10px; }
-  .ukazka p { margin: 0; font-family: var(--fm); font-size: 0.9rem; line-height: 1.6; }
 
   .cesty--3 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
   .gem { background: var(--accent-soft); border-radius: 12px; padding: 36px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 32px; align-items: start; }
