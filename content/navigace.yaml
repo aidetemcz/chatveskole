@@ -39,6 +39,7 @@ menu:
       - { title: Nový web, href: /o-webu/novy-web }
       - { title: Kdo za tím stojí, href: /o-webu/kdo-za-tim-stoji }
       - { title: Kontakt, href: /o-webu/kontakt }
+      - { title: Ochrana soukromí, href: /o-webu/ochrana-soukromi }
 
 # Výrazné tlačítko v hlavičce (mimo rozbalovací menu)
 cta: { title: Katalog dovedností, href: /skills }
