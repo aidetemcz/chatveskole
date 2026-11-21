@@ -1,5 +1,5 @@
 # Ceny a tarify chatbotů pro stránku Začínáme → Kolik stojí chatboti.
-# Stav: 15. 11. 2026, ověřeno v oficiálních cenících a nápovědách vývojářů (část jen z výsledků vyhledávání, stránky chatgpt.com, help.openai.com, gemini.google a perplexity.ai nešly přímo otevřít). Ceny jsou orientační, vč. DPH u spotřebitelských tarifů v Kč, jinak bez DPH.
+# Stav: 15. 11. 2026 (Claude for Nonprofits doplněno 21. 11. 2026), ověřeno v oficiálních cenících a nápovědách vývojářů (část jen z výsledků vyhledávání, stránky chatgpt.com, help.openai.com, gemini.google a perplexity.ai nešly přímo otevřít). Ceny jsou orientační, vč. DPH u spotřebitelských tarifů v Kč, jinak bez DPH.
 # ⚠ = údaj z neoficiálního nebo staršího zdroje, před zveřejněním ověřit.
 # Dovednosti v ChatGPT od tarifu Plus a pluginy z adresáře i ve Free a Go: opraveno podle Evy 20. 11. 2026.
 # Trénink = zda vývojář smí použít vaše konverzace k učení modelů.
@@ -126,12 +126,20 @@ nastroje:
       - nazev: Team
         cena: od 25 USD za uživatele měsíčně (20 USD ročně), prémiové místo 125 USD (100 USD ročně), 2–150 míst
         pozn: Data se nepoužívají k tréninku, sdílení projektů, dovedností a pluginů v rámci organizace.
+      - nazev: Team pro školy (Claude for Nonprofits)
+        cena: 8 USD za uživatele měsíčně, místo s pětinásobným využitím 40 USD, 2–150 míst, měsíční platba
+        pozn: Neziskové ceny i pro základní a střední školy. Škola se nejdřív ověří u partnera Goodstack, ověřuje člověk se školním e-mailem. Chat, Cowork a Claude Code. Jen od 18 let, pro vedení a pedagogy.
+      - nazev: Enterprise pro školy (Claude for Nonprofits)
+        cena: 10 USD za uživatele měsíčně, místo s pětinásobným využitím 50 USD, od 20 míst, roční fakturace
+        pozn: Navíc automatická správa uživatelů (SCIM) a rozšířená administrace. Nákup připraví tým Anthropicu.
       - nazev: Education
         cena: na dotaz
-        pozn: Pro vysoké školy. Jen od 18 let, žákovský program není.
-    trenink: U Free, Pro, Max a Ultra rozhodujete sami (přepínač „Help improve Claude“). Team a Education ne.
+        pozn: Pro vysoké školy. Jen od 18 let, žákovský program není. Bezplatný Claude for Teachers je zatím jen v USA.
+    trenink: U Free, Pro, Max a Ultra rozhodujete sami (přepínač „Help improve Claude“). Team, Enterprise a Education ne.
     zdroje:
       - https://claude.com/pricing
+      - https://validate.poweredbypercent.com/anthropic
+      - informace od Anthropicu k Claude for Nonprofits pro školy (Eva, 21. 11. 2026)
       - https://support.claude.com/en/articles/12512180-use-skills-in-claude
       - https://support.claude.com/en/articles/13837440-use-plugins-in-claude
       - https://support.claude.com/en/articles/9547008-publish-and-share-artifacts

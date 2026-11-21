@@ -5,7 +5,7 @@ poradi: 3
 popis: Ceny ChatGPT, Gemini, Copilotu, Claude a Perplexity pro vyučující a školy. Co dostanete zdarma, co se vyplatí zaplatit a jak chránit data.
 sablona: cenik            # karty tarifů se vykreslí z data/ceny.yaml
 data: data/ceny.yaml
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-21
 stav: koncept
 ---
 
@@ -25,6 +25,14 @@ Všechny chatovací aplikace mají bezplatnou verzi. Placená verze přidá vyš
 - **Microsoft 365 se školní licencí (A1, A3, A5)** — Copilot Chat pro vyučující i žáky od 13 let, data zůstávají ve škole. Zapíná správce.
 
 Než začnete platit osobní předplatné, zeptejte se správce IT, co škola má.
+
+## Claude se slevou pro školy
+
+Základní i střední školy (veřejné i soukromé) mohou získat Claude za neziskové ceny přes program **Claude for Nonprofits**. Bezplatný program Claude for Teachers je zatím jen pro školy v USA. Claude mohou používat jen lidé od 18 let, je tedy pro vedení a pedagogy, ne pro žáky.
+
+1. **Ověřte školu** — Ověření probíhá u partnera Anthropicu Goodstack na [validate.poweredbypercent.com/anthropic](https://validate.poweredbypercent.com/anthropic). Formulář zabere pár minut, pokud Goodstack chce dokumenty, může to trvat i několik dní. Ověřuje člověk se školním e-mailem, soukromý Gmail nestačí. S dotazy pomůže Goodstack na help@goodstack.org.
+2. **Vyberte tarif** — Team pro 2 až 150 lidí (8 USD za uživatele měsíčně, s pětinásobným využitím 40 USD), nebo Enterprise od 20 lidí (10 USD, s pětinásobným využitím 50 USD). Oba obsahují Chat, Cowork a Claude Code.
+3. **Dokončete nákup** — U Teamu vám po schválení přijde e-mail s dokončením registrace a za pár minut máte hotovo. Enterprise s roční fakturací připraví tým Anthropicu.
 
 ## Tarify
 
