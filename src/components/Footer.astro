@@ -1,20 +1,60 @@
 ---
+// Patička (návrh z Claude Design, 21. 11. 2026, podle patičky webu AI dětem). Menu z content/navigace.yaml.
 import { navigace } from '../lib/data';
 import { url } from '../lib/url';
+
+const skupina = (nazev: string) => navigace.menu.find((g) => g.title === nazev);
+// rozložení skupin menu do tří sloupců; skupiny, které tu nejsou, se přidají na konec
+const SLOUPCE = [['Začínáme', 'O webu'], ['Funkce', 'Vibe Coding'], ['Chatboti ve výuce']];
+const umistene = new Set(SLOUPCE.flat());
+const sloupce = SLOUPCE.map((s) => s.map(skupina).filter((g): g is NonNullable<typeof g> => !!g));
+sloupce[sloupce.length - 1].push(...navigace.menu.filter((g) => !umistene.has(g.title)));
+const rok = new Date().getFullYear();
+const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
 ---
 <footer class="site-footer">
   <div class="wrap siroka">
     <div class="cols">
-      {navigace.menu.map((g) => (
-        <div>
-          <h2>{g.title}</h2>
-          <ul>{g.items.map((it) => <li><a href={url(it.href)}>{it.title}</a></li>)}</ul>
+      <div class="znacka">
+        <a class="logo" href={url('/')}>
+          <img src={url('/img/logo-ai-detem.png')} alt="" width="56" height="56" loading="lazy" />
+          <span><strong>Chatboti ve škole</strong><span>AI dětem</span></span>
+        </a>
+        <p>Praktický průvodce chatboty pro vyučující a vedení škol. Projekt neziskové organizace <a href="https://aidetem.cz">AI dětem, z. s.</a></p>
+        <div class="site">
+          <a href="https://www.facebook.com/groups/aidetem" aria-label="AI dětem na Facebooku"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.5 1.6-1.5h1.6V4.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.4H7.6V14h2.7v8z"></path></svg></a>
+          <a href="https://www.linkedin.com/company/aidetem/" aria-label="AI dětem na LinkedInu"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"></path></svg></a>
+          <a href="https://www.youtube.com/@aidetemcz" aria-label="AI dětem na YouTube"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"></path></svg></a>
+        </div>
+        <div class="udaje">
+          <span>E-mail: <a href="mailto:cau@aidetem.cz">cau@aidetem.cz</a></span>
+          <span>IČ: 17914582 · Datová schránka: 4czjq6u</span>
+          <span>Číslo účtu: 2002446742/2010</span>
+        </div>
+      </div>
+      {sloupce.map((s, i) => (
+        <div class="sloupec">
+          {s.map((g) => (
+            <nav aria-label={g.title}>
+              <h2>{g.title}</h2>
+              <ul>{g.items.map((it) => <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={sipka}></svg><a href={url(it.href)}>{it.title}</a></li>)}</ul>
+            </nav>
+          ))}
+          {i === sloupce.length - 1 && (
+            <div class="novinky">
+              <h2>Novinky do e-mailu</h2>
+              <p>Funkce chatbotů se mění každý měsíc. Pošleme vám, co je pro školy důležité.</p>
+              <a class="btn btn--primary" href="https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f9d89c882af9a3a8b">Přihlásit se k odběru</a>
+            </div>
+          )}
         </div>
       ))}
     </div>
-    <div class="sign">
-      <span>Chatboti ve škole · projekt neziskové organizace <a href="https://aidetem.cz">AI dětem, z. s.</a></span>
-      <span>Obsah webu se mění spolu s chatboty — u stránek najdete datum aktualizace.</span>
+  </div>
+  <div class="sign">
+    <div class="wrap siroka sign-obsah">
+      <span>Obsah webu se mění spolu s chatboty. U každé stránky najdete datum aktualizace.</span>
+      <span class="sign-odkazy"><a href={url('/o-webu/kontakt')}>Kontakt</a><a href={url('/o-webu/kdo-za-tim-stoji')}>Kdo za tím stojí</a><span>© {rok} AI dětem, z. s.</span></span>
     </div>
   </div>
 </footer>
@@ -23,12 +63,32 @@ import { url } from '../lib/url';
   /* patička přes celou šířku okna, stejně jako hlavička */
   .siroka { max-width: none; padding-left: 32px; padding-right: 32px; }
   @media (max-width: 640px) { .siroka { padding-left: 16px; padding-right: 16px; } }
-  .site-footer { border-top: 1px solid var(--line); padding: 64px 0 40px; font-size: 0.88rem; }
-  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 32px; }
-  h2 { font-family: var(--fb); font-size: 0.95rem; font-weight: 600; margin-bottom: 12px; }
-  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
-  .cols a { color: var(--muted); text-decoration: none; }
-  .cols a:hover { color: var(--ink); text-decoration: underline; }
-  .sign { border-top: 1px solid var(--line); margin-top: 40px; padding-top: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-size: 0.8rem; color: var(--muted); }
-  .sign a { color: var(--muted); }
+  .site-footer { background: var(--sky-light); padding-top: 72px; font-size: 0.94rem; line-height: 1.55; }
+  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 48px 40px; padding-bottom: 56px; }
+  .znacka { display: flex; flex-direction: column; gap: 18px; }
+  .logo { display: flex; gap: 14px; align-items: center; color: var(--ink); text-decoration: none; }
+  .logo img { width: 56px; height: 56px; }
+  .logo > span { display: flex; flex-direction: column; line-height: 1.2; }
+  .logo strong { font-family: var(--fh); font-size: 1.35rem; font-weight: 700; }
+  .logo > span span { font-size: 0.88rem; }
+  .znacka p { margin: 0; }
+  .site { display: flex; gap: 10px; margin: 4px 0 14px; }
+  .site a { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: var(--on-accent); display: inline-flex; align-items: center; justify-content: center; }
+  .site a:hover { filter: brightness(0.92); }
+  .udaje { display: flex; flex-direction: column; gap: 2px; font-size: 0.88rem; }
+  .sloupec { display: flex; flex-direction: column; gap: 28px; }
+  nav { display: flex; flex-direction: column; gap: 10px; }
+  h2 { font-family: var(--fh); font-size: 1.25rem; font-weight: 700; margin: 0; }
+  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 1px; font-size: 0.91rem; line-height: 1.45; }
+  li { display: flex; gap: 8px; align-items: baseline; }
+  li svg { flex: none; color: var(--accent); }
+  .site-footer a { color: var(--ink); }
+  .sloupec ul a { text-decoration: none; }
+  .sloupec ul a:hover { color: var(--accent-strong); text-decoration: underline; }
+  .novinky { display: flex; flex-direction: column; gap: 12px; }
+  .novinky p { margin: 0 0 10px; font-size: 0.88rem; }
+  .novinky .btn { align-self: flex-start; color: var(--on-accent); }
+  .sign { border-top: 1px solid var(--sky); }
+  .sign-obsah { padding-top: 22px; padding-bottom: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 32px; font-size: 0.82rem; }
+  .sign-odkazy { display: flex; flex-wrap: wrap; gap: 8px 24px; }
 </style>
