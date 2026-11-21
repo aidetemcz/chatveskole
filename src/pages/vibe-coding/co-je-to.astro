@@ -108,7 +108,12 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
           <div class="prose">{zaciText.map((p) => <p set:html={p} />)}</div>
         </div>
         <div class="stack" style="gap: 16px">
-          {zaciBoxy.map((p) => <div class="podminky"><p set:html={p} /></div>)}
+          {zaciBoxy.map((p) => (
+            <div class="podminky metodika">
+              <a href={url('/vibe-coding/materialy-do-vyuky')} tabindex="-1" aria-hidden="true"><img src={url('/img/metodika-vibecoding-01.jpg')} alt="" width="160" height="160" loading="lazy" /></a>
+              <p set:html={p} />
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -183,6 +188,10 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   .podminky { background: #f6fafc; border: 1px solid var(--sky); border-radius: 9px; padding: 22px 26px; }
   .podminky p { margin: 0; line-height: 1.65; }
+  .metodika { display: flex; gap: 22px; align-items: center; }
+  .metodika a { flex: none; }
+  .metodika img { display: block; width: 150px; height: auto; border-radius: 6px; }
+  @media (max-width: 480px) { .metodika { flex-direction: column; align-items: flex-start; } }
 
   .pravidla { background: var(--accent-soft); border-radius: 12px; padding: 30px 32px; display: flex; flex-direction: column; gap: 14px; }
   .pravidlo { background: var(--panel); border-radius: 9px; padding: 18px 20px; display: flex; flex-direction: column; gap: 4px; }
