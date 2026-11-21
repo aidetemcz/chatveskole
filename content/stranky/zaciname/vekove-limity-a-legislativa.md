@@ -25,7 +25,6 @@ zdroje:
 
 Od kolika let mohou žáci chatboty používat sami? Najdete tu věkové limity jednotlivých nástrojů a to podstatné z GDPR, evropského aktu o umělé inteligenci a autorského práva.
 
-**Není to právní rada** — Vycházíme z kapitoly [Právo a legislativa umělé inteligence](https://aidetem.cz/portfolio/pravo-legislativa-umele-inteligence/), kterou pro AI dětem napsali právníci, a odkazujeme na zdroje. Konkrétní situace proberte s pověřencem pro ochranu osobních údajů vaší školy.
 
 ## Věkové limity
 
@@ -43,9 +42,9 @@ Podmínky se mění. Než nástroj ve třídě zavedete, ověřte si je přímo 
 ## Naše doporučení pro výuku
 
 - **Používejte školní účty** — Má-li je škola (Google Workspace for Education, Microsoft 365), přihlašujte žáky přes ně. Data jsou lépe chráněná a správce může nastavit pravidla.
-- **Žáci pod věkovou hranicí** — Pracují s chatbotem společně: vyučující ovládá aplikaci na projektoru, žáci kladou otázky a hodnotí odpovědi. Nebo použijte nástroj určený pro školy, jako je [Tiny](/ve-vyuce/tiny).
-- **Žádné osobní údaje žáků** — Nikdy nevkládejte jména, známky ani diagnózy. Pracujte s iniciálami.
-- **Pravidla do školního řádu** — Pomůže vám stránka [Tvorba pravidel pro využívání AI](/ve-vyuce/pravidla-pro-ai).
+- **Žáci pod věkovou hranicí** — Pracujte s chatbotem společně: vyučující ovládá aplikaci na projektoru, žáci kladou otázky a hodnotí odpovědi.
+- **Žádné osobní údaje žáků** — Nikdy nevkládejte jména, známky ani diagnózy. Pracujte s iniciály.
+- **Vytvořte pravidla pro využívání AI** — To, jak využívat ve škole umělou inteligenci, je třeba promyslet a popsat. Pomůže vám stránka [Tvorba pravidel pro využívání AI](/ve-vyuce/pravidla-pro-ai).
 
 ## GDPR a souhlas rodičů
 
