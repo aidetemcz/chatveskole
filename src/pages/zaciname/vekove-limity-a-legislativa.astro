@@ -1,0 +1,268 @@
+---
+// Věkové limity a legislativa (sablona: vek-pruvodce). Návrh z Claude Design (21. 11. 2026).
+// Texty jsou v content/stranky/zaciname/vekove-limity-a-legislativa.md (oddíly podle ##), grafika jako u stránky Dostupné nástroje.
+import { getEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import { rozdel, naOddily } from '../../lib/komponenty';
+import { navigace } from '../../lib/data';
+
+const stranka = (await getEntry('stranky', 'zaciname/vekove-limity-a-legislativa'))!;
+const d = stranka.data;
+const { uvod, oddily } = naOddily(rozdel(stranka.rendered?.html ?? ''));
+const htmlOddilu = (o?: { casti: { typ: string; html?: string }[] }) => (o?.casti ?? []).filter((x) => x.typ === 'html').map((x) => x.html ?? '').join('');
+const najdi = (r: RegExp) => oddily.find((o) => r.test(o.nadpis));
+const bezTagu = (s: string) => s.replace(/<[^>]+>/g, '').trim();
+const velke = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
+const odstavce = (h: string) => [...h.matchAll(/<p>([\s\S]*?)<\/p>/g)].map(([, t]) => t.trim());
+// odstavec „**Nadpis** — text“ → box
+const box = (p: string) => {
+  const m = p.match(/^<strong>([\s\S]*?)<\/strong>\s*[—–]\s*([\s\S]*)$/);
+  return m ? { nadpis: bezTagu(m[1]).replace(/[.:]$/, ''), text: velke(m[2].trim()) } : null;
+};
+const polozky = (h: string) => [...(h.match(/<(ul|ol)>([\s\S]*?)<\/\1>/)?.[2] ?? '').matchAll(/<li>\s*<strong>([\s\S]*?)<\/strong>\s*[—–-]?\s*([\s\S]*?)<\/li>/g)]
+  .map(([, n, t]) => ({ nazev: bezTagu(n).replace(/[.:]$/, ''), text: t.trim() }));
+const texty = (h: string) => odstavce(h.replace(/<(ul|ol)>[\s\S]*?<\/\1>/g, '').replace(/<blockquote>[\s\S]*?<\/blockquote>/g, '')).filter((p) => !box(p) && !/^<a [^>]*>[\s\S]*<\/a>$/.test(p));
+const boxy = (h: string) => odstavce(h.replace(/<blockquote>[\s\S]*?<\/blockquote>/g, '')).map(box).filter((x): x is { nadpis: string; text: string } => !!x);
+
+// úvod
+const uvodOdst = odstavce(uvod.map((c) => (c.typ === 'html' ? c.html : '')).join(''));
+const perex = uvodOdst.filter((p) => !box(p)).map((p) => `<p>${p}</p>`).join('');
+const tip = uvodOdst.map(box).find(Boolean);
+
+// věkové limity: tabulka po řádcích, štítek podle nástroje
+const limity = najdi(/Věkové limity/i);
+const limityHtml = htmlOddilu(limity);
+const hlavicka = [...(limityHtml.match(/<thead>([\s\S]*?)<\/thead>/)?.[1] ?? '').matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map(([, t]) => bezTagu(t));
+const STITEK: Record<string, { text: string; cerveny?: boolean }> = {
+  ChatGPT: { text: 'od 13 let' }, Gemini: { text: 'škola bez omezení' }, Copilot: { text: 'od 13 let' },
+  Claude: { text: 'jen 18+', cerveny: true }, Perplexity: { text: 'od 13 let' }, Tiny: { text: 'pro žáky' },
+};
+const radky = [...(limityHtml.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? '').matchAll(/<tr>([\s\S]*?)<\/tr>/g)]
+  .map(([, r]) => [...r.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(([, t]) => t.trim()))
+  .map((b) => ({ nazev: b[0], stitek: STITEK[bezTagu(b[0])], bunky: b.slice(1).map((t) => (t === '—' ? t : velke(t))) }));
+
+const doporuceni = najdi(/doporučení/i);
+const gdpr = najdi(/GDPR/i);
+const gdprHtml = htmlOddilu(gdpr);
+const gdprBoxy = boxy(gdprHtml);
+const aiAct = najdi(/AI Act/i);
+const aiActHtml = htmlOddilu(aiAct);
+const milniky = polozky(aiActHtml).map((m) => {
+  const r = m.nazev.match(/^([\d.\s]+\d{4}):\s*(.*)$/);
+  return { datum: r ? r[1].trim() : '', nazev: r ? r[2] : m.nazev, text: m.text };
+});
+const obsah = najdi(/Komu patří/i);
+const obsahHtml = htmlOddilu(obsah);
+const citace = najdi(/citovat/i);
+const citaceHtml = htmlOddilu(citace);
+const ukazka = citaceHtml.match(/<blockquote>\s*<p>([\s\S]*?)<\/p>\s*<\/blockquote>/)?.[1];
+const zaver = najdi(/Pravidla pro vaši školu/i);
+const zaverHtml = htmlOddilu(zaver);
+const tlacitka = [...zaverHtml.matchAll(/<p>\s*<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*<\/p>/g)].map(([, href, t]) => ({ href, text: bezTagu(t) }));
+
+const skupina = navigace.menu.find((g) => g.items.some((it) => it.href === '/' + stranka.id));
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+---
+<Base title={d.title} description={d.popis ?? undefined}>
+  <div class="band band--white">
+    <div class="wrap hero">
+      <div class="page-head">
+        <div class="zahlavi">
+          <Crumbs items={[...(skupina ? [{ title: skupina.title }] : []), { title: d.title }]} />
+          {datum && <span class="draft">Aktualizováno {datum}</span>}
+        </div>
+        <h1>{d.title}</h1>
+        <div class="lede perex" set:html={perex} />
+        {tip && (
+          <div class="tip">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v4M12 16h.01"></path></svg>
+            <span><strong>{tip.nadpis}.</strong> <span set:html={tip.text} /></span>
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+
+  {limity && (
+    <section class="band band--sky" aria-labelledby={limity.id || undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <div class="hlava">
+          <h2 id={limity.id || undefined}>{limity.nadpis}</h2>
+          <div class="prose" set:html={texty(limityHtml).map((p) => `<p>${p}</p>`).join('')} />
+        </div>
+        <div class="karty karty--vek">
+          {radky.map((r) => (
+            <article class="card vek">
+              <h3 set:html={r.nazev} />
+              {r.stitek && <span class:list={['stitek', { 'stitek--cerveny': r.stitek.cerveny }]}>{r.stitek.text}</span>}
+              <dl>
+                {r.bunky.map((t, i) => (
+                  <div>
+                    <dt>{hlavicka[i + 1]}</dt>
+                    <dd set:html={t === '—' ? 'Nemá' : t} />
+                  </div>
+                ))}
+              </dl>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {doporuceni && (
+    <section class="band band--white" aria-labelledby={doporuceni.id || undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <h2 id={doporuceni.id || undefined}>{doporuceni.nadpis}</h2>
+        <ol class="karty karty--4">
+          {polozky(htmlOddilu(doporuceni)).map((k, i) => (
+            <li class="card">
+              <span class="cislo" aria-hidden="true">{i + 1}</span>
+              <h3>{k.nazev}</h3>
+              <p set:html={k.text} />
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  )}
+
+  {gdpr && (
+    <section class="band band--sky" aria-labelledby={gdpr.id || undefined}>
+      <div class="wrap dva-sloupce">
+        <div class="hlava">
+          <h2 id={gdpr.id || undefined}>{gdpr.nadpis}</h2>
+          <div class="prose" set:html={texty(gdprHtml).map((p) => `<p>${p}</p>`).join('')} />
+        </div>
+        <div class="stack" style="gap: 16px">
+          {gdprBoxy.map((b) => {
+            const cislo = b.nadpis.match(/^(\d+)\s+(.*)$/);
+            return cislo ? (
+              <div class="card cislo-box">
+                <span class="velke-cislo">{cislo[1]}</span>
+                <span><strong>{cislo[2]}:</strong> <span set:html={b.text} /></span>
+              </div>
+            ) : (
+              <div class="ruzovy"><strong>{b.nadpis}</strong><span set:html={b.text} /></div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {aiAct && (
+    <section class="band band--white" aria-labelledby={aiAct.id || undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <div class="hlava">
+          <h2 id={aiAct.id || undefined}>{aiAct.nadpis}</h2>
+          <div class="prose" set:html={texty(aiActHtml).map((p) => `<p>${p}</p>`).join('')} />
+        </div>
+        <ol class="karty karty--3">
+          {milniky.map((m) => (
+            <li class="card">
+              {m.datum && <span class="stitek stitek--datum">{m.datum}</span>}
+              <h3>{m.nazev}</h3>
+              <p set:html={m.text} />
+            </li>
+          ))}
+        </ol>
+        {boxy(aiActHtml).map((b) => (
+          <div class="ruzovy ruzovy--velky"><div class="titulek">{b.nadpis}</div><p set:html={b.text} /></div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {obsah && (
+    <section class="band band--sky" aria-labelledby={obsah.id || undefined}>
+      <div class="wrap stack" style="gap: 32px">
+        <div class="hlava">
+          <h2 id={obsah.id || undefined}>{obsah.nadpis}</h2>
+          <div class="prose" set:html={texty(obsahHtml).map((p) => `<p>${p}</p>`).join('')} />
+        </div>
+        <ul class="karty karty--4 kontrola">
+          {polozky(obsahHtml).map((k) => <li><strong>{k.nazev}</strong><span set:html={k.text} /></li>)}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  {citace && (
+    <section class="band band--white" aria-labelledby={citace.id || undefined}>
+      <div class="wrap dva-sloupce">
+        <div class="hlava">
+          <h2 id={citace.id || undefined}>{citace.nadpis}</h2>
+          <div class="prose" set:html={texty(citaceHtml).map((p) => `<p>${p}</p>`).join('')} />
+        </div>
+        {ukazka && (
+          <figure class="ukazka">
+            <figcaption class="titulek titulek--sky">Příklad poznámky v dokumentu</figcaption>
+            <p set:html={ukazka} />
+          </figure>
+        )}
+      </div>
+    </section>
+  )}
+
+  {zaver && (
+    <section class="band band--sky" aria-labelledby={zaver.id || undefined}>
+      <div class="wrap vyzva">
+        <div class="hlava">
+          <h2 id={zaver.id || undefined}>{zaver.nadpis}</h2>
+          <div class="prose" set:html={texty(zaverHtml).map((p) => `<p>${p}</p>`).join('')} />
+        </div>
+        <div class="tlacitka">
+          {tlacitka.map((o, i) => <a class:list={['btn', i === 0 ? 'btn--primary' : 'btn--outline btn--bila']} href={o.href}>{o.text}{i === 0 && ' →'}</a>)}
+        </div>
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
+  .hlava { display: flex; flex-direction: column; gap: 14px; max-width: var(--dve-tretiny); }
+  .tlacitka { display: flex; flex-wrap: wrap; gap: 12px; }
+  .perex :global(p) { font-size: 1.15rem; }
+  .dva-sloupce { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 48px; align-items: start; }
+  .tip { max-width: var(--dve-tretiny); background: var(--sky-light); border-radius: 9px; padding: 18px 22px; display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; }
+  .tip svg { flex: none; margin-top: 3px; color: var(--sky-ink); }
+  .stitek { align-self: flex-start; font-family: var(--fb); font-size: 0.75rem; padding: 2px 8px; border-radius: var(--pill); background: var(--sky-light); }
+  .stitek--cerveny { background: var(--accent-soft); font-weight: 600; }
+  .stitek--datum { font-size: 0.82rem; font-weight: 600; padding: 3px 10px; }
+  .titulek { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-strong); }
+  .titulek--sky { color: var(--sky-ink); }
+
+  .karty--vek { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+  .vek h3 { font-size: 1.35rem; }
+  .vek h3 :global(a) { color: var(--ink); }
+  .vek dl { margin: 0; display: flex; flex-direction: column; gap: 12px; }
+  .vek dt { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); }
+  .vek dd { margin: 2px 0 0; font-size: 0.93rem; line-height: 1.6; }
+
+  .karty { margin: 0; padding: 0; list-style: none; display: grid; gap: 22px; }
+  .karty--4 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); }
+  .karty--3 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+  .karty h3 { font-size: 1.1rem; }
+  .karty p { margin: 0; font-size: 0.93rem; line-height: 1.6; color: var(--ink); }
+  .cislo { font-family: var(--fh); font-size: 1.75rem; font-weight: 700; color: var(--accent); line-height: 1; }
+  .kontrola { gap: 16px; }
+  .kontrola li { background: var(--panel); border-radius: 9px; padding: 20px 22px; display: flex; flex-direction: column; gap: 6px; font-size: 0.9rem; line-height: 1.55; }
+  .kontrola strong { font-family: var(--fh); font-size: 1.05rem; }
+
+  .cislo-box { flex-direction: row; align-items: center; gap: 22px; }
+  .cislo-box > span:last-child { font-size: 0.95rem; }
+  .velke-cislo { font-family: var(--fh); font-size: 3.4rem; font-weight: 700; color: var(--accent); line-height: 1; }
+  .ruzovy { background: var(--accent-soft); border-radius: 9px; padding: 22px 26px; display: flex; flex-direction: column; gap: 6px; font-size: 0.95rem; }
+  .ruzovy strong { font-weight: 600; }
+  .ruzovy--velky { border-radius: 12px; padding: 26px 30px; gap: 8px; font-size: 1rem; }
+  .ruzovy p { margin: 0; }
+
+  .ukazka { margin: 0; background: #f6fafc; border: 1px solid var(--sky); border-radius: 9px; padding: 24px 26px; display: flex; flex-direction: column; gap: 10px; }
+  .ukazka p { margin: 0; font-style: italic; }
+
+  .vyzva { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; }
+  .btn--bila { background: var(--panel); }
+</style>
