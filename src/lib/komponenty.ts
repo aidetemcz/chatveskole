@@ -147,12 +147,9 @@ export function naKartuSObrazkem(html: string): string {
 }
 
 // Sekce ### až do dalšího ## → karty ve dvou sloupcích (stránka Způsoby využití AI ve výuce, varianta A z Claude Design):
-// nadpis a tučný perex; „Co dělá žák“ a „Co dělá AI“ vedle sebe; „Hodí se / Nehodí se“ s ikonami;
-// zvýrazněná pojistka; ostatní položky jako řádky „Štítek: text“; v patičce Tiny a prompty jako tlačítka.
-const IKONA_ANO = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>';
-const IKONA_NE = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>';
-const IKONA_STIT = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"></path></svg>';
-const KRATCE: Record<string, string> = { 'Jak poznáte, že se žák učí': 'Jak poznáte, že se učí', 'Otázka k reflexi': 'Reflexe' };
+// nadpis a tučný perex; „Co dělá žák“ a „Co dělá AI“ vedle sebe;
+// Hodí se / Nehodí se a ostatní položky jako řádky „Štítek: text“ (pojistka se nezobrazuje); v patičce Tiny a prompty jako tlačítka.
+const KRATCE: Record<string, string> = { 'Jak poznáte, že se žák učí': 'Důkaz o učení', 'Otázka k reflexi': 'Reflexe' };
 
 export function naKartyZpusobu(html: string): string {
   const konec = html.search(/<h2[\s>]/);
@@ -168,18 +165,17 @@ export function naKartyZpusobu(html: string): string {
     const vezmi = (stitek: string) => { const v = polozky.get(stitek); polozky.delete(stitek); return v; };
     const zak = vezmi('Co dělá žák'), ai = vezmi('Co dělá AI');
     const hodi = vezmi('Hodí se, když'), nehodi = vezmi('Nehodí se, když');
-    const pojistka = vezmi('Pojistka'), spustit = vezmi('Kde to spustit');
+    vezmi('Pojistka');
+    const spustit = vezmi('Kde to spustit');
     let out = `<article class="zpusob"><div class="zpusob-hlava"><h3${h?.[1] ?? ''}>${h?.[2] ?? ''}</h3>`
       + (perex ? `<p class="zpusob-perex">${perex}</p>` : '') + '</div>';
     if (zak || ai) out += '<div class="zpusob-role">'
       + (zak ? `<div><span class="zpusob-role-kdo">Žák</span><p>${zak}</p></div>` : '')
       + (ai ? `<div><span class="zpusob-role-kdo">AI</span><p>${ai}</p></div>` : '') + '</div>';
-    if (hodi || nehodi) out += '<div class="zpusob-kdy">'
-      + (hodi ? `<p>${IKONA_ANO}<span><strong>Hodí se, když</strong> ${hodi}</span></p>` : '')
-      + (nehodi ? `<p>${IKONA_NE}<span><strong>Nehodí se, když</strong> ${nehodi}</span></p>` : '') + '</div>';
-    if (pojistka) out += `<p class="zpusob-pojistka">${IKONA_STIT}<span><strong>Pojistka:</strong> ${pojistka}</span></p>`;
-    if (polozky.size) out += '<div class="zpusob-dalsi">'
-      + [...polozky].map(([s, x]) => `<p><strong>${KRATCE[s] ?? s}:</strong> ${x}</p>`).join('') + '</div>';
+    const vel = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
+    const radky: [string, string][] = [...(hodi ? [['Hodí se, když', vel(hodi)]] : []), ...(nehodi ? [['Nehodí se, když', vel(nehodi)]] : []), ...polozky] as [string, string][];
+    if (radky.length) out += '<div class="zpusob-dalsi">'
+      + radky.map(([s, x]) => `<p><strong>${KRATCE[s] ?? s}:</strong> ${x}</p>`).join('') + '</div>';
     if (spustit) {
       const odkazy = [...spustit.matchAll(/<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)];
       const tiny = spustit.split(/,?\s*v běžném chatbotu/i)[0].trim().match(/^V Tiny\s+([\s\S]*)$/i);

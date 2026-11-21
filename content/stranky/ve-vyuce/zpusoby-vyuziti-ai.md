@@ -57,7 +57,6 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Co dělá AI:** Klade po jedné otázce. Při chybě se vrátí o krok zpět a napoví.
 - **Hodí se, když** cíl zní „žák si vybaví“, „vyjmenuje“ nebo „popíše“.
 - **Nehodí se, když** se látka teprve probírá a žák nemá z čeho čerpat.
-- **Pojistka:** Chatbot neprozrazuje hotové odpovědi.
 - **Jak poznáte, že se žák učí:** Zvládne obtížnější otázky než na začátku a dokáže říct, co si potřebuje zopakovat.
 - **Otázka k reflexi:** Na kterou otázku bych příště odpověděl bez nápovědy?
 - **Příklad:** Opakování slovních druhů před čtvrtletní prací.
@@ -71,7 +70,6 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Co dělá AI:** Místo výkladu klade návodné otázky a navazuje na to, co žák řekl.
 - **Hodí se, když** cíl zní „žák vysvětlí“, „objasní“ nebo „najde souvislost“.
 - **Nehodí se, když** téma stojí na faktech, která žák nemůže odvodit, například na letopočtech nebo názvosloví.
-- **Pojistka:** Chatbot nevysvětluje dřív, než se o to pokusí žák.
 - **Jak poznáte, že se žák učí:** Shrne nový poznatek vlastními slovy bez pomoci chatbota.
 - **Otázka k reflexi:** Na co jsem přišel sám a kde mě chatbot navedl?
 - **Příklad:** Proč se na Zemi střídají roční období.
@@ -85,7 +83,6 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Co dělá AI:** Hraje zvědavého, ale nechápavého posluchače a doptává se na nejasná místa.
 - **Hodí se, když** cíl zní „žák vysvětlí vlastními slovy“ nebo „uvede příklad“.
 - **Nehodí se, když** se žák s látkou setkává poprvé.
-- **Pojistka:** Chatbot správnou odpověď sám nedoplňuje ani neodvozuje.
 - **Jak poznáte, že se žák učí:** Jeho vysvětlení je věcně správné, srozumitelné a obstojí i při doplňujících otázkách.
 - **Otázka k reflexi:** Co se mi vysvětlovalo nejhůř a co to říká o tom, jak látce rozumím?
 - **Příklad:** Fotosyntéza vysvětlená někomu, kdo nikdy neviděl rostlinu.
@@ -103,7 +100,6 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Co dělá AI:** Mluví v první osobě za historickou postavu, odborníka, nebo třeba za buňku či řeku.
 - **Hodí se, když** cíl zní „žák popíše z jiné perspektivy“, „porovná pohledy“ nebo „zasadí do kontextu“.
 - **Nehodí se, když** žák nemá možnost odpovědi ověřit.
-- **Pojistka:** Žáci vědí, že jde o simulaci, která se může mýlit, a klíčová tvrzení ověřují.
 - **Jak poznáte, že se žák učí:** Klade promyšlené otázky a všimne si nepřesnosti nebo rozdílu oproti zdroji.
 - **Otázka k reflexi:** Čemu z rozhovoru věřím a podle čeho?
 - **Příklad:** Rozhovor s Marií Terezií o školní reformě nebo s kapkou vody o koloběhu vody.
@@ -117,7 +113,6 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Co dělá AI:** Navrhne hypotetickou změnu a ptá se, co z ní plyne.
 - **Hodí se, když** cíl zní „žák odvodí důsledky“, „vysvětlí příčinu“ nebo „použije poznatek v nové situaci“.
 - **Nehodí se, když** žákům chybějí základní znalosti a zbývalo by jim jen hádat.
-- **Pojistka:** Důsledky formuluje žák. Chatbot je jen zpochybňuje a žádá zdůvodnění.
 - **Jak poznáte, že se žák učí:** Jeho řetězec úvah je logický a opírá se o učivo.
 - **Otázka k reflexi:** Který z mých závěrů stojí na znalosti a který na odhadu?
 - **Příklad:** Co kdyby zemská osa nebyla nakloněná.
@@ -135,7 +130,6 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Co dělá AI:** Oponuje, žádá důkazy a upozorní na argumentační klam.
 - **Hodí se, když** cíl zní „žák obhájí“, „zdůvodní“ nebo „vyvrátí“.
 - **Nehodí se, když** jde o fakta, o kterých se nediskutuje, nebo o téma, které je pro žáky osobně citlivé.
-- **Pojistka:** Cílem není vyhrát. Chatbot posuzuje kvalitu argumentů, ne názor žáka.
 - **Jak poznáte, že se žák učí:** Uvádí důkazy, vyrovná se s protiargumentem a pojmenuje nejslabší místo vlastní pozice.
 - **Otázka k reflexi:** Který protiargument mě přiměl názor změnit nebo zpřesnit?
 - **Příklad:** Mají být mobilní telefony o přestávkách zakázané?
@@ -149,7 +143,6 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Co dělá AI:** Vytvoří věrohodný text se záměrnými věcnými, logickými nebo jazykovými chybami.
 - **Hodí se, když** cíl zní „žák posoudí“, „ověří“ nebo „opraví“.
 - **Nehodí se, když** žáci látku neznají natolik, aby chybu poznali.
-- **Pojistka:** Chatbot chyby neoznačuje. Vyučující má jejich přehled a na závěr je se třídou projde.
 - **Jak poznáte, že se žák učí:** Najde podstatné chyby a umí zdůvodnit, proč jde o chybu.
 - **Otázka k reflexi:** Kterou chybu jsem přehlédl a proč působila věrohodně?
 - **Příklad:** Odstavec o sluneční soustavě se třemi chybami.
@@ -167,7 +160,6 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Co dělá AI:** Ptá se, nabízí další úhly pohledu a upozorňuje na slepá místa. Hotové nápady nepřidává.
 - **Hodí se, když** cíl zní „žák navrhne“ nebo „najde více řešení“.
 - **Nehodí se, když** se hodnotí původnost nápadu nebo když má třída dojít k rozmanitým řešením.
-- **Pojistka:** Nejdřív já, potom AI. Chatbot začíná otázkou na nápady žáka.
 - **Jak poznáte, že se žák učí:** Má seznam nápadů před rozhovorem i po něm a svůj výběr zdůvodní.
 - **Otázka k reflexi:** Který nápad je můj a ke kterému bych se bez AI nedostal?
 - **Příklad:** Náměty na třídní projekt ke Dni Země.
@@ -181,7 +173,6 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Co dělá AI:** Doptává se na mezery, na pořadí a na to, zda je plán reálný.
 - **Hodí se, když** cíl zní „žák naplánuje“, „uspořádá“ nebo „navrhne postup“.
 - **Nehodí se, když** samostatně hodnotíte právě stavbu textu nebo plánování.
-- **Pojistka:** Chatbot nevypíše osnovu ani plán najednou a čeká na návrh žáka.
 - **Jak poznáte, že se žák učí:** Předloží první návrh i konečnou verzi a vysvětlí, co změnil a proč.
 - **Otázka k reflexi:** Co jsem v plánu podcenil?
 - **Příklad:** Osnova referátu nebo harmonogram skupinového projektu.
@@ -195,7 +186,6 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Co dělá AI:** Posoudí práci podle kritérií, která zadal vyučující, a navrhne, na co se zaměřit.
 - **Hodí se, když** cíl zní „žák zhodnotí vlastní práci“ nebo „vylepší ji“.
 - **Nehodí se, když** žáci kritéria neznají nebo když jde o hotovou práci ke klasifikaci.
-- **Pojistka:** Sebehodnocení předchází. Chatbot text za žáka nepřepisuje.
 - **Jak poznáte, že se žák učí:** Odevzdá verzi před úpravou i po ní a zdůvodní, které rady přijal a které odmítl.
 - **Otázka k reflexi:** V čem se moje hodnocení lišilo od hodnocení AI a kdo z nás měl pravdu?
 - **Příklad:** Rozpracovaná úvaha posouzená podle kritérií z hodiny slohu.
