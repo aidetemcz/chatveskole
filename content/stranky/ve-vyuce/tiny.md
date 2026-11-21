@@ -60,7 +60,7 @@ Kromě Tinybotů najdete v Tiny modelové lekce a AI asistenty pro vyučující,
 
 ## Bezpečnost a pro koho je Tiny
 
-Tiny je pro školy zdarma. Používat ho smíte jen pro vzdělávání a pro vnitřní potřeby školy. Smlouvu o používání uzavírá škola. Žáci se přihlašují školním účtem Office 365 nebo Google, případně školním e-mailem.
+Tiny je pro školy zdarma. Žáci se přihlašují školním účtem Office 365 nebo Google, případně školním e-mailem.
 
 Data zůstávají na serverech v Evropské unii a při přenosu jsou šifrovaná. Než konverzace odejde jazykovému modelu, Tiny ji anonymizuje. Osobní údaje žáků ani jejich konverzace neslouží k tréninku AI modelů.
 
