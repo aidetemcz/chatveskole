@@ -158,9 +158,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {nahravat && (
     <section class="band band--white" aria-labelledby={nahravat.id || undefined}>
-      <div class="wrap dva-sloupce">
+      <div class="wrap dva-sloupce dva-sloupce--nadpis">
+        <h2 class="nadpis-sloupcu" id={nahravat.id || undefined}>{nahravat.nadpis}</h2>
         <div class="stack" style="gap: 20px">
-          <h2 id={nahravat.id || undefined}>{nahravat.nadpis}</h2>
           <div class="titulek">{bezTagu(hodiSeUvod).replace(/:$/, '')}</div>
           <ul class="cipy">{hodiSe.map((t) => <li class="cip" set:html={t} />)}</ul>
         </div>
@@ -209,9 +209,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {sdileni && (
     <section class="band band--white" aria-labelledby={sdileni.id || undefined}>
-      <div class="wrap dva-sloupce">
+      <div class="wrap dva-sloupce dva-sloupce--nadpis">
+        <h2 class="nadpis-sloupcu" id={sdileni.id || undefined}>{sdileni.nadpis}</h2>
         <div class="hlava">
-          <h2 id={sdileni.id || undefined}>{sdileni.nadpis}</h2>
           <div class="prose">{sdileniText.map((p) => <p set:html={p} />)}</div>
         </div>
         <div class="stack" style="gap: 16px">

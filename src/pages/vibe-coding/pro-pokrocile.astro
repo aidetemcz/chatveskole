@@ -134,9 +134,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {instrukce && (
     <section class="band band--sky" aria-labelledby={instrukce.id || undefined}>
-      <div class="wrap dva-sloupce">
+      <div class="wrap dva-sloupce dva-sloupce--nadpis">
+        <h2 class="nadpis-sloupcu" id={instrukce.id || undefined}>{instrukce.nadpis}</h2>
         <div class="hlava">
-          <h2 id={instrukce.id || undefined}>{instrukce.nadpis}</h2>
           <div class="prose">{instrukceText.map((p) => <p set:html={p} />)}</div>
         </div>
         <div class="card seznam-karta">
@@ -156,9 +156,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {dovednosti && (
     <section class="band band--white" aria-labelledby={dovednosti.id || undefined}>
-      <div class="wrap dva-sloupce">
+      <div class="wrap dva-sloupce dva-sloupce--nadpis">
+        <h2 class="nadpis-sloupcu" id={dovednosti.id || undefined}>{dovednosti.nadpis}</h2>
         <div class="hlava">
-          <h2 id={dovednosti.id || undefined}>{dovednosti.nadpis}</h2>
           <div class="prose" set:html={dovednostiHtml} />
         </div>
         {priklady.length > 0 && (

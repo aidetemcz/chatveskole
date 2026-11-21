@@ -130,9 +130,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {gdpr && (
     <section class="band band--sky" aria-labelledby={gdpr.id || undefined}>
-      <div class="wrap dva-sloupce">
+      <div class="wrap dva-sloupce dva-sloupce--nadpis">
+        <h2 class="nadpis-sloupcu" id={gdpr.id || undefined}>{gdpr.nadpis}</h2>
         <div class="hlava">
-          <h2 id={gdpr.id || undefined}>{gdpr.nadpis}</h2>
           <div class="prose" set:html={texty(gdprHtml).map((p) => `<p>${p}</p>`).join('')} />
         </div>
         <div class="stack" style="gap: 16px">
@@ -191,9 +191,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {citace && (
     <section class="band band--white" aria-labelledby={citace.id || undefined}>
-      <div class="wrap dva-sloupce">
+      <div class="wrap dva-sloupce dva-sloupce--nadpis">
+        <h2 class="nadpis-sloupcu" id={citace.id || undefined}>{citace.nadpis}</h2>
         <div class="hlava">
-          <h2 id={citace.id || undefined}>{citace.nadpis}</h2>
           <div class="prose" set:html={texty(citaceHtml).map((p) => `<p>${p}</p>`).join('')} />
         </div>
         {ukazka && (

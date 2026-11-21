@@ -104,9 +104,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {skladba && (
     <section class="band band--sky" aria-labelledby={skladba.id || undefined}>
-      <div class="wrap dva-sloupce">
+      <div class="wrap dva-sloupce dva-sloupce--nadpis">
+        <h2 class="nadpis-sloupcu" id={skladba.id || undefined}>{skladba.nadpis}</h2>
         <div class="hlava">
-          <h2 id={skladba.id || undefined}>{skladba.nadpis}</h2>
           <div class="prose" set:html={uvodOddilu(skladbaHtml)} />
         </div>
         <div class="strom" role="group" aria-label="Složka dovednosti">
