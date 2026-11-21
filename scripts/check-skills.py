@@ -1,15 +1,16 @@
 """Kontrola skills podle docs/specifikace-skills.md.
 
-Spuštění: python3 scripts/check-skills.py
+Spuštění: python3 scripts/check-skills.py [sk]   (sk = slovenská verze v content/sk)
 Vypíše chyby (E) a varování (W). Návratový kód 1, pokud je aspoň jedna chyba.
 """
 import pathlib, re, sys
 import yaml
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SKILLS = ROOT / "content" / "skills"
-SADY = yaml.safe_load((ROOT / "content" / "sady.yaml").read_text(encoding="utf-8"))
-ZNALOSTI = yaml.safe_load((ROOT / "content" / "znalosti" / "znalosti.yaml").read_text(encoding="utf-8")) or {}
+OBSAH = ROOT / "content" / "sk" if "sk" in sys.argv[1:] else ROOT / "content"
+SKILLS = OBSAH / "skills"
+SADY = yaml.safe_load((OBSAH / "sady.yaml").read_text(encoding="utf-8"))
+ZNALOSTI = yaml.safe_load((OBSAH / "znalosti" / "znalosti.yaml").read_text(encoding="utf-8")) or {}
 sady_slugs = {s["slug"] for s in SADY}
 v_sadach = {sk for s in SADY for sk in s["skills"]}
 
