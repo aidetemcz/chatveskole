@@ -1,12 +1,6 @@
 # Sady skills = budoucí pluginy (Claude, ChatGPT, Copilot) a rozcestníky na webu.
 # Jeden skill může být ve více sadách.
 
-- slug: formativni-hodnoceni
-  title: Formativní hodnocení
-  popis: Od vzdělávacího cíle přes kritéria a sebehodnocení až ke slovnímu hodnocení. Postaveno na metodice Vysvědčení jinak (PdF MU).
-  pro_koho: [ucitele]
-  skills: [vzdelavaci-cile, kriteria-hodnoceni, gradace-kriterii-hodnoceni, slovni-hodnoceni, radce-slovniho-hodnoceni]
-
 - slug: priprava-vyuky
   title: Příprava výuky
   popis: Nápady na hodiny, pracovní listy, úpravy materiálů pro různé žáky a aktivity, ve kterých s chatbotem pracují sami žáci.
@@ -18,6 +12,12 @@
   popis: Zprávy zákonným zástupcům, jazyková kontrola textů a mentor pro náročné situace ve třídě.
   pro_koho: [ucitele, vedeni]
   skills: [komunikace-s-rodici, jazykovy-korektor, ucitelsky-mentor, lepsi-tridni-klima]
+
+- slug: formativni-hodnoceni
+  title: Formativní hodnocení
+  popis: Od vzdělávacího cíle přes kritéria a sebehodnocení až ke slovnímu hodnocení. Postaveno na metodice Vysvědčení jinak (PdF MU).
+  pro_koho: [ucitele]
+  skills: [vzdelavaci-cile, kriteria-hodnoceni, gradace-kriterii-hodnoceni, slovni-hodnoceni, radce-slovniho-hodnoceni]
 
 - slug: vedeni-skoly
   title: Vedení školy
