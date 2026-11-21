@@ -45,7 +45,7 @@ Metodika je součástí Kurikula umělé inteligence pro ZŠ a SŠ, které vytv�
 
 ## Osm zadání pro vyučující
 
-Dříve jsme v [databázi promptů](/funkce/prompty/graf-regiony) radili, jak nechat chatbota napsat kód například pro graf a jak ho zobrazit. Dnes chatbot graf rovnou postaví. Zadání vložte do Gemini Canvas nebo Claude a upravte podle sebe.
+Dříve jsme v [databázi promptů](/funkce/prompty/graf-regiony) radili, jak napsat zadání pro chatbota tak, aby vytvořil kód, který vizualizuje například graf. Dnes ho chatbot rovnou postaví sám. Zadání vyzkoušejte například v Gemini Canvas nebo v Canva Code.
 
 ### Interaktivní časová osa (dějepis, zeměpis)
 
