@@ -19,16 +19,16 @@ U bezplatných a osobních tarifů může vývojář používat vaše konverzace
 
 Ať používáte jakýkoli tarif, do chatbota nevkládejte jména žáků ani jiné osobní údaje. Pracujte s iniciálami nebo přezdívkami.
 
-## Co má vaše škola možná zdarma
+## Co je zdarma nebo se slevou
 
 Než začnete platit osobní předplatné, zeptejte se správce IT, co škola má.
 
-- **Google Workspace for Education** — Gemini a Gemini Notebook pro vyučující i žáky, data školy se nepoužívají k tréninku. Zapíná správce.
-- **Microsoft 365 se školní licencí (A1, A3, A5)** — Copilot Chat pro vyučující i žáky od 13 let, data zůstávají ve škole. Zapíná správce.
+- **Google Workspace for Education** — Školy s Google Workspace for Education mají Gemini a Gemini Notebook zdarma pro vyučující i žáky. Data školy se nepoužívají k tréninku. Zapíná správce.
+- **Microsoft 365 se školní licencí (A1, A3, A5)** — Školy s touto licencí mají Copilot Chat zdarma pro vyučující i žáky od 13 let. Data zůstávají ve škole. Zapíná správce.
 
 ## Claude se slevou pro školy
 
-Základní i střední školy (veřejné i soukromé) mohou získat Claude za neziskové ceny přes program **Claude for Nonprofits**. Bezplatný program Claude for Teachers je zatím jen pro školy v USA. Claude mohou používat jen lidé od 18 let, je tedy pro vedení a pedagogy, ne pro žáky.
+Základní i střední školy (veřejné i soukromé) mohou získat Claude za neziskové ceny přes program **Claude for Nonprofits**. Bezplatný program Claude for Teachers je zatím jen pro školy v USA. Claude smějí používat jen lidé od 18 let, proto ho mohou využívat vedení a pedagogové, ne žáci.
 
 1. **Ověřte školu** — Ověření probíhá u partnera Anthropicu Goodstack na [validate.poweredbypercent.com/anthropic](https://validate.poweredbypercent.com/anthropic). Formulář zabere pár minut, pokud Goodstack chce dokumenty, může to trvat i několik dní. Ověřuje člověk se školním e-mailem, soukromý Gmail nestačí. S dotazy pomůže Goodstack na help@goodstack.org.
 2. **Vyberte tarif** — Team pro 2 až 150 lidí (8 USD za uživatele měsíčně, s pětinásobným využitím 40 USD), nebo Enterprise od 20 lidí (10 USD, s pětinásobným využitím 50 USD). Oba obsahují Chat, Cowork a Claude Code.
