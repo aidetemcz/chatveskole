@@ -17,19 +17,10 @@ Web vzniká ve spolupráci s řadou lidí a institucí. Provozuje ho nezisková 
 
 ## Na obsahu se podíleli
 
-- **[AI reaktor UJEP](https://aireaktor.ujep.cz)** — velkou část původní databáze promptů vytvořila Michaela Liegertová.
-- **[Národní pedagogický institut ČR](https://digitalizace.rvp.cz)** — s NPI jsme připravili 10 způsobů využití generativní AI ve výuce. AI asistenti vznikali i na hackatonech pro pedagogy.
-- **Pedagogická fakulta Masarykovy univerzity** — dovednosti pro formativní a slovní hodnocení stojí na metodice [Vysvědčení jinak](https://vysvedcenijinak.ped.muni.cz) Jany Kratochvílové a jejího týmu.
-- **Pedagogové z praxe** — například Šárka Polanecká (ZŠ Pod Beckovem), autorka Rádce pro správné formulace slovního hodnocení, nebo Jan Jílek, autor zeměpisného kvízu Poznej svět.
+Většinu obsahu webu připravujeme v AI dětem sami. S některými částmi nám ale pomohli i další. Velkou část původní databáze promptů vytvořila Michaela Liegertová z [AI reaktoru UJEP](https://aireaktor.ujep.cz). S [Národním pedagogickým institutem ČR](https://digitalizace.rvp.cz) jsme připravili 10 způsobů využití generativní AI ve výuce a AI asistenti vznikali i na hackatonech pro pedagogy. Dovednosti pro formativní a slovní hodnocení stojí na metodice [Vysvědčení jinak](https://vysvedcenijinak.ped.muni.cz) Jany Kratochvílové a jejího týmu z Pedagogické fakulty Masarykovy univerzity. Přispěli i pedagogové z praxe, například Šárka Polanecká (ZŠ Pod Beckovem), autorka Rádce pro správné formulace slovního hodnocení, nebo Jan Jílek, autor zeměpisného kvízu Poznej svět.
 
 ## Přidejte se {#pridejte-se}
 
 Používáte dovednost nebo prompt, který vám šetří čas? Podělte se o něj s dalšími vyučujícími. Každý příspěvek projdeme a s vaším souhlasem zveřejníme i s vaším jménem.
 
 [Poslat dovednost nebo prompt](/o-webu/kontakt#poslat)
-
-## AI dětem, z. s.
-
-IČ: 17914582 · Datová schránka: 4czjq6u · Číslo účtu: 2002446742/2010
-
-[aidetem.cz](https://aidetem.cz) · [Facebook](https://www.facebook.com/groups/aidetem) · [LinkedIn](https://www.linkedin.com/company/aidetem/) · [YouTube](https://www.youtube.com/@aidetemcz)

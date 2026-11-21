@@ -25,28 +25,15 @@ const naTlacitko = (a: string, trida: string, sipka = true) => {
 };
 const odkazyVOdstavci = (p: string) => [...p.matchAll(/<a [^>]*>[\s\S]*?<\/a>/g)].map(([a]) => a);
 const jenOdkazy = (p: string) => /^(\s*<a [^>]*>[\s\S]*?<\/a>\s*[·|]?)+$/.test(p);
-// položky „**Název** — text“ ze seznamu; název může být odkaz
-const polozky = (h: string) => [...(h.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').matchAll(/<li>\s*<strong>([\s\S]*?)<\/strong>\s*[—–-]?\s*([\s\S]*?)<\/li>/g)]
-  .map(([, n, t]) => ({ nazev: bezTagu(n), href: n.match(/<a [^>]*href="([^"]+)"/)?.[1] ?? null, text: velke(t.trim()) }));
-
-// Spolupracovníci → karty
+// Na obsahu se podíleli: souvislý text
 const podileli = najdi(/podíleli/i);
 const podileliHtml = htmlOddilu(podileli);
-const partneri = polozky(podileliHtml);
 
 // Přidejte se: text vlevo, odstavec jen s odkazem → tlačítko vpravo
 const pridat = najdi(/Přidejte/i);
 const pridatOdstavce = odstavce(htmlOddilu(pridat));
 const pridatText = pridatOdstavce.filter((p) => !jenOdkazy(p));
 const pridatTlacitka = pridatOdstavce.filter(jenOdkazy).flatMap(odkazyVOdstavci);
-
-// Spolek: „Údaj: hodnota · …“ → řádky, odstavec s odkazy → tlačítka
-const spolek = najdi(/z\.\s*s\./i);
-const spolekOdstavce = odstavce(htmlOddilu(spolek));
-const udaje = spolekOdstavce.filter((p) => !jenOdkazy(p)).flatMap((p) => p.split(/\s*·\s*/))
-  .map((u) => u.match(/^([^:]+):\s*([\s\S]+)$/)).filter((m): m is RegExpMatchArray => !!m)
-  .map((m) => ({ nazev: m[1].trim(), hodnota: m[2].trim() }));
-const spolekOdkazy = spolekOdstavce.filter(jenOdkazy).flatMap(odkazyVOdstavci);
 
 type Odkaz = { text: string; href: string };
 const odkazy: Odkaz[] = (Array.isArray(d.odkazy) ? d.odkazy : []).filter((o: Odkaz) => o && o.href);
@@ -71,23 +58,18 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   </div>
 
   {podileli && (
-    <section class="band band--sky" aria-labelledby="podileli-h">
-      <div class="wrap stack" style="gap: 32px">
-        <h2 id="podileli-h">{podileli.nadpis}</h2>
-        <ul class="karty">
-          {partneri.map((c) => (
-            <li class="card">
-              <h3>{c.href ? <a href={c.href}>{c.nazev}</a> : c.nazev}</h3>
-              <p set:html={c.text} />
-            </li>
-          ))}
-        </ul>
+    <section class="band band--white navazuje" aria-labelledby="podileli-h">
+      <div class="wrap">
+        <div class="hlava">
+          <h2 id="podileli-h">{podileli.nadpis}</h2>
+          <div class="prose" set:html={podileliHtml} />
+        </div>
       </div>
     </section>
   )}
 
   {pridat && (
-    <section class="band band--white" id={pridat.id || undefined} aria-labelledby="pridat-h">
+    <section class="band band--sky" id={pridat.id || undefined} aria-labelledby="pridat-h">
       <div class="wrap">
         <div class="pridat">
           <div class="hlava">
@@ -102,57 +84,22 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
     </section>
   )}
 
-  {spolek && (
-    <section class="band band--sky" aria-labelledby="spolek-h">
-      <div class="wrap dva-sloupce dva-sloupce--nadpis">
-        <h2 class="nadpis-sloupcu" id="spolek-h">{spolek.nadpis}</h2>
-        <div class="stack" style="gap: 20px">
-          {spolekOdkazy.length > 0 && (
-            <ul class="tlacitka">
-              {spolekOdkazy.map((a) => <li set:html={naTlacitko(a, 'btn--outline btn--bila', false)} />)}
-            </ul>
-          )}
-        </div>
-        <dl class="tabulka">
-          {udaje.map((u) => (
-            <div class="radek">
-              <dt>{u.nazev}</dt>
-              <dd set:html={u.hodnota} />
-            </div>
-          ))}
-        </dl>
-      </div>
-    </section>
-  )}
 </Base>
 
 <style>
+  .navazuje { padding-top: 0; }
   h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
   .hlava { display: flex; flex-direction: column; gap: 14px; max-width: var(--dve-tretiny); }
   .tlacitka { display: flex; flex-wrap: wrap; gap: 12px; margin: 8px 0 0; padding: 0; list-style: none; }
   .perex :global(p) { font-size: 1.15rem; }
   .perex :global(p + p) { margin-top: 0.6em; }
-  .dva-sloupce { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 48px; align-items: start; }
 
-  .karty { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 22px; margin: 0; padding: 0; list-style: none; }
-  .karty .card h3 { font-size: 1.15rem; }
-  .karty .card h3 a { text-decoration: underline; text-decoration-color: var(--sky-deep); text-underline-offset: 4px; }
-  .karty .card p { font-size: 0.93rem; line-height: 1.6; }
 
   .pridat { background: var(--accent-soft); border-radius: 12px; padding: 30px 32px; display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; }
   .pridat .tlacitka { margin-top: 0; }
   @media (max-width: 640px) { .pridat { padding: 24px 20px; } }
 
-  .tabulka { margin: 0; border: 1px solid var(--sky); border-radius: 9px; overflow: hidden; background: var(--panel); }
-  .radek { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); }
-  .radek + .radek { border-top: 1px solid #d5e5eb; }
-  .radek > * { margin: 0; padding: 18px 26px; }
-  .radek dt { background: #f6fafc; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); display: flex; align-items: center; }
-  .radek dd { font-family: var(--fh); font-size: 1.1rem; font-weight: 600; overflow-wrap: anywhere; line-height: 1.3; }
   @media (max-width: 480px) {
-    .radek { grid-template-columns: 1fr; }
-    .radek dt { padding-bottom: 6px; }
-    .radek dd { padding-top: 10px; }
-  }
+        }
   .btn--bila { background: var(--panel); }
 </style>
