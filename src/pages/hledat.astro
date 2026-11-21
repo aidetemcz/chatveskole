@@ -2,8 +2,9 @@
 // Vyhledávání na webu (Pagefind — index se vytváří po buildu, `npm run build`; v `npm run dev` nefunguje)
 import Base from '../layouts/Base.astro';
 import { url } from '../lib/url';
-import { t } from '../lib/jazyk';
-const bundle = url('/pagefind/');
+import { t, urlJazyka } from '../lib/jazyk';
+// index Pagefind je jeden pro obě jazykové verze (v kořeni webu); jazyk vybírá podle <html lang>
+const bundle = urlJazyka('cs', '/pagefind/');
 // skript vyhledávání jako text: překlady rozhraní Pagefind se do něj vkládají jako JS řetězce
 const js = (s: string) => `'${s.replace(/\\/g, '\\\\').replace(/'/g, "\\'")}'`;
 const skriptHledani = `

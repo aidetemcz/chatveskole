@@ -1,0 +1,65 @@
+title: Didaktický rádce
+slug: didakticky-radce
+kratky_popis: Nápady na oživení hodiny, plán hodiny podle E-U-R, plán celku, úniková hra, projekt a otázky k závěrečné diskuzi.
+popis: "Pomůže vám naplánovat hodinu nebo tematický celek, ve kterém žáci aktivně pracují. Funguje jako zkušený kolega: zeptá se, co a koho chcete učit, a v rozhovoru s vámi dojde k hodině, kterou můžete jít odučit. Stojí na třífázovém modelu E-U-R (evokace, uvědomění, reflexe), na Katalogu aktivizačních výukových metod a na formativním hodnocení; cíle formuluje podle Nové taxonomie vzdělávacích cílů (Marzano a Kendall). Váš dosavadní způsob výuky neshazuje, navrhuje drobné posuny."
+pro_koho: [ucitele]
+sady: [priprava-vyuky]
+stitky: [plánování výuky, aktivizační metody, E-U-R, Nová taxonomie vzdělávacích cílů, úniková hra, projektová výuka, EduScrum]
+rezimy:
+  - Nápady na oživení výuky
+  - Plán hodiny
+  - Plán týdne nebo tematického celku
+  - Úniková hra
+  - Projekt (EduScrum)
+  - Otázky k závěrečné diskuzi
+  - K čemu mi to je
+  - Didaktická konzultace
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/didakticky-radce/
+    typ: asistent
+  - url: https://chatveskole.cz/databaze-promptu/planovac-vyuky/
+    typ: asistent
+  - url: https://chatveskole.cz/databaze-promptu/didaktik-konzultant/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/napadnicek-geografie/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/vyukovy-plan-bloomova-taxonomie/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/osnova-lekce-informatika/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/strukturovany-ucebni-plan/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/unikovka-elektromagnetismus/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/eduscrum-mestsky-ekosystem/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/otazky-k-diskuzi/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/k-cemu-mi-to-je/
+    typ: prompt
+puvodni_asistenti:
+  gpt:
+    - https://chatgpt.com/g/g-69ef6dbd05cc8191b17afa3e47955d12-didakticky-radce
+    - https://chat.openai.com/g/g-x2QXkDh1m-planovac-vyuky
+  systemovy_prompt:
+    - https://docs.google.com/document/d/1LgOmptN21da2VhVeMYBunj_4XMEYG4HFqjuYwOkdwGw/edit
+    - https://docs.google.com/document/d/18UkBvuy0MOztMRLUuISkaGO-QU5NKCEU0fujJ-9CxZ0/edit
+google_doc: https://docs.google.com/document/d/1NLbFO0t7gcQGyn8ijywK9lrgDB4PuYEy3AUrMz1Sfug/edit
+google_slozka: https://drive.google.com/drive/folders/18KjVr2x7s05owPk_RY0Iplha29FYhzaD
+google_data: https://drive.google.com/drive/folders/1mwxujju3n0eGTaMDOf0s9hvGbjY71ahR
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1FvxvRXYGihLanA9_XgibP3k2oYKkfK90
+  gemini: https://drive.google.com/uc?export=download&id=100x6H1kwv0183ncQoDyprVqGIMU14KaY
+  chatgpt: https://drive.google.com/uc?export=download&id=1KRAEo0xgTa6wehnHMIILJULM5fbhucjs
+autori: [Eva Nečasová (AI dětem), AI reaktor UJEP (Míša Liegertová)]
+metodika:
+  - nazev: Katalog aktivizačních výukových metod a Příručka aktivizační výuky (AI dětem)
+  - nazev: Model E-U-R – Čtením a psaním ke kritickému myšlení (Kritické myšlení, z. s.)
+    url: https://kritickemysleni.cz/
+  - nazev: Nová taxonomie vzdělávacích cílů (Marzano a Kendall)
+  - nazev: EduScrum
+    url: https://www.eduscrum.cz/co/
+znalosti: [katalog-aktivizacnich-metod.md, prirucka-aktivizacni-vyuky.md, formulace-vzdelavacich-cilu.md, klicove-kompetence.md, prurezova-temata.md]
+vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-21

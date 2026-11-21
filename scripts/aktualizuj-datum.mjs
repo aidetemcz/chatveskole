@@ -9,7 +9,7 @@ let zaklad = 'origin/main';
 try { sh(`git rev-parse --verify ${zaklad}`); } catch { zaklad = 'HEAD'; }
 
 const soubory = new Set(
-  [sh(`git diff --name-only ${zaklad} -- content/stranky`), sh('git ls-files --others --exclude-standard content/stranky')]
+  [sh(`git diff --name-only ${zaklad} -- content/stranky content/sk/stranky`), sh('git ls-files --others --exclude-standard content/stranky content/sk/stranky')]
     .join('\n').split('\n').filter((f) => f.endsWith('.md') && existsSync(f)),
 );
 

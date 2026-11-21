@@ -4,7 +4,7 @@ import { url } from '../lib/url';
 import { t, SK, PREPINAC, urlJazyka } from '../lib/jazyk';
 const current = Astro.url.pathname.replace(import.meta.env.BASE_URL.replace(/\/$/, ''), '') || '/';
 // přepínač jazyků: stejná stránka v druhém jazyce
-const cestaBezBase = current.replace(/\/?$/, '/');
+const cestaBezBase = /^\/404/.test(current) ? '/' : current.replace(/\/?$/, '/');
 const druhy = SK ? { href: urlJazyka('cs', cestaBezBase), kod: 'CZ', jazyk: 'cs', popis: 'Čeština' } : { href: urlJazyka('sk', cestaBezBase), kod: 'SK', jazyk: 'sk', popis: 'Slovenčina' };
 const isIn = (g: { items: { href: string }[] }) => g.items.some((i) => current.startsWith(i.href));
 ---

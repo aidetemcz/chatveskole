@@ -1,0 +1,39 @@
+title: Hodnoty, mise, vize a profil absolventa
+slug: mise-vize-hodnoty
+kratky_popis: Provede školní tým otázkami k hodnotám, misi a vizi školy a k profilu absolventa a navrhne formulace k doladění.
+popis: "Pomůže vedení a týmu školy pojmenovat hodnoty, misi a vizi školy a sestavit profil absolventa. Nejdřív klade otázky, potom navrhne různé formulace, které spolu doladíte; zkontroluje i text, který už máte. Když chcete všechno, navrhne pořadí od hodnot přes misi a vizi k profilu absolventa, protože každá část staví na předchozí. Vychází z materiálu NPI ČR Strategické plánování (portál Vedeme školu)."
+pro_koho: [vedeni]
+sady: [vedeni-skoly]
+stitky: [strategické plánování, hodnoty, mise, vize, profil absolventa, NPI]
+rezimy:
+  - Hodnoty
+  - Mise (poslání)
+  - Vize
+  - Profil absolventa
+  - Kontrola hotového textu
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/asistent-pro-definici-hodnot-mise-a-vize-skoly/
+    typ: asistent
+  - url: https://chatveskole.cz/databaze-promptu/formulace-hodnot-mise-a-vize-skoly/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/vytvareni-profilu-absolventa-skoly/
+    typ: prompt
+puvodni_asistenti:
+  gpt: https://chatgpt.com/g/g-68723b9c9afc819188470dd2e9b17eac-vize-a-mise-skoly
+  gem: https://gemini.google.com/gem/1ZDYRdHmHDZPtSgJqbZR2FvaWtnIem2Qw?usp=sharing
+  systemovy_prompt: https://docs.google.com/document/d/17NSQ7PsiJsQNBKefkIgtOUJaDg8e7fHbiUx36v9BvDc/edit?usp=sharing
+google_doc: https://docs.google.com/document/d/1c2MPDXW7omQE9laZaG8F0R8aX8gE4kzyxi7qWV0eIf0/edit
+google_slozka: https://drive.google.com/drive/folders/1872qWtzNRB5EygB4WLc55InQRP3k3_D-
+google_data: https://drive.google.com/drive/folders/1e5Xs1-ASsgq8qYhTi41RcXBQIDmym1Xv
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1NhS5oQ5gncgp8UEau4iJCqURP65-vzSp
+  gemini: https://drive.google.com/uc?export=download&id=1ne67T6mBUlzzkOSHn87MLR-LjO4_szok
+  chatgpt: https://drive.google.com/uc?export=download&id=1Trq20DjsrxzbEl-kvpUik7s2PRo2XQK3
+autori: [AI dětem]
+metodika:
+  - nazev: Strategické plánování (NPI ČR, Vedeme školu)
+    url: https://vedemeskolu.npi.cz/strategicke-planovani
+znalosti: [klicove-kompetence.md]
+vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-21

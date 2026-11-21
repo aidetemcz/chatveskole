@@ -1,0 +1,44 @@
+title: Učitelský mentor
+slug: ucitelsky-mentor
+kratky_popis: Laskavý mentor pro náročné situace ve třídě — pomůže situaci pochopit, najít praktické kroky a promyslet vlastní přístup.
+popis: "Pomůže vám v náročných sociálně-emočních situacích se žáky, s třídou, se zákonnými zástupci i se sebou samými. Laskavý a zkušený mentor s vámi situaci pochopí, najde realistické kroky a pomůže přemýšlet o vlastní praxi; vede k reflexi a empatii a stojí na respektující výchově. Když jde o krizi, která patří odborníkům, upozorní vás na to. Je určený pedagogům všech aprobací, třídním vyučujícím, vedení i výchovným poradcům."
+pro_koho: [ucitele, vedeni]
+sady: [komunikace-a-podpora-ucitele]
+stitky: [mentoring, třídní klima, náročné chování, sociálně-emoční učení, reflexe, zvládání stresu]
+rezimy:
+  - Mentorský rozhovor
+  - Třídní klima
+  - Slepé skvrny
+  - Trénink uvažování
+  - Analogie a mentální modely
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/ucitelsky-mentor/
+    typ: asistent
+  - url: https://chatveskole.cz/databaze-promptu/chatboti-ve-skole-analogie/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/zvladani-stresu/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/slepe-skrvny/
+    typ: prompt
+puvodni_asistenti:            # Poradce pro lepší třídní klima je od 8. 11. 2026 samostatný skill lepsi-tridni-klima
+  gpt:
+    - https://chat.openai.com/g/g-C7xCQX8zC-ucitelsky-mentor
+  systemovy_prompt:
+    - https://docs.google.com/document/d/1r9KKG_o_kAT1MEEZ6SP4jxUUm0cEchdHniPuWMm_PeA/edit
+    - https://docs.google.com/document/d/1D8UBA7cpGI_hLp_Eh8jzXq8V3ylQrr4UhvCItouDeiA/edit
+google_doc: https://docs.google.com/document/d/1JezNEXPFJe6xCS2a_4J8ItAjnfsvZGcN6BY1STGVRq4/edit
+google_slozka: https://drive.google.com/drive/folders/1lPjbiQfJfy6G_5bf_r4NGlxFzNZ6RIsA
+google_data: https://drive.google.com/drive/folders/1jBXgwjyiSOMI21SiEkkswJxr3dTXvpXU
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1gbfFlCKyd9T-fMYpXzDiJE3fT1S2rZ5C
+  gemini: https://drive.google.com/uc?export=download&id=1e1hSdfswF8owyXuMMmrn76_dlMhHKfJk
+  chatgpt: https://drive.google.com/uc?export=download&id=1DpRwy5mZHIzl_LBGcNqm1h7xoMrT3wkJ
+autori: [AI dětem, AI reaktor UJEP (Míša Liegertová)]   # ověřit: prompty z roku 2024 nejspíš z původní databáze AI reaktoru UJEP; doplnit jména
+metodika:            # příručky, ze kterých čerpal Poradce pro lepší třídní klima; doplnit autory a veřejné URL
+  - nazev: Metodická příručka respektující komunikace
+  - nazev: Metodická příručka Participativní přístup
+  - nazev: Metodická příručka pro podporu spolupráce pedagogů napříč školou
+  - nazev: Práce s problémovým chováním
+vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-21

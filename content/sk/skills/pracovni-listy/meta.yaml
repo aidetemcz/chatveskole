@@ -1,0 +1,65 @@
+title: Pracovní listy
+slug: pracovni-listy
+kratky_popis: Doplňovačky, spojovačky, kvízy a testy s klíčem, otázky k textu, slovníčky a listy k reflexi – žákovská verze zvlášť od řešení.
+popis: "Připraví vám pracovní list nebo cvičení k tisku či promítnutí pro kterýkoli předmět ZŠ a SŠ. Dostanete žákovskou verzi bez odpovědí a zvlášť řešení s poznámkou pro vyučující. Když dodáte vlastní text, vychází jen z něj; když text nemáte, napíše ho a označí vám ho k ověření. Pokud nevíte, jaký typ cvičení zvolit, nabídne dva až tři podle cíle nebo sestaví kombinovaný list s rozcvičkou, hlavním úkolem a reflexí."
+pro_koho: [ucitele]
+sady: [priprava-vyuky]
+stitky: [pracovní list, cvičení, kvíz, test, doplňovačka, spojovačka, slovníček pojmů, reflexe]
+rezimy:
+  - Doplňovačka
+  - Spojovačka
+  - Kvíz a test
+  - Pravda / nepravda
+  - Otevřené otázky k textu
+  - Výuka s emotikony
+  - Slovníček pojmů
+  - List k reflexi učiva
+  - Početní příklady
+  - Tabulka slovní zásoby
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/doplnovacka/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/spojovacka/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/kviz/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/pracovni-list-s-otevrenymi-otazkami/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/vyuka-s-emotikony/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/slovnicek-pojmu/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/pracovni-list-pro-reflexi-uciva/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/tematicky-test-cizi-jazyk/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/matematicke-priklady/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/slovicka-nalady/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/protiklady-prid-jmena/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/doplnovacka_slovesa/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/emotikony-zivot-vaclava-havla/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/kviz-historie/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/tvorba-testu-dedicnost/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/slovnicky-pojmu/
+    typ: prompt
+google_doc: https://docs.google.com/document/d/1J_gzfytRmCPsRXHckGl3ZMb3cM-BVWjtoPeBr5zIZVI/edit
+google_slozka: https://drive.google.com/drive/folders/1q6xd25uwBY2AGvCsWPE0FzC1T3yIeGVT
+google_data: https://drive.google.com/drive/folders/1E6lPQmZaHdrQ3-oZCJB08HA9erlo2m6l
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1ITL8bqSi6y_SKuD-1dLMhRI8DXz3imSn
+  gemini: https://drive.google.com/uc?export=download&id=1d9X6Nuy9SXhP4Sl1nu68UpdFs7Mpt8e1
+  chatgpt: https://drive.google.com/uc?export=download&id=1plYnbo1t-_cOzQxsQVsyQv06D48UJgva
+autori: [Eva Nečasová (AI dětem), AI reaktor UJEP (Míša Liegertová)]
+metodika:
+  - nazev: Revidovaná Bloomova taxonomie
+    url: https://cs.wikipedia.org/wiki/Bloomova_taxonomie
+vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-15

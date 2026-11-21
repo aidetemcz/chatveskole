@@ -1,0 +1,32 @@
+title: AI gramotnost v RVP a ŠVP
+slug: ai-gramotnost-v-svp
+kratky_popis: Pomůže promyslet AI gramotnost v ŠVP podle kompetenčního modelu AI dětem – zmapuje pokrytí a navrhne výstupy a učivo.
+popis: "Pomůže vám promítnout AI gramotnost do školního vzdělávacího programu napříč předměty, nejen v informatice. Vychází z kompetenčního modelu Kurikula umělé inteligence pro ZŠ a SŠ, který vytvořil spolek AI dětem s NPI ČR: čtyři oblasti po třech kompetencích od porozumění AI po její dopady na společnost. Dostanete přehled, co ŠVP už pokrývá, a návrh výstupů, učiva a aktivit. Je určený koordinátorům ŠVP, vedení školy a předmětovým komisím."
+pro_koho: [vedeni]
+sady: [vedeni-skoly]
+stitky: [AI gramotnost, ŠVP, RVP, kurikulum, kompetenční model, informatika, mediální výchova]
+rezimy:
+  - Zmapování ŠVP
+  - Návrh začlenění do předmětu nebo ročníku
+  - Podklad pro sborovnu
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/ai-gramotnost-v-rvp-a-svp/
+    typ: asistent
+puvodni_asistenti:
+  gpt: https://chatgpt.com/g/g-6a215e79611c8191a7ecbe07c7253cf7-ai-gramotnost-v-rvp-a-svp
+  # systémový prompt v Google Docs zatím neexistuje
+google_doc: https://docs.google.com/document/d/1Jbi75Gs7o-RvWOtS-N-dih7uY8UotXrO0u8MFfMU1eI/edit
+google_slozka: https://drive.google.com/drive/folders/1vQgbbVvqb50qX4CfWIWZtdg8iGDMVSZo
+google_data: https://drive.google.com/drive/folders/1cazezeEMJnXBz1WqgvRWJacWeMiJVRvi
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1iH7SLKnfIwB8LGHpospWTloSPFnJlH0e
+  gemini: https://drive.google.com/uc?export=download&id=1IMXpKhPkAhMRJGeJEexSRsAc6VPCD21W
+  chatgpt: https://drive.google.com/uc?export=download&id=11rSeXYM1XKBRLftZ5CglI7D6ag_RkPgf
+autori: [AI dětem]   # doplnit jména autorů asistenta
+metodika:
+  - nazev: Kompetenční model Kurikula umělé inteligence pro ZŠ a SŠ (AI dětem ve spolupráci s NPI ČR)
+    url: https://kurikulum.aidetem.cz/kompetencni-model/
+znalosti: [klicove-kompetence.md, prurezova-temata.md]
+vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-15
