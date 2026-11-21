@@ -37,17 +37,16 @@ Základní sestava (anglicky stack) je soubor nástrojů a služeb, na kterých 
 3. **Zveřejnění na internetu** — Služby jako [Vercel](https://vercel.com), [Netlify](https://www.netlify.com) nebo [GitHub Pages](https://pages.github.com) propojíte s úložištěm a ony aplikaci zveřejní. Po každé změně v úložišti se web sám znovu zveřejní.
 4. **Databáze a přihlašování** — Když aplikace potřebuje ukládat data nebo přihlašovat uživatele, použijte [Supabase](https://supabase.com), případně [Firebase](https://firebase.google.com) od Googlu nebo [Neon](https://neon.com). Nabízejí databázi, přihlašování uživatelů a ukládání souborů a mají bezplatný tarif s limity. Při zakládání projektu zvolte umístění dat v EU.
 
-## Instrukce pro agenta
+## Jak napojit agenta na GitHub
 
-Agent si na začátku každé práce přečte soubor s pravidly projektu. U Claude Code se jmenuje `CLAUDE.md`, u ostatních obvykle `AGENTS.md`. Napište do něj:
+Agent na webu pracuje přímo s vaším repozitářem (úložištěm) na GitHubu, takže do počítače nemusíte nic instalovat. U Claude Code i OpenAI Codex je postup podobný.
 
-- co je to za projekt a pro koho,
-- jaké technologie používáte,
-- jak je projekt uspořádaný (kde jsou texty, kde opakované části stránek),
-- jaká pravidla má dodržovat: jazyk, styl a co nikdy nedělat,
-- jak projekt spustit a otestovat.
+1. **Vytvořte repozitář** — Založte si účet na GitHubu a v něm nový repozitář pro projekt. Může být soukromý. Agent na webu pracuje jen s repozitářem, který už na GitHubu existuje, proto i pro úplně nový projekt nejdřív založte prázdný.
+2. **Propojte agenta s GitHubem** — V Claude Code na webu (claude.ai/code) nebo v Codexu v ChatGPT se přihlaste ke GitHubu a povolte přístup k vybraným repozitářům. U Claude Code přitom nainstalujete aplikaci Claude pro GitHub.
+3. **Zadejte úkol** — Vyberte repozitář a běžnou řečí napište, co má agent udělat. Agent si kód stáhne, upraví ho a změny uloží do nové větve, tedy do samostatné verze, která nezasahuje do té hlavní.
+4. **Zkontrolujte a schvalte změny** — Agent připraví pull request, tedy návrh změn. Projděte si ho a sloučte do hlavní větve. Hosting propojený s GitHubem pak web sám znovu zveřejní.
 
-Nemusíte pak všechno vysvětlovat znovu a agent dělá méně chyb.
+**Pracujete na počítači?** — Claude Code v terminálu, Antigravity nebo Cursor pracují se složkou v počítači. Repozitář si do ní nejdřív stáhnete (naklonujete) a agent pak změny na GitHub odešle za vás.
 
 ## Dovednosti i pro programování
 
