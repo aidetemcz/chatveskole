@@ -47,14 +47,16 @@ const bunka = (t: string) => {
 // Karty nástrojů: ### název → popis a odkaz; štítky z tabulky
 const ctyri = najdi(/Čtyři/i);
 const ctyriHtml = htmlOddilu(ctyri);
-const vyvojar = radek(/Vývojář/i), skolni = radek(/Školní verze/i), vekOsobni = radek(/osobní/i);
+const vyvojar = radek(/Vývojář/i), skolni = radek(/Školní verze/i), vekOsobni = radek(/osobní/i), vekSkolni = radek(/školní účet/i);
 const karty = bloky(ctyriHtml).map((b, i) => {
   const odkaz = b.html.match(/<p>\s*<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*<\/p>/);
   const popis = odkaz ? b.html.replace(odkaz[0], '') : b.html;
   const sk = skolni ? bezTagu(skolni.bunky[i] ?? '') : '';
   const vek = vekOsobni ? bezTagu(vekOsobni.bunky[i] ?? '').match(/^\d+\+/)?.[0] : undefined;
+  // školní účet bez věkového omezení (Gemini) → dva štítky
+  const skolniVse = vekSkolni ? /^všechny věky/i.test(bezTagu(vekSkolni.bunky[i] ?? '')) : false;
   return { nazev: b.nazev, popis, odkaz: odkaz ? { href: odkaz[1], text: bezTagu(odkaz[2]) } : null,
-    vyvojar: vyvojar ? bezTagu(vyvojar.bunky[i] ?? '') : '', skolni: /^ano/.test(sk), vek };
+    vyvojar: vyvojar ? bezTagu(vyvojar.bunky[i] ?? '') : '', skolni: /^ano/.test(sk), vek, skolniVse };
 });
 
 // Další nástroje: položky „**[Název](odkaz)** — text“ jako karty, ostatní jako tip
@@ -109,7 +111,7 @@ const sipka = '<path d="M7 17L17 7M9 7h8v8"></path>';
                 <h3>{k.nazev}</h3>
                 {k.vyvojar && <span class="vyvojar">{k.vyvojar}</span>}
               </div>
-              {k.vek && <div class="stitky"><span class="stitek">Věk {k.vek}</span></div>}
+              {k.vek && <div class="stitky">{k.skolniVse ? <><span class="stitek">Osobní účet {k.vek}</span><span class="stitek">Školní účet bez omezení věku</span></> : <span class="stitek">Věk {k.vek}</span>}</div>}
               <div class="nastroj-popis" set:html={k.popis} />
               {k.odkaz && <a class="more" href={k.odkaz.href} style="margin-top: auto">{k.odkaz.text} ↗</a>}
             </article>

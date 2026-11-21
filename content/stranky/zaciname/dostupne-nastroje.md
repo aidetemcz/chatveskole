@@ -11,6 +11,7 @@ zdroje:
   - https://openai.com/policies/eu-terms-of-use/
   - https://support.google.com/gemini/answer/13278668
   - https://knowledge.workspace.google.com/admin/generative-ai/gemini-app
+  - https://workspaceupdates.googleblog.com/2025/06/the-gemini-app-is-now-available-for-all-google-workspace-for-education-users.html
   - https://support.microsoft.com/en-US/microsoft-copilot/microsoft-copilot-age-limits-and-parental-controls
   - https://www.anthropic.com/legal/consumer-terms
   - https://help.openai.com/en/articles/20001421-chatgpt-for-teens
@@ -48,25 +49,25 @@ Všechny čtyři mají bezplatnou verzi a umí podobné věci. Liší se hlavně
 
 ### ChatGPT
 
-Nejrozšířenější chatbot, vyvíjí ho OpenAI. Školní verzi pro základní a střední školy v Česku nemá, vyučující a vedení ho používají s vlastním účtem. Žáci od 13 let jen se souhlasem rodiče, do 18 let mají přísnější režim pro dospívající.
+Školní verzi pro základní a střední školy v Česku nemá, vyučující a vedení ho používají pod vlastním účtem. Žáci od 13 let jen se souhlasem rodiče, do 18 let mají přísnější režim pro dospívající.
 
 [chatgpt.com](https://chatgpt.com)
 
 ### Gemini
 
-Chatbot od Googlu. Školy s Google Workspace for Education ho mají zdarma pro vyučující, vedení i žáky, s ochranou dat a omezeními podle věku. Zapíná ho správce školy.
+Chatbot od společnosti Google. Školy s Google Workspace for Education ho mají zdarma pro vyučující, vedení i žáky, s ochranou dat a omezeními podle věku. Zapíná ho správce školy.
 
 [gemini.google.com](https://gemini.google.com)
 
 ### Microsoft Copilot
 
-Chatbot od Microsoftu. Školy s licencí Microsoft 365 (A1, A3 nebo A5) ho mají zdarma jako Copilot Chat pro vyučující, vedení i žáky od 13 let. Zapíná ho správce školy.
+Chatbot od společnosti Microsoft. Školy s licencí Microsoft 365 (A1, A3 nebo A5) ho mají zdarma jako Copilot Chat pro vyučující, vedení i žáky od 13 let. Zapíná ho správce školy.
 
 [copilot.microsoft.com](https://copilot.microsoft.com)
 
 ### Claude
 
-Chatbot od Anthropicu. Je jen pro dospělé, tedy pro vyučující a vedení školy. Se žáky ho používejte jen tak, že ho ovládá vyučující. Školy mohou získat zvýhodněné tarify přes program Claude for Nonprofits, postup najdete na stránce [Kolik stojí chatboti](/zaciname/kolik-stoji-chatboti).
+Chatbot od společnosti Anthropic. Je jen pro dospělé, tedy pro vyučující a vedení školy. Školy mohou získat zvýhodněné tarify přes program Claude for Nonprofits, postup najdete na stránce [Kolik stojí chatboti](/zaciname/kolik-stoji-chatboti).
 
 [claude.ai](https://claude.ai)
 
