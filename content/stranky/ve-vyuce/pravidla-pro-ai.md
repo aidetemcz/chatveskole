@@ -26,8 +26,6 @@ Pravidla můžete vytvořit participativně, tedy společně se žáky, nebo sho
 
 Školní pravidla nejsou souborem zákazů, ale odrazem hodnot, na kterých škola stojí. Jejich tvorba je příležitostí k otevřenému dialogu mezi pedagogy, vedením, žáky i zákonnými zástupci. Když se na nich podílejí ti, kterých se týkají, roste jejich srozumitelnost i přijetí.
 
-Postup ukazujeme na pravidlech pro mobilní zařízení. Stejně můžete se žáky vytvořit i pravidla pro AI.
-
 ### Začněte lekcí o etice technologií
 
 ![Obálka metodiky Etika vývoje a využití technologií](/img/metodika-etika-technologii.jpg)
@@ -38,26 +36,26 @@ Metodika Etika vývoje a využití technologií pomáhá žákům zohlednit růz
 
 ### Workshop na tvorbu pravidel
 
-Pro žáky 2. stupně ZŠ nebo SŠ. Pracuje se lístečkovou metodou: brainstorming a třídění. Navazuje na lekci, žáci už znají úhly pohledu různých aktérů.
+Cílem workshopu je, aby žáci sami navrhli a odhlasovali pravidla pro využívání AI ve škole. Pojmenují, kdy jim AI pomáhá učit se a kdy učení nahrazuje, a dohodnou se na pravidlech, kterým rozumějí a která považují za spravedlivá. Workshop je pro žáky 2. stupně ZŠ a SŠ a navazuje na lekci o etice technologií.
 
 | Část | Čas | Co děláte |
 |---|---|---|
-| Úvod | 10 minut | Krátce vysvětlete cíl: „Dnes se společně domluvíme na pravidlech pro používání mobilů ve škole. Nechceme zákazy, ale dohody, které dávají smysl.“ Pravidla workshopu: respektujeme názor ostatních, každý může mluvit, nasloucháme. |
-| Individuální reflexe | 15 minut | Každý žák dostane zelené a červené lístečky. Na zelený napíše, na co mu mobil ve škole pomáhá, na červený, kdy ho ve škole ruší (1 lístek = 1 nápad). Lístečky nalepí na dvě části tabule nebo papíru: POMÁHÁ, RUŠÍ. |
-| Třídění a pojmenování témat | 15 minut | Společně roztřiďte lístečky do tematických oblastí, například ve výuce, o přestávce, focení, komunikace, soustředění. Pojmenujte kategorie a shrňte: „Zdá se, že nás nejvíc trápí…“, „Nejčastěji mobil pomáhá, když…“ |
-| Návrhy pravidel | 25 minut | Rozdělte žáky do skupin po 3–4. Každá skupina si vybere jednu oblast (například používání o přestávce) a na lístečky napíše návrhy pravidel. Pravidla formulují pozitivně a srozumitelně (pomozte jim, pokud je to třeba), například „Mobil můžeme používat o přestávce, když tím nerušíme ostatní.“ |
+| Úvod | 10 minut | Krátce vysvětlete cíl: „Dnes se společně domluvíme na pravidlech pro využívání AI ve škole. Nechceme zákazy, ale dohody, které dávají smysl.“ Pravidla workshopu: respektujeme názor ostatních, každý může mluvit, nasloucháme. |
+| Individuální reflexe | 15 minut | Každý žák dostane zelené a červené lístečky. Na zelený napíše, kdy mu AI pomáhá učit se, na červený, kdy mu učení nahrazuje nebo škodí (1 lístek = 1 nápad). Lístečky nalepí na dvě části tabule nebo papíru: POMÁHÁ, ŠKODÍ. |
+| Třídění a pojmenování témat | 15 minut | Společně roztřiďte lístečky do tematických oblastí, například domácí úkoly, psaní textů, hledání informací, testy a písemky, osobní údaje. Pojmenujte kategorie a shrňte: „Zdá se, že nás nejvíc trápí…“, „Nejčastěji AI pomáhá, když…“ |
+| Návrhy pravidel | 25 minut | Rozdělte žáky do skupin po 3–4. Každá skupina si vybere jednu oblast (například domácí úkoly) a na lístečky napíše návrhy pravidel. Pravidla formulují pozitivně a srozumitelně (pomozte jim, pokud je to třeba), například „AI můžeme použít, abychom pochopili látku, ale odevzdáváme vlastní práci.“ |
 | Hlasování a ladění | 30 minut | Všechny návrhy vyvěste. Žáci dostanou 3 hlasovací body (samolepky nebo fixy) a vyberou pravidla, která považují za nejdůležitější a nejsmysluplnější. Společně doladíte finální znění, vyučující zapisuje čistou verzi na tabuli. |
-| Dohoda a závěr | 20 minut | Projděte znovu finální znění vybraných pravidel. Domluvte se, jak zajistíte, aby se pravidla dodržovala (připomenutí na začátku hodiny, plakát ve třídě), a jak je vyhodnotíte (například za měsíc si je znovu přečtete a zhodnotíte, co funguje). |
+| Dohoda a závěr | 20 minut | Projděte znovu finální znění vybraných pravidel. Domluvte se, jak zajistíte, aby se pravidla dodržovala (připomenutí při zadávání úloh, plakát ve třídě), a jak je vyhodnotíte (například za měsíc si je znovu přečtete a zhodnotíte, co funguje). |
 
 ### Návrh formulací pravidel
 
-Inspirace pro pravidla k mobilům. Pozitivní, krátké, srozumitelné.
+Inspirace pro pravidla využívání AI. Pozitivní, krátké, srozumitelné.
 
-- Mobilní telefon je ve škole pomocníkem, ne rozptýlením.
-- Během vyučování používáme mobilní zařízení pouze se souhlasem vyučujícího.
-- O přestávkách je mobil uložen ve skříňce. Je možné ho využít po dohodě s vyučujícím.
-- V prostorách školy se nefotí ani nenatáčí bez souhlasu všech zúčastněných.
-- Pokud telefon ruší výuku nebo není používán zodpovědně, škola má právo ho dočasně uschovat a informovat zákonné zástupce.
+- AI je pomocníkem při učení, ne náhradou vlastního přemýšlení.
+- AI používáme jen u úloh, u kterých to vyučující dovolí.
+- Když AI použijeme, napíšeme, k čemu a jak.
+- Do chatbotů nevkládáme osobní údaje svoje ani spolužáků.
+- Odpovědi AI si ověřujeme, protože AI dělá chyby.
 
 ### Zavádění do praxe
 

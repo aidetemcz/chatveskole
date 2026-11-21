@@ -49,6 +49,9 @@ const workshopRadky = [...((workshop?.html ?? '').match(/<tbody>([\s\S]*?)<\/tbo
   .map(([, r]) => [...r.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(([, t]) => t.trim()))
   .map((b) => ({ nazev: bezTagu(b[0] ?? ''), cas: bezTagu(b[1] ?? ''), text: b[2] ?? '' }));
 const workshopMinut = workshopRadky.reduce((s, r) => s + (parseInt(r.cas, 10) || 0), 0);
+// časová osa: od–do v minutách
+let start = 0;
+const osa = workshopRadky.map((r) => { const od = start; start += parseInt(r.cas, 10) || 0; return { ...r, od, do: start }; });
 const hodiny = (m: number) => (m >= 90 ? `asi ${Math.round(m / 60)} ${Math.round(m / 60) < 5 ? 'hodiny' : 'hodin'} (${m} minut)` : `${m} minut`);
 
 // Formulace a zavádění (### v oddílu Pravidla společně se žáky): prostý text bez boxů
@@ -112,25 +115,32 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
           </div>
         )}
 
-        {workshop && (
-          <div class="cast">
-            <div class="cast-hlava">
-              <h3>{workshop.nazev}</h3>
-              {workshopMinut > 0 && <span class="stitek">{hodiny(workshopMinut)}</span>}
-            </div>
-            <div class="workshop-uvod" set:html={workshopUvod} />
-            <ol class="workshop-kroky">
-              {workshopRadky.map((r, i) => (
-                <li>
-                  <span class="krok-cislo" aria-hidden="true">{i + 1}</span>
-                  <strong>{r.nazev}</strong>
-                  <span class="stitek">{r.cas}</span>
-                  <p set:html={r.text} />
-                </li>
-              ))}
-            </ol>
+      </div>
+    </section>
+  )}
+
+  {workshop && (
+    <section class="band band--white" aria-labelledby="workshop-h">
+      <div class="wrap stack" style="gap: 32px">
+        <div class="hlava">
+          <div class="cast-hlava">
+            <h2 id="workshop-h">{workshop.nazev}</h2>
+            {workshopMinut > 0 && <span class="stitek">{hodiny(workshopMinut)}</span>}
           </div>
-        )}
+          <div class="prose" set:html={workshopUvod} />
+        </div>
+        <ol class="osa">
+          {osa.map((r) => (
+            <li>
+              <span class="osa-cas">{r.od}.–{r.do}. minuta</span>
+              <span class="osa-bod" aria-hidden="true"></span>
+              <div class="osa-obsah">
+                <strong>{r.nazev}</strong>
+                <p set:html={r.text} />
+              </div>
+            </li>
+          ))}
+        </ol>
 
         {(formulace || zavadeni) && (
           <div class="dva-sloupce">
@@ -153,7 +163,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   )}
 
   {vedeni && (
-    <section class="band band--white" id={vedeni.id || undefined} aria-labelledby={vedeni.id ? `${vedeni.id}-h` : undefined}>
+    <section class="band band--sky" id={vedeni.id || undefined} aria-labelledby={vedeni.id ? `${vedeni.id}-h` : undefined}>
       <div class="wrap stack" style="gap: 48px">
         <div class="dva-sloupce dva-sloupce--nadpis">
           <h2 class="nadpis-sloupcu" id={vedeni.id ? `${vedeni.id}-h` : undefined}>{vedeni.nadpis}</h2>
@@ -200,7 +210,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   )}
 
   {urovne && (
-    <section class="band band--sky" aria-labelledby={urovne.id || undefined}>
+    <section class="band band--white" aria-labelledby={urovne.id || undefined}>
       <div class="wrap stack" style="gap: 32px">
         <div class="hlava">
           <h2 id={urovne.id || undefined}>{urovne.nadpis}</h2>
@@ -221,7 +231,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   )}
 
   {dalsi && (
-    <section class="band band--white" aria-labelledby={dalsi.id || undefined}>
+    <section class="band band--sky" aria-labelledby={dalsi.id || undefined}>
       <div class="wrap stack" style="gap: 32px">
         <h2 id={dalsi.id || undefined} class="sr-only">{dalsi.nadpis}</h2>
         <div class="karty-2">
@@ -239,14 +249,14 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   )}
 
   {vyzva && (
-    <section class="band band--sky" aria-labelledby={vyzva.id || undefined}>
+    <section class="band band--white" aria-labelledby={vyzva.id || undefined}>
       <div class="wrap vyzva">
         <div class="hlava">
           <h2 id={vyzva.id || undefined}>{vyzva.nadpis}</h2>
           <div class="prose" set:html={htmlOddilu(vyzva)} />
         </div>
         <div class="tlacitka">
-          {odkazy.map((o, i) => <a class:list={['btn', i === 0 ? 'btn--primary' : 'btn--outline btn--bila']} href={url(o.href)}>{o.text}{i === 0 && ' →'}</a>)}
+          {odkazy.map((o, i) => <a class:list={['btn', i === 0 ? 'btn--primary' : 'btn--outline']} href={url(o.href)}>{o.text}{i === 0 && ' →'}</a>)}
         </div>
       </div>
     </section>
@@ -268,8 +278,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
 
-  .lekce { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 32px; align-items: center; }
-  .lekce img { width: 100%; max-width: 360px; border-radius: 8px; border: 1px solid var(--line); }
+  .lekce { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 36px; align-items: center; }
+  .lekce img { display: block; width: 100%; border-radius: 8px; border: 1px solid var(--line); }
+  @media (max-width: 760px) { .lekce { grid-template-columns: 1fr; } .lekce img { max-width: 420px; } }
   .lekce h3 { font-size: 1.25rem; }
   .lekce-text :global(p) { margin: 0; font-size: 0.95rem; line-height: 1.6; }
   .workshop-uvod :global(p) { margin: 0; max-width: var(--dve-tretiny); }
@@ -278,11 +289,23 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .cast-hlava { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
   .cast-hlava .stitek { align-self: center; }
   .band--sky .cast .stitek { background: var(--panel); }
-  .workshop-kroky { margin: 16px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 32px 40px; }
-  .workshop-kroky li { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
-  .workshop-kroky strong { font-family: var(--fh); font-weight: 600; font-size: 1.05rem; }
-  .workshop-kroky p { margin: 0; font-size: 0.95rem; line-height: 1.6; }
-  .krok-cislo { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: var(--on-accent); display: inline-flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; }
+  .osa { margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; max-width: 900px; }
+  .osa li { display: grid; grid-template-columns: 150px 24px minmax(0, 1fr); gap: 0 18px; position: relative; padding-bottom: 32px; }
+  .osa li:last-child { padding-bottom: 0; }
+  .osa li::before { content: ""; position: absolute; left: calc(150px + 18px + 11px); top: 18px; bottom: -2px; width: 2px; background: var(--sky); }
+  .osa li:last-child::before { display: none; }
+  .osa-cas { font-size: 0.85rem; font-weight: 600; color: var(--sky-ink); text-align: right; padding-top: 2px; }
+  .osa-bod { width: 16px; height: 16px; border-radius: 50%; background: var(--accent); border: 3px solid var(--accent-soft); margin: 2px 0 0 1px; position: relative; z-index: 1; }
+  .osa-obsah { display: flex; flex-direction: column; gap: 6px; }
+  .osa-obsah strong { font-family: var(--fh); font-weight: 600; font-size: 1.1rem; }
+  .osa-obsah p { margin: 0; font-size: 0.95rem; line-height: 1.6; }
+  @media (max-width: 640px) {
+    .osa li { grid-template-columns: 24px minmax(0, 1fr); }
+    .osa-cas { grid-column: 2; grid-row: 1; text-align: left; padding: 0 0 4px; }
+    .osa-bod { grid-column: 1; grid-row: 1 / span 2; }
+    .osa-obsah { grid-column: 2; }
+    .osa li::before { left: 11px; }
+  }
   .dva-sloupce .cast { margin-top: 32px; }
 
 
@@ -299,7 +322,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .postup-krok p { margin: 0; font-size: 0.9rem; line-height: 1.55; }
 
   .kontrolni { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 12px; }
-  .kontrolni li { background: #f6fafc; border-radius: 9px; padding: 16px 18px; font-size: 0.95rem; line-height: 1.55; }
+  .kontrolni li { background: var(--panel); border-radius: 9px; padding: 16px 18px; font-size: 0.95rem; line-height: 1.55; }
 
   .urovne { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); gap: 16px; }
   .urovne .card { padding: 22px; gap: 12px; }
