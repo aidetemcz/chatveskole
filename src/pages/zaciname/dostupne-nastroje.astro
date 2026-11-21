@@ -33,16 +33,7 @@ const radek = (r: RegExp) => radkyVse.find((x) => r.test(x.nazev));
 // skupiny řádků; Vývojář se ukazuje v kartách
 const FUNKCE_OD = radkyVse.findIndex((x) => /Dovednosti/i.test(x.nazev));
 const radky = radkyVse.filter((x) => !/Vývojář/i.test(x.nazev)).map((x) => ({ ...x, skupina: x === radkyVse.find((y) => /Zdarma/i.test(y.nazev)) ? 'Dostupnost' : x === radkyVse[FUNKCE_OD] ? 'Funkce' : '' }));
-const bunka = (t: string) => {
-  const ciste = bezTagu(t);
-  const ano = /^ano\b/.test(ciste), ne = /^ne\b/.test(ciste) || ciste === '—';
-  let text = t.replace(/^ano,?\s*/, '').replace(/^ne\s*/, '');
-  if (ano && !bezTagu(text)) text = 'Ano';
-  text = text.replace(/^\((.*)\)$/, '$1'); // „ne (Edu jen pro VŠ)“ → „Edu jen pro VŠ“
-  if (ciste === '—') text = 'Nemá';
-  else if (ne && !bezTagu(text)) text = 'Ne';
-  return { ano, ne, text: velke(text) };
-};
+const bunka = (t: string) => velke(t.trim());
 
 // Karty nástrojů: ### název → popis a odkaz; štítky z tabulky
 const ctyri = najdi(/Čtyři/i);
@@ -54,7 +45,7 @@ const karty = bloky(ctyriHtml).map((b, i) => {
   const sk = skolni ? bezTagu(skolni.bunky[i] ?? '') : '';
   const vek = vekOsobni ? bezTagu(vekOsobni.bunky[i] ?? '').match(/^\d+\+/)?.[0] : undefined;
   // školní účet bez věkového omezení (Gemini) → dva štítky
-  const skolniVse = vekSkolni ? /^všechny věky/i.test(bezTagu(vekSkolni.bunky[i] ?? '')) : false;
+  const skolniVse = vekSkolni ? /bez věkového omezení/i.test(bezTagu(vekSkolni.bunky[i] ?? '')) : false;
   return { nazev: b.nazev, popis, odkaz: odkaz ? { href: odkaz[1], text: bezTagu(odkaz[2]) } : null,
     vyvojar: vyvojar ? bezTagu(vyvojar.bunky[i] ?? '') : '', skolni: /^ano/.test(sk), vek, skolniVse };
 });
@@ -139,18 +130,7 @@ const sipka = '<path d="M7 17L17 7M9 7h8v8"></path>';
                   {r.skupina && <tr class="skupina"><th scope="colgroup" colspan={hlavicka.length + 1}>{r.skupina}</th></tr>}
                   <tr>
                     <th scope="row">{r.nazev}</th>
-                    {r.bunky.map((t) => {
-                      const b = bunka(t);
-                      return (
-                        <td>
-                          <span class="bunka">
-                            {b.ano && <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ikona-ano"><path d="M5 12l5 5L20 7"></path></svg>}
-                            {b.ne && <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" class="ikona-ne"><path d="M6 6l12 12M18 6L6 18"></path></svg>}
-                            <span set:html={b.text} />
-                          </span>
-                        </td>
-                      );
-                    })}
+                    {r.bunky.map((t) => <td set:html={bunka(t)} />)}
                   </tr>
                 </>
               ))}
@@ -230,10 +210,6 @@ const sipka = '<path d="M7 17L17 7M9 7h8v8"></path>';
   .srovnani td { padding: 12px 20px; vertical-align: top; }
   .srovnani tbody tr { border-top: 1px solid var(--line); }
   .srovnani tr.skupina th { text-align: left; padding: 18px 20px 8px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); background: var(--panel); }
-  .bunka { display: flex; gap: 8px; align-items: flex-start; }
-  .bunka svg { flex: none; margin-top: 3px; }
-  .ikona-ano { color: var(--sky-ink); }
-  .ikona-ne { color: var(--accent-strong); }
 
   .tip { background: var(--panel); border-radius: 9px; padding: 18px 22px; display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; }
   .tip svg { flex: none; margin-top: 2px; color: var(--sky-ink); }
