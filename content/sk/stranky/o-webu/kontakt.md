@@ -32,4 +32,4 @@ Hľadáte vzdelávacie podujatie pre zborovňu alebo máte záujem o spoluprácu
 
 Raz za čas vám pošleme, čo je nové v umelej inteligencii a vo vzdelávaní.
 
-[Prihlásiť sa na odber](https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f9d89c882af9a3a8b)
+[Prihlásiť sa na odber](https://aidetom.ecomailapp.cz/public/form/3-b6fcc542fb021c84fdaff536dd0a74a1)

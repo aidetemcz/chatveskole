@@ -2,7 +2,7 @@
 // Patička (návrh z Claude Design, 21. 11. 2026, podle patičky webu AI dětem). Menu z content/navigace.yaml.
 import { navigace } from '../lib/data';
 import { url } from '../lib/url';
-import { t } from '../lib/jazyk';
+import { t, NEWSLETTER } from '../lib/jazyk';
 
 const skupina = (nazev: string) => navigace.menu.find((g) => g.title === nazev);
 // první sloupec: značka a novinky; skupiny menu ve dvou dalších sloupcích; skupiny, které tu nejsou, se přidají na konec
@@ -32,7 +32,7 @@ const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
         <div class="novinky">
           <h2>{t('Novinky do e-mailu')}</h2>
           <p>{t('Jednou za čas vám pošleme, co je nového v umělé inteligenci a ve vzdělávání.')}</p>
-          <a class="btn btn--primary" href="https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f9d89c882af9a3a8b">{t('Přihlásit se k odběru')}</a>
+          <a class="btn btn--primary" href={NEWSLETTER}>{t('Přihlásit se k odběru')}</a>
         </div>
       </div>
       {sloupce.map((s) => (
