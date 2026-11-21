@@ -36,7 +36,7 @@ Nejjednodušší cesta: aplikaci vytvoříte ve stejném okně, kde s chatbotem 
 
 | Nástroj | Zdarma | Věk | Sdílení odkazem | Poznámka |
 |---|---|---|---|---|
-| **Gemini Canvas** | ano | 13+, na školním účtu podle nastavení správce | ano | Nejlepší volba pro školy s Google Workspace. Canvas v Gemini vyvoláte přes ikonku Plus v chatovacím okně. |
+| **Gemini Canvas** | ano | 13+, na školním účtu podle nastavení správce | ano | Nejlepší volba pro školy s Google Workspace. Canvas v Gemini vyvoláte přes ikonku Plus v chatovacím okně. Lze sdílet skrze Google Disk a Google Učebnu. |
 | **Claude artefakty** | ano | 18+ | jen v tarifu Pro a vyšších | Artifacts poskytují velmi kvalitní výstupy. Vyvoláte je například sdělením: „Vytvoř mi v Artifacts…“ |
 | **ChatGPT Sites** | ne, jen v placených tarifech | 13+, do 18 let se souhlasem zákonného zástupce | ano | Hodí se pro tvorbu webů a jednoduchých aplikací. Weby najdete v levém panelu. |
 | **Copilot App Builder** | — | — | — | **Končí 30. 11. 2026.** Nezačínejte s ním. |
