@@ -42,7 +42,7 @@ Projděte aplikaci jako žák. Klikejte i tam, kam se klikat nemá. Zkuste ji na
 | „Je to ošklivé.“ | „Tlačítka jsou moc malá a text splývá s pozadím. Zvětši tlačítka a použij tmavý text na světlém pozadí.“ |
 | „Udělej to lepší.“ | „Přidej časomíru 20 sekund na otázku.“ |
 
-Upravujte **po jedné věci**. Když chcete změnit pět věcí najednou, AI často některou rozbije.
+Pokud pracujete s nástroji pro začátečníky, upravujte pouze jednu věc. Když jich chcete změnit více najednou, AI často některou z nich rozbije.
 
 ## 5. Zkontrolujte obsah
 
