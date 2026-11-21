@@ -2,8 +2,9 @@
 // Časová osa z data/funkce-chatbotu.yaml (casova_osa). Svislá čára „dnes“ se při načtení stránky
 // posune podle aktuálního data (výchozí poloha = datum buildu).
 import { funkceChatbotu as F, datumCesky } from '../../lib/data';
+import { t } from '../../lib/jazyk';
 
-const MESICE = ['leden', 'únor', 'březen', 'duben', 'květen', 'červen', 'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec'];
+const MESICE = ['leden', 'únor', 'březen', 'duben', 'květen', 'červen', 'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec'].map((m) => t(m));
 const udalosti = [...F.casova_osa].sort((a, b) => a.datum.localeCompare(b.datum));
 const d = (s: string) => new Date(s + 'T12:00:00');
 const prvni = d(udalosti[0].datum);
@@ -49,7 +50,7 @@ const fDnes = podil(dnes);
       </div>
     </div>
     <div class="lanes" style={`--n: ${mesice.length}`}>
-      <div class="today" style={`--f: ${fDnes.toFixed(4)}`} hidden={fDnes < 0 || fDnes > 1}><span>dnes</span></div>
+      <div class="today" style={`--f: ${fDnes.toFixed(4)}`} hidden={fDnes < 0 || fDnes > 1}><span>{t('dnes')}</span></div>
       {drahy.map((dr) => (
         <div class="lane">
           <div class="lane-name">{dr.nazev}<span>{dr.vyrobce}</span></div>
@@ -75,7 +76,7 @@ const fDnes = podil(dnes);
       </li>
     ))}
   </ol>
-  <p class="legenda"><span class="dot-key" aria-hidden="true"></span>Červeně jsou data, po kterých přestanou fungovat odkazy na hotové asistenty.</p>
+  <p class="legenda"><span class="dot-key" aria-hidden="true"></span>{t('Červeně jsou data, po kterých přestanou fungovat odkazy na hotové asistenty.')}</p>
 </div>
 
 <script>

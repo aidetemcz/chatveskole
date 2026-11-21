@@ -2,14 +2,15 @@
 // Matice funkce × nástroje z data/funkce-chatbotu.yaml: kulička dnes → 2027, podbarvené změny.
 // Na úzké obrazovce se zobrazí jen jeden nástroj (přepínač z přepínacích tlačítek bez JavaScriptu).
 import { funkceChatbotu as F, datumCesky, type StavFunkce } from '../../lib/data';
+import { t, tf } from '../../lib/jazyk';
 const KULICKA: Record<StavFunkce, string> = { ano: 'full', omezene: 'half', ne: 'none' };
-const ZMENA: Record<string, string> = { down: 'ubývá', up: 'přibývá', same: '' };
+const ZMENA: Record<string, string> = { down: t('ubývá'), up: t('přibývá'), same: '' };
 const stavK = datumCesky(F.stav_k);
 ---
 <div class="matice-wrap">
   <div class="legend">
     {(['ano', 'omezene', 'ne'] as StavFunkce[]).map((s) => <span class="i"><span class:list={['ball', KULICKA[s]]}></span>{F.stavy[s]}</span>)}
-    <span class="i"><span class="ball half"></span><span class="arrow"></span><span class="ball half"></span>dnes → 2027</span>
+    <span class="i"><span class="ball half"></span><span class="arrow"></span><span class="ball half"></span>{t('dnes → 2027')}</span>
   </div>
 
   {F.nastroje.map((n, i) => <input type="radio" class="tool-radio" name="matice-nastroj" id={`mt-${n.id}`} checked={i === 0} aria-label={n.nazev} />)}
@@ -17,9 +18,9 @@ const stavK = datumCesky(F.stav_k);
     {F.nastroje.map((n) => <label for={`mt-${n.id}`}>{n.nazev}</label>)}
   </div>
 
-  <div class="matrix" role="table" aria-label="Funkce chatbotů dnes a v roce 2027">
+  <div class="matrix" role="table" aria-label={t('Funkce chatbotů dnes a v roce 2027')}>
     <div class="mrow mhead" role="row">
-      <div class="rowlabel" role="columnheader"><span class="legend-inline">Funkce</span></div>
+      <div class="rowlabel" role="columnheader"><span class="legend-inline">{t('Funkce')}</span></div>
       {F.nastroje.map((n) => (
         <div class="hcell" role="columnheader">
           <span class="h-name">{n.nazev}</span>
@@ -39,7 +40,7 @@ const stavK = datumCesky(F.stav_k);
           if (!c) return <div class="cell" role="cell"></div>;
           return (
             <div class:list={['cell', `c-${n.id}`, c.zmena !== 'same' && c.zmena]} role="cell">
-              <span class="sr-only">{n.nazev}: dnes {F.stavy[c.dnes]}, v roce 2027 {F.stavy[c['2027']]}{ZMENA[c.zmena] ? ` (${ZMENA[c.zmena]})` : ''}.</span>
+              <span class="sr-only">{tf('{nastroj}: dnes {dnes}, v roce 2027 {vyhled}{zmena}.', { nastroj: n.nazev, dnes: F.stavy[c.dnes], vyhled: F.stavy[c['2027']], zmena: ZMENA[c.zmena] ? ` (${ZMENA[c.zmena]})` : '' })}</span>
               <div class="state" aria-hidden="true">
                 <span class:list={['ball', KULICKA[c.dnes]]}></span><span class="arrow"></span><span class:list={['ball', KULICKA[c['2027']]]}></span>
                 {c.stitek && <span class:list={['badge', c.stitek === 'končí' ? 'badge--end' : 'badge--sky']}>{c.stitek}</span>}
@@ -52,7 +53,7 @@ const stavK = datumCesky(F.stav_k);
       </div>
     ))}
   </div>
-  <p class="method">První kulička ukazuje stav k {stavK}, druhá výhled na rok 2027. {F.poznamka}</p>
+  <p class="method">{tf('První kulička ukazuje stav k {datum}, druhá výhled na rok 2027.', { datum: stavK })} {F.poznamka}</p>
 </div>
 
 <style>
