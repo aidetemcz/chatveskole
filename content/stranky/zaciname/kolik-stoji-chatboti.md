@@ -34,7 +34,7 @@ Základní i střední školy (veřejné i soukromé) mohou získat Claude za ne
 
 ## Tarify
 
-Ceny jsou orientační a mění se často. U každé aplikace najdete odkaz na oficiální ceník.
+Ceny jsou orientační a často se mění. U každé aplikace proto najdete odkaz na oficiální ceník.
 
 <!-- komponenta: karty tarifů po nástrojích z data/ceny.yaml — název, cena, poznámka, řádek „Trénink“, odkaz na ceník -->
 

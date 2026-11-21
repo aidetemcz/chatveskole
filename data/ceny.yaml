@@ -1,10 +1,10 @@
 # Ceny a tarify chatbotů pro stránku Začínáme → Kolik stojí chatboti.
-# Stav: 15. 11. 2026 (Claude for Nonprofits doplněno 21. 11. 2026), ověřeno v oficiálních cenících a nápovědách vývojářů (část jen z výsledků vyhledávání, stránky chatgpt.com, help.openai.com, gemini.google a perplexity.ai nešly přímo otevřít). Ceny jsou orientační, vč. DPH u spotřebitelských tarifů v Kč, jinak bez DPH.
+# Stav: 15. 11. 2026 (Claude for Nonprofits doplněno 21. 11. 2026; ceny ChatGPT Go a Plus, Perplexity Education Pro a trénink u Copilotu ověřeny 21. 11. 2026), ověřeno v oficiálních cenících a nápovědách vývojářů (část jen z výsledků vyhledávání, stránky chatgpt.com, help.openai.com, gemini.google a perplexity.ai nešly přímo otevřít). Ceny jsou orientační, vč. DPH u spotřebitelských tarifů v Kč, jinak bez DPH.
 # ⚠ = údaj z neoficiálního nebo staršího zdroje, před zveřejněním ověřit.
 # Dovednosti v ChatGPT od tarifu Plus a pluginy z adresáře i ve Free a Go: opraveno podle Evy 20. 11. 2026.
 # Trénink = zda vývojář smí použít vaše konverzace k učení modelů.
 
-aktualizovano: 2026-11-20
+aktualizovano: 2026-11-21
 nastroje:
   - id: chatgpt
     nazev: ChatGPT
@@ -15,10 +15,10 @@ nastroje:
         cena: 0 Kč
         pozn: Omezený počet zpráv, obrázků a souborů, projekty (5 souborů na projekt). S reklamami (ne pro uživatele do 18 let), pluginy jen z adresáře, bez samostatných dovedností a Sites.
       - nazev: Go
-        cena: 249 Kč měsíčně ⚠
+        cena: 200 Kč měsíčně
         pozn: Víc zpráv a souborů než Free, bez nejsilnějšího modelu, s reklamami. Pluginy jen z adresáře, bez samostatných dovedností a Sites, hloubkový výzkum jen omezeně.
       - nazev: Plus
-        cena: 499 Kč měsíčně ⚠
+        cena: 499 Kč měsíčně
         pozn: Bez reklam, s hloubkovým výzkumem, pluginy, dovednostmi a ChatGPT Work.
       - nazev: Pro
         cena: od 100 USD měsíčně (tarify 100, 200 a 500 USD), jen měsíční platba
@@ -31,6 +31,8 @@ nastroje:
         pozn: Jen pro vysoké školy. ChatGPT for Teachers je jen pro vyučující v USA.
     trenink: U osobních tarifů ano, dá se vypnout v Nastavení → Ovládání dat. Business a Edu ne.
     zdroje:
+      - https://ailadies.cz/knihovna/kolik-stoji-chatgpt-a-kdy-se-ti-vyplati-plus
+      - https://www.aifirst.cz/pruvodce/kolik-stoji-chatgpt
       - https://chatgpt.com/pricing
       - https://help.openai.com/en/articles/5722486
       - https://help.openai.com/en/articles/11989085-what-is-chatgpt-go
@@ -97,8 +99,9 @@ nastroje:
       - nazev: Microsoft 365 Copilot (licence pro školy)
         cena: 18 USD za uživatele měsíčně
         pozn: Copilot nad daty školy, dovednosti, Agent Builder s daty. Cowork jen pro vyučující a zaměstnance, navíc za kredity.
-    trenink: Na datech uživatelů do 18 let a na školních a pracovních účtech Microsoft netrénuje. U dospělých osobních účtů v EU zatím netrénoval, aktuální FAQ to ale výslovně neuvádí ⚠.
+    trenink: Na datech uživatelů do 18 let a na školních a pracovních účtech Microsoft netrénuje. U osobních účtů v EU zatím netrénuje ani nenabízí volbu tréninku (oznámení Microsoftu z roku 2024).
     zdroje:
+      - https://www.microsoft.com/en-us/microsoft-copilot/blog/2024/08/16/transparency-and-control-in-consumer-data-use/
       - https://www.microsoft.com/cs-cz/microsoft-365-copilot/pricing/individuals
       - https://www.microsoft.com/cs-cz/microsoft-365/buy/compare-all-microsoft-365-products
       - https://www.microsoft.com/en-us/education/products/copilot-in-education
@@ -162,10 +165,11 @@ nastroje:
         cena: 200 USD měsíčně nebo 2 000 USD ročně (roční platba jen na webu)
         pozn: Vše z Pro, navíc nejsilnější modely, vyšší limity a nové funkce dřív.
       - nazev: Education Pro
-        cena: 10 USD měsíčně ⚠
-        pozn: Pro studenty a vyučující s ověřením (SheerID), obsahuje vše z Pro.
+        cena: 10 USD měsíčně
+        pozn: Pro studenty a vyučující vysokých škol s ověřením (SheerID), obsahuje vše z Pro.
     trenink: U Free, Pro a Max ve výchozím stavu ano, dá se vypnout v Settings → Preferences (AI data retention). Enterprise ne.
     zdroje:
+      - https://www.chalkbox.org/guides/perplexity-pro-for-students/
       - https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you
       - https://www.perplexity.ai/help-center/en/articles/12590157-what-is-education-pro
       - https://www.perplexity.ai/help-center/en/articles/11680686-perplexity-max
