@@ -45,26 +45,6 @@ Metodika je součástí Kurikula umělé inteligence pro ZŠ a SŠ, které vytv�
 
 [Otevřít metodiku](https://kurikulum.aidetem.cz/knowledgebase/vibecoding-01-tvorba-jednoduchych-aplikaci/)
 
-## Školení pro sborovny
-
-<!-- komponenta: karta s obrázkem (bez obrázku) -->
-
-### Vibe Coding pro školy
-
-Přijedeme za vámi do školy a za tři hodiny celé sborovně ukážeme, jak s AI tvořit jednoduché aplikace a jak Vibe Coding smysluplně zařadit do výuky. Nejde o to naučit se programovat, ale o tvořivost, spolupráci a práci s chybou.
-
-- **Úvod:** co je Vibe Coding a čím se liší od klasické výuky informatiky.
-- **Praktická část:** sami si vyzkoušíte tvorbu jednoduchých digitálních výstupů s pomocí AI. Důraz je na postup, testování a vylepšování, ne na technickou dokonalost.
-- **Metodická část:** jak Vibe Coding zařadit podle věku a digitálních dovedností žáků. Přínosy, limity a rizika AI, bezpečnost, autorská práva a odpovědnost.
-
-Odnesete si konkrétní příklady výukových scénářů, nápady na projekty s AI a jistotu při tvůrčí práci s digitálními nástroji.
-
-**Pro koho:** pedagogové a vedení škol, nejvýš 26 účastníků<br>
-**Kde a kdy:** prezenčně ve vaší sborovně, termín po domluvě<br>
-**Cena:** 23 600 Kč s DPH. Školení je s certifikátem, lze ho hradit ze šablon.
-
-[Objednat školení](https://vzdelavame.aidetem.cz/akce/sborovna/vibecoding-pro-skoly/)
-
 ## Osm zadání pro vyučující
 
 Dříve jsme v [databázi promptů](/funkce/prompty/graf-regiony) radili, jak nechat chatbota napsat kód například pro graf a jak ho zobrazit. Dnes chatbot graf rovnou postaví. Zadání vložte do Gemini Canvas nebo Claude a upravte podle sebe.
@@ -147,3 +127,21 @@ výška a tloušťka stěny v milimetrech. Vysvětli, jak model otevřu v OpenSC
 U 3D modelů začněte jednoduchým tvarem a vylepšujte ho postupně — přesné popisy složitých tvarů zatím selhávají.
 
 [Pro pokročilé →](/vibe-coding/pro-pokrocile)
+
+## Školení pro sborovny
+
+### Vibe Coding pro školy
+
+Přijedeme za vámi do školy a za tři hodiny celé sborovně ukážeme, jak s AI tvořit jednoduché aplikace a jak Vibe Coding smysluplně zařadit do výuky. Nejde o to naučit se programovat, ale o tvořivost, spolupráci a práci s chybou.
+
+- **Úvod:** co je Vibe Coding a čím se liší od klasické výuky informatiky.
+- **Praktická část:** sami si vyzkoušíte tvorbu jednoduchých digitálních výstupů s pomocí AI. Důraz je na postup, testování a vylepšování, ne na technickou dokonalost.
+- **Metodická část:** jak Vibe Coding zařadit podle věku a digitálních dovedností žáků. Přínosy, limity a rizika AI, bezpečnost, autorská práva a odpovědnost.
+
+Odnesete si konkrétní příklady výukových scénářů, nápady na projekty s AI a jistotu při tvůrčí práci s digitálními nástroji.
+
+**Pro koho:** pedagogové a vedení škol, nejvýš 26 účastníků<br>
+**Kde a kdy:** prezenčně ve vaší sborovně, termín po domluvě<br>
+**Cena:** 23 600 Kč s DPH. Školení je s certifikátem, lze ho hradit ze šablon.
+
+[Objednat školení](https://vzdelavame.aidetem.cz/akce/sborovna/vibecoding-pro-skoly/)

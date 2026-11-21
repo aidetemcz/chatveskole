@@ -31,13 +31,13 @@ const metodikaHtml = htmlOddilu(metodika);
 const metodikaObr = metodikaHtml.match(/<img [^>]*>/)?.[0] ?? '';
 const metodikaText = odstavce(metodikaHtml);
 
-// Školení: nadpis, úvod, tři části programu (seznam), „Odnesete si…“, údaje „**Pro koho:** …<br>“, tlačítko
+// Školení: nadpis, ### název, zbytek jako obyčejný text; poslední odstavec jen s odkazem → tlačítko
 const skoleni = najdi(/Školení/i);
-const skoleniHtml = htmlOddilu(skoleni);
-const skoleniText = odstavce(skoleniHtml);
-const skoleniUdaje = (skoleniHtml.match(/<p>\s*(<strong>[^<]*:<\/strong>[\s\S]*?)<\/p>/)?.[1] ?? '').split(/<br\s*\/?>/)
-  .map((r) => r.trim().match(/^<strong>([\s\S]*?)<\/strong>\s*([\s\S]*)$/)).filter((m): m is RegExpMatchArray => !!m)
-  .map((m) => ({ nazev: bezTagu(m[1]).replace(/:$/, ''), text: velke(m[2].trim()) }));
+let skoleniHtml = htmlOddilu(skoleni);
+const skoleniNazev = nadpisH3(skoleniHtml);
+const skoleniOdkaz = skoleniHtml.match(/<p>\s*<a href="([^"]+)"[^>]*>([^<]*)<\/a>\s*<\/p>\s*$/);
+if (skoleniOdkaz) skoleniHtml = skoleniHtml.slice(0, skoleniOdkaz.index);
+const skoleniText = skoleniHtml.replace(/<h3[^>]*>[\s\S]*?<\/h3>/, '');
 
 // Zadání: úvodní odstavec, pak ### „Název (předměty)“ → karta s promptem a poznámkou; poslední odstavec jen s odkazem → tlačítko
 const zadani = najdi(/zadání/i);
@@ -105,43 +105,8 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
     </section>
   )}
 
-  {skoleni && (
-    <section class="band band--white" id={skoleni.id || undefined} aria-labelledby={skoleni.id ? `${skoleni.id}-h` : undefined}>
-      <div class="wrap stack" style="gap: 32px">
-        <div class="hlava">
-          <h2 id={skoleni.id ? `${skoleni.id}-h` : undefined}>{skoleni.nadpis}</h2>
-          <h3 class="nazev" set:html={nadpisH3(skoleniHtml)} />
-          {skoleniText[0] && <p set:html={skoleniText[0]} />}
-        </div>
-        <ol class="postup">
-          {polozky(skoleniHtml).map((k, i) => (
-            <li class:list={['postup-krok', { 'postup-krok--prvni': i === 0 }]}>
-              <span class="postup-cislo" aria-hidden="true">{i + 1}</span>
-              <h4>{k.nazev}</h4>
-              <p set:html={k.text} />
-            </li>
-          ))}
-        </ol>
-        <div class="dva-sloupce">
-          <div class="prose">{skoleniText.slice(1).map((t) => <p set:html={t} />)}</div>
-          <div class="pravidla">
-            <div class="udaje udaje--skoleni">
-              {skoleniUdaje.map((u) => (
-                <div class="pravidlo">
-                  <span class="titulek titulek--cerveny">{u.nazev}</span>
-                  <span set:html={u.text} />
-                </div>
-              ))}
-            </div>
-            {tlacitko(skoleniHtml) && <p class="akce" set:html={tlacitko(skoleniHtml)} />}
-          </div>
-        </div>
-      </div>
-    </section>
-  )}
-
   {zadani && (
-    <section class="band band--sky" id={zadani.id || undefined} aria-labelledby={zadani.id ? `${zadani.id}-h` : undefined}>
+    <section class="band band--white" id={zadani.id || undefined} aria-labelledby={zadani.id ? `${zadani.id}-h` : undefined}>
       <div class="wrap stack" style="gap: 32px">
         <div class="hlava">
           <h2 id={zadani.id ? `${zadani.id}-h` : undefined}>{zadani.nadpis}</h2>
@@ -168,9 +133,26 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
         </div>
         {dalsi && (
           <div class="tlacitka">
-            <a class="btn btn--outline btn--bila" href={dalsi[1]}>{dalsi[2]}</a>
+            <a class="btn btn--outline" href={dalsi[1]}>{dalsi[2]}</a>
           </div>
         )}
+      </div>
+    </section>
+  )}
+
+  {skoleni && (
+    <section class="band band--sky" id={skoleni.id || undefined} aria-labelledby={skoleni.id ? `${skoleni.id}-h` : undefined}>
+      <div class="wrap">
+        <div class="hlava">
+          <h2 id={skoleni.id ? `${skoleni.id}-h` : undefined}>{skoleni.nadpis}</h2>
+          {skoleniNazev && <h3 class="nazev" set:html={skoleniNazev} />}
+          <div class="prose skoleni" set:html={skoleniText} />
+          {skoleniOdkaz && (
+            <div class="tlacitka">
+              <a class="btn btn--primary" href={skoleniOdkaz[1]}>{skoleniOdkaz[2]}</a>
+            </div>
+          )}
+        </div>
       </div>
     </section>
   )}
@@ -181,11 +163,10 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .hlava { display: flex; flex-direction: column; gap: 14px; max-width: var(--dve-tretiny); }
   .tlacitka { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
   .perex :global(p) { font-size: 1.15rem; }
-  .dva-sloupce { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 48px; align-items: start; }
   .titulek { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); }
-  .titulek--cerveny { color: var(--accent-strong); }
   .nazev { font-size: 1.3rem; }
   .akce { margin: 8px 0 0; }
+  .skoleni :global(ul) { margin: 0.6em 0 1em; }
 
   .metodika { background: var(--panel); border: 1px solid var(--sky); border-radius: 12px; padding: 32px; display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 40px; align-items: center; }
   .metodika p { margin: 0; }
@@ -196,17 +177,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .udaj dd { margin: 0; font-size: 0.95rem; line-height: 1.5; }
   @media (max-width: 760px) { .metodika { grid-template-columns: 1fr; padding: 24px 20px; gap: 24px; } .metodika-obr { max-width: 320px; } }
 
-  .postup { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 22px; }
-  .postup-krok { border: 1px solid var(--sky); border-radius: 9px; padding: 26px 28px; display: flex; flex-direction: column; gap: 12px; background: var(--panel); }
-  .postup-krok--prvni { background: var(--accent-soft); }
-  .postup-cislo { font-family: var(--fh); font-size: 1.75rem; font-weight: 700; color: var(--accent); line-height: 1; }
-  .postup-krok h4 { font-size: 1.1rem; }
-  .postup-krok > p { margin: 0; font-size: 0.93rem; line-height: 1.6; }
 
-  .pravidla { background: var(--accent-soft); border-radius: 12px; padding: 30px 32px; display: flex; flex-direction: column; gap: 18px; }
-  .udaje--skoleni { grid-template-columns: 1fr; }
-  .pravidlo { background: var(--panel); border-radius: 9px; padding: 16px 20px; display: flex; flex-direction: column; gap: 4px; }
-  .pravidlo span:last-child { font-size: 0.95rem; }
   @media (max-width: 640px) { .pravidla { padding: 24px 20px; } }
 
   .zadani { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 22px; align-items: start; }
