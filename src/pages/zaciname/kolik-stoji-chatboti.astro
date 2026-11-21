@@ -35,7 +35,7 @@ const claude = najdi(/Claude se slevou/i);
 const claudeHtml = htmlOddilu(claude);
 const tarify = najdi(/^Tarify/i);
 const vyplati = najdi(/vyplatí/i);
-const STITKY_VYPLATI = ['0 Kč', 'zhruba 500 Kč měsíčně', 'licence'];
+const STITKY_VYPLATI = ['školní licence', 'zdarma', 'placená verze'];
 const dph = najdi(/DPH/i);
 const dphHtml = htmlOddilu(dph);
 
@@ -126,8 +126,8 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
         <h2 id={vyplati.id || undefined}>{vyplati.nadpis}</h2>
         <div class="karty karty--3">
           {polozky(htmlOddilu(vyplati)).map((k, i) => (
-            <div class:list={['card', { 'card--hlavni': i === 1 }]}>
-              {STITKY_VYPLATI[i] && <span class:list={['stitek', { 'stitek--cerveny': i === 1 }]}>{STITKY_VYPLATI[i]}</span>}
+            <div class="card">
+              {STITKY_VYPLATI[i] && <span class="stitek">{STITKY_VYPLATI[i]}</span>}
               <h3>{k.nazev}</h3>
               <p set:html={k.text} />
             </div>
@@ -167,7 +167,6 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .karty--3 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
   .karty h3 { font-size: 1.2rem; }
   .karty p { margin: 0; font-size: 0.95rem; line-height: 1.6; color: var(--ink); }
-  .card--hlavni { border: 2px solid var(--accent); }
   .pravidlo { background: var(--accent-soft); border-radius: 9px; padding: 26px 28px; display: flex; flex-direction: column; gap: 12px; }
 
   .claude { gap: 22px; }
