@@ -66,7 +66,7 @@ Chatbot od Microsoftu. Využívá hlavně modely OpenAI, ve školní a pracovní
 
 ### Claude
 
-Chatbot od Anthropicu, silný v psaní, práci s dokumenty a programování. I v bezplatné verzi má dovednosti, projekty a tvorbu dokumentů, prezentací a aplikací (artefakty). Je jen pro dospělé — se žáky ho používejte jen tak, že ho ovládá vyučující.
+Chatbot od Anthropicu, silný v psaní, práci s dokumenty a programování. I v bezplatné verzi má dovednosti, projekty a tvorbu dokumentů, prezentací a aplikací (artefakty). Je jen pro dospělé — se žáky ho používejte jen tak, že ho ovládá vyučující. Základní i střední školy mohou pro vedení a pedagogy získat zvýhodněné tarify přes program Claude for Nonprofits, postup najdete na stránce [Kolik stojí chatboti](/zaciname/kolik-stoji-chatboti).
 
 [claude.ai](https://claude.ai)
 
@@ -78,7 +78,7 @@ Podrobné srovnání funkcí a přehled toho, co se mění v roce 2027, najdete 
 |---|---|---|---|---|
 | Vývojář | OpenAI | Google | Microsoft | Anthropic |
 | Zdarma | ano | ano | ano | ano |
-| Školní verze v Česku | ne (Edu jen pro VŠ) | ano, v Google Workspace for Education | ano, Copilot Chat se školní licencí Microsoft 365 | ne (Education jen pro VŠ) |
+| Školní verze v Česku | ne (Edu jen pro VŠ) | ano, v Google Workspace for Education | ano, Copilot Chat se školní licencí Microsoft 365 | ano, se slevou přes Claude for Nonprofits, jen pro vedení a pedagogy (18+) |
 | Věk — osobní účet | 13+, do 18 let se souhlasem rodiče a v režimu pro dospívající | 13+ (v ČR samostatně od 15 let); placené tarify a dovednosti 18+ | 13+ | 18+ |
 | Věk — školní účet | — | všechny věky, zapíná správce, žáci do 18 let mají omezené funkce | 13+, zapíná správce | — |
 | Dovednosti | od tarifu Plus; zdarma a v Go ne | ano (18+) | jen s placenou licencí Microsoft 365 Copilot | ano, i zdarma |
