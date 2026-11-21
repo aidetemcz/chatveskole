@@ -2,7 +2,7 @@
 title: Způsoby využití AI ve výuce
 menu: Chatboti ve výuce
 poradi: 2
-popis: Deset způsobů, jak zapojit generativní AI do výuky tak, aby žákům pomáhala přemýšlet a nepřemýšlela za ně. Ke každému co dělá žák a co AI, pojistka a jak poznáte, že se žák učí.
+popis: Deset způsobů, jak zapojit generativní AI do výuky tak, aby žákům pomáhala přemýšlet. Co dělá žák, co AI a hodnoticí kritérium.
 aktualizovano: 2026-11-21
 tlacitko: { text: AI aplikace Tiny, href: /ve-vyuce/tiny }
 stav: ke-kontrole   # před zveřejněním: ověřit čísla ze studií v původních článcích; věta o 4 krocích jen o návaznosti (s NPI nedohodnuto)

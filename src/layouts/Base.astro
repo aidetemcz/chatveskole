@@ -19,7 +19,41 @@ const fullTitle = title === 'Chatboti ve škole' ? title : `${title} | Chatboti 
 const canonical = new URL(Astro.url.pathname.replace(/\/?$/, '/'), Astro.site);
 // indexovat jen ostrý web na chatveskole.cz (viz src/lib/indexovat.mjs); náhledy na github.io a vercel.app ne
 const nahled = !indexovat;
-const ogImage = new URL(url('/img/og-chatveskole.png'), Astro.site);
+const ogImage = new URL(url('/img/og-chatveskole.jpg'), Astro.site);
+const domov = new URL(url('/'), Astro.site).href;
+// Strukturovaná data pro vyhledávače: provozovatel a web s vyhledáváním (schema.org)
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': 'https://aidetem.cz/#organizace',
+      name: 'AI dětem, z. s.',
+      url: 'https://aidetem.cz',
+      logo: new URL(url('/img/logo-ai-detem.png'), Astro.site).href,
+      sameAs: [
+        'https://www.facebook.com/groups/aidetem',
+        'https://www.linkedin.com/company/aidetem/',
+        'https://www.instagram.com/ai_detem/',
+        'https://www.youtube.com/@aidetemcz',
+      ],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': domov + '#web',
+      name: 'Chatboti ve škole',
+      description: 'Dovednosti, prompty a návody pro vyučující a vedení škol',
+      url: domov,
+      inLanguage: 'cs',
+      publisher: { '@id': 'https://aidetem.cz/#organizace' },
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: new URL(url('/hledat/'), Astro.site).href + '?q={search_term_string}',
+        'query-input': 'required name=search_term_string',
+      },
+    },
+  ],
+});
 ---
 <!doctype html>
 <html lang="cs">
@@ -32,7 +66,9 @@ const ogImage = new URL(url('/img/og-chatveskole.png'), Astro.site);
     {noindex && <meta name="robots" content="noindex" data-stranka />}
     {nahled && !noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
-    <link rel="icon" type="image/png" href={url('/img/logo-ai-detem.png')} />
+    <link rel="icon" type="image/png" sizes="32x32" href={url('/img/favicon-32.png')} />
+    <link rel="icon" type="image/png" sizes="48x48" href={url('/img/favicon-48.png')} />
+    <link rel="apple-touch-icon" href={url('/img/apple-touch-icon.png')} />
     <meta property="og:title" content={fullTitle} />
     {description && <meta property="og:description" content={description} />}
     <meta property="og:type" content="website" />
@@ -40,9 +76,12 @@ const ogImage = new URL(url('/img/og-chatveskole.png'), Astro.site);
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content="Chatboti ve škole" />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Chatboti ve škole – ucelený rozcestník pro vyučující i vedení škol, kteří chtějí generativní AI využít ve své práci" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json" set:html={jsonLd} />
   </head>
   <body>
     <a class="skip" href="#obsah">Přeskočit na obsah</a>
