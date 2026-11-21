@@ -22,7 +22,7 @@ U bezplatných a osobních tarifů mohou vývojáři využívat vaše konverzace
 Než začnete platit osobní předplatné, zeptejte se správce IT, co škola má.
 
 - **Google Workspace for Education** — Školy s Google Workspace for Education mají Gemini a Gemini Notebook zdarma pro vyučující i žáky. Data školy se nepoužívají k tréninku. Zapíná správce.
-- **Microsoft 365 se školní licencí (A1, A3, A5)** — Školy s touto licencí mají Copilot Chat zdarma pro vyučující i žáky od 13 let. Data zůstávají ve škole. Zapíná správce.
+- **Microsoft 365 se školní licencí (A1, A3, A5)** — Školy s touto licencí mají Copilot Chat zdarma pro vyučující i žáky od 13 let. Data zůstávají ve škole. Microsoft se chystá do budoucna zpoplatnit žákovské účty. Zapíná správce.
 
 ## Claude se slevou pro školy
 
