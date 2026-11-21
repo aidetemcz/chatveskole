@@ -109,11 +109,7 @@ const sipka = '<path d="M7 17L17 7M9 7h8v8"></path>';
                 <h3>{k.nazev}</h3>
                 {k.vyvojar && <span class="vyvojar">{k.vyvojar}</span>}
               </div>
-              <div class="stitky">
-                <span class="stitek">Zdarma</span>
-                <span class:list={['stitek', k.skolni ? 'stitek--cerveny' : 'stitek--sedy']}>{k.skolni ? 'Školní verze v Česku' : 'Bez školní verze v Česku'}</span>
-                {k.vek && <span class="stitek">Věk {k.vek}</span>}
-              </div>
+              {k.vek && <div class="stitky"><span class="stitek">Věk {k.vek}</span></div>}
               <div class="nastroj-popis" set:html={k.popis} />
               {k.odkaz && <a class="more" href={k.odkaz.href} style="margin-top: auto">{k.odkaz.text} ↗</a>}
             </article>
