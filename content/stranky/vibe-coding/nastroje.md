@@ -16,6 +16,13 @@ zdroje:
   - https://bolt.new/pricing
   - https://v0.app/pricing
   - https://replit.com/pricing
+  - https://replit.com/terms-of-service
+  - https://ai.google.dev/gemini-api/docs/aistudio-deploying
+  - https://ai.google.dev/gemini-api/terms
+  - https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan
+  - https://claude.com/pricing
+  - https://cursor.com/terms-of-service
+  - https://www.canva.com/ai-code-generator/
   - https://antigravity.google/docs/faq
   - https://code.claude.com/docs/en/overview
   - https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits
@@ -50,9 +57,9 @@ Tyto služby jsou určené přímo ke stavbě aplikací. Umí víc než chatboti
 | **[Lovable](https://lovable.dev)** | 5 kreditů denně, nejvýš 30 měsíčně | 18+ | ve Free jen pozvaní (nejvýš 10 lidí) |
 | **[Bolt.new](https://bolt.new)** | denní a měsíční limit, hosting v ceně | 18+ | ano |
 | **[v0](https://v0.app)** od Vercelu | 7 zpráv denně | 16+ (podmínky Vercelu) | ano, adresa vercel.app |
-| **[Replit](https://replit.com)** | omezený Free Mode | 13+, do 18 let se souhlasem zákonného zástupce | ověřte |
+| **[Replit](https://replit.com)** | ano, s limity, 1 zveřejněná aplikace | 13+, do 18 let se souhlasem zákonného zástupce | ano, ve Free se aplikace po 30 dnech vypne a musíte ji zveřejnit znovu |
 | **[Macaly](https://macaly.com)** | ano, měsíční kredity, 1 zveřejněná aplikace | 18+ (13+ jen v AI olympiádě) | ano, ve Free jen veřejně na adrese macaly.app |
-| **Canva Kódování** | ano, i v Canvě pro vzdělávání | 13+, mladší jen v Canvě pro vzdělávání na pozvánku vyučujícího | ano, na doméně Canvy |
+| **[Canva Kódování](https://www.canva.com/ai-code-generator/)** | ano, i v Canvě pro vzdělávání | 13+, mladší jen v Canvě pro vzdělávání na pozvánku vyučujícího | ano, na doméně Canvy |
 
 Naše metodika [Tvorba jednoduchých aplikací pomocí Vibe Codingu](/vibe-coding/materialy-do-vyuky) pracuje s ChatGPT Sites nebo Gemini Canvas a s Canva Kódováním. To mají školy s Canvou pro vzdělávání zdarma.
 
@@ -62,11 +69,11 @@ Tyto nástroje jsou určené vývojářům. Výsledek si musíte zveřejnit sami
 
 | Nástroj | Zdarma | Věk |
 |---|---|---|
-| **[Google AI Studio](https://aistudio.google.com)** (Build) | ano, 2 aplikace zveřejníte bez platební karty | 18+, určeno vývojářům |
+| **[Google AI Studio](https://aistudio.google.com)** (Build) | ano, 2 aplikace zveřejníte bez platební karty, neplatí pro školní účty Google Workspace | 18+, určeno vývojářům |
 | **[Claude Code](https://claude.com/product/claude-code)** | ne, jen v tarifu Pro a vyšších | 18+ |
-| **[OpenAI Codex](https://openai.com/codex)** | omezeně ve Free a Go | 13+, do 18 let se souhlasem zákonného zástupce |
-| **[Google Antigravity](https://antigravity.google)** | ano, s limity | 18+ |
-| **[Cursor](https://cursor.com)** | omezeně | 18+ |
+| **[OpenAI Codex](https://openai.com/codex)** | omezeně ve Free a Go, jen v aplikaci pro počítač | 13+, do 18 let se souhlasem zákonného zástupce |
+| **[Google Antigravity](https://antigravity.google)** | ano, s týdenními limity | 18+ |
+| **[Cursor](https://cursor.com)** | omezeně (tarif Hobby) | 18+ |
 
 Jak s nimi pracovat, popisujeme v části [Pro pokročilé](/vibe-coding/pro-pokrocile).
 
