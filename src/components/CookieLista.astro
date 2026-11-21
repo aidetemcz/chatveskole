@@ -1,6 +1,7 @@
 ---
 // Cookie lišta a Google Analytics 4 (G-G1NT8MV18D, schválila Eva 21. 11. 2026, kvůli napojení na Looker Studio).
 // GA4 se načte až po souhlasu (Consent Mode v2, výchozí stav „odmítnuto“, reklamní úložiště vždy odmítnuto).
+// První úroveň: Přijmout / Přizpůsobit (rozhodla Eva 21. 11. 2026); v Přizpůsobit přepínač analytických cookies.
 // Volba se ukládá v localStorage; změnit ji jde tlačítkem „Nastavení cookies“ v patičce ([data-cookies-nastaveni]).
 // Lišta i měření jen v produkčním buildu na Vercelu (prop zapnuto).
 interface Props { zapnuto: boolean }
@@ -11,9 +12,29 @@ const GA_ID = 'G-G1NT8MV18D';
   <>
     <div class="cookie-lista" id="cookie-lista" role="region" aria-label="Souhlas s cookies" hidden data-pagefind-ignore>
       <p>Rádi bychom měřili návštěvnost pomocí Google Analytics, abychom věděli, které stránky vám pomáhají. Analytické cookies použijeme jen s vaším souhlasem. Volbu můžete kdykoli změnit v patičce webu.</p>
-      <div class="cookie-tlacitka">
+      <div class="cookie-tlacitka" data-cookies-zaklad>
         <button type="button" class="btn btn--primary" data-cookies="ano">Přijmout</button>
-        <button type="button" class="btn btn--outline" data-cookies="ne">Odmítnout</button>
+        <button type="button" class="btn btn--outline" data-cookies-prizpusobit>Přizpůsobit</button>
+      </div>
+      <div class="cookie-nastaveni" data-cookies-panel hidden>
+        <div class="cookie-volba">
+          <div>
+            <strong>Nezbytné</strong>
+            <span>Web si pamatuje jen vaši volbu cookies a to, že jste viděli uvítací okno. Bez nich web nefunguje správně.</span>
+          </div>
+          <span class="cookie-stav">Vždy zapnuto</span>
+        </div>
+        <label class="cookie-volba">
+          <div>
+            <strong>Analytické (Google Analytics)</strong>
+            <span>Měříme, které stránky čtete a odkud přicházíte. Data nepoužíváme k reklamě.</span>
+          </div>
+          <input type="checkbox" data-cookies-analytika />
+        </label>
+        <div class="cookie-tlacitka">
+          <button type="button" class="btn btn--primary" data-cookies-ulozit>Uložit volbu</button>
+          <button type="button" class="btn btn--outline" data-cookies="ano">Přijmout vše</button>
+        </div>
       </div>
     </div>
     <script is:inline define:vars={{ GA_ID }}>
@@ -48,17 +69,30 @@ const GA_ID = 'G-G1NT8MV18D';
         if (volba === 'ano') spust();
         // uvítací okno se otevírá skriptem modulu, ten běží až před DOMContentLoaded
         else if (volba !== 'ne') document.addEventListener('DOMContentLoaded', ukaz);
-        lista.addEventListener('click', function (e) {
-          var b = e.target.closest('[data-cookies]');
-          if (!b) return;
-          var v = b.getAttribute('data-cookies');
+        var zaklad = lista.querySelector('[data-cookies-zaklad]');
+        var panel = lista.querySelector('[data-cookies-panel]');
+        var zaskrt = lista.querySelector('[data-cookies-analytika]');
+        function nastaveni() {
+          var aktualni = null;
+          try { aktualni = localStorage.getItem(KLIC); } catch (e) {}
+          zaskrt.checked = aktualni === 'ano';
+          zaklad.hidden = true; panel.hidden = false; lista.hidden = false;
+          zaskrt.focus();
+        }
+        function rozhodni(v) {
           uloz(v);
-          lista.hidden = true;
+          lista.hidden = true; panel.hidden = true; zaklad.hidden = false;
           if (v === 'ano') spust();
           else if (nacteno) { gtag('consent', 'update', { analytics_storage: 'denied' }); }
+        }
+        lista.addEventListener('click', function (e) {
+          if (e.target.closest('[data-cookies-prizpusobit]')) return nastaveni();
+          if (e.target.closest('[data-cookies-ulozit]')) return rozhodni(zaskrt.checked ? 'ano' : 'ne');
+          var b = e.target.closest('[data-cookies]');
+          if (b) rozhodni(b.getAttribute('data-cookies'));
         });
         document.addEventListener('click', function (e) {
-          if (e.target.closest('[data-cookies-nastaveni]')) { lista.hidden = false; lista.querySelector('button').focus(); }
+          if (e.target.closest('[data-cookies-nastaveni]')) nastaveni();
         });
       })();
     </script>
@@ -70,4 +104,11 @@ const GA_ID = 'G-G1NT8MV18D';
   .cookie-lista[hidden] { display: none; }
   .cookie-lista p { margin: 0; flex: 1 1 360px; font-size: 0.93rem; line-height: 1.55; }
   .cookie-tlacitka { display: flex; flex-wrap: wrap; gap: 10px; }
+  .cookie-tlacitka[hidden], .cookie-nastaveni[hidden] { display: none; }
+  .cookie-nastaveni { flex: 1 1 100%; display: flex; flex-direction: column; gap: 12px; }
+  .cookie-volba { display: flex; gap: 16px; align-items: center; justify-content: space-between; background: #f6fafc; border-radius: 9px; padding: 12px 16px; cursor: pointer; }
+  .cookie-volba div { display: flex; flex-direction: column; gap: 2px; font-size: 0.9rem; line-height: 1.5; }
+  .cookie-volba strong { font-weight: 600; }
+  .cookie-volba input { flex: none; width: 22px; height: 22px; accent-color: var(--accent); }
+  .cookie-stav { flex: none; font-size: 0.8rem; color: var(--sky-ink); font-weight: 600; }
 </style>
