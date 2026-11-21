@@ -4,53 +4,53 @@
 // Jen CSS, bez JavaScriptu. Při prefers-reduced-motion se ukáže konečný stav.
 ---
 <figure class="anim" role="img" aria-label="Animace: agent se propojí s repozitářem na GitHubu, změny uloží do nové větve, připraví pull request, po schválení se změny sloučí do hlavní větve a hosting web znovu zveřejní.">
-  <svg viewBox="0 0 520 330" aria-hidden="true">
+  <svg viewBox="0 0 1100 250" aria-hidden="true">
     <!-- agent -->
-    <g class="uzel">
-      <rect x="14" y="40" width="150" height="96" rx="10" class="box box--agent" />
-      <g transform="translate(32 58)" class="ikona">
-        <path d="M2 2h22a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H12l-6 5v-5H2a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3z" />
-      </g>
-      <text x="32" y="104" class="nazev">Agent</text>
-      <text x="32" y="122" class="pod">Claude Code, Codex</text>
+    <rect x="10" y="70" width="210" height="110" rx="12" class="box box--agent" />
+    <g transform="translate(34 92)" class="ikona">
+      <path d="M2 2h22a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H12l-6 5v-5H2a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3z" />
     </g>
+    <text x="34" y="144" class="nazev">Agent</text>
+    <text x="34" y="164" class="pod">Claude Code, Codex</text>
 
     <!-- propojení agent ↔ GitHub -->
-    <path d="M164 88 H236" class="spoj spoj--propojeni" />
-    <text x="200" y="78" class="stitek-cary f1">propojení</text>
+    <path d="M220 125 H300" class="spoj spoj--propojeni" />
+    <text x="260" y="112" class="stitek-cary f1">propojení</text>
 
     <!-- GitHub repozitář -->
-    <rect x="236" y="14" width="270" height="186" rx="10" class="box" />
-    <text x="254" y="40" class="nazev">GitHub</text>
-    <text x="320" y="40" class="pod">repozitář</text>
+    <rect x="300" y="14" width="500" height="222" rx="12" class="box" />
+    <text x="324" y="46" class="nazev">GitHub</text>
+    <text x="406" y="46" class="pod">repozitář</text>
 
     <!-- hlavní větev -->
-    <path d="M256 150 H486" class="hlavni" />
-    <circle cx="272" cy="150" r="6" class="commit" />
-    <circle cx="478" cy="150" r="6" class="commit commit--novy f4" />
-    <text x="256" y="178" class="pod">hlavní větev</text>
+    <path d="M326 165 H776" class="hlavni" />
+    <circle cx="348" cy="165" r="7" class="commit" />
+    <circle cx="752" cy="165" r="7" class="commit commit--novy f4" />
+    <text x="326" y="200" class="pod">hlavní větev</text>
 
     <!-- nová větev se změnami -->
-    <path d="M290 150 C 312 150, 310 88, 332 88 H 428 C 450 88, 448 150, 470 150" class="vetev f2" pathLength="1" />
-    <circle cx="358" cy="88" r="6" class="commit commit--vetev f2b" />
-    <circle cx="402" cy="88" r="6" class="commit commit--vetev f2c" />
-    <text x="380" y="74" class="stitek-cary f2b">nová větev</text>
+    <path d="M390 165 C 420 165, 418 98, 448 98 H 652 C 682 98, 680 165, 710 165" class="vetev f2" pathLength="1" />
+    <circle cx="510" cy="98" r="7" class="commit commit--vetev f2b" />
+    <circle cx="590" cy="98" r="7" class="commit commit--vetev f2c" />
+    <text x="550" y="80" class="stitek-cary f2b">nová větev</text>
 
     <!-- pull request -->
     <g class="pr f3">
-      <rect x="333" y="161" width="90" height="26" rx="13" class="pr-box" />
-      <text x="378" y="178" class="pr-text">pull request</text>
+      <rect x="500" y="182" width="104" height="30" rx="15" class="pr-box" />
+      <text x="552" y="202" class="pr-text">pull request</text>
     </g>
     <g class="schvaleno f3b">
-      <circle cx="438" cy="174" r="11" class="ok" />
-      <path d="M433 174l4 4 7-8" class="ok-znak" />
+      <circle cx="622" cy="197" r="12" class="ok" />
+      <path d="M616 197l4 4 8-9" class="ok-znak" />
     </g>
 
     <!-- zveřejnění -->
-    <path d="M478 200 V 246" class="spoj spoj--web f4" />
-    <rect x="236" y="246" width="270" height="70" rx="10" class="box box--web f4web" />
-    <text x="254" y="276" class="nazev">Web</text>
-    <text x="254" y="298" class="pod">hosting zveřejní novou verzi</text>
+    <path d="M800 125 H880" class="spoj spoj--web f4" />
+    <text x="840" y="112" class="stitek-cary f4">zveřejnění</text>
+    <rect x="880" y="70" width="210" height="110" rx="12" class="box box--web f4web" />
+    <text x="904" y="120" class="nazev">Web</text>
+    <text x="904" y="142" class="pod">hosting zveřejní</text>
+    <text x="904" y="160" class="pod">novou verzi</text>
   </svg>
   <figcaption>
     <ol class="faze">
@@ -63,15 +63,16 @@
 </figure>
 
 <style>
-  .anim { margin: 0; background: var(--panel); border: 1px solid var(--sky); border-radius: var(--radius-lg); padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+  .anim { margin: 0; background: var(--panel); border: 1px solid var(--sky); border-radius: var(--radius-lg); padding: 28px 32px; display: flex; flex-direction: column; gap: 20px; }
+  @media (max-width: 640px) { .anim { padding: 16px; } }
   svg { width: 100%; height: auto; display: block; font-family: var(--fb); }
   .box { fill: var(--bg); stroke: var(--sky); stroke-width: 1.5; }
   .box--agent { fill: var(--sky-light); }
   .box--web { fill: var(--accent-soft); stroke: var(--accent); }
   .ikona path { fill: none; stroke: var(--sky-deep); stroke-width: 2.4; stroke-linejoin: round; }
-  .nazev { font-family: var(--fh); font-weight: 700; font-size: 17px; fill: var(--ink); }
-  .pod { font-size: 12px; fill: var(--muted); }
-  .stitek-cary { font-size: 11px; font-weight: 600; fill: var(--sky-ink); text-anchor: middle; }
+  .nazev { font-family: var(--fh); font-weight: 700; font-size: 20px; fill: var(--ink); }
+  .pod { font-size: 14px; fill: var(--muted); }
+  .stitek-cary { font-size: 13px; font-weight: 600; fill: var(--sky-ink); text-anchor: middle; }
   .spoj { fill: none; stroke: var(--sky-deep); stroke-width: 2.5; stroke-dasharray: 6 6; }
   .hlavni { fill: none; stroke: var(--sky-deep); stroke-width: 3; stroke-linecap: round; }
   .vetev { fill: none; stroke: var(--accent); stroke-width: 3; stroke-linecap: round; stroke-dasharray: 1; }
@@ -79,11 +80,11 @@
   .commit--vetev { stroke: var(--accent); }
   .commit--novy { fill: var(--accent); stroke: var(--accent); }
   .pr-box { fill: var(--bg); stroke: var(--accent); stroke-width: 1.5; }
-  .pr-text { font-size: 12px; font-weight: 600; fill: var(--ink); text-anchor: middle; }
+  .pr-text { font-size: 14px; font-weight: 600; fill: var(--ink); text-anchor: middle; }
   .ok { fill: var(--accent); }
   .ok-znak { fill: none; stroke: var(--on-accent); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
 
-  .faze { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.85rem; }
+  .faze { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; font-size: 0.9rem; }
   .faze li { display: flex; align-items: center; gap: 8px; padding: 5px 12px 5px 6px; border-radius: var(--pill); background: var(--sky-light); white-space: nowrap; }
   .faze span { flex: none; width: 22px; height: 22px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.75rem; background: var(--panel); }
 
