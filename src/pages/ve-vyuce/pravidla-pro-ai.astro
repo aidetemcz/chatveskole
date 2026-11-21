@@ -61,8 +61,7 @@ const zavadeni = najdiBlok(seZakyBloky, /Zavádění/i);
 // Vedení: dovednost, postup, obsah
 const vedeniHtml = htmlOddilu(vedeni);
 const vedeniBloky = bloky(vedeniHtml);
-const dovednost = najdiBlok(vedeniBloky, /Dovednost/i);
-const dovednostCast = odkazOdstavec(dovednost?.html ?? '');
+const vedeniUvod = odkazOdstavec(predH3(vedeniHtml));
 const postup = najdiBlok(vedeniBloky, /Postup/i);
 const obsah = najdiBlok(vedeniBloky, /obsahovat/i);
 
@@ -165,21 +164,18 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   {vedeni && (
     <section class="band band--sky" id={vedeni.id || undefined} aria-labelledby={vedeni.id ? `${vedeni.id}-h` : undefined}>
       <div class="wrap stack" style="gap: 48px">
-        <div class="dva-sloupce dva-sloupce--nadpis">
-          <h2 class="nadpis-sloupcu" id={vedeni.id ? `${vedeni.id}-h` : undefined}>{vedeni.nadpis}</h2>
-          <div class="hlava">
-            <div class="prose" set:html={uvodOddilu(vedeniHtml)} />
-          </div>
-          {dovednost && (
-            <div class="dovednost">
-              <div class="titulek titulek--cerveny">Dovednost</div>
-              <h3>{dovednost.nazev.replace(/^Dovednost\s+/i, '')}</h3>
-              <div class="dovednost-text" set:html={dovednostCast.zbytek} />
-              {dovednostCast.odkaz && <a class="btn btn--primary" style="align-self: flex-start" href={dovednostCast.odkaz.href}>{dovednostCast.odkaz.text} →</a>}
-            </div>
-          )}
+        <div class="hlava">
+          <h2 id={vedeni.id ? `${vedeni.id}-h` : undefined}>{vedeni.nadpis}</h2>
+          <div class="prose" set:html={vedeniUvod.zbytek} />
+          {vedeniUvod.odkaz && <div class="tlacitka"><a class="btn btn--outline btn--bila" href={vedeniUvod.odkaz.href}>{vedeniUvod.odkaz.text} →</a></div>}
         </div>
+      </div>
+    </section>
+  )}
 
+  {vedeni && (postup || obsah) && (
+    <section class="band band--white" aria-label="Postup a obsah pravidel">
+      <div class="wrap stack" style="gap: 48px">
         {postup && (
           <div class="stack" style="gap: 18px">
             <h3 class="h3-oddil">{postup.nazev}</h3>
@@ -210,7 +206,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   )}
 
   {urovne && (
-    <section class="band band--white" aria-labelledby={urovne.id || undefined}>
+    <section class="band band--sky" aria-labelledby={urovne.id || undefined}>
       <div class="wrap stack" style="gap: 32px">
         <div class="hlava">
           <h2 id={urovne.id || undefined}>{urovne.nadpis}</h2>
@@ -231,7 +227,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   )}
 
   {dalsi && (
-    <section class="band band--sky" aria-labelledby={dalsi.id || undefined}>
+    <section class="band band--white" aria-labelledby={dalsi.id || undefined}>
       <div class="wrap stack" style="gap: 32px">
         <h2 id={dalsi.id || undefined} class="sr-only">{dalsi.nadpis}</h2>
         <div class="karty-2">
@@ -249,14 +245,14 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   )}
 
   {vyzva && (
-    <section class="band band--white" aria-labelledby={vyzva.id || undefined}>
+    <section class="band band--sky" aria-labelledby={vyzva.id || undefined}>
       <div class="wrap vyzva">
         <div class="hlava">
           <h2 id={vyzva.id || undefined}>{vyzva.nadpis}</h2>
           <div class="prose" set:html={htmlOddilu(vyzva)} />
         </div>
         <div class="tlacitka">
-          {odkazy.map((o, i) => <a class:list={['btn', i === 0 ? 'btn--primary' : 'btn--outline']} href={url(o.href)}>{o.text}{i === 0 && ' →'}</a>)}
+          {odkazy.map((o, i) => <a class:list={['btn', i === 0 ? 'btn--primary' : 'btn--outline btn--bila']} href={url(o.href)}>{o.text}{i === 0 && ' →'}</a>)}
         </div>
       </div>
     </section>
@@ -311,10 +307,6 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   .card :global(p) { margin: 0; font-size: 0.95rem; line-height: 1.6; color: var(--ink); }
 
-  .dovednost { background: var(--accent-soft); border-radius: 12px; padding: 30px 32px; display: flex; flex-direction: column; gap: 14px; }
-  .dovednost h3 { font-size: 1.35rem; }
-  .dovednost-text :global(p) { margin: 0; font-size: 0.95rem; line-height: 1.6; }
-  @media (max-width: 640px) { .dovednost { padding: 24px 20px; } }
 
   .postup { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 22px; }
   .postup-krok { border: 1px solid var(--sky); border-radius: 9px; padding: 22px 24px; display: flex; flex-direction: column; gap: 10px; background: var(--panel); }
@@ -322,7 +314,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .postup-krok p { margin: 0; font-size: 0.9rem; line-height: 1.55; }
 
   .kontrolni { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 12px; }
-  .kontrolni li { background: var(--panel); border-radius: 9px; padding: 16px 18px; font-size: 0.95rem; line-height: 1.55; }
+  .kontrolni li { background: #f6fafc; border-radius: 9px; padding: 16px 18px; font-size: 0.95rem; line-height: 1.55; }
 
   .urovne { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); gap: 16px; }
   .urovne .card { padding: 22px; gap: 12px; }

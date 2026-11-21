@@ -67,11 +67,9 @@ Po čase je se žáky zhodnoťte: co funguje, co je třeba upravit. Pravidla nej
 
 ## Pravidla připraví vedení školy
 
-Pokud nechcete pravidla vytvářet se žáky, může je připravit vedení školy. Pomůže vám s tím naše dovednost. Hodí se i k ověření nebo aktualizaci pravidel, která už máte.
+Pokud nechcete pravidla vytvářet se žáky, může je připravit vedení školy. Pomůže vám s tím naše dovednost Školní pravidla. Hodí se i k ověření nebo aktualizaci pravidel, která už máte.
 
-### Dovednost Školní pravidla
-
-Provede vás tvorbou pravidel krok za krokem: zeptá se na oblasti, cílové skupiny a hodnoty školy, navrhne formulace, upozorní na rizika (příliš represivní nebo nevymahatelná pravidla) a poradí, jak pravidla zavést. Má i režim přímo pro pravidla využívání AI.
+Dovednost vás provede tvorbou pravidel krok za krokem: zeptá se na oblasti, cílové skupiny a hodnoty školy, navrhne formulace, upozorní na rizika (příliš represivní nebo nevymahatelná pravidla) a poradí, jak pravidla zavést. Má i režim přímo pro pravidla využívání AI.
 
 [Otevřít dovednost](/skills/skolni-pravidla)
 
