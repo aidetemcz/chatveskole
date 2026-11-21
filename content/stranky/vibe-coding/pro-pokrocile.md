@@ -32,11 +32,11 @@ Vyberte si podle toho, co už používáte a kolik chcete platit.
 
 ## Základní sestava
 
-Projekt stojí na třech věcech, čtvrtou přidáte jen někdy.
+Po nějaké době využívání Vibe Coding aplikací pro začátečníky pravděpodobně zjistíte, že mnohem lépe fungují agentní řešení jako Claude Code, OpenAI Codex nebo Google Antigravity. V následujícím přehledu popisujeme, jak je propojit do základní sestavy a na co si dát pozor.
 
-1. **GitHub** — GitHub je služba, kam si uložíte kód aplikace i s historií všech změn. Když agent něco rozbije, snadno se vrátíte k předchozí verzi.
-2. **Programovací agent** — Agent čte a upravuje soubory projektu podle vašich pokynů. Vy mu běžnou řečí popíšete, co chcete změnit.
-3. **Hosting** — Hosting je místo na internetu, kde aplikace běží. Zveřejníte ji na [Vercelu](https://vercel.com), [Netlify](https://www.netlify.com) nebo [GitHub Pages](https://pages.github.com). Po každé změně na GitHubu se web sám znovu zveřejní.
+1. **Programovací agent** — Agent čte a upravuje soubory projektu podle vašich pokynů. Vy mu běžnou řečí popíšete, co chcete změnit, a on to naprogramuje, spustí a otestuje.
+2. **Úložiště kódu** — Kód aplikace potřebuje místo, kde je uložený i s historií všech změn. Nejčastěji je to [GitHub](https://github.com), může to být ale i vlastní server. Když agent něco rozbije, snadno se vrátíte k předchozí verzi.
+3. **Zveřejnění na internetu** — Služby jako [Vercel](https://vercel.com), [Netlify](https://www.netlify.com) nebo [GitHub Pages](https://pages.github.com) propojíte s úložištěm a ony aplikaci zveřejní. Po každé změně v úložišti se web sám znovu zveřejní.
 4. **Databáze a přihlašování** — Když aplikace potřebuje ukládat data nebo přihlašovat uživatele, použijte [Supabase](https://supabase.com), případně [Firebase](https://firebase.google.com) od Googlu nebo [Neon](https://neon.com). Nabízejí databázi, přihlašování uživatelů a ukládání souborů a mají bezplatný tarif s limity. Při zakládání projektu zvolte umístění dat v EU.
 
 ## Instrukce pro agenta
