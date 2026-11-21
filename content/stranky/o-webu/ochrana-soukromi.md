@@ -57,7 +57,7 @@ Souhlas s analytickými cookies můžete kdykoli změnit nebo odvolat tlačítke
 
 ## Odvolání souhlasu a vaše práva
 
-Souhlas s analytickými cookies můžete kdykoli odvolat v **Nastavení cookies** nebo e-mailem na [cau@aidetem.cz](mailto:cau@aidetem.cz). Odvolání nemá vliv na zpracování, které proběhlo před ním, ani na zpracování na jiném právním základu.
+Souhlas s analytickými cookies můžete kdykoli odvolat v **Nastavení cookies** v patičce webu. Odvolání nemá vliv na zpracování, které proběhlo před ním, ani na zpracování na jiném právním základu.
 
 Ve vztahu ke svým osobním údajům máte zejména tato práva:
 
@@ -73,4 +73,4 @@ Ve vztahu ke svým osobním údajům máte zejména tato práva:
 
 ## Kontakt
 
-S dotazy k ochraně osobních údajů nebo s odvoláním souhlasu se obraťte na [cau@aidetem.cz](mailto:cau@aidetem.cz) nebo písemně na adresu AI dětem, z. s., Kozinovo náměstí 1534/7, 102 00 Praha 10. Abychom zabránili přístupu neoprávněných osob k vašim údajům, můžeme vás požádat, abyste nám vhodným způsobem prokázali svou totožnost.
+S dotazy k ochraně osobních údajů se obraťte na [cau@aidetem.cz](mailto:cau@aidetem.cz) nebo písemně na adresu AI dětem, z. s., Kozinovo náměstí 1534/7, 102 00 Praha 10. Abychom zabránili přístupu neoprávněných osob k vašim údajům, můžeme vás požádat, abyste nám vhodným způsobem prokázali svou totožnost.
