@@ -1,10 +1,10 @@
-title: Asistent ředitele
+title: Asistent riaditeľa
 slug: asistent-reditele
-kratky_popis: Pomůže řediteli s každodenní agendou – porady, směrnice, e-maily, zpětná vazba pedagogům, SWOT – s výstupy k okamžitému použití.
-popis: "Pomůže vám s každodenním řízením školy: připraví osnovu porady, směrnici, e-mail nebo oběžník, SWOT analýzu, akční plán i zpětnou vazbu pedagogům. Dostanete výstup, který můžete hned použít nebo snadno upravit pro svou školu, a když to pomůže, i dvě až tři varianty s výhodami a nevýhodami. Opírá se o podklady ke spolupráci pedagogů a k fungování české vzdělávací soustavy. Je určený ředitelům a vedení ZŠ a SŠ."
+kratky_popis: Pomôže riaditeľovi s každodennou agendou – porady, smernice, e-maily, spätná väzba pedagógom, SWOT – s výstupmi na okamžité použitie.
+popis: "Pomôže vám s každodenným riadením školy: pripraví osnovu porady, smernicu, e-mail alebo obežník, SWOT analýzu, akčný plán aj spätnú väzbu pedagógom. Dostanete výstup, ktorý môžete hneď použiť alebo ľahko upraviť pre svoju školu, a keď to pomôže, aj dva až tri varianty s výhodami a nevýhodami. Opiera sa o podklady k spolupráci pedagógov (v češtine). Je určený riaditeľom a vedeniu ZŠ a SŠ."
 pro_koho: [vedeni]
 sady: [vedeni-skoly]
-stitky: [řízení školy, administrativa, porady, směrnice, zpětná vazba, rozvoj pedagogů, komunikace]
+stitky: [riadenie školy, administratíva, porady, smernice, spätná väzba, rozvoj pedagógov, komunikácia]
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/asistent-reditele/
     typ: asistent
@@ -19,9 +19,9 @@ stahnout:
   claude: https://drive.google.com/uc?export=download&id=1_fw3gO0c2sE8-lILDz_YbdgnhWgynWi7
   gemini: https://drive.google.com/uc?export=download&id=14udvzh8daIwSR5d0_v8pZhrank6Ihsnc
   chatgpt: https://drive.google.com/uc?export=download&id=1v6RW_KJcBHYpJiQzVK4CXzGsDgySzfrH
-autori: [AI dětem]   # doplnit jména autorů asistenta
+autori: [AI dětem]   # doplniť mená autorov asistenta
 metodika: []
 znalosti: []
-vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+vek: dospelí (zručnosti sú v Gemini a Claude od 18 rokov)
 stav: koncept
 aktualizovano: 2026-11-21

@@ -1,10 +1,10 @@
-title: Hádej chemický prvek
+title: Hádaj chemický prvok
 slug: hadej-chemicky-prvek
-kratky_popis: Hádací hra pro žáky 8. a 9. ročníku – chatbot popíše chemický prvek a žák hádá, o který jde.
-popis: "Hádací hra, ve které si žáci 8. a 9. ročníku zábavně procvičí chemické prvky a periodickou soustavu. Chatbot popíše vlastnosti, využití a místo prvku v periodické soustavě a žák hádá jeho název; po chybné odpovědi dostane konkrétnější indicii. Fakta bere z přiložené periodické tabulky a vybírá hlavně prvky, které žáci znají ze školy. Na začátku můžete hru omezit, třeba jen na prvních 20 prvků, na kovy nebo na počet kol. Chatbot se ptá jen na křestní jméno nebo název skupinky."
+kratky_popis: Hádacia hra pre žiakov 8. a 9. ročníka – chatbot opíše chemický prvok a žiak háda, o ktorý ide.
+popis: "Hádacia hra, v ktorej si žiaci 8. a 9. ročníka zábavne precvičia chemické prvky a periodickú sústavu. Chatbot opíše vlastnosti, využitie a miesto prvku v periodickej sústave a žiak háda jeho názov; po nesprávnej odpovedi dostane konkrétnejšiu indíciu. Fakty berie z priloženej periodickej tabuľky a vyberá hlavne prvky, ktoré žiaci poznajú zo školy. Na začiatku môžete hru obmedziť, napríklad len na prvých 20 prvkov, na kovy alebo na počet kôl. Chatbot sa pýta len na krstné meno alebo názov skupinky."
 pro_koho: [ucitele]
 sady: [priprava-vyuky]
-stitky: [chemie, periodická soustava prvků, hra, procvičování, žáci, Tiny]
+stitky: [chémia, periodická sústava prvkov, hra, precvičovanie, žiaci, Tiny]
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/hadej-chemicke-prvky-asistent/
     typ: asistent
@@ -17,8 +17,8 @@ stahnout:
   claude: https://drive.google.com/uc?export=download&id=1siHfTsfMuXMq-p3Cz-CRJQB_i5LzkCyE
   gemini: https://drive.google.com/uc?export=download&id=17QcGDBNWbrbsNoLTVegkVzdVNFu4sQ-3
   chatgpt: https://drive.google.com/uc?export=download&id=11kHR6uePupE6gw84QEWNf66FUTD7IhWS
-autori: [AI dětem]          # ověřit autorství
+autori: [AI dětem]          # overiť autorstvo
 znalosti: [periodicka-tabulka-prvku.md]
-vek: chatbot pro žáky 12–15 let; dovednosti jsou v Gemini a Claude 18+, se žáky použijte prompt nebo aplikaci Tiny
+vek: chatbot pre žiakov 12–15 rokov; zručnosti sú v Gemini a Claude od 18 rokov, so žiakmi použite prompt alebo aplikáciu Tiny
 stav: koncept
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-21

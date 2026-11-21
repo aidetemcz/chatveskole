@@ -1,46 +1,46 @@
 ---
-title: Gradace klíčových kompetencí
+title: Gradácia kľúčových kompetencií
 typ: prompt
 ---
 
-## Základní prompt
+## Základný prompt
 
 ```text
-Vystupuj jako zkušený didaktik, který pomáhá pedagogům ZŠ rozpracovat klíčovou kompetenci nebo dovednost žáků do návazných úrovní rozvoje. Nejde o známkovací stupnici ani o hodnocení konkrétního žáka, ale o popis toho, jak se dovednost kvalitativně posouvá. Inspiruj se logikou gradací Carnegie Skills Progressions (spolupráce, komunikace, kritické myšlení; čtyři úrovně Exploring – Analyzing – Integrating – Extending). Vznikly pro americkou střední školu, proto přebírej jen způsob posunu, ne hotové normy.
+Vystupuj ako skúsený didaktik, ktorý pomáha pedagógom ZŠ rozpracovať kľúčovú kompetenciu alebo zručnosť žiakov do nadväzujúcich úrovní rozvoja. Nejde o známkovaciu stupnicu ani o hodnotenie konkrétneho žiaka, ale o opis toho, ako sa zručnosť kvalitatívne posúva. Inšpiruj sa logikou gradácií Carnegie Skills Progressions (spolupráca, komunikácia, kritické myslenie; štyri úrovne Exploring – Analyzing – Integrating – Extending). Vznikli pre americkú strednú školu, preto preberaj len spôsob posunu, nie hotové normy.
 
-Kompetence nebo dovednost: [například kompetence k řešení problémů – žák ověřuje informace z více zdrojů]
-Ročník nebo věk: [například 7. ročník ZŠ]
-Situace, ve které se má projevit: [například skupinový projekt o zdravé výživě]
-Počet úrovní: [například 4]
+Kompetencia alebo zručnosť: [napríklad kompetencia riešiť problémy – žiak overuje informácie z viacerých zdrojov]
+Ročník alebo vek: [napríklad 7. ročník ZŠ]
+Situácia, v ktorej sa má prejaviť: [napríklad skupinový projekt o zdravej výžive]
+Počet úrovní: [napríklad 4]
 
 Postup:
-1. Když chybí kompetence, zeptej se na ni. Když chybí jen věk nebo situace, pokračuj s předpokladem (2. stupeň ZŠ, běžná školní situace) a řekni to.
-2. U široké kompetence vymez 2–4 složky a graduj každou zvlášť.
-3. Ve všech úrovních sleduj stále stejnou dovednost. Posun ukaž kvalitativně, například rozpozná → vysvětlí a porovná → účelně propojí a použije → přizpůsobí nové situaci a zdůvodní. Úrovně nerozlišuj jen četností („někdy – většinou – vždy“), přídavnými jmény ani mechanicky slovy „s pomocí – samostatně – pomáhá ostatním“.
-4. Každý popis postav na pozorovatelném jednání (1–2 věty). Slova „chápe“, „uvědomuje si“, „aktivně“ použij jen s pozorovatelným dokladem. Nižší úroveň popiš tím, co žák už dokáže, ne jako nedostatek. Všechny úrovně musí být pro daný věk dosažitelné. Úrovně nejsou ročníky.
+1. Keď chýba kompetencia, opýtaj sa na ňu. Keď chýba len vek alebo situácia, pokračuj s predpokladom (2. stupeň ZŠ, bežná školská situácia) a povedz to.
+2. Pri širokej kompetencii vymedz 2–4 zložky a graduj každú zvlášť.
+3. Vo všetkých úrovniach sleduj stále rovnakú zručnosť. Posun ukáž kvalitatívne, napríklad rozpozná → vysvetlí a porovná → účelne prepojí a použije → prispôsobí novej situácii a zdôvodní. Úrovne nerozlišuj len početnosťou („niekedy – väčšinou – vždy“), prídavnými menami ani mechanicky slovami „s pomocou – samostatne – pomáha ostatným“.
+4. Každý opis postav na pozorovateľnom konaní (1–2 vety). Slová „chápe“, „uvedomuje si“, „aktívne“ použi len s pozorovateľným dokladom. Nižšiu úroveň opíš tým, čo žiak už dokáže, nie ako nedostatok. Všetky úrovne musia byť pre daný vek dosiahnuteľné. Úrovne nie sú ročníky.
 
 Výstup:
-1. Zaměření a kontext: kompetence, sledovaná složka, věk, pracovní předpoklady.
-2. Tabulka: Úroveň (český název podle dovednosti) | Pozorovatelný projev žáka | Příklad ve stejné situaci.
-3. Logika posunu: čím se liší sousední úrovně.
-4. Poznámka, že jde o návrh adaptovaný pro ZŠ, ne o oficiální standard ani ověřené vývojové normy.
+1. Zameranie a kontext: kompetencia, sledovaná zložka, vek, pracovné predpoklady.
+2. Tabuľka: Úroveň (slovenský názov podľa zručnosti) | Pozorovateľný prejav žiaka | Príklad v rovnakej situácii.
+3. Logika posunu: čím sa líšia susedné úrovne.
+4. Poznámka, že ide o návrh adaptovaný pre ZŠ, nie o oficiálny štandard ani overené vývinové normy.
 
-Nevymýšlej kódy, texty ani znění RVP. Když si nejsi jistý, co přesně zdroj obsahuje, napiš to.
+Nevymýšľaj kódy, texty ani znenie štátneho vzdelávacieho programu. Keď si nie si istý, čo presne zdroj obsahuje, napíš to.
 ```
 
-## Varianta: Žákovská verze „Dokážu…“
+## Variant: Žiacka verzia „Dokážem…“
 
 ```text
-Převeď gradaci níže do verze pro žáky [7. ročníku ZŠ], aby podle ní mohli sami posoudit, kde jsou.
+Preveď gradáciu nižšie do verzie pre žiakov [7. ročníka ZŠ], aby podľa nej mohli sami posúdiť, kde sú.
 
-Gradace: [vložte tabulku úrovní]
+Gradácia: [vložte tabuľku úrovní]
 
-Pravidla:
-- Každou úroveň napiš v 1. osobě jako „Dokážu…“, jednou až dvěma krátkými větami, slovy, kterým žák tohoto věku rozumí. Bez odborných a cizích slov.
-- Zachovej stejnou dovednost a stejný posun mezi úrovněmi jako v originále, nic nepřidávej.
-- Ke každé úrovni přidej krátký příklad ze stejné školní situace, aby žák poznal, jak to vypadá v praxi.
-- Nižší úrovně formuluj povzbudivě, tím, co už žák dokáže.
-- Na konec přidej dvě otázky k sebehodnocení, například „Kde jsem teď a podle čeho to poznám?“ a „Co zkusím příště, abych se posunul(a)?“
+Pravidlá:
+- Každú úroveň napíš v 1. osobe ako „Dokážem…“, jednou až dvoma krátkymi vetami, slovami, ktorým žiak tohto veku rozumie. Bez odborných a cudzích slov.
+- Zachovaj rovnakú zručnosť a rovnaký posun medzi úrovňami ako v origináli, nič nepridávaj.
+- Ku každej úrovni pridaj krátky príklad z rovnakej školskej situácie, aby žiak spoznal, ako to vyzerá v praxi.
+- Nižšie úrovne formuluj povzbudivo, tým, čo už žiak dokáže.
+- Na koniec pridaj dve otázky na sebahodnotenie, napríklad „Kde som teraz a podľa čoho to spoznám?“ a „Čo skúsim nabudúce, aby som sa posunul(a)?“
 ```
 
-**Tip:** Gradaci si nejdřív vyzkoušejte ve výuce a upravte podle toho, co u žáků opravdu vidíte. Plná dovednost obsahuje celá data Carnegie Skills Progressions a u každé gradace uvede, z kterých skutečných položek vychází.
+**Tip:** Gradáciu si najprv vyskúšajte vo vyučovaní a upravte podľa toho, čo u žiakov naozaj vidíte. Plná zručnosť obsahuje celé dáta Carnegie Skills Progressions a pri každej gradácii uvedie, z ktorých skutočných položiek vychádza.
