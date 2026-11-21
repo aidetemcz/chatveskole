@@ -1,49 +1,49 @@
-# **Mapa aktérů změny**
+# **Mapa aktérov zmeny**
 
-Přehled, který pomáhá porozumět, **kdo změnu podporuje, kdo váhá a kdo ji odmítá – a proč**. Není to hodnoticí nástroj, ale orientační pomůcka pro smysluplné a citlivé vedení změny. Slouží k tomu, abyste:
-- zjistili, kdo změnu podporuje a kdo odmítá,
-- pochopili důvody obav,
-- určili, koho zapojit jako ambasadory,
-- navrhli konkrétní kroky, které zavedení usnadní.
+Prehľad, ktorý pomáha porozumieť, **kto zmenu podporuje, kto váha a kto ju odmieta – a prečo**. Nie je to hodnotiaci nástroj, ale orientačná pomôcka na zmysluplné a citlivé vedenie zmeny. Slúži na to, aby ste:
+- zistili, kto zmenu podporuje a kto odmieta,
+- pochopili dôvody obáv,
+- určili, koho zapojiť ako ambasádorov,
+- navrhli konkrétne kroky, ktoré zavedenie uľahčia.
 
-## **Sloupce**
+## **Stĺpce**
 
-Každý řádek je jeden aktér (člověk) nebo skupina.
+Každý riadok je jeden aktér (človek) alebo skupina.
 
-| Sloupec | Význam |
+| Stĺpec | Význam |
 | :---- | :---- |
-| Kód aktéra | jedinečný kód místo jména, například Skola_Ped_001 |
-| Role | například učitel 2. stupně, vychovatelka, zástupkyně ředitele |
-| Postoj ke změně | nepodporuje / spíše nepodporuje / neutrální / spíše podporuje / podporuje |
-| Stav | jak využívá dané dovednosti nebo nástroje: nevyužívá / nemá dovednosti / využívá občas / má dovednosti a využívá / pravidelně využívá |
-| Komu důvěřuje | kdo na něj může mít největší vliv (také kódem nebo rolí) |
-| Obavy | co ho drží zpátky |
-| Co by pomohlo | jaká podpora mu bude vyhovovat |
+| Kód aktéra | jedinečný kód namiesto mena, napríklad Skola_Ped_001 |
+| Rola | napríklad vyučujúci na 2. stupni, vychovávateľka, zástupkyňa riaditeľa |
+| Postoj k zmene | nepodporuje / skôr nepodporuje / neutrálny / skôr podporuje / podporuje |
+| Stav | ako využíva dané zručnosti alebo nástroje: nevyužíva / nemá zručnosti / využíva občas / má zručnosti a využíva / pravidelne využíva |
+| Komu dôveruje | kto naň môže mať najväčší vplyv (tiež kódom alebo rolou) |
+| Obavy | čo ho drží späť |
+| Čo by pomohlo | aká podpora mu bude vyhovovať |
 
-Postoj není verdikt, ale aktuální stav, který se může měnit.
+Postoj nie je verdikt, ale aktuálny stav, ktorý sa môže meniť.
 
-Modelový dokument (tabulka): https://docs.google.com/spreadsheets/d/1Ygzzxbkh2U9O-qWNRBKw3M7tPuJcmjn8-5CratZHAWs/edit?usp=sharing
+Modelový dokument (tabuľka, v češtine): https://docs.google.com/spreadsheets/d/1Ygzzxbkh2U9O-qWNRBKw3M7tPuJcmjn8-5CratZHAWs/edit?usp=sharing
 
-## **Jak mapu používat**
+## **Ako mapu používať**
 
-* Údaje sbírejte přímo od lidí, kterých se změna týká (rozhovor, krátký dotazník), ne odhadem od stolu.
+* Údaje zbierajte priamo od ľudí, ktorých sa zmena týka (rozhovor, krátky dotazník), nie odhadom od stola.
 
-* Postoje sledujte průběžně a hledejte podmínky, za kterých se mohou měnit.
+* Postoje sledujte priebežne a hľadajte podmienky, za ktorých sa môžu meniť.
 
-* Není nutné přesvědčit všechny. U těch, kdo změnu odmítají za každou cenu, nevynakládejte nepřiměřené úsilí.
+* Nie je nutné presvedčiť všetkých. Pri tých, ktorí zmenu odmietajú za každú cenu, nevynakladajte neprimerané úsilie.
 
-* Podporu přizpůsobte: jednomu stačí tip od kolegy, jiný potřebuje pravidelné setkání a bezpečný prostor ke zkoušení, další konkrétní metodické materiály.
+* Podporu prispôsobte: jednému stačí tip od kolegu, iný potrebuje pravidelné stretnutie a bezpečný priestor na skúšanie, ďalší konkrétne metodické materiály.
 
-* Tři úrovně zapojení, které lze nabídnout: pozorovatel → zkouší v pilotu → podporuje ostatní.
+* Tri úrovne zapojenia, ktoré možno ponúknuť: pozorovateľ → skúša v pilote → podporuje ostatných.
 
-## **Ochrana údajů**
+## **Ochrana údajov**
 
-V chatu pracuj s kódy a rolemi, ne se jmény. Mapa obsahuje citlivé informace o kolezích (postoje, obavy) – doporuč, aby ji škola sdílela jen v projektovém týmu a ověřila si vlastní pravidla pro práci s osobními údaji.
+V chate pracuj s kódmi a rolami, nie s menami. Mapa obsahuje citlivé informácie o kolegoch (postoje, obavy) – odporuč, aby ju škola zdieľala len v projektovom tíme a overila si vlastné pravidlá pre prácu s osobnými údajmi.
 
-## **Výstup v chatu**
+## **Výstup v chate**
 
-1. Tabulka mapy (pokud ji uživatel teprve tvoří, nabídni prázdnou šablonu nebo ji vyplň z jeho popisu).
+1. Tabuľka mapy (ak ju používateľ ešte len tvorí, ponúkni prázdnu šablónu alebo ju vyplň z jeho opisu).
 
-2. Shrnutí: rozložení postojů, nejčastější obavy, kdo může být oporou, které skupiny potřebují jakou podporu.
+2. Zhrnutie: rozloženie postojov, najčastejšie obavy, kto môže byť oporou, ktoré skupiny potrebujú akú podporu.
 
-3. Doporučené první kroky pro jednotlivé skupiny (navazují na Plán změny).
+3. Odporúčané prvé kroky pre jednotlivé skupiny (nadväzujú na Plán zmeny).
