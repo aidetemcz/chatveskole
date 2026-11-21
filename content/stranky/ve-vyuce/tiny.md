@@ -60,6 +60,10 @@ Kromě Tinybotů najdete v Tiny modelové lekce a AI asistenty pro vyučující,
 
 ## Bezpečnost a pro koho je Tiny
 
-- **Data v EU** — Data se ukládají v EU a před odesláním jazykovému modelu se konverzace anonymizují.
-- **Smlouva** — Smlouvu uzavírá škola.
-- **Věk žáků** — Tiny mohou používat žáci od 13 let a žáci ve věku 11–12 let se souhlasem zákonného zástupce, který zajišťuje vyučující. Pro děti mladší 11 let Tiny není.
+Tiny je pro školy zdarma a smí se používat výhradně pro vzdělávací a interní účely školy. Smlouvu o používání uzavírá škola. Žáci se přihlašují školní identitou Office 365 nebo Google, případně zadáním školního e-mailu.
+
+Data se ukládají na serverech v Evropské unii a při přenosu se šifrují. Před odesláním jazykovému modelu se konverzace anonymizují. Osobní údaje žáků ani jejich konverzace se nepoužívají k tréninku AI modelů. Tiny zpracovává jen ty osobní údaje, které jsou pro provoz aplikace nezbytné, žákům neposílá žádná obchodní sdělení a data neprodává třetím stranám. Po ukončení spolupráce se data smažou do 30 dnů.
+
+Tiny je určené žákům od 11 let. Žáci ve věku 11 a 12 let potřebují souhlas zákonného zástupce, který zajišťuje vyučující. Vzor souhlasu najdete v podmínkách Tiny. Pro děti mladší 11 let Tiny není.
+
+Tiny pomáhá žákům formativní zpětnou vazbou. Nedává známky ani jiná hodnocení, která by o žákovi rozhodovala, a nenahrazuje vyučujícího. AI ale může chybovat, proto je potřeba výstupy kontrolovat. Při nadměrném nebo neférovém využívání může být přístup omezen nebo odebrán. S dotazy se obraťte na [tiny@aidetem.cz](mailto:tiny@aidetem.cz).

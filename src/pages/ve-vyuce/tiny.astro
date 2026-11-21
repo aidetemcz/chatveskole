@@ -46,12 +46,6 @@ const navody = tlacitkoZ(botiHtml);
 
 const bezpecnost = najdi(/Bezpečnost/i);
 const bezpecnostHtml = htmlOddilu(bezpecnost);
-const zasady = polozky(bezpecnostHtml);
-const IKONY = [
-  '<path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"></path>',
-  '<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><path d="M14 3v6h6M8 13h8M8 17h5"></path>',
-  '<circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path>',
-];
 
 const dalsi = najdi(/Co dalšího/i);
 type Odkaz = { text: string; href: string };
@@ -127,16 +121,10 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {bezpecnost && (
     <section class="band band--white" aria-labelledby={bezpecnost.id || undefined}>
-      <div class="wrap stack" style="gap: 32px">
-        <h2 id={bezpecnost.id || undefined}>{bezpecnost.nadpis}</h2>
-        <div class="karty">
-          {zasady.map((z, i) => (
-            <div class:list={['card', { 'card--ruzova': i === zasady.length - 1 }]}>
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ikona" set:html={IKONY[i % IKONY.length]}></svg>
-              <h3>{z.nazev}</h3>
-              <p set:html={velke(z.text)} />
-            </div>
-          ))}
+      <div class="wrap">
+        <div class="hlava">
+          <h2 id={bezpecnost.id || undefined}>{bezpecnost.nadpis}</h2>
+          <div class="prose" set:html={bezpecnostHtml} />
         </div>
       </div>
     </section>
@@ -185,12 +173,6 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .seznam-botu strong { font-weight: 600; }
   .bot-odkazy { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 4px; font-size: 0.88rem; font-weight: 600; }
 
-  .karty { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 22px; }
-  .karty .ikona { color: var(--sky-ink); }
-  .karty .card h3 { font-size: 1.15rem; }
-  .karty .card p { font-size: 0.93rem; line-height: 1.6; }
-  .card--ruzova { background: var(--accent-soft); border-color: var(--accent-soft); }
-  .card--ruzova .ikona { color: var(--accent-strong); }
 
   .vyzva { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; }
   .btn--bila { background: var(--panel); }
