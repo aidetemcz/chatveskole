@@ -36,7 +36,7 @@ const limityHtml = htmlOddilu(limity);
 const hlavicka = [...(limityHtml.match(/<thead>([\s\S]*?)<\/thead>/)?.[1] ?? '').matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map(([, t]) => bezTagu(t));
 const STITEK: Record<string, { text: string; cerveny?: boolean }> = {
   ChatGPT: { text: 'od 13 let' }, Gemini: { text: 'škola bez omezení' }, Copilot: { text: 'od 13 let' },
-  Claude: { text: 'jen 18+', cerveny: true }, Perplexity: { text: 'od 13 let' }, Tiny: { text: 'pro žáky' },
+  Claude: { text: 'jen 18+', cerveny: true }, Perplexity: { text: 'od 13 let' }, Tiny: { text: 'od 11 let' },
 };
 const radky = [...(limityHtml.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? '').matchAll(/<tr>([\s\S]*?)<\/tr>/g)]
   .map(([, r]) => [...r.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(([, t]) => t.trim()))
