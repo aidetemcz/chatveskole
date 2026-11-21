@@ -215,7 +215,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
         <ol class="urovne">
           {urovnePolozky.map((u, i) => (
             <li class="card">
-              <div class="meridlo" aria-hidden="true">{[0, 1, 2, 3, 4].map((j) => <span class:list={{ plne: j < i }} />)}</div>
+              <div class="meridlo" aria-hidden="true">{[0, 1, 2, 3].map((j) => <span class:list={{ plne: j < i }} />)}</div>
               <span class="uroven">Úroveň {i + 1}</span>
               <h3>{u.nazev}</h3>
               <p set:html={u.text} />
@@ -320,7 +320,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .urovne .card { padding: 22px; gap: 12px; }
   .urovne h3 { font-size: 1.1rem; }
   .urovne p { font-size: 0.9rem; }
-  .meridlo { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; }
+  .meridlo { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; }
   .meridlo span { height: 6px; border-radius: 3px; background: var(--sky-light); }
   .meridlo span.plne { background: var(--accent); }
   .uroven { font-family: var(--fh); font-size: 0.8rem; font-weight: 700; color: var(--sky-ink); text-transform: uppercase; }
@@ -328,6 +328,6 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .karty-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 22px; }
   .karty-2 h3 { font-size: 1.25rem; }
 
-  .vyzva { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; }
+  .vyzva { display: flex; flex-direction: column; gap: 24px; align-items: flex-start; }
   .btn--bila { background: var(--panel); }
 </style>
