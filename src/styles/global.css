@@ -22,6 +22,7 @@
   --fb: 'Inter', system-ui, sans-serif;
   --fm: 'JetBrains Mono', ui-monospace, monospace;
   --wrap: 1180px;
+  --dve-tretiny: calc((var(--wrap) - 40px) * 2 / 3); /* perexy a úvody oddílů: dvě třetiny obsahu (760 px) */
   color-scheme: light;
 }
 *, *::before, *::after { box-sizing: border-box; }
@@ -60,12 +61,14 @@ button { cursor: pointer; }
 .page-head h1 em { font-style: normal; } /* nadpisy jen jednou barvou */
 .lede { font-size: 1.1rem; color: var(--muted); max-width: 62ch; }
 /* perex v záhlaví stránky: dvě třetiny šířky obsahu */
-.page-head .lede, .instr-hlavicka .lede { max-width: calc((var(--wrap) - 40px) * 2 / 3); }
+.page-head .lede, .instr-hlavicka .lede { max-width: var(--dve-tretiny); }
 .crumbs { font-size: 0.85rem; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; }
 .crumbs a { color: var(--muted); }
 .section-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 32px; }
 .section-head h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 700; }
-.section-head p { color: var(--muted); max-width: 64ch; margin-top: 12px; }
+.section-head p { color: var(--muted); max-width: var(--dve-tretiny); margin-top: 12px; }
+/* úvody oddílů v šablonách (.hlava): text na šířku bloku, ne užší .prose */
+.hlava > .prose { max-width: none; }
 .count { font-size: 0.9rem; color: var(--muted); font-weight: 400; font-family: var(--fb); white-space: nowrap; flex: none; }
 .more { font-weight: 600; text-decoration: none; }
 
