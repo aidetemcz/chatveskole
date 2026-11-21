@@ -30,16 +30,17 @@ const perex = bezTlacitka(uvodHtml);
 const jak = najdi(/Jak Tiny funguje/i);
 const kroky = polozky(htmlOddilu(jak));
 
-// Tinyboti: obrázek (diagram) a tabulka Kognitivní proces | Tinybot | Popis → skupiny podle procesu
+// Tinyboti: velký obrázek (diagram) a pod ním sloupec pro každou úroveň; tabulka Kognitivní proces | Tinybot | Popis | Metodika | Vyzkoušet
 const boti = najdi(/chatbotů podle/i);
 const botiHtml = htmlOddilu(boti);
 const diagram = botiHtml.match(/<img [^>]*>/)?.[0] ?? '';
-const hlavicka = [...(botiHtml.match(/<thead>([\s\S]*?)<\/thead>/)?.[1] ?? '').matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map(([, t]) => bezTagu(t));
-const skupiny: { proces: string; boti: { nazev: string; popis: string }[] }[] = [];
+// sloupce Metodika a Vyzkoušet (nepovinné): odkaz v buňce → tlačítko u Tinybota
+const odkazZ = (t?: string) => t?.match(/<a href="([^"]+)"/)?.[1] ?? '';
+const skupiny: { proces: string; boti: { nazev: string; popis: string; metodika: string; vyzkouset: string }[] }[] = [];
 for (const [, r] of (botiHtml.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? '').matchAll(/<tr>([\s\S]*?)<\/tr>/g)) {
-  const [proces, nazev, popis] = [...r.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(([, t]) => t.trim());
+  const [proces, nazev, popis, metodika, vyzkouset] = [...r.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(([, t]) => t.trim());
   if (bezTagu(proces ?? '') || !skupiny.length) skupiny.push({ proces: bezTagu(proces ?? ''), boti: [] });
-  skupiny.at(-1)!.boti.push({ nazev: nazev ?? '', popis: popis ?? '' });
+  skupiny.at(-1)!.boti.push({ nazev: nazev ?? '', popis: popis ?? '', metodika: odkazZ(metodika), vyzkouset: odkazZ(vyzkouset) });
 }
 const navody = tlacitkoZ(botiHtml);
 
@@ -97,28 +98,29 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
           <h2 id={boti.id ? `${boti.id}-h` : undefined}>{boti.nadpis}</h2>
           <div class="prose" set:html={uvodOddilu(botiHtml)} />
         </div>
-        <div class="boti">
-          {diagram && <div class="diagram" set:html={diagram} />}
-          <div class="stack" style="gap: 24px">
-            <div class="tabulka" role="table" aria-label={boti.nadpis}>
-              <div class="radek radek--hlavicka" role="row">
-                <div role="columnheader">{hlavicka[0]}</div>
-                <div role="columnheader">{hlavicka[1]}</div>
-              </div>
-              {skupiny.map((s) => (
-                <div class="radek" role="row">
-                  <div class="radek-nazev" role="rowheader"><strong>{s.proces}</strong></div>
-                  <div role="cell">
-                    <ul class="seznam-botu">
-                      {s.boti.map((b) => <li><strong set:html={b.nazev} /> <span set:html={b.popis} /></li>)}
-                    </ul>
-                  </div>
-                </div>
-              ))}
-            </div>
-            {navody && <a class="btn btn--outline btn--bila" href={navody.href}>{navody.text} →</a>}
-          </div>
+        {diagram && <div class="diagram" set:html={diagram} />}
+        <div class="urovne">
+          {skupiny.map((s) => (
+            <section class="uroven" aria-label={s.proces}>
+              <h3 class="uroven-nazev">{s.proces}</h3>
+              <ul class="seznam-botu">
+                {s.boti.map((b) => (
+                  <li>
+                    <strong set:html={b.nazev} />
+                    <span set:html={b.popis} />
+                    {(b.metodika || b.vyzkouset) && (
+                      <span class="bot-odkazy">
+                        {b.metodika && <a href={b.metodika}>Metodika</a>}
+                        {b.vyzkouset && <a href={b.vyzkouset}>Vyzkoušet</a>}
+                      </span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
         </div>
+        {navody && <div><a class="btn btn--outline btn--bila" href={navody.href}>{navody.text} →</a></div>}
       </div>
     </section>
   )}
@@ -170,27 +172,18 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .postup-krok h3 { font-size: 1.1rem; }
   .postup-krok > p { margin: 0; font-size: 0.93rem; line-height: 1.6; }
 
-  .boti { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 32px; align-items: start; }
-  .diagram { background: var(--panel); border: 1px solid var(--sky); border-radius: 9px; padding: 24px; }
-  .diagram :global(img) { display: block; width: 100%; height: auto; }
-  @media (max-width: 900px) { .boti { grid-template-columns: 1fr; } .diagram { max-width: 560px; } }
+  .diagram { background: var(--panel); border: 1px solid var(--sky); border-radius: 9px; padding: 32px; }
+  .diagram :global(img) { display: block; width: 100%; max-width: 980px; height: auto; margin: 0 auto; }
+  @media (max-width: 640px) { .diagram { padding: 16px; } }
 
-  .tabulka { border: 1px solid var(--sky); border-radius: 9px; overflow: hidden; background: var(--panel); }
-  .radek { display: grid; grid-template-columns: minmax(150px, 1fr) 2.4fr; }
-  .radek + .radek { border-top: 1px solid #d5e5eb; }
-  .radek > div { padding: 20px 24px; }
-  .radek--hlavicka { background: var(--sky-light); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); }
-  .radek--hlavicka > div { padding: 14px 24px; }
-  .radek-nazev { background: #f6fafc; }
-  .radek-nazev strong { font-family: var(--fh); font-size: 1.05rem; }
-  .seznam-botu { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.93rem; line-height: 1.55; }
-  .seznam-botu strong { display: block; font-weight: 600; }
-  @media (max-width: 640px) {
-    .radek { grid-template-columns: 1fr; }
-    .radek--hlavicka { display: none; }
-    .radek-nazev { padding-bottom: 12px !important; }
-    .radek > div + div { padding-top: 14px; }
-  }
+  .urovne { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 16px; align-items: stretch; }
+  .uroven { background: var(--panel); border: 1px solid var(--sky); border-radius: 9px; overflow: hidden; display: flex; flex-direction: column; }
+  .uroven-nazev { margin: 0; background: var(--sky-light); padding: 14px 18px; font-size: 1.05rem; }
+  .seznam-botu { margin: 0; padding: 18px; list-style: none; display: flex; flex-direction: column; gap: 18px; font-size: 0.93rem; line-height: 1.55; }
+  .seznam-botu li { display: flex; flex-direction: column; gap: 4px; }
+  .seznam-botu li + li { border-top: 1px solid var(--line); padding-top: 18px; }
+  .seznam-botu strong { font-weight: 600; }
+  .bot-odkazy { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 4px; font-size: 0.88rem; font-weight: 600; }
 
   .karty { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 22px; }
   .karty .ikona { color: var(--sky-ink); }
