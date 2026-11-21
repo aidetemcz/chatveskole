@@ -122,9 +122,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {pravidla && (
     <section class="band band--sky" aria-labelledby={pravidla.id || undefined}>
-      <div class="wrap dva-sloupce">
+      <div class="wrap dva-sloupce dva-sloupce--nadpis">
+        <h2 class="nadpis-sloupcu" id={pravidla.id || undefined}>{pravidla.nadpis}</h2>
         <div class="stack" style="gap: 20px">
-          <h2 id={pravidla.id || undefined}>{pravidla.nadpis}</h2>
           {odkazy.length > 0 && (
             <div class="tlacitka">
               {odkazy.map((o, i) => <a class:list={['btn', i === 0 ? 'btn--primary' : 'btn--outline btn--bila']} href={o.href}>{/[→←]\s*$/.test(o.text) ? o.text : `${o.text} →`}</a>)}

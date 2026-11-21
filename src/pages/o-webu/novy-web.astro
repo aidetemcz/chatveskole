@@ -116,9 +116,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {asistenti && (
     <section class="band band--white band--navazuje" aria-labelledby="asistenti-h">
-      <div class="wrap dva-sloupce">
+      <div class="wrap dva-sloupce dva-sloupce--nadpis">
+        <h2 class="nadpis-sloupcu" id="asistenti-h">{asistenti.nadpis}</h2>
         <div class="hlava">
-          <h2 id="asistenti-h">{asistenti.nadpis}</h2>
           <div class="prose">{asistentiText.map((p) => <p set:html={p} />)}</div>
         </div>
         {asistentiBox && (

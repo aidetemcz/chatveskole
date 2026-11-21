@@ -104,9 +104,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {spolek && (
     <section class="band band--sky" aria-labelledby="spolek-h">
-      <div class="wrap dva-sloupce">
+      <div class="wrap dva-sloupce dva-sloupce--nadpis">
+        <h2 class="nadpis-sloupcu" id="spolek-h">{spolek.nadpis}</h2>
         <div class="stack" style="gap: 20px">
-          <h2 id="spolek-h">{spolek.nadpis}</h2>
           {spolekOdkazy.length > 0 && (
             <ul class="tlacitka">
               {spolekOdkazy.map((a) => <li set:html={naTlacitko(a, 'btn--outline btn--bila', false)} />)}

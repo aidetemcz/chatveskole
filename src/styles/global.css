@@ -228,3 +228,8 @@ a.card:hover { border-color: var(--sky-deep); }
 /* Vložené video (komponenta „video“) — vždy na šířku textu, ne přes celou stránku (Eva 20. 11. 2026) */
 .video { position: relative; width: 100%; max-width: 72ch; aspect-ratio: 16 / 9; border-radius: var(--radius); overflow: hidden; background: var(--sky-light); }
 .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* Dva sloupce s nadpisem: nadpis přes celou šířku, text i box vpravo začínají na stejné úrovni (21. 11. 2026) */
+.dva-sloupce--nadpis > .nadpis-sloupcu { grid-column: 1 / -1; max-width: var(--dve-tretiny); margin-bottom: -34px; }
+.dva-sloupce.dva-sloupce--nadpis.dva-sloupce--nadpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 760px) { .dva-sloupce.dva-sloupce--nadpis.dva-sloupce--nadpis { grid-template-columns: minmax(0, 1fr); } }

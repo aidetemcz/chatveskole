@@ -102,9 +102,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {zaci && (
     <section class="band band--white" aria-labelledby={zaci.id || undefined}>
-      <div class="wrap dva-sloupce">
+      <div class="wrap dva-sloupce dva-sloupce--nadpis">
+        <h2 class="nadpis-sloupcu" id={zaci.id || undefined}>{zaci.nadpis}</h2>
         <div class="hlava">
-          <h2 id={zaci.id || undefined}>{zaci.nadpis}</h2>
           <div class="prose">{zaciText.map((p) => <p set:html={p} />)}</div>
         </div>
         <div class="stack" style="gap: 16px">
@@ -145,9 +145,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {pozor && (
     <section class="band band--white" aria-labelledby={pozor.id || undefined}>
-      <div class="wrap dva-sloupce">
+      <div class="wrap dva-sloupce dva-sloupce--nadpis">
+        <h2 class="nadpis-sloupcu" id={pozor.id || undefined}>{pozor.nadpis}</h2>
         <div class="stack" style="gap: 20px">
-          <h2 id={pozor.id || undefined}>{pozor.nadpis}</h2>
           <div class="prose">{pozorUvod.map((p) => <p set:html={p} />)}</div>
           {pozorOdkazy.length > 0 && (
             <div class="tlacitka">

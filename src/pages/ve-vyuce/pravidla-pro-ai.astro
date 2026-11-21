@@ -175,9 +175,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {formulace && (
     <section class="band band--sky" aria-labelledby={formulace.id || undefined}>
-      <div class="wrap dva-sloupce">
+      <div class="wrap dva-sloupce dva-sloupce--nadpis">
+        <h2 class="nadpis-sloupcu" id={formulace.id || undefined}>{formulace.nadpis}</h2>
         <div class="stack" style="gap: 20px">
-          <h2 id={formulace.id || undefined}>{formulace.nadpis}</h2>
           <div class="prose" set:html={uvodOddilu(formulaceHtml)} />
           <ul class="formulace">{seznam(predH3(formulaceHtml)).map((t) => <li set:html={t} />)}</ul>
         </div>
@@ -205,9 +205,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   {vedeni && (
     <section class="band band--white" id={vedeni.id || undefined} aria-labelledby={vedeni.id ? `${vedeni.id}-h` : undefined}>
       <div class="wrap stack" style="gap: 48px">
-        <div class="dva-sloupce">
+        <div class="dva-sloupce dva-sloupce--nadpis">
+          <h2 class="nadpis-sloupcu" id={vedeni.id ? `${vedeni.id}-h` : undefined}>{vedeni.nadpis}</h2>
           <div class="hlava">
-            <h2 id={vedeni.id ? `${vedeni.id}-h` : undefined}>{vedeni.nadpis}</h2>
             <div class="prose" set:html={uvodOddilu(vedeniHtml)} />
           </div>
           {dovednost && (
