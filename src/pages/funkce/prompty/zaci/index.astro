@@ -7,6 +7,7 @@ import PromptCard from '../../../../components/PromptCard.astro';
 import TinyTabulka from '../../../../components/data/TinyTabulka.astro';
 import { url } from '../../../../lib/url';
 import { promptText } from '../../../../lib/data';
+import { t, tf, LOCALE } from '../../../../lib/jazyk';
 
 const uvod = (await getEntry('promptyUvod', 'zaci/_index'))!;
 const { Content } = await render(uvod);
@@ -14,32 +15,32 @@ const { Content } = await render(uvod);
 const PORADI = ['Opakování', 'Společné objevování', 'Vysvětlování', 'Rozhovor v roli', 'Co kdyby', 'Argumentace', 'Hledání chyb', 'Brainstorming', 'Plánování a struktura', 'Zpětná vazba'];
 const misto = (z?: string | null) => { const i = PORADI.indexOf(z ?? ''); return i === -1 ? 99 : i; };
 const zaci = (await getCollection('prompty')).filter((p) => p.id.startsWith('zaci/'))
-  .sort((a, b) => misto(a.data.zpusob) - misto(b.data.zpusob) || a.data.title.localeCompare(b.data.title, 'cs'));
+  .sort((a, b) => misto(a.data.zpusob) - misto(b.data.zpusob) || a.data.title.localeCompare(b.data.title, LOCALE));
 ---
 <Base title={uvod.data.title} description={uvod.data.popis}>
   <div class="band band--white" style="padding-bottom: 32px">
     <div class="wrap stack" style="gap: 32px">
-      <Crumbs items={[{ title: 'Katalog promptů', href: '/prompty' }, { title: uvod.data.title }]} />
+      <Crumbs items={[{ title: t('Katalog promptů'), href: '/prompty' }, { title: uvod.data.title }]} />
       <header class="page-head">
         <h1>{uvod.data.title}</h1>
         <p class="lede">{uvod.data.popis}</p>
       </header>
     </div>
   </div>
-  <section class="band band--sky" aria-label="Prompty pro žáky">
+  <section class="band band--sky" aria-label={t('Prompty pro žáky')}>
     <div class="wrap grid-2">
-      {zaci.map((p) => <PromptCard title={p.data.title} href={`/funkce/prompty/zaci/${p.id.split('/')[1]}`} text={promptText(p.body ?? '')} id={`zaci-${p.id.split('/')[1]}`} popis={p.data.zpusob ? `Způsob: ${p.data.zpusob}` : null} />)}
+      {zaci.map((p) => <PromptCard title={p.data.title} href={`/funkce/prompty/zaci/${p.id.split('/')[1]}`} text={promptText(p.body ?? '')} id={`zaci-${p.id.split('/')[1]}`} popis={p.data.zpusob ? tf('Způsob: {zpusob}', { zpusob: p.data.zpusob }) : null} />)}
     </div>
   </section>
   <div class="band band--white">
     <div class="wrap stack" style="gap: 36px">
       <div class="prose prose--siroke-tabulky"><Content /></div>
       <section class="stack siroka-tabulka" style="gap: 16px" aria-labelledby="tiny-h">
-        <h2 id="tiny-h" style="font-size: 1.5rem">Prompty a chatboti v Tiny</h2>
-        <p style="color: var(--muted)">Žáci pod věkovou hranicí chatbotů mohou stejné způsoby práce vyzkoušet v aplikaci <a href={url('/ve-vyuce/tiny')}>Tiny</a>.</p>
+        <h2 id="tiny-h" style="font-size: 1.5rem">{t('Prompty a chatboti v Tiny')}</h2>
+        <p style="color: var(--muted)">{t('Žáci pod věkovou hranicí chatbotů mohou stejné způsoby práce vyzkoušet v aplikaci')} <a href={url('/ve-vyuce/tiny')}>Tiny</a>.</p>
         <TinyTabulka />
       </section>
-      <OdkazyKonec odkazy={[{ text: 'AI aplikace Tiny', href: url('/ve-vyuce/tiny') }, { text: 'Katalog promptů', href: url('/prompty') }]} />
+      <OdkazyKonec odkazy={[{ text: t('AI aplikace Tiny'), href: url('/ve-vyuce/tiny') }, { text: t('Katalog promptů'), href: url('/prompty') }]} />
     </div>
   </div>
 </Base>

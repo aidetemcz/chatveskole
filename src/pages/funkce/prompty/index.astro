@@ -9,7 +9,7 @@ import Base from '../../../layouts/Base.astro';
 import Crumbs from '../../../components/Crumbs.astro';
 import { rozdel, naOddily } from '../../../lib/komponenty';
 import { url } from '../../../lib/url';
-import { dataSoubor } from '../../../lib/jazyk';
+import { dataSoubor, t, tf, LOCALE } from '../../../lib/jazyk';
 
 type Technika = { id: string; cislo: number; nazev: string; popis: string; barva: string };
 type Kus = { technika: string | null; text: string };
@@ -56,27 +56,27 @@ const srovnaniText = srovnaniHtml.replace(/<table>[\s\S]*?<\/table>/, '');
 const radky = [...(srovnaniHtml.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? '').matchAll(/<tr>([\s\S]*?)<\/tr>/g)]
   .map(([, r]) => [...r.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(([, c]) => c.trim()));
 const karty = [
-  { nazev: 'Prompt', sloupec: 1, odkaz: { text: 'Katalog promptů', href: url('/prompty') }, hlavni: false },
-  { nazev: 'Dovednost', sloupec: 2, odkaz: { text: 'Co je dovednost', href: url('/funkce/skills') }, hlavni: true },
+  { nazev: t('Prompt'), sloupec: 1, odkaz: { text: t('Katalog promptů'), href: url('/prompty') }, hlavni: false },
+  { nazev: t('Dovednost'), sloupec: 2, odkaz: { text: t('Co je dovednost'), href: url('/funkce/skills') }, hlavni: true },
 ];
 
 // Závěrečná výzva: poslední oddíl
 const vyzva = oddily[oddily.length - 1];
-const tlacitko = d.tlacitko && typeof d.tlacitko === 'object' && (d.tlacitko as { href?: string }).href ? (d.tlacitko as { text: string; href: string }) : { text: 'Přejít na Katalog promptů', href: '/prompty' };
-const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+const tlacitko = d.tlacitko && typeof d.tlacitko === 'object' && (d.tlacitko as { href?: string }).href ? (d.tlacitko as { text: string; href: string }) : { text: t('Přejít na Katalog promptů'), href: '/prompty' };
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString(LOCALE, { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
 ---
 <Base title={d.title} description={d.popis ?? undefined}>
   <div class="band band--white">
     <div class="wrap page-head">
       <div class="zahlavi">
-        <Crumbs items={[{ title: 'Funkce' }, { title: d.title }]} />
-        {datum && <span class="draft">Aktualizováno {datum}</span>}
+        <Crumbs items={[{ title: t('Funkce') }, { title: d.title }]} />
+        {datum && <span class="draft">{tf('Aktualizováno {datum}', { datum })}</span>}
       </div>
       <h1>{d.title}</h1>
       <div class="lede perex" set:html={perex} />
       <div class="hero-btns">
-        <a class="btn btn--primary" href="#skladacka">Poskládejte si prompt ↓</a>
-        <a class="btn btn--outline" href={url(tlacitko.href)}>Katalog promptů →</a>
+        <a class="btn btn--primary" href="#skladacka">{t('Poskládejte si prompt ↓')}</a>
+        <a class="btn btn--outline" href={url(tlacitko.href)}>{t('Katalog promptů →')}</a>
       </div>
     </div>
   </div>
@@ -91,7 +91,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
         <div class="role">
           {role.map((r, i) => (
             <figure class="role-karta">
-              <figcaption>Role {String.fromCharCode(65 + i)}</figcaption>
+              <figcaption>{tf('Role {pismeno}', { pismeno: String.fromCharCode(65 + i) })}</figcaption>
               <p><mark>{r.zvyraznit}</mark> {r.zbytek}</p>
             </figure>
           ))}
@@ -107,7 +107,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
           <h2 id={techniky.id || undefined}>{techniky.nadpis}</h2>
           <div class="prose" set:html={technikyUvod} />
         </div></div>
-        <div class="skladacka" data-skladacka>
+        <div class="skladacka" data-skladacka data-text-pocet={t('Zapnuto {n} z {celkem} technik')} data-text-postupne={t('▶ Ukázat postupně')} data-text-zastavit={t('❚❚ Zastavit')}>
           <ol class="techniky">
             {sk.techniky.map((t) => (
               <li>
@@ -121,7 +121,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
           <div class="vysledek-obal">
             <div class="vysledek">
               <div class="vysledek-hlava">
-                <span class="vysledek-titulek">Váš prompt</span>
+                <span class="vysledek-titulek">{t('Váš prompt')}</span>
                 <span class="vysledek-pocet" data-pocet aria-live="polite"></span>
               </div>
               <p class="vysledek-text" data-prompt>
@@ -129,10 +129,10 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
                   ? <span data-kus={k.technika} style={`background: ${barva[k.technika]}`} hidden={!zap.has(k.technika)}>{k.text}</span>
                   : <span>{k.text}</span>)}
               </p>
-              <p class="vysledek-napoveda" data-napoveda>Klikněte na kteroukoli techniku a sledujte, jak se prompt mění.</p>
+              <p class="vysledek-napoveda" data-napoveda>{t('Klikněte na kteroukoli techniku a sledujte, jak se prompt mění.')}</p>
               <div class="vysledek-tlacitka">
-                <button type="button" class="btn btn--outline btn--sm" data-postupne>▶ Ukázat postupně</button>
-                <button type="button" class="btn btn--outline btn--sm" data-nic>Začít znovu</button>
+                <button type="button" class="btn btn--outline btn--sm" data-postupne>{t('▶ Ukázat postupně')}</button>
+                <button type="button" class="btn btn--outline btn--sm" data-nic>{t('Začít znovu')}</button>
               </div>
             </div>
             <div class="prose" set:html={technikyPoznamka} />
@@ -207,24 +207,26 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
     const tlacitka = [...s.querySelectorAll<HTMLButtonElement>('[data-technika]')];
     const kusy = [...s.querySelectorAll<HTMLElement>('[data-kus]')];
     const pocet = s.querySelector<HTMLElement>('[data-pocet]')!;
+    // texty rozhraní z atributů (přeložené v šabloně funkcí t())
+    const { textPocet = '', textPostupne = '', textZastavit = '' } = s.dataset;
     const obnov = () => {
       const zap = new Set(tlacitka.filter((b) => b.getAttribute('aria-pressed') === 'true').map((b) => b.dataset.technika));
       kusy.forEach((k) => { k.hidden = !zap.has(k.dataset.kus); });
-      pocet.textContent = `Zapnuto ${zap.size} z ${tlacitka.length} technik`;
+      pocet.textContent = textPocet.replace('{n}', String(zap.size)).replace('{celkem}', String(tlacitka.length));
     };
     const napoveda = s.querySelector<HTMLElement>('[data-napoveda]')!;
     const postupne = s.querySelector<HTMLButtonElement>('[data-postupne]')!;
     const obnovNapovedu = () => { napoveda.hidden = tlacitka.some((b) => b.getAttribute('aria-pressed') === 'true'); };
     // „Ukázat postupně“: od holého zadání zapíná techniky jednu po druhé (při omezení pohybu všechny najednou)
     let casovac: ReturnType<typeof setTimeout> | undefined;
-    const zastav = () => { if (casovac) clearTimeout(casovac); casovac = undefined; postupne.textContent = '▶ Ukázat postupně'; };
+    const zastav = () => { if (casovac) clearTimeout(casovac); casovac = undefined; postupne.textContent = textPostupne; };
     const nastav = (on: boolean) => { zastav(); tlacitka.forEach((b) => b.setAttribute('aria-pressed', String(on))); obnov(); obnovNapovedu(); };
     tlacitka.forEach((b) => b.addEventListener('click', () => { zastav(); b.setAttribute('aria-pressed', String(b.getAttribute('aria-pressed') !== 'true')); obnov(); obnovNapovedu(); }));
     postupne.addEventListener('click', () => {
       if (casovac) { zastav(); return; }
       nastav(false);
       if (matchMedia('(prefers-reduced-motion: reduce)').matches) { nastav(true); return; }
-      postupne.textContent = '❚❚ Zastavit';
+      postupne.textContent = textZastavit;
       let i = 0;
       const dalsi = () => {
         tlacitka[i].setAttribute('aria-pressed', 'true'); obnov(); obnovNapovedu();

@@ -5,6 +5,7 @@ import Base from '../../../layouts/Base.astro';
 import Crumbs from '../../../components/Crumbs.astro';
 import { url } from '../../../lib/url';
 import { skillBySlug } from '../../../lib/data';
+import { t, tf } from '../../../lib/jazyk';
 
 export async function getStaticPaths() {
   // seřadit podle id: pořadí z getCollection není stálé a „Podobné prompty“ se mezi buildy měnily
@@ -26,27 +27,27 @@ const { Content } = await render(prompt);
 const archiv = prompt.id.startsWith('archiv-2024/');
 const skill = prompt.data.skill ? skillBySlug(prompt.data.skill) : undefined;
 ---
-<Base title={prompt.data.title} description={`Prompt ${prompt.data.title} — zkopírujte ho do chatbota a doplňte údaje.`} noindex={archiv}>
+<Base title={prompt.data.title} description={tf('Prompt {nazev} — zkopírujte ho do chatbota a doplňte údaje.', { nazev: prompt.data.title })} noindex={archiv}>
   <div class="wrap hlavicka">
-    <Crumbs items={[{ title: 'Katalog promptů', href: '/prompty' }, { title: prompt.data.title }]} />
+    <Crumbs items={[{ title: t('Katalog promptů'), href: '/prompty' }, { title: prompt.data.title }]} />
     <header class="page-head"><h1>{prompt.data.title}</h1></header>
   </div>
   <div class="wrap layout">
     <article class="main">
-      {archiv && <p class="note note--info">Toto je starý prompt, který jsme z katalogu vyřadili. Prohlédněte si novější <a href={url('/prompty')}>prompty</a> nebo <a href={url('/skills')}>dovednosti</a>.</p>}
+      {archiv && <p class="note note--info">{t('Toto je starý prompt, který jsme z katalogu vyřadili. Prohlédněte si novější')} <a href={url('/prompty')}>{t('prompty')}</a> {t('nebo')} <a href={url('/skills')}>{t('dovednosti')}</a>.</p>}
       <div class="prose"><Content /></div>
-      <div style="margin-top: 10px"><OdkazyKonec odkazy={[{ text: 'Katalog promptů', href: url('/prompty') }, ...(skill ? [{ text: `Dovednost ${skill.title}`, href: url(`/skills/${skill.slug}`) }] : []), { text: 'Jak psát prompty', href: url('/funkce/prompty') }]} /></div>
+      <div style="margin-top: 10px"><OdkazyKonec odkazy={[{ text: t('Katalog promptů'), href: url('/prompty') }, ...(skill ? [{ text: tf('Dovednost {nazev}', { nazev: skill.title }), href: url(`/skills/${skill.slug}`) }] : []), { text: t('Jak psát prompty'), href: url('/funkce/prompty') }]} /></div>
     </article>
     <aside class="side">
       {skill && !archiv && (
         <div class="skillbox">
-          <p class="skillbox-text">Používáte prompt často? Nainstalujte si dovednost.</p>
-          <a class="more" href={url(`/skills/${skill.slug}`)}>Dovednost {skill.title} →</a>
+          <p class="skillbox-text">{t('Používáte prompt často? Nainstalujte si dovednost.')}</p>
+          <a class="more" href={url(`/skills/${skill.slug}`)}>{tf('Dovednost {nazev} →', { nazev: skill.title })}</a>
         </div>
       )}
       {podobne.length > 0 && (
         <div class="similar">
-          <h2>Podobné prompty</h2>
+          <h2>{t('Podobné prompty')}</h2>
           {podobne.map((q) => <a href={url(q.href)}>{q.title}</a>)}
         </div>
       )}
