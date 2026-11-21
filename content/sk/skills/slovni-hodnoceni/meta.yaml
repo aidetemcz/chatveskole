@@ -1,15 +1,15 @@
-title: Slovní hodnocení
+title: Slovné hodnotenie
 slug: slovni-hodnoceni
-kratky_popis: Napíše návrh slovního hodnocení na vysvědčení nebo průběžnou zpětnou vazbu podle Vysvědčení JINAK, shrne i dřívější hodnocení.
-popis: "Pomůže vám napsat srozumitelné, věcné a povzbudivé slovní hodnocení žáka na vysvědčení, průběžnou zpětnou vazbu nebo komentář ke klasifikaci. Stačí popsat předmět, pokrok žáka, jeho silné i slabší stránky a přístup k učení; místo jména použijte iniciály nebo přezdívku. Řídí se zásadami Jany Kratochvílové z metodiky Vysvědčení jinak (PdF MU). Dostanete návrh, který zkontrolujete a upravíte, protože pedagoga nenahrazuje."
+kratky_popis: Napíše návrh slovného hodnotenia na vysvedčenie alebo priebežnú spätnú väzbu podľa Vysvědčení JINAK, zhrnie aj predchádzajúce hodnotenia.
+popis: "Pomôže vám napísať zrozumiteľné, vecné a povzbudivé slovné hodnotenie žiaka na vysvedčenie, priebežnú spätnú väzbu alebo komentár ku klasifikácii. Stačí opísať predmet, pokrok žiaka, jeho silné aj slabšie stránky a prístup k učeniu; namiesto mena použite iniciály alebo prezývku. Riadi sa zásadami Jany Kratochvílovej z českej metodiky Vysvědčení jinak (PdF MU, podklady v češtine). Dostanete návrh, ktorý skontrolujete a upravíte, pretože pedagóga nenahrádza."
 pro_koho: [ucitele]
 sady: [formativni-hodnoceni]
-stitky: [formativní hodnocení, slovní hodnocení, zpětná vazba, vysvědčení, Vysvědčení jinak]
+stitky: [formatívne hodnotenie, slovné hodnotenie, spätná väzba, vysvedčenie, Vysvědčení jinak]
 rezimy:
-  - Napsat slovní hodnocení (vysvědčení, průběžná zpětná vazba)
-  - Shrnout více hodnocení do jednoho
-  - Hodnocení chování
-  - Zpětná vazba k práci žáka
+  - Napísať slovné hodnotenie (vysvedčenie, priebežná spätná väzba)
+  - Zhrnúť viac hodnotení do jedného
+  - Hodnotenie správania
+  - Spätná väzba k práci žiaka
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/tvorba-slovniho-hodnoceni/
     typ: prompt
@@ -41,13 +41,13 @@ stahnout:
   chatgpt: https://drive.google.com/uc?export=download&id=1DzDeunHp_Diolzg47AG_YqeRpzajguTR
 autori:
   - Eva Nečasová (AI dětem)
-  - Šárka Polanecká (ZŠ Pod Beckovem) – režim Kontrola formulací
+  - Šárka Polanecká (ZŠ Pod Beckovem) – režim Kontrola formulácií
 metodika:
-  - nazev: Vysvědčení jinak (PdF MU, Jana Kratochvílová)
+  - nazev: Vysvědčení jinak (PdF MU, Jana Kratochvílová; v češtine)
     url: https://vysvedcenijinak.ped.muni.cz/
-  - nazev: Jana Kratochvílová – Jak psát slovní hodnocení na vysvědčení
+  - nazev: Jana Kratochvílová – Jak psát slovní hodnocení na vysvědčení (v češtine)
     url: https://vysvedcenijinak.ped.muni.cz/media/3580698/jak-psat-slovni-hodnoceni.pdf
 znalosti: [jak-psat-slovni-hodnoceni.md]
-vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+vek: dospelí (zručnosti sú v Gemini a Claude 18+)
 stav: koncept
 aktualizovano: 2026-11-21
