@@ -39,11 +39,11 @@ Chatboti v Tiny (Tinyboti) jsou postavení podle Bloomovy taxonomie. Každý roz
 | Kognitivní proces | Tinybot | Popis jeho fungování | Metodika |
 |---|---|---|---|
 | Zapamatování | Testovací chatbot | Ověřuje žákovy znalosti různou formou testů. | [Metodika](https://www.tiny.school/testovaci-chatbot/) |
-| | Opakovací parťák | Ptá se a vysvětluje, pokud žák nerozumí. | |
+| | Opakovací parťák | Ptá se a vysvětluje, pokud žák nerozumí. | [Metodika](https://www.tiny.school/opakovaci-partak/) |
 | Porozumění | Společné objevování | Slouží pro samostatné vzdělávání v hodinách i doma. | [Metodika](https://www.tiny.school/spolecne-objevovani/) |
 | | Zvědavý mimoň | Předstírá nevědomost a vyzývá k vysvětlení. | [Metodika](https://www.tiny.school/zvedavy-mimon/) |
 | | Historická postava / Expert | Hraje historickou postavu nebo experta a přibližuje kontext. | [Metodika](https://www.tiny.school/historicka-postava-expert/) |
-| | V hlavní roli… | Vtělí se do zadané role a odpovídá z její perspektivy. | |
+| | V hlavní roli… | Vtělí se do zadané role a odpovídá z její perspektivy. | [Metodika](https://www.tiny.school/v-hlavni-roli/) |
 | Aplikace | Co kdyby… | Rozvíjí hypotetický scénář a pomáhá o něm přemýšlet. | [Metodika](https://www.tiny.school/co-kdyby/) |
 | Analýza a hodnocení | Argumentační partner | V diskuzi zastává opačné stanovisko a upozorňuje na argumentační fauly. | [Metodika](https://www.tiny.school/argumentacni-partner/) |
 | | Chybující chatbot | Záměrně chybuje a vyzývá k ověření. | [Metodika](https://www.tiny.school/chybujici-chatbot/) |

@@ -60,7 +60,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Jak poznáte, že se žák učí:** Zvládne obtížnější otázky než na začátku a dokáže říct, co si potřebuje zopakovat.
 - **Otázka k reflexi:** Na kterou otázku bych příště odpověděl bez nápovědy?
 - **Příklad:** Opakování slovních druhů před čtvrtletní prací.
-- **Kde to spustit:** V Tiny Opakovací parťák nebo [Testovací chatbot](https://www.tiny.school/testovaci-chatbot/), v běžném chatbotu prompt [Opakování](/funkce/prompty/zaci/opakovani).
+- **Kde to spustit:** V Tiny [Opakovací parťák](https://www.tiny.school/opakovaci-partak/) nebo [Testovací chatbot](https://www.tiny.school/testovaci-chatbot/), v běžném chatbotu prompt [Opakování](/funkce/prompty/zaci/opakovani).
 
 ### Společné objevování
 
@@ -103,7 +103,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Jak poznáte, že se žák učí:** Klade promyšlené otázky a všimne si nepřesnosti nebo rozdílu oproti zdroji.
 - **Otázka k reflexi:** Čemu z rozhovoru věřím a podle čeho?
 - **Příklad:** Rozhovor s Marií Terezií o školní reformě nebo s kapkou vody o koloběhu vody.
-- **Kde to spustit:** V Tiny [Historická postava / Expert](https://www.tiny.school/historicka-postava-expert/) a V hlavní roli…, v běžném chatbotu prompt [Rozhovor v roli](/funkce/prompty/zaci/rozhovor-v-roli).
+- **Kde to spustit:** V Tiny [Historická postava / Expert](https://www.tiny.school/historicka-postava-expert/) a [V hlavní roli…](https://www.tiny.school/v-hlavni-roli/), v běžném chatbotu prompt [Rozhovor v roli](/funkce/prompty/zaci/rozhovor-v-roli).
 
 ### Co kdyby
 
