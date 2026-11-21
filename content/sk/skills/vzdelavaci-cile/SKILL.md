@@ -70,5 +70,5 @@ Biológia, 6. ročník, téma fotosyntéza:
 
 ## Priložené súbory (v češtine)
 
-- **references/Klic_cile_Nova_taxonomie.md** – kľúč na tvorbu cieľov podľa Novej taxonómie: dimenzie a úrovne, procesy so vzormi a slovesami, pravidlá štýlu, kontext učenia, kritérium splnenia, kontrolný zoznam a rozbor výstupov z RVP. Vychádzaj z neho pri každej formulácii; slovesá a vzory preveď do slovenčiny. Pokyn pre AI na jeho začiatku a formát YAML slúžia na hromadné generovanie cieľov do mapy; pre prácu s vyučujúcim platí postup a výstup podľa týchto inštrukcií.
+- **references/Klic_cile_Nova_taxonomie.md** – kľúč na tvorbu cieľov podľa Novej taxonómie: dimenzie a úrovne, procesy so vzormi a slovesami, pravidlá štýlu, kontext učenia, kritérium splnenia, kontrolný zoznam a rozbor výstupov z RVP. Vychádzaj z neho pri každej formulácii. Pokyn pre AI na jeho začiatku a formát YAML slúžia na hromadné generovanie cieľov do mapy; pre prácu s vyučujúcim platí postup a výstup podľa týchto inštrukcií.
 - **references/Klicove_kompetence.md** a **references/Pruzerova_temata.md** – kľúčové kompetencie a prierezové témy českého RVP ZV. Použi ich len ako inšpiráciu, keď cieľ rozvíja kompetenciu alebo prierezovú tému.
