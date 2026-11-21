@@ -6,7 +6,7 @@ const cist = (s: string) => s.replace(/\s*⚠\s*/g, ' ').trim();
 // cena do karty: částka velkým písmem, zbytek (období, podmínky) menším pod ní
 const rozdel = (s: string) => {
   const t = cist(s);
-  const m = t.match(/^((?:od |cca )?\d[\d\s.,]*\s*(?:Kč|USD|EUR|€)|na dotaz|zdarma|v ceně[^,(]*)\s*(.*)$/i);
+  const m = t.match(/^((?:od |cca )?\d[\d\s.,]*\s*(?:Kč|USD|EUR|€|\$)|na dotaz|zdarma|v ceně[^,(]*)\s*(.*)$/i);
   return m ? { castka: m[1].trim(), zbytek: m[2].trim() } : { castka: t, zbytek: '' };
 };
 ---
@@ -55,7 +55,7 @@ const rozdel = (s: string) => {
   /* tarify jako ceník se sloupci vedle sebe (15. 11. 2026) */
   .tarify { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 165px), 1fr)); gap: 14px; }
   .tarif { border: 1px solid var(--sky); border-radius: var(--radius); padding: 20px 18px; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; background: var(--panel); }
-  .tarif-nazev { font-family: var(--fh); font-weight: 700; font-size: 1.1rem; }
+  .tarif-nazev { font-family: var(--fh); font-weight: 700; font-size: 1.1rem; line-height: 1.2; }
   .tarif-cena { font-family: var(--fh); font-weight: 700; font-size: 1.55rem; line-height: 1.15; color: var(--accent-ink); }
   .tarif-obdobi { font-size: 0.82rem; line-height: 1.35; }
   .tarif-pozn { font-size: 0.86rem; line-height: 1.45; margin-top: 8px; padding-top: 12px; border-top: 1px solid var(--line); align-self: stretch; }
