@@ -149,7 +149,7 @@ export function naKartuSObrazkem(html: string): string {
 // Sekce ### až do dalšího ## → karty ve dvou sloupcích (stránka Způsoby využití AI ve výuce, varianta A z Claude Design):
 // nadpis a tučný perex; „Co dělá žák“ a „Co dělá AI“ vedle sebe;
 // Hodí se / Nehodí se a ostatní položky jako řádky „Štítek: text“ (pojistka se nezobrazuje); v patičce Tiny a prompty jako tlačítka.
-const KRATCE: Record<string, string> = { 'Jak poznáte, že se žák učí': 'Důkaz o učení', 'Otázka k reflexi': 'Reflexe' };
+const KRATCE: Record<string, string> = { 'Jak poznáte, že se žák učí': 'Hodnoticí kritérium', 'Otázka k reflexi': 'Reflexe' };
 
 export function naKartyZpusobu(html: string): string {
   const konec = html.search(/<h2[\s>]/);
