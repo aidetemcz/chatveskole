@@ -51,7 +51,7 @@ Všechny čtyři mají bezplatnou verzi a umí podobné věci. Liší se hlavně
 
 ### ChatGPT
 
-Školní verzi pro základní a střední školy v Česku nemá, vyučující a vedení ho používají pod vlastním účtem. Žáci od 13 let jen se souhlasem rodiče, do 18 let mají přísnější režim pro dospívající.
+Školní verzi pro základní a střední školy v Česku nemá, vyučující a vedení ho používají pod vlastním účtem. Žáci od 13 let jen se souhlasem zákonného zástupce, do 18 let mají přísnější režim pro dospívající.
 
 [chatgpt.com](https://chatgpt.com)
 
@@ -82,7 +82,7 @@ Podrobné srovnání funkcí a přehled toho, co se mění v roce 2027, najdete 
 | Vývojář | OpenAI | Google | Microsoft | Anthropic |
 | Zdarma | ano | ano | ano | ano |
 | Školní verze v Česku | ne (Edu jen pro VŠ) | ano, v Google Workspace for Education | ano, Copilot Chat se školní licencí Microsoft 365 | ano, se slevou přes Claude for Nonprofits, jen pro vedení a pedagogy (18+) |
-| Věk — osobní účet | 13+, do 18 let se souhlasem rodiče a v režimu pro dospívající | 13+ (v ČR samostatně od 15 let); placené tarify a dovednosti 18+ | 13+ | 18+ |
+| Věk — osobní účet | 13+, do 18 let se souhlasem zákonného zástupce a v režimu pro dospívající | 13+ (v ČR samostatně od 15 let); placené tarify a dovednosti 18+ | 13+ | 18+ |
 | Věk — školní účet | — | bez věkového omezení, pokud ho správce školy zapne; žákům do 18 let omezí některé funkce | 13+, zapíná správce | — |
 | Dovednosti | od tarifu Plus; zdarma a v Go ne | ano (18+) | jen s placenou licencí Microsoft 365 Copilot | ano, i zdarma |
 | Projekty | ano | Notebooky | Notebooks | ano |
@@ -92,7 +92,7 @@ Podrobné srovnání funkcí a přehled toho, co se mění v roce 2027, najdete 
 
 ## Další nástroje
 
-- **[Perplexity](https://www.perplexity.ai)** — vyhledávač, který odpovídá s odkazy na zdroje. Hodí se na rešerše. Od 13 let, nezletilí jen se souhlasem rodiče.
+- **[Perplexity](https://www.perplexity.ai)** — vyhledávač, který odpovídá s odkazy na zdroje. Hodí se na rešerše. Od 13 let, nezletilí jen se souhlasem zákonného zástupce.
 - **[AI aplikace Tiny](/ve-vyuce/tiny)** — chatboti pro žáky od AI dětem: vedou otázkami, vyučující vidí konverzace, data zůstávají v EU.
 - **[Sciobot](https://sciobot.cz)** — AI asistent pro vyučující od společnosti Scio. Pomáhá připravit plány hodin a materiály do výuky. Základní verze je pro vyučující a školy zdarma.
 - Nástroje pro tvorbu aplikací najdete v sekci [Vibe Coding](/vibe-coding/nastroje).

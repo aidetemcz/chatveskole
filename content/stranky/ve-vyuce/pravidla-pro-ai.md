@@ -18,7 +18,7 @@ odkazy:
 ---
 # Tvorba pravidel pro využívání AI
 
-Žáci AI používají, ať to škola dovolí, nebo ne. Pravidla nejsou o zákazu, ale o tom, **kdy a jak AI učení pomáhá a kdy ho nahrazuje**. A o tom, aby všichni, vyučující, žáci i rodiče, věděli, co platí.
+Žáci AI používají, ať to škola dovolí, nebo ne. Pravidla nejsou o zákazu, ale o tom, **kdy a jak AI učení pomáhá a kdy ho nahrazuje**. A o tom, aby všichni, vyučující, žáci i zákonní zástupci, věděli, co platí.
 
 ## Dvě cesty k pravidlům
 
@@ -29,7 +29,7 @@ Pravidla můžete vytvořit společně se žáky, nebo je připraví vedení šk
 
 ## Pravidla společně se žáky
 
-Školní pravidla nejsou souborem zákazů, ale odrazem hodnot, na kterých škola stojí. Jejich tvorba je příležitostí k otevřenému dialogu mezi pedagogy, vedením, žáky i rodiči. Když se na nich podílejí ti, kterých se týkají, roste jejich srozumitelnost i přijetí.
+Školní pravidla nejsou souborem zákazů, ale odrazem hodnot, na kterých škola stojí. Jejich tvorba je příležitostí k otevřenému dialogu mezi pedagogy, vedením, žáky i zákonnými zástupci. Když se na nich podílejí ti, kterých se týkají, roste jejich srozumitelnost i přijetí.
 
 Postup ukazujeme na pravidlech pro mobilní zařízení. Stejně můžete se žáky vytvořit i pravidla pro AI.
 
@@ -62,11 +62,11 @@ Inspirace pro pravidla k mobilům. Pozitivní, krátké, srozumitelné.
 - Během vyučování používáme mobilní zařízení pouze se souhlasem vyučujícího.
 - O přestávkách je mobil uložen ve skříňce. Je možné ho využít po dohodě s vyučujícím.
 - V prostorách školy se nefotí ani nenatáčí bez souhlasu všech zúčastněných.
-- Pokud telefon ruší výuku nebo není používán zodpovědně, škola má právo ho dočasně uschovat a informovat rodiče.
+- Pokud telefon ruší výuku nebo není používán zodpovědně, škola má právo ho dočasně uschovat a informovat zákonné zástupce.
 
 ### Zavádění do praxe
 
-Pravidla vyvěste ve třídách nebo na chodbách jako jednoduchý plakát, ať jsou stále na očích a připomínají dohodu, na které se žáci podíleli. Sdílejte je také s rodiči.
+Pravidla vyvěste ve třídách nebo na chodbách jako jednoduchý plakát, ať jsou stále na očích a připomínají dohodu, na které se žáci podíleli. Sdílejte je také se zákonnými zástupci.
 
 Po čase je se žáky zhodnoťte: co funguje, co je třeba upravit. Pravidla nejsou trest, ale živá dohoda, kterou můžete společně vylepšovat.
 
@@ -86,8 +86,8 @@ Provede vás tvorbou pravidel krok za krokem: zeptá se na oblasti, cílové sku
 
 1. **Zmapujte, co se děje** — Krátký dotazník pro vyučující a žáky: kdo co používá, k čemu, s jakou zkušeností.
 2. **Domluvte se na hodnotách** — Co chceme, aby se žáci naučili? Kde AI pomáhá, kde škodí? Vyjděte z hodnot a vize školy.
-3. **Sepište pravidla** — Zvlášť pro vyučující, žáky a rodiče, krátce a srozumitelně. Pomůže dovednost Školní pravidla.
-4. **Projednejte je** — S pedagogickým sborem, žákovským parlamentem a rodiči. Pravidla, která vzniknou v dialogu, se dodržují.
+3. **Sepište pravidla** — Zvlášť pro vyučující, žáky a zákonné zástupce, krátce a srozumitelně. Pomůže dovednost Školní pravidla.
+4. **Projednejte je** — S pedagogickým sborem, žákovským parlamentem a zákonnými zástupci. Pravidla, která vzniknou v dialogu, se dodržují.
 5. **Vyhodnocujte a aktualizujte** — Aspoň jednou za pololetí. Nástroje se mění rychle.
 
 ### Co by pravidla měla obsahovat
@@ -110,17 +110,17 @@ U každé úlohy žákům řekněte, jak smí AI použít. Inspirací je škála
 4. **Plné využití AI** — AI je nástroj, hodnotí se, jak s ní žák pracoval.
 5. **AI jako téma** — Žák s AI tvoří nové nástroje a postupy.
 
-## Doporučení a rodiče
+## Doporučení a zákonní zástupci
 
 ### Jak na AI ve škole
 
-Národní pedagogický institut vydal v roce 2025 doporučení **Jak na AI ve škole** pro ředitele, pedagogy, žáky i rodiče. Jsou dobrým základem pro vlastní pravidla.
+Národní pedagogický institut vydal v roce 2025 doporučení **Jak na AI ve škole** pro ředitele, pedagogy, žáky i zákonné zástupce. Jsou dobrým základem pro vlastní pravidla.
 
 [Doporučení pro ZŠ a SŠ](/ve-vyuce/doporuceni-zs-ss)
 
 ### Proč škola AI zavádí
 
-Potřebujete to vysvětlit rodičům? Pomůže dovednost Komunikace s rodiči.
+Potřebujete to vysvětlit zákonným zástupcům? Pomůže dovednost Komunikace s rodiči.
 
 [Dovednost Komunikace s rodiči](/skills/komunikace-s-rodici)
 

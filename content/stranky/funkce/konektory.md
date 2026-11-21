@@ -19,7 +19,7 @@ Konektor napojí chatbota na jinou aplikaci — Google Disk, Gmail, kalendář, 
 
 ## K čemu je to ve škole dobré
 
-Ve škole vám konektor ušetří hledání a přepisování. Chatbota můžete požádat, ať na vašem Disku najde ŠVP pro 2. stupeň a navrhne, kam zařadit téma umělé inteligence, nebo ať ze zápisu z porady uloženého na Disku udělá úkoly pro jednotlivé kolegy. Z kalendáře vám připraví seznam porad na příští měsíc i s návrhem programu té první. Zvládne také projít e-maily od rodičů z tohoto týdne a připravit přehled, na co máte odpovědět. To ale jen se školním účtem a osobní údaje z e-mailů pak nikam dál nevkládejte.
+Ve škole vám konektor ušetří hledání a přepisování. Chatbota můžete požádat, ať na vašem Disku najde ŠVP pro 2. stupeň a navrhne, kam zařadit téma umělé inteligence, nebo ať ze zápisu z porady uloženého na Disku udělá úkoly pro jednotlivé kolegy. Z kalendáře vám připraví seznam porad na příští měsíc i s návrhem programu té první. Zvládne také projít e-maily od zákonných zástupců z tohoto týdne a připravit přehled, na co máte odpovědět. To ale jen se školním účtem a osobní údaje z e-mailů pak nikam dál nevkládejte.
 
 ## Kde konektory najdete
 
@@ -32,7 +32,7 @@ Ve škole vám konektor ušetří hledání a přepisování. Chatbota můžete 
 
 ## Na co si dát pozor
 
-Konektor dává chatbotu přístup ke všemu, co vidíte vy. V e-mailu a na Disku vyučujícího bývají osobní údaje žáků a rodičů.
+Konektor dává chatbotu přístup ke všemu, co vidíte vy. V e-mailu a na Disku vyučujícího bývají osobní údaje žáků a jejich zákonných zástupců.
 
 - **Připojujte jen pracovní účet a jen tam, kde to škola povoluje.** Zeptejte se správce IT nebo pověřence pro ochranu osobních údajů.
 - **Dávejte přednost školním verzím nástrojů** (Google Workspace for Education, Microsoft 365), kde se data nepoužívají k tréninku.

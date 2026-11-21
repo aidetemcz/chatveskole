@@ -43,7 +43,7 @@ Začněte promptem. Když ho používáte často, uložte si ho jako dovednost.
 |---|---|---|
 | Co to je | Text, který vložíte do chatu | Instrukce zabalené do funkce, kterou vyvoláte lomítkem nebo zavináčem |
 | Kde funguje | Všude, i v bezplatných verzích a pro žáky | V placených i některých bezplatných verzích, většinou jen pro dospělé |
-| Kdy se hodí | Jednorázový úkol, výuka se žáky, vyzkoušení | Úkol, který opakujete: hodnocení, přípravy, zprávy rodičům |
+| Kdy se hodí | Jednorázový úkol, výuka se žáky, vyzkoušení | Úkol, který opakujete: hodnocení, přípravy, zprávy zákonným zástupcům |
 
 ## Nechcete začínat od nuly?
 

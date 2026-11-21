@@ -36,9 +36,9 @@ Nejjednodušší cesta: aplikaci vytvoříte ve stejném okně, kde s chatbotem 
 
 | Nástroj | Zdarma | Věk | Sdílení odkazem | Poznámka |
 |---|---|---|---|---|
-| **Gemini Canvas** | ano | 13+, na školním účtu podle nastavení správce | ano | Kdo má odkaz, může vidět i měnit data aplikace. Nejlepší volba pro školy s Google Workspace. |
-| **Claude artefakty** | ano | 18+ | jen v tarifu Pro a vyšších | Velmi kvalitní výsledky, aplikace si umí pamatovat data. |
-| **ChatGPT Sites** | ne, jen v placených tarifech | 13+, do 18 let se souhlasem rodiče | ano | Weby a malé aplikace s hostingem. Canvas v ChatGPT skončil v květnu 2026. |
+| **Gemini Canvas** | ano | 13+, na školním účtu podle nastavení správce | ano | Nejlepší volba pro školy s Google Workspace. Canvas v Gemini vyvoláte přes ikonku Plus v chatovacím okně. |
+| **Claude artefakty** | ano | 18+ | jen v tarifu Pro a vyšších | Artifacts poskytují velmi kvalitní výstupy. Vyvoláte je například sdělením: „Vytvoř mi v Artifacts…“ |
+| **ChatGPT Sites** | ne, jen v placených tarifech | 13+, do 18 let se souhlasem zákonného zástupce | ano | Hodí se pro tvorbu webů a jednoduchých aplikací. Weby najdete v levém panelu. |
 | **Copilot App Builder** | — | — | — | **Končí 30. 11. 2026.** Nezačínejte s ním. |
 
 Údaje na této stránce jsou k 7. 11. 2026, u Canva Kódování k 15. 11. 2026. Ceny, limity a věkové hranice se mění, před použitím se žáky je proto ověřte.
@@ -52,7 +52,7 @@ Tyto služby jsou určené přímo ke stavbě aplikací. Umí víc než chatboti
 | **[Lovable](https://lovable.dev)** | 5 kreditů denně, nejvýš 30 měsíčně | 18+ | ve Free jen pozvaní (nejvýš 10 lidí) |
 | **[Bolt.new](https://bolt.new)** | denní a měsíční limit, hosting v ceně | 18+ | ano |
 | **[v0](https://v0.app)** od Vercelu | 7 zpráv denně | 16+ (podmínky Vercelu) | ano, adresa vercel.app |
-| **[Replit](https://replit.com)** | omezený Free Mode | 13+, do 18 let se souhlasem rodiče | ověřte |
+| **[Replit](https://replit.com)** | omezený Free Mode | 13+, do 18 let se souhlasem zákonného zástupce | ověřte |
 | **[Macaly](https://macaly.com)** | ano, měsíční kredity, 1 zveřejněná aplikace | 18+ (13+ jen v AI olympiádě) | ano, ve Free jen veřejně na adrese macaly.app |
 | **Canva Kódování** | ano, i v Canvě pro vzdělávání | 13+, mladší jen v Canvě pro vzdělávání na pozvánku vyučujícího | ano, na doméně Canvy |
 
@@ -66,7 +66,7 @@ Tyto nástroje jsou určené vývojářům. Výsledek si musíte zveřejnit sami
 |---|---|---|
 | **[Google AI Studio](https://aistudio.google.com)** (Build) | ano, 2 aplikace zveřejníte bez platební karty | 18+, určeno vývojářům |
 | **[Claude Code](https://claude.com/product/claude-code)** | ne, jen v tarifu Pro a vyšších | 18+ |
-| **[OpenAI Codex](https://openai.com/codex)** | omezeně ve Free a Go | 13+, do 18 let se souhlasem rodiče |
+| **[OpenAI Codex](https://openai.com/codex)** | omezeně ve Free a Go | 13+, do 18 let se souhlasem zákonného zástupce |
 | **[Google Antigravity](https://antigravity.google)** | ano, s limity | 18+ |
 | **[Cursor](https://cursor.com)** | omezeně | 18+ |
 

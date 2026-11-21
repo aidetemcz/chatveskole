@@ -80,8 +80,8 @@ const urovne = najdi(/Úrovně/i);
 const urovneHtml = htmlOddilu(urovne);
 const urovnePolozky = polozky(urovneHtml);
 
-// Doporučení a rodiče: dvě karty
-const dalsi = najdi(/Doporučení a rodiče/i);
+// Doporučení a zákonní zástupci: dvě karty
+const dalsi = najdi(/Doporučení a zákonní zástupci/i);
 const dalsiKarty = bloky(htmlOddilu(dalsi)).map((b, i) => ({ ...b, ...odkazOdstavec(b.html), stitek: ['Doporučení NPI', 'Komunikace s rodiči'][i] ?? '' }));
 
 const vyzva = najdi(/Pusťte se/i);
