@@ -22,7 +22,7 @@ const polozky = (h: string) => [...(h.match(/<(ul|ol)>([\s\S]*?)<\/\1>/)?.[2] ??
 const tlacitka = (h: string) => [...h.matchAll(/<p>\s*<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*<\/p>/g)].map(([, href, t]) => ({ href, text: bezTagu(t).replace(/\s*→$/, '') }));
 const bezTlacitek = (h: string) => h.replace(/<p>\s*<a href="[^"]+"[^>]*>[\s\S]*?<\/a>\s*<\/p>/g, '');
 
-const data = najdi(/víc než cena/i);
+const data = najdi(/kromě ceny/i);
 const zdarma = najdi(/zdarma/i);
 const zdarmaHtml = htmlOddilu(zdarma);
 // „Zapíná správce.“ na konci textu → štítek
@@ -61,15 +61,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   {data && (
     <section class="band band--sky" aria-labelledby={data.id || undefined}>
-      <div class="wrap stack" style="gap: 32px">
+      <div class="wrap stack" style="gap: 20px">
         <h2 id={data.id || undefined}>{data.nadpis}</h2>
-        <div class="karty">
-          {polozky(htmlOddilu(data)).map((k, i) => i === 0 ? (
-            <div class="card"><h3>{k.nazev}</h3><p set:html={k.text} /></div>
-          ) : (
-            <div class="pravidlo"><div class="titulek titulek--cerveny">{k.nazev}</div><p set:html={k.text} /></div>
-          ))}
-        </div>
+        <div class="prose" set:html={htmlOddilu(data)} />
       </div>
     </section>
   )}
