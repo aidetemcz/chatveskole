@@ -13,6 +13,10 @@ odkazy:
 
 # Kontakt
 
+Máte dotaz k webu, našli jste chybu v textu, nebo chcete navrhnout dovednost či prompt? Napište nám. Ozvat se můžete i tehdy, když hledáte vzdělávací akci pro svou sborovnu nebo máte zájem o spolupráci.
+
+Web připravuje Eva Nečasová z neziskové organizace [AI dětem](https://aidetem.cz). Napište jí na [eva@aidetem.cz](mailto:eva@aidetem.cz).
+
 ## Web a obsah
 
 Našli jste chybu, zastaralou informaci nebo nefunkční odkaz? Máte nápad, co na webu chybí? Napište Evě Nečasové na [eva@aidetem.cz](mailto:eva@aidetem.cz), nebo obecně na [cau@aidetem.cz](mailto:cau@aidetem.cz).
