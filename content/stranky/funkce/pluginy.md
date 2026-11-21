@@ -65,23 +65,6 @@ Všechny tři cesty vedou ke stejnému cíli. Liší se tím, kolik práce vám 
 
 **Co použít místo pluginu:** nainstalujte jednotlivé [dovednosti](/funkce/skills).
 
-## Máte vlastní GPT?
-
-**GPTs přestanou fungovat 11. 12. 2026.**
-
-V ChatGPT ho převedete na plugin jedním tlačítkem: v *My GPTs* zvolte **Migrate to plugin**. Nový plugin je soukromý a původní GPT zůstane jen pro čtení.
-
-### Přenese se
-
-- pokyny (změní se na dovednost)
-- soubory (změní se na podklady)
-
-### Nepřenese se
-
-- výběr modelu
-- vlastní akce
-- sdílení
-
 ## Sady dovedností od AI dětem
 
 Naše dovednosti jsou rozdělené do pěti sad. Každou sadu si můžete nainstalovat jako plugin, nebo z ní vybrat jednotlivé dovednosti.

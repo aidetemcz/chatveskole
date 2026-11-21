@@ -12,6 +12,8 @@ zdroje:
   - https://support.claude.com/en/articles/12512180-use-skills-in-claude
   - https://support.google.com/gemini/answer/17094296
   - https://support.google.com/gemini/answer/18560919
+  - https://workspaceupdates.googleblog.com/2026/11/share-skills-add-files-from-Drive-Notebook-Photos-to-skills-Gemini-app.html
+  - https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/turn-skill-sharing-on-or-off
   - https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-customize
   - https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-add-skills
   - https://help.openai.com/en/articles/20001066-skills-in-chatgpt
@@ -87,71 +89,20 @@ Agenta vytvoříte i v bezplatném Copilot Chatu se školním nebo pracovním ú
 
 Samotné dovednosti má jen placená licence Microsoft 365 Copilot: v Copilot Cowork přes **Customize → Skills → Add → Upload skill** (soubor `.md` do 1 MB nebo ZIP do 10 MB), v Agent Builderu nejvýš 8 dovedností na agenta.
 
-## Máte vlastní Gem?
-
-**Na osobních účtech Gems zmizí 17. 12. 2026.**
-
-V Gemini se Gems převádějí na dovednosti samy. Stačí je zkontrolovat a zapnout.
-
-### Osobní účty
-
-- od 17. 11. 2026 se Gems samy převedou na dovednosti
-- původní Gems zůstanou jen pro čtení
-- 17. 12. 2026 zmizí
-
-### Školy a firmy
-
-- z Gems vzniknou neaktivní koncepty dovedností
-- autor je musí zkontrolovat a zapnout
-- ve školách nejdříve od 1. 6. 2027
-
 ## Jak napsat vlastní dovednost
 
-Dovednost nemusíte psát od nuly. Nechte ji vytvořit chatbota a výsledek pak upravte podle čtyř kroků níže.
+Dovednost nemusíte psát od nuly. Nechte ji vytvořit chatbota a výsledek pak upravte.
 
 - **Z promptu** — Vezměte prompt, který se vám osvědčil, a napište „Udělej z tohoto promptu dovednost (skill) ve formátu SKILL.md“.
 - **Z popisu** — Popište chatbotovi, co má dovednost dělat, a požádejte ho, ať ji vytvoří. ChatGPT i Claude k tomu mají vestavěného pomocníka (Skill Creator).
 - **Z konverzace** — Když se vám nějaká konverzace povede, požádejte chatbota, ať z ní vytvoří dovednost.
-
-### Popis rozhoduje
-
-Chatbot čte nejdřív jen název a popis. Popis proto musí říct, co dovednost dělá a kdy ji použít.
-
-> Pomáhá vyučujícím na ZŠ formulovat vzdělávací cíle podle RVP. Použij, když vyučující chce napsat nebo zkontrolovat cíl hodiny.
-
-### Postup krok za krokem
-
-Na co se zeptat (nikdy na jména žáků), v jakém pořadí postupovat, jak má vypadat výstup a jakým tónem komunikovat.
-
-Pokud má rozhovor pevnou posloupnost, napište ji jako číslovaný seznam.
-
-> Například: 1) Zeptej se na ročník a předmět. 2) Počkej na odpověď. 3) Navrhni tři varianty cíle.
-
-### Podklady
-
-Do složky `references` patří to, z čeho má dovednost čerpat: hodnoticí škály, ŠVP, modelové příklady, seznamy pojmů.
-
-- **Nahrávejte jen to, co smíte** — žádné osobní údaje, žádné materiály, u kterých to zakazují autorská práva.
-- **Volte jednoduché formáty** — text jako `.txt` nebo `.md` (Markdown), tabulky jako `.csv`. PDF nechte chatbota převést na Markdown.
-- **Dlouhé dokumenty rozdělte** — nechte chatbota rozdělit je na menší soubory, třeba po kapitolách, a v postupu napište, kdy který použít.
-
-### Testování
-
-Vyzkoušejte dovednost na několika skutečných situacích a nechte ji otestovat i kolegy.
-
-- Reaguje správně na zadání?
-- Jsou odpovědi věcně správné a srozumitelné?
-- Drží se postupu?
-- Co udělá, když uživatel zadá něco mimo téma?
-
-Jako podklad poslouží [pracovní list pro testování AI asistentů](https://kurikulum.aidetem.cz/metodiky/digikomp/Digitalni-kompetence-AI_skolni-hackaton_AI-asistenti_pracovni-list-01.pdf) z AI kurikula.
 
 ## Jak dovednost sdílet
 
 Dovednosti zatím nejdou sdílet veřejným odkazem tak jako GPTs. Nejjednodušší je zveřejnit dovednost jako soubor ke stažení, přesně tak to děláme na tomto webu.
 
 - **Claude** — ZIP pošlete kolegům. V týmových tarifech můžete dovednost sdílet uvnitř organizace.
-- **Gemini** — V Google Workspace můžete dovednost sdílet odkazem, příjemce dostane kopii. Sdílení mimo školu musí povolit správce. Osobní účty sdílení teprve dostanou.
+- **Gemini** — Dovednost sdílíte z webové verze Gemini na stránce Dovednosti, konkrétním lidem pro čtení nebo úpravy. Sdílení postupně dostávají školní i osobní účty. Ve škole ho může správce vypnout a sdílení mimo školu se řídí nastavením Disku Google.
 - **Copilot** — Dovednost sdílíte jen uvnitř své organizace.
 - **ChatGPT** — Dovednost sdílíte uvnitř pracovního prostoru (Business, Enterprise, Edu).
 

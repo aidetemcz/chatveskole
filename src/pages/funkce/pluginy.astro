@@ -50,11 +50,6 @@ const nastroje = bloky(htmlOddilu(vNastrojich)).map((b, i) => {
 });
 
 // Vlastní GPT: termín (odstavec jen s tučným textem), text, dva seznamy
-const gpt = najdi(/vlastní GPT/i);
-const gptHtml = htmlOddilu(gpt);
-const gptTermin = gptHtml.match(/<p>\s*<strong>([^<]*)<\/strong>\s*<\/p>/);
-const gptText = uvodOddilu(gptHtml).replace(gptTermin?.[0] ?? '', '');
-const gptSloupce = bloky(gptHtml).map((b) => ({ nazev: b.nazev, body: body(b.html) }));
 
 // Sady
 const sadyOddil = najdi(/^Sady/i);
@@ -147,28 +142,6 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
               )}
             </div>
           ))}
-        </div>
-      </div>
-    </section>
-  )}
-
-  {gpt && (
-    <section class="band band--white band--navazuje" aria-labelledby={gpt.id || undefined}>
-      <div class="wrap">
-        <div class="gpt">
-          <div class="stack" style="gap: 14px">
-            {gptTermin && <span class="termin">{gptTermin[1].replace(/\.$/, '')}</span>}
-            <h2 id={gpt.id || undefined}>{gpt.nadpis}</h2>
-            <div class="prose" set:html={gptText} />
-          </div>
-          <div class="gpt-sloupce">
-            {gptSloupce.map((s) => (
-              <div class="gpt-sloupec">
-                <strong>{s.nazev}</strong>
-                <ul>{s.body.map((b) => <li set:html={b} />)}</ul>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
@@ -272,14 +245,6 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .podminky { display: flex; flex-direction: column; gap: 10px; background: #f6fafc; border-radius: 10px; padding: 22px 24px; align-self: start; }
   .podminky p { margin: 0; }
 
-  .band--navazuje { padding-top: 0; }
-  .gpt { background: var(--accent-soft); border-radius: 12px; padding: 36px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 32px; align-items: start; }
-  .termin { align-self: flex-start; font-size: 0.8rem; font-weight: 600; padding: 3px 10px; border-radius: var(--pill); background: var(--panel); color: var(--accent-strong); }
-  .gpt h2 { font-size: clamp(1.5rem, 2.6vw, 1.9rem); }
-  .gpt-sloupce { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; }
-  .gpt-sloupec { background: var(--panel); border-radius: 9px; padding: 18px 20px; display: flex; flex-direction: column; gap: 8px; }
-  .gpt-sloupec ul { margin: 0; padding-left: 18px; font-size: 0.95rem; line-height: 1.55; }
-  @media (max-width: 640px) { .gpt { padding: 26px 22px; } }
 
   .sady { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 22px; }
   .sada-hlava { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
