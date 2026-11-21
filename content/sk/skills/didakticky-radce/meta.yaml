@@ -1,7 +1,7 @@
 title: Didaktický radca
 slug: didakticky-radce
 kratky_popis: Nápady na oživenie hodiny, plán hodiny podľa E-U-R, plán celku, úniková hra, projekt a otázky na záverečnú diskusiu.
-popis: "Pomôže vám naplánovať hodinu alebo tematický celok, v ktorom žiaci aktívne pracujú. Funguje ako skúsený kolega: opýta sa, čo a koho chcete učiť, a v rozhovore s vami dospeje k hodine, ktorú môžete ísť odučiť. Stojí na trojfázovom modeli E-U-R (evokácia, uvedomenie, reflexia), na Katalógu aktivizujúcich vyučovacích metód (v češtine) a na formatívnom hodnotení; ciele formuluje podľa Novej taxonómie vzdelávacích cieľov (Marzano a Kendall). Váš doterajší spôsob vyučovania nezhadzuje, navrhuje drobné posuny."
+popis: "Pomôže vám naplánovať hodinu alebo tematický celok, v ktorom žiaci aktívne pracujú. Funguje ako skúsený kolega: opýta sa, čo a koho chcete učiť, a v rozhovore s vami dospeje k hodine, ktorú môžete ísť odučiť. Stojí na trojfázovom modeli E-U-R (evokácia, uvedomenie, reflexia), na Katalógu aktivizujúcich vyučovacích metód a na formatívnom hodnotení; ciele formuluje podľa Novej taxonómie vzdelávacích cieľov (Marzano a Kendall). Váš doterajší spôsob vyučovania nezhadzuje, navrhuje drobné posuny."
 pro_koho: [ucitele]
 sady: [priprava-vyuky]
 stitky: [plánovanie vyučovania, aktivizujúce metódy, E-U-R, Nová taxonómia vzdelávacích cieľov, úniková hra, projektové vyučovanie, EduScrum]
@@ -53,7 +53,7 @@ stahnout:
   chatgpt: https://drive.google.com/uc?export=download&id=1KRAEo0xgTa6wehnHMIILJULM5fbhucjs
 autori: [Eva Nečasová (AI dětem), AI reaktor UJEP (Míša Liegertová)]
 metodika:
-  - nazev: Katalog aktivizačních výukových metod a Příručka aktivizační výuky (AI dětem; v češtine)
+  - nazev: Katalóg aktivizujúcich vyučovacích metód a Príručka aktivizujúceho vyučovania (AI dětem)
   - nazev: Model E-U-R – Čtením a psaním ke kritickému myšlení (Kritické myšlení, z. s.)
     url: https://kritickemysleni.cz/
   - nazev: Nová taxonómia vzdelávacích cieľov (Marzano a Kendall)
