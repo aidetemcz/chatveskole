@@ -5,7 +5,7 @@ import Icon from '../../components/Icon.astro';
 import { url } from '../../lib/url';
 import { skills, sadaBySlug, datumCesky, type Skill } from '../../lib/data';
 import { NASTROJE } from '../../lib/instalace';
-import { t, tf } from '../../lib/jazyk';
+import { t, tf, SK } from '../../lib/jazyk';
 import OdkazyKonec from '../../components/OdkazyKonec.astro';
 import QRCode from 'qrcode';
 
@@ -14,7 +14,8 @@ export function getStaticPaths() {
 }
 const { skill } = Astro.props as { skill: Skill };
 // ZIPy pro jednotlivé chatboty jsou na Google Disku (meta.yaml → stahnout)
-const zipFor = (z: string | null) => (z ? skill.stahnout?.[z as 'claude' | 'gemini' | 'chatgpt'] : undefined);
+// Slovenská verze: ZIPy ze slovenského obsahu přímo z webu (/sk/download/skills/), na Google Disku jsou jen české
+const zipFor = (z: string | null) => (z ? (SK ? url(`/download/skills/${skill.slug}.zip`) : skill.stahnout?.[z as 'claude' | 'gemini' | 'chatgpt']) : undefined);
 // podobné dovednosti: nejdřív ze stejné sady, pak pro stejnou cílovou skupinu
 const ostatni = skills.filter((s) => s.slug !== skill.slug);
 const skore = (s: Skill) => s.sady.filter((x) => skill.sady.includes(x)).length * 10 + s.pro_koho.filter((x) => skill.pro_koho.includes(x)).length;
