@@ -85,6 +85,6 @@ Chatbot od Anthropicu, silný v psaní, práci s dokumenty a programování. I v
 - **[Perplexity](https://www.perplexity.ai)** — vyhledávač, který odpovídá s odkazy na zdroje. Hodí se na rešerše. Od 13 let, nezletilí jen se souhlasem rodiče.
 - **[Gemini Notebook](https://notebooklm.google.com)** (dříve NotebookLM) — odpovídá jen z podkladů, které nahrajete. Umí z nich udělat shrnutí, kvíz nebo podcast.
 - **[Tiny](/ve-vyuce/tiny)** — chatboti pro žáky od AI dětem: vedou otázkami, vyučující vidí konverzace, data zůstávají v EU.
-- Nástroje pro tvorbu aplikací najdete v sekci [Vibe coding](/vibe-coding/nastroje).
+- Nástroje pro tvorbu aplikací najdete v sekci [Vibe Coding](/vibe-coding/nastroje).
 
 [Kolik stojí chatboti →](/zaciname/kolik-stoji-chatboti)

@@ -43,6 +43,6 @@ Konektor dává chatbotu přístup ke všemu, co vidíte vy. V e-mailu a na Disk
 
 ## Pro pokročilé: MCP
 
-Konektory většinou stojí na otevřeném standardu MCP (Model Context Protocol). Díky němu může škola nebo vývojář napojit chatbota i na vlastní systém, například školní informační systém. To už je ale práce pro správce IT — víc v sekci [Vibe coding pro pokročilé](/vibe-coding/pro-pokrocile).
+Konektory většinou stojí na otevřeném standardu MCP (Model Context Protocol). Díky němu může škola nebo vývojář napojit chatbota i na vlastní systém, například školní informační systém. To už je ale práce pro správce IT — víc v sekci [Vibe Coding pro pokročilé](/vibe-coding/pro-pokrocile).
 
 [Zpět na Změny ve funkcích 2026](/funkce/zmeny-2026)

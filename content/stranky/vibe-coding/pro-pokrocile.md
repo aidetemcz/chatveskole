@@ -1,5 +1,5 @@
 ---
-title: Vibe coding pro pokročilé
+title: Vibe Coding pro pokročilé
 menu: Vibe Coding
 poradi: 5
 popis: Claude Code, Codex, Antigravity a Cursor, GitHub, Vercel a Supabase, instrukce pro agenta v CLAUDE.md a bezpečnost. Jak stavíme web Chatboti ve škole.
@@ -13,7 +13,7 @@ zdroje:
 stav: koncept
 ---
 
-# Vibe coding pro pokročilé
+# Vibe Coding pro pokročilé
 
 Když vám přestane stačit aplikace v okně chatbota — chcete web s více stránkami, vlastní doménu, data ze souborů nebo spolupráci v týmu — je čas na **programovací agenty**. Pracují přímo se soubory vašeho projektu, spouštějí ho, testují a opravují.
 
