@@ -18,8 +18,8 @@ const VOLANI = /\btf?\(\s*(['"`])((?:\\.|(?!\1)[^\\])*)\1/g;
     }
   }
 })('src');
-// klíče předávané do t() proměnnou (měsíce v src/components/data/CasovaOsa.astro)
-for (const m of ['leden', 'únor', 'březen', 'duben', 'květen', 'červen', 'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec']) klice.add(m);
+// klíče předávané do t() proměnnou: měsíce (src/components/data/CasovaOsa.astro), kategorie promptů a způsoby využití AI (hodnoty z content/prompty)
+for (const m of ['Tvorba materiálů do výuky', 'Aktualizace materiálů', 'Komunikace s rodiči', 'Tvorba strategických dokumentů', 'Podpora formativního přístupu', 'Práce žáků s chatbotem', 'Ostatní', 'Opakování', 'Společné objevování', 'Vysvětlování', 'Rozhovor v roli', 'Co kdyby', 'Argumentace', 'Hledání chyb', 'Brainstorming', 'Plánování a struktura', 'Zpětná vazba', 'leden', 'únor', 'březen', 'duben', 'květen', 'červen', 'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec']) klice.add(m);
 const sk = JSON.parse(fs.readFileSync('src/i18n/sk.json', 'utf8'));
 const chybi = [...klice].filter((k) => !(k in sk)).sort();
 const navic = Object.keys(sk).filter((k) => !klice.has(k));
