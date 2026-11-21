@@ -3,7 +3,7 @@
 // Zobrazí se jednou; po zavření se do localStorage uloží příznak (žádné cookies). Bez JavaScriptu se nezobrazí.
 import { url } from '../lib/url';
 ---
-<dialog class="novy-web" id="novy-web" aria-labelledby="novy-web-h" data-pagefind-ignore style={`background-image: url(${url('/img/novy-web-modal.jpg')})`}>
+<dialog class="novy-web" id="novy-web" tabindex="-1" aria-labelledby="novy-web-h" data-pagefind-ignore style={`background-image: url(${url('/img/novy-web-modal.jpg')})`}>
   <div class="novy-web-obsah">
     <h2 id="novy-web-h">Web má novou podobu</h2>
     <p>Chatboti ve škole jsme obsahově i vizuálně proměnili. Některé stránky najdete jinde než dřív.</p>
@@ -22,6 +22,8 @@ import { url } from '../lib/url';
   const uloz = () => { try { localStorage.setItem(KLIC, '1'); } catch { /* úložiště nedostupné */ } };
   if (dialog && !videno && typeof dialog.showModal === 'function') {
     dialog.showModal();
+    // fokus na okno, ne na první tlačítko (jinak by tlačítko mělo hned rámeček zaměření)
+    dialog.focus();
     dialog.addEventListener('close', uloz);
     dialog.querySelectorAll('[data-zavrit]').forEach((el) => el.addEventListener('click', () => { uloz(); dialog.close(); }));
     // klik mimo okno zavře
@@ -40,8 +42,9 @@ import { url } from '../lib/url';
     box-shadow: 0 24px 60px rgba(28, 37, 48, 0.35);
     overflow: hidden;
   }
+  .novy-web:focus { outline: none; }
   .novy-web::backdrop { background: rgba(28, 37, 48, 0.55); }
-  .novy-web-obsah { padding: 40px 40px 0; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; max-width: 560px; margin: 0 auto; }
+  .novy-web-obsah { padding: 64px 40px 0; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; max-width: 560px; margin: 0 auto; }
   .novy-web h2 { margin: 0; font-size: clamp(1.4rem, 3.6vw, 1.9rem); line-height: 1.2; color: var(--ink); }
   .novy-web p { margin: 0; font-size: clamp(0.88rem, 2.2vw, 1rem); line-height: 1.5; color: var(--ink); }
   .novy-web-tlacitka { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 10px; }
@@ -49,6 +52,6 @@ import { url } from '../lib/url';
   .novy-web-odkaz { background: #fff; }
   @media (max-width: 520px) {
     .novy-web { aspect-ratio: auto; background-position: center bottom; background-size: 100% auto; padding-bottom: 58%; }
-    .novy-web-obsah { padding: 22px 20px 0; }
+    .novy-web-obsah { padding: 40px 20px 0; }
   }
 </style>
