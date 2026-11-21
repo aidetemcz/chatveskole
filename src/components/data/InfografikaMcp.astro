@@ -1,12 +1,13 @@
 ---
 // Infografika „Co je MCP server“ pro stránku Konektory (značka <!-- komponenta: infografika MCP -->).
+// Část „A co je konektor?“ je od 21. 11. 2026 samostatně v InfografikaKonektor.astro (pod perexem).
 // Předloha: artifact Evy Nečasové https://claude.ai/artifact/8mP7UNk7fi3XJd9VEbUGpP (11. 11. 2026),
 // převedená do schváleného designu: jahodová + nebeská, Space Grotesk / Inter, rámečky místo stínů, jen světlé plochy.
 ---
 <section class="mcp" aria-labelledby="mcp-nadpis">
   <header class="mcp-hlava">
     <p class="mcp-eyebrow">MCP = Model Context Protocol</p>
-    <h2 id="mcp-nadpis">Co je <span class="mcp-zvyrazneni">MCP&nbsp;server</span>?</h2>
+    <h3 id="mcp-nadpis" class="mcp-titulek">Co je <span class="mcp-zvyrazneni">MCP&nbsp;server</span>?</h3>
     <p class="mcp-lede">Adaptér, přes který může AI používat vaše aplikace a&nbsp;data.</p>
   </header>
 
@@ -89,54 +90,16 @@
     </ol>
   </div>
 
-  <div class="konektor">
-    <h3>A co je konektor?</h3>
-    <p class="mcp-lede">Hotové propojení přímo v aplikaci AI. Uvnitř je MCP server, vy jen kliknete a přihlásíte se.</p>
-
-    <p class="rovnice" role="img" aria-label="Konektor se rovná MCP server plus vaše přihlášení">
-      <span class="cip cip-konektor" aria-hidden="true">Konektor</span>
-      <span class="op" aria-hidden="true">=</span>
-      <span class="cip cip-mcp" aria-hidden="true">
-        <svg class="ikona" viewBox="0 0 48 48"><path d="M18 4v10M30 4v10"/><rect x="11" y="14" width="26" height="16" rx="4"/><path d="M24 30v6a6 6 0 0 1-6 6h-6"/></svg>
-        MCP server
-      </span>
-      <span class="op" aria-hidden="true">+</span>
-      <span class="cip cip-klic" aria-hidden="true">
-        <svg class="ikona" viewBox="0 0 48 48"><circle cx="14" cy="24" r="9"/><path d="M23 24h21M36 24v8M43 24v6"/></svg>
-        Vaše přihlášení
-      </span>
-    </p>
-
-    <div class="konektor-mrizka">
-      <div class="panel" role="img" aria-label="Ukázka nastavení: kalendář a e-mail připojené, disk vypnutý">
-        <div class="panel-hlava" aria-hidden="true"><span>Nastavení › Konektory</span><span>ukázka</span></div>
-        <ul class="radky" aria-hidden="true">
-          <li><span class="nazev">Kalendář</span><span class="stav">připojeno</span><span class="prepinac zap"></span></li>
-          <li><span class="nazev">E-mail</span><span class="stav">připojeno</span><span class="prepinac zap"></span></li>
-          <li><span class="nazev">Disk s dokumenty</span><span class="stav">vypnuto</span><span class="prepinac"></span></li>
-        </ul>
-      </div>
-
-      <ol class="nastaveni">
-        <li><span class="cislo cislo-bila">1</span><p>V aplikaci AI otevřete <strong>Nastavení › Konektory</strong>.</p></li>
-        <li><span class="cislo cislo-bila">2</span><p>Vyberete aplikaci, kterou chcete připojit, třeba <strong>kalendář</strong>.</p></li>
-        <li><span class="cislo cislo-bila">3</span><p><strong>Přihlásíte se</strong> svým účtem a povolíte, co AI smí: jen číst, nebo i měnit.</p></li>
-        <li class="hotovo"><p>Hotovo. Když AI bude potřebovat kalendář, použije sama jeho MCP server.</p></li>
-      </ol>
-    </div>
-  </div>
-
-  <p class="poznamka"><strong>Důležité:</strong> Vy rozhodujete, které aplikace k&nbsp;AI připojíte a&nbsp;co v&nbsp;nich smí dělat.</p>
 </section>
 
 <style>
-  .mcp { display: grid; gap: 32px; margin: 40px 0 48px; padding: 32px; border: 1px solid var(--sky); border-radius: var(--radius-lg); background: var(--bg); }
+  .mcp { display: grid; gap: 32px; margin: 32px 0 8px; padding: 32px; border: 1px solid var(--sky); border-radius: var(--radius-lg); background: var(--bg); }
   .mcp-hlava { display: grid; gap: 8px; }
   .mcp-eyebrow { font-size: 0.74rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sky-ink); }
-  .mcp h2 { font-size: clamp(1.9rem, 4vw, 2.6rem); font-weight: 700; line-height: 1.05; margin: 0; }
+  .mcp .mcp-titulek { font-size: clamp(1.5rem, 3vw, 1.9rem); font-weight: 700; line-height: 1.15; margin: 0; }
   .mcp-zvyrazneni { background: var(--accent-soft); color: var(--accent-strong); padding: 0 0.15em; border-radius: 0.075em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
   .mcp-lede { font-size: 1.1rem; color: var(--muted); max-width: 52ch; }
-  .mcp h3 { font-size: 1.3rem; font-weight: 700; margin: 0; }
+  .mcp h3:not(.mcp-titulek) { font-size: 1.2rem; font-weight: 700; margin: 0; }
   .mcp p { margin: 0; }
   .mcp strong { font-weight: 600; }
 
@@ -183,38 +146,6 @@
   .cislo-nebe { background: var(--sky-light); color: var(--sky-ink); }
   .cislo-jahoda { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
 
-  /* konektor */
-  .konektor { display: grid; gap: 18px; border-top: 1px solid var(--line); padding-top: 32px; }
-  .konektor h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
-  .rovnice { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
-  .cip { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--sky); border-radius: var(--radius); padding: 8px 16px; font-family: var(--fh); font-weight: 700; font-size: clamp(1.1rem, 2.4vw, 1.5rem); line-height: 1.1; background: var(--bg); }
-  .cip .ikona { width: 30px; color: var(--sky-deep); }
-  .cip-konektor { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
-  .cip-mcp { background: var(--accent-soft); border-color: var(--accent); }
-  .cip-mcp .ikona { color: var(--accent); }
-  .op { font-family: var(--fh); font-weight: 700; font-size: 1.8rem; line-height: 1; color: var(--muted); }
-
-  .konektor-mrizka { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 24px; align-items: start; }
-  .panel { border: 1px solid var(--sky); border-radius: var(--radius-lg); overflow: hidden; background: var(--panel); }
-  .panel-hlava { background: var(--sky-light); padding: 10px 16px; font-weight: 600; font-size: 0.9rem; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-  .panel-hlava span:last-child { color: var(--sky-ink); font-weight: 500; }
-  .radky { list-style: none; margin: 0; padding: 0; }
-  .radky li { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-top: 1px solid var(--line); }
-  .radky li:first-child { border-top: 0; }
-  .nazev { font-weight: 600; flex: 1; min-width: 0; }
-  .stav { font-size: 0.82rem; color: var(--muted); }
-  .prepinac { flex: none; position: relative; width: 40px; height: 22px; border-radius: var(--pill); background: var(--line); border: 1px solid var(--sky); }
-  .prepinac::after { content: ""; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%; background: var(--bg); border: 1px solid var(--sky); }
-  .prepinac.zap { background: var(--accent); border-color: var(--accent); }
-  .prepinac.zap::after { left: auto; right: 2px; border-color: var(--accent); }
-  .nastaveni { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
-  .nastaveni li { display: flex; align-items: flex-start; gap: 12px; }
-  .nastaveni p { padding-top: 6px; }
-  .nastaveni .hotovo p { padding: 12px 16px; background: var(--sky-light); border-radius: var(--radius); font-weight: 600; }
-
-  .poznamka { font-size: 1.05rem; padding: 14px 18px; background: var(--accent-soft); border-radius: var(--radius); }
-  .poznamka strong { color: var(--accent-strong); }
-
   @media (max-width: 1000px) {
     .kroky { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
@@ -224,7 +155,6 @@
     .spoj { flex-direction: row; gap: 4px 10px; padding-block: 2px; }
     .sipka { width: 52px; transform: rotate(90deg); }
     .sipka.zpet { transform: rotate(-90deg); }
-    .konektor-mrizka { grid-template-columns: minmax(0, 1fr); }
   }
   @media (max-width: 520px) {
     .kroky { grid-template-columns: minmax(0, 1fr); }
