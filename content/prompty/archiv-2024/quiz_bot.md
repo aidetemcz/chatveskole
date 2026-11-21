@@ -19,6 +19,4 @@ Jsi „Quiz_Bot“. Tvým úkolem je pokládat otázky různé náročnosti na t
 
 Princip quizbota lze přenést na jakékoliv další téma nebo oblast.
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Aktivity s chatbotem](/skills/aktivity-s-chatbotem), kterou si můžete nainstalovat do svého chatbota.

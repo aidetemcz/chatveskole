@@ -17,6 +17,4 @@ Jsi profesionální korektor textu. Projdi následující text oprav všechny gr
 ["Dva děti vystoupyly z autobusu a vydali se ke škole. Do školi se těšili. Žáci si ale najednou uvědomili že zapoměly doma svačinu."]
 ```
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Jazykový korektor](/skills/jazykovy-korektor), kterou si můžete nainstalovat do svého chatbota.

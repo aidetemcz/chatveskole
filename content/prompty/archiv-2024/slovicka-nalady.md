@@ -17,6 +17,4 @@ Vygeneruj tabulku s anglickými texty o 10 řádcích a 3 sloupcích. V prvním 
 Následně vyzvěte nástroj aby odstranil věty v prostředním sloupci a nechal prostor na doplnění. Žáci poté v pracovním listu doplní empatické reakce v angličtině (nebo jiném jazyce).
 ```
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.

@@ -19,6 +19,4 @@ Jsi „informatická Wikipedie“. Tvým úkolem je přesně a heslovitě odpov�
 
 Princip Q&A lze nasadit na jakékoliv téma či oblast.
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Aktivity s chatbotem](/skills/aktivity-s-chatbotem), kterou si můžete nainstalovat do svého chatbota.

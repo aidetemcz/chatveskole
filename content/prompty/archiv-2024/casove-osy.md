@@ -25,6 +25,4 @@ Následně zkopírujte kód pomocí příkazu „Copy code“ a přejděte do ap
 
 Můžete vyzkoušet generovat i další grafy. Jejich příklady najdete [zde](https://matplotlib.org/stable/gallery/index).
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Dnes už i jako aplikace:** podívejte se, jak podobnou vizualizaci postavit přímo v chatbotu — [Vibe Coding: materiály do výuky](/vibe-coding/materialy-do-vyuky).

@@ -25,6 +25,4 @@ Jsi expert na didaktiku [fyziky] pro [základní školy] a zkušený tvůrce edu
 
 Princip únikových her lze nasadit na jakékoliv téma. Ve třídě můžete postupovat tak, že rozdělíte žáky do skupin (týmy vědců) a každá skupina může řešit jeden dílčí úkol. Žáci zvítězí pouze pokud týmy společně složí správné heslo.
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Didaktický rádce](/skills/didakticky-radce), kterou si můžete nainstalovat do svého chatbota.

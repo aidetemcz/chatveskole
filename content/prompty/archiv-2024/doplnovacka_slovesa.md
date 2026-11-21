@@ -25,6 +25,4 @@ Vytvoř jednoduché cvičení na vyplnění mezer (doplňovačku) pro procvičov
 
 Jednoduchý a univerzální prompt pro vytváření pracovních listů.
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.

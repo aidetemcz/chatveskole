@@ -21,6 +21,4 @@ Vložte prompt do jazykového modelu.
 
 Roblox je multiplayerová free-to-play online platforma umožňující hráčům vytvářet vlastní hry a sdílet je s ostatními. K tomu využívá engine Roblox Studio. Hry jsou kódovány v programovacím jazyce Lua. Doporučujeme pro výuku programování na školách. Více na [roblox.com/create](https://www.roblox.com/create).
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Pracovní listy](/skills/pracovni-listy), kterou si můžete nainstalovat do svého chatbota.

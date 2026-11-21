@@ -21,6 +21,4 @@ Prompt lze upravit i pro jiná témata/předměty. Ještě lepších výsledků 
 
 Vložte prompt do jazykového modelu.
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Didaktický rádce](/skills/didakticky-radce), kterou si můžete nainstalovat do svého chatbota.

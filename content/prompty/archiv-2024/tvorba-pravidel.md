@@ -19,6 +19,4 @@ Jsi expert na bezpečnost na internetu. Znáš nejčastější chyby, které dě
 
 Lze aplikovat na mnoho témat a oblastí.
 
-> Starší prompt z roku 2024. Chatboti od té doby umí mnohem víc — výsledek bude jiný než na původních ukázkách.
-
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Školní pravidla](/skills/skolni-pravidla), kterou si můžete nainstalovat do svého chatbota.
