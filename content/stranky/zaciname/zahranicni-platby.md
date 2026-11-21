@@ -9,15 +9,13 @@ stav: ke-kontrole   # obsah převzatý z roku 2024 — před zveřejněním nech
 ---
 # Jak platit za chatboty, pokud nejste plátci DPH
 
-Stránka je pro školy, spolky a podnikatele, kteří **kupují službu pro svou činnost** (ne pro sebe jako soukromá osoba) a nejsou v Česku plátci DPH.
-
-**Plátce DPH jen pro obchody se zahraničím** — Když kupujete službu od zahraniční firmy (ChatGPT, Claude, Gemini, Canva…), musíte se registrovat jako **identifikovaná osoba**. V Česku zůstáváte neplátcem.
+Pokud nejste plátci DPH a chcete jako instituce (nikoliv soukromá osoba) kupovat služby od zahraničních společností, které poskytují chatovací aplikace (OpenAI, Google, Canva, Anthropic…), je třeba se zaregistrovat jako tzv. **identifikovaná osoba**. Jako identifikovaná osoba:
 
 - **Dostanete DIČ** — Zadáváte ho při nákupu.
-- **Daň odvádíte** — Vykazujete ji a platíte finančnímu úřadu.
+- **Odvádíte daň** — Vykazujete ji a platíte finančnímu úřadu.
 - **Bez odpočtu** — Nárok na odpočet DPH nemáte.
 
-## Kdy se musíte registrovat
+## Kdy je třeba se registrovat
 
 Identifikovanou osobou se musíte stát, když nastane alespoň jedna z těchto situací.
 

@@ -32,7 +32,6 @@ const jeBox = (x: Box | null): x is Box => !!x;
 const uvodHtml = uvod.map((c) => (c.typ === 'html' ? c.html : '')).join('');
 const uvodBezSeznamu = uvodHtml.replace(/<ul>[\s\S]*?<\/ul>/g, '');
 const perex = odstavce(uvodBezSeznamu).filter((p) => !box(p)).map((p) => `<p>${p}</p>`).join('');
-const vysvetleni = odstavce(uvodBezSeznamu).map(box).find(jeBox);
 const dlazdice = polozky(uvodHtml.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').map(box).filter(jeBox);
 
 // kdy se registrovat
@@ -69,26 +68,17 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
         </div>
         <h1>{nadpis}</h1>
         <div class="lede perex" set:html={perex} />
-      </div>
-      {vysvetleni && (
-        <div class="card vysvetleni">
-          <div class="stack" style="gap: 10px">
-            <span class="nadtitulek">Co je identifikovaná osoba</span>
-            <h2 class="vysvetleni-nadpis">{vysvetleni.nadpis}</h2>
-            <p set:html={vysvetleni.text} />
+        {dlazdice.length > 0 && (
+          <div class="dlazdice">
+            {dlazdice.map((t, i) => (
+              <div class:list={['dlazdice-box', { 'dlazdice-box--pozor': i === dlazdice.length - 1 }]}>
+                <strong>{t.nadpis}</strong>
+                <span set:html={t.text} />
+              </div>
+            ))}
           </div>
-          {dlazdice.length > 0 && (
-            <div class="dlazdice">
-              {dlazdice.map((t, i) => (
-                <div class:list={['dlazdice-box', { 'dlazdice-box--pozor': i === dlazdice.length - 1 }]}>
-                  <strong>{t.nadpis}</strong>
-                  <span set:html={t.text} />
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
+        )}
+      </div>
     </div>
   </div>
 
@@ -100,9 +90,8 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
           {kdyUvod && <div class="prose" set:html={kdyUvod} />}
         </div>
         <div class="karty">
-          {situace.map((s, i) => (
+          {situace.map((s) => (
             <article class="card">
-              {i === 0 && <span class="stitek stitek--cerveny">Týká se chatbotů</span>}
               <h3>{s.nadpis}</h3>
               <p set:html={s.text} />
             </article>
@@ -161,10 +150,8 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .stitek { align-self: flex-start; font-family: var(--fb); font-size: 0.8rem; font-weight: 600; padding: 3px 11px; border-radius: var(--pill); background: var(--sky-light); color: var(--sky-ink); }
   .stitek--cerveny { background: var(--accent-soft); color: #a83c3b; }
 
-  .vysvetleni { margin-top: 32px; border: 1px solid var(--sky); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 28px; align-items: start; }
-  .vysvetleni-nadpis { font-size: 1.5rem; line-height: 1.25; }
-  .dlazdice { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
-  .dlazdice-box { background: #f6fafc; border-radius: 9px; padding: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 0.93rem; }
+  .dlazdice { max-width: var(--dve-tretiny); display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+  .dlazdice-box { background: var(--sky-light); border-radius: 9px; padding: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 0.93rem; }
   .dlazdice-box strong { font-family: var(--fh); font-size: 1.1rem; font-weight: 600; }
   .dlazdice-box--pozor { background: var(--accent-soft); }
 
