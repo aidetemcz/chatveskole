@@ -60,7 +60,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Jak poznáte, že se žák učí:** Zvládne obtížnější otázky než na začátku a dokáže říct, co si potřebuje zopakovat.
 - **Otázka k reflexi:** Na kterou otázku bych příště odpověděl bez nápovědy?
 - **Příklad:** Opakování slovních druhů před čtvrtletní prací.
-- **Kde to spustit:** V Tiny Opakovací parťák nebo Testovací chatbot, v běžném chatbotu prompt [Opakování](/funkce/prompty/zaci/opakovani).
+- **Kde to spustit:** V Tiny Opakovací parťák nebo [Testovací chatbot](https://www.tiny.school/testovaci-chatbot/), v běžném chatbotu prompt [Opakování](/funkce/prompty/zaci/opakovani).
 
 ### Společné objevování
 
@@ -73,7 +73,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Jak poznáte, že se žák učí:** Shrne nový poznatek vlastními slovy bez pomoci chatbota.
 - **Otázka k reflexi:** Na co jsem přišel sám a kde mě chatbot navedl?
 - **Příklad:** Proč se na Zemi střídají roční období.
-- **Kde to spustit:** V Tiny Společné objevování, v běžném chatbotu prompt [Společné objevování](/funkce/prompty/zaci/spolecne-objevovani).
+- **Kde to spustit:** V Tiny [Společné objevování](https://www.tiny.school/spolecne-objevovani/), v běžném chatbotu prompt [Společné objevování](/funkce/prompty/zaci/spolecne-objevovani).
 
 ### Vysvětlování
 
@@ -86,7 +86,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Jak poznáte, že se žák učí:** Jeho vysvětlení je věcně správné, srozumitelné a obstojí i při doplňujících otázkách.
 - **Otázka k reflexi:** Co se mi vysvětlovalo nejhůř a co to říká o tom, jak látce rozumím?
 - **Příklad:** Fotosyntéza vysvětlená někomu, kdo nikdy neviděl rostlinu.
-- **Kde to spustit:** V Tiny Zvědavý mimoň, v běžném chatbotu prompt [Vysvětlování](/funkce/prompty/zaci/vysvetlovani).
+- **Kde to spustit:** V Tiny [Zvědavý mimoň](https://www.tiny.school/zvedavy-mimon/), v běžném chatbotu prompt [Vysvětlování](/funkce/prompty/zaci/vysvetlovani).
 
 ## Žák zkoumá souvislosti
 
@@ -103,7 +103,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Jak poznáte, že se žák učí:** Klade promyšlené otázky a všimne si nepřesnosti nebo rozdílu oproti zdroji.
 - **Otázka k reflexi:** Čemu z rozhovoru věřím a podle čeho?
 - **Příklad:** Rozhovor s Marií Terezií o školní reformě nebo s kapkou vody o koloběhu vody.
-- **Kde to spustit:** V Tiny Historická postava / Expert a V hlavní roli…, v běžném chatbotu prompt [Rozhovor v roli](/funkce/prompty/zaci/rozhovor-v-roli).
+- **Kde to spustit:** V Tiny [Historická postava / Expert](https://www.tiny.school/historicka-postava-expert/) a V hlavní roli…, v běžném chatbotu prompt [Rozhovor v roli](/funkce/prompty/zaci/rozhovor-v-roli).
 
 ### Co kdyby
 
@@ -116,7 +116,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Jak poznáte, že se žák učí:** Jeho řetězec úvah je logický a opírá se o učivo.
 - **Otázka k reflexi:** Který z mých závěrů stojí na znalosti a který na odhadu?
 - **Příklad:** Co kdyby zemská osa nebyla nakloněná.
-- **Kde to spustit:** V Tiny Co kdyby…, v běžném chatbotu prompt [Co kdyby](/funkce/prompty/zaci/co-kdyby).
+- **Kde to spustit:** V Tiny [Co kdyby…](https://www.tiny.school/co-kdyby/), v běžném chatbotu prompt [Co kdyby](/funkce/prompty/zaci/co-kdyby).
 
 ## Žák posuzuje
 
@@ -133,7 +133,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Jak poznáte, že se žák učí:** Uvádí důkazy, vyrovná se s protiargumentem a pojmenuje nejslabší místo vlastní pozice.
 - **Otázka k reflexi:** Který protiargument mě přiměl názor změnit nebo zpřesnit?
 - **Příklad:** Mají být mobilní telefony o přestávkách zakázané?
-- **Kde to spustit:** V Tiny Argumentační partner, v běžném chatbotu prompt [Argumentace](/funkce/prompty/zaci/argumentace).
+- **Kde to spustit:** V Tiny [Argumentační partner](https://www.tiny.school/argumentacni-partner/), v běžném chatbotu prompt [Argumentace](/funkce/prompty/zaci/argumentace).
 
 ### Hledání chyb
 
@@ -146,7 +146,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Jak poznáte, že se žák učí:** Najde podstatné chyby a umí zdůvodnit, proč jde o chybu.
 - **Otázka k reflexi:** Kterou chybu jsem přehlédl a proč působila věrohodně?
 - **Příklad:** Odstavec o sluneční soustavě se třemi chybami.
-- **Kde to spustit:** V Tiny Chybující chatbot, v běžném chatbotu prompt [Hledání chyb](/funkce/prompty/zaci/hledani-chyb).
+- **Kde to spustit:** V Tiny [Chybující chatbot](https://www.tiny.school/chybujici-chatbot/), v běžném chatbotu prompt [Hledání chyb](/funkce/prompty/zaci/hledani-chyb).
 
 ## Žák tvoří
 
@@ -163,7 +163,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Jak poznáte, že se žák učí:** Má seznam nápadů před rozhovorem i po něm a svůj výběr zdůvodní.
 - **Otázka k reflexi:** Který nápad je můj a ke kterému bych se bez AI nedostal?
 - **Příklad:** Náměty na třídní projekt ke Dni Země.
-- **Kde to spustit:** V Tiny Parťák pro brainstorming, v běžném chatbotu prompt [Brainstorming](/funkce/prompty/zaci/brainstorming).
+- **Kde to spustit:** V Tiny [Parťák pro brainstorming](https://www.tiny.school/partak-pro-brainstorming/), v běžném chatbotu prompt [Brainstorming](/funkce/prompty/zaci/brainstorming).
 
 ### Plánování a struktura
 
@@ -176,7 +176,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 - **Jak poznáte, že se žák učí:** Předloží první návrh i konečnou verzi a vysvětlí, co změnil a proč.
 - **Otázka k reflexi:** Co jsem v plánu podcenil?
 - **Příklad:** Osnova referátu nebo harmonogram skupinového projektu.
-- **Kde to spustit:** V Tiny Chatbot pro plánování, v běžném chatbotu prompt [Plánování a struktura](/funkce/prompty/zaci/planovani-a-struktura).
+- **Kde to spustit:** V Tiny [Chatbot pro plánování](https://www.tiny.school/chatbot-pro-planovani/), v běžném chatbotu prompt [Plánování a struktura](/funkce/prompty/zaci/planovani-a-struktura).
 
 ### Zpětná vazba
 
