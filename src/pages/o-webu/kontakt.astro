@@ -55,16 +55,16 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
     </div>
   </div>
 
-  <section class="band band--sky" aria-label="Komu napsat">
+  <section class="band band--white navazuje" aria-label="Komu napsat">
     <div class="wrap">
-      <div class="karty">
+      <div class="oddily">
         {karty.map((k) => (
-          <div class:list={['card', { 'card--akce': k.akce }]} id={k.id || undefined}>
+          <div class="oddil" id={k.id || undefined}>
             <h2>{k.nadpis}</h2>
-            {k.text.map((p) => <p set:html={p} />)}
+            <div class="prose">{k.text.map((p) => <p set:html={p} />)}</div>
             {k.tlacitka.length > 0 && (
               <div class="tlacitka">
-                {k.tlacitka.map((a) => <Fragment set:html={naTlacitko(a, k.akce ? 'btn--primary' : 'btn--outline btn--bila')} />)}
+                {k.tlacitka.map((a) => <Fragment set:html={naTlacitko(a, k.akce ? 'btn--primary' : 'btn--outline')} />)}
               </div>
             )}
           </div>
@@ -73,7 +73,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
     </div>
   </section>
 
-  <section class="band band--white" aria-labelledby={spolek ? 'spolek-h' : undefined} aria-label={spolek ? undefined : 'Kam dál'}>
+  <section class="band band--sky" aria-labelledby={spolek ? 'spolek-h' : undefined} aria-label={spolek ? undefined : 'Kam dál'}>
     <div class="wrap dva-sloupce">
       {spolek && (
         <div class="stack" style="gap: 20px">
@@ -90,7 +90,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
       )}
       {odkazy.length > 0 && (
         <nav class="kam-dal" aria-label="Kam dál">
-          {odkazy.map((o, i) => <a class:list={['btn', i === 0 ? 'btn--primary' : 'btn--outline']} href={url(o.href)}>{o.text} →</a>)}
+          {odkazy.map((o, i) => <a class:list={['btn', i === 0 ? 'btn--primary' : 'btn--outline btn--bila']} href={url(o.href)}>{o.text} →</a>)}
         </nav>
       )}
     </div>
@@ -104,11 +104,12 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .dva-sloupce { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 48px; align-items: end; }
   h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
 
-  .karty { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 22px; }
-  .karty .card { scroll-margin-top: 100px; }
-  .karty .card h2 { font-size: 1.3rem; }
-  .karty .card p { font-size: 0.95rem; line-height: 1.6; color: var(--ink); }
-  .card--akce { background: var(--accent-soft); border-color: var(--accent-soft); }
+  .navazuje { padding-top: 0; }
+  .oddily { display: flex; flex-direction: column; gap: 40px; max-width: var(--dve-tretiny); }
+  .oddil { display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 100px; }
+  .oddil h2 { font-size: 1.4rem; }
+  .oddil .tlacitka { margin-top: 6px; padding-top: 0; }
+  .perex :global(p + p) { margin-top: 0.6em; }
 
   .tabulka { margin: 0; border: 1px solid var(--sky); border-radius: 9px; overflow: hidden; background: var(--panel); }
   .radek { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); }
