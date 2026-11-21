@@ -54,7 +54,7 @@ Pro žáky 2. stupně ZŠ nebo SŠ. Pracuje se lístečkovou metodou: brainstorm
 | Hlasování a ladění | 30 minut | Všechny návrhy vyvěste. Žáci dostanou 3 hlasovací body (samolepky nebo fixy) a vyberou pravidla, která považují za nejdůležitější a nejsmysluplnější. Společně doladíte finální znění, vyučující zapisuje čistou verzi na tabuli. |
 | Dohoda a závěr | 20 minut | Projděte znovu finální znění vybraných pravidel. Domluvte se, jak zajistíte, aby se pravidla dodržovala (připomenutí na začátku hodiny, plakát ve třídě), a jak je vyhodnotíte (například za měsíc si je znovu přečtete a zhodnotíte, co funguje). |
 
-## Návrh formulací pravidel
+### Návrh formulací pravidel
 
 Inspirace pro pravidla k mobilům. Pozitivní, krátké, srozumitelné.
 
