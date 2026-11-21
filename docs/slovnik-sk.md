@@ -41,6 +41,7 @@ Návrh názvosloví pro slovenskou verzi webu (`chatveskole.cz/sk/`). **Ke schv�
 | neplátce DPH | neplatiteľ DPH | stránka o zahraničních platbách se píše znovu podle slovenských pravidel |
 | Aktualizováno | Aktualizované | pill u stránek |
 | Koncept | Koncept | štítek u stránek ke kontrole |
+| výuka (ve výuce) | vyučovanie (vo vyučovaní) | ne „výučba“ |
 
 ## Co se nepřekládá, ale přizpůsobuje
 
