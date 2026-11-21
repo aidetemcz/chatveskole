@@ -28,7 +28,7 @@ const cesta = Astro.url.pathname.slice(import.meta.env.BASE_URL.replace(/\/$/, '
 const alternativy = SK_ZVEREJNENO ? (['cs', 'sk'] as const).map((j) => ({ j, href: new URL(urlJazyka(j, cesta), Astro.site).href })) : [];
 // Vercel Web Analytics (bez cookies, schválila Eva 21. 11. 2026): jen v produkčním buildu na Vercelu, jinde skript neexistuje
 const mereni = process.env.VERCEL_ENV === 'production';
-const ogImage = new URL(url('/img/og-chatveskole.jpg'), Astro.site);
+const ogImage = new URL(url(SK ? '/img/og-chatveskole-sk.jpg' : '/img/og-chatveskole.jpg'), Astro.site);
 const domov = new URL(url('/'), Astro.site).href;
 // Strukturovaná data pro vyhledávače: provozovatel a web s vyhledáváním (schema.org)
 const jsonLd = JSON.stringify({
