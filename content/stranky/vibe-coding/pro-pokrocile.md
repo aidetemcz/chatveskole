@@ -28,10 +28,10 @@ Když vám přestane stačit aplikace v okně chatbota — chcete web s více st
 
 ## Základní sestava
 
-1. **GitHub** — úložiště kódu s historií všech změn. Když agent něco rozbije, vrátíte se zpět.
-2. **Programovací agent** — upravuje soubory podle vašich pokynů.
-3. **Hosting** — [Vercel](https://vercel.com), [Netlify](https://www.netlify.com) nebo [GitHub Pages](https://pages.github.com). Po každé změně na GitHubu se web sám znovu zveřejní.
-4. **Databáze a přihlašování** — Když aplikace potřebuje ukládat data nebo přihlašovat uživatele: [Supabase](https://supabase.com), případně [Firebase](https://firebase.google.com) od Googlu nebo [Neon](https://neon.com). Nabízejí databázi, přihlašování uživatelů a ukládání souborů a mají bezplatný tarif s limity. Při zakládání projektu zvolte umístění dat v EU.
+1. **GitHub** — Na GitHubu je uložený kód vaší aplikace i s historií všech změn. Když agent něco rozbije, snadno se vrátíte k předchozí verzi.
+2. **Programovací agent** — Agent čte a upravuje soubory projektu podle vašich pokynů. Vy mu běžnou řečí popíšete, co chcete změnit.
+3. **Hosting** — Aplikaci zveřejníte na [Vercelu](https://vercel.com), [Netlify](https://www.netlify.com) nebo [GitHub Pages](https://pages.github.com). Po každé změně na GitHubu se web sám znovu zveřejní.
+4. **Databáze a přihlašování** — Když aplikace potřebuje ukládat data nebo přihlašovat uživatele, použijte [Supabase](https://supabase.com), případně [Firebase](https://firebase.google.com) od Googlu nebo [Neon](https://neon.com). Nabízejí databázi, přihlašování uživatelů a ukládání souborů a mají bezplatný tarif s limity. Při zakládání projektu zvolte umístění dat v EU.
 
 ## Instrukce pro agenta
 
