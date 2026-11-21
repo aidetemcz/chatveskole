@@ -22,7 +22,7 @@ stahnout:
   chatgpt: https://drive.google.com/uc?export=download&id=1DzhiQ1n0kRjf09uMMJpzSl4ZTcJAnEga
 autori: [AI dětem]          # ověřit autorství
 metodika:
-  - nazev: Metodické príručky AI akcelerátora (AI dětem, v češtine)
+  - nazev: Metodické príručky AI akcelerátora (AI dětem)
 znalosti: [respektujici-komunikace.md, participativni-pristup.md, spoluprace-pedagogu-napric-skolou.md, prace-s-problemovym-chovanim.md]
 vek: dospelí (zručnosti sú v Gemini a Claude 18+)
 stav: koncept
