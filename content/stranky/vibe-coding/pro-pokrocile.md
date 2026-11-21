@@ -21,7 +21,7 @@ Když vám přestane stačit aplikace v okně chatbota — chcete web s více st
 
 | Nástroj | Pro koho | Cena |
 |---|---|---|
-| **Claude Code** (terminál, desktop, web) | vyučující informatiky, správci webů | tarif Claude Pro a vyšší |
+| **Claude Code** | vyučující informatiky, správci webů | tarif Claude Pro a vyšší |
 | **OpenAI Codex** | totéž v prostředí ChatGPT | omezeně zdarma, plně v placených tarifech |
 | **Google Antigravity** | vývojové prostředí od Googlu | zdarma s limity, 18+ |
 | **Cursor** | editor kódu s AI | omezeně zdarma, 18+ |
