@@ -1,0 +1,185 @@
+---
+// Zahraniční platby pro neplátce DPH (sablona: platby-pruvodce). Návrh z Claude Design (21. 11. 2026).
+// Texty jsou v content/stranky/zaciname/zahranicni-platby.md:
+// úvod = perex, box „**Nadpis** — text“ a seznam dlaždic; „Kdy se musíte registrovat“ = karty;
+// „Jak na to“ = číslovaný seznam „**Termín: Krok** — text“ (další odstavec = podrobnosti), box = tip, odkazy = tlačítka.
+import { getEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import { rozdel, naOddily } from '../../lib/komponenty';
+import { navigace } from '../../lib/data';
+
+const stranka = (await getEntry('stranky', 'zaciname/zahranicni-platby'))!;
+const d = stranka.data;
+const html = stranka.rendered?.html ?? '';
+const nadpis = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1].replace(/<[^>]+>/g, '').trim() || d.title;
+const { uvod, oddily } = naOddily(rozdel(html.replace(/<h1[^>]*>[\s\S]*?<\/h1>/, '')));
+const htmlOddilu = (o?: { casti: { typ: string; html?: string }[] }) => (o?.casti ?? []).filter((x) => x.typ === 'html').map((x) => x.html ?? '').join('');
+const najdi = (r: RegExp) => oddily.find((o) => r.test(o.nadpis));
+const bezTagu = (s: string) => s.replace(/<[^>]+>/g, '').trim();
+const velke = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
+// „<strong>Nadpis</strong> — text“ → { nadpis, text }
+const box = (p: string) => {
+  const m = p.trim().match(/^<strong>([\s\S]*?)<\/strong>\s*[—–-]\s*([\s\S]*)$/);
+  return m ? { nadpis: bezTagu(m[1]).replace(/[.:]$/, ''), text: velke(m[2].trim()) } : null;
+};
+const odstavce = (h: string) => [...h.matchAll(/<p>([\s\S]*?)<\/p>/g)].map(([, t]) => t.trim());
+const polozky = (h: string) => [...h.matchAll(/<li>([\s\S]*?)<\/li>/g)].map(([, t]) => t.trim());
+type Box = { nadpis: string; text: string };
+const jeBox = (x: Box | null): x is Box => !!x;
+
+// úvod
+const uvodHtml = uvod.map((c) => (c.typ === 'html' ? c.html : '')).join('');
+const uvodBezSeznamu = uvodHtml.replace(/<ul>[\s\S]*?<\/ul>/g, '');
+const perex = odstavce(uvodBezSeznamu).filter((p) => !box(p)).map((p) => `<p>${p}</p>`).join('');
+const vysvetleni = odstavce(uvodBezSeznamu).map(box).find(jeBox);
+const dlazdice = polozky(uvodHtml.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').map(box).filter(jeBox);
+
+// kdy se registrovat
+const kdy = najdi(/registrovat/i);
+const kdyHtml = htmlOddilu(kdy);
+const kdyUvod = odstavce(kdyHtml.replace(/<ul>[\s\S]*?<\/ul>/g, '')).map((p) => `<p>${p}</p>`).join('');
+const situace = polozky(kdyHtml.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').map(box).filter(jeBox);
+
+// jak na to
+const jak = najdi(/jak na to/i);
+const jakHtml = htmlOddilu(jak);
+const seznam = jakHtml.match(/<ol>([\s\S]*?)<\/ol>/);
+const kroky = polozky(seznam?.[1] ?? '').map((li) => {
+  const ps = odstavce(li);
+  const b = box(ps[0] ?? li);
+  if (!b) return null;
+  const m = b.nadpis.match(/^([^:]+):\s*([\s\S]+)$/);
+  return { termin: m ? m[1].trim() : '', nazev: m ? m[2].trim() : b.nadpis, text: b.text, detail: ps.slice(1).join(' ') };
+}).filter((k): k is NonNullable<typeof k> => !!k);
+const zbytek = jakHtml.replace(seznam?.[0] ?? '', '');
+const tip = odstavce(zbytek).map(box).find(jeBox);
+const tlacitka = [...zbytek.matchAll(/<p>\s*<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*<\/p>/g)].map(([, href, t]) => ({ href, text: bezTagu(t) }));
+
+const skupina = navigace.menu.find((g) => g.items.some((it) => it.href === '/' + stranka.id));
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+---
+<Base title={d.title} description={d.popis ?? undefined}>
+  <div class="band band--white">
+    <div class="wrap hero">
+      <div class="page-head">
+        <div class="zahlavi">
+          <Crumbs items={[...(skupina ? [{ title: skupina.title }] : []), { title: d.title }]} />
+          {datum && <span class="draft">Aktualizováno {datum}</span>}
+        </div>
+        <h1>{nadpis}</h1>
+        <div class="lede perex" set:html={perex} />
+      </div>
+      {vysvetleni && (
+        <div class="card vysvetleni">
+          <div class="stack" style="gap: 10px">
+            <span class="nadtitulek">Co je identifikovaná osoba</span>
+            <h2 class="vysvetleni-nadpis">{vysvetleni.nadpis}</h2>
+            <p set:html={vysvetleni.text} />
+          </div>
+          {dlazdice.length > 0 && (
+            <div class="dlazdice">
+              {dlazdice.map((t, i) => (
+                <div class:list={['dlazdice-box', { 'dlazdice-box--pozor': i === dlazdice.length - 1 }]}>
+                  <strong>{t.nadpis}</strong>
+                  <span set:html={t.text} />
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  </div>
+
+  {kdy && (
+    <section class="band band--sky" aria-labelledby={kdy.id || undefined}>
+      <div class="wrap stack" style="gap: 28px">
+        <div class="hlava">
+          <h2 id={kdy.id || undefined}>{kdy.nadpis}</h2>
+          {kdyUvod && <div class="prose" set:html={kdyUvod} />}
+        </div>
+        <div class="karty">
+          {situace.map((s, i) => (
+            <article class="card">
+              {i === 0 && <span class="stitek stitek--cerveny">Týká se chatbotů</span>}
+              <h3>{s.nadpis}</h3>
+              <p set:html={s.text} />
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {jak && (
+    <section class="band band--white" aria-labelledby={jak.id || undefined}>
+      <div class="wrap stack" style="gap: 28px">
+        <div class="hlava">
+          <h2 id={jak.id || undefined}>{jak.nadpis}</h2>
+        </div>
+        <ol class="karty kroky">
+          {kroky.map((k, i) => (
+            <li class="card krok">
+              <div class="krok-hlava">
+                <span class="krok-cislo" aria-hidden="true">{i + 1}</span>
+                {k.termin && <span class:list={['stitek', { 'stitek--cerveny': /^do\b/i.test(k.termin) }]}>{k.termin}</span>}
+              </div>
+              <h3>{k.nazev}</h3>
+              <p set:html={k.text} />
+              {k.detail && <div class="detail" set:html={k.detail} />}
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  )}
+
+  {(tip || tlacitka.length > 0) && (
+    <section class="band band--sky">
+      <div class="wrap stack" style="gap: 28px">
+        {tip && (
+          <div class="card tip">
+            <span class="nadtitulek">Tip</span>
+            <h3>{tip.nadpis}</h3>
+            <p set:html={tip.text} />
+          </div>
+        )}
+        <div class="tlacitka">
+          {tlacitka.map((o, i) => <a class:list={['btn', i === 0 ? 'btn--primary' : 'btn--outline']} href={o.href}>{o.text}{i === 0 && ' →'}</a>)}
+        </div>
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
+  .hlava { display: flex; flex-direction: column; gap: 14px; max-width: var(--dve-tretiny); }
+  .perex :global(p) { font-size: 1.15rem; }
+  .nadtitulek { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); }
+  .stitek { align-self: flex-start; font-family: var(--fb); font-size: 0.8rem; font-weight: 600; padding: 3px 11px; border-radius: var(--pill); background: var(--sky-light); color: var(--sky-ink); }
+  .stitek--cerveny { background: var(--accent-soft); color: #a83c3b; }
+
+  .vysvetleni { margin-top: 32px; border: 1px solid var(--sky); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 28px; align-items: start; }
+  .vysvetleni-nadpis { font-size: 1.5rem; line-height: 1.25; }
+  .dlazdice { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+  .dlazdice-box { background: #f6fafc; border-radius: 9px; padding: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 0.93rem; }
+  .dlazdice-box strong { font-family: var(--fh); font-size: 1.1rem; font-weight: 600; }
+  .dlazdice-box--pozor { background: var(--accent-soft); }
+
+  .karty { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; }
+  .karty .card { display: flex; flex-direction: column; gap: 10px; }
+  .karty h3 { font-size: 1.25rem; line-height: 1.3; }
+  .karty p { margin: 0; font-size: 0.97rem; }
+  .krok { border: 1px solid var(--sky); }
+  .krok-hlava { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .krok-hlava .stitek { align-self: center; }
+  .krok-cislo { flex: none; width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: var(--on-accent); display: inline-flex; align-items: center; justify-content: center; font-family: var(--fh); font-weight: 700; font-size: 1.2rem; }
+  .detail { background: #f6fafc; border-radius: 9px; padding: 14px 16px; font-size: 0.93rem; line-height: 1.6; }
+
+  .tip { display: flex; flex-direction: column; gap: 10px; }
+  .tip h3 { font-size: 1.4rem; line-height: 1.3; }
+  .tip p { margin: 0; max-width: var(--dve-tretiny); }
+  .tlacitka { display: flex; flex-wrap: wrap; gap: 12px; }
+</style>
