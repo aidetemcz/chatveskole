@@ -21,11 +21,8 @@ nastroje:
         cena: 499 Kč měsíčně
         pozn: Bez reklam, s hloubkovým výzkumem, pluginy, dovednostmi a ChatGPT Work.
       - nazev: Pro
-        cena: od 100 USD měsíčně (tarify 100, 200 a 500 USD), jen měsíční platba
+        cena: od 100 $ měsíčně (tarify 100, 200 a 500 $), jen měsíční platba
         pozn: Pro náročné uživatele a programování, vyšší limity než Plus, dovednosti.
-      - nazev: Business
-        cena: 25 USD za uživatele měsíčně (20 USD při ročním placení), min. 2 uživatelé
-        pozn: Bez reklam, data se nepoužívají k tréninku, samostatné dovednosti, sdílení v rámci organizace.
       - nazev: Edu
         cena: na dotaz
         pozn: Jen pro vysoké školy. ChatGPT for Teachers je jen pro vyučující v USA.
@@ -54,13 +51,13 @@ nastroje:
         cena: 0 Kč
         pozn: Obrázky, Canvas, Gemini Notebook (dříve NotebookLM), hloubkový výzkum s denním limitem. Hloubkový výzkum a dovednosti jen od 18 let.
       - nazev: Google AI Plus
-        cena: 149,99 Kč měsíčně
+        cena: 150 Kč měsíčně
         pozn: Dvojnásobné limity proti verzi zdarma, 400 GB úložiště. Jen 18+. Studenti vysokých škol v ČR (18+, ověření přes SheerID, jen osobní účet Google) ho mají rok zdarma, pokud nabídku uplatní do 31. 12. 2026; pak se platí běžná cena.
       - nazev: Google AI Pro
-        cena: 549,99 Kč měsíčně
+        cena: 550 Kč měsíčně
         pozn: Model Pro, čtyřnásobné limity, video, 5 TB úložiště. Jen 18+.
       - nazev: Google AI Ultra
-        cena: od 2 999,99 Kč měsíčně (vyšší tarif 5 500 Kč)
+        cena: od 3 000 Kč měsíčně (vyšší tarif 5 500 Kč)
         pozn: Pro profesionály, nejvyšší limity. Jen 18+.
       - nazev: Google Workspace for Education
         cena: zdarma pro školy
@@ -97,7 +94,7 @@ nastroje:
         cena: 2 699 Kč měsíčně, jen měsíční platba
         pozn: Jako Premium, ale nejvyšší limity Copilotu a 5 TB úložiště (Premium 2 TB). Copilot jen pro vlastníka předplatného, roční platba není.
       - nazev: Microsoft 365 Copilot (licence pro školy)
-        cena: 18 USD za uživatele měsíčně
+        cena: 18 $ za uživatele měsíčně
         pozn: Copilot nad daty školy, dovednosti, Agent Builder s daty. Cowork jen pro vyučující a zaměstnance, navíc za kredity.
     trenink: Na datech uživatelů do 18 let a na školních a pracovních účtech Microsoft netrénuje. U osobních účtů v EU zatím netrénuje ani nenabízí volbu tréninku (oznámení Microsoftu z roku 2024).
     zdroje:
@@ -117,28 +114,16 @@ nastroje:
       - nazev: Free
         cena: 0 Kč
         pozn: Projekty (nejvýš 5), dovednosti, konektory, paměť, Docs, Slides a Design, zveřejnění artefaktu odkazem. Bez hloubkového výzkumu (Research), pluginů, naplánovaných úloh a Claude Code.
-      - nazev: Pro
-        cena: 20 USD měsíčně (17 USD při ročním placení)
-        pozn: Hloubkový výzkum, Claude Code, samostatná práce na úkolech, pluginy, naplánované úlohy, neomezeně projektů. Bez sdílení projektů s kolegy.
-      - nazev: Max
-        cena: 100 USD měsíčně, jen měsíční platba
-        pozn: Pětinásobné limity proti Pro.
-      - nazev: Ultra
-        cena: 200 USD měsíčně, jen měsíční platba
-        pozn: Desetinásobné limity proti Pro (dříve „Max 20x“).
-      - nazev: Team
-        cena: od 25 USD za uživatele měsíčně (20 USD ročně), prémiové místo 125 USD (100 USD ročně), 2–150 míst
-        pozn: Data se nepoužívají k tréninku, sdílení projektů, dovedností a pluginů v rámci organizace.
+      - nazev: Pro a Team
+        cena: 20 $ měsíčně (17 $ při ročním placení); Team od 25 $ za uživatele měsíčně (20 $ ročně), 2–150 míst
+        pozn: Hloubkový výzkum, Claude Code, samostatná práce na úkolech, pluginy, naplánované úlohy, neomezeně projektů. Team navíc sdílení projektů, dovedností a pluginů v rámci organizace a data se nepoužívají k tréninku.
+      - nazev: Max a Ultra
+        cena: 100 $ nebo 200 $ měsíčně, jen měsíční platba
+        pozn: Pětinásobné (Max) nebo desetinásobné (Ultra) limity proti Pro.
       - nazev: Team pro školy (Claude for Nonprofits)
-        cena: 8 USD za uživatele měsíčně, místo s pětinásobným využitím 40 USD, 2–150 míst, měsíční platba
-        pozn: Neziskové ceny i pro základní a střední školy. Škola se nejdřív ověří u partnera Goodstack, ověřuje člověk se školním e-mailem. Chat, Cowork a Claude Code. Jen od 18 let, pro vedení a pedagogy.
-      - nazev: Enterprise pro školy (Claude for Nonprofits)
-        cena: 10 USD za uživatele měsíčně, místo s pětinásobným využitím 50 USD, od 20 míst, roční fakturace
-        pozn: Navíc automatická správa uživatelů (SCIM) a rozšířená administrace. Nákup připraví tým Anthropicu.
-      - nazev: Education
-        cena: na dotaz
-        pozn: Pro vysoké školy. Jen od 18 let, žákovský program není. Bezplatný Claude for Teachers je zatím jen v USA.
-    trenink: U Free, Pro, Max a Ultra rozhodujete sami (přepínač „Help improve Claude“). Team, Enterprise a Education ne.
+        cena: 8 $ za uživatele měsíčně, místo s pětinásobným využitím 40 $, 2–150 míst, měsíční platba
+        pozn: Neziskové ceny i pro základní a střední školy. Škola se nejdřív ověří u partnera Goodstack, ověřuje člověk se školním e-mailem. Chat, Cowork a Claude Code. Jen od 18 let, pro vedení a pedagogy. Vysoké školy mají Claude for Education (cena na dotaz), bezplatný Claude for Teachers je zatím jen v USA.
+    trenink: U Free, Pro, Max a Ultra rozhodujete sami (přepínač „Help improve Claude“). Team a tarify pro školy ne.
     zdroje:
       - https://claude.com/pricing
       - https://validate.poweredbypercent.com/anthropic
@@ -159,13 +144,13 @@ nastroje:
         cena: 0 Kč
         pozn: Vyhledávání s citacemi zdrojů, hloubkový výzkum jen jednou měsíčně. Od 13 let, nezletilí se souhlasem rodiče.
       - nazev: Pro
-        cena: 20 USD měsíčně nebo 200 USD ročně
+        cena: 20 $ měsíčně nebo 200 $ ročně
         pozn: Silnější modely, víc hloubkových rešerší, projekty a práce se soubory.
       - nazev: Max
-        cena: 200 USD měsíčně nebo 2 000 USD ročně (roční platba jen na webu)
+        cena: 200 $ měsíčně nebo 2 000 $ ročně (roční platba jen na webu)
         pozn: Vše z Pro, navíc nejsilnější modely, vyšší limity a nové funkce dřív.
       - nazev: Education Pro
-        cena: 10 USD měsíčně
+        cena: 10 $ měsíčně
         pozn: Pro studenty a vyučující vysokých škol s ověřením (SheerID), obsahuje vše z Pro.
     trenink: U Free, Pro a Max ve výchozím stavu ano, dá se vypnout v Settings → Preferences (AI data retention). Enterprise ne.
     zdroje:
