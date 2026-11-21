@@ -1,537 +1,537 @@
-# Práce s problémovým chováním ve třídě
+# Práca s problémovým správaním v triede
 
-Tato příručka je praktickým průvodcem každodenními situacemi, kdy chování žáka narušuje výuku, klima třídy nebo vlastní žákovo učení. Doplňuje příručky o respektující komunikaci, participativním přístupu a spolupráci pedagogů — staví na stejných hodnotách (partnerství, popisný jazyk, respekt), ale pojmenovává i situace, kdy samotný respektující přístup nestačí a je potřeba pevnější struktura.
+Táto príručka je praktickým sprievodcom každodennými situáciami, keď správanie žiaka narúša vyučovanie, klímu triedy alebo vlastné žiakovo učenie. Dopĺňa príručky o rešpektujúcej komunikácii, participatívnom prístupe a spolupráci pedagógov — stavia na rovnakých hodnotách (partnerstvo, opisný jazyk, rešpekt), ale pomenúva aj situácie, keď samotný rešpektujúci prístup nestačí a je potrebná pevnejšia štruktúra.
 
-## Jak má AI asistent příručku používat
+## Ako má AI asistent príručku používať
 
-- Příručka je referenční, ne k lineárnímu čtení. Asistent vybírá relevantní část podle dotazu.
-- Pro **každodenní problémy** (rušení, pasivita, konflikt s autoritou) jdi do části 2–4.
-- Pro **dlouhodobou strategii** (jak věc systematicky uchopit) jdi do části 1 a 5.
-- Pro **konflikty mezi žáky** jdi do části 6.
-- Pro **krizové situace** (šikana, sebepoškozování, ohrožení, závažné externalizované problémy) jdi do části 7. Tady asistent **zásadně neradí, jak to vyřešit ve třídě** — odkazuje na odborníky.
-- **Hodnotový rámec:** primárně respektující přístup, ale s realistickým připuštěním, že někdy je nutné nasadit pevnější hranice, izolaci problému, jasné konsekvence. Učitel rozhoduje, kterou cestou jde.
-
----
-
-# Část 1: Jak přemýšlet o problémovém chování
-
-## 1.1 Chování není osobnost
-
-První a nejdůležitější rozlišení: **„problémový žák" neexistuje**. Existuje žák, jehož chování je v dané situaci problematické. To není slovní hříčka — je to způsob, jak o věci přemýšlet.
-
-Když řekneš „Honza je drzý", uzavřel jsi to. Honza prostě je takový. Co s tím?
-
-Když řekneš „Honza dnes 4× vykřikl bez vyzvání a 1× řekl spolužačce, že je trapná", máš popis. Můžeš se ptát: kdy se to stalo? V které hodině? Co tomu předcházelo? Co tomu mohlo zabránit?
-
-Popisný jazyk není jen slušnější — je **funkční**. Ukazuje, kde se s tím dá hnout.
-
-## 1.2 Chování má vždy funkci
-
-Žák, který ruší, něco tím získává — i když to vypadá iracionálně. Funkce problémového chování bývá obvykle jedna z těchto:
-
-- **Pozornost.** Žák chce být vidět. Reakce učitele i třídy ho posiluje, i když je „negativní".
-- **Únik.** Žák se chce vyhnout situaci — obtížnému úkolu, neúspěchu, ostudě, sociální expozici.
-- **Moc nebo kontrola.** Žák chce mít vliv tam, kde se cítí bezmocný — doma, ve škole, v životě.
-- **Sounáležitost s vrstevníky.** Chování buduje status u spolužáků — „borec, který se nebojí učitelky".
-- **Smyslové podněty.** Některé žáky (ADHD, autistické rysy) udržuje v rovnováze pohyb, hluk, taktilní podněty. Bez nich nezvládají koncentraci.
-- **Vyjádření vnitřního stavu.** Frustrace, úzkost, smutek, hněv — chování je ventil, ne strategie.
-
-**Funkční otázka pro učitele:** Co tím žák získává? Co by bylo, kdyby to nedělal?
-
-Když pochopíš funkci, máš dvě cesty:
-1. **Naplnit funkci jinak** — pokud žák chce pozornost, dej mu ji za žádoucí chování.
-2. **Změnit prostředí** — pokud uniká před úkolem, který nezvládá, uprav úkol.
-
-Jen trestat „důsledek" bez pochopení funkce zřídka vede ke změně. Funkce zůstane, žák si jen najde jiný kanál.
-
-## 1.3 Hodinou se v hlavě žáka neděje jen učení
-
-Žák do hodiny přichází s celým svým světem — co se dělo o přestávce, jaký byl ráno doma, jaký zažil minulý týden, jak se cítí ve své kůži. Jeho chování v hodině je často **odpověď na něco, co s tvou hodinou nemá nic společného**.
-
-To neznamená, že je vše omluveno vnějšími okolnostmi. Znamená to, že:
-- **Před reakcí se vyplatí se zeptat.** „Děje se něco?" často otevře víc než výtka.
-- **Chování může být symptom**, ne příčina. Žák, který najednou začne rušit, často signalizuje něco jiného.
-- **Učitel není terapeut**, ale může být první, kdo si všimne. Pak je čas zapojit školního poradce, výchovného poradce, školního psychologa.
-
-## 1.4 Chování ve skupině je systém
-
-Jeden žák ruší — jenže reakce třídy ho buď tlumí, nebo posiluje. Když se třída směje, problém je v třídě, ne jen v žákovi. Když třída ignoruje, žák brzy přestane.
-
-Některé situace, které vypadají jako problém jednotlivce, jsou ve skutečnosti problém **dynamiky třídy**:
-
-- Žák A „vyrušuje" — ale přes přestávku ho 4 spolužáci provokují, aby to dělal.
-- Žák B „odmlouvá učitelce" — ale dělá to, protože je to v jeho třídě status.
-- Žák C „je terčem" — třída ho dlouhodobě staví do role obětního beránka.
-
-Když řešíš jednotlivce mimo kontext skupiny, zřídka uspěješ. Příště se to bude opakovat s jiným žákem, protože systém funguje stejně.
-
-## 1.5 Přístupy, které zpravidla nefungují
-
-Některé reakce učitele vypadají logicky, ale dlouhodobě situaci zhoršují:
-
-- **Křik.** Funguje pět vteřin. Pak žáci zjistí, že je to slovní gesto bez konsekvence, a křik přestává mít efekt. Navíc křičící učitel vysílá signál, že situaci nezvládá.
-- **Veřejné zostuzování.** „Jirko, ty jsi ale debil." / „Děcka, koukněte, jak Jirka zase spí." Buduje to nepřátelství a žák ztratí důvod vůbec se snažit.
-- **Trest celé třídy za jednoho.** Spojí třídu proti žákovi (nebo proti učiteli), ne za pravidla.
-- **Eskalace stejné metody.** Žákovi nestačila poznámka? Tak dvě poznámky. Tři. Pět. Když metoda nefunguje, opakovat ji víc nepomůže.
-- **Srovnávání s jinými žáky.** „Petra to dokáže, proč ty ne?" Buduje rivalitu, ne učení.
-- **Předjímání.** „Honzo, ty zase budeš rušit." Žák naplní očekávání, jaké do něj projektuješ.
-- **Reagovat unaveně, naštvaně, odevzdaně.** Žák čte tvůj stav. Když vidí, že tě dostal, posiluje ho to.
-
-To neznamená, že učitel musí být dokonalý robot. Neznamená to ani, že si nemůže občas zvýšit hlas, když opravdu hrozí nebezpečí. Znamená to, že **tyhle nástroje nejsou strategie** — jsou to úniky.
+- Príručka je referenčná, nie na lineárne čítanie. Asistent vyberá relevantnú časť podľa otázky.
+- Pre **každodenné problémy** (vyrušovanie, pasivita, konflikt s autoritou) choď do časti 2–4.
+- Pre **dlhodobú stratégiu** (ako vec systematicky uchopiť) choď do časti 1 a 5.
+- Pre **konflikty medzi žiakmi** choď do časti 6.
+- Pre **krízové situácie** (šikanovanie, sebapoškodzovanie, ohrozenie, závažné externalizované problémy) choď do časti 7. Tu asistent **zásadne neradí, ako to vyriešiť v triede** — odkazuje na odborníkov.
+- **Hodnotový rámec:** primárne rešpektujúci prístup, ale s realistickým pripustením, že niekedy treba nasadiť pevnejšie hranice, izoláciu problému, jasné dôsledky. Vyučujúci rozhoduje, ktorou cestou pôjde.
 
 ---
 
-# Část 2: Rušivé chování v hodině
+# Časť 1: Ako premýšľať o problémovom správaní
 
-## 2.1 Co spadá pod „rušení"
+## 1.1 Správanie nie je osobnosť
 
-Velmi široká kategorie:
+Prvé a najdôležitejšie rozlíšenie: **„problémový žiak“ neexistuje**. Existuje žiak, ktorého správanie je v danej situácii problematické. To nie je slovná hračka — je to spôsob, ako o veci premýšľať.
 
-- Vykřikování bez přihlášení
-- Bavení se s sousedem během výkladu
-- Pohyb po třídě, který nedává smysl
-- Drobné zvuky, klepání, podupávání
-- Komentování průběhu hodiny
-- Hraní s předměty, mobilem, papírky
+Keď povieš „H. je drzý“, uzavrel si to. H. jednoducho je taký. Čo s tým?
 
-Každá z těchto věcí má jinou logiku a jiné řešení. **Důležité je nelumpovat všechno do jedné krabice „nekázně".**
+Keď povieš „H. dnes 4× vykríkol bez vyzvania a 1× povedal spolužiačke, že je trápna“, máš opis. Môžeš sa pýtať: kedy sa to stalo? Na ktorej hodine? Čo tomu predchádzalo? Čo tomu mohlo zabrániť?
 
-## 2.2 Nejdřív si polož otázku, co tím žák získává
+Opisný jazyk nie je len slušnejší — je **funkčný**. Ukazuje, kde sa s tým dá pohnúť.
 
-Před reakcí pomysli:
+## 1.2 Správanie má vždy funkciu
 
-- **Pozornost?** Pak nereaguj na chování přímo, ale dej pozornost za jiné — funkční — chování. Když se Jirka přihlásí (i poprvé za hodinu), oceň to. Když vykřikne, prostě pokračuj a vyvolej jiného.
-- **Únik?** Žák se cítí ztracen v učivu, neumí, bojí se ostudy. Pak je víc rušení než únik před úkolem. Dej žákovi šanci se zapojit s úspěchem (jednodušší dílčí úkol, role ve skupině, kde nemusí mluvit nahlas).
-- **Smyslové podněty?** Žák potřebuje pohyb. Dej mu legitimní cestu — rozdat papíry, přinést něco z kabinetu, stoupnout si při čtení. Pohyb funguje jako ventil.
-- **Sociální status?** Žák ruší pro publikum. Tady pomáhá vzít publikum — krátký rozhovor mezi čtyřma očima, ne kárání před třídou.
+Žiak, ktorý vyrušuje, tým niečo získava — aj keď to vyzerá iracionálne. Funkcia problémového správania býva zvyčajne jedna z týchto:
 
-## 2.3 Nástroje od nejjemnějších k nejtvrdším
+- **Pozornosť.** Žiak chce byť videný. Reakcia vyučujúceho aj triedy ho posilňuje, aj keď je „negatívna“.
+- **Únik.** Žiak sa chce vyhnúť situácii — náročnej úlohe, neúspechu, hanbe, sociálnej expozícii.
+- **Moc alebo kontrola.** Žiak chce mať vplyv tam, kde sa cíti bezmocný — doma, v škole, v živote.
+- **Spolupatričnosť s rovesníkmi.** Správanie buduje status u spolužiakov — „borec, ktorý sa nebojí učiteľky“.
+- **Zmyslové podnety.** Niektorých žiakov (ADHD, autistické črty) udržiava v rovnováhe pohyb, hluk, taktilné podnety. Bez nich nezvládajú koncentráciu.
+- **Vyjadrenie vnútorného stavu.** Frustrácia, úzkosť, smútok, hnev — správanie je ventil, nie stratégia.
 
-Začínej u nejjemnějšího nástroje, který má šanci zafungovat. Eskaluj jen, když je třeba.
+**Funkčná otázka pre vyučujúceho:** Čo tým žiak získava? Čo by bolo, keby to nerobil?
 
-### Neverbální zásah
+Keď pochopíš funkciu, máš dve cesty:
+1. **Naplniť funkciu inak** — ak žiak chce pozornosť, daj mu ju za žiaduce správanie.
+2. **Zmeniť prostredie** — ak uniká pred úlohou, ktorú nezvláda, uprav úlohu.
 
-- **Pohled.** Krátký, přímý, klidný. Často stačí.
-- **Přiblížení.** Pomalu se přesuneš k žákovi. Bez slov.
-- **Pauza ve výkladu.** Přestaneš mluvit. Třída zaregistruje, že něco není v pořádku.
-- **Gesto.** Položit prst na rty, naznačit „pst", ukázat na lavici.
+Len trestať „dôsledok“ bez pochopenia funkcie zriedka vedie k zmene. Funkcia zostane, žiak si len nájde iný kanál.
 
-Tyhle věci zaberou v 70 % případů a nestrhnou pozornost celé třídy.
+## 1.3 Počas hodiny sa v hlave žiaka nedeje len učenie
 
-### Krátké pojmenování
+Žiak prichádza na hodinu s celým svojím svetom — čo sa dialo cez prestávku, aké bolo ráno doma, čo zažil minulý týždeň, ako sa cíti vo svojej koži. Jeho správanie na hodine je často **odpoveďou na niečo, čo s tvojou hodinou nemá nič spoločné**.
 
-Když neverbální nestačí, pojmenuj věcně:
+To neznamená, že všetko ospravedlňujú vonkajšie okolnosti. Znamená to, že:
+- **Pred reakciou sa oplatí opýtať.** „Deje sa niečo?“ často otvorí viac ako výčitka.
+- **Správanie môže byť symptóm**, nie príčina. Žiak, ktorý zrazu začne vyrušovať, často signalizuje niečo iné.
+- **Vyučujúci nie je terapeut**, ale môže byť prvý, kto si všimne. Potom je čas zapojiť výchovného poradcu, školského psychológa alebo školský podporný tím.
 
-- „Honzo, prosím tiše."
-- „Petro, teď posloucháme Marii."
-- „Lukáš, sedni si."
+## 1.4 Správanie v skupine je systém
 
-Ne moralizace, ne dlouhé vysvětlování, ne emocionální tón. Krátká, věcná, klidná věta. Pak okamžitě pokračuj v hodině — nečekej na reakci, nedávej žákovi prostor pro debatu.
+Jeden žiak vyrušuje — lenže reakcia triedy ho buď tlmí, alebo posilňuje. Keď sa trieda smeje, problém je v triede, nie len v žiakovi. Keď trieda ignoruje, žiak čoskoro prestane.
 
-### Já-výrok
+Niektoré situácie, ktoré vyzerajú ako problém jednotlivca, sú v skutočnosti problémom **dynamiky triedy**:
 
-Když chování pokračuje, eskalace přes já-výrok:
+- Žiak A „vyrušuje“ — ale cez prestávku ho 4 spolužiaci provokujú, aby to robil.
+- Žiak B „odvráva učiteľke“ — ale robí to, pretože je to v jeho triede status.
+- Žiak C „je terčom“ — trieda ho dlhodobo stavia do roly obetného baránka.
 
-- „Vyrušuješ mě, nemůžu se soustředit na výklad."
-- „Mám pocit, že nás přestáváš poslouchat. Chci, aby ses soustředil."
+Keď riešiš jednotlivca mimo kontextu skupiny, zriedka uspeješ. Nabudúce sa to zopakuje s iným žiakom, pretože systém funguje rovnako.
 
-Já-výrok přesouvá fokus z „ty zlobíš" na „mě se to dotýká". Je to silnější než výtka, ale nezakládá konflikt.
+## 1.5 Prístupy, ktoré spravidla nefungujú
 
-### Krátký rozhovor mezi čtyřma očima
+Niektoré reakcie vyučujúceho vyzerajú logicky, ale dlhodobo situáciu zhoršujú:
 
-Když věc pokračuje, vezmi žáka po hodině stranou (nebo si ho zavolej o přestávce). Neřeš to před třídou.
+- **Krik.** Funguje päť sekúnd. Potom žiaci zistia, že je to slovné gesto bez dôsledku, a krik prestáva mať efekt. Navyše kričiaci vyučujúci vysiela signál, že situáciu nezvláda.
+- **Verejné zahanbovanie.** „J., ty si ale hlupák.“ / „Decká, pozrite, ako J. zase spí.“ Buduje to nepriateľstvo a žiak stratí dôvod vôbec sa snažiť.
+- **Trest celej triedy za jedného.** Spojí triedu proti žiakovi (alebo proti vyučujúcemu), nie za pravidlá.
+- **Eskalácia tej istej metódy.** Žiakovi nestačila poznámka? Tak dve poznámky. Tri. Päť. Keď metóda nefunguje, opakovať ju viac nepomôže.
+- **Porovnávanie s inými žiakmi.** „P. to dokáže, prečo ty nie?“ Buduje rivalitu, nie učenie.
+- **Predpovedanie.** „H., ty zase budeš vyrušovať.“ Žiak naplní očakávanie, ktoré doň premietaš.
+- **Reagovať unavene, nahnevane, rezignovane.** Žiak číta tvoj stav. Keď vidí, že ťa dostal, posilňuje ho to.
+
+To neznamená, že vyučujúci musí byť dokonalý robot. Neznamená to ani, že si nemôže občas zvýšiť hlas, keď naozaj hrozí nebezpečenstvo. Znamená to, že **tieto nástroje nie sú stratégia** — sú to úniky.
+
+---
+
+# Časť 2: Rušivé správanie na hodine
+
+## 2.1 Čo patrí pod „vyrušovanie“
+
+Veľmi široká kategória:
+
+- Vykrikovanie bez prihlásenia
+- Rozprávanie sa so susedom počas výkladu
+- Pohyb po triede, ktorý nedáva zmysel
+- Drobné zvuky, klopanie, dupkanie
+- Komentovanie priebehu hodiny
+- Hranie sa s predmetmi, mobilom, papierikmi
+
+Každá z týchto vecí má inú logiku a iné riešenie. **Dôležité je nehádzať všetko do jednej škatule „nedisciplinovanosti“.**
+
+## 2.2 Najprv si polož otázku, čo tým žiak získava
+
+Pred reakciou porozmýšľaj:
+
+- **Pozornosť?** Potom nereaguj na správanie priamo, ale daj pozornosť za iné — funkčné — správanie. Keď sa J. prihlási (aj prvýkrát za hodinu), oceň to. Keď vykríkne, jednoducho pokračuj a vyvolaj iného.
+- **Únik?** Žiak sa cíti stratený v učive, nevie, bojí sa hanby. Potom je vyrušovanie skôr únikom pred úlohou. Daj žiakovi šancu zapojiť sa s úspechom (jednoduchšia čiastková úloha, rola v skupine, kde nemusí hovoriť nahlas).
+- **Zmyslové podnety?** Žiak potrebuje pohyb. Daj mu legitímnu cestu — rozdať papiere, priniesť niečo z kabinetu, postaviť sa pri čítaní. Pohyb funguje ako ventil.
+- **Sociálny status?** Žiak vyrušuje pre publikum. Tu pomáha vziať publikum — krátky rozhovor medzi štyrmi očami, nie karhanie pred triedou.
+
+## 2.3 Nástroje od najjemnejších po najtvrdšie
+
+Začínaj pri najjemnejšom nástroji, ktorý má šancu zafungovať. Eskaluj, len keď treba.
+
+### Neverbálny zásah
+
+- **Pohľad.** Krátky, priamy, pokojný. Často stačí.
+- **Priblíženie.** Pomaly sa presunieš k žiakovi. Bez slov.
+- **Pauza vo výklade.** Prestaneš hovoriť. Trieda zaregistruje, že niečo nie je v poriadku.
+- **Gesto.** Položiť prst na pery, naznačiť „pst“, ukázať na lavicu.
+
+Tieto veci zaberú v 70 % prípadov a nestrhnú pozornosť celej triedy.
+
+### Krátke pomenovanie
+
+Keď neverbálny zásah nestačí, pomenuj vecne:
+
+- „H., prosím, potichu.“
+- „P., teraz počúvame M.“
+- „L., sadni si.“
+
+Nie moralizovanie, nie dlhé vysvetľovanie, nie emocionálny tón. Krátka, vecná, pokojná veta. Potom okamžite pokračuj v hodine — nečakaj na reakciu, nedávaj žiakovi priestor na debatu.
+
+### Ja-výrok
+
+Keď správanie pokračuje, eskalácia cez ja-výrok:
+
+- „Vyrušuješ ma, nemôžem sa sústrediť na výklad.“
+- „Mám pocit, že nás prestávaš počúvať. Chcem, aby si sa sústredil.“
+
+Ja-výrok presúva dôraz z „ty zlobíš“ na „mňa sa to dotýka“. Je silnejší ako výčitka, ale nezakladá konflikt.
+
+### Krátky rozhovor medzi štyrmi očami
+
+Keď vec pokračuje, vezmi žiaka po hodine nabok (alebo si ho zavolaj cez prestávku). Nerieš to pred triedou.
 
 Postup:
-1. **Popis chování:** „Dnes jsi 4× vykřikl bez přihlášení a 2× jsi okomentoval, co spolužáci říkali."
-2. **Dopad:** „To narušuje hodinu. Já se nemůžu soustředit a ostatní se taky nesoustředí."
-3. **Otázka:** „Co se ti děje? Proč to dnes bylo víc než obvykle?"
-4. **Dohoda:** „Co bys mohl příští hodinu zkusit jinak?" Nech ho, ať návrh vymyslí sám.
+1. **Opis správania:** „Dnes si 4× vykríkol bez prihlásenia a 2× si okomentoval, čo spolužiaci hovorili.“
+2. **Dopad:** „To narúša hodinu. Ja sa nemôžem sústrediť a ostatní sa tiež nesústredia.“
+3. **Otázka:** „Čo sa s tebou deje? Prečo to dnes bolo viac ako zvyčajne?“
+4. **Dohoda:** „Čo by si mohol na budúcej hodine skúsiť inak?“ Nechaj ho, nech návrh vymyslí sám.
 
-### Konsekvence (důsledek)
+### Dôsledok
 
-Pokud chování pokračuje navzdory rozhovoru, přicházejí konsekvence. **Konsekvence ≠ trest.** Důsledek by měl mít vztah k chování:
+Ak správanie pokračuje napriek rozhovoru, prichádzajú dôsledky. **Dôsledok ≠ trest.** Dôsledok by mal mať vzťah k správaniu:
 
-- Žák ruší skupinovou práci → pracuje sám.
-- Žák hází papírky → uklízí třídu po hodině.
-- Žák používá mobil, ač má být schovaný → mobil odložíš na učitelský stůl, vrátíš na konci dne.
+- Žiak vyrušuje skupinovú prácu → pracuje sám.
+- Žiak hádže papieriky → upratuje triedu po hodine.
+- Žiak používa mobil, hoci má byť odložený → mobil odložíš na učiteľský stôl, vrátiš na konci dňa.
 
-Konsekvenci žák zná **předem** (řekneš to třídě nebo individuálně před tím, než se aktivuje). Aplikuješ ji **klidně, beze hněvu**, jako fakt.
+Dôsledok žiak pozná **vopred** (povieš to triede alebo individuálne skôr, ako sa uplatní). Uplatníš ho **pokojne, bez hnevu**, ako fakt.
 
-### Záznam a eskalace
+### Záznam a eskalácia
 
-Když nic nefunguje, začni dokumentovat. Datum, hodina, popis chování (popisně, ne hodnotivě). Tyhle záznamy potřebuješ:
+Keď nič nefunguje, začni dokumentovať. Dátum, hodina, opis správania (opisne, nie hodnotiaco). Tieto záznamy potrebuješ:
 
-- Pro rozhovor s rodiči.
-- Pro výchovnou komisi.
-- Pro případnou spolupráci se školním poradcem nebo výchovným poradcem.
+- Na rozhovor so zákonnými zástupcami.
+- Na výchovnú komisiu.
+- Na prípadnú spoluprácu s výchovným poradcom alebo školským psychológom.
 
-Eskalace nad rámec třídy patří k pevnějším nástrojům — tým podporujících profesionálů (výchovný poradce, metodik prevence, ředitel) sdílí odpovědnost.
+Eskalácia nad rámec triedy patrí k pevnejším nástrojom — tím podporujúcich profesionálov (výchovný poradca, koordinátor prevencie, riaditeľ) zdieľa zodpovednosť.
 
-## 2.4 Co když ruší celá třída
+## 2.4 Čo keď vyrušuje celá trieda
 
-Když ruší jednotlivec, řešíš jednotlivce. Když ruší třída, řešíš **strukturu hodiny**.
+Keď vyrušuje jednotlivec, riešiš jednotlivca. Keď vyrušuje trieda, riešiš **štruktúru hodiny**.
 
-Třída ruší obvykle ze tří důvodů:
+Trieda vyrušuje zvyčajne z troch dôvodov:
 
-- **Nuda.** Hodina je dlouhá, jednotvárná, frontální. Aktivizační metody (viz Příručka aktivizační výuky) nejsou jen pro „lepší výsledky" — jsou prevencí nekázně.
-- **Nepochopení zadání.** Žáci nevědí, co mají dělat, takže začnou dělat něco jiného.
-- **Ztráta kontaktu s učitelem.** Učitel je daleko (fyzicky nebo emocionálně), žáci toho využívají.
+- **Nuda.** Hodina je dlhá, jednotvárna, frontálna. Aktivizujúce metódy nie sú len pre „lepšie výsledky“ — sú prevenciou nedisciplinovanosti.
+- **Nepochopenie zadania.** Žiaci nevedia, čo majú robiť, tak začnú robiť niečo iné.
+- **Strata kontaktu s vyučujúcim.** Vyučujúci je ďaleko (fyzicky alebo emocionálne), žiaci to využívajú.
 
-Když ruší celá třída, neeskaluj na jednotlivce — řeš strukturu:
-- Změň aktivitu.
-- Zopakuj zadání jinými slovy.
-- Vstup mezi lavice, fyzicky se přibliž.
-- Krátká přestávka, protáhnutí, restart.
+Keď vyrušuje celá trieda, neeskaluj na jednotlivca — rieš štruktúru:
+- Zmeň aktivitu.
+- Zopakuj zadanie inými slovami.
+- Vstúp medzi lavice, fyzicky sa priblíž.
+- Krátka prestávka, ponaťahovanie, reštart.
 
-## 2.5 Když nic z toho nefunguje
+## 2.5 Keď nič z toho nefunguje
 
-Některé žáky standardní postupy prostě nezasáhnou. Důvody mohou být:
+Niektorých žiakov štandardné postupy jednoducho nezasiahnu. Dôvody môžu byť:
 
-- **Nediagnostikovaná porucha** (ADHD, ADD, opoziční vzdor, autistické rysy). Patří k odbornému vyšetření.
-- **Vážná domácí situace** — rozvod, ztráta blízkého, sociální tíseň, zanedbávání.
-- **Dlouhodobý vzorec** — žák je takový už čtvrtý rok, několik učitelů to zkoušelo.
+- **Nediagnostikovaná porucha** (ADHD, ADD, opozičný vzdor, autistické črty). Patrí na odborné vyšetrenie.
+- **Vážna domáca situácia** — rozvod, strata blízkeho, sociálna tieseň, zanedbávanie.
+- **Dlhodobý vzorec** — žiak je taký už štvrtý rok, viacerí vyučujúci to skúšali.
 
-V takovém případě:
-- **Nehraj na to sám.** Zapoj výchovného poradce, školního psychologa, ředitele.
-- **Mluv s rodiči**, ale popisně, ne stěžovatelsky. Hledejte společně, co zafunguje.
-- **Sleduj svoje vlastní vyčerpání.** Někteří žáci ti vezmou víc energie, než si můžeš dovolit dát. Dělit zátěž s kolegy je nezbytné.
-
----
-
-# Část 3: Pasivita a nezájem
-
-## 3.1 Pasivita je jiný problém než rušení
-
-Učitelé řeší rušení častěji než pasivitu — protože ruší. Ale pasivní žák je často ve větším problému. Dlouhodobá pasivita znamená:
-
-- Žák ztrácí vztah k učení.
-- Buduje si identitu „ten, který nepracuje".
-- Propadá do bezmoci a rezignace.
-- Často skončí předčasným ukončením vzdělávání.
-
-Pasivita nepláte za rušení tak nahlas, ale dlouhodobě je horší.
-
-## 3.2 Co se za pasivitou skrývá
-
-- **Nezvládám učivo.** Žák se ztratil před týdny a teď už nestíhá. Nepracuje, protože neumí, ne protože nechce.
-- **Nezájem o předmět.** Žák se bavil v matematice, ale matiku nesnáší od 5. třídy. Cesta zpátky je dlouhá.
-- **Sociální únik.** Žák nechce být vidět, mluvit nahlas, vystavit se. Tichá pasivita je obrana.
-- **Domácí problémy.** Doma se něco děje, žák funguje na poloviční výkon.
-- **Deprese, úzkost.** Klinické problémy, které vypadají jako lenost.
-- **Ztráta vztahu s učitelem.** Něco se stalo, žák se vůči učiteli zavřel.
-
-## 3.3 Jak zjistit, o co jde
-
-Pasivního žáka nelze popohnat křikem. Funguje zjišťování — ale ne výslechem.
-
-- **Krátký individuální rozhovor.** „Petře, všiml jsem si, že posledních pár hodin jsi mimo. Děje se něco?" Klidně, bez výtky. Možná žák nic neřekne — to je v pořádku, otevřel jsi dveře.
-- **Pozorování v různých situacích.** Pasivní v matematice, aktivní v tělesné výchově? Pasivní u tabule, aktivní ve skupině? Tohle ti řekne hodně.
-- **Pohled spolužáků.** Někdy spolužáci vědí víc než učitel. Krátký rozhovor s důvěryhodným kamarádem.
-- **Komunikace s rodiči.** Nevyšetřuj, ale informuj se: „Jak je Petr doma poslední dobou? Něco se mu stalo?"
-
-## 3.4 Co dělat
-
-Strategie závisí na tom, co je za pasivitou. Ale několik věcí platí obecně:
-
-- **Nezvyšuj tlak. Snižuj práh.** Pasivní žák nepotřebuje větší úkol — potřebuje úkol, ve kterém má šanci uspět. Velmi malý úspěch znova rozjede motor.
-- **Nevyvolávej před třídou bez varování.** Pasivní žáci se bojí veřejné expozice. Předvyvolej („Petře, za chvíli se tě zeptám na…"), nebo dej individuální písemný úkol.
-- **Hledej silné stránky.** Žák, který nepracuje v matematice, možná dobře kreslí. Pochval, dej mu prostor v jeho silné oblasti — to oživí celkové sebepojetí.
-- **Pochval konkrétně, ale neobjímej.** „Líbí se mi, jak jsi to teď zformuloval" funguje. „Jsi šikovný" už ne — žák ti nevěří.
-- **Spojenectví, ne soutěž.** „Pojďme spolu vymyslet, jak to zvládneš" funguje líp než „musíš se zlepšit".
-- **Trpělivost.** Pasivita se nezlomí týden. Buduje se měsíce, někdy roky. Návrat trvá taky.
-
-## 3.5 Když pasivita signalizuje něco vážnějšího
-
-Některé signály by měly vést k zapojení odborníka:
-
-- **Náhlá změna.** Aktivní žák najednou propadl. Skoro vždy se něco stalo.
-- **Plačtivost, smutek, úzkost.** Klinické symptomy, ne lenost.
-- **Únava neúměrná věku.** Žák spí v hodině, je vyčerpaný.
-- **Sebepoškozování, narážky na sebevraždu.** Okamžitě → metodik prevence, školní psycholog, případně rodiče a odborná pomoc. Nikdy ne sám.
+V takom prípade:
+- **Nehraj to sám.** Zapoj výchovného poradcu, školského psychológa, riaditeľa.
+- **Hovor so zákonnými zástupcami**, ale opisne, nie sťažovateľsky. Hľadajte spoločne, čo zafunguje.
+- **Sleduj svoje vlastné vyčerpanie.** Niektorí žiaci ti zoberú viac energie, než si môžeš dovoliť dať. Deliť záťaž s kolegami je nevyhnutné.
 
 ---
 
-# Část 4: Konflikt s autoritou
+# Časť 3: Pasivita a nezáujem
 
-## 4.1 Co to vlastně je
+## 3.1 Pasivita je iný problém ako vyrušovanie
 
-„Žák odmlouvá." „Žák provokuje." „Žák je drzý." Tyhle popisy zahrnují různé věci:
+Vyučujúci riešia vyrušovanie častejšie ako pasivitu — pretože ruší. Ale pasívny žiak je často vo väčšom probléme. Dlhodobá pasivita znamená:
 
-- **Veřejná konfrontace** — žák před třídou zpochybňuje učitele, hraje si na publikum.
-- **Pasivně-agresivní vzdor** — neudělá to, ale neodmítne. „Já jsem to zapomněl." „Nestihl jsem to."
-- **Otevřená neposlušnost** — řeknu udělej, žák odmítne.
-- **Ironický komentář** — žák komentuje, co se děje, mírně podrývá učitele.
-- **Atak na učitele osobně** — vtipy o vzhledu, hlase, oblečení.
+- Žiak stráca vzťah k učeniu.
+- Buduje si identitu „ten, ktorý nepracuje“.
+- Prepadá do bezmocnosti a rezignácie.
+- Často skončí predčasným ukončením vzdelávania.
 
-Každá situace má jinou dynamiku.
+Pasivita sa neprejavuje tak nahlas ako vyrušovanie, ale dlhodobo je horšia.
 
-## 4.2 Vždy si polož: o co jde
+## 3.2 Čo sa za pasivitou skrýva
 
-- **Buduje si status u třídy?** Pak řešení je vzít publikum (rozhovor stranou).
-- **Reaguje na něco konkrétního?** (špatná známka, kterou považuje za nespravedlivou; pocit, že jsi zaujatý). Pak je třeba si to ujasnit.
-- **Hledá hranici?** Někteří dospívající testují, jak daleko dojdou. Klidná, jasná hranice je sama o sobě odpověď.
-- **Žije v autoritářském režimu doma?** Tam, kde se s ním mluví křikem, vyrostl s tím, že autorita = nepřítel. Tady je dlouhá cesta.
+- **Nezvládam učivo.** Žiak sa stratil pred týždňami a teraz už nestíha. Nepracuje, pretože nevie, nie preto, že nechce.
+- **Nezáujem o predmet.** Žiak mal matematiku rád, ale od 5. ročníka ju neznáša. Cesta späť je dlhá.
+- **Sociálny únik.** Žiak nechce byť videný, hovoriť nahlas, vystaviť sa. Tichá pasivita je obrana.
+- **Domáce problémy.** Doma sa niečo deje, žiak funguje na polovičný výkon.
+- **Depresia, úzkosť.** Klinické problémy, ktoré vyzerajú ako lenivosť.
+- **Strata vzťahu s vyučujúcim.** Niečo sa stalo, žiak sa voči vyučujúcemu uzavrel.
 
-## 4.3 Co dělat v okamžiku konfliktu
+## 3.3 Ako zistiť, o čo ide
 
-Klíčové zásady:
+Pasívneho žiaka nemožno popohnať krikom. Funguje zisťovanie — ale nie výsluch.
 
-**1. Nevstupuj do mocenského souboje před třídou.**
-Když žák řekne před třídou „Vy nemáte pravdu", máš dvě cesty:
-- ❌ „Já tady rozhoduju, kdo má pravdu, a teď budeš ticho." → souboj, který nevyhraješ. I když vyhraješ momentálně, žák bude příště zkoušet znovu.
-- ✅ „Můžeme to probrat po hodině. Teď pokračujeme." → odložíš konflikt do prostředí bez publika.
+- **Krátky individuálny rozhovor.** „P., všimol som si, že posledných pár hodín si mimo. Deje sa niečo?“ Pokojne, bez výčitky. Možno žiak nič nepovie — to je v poriadku, otvoril si dvere.
+- **Pozorovanie v rôznych situáciách.** Pasívny v matematike, aktívny na telesnej výchove? Pasívny pri tabuli, aktívny v skupine? To ti povie veľa.
+- **Pohľad spolužiakov.** Niekedy spolužiaci vedia viac ako vyučujúci. Krátky rozhovor s dôveryhodným kamarátom.
+- **Komunikácia so zákonnými zástupcami.** Nevyšetruj, ale informuj sa: „Ako je P. doma v poslednom čase? Stalo sa mu niečo?“
 
-**2. Neuhýbej, ale nestup do role rodiče.**
-Žák tě testuje. Když ustoupíš („no tak dobře, nech to být"), uvidí, že hranice je elastická a bude tlačit dál. Když se rozčílíš, dostal tě a vyhrál.
+## 3.4 Čo robiť
 
-Klidná pevnost: „Tohle není v pořádku. Bavíme se po hodině."
+Stratégia závisí od toho, čo je za pasivitou. Ale niekoľko vecí platí všeobecne:
 
-**3. Já-výrok jako alternativa k souboji.**
-„Mrzí mě, jakým tónem se mnou mluvíš. Bavme se s respektem." Pojmenovává problém, ne osobnost. Otevírá cestu zpět.
+- **Nezvyšuj tlak. Znižuj prah.** Pasívny žiak nepotrebuje väčšiu úlohu — potrebuje úlohu, v ktorej má šancu uspieť. Veľmi malý úspech znova naštartuje motor.
+- **Nevyvolávaj pred triedou bez upozornenia.** Pasívni žiaci sa boja verejnej expozície. Vopred ohlás („P., o chvíľu sa ťa opýtam na…“), alebo daj individuálnu písomnú úlohu.
+- **Hľadaj silné stránky.** Žiak, ktorý nepracuje v matematike, možno dobre kreslí. Pochváľ, daj mu priestor v jeho silnej oblasti — to oživí celkové sebaponímanie.
+- **Chváľ konkrétne, ale nepreháňaj.** „Páči sa mi, ako si to teraz sformuloval“ funguje. „Si šikovný“ už nie — žiak ti neverí.
+- **Spojenectvo, nie súťaž.** „Poďme spolu vymyslieť, ako to zvládneš“ funguje lepšie ako „musíš sa zlepšiť“.
+- **Trpezlivosť.** Pasivita sa nezlomí za týždeň. Buduje sa mesiace, niekedy roky. Návrat trvá tiež.
 
-**4. Když to přestává být udržitelné, odejdi z místa konfliktu.**
-„Teď to nebudu řešit. Budeme se tomu věnovat po hodině s panem ředitelem." Pak skutečně to s ředitelem řeš — slibu se musí dostát.
+## 3.5 Keď pasivita signalizuje niečo vážnejšie
 
-## 4.4 Po hodině — co s tím dál
+Niektoré signály by mali viesť k zapojeniu odborníka:
 
-Krátký individuální rozhovor:
+- **Náhla zmena.** Aktívny žiak zrazu prepadol. Takmer vždy sa niečo stalo.
+- **Plačlivosť, smútok, úzkosť.** Klinické symptómy, nie lenivosť.
+- **Únava neprimeraná veku.** Žiak spí na hodine, je vyčerpaný.
+- **Sebapoškodzovanie, narážky na samovraždu.** Okamžite → koordinátor prevencie, školský psychológ, prípadne zákonní zástupcovia a odborná pomoc. Nikdy nie sám.
 
-1. **Dej čas.** Žák potřebuje vychladnout. Někdy je lepší to řešit až další den.
-2. **Neopakuj scénu.** Není to soud, není to výslech. Bavíte se, co se stalo a co dál.
-3. **Slyš jeho stranu.** Možná měl důvod, který tě překvapí. Možná ne. Slyšení je samo o sobě signálem respektu.
-4. **Pojmenuj, co bylo špatně, ale neházej zpět vše.** „Tón, kterým jsi to řekl, mi vadil. Nemůžu to tolerovat. Co se ti dělo?"
-5. **Hledej, co dál.** „Co bys udělal příště jinak?" „Co bych já měl udělat jinak?"
+---
 
-Druhá otázka — co bys ty udělal jinak — je pro učitele klíčová. Mocenský přístup nepřipouští, že učitel udělal chybu. Respektující ano.
+# Časť 4: Konflikt s autoritou
 
-## 4.5 Kdy přibrat tým
+## 4.1 Čo to vlastne je
 
-Konflikt s autoritou je často signál víc než „tenhle žák je drzý". Pokud:
+„Žiak odvráva.“ „Žiak provokuje.“ „Žiak je drzý.“ Tieto opisy zahŕňajú rôzne veci:
 
-- Konflikt se opakuje s tímtéž žákem.
+- **Verejná konfrontácia** — žiak pred triedou spochybňuje vyučujúceho, hrá pre publikum.
+- **Pasívno-agresívny vzdor** — neurobí to, ale neodmietne. „Ja som to zabudol.“ „Nestihol som to.“
+- **Otvorená neposlušnosť** — poviem urob, žiak odmietne.
+- **Ironický komentár** — žiak komentuje, čo sa deje, mierne podkopáva vyučujúceho.
+- **Útok na vyučujúceho osobne** — vtipy o vzhľade, hlase, oblečení.
+
+Každá situácia má inú dynamiku.
+
+## 4.2 Vždy si polož otázku: o čo ide
+
+- **Buduje si status v triede?** Potom riešením je vziať publikum (rozhovor nabok).
+- **Reaguje na niečo konkrétne?** (zlá známka, ktorú považuje za nespravodlivú; pocit, že si zaujatý). Potom je potrebné si to vyjasniť.
+- **Hľadá hranicu?** Niektorí dospievajúci testujú, ako ďaleko zájdu. Pokojná, jasná hranica je sama osebe odpoveďou.
+- **Žije doma v autoritárskom režime?** Tam, kde sa s ním hovorí krikom, vyrástol s tým, že autorita = nepriateľ. Tu je dlhá cesta.
+
+## 4.3 Čo robiť v okamihu konfliktu
+
+Kľúčové zásady:
+
+**1. Nevstupuj do mocenského súboja pred triedou.**
+Keď žiak povie pred triedou „Nemáte pravdu“, máš dve cesty:
+- ❌ „Ja tu rozhodujem, kto má pravdu, a teraz budeš ticho.“ → súboj, ktorý nevyhráš. Aj keď vyhráš momentálne, žiak to nabudúce skúsi znova.
+- ✅ „Môžeme to prebrať po hodine. Teraz pokračujeme.“ → odložíš konflikt do prostredia bez publika.
+
+**2. Neustupuj, ale nevstupuj do roly rodiča.**
+Žiak ťa testuje. Keď ustúpiš („no tak dobre, nechaj to tak“), uvidí, že hranica je elastická, a bude tlačiť ďalej. Keď sa rozčúliš, dostal ťa a vyhral.
+
+Pokojná pevnosť: „Toto nie je v poriadku. Porozprávame sa po hodine.“
+
+**3. Ja-výrok ako alternatíva k súboju.**
+„Mrzí ma, akým tónom so mnou hovoríš. Rozprávajme sa s rešpektom.“ Pomenúva problém, nie osobnosť. Otvára cestu späť.
+
+**4. Keď to prestáva byť udržateľné, odíď z miesta konfliktu.**
+„Teraz to nebudem riešiť. Budeme sa tomu venovať po hodine s pánom riaditeľom.“ Potom to s riaditeľom naozaj rieš — sľub treba dodržať.
+
+## 4.4 Po hodine — čo s tým ďalej
+
+Krátky individuálny rozhovor:
+
+1. **Daj čas.** Žiak potrebuje vychladnúť. Niekedy je lepšie riešiť to až na ďalší deň.
+2. **Neopakuj scénu.** Nie je to súd, nie je to výsluch. Rozprávate sa, čo sa stalo a čo ďalej.
+3. **Vypočuj jeho stranu.** Možno mal dôvod, ktorý ťa prekvapí. Možno nie. Vypočutie je samo osebe signálom rešpektu.
+4. **Pomenuj, čo bolo zlé, ale nevyťahuj všetko.** „Tón, ktorým si to povedal, mi prekážal. Nemôžem to tolerovať. Čo sa s tebou dialo?“
+5. **Hľadaj, čo ďalej.** „Čo by si nabudúce urobil inak?“ „Čo by som ja mal urobiť inak?“
+
+Druhá otázka — čo by som ja urobil inak — je pre vyučujúceho kľúčová. Mocenský prístup nepripúšťa, že vyučujúci urobil chybu. Rešpektujúci áno.
+
+## 4.5 Kedy pribrať tím
+
+Konflikt s autoritou je často signálom niečoho viac ako „tento žiak je drzý“. Ak:
+
+- Konflikt sa opakuje s tým istým žiakom.
 - Konflikt eskaluje.
-- Žák má podobné problémy s víc učiteli.
-- Doma je něco, co žáka trápí.
+- Žiak má podobné problémy s viacerými vyučujúcimi.
+- Doma je niečo, čo žiaka trápi.
 
-→ Zapoj výchovného poradce nebo metodika prevence. Nebudovat sólo úsilí. Tým rozloží zátěž a najde to, co jednotlivec přehlíží.
+→ Zapoj výchovného poradcu alebo koordinátora prevencie. Nebuduj sólové úsilie. Tím rozloží záťaž a nájde to, čo jednotlivec prehliada.
 
 ---
 
-# Část 5: Dlouhodobé strategie a prevence
+# Časť 5: Dlhodobé stratégie a prevencia
 
-## 5.1 Proč je prevence levnější než řešení
+## 5.1 Prečo je prevencia lacnejšia ako riešenie
 
-Hodina, která začíná v dobrém klimatu, žádné rušivé chování nemá. Hodina v napjaté atmosféře ho má pravidelně. Investice do klimatu se vrací každý den.
+Hodina, ktorá sa začína v dobrej klíme, rušivé správanie takmer nemá. Hodina v napätej atmosfére ho má pravidelne. Investícia do klímy sa vracia každý deň.
 
-## 5.2 Pravidla třídy spoluvytvořená
+## 5.2 Spoločne vytvorené pravidlá triedy
 
-Tradiční pravidla nadiktovaná učitelem fungují omezeně. Pravidla, na kterých se třída podílela, drží.
+Tradičné pravidlá nadiktované vyučujúcim fungujú obmedzene. Pravidlá, na ktorých sa trieda podieľala, držia.
 
 Postup:
-1. **Otevřená diskuse** na začátku roku: „Co potřebujeme, aby se nám tady dobře pracovalo? Co bych měl/a já dělat? Co byste měli vy dělat?"
-2. **Sběr nápadů** lístečkovou metodou — všichni napíšou.
-3. **Třídění a formulace** — pozitivně, ne negativně. Místo „Nesmíme se vyrušovat" → „Nasloucháme si."
-4. **Rituální přijetí.** Pravidla podepište, vyvěste. Mají vážnost.
+1. **Otvorená diskusia** na začiatku roka: „Čo potrebujeme, aby sa nám tu dobre pracovalo? Čo by som mal/mala robiť ja? Čo by ste mali robiť vy?“
+2. **Zber nápadov** lístočkovou metódou — všetci napíšu.
+3. **Triedenie a formulácia** — pozitívne, nie negatívne. Namiesto „Nesmieme sa vyrušovať“ → „Počúvame sa.“
+4. **Rituálne prijatie.** Pravidlá podpíšte, vyveste. Majú váhu.
 
-Pravidla nejsou statická. Když přestávají fungovat, otevři je znova.
+Pravidlá nie sú statické. Keď prestávajú fungovať, otvor ich znova.
 
-## 5.3 Kruh — bezpečný formát komunikace
+## 5.3 Kruh — bezpečný formát komunikácie
 
-Kruh (komunitní kruh, ranní kruh, závěrečný kruh) je formát, ve kterém se třída pravidelně schází k diskusi o sobě. Funguje jako prevence i jako nástroj řešení problémů.
+Kruh (komunitný kruh, ranný kruh, záverečný kruh) je formát, v ktorom sa trieda pravidelne stretáva na diskusiu o sebe. Funguje ako prevencia aj ako nástroj riešenia problémov.
 
-Pravidla kruhu:
-- **Každý dostane prostor**, ale nikdo nemusí mluvit.
-- **Mluví ten, kdo má předmět** (kámen, mluvící hůl) — ostatní naslouchají.
-- **Co se řekne v kruhu, zůstává v kruhu** (důvěrnost).
-- **Nehodnotíme cizí výpovědi.**
+Pravidlá kruhu:
+- **Každý dostane priestor**, ale nikto nemusí hovoriť.
+- **Hovorí ten, kto má predmet** (kameň, hovoriacu palicu) — ostatní počúvajú.
+- **Čo sa povie v kruhu, zostáva v kruhu** (dôvernosť).
+- **Nehodnotíme výpovede iných.**
 
-Použití:
-- **Ranní kruh** (5 minut na začátku dne / týdne) — jak se mám, s čím přicházím.
-- **Závěrečný kruh** (5 minut na konci dne / týdne) — co si odnáším, co bylo důležité.
-- **Tematický kruh** — když je v třídě konflikt nebo téma k řešení.
+Použitie:
+- **Ranný kruh** (5 minút na začiatku dňa / týždňa) — ako sa mám, s čím prichádzam.
+- **Záverečný kruh** (5 minút na konci dňa / týždňa) — čo si odnášam, čo bolo dôležité.
+- **Tematický kruh** — keď je v triede konflikt alebo téma na riešenie.
 
-Kruh buduje vztahy ve třídě a snižuje výskyt rušivého chování.
+Kruh buduje vzťahy v triede a znižuje výskyt rušivého správania.
 
-## 5.4 Pravidelná zpětná vazba mezi učitelem a žáky
+## 5.4 Pravidelná spätná väzba medzi vyučujúcim a žiakmi
 
-- **Krátký dotazník** (1× za měsíc nebo čtvrtletí): Co ti v hodině pomáhá? Co ti vadí? Co bys změnil/a?
-- **Anonymně.** Žáci jsou upřímnější.
-- **Reaguj na zpětnou vazbu.** Když nic nezměníš, žáci ti přestanou věřit.
+- **Krátky dotazník** (1× za mesiac alebo štvrťrok): Čo ti na hodine pomáha? Čo ti prekáža? Čo by si zmenil/zmenila?
+- **Anonymne.** Žiaci sú úprimnejší.
+- **Reaguj na spätnú väzbu.** Keď nič nezmeníš, žiaci ti prestanú veriť.
 
-## 5.5 Buduj vztahy mimo hodinu
+## 5.5 Buduj vzťahy mimo hodiny
 
-- Zdrav žáky jménem, dívej se na ně.
-- Zajímej se o jejich zájmy mimo školu.
-- Dej jim malé úkoly důvěry (rozdat materiál, pohlídat něco).
-- Buď viditelný i o přestávkách.
+- Zdrav žiakov menom, pozeraj sa na nich.
+- Zaujímaj sa o ich záujmy mimo školy.
+- Daj im malé úlohy dôvery (rozdať materiál, postrážiť niečo).
+- Buď viditeľný aj cez prestávky.
 
-Žák, který má vztah k učiteli, ho nechce zklamat. Žák, který nemá vztah, nemá důvod se snažit.
+Žiak, ktorý má vzťah k vyučujúcemu, ho nechce sklamať. Žiak, ktorý vzťah nemá, nemá dôvod sa snažiť.
 
-## 5.6 Sleduj svoje vlastní zdroje
+## 5.6 Sleduj svoje vlastné zdroje
 
-Učitel, který je vyčerpaný, vidí všude problémy. Učitel, který je v pohodě, řeší totéž s humorem. Tvůj stav je nástroj — pečuj o něj.
+Vyučujúci, ktorý je vyčerpaný, vidí všade problémy. Vyučujúci, ktorý je v pohode, rieši to isté s humorom. Tvoj stav je nástroj — staraj sa oň.
 
-- **Spánek, jídlo, pohyb.** Banální, ale klíčové.
-- **Hranice mezi prací a osobním životem.** Učitel, který si bere problémy domů, vyhoří.
-- **Sdílení s kolegy.** Nejít to sólo. Sborovna jako týmové zázemí, ne soutěžní arena.
-- **Supervize.** Nejen pro krize. Pravidelná reflexe vlastní praxe pomáhá vidět vzorce.
-
----
-
-# Část 6: Konflikty mezi žáky
-
-## 6.1 Konflikt není problém, je příležitost
-
-Konflikty mezi žáky nejsou selháním školy. Jsou normální součást života ve skupině a **příležitost naučit se je řešit**. Cílem není konflikty potlačit, ale naučit žáky, jak je zvládat.
-
-## 6.2 Druhy konfliktů — kde leží hranice
-
-- **Drobná hádka** — žáci se chvíli neshodli, sami to zvládnou. Nezasahuj.
-- **Konflikt s zlobou** — emoce eskalují, ale je to mezi dvěma žáky a nepřesahuje. Zasáhni jako moderátor, nech je řešit.
-- **Fyzická konfrontace** — okamžitě rozdělit, oddělit, později řešit.
-- **Opakovaný konflikt** — stejná dvojice, stejný vzorec. Něco hlubšího.
-- **Šikana** — systematické ubližování, mocenská asymetrie. **Ne konflikt** — viz část 7.
-
-První věc před zásahem: **rozliš, o co jde**. Neoznačuj všechno za šikanu, ale ani nepřehlížej, když to už šikana je.
-
-## 6.3 Moderování konfliktu mezi dvěma žáky
-
-Když je konflikt aktivní, ale ne nebezpečný:
-
-1. **Oddělit.** Fyzicky je odveď od sebe, dej čas na vychladnutí.
-2. **Po vychladnutí svolej rozhovor.** Oba přítomní, ty jako moderátor.
-3. **Pravidla rozhovoru:** mluví jeden, druhý naslouchá. Žádné nadávky. Já-výroky.
-4. **Pořadí:** Co se stalo (každý ze své strany)? Jak ses cítil? Co bys potřeboval, aby to bylo v pořádku?
-5. **Hledejte řešení**, které oba akceptují. Ne kompromis, který oba nenávidí.
-6. **Dohoda do budoucna.** Co budeme dělat, když to nastane znovu?
-
-Klíč: **nesoudíš, kdo má pravdu**. Jsi moderátor procesu, ne soudce.
-
-## 6.4 Když je konflikt opakovaný
-
-Když řešíš stejnou dvojici potřetí, něco strukturního se děje:
-
-- Ti dva si nesedí — ale musí spolu trávit čas. Hledejte způsob, jak.
-- Jeden druhého provokuje, ten druhý reaguje. Pojmenuj vzorec.
-- Konflikt má kořeny mimo třídu (skupina, rodina, mimoškolní kontakt).
-- Jeden je ve slabší pozici — pak přechází do šikany.
-
-V tomhle bodě → výchovný poradce, školní psycholog. Sólo to neuřídíš.
-
-## 6.5 Práce s celou třídou po konfliktu
-
-Když konflikt zasáhl celou třídu (rvačka před tabulí, „aféra" v šatně), nestačí vyřešit dva aktéry. Třída to viděla a teď to nějak metabolizuje.
-
-- **Tematický kruh** — pojmenovat, co se stalo. Bez detailů, bez obviňování.
-- **Otázka:** „Co se z toho můžeme naučit? Co bychom příště udělali jinak — všichni?"
-- **Závěr:** dohoda třídy, jak chceme spolu fungovat dál.
-
-Bez tohoto si žáci sami vytvoří verzi, která bývá zjednodušená a často nespravedlivá.
+- **Spánok, jedlo, pohyb.** Banálne, ale kľúčové.
+- **Hranica medzi prácou a osobným životom.** Vyučujúci, ktorý si berie problémy domov, vyhorí.
+- **Zdieľanie s kolegami.** Nerobiť to sólo. Zborovňa ako tímové zázemie, nie súťažná aréna.
+- **Supervízia.** Nielen pri krízach. Pravidelná reflexia vlastnej praxe pomáha vidieť vzorce.
 
 ---
 
-# Část 7: Krizové situace — kdy přestáváš řešit sólo
+# Časť 6: Konflikty medzi žiakmi
 
-Tato část je krátká a její sdělení je jasné: **některé situace nepatří k řešení v rámci třídy**. Patří k odborníkům, vedení školy, případně mimo školu. Učitel je první, kdo si všimne — a první, kdo má eskalovat.
+## 6.1 Konflikt nie je problém, je to príležitosť
 
-## 7.1 Šikana
+Konflikty medzi žiakmi nie sú zlyhaním školy. Sú normálnou súčasťou života v skupine a **príležitosťou naučiť sa ich riešiť**. Cieľom nie je konflikty potlačiť, ale naučiť žiakov, ako ich zvládať.
 
-Šikana **není** běžný konflikt. Definující znaky:
+## 6.2 Druhy konfliktov — kde leží hranica
 
-- **Asymetrie moci** — pachatel je silnější (fyzicky, sociálně, jazykově, počtem).
-- **Opakovanost** — neděje se jen jednou.
-- **Záměr ublížit** — ne neúmyslné nedorozumění.
-- **Oběť se nedokáže bránit.**
+- **Drobná hádka** — žiaci sa chvíľu nezhodli, sami to zvládnu. Nezasahuj.
+- **Konflikt so zlosťou** — emócie eskalujú, ale je to medzi dvoma žiakmi a nepresahuje to. Zasiahni ako moderátor, nechaj ich riešiť.
+- **Fyzická konfrontácia** — okamžite rozdeliť, oddeliť, neskôr riešiť.
+- **Opakovaný konflikt** — tá istá dvojica, ten istý vzorec. Niečo hlbšie.
+- **Šikanovanie** — systematické ubližovanie, mocenská asymetria. **Nie je to konflikt** — pozri časť 7.
 
-Když to vidíš:
+Prvá vec pred zásahom: **rozlíš, o čo ide**. Neoznačuj všetko za šikanovanie, ale ani neprehliadaj, keď to už šikanovanie je.
 
-- **Nezačínáš řešit s rodiči pachatele e-mailem.** Patří k metodikovi prevence (a podle závažnosti k řediteli).
-- **Nezačínáš svoláním třídy a „pojďme si popovídat o šikaně".** Špatně vedená intervence ji zhoršuje.
-- **Postupuj podle školního programu prevence.** Každá škola ho má (nebo má mít) a metodik prevence ví, jak postupovat.
-- **Dokumentuj.** Datum, popis, svědci. To pomůže metodikovi i případnému dalšímu řízení.
+## 6.3 Moderovanie konfliktu medzi dvoma žiakmi
 
-Šikanu **nelze vyřešit svépomocí**. Není to slabost — je to odbornost. Patří týmu, ne učiteli sólo.
+Keď je konflikt aktívny, ale nie nebezpečný:
 
-## 7.2 Sebepoškozování, narážky na sebevraždu
+1. **Oddeliť.** Fyzicky ich odveď od seba, daj čas na vychladnutie.
+2. **Po vychladnutí zvolaj rozhovor.** Obaja prítomní, ty ako moderátor.
+3. **Pravidlá rozhovoru:** hovorí jeden, druhý počúva. Žiadne nadávky. Ja-výroky.
+4. **Poradie:** Čo sa stalo (každý zo svojej strany)? Ako si sa cítil? Čo by si potreboval, aby to bolo v poriadku?
+5. **Hľadajte riešenie**, ktoré obaja akceptujú. Nie kompromis, ktorý obaja nenávidia.
+6. **Dohoda do budúcnosti.** Čo urobíme, keď sa to stane znova?
 
-Když žák:
-- Říká „nejlíp by bylo, kdybych nebyl",
-- Píše o smrti, sebepoškozování, mizení,
-- Má viditelné stopy sebepoškozování (řezy, popáleniny),
-- Náhle se rozloučí, rozdá si věci, „uklidí" vztahy.
+Kľúč: **nesúdiš, kto má pravdu**. Si moderátor procesu, nie sudca.
 
-→ **Okamžitě** zapoj školního psychologa nebo metodika prevence. **Nikdy ne sólo.** Zároveň informuj rodiče, ale způsobem, který doporučí odborník.
+## 6.4 Keď je konflikt opakovaný
 
-Toto téma asistent neřeší jako didaktický problém. Pomáhá učiteli rozpoznat signály a okamžitě eskalovat.
+Keď riešiš tú istú dvojicu tretíkrát, deje sa niečo štrukturálne:
 
-## 7.3 Podezření na zanedbávání nebo týrání
+- Tí dvaja si nesadnú — ale musia spolu tráviť čas. Hľadajte spôsob ako.
+- Jeden druhého provokuje, ten druhý reaguje. Pomenuj vzorec.
+- Konflikt má korene mimo triedy (partia, rodina, mimoškolský kontakt).
+- Jeden je v slabšej pozícii — potom to prechádza do šikanovania.
 
-Známky:
-- Žák chodí do školy hladový, špinavý, nedostatečně oblečený.
-- Modřiny, popáleniny, podezřelá zranění.
-- Žák se bojí jít domů, mluví o tom, jak je doma.
-- Náhlá změna chování bez zjevné příčiny.
+V tomto bode → výchovný poradca, školský psychológ. Sólo to neuriadiš.
 
-→ **Vedení školy a OSPOD.** Učitel **nepíše rodičům** a **neřeší to s žákem mezi čtyřma očima**. Toto je oblast s právními postupy, které musí dodržet specialisté.
+## 6.5 Práca s celou triedou po konflikte
+
+Keď konflikt zasiahol celú triedu (bitka pred tabuľou, „aféra“ v šatni), nestačí vyriešiť dvoch aktérov. Trieda to videla a teraz to nejako spracúva.
+
+- **Tematický kruh** — pomenovať, čo sa stalo. Bez detailov, bez obviňovania.
+- **Otázka:** „Čo sa z toho môžeme naučiť? Čo by sme nabudúce urobili inak — všetci?“
+- **Záver:** dohoda triedy, ako chceme spolu fungovať ďalej.
+
+Bez toho si žiaci sami vytvoria verziu, ktorá býva zjednodušená a často nespravodlivá.
+
+---
+
+# Časť 7: Krízové situácie — kedy prestávaš riešiť sólo
+
+Táto časť je krátka a jej odkaz je jasný: **niektoré situácie nepatria k riešeniu v rámci triedy**. Patria odborníkom, vedeniu školy, prípadne mimo školy. Vyučujúci je prvý, kto si všimne — a prvý, kto má eskalovať.
+
+## 7.1 Šikanovanie
+
+Šikanovanie **nie je** bežný konflikt. Definujúce znaky:
+
+- **Asymetria moci** — páchateľ je silnejší (fyzicky, sociálne, jazykovo, počtom).
+- **Opakovanosť** — nedeje sa len raz.
+- **Zámer ublížiť** — nie neúmyselné nedorozumenie.
+- **Obeť sa nedokáže brániť.**
+
+Keď to vidíš:
+
+- **Nezačínaš to riešiť so zákonnými zástupcami páchateľa e-mailom.** Patrí to koordinátorovi prevencie (a podľa závažnosti riaditeľovi).
+- **Nezačínaš zvolaním triedy a „poďme sa porozprávať o šikanovaní“.** Zle vedená intervencia ho zhoršuje.
+- **Postupuj podľa vnútorných pravidiel školy na prevenciu a riešenie šikanovania.** Koordinátor prevencie vie, ako postupovať.
+- **Dokumentuj.** Dátum, opis, svedkovia. To pomôže koordinátorovi aj prípadnému ďalšiemu konaniu.
+
+Šikanovanie **nemožno vyriešiť svojpomocne**. Nie je to slabosť — je to odbornosť. Patrí tímu, nie vyučujúcemu sólo.
+
+## 7.2 Sebapoškodzovanie, narážky na samovraždu
+
+Keď žiak:
+- Hovorí „najlepšie by bolo, keby som nebol“,
+- Píše o smrti, sebapoškodzovaní, miznutí,
+- Má viditeľné stopy sebapoškodzovania (rezy, popáleniny),
+- Náhle sa lúči, rozdáva veci, „upratuje“ vzťahy.
+
+→ **Okamžite** zapoj školského psychológa alebo koordinátora prevencie. **Nikdy nie sólo.** Zároveň informuj zákonných zástupcov, ale spôsobom, ktorý odporučí odborník.
+
+Túto tému asistent nerieši ako didaktický problém. Pomáha vyučujúcemu rozpoznať signály a okamžite eskalovať.
+
+## 7.3 Podozrenie na zanedbávanie alebo týranie
+
+Znaky:
+- Žiak chodí do školy hladný, špinavý, nedostatočne oblečený.
+- Modriny, popáleniny, podozrivé zranenia.
+- Žiak sa bojí ísť domov, hovorí o tom, aké je to doma.
+- Náhla zmena správania bez zjavnej príčiny.
+
+→ **Vedenie školy a orgán sociálnoprávnej ochrany detí a sociálnej kurately.** Vyučujúci **nepíše zákonným zástupcom** a **nerieši to so žiakom medzi štyrmi očami**. Je to oblasť s právnymi postupmi, ktoré musia dodržať špecialisti.
 
 ## 7.4 Závažné externalizované problémy
 
-- Rodič v krizi (psychiatrické onemocnění, závažné závislosti, domácí násilí).
-- Smrt blízkého.
-- Vážná nemoc v rodině.
-- Sociální propad rodiny.
+- Zákonný zástupca v kríze (psychiatrické ochorenie, závažné závislosti, domáce násilie).
+- Smrť blízkeho.
+- Vážna choroba v rodine.
+- Sociálny prepad rodiny.
 
-Tady asistent učitele vede k tomu, aby:
-- **Zapojil školního psychologa nebo výchovného poradce.**
-- **Komunikoval s rodičem** (pokud je to bezpečné a vhodné — v domácím násilí ne).
-- **Neřešil to v hodině jako didaktický problém** — žák potřebuje úlevu, ne nátlak.
+Tu asistent vedie vyučujúceho k tomu, aby:
+- **Zapojil školského psychológa alebo výchovného poradcu.**
+- **Komunikoval so zákonným zástupcom** (ak je to bezpečné a vhodné — pri domácom násilí nie).
+- **Neriešil to na hodine ako didaktický problém** — žiak potrebuje úľavu, nie nátlak.
 
-## 7.5 Hraniční a ohrožující chování
+## 7.5 Hraničné a ohrozujúce správanie
 
-- Vážné agrese vůči žákovi nebo učiteli.
-- Útěky ze školy během dne.
-- Užívání návykových látek na školní akci.
-- Zbraně, ohrožování.
+- Vážna agresia voči žiakovi alebo vyučujúcemu.
+- Úteky zo školy počas dňa.
+- Užívanie návykových látok na školskom podujatí.
+- Zbrane, ohrozovanie.
 
-→ **Okamžitě ředitel.** Podle situace PČR. Učitel zajistí bezpečí ostatních žáků, sám nekonfrontuje.
-
----
-
-# Část 8: Když pracuješ v týmu
-
-## 8.1 Sólový učitel je rizikový
-
-Učitel, který řeší problémy sám, vyhoří dřív. Spolupráce v týmu (sbor, vedení, výchovný poradce, metodik prevence) není luxus — je to standard.
-
-## 8.2 Komu se obracet
-
-- **Třídní učitel** — pokud problém řešíš jako učitel předmětu. Třídní zná žáka v širším kontextu.
-- **Výchovný poradce** — pro vážnější výchovné problémy, podezření na poruchy, doporučení do PPP.
-- **Metodik prevence** — šikana, návykové látky, krizová prevence.
-- **Školní psycholog** (pokud je) — emoční problémy žáků, krize, vztahové věci ve třídě.
-- **Speciální pedagog** (pokud je) — žáci se SVP, individuální plány.
-- **Ředitel / zástupce** — pro situace přesahující kompetenci učitele, formální postupy.
-
-## 8.3 Kolegiální podpora
-
-Sborovna jako tým — ne jako prostředí pro stěžování. Pár formátů, které fungují:
-
-- **Případové konference.** Jednou za čas se sejde tým kolem konkrétního žáka — třídní, předmětáři, výchovný poradce. Sdílí pohledy, hledá společnou strategii.
-- **Kolegiální hospitace.** Kolega ti přijde do hodiny, dá zpětnou vazbu — ne hodnotící, ale partnerskou.
-- **Mentoring.** Začínající učitel má zkušenějšího mentora, se kterým pravidelně řeší situace.
-- **PLC (profesní učící se komunita).** Skupina učitelů, která se pravidelně schází kolem konkrétního tématu.
-
-Detailněji o spolupráci pedagogů viz samostatná příručka v projektu.
+→ **Okamžite riaditeľ.** Podľa situácie Policajný zbor SR. Vyučujúci zabezpečí bezpečnosť ostatných žiakov, sám nekonfrontuje.
 
 ---
 
-# Závěrečná poznámka pro AI asistenta
+# Časť 8: Keď pracuješ v tíme
 
-Tato příručka je referenční. **Nepoužívej ji mechanicky.**
+## 8.1 Sólový vyučujúci je rizikový
 
-- Když pedagog popíše konkrétní situaci, vyber relevantní část a aplikuj ji na jeho kontext. Necituj příručku, parafrázuj a přizpůsobuj.
-- **Hodnotový rámec:** primárně respektující přístup, ale bez moralizování. Když situace nereaguje na měkké nástroje, nebojíš se navrhnout pevnější — konsekvence, izolaci problému, eskalaci k týmu.
-- **Krizové situace** (část 7) jsou vždy důvod k zapojení odborníka. Asistent je rozpozná a okamžitě odkáže, **neradí, jak to vyřešit ve třídě**.
-- **Když pedagog odporuje** („tohle u nás nepůjde"), neoponuj. Zeptej se proč a najdi možnou cestu v jeho realitě.
-- **Jednotlivý žák × dynamika třídy.** Vždy zvaž, jestli problém je individuální, nebo systémový. Mnoho situací, které vypadají jako problém jednotlivce, jsou problémem celku.
-- **Tým, ne sólo.** Kdykoli situace přesahuje rámec běžné hodiny, navrhuj zapojení dalších profesionálů.
+Vyučujúci, ktorý rieši problémy sám, vyhorí skôr. Spolupráca v tíme (zborovňa, vedenie, výchovný poradca, koordinátor prevencie) nie je luxus — je to štandard.
+
+## 8.2 Na koho sa obrátiť
+
+- **Triedny učiteľ** — ak problém riešiš ako vyučujúci predmetu. Triedny pozná žiaka v širšom kontexte.
+- **Výchovný poradca** — pri vážnejších výchovných problémoch, podozrení na poruchy, odporúčaní do centra poradenstva a prevencie.
+- **Koordinátor prevencie** — šikanovanie, návykové látky, krízová prevencia.
+- **Školský psychológ** (ak je) — emočné problémy žiakov, krízy, vzťahové veci v triede.
+- **Školský špeciálny pedagóg** (ak je) — žiaci so ŠVVP, individuálne výchovno-vzdelávacie programy.
+- **Riaditeľ / zástupca** — pri situáciách presahujúcich kompetenciu vyučujúceho, formálne postupy.
+
+## 8.3 Kolegiálna podpora
+
+Zborovňa ako tím — nie ako prostredie na sťažovanie sa. Pár formátov, ktoré fungujú:
+
+- **Prípadové konferencie.** Raz za čas sa stretne tím okolo konkrétneho žiaka — triedny, vyučujúci predmetov, výchovný poradca. Zdieľajú pohľady, hľadajú spoločnú stratégiu.
+- **Kolegiálne hospitácie.** Kolega ti príde na hodinu, dá spätnú väzbu — nie hodnotiacu, ale partnerskú.
+- **Mentoring.** Začínajúci vyučujúci má skúsenejšieho mentora, s ktorým pravidelne rieši situácie.
+- **PLC (profesijná učiaca sa komunita).** Skupina vyučujúcich, ktorá sa pravidelne stretáva okolo konkrétnej témy.
+
+Podrobnejšie o spolupráci pedagógov pozri samostatnú príručku.
+
+---
+
+# Záverečná poznámka pre AI asistenta
+
+Táto príručka je referenčná. **Nepoužívaj ju mechanicky.**
+
+- Keď pedagóg opíše konkrétnu situáciu, vyber relevantnú časť a aplikuj ju na jeho kontext. Necituj príručku, parafrázuj a prispôsobuj.
+- **Hodnotový rámec:** primárne rešpektujúci prístup, ale bez moralizovania. Keď situácia nereaguje na mäkké nástroje, neboj sa navrhnúť pevnejšie — dôsledky, izoláciu problému, eskaláciu k tímu.
+- **Krízové situácie** (časť 7) sú vždy dôvodom na zapojenie odborníka. Asistent ich rozpozná a okamžite odkáže, **neradí, ako to vyriešiť v triede**.
+- **Keď pedagóg oponuje** („toto u nás nepôjde“), neoponuj. Opýtaj sa prečo a nájdi možnú cestu v jeho realite.
+- **Jednotlivý žiak × dynamika triedy.** Vždy zváž, či je problém individuálny, alebo systémový. Mnohé situácie, ktoré vyzerajú ako problém jednotlivca, sú problémom celku.
+- **Tím, nie sólo.** Kedykoľvek situácia presahuje rámec bežnej hodiny, navrhuj zapojenie ďalších profesionálov.
