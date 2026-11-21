@@ -10,6 +10,7 @@ import MaticeFunkci from './data/MaticeFunkci.astro';
 import KartyNastroju from './data/KartyNastroju.astro';
 import ZdrojeNastroju from './data/ZdrojeNastroju.astro';
 import InfografikaMcp from './data/InfografikaMcp.astro';
+import InfografikaKonektor from './data/InfografikaKonektor.astro';
 import InstrukceProChatboty from './InstrukceProChatboty.astro';
 interface Props { klic: Klic }
 const { klic } = Astro.props;
@@ -23,4 +24,5 @@ const { klic } = Astro.props;
 {klic === 'karty-nastroju' && <KartyNastroju />}
 {klic === 'zdroje-nastroju' && <ZdrojeNastroju />}
 {klic === 'infografika-mcp' && <InfografikaMcp />}
+{klic === 'infografika-konektor' && <InfografikaKonektor />}
 {klic === 'instrukce' && <InstrukceProChatboty />}

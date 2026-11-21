@@ -13,14 +13,11 @@ zdroje:
 
 Konektor napojí chatbota na jinou aplikaci — Google Disk, Gmail, kalendář, Microsoft 365, Notion a další. Chatbot pak může s vaším svolením hledat ve vašich dokumentech, číst e-maily nebo zakládat události v kalendáři.
 
-<!-- komponenta: infografika MCP (src/components/data/InfografikaMcp.astro) -->
+<!-- komponenta: infografika konektoru (src/components/data/InfografikaKonektor.astro) -->
 
 ## K čemu je to ve škole dobré
 
-- „Najdi na mém Disku náš ŠVP pro 2. stupeň a navrhni, kam zařadit téma umělé inteligence.“
-- „Projdi e-maily od rodičů z tohoto týdne a připrav mi přehled, na co mám odpovědět.“ (jen se školním účtem, osobní údaje pak nikam dál nevkládejte)
-- „Z kalendáře mi připrav seznam porad na příští měsíc a navrhni program první z nich.“
-- „Vezmi zápis z porady z Disku a udělej z něj úkoly pro jednotlivé kolegy.“
+Ve škole vám konektor ušetří hledání a přepisování. Chatbota můžete požádat, ať na vašem Disku najde ŠVP pro 2. stupeň a navrhne, kam zařadit téma umělé inteligence, nebo ať ze zápisu z porady uloženého na Disku udělá úkoly pro jednotlivé kolegy. Z kalendáře vám připraví seznam porad na příští měsíc i s návrhem programu té první. Zvládne také projít e-maily od rodičů z tohoto týdne a připravit přehled, na co máte odpovědět. To ale jen se školním účtem a osobní údaje z e-mailů pak nikam dál nevkládejte.
 
 ## Kde konektory najdete
 
@@ -44,5 +41,7 @@ Konektor dává chatbotu přístup ke všemu, co vidíte vy. V e-mailu a na Disk
 ## Pro pokročilé: MCP
 
 Konektory většinou stojí na otevřeném standardu MCP (Model Context Protocol). Díky němu může škola nebo vývojář napojit chatbota i na vlastní systém, například školní informační systém. To už je ale práce pro správce IT — víc v sekci [Vibe Coding pro pokročilé](/vibe-coding/pro-pokrocile).
+
+<!-- komponenta: infografika MCP (src/components/data/InfografikaMcp.astro) -->
 
 [Zpět na Změny ve funkcích 2026](/funkce/zmeny-2026)
