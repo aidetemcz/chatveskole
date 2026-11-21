@@ -38,8 +38,6 @@ Metodika pro žáky, školení pro celou sborovnu a osm zadání, která si mů�
 
 - **Pro koho:** 8. a 9. ročník ZŠ a SŠ, informatika
 - **Délka:** 90–160 minut
-- **Nástroj:** ChatGPT Sites nebo Gemini Canvas a Canva Kódování
-- **Co v ní najdete:** plán lekce, prezentaci k promítání, pracovní tabuli v Canvě pro návrh aplikace, ukázkový prompt a nápady na žákovské projekty
 
 Metodika je součástí Kurikula umělé inteligence pro ZŠ a SŠ, které vytváříme ve spolupráci s Národním pedagogickým institutem.
 
