@@ -66,4 +66,4 @@ Data se ukládají na serverech v Evropské unii a při přenosu se šifrují. P
 
 Tiny je určené žákům od 11 let. Žáci ve věku 11 a 12 let potřebují souhlas zákonného zástupce, který zajišťuje vyučující. Vzor souhlasu najdete v podmínkách Tiny. Pro děti mladší 11 let Tiny není.
 
-Tiny pomáhá žákům formativní zpětnou vazbou. Nedává známky ani jiná hodnocení, která by o žákovi rozhodovala, a nenahrazuje vyučujícího. AI ale může chybovat, proto je potřeba výstupy kontrolovat. Při nadměrném nebo neférovém využívání může být přístup omezen nebo odebrán. S dotazy se obraťte na [tiny@aidetem.cz](mailto:tiny@aidetem.cz).
+S dotazy se obraťte na [tiny@aidetem.cz](mailto:tiny@aidetem.cz).
