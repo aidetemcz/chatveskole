@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import HeroKrajina from '../components/HeroKrajina.astro';
+import Blobici from '../components/Blobici.astro';
 import { url } from '../lib/url';
 import { sady, pocet } from '../lib/data';
 
@@ -103,12 +104,12 @@ const nKatalog = nUcitele + nVedeni + nZaci;
     </div>
   </section>
 
-  <section class="band band--hp band--sky" aria-label="Sady dovedností (pluginy) a Vibe Coding">
+  <section class="band band--hp band--sky" style="padding-bottom: 28px" aria-label="Sady dovedností (pluginy) a Vibe Coding">
     <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 22px">
       <a class="card card--lg big" href={url('/funkce/pluginy')}>
         
         <h2>Sady dovedností (pluginy)</h2>
-        <p>Celou sadu dovedností nainstalujete najednou. Pluginy z našich sad jsme připravili pro Claude a ChatGPT.</p>
+        <p>Sada dovedností je balíček, který do chatbota nainstalujete jedním krokem. Může obsahovat několik dovedností, napojení na další aplikace (konektory) a další nástroje.</p>
         <span class="more" style="margin-top: auto">Co jsou pluginy →</span>
       </a>
       <a class="card card--lg big" href={url('/vibe-coding/co-je-to')}>
@@ -118,6 +119,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
         <span class="more" style="margin-top: auto">Co je vibe coding →</span>
       </a>
     </div>
+    <div class="wrap"><Blobici /></div>
   </section>
 
   <section class="band band--hp band--white" aria-labelledby="metodiky-h">
