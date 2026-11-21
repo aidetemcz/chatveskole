@@ -52,7 +52,7 @@ Souhlas rodičů k práci s AI ve výuce nepotřebujete, pokud platí tři věci
 
 Rodiče přesto informujte, které nástroje používáte a jak v nich chráníte údaje žáků.
 
-**15 let** — Od tohoto věku dává dítě v Česku souhlas se zpracováním osobních údajů v online službách samo (§ 7 zákona č. 110/2019 Sb.). U mladších dětí souhlasí zákonný zástupce.
+**15 let** — Od tohoto věku dává dítě v Česku souhlas se zpracováním osobních údajů v online službách samo, jak stanoví [zákon o zpracování osobních údajů](https://www.zakonyprolidi.cz/cs/2019-110#p7). U mladších dětí souhlasí zákonný zástupce.
 
 **Zakládají si žáci vlastní účet?** — Pokud škola zadává práci v nástroji, kde si žák zakládá vlastní účet, informujte rodiče a ověřte, kdo je správcem dat.
 
