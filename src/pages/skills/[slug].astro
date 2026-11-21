@@ -5,6 +5,7 @@ import Icon from '../../components/Icon.astro';
 import { url } from '../../lib/url';
 import { skills, sadaBySlug, datumCesky, type Skill } from '../../lib/data';
 import { NASTROJE } from '../../lib/instalace';
+import { t, tf } from '../../lib/jazyk';
 import OdkazyKonec from '../../components/OdkazyKonec.astro';
 import QRCode from 'qrcode';
 
@@ -26,30 +27,30 @@ const varianty = skill.prompt.varianty;
   <div class="band band--white" style="padding-bottom: 96px">
     <div class="wrap stack detail">
       <div class="zahlavi">
-        <Crumbs items={[{ title: 'Katalog dovedností', href: '/skills' }, { title: skill.title }]} />
-        {skill.aktualizovano && <span class="draft">Aktualizováno {datumCesky(skill.aktualizovano as unknown as string | Date)}</span>}
+        <Crumbs items={[{ title: t('Katalog dovedností'), href: '/skills' }, { title: skill.title }]} />
+        {skill.aktualizovano && <span class="draft">{tf('Aktualizováno {datum}', { datum: datumCesky(skill.aktualizovano as unknown as string | Date) })}</span>}
       </div>
       <div class="hlava">
         <header class="page-head">
           <h1>{skill.title}</h1>
           <p class="lede">{skill.popis ?? skill.kratky_popis}</p>
           {skill.rezimy && skill.rezimy.length > 0 && (
-            <ul class="modes" aria-label="Co dovednost umí">{skill.rezimy.map((r) => <li>{r}</li>)}</ul>
+            <ul class="modes" aria-label={t('Co dovednost umí')}>{skill.rezimy.map((r) => <li>{r}</li>)}</ul>
           )}
         </header>
         {qrSvg && (
           <div class="qr">
             <button type="button" class="qr-btn" aria-haspopup="dialog" aria-controls="qr-dialog" data-qr-otevrit>
               <span class="qr-obr" set:html={qrSvg} aria-hidden="true" />
-              <span class="qr-popis">Soubory dovednosti na Google Disku<span class="qr-zvetsit">Klikněte pro zvětšení</span></span>
+              <span class="qr-popis">{t('Soubory dovednosti na Google Disku')}<span class="qr-zvetsit">{t('Klikněte pro zvětšení')}</span></span>
             </button>
             <dialog id="qr-dialog" class="qr-dialog" aria-labelledby="qr-dialog-h">
-              <h2 id="qr-dialog-h">{skill.title}: soubory na Google Disku</h2>
-              <p>Naskenujte QR kód telefonem, nebo otevřete složku přímo.</p>
-              <div class="qr-velky" set:html={qrSvg} role="img" aria-label={`QR kód s odkazem na složku dovednosti ${skill.title} na Google Disku`} />
+              <h2 id="qr-dialog-h">{tf('{nazev}: soubory na Google Disku', { nazev: skill.title })}</h2>
+              <p>{t('Naskenujte QR kód telefonem, nebo otevřete složku přímo.')}</p>
+              <div class="qr-velky" set:html={qrSvg} role="img" aria-label={tf('QR kód s odkazem na složku dovednosti {nazev} na Google Disku', { nazev: skill.title })} />
               <div class="qr-akce">
-                <a class="btn btn--primary" href={skill.google_slozka}>Otevřít složku</a>
-                <button type="button" class="btn btn--outline" data-qr-zavrit>Zavřít</button>
+                <a class="btn btn--primary" href={skill.google_slozka}>{t('Otevřít složku')}</a>
+                <button type="button" class="btn btn--outline" data-qr-zavrit>{t('Zavřít')}</button>
               </div>
             </dialog>
           </div>
@@ -57,9 +58,9 @@ const varianty = skill.prompt.varianty;
       </div>
 
       <section id="instalace" class="stack sekce" aria-labelledby="inst-h">
-        <div class="stack" style="gap: 10px"><h2 id="inst-h" class="h2">Nainstalovat dovednost</h2><p class="muted">Dovednost nainstalujete jednou. Chatbot ji pak použije sám, kdykoli ji bude potřebovat, nebo ji vyvoláte přímo v chatu zavináčem či lomítkem. Dovednosti nemá každý tarif. Kde chybí, použijte verzi promptu.</p></div>
+        <div class="stack" style="gap: 10px"><h2 id="inst-h" class="h2">{t('Nainstalovat dovednost')}</h2><p class="muted">{t('Dovednost nainstalujete jednou. Chatbot ji pak použije sám, kdykoli ji bude potřebovat, nebo ji vyvoláte přímo v chatu zavináčem či lomítkem. Dovednosti nemá každý tarif. Kde chybí, použijte verzi promptu.')}</p></div>
         <div class="stack" style="gap: 12px">
-          <p id="nastroj-h" class="vyber">Vyberte chatovací aplikaci, kterou používáte.</p>
+          <p id="nastroj-h" class="vyber">{t('Vyberte chatovací aplikaci, kterou používáte.')}</p>
           <div class="tools" role="tablist" aria-labelledby="nastroj-h" data-switch="instalace-panely">
             {NASTROJE.map((n, i) => <button type="button" role="tab" data-target={n.id} aria-selected={i === 0 ? 'true' : 'false'}>{n.nazev}</button>)}
           </div>
@@ -72,15 +73,15 @@ const varianty = skill.prompt.varianty;
                 {zipFor(n.zip) ? (
                   <a class="zip" href={zipFor(n.zip)}>
                     <span class="tile-icon tile-icon--sky"><Icon name="download" size={18} /></span>
-                    <span class="stack"><strong>ZIP pro {n.nazev}</strong><span class="muted small">stáhne se z Google Disku · nerozbalujte</span></span>
+                    <span class="stack"><strong>{tf('ZIP pro {nazev}', { nazev: n.nazev })}</strong><span class="muted small">{t('stáhne se z Google Disku · nerozbalujte')}</span></span>
                   </a>
                 ) : (
                   <div class="stack" style="gap: 10px">
-                    {skill.google_doc && <a class="zip" href={skill.google_doc}><span class="tile-icon tile-icon--sky"><Icon name="doc" size={18} /></span><span class="stack"><strong>Instrukce</strong><span class="muted small">Google Docs · vložte do pokynů agenta</span></span></a>}
-                    {skill.google_data && <a class="zip" href={skill.google_data}><span class="tile-icon tile-icon--sky"><Icon name="folder" size={18} /></span><span class="stack"><strong>Znalosti (složka Data)</strong><span class="muted small">Google Disk · nahrajte do agenta</span></span></a>}
+                    {skill.google_doc && <a class="zip" href={skill.google_doc}><span class="tile-icon tile-icon--sky"><Icon name="doc" size={18} /></span><span class="stack"><strong>{t('Instrukce')}</strong><span class="muted small">{t('Google Docs · vložte do pokynů agenta')}</span></span></a>}
+                    {skill.google_data && <a class="zip" href={skill.google_data}><span class="tile-icon tile-icon--sky"><Icon name="folder" size={18} /></span><span class="stack"><strong>{t('Znalosti (složka Data)')}</strong><span class="muted small">{t('Google Disk · nahrajte do agenta')}</span></span></a>}
                   </div>
                 )}
-                <p class="muted small">Dovednosti jsou v Gemini a Claude určené uživatelům od 18 let. Se žáky používejte verzi promptu nebo aplikaci <a href={url('/ve-vyuce/tiny')}>Tiny</a>.</p>
+                <p class="muted small">{t('Dovednosti jsou v Gemini a Claude určené uživatelům od 18 let. Se žáky používejte verzi promptu nebo aplikaci')} <a href={url('/ve-vyuce/tiny')}>Tiny</a>.</p>
               </div>
             </div>
           ))}
@@ -88,32 +89,32 @@ const varianty = skill.prompt.varianty;
       </section>
 
       <section id="prompt" class="stack sekce" aria-labelledby="prompt-h">
-        <div class="stack" style="gap: 8px"><h2 id="prompt-h" class="h2">Použít jako prompt</h2><p class="muted">Funguje v jakémkoli chatbotu, i v bezplatné verzi. Údaje v hranatých závorkách nahraďte svými.{skill.google_doc && <> Celé instrukce dovednosti najdete v <a href={skill.google_doc}>Google Docs</a>.</>}</p></div>
+        <div class="stack" style="gap: 8px"><h2 id="prompt-h" class="h2">{t('Použít jako prompt')}</h2><p class="muted">{t('Funguje v jakémkoli chatbotu, i v bezplatné verzi. Údaje v hranatých závorkách nahraďte svými.')}{skill.google_doc && <>{t(' Celé instrukce dovednosti najdete v')} <a href={skill.google_doc}>Google Docs</a>.</>}</p></div>
         {varianty.length > 1 && (
-          <div class="tabs" role="tablist" aria-label="Varianta promptu" data-switch="varianty">
+          <div class="tabs" role="tablist" aria-label={t('Varianta promptu')} data-switch="varianty">
             {varianty.map((v, i) => <button type="button" role="tab" data-target={`v${i}`} aria-selected={i === 0 ? 'true' : 'false'}>{v.nazev}</button>)}
           </div>
         )}
         <div id="varianty">
           {varianty.map((v, i) => (
             <div data-group-view={`v${i}`} hidden={i !== 0} class="prompt-block" role={varianty.length > 1 ? 'tabpanel' : undefined}>
-              <div class="copy-row"><button type="button" class="copy-btn" data-copy={`varianta-${i}`}><Icon name="copy" /><span data-label>Kopírovat</span></button></div>
+              <div class="copy-row"><button type="button" class="copy-btn" data-copy={`varianta-${i}`}><Icon name="copy" /><span data-label>{t('Kopírovat')}</span></button></div>
               <pre id={`varianta-${i}`}>{v.text}</pre>
             </div>
           ))}
         </div>
-        {skill.google_data && <p><a class="zip zip--inline" href={skill.google_data}><span class="tile-icon tile-icon--sky"><Icon name="folder" size={18} /></span><span class="stack"><strong>Stáhnout znalosti (složka Data)</strong><span class="muted small">Google Disk · nahrajte soubory do chatu spolu s promptem</span></span></a></p>}
+        {skill.google_data && <p><a class="zip zip--inline" href={skill.google_data}><span class="tile-icon tile-icon--sky"><Icon name="folder" size={18} /></span><span class="stack"><strong>{t('Stáhnout znalosti (složka Data)')}</strong><span class="muted small">{t('Google Disk · nahrajte soubory do chatu spolu s promptem')}</span></span></a></p>}
       </section>
 
 
-      <p><a class="btn btn--primary" href={url('/skills')}>← Zpět na katalog dovedností</a></p>
+      <p><a class="btn btn--primary" href={url('/skills')}>{t('← Zpět na katalog dovedností')}</a></p>
     </div>
   </div>
 
   {podobne.length > 0 && (
     <section class="band band--sky podobne" aria-labelledby="podobne-h">
       <div class="wrap stack" style="gap: 30px">
-        <h2 id="podobne-h" class="h2">Podobné dovednosti</h2>
+        <h2 id="podobne-h" class="h2">{t('Podobné dovednosti')}</h2>
         <div class="podobne-mrizka">
           {podobne.map((p) => (
             <a class="podobna" href={url(`/skills/${p.slug}`)}>
@@ -122,7 +123,7 @@ const varianty = skill.prompt.varianty;
             </a>
           ))}
         </div>
-        <OdkazyKonec vSekci odkazy={[...skill.sady.map(sadaBySlug).filter(Boolean).map((x) => ({ text: `Sada ${x!.title}`, href: url(`/sady/${x!.slug}`) }))]} />
+        <OdkazyKonec vSekci odkazy={[...skill.sady.map(sadaBySlug).filter(Boolean).map((x) => ({ text: tf('Sada {nazev}', { nazev: x!.title }), href: url(`/sady/${x!.slug}`) }))]} />
       </div>
     </section>
   )}

@@ -5,6 +5,7 @@ import Crumbs from '../../components/Crumbs.astro';
 import SkillCard from '../../components/SkillCard.astro';
 import { url } from '../../lib/url';
 import { sady, skillBySlug, pocet, type Sada, type Skill } from '../../lib/data';
+import { t, tf } from '../../lib/jazyk';
 
 export function getStaticPaths() {
   return sady.map((sada) => ({ params: { slug: sada.slug }, props: { sada } }));
@@ -12,21 +13,21 @@ export function getStaticPaths() {
 const { sada } = Astro.props as { sada: Sada };
 const items = sada.skills.map(skillBySlug).filter(Boolean) as Skill[];
 ---
-<Base title={`Sada ${sada.title}`} description={sada.popis}>
+<Base title={tf('Sada {nazev}', { nazev: sada.title })} description={sada.popis}>
   <div class="band band--white" style="padding-bottom: 32px">
     <div class="wrap stack" style="gap: 32px">
-      <Crumbs items={[{ title: 'Katalog dovedností', href: '/skills' }, { title: sada.title }]} />
+      <Crumbs items={[{ title: t('Katalog dovedností'), href: '/skills' }, { title: sada.title }]} />
       <header class="page-head">
         <h1>{sada.title}</h1>
         <p class="lede">{sada.popis}</p>
       </header>
     </div>
   </div>
-  <section class="band band--sky" aria-label="Dovednosti v sadě">
+  <section class="band band--sky" aria-label={t('Dovednosti v sadě')}>
     <div class="wrap stack" style="gap: 28px">
-      <h2 style="font-size: 1.7rem">Dovednosti v sadě <span class="count">{pocet(items.length, 'dovednost', 'dovednosti', 'dovedností')}</span></h2>
+      <h2 style="font-size: 1.7rem">{t('Dovednosti v sadě')} <span class="count">{pocet(items.length, t('dovednost'), t('dovednosti'), t('dovedností'))}</span></h2>
       <div class="grid-2">{items.map((k) => <SkillCard skill={k} />)}</div>
-      <OdkazyKonec vSekci odkazy={[{ text: 'Katalog dovedností', href: url('/skills') }, { text: 'Co jsou dovednosti a jak je nainstalovat', href: url('/funkce/skills') }, { text: 'Metodické materiály', href: url('/ve-vyuce/metodiky') }]} />
+      <OdkazyKonec vSekci odkazy={[{ text: t('Katalog dovedností'), href: url('/skills') }, { text: t('Co jsou dovednosti a jak je nainstalovat'), href: url('/funkce/skills') }, { text: t('Metodické materiály'), href: url('/ve-vyuce/metodiky') }]} />
     </div>
   </section>
 </Base>
