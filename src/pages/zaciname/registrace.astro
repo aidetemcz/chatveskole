@@ -32,7 +32,7 @@ const perex = uvodOdst.filter((p) => !box(p)).map((p) => `<p>${p}</p>`).join('')
 const tip = uvodOdst.map(box).find(Boolean);
 
 // věk podle stránky Věkové limity a legislativa
-const VEK: Record<string, string> = { ChatGPT: 'od 13 let', 'Google Gemini': 'od 13 let, školní účet bez omezení', 'Microsoft Copilot': 'od 13 let', Claude: 'od 18 let', Perplexity: 'od 13 let' };
+const VEK: Record<string, string> = { ChatGPT: 'od 13 let', 'Google Gemini': 'od 13 let, školní účet bez omezení', 'Microsoft Copilot': 'od 13 let', Claude: 'od 18 let', Perplexity: 'od 13 let', Tiny: 'od 11 let' };
 const postup = najdi(/zaregistrovat/i);
 const postupHtml = htmlOddilu(postup);
 const nastroje = bloky(postupHtml).map((b, i) => {
