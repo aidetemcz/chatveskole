@@ -1,11 +1,12 @@
 ---
-// Vibe Coding pro pokročilé (sablona: pokrocili-pruvodce): programovací agenti, sestava, instrukce, bezpečnost, případová studie.
+// Vibe Coding pro pokročilé (sablona: pokrocili-pruvodce): programovací agenti, sestava, napojení na GitHub, bezpečnost, případová studie.
 // Texty jsou v content/stranky/vibe-coding/pro-pokrocile.md (oddíly podle ##), grafika stejná jako u stránky Projekty.
 import { getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import { rozdel, naOddily } from '../../lib/komponenty';
 import { navigace } from '../../lib/data';
+import AnimaceGithub from '../../components/AnimaceGithub.astro';
 
 const stranka = (await getEntry('stranky', 'vibe-coding/pro-pokrocile'))!;
 const d = stranka.data;
@@ -38,14 +39,15 @@ const radky = [...(agentiHtml.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? '').ma
 const sestava = najdi(/sestava/i);
 const kroky = polozky(htmlOddilu(sestava));
 
-// Instrukce: odstavec končící „…:“ → štítek nad seznamem, seznam → odškrtávací body
-const instrukce = najdi(/Instrukce/i);
-const instrukceHtml = htmlOddilu(instrukce);
-const instrukceOdst = odstavce(instrukceHtml);
-const dvojtecka = instrukceOdst[0]?.match(/^([\s\S]*?)\s*([^.]*:)$/);
-const instrukceText = dvojtecka ? [dvojtecka[1], ...instrukceOdst.slice(1)] : instrukceOdst;
-const instrukceStitek = dvojtecka ? dvojtecka[2].replace(/:$/, '') : '';
-const instrukceBody = seznam(instrukceHtml).map((t) => velke(t.replace(/[,.;]\s*$/, '')));
+// Jak napojit agenta na GitHub: úvod, číslované kroky „**Název** — text“, odstavec „**Nadpis** — text“ jako tip; vpravo animace
+const napojeni = najdi(/napojit/i);
+const napojeniHtml = htmlOddilu(napojeni);
+const napojeniUvod = odstavce(uvodOddilu(napojeniHtml));
+const napojeniKroky = polozky(napojeniHtml);
+const napojeniTip = odstavce(napojeniHtml.split(/<\/ol>/).pop() ?? '')
+  .map((p) => p.match(/^<strong>([\s\S]*?)<\/strong>\s*[—–-]\s*([\s\S]*)$/))
+  .filter((m): m is RegExpMatchArray => !!m)
+  .map(([, n, t]) => ({ nadpis: bezTagu(n), text: t.trim() }));
 
 // Dovednosti: příklady v „…“ → čipy
 const dovednosti = najdi(/Dovednosti/i);
@@ -132,24 +134,30 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
     </section>
   )}
 
-  {instrukce && (
-    <section class="band band--sky" aria-labelledby={instrukce.id || undefined}>
-      <div class="wrap dva-sloupce dva-sloupce--nadpis">
-        <h2 class="nadpis-sloupcu" id={instrukce.id || undefined}>{instrukce.nadpis}</h2>
-        <div class="hlava">
-          <div class="prose">{instrukceText.map((p) => <p set:html={p} />)}</div>
+  {napojeni && (
+    <section class="band band--sky" aria-labelledby={napojeni.id || undefined}>
+      <div class="wrap stack" style="gap: 28px">
+        <div class="dva-sloupce dva-sloupce--nadpis">
+          <h2 class="nadpis-sloupcu" id={napojeni.id || undefined}>{napojeni.nadpis}</h2>
+          <div class="hlava">
+            <div class="prose">{napojeniUvod.map((p) => <p set:html={p} />)}</div>
+            <ol class="napojeni-kroky">
+              {napojeniKroky.map((k, i) => (
+                <li>
+                  <span class="napojeni-cislo" aria-hidden="true">{i + 1}</span>
+                  <div><strong>{k.nazev}</strong><p set:html={k.text} /></div>
+                </li>
+              ))}
+            </ol>
+          </div>
+          <AnimaceGithub />
         </div>
-        <div class="card seznam-karta">
-          {instrukceStitek && <div class="titulek">{instrukceStitek}</div>}
-          <ul class="odskrtnuti">
-            {instrukceBody.map((b) => (
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>
-                <span set:html={b} />
-              </li>
-            ))}
-          </ul>
-        </div>
+        {napojeniTip.map((t) => (
+          <div class="tip">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M8 20h8M12 16v4"></path></svg>
+            <p><strong>{t.nadpis}</strong> <span set:html={t.text} /></p>
+          </div>
+        ))}
       </div>
     </section>
   )}
@@ -253,10 +261,11 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .postup-krok h3 { font-size: 1.1rem; }
   .postup-krok > p { margin: 0; font-size: 0.93rem; line-height: 1.6; }
 
-  .seznam-karta { gap: 16px; }
-  .odskrtnuti { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
-  .odskrtnuti li { display: flex; gap: 10px; align-items: flex-start; line-height: 1.55; }
-  .odskrtnuti svg { flex: none; margin-top: 3px; color: var(--sky-ink); }
+  .napojeni-kroky { margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 16px; }
+  .napojeni-kroky li { display: flex; gap: 14px; align-items: flex-start; }
+  .napojeni-kroky strong { font-family: var(--fh); font-weight: 600; font-size: 1.05rem; }
+  .napojeni-kroky p { margin: 4px 0 0; font-size: 0.95rem; line-height: 1.6; }
+  .napojeni-cislo { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: var(--on-accent); display: inline-flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; }
 
   .podminky { display: flex; flex-direction: column; gap: 14px; background: #f6fafc; border: 1px solid var(--sky); border-radius: 9px; padding: 22px 26px; }
   .cipy { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
@@ -277,4 +286,5 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .tip { background: var(--sky-light); border-radius: 9px; padding: 22px 26px; display: flex; gap: 14px; align-items: flex-start; max-width: 80ch; }
   .tip svg { flex: none; margin-top: 2px; color: var(--sky-ink); }
   .tip p { margin: 0; font-size: 0.98rem; }
+  .band--sky .tip { background: var(--panel); }
 </style>
