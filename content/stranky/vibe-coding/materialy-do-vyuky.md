@@ -67,7 +67,7 @@ Odnesete si konkrétní příklady výukových scénářů, nápady na projekty 
 
 ## Osm zadání pro vyučující
 
-Dřív jsme v [databázi promptů](/funkce/prompty/graf-regiony) radili, jak nechat chatbota napsat kód pro graf a vložit ho do jiné aplikace. Dnes chatbot graf rovnou postaví a vy s ním můžete klikat. Zadání vložte do Gemini Canvas nebo Claude a upravte podle sebe.
+Dříve jsme v [databázi promptů](/funkce/prompty/graf-regiony) radili, jak nechat chatbota napsat kód například pro graf a jak ho zobrazit. Dnes chatbot graf rovnou postaví. Zadání vložte do Gemini Canvas nebo Claude a upravte podle sebe.
 
 ### Interaktivní časová osa (dějepis, zeměpis)
 
