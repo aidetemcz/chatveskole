@@ -3,7 +3,7 @@ title: Způsoby využití AI ve výuce
 menu: Chatboti ve výuce
 poradi: 2
 popis: Deset způsobů, jak zapojit generativní AI do výuky tak, aby žákům pomáhala přemýšlet a nepřemýšlela za ně. Ke každému co dělá žák a co AI, pojistka a jak poznáte, že se žák učí.
-aktualizovano: 2026-11-20
+aktualizovano: 2026-11-21
 tlacitko: { text: AI aplikace Tiny, href: /ve-vyuce/tiny }
 stav: ke-kontrole   # před zveřejněním: ověřit čísla ze studií v původních článcích; věta o 4 krocích jen o návaznosti (s NPI nedohodnuto)
 zdroje:
@@ -79,7 +79,7 @@ Aktivity stačí krátké, na 5 až 15 minut, a mají navazovat na výklad, disk
 
 ### Vysvětlování
 
-**Žák učí chatbot, který látce nerozumí, a tím si ji sám ujasňuje.**
+**Žák učí chatbota, který látce nerozumí, a tím si ji sám ujasňuje.**
 
 - **Co dělá žák:** Vysvětluje téma jednoduše, volí příklady a reaguje na doplňující otázky.
 - **Co dělá AI:** Hraje zvědavého, ale nechápavého posluchače a doptává se na nejasná místa.
@@ -219,7 +219,7 @@ Výuka bez AI je plnohodnotná volba. Pokud cíl hodiny stojí na dovednosti, kt
 
 Dosavadní výzkumy se shodují v jednom: o tom, zda AI žákům pomůže, nerozhoduje nástroj sám, ale způsob, jakým s ním pracují.
 
-Lepší výkon s AI ještě neznamená, že se žák něco naučil. V [experimentu s téměř tisícovkou tureckých středoškoláků](https://doi.org/10.1073/pnas.2422633122) řešili žáci s obecným chatbotem cvičné úlohy z matematiky o 48 % úspěšněji. Ve zkoušce bez AI ale dopadli o 17 % hůř než spolužáci, kteří chatbot neměli. Druhá skupina pracovala s chatbotem, který místo řešení dával nápovědy. Při procvičování se zlepšila o 127 % a ve zkoušce obstála stejně jako kontrolní skupina. K podobnému závěru došla [OECD ve zprávě Digital Education Outlook 2026](https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html): obecné nástroje zvyšují výkon v úloze, tato výhoda však mizí, jakmile žáci AI k dispozici nemají. Trvalé zlepšení přinášejí nástroje navržené s pedagogickým záměrem.
+Lepší výkon s AI ještě neznamená, že se žák něco naučil. V [experimentu s téměř tisícovkou tureckých středoškoláků](https://doi.org/10.1073/pnas.2422633122) řešili žáci s obecným chatbotem cvičné úlohy z matematiky o 48 % úspěšněji. Ve zkoušce bez AI ale dopadli o 17 % hůř než spolužáci, kteří chatbota neměli. Druhá skupina pracovala s chatbotem, který místo řešení dával nápovědy. Při procvičování se zlepšila o 127 % a ve zkoušce obstála stejně jako kontrolní skupina. K podobnému závěru došla [OECD ve zprávě Digital Education Outlook 2026](https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html): obecné nástroje zvyšují výkon v úloze, tato výhoda však mizí, jakmile žáci AI k dispozici nemají. Trvalé zlepšení přinášejí nástroje navržené s pedagogickým záměrem.
 
 AI může žákům ubírat také přemýšlení o vlastní práci. Ve [studii se 117 vysokoškoláky](https://arxiv.org/abs/2412.09315) zlepšila skupina s ChatGPT svou esej nejvíc. Ve znalostech a v jejich přenosu na jiný úkol se ale od ostatních nelišila a svou práci sama méně průběžně vyhodnocovala. Autoři tento jev nazývají metakognitivní leností. Záleží i na pořadí. Podle [předběžné studie MIT](https://arxiv.org/abs/2506.08872) s malým vzorkem si účastníci, kteří psali nejdřív sami a AI použili až potom, ze svého textu vybavovali víc. Opačný postup vedl k nižšímu zapojení.
 

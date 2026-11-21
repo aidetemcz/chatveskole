@@ -4,7 +4,7 @@ menu: Chatboti ve výuce
 poradi: 2
 popis: Metodiky AI dětem k chatbotům ve výuce — Kurikulum umělé inteligence pro ZŠ a SŠ, metodiky k aplikaci Tiny a školení pro sborovny.
 sablona: metodiky-pruvodce   # vlastní šablona src/pages/ve-vyuce/metodiky.astro
-aktualizovano: 2026-11-20
+aktualizovano: 2026-11-21
 stav: koncept
 zdroje:
   - https://kurikulum.aidetem.cz/vypis-vseho/
@@ -15,7 +15,7 @@ odkazy:
 
 # Metodické materiály
 
-V AI dětem vyvíjíme Kurikulum umělé inteligence pro ZŠ a SŠ. Jedná se o vzdělávací koncepci umělé inteligence pro informatiku a rozvoj digitální kompetence ve všech ostatních předmětech. Obsahuje přes 50 metodických materiálů, které vám snadno umožní uchopit výuku AI skrze plány vyučovacích bloků. K aplikaci [Tiny](/ve-vyuce/tiny) jsme připravili metodický materiál s modelovými zadáními pro většinu předmětů.
+V AI dětem vyvíjíme Kurikulum umělé inteligence pro ZŠ a SŠ. Je to koncepce výuky umělé inteligence pro informatiku i pro rozvoj digitální kompetence ve všech ostatních předmětech. Najdete v něm přes 50 metodických materiálů s plány vyučovacích bloků, díky kterým výuku AI snadno uchopíte. K aplikaci [Tiny](/ve-vyuce/tiny) jsme připravili metodický materiál s modelovými zadáními pro většinu předmětů.
 
 <!-- komponenta: tlačítko -->
 
@@ -27,7 +27,7 @@ V AI dětem vyvíjíme Kurikulum umělé inteligence pro ZŠ a SŠ. Jedná se o 
 
 - **[Využití chatbotů ve formativním hodnocení](https://kurikulum.aidetem.cz/knowledgebase/vyuziti-chatbotu-ve-formativnim-hodnoceni/)** — Metodika k sadě dovedností Formativní hodnocení.
 - **[Chatboti ve výuce](https://kurikulum.aidetem.cz/knowledgebase/chatboti-ve-vyuce-pracovni-listy/)** — Úvod do promptování pro žáky od 13 let.
-- **[Rozvoj myšlení s využitím chatbota](https://kurikulum.aidetem.cz/knowledgebase/rozvoj-mysleni-s-vyuzitim-chatbota/)** — Žáci rozvíjejí myšlení prostřednictvím otázek.
+- **[Rozvoj myšlení s využitím chatbota](https://kurikulum.aidetem.cz/knowledgebase/rozvoj-mysleni-s-vyuzitim-chatbota/)** — Žáci rozvíjejí myšlení pomocí otázek.
 
 ## Metodiky k aplikaci Tiny
 

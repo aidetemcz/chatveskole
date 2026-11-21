@@ -5,7 +5,7 @@ poradi: 3
 popis: Co jsou dovednosti (skills), jak je nainstalovat do Claude, Gemini, Copilotu a ChatGPT a jak napsat vlastní. Náhrada za GPTs a Gems.
 sablona: dovednosti-pruvodce   # vlastní šablona src/pages/funkce/skills.astro (návrh z Claude Design, 20. 11. 2026)
 tlacitko: { text: Katalog dovedností, href: /skills }
-aktualizovano: 2026-11-20
+aktualizovano: 2026-11-21
 stav: koncept
 zdroje:
   - https://agentskills.io/specification
@@ -34,7 +34,7 @@ Dovednost si můžete představit jako složku, která obsahuje instrukce a voli
 
 - **Název a popis** — Podle popisu chatbot pozná, kdy dovednost použít.
 - **Postup** — Na co se zeptat, jak pracovat, jak má vypadat výstup.
-- **Podklady** — Mohou být různé textové nebo tabulkové formáty, obrázky…
+- **Podklady** — Mohou to být texty, tabulky i obrázky.
 
 ## Dovednosti z tohoto webu
 
@@ -63,7 +63,7 @@ Ve verzi zdarma a v tarifu Go dovednosti nejsou. Vložte instrukce dovednosti do
 2. V aplikaci Gemini otevřete **Více… → Přizpůsobit → Dovednosti** a nahrajte ZIP, složku nebo samotný soubor `SKILL.md` (do 100 MB).
 3. Dovednost vyvoláte zavináčem v jakémkoli chatu, například `@slovni-hodnoceni`.
 
-Dovednosti mají osobní účty od 18 let se zapnutou historií aktivity, předplatné není potřeba.
+Dovednosti fungují na osobních účtech od 18 let se zapnutou historií aktivity. Předplatné nepotřebujete.
 
 Na školních účtech (Google Workspace for Education) dostupnost řídí správce. Ověřte to u něj.
 
@@ -73,7 +73,7 @@ Na školních účtech (Google Workspace for Education) dostupnost řídí sprá
 2. Otevřete **Customize → Skills**, klikněte na **+**, zvolte **Upload a skill** a vyberte ZIP.
 3. Dovednost vyvoláte v chatu lomítkem, například `/slovni-hodnoceni`. Claude ji umí použít i sám, když napíšete třeba „Napiš slovní hodnocení pro žáka 3. třídy“.
 
-Funguje ve všech tarifech včetně bezplatného, musí být zapnuté spouštění kódu.
+Funguje ve všech tarifech včetně bezplatného, jen musí být zapnuté spouštění kódu.
 
 Claude je pro uživatele od 18 let.
 
@@ -150,10 +150,10 @@ Jako podklad poslouží [pracovní list pro testování AI asistentů](https://k
 
 Dovednosti zatím nejdou sdílet veřejným odkazem tak jako GPTs. Nejjednodušší je zveřejnit dovednost jako soubor ke stažení, přesně tak to děláme na tomto webu.
 
-- **Claude** — ZIP pošlete kolegům. V týmových tarifech můžete dovednost sdílet v rámci organizace.
+- **Claude** — ZIP pošlete kolegům. V týmových tarifech můžete dovednost sdílet uvnitř organizace.
 - **Gemini** — V Google Workspace můžete dovednost sdílet odkazem, příjemce dostane kopii. Sdílení mimo školu musí povolit správce. Osobní účty sdílení teprve dostanou.
-- **Copilot** — Jen v rámci vaší organizace.
-- **ChatGPT** — V rámci pracovního prostoru (Business, Enterprise, Edu).
+- **Copilot** — Dovednost sdílíte jen uvnitř své organizace.
+- **ChatGPT** — Dovednost sdílíte uvnitř pracovního prostoru (Business, Enterprise, Edu).
 
 ## Máte vlastní dovednost?
 

@@ -4,7 +4,7 @@ menu: Vibe Coding
 poradi: 1
 popis: Vibe coding je tvorba aplikací popisem v běžné řeči. Co to je, k čemu ho využijí vyučující, vedení škol a žáci a na co si dát pozor.
 sablona: vibe-coding-co-je-to-pruvodce   # vlastní šablona src/pages/vibe-coding/co-je-to.astro
-aktualizovano: 2026-11-20
+aktualizovano: 2026-11-21
 zdroje:
   - https://aidetem.cz/dataviz/startup-lab.html
 stav: koncept
@@ -12,7 +12,7 @@ stav: koncept
 
 # Co je vibe coding
 
-Vibe coding je způsob tvorby aplikací bez psaní kódu. Uživatel namísto programování zadává AI nástroji instrukce přirozeným jazykem, popisuje, co má aplikace nebo web dělat, a postupně výsledek upravuje. Učí se tak jasně formulovat zadání, testovat výstupy a upravovat je, aniž by musel znát konkrétní programovací jazyk.
+Vibe coding je způsob, jak tvořit aplikace bez psaní kódu. Místo programování popíšete AI nástroji běžnou řečí, co má aplikace nebo web dělat, a výsledek postupně upravujete. Učíte se tak jasně formulovat zadání, testovat výstupy a upravovat je, aniž byste museli znát konkrétní programovací jazyk.
 
 Pojem v únoru 2025 zpopularizoval výzkumník Andrej Karpathy. Od té doby se z hříčky pro programátory stala běžná funkce chatovacích aplikací: Gemini má Canvas, Claude artefakty, ChatGPT Sites.
 
@@ -45,7 +45,7 @@ Nemusíte hledat hotovou aplikaci, která „skoro“ sedí. Za pár minut si po
 
 ## Vibe coding pro žáky
 
-S žáky se při vibe codingu neučíme hlavně programovat. Učíme je **návrhový proces**: pro koho je aplikace určena, jaký problém řeší, co má umět a jak se v ní uživatel bude pohybovat. Teprve pak přichází zadání pro AI, testování a postupné ladění.
+Se žáky se při vibe codingu neučíme hlavně programovat. Učíme je **návrhový proces**: pro koho je aplikace určena, jaký problém řeší, co má umět a jak se v ní uživatel bude pohybovat. Teprve pak přichází zadání pro AI, testování a postupné ladění.
 
 Proto se vibe coding hodí nejen do informatiky, ale do jakéhokoli předmětu. Žáci mohou vytvářet výukové aplikace a hry k probíranému učivu, ale také řešení, která pomohou s konkrétními problémy, které vidí kolem sebe.
 

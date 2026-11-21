@@ -5,7 +5,7 @@ poradi: 1
 popis: GPTs a Gems končí, nastupují dovednosti a pluginy. Co který chatbot umí dnes a co má umět v roce 2027 — přehled pro vyučující a školy.
 sablona: zmeny-funkci        # vykreslí se z data/funkce-chatbotu.yaml podle vzoru docs/design/vzor-funkce-chatbotu-2027.html
 data: data/funkce-chatbotu.yaml
-aktualizovano: 2026-11-20
+aktualizovano: 2026-11-21
 stav: koncept
 odkazy:
   - { text: Co jsou dovednosti, href: /funkce/skills }
@@ -19,11 +19,11 @@ ChatGPT, Gemini, Copilot a Claude opouštějí hotové asistenty, které se otev
 
 <!-- komponenta: tři teze -->
 
-**AI asistenti končí.** AI asistenti, které jste možná znali jako Modely GPT nebo Google Gem, končí a nastupují tzv. dovednosti (skills) a sady dovedností (pluginy). V Google se Gems převedou na dovednosti samy, stačí je zkontrolovat a zapnout. V ChatGPT je třeba je přemigrovat ručně.
+**AI asistenti končí.** AI asistenti, které jste možná znali jako Modely GPT nebo Google Gems, končí. Nahrazují je takzvané dovednosti (skills) a sady dovedností (pluginy). V Gemini se Gems převedou na dovednosti samy, stačí je zkontrolovat a zapnout. V ChatGPT je potřeba převést je ručně.
 
-**Nastupují dovednosti a pluginy.** Dovednosti nebo pluginy jsou instrukce pro chatbota zabalené do funkce, kterou si kdykoliv vyvoláte přes lomítko nebo zavináč a šetří velké množství času.
+**Nastupují dovednosti a pluginy.** Dovednosti a pluginy jsou instrukce pro chatbota zabalené do funkce, kterou kdykoli vyvoláte lomítkem nebo zavináčem. Ušetří vám spoustu času.
 
-**Agenti jsou už jen jako placená funkce.** Agenti jsou funkce, kterým když zadáte úkol, tak si jeho řešení samostatně rozplánují. Šetří velké množství času, ale stávají se pouze placeným doplňkem.
+**Agenti jsou už jen placená funkce.** Agentovi zadáte úkol a on si jeho řešení sám rozplánuje. Ušetří vám spoustu času, agenti se ale stávají jen placeným doplňkem.
 
 <!-- komponenta: video -->
 
@@ -46,6 +46,6 @@ ChatGPT, Gemini, Copilot a Claude opouštějí hotové asistenty, které se otev
 - **Používáte naše asistenty z chatveskole.cz?** Najdete je jako [dovednosti](/skills). Každý má i verzi promptu, kterou vložíte do jakéhokoli chatbota.
 - **Máte vlastní GPT nebo Gem?** Uložte si jeho pokyny a soubory, dokud to jde. V ChatGPT použijte „Migrate to plugin“, v Gemini zkontrolujte a zapněte koncept dovednosti. Jak na to, popisujeme na stránkách [Dovednosti](/funkce/skills) a [Pluginy](/funkce/pluginy).
 - **Sdílíte asistenta s kolegy nebo žáky odkazem?** Tahle cesta končí. Náhradou je sdílený [projekt](/funkce/projekty), dovednost poslaná jako soubor, nebo prompt.
-- **Pracujete s žáky?** Dovednosti jsou v Gemini a Claude jen pro dospělé. Pro žáky používejte [prompty](/funkce/prompty/zaci) nebo aplikaci [Tiny](/ve-vyuce/tiny).
+- **Pracujete se žáky?** Dovednosti jsou v Gemini a Claude jen pro dospělé. Pro žáky používejte [prompty](/funkce/prompty/zaci) nebo aplikaci [Tiny](/ve-vyuce/tiny).
 
 Funkce se mění každý měsíc. Údaje ověřujeme v oficiálních nápovědách vývojářů, naposledy 13. 10. 2026.

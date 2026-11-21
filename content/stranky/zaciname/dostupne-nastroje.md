@@ -3,7 +3,7 @@ title: Dostupné nástroje
 menu: Začínáme
 poradi: 2
 popis: ChatGPT, Gemini, Copilot, Claude a další chatboti v přehledu pro školy — věkové limity, co umí zdarma, dovednosti, projekty a vytváření aplikací.
-aktualizovano: 2026-11-20
+aktualizovano: 2026-11-21
 stav: koncept
 zdroje:
   - data/funkce-chatbotu.yaml
@@ -35,7 +35,7 @@ zdroje:
 
 # Dostupné nástroje
 
-Chatbotů jsou dnes desítky. Na tomto webu se věnujeme čtyřem, které školy používají nejčastěji a které mají obdobné funkce: **ChatGPT, Gemini, Copilot a Claude.** Pro žáky navíc doporučujeme aplikaci [Tiny](/ve-vyuce/tiny), kterou vyvíjíme v AI dětem.
+Chatbotů jsou dnes desítky. Na tomto webu se věnujeme čtyřem, které školy používají nejčastěji a které mají podobné funkce: **ChatGPT, Gemini, Copilot a Claude.** Pro žáky navíc doporučujeme aplikaci [Tiny](/ve-vyuce/tiny), kterou vyvíjíme v AI dětem.
 
 ## Přehled
 
@@ -54,7 +54,7 @@ Chatbotů jsou dnes desítky. Na tomto webu se věnujeme čtyřem, které školy
 | Hledá na internetu | ano | ano | ano | ano |
 | Generuje obrázky | ano | ano | ano | ne |
 
-Podrobné srovnání funkcí a co se mění v roce 2027 najdete na stránce [Změny ve funkcích 2026](/funkce/zmeny-2026).
+Podrobné srovnání funkcí a přehled toho, co se mění v roce 2027, najdete na stránce [Změny ve funkcích 2026](/funkce/zmeny-2026).
 
 ## ChatGPT
 

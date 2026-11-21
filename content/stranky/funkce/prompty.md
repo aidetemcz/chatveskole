@@ -5,7 +5,7 @@ poradi: 2
 popis: Co je prompt, jak ho napsat, aby chatbot odpověděl dobře, a kdy místo promptu použít dovednost. Na konci odkaz na katalog ověřených promptů.
 sablona: prompty-pruvodce   # vlastní šablona src/pages/funkce/prompty/index.astro (návrh z Claude Design, 20. 11. 2026)
 tlacitko: { text: Přejít na Katalog promptů, href: /prompty }
-aktualizovano: 2026-11-20
+aktualizovano: 2026-11-21
 stav: koncept
 odkazy:
   - { text: Dovednosti (skills), href: /funkce/skills }
@@ -41,7 +41,7 @@ Začněte promptem. Když ho používáte často, uložte si ho jako dovednost.
 
 | | Prompt | Dovednost |
 |---|---|---|
-| Co to je | Text, který vložíte do chatu | Instrukce zabalené do funkce, kterou vyvoláte přes lomítko nebo zavináč |
+| Co to je | Text, který vložíte do chatu | Instrukce zabalené do funkce, kterou vyvoláte lomítkem nebo zavináčem |
 | Kde funguje | Všude, i v bezplatných verzích a pro žáky | V placených i některých bezplatných verzích, většinou jen pro dospělé |
 | Kdy se hodí | Jednorázový úkol, výuka se žáky, vyzkoušení | Úkol, který opakujete: hodnocení, přípravy, zprávy rodičům |
 
