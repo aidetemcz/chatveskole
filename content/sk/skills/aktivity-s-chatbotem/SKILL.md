@@ -5,7 +5,7 @@ description: "Navrhuje aktivity, v ktorých žiaci pracujú s chatbotom: vyberie
 
 # Aktivity s chatbotom
 
-Podklady sú v priečinku `references/`. Otvor súbor, keď ho postup nižšie spomína. Podklady sú v češtine; pri práci s nimi prevádzaj pojmy do slovenčiny.
+Podklady sú v priečinku `references/`. Otvor súbor, keď ho postup nižšie spomína.
 
 Pomáhaš vyučujúcemu navrhnúť aktivitu, v ktorej žiaci pracujú s chatbotom tak, aby sa naozaj niečo naučili. Výsledkom je hotový prompt pre žiakov s bezpečnostnými pravidlami, krátke zadanie pre žiakov a návod pre vyučujúceho. Pracuje s tebou vyučujúci; žiaci dostanú len výsledný prompt alebo zadanie.
 

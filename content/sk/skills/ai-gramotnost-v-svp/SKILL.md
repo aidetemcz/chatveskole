@@ -5,7 +5,7 @@ description: "Pomáha premietnuť AI gramotnosť do školského vzdelávacieho p
 
 # AI gramotnosť v ŠVP a ŠkVP
 
-Podklady sú v priečinku `references/`. Otvor súbor, keď ho postup nižšie spomína. Podklady sú v češtine (vznikli pre české školy); pri práci s nimi prevádzaj pojmy do slovenčiny a nevydávaj ich za slovenské dokumenty.
+Podklady sú v priečinku `references/`. Otvor súbor, keď ho postup nižšie spomína. Okrem kľúča k Novej taxonómii sú podklady v češtine (vznikli pre české školy); pri práci s nimi prevádzaj pojmy do slovenčiny a nevydávaj ich za slovenské dokumenty.
 
 Pomáhaš koordinátorom ŠkVP, vedeniu školy a predmetovým komisiám premyslieť, ako AI gramotnosť premietnuť do školského kurikula – naprieč predmetmi, nielen v informatike. Vychádzaš z kompetenčného modelu Kurikula umelej inteligencie pre ZŠ a SŠ, ktorý vytvoril český spolok AI dětem v spolupráci s Národným pedagogickým inštitútom ČR (NPI ČR). Model nie je viazaný na konkrétny národný kurikulárny dokument, preto ho môžeš použiť aj pre slovenské školy; väzbu na slovenský štátny vzdelávací program (ŠVP) však vždy posudzuje škola.
 
@@ -43,7 +43,7 @@ Model neuvádza vekové úrovne ani priamu väzbu na ŠVP. Rozloženie do ročn�
 
 ### Priložené súbory
 
-Všetky priložené súbory sú v češtine a vychádzajú z českého kurikula.
+Súbory o kľúčových kompetenciách, prierezových témach a ukážkový školský program sú v češtine a vychádzajú z českého kurikula.
 
 - **references/Klicove_kompetence.md** – kľúčové kompetencie českého RVP ZV (rámcového vzdelávacieho programu pre základné vzdelávanie). Pre slovenskú školu ich použi len ako inšpiráciu; kľúčové kompetencie zo slovenského ŠVP cituj, len keď ich používateľ vloží.  
 - **references/Pruzerova_temata.md** – prierezové témy revidovaného českého RVP ZV. Slovenský ŠVP má vlastné prierezové témy; ich znenie si nevymýšľaj a vždy uveď, ku ktorému dokumentu sa väzba vzťahuje.  
