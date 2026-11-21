@@ -6,9 +6,9 @@ import { t } from '../../lib/jazyk';
 <div class="konektor">
   <div class="mrizka">
     <ol class="nastaveni">
-      <li><span class="cislo" aria-hidden="true">1</span><p set:html={t('V aplikaci AI otevřete <strong>Nastavení › Konektory</strong>.')} /></li>
-      <li><span class="cislo" aria-hidden="true">2</span><p set:html={t('Vyberete aplikaci, kterou chcete připojit, třeba <strong>kalendář</strong>.')} /></li>
-      <li><span class="cislo" aria-hidden="true">3</span><p set:html={t('<strong>Přihlásíte se</strong> svým účtem a povolíte, co AI smí: jen číst, nebo i měnit.')} /></li>
+      <li><span class="cislo" aria-hidden="true">1</span><p>{t('V aplikaci AI otevřete')} <strong>{t('Nastavení › Konektory')}</strong>.</p></li>
+      <li><span class="cislo" aria-hidden="true">2</span><p>{t('Vyberete aplikaci, kterou chcete připojit, třeba')} <strong>{t('kalendář')}</strong>.</p></li>
+      <li><span class="cislo" aria-hidden="true">3</span><p><strong>{t('Přihlásíte se')}</strong> {t('svým účtem a povolíte, co AI smí: jen číst, nebo i měnit.')}</p></li>
       <li class="hotovo"><p>{t('Hotovo. Když AI bude potřebovat kalendář, použije sama jeho MCP server.')}</p></li>
     </ol>
 
@@ -22,7 +22,7 @@ import { t } from '../../lib/jazyk';
     </div>
   </div>
 
-  <p class="poznamka" set:html={t('<strong>Důležité:</strong> Vy rozhodujete, které aplikace k&nbsp;AI připojíte a&nbsp;co v&nbsp;nich smí dělat.')} />
+  <p class="poznamka"><strong>{t('Důležité:')}</strong> <Fragment set:html={t('Vy rozhodujete, které aplikace k&nbsp;AI připojíte a&nbsp;co v&nbsp;nich smí dělat.')} /></p>
 </div>
 
 <style>

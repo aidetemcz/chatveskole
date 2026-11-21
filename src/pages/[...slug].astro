@@ -7,6 +7,7 @@ import OdkazyKonec from '../components/OdkazyKonec.astro';
 import { rozdel } from '../lib/komponenty';
 import { navigace } from '../lib/data';
 import { url } from '../lib/url';
+import { tf, LOCALE } from '../lib/jazyk';
 
 export async function getStaticPaths() {
   const stranky = await getCollection('stranky');
@@ -22,7 +23,7 @@ const casti = rozdel(stranka.rendered?.html ?? '');
 const href = '/' + stranka.id;
 const skupina = navigace.menu.find((g) => g.items.some((i) => i.href === href));
 const d = stranka.data;
-const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString(LOCALE, { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
 // tlačítko na konci stránky (frontmatter: tlacitko: { text, href }), např. „Přejít na Katalog promptů“
 const tlacitko = d.tlacitko && typeof d.tlacitko === 'object' && d.tlacitko.href ? (d.tlacitko as { text: string; href: string }) : null;
 // odkazy na konci stránky jako tlačítka: frontmatter tlacitko + odkazy: [{ text, href }] + poslední odstavec, který obsahuje jen interní odkazy
@@ -44,7 +45,7 @@ const odkazy = [...zFm, ...zTextu.filter((o) => !zFm.some((f) => f.href === o.hr
     <article class="content">
       <div class="zahlavi">
         <Crumbs items={skupina ? [{ title: skupina.title }, { title: d.menu_titulek ?? d.title }] : [{ title: d.title }]} />
-        {datum && <span class="draft">Aktualizováno {datum}</span>}
+        {datum && <span class="draft">{tf('Aktualizováno {datum}', { datum })}</span>}
       </div>
       <header class="page-head">
         <h1>{d.title}</h1>

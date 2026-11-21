@@ -37,15 +37,15 @@ const skriptHledani = `
     })();
   `;
 ---
-<Base title="Hledat" description="Vyhledávání v dovednostech, promptech a návodech na webu Chatboti ve škole." noindex>
+<Base title={t('Hledat')} description={t('Vyhledávání v dovednostech, promptech a návodech na webu Chatboti ve škole.')} noindex>
   <div class="band band--white">
     <div class="wrap stack" style="gap: 32px">
       <header class="page-head">
-        <h1>Hledat na webu</h1>
-        <p class="lede">Dovednosti, prompty, návody a přehledy funkcí chatbotů.</p>
+        <h1>{t('Hledat na webu')}</h1>
+        <p class="lede">{t('Dovednosti, prompty, návody a přehledy funkcí chatbotů.')}</p>
       </header>
       <div id="hledani" data-bundle={bundle} data-base={url('/')}></div>
-      <noscript><p>Vyhledávání potřebuje zapnutý JavaScript. Zkuste <a href={url('/skills')}>katalog dovedností</a> nebo <a href={url('/prompty')}>katalog promptů</a>.</p></noscript>
+      <noscript><p>{t('Vyhledávání potřebuje zapnutý JavaScript. Zkuste')} <a href={url('/skills')}>{t('katalog dovedností')}</a> {t('nebo')} <a href={url('/prompty')}>{t('katalog promptů')}</a>.</p></noscript>
     </div>
   </div>
   <link rel="stylesheet" href={`${bundle}pagefind-ui.css`} />

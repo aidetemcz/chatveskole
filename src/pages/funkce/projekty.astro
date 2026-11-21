@@ -6,6 +6,7 @@ import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import { rozdel, naOddily } from '../../lib/komponenty';
 import { url } from '../../lib/url';
+import { t, tf, LOCALE } from '../../lib/jazyk';
 
 const stranka = (await getEntry('stranky', 'funkce/projekty'))!;
 const d = stranka.data;
@@ -70,26 +71,26 @@ const sdileniBoxy = odstavce.map(zvyrazneny).filter((m): m is RegExpMatchArray =
 const vyzva = najdi(/Propojte/i);
 type Odkaz = { text: string; href: string };
 const odkazy: Odkaz[] = (Array.isArray(d.odkazy) ? d.odkazy : []).filter((o: Odkaz) => o && o.href);
-const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString(LOCALE, { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
 ---
 <Base title={d.title} description={d.popis ?? undefined}>
   <div class="band band--white">
     <div class="wrap hero">
       <div class="page-head">
         <div class="zahlavi">
-          <Crumbs items={[{ title: 'Funkce' }, { title: d.title }]} />
-          {datum && <span class="draft">Aktualizováno {datum}</span>}
+          <Crumbs items={[{ title: t('Funkce') }, { title: d.title }]} />
+          {datum && <span class="draft">{tf('Aktualizováno {datum}', { datum })}</span>}
         </div>
         <h1>{d.title}</h1>
         <div class="lede perex" set:html={perex} />
         <div class="tlacitka">
           {zalozit && <a class="btn btn--primary" href={`#${zalozit.id}`}>{zalozit.nadpis} ↓</a>}
-          <a class="btn btn--outline" href={url('/skills')}>Katalog dovedností</a>
+          <a class="btn btn--outline" href={url('/skills')}>{t('Katalog dovedností')}</a>
         </div>
       </div>
       {videoHtml && (
         <div class="video-uvod stack" style="gap: 30px">
-          <h2 id="pruvodce">Průvodce založením a využitím projektu</h2>
+          <h2 id="pruvodce">{t('Průvodce založením a využitím projektu')}</h2>
           <div set:html={videoHtml} />
         </div>
       )}

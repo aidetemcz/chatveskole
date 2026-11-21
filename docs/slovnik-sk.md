@@ -2,13 +2,13 @@
 
 Návrh názvosloví pro slovenskou verzi webu (`chatveskole.cz/sk/`). **Ke schválení slovenským korektorem**; dokud není schválený, překlady se drží tohoto návrhu, aby byly jednotné.
 
-## K rozhodnutí
+## Rozhodnuto
 
 | Otázka | Návrh | Poznámka |
 |---|---|---|
-| Název webu | Chatboty v škole | V hlavičce, titulcích stránek a ve vyhledávačích. |
-| Název organizace | AI dětem, z. s. | Spolek je český, název se nepřekládá. Pokud máte slovenskou značku (např. „AI deťom“), doplňte. |
-| Překlad „dovednost (skill)“ | zručnosť (skill) | Ověřit, jak funkci nazývají slovenská rozhraní ChatGPT, Gemini a Claude. |
+| Název webu | **Chatboty v škole** | schválila Eva 21. 11. 2026 |
+| Název organizace | **AI dětem, z. s.** | nepřekládá se (Eva 21. 11. 2026) |
+| Překlad „dovednost (skill)“ | **zručnosť (skill)** | schválila Eva 21. 11. 2026 |
 | Adresy stránek | stejné jako v češtině (`/sk/zaciname/…`) | Jednodušší přepínání jazyků; slovenské adresy lze zavést později s přesměrováním. |
 
 ## Pojmy
