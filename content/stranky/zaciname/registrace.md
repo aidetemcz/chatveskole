@@ -62,6 +62,14 @@ Vyberte chatovací aplikaci.
 2. Zadejte e-mail a klikněte na **Pokračovat s e-mailem**, nebo se přihlaste účtem Google či Apple.
 3. Klikněte na odkaz v e-mailu (zkontrolujte i spam). Hotovo.
 
+### Tiny
+
+1. Otevřete [teacher.tiny.school](https://teacher.tiny.school) a přihlaste se jako vyučující.
+2. Vytvořte lekci: vyberte Tinybota a zadejte téma.
+3. Žáci otevřou [student.tiny.school](https://student.tiny.school) a zadají kód lekce. Přihlašují se školním účtem Office 365 nebo Google, případně školním e-mailem.
+
+**Věk žáků** — Tiny je určené žákům od 11 let. Žáci ve věku 11 a 12 let potřebují souhlas zákonného zástupce. Zajistí ho vyučující a vzor najdete v [podmínkách Tiny](https://www.tiny.school/podminky-uziti/). Více o Tiny najdete na stránce [AI aplikace Tiny](/ve-vyuce/tiny).
+
 ## Postup se změnil?
 
 Našli jste chybu nebo se registrace liší? Napište nám na [cau@aidetem.cz](mailto:cau@aidetem.cz).
