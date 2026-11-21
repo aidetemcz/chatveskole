@@ -1,5 +1,5 @@
 ---
-title: Vibe coding — materiály do výuky
+title: Vibe Coding — materiály do výuky
 menu: Vibe Coding
 poradi: 4
 popis: Metodika AI dětem Tvorba jednoduchých aplikací pomocí vibecodingu, školení Vibecoding pro školy a osm hotových zadání pro vyučující — interaktivní časová osa, graf z dat, myšlenková mapa, simulace logické úlohy a další.
@@ -22,7 +22,7 @@ souvisejici_prompty:   # původní prompty z kategorií Vizualizace a Různé (2
   - https://chatveskole.cz/databaze-promptu/3d-model-kvetu/
 ---
 
-# Vibe coding ve výuce
+# Vibe Coding ve výuce
 
 Metodika pro žáky, školení pro celou sborovnu a osm zadání, která si můžete rovnou vyzkoušet v chatovací aplikaci.
 

@@ -1,7 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import Icon from '../components/Icon.astro';
 import HeroKrajina from '../components/HeroKrajina.astro';
 import { url } from '../lib/url';
 import { sady, pocet } from '../lib/data';
@@ -43,26 +42,26 @@ const nKatalog = nUcitele + nVedeni + nZaci;
   <section class="band band--hp band--sky" aria-labelledby="prompty-h dovednosti-h">
     <div class="wrap stack" style="gap: 30px">
       <div class="section-head">
-        <div><h2 id="prompty-h">Katalog promptů</h2><p>Ověřené prompty pro vyučující, vedení škol i žáky. Stačí je zkopírovat do chatbota a doplnit údaje.</p></div>
+        <div><h2 id="prompty-h">Katalog promptů</h2><p class="hp-uvod">Ověřené prompty pro vyučující, vedení škol i žáky. Stačí je zkopírovat do chatbota a doplnit údaje.</p></div>
         <a class="more" href={url('/prompty')}>Všech {nKatalog} promptů →</a>
       </div>
       <div class="grid-3">
         <a class="card card--lg" href={url('/prompty?pro=pedagogove')}>
-          <div class="card-top"><span class="title-row"><span class="tile-icon tile-icon--accent"><Icon name="chat" size={18} /></span><h3 style="font-size: 1.15rem">Pro vyučující</h3></span><span class="count" style="font-size: 0.78rem">{pocet(nUcitele, 'prompt', 'prompty', 'promptů')}</span></div>
+          <div class="card-top"><span class="title-row"><h3 style="font-size: 1.15rem">Pro vyučující</h3></span><span class="count" style="font-size: 0.78rem">{pocet(nUcitele, 'prompt', 'prompty', 'promptů')}</span></div>
           <p>Formativní a slovní hodnocení, pracovní listy, úpravy materiálů a komunikace s rodiči.</p>
         </a>
         <a class="card card--lg" href={url('/prompty?pro=vedeni')}>
-          <div class="card-top"><span class="title-row"><span class="tile-icon tile-icon--accent"><Icon name="school" size={18} /></span><h3 style="font-size: 1.15rem">Pro vedení školy</h3></span><span class="count" style="font-size: 0.78rem">{pocet(nVedeni, 'prompt', 'prompty', 'promptů')}</span></div>
+          <div class="card-top"><span class="title-row"><h3 style="font-size: 1.15rem">Pro vedení školy</h3></span><span class="count" style="font-size: 0.78rem">{pocet(nVedeni, 'prompt', 'prompty', 'promptů')}</span></div>
           <p>Strategie školy, hodnoty, mise a vize, profil absolventa, školní pravidla a hodnocení kvality výuky.</p>
         </a>
         <a class="card card--lg" href={url('/prompty?pro=zaci')}>
-          <div class="card-top"><span class="title-row"><span class="tile-icon tile-icon--sky"><Icon name="cap" size={18} /></span><h3 style="font-size: 1.15rem">Pro žáky</h3></span><span class="count" style="font-size: 0.78rem">{pocet(nZaci, 'prompt', 'prompty', 'promptů')}</span></div>
+          <div class="card-top"><span class="title-row"><h3 style="font-size: 1.15rem">Pro žáky</h3></span><span class="count" style="font-size: 0.78rem">{pocet(nZaci, 'prompt', 'prompty', 'promptů')}</span></div>
           <p>Argumentace, brainstorming, plánování nebo zpětná vazba — způsoby využití generativní AI ve výuce vytvořené s NPI ČR.</p>
         </a>
       </div>
 
       <div class="section-head" style="margin-top: 56px">
-        <div><h2 id="dovednosti-h">Katalog dovedností (skills)</h2><p>Hotové dovednosti pro vyučující a vedení škol. Nainstalujete je do chatbota jednou a on je pak použije sám. Dělíme je do sad podle toho, k čemu slouží.</p></div>
+        <div><h2 id="dovednosti-h">Katalog dovedností (skills)</h2><p class="hp-uvod">Hotové dovednosti pro vyučující a vedení škol. Nainstalujete je do chatbota jednou a on je pak použije sám. Dělíme je do sad podle toho, k čemu slouží.</p></div>
         <a class="more" href={url('/skills')}>Katalog dovedností →</a>
       </div>
       <div class="grid-cards">
@@ -81,7 +80,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
       <div class="tiny-uvod">
         <a href="https://tiny.school" class="tiny-mockup"><img src={url('/img/tiny-mockup.png')} alt="Aplikace Tiny v mobilu (tiny.school)" width="579" height="535" loading="lazy" /></a>
         <div class="section-head">
-          <div><h2 id="vyuka-h">Chatboti ve výuce</h2><p>Tiny je AI aplikace s jedenácti vzdělávacími chatboty do hodiny. Připravili je didaktici AI dětem. Vy zadáte jen téma (například „opakování přítomného času“) a Tiny se postará o zbytek. Každý žák pak vede vlastní rozhovor k tématu. Místo odpovědí mu chatbot klade otázky, které ho posouvají v přemýšlení dál. Všechny konverzace vidíte a na konci hodiny dostanete od Tiny jejich shrnutí.</p><p style="margin-top: 32px"><a class="btn btn--primary" href="https://tiny.school" target="_blank" rel="noopener">Vyzkoušet Tiny<span class="sr-only"> (otevře se v novém okně)</span></a></p></div>
+          <div><h2 id="vyuka-h">Chatboti ve výuce</h2><p>Tiny je AI aplikace s jedenácti vzdělávacími chatboty do hodiny. Připravili je didaktici AI dětem. Vy zadáte jen téma (například „opakování přítomného času“) a Tiny se postará o zbytek. Každý žák pak vede vlastní rozhovor k tématu. Místo odpovědí mu chatbot klade otázky, které ho posouvají v přemýšlení dál. Všechny konverzace vidíte a na konci hodiny dostanete od Tiny jejich shrnutí. Pro vyučující i žáky je Tiny zdarma.</p><p style="margin-top: 32px"><a class="btn btn--primary" href="https://tiny.school" target="_blank" rel="noopener">Vyzkoušet Tiny<span class="sr-only"> (otevře se v novém okně)</span></a></p></div>
         </div>
       </div>
       <div class="grid-3 vyuka-boxy">
@@ -97,24 +96,24 @@ const nKatalog = nUcitele + nVedeni + nZaci;
         </div>
         <div class="card card--lg">
           <h3 style="font-size: 1.15rem">Způsoby využití AI ve výuce</h3>
-          <p>Deset způsobů, jak zapojit AI do výuky tak, aby žákům pomáhala přemýšlet a nepřemýšlela za ně.</p>
+          <p>Deset způsobů, jak zapojit AI do výuky tak, aby žáky rozvíjela.</p>
           <a class="more" href={url('/ve-vyuce/zpusoby-vyuziti-ai')} style="margin-top: auto">Způsoby využití AI →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="band band--hp band--sky" aria-label="Sady dovedností (pluginy) a vibe coding">
+  <section class="band band--hp band--sky" aria-label="Sady dovedností (pluginy) a Vibe Coding">
     <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 22px">
       <a class="card card--lg big" href={url('/funkce/pluginy')}>
-        <span class="tile-icon tile-icon--accent" style="width: 44px; height: 44px"><Icon name="box" size={22} /></span>
+        
         <h2>Sady dovedností (pluginy)</h2>
         <p>Celou sadu dovedností nainstalujete najednou. Pluginy z našich sad jsme připravili pro Claude a ChatGPT.</p>
         <span class="more" style="margin-top: auto">Co jsou pluginy →</span>
       </a>
       <a class="card card--lg big" href={url('/vibe-coding/co-je-to')}>
-        <span class="tile-icon tile-icon--sky" style="width: 44px; height: 44px"><Icon name="code" size={22} /></span>
-        <h2>Vibe coding</h2>
+        
+        <h2>Vibe Coding</h2>
         <p>Webovou stránku, kvíz nebo malou aplikaci do hodiny vytvoříte i bez znalosti programování. Stačí popsat, co chcete, a chatbot to postaví.</p>
         <span class="more" style="margin-top: auto">Co je vibe coding →</span>
       </a>
@@ -148,7 +147,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
       </div>
       <div class="newsletter">
         <h2 style="font-size: 1.25rem">Novinky do e-mailu</h2>
-        <p>Funkce chatbotů se mění každý měsíc. Pošleme vám, co je pro školy důležité.</p>
+        <p>Jednou za čas vám pošleme, co je nového v umělé inteligenci a ve vzdělávání.</p>
         <!-- Odběr přes veřejný formulář Ecomailu (žádný skript ani cookies na našem webu). -->
         <div><a class="btn btn--primary" href="https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f9d89c882af9a3a8b" target="_blank" rel="noopener">Přihlásit se k odběru<span class="sr-only"> (otevře se v novém okně)</span></a></div>
       </div>
@@ -158,6 +157,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
 </Base>
 
 <style>
+  .section-head p.hp-uvod { font-size: 1.15rem; }
   /* hero: animovaná krajina (HeroKrajina) pod textem; nebe nahoře, země dole má výšku --zeme */
   .hero { position: relative; --zeme: 240px; background: var(--sky-light); padding: 104px 0 calc(var(--zeme) + 64px); }
   .hero-in { position: relative; z-index: 1; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 40px 56px; pointer-events: none; }
