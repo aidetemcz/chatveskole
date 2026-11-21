@@ -177,11 +177,12 @@ export function naKartyZpusobu(html: string): string {
     if (radky.length) out += '<div class="zpusob-dalsi">'
       + radky.map(([s, x]) => `<p><strong>${KRATCE[s] ?? s}:</strong> ${x}</p>`).join('') + '</div>';
     if (spustit) {
-      const odkazy = [...spustit.matchAll(/<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)];
-      const tiny = spustit.split(/,?\s*v běžném chatbotu/i)[0].trim().match(/^V Tiny\s+([\s\S]*)$/i);
+      const [tinyCast, chatbotCast = ''] = spustit.split(/,?\s*v běžném chatbotu/i);
+      const odkazy = [...(/^V Tiny/i.test(tinyCast.trim()) ? chatbotCast : spustit).matchAll(/<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)];
+      const tiny = tinyCast.trim().match(/^V Tiny\s+([\s\S]*)$/i);
       const tlacitka = odkazy.map(([, href, nazev]) => `<a class="btn btn--outline btn--sm" href="${href}">Prompt ${bezTagu(nazev)} →</a>`).join('');
       out += '<div class="zpusob-paticka">'
-        + (tiny ? `<p class="zpusob-tiny"><strong>V Tiny:</strong> ${bezTagu(tiny[1]).replace(/[.,]\s*$/, '')}</p>` : '')
+        + (tiny ? `<p class="zpusob-tiny"><strong>V Tiny:</strong> ${tiny[1].trim().replace(/[.,]\s*$/, '')}</p>` : '')
         + tlacitka + '</div>';
     }
     return out + '</article>';

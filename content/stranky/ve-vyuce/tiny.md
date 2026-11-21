@@ -36,19 +36,19 @@ Chatboti v Tiny (Tinyboti) jsou postavení podle Bloomovy taxonomie. Každý roz
 
 ![Rostlina, jejíž větve odpovídají úrovním myšlení. Zapamatování: Testovací chatbot, Opakovací parťák. Porozumění: Společné objevování, Zvědavý mimoň, Historická postava, V hlavní roli. Aplikace: Co kdyby. Analýza a hodnocení: Chybující chatbot, Argumentační partner. Tvorba: Parťák pro brainstorming, Chatbot pro plánování.](/img/tinyboti-diagram.svg)
 
-| Kognitivní proces | Tinybot | Popis jeho fungování |
-|---|---|---|
-| Zapamatování | Testovací chatbot | Ověřuje žákovy znalosti různou formou testů. |
-| | Opakovací parťák | Ptá se a vysvětluje, pokud žák nerozumí. |
-| Porozumění | Společné objevování | Slouží pro samostatné vzdělávání v hodinách i doma. |
-| | Zvědavý mimoň | Předstírá nevědomost a vyzývá k vysvětlení. |
-| | Historická postava / Expert | Hraje historickou postavu nebo experta a přibližuje kontext. |
-| | V hlavní roli… | Vtělí se do zadané role a odpovídá z její perspektivy. |
-| Aplikace | Co kdyby… | Rozvíjí hypotetický scénář a pomáhá o něm přemýšlet. |
-| Analýza a hodnocení | Argumentační partner | V diskuzi zastává opačné stanovisko a upozorňuje na argumentační fauly. |
-| | Chybující chatbot | Záměrně chybuje a vyzývá k ověření. |
-| Tvorba | Parťák pro brainstorming | Pomáhá vymýšlet nápady a řešení. |
-| | Tinybot pro plánování | Pomáhá rozvrhnout práci a konkrétní kroky. |
+| Kognitivní proces | Tinybot | Popis jeho fungování | Metodika |
+|---|---|---|---|
+| Zapamatování | Testovací chatbot | Ověřuje žákovy znalosti různou formou testů. | [Metodika](https://www.tiny.school/testovaci-chatbot/) |
+| | Opakovací parťák | Ptá se a vysvětluje, pokud žák nerozumí. | |
+| Porozumění | Společné objevování | Slouží pro samostatné vzdělávání v hodinách i doma. | [Metodika](https://www.tiny.school/spolecne-objevovani/) |
+| | Zvědavý mimoň | Předstírá nevědomost a vyzývá k vysvětlení. | [Metodika](https://www.tiny.school/zvedavy-mimon/) |
+| | Historická postava / Expert | Hraje historickou postavu nebo experta a přibližuje kontext. | [Metodika](https://www.tiny.school/historicka-postava-expert/) |
+| | V hlavní roli… | Vtělí se do zadané role a odpovídá z její perspektivy. | |
+| Aplikace | Co kdyby… | Rozvíjí hypotetický scénář a pomáhá o něm přemýšlet. | [Metodika](https://www.tiny.school/co-kdyby/) |
+| Analýza a hodnocení | Argumentační partner | V diskuzi zastává opačné stanovisko a upozorňuje na argumentační fauly. | [Metodika](https://www.tiny.school/argumentacni-partner/) |
+| | Chybující chatbot | Záměrně chybuje a vyzývá k ověření. | [Metodika](https://www.tiny.school/chybujici-chatbot/) |
+| Tvorba | Parťák pro brainstorming | Pomáhá vymýšlet nápady a řešení. | [Metodika](https://www.tiny.school/partak-pro-brainstorming/) |
+| | Tinybot pro plánování | Pomáhá rozvrhnout práci a konkrétní kroky. | [Metodika](https://www.tiny.school/chatbot-pro-planovani/) |
 
 <!-- komponenta: tlačítko -->
 
