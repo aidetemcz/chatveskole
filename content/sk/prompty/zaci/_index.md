@@ -1,10 +1,10 @@
 ---
-title: Prompty pro žáky
-popis: Deset promptů ke zkopírování, jeden ke každému způsobu využití AI ve výuce. Pomáhají žákům v učení a nemyslí za ně.
+title: Prompty pre žiakov
+popis: Desať promptov na skopírovanie, jeden ku každému spôsobu využitia AI vo vyučovaní. Pomáhajú žiakom v učení a nemyslia za nich.
 pro_koho: zaci
-vek: "13+ s ohledem na podmínky nástroje; mladší žáci jen s vyučujícím"
+vek: "13+ s ohľadom na podmienky nástroja; mladší žiaci len s vyučujúcim"
 puvodni_url: https://chatveskole.cz/zpusoby-vyuziti-genai-ve-vyuce/
-aktualizovano: 2026-11-20
+aktualizovano: 2026-11-21
 stav: koncept
 zdroje:
   - https://digitalizace.rvp.cz/clanky/4-kroky-ke-smysluplnemu-uceni-s-ai
@@ -14,45 +14,45 @@ zdroje:
   - https://arxiv.org/pdf/2506.08872
 ---
 
-# Prompty pro žáky
+# Prompty pre žiakov
 
-Prompty vycházejí z [deseti způsobů využití AI ve výuce](/ve-vyuce/zpusoby-vyuziti-ai). U každého způsobu najdete, co při něm dělá žák a co AI, kdy se hodí, pojistku, která chrání učení, a podle čeho poznáte, že se žák opravdu něco naučil. Prompty tyto pojistky obsahují: chatbot žákovi neprozradí hotovou odpověď a nechá ho nejdřív přemýšlet samotného.
+Prompty vychádzajú z [desiatich spôsobov využitia AI vo vyučovaní](/ve-vyuce/zpusoby-vyuziti-ai). Pri každom spôsobe nájdete, čo pri ňom robí žiak a čo AI, kedy sa hodí, poistku, ktorá chráni učenie, a podľa čoho spoznáte, že sa žiak naozaj niečo naučil. Prompty tieto poistky obsahujú: chatbot žiakovi neprezradí hotovú odpoveď a nechá ho najprv premýšľať samého.
 
-**GenAI doporučujeme využívat hlavně se staršími žáky**, kteří už dokážou samostatně nebo s menší podporou posoudit, jestli jim AI v učení opravdu pomáhá.¹ Mladší žáci by s chatbotem měli pracovat jen s vyučujícím — třeba tak, že aplikaci ovládá vyučující a otázky kladou žáci. Vždy zkontrolujte věkové podmínky konkrétního nástroje: [Věkové limity a legislativa](/zaciname/vekove-limity-a-legislativa).
+**GenAI odporúčame využívať hlavne so staršími žiakmi**, ktorí už dokážu samostatne alebo s menšou podporou posúdiť, či im AI v učení naozaj pomáha.¹ Mladší žiaci by mali s chatbotom pracovať len s vyučujúcim — napríklad tak, že aplikáciu ovláda vyučujúci a otázky kladú žiaci. Vždy skontrolujte vekové podmienky konkrétneho nástroja: [Vekové limity a legislatíva](/zaciname/vekove-limity-a-legislativa).
 
-## Proč prompty, a ne dovednosti
+## Prečo prompty, a nie zručnosti
 
-Dovednosti jsou v Gemini a Claude určené dospělým (18+). Žákovské aktivity proto nabízíme jako prompty ke zkopírování, které fungují v jakémkoli chatbotu, i v bezplatné verzi. Většina promptů má navíc hotového chatbota v aplikaci [Tiny](/ve-vyuce/tiny) — žák nic nekopíruje, nepotřebuje účet u velké firmy a vyučující vidí průběh konverzace.
+Zručnosti sú v Gemini a Claude určené dospelým (18+). Žiacke aktivity preto ponúkame ako prompty na skopírovanie, ktoré fungujú v akomkoľvek chatbote, aj v bezplatnej verzii. Väčšina promptov má navyše hotového chatbota v aplikácii [Tiny](/ve-vyuce/tiny) — žiak nič nekopíruje, nepotrebuje účet vo veľkej firme a vyučujúci vidí priebeh konverzácie.
 
-## Způsoby a prompty
+## Spôsoby a prompty
 
-Každý z deseti způsobů má jeden prompt se stejným názvem.
+Každý z desiatich spôsobov má jeden prompt s rovnakým názvom.
 
 | Skupina | Prompt |
 |---|---|
-| Žák si vybavuje a vysvětluje | [Opakování](/funkce/prompty/zaci/opakovani) |
-| | [Společné objevování](/funkce/prompty/zaci/spolecne-objevovani) |
-| | [Vysvětlování](/funkce/prompty/zaci/vysvetlovani) |
-| Žák zkoumá souvislosti | [Rozhovor v roli](/funkce/prompty/zaci/rozhovor-v-roli) |
-| | [Co kdyby](/funkce/prompty/zaci/co-kdyby) |
-| Žák posuzuje | [Argumentace](/funkce/prompty/zaci/argumentace) |
-| | [Hledání chyb](/funkce/prompty/zaci/hledani-chyb) |
-| Žák tvoří | [Brainstorming](/funkce/prompty/zaci/brainstorming) |
-| | [Plánování a struktura](/funkce/prompty/zaci/planovani-a-struktura) |
-| | [Zpětná vazba](/funkce/prompty/zaci/zpetna-vazba) |
+| Žiak si vybavuje a vysvetľuje | [Opakovanie](/funkce/prompty/zaci/opakovani) |
+| | [Spoločné objavovanie](/funkce/prompty/zaci/spolecne-objevovani) |
+| | [Vysvetľovanie](/funkce/prompty/zaci/vysvetlovani) |
+| Žiak skúma súvislosti | [Rozhovor v role](/funkce/prompty/zaci/rozhovor-v-roli) |
+| | [Čo keby](/funkce/prompty/zaci/co-kdyby) |
+| Žiak posudzuje | [Argumentácia](/funkce/prompty/zaci/argumentace) |
+| | [Hľadanie chýb](/funkce/prompty/zaci/hledani-chyb) |
+| Žiak tvorí | [Brainstorming](/funkce/prompty/zaci/brainstorming) |
+| | [Plánovanie a štruktúra](/funkce/prompty/zaci/planovani-a-struktura) |
+| | [Spätná väzba](/funkce/prompty/zaci/zpetna-vazba) |
 
-## Co mají prompty společné
+## Čo majú prompty spoločné
 
-- **Chybějící zadání.** Když žák nechá v hranatých závorkách jen příklad, chatbot se na téma nejdřív zeptá.
-- **Práce zůstává na žákovi.** Chatbot za něj nevymýšlí odpovědi, nápady ani osnovu, ani když o to žák požádá. Nabídne nápovědu nebo otázku.
-- **Ukončení.** Většinu rozhovorů žák ukončí slovem „končíme“. Chatbot pak shrne, co se povedlo, a položí otázku k reflexi. Shrnutí si žák může zkopírovat a odevzdat.
-- **Ověřování.** Chatbot se může mýlit. Důležité informace si žáci ověřují v učebnici nebo u vyučujícího.
+- **Chýbajúce zadanie.** Keď žiak nechá v hranatých zátvorkách len príklad, chatbot sa ho na tému najprv opýta.
+- **Práca zostáva na žiakovi.** Chatbot zaňho nevymýšľa odpovede, nápady ani osnovu, ani keď ho o to žiak požiada. Ponúkne nápovedu alebo otázku.
+- **Ukončenie.** Väčšinu rozhovorov žiak ukončí slovom „končíme“. Chatbot potom zhrnie, čo sa podarilo, a položí otázku na reflexiu. Zhrnutie si žiak môže skopírovať a odovzdať.
+- **Overovanie.** Chatbot sa môže mýliť. Dôležité informácie si žiaci overujú v učebnici alebo u vyučujúceho.
 
-Po každé aktivitě nechte žáky krátce zhodnotit, jestli jim AI pomohla. Otázky k reflexi najdete na stránce [Způsoby využití AI ve výuce](/ve-vyuce/zpusoby-vyuziti-ai#ke-každému-způsobu-patří-reflexe).
+Po každej aktivite nechajte žiakov krátko zhodnotiť, či im AI pomohla. Otázky na reflexiu nájdete na stránke [Spôsoby využitia AI vo vyučovaní](/ve-vyuce/zpusoby-vyuziti-ai#ke-každému-způsobu-patří-reflexe).
 
-## Autorství a zdroje
+## Autorstvo a zdroje
 
-- Materiál vznikl ve spolupráci AI dětem a Národního pedagogického institutu ČR a navazuje na rámec [4 kroky ke smysluplnému učení s AI](https://digitalizace.rvp.cz/clanky/4-kroky-ke-smysluplnemu-uceni-s-ai).
-- Původní verze [10 způsobů využití GenAI ve výuce jako plakát ke stažení](https://digitalizace.rvp.cz/clanky/10-zpusobu-vyuziti-generativni-ai-ve-vyuce-na-zs-a-ss)
-- Způsoby vycházejí z [AI Assessment Scale](https://aiassessmentscale.com/), kterou vypracoval Leon Furze se spoluautory ([původní výzkum](https://arxiv.org/pdf/2412.09029)).
-- ¹ Doporučení vychází ze studie *Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task* ([arxiv.org/pdf/2506.08872](https://arxiv.org/pdf/2506.08872)).
+- Materiál vznikol v spolupráci AI dětem a Národného pedagogického inštitútu ČR a nadväzuje na rámec [4 kroky ke smysluplnému učení s AI](https://digitalizace.rvp.cz/clanky/4-kroky-ke-smysluplnemu-uceni-s-ai) (v češtine).
+- Pôvodná verzia [10 způsobů využití GenAI ve výuce ako plagát na stiahnutie](https://digitalizace.rvp.cz/clanky/10-zpusobu-vyuziti-generativni-ai-ve-vyuce-na-zs-a-ss) (v češtine)
+- Spôsoby vychádzajú z [AI Assessment Scale](https://aiassessmentscale.com/), ktorú vypracoval Leon Furze so spoluautormi ([pôvodný výskum](https://arxiv.org/pdf/2412.09029), v angličtine).
+- ¹ Odporúčanie vychádza zo štúdie *Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task* ([arxiv.org/pdf/2506.08872](https://arxiv.org/pdf/2506.08872)).
