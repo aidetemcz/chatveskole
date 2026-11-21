@@ -16,3 +16,4 @@ _to_delete/
 public/download/
 # obrázky ze starého webu kopírované při buildu (scripts/build-downloads.mjs)
 public/archiv/
+dist-sk/

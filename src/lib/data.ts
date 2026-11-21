@@ -2,19 +2,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import YAML from 'yaml';
+import { OBSAH, dataSoubor } from './jazyk';
 
 const ROOT = process.cwd();
 const readYaml = (rel: string) => YAML.parse(fs.readFileSync(path.join(ROOT, rel), 'utf8'));
 
 export type MenuItem = { title: string; href: string; zvyraznit?: boolean };
 export type MenuGroup = { title: string; items: MenuItem[] };
-export const navigace: { menu: MenuGroup[]; cta: MenuItem } = readYaml('content/navigace.yaml');
+export const navigace: { menu: MenuGroup[]; cta: MenuItem } = readYaml(`${OBSAH}/navigace.yaml`);
 
 export type Sada = { slug: string; title: string; popis: string; pro_koho: string[]; skills: string[] };
-export const sady: Sada[] = readYaml('content/sady.yaml');
+export const sady: Sada[] = readYaml(`${OBSAH}/sady.yaml`);
 
 export type Znalost = { nazev: string; url: string; verejne?: boolean };
-export const znalosti: Record<string, Znalost> = readYaml('content/znalosti/znalosti.yaml');
+export const znalosti: Record<string, Znalost> = readYaml(`${OBSAH}/znalosti/znalosti.yaml`);
 
 export const PRO_KOHO: Record<string, string> = {
   ucitele: 'Vyučující',
@@ -76,12 +77,12 @@ export type Skill = {
   prompt: SkillPrompt;
 };
 
-const SKILLS_DIR = path.join(ROOT, 'content/skills');
+const SKILLS_DIR = path.join(ROOT, OBSAH, 'skills');
 export const skills: Skill[] = fs
   .readdirSync(SKILLS_DIR)
   .filter((d) => fs.existsSync(path.join(SKILLS_DIR, d, 'meta.yaml')))
   .map((slug) => {
-    const meta = readYaml(`content/skills/${slug}/meta.yaml`);
+    const meta = readYaml(`${OBSAH}/skills/${slug}/meta.yaml`);
     const prompt = parsePromptMd(fs.readFileSync(path.join(SKILLS_DIR, slug, 'prompt.md'), 'utf8'));
     return { ...meta, slug, prompt } as Skill;
   });
@@ -157,14 +158,14 @@ export type FunkceChatbotu = {
   matice: { funkce: string; popis: string; nastroje: Record<string, BunkaMatice> }[];
   zdroje: Record<string, string[]>;
 };
-export const funkceChatbotu: FunkceChatbotu = readYaml('data/funkce-chatbotu.yaml');
+export const funkceChatbotu: FunkceChatbotu = readYaml(dataSoubor('funkce-chatbotu.yaml'));
 
 export type Ceny = {
   aktualizovano: string;
   zahranicni_platby?: string;
   nastroje: { id: string; nazev: string; vyrobce: string; cenik: string; tarify: { nazev: string; cena: string; pozn?: string }[]; trenink?: string; zdroje?: string[] }[];
 };
-export const ceny: Ceny = readYaml('data/ceny.yaml');
+export const ceny: Ceny = readYaml(dataSoubor('ceny.yaml'));
 
 // datum 2026-11-17 → "17. 11. 2026" (nezlomitelné mezery)
 export function datumCesky(iso: string | Date): string {

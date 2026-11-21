@@ -7,7 +7,8 @@ import { url } from '../../../lib/url';
 import { skillBySlug } from '../../../lib/data';
 
 export async function getStaticPaths() {
-  const prompty = (await getCollection('prompty')).filter((p) => !p.id.startsWith('zaci/'));
+  // seřadit podle id: pořadí z getCollection není stálé a „Podobné prompty“ se mezi buildy měnily
+  const prompty = (await getCollection('prompty')).filter((p) => !p.id.startsWith('zaci/')).sort((a, b) => a.id.localeCompare(b.id));
   const seen = new Map<string, string>();
   return prompty.map((p) => {
     const slug = p.id.split('/')[1];

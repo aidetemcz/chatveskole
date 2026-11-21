@@ -9,11 +9,12 @@ import Base from '../../../layouts/Base.astro';
 import Crumbs from '../../../components/Crumbs.astro';
 import { rozdel, naOddily } from '../../../lib/komponenty';
 import { url } from '../../../lib/url';
+import { dataSoubor } from '../../../lib/jazyk';
 
 type Technika = { id: string; cislo: number; nazev: string; popis: string; barva: string };
 type Kus = { technika: string | null; text: string };
 const sk: { techniky: Technika[]; zapnuto: string[]; kusy: Kus[] } =
-  YAML.parse(fs.readFileSync(path.join(process.cwd(), 'data/skladacka-promptu.yaml'), 'utf8'));
+  YAML.parse(fs.readFileSync(path.join(process.cwd(), dataSoubor('skladacka-promptu.yaml')), 'utf8'));
 const barva = Object.fromEntries(sk.techniky.map((t) => [t.id, t.barva]));
 const zap = new Set(sk.zapnuto);
 
