@@ -87,9 +87,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
         </div>
 
         {claude && (
-          <div class="claude" aria-labelledby={claude.id || undefined}>
+          <div class="card claude" aria-labelledby={claude.id || undefined}>
             <div class="stack claude-uvod" style="gap: 10px">
-              <span class="stitek stitek--bily">Pro vedení a pedagogy, od 18 let</span>
+              <span class="stitek">Pro vedení a pedagogy, od 18 let</span>
               <h2 id={claude.id || undefined} class="h-box">{claude.nadpis}</h2>
               <div class="prose" set:html={uvodOddilu(claudeHtml)} />
             </div>
@@ -170,16 +170,15 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .card--hlavni { border: 2px solid var(--accent); }
   .pravidlo { background: var(--accent-soft); border-radius: 9px; padding: 26px 28px; display: flex; flex-direction: column; gap: 12px; }
 
-  .claude { background: var(--accent-soft); border-radius: 12px; padding: 32px 36px; display: flex; flex-direction: column; gap: 22px; }
+  .claude { gap: 22px; }
   .claude-uvod { max-width: var(--dve-tretiny); }
   .claude-uvod .prose { max-width: none; }
-  .h-box { font-size: clamp(1.4rem, 2.4vw, 1.6rem); }
-  .claude .prose :global(p) { font-size: 0.95rem; }
+  .h-box { font-size: 1.2rem; }
+  .claude .prose :global(p) { font-size: 0.95rem; line-height: 1.6; }
   .kroky { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px; }
-  .kroky li { background: var(--panel); border-radius: 9px; padding: 20px 22px; display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem; line-height: 1.55; }
+  .kroky li { background: #f6fafc; border-radius: 9px; padding: 20px 22px; display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem; line-height: 1.55; }
   .kroky strong { font-family: var(--fh); font-size: 1.05rem; }
   .cislo { font-family: var(--fh); font-size: 1.6rem; font-weight: 700; color: var(--accent); line-height: 1; }
-  @media (max-width: 640px) { .claude { padding: 24px 20px; } }
 
   .vyzva { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; }
   .btn--bila { background: var(--panel); }
