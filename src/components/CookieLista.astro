@@ -4,6 +4,7 @@
 // První úroveň: Přijmout / Přizpůsobit (rozhodla Eva 21. 11. 2026); v Přizpůsobit přepínač analytických cookies.
 // Volba se ukládá v localStorage; změnit ji jde tlačítkem „Nastavení cookies“ v patičce ([data-cookies-nastaveni]).
 // Lišta i měření jen v produkčním buildu na Vercelu (prop zapnuto).
+import { url } from '../lib/url';
 interface Props { zapnuto: boolean }
 const { zapnuto } = Astro.props;
 const GA_ID = 'G-G1NT8MV18D';
@@ -11,7 +12,7 @@ const GA_ID = 'G-G1NT8MV18D';
 {zapnuto && (
   <>
     <div class="cookie-lista" id="cookie-lista" role="region" aria-label="Souhlas s cookies" hidden data-pagefind-ignore>
-      <p>Rádi bychom měřili návštěvnost pomocí Google Analytics, abychom věděli, které stránky vám pomáhají. Analytické cookies použijeme jen s vaším souhlasem. Volbu můžete kdykoli změnit v patičce webu.</p>
+      <p>Rádi bychom měřili návštěvnost pomocí Google Analytics, abychom věděli, které stránky vám pomáhají. Analytické cookies použijeme jen s vaším souhlasem. Volbu můžete kdykoli změnit v patičce webu. Více v <a href={url('/o-webu/ochrana-soukromi')}>Ochraně soukromí</a>.</p>
       <div class="cookie-tlacitka" data-cookies-zaklad>
         <button type="button" class="btn btn--primary" data-cookies="ano">Přijmout</button>
         <button type="button" class="btn btn--outline" data-cookies-prizpusobit>Přizpůsobit</button>
