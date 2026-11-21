@@ -5,12 +5,13 @@
 // Skript animace je převzatý z artifactu; změna: animace stojí, dokud ji uživatel nepustí (tlačítko Přehrát animaci); písma jsou self-hostovaná (Inter, Space Grotesk, JetBrains Mono).
 import '@fontsource/jetbrains-mono/700.css';
 import { url } from '../lib/url';
+import { t } from '../lib/jazyk';
 ---
 <div class="instr">
 <section class="instr-hlavicka" aria-labelledby="instr-h">
   <div>
-    <h2 id="instr-h">Instrukce pro chatboty</h2>
-    <p class="lede">Instrukce říkají chatbotovi, co přesně má udělat. Čím přesnější instrukce, tím přesnější výsledek. Podívejte se, jak to vypadá, když chatbota pošlete pro červenou rybu.</p>
+    <h2 id="instr-h">{t('Instrukce pro chatboty')}</h2>
+    <p class="lede">{t('Instrukce říkají chatbotovi, co přesně má udělat. Čím přesnější instrukce, tím přesnější výsledek. Podívejte se, jak to vypadá, když chatbota pošlete pro červenou rybu.')}</p>
   </div>
 </section>
 
@@ -18,13 +19,13 @@ import { url } from '../lib/url';
   <div class="faze">
     <div class="anim">
       <canvas data-druh="1" aria-hidden="true"></canvas>
-      <button class="spustit" type="button"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg>Přehrát animaci<span class="sr-only">: krátký prompt</span></button>
-      <button class="pauza" type="button" aria-pressed="true" aria-label="Přehrát animaci" data-stav="stoji"><svg class="i-pauza" viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="2" width="2.4" height="8" rx="0.6"></rect><rect x="7.1" y="2" width="2.4" height="8" rx="0.6"></rect></svg><svg class="i-hrat" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg></button>
+      <button class="spustit" type="button"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg>{t('Přehrát animaci')}<span class="sr-only">{t(': krátký prompt')}</span></button>
+      <button class="pauza" type="button" aria-pressed="true" aria-label={t('Přehrát animaci')} data-stav="stoji"><svg class="i-pauza" viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="2" width="2.4" height="8" rx="0.6"></rect><rect x="7.1" y="2" width="2.4" height="8" rx="0.6"></rect></svg><svg class="i-hrat" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg></button>
     </div>
     <div class="text">
       <span class="krok" aria-hidden="true">1</span>
-      <h3 id="instr-f1">Krátký prompt</h3>
-      <p>Když do nového chatu napíšete jen pár slov, chatbot musí hádat, co jste měli na mysli. Výsledek proto často nebývá dobrý.</p>
+      <h3 id="instr-f1">{t('Krátký prompt')}</h3>
+      <p>{t('Když do nového chatu napíšete jen pár slov, chatbot musí hádat, co jste měli na mysli. Výsledek proto často nebývá dobrý.')}</p>
     </div>
   </div>
 </section>
@@ -33,15 +34,15 @@ import { url } from '../lib/url';
   <div class="faze">
     <div class="anim">
       <canvas data-druh="2" aria-hidden="true"></canvas>
-      <button class="spustit" type="button"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg>Přehrát animaci<span class="sr-only">: podrobný prompt</span></button>
-      <button class="pauza" type="button" aria-pressed="true" aria-label="Přehrát animaci" data-stav="stoji"><svg class="i-pauza" viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="2" width="2.4" height="8" rx="0.6"></rect><rect x="7.1" y="2" width="2.4" height="8" rx="0.6"></rect></svg><svg class="i-hrat" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg></button>
+      <button class="spustit" type="button"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg>{t('Přehrát animaci')}<span class="sr-only">{t(': podrobný prompt')}</span></button>
+      <button class="pauza" type="button" aria-pressed="true" aria-label={t('Přehrát animaci')} data-stav="stoji"><svg class="i-pauza" viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="2" width="2.4" height="8" rx="0.6"></rect><rect x="7.1" y="2" width="2.4" height="8" rx="0.6"></rect></svg><svg class="i-hrat" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg></button>
     </div>
     <div class="text">
       <span class="krok" aria-hidden="true">2</span>
-      <h3 id="instr-f2">Podrobný prompt</h3>
-      <p>Když si dáte práci s pořádným zadáním, bývá výsledek o dost lepší. Napsat podrobné zadání ale zabere čas. Proto jsme je připravili a vyzkoušeli za vás. Můžete je zkopírovat, nebo se jimi jen inspirovat.</p>
-      <a class="more" href={url('/funkce/prompty')}>Co je to prompt a jak ho tvořit →</a>
-      <a class="more" href={url('/prompty')}>Katalog promptů →</a>
+      <h3 id="instr-f2">{t('Podrobný prompt')}</h3>
+      <p>{t('Když si dáte práci s pořádným zadáním, bývá výsledek o dost lepší. Napsat podrobné zadání ale zabere čas. Proto jsme je připravili a vyzkoušeli za vás. Můžete je zkopírovat, nebo se jimi jen inspirovat.')}</p>
+      <a class="more" href={url('/funkce/prompty')}>{t('Co je to prompt a jak ho tvořit →')}</a>
+      <a class="more" href={url('/prompty')}>{t('Katalog promptů →')}</a>
     </div>
   </div>
 </section>
@@ -50,15 +51,15 @@ import { url } from '../lib/url';
   <div class="faze">
     <div class="anim">
       <canvas data-druh="3" aria-hidden="true"></canvas>
-      <button class="spustit" type="button"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg>Přehrát animaci<span class="sr-only">: dovednost</span></button>
-      <button class="pauza" type="button" aria-pressed="true" aria-label="Přehrát animaci" data-stav="stoji"><svg class="i-pauza" viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="2" width="2.4" height="8" rx="0.6"></rect><rect x="7.1" y="2" width="2.4" height="8" rx="0.6"></rect></svg><svg class="i-hrat" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg></button>
+      <button class="spustit" type="button"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg>{t('Přehrát animaci')}<span class="sr-only">{t(': dovednost')}</span></button>
+      <button class="pauza" type="button" aria-pressed="true" aria-label={t('Přehrát animaci')} data-stav="stoji"><svg class="i-pauza" viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="2" width="2.4" height="8" rx="0.6"></rect><rect x="7.1" y="2" width="2.4" height="8" rx="0.6"></rect></svg><svg class="i-hrat" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg></button>
     </div>
     <div class="text">
       <span class="krok" aria-hidden="true">3</span>
-      <h3 id="instr-f3">Dovednosti (skills)</h3>
-      <p>Dovednost spojuje podrobné zadání se znalostmi, tedy s přiloženými soubory. Vytvoříte ji jednou a pak ji v chatu jen vyvoláte zavináčem nebo lomítkem. U činností, které opakujete, vám to ušetří spoustu času.</p>
-      <a class="more" href={url('/funkce/skills')}>Co je to dovednost a jak ji vytvořit →</a>
-      <a class="more" href={url('/skills')}>Katalog dovedností →</a>
+      <h3 id="instr-f3">{t('Dovednosti (skills)')}</h3>
+      <p>{t('Dovednost spojuje podrobné zadání se znalostmi, tedy s přiloženými soubory. Vytvoříte ji jednou a pak ji v chatu jen vyvoláte zavináčem nebo lomítkem. U činností, které opakujete, vám to ušetří spoustu času.')}</p>
+      <a class="more" href={url('/funkce/skills')}>{t('Co je to dovednost a jak ji vytvořit →')}</a>
+      <a class="more" href={url('/skills')}>{t('Katalog dovedností →')}</a>
     </div>
   </div>
 </section>
@@ -67,14 +68,14 @@ import { url } from '../lib/url';
   <div class="faze">
     <div class="anim anim--bila">
       <canvas data-druh="4" aria-hidden="true"></canvas>
-      <button class="spustit" type="button"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg>Přehrát animaci<span class="sr-only">: projekty</span></button>
-      <button class="pauza" type="button" aria-pressed="true" aria-label="Přehrát animaci" data-stav="stoji"><svg class="i-pauza" viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="2" width="2.4" height="8" rx="0.6"></rect><rect x="7.1" y="2" width="2.4" height="8" rx="0.6"></rect></svg><svg class="i-hrat" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg></button>
+      <button class="spustit" type="button"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg>{t('Přehrát animaci')}<span class="sr-only">{t(': projekty')}</span></button>
+      <button class="pauza" type="button" aria-pressed="true" aria-label={t('Přehrát animaci')} data-stav="stoji"><svg class="i-pauza" viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="2" width="2.4" height="8" rx="0.6"></rect><rect x="7.1" y="2" width="2.4" height="8" rx="0.6"></rect></svg><svg class="i-hrat" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg></button>
     </div>
     <div class="text">
       <span class="krok" aria-hidden="true">4</span>
-      <h3 id="instr-f4">Projekty</h3>
-      <p>Projekty se podobají složkám. Každý má svůj kontext — například projekt Grantové žádosti může obsahovat úspěšné žádosti, které jste podali dřív. Chatbot do nich vidí a čerpá z nich. V projektu můžete vyvolat i dovednosti, které vaše zadání ještě zpřesní — v projektu Grantové žádosti třeba předem vytvořenou dovednost na vyhodnocení kvality žádosti.</p>
-      <a class="more" href={url('/funkce/projekty')}>Co jsou projekty →</a>
+      <h3 id="instr-f4">{t('Projekty')}</h3>
+      <p>{t('Projekty se podobají složkám. Každý má svůj kontext — například projekt Grantové žádosti může obsahovat úspěšné žádosti, které jste podali dřív. Chatbot do nich vidí a čerpá z nich. V projektu můžete vyvolat i dovednosti, které vaše zadání ještě zpřesní — v projektu Grantové žádosti třeba předem vytvořenou dovednost na vyhodnocení kvality žádosti.')}</p>
+      <a class="more" href={url('/funkce/projekty')}>{t('Co jsou projekty →')}</a>
     </div>
   </div>
 </section>
@@ -83,14 +84,14 @@ import { url } from '../lib/url';
   <div class="faze">
     <div class="anim anim--bila">
       <canvas data-druh="5" aria-hidden="true"></canvas>
-      <button class="spustit" type="button"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg>Přehrát animaci<span class="sr-only">: pluginy</span></button>
-      <button class="pauza" type="button" aria-pressed="true" aria-label="Přehrát animaci" data-stav="stoji"><svg class="i-pauza" viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="2" width="2.4" height="8" rx="0.6"></rect><rect x="7.1" y="2" width="2.4" height="8" rx="0.6"></rect></svg><svg class="i-hrat" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg></button>
+      <button class="spustit" type="button"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg>{t('Přehrát animaci')}<span class="sr-only">{t(': pluginy')}</span></button>
+      <button class="pauza" type="button" aria-pressed="true" aria-label={t('Přehrát animaci')} data-stav="stoji"><svg class="i-pauza" viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="2" width="2.4" height="8" rx="0.6"></rect><rect x="7.1" y="2" width="2.4" height="8" rx="0.6"></rect></svg><svg class="i-hrat" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2.2v7.6a.5.5 0 0 0 .76.43l6.1-3.8a.5.5 0 0 0 0-.86l-6.1-3.8a.5.5 0 0 0-.76.43z"></path></svg></button>
     </div>
     <div class="text">
       <span class="krok" aria-hidden="true">5</span>
-      <h3 id="instr-f5">Sady dovedností (pluginy)</h3>
-      <p>Pluginy spojují dovednosti s takzvanými konektory. Ty propojují chatbota s dalšími aplikacemi, například s kalendářem, úložištěm, e-mailem nebo třeba s Canvou. Díky pluginům zautomatizujete i složitější práci.</p>
-      <a class="more" href={url('/funkce/pluginy')}>Co jsou pluginy →</a>
+      <h3 id="instr-f5">{t('Sady dovedností (pluginy)')}</h3>
+      <p>{t('Pluginy spojují dovednosti s takzvanými konektory. Ty propojují chatbota s dalšími aplikacemi, například s kalendářem, úložištěm, e-mailem nebo třeba s Canvou. Díky pluginům zautomatizujete i složitější práci.')}</p>
+      <a class="more" href={url('/funkce/pluginy')}>{t('Co jsou pluginy →')}</a>
     </div>
   </div>
 </section>
