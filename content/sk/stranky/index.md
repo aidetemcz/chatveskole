@@ -1,73 +1,73 @@
 ---
-title: Chatboti ve škole
-popis: "Praktický průvodce chatboty pro vyučující a vedení škol: dovednosti, prompty, Vibe Coding a pravidla pro využívání AI ve škole."
+title: Chatboty v škole
+popis: "Praktický sprievodca chatbotmi pre vyučujúcich a vedenie škôl: zručnosti, prompty, Vibe Coding a pravidlá používania AI v škole."
 sablona: homepage
 aktualizovano: 2026-11-21
-stav: koncept
+stav: ke-kontrole
 ---
 
-# Chatboti ve škole
+# Chatboty v škole
 
-Web Chatboti ve škole je uceleným rozcestníkem pro využití generativní AI v praxi vyučujících i vedení školy. Inspiraci zde najdou nejen úplní začátečníci, ale také pokročilí uživatelé.
+Web Chatboty v škole je ucelený rozcestník pre využitie generatívnej AI v praxi vyučujúcich aj vedenia školy. Inšpiráciu tu nájdu úplní začiatočníci aj pokročilí používatelia.
 
-[Jak pracovat s chatboty](/zaciname/jak-pracovat-s-chatboty) · [Katalog dovedností](/skills)
+[Ako pracovať s chatbotmi](/zaciname/jak-pracovat-s-chatboty) · [Katalóg zručností](/skills)
 
-## Co se letos mění
+## Čo sa tento rok mení
 
-Hotoví asistenti na odkaz končí. Vlastní GPTs v ChatGPT přestanou fungovat 11. prosince 2026, Gems v Gemini mizí postupně od 17. listopadu 2026. Nahrazují je **dovednosti** a **pluginy**. Všechny naše asistenty jsme proto převedli na dovednosti — a ke každému je i prompt, který vložíte do jakéhokoli chatbota.
+Hotoví asistenti na odkaz končia. Vlastné GPTs v ChatGPT prestanú fungovať 11. decembra 2026, Gems v Gemini miznú postupne od 17. novembra 2026. Nahrádzajú ich **zručnosti** a **pluginy**. Všetkých našich asistentov sme preto previedli na zručnosti — a ku každému je aj prompt, ktorý vložíte do akéhokoľvek chatbota.
 
-[Přehled změn ve funkcích chatbotů](/funkce/zmeny-2026)
+[Prehľad zmien vo funkciách chatbotov](/funkce/zmeny-2026)
 
-## Dovednosti pro vyučující a vedení škol
+## Zručnosti pre vyučujúcich a vedenie škôl
 
 <!-- komponenta: dlaždice sad z content/sady.yaml -->
 
-- **Formativní hodnocení** — cíle, kritéria, sebehodnocení a slovní hodnocení podle Vysvědčení jinak.
-- **Příprava výuky** — nápady na hodiny, pracovní listy, úpravy materiálů a aktivity, ve kterých s chatbotem pracují žáci.
-- **Komunikace a podpora pedagoga** — zprávy zákonným zástupcům, jazyková kontrola, mentor pro náročné situace.
-- **Vedení školy** — mise a vize, školní pravidla, strategie, AI gramotnost v ŠVP.
-- **AI akcelerátor** — řízení změny a mapování procesů pro školy v programu.
+- **Formatívne hodnotenie** — ciele, kritériá, sebahodnotenie a slovné hodnotenie podľa metodiky Vysvědčení jinak (v češtine).
+- **Príprava vyučovania** — nápady na hodiny, pracovné listy, úpravy materiálov a aktivity, v ktorých s chatbotom pracujú žiaci.
+- **Komunikácia a podpora pedagóga** — správy zákonným zástupcom, jazyková kontrola, mentor pre náročné situácie.
+- **Vedenie školy** — misia a vízia, školské pravidlá, stratégie, AI gramotnosť v ŠkVP.
+- **AI akcelerátor** — riadenie zmeny a mapovanie procesov pre školy v programe.
 
-Každou dovednost můžete použít dvěma způsoby: **zkopírovat jako prompt** (funguje všude, i zdarma), nebo **stáhnout jako dovednost** a nainstalovat do Claude, Gemini, ChatGPT nebo Copilotu (dovednosti ale nemá každý tarif).
+Každú zručnosť môžete použiť dvoma spôsobmi: **skopírovať ako prompt** (funguje všade, aj zadarmo), alebo **stiahnuť ako zručnosť** a nainštalovať do Claude, Gemini, ChatGPT alebo Copilotu (zručnosti však nemá každý tarif).
 
-[Co jsou dovednosti a jak je nainstalovat](/funkce/skills)
+[Čo sú zručnosti a ako ich nainštalovať](/funkce/skills)
 
-## Databáze promptů
+## Databáza promptov
 
-Desítky ověřených promptů pro vyučující, vedení škol i žáky. Stačí zkopírovat do chatbota a doplnit údaje.
+Desiatky overených promptov pre vyučujúcich, vedenie škôl aj žiakov. Stačí ich skopírovať do chatbota a doplniť údaje.
 
-[Katalog promptů](/prompty) · [Prompty pro žáky](/funkce/prompty/zaci)
+[Katalóg promptov](/prompty) · [Prompty pre žiakov](/funkce/prompty/zaci)
 
 ## Vibe Coding
 
-Webová stránka, kvíz nebo malá aplikace do hodiny bez znalosti programování. Stačí popsat, co chcete, a chatbot to postaví.
+Webová stránka, kvíz alebo malá aplikácia do hodiny bez znalosti programovania. Stačí opísať, čo chcete, a chatbot to postaví.
 
-[Co je Vibe Coding](/vibe-coding/co-je-to)
+[Čo je Vibe Coding](/vibe-coding/co-je-to)
 
 ## Metodické materiály
 
 <!-- komponenta: 3 karty s náhledy -->
 
-- [Chatboti ve výuce](https://kurikulum.aidetem.cz/knowledgebase/chatboti-ve-vyuce-pracovni-listy/) — úvod do promptování pro žáky od 13 let.
-- [Využití chatbotů ve formativním hodnocení](https://kurikulum.aidetem.cz/knowledgebase/vyuziti-chatbotu-ve-formativnim-hodnoceni/) — metodika k sadě dovedností.
-- [Rozvoj myšlení s využitím chatbota](https://kurikulum.aidetem.cz/knowledgebase/rozvoj-mysleni-s-vyuzitim-chatbota/) — žáci rozvíjejí myšlení prostřednictvím otázek.
+- [Chatboti ve výuce](https://kurikulum.aidetem.cz/knowledgebase/chatboti-ve-vyuce-pracovni-listy/) (v češtine) — úvod do promptovania pre žiakov od 13 rokov.
+- [Využití chatbotů ve formativním hodnocení](https://kurikulum.aidetem.cz/knowledgebase/vyuziti-chatbotu-ve-formativnim-hodnoceni/) (v češtine) — metodika k sade zručností.
+- [Rozvoj myšlení s využitím chatbota](https://kurikulum.aidetem.cz/knowledgebase/rozvoj-mysleni-s-vyuzitim-chatbota/) (v češtine) — žiaci rozvíjajú myslenie prostredníctvom otázok.
 
-[Všechny metodické materiály](/ve-vyuce/metodiky)
+[Všetky metodické materiály](/ve-vyuce/metodiky)
 
-## Aplikace Tiny
+## Aplikácia Tiny
 
-Chatboti pro žáky v bezpečném školním prostředí — bez osobních účtů žáků u velkých firem.
+Chatboty pre žiakov v bezpečnom školskom prostredí — bez osobných účtov žiakov vo veľkých firmách.
 
-[Aplikace Tiny](/ve-vyuce/tiny)
+[Aplikácia Tiny](/ve-vyuce/tiny)
 
 ## Kniha AI ve škole prakticky
 
-Srozumitelný průvodce generativní umělou inteligencí pro všechny, kdo se věnují vzdělávání — od základních škol po univerzity.
+Zrozumiteľný sprievodca generatívnou umelou inteligenciou pre všetkých, ktorí sa venujú vzdelávaniu — od základných škôl po univerzity. Kniha je v češtine.
 
-[Objednat knihu](https://vzdelavame.aidetem.cz/akce/publikace/ai-ve-skole-prakticky/)
+[Objednať knihu](https://vzdelavame.aidetem.cz/akce/publikace/ai-ve-skole-prakticky/)
 
 ## Novinky do e-mailu
 
-Funkce chatbotů se mění každý měsíc. Pošleme vám, co je pro školy důležité.
+Funkcie chatbotov sa menia každý mesiac. Pošleme vám, čo je pre školy dôležité.
 
-[Přihlásit se k odběru](https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f9d89c882af9a3a8b)
+[Prihlásiť sa na odber](https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f9d89c882af9a3a8b)

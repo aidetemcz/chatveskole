@@ -1,47 +1,47 @@
 ---
-title: Web má nový vzhled i obsah
+title: Chatboty v škole po slovensky
 menu_titulek: Nový web
-menu: O webu
+menu: O webe
 poradi: 0
-popis: Proč jsme web Chatboti ve škole přepracovali a co kde najdete — přehled sekcí, katalogů dovedností a promptů a co se stalo s původními AI asistenty.
+popis: Slovenská verzia českého webu Chatboti ve škole — prečo vznikla, čo kde nájdete a ako použiť zručnosti, ktoré nahrádzajú pôvodných AI asistentov.
 aktualizovano: 2026-11-21
 sablona: novy-web-pruvodce   # vlastní šablona src/pages/o-webu/novy-web.astro
 stav: ke-kontrole
-tlacitko: { text: Napsat nám, href: /o-webu/kontakt }
+tlacitko: { text: Napísať nám, href: /o-webu/kontakt }
 odkazy:
-  - { text: Jak pracovat s chatboty, href: /zaciname/jak-pracovat-s-chatboty }
-  - { text: Katalog dovedností, href: /skills }
+  - { text: Ako pracovať s chatbotmi, href: /zaciname/jak-pracovat-s-chatboty }
+  - { text: Katalóg zručností, href: /skills }
 ---
 
-# Web Chatboti má nový vzhled i obsah
+# Chatboty v škole majú slovenskú verziu
 
-Web Chatboti ve škole jsme od základu přepracovali. Má nový vzhled, přehlednější menu a hlavně aktuální obsah.
+Web Chatboty v škole je nová slovenská verzia českého webu [Chatboti ve škole](https://chatveskole.cz), ktorý prevádzkuje nezisková organizácia AI dětem. Obsah sme preložili a prispôsobili slovenským vyučujúcim a školám.
 
-## Proč jsme web měnili
+## Prečo vznikla slovenská verzia
 
-**Chatboti se změnili.** Velká část původního webu stála na AI asistentech (GPTs v ChatGPT, Gems v Gemini). Vlastní GPTs končí 11. 12. 2026 a Gems se postupně mění od 17. 11. 2026. Nahrazují je dovednosti (skills), projekty a pluginy. Web proto ukazuje, jak s chatboty pracovat dnes.
+**Chatboty sa zmenili.** Veľká časť pôvodného českého webu stála na AI asistentoch (GPTs v ChatGPT, Gems v Gemini). Vlastné GPTs končia 11. 12. 2026 a Gems sa postupne menia od 17. 11. 2026. Nahrádzajú ich zručnosti (skills), projekty a pluginy. Web preto ukazuje, ako s chatbotmi pracovať dnes, a to platí rovnako v Česku aj na Slovensku.
 
-**Informace zastarávaly.** Ceny, věkové limity a funkce chatbotů se mění každých pár měsíců. Na starém webu se navíc některé údaje nezobrazovaly správně, například ceny. U stránek teď najdete datum poslední aktualizace a u faktů o chatbotech i zdroje.
+**Informácie zastarávajú.** Ceny, vekové limity a funkcie chatbotov sa menia každých pár mesiacov. Pri stránkach preto nájdete dátum poslednej aktualizácie a pri faktoch o chatbotoch aj zdroje.
 
-**Obsah byl roztříštěný.** Prompty byly ve dvou databázích, některé se opakovaly a odkazy vedly na různá místa. Teď je jeden katalog promptů a jeden katalog dovedností.
+**Obsah je na jednom mieste.** Jeden katalóg promptov a jeden katalóg zručností, ktoré môžete použiť v akomkoľvek chatbote.
 
-## Co kde najdete {#co-kde-najdete}
+## Čo kde nájdete {#co-kde-najdete}
 
-- **Začínáme** — [Jak pracovat s chatboty](/zaciname/jak-pracovat-s-chatboty) (rozdíl mezi promptem, podrobným promptem, dovedností, projektem a pluginem), přehled nástrojů, ceny, registrace, věkové limity a legislativa.
-- **Funkce** — [Změny ve funkcích 2026](/funkce/zmeny-2026) (co končí a co ho nahrazuje) a vysvětlení promptů, dovedností, pluginů, projektů a konektorů.
-- **[Katalog dovedností](/skills)** — hotové dovednosti pro vyučující a vedení škol, seřazené do sad. Stáhnete je do chatbota, nebo je použijete jako prompt.
-- **[Katalog promptů](/prompty)** — ověřené prompty pro vyučující, vedení škol i žáky. Stačí je zkopírovat do chatbota a doplnit údaje.
-- **Vibe Coding** — jak si s chatbotem vytvořit jednoduchou aplikaci nebo výukový materiál.
-- **Chatboti ve výuce** — aplikace Tiny, metodické materiály, tvorba školních pravidel a doporučení pro základní a střední školy.
+- **Začíname** — [Ako pracovať s chatbotmi](/zaciname/jak-pracovat-s-chatboty) (rozdiel medzi promptom, podrobným promptom, zručnosťou, projektom a pluginom), prehľad nástrojov, ceny, registrácia, vekové limity a legislatíva.
+- **Funkcie** — [Zmeny vo funkciách 2026](/funkce/zmeny-2026) (čo končí a čo to nahrádza) a vysvetlenie promptov, zručností, pluginov, projektov a konektorov.
+- **[Katalóg zručností](/skills)** — hotové zručnosti pre vyučujúcich a vedenie škôl, zoradené do sád. Stiahnete ich do chatbota, alebo ich použijete ako prompt.
+- **[Katalóg promptov](/prompty)** — overené prompty pre vyučujúcich, vedenie škôl aj žiakov. Stačí ich skopírovať do chatbota a doplniť údaje.
+- **Vibe Coding** — ako si s chatbotom vytvoriť jednoduchú aplikáciu alebo vzdelávací materiál.
+- **Chatboty vo vyučovaní** — aplikácia Tiny, metodické materiály, tvorba školských pravidiel a odporúčania pre základné a stredné školy.
 
-**Hledáte něco konkrétního?** Použijte [vyhledávání](/hledat) (lupa v pravém horním rohu).
+**Hľadáte niečo konkrétne?** Použite [vyhľadávanie](/hledat) (lupa v pravom hornom rohu).
 
-## Používali jste původní AI asistenty?
+## Používali ste AI asistentov z českého webu?
 
-Asistenty jsme převedli na dovednosti. U každé dovednosti najdete, kterého původního asistenta nahrazuje.
+Asistentov sme previedli na zručnosti. Pri každej zručnosti nájdete, ktorého pôvodného asistenta nahrádza.
 
-**Staré odkazy fungují dál.** Automaticky vás přesměrují na novou stránku.
+**Staré odkazy fungujú ďalej.** Odkazy na asistentov z českého webu vás automaticky presmerujú na novú stránku.
 
-## Chybí vám tu něco?
+## Chýba vám tu niečo?
 
-Napište nám, co na webu postrádáte nebo co nefunguje. Rádi také zveřejníme vaši dovednost nebo prompt.
+Napíšte nám, čo na webe postrádate alebo čo nefunguje. Radi zverejníme aj vašu zručnosť alebo prompt.

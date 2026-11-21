@@ -33,22 +33,22 @@ const IKONY = [
 ];
 
 // Proč: odstavce „**Důvod.** text“ → karty
-const proc = najdi(/Proč/i);
+const proc = najdi(/Proč|Prečo/i);
 const duvody = odstavce(htmlOddilu(proc)).map(zvyrazneny).filter((x): x is NonNullable<typeof x> => !!x);
 
 // Co kde najdete: seznam → karty, odstavec „**Hledáte…?** text“ → tip
-const kde = najdi(/Co kde/i);
+const kde = najdi(/Co kde|Čo kde/i);
 const kdeHtml = htmlOddilu(kde);
 const sekce = polozky(kdeHtml);
 const hledani = odstavce(kdeHtml.split('</ul>').slice(1).join('</ul>')).map(zvyrazneny).find(Boolean);
 
 // Asistenti: obyčejné odstavce vlevo, „**Nadpis.** text“ jako zvýrazněný box vpravo
-const asistenti = najdi(/asistenty/i);
+const asistenti = najdi(/asistenty|asistentov/i);
 const asistentiOdstavce = odstavce(htmlOddilu(asistenti));
 const asistentiText = asistentiOdstavce.filter((p) => !zvyrazneny(p));
 const asistentiBox = asistentiOdstavce.map(zvyrazneny).find(Boolean);
 
-const vyzva = najdi(/Chybí/i);
+const vyzva = najdi(/Chybí|Chýba/i);
 type Odkaz = { text: string; href: string };
 const tlacitko = d.tlacitko && typeof d.tlacitko === 'object' && d.tlacitko.href ? (d.tlacitko as Odkaz) : null;
 const odkazy: Odkaz[] = [tlacitko, ...(Array.isArray(d.odkazy) ? d.odkazy : [])].filter((o): o is Odkaz => !!o && !!o.href);
