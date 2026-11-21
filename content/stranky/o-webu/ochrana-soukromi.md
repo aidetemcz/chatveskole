@@ -4,7 +4,7 @@ menu: O webu
 poradi: 3
 popis: Jaké údaje web Chatboti ve škole zpracovává, k čemu slouží cookies a měření návštěvnosti a jak můžete svůj souhlas změnit nebo uplatnit svá práva.
 aktualizovano: 2026-11-21
-stav: ke-kontrole   # vychází ze zásad AI dětem zkontrolovaných právníkem (aidetem.cz/zasady-ochrany-osobnich-udaju); doplnit dobu uchovávání dat v GA4
+stav: ke-kontrole   # vychází ze zásad AI dětem zkontrolovaných právníkem (aidetem.cz/zasady-ochrany-osobnich-udaju); doba uchovávání v GA4: 14 měsíců (Eva 21. 11. 2026)
 zdroje:
   - https://aidetem.cz/zasady-ochrany-osobnich-udaju/
 ---
@@ -47,7 +47,7 @@ Přihlášení k odběru novinek a formulář pro zaslání dovednosti nebo prom
 
 ## Cookies
 
-Cookies jsou malé datové soubory, které si webová stránka ukládá do vašeho prohlížeče. Web Chatboti ve škole využívá pouze analytické cookies pro měření návštěvnosti (Google Analytics 4, soubory `_ga` a `_ga_G1NT8MV18D`), a to jen s vaším souhlasem. Cookies nepoužíváme ke zjištění vaší totožnosti ani k zobrazování cílené reklamy. Reklamní funkce Google Analytics máme vypnuté.
+Cookies jsou malé datové soubory, které si webová stránka ukládá do vašeho prohlížeče. Web Chatboti ve škole využívá pouze analytické cookies pro měření návštěvnosti (Google Analytics 4, soubory `_ga` a `_ga_G1NT8MV18D`), a to jen s vaším souhlasem. Cookies nepoužíváme ke zjištění vaší totožnosti ani k zobrazování cílené reklamy. Reklamní funkce Google Analytics máme vypnuté. Podrobné údaje o návštěvách uchovává Google Analytics 14 měsíců, pak je automaticky smaže.
 
 Souhlas s analytickými cookies můžete kdykoli změnit nebo odvolat tlačítkem **Nastavení cookies** v patičce webu. Cookies můžete také smazat v nastavení svého prohlížeče.
 
