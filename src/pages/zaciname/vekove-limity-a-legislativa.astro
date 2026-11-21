@@ -32,7 +32,7 @@ const perex = uvodOdst.filter((p) => !box(p)).map((p) => `<p>${p}</p>`).join('')
 const tip = uvodOdst.map(box).find(Boolean);
 
 // věkové limity: tabulka po řádcích, štítek podle nástroje
-const limity = najdi(/Věkové limity/i);
+const limity = najdi(/Věkové limity|Vekové limity/i);
 const limityHtml = htmlOddilu(limity);
 const hlavicka = [...(limityHtml.match(/<thead>([\s\S]*?)<\/thead>/)?.[1] ?? '').matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map(([, t]) => bezTagu(t));
 const STITEK: Record<string, { text: string; cerveny?: boolean }> = {
@@ -43,7 +43,7 @@ const radky = [...(limityHtml.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? '').ma
   .map(([, r]) => [...r.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(([, t]) => t.trim()))
   .map((b) => ({ nazev: b[0], stitek: STITEK[bezTagu(b[0])], bunky: b.slice(1).map((t) => (t === '—' ? t : velke(t))) }));
 
-const doporuceni = najdi(/doporučení/i);
+const doporuceni = najdi(/doporučení|odporúčania/i);
 const gdpr = najdi(/GDPR/i);
 const gdprHtml = htmlOddilu(gdpr);
 const gdprBoxy = boxy(gdprHtml);
@@ -53,12 +53,12 @@ const milniky = polozky(aiActHtml).map((m) => {
   const r = m.nazev.match(/^([\d.\s]+\d{4}):\s*(.*)$/);
   return { datum: r ? r[1].trim() : '', nazev: r ? r[2] : m.nazev, text: m.text };
 });
-const obsah = najdi(/Komu patří/i);
+const obsah = najdi(/Komu patří|Komu patrí/i);
 const obsahHtml = htmlOddilu(obsah);
-const citace = najdi(/citovat/i);
+const citace = najdi(/citovat|citovať/i);
 const citaceHtml = htmlOddilu(citace);
 const ukazka = citaceHtml.match(/<blockquote>\s*<p>([\s\S]*?)<\/p>\s*<\/blockquote>/)?.[1];
-const zaver = najdi(/Pravidla pro vaši školu/i);
+const zaver = najdi(/Pravidla pro vaši školu|Pravidlá pre vašu školu/i);
 const zaverHtml = htmlOddilu(zaver);
 const tlacitka = [...zaverHtml.matchAll(/<p>\s*<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*<\/p>/g)].map(([, href, t]) => ({ href, text: bezTagu(t) }));
 

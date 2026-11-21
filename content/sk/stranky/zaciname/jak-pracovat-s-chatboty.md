@@ -1,18 +1,18 @@
 ---
-title: Jak pracovat s chatboty
-menu: Začínáme
+title: Ako pracovať s chatbotmi
+menu: Začíname
 poradi: 1
-popis: Krátký prompt, podrobný prompt, dovednost a plugin. Jaký je mezi nimi rozdíl a kdy který použít, vysvětleno na jednoduché animaci.
+popis: Krátky prompt, podrobný prompt, zručnosť a plugin. Aký je medzi nimi rozdiel a kedy ktorý použiť, vysvetlené na jednoduchej animácii.
 aktualizovano: 2026-11-21
-stav: koncept
+stav: ke-kontrole
 odkazy:
-  - { text: Katalog promptů, href: /prompty }
-  - { text: Katalog dovedností, href: /skills }
+  - { text: Katalóg promptov, href: /prompty }
+  - { text: Katalóg zručností, href: /skills }
   - { text: Dostupné nástroje, href: /zaciname/dostupne-nastroje }
 ---
 
-# Jak pracovat s chatboty
+# Ako pracovať s chatbotmi
 
-Chatboti se od svých začátků hodně změnili. Dřív jste pro dobrý výsledek museli psát promyšlené instrukce (prompty). Dnes hraje větší roli kontext, tedy znalosti a dovednosti, které má chatbot k dispozici. Podívejte se, jakými způsoby se dá s chatboty pracovat. Připravili jsme pro vás srozumitelné vysvětlení.
+Chatboty sa od svojich začiatkov veľmi zmenili. Kedysi ste pre dobrý výsledok museli písať premyslené inštrukcie (prompty). Dnes hrá väčšiu úlohu kontext, teda podklady a zručnosti, ktoré má chatbot k dispozícii. Pozrite sa, akými spôsobmi sa dá s chatbotmi pracovať. Pripravili sme pre vás zrozumiteľné vysvetlenie.
 
 <!-- komponenta: animace instrukcí (src/components/InstrukceProChatboty.astro) -->

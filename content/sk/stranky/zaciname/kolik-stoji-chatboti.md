@@ -1,53 +1,53 @@
 ---
-title: Kolik stojí chatboti
-menu: Začínáme
+title: Koľko stoja chatboty
+menu: Začíname
 poradi: 3
-popis: Ceny ChatGPT, Gemini, Copilotu, Claude a Perplexity pro vyučující a školy. Co dostanete zdarma, co se vyplatí zaplatit a jak chránit data.
-sablona: cenik-pruvodce   # vlastní šablona src/pages/zaciname/kolik-stoji-chatboti.astro (návrh z Claude Design, 21. 11. 2026); karty tarifů z data/ceny.yaml
+popis: Ceny ChatGPT, Gemini, Copilota, Claude a Perplexity pre vyučujúcich a školy. Čo dostanete zadarmo, čo sa oplatí zaplatiť a ako chrániť údaje.
+sablona: cenik-pruvodce   # vlastná šablóna src/pages/zaciname/kolik-stoji-chatboti.astro (návrh z Claude Design, 21. 11. 2026); karty tarifov z data/sk/ceny.yaml
 data: data/ceny.yaml
 aktualizovano: 2026-11-21
-stav: koncept
+stav: ke-kontrole
 ---
 
-# Kolik stojí chatboti
+# Koľko stoja chatboty
 
-Všechny chatovací aplikace mají bezplatnou verzi. Placená verze přidá vyšší limity, silnější modely a funkce, jako je samostatná práce na úkolech, pluginy nebo hloubkový výzkum. Ceny se mění často — v přehledu najdete vždy odkaz na oficiální ceník.
+Všetky chatovacie aplikácie majú bezplatnú verziu. Platená verzia pridá vyššie limity, silnejšie modely a funkcie, ako je samostatná práca na úlohách, pluginy alebo hĺbkový výskum. Ceny sa menia často — v prehľade preto vždy nájdete odkaz na oficiálny cenník.
 
-## Co zohlednit kromě ceny
+## Na čo myslieť okrem ceny
 
-U bezplatných a osobních tarifů mohou vývojáři využívat vaše konverzace k vylepšování modelů. U většiny to jde vypnout v nastavení. U tarifů pro školy a organizace (Google Workspace for Education, Microsoft 365 se školní licencí, ChatGPT Business, Claude Team) se data k tréninku nepoužívají. Ať používáte jakýkoliv tarif, do chatbota nevkládejte jména žáků ani jiné osobní údaje. Pracujte s iniciály nebo přezdívkami.
+Pri bezplatných a osobných tarifoch môžu vývojári využívať vaše konverzácie na vylepšovanie modelov. Pri väčšine sa to dá vypnúť v nastaveniach. Pri tarifoch pre školy a organizácie (Google Workspace for Education, Microsoft 365 so školskou licenciou, ChatGPT Business, Claude Team) sa údaje na tréning nepoužívajú. Nech používate akýkoľvek tarif, do chatbota nevkladajte mená žiakov ani iné osobné údaje. Pracujte s iniciálami alebo prezývkami.
 
-## Co je zdarma nebo se slevou
+## Čo je zadarmo alebo so zľavou
 
-Než začnete platit osobní předplatné, zeptejte se správce IT, co škola má.
+Skôr než začnete platiť osobné predplatné, opýtajte sa správcu IT, čo má škola k dispozícii.
 
-- **Google Workspace for Education** — Školy s Google Workspace for Education mají Gemini a Gemini Notebook zdarma pro vyučující i žáky. Data školy se nepoužívají k tréninku. Zapíná správce.
-- **Microsoft 365 se školní licencí (A1, A3, A5)** — Školy s touto licencí mají Copilot Chat zdarma pro vyučující i žáky od 13 let. Data zůstávají ve škole. Microsoft se chystá do budoucna zpoplatnit žákovské účty. Zapíná správce.
+- **Google Workspace for Education** — Školy s Google Workspace for Education majú Gemini a Gemini Notebook zadarmo pre vyučujúcich aj žiakov. Údaje školy sa nepoužívajú na tréning. Zapína správca.
+- **Microsoft 365 so školskou licenciou (A1, A3, A5)** — Školy s touto licenciou majú Copilot Chat zadarmo pre vyučujúcich aj žiakov od 13 rokov. Údaje zostávajú v škole. Microsoft sa chystá v budúcnosti spoplatniť žiacke účty. Zapína správca.
 
-## Claude se slevou pro školy
+## Claude so zľavou pre školy
 
-Základní i střední školy (veřejné i soukromé) mohou získat Claude za neziskové ceny přes program **Claude for Nonprofits**. Bezplatný program Claude for Teachers je zatím jen pro školy v USA. Claude smějí používat jen lidé od 18 let, proto ho mohou využívat vedení a pedagogové, ne žáci.
+Základné aj stredné školy (verejné aj súkromné) môžu získať Claude za neziskové ceny cez program **Claude for Nonprofits**. Bezplatný program Claude for Teachers je zatiaľ len pre školy v USA. Claude smú používať len ľudia od 18 rokov, preto ho môžu využívať vedenie a pedagógovia, nie žiaci.
 
-1. **Ověřte školu** — Ověření probíhá u partnera Anthropicu Goodstack na [validate.poweredbypercent.com/anthropic](https://validate.poweredbypercent.com/anthropic). Formulář zabere pár minut, pokud Goodstack chce dokumenty, může to trvat i několik dní. Ověřuje člověk se školním e-mailem, soukromý Gmail nestačí. S dotazy pomůže Goodstack na help@goodstack.org.
-2. **Vyberte tarif** — Team pro 2 až 150 lidí (8 USD za uživatele měsíčně, s pětinásobným využitím 40 USD), nebo Enterprise od 20 lidí (10 USD, s pětinásobným využitím 50 USD). Oba obsahují Chat, Cowork a Claude Code.
-3. **Dokončete nákup** — U Teamu vám po schválení přijde e-mail s dokončením registrace a za pár minut máte hotovo. Enterprise s roční fakturací připraví tým Anthropicu.
+1. **Overte školu** — Overenie prebieha u partnera Anthropicu Goodstack na [validate.poweredbypercent.com/anthropic](https://validate.poweredbypercent.com/anthropic). Formulár zaberie pár minút, ak Goodstack chce dokumenty, môže to trvať aj niekoľko dní. Overuje človek so školským e-mailom, súkromný Gmail nestačí. S otázkami pomôže Goodstack na help@goodstack.org.
+2. **Vyberte tarif** — Team pre 2 až 150 ľudí (8 USD za používateľa mesačne, s päťnásobným využitím 40 USD), alebo Enterprise od 20 ľudí (10 USD, s päťnásobným využitím 50 USD). Oba obsahujú Chat, Cowork a Claude Code.
+3. **Dokončite nákup** — Pri Teame vám po schválení príde e-mail s dokončením registrácie a o pár minút máte hotovo. Enterprise s ročnou fakturáciou pripraví tím Anthropicu.
 
 ## Tarify
 
-Ceny jsou orientační a často se mění. U každé aplikace proto najdete odkaz na oficiální ceník.
+Ceny sú orientačné a často sa menia. Pri každej aplikácii preto nájdete odkaz na oficiálny cenník.
 
 <!-- komponenta: karty tarifů po nástrojích z data/ceny.yaml — název, cena, poznámka, řádek „Trénink“, odkaz na ceník -->
 
-## Co se vyplatí
+## Čo sa oplatí
 
-- **Pro celou školu** — Vyplatí se řešit licence centrálně, jako týmové licence pod školní doménou. Kolegové pak mohou sdílet projekty, dovednosti a sady dovedností (pluginy) v rámci školy, data se nepoužívají k tréninku a správce má přehled o účtech. Školní a týmové licence navíc vycházejí levněji než osobní předplatné pro každého zvlášť.
-- **Začínáte?** — Otestujte si nejprve více nástrojů ve verzi zdarma a vyberte si ten, který vám nejvíce vyhovuje.
-- **Vyplatí se využívat placené licence?** — Pokud AI využíváte ve své praxi pravidelně, placená licence se vyplatí. Nabízí lepší modely, a proto bývají i výstupy chatbota kvalitnější. Často už ale školy mají chatboty dostupné v rámci jiných služeb. Zeptejte se správce IT.
+- **Pre celú školu** — Oplatí sa riešiť licencie centrálne, ako tímové licencie pod školskou doménou. Kolegovia potom môžu zdieľať projekty, zručnosti a sady zručností (pluginy) v rámci školy, údaje sa nepoužívajú na tréning a správca má prehľad o účtoch. Školské a tímové licencie navyše vychádzajú lacnejšie ako osobné predplatné pre každého zvlášť.
+- **Začínate?** — Otestujte si najprv viac nástrojov vo verzii zadarmo a vyberte si ten, ktorý vám najviac vyhovuje.
+- **Oplatí sa využívať platené licencie?** — Ak AI využívate vo svojej praxi pravidelne, platená licencia sa oplatí. Ponúka lepšie modely, a preto bývajú aj výstupy chatbota kvalitnejšie. Školy však často už majú chatboty dostupné v rámci iných služieb. Opýtajte sa správcu IT.
 
-## Nejste plátci DPH?
+## Nie ste platiteľ DPH?
 
-Platíte za službu zahraniční firmě? Podívejte se, jak to správně vyřídit.
+Platíte za službu zahraničnej firme? Pozrite sa, čo to znamená pre DPH a čo si overiť.
 
-[Zahraniční platby pro neplátce DPH](/zaciname/zahranicni-platby)
+[Zahraničné platby pre neplatiteľov DPH](/zaciname/zahranicni-platby)
 
-[Jak se registrovat →](/zaciname/registrace)
+[Ako sa zaregistrovať →](/zaciname/registrace)

@@ -24,7 +24,7 @@ const bloky = (h: string) => h.split(/(?=<h3[\s>])/).filter((k) => /^\s*<h3/.tes
 });
 
 // Tabulka: první sloupec = vlastnost, další = nástroje
-const tabulkaOddil = najdi(/tabulce/i);
+const tabulkaOddil = najdi(/tabulce|tabuľke/i);
 const tabulkaHtml = htmlOddilu(tabulkaOddil);
 const hlavicka = [...(tabulkaHtml.match(/<thead>([\s\S]*?)<\/thead>/)?.[1] ?? '').matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map(([, t]) => bezTagu(t)).slice(1);
 const radkyVse = [...(tabulkaHtml.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? '').matchAll(/<tr>([\s\S]*?)<\/tr>/g)]
@@ -32,27 +32,27 @@ const radkyVse = [...(tabulkaHtml.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? ''
   .map((b) => ({ nazev: bezTagu(b[0]).replace(/\s*—\s*/, ': '), bunky: b.slice(1) }));
 const radek = (r: RegExp) => radkyVse.find((x) => r.test(x.nazev));
 // skupiny řádků; Vývojář se ukazuje v kartách
-const FUNKCE_OD = radkyVse.findIndex((x) => /Dovednosti/i.test(x.nazev));
-const radky = radkyVse.filter((x) => !/Vývojář/i.test(x.nazev)).map((x) => ({ ...x, skupina: x === radkyVse.find((y) => /Zdarma/i.test(y.nazev)) ? t('Dostupnost') : x === radkyVse[FUNKCE_OD] ? t('Funkce') : '' }));
+const FUNKCE_OD = radkyVse.findIndex((x) => /Dovednosti|Zručnosti/i.test(x.nazev));
+const radky = radkyVse.filter((x) => !/Vývojář|Vývojca/i.test(x.nazev)).map((x) => ({ ...x, skupina: x === radkyVse.find((y) => /Zdarma|Zadarmo/i.test(y.nazev)) ? t('Dostupnost') : x === radkyVse[FUNKCE_OD] ? t('Funkce') : '' }));
 const bunka = (t: string) => velke(t.trim());
 
 // Karty nástrojů: ### název → popis a odkaz; štítky z tabulky
-const ctyri = najdi(/Čtyři/i);
+const ctyri = najdi(/Čtyři|Štyri/i);
 const ctyriHtml = htmlOddilu(ctyri);
-const vyvojar = radek(/Vývojář/i), skolni = radek(/Školní verze/i), vekOsobni = radek(/osobní/i), vekSkolni = radek(/školní účet/i);
+const vyvojar = radek(/Vývojář|Vývojca/i), skolni = radek(/Školní verze|Školská verzia/i), vekOsobni = radek(/osobní|osobný/i), vekSkolni = radek(/školní účet|školský účet/i);
 const karty = bloky(ctyriHtml).map((b, i) => {
   const odkaz = b.html.match(/<p>\s*<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*<\/p>/);
   const popis = odkaz ? b.html.replace(odkaz[0], '') : b.html;
   const sk = skolni ? bezTagu(skolni.bunky[i] ?? '') : '';
   const vek = vekOsobni ? bezTagu(vekOsobni.bunky[i] ?? '').match(/^\d+\+/)?.[0] : undefined;
   // školní účet bez věkového omezení (Gemini) → dva štítky
-  const skolniVse = vekSkolni ? /bez věkového omezení/i.test(bezTagu(vekSkolni.bunky[i] ?? '')) : false;
+  const skolniVse = vekSkolni ? /bez věkového omezení|bez vekového obmedzenia/i.test(bezTagu(vekSkolni.bunky[i] ?? '')) : false;
   return { nazev: b.nazev, popis, odkaz: odkaz ? { href: odkaz[1], text: bezTagu(odkaz[2]) } : null,
-    vyvojar: vyvojar ? bezTagu(vyvojar.bunky[i] ?? '') : '', skolni: /^ano/.test(sk), vek, skolniVse };
+    vyvojar: vyvojar ? bezTagu(vyvojar.bunky[i] ?? '') : '', skolni: /^(ano|áno)/.test(sk), vek, skolniVse };
 });
 
 // Další nástroje: položky „**[Název](odkaz)** — text“ jako karty, ostatní jako tip
-const dalsi = najdi(/Další nástroje/i);
+const dalsi = najdi(/Další nástroje|Ďalšie nástroje/i);
 const dalsiHtml = htmlOddilu(dalsi);
 const polozkyDalsi = [...(dalsiHtml.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').matchAll(/<li>([\s\S]*?)<\/li>/g)].map(([, t]) => t.trim());
 const dalsiKarty = polozkyDalsi.map((t) => t.match(/^<strong>\s*<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*<\/strong>\s*([\s\S]*)$/)).filter((m): m is RegExpMatchArray => !!m).map((m) => {
@@ -64,7 +64,7 @@ const dalsiKarty = polozkyDalsi.map((t) => t.match(/^<strong>\s*<a href="([^"]+)
 const dalsiTipy = polozkyDalsi.filter((t) => !/^<strong>\s*<a /.test(t));
 const domena = (h: string) => h.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
 
-const vyzva = najdi(/Kolik to stojí/i);
+const vyzva = najdi(/Kolik to stojí|Koľko to stojí/i);
 type Odkaz = { text: string; href: string };
 const odkazy: Odkaz[] = (Array.isArray(d.odkazy) ? d.odkazy : []).filter((o: Odkaz) => o && o.href);
 const skupina = navigace.menu.find((g) => g.items.some((i) => i.href === '/' + stranka.id));

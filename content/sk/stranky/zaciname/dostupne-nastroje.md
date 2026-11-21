@@ -1,11 +1,11 @@
 ---
 title: Dostupné nástroje
-menu: Začínáme
+menu: Začíname
 poradi: 2
-popis: ChatGPT, Gemini, Copilot, Claude a další chatboti v přehledu pro školy — věkové limity, co umí zdarma, dovednosti, projekty a vytváření aplikací.
+popis: ChatGPT, Gemini, Copilot, Claude a ďalšie chatboty v prehľade pre školy — vekové limity, čo vedia zadarmo, zručnosti, projekty a vytváranie aplikácií.
 aktualizovano: 2026-11-21
-sablona: nastroje-pruvodce   # vlastní šablona src/pages/zaciname/dostupne-nastroje.astro (návrh z Claude Design, 21. 11. 2026)
-stav: koncept
+sablona: nastroje-pruvodce   # vlastná šablóna src/pages/zaciname/dostupne-nastroje.astro (návrh z Claude Design, 21. 11. 2026)
+stav: ke-kontrole
 zdroje:
   - data/funkce-chatbotu.yaml
   - https://openai.com/policies/eu-terms-of-use/
@@ -36,67 +36,67 @@ zdroje:
   - https://digitalizace.rvp.cz/files/2025-faq-ai-umela-inteligence-jako-asistent-ucitele.pdf
   - https://cnn.iprima.cz/pouzivani-ai-zaky-naskok-maji-pred-rodici-i-uciteli-zapojeni-do-vyuky-komplikuji-bariery-483936
 odkazy:
-  - { text: Kolik stojí chatboti, href: /zaciname/kolik-stoji-chatboti }
-  - { text: Změny ve funkcích 2026, href: /funkce/zmeny-2026 }
+  - { text: Koľko stoja chatboty, href: /zaciname/kolik-stoji-chatboti }
+  - { text: Zmeny vo funkciách 2026, href: /funkce/zmeny-2026 }
 ---
 
 
 # Dostupné nástroje
 
-Chatbotů jsou dnes desítky. Na tomto webu se věnujeme čtyřem, které školy používají nejčastěji a které mají podobné funkce: **ChatGPT, Gemini, Copilot a Claude.** Pro žáky navíc doporučujeme aplikaci [Tiny](/ve-vyuce/tiny), kterou vyvíjíme v AI dětem.
+Chatbotov sú dnes desiatky. Na tomto webe sa venujeme štyrom, ktoré školy používajú najčastejšie a ktoré majú podobné funkcie: **ChatGPT, Gemini, Copilot a Claude.** Pre žiakov navyše odporúčame aplikáciu [Tiny](/ve-vyuce/tiny), ktorú vyvíjame v AI dětem.
 
-## Čtyři chatovací aplikace
+## Štyri chatovacie aplikácie
 
-Všechny čtyři mají bezplatnou verzi a umí podobné věci. Liší se hlavně tím, jestli je škola má ve své licenci a kdo je smí používat: vyučující, vedení, nebo i žáci.
+Všetky štyri majú bezplatnú verziu a vedia podobné veci. Líšia sa hlavne tým, či ich škola má vo svojej licencii a kto ich smie používať: vyučujúci, vedenie, alebo aj žiaci.
 
 ### ChatGPT
 
-Školní verzi pro základní a střední školy v Česku nemá, vyučující a vedení ho používají pod vlastním účtem. Žáci od 13 let jen se souhlasem zákonného zástupce, do 18 let mají přísnější režim pro dospívající.
+Školskú verziu pre základné a stredné školy na Slovensku nemá, vyučujúci a vedenie ho používajú pod vlastným účtom. Žiaci od 13 rokov len so súhlasom zákonného zástupcu, do 18 rokov majú prísnejší režim pre dospievajúcich.
 
 [chatgpt.com](https://chatgpt.com)
 
 ### Gemini
 
-Chatbot od společnosti Google. Školy s Google Workspace for Education ho mají zdarma pro vyučující, vedení i žáky, s ochranou dat a omezeními podle věku. Zapíná ho správce školy.
+Chatbot od spoločnosti Google. Školy s Google Workspace for Education ho majú zadarmo pre vyučujúcich, vedenie aj žiakov, s ochranou údajov a obmedzeniami podľa veku. Zapína ho správca školy.
 
 [gemini.google.com](https://gemini.google.com)
 
 ### Microsoft Copilot
 
-Chatbot od společnosti Microsoft. Školy s licencí Microsoft 365 (A1, A3 nebo A5) ho mají zdarma jako Copilot Chat pro vyučující, vedení i žáky od 13 let. Zapíná ho správce školy.
+Chatbot od spoločnosti Microsoft. Školy s licenciou Microsoft 365 (A1, A3 alebo A5) ho majú zadarmo ako Copilot Chat pre vyučujúcich, vedenie aj žiakov od 13 rokov. Zapína ho správca školy.
 
 [copilot.microsoft.com](https://copilot.microsoft.com)
 
 ### Claude
 
-Chatbot od společnosti Anthropic. Je jen pro dospělé, tedy pro vyučující a vedení školy. Školy mohou získat zvýhodněné tarify přes program Claude for Nonprofits, postup najdete na stránce [Kolik stojí chatboti](/zaciname/kolik-stoji-chatboti).
+Chatbot od spoločnosti Anthropic. Je len pre dospelých, teda pre vyučujúcich a vedenie školy. Školy môžu získať zvýhodnené tarify cez program Claude for Nonprofits, postup nájdete na stránke [Koľko stoja chatboty](/zaciname/kolik-stoji-chatboti).
 
 [claude.ai](https://claude.ai)
 
-## Srovnání v tabulce
+## Porovnanie v tabuľke
 
-Podrobné srovnání funkcí a přehled toho, co se mění v roce 2027, najdete na stránce [Změny ve funkcích 2026](/funkce/zmeny-2026).
+Podrobné porovnanie funkcií a prehľad toho, čo sa mení v roku 2027, nájdete na stránke [Zmeny vo funkciách 2026](/funkce/zmeny-2026).
 
 | | ChatGPT | Gemini | Copilot | Claude |
 |---|---|---|---|---|
-| Vývojář | OpenAI | Google | Microsoft | Anthropic |
-| Zdarma | ano | ano | ano | ano |
-| Školní verze v Česku | ne (Edu jen pro VŠ) | ano, v Google Workspace for Education | ano, Copilot Chat se školní licencí Microsoft 365 | ano, se slevou přes Claude for Nonprofits, jen pro vedení a pedagogy (18+) |
-| Věk — osobní účet | 13+, do 18 let se souhlasem zákonného zástupce a v režimu pro dospívající | 13+ (v ČR samostatně od 15 let); placené tarify a dovednosti 18+ | 13+ | 18+ |
-| Věk — školní účet | — | bez věkového omezení, pokud ho správce školy zapne; žákům do 18 let omezí některé funkce | 13+, zapíná správce | — |
-| Dovednosti | od tarifu Plus; zdarma a v Go ne | ano (18+) | jen s placenou licencí Microsoft 365 Copilot | ano, i zdarma |
-| Projekty | ano | Notebooky | Notebooks | ano |
-| Tvorba dokumentů a aplikací | bloky, Sites (placené) | Canvas | Pages | artefakty, Docs, Slides, Design |
-| Hledá na internetu | ano | ano | ano | ano |
-| Generuje obrázky | ano | ano | ano | ne, ale vytvoří animace |
+| Vývojca | OpenAI | Google | Microsoft | Anthropic |
+| Zadarmo | áno | áno | áno | áno |
+| Školská verzia na Slovensku | nie (Edu len pre VŠ) | áno, v Google Workspace for Education | áno, Copilot Chat so školskou licenciou Microsoft 365 | áno, so zľavou cez Claude for Nonprofits, len pre vedenie a pedagógov (18+) |
+| Vek — osobný účet | 13+, do 18 rokov so súhlasom zákonného zástupcu a v režime pre dospievajúcich | 13+ (na Slovensku samostatne od 16 rokov); platené tarify a zručnosti 18+ | 13+ | 18+ |
+| Vek — školský účet | — | bez vekového obmedzenia, ak ho správca školy zapne; žiakom do 18 rokov obmedzí niektoré funkcie | 13+, zapína správca | — |
+| Zručnosti | od tarifu Plus; zadarmo a v Go nie | áno (18+) | len s platenou licenciou Microsoft 365 Copilot | áno, aj zadarmo |
+| Projekty | áno | Notebooky | Notebooks | áno |
+| Tvorba dokumentov a aplikácií | bloky, Sites (platené) | Canvas | Pages | artefakty, Docs, Slides, Design |
+| Hľadá na internete | áno | áno | áno | áno |
+| Generuje obrázky | áno | áno | áno | nie, ale vytvorí animácie |
 
-## Další nástroje
+## Ďalšie nástroje
 
-- **[Perplexity](https://www.perplexity.ai)** — vyhledávač, který odpovídá s odkazy na zdroje. Hodí se na rešerše. Od 13 let, nezletilí jen se souhlasem zákonného zástupce.
-- **[AI aplikace Tiny](/ve-vyuce/tiny)** — chatboti pro žáky od AI dětem: vedou otázkami, vyučující vidí konverzace, data zůstávají v EU.
-- **[Sciobot](https://sciobot.cz)** — AI asistent pro vyučující od společnosti Scio. Pomáhá připravit plány hodin a materiály do výuky. Základní verze je pro vyučující a školy zdarma.
-- Nástroje pro tvorbu aplikací najdete v sekci [Vibe Coding](/vibe-coding/nastroje).
+- **[Perplexity](https://www.perplexity.ai)** — vyhľadávač, ktorý odpovedá s odkazmi na zdroje. Hodí sa na rešerše. Od 13 rokov, maloletí len so súhlasom zákonného zástupcu.
+- **[AI aplikácia Tiny](/ve-vyuce/tiny)** — chatboty pre žiakov od AI dětem: vedú otázkami, vyučujúci vidí konverzácie, údaje zostávajú v EÚ.
+- **[Sciobot](https://sciobot.cz)** (v češtine) — AI asistent pre vyučujúcich od spoločnosti Scio. Pomáha pripraviť plány hodín a materiály do vyučovania. Základná verzia je pre vyučujúcich a školy zadarmo.
+- Nástroje na tvorbu aplikácií nájdete v sekcii [Vibe Coding](/vibe-coding/nastroje).
 
-## Kolik to stojí?
+## Koľko to stojí?
 
-Přehled tarifů a cen, včetně toho, co dostanete zdarma.
+Prehľad tarifov a cien vrátane toho, čo dostanete zadarmo.
