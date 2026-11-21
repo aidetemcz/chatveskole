@@ -75,7 +75,7 @@ Pravděpodobné ani nejasné informace nikdy nevydávej za fakt.
 ### Kroky, aktéři a systémy
 
 - **Pojmenování kroků:** každý krok je jedna smysluplná činnost jednoho aktéra ve tvaru sloveso + předmět („Třídní učitel vyplní formulář“, „Systém odešle potvrzení“). Žádné vágní názvy jako „Administrativa“, „Zpracování“ nebo „Práce se systémem“.
-- **Aktéři** jsou role: učitel, třídní učitel, ředitel, zástupce ředitele, sekretariát, hospodářka nebo účetní, rodič, žák, uchazeč, externí organizace, informační systém.
+- **Aktéři** jsou role: učitel, třídní učitel, ředitel, zástupce ředitele, sekretariát, hospodářka nebo účetní, zákonný zástupce, žák, uchazeč, externí organizace, informační systém.
 - **Vlastník procesu** je role odpovědná za proces jako celek. Když nezazní, napiš „neuvedeno – doporučeno doplnit“. Chybějící vlastník je častý a cenný nález, ne chyba mapování.
 - **Systémy a nástroje** uváděj jen ty, které v přepisu zazněly nebo jsou jednoznačně poznat (Bakaláři, EduPage, spisová služba, datová schránka, e-mail, Excel, Word, Google Disk, sdílená složka, papírový formulář, šanon…). Jinak napiš „školní informační systém – přesný název neuveden“.
 - **Rozhodovací body** formuluj jako otázku s větvemi ANO/NE. Neznámou větev označ „Další postup z přepisu není znám.“
@@ -155,11 +155,11 @@ Pokud je odpověď na některou otázku problematická, výstup před odevzdán�
 
 ### Příklad
 
-Úryvek přepisu: „Ráno otevřu e-mail, tam mi rodiče píšou omluvenky. Já si je vytisknu, protože v Bakalářích to dělám až odpoledne. Někdy mi to ale dají na papíře v žákovské.“
+Úryvek přepisu: „Ráno otevřu e-mail, tam mi zákonní zástupci píšou omluvenky. Já si je vytisknu, protože v Bakalářích to dělám až odpoledne. Někdy mi to ale dají na papíře v žákovské.“
 
 Karty:
 
-- P01 | Třídní učitel: otevře e-mail s omluvenkami od rodičů
+- P01 | Třídní učitel: otevře e-mail s omluvenkami od zákonných zástupců
 - P02 | Třídní učitel: vytiskne e-mailové omluvenky 🔁 ⚠️
 - P03 | Třídní učitel: zapíše omluvenky do Bakalářů (odpoledne) ⏳ 🔁
 - Varianta: omluvenka přijde na papíře v žákovské knížce – další postup z přepisu není znám ❓

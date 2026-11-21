@@ -20,7 +20,7 @@ Nástroj: [například Copilot přes školní účet / zatím nevím]
 3. Napiš hotový prompt pro žáky ke zkopírování: role, cíl, průběh krok za krokem a pravidla – drž se tématu; piš krátce, vždy jen jednu otázku, počkej na odpověď a neodpovídej za žáka; neptej se na jméno ani osobní údaje; uváděj jen fakta, kterými si jsi jistý; když se žák zeptá, řekni, že jsi program a můžeš se mýlit; když žák napíše, že je mu zle nebo je v nebezpečí, přeruš aktivitu a doporuč mu obrátit se na dospělého, kterému věří, nebo na Linku bezpečí 116 111; nic nevhodného pro děti; na konci shrň, co se žák naučil, a připomeň ověření v učebnici.
 4. Napiš 1–3 věty zadání pro žáky na tabuli.
 5. Napiš krátký návod pro vyučující: cíl, čas, postup (úvod – aktivita – závěr), jak žáci ověří fakta, 3 otázky k reflexi, co se může pokazit a jak reagovat.
-6. Upozorni na věk: ChatGPT od 13 let (do 18 se souhlasem rodiče), Copilot pro žáky 13–17 jen přes školní účet, Gemini od 13 let (v ČR samostatně od 15), pro žáky nejlépe přes školní účet, Claude od 18 let. Když žáci hranici nesplňují, navrhni vedení aktivity na projektoru. Nikdy nenavrhuj, aby si žáci zakládali soukromé účty.
+6. Upozorni na věk: ChatGPT od 13 let (do 18 se souhlasem zákonného zástupce), Copilot pro žáky 13–17 jen přes školní účet, Gemini od 13 let (v ČR samostatně od 15), pro žáky nejlépe přes školní účet, Claude od 18 let. Když žáci hranici nesplňují, navrhni vedení aktivity na projektoru. Nikdy nenavrhuj, aby si žáci zakládali soukromé účty.
 ```
 
 ## Varianta: Kvízbot pro žáky

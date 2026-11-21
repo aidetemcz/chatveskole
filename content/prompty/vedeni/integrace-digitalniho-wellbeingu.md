@@ -26,10 +26,10 @@ Na jak dlouho strategie platí: [například 3 roky]
 Pravidla:
 1. Vycházej z Národní koncepce digitálního wellbeingu (NPI ČR) a pracuj se všemi pěti oblastmi: fyzickou (pohyb, spánek, denní režim), kognitivní (pozornost, kritické a tvůrčí myšlení, práce s informacemi), emoční (sebepojetí, zvládání emocí, odolnost), sociální (vztahy, respekt a spolupráce online i offline) a duchovní (hodnoty, etika, smysl).
 2. Cílem je rovnováha a vědomé používání technologií, ne zákaz. Piš podpůrně, bez moralizování a strašení.
-3. Opatření rozděl na tři úrovně: pro všechny (klima školy, pravidla, informace pro rodiče), pro třídy (pravidelné aktivity v třídnických hodinách a ve výuce, ne jednorázové přednášky) a pro žáky, kteří potřebují víc (školní poradenské pracoviště, odborná pomoc mimo školu). Navrhni, jak se žáci i rodiče dozvědí, na koho se obrátit.
+3. Opatření rozděl na tři úrovně: pro všechny (klima školy, pravidla, informace pro zákonné zástupce), pro třídy (pravidelné aktivity v třídnických hodinách a ve výuce, ne jednorázové přednášky) a pro žáky, kteří potřebují víc (školní poradenské pracoviště, odborná pomoc mimo školu). Navrhni, jak se žáci i zákonní zástupci dozvědí, na koho se obrátit.
 4. Pokud to odpovídá situaci školy, zahrň i nová témata: jak se děti svěřují AI chatbotům nebo je berou jako kamarády a jak se šíří upravené fotky a deepfake videa spolužáků.
-5. Když se strategie týká zaměstnanců, řeš digitální únavu a dostupnost mimo pracovní dobu (například pravidla, kdy se odpovídá rodičům).
-6. Navrhni, jak do tvorby a zavádění zapojit žáky (žákovský parlament, třídní dohody) a rodiče.
+5. Když se strategie týká zaměstnanců, řeš digitální únavu a dostupnost mimo pracovní dobu (například pravidla, kdy se odpovídá zákonným zástupcům).
+6. Navrhni, jak do tvorby a zavádění zapojit žáky (žákovský parlament, třídní dohody) a zákonné zástupce.
 7. Nejvýš 5 priorit. Každé opatření má nositele (funkci, ne jméno), termín a výstup. Výchozí stav, který jsem nezadal(a), nevymýšlej, napiš [doplnit].
 8. Pracuj obecně, bez jmen a popisů konkrétních žáků. Pokud z mého popisu plyne ohrožení konkrétního dítěte, upozorni mě, že to patří hned metodikovi prevence nebo školnímu poradenskému pracovišti, ne do strategie.
 
@@ -39,13 +39,13 @@ Výstup: jeden dokument na 2–4 strany s nadpisy, krátkými odstavci a tabulka
 3) priority,
 4) opatření po úrovních: tabulka Opatření – Úroveň – Kdo odpovídá – Termín,
 5) rozvoj pedagogů,
-6) zapojení žáků a rodičů,
+6) zapojení žáků a zákonných zástupců,
 7) indikátory: tabulka Indikátor – Výchozí stav – Cílový stav – Jak a kdy měříme,
 8) harmonogram po pololetích,
 9) rizika a jak jim předejdeme (například přetížení vyučujících, jednorázové akce bez návaznosti),
 10) předpoklady, se kterými jsi pracoval(a).
 
-Když chybí typ školy nebo popis situace, nejdřív se mě zeptej (nejvýš 5 otázek najednou). Na konci nabídni: 1) zkrácenou verzi pro rodiče, 2) náměty na pět třídnických hodin, 3) rozpracování jedné priority do detailu.
+Když chybí typ školy nebo popis situace, nejdřív se mě zeptej (nejvýš 5 otázek najednou). Na konci nabídni: 1) zkrácenou verzi pro zákonné zástupce, 2) náměty na pět třídnických hodin, 3) rozpracování jedné priority do detailu.
 ```
 
 ## Co je cílem promptu

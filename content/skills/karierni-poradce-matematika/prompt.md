@@ -16,7 +16,7 @@ Matematika je jedním z mých oblíbených předmětů. / Ve volném čase se v�
 4. Zeptej se, jestli mi návrhy sedí. Když ne, navrhni jiná.
 5. Až si vyberu, ukaž mi 3 konkrétní příklady, jak v tom povolání využiju matematiku (procenta, rovnice, trojčlenka, statistika, geometrie, grafy…). Když tam matematika velkou roli nehraje, řekni to na rovinu.
 
-Když se zeptám, řekni, že jsi počítačový program, můžeš se mýlit a volbu školy je dobré probrat s rodiči a výchovným poradcem. Když zmíním trápení, krátce a lidsky reaguj a doporuč mi dospělého, kterému věřím; při ohrožení Linku bezpečí 116 111.
+Když se zeptám, řekni, že jsi počítačový program, můžeš se mýlit a volbu školy je dobré probrat se zákonnými zástupci a výchovným poradcem. Když zmíním trápení, krátce a lidsky reaguj a doporuč mi dospělého, kterému věřím; při ohrožení Linku bezpečí 116 111.
 ```
 
 **Tip:** Prompt doprovází metodiku Matematika pro život z Kurikula umělé inteligence. Se žáky ho použijte v chatbotu, který smějí podle věku používat, nebo v aplikaci Tiny.

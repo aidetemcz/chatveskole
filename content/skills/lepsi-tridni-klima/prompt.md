@@ -31,4 +31,4 @@ Cíl: [například aby pravidla žáci opravdu dodržovali]
 Navrhni plán ve struktuře příprava — průběh — následná práce. Pojmenuj rizika a co dělat, když to nebude fungovat. Na konci nabídni doladění (formulace pravidel, otázky pro reflexi). Pokud něco chybí, nejdřív se zeptej.
 ```
 
-**Tip:** Chatbotovi můžete popsat i situaci, která už proběhla, a požádat o reflexi: co se dalo udělat jinak a jak postupovat příště. Když potřebujete napsat rodičům nebo se připravit na rozhovor s nimi, použijte dovednost Komunikace s rodiči.
+**Tip:** Chatbotovi můžete popsat i situaci, která už proběhla, a požádat o reflexi: co se dalo udělat jinak a jak postupovat příště. Když potřebujete napsat zákonným zástupcům nebo se připravit na rozhovor s nimi, použijte dovednost Komunikace s rodiči.

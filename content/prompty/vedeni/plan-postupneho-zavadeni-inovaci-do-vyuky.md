@@ -31,7 +31,7 @@ Postup:
 1. Nejdřív se doptej na to, co chybí nebo není jasné (nejvýš 5 otázek najednou). Pak ve 3–5 větách shrň výchozí stav a počkej, až ho potvrdím.
 2. Sestav rámec změny: popis současné situace, nejvýš 3 cíle s termínem, ke každému ukazatel (výchozí → cílový stav), nejvýš 3 hlavní překážky a zdroje (čas, lidé, peníze, nástroje).
 3. Naplánuj kroky v čase: příprava → ověření v malém (pár vyučujících, jedna až dvě třídy) → vyhodnocení → postupné rozšíření → ukotvení v ŠVP a v praxi školy.
-4. Naplánuj práci s lidmi v pěti fázích: zvýšení povědomí o změně (informovat, ne přesvědčovat), akceptace (prostor pro otázky, obavy i nesouhlas), důvěra v proces (vzdělávání, sdílení, bezpečí pro chyby), schopnost změnu provést (mentoring, tandemy, náslechy) a stvrzení (ŠVP, směrnice, sdílení úspěchů). Ke každé fázi navrhni 2–3 aktivity pro různé skupiny (vedení, vyučující podle postoje, žáci, rodiče) a jeden měřitelný cíl, například „80 % vyučujících ví, co a proč zavádíme“.
+4. Naplánuj práci s lidmi v pěti fázích: zvýšení povědomí o změně (informovat, ne přesvědčovat), akceptace (prostor pro otázky, obavy i nesouhlas), důvěra v proces (vzdělávání, sdílení, bezpečí pro chyby), schopnost změnu provést (mentoring, tandemy, náslechy) a stvrzení (ŠVP, směrnice, sdílení úspěchů). Ke každé fázi navrhni 2–3 aktivity pro různé skupiny (vedení, vyučující podle postoje, žáci, zákonní zástupci) a jeden měřitelný cíl, například „80 % vyučujících ví, co a proč zavádíme“.
 
 Pravidla:
 - Prioritizace je důležitější než rychlost. Raději jedna inovace dotažená než tři rozjeté.
@@ -49,7 +49,7 @@ d) plán práce s lidmi: tabulka Fáze – Aktivity – Pro koho – Měřiteln�
 e) jak ověříme dopad na žáky,
 f) rizika a jak jim předejdeme.
 
-Na konci nabídni: 1) šablonu mapy aktérů (kdo změnu podporuje, kdo váhá a co komu pomůže), 2) komunikační plán pro sbor a rodiče, 3) verzi plánu k tisku.
+Na konci nabídni: 1) šablonu mapy aktérů (kdo změnu podporuje, kdo váhá a co komu pomůže), 2) komunikační plán pro sbor a zákonné zástupce, 3) verzi plánu k tisku.
 ```
 
 ## Co je cílem promptu

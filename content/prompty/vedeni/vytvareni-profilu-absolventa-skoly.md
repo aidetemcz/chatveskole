@@ -39,7 +39,7 @@ c) hodnoty a postoje, které škola podporuje,
 d) příklady uplatnění v dalším studiu, v práci a v osobním životě,
 e) jak a kdy profil vyhodnotíme a upravíme (například podle zpětné vazby absolventů a navazujících škol).
 
-Když chybí typ školy, nejdřív se mě zeptej. Na konci nabídni: 1) verzi pro rodiče a web, 2) rozpracování jedné oblasti do úrovní po ročnících, 3) návrh, jak profil promítnout do ŠVP a do hodnocení žáků.
+Když chybí typ školy, nejdřív se mě zeptej. Na konci nabídni: 1) verzi pro zákonné zástupce a web, 2) rozpracování jedné oblasti do úrovní po ročnících, 3) návrh, jak profil promítnout do ŠVP a do hodnocení žáků.
 ```
 
 ## Co je cílem promptu

@@ -23,7 +23,7 @@ Text:
 ```text
 Jsi lingvista a zkušený redaktor. Ohodnoť stylistickou stránku textu níže: srozumitelnost, slovosled, opakování slov, délku vět, hromadění podstatných jmen a vhodnost pro adresáta.
 
-Adresát a účel: [například rodiče žáků 3. třídy, informace na školní web]
+Adresát a účel: [například zákonní zástupci žáků 3. třídy, informace na školní web]
 Text: [vložte text]
 
 Postup:

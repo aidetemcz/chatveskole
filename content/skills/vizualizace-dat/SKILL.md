@@ -5,7 +5,7 @@ description: Převádí školní a projektová data (známky, testy, dotazníky,
 
 # Vizualizace dat
 
-Skill pomáhá učitelům, vedení škol a vzdělávacím projektům převádět data do výstupů, kterým porozumí i ten, kdo s daty běžně nepracuje: kolegové ve sborovně, rodiče, zřizovatel, donor nebo sami žáci. Vizualizace nemá jen ukázat čísla. Má pomoct pochopit, co se změnilo, jak moc, koho se to týká a proč na tom záleží pro učení žáků a pro cíle třídy, školy nebo projektu.
+Skill pomáhá učitelům, vedení škol a vzdělávacím projektům převádět data do výstupů, kterým porozumí i ten, kdo s daty běžně nepracuje: kolegové ve sborovně, zákonní zástupci, zřizovatel, donor nebo sami žáci. Vizualizace nemá jen ukázat čísla. Má pomoct pochopit, co se změnilo, jak moc, koho se to týká a proč na tom záleží pro učení žáků a pro cíle třídy, školy nebo projektu.
 
 ## Začátek rozhovoru
 
@@ -26,13 +26,13 @@ Skill pomáhá učitelům, vedení škol a vzdělávacím projektům převádět
 ## Soukromí žáků
 
 - Ve výstupu nikdy neuváděj jména žáků ani citlivé údaje (rodná čísla, adresy, zdravotní údaje, speciální vzdělávací potřeby, rodinné okolnosti), i když jsou v datech. Obsahují-li data takové údaje, upozorni na to a pracuj s pseudonymy (Žák 1, Žák 2…).
-- Výstupy pro rodiče, web nebo veřejnost stav jen na souhrnných číslech. Skupinu menší než zhruba pět žáků samostatně nezobrazuj, protože by šlo poznat, o koho jde. Sluč ji s jinou skupinou, nebo ji zmiň jen v textu bez čísel.
-- Jednotlivé žáky ani učitele veřejně neřaď do žebříčků. Pokrok konkrétního žáka je informace pro žáka, jeho rodiče a učitele, ne pro celou třídu.
+- Výstupy pro zákonné zástupce, web nebo veřejnost stav jen na souhrnných číslech. Skupinu menší než zhruba pět žáků samostatně nezobrazuj, protože by šlo poznat, o koho jde. Sluč ji s jinou skupinou, nebo ji zmiň jen v textu bez čísel.
+- Jednotlivé žáky ani učitele veřejně neřaď do žebříčků. Pokrok konkrétního žáka je informace pro žáka, jeho zákonné zástupce a učitele, ne pro celou třídu.
 
 ## Postup práce
 
 1. Urči hlavní otázku, na kterou má výstup odpovědět.
-2. Urči čtenáře: učitel pro vlastní potřebu, kolegové, vedení, rodiče, zřizovatel, donor, nebo žáci. Podle něj zvol míru detailu a slovník.
+2. Urči čtenáře: učitel pro vlastní potřebu, kolegové, vedení, zákonní zástupci, zřizovatel, donor, nebo žáci. Podle něj zvol míru detailu a slovník.
 3. Zkontroluj data:
    - názvy ukazatelů a jednotky,
    - časová období a zdroj dat,
@@ -99,14 +99,14 @@ Když se data dají roztřídit, použij toto členění. Datům, která do něj
 
 ### Školní klima a zpětná vazba
 
-- dotazníky žáků, rodičů a pedagogů,
+- dotazníky žáků, zákonných zástupců a pedagogů,
 - docházka a absence,
 - wellbeing a vztahy ve třídě.
 
 ### Vzdělávací aktivity
 
 - počet hodin, workshopů, projektových dnů, akcí a webinářů,
-- počet účastníků a zapojených žáků, rodičů a tříd,
+- počet účastníků a zapojených žáků, zákonných zástupců a tříd,
 - další vzdělávání pedagogů.
 
 ### Vzdělávací obsah

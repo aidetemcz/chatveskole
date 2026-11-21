@@ -12,7 +12,7 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako ředitel základní školy, který chce rodičům otevřeně a srozumitelně představit, jak bude škola ve výuce využívat generativní umělou inteligenci. Piš věcně a přístupně i pro rodiče bez technického zázemí.
+Vystupuj jako ředitel základní školy, který chce zákonným zástupcům otevřeně a srozumitelně představit, jak bude škola ve výuce využívat generativní umělou inteligenci. Piš věcně a přístupně i pro zákonné zástupce bez technického zázemí.
 
 Ročníky a předměty: [například 8. a 9. ročník, český jazyk a informatika]
 Aplikace, které chceme používat: [názvy konkrétních chatbotů a aplikací]
@@ -33,12 +33,12 @@ Pravidla:
 - Nevymýšlej pravidla školy, která jsem nezadal(a). Chybějící údaje označ hranatými závorkami.
 - Délka nejvýš 300 slov, pokud nenapíšu jinak.
 
-Pod text mi zvlášť napiš, co si mám před zveřejněním ověřit. Pak nabídni kratší verzi nebo verzi pro rodiče mladších dětí.
+Pod text mi zvlášť napiš, co si mám před zveřejněním ověřit. Pak nabídni kratší verzi nebo verzi pro zákonné zástupce mladších dětí.
 ```
 
 ## Co je cílem promptu
 
-Prompt vám pomůže vysvětlit rodičům, jak a proč bude škola ve výuce používat generativní AI. Text je otevřený a střízlivý: nepřehání přínosy a nestraší riziky. Popíše, k čemu AI ve výuce slouží, jak žáky učíte s ní bezpečně a kriticky zacházet a které aplikace budete používat.
+Prompt vám pomůže vysvětlit zákonným zástupcům, jak a proč bude škola ve výuce používat generativní AI. Text je otevřený a střízlivý: nepřehání přínosy a nestraší riziky. Popíše, k čemu AI ve výuce slouží, jak žáky učíte s ní bezpečně a kriticky zacházet a které aplikace budete používat.
 
 Chatbot si nevymýšlí věkové limity ani pravidla školy. Co neví, označí k ověření.
 
@@ -46,6 +46,6 @@ Chatbot si nevymýšlí věkové limity ani pravidla školy. Co neví, označí 
 
 Zkopírujte prompt do chatbota a doplňte ročníky, aplikace a pravidla, která ve škole platí. Věkové limity před zveřejněním vždy ověřte, podmínky služeb se mění. Pomůže vám přehled [Věkové limity a legislativa](/zaciname/vekove-limity-a-legislativa).
 
-Text je dobré doplnit nabídkou, kde se rodiče mohou zeptat, například na třídní schůzce nebo konzultaci.
+Text je dobré doplnit nabídkou, kde se zákonní zástupci mohou zeptat, například na třídní schůzce nebo konzultaci.
 
 **Používáte tento prompt často?** Stejný úkol zvládne dovednost [Komunikace s rodiči](/skills/komunikace-s-rodici), kterou si můžete nainstalovat do svého chatbota.

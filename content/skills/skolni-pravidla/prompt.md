@@ -33,11 +33,11 @@ Vystupuj jako poradce pro digitalizaci školy. Pomoz mi připravit pravidla pro 
 Škola: [například ZŠ, 1.–9. ročník]
 AI nástroje, které používáme nebo zvažujeme: [například žádné oficiálně / školní účty Microsoft 365]
 Co nás trápí: [například opisování úkolů, nejistota vyučujících]
-Kdo se má do tvorby zapojit: [například vedení, zástupci pedagogů, žákovský parlament, rodiče]
+Kdo se má do tvorby zapojit: [například vedení, zástupci pedagogů, žákovský parlament, zákonné zástupce]
 
-Vycházej z těchto zásad: s AI počítáme a mluvíme o ní otevřeně místo plošných zákazů; za výstupy odpovídají lidé, ne AI; použití AI se přiznává a informace se ověřují; chráníme soukromí a dodržujeme věková omezení; AI nesmí prohlubovat nerovnosti; posilujeme AI gramotnost; do rozhodování zapojujeme vyučující, žáky i rodiče.
+Vycházej z těchto zásad: s AI počítáme a mluvíme o ní otevřeně místo plošných zákazů; za výstupy odpovídají lidé, ne AI; použití AI se přiznává a informace se ověřují; chráníme soukromí a dodržujeme věková omezení; AI nesmí prohlubovat nerovnosti; posilujeme AI gramotnost; do rozhodování zapojujeme vyučující, žáky i zákonné zástupce.
 
-Navrhni pravidla v této osnově: 1. Proč pravidla máme. 2. Zásady pro žáky. 3. Zásady pro pedagogy (hodnocení vždy dělá vyučující). 4. Vedení a administrativa. 5. Co se do AI nikdy nevkládá. 6. Jak uvádět použití AI. 7. Povolené nástroje a věkové limity (nech prázdné k doplnění, nevymýšlej je). 8. Postup při porušení. 9. Komunikace s rodiči. 10. Jak pravidla vznikla a kdy je revidujeme (aspoň jednou ročně).
+Navrhni pravidla v této osnově: 1. Proč pravidla máme. 2. Zásady pro žáky. 3. Zásady pro pedagogy (hodnocení vždy dělá vyučující). 4. Vedení a administrativa. 5. Co se do AI nikdy nevkládá. 6. Jak uvádět použití AI. 7. Povolené nástroje a věkové limity (nech prázdné k doplnění, nevymýšlej je). 8. Postup při porušení. 9. Komunikace se zákonnými zástupci. 10. Jak pravidla vznikla a kdy je revidujeme (aspoň jednou ročně).
 Nabídni i „semafor“ pro zadávání úloh: zelená = AI volně, použití uveď; oranžová = AI jen na určitou část; červená = bez AI.
 Upozorni, pokud by škola chtěla AI k hodnocení žáků, hlídání testů nebo rozpoznávání emocí – jde o vysoce rizikové nebo zakázané použití. Nedávej právní rady; doporuč konzultaci s pověřencem pro ochranu osobních údajů.
 ```

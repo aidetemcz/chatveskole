@@ -9,7 +9,7 @@ typ: prompt
 Vystupuj jako zkušený pedagog se specializací na slovní hodnocení podle metodiky Vysvědčení JINAK (Jana Kratochvílová, PdF MU). Napiš návrh slovního hodnocení žáka z údajů níže.
 
 Druh textu: [například vysvědčení za 1. pololetí, průběžná zpětná vazba, nebo komentář ke klasifikaci]
-Adresát: [žák – 2. osoba, nebo rodiče – 3. osoba]
+Adresát: [žák – 2. osoba, nebo zákonní zástupci – 3. osoba]
 Žák: [iniciály nebo přezdívka, nikdy jméno], [chlapec / dívka], [například 3. třída ZŠ]
 Oblasti a předměty: [například chování, český jazyk, matematika, výtvarná výchova]
 Úroveň na stupnici, pokud ji škola používá: [například J–Č–T–Ú u předmětů; nebo řádek smažte]
@@ -31,11 +31,11 @@ Pravidla:
 - Text musí odpovídat uvedené úrovni na stupnici.
 - Bez prázdných ujištění („věřím, že to příště zvládneš“); doporučení vychází z popsaných výsledků.
 - Pokud nic neurčím, piš po předmětech a přístup k učení shrň na konci.
-- Oslovení napiš jako „[jméno]“, na 1. stupni „Milý/Milá [jméno]“. Text pro rodiče bývá bez oslovení.
-- Jazyk přizpůsob věku, aby textu rozuměl žák i rodiče.
+- Oslovení napiš jako „[jméno]“, na 1. stupni „Milý/Milá [jméno]“. Text pro zákonné zástupce bývá bez oslovení.
+- Jazyk přizpůsob věku, aby textu rozuměl žák i zákonní zástupci.
 - Nepřidávej nic, co v zadání není. Když něco chybí, nech „[doplnit: …]“.
 
-Pod text napiš „K ověření:“ a seznam chybějících nebo nejistých údajů. Pak mi nabídni číslovaný seznam úprav (kratší verze, verze pro rodiče, jiná struktura). Pokud chybí důležité údaje, nejdřív se mě zeptej.
+Pod text napiš „K ověření:“ a seznam chybějících nebo nejistých údajů. Pak mi nabídni číslovaný seznam úprav (kratší verze, verze pro zákonné zástupce, jiná struktura). Pokud chybí důležité údaje, nejdřív se mě zeptej.
 ```
 
 ## Varianta: Shrnutí více hodnocení do jednoho
@@ -44,7 +44,7 @@ Pod text napiš „K ověření:“ a seznam chybějících nebo nejistých úda
 Vystupuj jako zkušený pedagog se specializací na slovní hodnocení podle metodiky Vysvědčení JINAK (PdF MU). Z dřívějších slovních hodnocení níže vytvoř jedno souhrnné hodnocení na konec roku.
 
 Ročník: [například 4. třída ZŠ]
-Adresát: [žák, nebo rodiče]
+Adresát: [žák, nebo zákonní zástupci]
 Délka: [například 150 slov]
 Dřívější hodnocení: [vložte texty; jména žáků nahraďte iniciálami]
 
@@ -59,7 +59,7 @@ Formulace, které hodnotí osobnost, vyjadřují pocity vyučujícího („mám 
 Vystupuj jako zkušený pedagog se specializací na slovní hodnocení podle metodiky Vysvědčení JINAK (PdF MU). Napiš slovní hodnocení oblasti chování žáka na vysvědčení.
 
 Žák: [iniciály nebo přezdívka, nikdy jméno], [chlapec / dívka], [například 5. třída ZŠ]
-Adresát: [žák, nebo rodiče]
+Adresát: [žák, nebo zákonní zástupci]
 Kritéria a úroveň u každého z nich: [například Přiměřeně situaci vyjadřuje své myšlenky – Často; Spolupracuje ve skupině – Občas]
 Co jsem pozoroval/a: [konkrétní projevy a situace]
 Délka: [například 80 slov]

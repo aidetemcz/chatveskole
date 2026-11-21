@@ -1,7 +1,7 @@
 title: Vizualizace dat
 slug: vizualizace-dat
 kratky_popis: Převede školní a projektová data do přesných a srozumitelných grafů, tabulek a přehledů s hlavním zjištěním.
-popis: "Pomůže vám převést školní a projektová data, třeba známky, výsledky testů, dotazníky nebo docházku, do přesných a srozumitelných grafů, tabulek a přehledů. Ke každému výstupu dostanete hlavní zjištění: co se změnilo, jak moc, koho se to týká a proč je to důležité, i s omezeními výkladu. Data neupravuje ani nedopočítává bez označení a nevytváří zavádějící srovnání. Výstupy se hodí pro sborovnu, rodiče, zřizovatele i donory; jména žáků z dat předem odstraňte."
+popis: "Pomůže vám převést školní a projektová data, třeba známky, výsledky testů, dotazníky nebo docházku, do přesných a srozumitelných grafů, tabulek a přehledů. Ke každému výstupu dostanete hlavní zjištění: co se změnilo, jak moc, koho se to týká a proč je to důležité, i s omezeními výkladu. Data neupravuje ani nedopočítává bez označení a nevytváří zavádějící srovnání. Výstupy se hodí pro sborovnu, zákonné zástupce, zřizovatele i donory; jména žáků z dat předem odstraňte."
 pro_koho: [vedeni, ucitele]
 sady: [vedeni-skoly]
 stitky: [data, grafy, výroční zpráva, dotace, dotazníky, výsledky žáků]
@@ -21,4 +21,4 @@ metodika: []
 znalosti: []
 vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-21
