@@ -214,10 +214,11 @@ a.card:hover { border-color: var(--sky-deep); }
 .prose .zpusob-role-kdo { display: block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--sky-ink); margin-bottom: 4px; }
 .prose .zpusob strong { font-weight: 600; }
 .prose .zpusob-dalsi { display: flex; flex-direction: column; gap: 6px; border-top: 1px solid var(--line); padding-top: 12px; }
-.prose .zpusob-paticka { margin-top: auto; border-top: 1px solid var(--line); padding-top: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 12px; }
-.prose .zpusob-paticka .btn { margin-top: 4px; }
-.prose .zpusob-tiny { margin-right: auto; }
-@media (max-width: 480px) { .prose .zpusob-role, .btn--sm { padding: 8px 16px; font-size: 14px; }
+.prose .zpusob-paticka { margin-top: auto; border-top: 1px solid var(--line); padding-top: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.prose .zpusob-paticka .btn { margin-top: 6px; }
+.prose .zpusob-tiny { flex-basis: 100%; }
+@media (max-width: 480px) { .prose .zpusob-role { grid-template-columns: 1fr; } }
+.btn--sm { padding: 8px 16px; font-size: 14px; }
 @media (max-width: 760px) { .prose .zpusoby { grid-template-columns: 1fr; } }
 
 /* Vložené video (komponenta „video“) — vždy na šířku textu, ne přes celou stránku (Eva 20. 11. 2026) */

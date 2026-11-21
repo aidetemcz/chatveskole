@@ -26,7 +26,7 @@ Deset způsobů, jak zapojit generativní AI do výuky tak, aby žákům pomáha
 
 Chatbot umí během chvilky napsat osnovu, vyřešit příklad nebo shrnout kapitolu. Právě proto záleží na tom, jakou práci mu ve výuce svěříte a jakou necháte žákům. Způsoby na této stránce jsou seřazené podle toho, co při nich dělá žák: od vybavování učiva přes zkoumání souvislostí a posuzování až po vlastní tvorbu.
 
-Ke každému způsobu najdete, co dělá žák a co AI, kdy se způsob hodí a kdy ne, jednu pojistku, která chrání učení, a vodítko, podle čeho poznáte, že se žák opravdu něco naučil.
+Ke každému způsobu najdete, co dělá žák a co AI, kdy se způsob hodí a kdy ne a hodnoticí kritérium, podle kterého poznáte, že se žák opravdu něco naučil.
 
 Způsoby jsou určené pro 2. stupeň základních škol a pro střední školy. Generativní AI doporučujeme využívat hlavně se staršími žáky, kteří už dokážou posoudit, zda jim nástroj v učení pomáhá. Stránka navazuje na rámec [4 kroky ke smysluplnému učení s AI](https://digitalizace.rvp.cz/clanky/4-kroky-ke-smysluplnemu-uceni-s-ai), který vznikl ve spolupráci Národního pedagogického institutu ČR a AI dětem.
 
