@@ -57,9 +57,9 @@ const varianty = skill.prompt.varianty;
       </div>
 
       <section id="instalace" class="stack sekce" aria-labelledby="inst-h">
-        <div class="stack" style="gap: 10px"><h2 id="inst-h" class="h2">Nainstalovat dovednost</h2><p class="muted">Dovednost nainstalujete jednou a chatbot ji buď použije sám, kdykoli ji bude potřebovat, případně ji můžete vyvolat přímo v chatu pomocí zavináče nebo lomítka. Dovednosti nemá každý tarif; kde chybí, použijte verzi promptu.</p></div>
+        <div class="stack" style="gap: 10px"><h2 id="inst-h" class="h2">Nainstalovat dovednost</h2><p class="muted">Dovednost nainstalujete jednou. Chatbot ji pak použije sám, kdykoli ji bude potřebovat, nebo ji vyvoláte přímo v chatu zavináčem či lomítkem. Dovednosti nemá každý tarif. Kde chybí, použijte verzi promptu.</p></div>
         <div class="stack" style="gap: 12px">
-          <p id="nastroj-h" class="vyber">Vyberte chatovací nástroj, který používáte.</p>
+          <p id="nastroj-h" class="vyber">Vyberte chatovací aplikaci, kterou používáte.</p>
           <div class="tools" role="tablist" aria-labelledby="nastroj-h" data-switch="instalace-panely">
             {NASTROJE.map((n, i) => <button type="button" role="tab" data-target={n.id} aria-selected={i === 0 ? 'true' : 'false'}>{n.nazev}</button>)}
           </div>
@@ -80,7 +80,7 @@ const varianty = skill.prompt.varianty;
                     {skill.google_data && <a class="zip" href={skill.google_data}><span class="tile-icon tile-icon--sky"><Icon name="folder" size={18} /></span><span class="stack"><strong>Znalosti (složka Data)</strong><span class="muted small">Google Disk · nahrajte do agenta</span></span></a>}
                   </div>
                 )}
-                <p class="muted small">Dovednosti jsou v Gemini a Claude určené uživatelům od 18 let. S žáky používejte verzi promptu nebo aplikaci <a href={url('/ve-vyuce/tiny')}>Tiny</a>.</p>
+                <p class="muted small">Dovednosti jsou v Gemini a Claude určené uživatelům od 18 let. Se žáky používejte verzi promptu nebo aplikaci <a href={url('/ve-vyuce/tiny')}>Tiny</a>.</p>
               </div>
             </div>
           ))}

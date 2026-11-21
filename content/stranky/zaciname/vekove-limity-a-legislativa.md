@@ -3,7 +3,7 @@ title: Věkové limity a legislativa
 menu: Začínáme
 poradi: 5
 popis: Od kolika let smí žáci používat ChatGPT, Gemini, Copilot a Claude, co říká GDPR a AI Act, komu patří vygenerovaný obsah a jak chatboty citovat.
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-21
 stav: koncept
 zdroje:
   - https://openai.com/policies/eu-terms-of-use/
@@ -35,7 +35,7 @@ Nejsme právníci. Shrnujeme to podstatné a odkazujeme na zdroje — u konkrét
 | Perplexity | od 13 let, nezletilí jen se souhlasem rodiče | — |
 | [Tiny](/ve-vyuce/tiny) | — | od 13 let; 11–12 let se souhlasem zákonného zástupce |
 
-Podmínky se mění. Před zavedením nástroje ve třídě je ověřte v aktuálních podmínkách vývojáře.
+Podmínky se mění. Než nástroj ve třídě zavedete, ověřte si je přímo u vývojáře.
 
 ## Naše doporučení pro výuku
 

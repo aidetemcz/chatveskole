@@ -4,7 +4,7 @@ menu: Vibe Coding
 poradi: 3
 popis: Postup krok za krokem, jak si postavit první aplikaci do výuky. Vzorový prompt, jak popsat chybu a jak se nezaseknout.
 sablona: vibe-coding-jak-zacit-pruvodce   # vlastní šablona src/pages/vibe-coding/jak-zacit.astro
-aktualizovano: 2026-11-20
+aktualizovano: 2026-11-21
 stav: koncept
 ---
 
@@ -14,7 +14,7 @@ Vaše první aplikace bude hotová za deset minut. Ukážeme to na kvízu, ale p
 
 ## 1. Otevřete nástroj
 
-Pro začátek doporučujeme **Gemini Canvas** (v Gemini zvolte nástroj Canvas) nebo **Claude** (stačí napsat, že chcete aplikaci). Obojí funguje zdarma. Přehled dalších nástrojů najdete [zde](/vibe-coding/nastroje).
+Pro začátek doporučujeme **Gemini Canvas** (v Gemini zvolte nástroj Canvas) nebo **Claude** (stačí napsat, že chcete aplikaci). Obojí funguje zdarma. Další nástroje najdete v [přehledu nástrojů](/vibe-coding/nastroje).
 
 ## 2. Popište, co chcete
 

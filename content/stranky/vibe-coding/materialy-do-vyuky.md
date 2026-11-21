@@ -4,7 +4,7 @@ menu: Vibe Coding
 poradi: 4
 popis: Metodika AI dětem Tvorba jednoduchých aplikací pomocí vibecodingu, školení Vibecoding pro školy a osm hotových zadání pro vyučující — interaktivní časová osa, graf z dat, myšlenková mapa, simulace logické úlohy a další.
 sablona: materialy-pruvodce   # vlastní šablona src/pages/vibe-coding/materialy-do-vyuky.astro
-aktualizovano: 2026-11-20
+aktualizovano: 2026-11-21
 stav: koncept
 zdroje:
   - https://kurikulum.aidetem.cz/knowledgebase/vibecoding-01-tvorba-jednoduchych-aplikaci/
@@ -75,7 +75,7 @@ Dřív jsme v [databázi promptů](/funkce/prompty/graf-regiony) radili, jak nec
 Vytvoř interaktivní časovou osu prezidentů České republiky od roku 1993 do dneška.
 Každé funkční období ukaž jako barevný pruh. Po kliknutí na pruh se zobrazí jméno,
 roky ve funkci a tři nejdůležitější události. Přidej tlačítko, které přepne osu
-na období Československa (1918–1992). Data uveď jen ta, která si jsi jistý; nejisté označ.
+na období Československa (1918–1992). Uveď jen data, kterými si jsi jistý; nejistá označ.
 ```
 
 ### Graf z dat (zeměpis, občanská výchova)
@@ -126,7 +126,7 @@ Postavy přetahuji myší nebo prstem. Při prohře ukaž, co se stalo, a nabíd
 Počítej tahy a po výhře ukaž, jestli šlo o nejkratší řešení.
 ```
 
-S žáky pak můžete řešení zakreslit jako sekvenční diagram nebo algoritmus.
+Se žáky pak můžete řešení zakreslit jako sekvenční diagram nebo algoritmus.
 
 ### Vlastní ikona (výtvarná výchova, informatika)
 

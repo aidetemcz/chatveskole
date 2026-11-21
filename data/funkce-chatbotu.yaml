@@ -19,7 +19,7 @@ nastroje:
   - Sites pro weby a malé aplikace (placené tarify)
   - ChatGPT for Teens pro 13–17 let
   skola:
-  - Migrovaný plugin je soukromý. Vlastní akce, výběr modelu ani sdílení se nepřenesou.
+  - Převedený plugin je soukromý. Vlastní akce, výběr modelu ani sdílení se nepřenesou.
   - 'Veřejný odkaz na GPT zatím nic nenahrazuje: sdílený projekt ukáže všem členům všechny konverzace, pluginy jen s dovednostmi OpenAI do veřejného adresáře teď nepřijímá.'
   - ChatGPT for Teachers je jen pro vyučující v USA.
 - id: gemini

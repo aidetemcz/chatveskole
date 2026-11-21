@@ -4,7 +4,7 @@ menu: Funkce
 poradi: 4
 popis: Co jsou pluginy v ChatGPT, Claude a Copilotu, čím se liší od dovedností a jak nainstalovat sady dovedností od AI dětem.
 sablona: pluginy-pruvodce   # vlastní šablona src/pages/funkce/pluginy.astro (návrh z Claude Design, 20. 11. 2026)
-aktualizovano: 2026-11-20
+aktualizovano: 2026-11-21
 stav: koncept
 zdroje:
   - https://help.openai.com/en/articles/20001256-plugins-in-chatgpt
@@ -40,7 +40,7 @@ Všechny tři cesty vedou ke stejnému cíli. Liší se tím, kolik práce vám 
 - Adresář pluginů vidí všechny tarify. Co si můžete nainstalovat, záleží na tarifu a regionu.
 - Plugin sdílíte jen uvnitř pracovního prostoru (tarify Business, Enterprise, Edu). Do veřejného adresáře se dostane až po schválení OpenAI.
 
-**Jak plugin zavoláte:** napište v chatu zavináč a název pluginu, například `@Formativní hodnocení`.
+**Jak plugin vyvoláte:** napište v chatu zavináč a název pluginu, například `@Formativní hodnocení`.
 
 ### Claude
 

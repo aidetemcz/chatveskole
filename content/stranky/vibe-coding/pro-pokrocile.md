@@ -4,7 +4,7 @@ menu: Vibe Coding
 poradi: 5
 popis: Claude Code, Codex, Antigravity a Cursor, GitHub, Vercel a Supabase, instrukce pro agenta v CLAUDE.md a bezpečnost. Jak stavíme web Chatboti ve škole.
 sablona: pokrocili-pruvodce   # vlastní šablona src/pages/vibe-coding/pro-pokrocile.astro
-aktualizovano: 2026-11-20
+aktualizovano: 2026-11-21
 zdroje:
   - https://supabase.com/pricing
   - https://supabase.com/docs/guides/database/postgres/row-level-security
@@ -61,12 +61,12 @@ Dovednosti nejsou jen pro chatboty. Programovací agenti je používají také �
 
 Web Chatboti ve škole jsme v roce 2026 převedli z WordPressu na vibe coding:
 
-- **Všechny texty jsou soubory Markdown** v repozitáři [github.com/aidetemcz/chatveskole](https://github.com/aidetemcz/chatveskole). Úprava textu = úprava souboru.
+- **Všechny texty jsou soubory Markdown** v repozitáři [github.com/aidetemcz/chatveskole](https://github.com/aidetemcz/chatveskole). Když chceme změnit text, upravíme soubor.
 - **Každá dovednost je složka** se souborem `SKILL.md`, verzí promptu a metadaty. Web z ní sám vytvoří stránku, tlačítko Kopírovat a ZIP ke stažení.
 - **Data jsou v souborech YAML** — ceny chatbotů, přehled funkcí. Když se změní ceník, upravíme jeden soubor.
 - **Žádná databáze.** Web se sestaví do statických stránek a běží na Vercelu.
 - **Změny děláme hromadně přes Claude Code**, například „aktualizuj u všech dovedností věkové limity podle nového přehledu“.
 
-Funkce chatbotů se mění každý měsíc. Udržovat obsah klikáním ve WordPressu nestíhal; s vibe codingem upravíme desítky stránek najednou.
+Funkce chatbotů se mění každý měsíc. Udržovat obsah klikáním ve WordPressu jsme nestíhali. S vibe codingem upravíme desítky stránek najednou.
 
 [Zpět na Co je vibe coding](/vibe-coding/co-je-to)

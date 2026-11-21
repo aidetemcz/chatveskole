@@ -10,7 +10,7 @@ import { url } from '../lib/url';
 <section class="instr-hlavicka" aria-labelledby="instr-h">
   <div>
     <h2 id="instr-h">Instrukce pro chatboty</h2>
-    <p class="lede">Instrukce chatbotu říkají, co přesně má udělat. Čím přesnější instrukce, tím přesnější výsledek. Podívejte se, jak to vypadá, když chatbota pošlete pro červenou rybu.</p>
+    <p class="lede">Instrukce říkají chatbotovi, co přesně má udělat. Čím přesnější instrukce, tím přesnější výsledek. Podívejte se, jak to vypadá, když chatbota pošlete pro červenou rybu.</p>
   </div>
 </section>
 
@@ -24,7 +24,7 @@ import { url } from '../lib/url';
     <div class="text">
       <span class="krok" aria-hidden="true">1</span>
       <h3 id="instr-f1">Krátký prompt</h3>
-      <p>Když napíšete jen pár slov do nového chatu, chatbot odhaduje, jaké bylo vaše zadání. Jeho výstup nebývá tedy často kvalitní.</p>
+      <p>Když do nového chatu napíšete jen pár slov, chatbot musí hádat, co jste měli na mysli. Výsledek proto často nebývá dobrý.</p>
     </div>
   </div>
 </section>
@@ -39,7 +39,7 @@ import { url } from '../lib/url';
     <div class="text">
       <span class="krok" aria-hidden="true">2</span>
       <h3 id="instr-f2">Podrobný prompt</h3>
-      <p>Pokud si dáte práci s pořádným zadáním, výstup chatbota bývá o dost lepší. Podrobná zadání jsou ale časově náročná. Proto jsme je pro vás připravili a otestovali. Můžete je zkopírovat nebo použít pro inspiraci.</p>
+      <p>Když si dáte práci s pořádným zadáním, bývá výsledek o dost lepší. Napsat podrobné zadání ale zabere čas. Proto jsme je připravili a vyzkoušeli za vás. Můžete je zkopírovat, nebo se jimi jen inspirovat.</p>
       <a class="more" href={url('/funkce/prompty')}>Co je to prompt a jak ho tvořit →</a>
       <a class="more" href={url('/prompty')}>Katalog promptů →</a>
     </div>
@@ -55,8 +55,8 @@ import { url } from '../lib/url';
     </div>
     <div class="text">
       <span class="krok" aria-hidden="true">3</span>
-      <h3 id="instr-f3">Dovednosti (skill)</h3>
-      <p>Tzv. dovednosti jsou kombinace podrobného zadání a znalostí (různých přiložených souborů). Vytvoří se jednou a pak je už jen vyvoláváte v chatu pomocí zavináče nebo lomítka. To vám při opakovaných činnostech ušetří spoustu času.</p>
+      <h3 id="instr-f3">Dovednosti (skills)</h3>
+      <p>Dovednost spojuje podrobné zadání se znalostmi, tedy s přiloženými soubory. Vytvoříte ji jednou a pak ji v chatu jen vyvoláte zavináčem nebo lomítkem. U činností, které opakujete, vám to ušetří spoustu času.</p>
       <a class="more" href={url('/funkce/skills')}>Co je to dovednost a jak ji vytvořit →</a>
       <a class="more" href={url('/skills')}>Katalog dovedností →</a>
     </div>
@@ -73,7 +73,7 @@ import { url } from '../lib/url';
     <div class="text">
       <span class="krok" aria-hidden="true">4</span>
       <h3 id="instr-f4">Projekty</h3>
-      <p>Projekty jsou podobné složkám. Každý má svůj kontext — např. projekt Grantové žádosti může obsahovat úspěšné žádosti, které jste podali v minulosti. Chatbot do nich vidí a čerpá z nich informace. Do projektů můžete volat také dovednosti. Ty ještě zpřesňují vaše zadání. Do projektu Grantové žádosti můžete zavolat například předem vytvořenou dovednost na vyhodnocení kvality žádosti.</p>
+      <p>Projekty se podobají složkám. Každý má svůj kontext — například projekt Grantové žádosti může obsahovat úspěšné žádosti, které jste podali dřív. Chatbot do nich vidí a čerpá z nich. V projektu můžete vyvolat i dovednosti, které vaše zadání ještě zpřesní — v projektu Grantové žádosti třeba předem vytvořenou dovednost na vyhodnocení kvality žádosti.</p>
       <a class="more" href={url('/funkce/projekty')}>Co jsou projekty →</a>
     </div>
   </div>
@@ -89,7 +89,7 @@ import { url } from '../lib/url';
     <div class="text">
       <span class="krok" aria-hidden="true">5</span>
       <h3 id="instr-f5">Sady dovedností (pluginy)</h3>
-      <p>Pluginy jsou kombinací dovedností a tzv. konektorů. Ty propojují chatbota s dalšími aplikacemi, například kalendářem, úložištěm, e-mailem nebo třeba Canvou. Díky pluginům můžete provádět pokročilé automatizace.</p>
+      <p>Pluginy spojují dovednosti s takzvanými konektory. Ty propojují chatbota s dalšími aplikacemi, například s kalendářem, úložištěm, e-mailem nebo třeba s Canvou. Díky pluginům zautomatizujete i složitější práci.</p>
       <a class="more" href={url('/funkce/pluginy')}>Co jsou pluginy →</a>
     </div>
   </div>

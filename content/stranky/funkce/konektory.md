@@ -3,7 +3,7 @@ title: Konektory
 menu: Funkce
 poradi: 6
 popis: Jak napojit chatbota na Google Disk, e-mail, kalendář nebo Microsoft 365, k čemu je to ve škole dobré a na co si dát pozor kvůli ochraně dat.
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-21
 stav: koncept
 zdroje:
   - data/funkce-chatbotu.yaml
@@ -18,7 +18,7 @@ Konektor napojí chatbota na jinou aplikaci — Google Disk, Gmail, kalendář, 
 ## K čemu je to ve škole dobré
 
 - „Najdi na mém Disku náš ŠVP pro 2. stupeň a navrhni, kam zařadit téma umělé inteligence.“
-- „Projdi e-maily od rodičů z tohoto týdne a připrav mi přehled, na co mám odpovědět.“ (jen se školním účtem a bez vkládání osobních údajů dál)
+- „Projdi e-maily od rodičů z tohoto týdne a připrav mi přehled, na co mám odpovědět.“ (jen se školním účtem, osobní údaje pak nikam dál nevkládejte)
 - „Z kalendáře mi připrav seznam porad na příští měsíc a navrhni program první z nich.“
 - „Vezmi zápis z porady z Disku a udělej z něj úkoly pro jednotlivé kolegy.“
 
@@ -36,7 +36,7 @@ Konektor napojí chatbota na jinou aplikaci — Google Disk, Gmail, kalendář, 
 Konektor dává chatbotu přístup ke všemu, co vidíte vy. V e-mailu a na Disku vyučujícího bývají osobní údaje žáků a rodičů.
 
 - **Připojujte jen pracovní účet a jen tam, kde to škola povoluje.** Zeptejte se správce IT nebo pověřence pro ochranu osobních údajů.
-- **Preferujte školní verze nástrojů** (Google Workspace for Education, Microsoft 365), kde se data nepoužívají k tréninku.
+- **Dávejte přednost školním verzím nástrojů** (Google Workspace for Education, Microsoft 365), kde se data nepoužívají k tréninku.
 - **Zadávejte úzké úkoly.** „Najdi dokument ŠVP“ je lepší než „projdi celý můj Disk“.
 - **Kontrolujte, než chatbot něco odešle nebo změní.** Chatboti se před odesláním e-mailu nebo vytvořením události ptají — čtěte, co potvrzujete.
 - **Konektor můžete kdykoli odpojit** v nastavení chatbota.

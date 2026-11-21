@@ -3,7 +3,7 @@ title: Kontakt
 menu: O webu
 poradi: 2
 popis: Napište nám — dotazy k webu, návrhy dovedností a promptů, chyby v textech, vzdělávací akce pro školy.
-aktualizovano: 2026-11-20
+aktualizovano: 2026-11-21
 sablona: kontakt-pruvodce   # vlastní šablona src/pages/o-webu/kontakt.astro
 stav: koncept
 odkazy:
@@ -25,7 +25,7 @@ Používáte dovednost nebo prompt, který se vám osvědčil? Pošlete nám ho 
 
 ## Školení a spolupráce
 
-Poptáváte vzdělávací akci pro sborovnu nebo spolupráci? Ozvěte se Kláře na [klara@aidetem.cz](mailto:klara@aidetem.cz), nebo se podívejte na [nabídku vzdělávacích akcí](https://vzdelavame.aidetem.cz).
+Hledáte vzdělávací akci pro sborovnu nebo máte zájem o spolupráci? Ozvěte se Kláře na [klara@aidetem.cz](mailto:klara@aidetem.cz), nebo se podívejte na [nabídku vzdělávacích akcí](https://vzdelavame.aidetem.cz).
 
 ## Novinky do e-mailu
 

@@ -18,7 +18,7 @@ export const NASTROJE: Nastroj[] = [
     kroky: [
       'Stáhněte ZIP dovednosti pro Gemini.',
       'V aplikaci Gemini otevřete Více… → Přizpůsobit → Dovednosti a nahrajte ZIP.',
-      'Dovednost zavoláte tak, že napíšete zavináč a začnete psát její název.',
+      'Dovednost vyvoláte v chatu zavináčem: napište @ a začněte psát její název.',
       'Dovednosti mají osobní účty od 18 let. Na školních účtech dostupnost řídí správce.',
     ],
   },
@@ -36,7 +36,7 @@ export const NASTROJE: Nastroj[] = [
     kroky: [
       'Dovednosti má Copilot jen s placenou licencí Microsoft 365 Copilot. Hotovou dovednost pro Copilot ke stažení nenabízíme, místo ní si vytvoříte agenta.',
       'V Copilot Chatu vytvořte agenta a do jeho pokynů vložte instrukce dovednosti z Google Docs.',
-      'Má-li dovednost podklady, nahrajte do agenta i soubory ze složky Data na Google Disku.',
+      'Pokud má dovednost podklady, nahrajte do agenta i soubory ze složky Data na Google Disku.',
       'Agenta vyvoláte v Copilot Chatu zavináčem, nebo ho otevřete v seznamu agentů.',
     ],
   },

@@ -3,7 +3,7 @@ title: Tvorba pravidel pro využívání AI
 menu: Chatboti ve výuce
 poradi: 3
 popis: Jak ve škole nastavit pravidla pro využívání AI a digitálních technologií — společně se žáky, nebo jako vedení školy. Workshop, návrhy formulací, osnova pravidel a dovednost na pomoc.
-aktualizovano: 2026-11-20
+aktualizovano: 2026-11-21
 sablona: pravidla-pruvodce   # vlastní šablona src/pages/ve-vyuce/pravidla-pro-ai.astro (návrh z Claude Design, 20. 11. 2026)
 stav: koncept
 zdroje:
@@ -37,7 +37,7 @@ Postup ukazujeme na pravidlech pro mobilní zařízení. Stejně můžete se ž�
 
 ![Obálka metodiky Etika vývoje a využití technologií](/img/metodika-etika-technologii.jpg)
 
-Metodika Etika vývoje a využití technologií pomáhá žákům zohlednit různé perspektivy (postoje vyučujících nebo vedení školy), porozumět možným konfliktům a spolupodílet se na hledání řešení, která jsou srozumitelná, spravedlivá a udržitelná. Lekce trvá 45 minut. Doporučujeme ji se žáky provést a následně navázat tvorbou školních pravidel.
+Metodika Etika vývoje a využití technologií pomáhá žákům zohlednit různé perspektivy (postoje vyučujících nebo vedení školy), porozumět možným konfliktům a spolupodílet se na hledání řešení, která jsou srozumitelná, spravedlivá a udržitelná. Lekce trvá 45 minut. Doporučujeme projít ji se žáky a potom navázat tvorbou školních pravidel.
 
 [Stáhnout metodiku](https://kurikulum.aidetem.cz/knowledgebase/etika-01-etika-vyvoje-a-vyuziti-technologii/)
 

@@ -4,7 +4,7 @@ menu: Funkce
 poradi: 5
 popis: Projekty v ChatGPT a Claude, notebooky v Gemini a Copilotu — jak mít pokyny, soubory a konverzace k jednomu tématu na jednom místě a co do nich nahrávat.
 sablona: projekty-pruvodce   # vlastní šablona src/pages/funkce/projekty.astro (návrh z Claude Design, 20. 11. 2026)
-aktualizovano: 2026-11-20
+aktualizovano: 2026-11-21
 stav: koncept
 zdroje:
   - https://help.openai.com/en/articles/10169521-projects-in-chatgpt
@@ -84,7 +84,7 @@ Chatboti umí hledat na internetu, ale na konkrétní webové stránky se spoleh
 
 ## Projekt jako náhrada sdíleného asistenta
 
-Sdíleli jste s kolegy vlastní GPT odkazem? V ChatGPT můžete místo něj **sdílet projekt**. Kolegové v něm najdou stejné pokyny i soubory. Sdílet ho ale můžete jen v rámci pracovního prostoru vaší školy, ne s lidmi mimo něj.
+Sdíleli jste s kolegy vlastní GPT odkazem? V ChatGPT můžete místo něj **sdílet projekt**. Kolegové v něm najdou stejné pokyny i soubory. Sdílet ho ale můžete jen uvnitř pracovního prostoru vaší školy, ne s lidmi mimo něj.
 
 **Pozor:** ve sdíleném projektu vidí všichni členové všechny konverzace i nahrané soubory a nefunguje v něm paměť. Hodí se pro malý tým kolegů, kteří na něčem pracují společně, ne pro rozdávání asistenta desítkám kolegů. Pokud je projekt propojený s Google Diskem nebo OneDrivem, uvidí kolegové i tato data, i když do příslušných složek sami přístup nemají.
 

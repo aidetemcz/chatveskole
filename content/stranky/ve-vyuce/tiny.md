@@ -4,7 +4,7 @@ menu: Chatboti ve výuce
 poradi: 1
 popis: Tiny je česká aplikace s chatboty pro žáky, kteří vedou otázkami místo hotových odpovědí. Vyučující vidí konverzace, data zůstávají v EU. Pro školy zdarma.
 sablona: tiny-pruvodce   # vlastní šablona src/pages/ve-vyuce/tiny.astro
-aktualizovano: 2026-11-20
+aktualizovano: 2026-11-21
 tlacitko: { text: Metodické materiály, href: /ve-vyuce/metodiky }
 stav: ke-kontrole   # ověřit ceny/tarify a věkové podmínky s týmem Tiny (web Tiny si v několika bodech protiřečí)
 zdroje:
@@ -17,7 +17,7 @@ odkazy:
 
 # AI aplikace Tiny
 
-Tiny je AI aplikace s jedenácti vzdělávacími chatboty do hodiny. Říkáme jim Tinyboti a připravili je didaktici AI dětem. Vy zadáte jen téma (např. „opakování přítomného času“) a Tiny se postará o zbytek. Každý žák poté vede vlastní rozhovor k tématu. Místo odpovědí mu chatbot klade otázky, které ho posouvají v přemýšlení dál. Tiny je pro vyučující i žáky zdarma.
+Tiny je AI aplikace s jedenácti vzdělávacími chatboty do hodiny. Říkáme jim Tinyboti a připravili je didaktici AI dětem. Vy zadáte jen téma (například „opakování přítomného času“) a Tiny se postará o zbytek. Každý žák pak vede vlastní rozhovor k tématu. Místo odpovědí mu chatbot klade otázky, které ho posouvají v přemýšlení dál. Tiny je pro vyučující i žáky zdarma.
 
 <!-- komponenta: tlačítko -->
 
