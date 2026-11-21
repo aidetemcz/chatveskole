@@ -1,0 +1,93 @@
+---
+// Poskakující blobíci (jako děti v úvodní animaci HeroKrajina): jen dekorace na spodku pruhu.
+// Kreslí se na <canvas>; při „omezit pohyb“ v systému stojí, mimo obrazovku se nepřekresluje.
+---
+<div class="blobici" aria-hidden="true"><canvas></canvas></div>
+
+<style>
+  .blobici { height: 64px; margin-top: 44px; }
+  .blobici canvas { display: block; width: 100%; height: 100%; }
+</style>
+
+<script>
+  // @ts-nocheck — čistý JavaScript kreslení na canvas
+  document.querySelectorAll('.blobici canvas').forEach((canvas) => {
+    const ctx = canvas.getContext('2d');
+    const B = { red: '#dc5b5b', redDark: '#c24848', redLight: '#e88585', stin: '#1f3f4d' };
+    const h3 = (x, y, s) => { let h = (Math.imul(x, 374761393) + Math.imul(y, 668265263) + Math.imul(s, 2147483647)) | 0; h = Math.imul(h ^ (h >>> 13), 1274126177); return ((h ^ (h >>> 16)) >>> 0) / 4294967296; };
+    function rng(seed) { let a = seed >>> 0; return () => { a = (a + 0x6D2B79F5) >>> 0; let t = a; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+    const s = 4, N = 7, r = rng(2027);
+    const BLOBY = [];
+    for (let i = 0; i < N; i++) {
+      const w = 3 + Math.floor(r() * 3), h = 2 + Math.floor(r() * 2), tvar = [];
+      for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+        if (w > 3 && y === 0 && (x === 0 || x === w - 1) && r() < 0.7) continue;
+        tvar.push([x, y]);
+      }
+      if (r() < 0.55) tvar.push([Math.floor(w / 2), -1]);
+      BLOBY.push({ w, h, tvar, pozice: (i + 0.5) / N + (r() - 0.5) * 0.06, seed: 100 + i * 37, faze: r() * 6,
+        vyskok: 3 + r() * 4, y: 0, vy: 0, naZemi: true, dalsiSkok: 0.3 + r() * 3 });
+    }
+    let W = 0, H = 0, dpr = 1, t = 0, posledni = 0, viditelna = true;
+    const klid = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function rozmer() {
+      const rect = canvas.getBoundingClientRect();
+      dpr = window.devicePixelRatio || 1; W = rect.width; H = rect.height;
+      canvas.width = Math.round(W * dpr); canvas.height = Math.round(H * dpr);
+    }
+    function kresli() {
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, W, H);
+      const zem = H - 6;
+      const tik = Math.floor(t * 5);
+      for (const d of BLOBY) {
+        const xc = Math.round(W * d.pozice + Math.sin(t * 0.4 + d.faze) * 6);
+        const x0 = Math.round(xc - (d.w * s) / 2);
+        const poskok = d.naZemi && Math.sin(t * 6 + d.faze) > 0.6 ? 1 : 0;
+        const y0 = Math.round(zem - (d.h + 2) * s + d.y) - poskok * s;
+        // stín
+        const uzsi = d.naZemi ? 0 : Math.round(-d.y / (5 * s));
+        const n = Math.max(2, d.w + 2 - 2 * uzsi);
+        ctx.globalAlpha = d.naZemi ? 0.18 : Math.max(0.05, 0.18 + d.y / 200); ctx.fillStyle = B.stin;
+        ctx.fillRect(Math.round(xc - (n * s) / 2), zem - 1, n * s, s);
+        ctx.globalAlpha = 1;
+        const px = (x, y) => ctx.fillRect(x0 + x * s, y0 + y * s, s, s);
+        // nožičky
+        ctx.fillStyle = B.redDark;
+        (d.w <= 3 ? [0, 2] : [1, d.w - 2]).forEach((kx, i) => {
+          const f = t * 6 + d.faze + i * Math.PI;
+          px(kx, d.h);
+          if (d.naZemi && Math.sin(f) <= 0.3) px(kx, d.h + 1); else px(kx + (i ? 1 : -1), d.h);
+        });
+        // tělíčko
+        for (const [x, y] of d.tvar) {
+          const r1 = h3(x + d.seed, y, tik), r2 = h3(x + 50, y + d.seed, tik >> 1);
+          const okraj = y <= 0 || x === 0 || x === d.w - 1 || y === d.h - 1;
+          if (okraj && y >= 0 && r1 < 0.12) continue;
+          let barva = B.red;
+          if (x >= d.w - 2 && y === d.h - 1) barva = r2 < 0.5 ? B.redDark : B.red;
+          else if ((x === 0 || y === 0) && y >= 0) barva = r2 < 0.35 ? B.redLight : B.red;
+          ctx.fillStyle = barva; px(x, y);
+        }
+      }
+    }
+    function fyzika(dt) {
+      const g = 900;
+      for (const d of BLOBY) {
+        if (d.naZemi && t >= d.dalsiSkok) { d.naZemi = false; d.vy = -Math.sqrt(2 * g * s * d.vyskok); d.dalsiSkok = t + 1.5 + Math.random() * 4; }
+        if (!d.naZemi) { d.vy += g * dt; d.y += d.vy * dt; if (d.y >= 0) { d.y = 0; d.vy = 0; d.naZemi = true; } }
+      }
+    }
+    function smycka(ted) {
+      const dt = posledni ? Math.min(0.05, (ted - posledni) / 1000) : 0;
+      posledni = ted;
+      if (viditelna) { t += dt; fyzika(dt); kresli(); }
+      requestAnimationFrame(smycka);
+    }
+    new IntersectionObserver((e) => { viditelna = e[0].isIntersecting; posledni = 0; }).observe(canvas);
+    new ResizeObserver(() => { rozmer(); kresli(); }).observe(canvas);
+    rozmer(); kresli();
+    if (!klid) requestAnimationFrame(smycka);
+  });
+</script>
