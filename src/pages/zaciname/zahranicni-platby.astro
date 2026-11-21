@@ -36,13 +36,13 @@ const perex = odstavce(uvodBezSeznamu).filter((p) => !box(p)).map((p) => `<p>${p
 const dlazdice = polozky(uvodHtml.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').map(box).filter(jeBox);
 
 // kdy se registrovat
-const kdy = najdi(/registrovat/i);
+const kdy = najdi(/registrovat|registrovať/i);
 const kdyHtml = htmlOddilu(kdy);
 const kdyUvod = odstavce(kdyHtml.replace(/<ul>[\s\S]*?<\/ul>/g, '')).map((p) => `<p>${p}</p>`).join('');
 const situace = polozky(kdyHtml.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').map(box).filter(jeBox);
 
 // jak na to
-const jak = najdi(/jak na to/i);
+const jak = najdi(/jak na to|ako na to/i);
 const jakHtml = htmlOddilu(jak);
 const seznam = jakHtml.match(/<ol>([\s\S]*?)<\/ol>/);
 const kroky = polozky(seznam?.[1] ?? '').map((li) => {
