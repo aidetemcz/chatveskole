@@ -228,7 +228,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .postup-krok > p { margin: 0; font-size: 0.93rem; line-height: 1.6; }
 
   .napojeni-kroky { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 24px 28px; }
-  .napojeni-kroky li { display: flex; gap: 14px; align-items: flex-start; }
+  .napojeni-kroky li { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
   .napojeni-kroky strong { font-family: var(--fh); font-weight: 600; font-size: 1.05rem; }
   .napojeni-kroky p { margin: 4px 0 0; font-size: 0.95rem; line-height: 1.6; }
   .napojeni-cislo { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: var(--on-accent); display: inline-flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; }
