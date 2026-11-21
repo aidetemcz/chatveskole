@@ -4,8 +4,8 @@ import { navigace } from '../lib/data';
 import { url } from '../lib/url';
 
 const skupina = (nazev: string) => navigace.menu.find((g) => g.title === nazev);
-// rozložení skupin menu do tří sloupců; skupiny, které tu nejsou, se přidají na konec
-const SLOUPCE = [['Začínáme', 'O webu'], ['Funkce', 'Vibe Coding'], ['Chatboti ve výuce']];
+// první sloupec: značka a novinky; skupiny menu ve dvou dalších sloupcích; skupiny, které tu nejsou, se přidají na konec
+const SLOUPCE = [['Začínáme', 'Funkce'], ['Vibe Coding', 'Chatboti ve výuce', 'O webu']];
 const umistene = new Set(SLOUPCE.flat());
 const sloupce = SLOUPCE.map((s) => s.map(skupina).filter((g): g is NonNullable<typeof g> => !!g));
 sloupce[sloupce.length - 1].push(...navigace.menu.filter((g) => !umistene.has(g.title)));
@@ -13,7 +13,7 @@ const rok = new Date().getFullYear();
 const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
 ---
 <footer class="site-footer">
-  <div class="wrap siroka">
+  <div class="wrap">
     <div class="cols">
       <div class="znacka">
         <a class="logo" href={url('/')}>
@@ -31,8 +31,13 @@ const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
           <span>IČ: 17914582 · Datová schránka: 4czjq6u</span>
           <span>Číslo účtu: 2002446742/2010</span>
         </div>
+        <div class="novinky">
+          <h2>Novinky do e-mailu</h2>
+          <p>Funkce chatbotů se mění každý měsíc. Pošleme vám, co je pro školy důležité.</p>
+          <a class="btn btn--primary" href="https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f9d89c882af9a3a8b">Přihlásit se k odběru</a>
+        </div>
       </div>
-      {sloupce.map((s, i) => (
+      {sloupce.map((s) => (
         <div class="sloupec">
           {s.map((g) => (
             <nav aria-label={g.title}>
@@ -40,19 +45,12 @@ const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
               <ul>{g.items.map((it) => <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={sipka}></svg><a href={url(it.href)}>{it.title}</a></li>)}</ul>
             </nav>
           ))}
-          {i === sloupce.length - 1 && (
-            <div class="novinky">
-              <h2>Novinky do e-mailu</h2>
-              <p>Funkce chatbotů se mění každý měsíc. Pošleme vám, co je pro školy důležité.</p>
-              <a class="btn btn--primary" href="https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f9d89c882af9a3a8b">Přihlásit se k odběru</a>
-            </div>
-          )}
         </div>
       ))}
     </div>
   </div>
   <div class="sign">
-    <div class="wrap siroka sign-obsah">
+    <div class="wrap sign-obsah">
       <span>Funkce chatovacích aplikací se mění každý den. Pokud najdete nepřesnost, pomůže nám, když nám dáte vědět na e-mail <a href="mailto:eva@aidetem.cz">eva@aidetem.cz</a>. Děkujeme!</span>
       <span class="sign-odkazy"><a href={url('/o-webu/kontakt')}>Kontakt</a><a href={url('/o-webu/kdo-za-tim-stoji')}>Kdo za tím stojí</a><span>© {rok} AI dětem, z. s.</span></span>
     </div>
@@ -60,11 +58,9 @@ const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
 </footer>
 
 <style>
-  /* obsah patičky nejvýš 1270 px, pozadí přes celou šířku okna */
-  .siroka { max-width: 1270px; padding-left: 32px; padding-right: 32px; }
-  @media (max-width: 640px) { .siroka { padding-left: 16px; padding-right: 16px; } }
-  .site-footer { background: var(--sky-light); padding-top: 72px; font-size: 0.94rem; line-height: 1.55; }
-  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 48px 40px; padding-bottom: 56px; }
+  /* obsah patičky stejně široký jako obsah stránek (.wrap), pozadí přes celou šířku okna */
+  .site-footer { background: var(--sky-light); border-top: 1px solid var(--sky); padding-top: 72px; font-size: 0.94rem; line-height: 1.55; }
+  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 48px 40px; padding-bottom: 56px; }
   .znacka { display: flex; flex-direction: column; gap: 18px; }
   .logo { display: flex; gap: 14px; align-items: center; color: var(--ink); text-decoration: none; }
   .logo img { width: 56px; height: 56px; }
@@ -73,8 +69,8 @@ const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
   .logo > span span { font-size: 0.88rem; }
   .znacka p { margin: 0; }
   .site { display: flex; gap: 10px; margin: 4px 0 14px; }
-  .site a { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: var(--on-accent); display: inline-flex; align-items: center; justify-content: center; }
-  .site a:hover { filter: brightness(0.92); }
+  .site-footer .site a { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: var(--on-accent); display: inline-flex; align-items: center; justify-content: center; }
+  .site-footer .site a:hover { filter: brightness(0.92); }
   .udaje { display: flex; flex-direction: column; gap: 2px; font-size: 0.88rem; }
   .sloupec { display: flex; flex-direction: column; gap: 28px; }
   nav { display: flex; flex-direction: column; gap: 10px; }
@@ -85,7 +81,7 @@ const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
   .site-footer a { color: var(--ink); }
   .sloupec ul a { text-decoration: none; }
   .sloupec ul a:hover { color: var(--accent-strong); text-decoration: underline; }
-  .novinky { display: flex; flex-direction: column; gap: 12px; }
+  .novinky { display: flex; flex-direction: column; gap: 12px; margin-top: 18px; padding-top: 28px; border-top: 1px solid var(--sky); }
   .novinky p { margin: 0 0 10px; font-size: 0.88rem; }
   .novinky .btn { align-self: flex-start; color: var(--on-accent); }
   .sign { border-top: 1px solid var(--sky); }
