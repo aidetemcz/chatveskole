@@ -32,7 +32,7 @@ import { url } from '../lib/url';
 <style>
   .novy-web {
     width: min(92vw, 720px);
-    aspect-ratio: 1000 / 716;
+    aspect-ratio: 1000 / 769;
     padding: 0;
     border: 4px solid #fff;
     border-radius: 24px;
@@ -41,14 +41,14 @@ import { url } from '../lib/url';
     overflow: hidden;
   }
   .novy-web::backdrop { background: rgba(28, 37, 48, 0.55); }
-  .novy-web-obsah { padding: 28px 36px 0; display: flex; flex-direction: column; gap: 8px; max-width: 560px; }
+  .novy-web-obsah { padding: 40px 40px 0; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; max-width: 560px; margin: 0 auto; }
   .novy-web h2 { margin: 0; font-size: clamp(1.4rem, 3.6vw, 1.9rem); line-height: 1.2; color: var(--ink); }
   .novy-web p { margin: 0; font-size: clamp(0.88rem, 2.2vw, 1rem); line-height: 1.5; color: var(--ink); }
-  .novy-web-tlacitka { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+  .novy-web-tlacitka { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 10px; }
   .novy-web-tlacitka .btn { padding-block: 10px; }
   .novy-web-odkaz { background: #fff; }
   @media (max-width: 520px) {
-    .novy-web { aspect-ratio: auto; background-position: center bottom; background-size: 100% auto; padding-bottom: 62%; }
+    .novy-web { aspect-ratio: auto; background-position: center bottom; background-size: 100% auto; padding-bottom: 58%; }
     .novy-web-obsah { padding: 22px 20px 0; }
   }
 </style>
