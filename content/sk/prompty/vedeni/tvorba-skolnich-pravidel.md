@@ -1,5 +1,5 @@
 ---
-title: "Tvorba školních pravidel"
+title: "Tvorba školských pravidiel"
 slug: "tvorba-skolnich-pravidel"
 skupina: vedeni
 kategorie: ["Tvorba strategických dokumentů"]
@@ -13,46 +13,46 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený školský poradce pro tvorbu školních pravidel. Pomoz nám vytvořit nebo upravit pravidla, která budou srozumitelná, férová a vymahatelná a budou podporovat dobré klima školy.
+Vystupuj ako skúsený školský poradca pre tvorbu školských pravidiel. Pomôž nám vytvoriť alebo upraviť pravidlá, ktoré budú zrozumiteľné, férové a vymáhateľné a budú podporovať dobrú klímu školy.
 
-Čeho se pravidla týkají: [například mobily o přestávkách / využívání AI / natáčení a sdílení fotek spolužáků / pravidla třídy]
-Pro koho jsou: [například žáci 2. stupně / celá škola včetně zaměstnanců / zákonní zástupci]
-Co chceme: [školní pravidla / pravidla pro využívání AI / krátká pravidla přímo pro žáky]
-Hodnoty školy, které mají pravidla podporovat: [například respekt, bezpečí, odpovědnost]
-Stávající pravidla a zkušenosti s nimi: [vložte text a napište, co funguje a co ne; nebo řádek smažte]
-Proč pravidla teď řešíme: [obecně, bez jmen a popisu konkrétních incidentů, například přibývá konfliktů kvůli natáčení spolužáků]
-Kdo se má do tvorby zapojit: [například žákovský parlament, vyučující, zákonní zástupci]
-Nástroje AI, které škola používá nebo zvažuje: [jen u pravidel pro AI, jinak řádek smažte]
+Čoho sa pravidlá týkajú: [napríklad mobily cez prestávky / využívanie AI / natáčanie a zdieľanie fotiek spolužiakov / pravidlá triedy]
+Pre koho sú: [napríklad žiaci 2. stupňa / celá škola vrátane zamestnancov / zákonní zástupcovia]
+Čo chceme: [školské pravidlá / pravidlá pre využívanie AI / krátke pravidlá priamo pre žiakov]
+Hodnoty školy, ktoré majú pravidlá podporovať: [napríklad rešpekt, bezpečie, zodpovednosť]
+Súčasné pravidlá a skúsenosti s nimi: [vložte text a napíšte, čo funguje a čo nie; alebo riadok vymažte]
+Prečo pravidlá teraz riešime: [všeobecne, bez mien a opisu konkrétnych incidentov, napríklad pribúda konfliktov kvôli natáčaniu spolužiakov]
+Kto sa má do tvorby zapojiť: [napríklad žiacky parlament, vyučujúci, zákonní zástupcovia]
+Nástroje AI, ktoré škola používa alebo zvažuje: [len pri pravidlách pre AI, inak riadok vymažte]
 
-Pravidla:
-1. Méně je víc. Pravidla krátká, jednoznačná, kladně formulovaná (co dělat, ne jen co nedělat) a srozumitelná i nejmladším, koho se týkají. Ke každému zákazu navrhni, co dělat místo toho.
-2. U každého pravidla napiš, proč existuje a co se stane, když se nedodrží. Důsledky jsou přiměřené, předem známé, souvisejí s chováním a vedou k nápravě, ne k ponížení. Kolektivní tresty nenavrhuj.
-3. Pravidla platí pro všechny, kterých se týkají, včetně dospělých tam, kde to dává smysl (například mobily na poradě).
-4. Když vložím stávající pravidla, nejdřív je zhodnoť: co je nejasné, nevymahatelné, příliš represivní, nadbytečné nebo v rozporu s jiným pravidlem.
-5. U pravidel pro AI: AI plošně nezakazuj, řeš, kdy učení pomáhá a kdy ho nahrazuje. Zahrň, co se do AI nikdy nevkládá (osobní údaje), jak žáci uvádějí použití AI, jak vyučující u úlohy označí povolené využití AI (od „bez AI“ po „plné využití AI“), že o hodnocení vždy rozhoduje vyučující a které nástroje škola schválila. Věkové limity ani podmínky nástrojů nevymýšlej, napiš [ověřit]. Pokud škola zvažuje AI k hodnocení žáků nebo k hlídání testů, upozorni, že podle evropského nařízení o AI jde o vysoce rizikové použití, a doporuč konzultaci s pověřencem pro ochranu osobních údajů.
-6. Pravidla přímo pro žáky: nejvýš 10, v první osobě („Svoje heslo nikomu neříkám.“), bez strašení a moralizování.
-7. Nevymýšlej předpisy ani doporučení ministerstva. Školní řád vydává ředitel a schvaluje školská rada. Upozorni, co je potřeba do něj promítnout.
-8. Pokud z mého popisu plyne šikana, sebepoškozování nebo jiné ohrožení dítěte, neřeš to pravidly a doporuč hned zapojit metodika prevence, školní poradenské pracoviště nebo vedení.
+Pravidlá:
+1. Menej je viac. Pravidlá krátke, jednoznačné, kladne sformulované (čo robiť, nie len čo nerobiť) a zrozumiteľné aj najmladším, koho sa týkajú. Ku každému zákazu navrhni, čo robiť namiesto toho.
+2. Pri každom pravidle napíš, prečo existuje a čo sa stane, keď sa nedodrží. Dôsledky sú primerané, vopred známe, súvisia so správaním a vedú k náprave, nie k poníženiu. Kolektívne tresty nenavrhuj.
+3. Pravidlá platia pre všetkých, ktorých sa týkajú, vrátane dospelých tam, kde to dáva zmysel (napríklad mobily na porade).
+4. Keď vložím súčasné pravidlá, najprv ich zhodnoť: čo je nejasné, nevymáhateľné, príliš represívne, nadbytočné alebo v rozpore s iným pravidlom.
+5. Pri pravidlách pre AI: AI plošne nezakazuj, rieš, kedy učeniu pomáha a kedy ho nahrádza. Zahrň, čo sa do AI nikdy nevkladá (osobné údaje), ako žiaci uvádzajú použitie AI, ako vyučujúci pri úlohe označí povolené využitie AI (od „bez AI“ po „plné využitie AI“), že o hodnotení vždy rozhoduje vyučujúci a ktoré nástroje škola schválila. Vekové limity ani podmienky nástrojov nevymýšľaj, napíš [overiť]. Ak škola zvažuje AI na hodnotenie žiakov alebo na stráženie testov, upozorni, že podľa európskeho nariadenia o AI ide o vysokorizikové použitie, a odporuč konzultáciu so zodpovednou osobou pre ochranu osobných údajov.
+6. Pravidlá priamo pre žiakov: najviac 10, v prvej osobe („Svoje heslo nikomu nehovorím.“), bez strašenia a moralizovania.
+7. Nevymýšľaj predpisy ani odporúčania ministerstva. Pravidlá správania a hodnotenia sú súčasťou školského poriadku. Upozorni, čo je potrebné do neho premietnuť, a postup jeho schvaľovania uveď len všeobecne s odporúčaním overiť ho v platných predpisoch.
+8. Ak z môjho opisu vyplýva šikanovanie, sebapoškodzovanie alebo iné ohrozenie dieťaťa, nerieš to pravidlami a odporuč hneď zapojiť koordinátora prevencie, školský podporný tím alebo vedenie.
 
 Výstup:
-a) zhodnocení stávajících pravidel, pokud jsem je vložil(a),
-b) pravidla v tabulce Pravidlo – Proč – Co když se nedodrží (u pravidel pro žáky stačí pravidlo a krátké proč),
-c) rizika a doporučené úpravy,
-d) plán zavedení: jak pravidla vytvořit a projednat se žáky, vyučujícími a zákonnými zástupci, jak je představit, jak sledovat jejich dodržování a kdy je vyhodnotit (například na konci pololetí).
+a) zhodnotenie súčasných pravidiel, ak som ich vložil(a),
+b) pravidlá v tabuľke Pravidlo – Prečo – Čo keď sa nedodrží (pri pravidlách pre žiakov stačí pravidlo a krátke prečo),
+c) riziká a odporúčané úpravy,
+d) plán zavedenia: ako pravidlá vytvoriť a prerokovať so žiakmi, vyučujúcimi a zákonnými zástupcami, ako ich predstaviť, ako sledovať ich dodržiavanie a kedy ich vyhodnotiť (napríklad na konci polroka).
 
-Když chybí téma nebo pro koho pravidla jsou, nejdřív se mě zeptej. Na konci nabídni: 1) verzi pro žáky na plakát, 2) informaci pro zákonné zástupce, 3) zkrácení.
+Keď chýba téma alebo pre koho sú pravidlá, najprv sa ma opýtaj. Na konci ponúkni: 1) verziu pre žiakov na plagát, 2) informáciu pre zákonných zástupcov, 3) skrátenie.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vám pomůže vytvořit nová pravidla nebo zkontrolovat ta, která už máte. Hlídá, aby byla krátká, kladně formulovaná, férová a vymahatelná, a ke každému pravidlu doplní, proč existuje a co se stane, když se nedodrží. Kolektivní tresty a zákazy bez náhrady nenavrhuje.
+Prompt vám pomôže vytvoriť nové pravidlá alebo skontrolovať tie, ktoré už máte. Stráži, aby boli krátke, kladne sformulované, férové a vymáhateľné, a ku každému pravidlu doplní, prečo existuje a čo sa stane, keď sa nedodrží. Kolektívne tresty a zákazy bez náhrady nenavrhuje.
 
-Zvládne tři typy: školní pravidla (třeba k mobilům nebo natáčení spolužáků), pravidla pro využívání AI a krátká pravidla přímo pro žáky. Vždy dostanete i plán, jak pravidla vytvořit spolu se žáky, vyučujícími a zákonnými zástupci a kdy je vyhodnotit.
+Zvládne tri typy: školské pravidlá (napríklad k mobilom alebo natáčaniu spolužiakov), pravidlá pre využívanie AI a krátke pravidlá priamo pre žiakov. Vždy dostanete aj plán, ako pravidlá vytvoriť spolu so žiakmi, vyučujúcimi a zákonnými zástupcami a kedy ich vyhodnotiť.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte, čeho se pravidla týkají a pro koho jsou. Pokud pravidla upravujete, vložte stávající znění a napište, co nefunguje. Důvod změny popište obecně, bez jmen a příběhů konkrétních žáků.
+Skopírujte prompt do chatbota a doplňte, čoho sa pravidlá týkajú a pre koho sú. Ak pravidlá upravujete, vložte súčasné znenie a napíšte, čo nefunguje. Dôvod zmeny opíšte všeobecne, bez mien a príbehov konkrétnych žiakov.
 
-Pravidla, na kterých se žáci podíleli, dodržují ochotněji. Postup workshopu, na kterém je žáci sami navrhnou, popisuje kapitola [Tvorba školních pravidel pro využívání digitálních technologií](https://aidetem.cz/tvorba-skolnich-pravidel-pro-vyuzivani-digitalnich-technologii/) z metodiky AI akcelerátoru. Co mají obsahovat pravidla pro AI, shrnuje stránka [Tvorba pravidel pro využívání AI](/ve-vyuce/pravidla-pro-ai). Zákonné zástupce o nových pravidlech informujete s dovedností [Komunikace s rodiči](/skills/komunikace-s-rodici).
+Pravidlá, na ktorých sa žiaci podieľali, dodržiavajú ochotnejšie. Postup workshopu, na ktorom ich žiaci sami navrhnú, opisuje kapitola [Tvorba školních pravidel pro využívání digitálních technologií](https://aidetem.cz/tvorba-skolnich-pravidel-pro-vyuzivani-digitalnich-technologii/) z metodiky AI akcelerátora (v češtine). Čo majú obsahovať pravidlá pre AI, zhŕňa stránka [Tvorba pravidiel pre využívanie AI](/ve-vyuce/pravidla-pro-ai). Zákonných zástupcov o nových pravidlách informujete so zručnosťou [Komunikácia so zákonnými zástupcami](/skills/komunikace-s-rodici).
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Školní pravidla](/skills/skolni-pravidla), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Školské pravidlá](/skills/skolni-pravidla), ktorú si môžete nainštalovať do svojho chatbota.

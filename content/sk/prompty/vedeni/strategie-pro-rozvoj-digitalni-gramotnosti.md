@@ -1,5 +1,5 @@
 ---
-title: "Strategie pro rozvoj digitální gramotnosti"
+title: "Stratégia rozvoja digitálnej gramotnosti"
 slug: "strategie-pro-rozvoj-digitalni-gramotnosti"
 skupina: vedeni
 kategorie: ["Tvorba strategických dokumentů"]
@@ -12,52 +12,52 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený školní stratég se zaměřením na digitální gramotnost žáků i pedagogů. Navrhni strategii rozvoje digitální gramotnosti naší školy.
+Vystupuj ako skúsený školský stratég so zameraním na digitálnu gramotnosť žiakov aj pedagógov. Navrhni stratégiu rozvoja digitálnej gramotnosti našej školy.
 
-Škola: [například ZŠ, 420 žáků, 30 pedagogů]
-Vybavení a správa: [například wifi ve všech třídách, 2 mobilní učebny s tablety, školní účty Microsoft, správce sítě na 0,2 úvazku]
-Co už funguje: [například informatika podle nového RVP, pět vyučujících používá AI při přípravě]
-Kde vidíme slabá místa: [například každý vyučující má jiná pravidla pro AI, část sboru se technologiím vyhýbá]
-Pravidla pro mobily a AI: [shrňte, co platí, nebo napište „zatím nemáme“]
-Zdroje: [například rozpočet na vzdělávání pedagogů, ICT koordinátor, lídr změny]
-Priority vedení: [například AI gramotnost pedagogů, bezpečnost a ochrana dat]
-Na jak dlouho strategie platí: [například 3 roky]
+Škola: [napríklad ZŠ, 420 žiakov, 30 pedagógov]
+Vybavenie a správa: [napríklad wifi vo všetkých triedach, 2 mobilné učebne s tabletmi, školské účty Microsoft, správca siete na 0,2 úväzku]
+Čo už funguje: [napríklad informatika podľa nového ŠVP, päť vyučujúcich používa AI pri príprave]
+Kde vidíme slabé miesta: [napríklad každý vyučujúci má iné pravidlá pre AI, časť zboru sa technológiám vyhýba]
+Pravidlá pre mobily a AI: [zhrňte, čo platí, alebo napíšte „zatiaľ nemáme“]
+Zdroje: [napríklad rozpočet na vzdelávanie pedagógov, koordinátor informatizácie, líder zmeny]
+Priority vedenia: [napríklad AI gramotnosť pedagógov, bezpečnosť a ochrana údajov]
+Na ako dlho stratégia platí: [napríklad 3 roky]
 
-Pravidla:
-1. Digitální gramotnost chápej jako tři věci: digitální kompetenci žáků napříč předměty, digitální dovednosti pedagogů a podmínky (vybavení, správa, bezpečnost). AI gramotnost je její součástí: žáci i vyučující vědí, kdy AI použít a kdy ne, ověřují její výstupy a chrání své údaje.
-2. Nejdřív pevný základ. Když nestačí síť, účty, zabezpečení nebo péče o techniku, zařaď to mezi první priority. Vybavení ale samo změnu nezaručí, počítej i s připraveností lidí.
-3. Nejvýš 5 priorit. Na první rok doporuč 1–2, na které se tým soustředí.
-4. Rozvoj pedagogů rozliš podle úrovně: začínající, pokročilí a ti, kdo mohou podporovat ostatní (sdílení, vzájemné náslechy, tandemy). Rozvoj AI gramotnosti pedagogů zahrň jako samostatné opatření.
-5. Navrhni, kdo strategii koordinuje (například lídr změny spolu s vedením). Každé opatření má nositele (funkci, ne jméno), termín a výstup.
-6. Indikátory musí být měřitelné nebo pozorovatelné. Výchozí stav, který jsem nezadal(a), nevymýšlej, napiš [doplnit].
-7. Očekávané výstupy RVP necituj zpaměti. Nevymýšlej paragrafy, dotační výzvy ani názvy metodik.
-8. Pracuj jen se souhrnnými údaji, bez jmen žáků a kolegů.
+Pravidlá:
+1. Digitálnu gramotnosť chápej ako tri veci: digitálnu kompetenciu žiakov naprieč predmetmi, digitálne zručnosti pedagógov a podmienky (vybavenie, správa, bezpečnosť). AI gramotnosť je jej súčasťou: žiaci aj vyučujúci vedia, kedy AI použiť a kedy nie, overujú jej výstupy a chránia svoje údaje.
+2. Najprv pevný základ. Keď nestačí sieť, účty, zabezpečenie alebo starostlivosť o techniku, zaraď to medzi prvé priority. Vybavenie však samo zmenu nezaručí, počítaj aj s pripravenosťou ľudí.
+3. Najviac 5 priorít. Na prvý rok odporuč 1 – 2, na ktoré sa tím sústredí.
+4. Rozvoj pedagógov rozlíš podľa úrovne: začínajúci, pokročilí a tí, ktorí môžu podporovať ostatných (zdieľanie, vzájomné náčuvy, tandemy). Rozvoj AI gramotnosti pedagógov zahrň ako samostatné opatrenie.
+5. Navrhni, kto stratégiu koordinuje (napríklad líder zmeny spolu s vedením). Každé opatrenie má nositeľa (funkciu, nie meno), termín a výstup.
+6. Indikátory musia byť merateľné alebo pozorovateľné. Východiskový stav, ktorý som nezadal(a), nevymýšľaj, napíš [doplniť].
+7. Výkonové štandardy zo ŠVP necituj spamäti. Nevymýšľaj paragrafy, dotačné výzvy ani názvy metodík.
+8. Pracuj len so súhrnnými údajmi, bez mien žiakov a kolegov.
 
-Výstup: jeden dokument na 2–4 strany s nadpisy, krátkými odstavci a tabulkami:
-1) vize a dlouhodobý cíl,
-2) současný stav: SWOT v tabulce 2 × 2,
+Výstup: jeden dokument na 2 – 4 strany s nadpismi, krátkymi odsekmi a tabuľkami:
+1) vízia a dlhodobý cieľ,
+2) súčasný stav: SWOT v tabuľke 2 × 2,
 3) priority,
-4) opatření: tabulka Opatření – Kdo odpovídá – Zdroje – Termín,
-5) rozvoj pedagogů,
-6) zapojení žáků a zákonných zástupců,
-7) indikátory: tabulka Indikátor – Výchozí stav – Cílový stav – Jak a kdy měříme,
-8) harmonogram po pololetích,
-9) rizika a jak jim předejdeme,
-10) předpoklady, se kterými jsi pracoval(a).
+4) opatrenia: tabuľka Opatrenie – Kto zodpovedá – Zdroje – Termín,
+5) rozvoj pedagógov,
+6) zapojenie žiakov a zákonných zástupcov,
+7) indikátory: tabuľka Indikátor – Východiskový stav – Cieľový stav – Ako a kedy meriame,
+8) harmonogram po polrokoch,
+9) riziká a ako im predídeme,
+10) predpoklady, s ktorými si pracoval(a).
 
-Když chybí typ školy nebo vybavení, nejdřív se mě zeptej (nejvýš 5 otázek najednou). Na konci nabídni: 1) zkrácenou verzi pro zákonné zástupce a web, 2) tři otázky k diskusi ve sborovně, 3) rozpracování jedné priority do plánu změny.
+Keď chýba typ školy alebo vybavenie, najprv sa ma opýtaj (najviac 5 otázok naraz). Na konci ponúkni: 1) skrátenú verziu pre zákonných zástupcov a web, 2) tri otázky na diskusiu v zborovni, 3) rozpracovanie jednej priority do plánu zmeny.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vám pomůže sestavit strategii rozvoje digitální gramotnosti, kterou můžete projednat ve sborovně a ukázat zákonným zástupcům i zřizovateli. Pracuje s digitální kompetencí žáků, s dovednostmi pedagogů i s podmínkami školy. AI gramotnost bere jako součást digitální gramotnosti, ne jako samostatné téma.
+Prompt vám pomôže zostaviť stratégiu rozvoja digitálnej gramotnosti, ktorú môžete prerokovať v zborovni a ukázať zákonným zástupcom aj zriaďovateľovi. Pracuje s digitálnou kompetenciou žiakov, so zručnosťami pedagógov aj s podmienkami školy. AI gramotnosť berie ako súčasť digitálnej gramotnosti, nie ako samostatnú tému.
 
-Strategie začíná u pevného základu (síť, účty, bezpečnost) a doporučí, na co se soustředit v prvním roce. Čísla, která nemáte, chatbot nedomýšlí a nechá je k doplnění.
+Stratégia začína pri pevnom základe (sieť, účty, bezpečnosť) a odporučí, na čo sa sústrediť v prvom roku. Čísla, ktoré nemáte, chatbot nedomýšľa a nechá ich na doplnenie.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte údaje o škole. Čím konkrétněji popíšete, co už funguje a kde to drhne, tím realističtější strategie bude. Výchozí stav indikátorů doplňte z vlastních dat, například z krátkého dotazníku pro vyučující.
+Skopírujte prompt do chatbota a doplňte údaje o škole. Čím konkrétnejšie opíšete, čo už funguje a kde to drhne, tým realistickejšia stratégia bude. Východiskový stav indikátorov doplňte z vlastných údajov, napríklad z krátkeho dotazníka pre vyučujúcich.
 
-Se zavedením strategie mezi lidi pomůže dovednost [Řízení změny ve škole](/skills/rizeni-zmeny) a kapitola [Plán změny](https://aidetem.cz/ai-akcelerator-plan-zmeny/) z metodiky AI akcelerátoru. AI gramotnost do ŠVP zapracujete s dovedností [AI gramotnost v RVP a ŠVP](/skills/ai-gramotnost-v-svp), pravidla pro AI a mobily s promptem [Tvorba školních pravidel](/funkce/prompty/tvorba-skolnich-pravidel).
+So zavedením stratégie medzi ľudí pomôže zručnosť [Riadenie zmeny v škole](/skills/rizeni-zmeny) a kapitola [Plán změny](https://aidetem.cz/ai-akcelerator-plan-zmeny/) z metodiky AI akcelerátora (v češtine). AI gramotnosť do ŠkVP zapracujete so zručnosťou [AI gramotnosť v ŠVP a ŠkVP](/skills/ai-gramotnost-v-svp), pravidlá pre AI a mobily s promptom [Tvorba školských pravidiel](/funkce/prompty/tvorba-skolnich-pravidel).
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Strategické dokumenty](/skills/strategicke-dokumenty), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Strategické dokumenty](/skills/strategicke-dokumenty), ktorú si môžete nainštalovať do svojho chatbota.

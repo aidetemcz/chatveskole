@@ -1,5 +1,5 @@
 ---
-title: "Strategie pro podporu inkluze"
+title: "Stratégia na podporu inklúzie"
 slug: "strategie-pro-podporu-inkluze"
 skupina: vedeni
 kategorie: ["Tvorba strategických dokumentů"]
@@ -12,55 +12,55 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený školní stratég zaměřený na inkluzivní vzdělávání. Navrhni strategii podpory inkluze naší školy.
+Vystupuj ako skúsený školský stratég zameraný na inkluzívne vzdelávanie. Navrhni stratégiu podpory inklúzie našej školy.
 
-Škola: [například ZŠ, 520 žáků, 38 pedagogů]
-Kdo potřebuje podporu: [jen souhrnné počty, například 41 žáků s podpůrnými opatřeními, 14 žáků s odlišným mateřským jazykem, skupina nadaných žáků]
-Školní poradenské pracoviště a podpora: [například výchovná poradkyně, metodik prevence, školní psycholožka na 0,5 úvazku, 6 asistentů pedagoga]
-Co už funguje: [například doučování, spolupráce s pedagogicko-psychologickou poradnou]
-Kde vidíme slabá místa: [například vyučující a asistenti spolu neplánují, nadaní žáci nemají výzvy]
-Zdroje: [například rozpočet, čas na společné plánování, prostory]
-Priority vedení: [například začleňování žáků s odlišným mateřským jazykem, bezbariérovost]
-Na jak dlouho strategie platí: [například 3–5 let]
+Škola: [napríklad ZŠ, 520 žiakov, 38 pedagógov]
+Kto potrebuje podporu: [len súhrnné počty, napríklad 41 žiakov s podpornými opatreniami, 14 žiakov s odlišným materinským jazykom, skupina nadaných žiakov]
+Školský podporný tím a podpora: [napríklad výchovná poradkyňa, koordinátor prevencie, školská psychologička na 0,5 úväzku, 6 asistentov učiteľa]
+Čo už funguje: [napríklad doučovanie, spolupráca so školským poradenským zariadením]
+Kde vidíme slabé miesta: [napríklad vyučujúci a asistenti spolu neplánujú, nadaní žiaci nemajú výzvy]
+Zdroje: [napríklad rozpočet, čas na spoločné plánovanie, priestory]
+Priority vedenia: [napríklad začleňovanie žiakov s odlišným materinským jazykom, bezbariérovosť]
+Na ako dlho stratégia platí: [napríklad 3 – 5 rokov]
 
-Pravidla:
-1. Inkluzi chápej široce: žáci se speciálními vzdělávacími potřebami, nadaní žáci, žáci s odlišným mateřským jazykem a žáci ze znevýhodněného prostředí. Zkratku SVP nepoužívej, piš vždy celé spojení. Cílem je, aby se každý žák učil s ostatními a dělal pokroky.
-2. Podporu stav po úrovních:
-   - pro všechny žáky: výuka srozumitelná pro různé žáky, jasné cíle a kritéria, formativní hodnocení, různé způsoby, jak žák ukáže, co umí,
-   - pro skupiny: cílená podpora v malých skupinách, doučování, výuka češtiny jako druhého jazyka, výzvy pro nadané,
-   - pro jednotlivce: podpůrná opatření, plán pedagogické podpory, individuální vzdělávací plán, spolupráce se školským poradenským zařízením.
-3. Počítej se spoluprací vyučujících, asistentů pedagoga a školního poradenského pracoviště (společné plánování, předávání informací o potřebách žáků).
-4. Legislativní detaily (stupně podpůrných opatření, postupy, financování pozic) uváděj jen obecně a doporuč je ověřit v platných předpisech. Nevymýšlej paragrafy ani dotační výzvy.
-5. Kde to dává smysl, navrhni, jak může vyučujícím pomoci AI (například připravit materiál ve více úrovních obtížnosti nebo v jednodušší češtině). Údaje o konkrétních žácích do AI nepatří.
-6. Pracuj jen se souhrnnými údaji. Když vložím jméno nebo diagnózu konkrétního žáka, upozorni mě a nepoužívej je.
-7. Nejvýš 5 priorit. Každé opatření má nositele (funkci, ne jméno), termín a výstup. Výchozí stav, který jsem nezadal(a), nevymýšlej, napiš [doplnit].
+Pravidlá:
+1. Inklúziu chápej široko: žiaci so špeciálnymi výchovno-vzdelávacími potrebami, nadaní žiaci, žiaci s odlišným materinským jazykom a žiaci zo znevýhodneného prostredia. Skratku ŠVVP nepoužívaj, píš vždy celé spojenie. Cieľom je, aby sa každý žiak učil s ostatnými a robil pokroky.
+2. Podporu stavaj po úrovniach:
+   - pre všetkých žiakov: vyučovanie zrozumiteľné pre rôznych žiakov, jasné ciele a kritériá, formatívne hodnotenie, rôzne spôsoby, ako žiak ukáže, čo vie,
+   - pre skupiny: cielená podpora v malých skupinách, doučovanie, vyučovanie slovenčiny ako druhého jazyka, výzvy pre nadaných,
+   - pre jednotlivcov: podporné opatrenia, individuálny výchovno-vzdelávací program, spolupráca so školským poradenským zariadením.
+3. Počítaj so spoluprácou vyučujúcich, asistentov učiteľa a školského podporného tímu (spoločné plánovanie, odovzdávanie informácií o potrebách žiakov).
+4. Legislatívne podrobnosti (úrovne podporných opatrení, postupy, financovanie pozícií) uvádzaj len všeobecne a odporuč ich overiť v platných predpisoch. Nevymýšľaj paragrafy ani dotačné výzvy.
+5. Kde to dáva zmysel, navrhni, ako môže vyučujúcim pomôcť AI (napríklad pripraviť materiál vo viacerých úrovniach náročnosti alebo v jednoduchšej slovenčine). Údaje o konkrétnych žiakoch do AI nepatria.
+6. Pracuj len so súhrnnými údajmi. Keď vložím meno alebo diagnózu konkrétneho žiaka, upozorni ma a nepoužívaj ich.
+7. Najviac 5 priorít. Každé opatrenie má nositeľa (funkciu, nie meno), termín a výstup. Východiskový stav, ktorý som nezadal(a), nevymýšľaj, napíš [doplniť].
 
-Výstup: jeden dokument na 2–4 strany s nadpisy, krátkými odstavci a tabulkami:
-1) vize a dlouhodobé cíle,
-2) současný stav: SWOT v tabulce 2 × 2,
+Výstup: jeden dokument na 2 – 4 strany s nadpismi, krátkymi odsekmi a tabuľkami:
+1) vízia a dlhodobé ciele,
+2) súčasný stav: SWOT v tabuľke 2 × 2,
 3) priority,
-4) opatření: tabulka Opatření – Kdo odpovídá – Zdroje – Termín,
-5) rozvoj pedagogů a asistentů pedagoga,
-6) podpora po úrovních (všichni – skupiny – jednotlivci) a role školního poradenského pracoviště,
-7) spolupráce se zákonnými zástupci, poradenskými zařízeními a dalšími organizacemi,
-8) indikátory: tabulka Indikátor – Výchozí stav – Cílový stav – Jak a kdy měříme,
-9) harmonogram po pololetích,
-10) rizika a jak jim předejdeme,
-11) předpoklady, se kterými jsi pracoval(a).
+4) opatrenia: tabuľka Opatrenie – Kto zodpovedá – Zdroje – Termín,
+5) rozvoj pedagógov a asistentov učiteľa,
+6) podpora po úrovniach (všetci – skupiny – jednotlivci) a úloha školského podporného tímu,
+7) spolupráca so zákonnými zástupcami, poradenskými zariadeniami a ďalšími organizáciami,
+8) indikátory: tabuľka Indikátor – Východiskový stav – Cieľový stav – Ako a kedy meriame,
+9) harmonogram po polrokoch,
+10) riziká a ako im predídeme,
+11) predpoklady, s ktorými si pracoval(a).
 
-Když chybí typ školy nebo složení podpory, nejdřív se mě zeptej (nejvýš 5 otázek najednou). Na konci nabídni: 1) zkrácenou verzi pro zákonné zástupce a web, 2) tři otázky k diskusi ve sborovně, 3) rozpracování jedné priority do detailu.
+Keď chýba typ školy alebo zloženie podpory, najprv sa ma opýtaj (najviac 5 otázok naraz). Na konci ponúkni: 1) skrátenú verziu pre zákonných zástupcov a web, 2) tri otázky na diskusiu v zborovni, 3) rozpracovanie jednej priority do detailu.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vám pomůže sestavit strategii podpory inkluze, která se netýká jen žáků s podpůrnými opatřeními, ale i nadaných, žáků s odlišným mateřským jazykem a dětí ze znevýhodněného prostředí. Podporu skládá po úrovních: co dostanou všichni žáci, co skupiny a co jednotlivci. Díky tomu se intenzivnější podpora dostane k těm, kdo ji opravdu potřebují.
+Prompt vám pomôže zostaviť stratégiu podpory inklúzie, ktorá sa netýka len žiakov s podpornými opatreniami, ale aj nadaných, žiakov s odlišným materinským jazykom a detí zo znevýhodneného prostredia. Podporu skladá po úrovniach: čo dostanú všetci žiaci, čo skupiny a čo jednotlivci. Vďaka tomu sa intenzívnejšia podpora dostane k tým, ktorí ju naozaj potrebujú.
 
-Strategie počítá se spoluprací vyučujících, asistentů pedagoga a školního poradenského pracoviště. Legislativní detaily uvádí jen obecně, abyste si je ověřili.
+Stratégia počíta so spoluprácou vyučujúcich, asistentov učiteľa a školského podporného tímu. Legislatívne podrobnosti uvádza len všeobecne, aby ste si ich overili.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte údaje o škole. O žácích pište jen souhrnná čísla, nikdy jména ani diagnózy. Výchozí stav indikátorů doplňte z vlastních dat.
+Skopírujte prompt do chatbota a doplňte údaje o škole. O žiakoch píšte len súhrnné čísla, nikdy mená ani diagnózy. Východiskový stav indikátorov doplňte z vlastných údajov.
 
-Úpravu cílů a kritérií pro konkrétního žáka zvládne prompt [Individualizace výukových cílů](/funkce/prompty/individualizace-vyukovych-cilu), materiály v několika úrovních obtížnosti dovednost [Úprava materiálu](/skills/uprava-materialu).
+Úpravu cieľov a kritérií pre konkrétneho žiaka zvládne prompt [Individualizácia vyučovacích cieľov](/funkce/prompty/individualizace-vyukovych-cilu), materiály vo viacerých úrovniach náročnosti zručnosť [Úprava materiálu](/skills/uprava-materialu).
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Strategické dokumenty](/skills/strategicke-dokumenty), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Strategické dokumenty](/skills/strategicke-dokumenty), ktorú si môžete nainštalovať do svojho chatbota.

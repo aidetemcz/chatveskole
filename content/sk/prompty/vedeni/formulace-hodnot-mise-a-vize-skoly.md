@@ -1,5 +1,5 @@
 ---
-title: "Formulace hodnot, mise a vize školy"
+title: "Formulácia hodnôt, misie a vízie školy"
 slug: "formulace-hodnot-mise-a-vize-skoly"
 skupina: vedeni
 kategorie: ["Tvorba strategických dokumentů"]
@@ -13,46 +13,46 @@ stav: upraveno
 ## Prompt
 
 ```text
-Vystupuj jako zkušený konzultant pro řízení školy. Pomoz nám pojmenovat hodnoty, misi a vizi naší školy.
+Vystupuj ako skúsený konzultant pre riadenie školy. Pomôž nám pomenovať hodnoty, misiu a víziu našej školy.
 
-Co chceme vytvořit: [hodnoty / misi / vizi / všechno postupně]
-Škola: [například ZŠ s 1. i 2. stupněm, 380 žáků, menší město]
-Co už máme: [vložte stávající hodnoty, misi nebo vizi a napište, co se vám na nich nelíbí; nebo řádek smažte]
-Pro koho text bude: [například sbor, zákonní zástupci, web školy, ŠVP]
-Kdo na textu pracuje: [například ředitelka, lídr změny a tři vyučující]
-Co o škole víme: [pár vět, čím jste jiní a na čem vám záleží; nebo řádek smažte]
+Čo chceme vytvoriť: [hodnoty / misiu / víziu / všetko postupne]
+Škola: [napríklad ZŠ s 1. aj 2. stupňom, 380 žiakov, menšie mesto]
+Čo už máme: [vložte súčasné hodnoty, misiu alebo víziu a napíšte, čo sa vám na nich nepáči; alebo riadok vymažte]
+Pre koho bude text: [napríklad pedagogický zbor, zákonní zástupcovia, web školy, ŠkVP]
+Kto na texte pracuje: [napríklad riaditeľka, líder zmeny a traja vyučujúci]
+Čo o škole vieme: [pár viet, čím ste iní a na čom vám záleží; alebo riadok vymažte]
 
 Postup:
-1. Když chceme všechno, začni hodnotami, pak mise, pak vize. Každá část staví na předchozí.
-2. Ke každé části nám nejdřív polož 2–4 otázky, ne všechny najednou. Vyber ty, které dávají smysl podle toho, co už víš:
-   - hodnoty: Jak chcete, aby se u vás děti každý den cítily? Na čem vám záleží ve vztazích mezi lidmi? Jak chcete jednat v konfliktních situacích?
-   - mise: Proč byste svou školu doporučili zákonným zástupcům? V čem se lišíte od škol v okolí? Čeho si na škole nejvíc ceníte?
-   - vize: Jak bude škola vypadat za 5–10 let, když se vše podaří? Jak mají absolventi přemýšlet a jednat? Jakou roli mají ve škole hrát technologie a AI a co z toho chcete u žáků rozvíjet?
-3. Když odpověď zní obecně, zeptej se: „Podle čeho byste to poznali v běžném dni ve škole?“
-4. Z odpovědí navrhni 2–3 varianty, které se liší stylem (heslovitá, větná, pro zákonné zástupce a web). U každé jednou větou napiš, ze které odpovědi vychází.
-5. Podle našich připomínek text dolaď.
+1. Keď chceme všetko, začni hodnotami, potom misia, potom vízia. Každá časť stavia na predchádzajúcej.
+2. Ku každej časti nám najprv polož 2 – 4 otázky, nie všetky naraz. Vyber tie, ktoré dávajú zmysel podľa toho, čo už vieš:
+   - hodnoty: Ako chcete, aby sa u vás deti každý deň cítili? Na čom vám záleží vo vzťahoch medzi ľuďmi? Ako chcete konať v konfliktných situáciách?
+   - misia: Prečo by ste svoju školu odporučili zákonným zástupcom? V čom sa líšite od škôl v okolí? Čo si na škole najviac ceníte?
+   - vízia: Ako bude škola vyzerať o 5 – 10 rokov, keď sa všetko podarí? Ako majú absolventi premýšľať a konať? Akú úlohu majú v škole hrať technológie a AI a čo z toho chcete u žiakov rozvíjať?
+3. Keď odpoveď znie všeobecne, opýtaj sa: „Podľa čoho by ste to spoznali v bežnom dni v škole?“
+4. Z odpovedí navrhni 2 – 3 varianty, ktoré sa líšia štýlom (heslovitý, vetný, pre zákonných zástupcov a web). Pri každom jednou vetou napíš, z ktorej odpovede vychádza.
+5. Podľa našich pripomienok text dolaď.
 
-Pravidla:
-- Hodnoty: 3–6 hodnot po 1–3 slovech, pozitivně formulované, ke každé jedna věta, jak se projevuje v běžném dni. Ověř je otázkou: Poznal by návštěvník hodnotu během jednoho dne, aniž by si ji přečetl na zdi?
-- Mise: 1–3 věty o přítomnosti. Kdo jsme, co a pro koho děláme, čím se lišíme.
-- Vize: 1–2 věty o budoucnosti, přiměřeně náročná a srozumitelná zákonným zástupcům i žákům. Vize není mise v budoucím čase ani seznam hodnot.
-- Žádné prázdné fráze, které by mohly viset na kterékoli škole („moderní škola 21. století“, „rozvíjíme potenciál každého“).
-- Drž se toho, co jsme řekli. Nevymýšlej programy, úspěchy ani zvláštnosti školy.
-- Jména žáků a zaměstnanců nepotřebuješ.
+Pravidlá:
+- Hodnoty: 3 – 6 hodnôt po 1 – 3 slovách, pozitívne sformulované, ku každej jedna veta, ako sa prejavuje v bežnom dni. Over ich otázkou: Spoznal by návštevník hodnotu počas jedného dňa bez toho, aby si ju prečítal na stene?
+- Misia: 1 – 3 vety o prítomnosti. Kto sme, čo a pre koho robíme, čím sa líšime.
+- Vízia: 1 – 2 vety o budúcnosti, primerane náročná a zrozumiteľná zákonným zástupcom aj žiakom. Vízia nie je misia v budúcom čase ani zoznam hodnôt.
+- Žiadne prázdne frázy, ktoré by mohli visieť na ktorejkoľvek škole („moderná škola 21. storočia“, „rozvíjame potenciál každého“).
+- Drž sa toho, čo sme povedali. Nevymýšľaj programy, úspechy ani zvláštnosti školy.
+- Mená žiakov a zamestnancov nepotrebuješ.
 
-U hotového textu navrhni, jak ho projednat se sborem, žáky a zákonnými zástupci (například otázky na poradu, krátká anketa, žákovský parlament). Připomeň, že jde o návrh, který má projít diskusí ve škole. Na konci nabídni navazující část nebo profil absolventa.
+Pri hotovom texte navrhni, ako ho prerokovať s pedagogickým zborom, žiakmi a zákonnými zástupcami (napríklad otázky na poradu, krátka anketa, žiacky parlament). Pripomeň, že ide o návrh, ktorý má prejsť diskusiou v škole. Na konci ponúkni nadväzujúcu časť alebo profil absolventa.
 ```
 
-## Co je cílem promptu
+## Čo je cieľom promptu
 
-Prompt vám pomůže pojmenovat hodnoty, misi a vizi školy. Nejdřív vám položí několik otázek, pak z vašich odpovědí navrhne dvě až tři varianty formulací, které spolu doladíte. Hlídá rozdíl mezi misí (kdo jsme dnes) a vizí (kam směřujeme) a vyhýbá se prázdným frázím, které by mohly viset na kterékoli škole.
+Prompt vám pomôže pomenovať hodnoty, misiu a víziu školy. Najprv vám položí niekoľko otázok, potom z vašich odpovedí navrhne dva až tri varianty formulácií, ktoré spolu doladíte. Stráži rozdiel medzi misiou (kto sme dnes) a víziou (kam smerujeme) a vyhýba sa prázdnym frázam, ktoré by mohli visieť na ktorejkoľvek škole.
 
-Dostanete i návrh, jak hotový text projednat se sborem, žáky a zákonnými zástupci. Hodnoty, které vzniknou u jednoho počítače, škola za své nepřijme.
+Dostanete aj návrh, ako hotový text prerokovať s pedagogickým zborom, žiakmi a zákonnými zástupcami. Hodnoty, ktoré vzniknú pri jednom počítači, škola za svoje neprijme.
 
-## Jak prompt použít
+## Ako prompt použiť
 
-Zkopírujte prompt do chatbota a doplňte, co o škole víte. Na otázky odpovídejte konkrétně, ideálně s příkladem z běžného dne. Nejlépe se s promptem pracuje ve dvojici nebo malé skupině, například ředitel s lídrem změny a několika vyučujícími.
+Skopírujte prompt do chatbota a doplňte, čo o škole viete. Na otázky odpovedajte konkrétne, ideálne s príkladom z bežného dňa. Najlepšie sa s promptom pracuje vo dvojici alebo malej skupine, napríklad riaditeľ s lídrom zmeny a niekoľkými vyučujúcimi.
 
-Návrh pak projednejte se sborem a podle možností i s žáky a zákonnými zástupci. Jak je do takových rozhodnutí zapojit, popisuje kapitola [Participativní přístup na školách](https://aidetem.cz/participativni-pristup-skolach/) z metodiky AI akcelerátoru.
+Návrh potom prerokujte s pedagogickým zborom a podľa možností aj so žiakmi a zákonnými zástupcami. Ako ich do takých rozhodnutí zapojiť, opisuje kapitola [Participativní přístup na školách](https://aidetem.cz/participativni-pristup-skolach/) z metodiky AI akcelerátora (v češtine).
 
-**Používáte tento prompt často?** Stejný úkol zvládne dovednost [Hodnoty, mise, vize a profil absolventa](/skills/mise-vize-hodnoty), kterou si můžete nainstalovat do svého chatbota.
+**Používate tento prompt často?** Rovnakú úlohu zvládne zručnosť [Hodnoty, misia, vízia a profil absolventa](/skills/mise-vize-hodnoty), ktorú si môžete nainštalovať do svojho chatbota.
