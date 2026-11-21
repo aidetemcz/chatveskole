@@ -49,7 +49,7 @@ const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
   <div class="sign">
     <div class="wrap sign-obsah">
       <span class="sign-text">Funkce chatovacích aplikací se mění každý den.<br />Když najdete nepřesnost, dejte nám prosím vědět na e-mail <a href="mailto:eva@aidetem.cz">eva@aidetem.cz</a>. Děkujeme!</span>
-      <span class="sign-odkazy"><a href={url('/o-webu/kontakt')}>Kontakt</a><a href={url('/o-webu/kdo-za-tim-stoji')}>Kdo za tím stojí</a><span>© {rok} AI dětem, z. s.</span></span>
+      <span class="sign-odkazy"><a href={url('/o-webu/kontakt')}>Kontakt</a><a href={url('/o-webu/kdo-za-tim-stoji')}>Kdo za tím stojí</a><button type="button" class="odkaz-tlacitko" data-cookies-nastaveni>Nastavení cookies</button><span>© {rok} AI dětem, z. s.</span></span>
     </div>
   </div>
 </footer>
@@ -85,5 +85,6 @@ const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
   .sign { border-top: 1px solid var(--sky); }
   .sign-obsah { padding-top: 22px; padding-bottom: 28px; display: grid; grid-template-columns: 2fr 1fr; align-items: start; gap: 8px 40px; font-size: 0.82rem; }
   @media (max-width: 760px) { .sign-obsah { grid-template-columns: 1fr; } .sign-odkazy { justify-content: flex-start; } }
+  .odkaz-tlacitko { background: none; border: 0; padding: 0; font: inherit; color: inherit; text-decoration: underline; cursor: pointer; }
   .sign-odkazy { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 24px; }
 </style>
