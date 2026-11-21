@@ -1,5 +1,5 @@
 ---
-// Co je vibe coding — co to je, co si postaví vyučující a vedení, vibe coding se žáky, na co si dát pozor (sablona: vibe-coding-co-je-to-pruvodce).
+// Co je Vibe Coding — co to je, co si postaví vyučující a vedení, Vibe Coding se žáky, na co si dát pozor (sablona: vibe-coding-co-je-to-pruvodce).
 // Texty jsou v content/stranky/vibe-coding/co-je-to.md (oddíly podle ##, skupiny podle ###), grafika stejná jako u stránky Projekty.
 import { getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
@@ -42,12 +42,12 @@ const ucitele = najdi(/vyučující/i);
 const uciteleHtml = htmlOddilu(ucitele);
 const skupiny = bloky(uciteleHtml).map((b) => ({ ...b, body: body(b.html) }));
 
-// Pro žáky: odstavce před ###, poslední dva jako boxy (kompetence, metodika); ### projekty žáků jako karty
+// Pro žáky: odstavce před ###, poslední jako box (metodika); ### projekty žáků jako karty
 const zaci = najdi(/pro žáky/i);
 const zaciHtml = htmlOddilu(zaci);
 const zaciOdstavce = odstavce(predH3(zaciHtml));
-const zaciText = zaciOdstavce.slice(0, -2);
-const zaciBoxy = zaciOdstavce.slice(-2);
+const zaciText = zaciOdstavce.slice(0, -1);
+const zaciBoxy = zaciOdstavce.slice(-1);
 const projekty = bloky(zaciHtml)[0];
 const projektyUvod = projekty ? odstavce(uvodOddilu(projekty.html))[0] : '';
 const projektyKarty = projekty ? polozky(projekty.html) : [];
@@ -108,7 +108,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
           <div class="prose">{zaciText.map((p) => <p set:html={p} />)}</div>
         </div>
         <div class="stack" style="gap: 16px">
-          {zaciBoxy.map((p, i) => <div class:list={[i === 0 ? 'podminky' : 'zvyrazneni']}><p set:html={p} /></div>)}
+          {zaciBoxy.map((p) => <div class="podminky"><p set:html={p} /></div>)}
         </div>
       </div>
     </section>
@@ -182,8 +182,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .body { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 0.93rem; line-height: 1.55; }
 
   .podminky { background: #f6fafc; border: 1px solid var(--sky); border-radius: 9px; padding: 22px 26px; }
-  .zvyrazneni { background: var(--accent-soft); border-radius: 12px; padding: 26px 28px; }
-  .podminky p, .zvyrazneni p { margin: 0; line-height: 1.65; }
+  .podminky p { margin: 0; line-height: 1.65; }
 
   .pravidla { background: var(--accent-soft); border-radius: 12px; padding: 30px 32px; display: flex; flex-direction: column; gap: 14px; }
   .pravidlo { background: var(--panel); border-radius: 9px; padding: 18px 20px; display: flex; flex-direction: column; gap: 4px; }

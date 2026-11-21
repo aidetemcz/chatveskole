@@ -1,10 +1,10 @@
 ---
-title: Nástroje pro vibe coding
+title: Nástroje pro Vibe Coding
 menu: Vibe Coding
 poradi: 2
 popis: Gemini Canvas, Claude artefakty, ChatGPT Sites, Macaly, Canva Kódování, Lovable, Bolt, v0 a další — co je zdarma, od kolika let a jak výsledek sdílet.
 sablona: vibe-coding-nastroje-pruvodce   # vlastní šablona src/pages/vibe-coding/nastroje.astro
-aktualizovano: 2026-11-20
+aktualizovano: 2026-11-21
 stav: koncept
 zdroje:
   - https://gemini.google/cz/overview/canvas/?hl=cs
@@ -26,7 +26,7 @@ zdroje:
   - https://www.edtechinnovationhub.com/news/canva-opens-code-20-to-free-users-with-editable-ai-built-websites-and-apps
 ---
 
-# Nástroje pro vibe coding
+# Nástroje pro Vibe Coding
 
 Stav k 7. 11. 2026, Canva Kódování k 15. 11. 2026. Ceny, limity a věkové hranice se mění — před použitím se žáky je ověřte.
 
@@ -54,7 +54,7 @@ Specializované služby na stavbu aplikací. Umí víc než chatboty, ale bezpla
 | **[Macaly](https://macaly.com)** | ano, měsíční kredity, 1 zveřejněná aplikace | 18+ (13+ jen v rámci AI olympiády) | ano, ve Free jen veřejně na adrese macaly.app |
 | **Canva Kódování** | ano, i v Canvě pro vzdělávání | 13+, mladší jen v Canvě pro vzdělávání na pozvánku vyučujícího | ano, na doméně Canvy |
 
-Naše metodika [Tvorba jednoduchých aplikací pomocí vibecodingu](/vibe-coding/materialy-do-vyuky) pracuje s nástroji ChatGPT Sites nebo Gemini Canvas a s Canva Kódováním, které školy s Canvou pro vzdělávání mají zdarma.
+Naše metodika [Tvorba jednoduchých aplikací pomocí Vibe Codingu](/vibe-coding/materialy-do-vyuky) pracuje s nástroji ChatGPT Sites nebo Gemini Canvas a s Canva Kódováním, které školy s Canvou pro vzdělávání mají zdarma.
 
 ## Pro pokročilé
 

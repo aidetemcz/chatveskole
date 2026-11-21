@@ -2,7 +2,7 @@
 title: Vibe Coding — materiály do výuky
 menu: Vibe Coding
 poradi: 4
-popis: Metodika AI dětem Tvorba jednoduchých aplikací pomocí vibecodingu, školení Vibecoding pro školy a osm hotových zadání pro vyučující — interaktivní časová osa, graf z dat, myšlenková mapa, simulace logické úlohy a další.
+popis: Metodika AI dětem Tvorba jednoduchých aplikací pomocí Vibe Codingu, školení Vibe Coding pro školy a osm hotových zadání pro vyučující — interaktivní časová osa, graf z dat, myšlenková mapa, simulace logické úlohy a další.
 sablona: materialy-pruvodce   # vlastní šablona src/pages/vibe-coding/materialy-do-vyuky.astro
 aktualizovano: 2026-11-21
 stav: koncept
@@ -30,9 +30,9 @@ Metodika pro žáky, školení pro celou sborovnu a osm zadání, která si mů�
 
 <!-- komponenta: karta s obrázkem -->
 
-![Obálka metodiky Tvorba jednoduchých aplikací pomocí vibecodingu](/img/metodika-vibecoding-01.jpg)
+![Obálka metodiky Tvorba jednoduchých aplikací pomocí Vibe Codingu](/img/metodika-vibecoding-01.jpg)
 
-### Tvorba jednoduchých aplikací pomocí vibecodingu
+### Tvorba jednoduchých aplikací pomocí Vibe Codingu
 
 Žáci si bez psaní kódu navrhnou a postaví vlastní aplikaci, jednoduchou hru nebo web. Nejdřív si ujasní, pro koho aplikace bude, co má umět a jak má vypadat. Pak napíšou zadání pro AI, výsledek testují a postupně vylepšují. Hotové aplikace zveřejní a na „tržišti aplikací“ si je navzájem vyzkouší a dají si zpětnou vazbu.
 
@@ -49,13 +49,13 @@ Metodika je součástí Kurikula umělé inteligence pro ZŠ a SŠ, které vytv�
 
 <!-- komponenta: karta s obrázkem (bez obrázku) -->
 
-### Vibecoding pro školy
+### Vibe Coding pro školy
 
-Přijedeme za vámi do školy a za tři hodiny celé sborovně ukážeme, jak s AI tvořit jednoduché aplikace a jak vibe coding smysluplně zařadit do výuky. Nejde o to naučit se programovat, ale o tvořivost, spolupráci a práci s chybou.
+Přijedeme za vámi do školy a za tři hodiny celé sborovně ukážeme, jak s AI tvořit jednoduché aplikace a jak Vibe Coding smysluplně zařadit do výuky. Nejde o to naučit se programovat, ale o tvořivost, spolupráci a práci s chybou.
 
-- **Úvod:** co je vibe coding a čím se liší od klasické výuky informatiky.
+- **Úvod:** co je Vibe Coding a čím se liší od klasické výuky informatiky.
 - **Praktická část:** sami si vyzkoušíte tvorbu jednoduchých digitálních výstupů s pomocí AI. Důraz je na postup, testování a vylepšování, ne na technickou dokonalost.
-- **Metodická část:** jak vibe coding zařadit podle věku a digitálních dovedností žáků. Přínosy, limity a rizika AI, bezpečnost, autorská práva a odpovědnost.
+- **Metodická část:** jak Vibe Coding zařadit podle věku a digitálních dovedností žáků. Přínosy, limity a rizika AI, bezpečnost, autorská práva a odpovědnost.
 
 Odnesete si konkrétní příklady výukových scénářů, nápady na projekty s AI a jistotu při tvůrčí práci s digitálními nástroji.
 
