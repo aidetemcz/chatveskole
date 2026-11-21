@@ -1,13 +1,13 @@
-title: Gradace kritérií hodnocení (J–Č–T–Ú)
+title: Gradácia kritérií hodnotenia (J–Č–T–Ú)
 slug: gradace-kriterii-hodnoceni
-kratky_popis: Ke kritériím hodnocení navrhne gradaci J–Č–T–Ú pro sebehodnocení žáků a sebehodnoticí list „Jak se mi dařilo?“.
-popis: "Pomůže vám rozepsat kritéria hodnocení do úrovní, podle kterých se žáci sami ohodnotí. Používá čtyřúrovňovou škálu J–Č–T–Ú z metodiky Vysvědčení jinak (Pedagogická fakulta MU), od „ještě neosvojeno“ po „úplně osvojeno“. Úrovně jsou psané v první osobě jazykem, kterému žáci daného věku rozumějí, a na přání dostanete i sebehodnoticí list „Jak se mi dařilo?“. Nejde o známky, ale o to, aby žáci lépe viděli, jak se jim v učení daří."
+kratky_popis: Ku kritériám hodnotenia navrhne gradáciu J–Č–T–Ú na sebahodnotenie žiakov a sebahodnotiaci list „Ako sa mi darilo?“.
+popis: "Pomôže vám rozpísať kritériá hodnotenia do úrovní, podľa ktorých sa žiaci sami ohodnotia. Používa štvorúrovňovú škálu J–Č–T–Ú z českej metodiky Vysvědčení jinak (Pedagogická fakulta MU v Brne), od „ešte neosvojené“ po „úplne osvojené“. Úrovne sú písané v prvej osobe jazykom, ktorému žiaci daného veku rozumejú, a na želanie dostanete aj sebahodnotiaci list „Ako sa mi darilo?“. Nejde o známky, ale o to, aby žiaci lepšie videli, ako sa im v učení darí. Podklady k zručnosti sú v češtine."
 pro_koho: [ucitele]
 sady: [formativni-hodnoceni]
-stitky: [formativní hodnocení, sebehodnocení, J–Č–T–Ú, gradace, Vysvědčení jinak]
+stitky: [formatívne hodnotenie, sebahodnotenie, J–Č–T–Ú, gradácia, Vysvědčení jinak]
 rezimy:
-  - Gradace J–Č–T–Ú
-  - Sebehodnoticí list pro žáky
+  - Gradácia J–Č–T–Ú
+  - Sebahodnotiaci list pre žiakov
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/vytvareni-sebehodnotici-skaly-pro-zaky/
     typ: asistent
@@ -24,11 +24,11 @@ stahnout:
   chatgpt: https://drive.google.com/uc?export=download&id=1bRwkMHh7PjjPX35jSExFUcgypMc4go9t
 autori: [Eva Nečasová (AI dětem)]
 metodika:
-  - nazev: Vysvědčení jinak (PdF MU, Jana Kratochvílová)
+  - nazev: Vysvědčení jinak (PdF MU, Jana Kratochvílová; v češtine)
     url: https://vysvedcenijinak.ped.muni.cz/
-  - nazev: Vysvědčení jinak – stupnice hodnocení v teoretických předmětech
+  - nazev: Vysvědčení jinak – stupnice hodnocení v teoretických předmětech (v češtine)
     url: https://vysvedcenijinak.ped.muni.cz/metodika/teoreticke-predmety/stupnice-hodnoceni-v-teoretickych-predmetech
 znalosti: [vysvedceni-jinak-metodika.md]
-vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+vek: dospelí (zručnosti sú v Gemini a Claude od 18 rokov)
 stav: koncept
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-21

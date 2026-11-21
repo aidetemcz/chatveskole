@@ -1,74 +1,74 @@
 ---
-title: Pracovní listy
+title: Pracovné listy
 typ: prompt
 ---
 
-## Základní prompt
+## Základný prompt
 
 ```text
-Vystupuj jako zkušený pedagog a tvůrce výukových materiálů. Vytvoř pracovní list.
+Vystupuj ako skúsený pedagóg a tvorca učebných materiálov. Vytvor pracovný list.
 
-Předmět a téma: [například přírodopis – dědičnost]
-Ročník: [například 8. třída ZŠ]
-Cíl – co si má žák procvičit nebo ukázat: [například rozliší dominantní a recesivní znak na příkladech]
-Typ cvičení: [například doplňovačka / spojovačka / kvíz / pravda-nepravda / otevřené otázky k textu / emotikony / slovníček pojmů / početní příklady / tabulka slovíček – nebo vyber sám]
-Rozsah: [například 10 úloh, 15 minut práce]
-Jazyk cvičení: [například čeština]
-Text, ze kterého vycházet (nepovinné): [vložte text]
+Predmet a téma: [napríklad biológia – dedičnosť]
+Ročník: [napríklad 8. ročník ZŠ]
+Cieľ – čo si má žiak precvičiť alebo ukázať: [napríklad rozlíši dominantný a recesívny znak na príkladoch]
+Typ cvičenia: [napríklad doplňovačka / spájačka / kvíz / pravda-nepravda / otvorené otázky k textu / emotikony / slovníček pojmov / počtové príklady / tabuľka slovíčok – alebo vyber sám]
+Rozsah: [napríklad 10 úloh, 15 minút práce]
+Jazyk cvičenia: [napríklad slovenčina]
+Text, z ktorého vychádzať (nepovinné): [vložte text]
 
-Pravidla:
-- Když chybí údaj, bez kterého list nejde udělat, nejdřív se zeptej. Jinak rovnou tvoř.
-- Výstup rozděl na tři části: 1) PRO ŽÁKY – název, řádek na jméno, krátké instrukce a úlohy bez řešení, prázdná místa jednotně __________; 2) ŘEŠENÍ PRO VYUČUJÍCÍ – klíč a u každé úlohy jedna věta proč, u otevřených otázek body, které má dobrá odpověď obsahovat; 3) POZNÁMKA PRO VYUČUJÍCÍ – 2–4 věty, k čemu list slouží, jak ho použít a co upravit pro jinou třídu.
-- Úlohy musí být jednoznačné, věcně správné a přiměřené věku. Kromě vybavování a porozumění zařaď aspoň čtvrtinu úloh na analýzu (porovnej, zařaď, najdi chybu, vyvoď pravidlo) a použití znalostí (rozhodni podle kritérií, vyřeš nový problém).
-- Spojovačku dej do tabulky, ve které dvojice nejsou na stejném řádku. U výběru z možností dej věrohodné špatné odpovědi, jaké žáci opravdu volí.
-- Rozsah jedna strana A4. Pokud umíš vytvářet dokumenty, dej žákovskou verzi a řešení jako dva samostatné dokumenty.
-- Výpočty přepočítej. Kde si nejsi jistý fakty, upozorni mě v poznámce.
+Pravidlá:
+- Keď chýba údaj, bez ktorého sa list nedá urobiť, najprv sa opýtaj. Inak rovno tvor.
+- Výstup rozdeľ na tri časti: 1) PRE ŽIAKOV – názov, riadok na meno, krátke inštrukcie a úlohy bez riešenia, prázdne miesta jednotne __________; 2) RIEŠENIE PRE VYUČUJÚCEHO – kľúč a pri každej úlohe jedna veta prečo, pri otvorených otázkach body, ktoré má dobrá odpoveď obsahovať; 3) POZNÁMKA PRE VYUČUJÚCEHO – 2–4 vety, na čo list slúži, ako ho použiť a čo upraviť pre inú triedu.
+- Úlohy musia byť jednoznačné, vecne správne a primerané veku. Okrem vybavovania a porozumenia zaraď aspoň štvrtinu úloh na analýzu (porovnaj, zaraď, nájdi chybu, vyvoď pravidlo) a použitie poznatkov (rozhodni podľa kritérií, vyrieš nový problém).
+- Spájačku daj do tabuľky, v ktorej dvojice nie sú v rovnakom riadku. Pri výbere z možností daj vierohodné nesprávne odpovede, aké žiaci naozaj volia.
+- Rozsah jedna strana A4. Ak vieš vytvárať dokumenty, daj žiacku verziu a riešenie ako dva samostatné dokumenty.
+- Výpočty prepočítaj. Kde si nie si istý faktami, upozorni ma v poznámke.
 ```
 
-## Varianta: Test s klíčem
+## Varianta: Test s kľúčom
 
 ```text
-Vystupuj jako zkušený vyučující [angličtiny]. Vytvoř test pro [2. ročník gymnázia] na téma [Health].
+Vystupuj ako skúsený vyučujúci [angličtiny]. Vytvor test pre [2. ročník gymnázia] na tému [Health].
 
-Cíl: [například žák používá slovní zásobu tématu ve větách a rozumí krátkému textu]
-Složení: [například 6 otázek s výběrem ze 4 možností, 4 pravda/nepravda, 3 otevřené otázky]
-Jazyk zadání: [například angličtina]
-Úroveň: [například B1]
-Bodování: [například ano, celkem 20 bodů / ne]
+Cieľ: [napríklad žiak používa slovnú zásobu témy vo vetách a rozumie krátkemu textu]
+Zloženie: [napríklad 6 otázok s výberom zo 4 možností, 4 pravda/nepravda, 3 otvorené otázky]
+Jazyk zadania: [napríklad angličtina]
+Úroveň: [napríklad B1]
+Bodovanie: [napríklad áno, spolu 20 bodov / nie]
 
-Požadavky:
-- Otázky na různých úrovních Nové taxonomie vzdělávacích cílů (Marzano a Kendall): orientačně 40 % vybavování a porozumění, 40 % analýza (porovnej, zařaď, najdi chybu, vyvoď pravidlo, předpověz) a 20 % použití znalostí (rozhodni podle kritérií, vyřeš problém s překážkou). O úrovni rozhoduje, co úloha po žákovi skutečně chce, ne sloveso.
-- Body uveď, jen když o ně stojím. Známky nenavrhuj.
-- U výběru z možností jen jedna správná odpověď, pokud výslovně nenapíšeš „Může být správně víc odpovědí.“ Špatné možnosti věrohodné, správná odpověď nesmí být nápadně delší ani pořád na stejném místě.
-- Výstup: 1) TEST PRO ŽÁKY bez odpovědí; 2) KLÍČ – správné odpovědi a ke každé jedna věta proč, u otevřených otázek body, které má dobrá odpověď obsahovat; 3) tabulka pro vyučující: otázka – úroveň a proces Nové taxonomie – co ověřuje.
+Požiadavky:
+- Otázky na rôznych úrovniach Novej taxonómie vzdelávacích cieľov (Marzano a Kendall): orientačne 40 % vybavovanie a porozumenie, 40 % analýza (porovnaj, zaraď, nájdi chybu, vyvoď pravidlo, predpovedz) a 20 % použitie poznatkov (rozhodni podľa kritérií, vyrieš problém s prekážkou). O úrovni rozhoduje, čo úloha od žiaka skutočne chce, nie sloveso.
+- Body uveď, len keď o ne stojím. Známky nenavrhuj.
+- Pri výbere z možností len jedna správna odpoveď, ak výslovne nenapíšeš „Správnych odpovedí môže byť viac.“ Nesprávne možnosti vierohodné, správna odpoveď nesmie byť nápadne dlhšia ani stále na rovnakom mieste.
+- Výstup: 1) TEST PRE ŽIAKOV bez odpovedí; 2) KĽÚČ – správne odpovede a ku každej jedna veta prečo, pri otvorených otázkach body, ktoré má dobrá odpoveď obsahovať; 3) tabuľka pre vyučujúceho: otázka – úroveň a proces Novej taxonómie – čo overuje.
 ```
 
-## Varianta: Doplňovačka z mého textu
+## Varianta: Doplňovačka z môjho textu
 
 ```text
-Vytvoř z textu níže doplňovačku pro [7. třídu ZŠ], předmět [dějepis].
+Vytvor z textu nižšie doplňovačku pre [7. ročník ZŠ], predmet [dejepis].
 
-Cíl: [například žák si upevní pojmy k Velké Moravě]
-Vynech tato slova: [například Rastislav, Cyril, Metoděj, hlaholice – nebo vyber 10 klíčových pojmů sám]
-Obtížnost: [se zásobníkem slov / bez zásobníku / s prvním písmenem]
+Cieľ: [napríklad žiak si upevní pojmy k Veľkej Morave]
+Vynechaj tieto slová: [napríklad Rastislav, Konštantín, Metod, hlaholika – alebo vyber 10 kľúčových pojmov sám]
+Náročnosť: [so zásobníkom slov / bez zásobníka / s prvým písmenom]
 
-Vynechávej jen slova, která nesou učivo, 8–15 mezer; u mladších žáků nejvýš jednu mezeru ve větě. Mezery čísluj a dělej stejně dlouhé: (1) __________. Výstup: 1) TEXT PRO ŽÁKY s mezerami a případně se zásobníkem slov (zamíchaným, o 1–2 slova delším); 2) ŘEŠENÍ – číslovaný seznam; 3) POZNÁMKA PRO VYUČUJÍCÍ – k čemu doplňovačka slouží a jak ji upravit pro žáky, kteří potřebují oporu.
+Vynechávaj len slová, ktoré nesú učivo, 8–15 medzier; pri mladších žiakoch najviac jednu medzeru vo vete. Medzery čísluj a rob rovnako dlhé: (1) __________. Výstup: 1) TEXT PRE ŽIAKOV s medzerami a prípadne so zásobníkom slov (zamiešaným, o 1–2 slová dlhším); 2) RIEŠENIE – číslovaný zoznam; 3) POZNÁMKA PRE VYUČUJÚCEHO – na čo doplňovačka slúži a ako ju upraviť pre žiakov, ktorí potrebujú oporu.
 
-Text: [vložte text – nebo napište: „vytvoř krátký věcně správný příběh do 150 slov a označ fakta, která mám ověřit“]
+Text: [vložte text – alebo napíšte: „vytvor krátky vecne správny príbeh do 150 slov a označ fakty, ktoré mám overiť“]
 ```
 
-## Varianta: List k reflexi učiva
+## Varianta: List na reflexiu učiva
 
 ```text
-Vystupuj jako zkušený metodik. Vytvoř pracovní list k reflexi učiva na jednu stranu A4.
+Vystupuj ako skúsený metodik. Vytvor pracovný list na reflexiu učiva na jednu stranu A4.
 
-Předmět a téma: [například zeměpis – střídání ročních období]
-Ročník: [například 6. třída ZŠ]
-Cíl, ke kterému se žáci vracejí: [například žák vysvětlí, proč se na Zemi střídají roční období]
+Predmet a téma: [napríklad geografia – striedanie ročných období]
+Ročník: [napríklad 6. ročník ZŠ]
+Cieľ, ku ktorému sa žiaci vracajú: [napríklad žiak vysvetlí, prečo sa na Zemi striedajú ročné obdobia]
 
-Obsah listu: 3–5 krátkých otázek s výběrem odpovědi, 3–4 tvrzení pravda/nepravda, 2 otevřené otázky na přemýšlení a vlastní názor, sebehodnoticí tabulka se 3–4 výroky odvozenými z cíle a na závěr „Ještě se chci zeptat na…“. Sloupce sebehodnocení podle škály z metodiky Vysvědčení JINAK: ještě mi to nejde – trochu mi to jde, ale dělám chyby – skoro to zvládnu sám/sama – zvládnu to sám/sama i v nové situaci. Výroky popisují, co žák zvládne, ne jaký je.
+Obsah listu: 3–5 krátkych otázok s výberom odpovede, 3–4 tvrdenia pravda/nepravda, 2 otvorené otázky na premýšľanie a vlastný názor, sebahodnotiaca tabuľka s 3–4 výrokmi odvodenými z cieľa a na záver „Ešte sa chcem opýtať na…“. Stĺpce sebahodnotenia podľa škály z metodiky Vysvědčení JINAK: ešte mi to nejde – trochu mi to ide, ale robím chyby – skoro to zvládnem sám/sama – zvládnem to sám/sama aj v novej situácii. Výroky opisujú, čo žiak zvládne, nie aký je.
 
-Tón přátelský a srozumitelný pro daný věk, list se neznámkuje. Řešení uzavřených úloh dej zvlášť až za žákovskou verzi.
+Tón priateľský a zrozumiteľný pre daný vek, list sa neznámkuje. Riešenie uzavretých úloh daj zvlášť až za žiacku verziu.
 ```
 
-**Tip:** Hotový list můžete ve stejném chatu hned upravit: „udělej verzi s větším písmem a kratšími větami“, „přidej tři úlohy pro rychlejší žáky“, „převeď na kvíz do Google Forms“. Fakta a výsledky před tiskem vždy zkontrolujte.
+**Tip:** Hotový list môžete v tom istom chate hneď upraviť: „urob verziu s väčším písmom a kratšími vetami“, „pridaj tri úlohy pre rýchlejších žiakov“, „preveď na kvíz do Google Forms“. Fakty a výsledky pred tlačou vždy skontrolujte.

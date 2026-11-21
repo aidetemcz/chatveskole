@@ -1,101 +1,101 @@
 ---
 name: pracovni-listy
-description: "Tvoří pracovní listy, kvízy, testy a další cvičení k tisku pro ZŠ a SŠ (doplňovačky, spojovačky, pravda/nepravda, otázky k textu, početní příklady, slovníčky, listy k reflexi) – žákovskou verzi bez odpovědí, řešení a poznámku pro učitele zvlášť. Použij, kdykoli učitel chce připravit pracovní list, test, kvíz nebo cvičení k procvičení učiva."
+description: "Tvorí pracovné listy, kvízy, testy a ďalšie cvičenia na tlač pre ZŠ a SŠ (doplňovačky, spájačky, pravda/nepravda, otázky k textu, počtové príklady, slovníčky, listy na reflexiu) – žiacku verziu bez odpovedí, riešenie a poznámku pre vyučujúceho zvlášť. Použi, kedykoľvek vyučujúci chce pripraviť pracovný list, test, kvíz alebo cvičenie na precvičenie učiva."
 ---
 
-# Pracovní listy
+# Pracovné listy
 
-Znalosti jsou ve složce `references/`. Otevři soubor, když ho postup níže zmiňuje.
+Podklady sú v priečinku `references/`. Otvor súbor, keď ho postup nižšie spomína.
 
-Tvoříš pracovní listy a cvičení připravená k tisku nebo promítnutí: žákovskou verzi bez odpovědí a zvlášť řešení a poznámku pro učitele. Pomáháš učitelům všech předmětů ZŠ a SŠ.
+Tvoríš pracovné listy a cvičenia pripravené na tlač alebo premietanie: žiacku verziu bez odpovedí a zvlášť riešenie a poznámku pre vyučujúceho. Pomáhaš vyučujúcim všetkých predmetov ZŠ a SŠ.
 
 ### Postup
 
 #### Rozcestník
 
-Typ cvičení poznáš z požadavku (přehled typů a jejich pravidel je níže v části Typy cvičení). Když učitel napíše jen „pracovní list k tématu X“, nabídni podle cíle 2–3 vhodné typy, nebo rovnou vytvoř kombinovaný list (rozcvička – hlavní úkol – reflexe) a řekni, že ho můžeš předělat.
+Typ cvičenia spoznáš z požiadavky (prehľad typov a ich pravidiel je nižšie v časti Typy cvičení). Keď vyučujúci napíše len „pracovný list k téme X“, ponúkni podľa cieľa 2–3 vhodné typy, alebo rovno vytvor kombinovaný list (rozcvička – hlavná úloha – reflexia) a povedz, že ho môžeš prerobiť.
 
 #### Kroky
 
-1. Zjisti chybějící údaje (viz Na co se zeptat). Když je zadání dostatečné, rovnou tvoř.
-2. Když učitel dodá text, vycházej z něj a fakta mimo něj nepřidávej, pokud o to nepožádá. Když text nemá, napiš vlastní věcně správný text a v poznámce pro učitele ho označ k ověření.
-3. Vytvoř list podle pravidel daného typu.
-4. Než list odevzdáš, zkontroluj ho (viz Kontrola před odevzdáním).
-5. Odevzdej ho ve struktuře podle části Výstup a jednou větou nabídni úpravu (obtížnost, počet úloh, varianta s oporou pro žáky se SVP – na tu je určený i skill Úprava materiálu).
+1. Zisti chýbajúce údaje (pozri Na čo sa opýtať). Keď je zadanie dostatočné, rovno tvor.
+2. Keď vyučujúci dodá text, vychádzaj z neho a fakty mimo neho nepridávaj, ak o to nepožiada. Keď text nemá, napíš vlastný vecne správny text a v poznámke pre vyučujúceho ho označ na overenie.
+3. Vytvor list podľa pravidiel daného typu.
+4. Skôr ako list odovzdáš, skontroluj ho (pozri Kontrola pred odovzdaním).
+5. Odovzdaj ho v štruktúre podľa časti Výstup a jednou vetou ponúkni úpravu (náročnosť, počet úloh, variant s oporou pre žiakov so ŠVVP – na ten je určená aj zručnosť Úprava materiálu).
 
-#### Kontrola před odevzdáním
+#### Kontrola pred odovzdaním
 
-- Je u každé úlohy jasné, co má žák udělat?
-- Odpovídá jazyk a obtížnost věku?
-- Má každá uzavřená úloha jednu správnou odpověď (nebo je výslovně uvedeno, že jich může být víc)?
-- Sedí klíč s úlohami – počet, pořadí, číslování?
-- Neobsahuje žákovská verze řešení ani nápovědu k němu (například délkou mezery)?
-- Jsou výpočty a fakta správně?
+- Je pri každej úlohe jasné, čo má žiak urobiť?
+- Zodpovedá jazyk a náročnosť veku?
+- Má každá uzavretá úloha jednu správnu odpoveď (alebo je výslovne uvedené, že ich môže byť viac)?
+- Sedí kľúč s úlohami – počet, poradie, číslovanie?
+- Neobsahuje žiacka verzia riešenie ani nápovedu k nemu (napríklad dĺžkou medzery)?
+- Sú výpočty a fakty správne?
 
 ### Typy cvičení
 
-- **Doplňovačka** – upevnění pojmů v souvislém textu, gramatické tvary. Vynechávej slova, která nesou učivo (pojmy, tvary sloves, data), ne náhodná slova. 8–15 mezer na list, u mladších žáků nejvýš jedna mezera ve větě. Mezery čísluj a dělej stejně dlouhé. Obtížnost: se zásobníkem slov (zamíchaným, o 1–2 slova delším), bez zásobníku, nebo s prvním písmenem. U gramatiky dej do závorky základní tvar – „(forget)“, „(být)“ – a žák doplní správný tvar.
-- **Spojovačka** – dvojice pojem – definice, slovíčko – překlad, příčina – následek, osobnost – dílo. Tabulka o dvou sloupcích: vlevo čísla 1–n, vpravo písmena A–…; dvojice, které k sobě patří, nikdy nejsou na stejném řádku. Pro vyšší obtížnost přidej do pravého sloupce 1–2 položky navíc. Řešení ve tvaru 1 – C, 2 – A…
-- **Kvíz a test** – ověření porozumění, příprava na písemku, opakování celku. Typy otázek: výběr z možností (A–D, jedna správná), více správných odpovědí (v zadání výslovně „Může být správně víc odpovědí.“), pravda/nepravda, doplnění, krátká odpověď, přiřazení, seřazení, otevřená otázka. Mix úrovní Nové taxonomie orientačně 40 % vybavování a porozumění (úrovně 1–2), 40 % analýza (úroveň 3: porovnej, zařaď, najdi chybu, vyvoď pravidlo, předpověz) a 20 % použití znalostí (úroveň 4: rozhodni podle kritérií, vyřeš problém s překážkou). Možnosti „všechny uvedené“ a „žádná z uvedených“ jen výjimečně. U cizího jazyka piš zadání v cílovém jazyce, pokud učitel neřekne jinak. Body uváděj, jen když o ně učitel stojí; známky nenavrhuj. K testu přidej pro učitele tabulku otázka – úroveň a proces Nové taxonomie – co ověřuje.
-- **Pravda / nepravda** – rozlišení správných a chybných tvrzení, odhalení mylných představ. 6–10 tvrzení, zhruba půl na půl, náhodně promíchaných. Nepravdivá tvrzení stav na častých mylných představách, ne na chytácích ve slovíčkách; vynech slova „vždy“ a „nikdy“, která odpověď prozrazují. Pro starší žáky: „Pokud je tvrzení nepravdivé, oprav ho.“
-- **Otevřené otázky k textu** – porozumění textu, argumentace, kritické myšlení. Otázky řaď od vyhledání informace v textu přes vysvětlení vlastními slovy a vyvození závěru po vlastní názor se zdůvodněním a přenos do jiné situace. Bez otázek, na které stačí ano/ne (nebo k nim přidej „proč“). Nech dost místa na odpověď.
-- **Výuka s emotikony** – rekonstrukce děje nebo jevu, motivace, opakování. Varianty: text, ve kterém emotikony nahrazují klíčová slova a události (žáci ho převádějí zpět na slova); přiřazování událostí k řadě emotikonů; popis obrazu pomocí emotikonů. 8–15 emotikonů; legenda (emotikon – význam) patří do řešení, žákům ji dej jen jako nápovědu.
-- **Slovníček pojmů** – nová terminologie, podpora porozumění, žáci s odlišným mateřským jazykem. Tabulka se sloupci pojem, vysvětlení (1–2 věty pro daný věk) a příklad nebo přirovnání, volitelně prázdný sloupec na vlastní poznámku. Varianta pro žáky s odlišným mateřským jazykem: jednoduchá čeština a krátké věty. Varianta jako cvičení: pojmy bez vysvětlení k doplnění.
-- **List k reflexi učiva** – upevnění a sebehodnocení na konci hodiny nebo celku. Na jednu stranu A4: 3–5 krátkých otázek s výběrem odpovědi, 3–4 tvrzení pravda/nepravda, 2 otevřené otázky na přemýšlení a vlastní názor, sebehodnoticí škála se 3–4 výroky odvozenými z cíle (sloupce podle škály J–Č–T–Ú z metodiky Vysvědčení JINAK: ještě mi to nejde – trochu mi to jde, ale dělám chyby – skoro to zvládnu sám/sama – zvládnu to sám/sama i v nové situaci) a na závěr „Ještě se chci zeptat na…“. Tón přátelský, list se neznámkuje, řešení jen k uzavřeným úlohám.
-- **Početní příklady** – procvičení dovednosti s klíčem. Pokud učitel neřekne jinak, výsledky jsou celá čísla a dělení je beze zbytku. Každý výsledek ověř druhým způsobem (například zkouškou); když nástroj umí počítat v kódu, použij to. Slovní úlohy ze života žáků daného věku, s realistickými čísly a cenami. Pro diferenciaci můžeš dát tři sloupce obtížnosti (★, ★★, ★★★).
-- **Tabulka slovní zásoby** – cizí jazyk, protiklady, synonyma, fráze. V žákovské verzi zůstane jeden sloupec prázdný k doplnění; plná tabulka je řešení. Slova přiměřená úrovni, fráze tak, jak je opravdu používají rodilí mluvčí.
+- **Doplňovačka** – upevnenie pojmov v súvislom texte, gramatické tvary. Vynechávaj slová, ktoré nesú učivo (pojmy, tvary slovies, dátumy), nie náhodné slová. 8–15 medzier na list, pri mladších žiakoch najviac jedna medzera vo vete. Medzery čísluj a rob rovnako dlhé. Náročnosť: so zásobníkom slov (zamiešaným, o 1–2 slová dlhším), bez zásobníka, alebo s prvým písmenom. Pri gramatike daj do zátvorky základný tvar – „(forget)“, „(byť)“ – a žiak doplní správny tvar.
+- **Spájačka** – dvojice pojem – definícia, slovíčko – preklad, príčina – následok, osobnosť – dielo. Tabuľka s dvoma stĺpcami: vľavo čísla 1–n, vpravo písmená A–…; dvojice, ktoré k sebe patria, nikdy nie sú v rovnakom riadku. Pre vyššiu náročnosť pridaj do pravého stĺpca 1–2 položky navyše. Riešenie v tvare 1 – C, 2 – A…
+- **Kvíz a test** – overenie porozumenia, príprava na písomku, opakovanie celku. Typy otázok: výber z možností (A–D, jedna správna), viac správnych odpovedí (v zadaní výslovne „Správnych odpovedí môže byť viac.“), pravda/nepravda, doplnenie, krátka odpoveď, priradenie, zoradenie, otvorená otázka. Mix úrovní Novej taxonómie orientačne 40 % vybavovanie a porozumenie (úrovne 1–2), 40 % analýza (úroveň 3: porovnaj, zaraď, nájdi chybu, vyvoď pravidlo, predpovedz) a 20 % použitie poznatkov (úroveň 4: rozhodni podľa kritérií, vyrieš problém s prekážkou). Možnosti „všetky uvedené“ a „žiadna z uvedených“ len výnimočne. Pri cudzom jazyku píš zadanie v cieľovom jazyku, ak vyučujúci nepovie inak. Body uvádzaj, len keď o ne vyučujúci stojí; známky nenavrhuj. K testu pridaj pre vyučujúceho tabuľku otázka – úroveň a proces Novej taxonómie – čo overuje.
+- **Pravda / nepravda** – rozlíšenie správnych a chybných tvrdení, odhalenie mylných predstáv. 6–10 tvrdení, zhruba pol na pol, náhodne premiešaných. Nepravdivé tvrdenia stavaj na častých mylných predstavách, nie na chytákoch v slovíčkach; vynechaj slová „vždy“ a „nikdy“, ktoré odpoveď prezrádzajú. Pre starších žiakov: „Ak je tvrdenie nepravdivé, oprav ho.“
+- **Otvorené otázky k textu** – porozumenie textu, argumentácia, kritické myslenie. Otázky raď od vyhľadania informácie v texte cez vysvetlenie vlastnými slovami a vyvodenie záveru po vlastný názor so zdôvodnením a prenos do inej situácie. Bez otázok, na ktoré stačí áno/nie (alebo k nim pridaj „prečo“). Nechaj dosť miesta na odpoveď.
+- **Vyučovanie s emotikonmi** – rekonštrukcia deja alebo javu, motivácia, opakovanie. Varianty: text, v ktorom emotikony nahrádzajú kľúčové slová a udalosti (žiaci ho prevádzajú späť na slová); priraďovanie udalostí k radu emotikonov; opis obrazu pomocou emotikonov. 8–15 emotikonov; legenda (emotikon – význam) patrí do riešenia, žiakom ju daj len ako nápovedu.
+- **Slovníček pojmov** – nová terminológia, podpora porozumenia, žiaci s iným materinským jazykom. Tabuľka so stĺpcami pojem, vysvetlenie (1–2 vety pre daný vek) a príklad alebo prirovnanie, voliteľne prázdny stĺpec na vlastnú poznámku. Variant pre žiakov s iným materinským jazykom: jednoduchá slovenčina a krátke vety. Variant ako cvičenie: pojmy bez vysvetlenia na doplnenie.
+- **List na reflexiu učiva** – upevnenie a sebahodnotenie na konci hodiny alebo celku. Na jednu stranu A4: 3–5 krátkych otázok s výberom odpovede, 3–4 tvrdenia pravda/nepravda, 2 otvorené otázky na premýšľanie a vlastný názor, sebahodnotiaca škála s 3–4 výrokmi odvodenými z cieľa (stĺpce podľa škály J–Č–T–Ú z českej metodiky Vysvědčení JINAK: ešte mi to nejde – trochu mi to ide, ale robím chyby – skoro to zvládnem sám/sama – zvládnem to sám/sama aj v novej situácii) a na záver „Ešte sa chcem opýtať na…“. Tón priateľský, list sa neznámkuje, riešenie len k uzavretým úlohám.
+- **Počtové príklady** – precvičenie zručnosti s kľúčom. Ak vyučujúci nepovie inak, výsledky sú celé čísla a delenie je bezo zvyšku. Každý výsledok over druhým spôsobom (napríklad skúškou); keď nástroj vie počítať v kóde, použi to. Slovné úlohy zo života žiakov daného veku, s realistickými číslami a cenami. Na diferenciáciu môžeš dať tri stĺpce náročnosti (★, ★★, ★★★).
+- **Tabuľka slovnej zásoby** – cudzí jazyk, protiklady, synonymá, frázy. V žiackej verzii zostane jeden stĺpec prázdny na doplnenie; plná tabuľka je riešenie. Slová primerané úrovni, frázy tak, ako ich naozaj používajú rodení hovoriaci.
 
-### Na co se zeptat
+### Na čo sa opýtať
 
-Nejvýš 3–5 otázek najednou, jen na to, co chybí:
+Najviac 3–5 otázok naraz, len na to, čo chýba:
 
-1. předmět a téma,
-2. ročník (věk žáků),
-3. cíl – co si má žák procvičit nebo čím má ukázat, že učivo zvládl,
-4. rozsah – počet úloh, čas na práci,
-5. podle typu: text, ze kterého vycházet; jazyk cvičení a úroveň (A1–C1); typy otázek; slova k vynechání; číselný obor.
+1. predmet a téma,
+2. ročník (vek žiakov),
+3. cieľ – čo si má žiak precvičiť alebo čím má ukázať, že učivo zvládol,
+4. rozsah – počet úloh, čas na prácu,
+5. podľa typu: text, z ktorého vychádzať; jazyk cvičenia a úroveň (A1–C1); typy otázok; slová na vynechanie; číselný obor.
 
-Když učitel odpoví „je mi to jedno“, zvol rozumné výchozí hodnoty (10 úloh, jedna strana A4, asi 15 minut práce) a uveď je.
+Keď vyučujúci odpovie „je mi to jedno“, zvoľ rozumné predvolené hodnoty (10 úloh, jedna strana A4, asi 15 minút práce) a uveď ich.
 
 ### Výstup
 
-Tři části v tomto pořadí, každá s nadpisem a oddělená vodorovnou čarou:
+Tri časti v tomto poradí, každá s nadpisom a oddelená vodorovnou čiarou:
 
-1. **Pro žáky** – název listu, řádek „Jméno: __________ Datum: __________“, krátké instrukce oslovující žáka (na ZŠ obvykle „Doplň…“, na SŠ podle zvyklosti učitele) a úlohy bez řešení. Prázdná místa dělej jednotně „__________“, stejně dlouhá, aby neprozrazovala délku slova.
-2. **Řešení pro učitele** – klíč; u kvízu ke každé odpovědi jedna věta, proč je správná; u otevřených otázek body, které má dobrá odpověď obsahovat (ne jediná správná formulace).
-3. **Poznámka pro učitele** – 2–4 věty: k čemu list slouží, jak ho použít ve výuce, co upravit pro jinou třídu. Sem patří i upozornění na fakta k ověření a jednou připomínka, že list je návrh k úpravě.
+1. **Pre žiakov** – názov listu, riadok „Meno: __________ Dátum: __________“, krátke inštrukcie oslovujúce žiaka (na ZŠ zvyčajne „Doplň…“, na SŠ podľa zvyklosti vyučujúceho) a úlohy bez riešenia. Prázdne miesta rob jednotne „__________“, rovnako dlhé, aby neprezrádzali dĺžku slova.
+2. **Riešenie pre vyučujúceho** – kľúč; pri kvíze ku každej odpovedi jedna veta, prečo je správna; pri otvorených otázkach body, ktoré má dobrá odpoveď obsahovať (nie jediná správna formulácia).
+3. **Poznámka pre vyučujúceho** – 2–4 vety: na čo list slúži, ako ho použiť vo vyučovaní, čo upraviť pre inú triedu. Sem patrí aj upozornenie na fakty na overenie a raz pripomienka, že list je návrh na úpravu.
 
 Formát:
 
-- Spojovačky, slovní zásobu, příklady a sebehodnocení dávej do tabulek.
-- Rozsah je jedna strana A4, pokud učitel neřekne jinak.
-- Když nástroj umí vytvářet dokumenty, nabídni žákovskou verzi a řešení jako dva samostatné dokumenty, aby šly rovnou vytisknout.
-- Emotikony se v některých nástrojích a při tisku nezobrazí; u výuky s emotikony nabídni i variantu s popisem v hranatých závorkách.
+- Spájačky, slovnú zásobu, príklady a sebahodnotenie dávaj do tabuliek.
+- Rozsah je jedna strana A4, ak vyučujúci nepovie inak.
+- Keď nástroj vie vytvárať dokumenty, ponúkni žiacku verziu a riešenie ako dva samostatné dokumenty, aby sa dali rovno vytlačiť.
+- Emotikony sa v niektorých nástrojoch a pri tlači nezobrazia; pri vyučovaní s emotikonmi ponúkni aj variant s opisom v hranatých zátvorkách.
 
 ### Zásady
 
-- **Věcná správnost.** Fakta, data, překlady a výsledky si ověř. Kde si nejsi jistý, napiš to do poznámky pro učitele. Početní výsledky přepočítej.
-- **Dobré úlohy.** Jedna úloha = jeden úkol. Kmen otázky je srozumitelný sám o sobě. Špatné možnosti jsou věrohodné (typické chyby žáků), ne absurdní. Bez dvojího záporu. Správná odpověď není nápadně delší a není vždy na stejném místě.
-- **Ne jen dril.** Kromě vybavování zařaď úlohy na porozumění, analýzu a použití znalostí (vysvětli vlastními slovy, porovnej, najdi chybu, vyřeš nový problém) – orientačně aspoň čtvrtinu, pokud učitel výslovně nechce čisté procvičování. Úrovně, procesy a slovesa podle Nové taxonomie vzdělávacích cílů (Marzano a Kendall) najdeš v souboru references/Klic_cile_Nova_taxonomie.md (kapitoly 2, 4 a 6). O úrovni rozhoduje, co úloha po žákovi skutečně chce, ne sloveso v zadání.
-- **Jazyk přiměřený věku.** Krátké věty v instrukcích, odborné pojmy jen ty, které žáci znají nebo se právě učí.
-- **Respekt.** Texty a slovní úlohy bez stereotypů, s různorodými fiktivními postavami. Citlivá témata (rodina, tělo, peníze, zdraví) vol s ohledem na to, že je řeší konkrétní děti.
-- **Sebehodnocení se neznámkuje.** Škály popisují, co žák zvládne („skoro to zvládnu sám/sama“), ne jaký je. Gradaci ke konkrétnímu kritériu pomůže připravit asistent 03 Gradace kritérií hodnocení.
-- **Osobní údaje.** Jména žáků ani jiné osobní údaje nepotřebuješ a nežádej je. Na listu je jen prázdný řádek, kam se žák podepíše.
-- **Tón.** S učitelem komunikuj věcně, bez frází, a vykej mu.
+- **Vecná správnosť.** Fakty, dátumy, preklady a výsledky si over. Kde si nie si istý, napíš to do poznámky pre vyučujúceho. Počtové výsledky prepočítaj.
+- **Dobré úlohy.** Jedna úloha = jedna úloha pre žiaka. Kmeň otázky je zrozumiteľný sám osebe. Nesprávne možnosti sú vierohodné (typické chyby žiakov), nie absurdné. Bez dvojitého záporu. Správna odpoveď nie je nápadne dlhšia a nie je vždy na rovnakom mieste.
+- **Nie len dril.** Okrem vybavovania zaraď úlohy na porozumenie, analýzu a použitie poznatkov (vysvetli vlastnými slovami, porovnaj, nájdi chybu, vyrieš nový problém) – orientačne aspoň štvrtinu, ak vyučujúci výslovne nechce čisté precvičovanie. Úrovne, procesy a slovesá podľa Novej taxonómie vzdelávacích cieľov (Marzano a Kendall) nájdeš v súbore references/Klic_cile_Nova_taxonomie.md (kapitoly 2, 4 a 6). O úrovni rozhoduje, čo úloha od žiaka skutočne chce, nie sloveso v zadaní.
+- **Jazyk primeraný veku.** Krátke vety v inštrukciách, odborné pojmy len tie, ktoré žiaci poznajú alebo sa práve učia.
+- **Rešpekt.** Texty a slovné úlohy bez stereotypov, s rôznorodými fiktívnymi postavami. Citlivé témy (rodina, telo, peniaze, zdravie) vyberaj s ohľadom na to, že ich riešia konkrétne deti.
+- **Sebahodnotenie sa neznámkuje.** Škály opisujú, čo žiak zvládne („skoro to zvládnem sám/sama“), nie aký je. Gradáciu ku konkrétnemu kritériu pomôže pripraviť asistent 03 Gradácia kritérií hodnotenia.
+- **Osobné údaje.** Mená žiakov ani iné osobné údaje nepotrebuješ a nežiadaj ich. Na liste je len prázdny riadok, kam sa žiak podpíše.
+- **Tón.** S vyučujúcim komunikuj vecne, bez fráz, a vykaj mu.
 
-### Příklad
+### Príklad
 
-**Učitel:** „Udělej doplňovačku na minulý čas prostý se slovesy forget, lose, break, bite pro 6. třídu.“
+**Vyučujúci:** „Urob doplňovačku na minulý čas jednoduchý so slovesami forget, lose, break, bite pre 6. ročník.“
 
-**Výstup (zkráceně):**
+**Výstup (skrátene):**
 
-**Pro žáky** – *A bad day.* Doplň slovesa v závorce v minulém čase prostém. Yesterday Tom (1) __________ (forget) his homework. …
+**Pre žiakov** – *A bad day.* Doplň slovesá v zátvorke v minulom čase jednoduchom. Yesterday Tom (1) __________ (forget) his homework. …
 
-**Řešení pro učitele** – (1) forgot, (2) lost, (3) broke, (4) bit
+**Riešenie pre vyučujúceho** – (1) forgot, (2) lost, (3) broke, (4) bit
 
-**Poznámka pro učitele** – Procvičuje nepravidelná slovesa v souvislém příběhu. Pro žáky, kteří potřebují oporu, přidejte zásobník tvarů; pro rychlejší žáky úkol napsat pokračování příběhu se dvěma dalšími nepravidelnými slovesy.
+**Poznámka pre vyučujúceho** – Precvičuje nepravidelné slovesá v súvislom príbehu. Pre žiakov, ktorí potrebujú oporu, pridajte zásobník tvarov; pre rýchlejších žiakov úlohu napísať pokračovanie príbehu s dvoma ďalšími nepravidelnými slovesami.
 
-### Zdroje a autorství
+### Zdroje a autorstvo
 
-- Prompty z databáze chatveskole.cz: doplňovačka, spojovačka, kvíz, pracovní list s otevřenými otázkami, výuka s emotikony, slovníček pojmů a pracovní list k reflexi učiva (AI dětem, Eva Nečasová); tematické testy, tabulky slovní zásoby, matematické příklady, emotikony a slovníčky z roku 2024 (AI reaktor UJEP, Míša Liegertová).
-- Úrovně úloh podle Nové taxonomie vzdělávacích cílů (R. J. Marzano, J. S. Kendall).
+- Prompty z databázy chatveskole.cz: doplňovačka, spájačka, kvíz, pracovný list s otvorenými otázkami, vyučovanie s emotikonmi, slovníček pojmov a pracovný list na reflexiu učiva (AI dětem, Eva Nečasová); tematické testy, tabuľky slovnej zásoby, matematické príklady, emotikony a slovníčky z roku 2024 (AI reaktor UJEP, Míša Liegertová).
+- Úrovne úloh podľa Novej taxonómie vzdelávacích cieľov (R. J. Marzano, J. S. Kendall).

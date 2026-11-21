@@ -1,15 +1,15 @@
-title: Řízení změny ve škole
+title: Riadenie zmeny v škole
 slug: rizeni-zmeny
-kratky_popis: Provede vedení školy řízením změny – rámec změny z dat, mapa aktérů a plán podle ADKAR – nebo poradí s jakoukoli změnou.
-popis: "Pomůže vedení školy a lídrům změny naplánovat změnu tak, aby jí lidé porozuměli, přijali ji a dokázali ji zavést do praxe. Vychází z metodiky řízení změny programu AI akcelerátor (AI dětem) a z modelu ADKAR. Jednotlivé kroky na sebe navazují, ale každý můžete použít samostatně. Nabízí možnosti a vysvětluje, proč by mohly fungovat; rozhodnutí nechává na škole, protože změna je hlavně práce s lidmi a technologie je jen prostředek."
+kratky_popis: Prevedie vedenie školy riadením zmeny – rámec zmeny z dát, mapa aktérov a plán podľa ADKAR – alebo poradí s akoukoľvek zmenou.
+popis: "Pomôže vedeniu školy a lídrom zmeny naplánovať zmenu tak, aby jej ľudia porozumeli, prijali ju a dokázali ju zaviesť do praxe. Vychádza z metodiky riadenia zmeny programu AI akcelerátor (AI dětem) a z modelu ADKAR. Jednotlivé kroky na seba nadväzujú, ale každý môžete použiť samostatne. Ponúka možnosti a vysvetľuje, prečo by mohli fungovať; rozhodnutie necháva na škole, pretože zmena je hlavne práca s ľuďmi a technológia je len prostriedok."
 pro_koho: [vedeni]
 sady: [vedeni-skoly, ai-akcelerator]
-stitky: [řízení změny, ADKAR, AI akcelerátor, kultura školy, komunikace, lídr změny]
+stitky: [riadenie zmeny, ADKAR, AI akcelerátor, kultúra školy, komunikácia, líder zmeny]
 rezimy:
-  - Rámec změny z dat
-  - Mapa aktérů
-  - Plán změny podle ADKAR
-  - Strategický rádce
+  - Rámec zmeny z dát
+  - Mapa aktérov
+  - Plán zmeny podľa ADKAR
+  - Strategický radca
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/strategicky-radce-pro-rizeni-zmeny/
     typ: asistent
@@ -43,19 +43,19 @@ stahnout:
   claude: https://drive.google.com/uc?export=download&id=1GjmZGSs65wZL2G1SBGRgr4DSIPUZfvO6
   gemini: https://drive.google.com/uc?export=download&id=1b1pkfZyMCbeOP494EyVpKE64gQhAoutq
   chatgpt: https://drive.google.com/uc?export=download&id=1SMkaM-q11HzO6Qe_u703gLjO9FI6PfFJ
-autori: [AI dětem, tým AI akcelerátoru]   # doplnit jména autorů asistentů
+autori: [AI dětem, tím AI akcelerátora]   # doplnit jména autorů asistentů
 metodika:
-  - nazev: Úvod do teorie změny pro školy (AI akcelerátor, AI dětem; garant Luboš Malý)
+  - nazev: Úvod do teórie zmeny pre školy (AI akcelerátor, AI dětem; garant Luboš Malý; v češtine)
     url: https://aidetem.cz/ai-akcelerator-teorie-zmeny-pro-skoly/
-  - nazev: Rámec změny (AI akcelerátor)
+  - nazev: Rámec zmeny (AI akcelerátor; v češtine)
     url: https://aidetem.cz/ai-akcelerator-ramec-zmeny/
-  - nazev: Mapa aktérů změny (AI akcelerátor)
+  - nazev: Mapa aktérov zmeny (AI akcelerátor; v češtine)
     url: https://aidetem.cz/ai-akcelerator-mapa-akteru-zmeny/
-  - nazev: Plán změny (AI akcelerátor)
+  - nazev: Plán zmeny (AI akcelerátor; v češtine)
     url: https://aidetem.cz/ai-akcelerator-plan-zmeny/
   - nazev: Model ADKAR (Prosci)
     url: https://www.prosci.com/methodology/adkar
 znalosti: []
-vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+vek: dospelí (zručnosti sú v Gemini a Claude 18+)
 stav: koncept
 aktualizovano: 2026-11-21

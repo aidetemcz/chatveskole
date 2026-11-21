@@ -1,14 +1,14 @@
-title: Aktivity s chatbotem
+title: Aktivity s chatbotom
 slug: aktivity-s-chatbotem
-kratky_popis: Navrhne aktivitu, ve které žáci mluví s chatbotem – bezpečný prompt pro žáky a krátký návod pro vyučující podle cíle hodiny.
-popis: "Pomůže vám navrhnout aktivitu, ve které se žáci s chatbotem opravdu něco naučí. Nejdřív s vámi ujasní cíl hodiny a podle něj vybere vzorec, třeba kvíz, hádání pojmu, rozhovor s osobností nebo textovou hru. Dostanete hotový prompt pro žáky s bezpečnostními pravidly, krátké zadání pro žáky a návod pro vyučující. Poradí i podle věku žáků: když nesplňují věkovou hranici nástroje, navrhne vedení aktivity na projektoru nebo aplikaci Tiny."
+kratky_popis: Navrhne aktivitu, v ktorej sa žiaci rozprávajú s chatbotom – bezpečný prompt pre žiakov a krátky návod pre vyučujúcich podľa cieľa hodiny.
+popis: "Pomôže vám navrhnúť aktivitu, v ktorej sa žiaci s chatbotom naozaj niečo naučia. Najprv s vami ujasní cieľ hodiny a podľa neho vyberie vzorec, napríklad kvíz, hádanie pojmu, rozhovor s osobnosťou alebo textovú hru. Dostanete hotový prompt pre žiakov s bezpečnostnými pravidlami, krátke zadanie pre žiakov a návod pre vyučujúcich. Poradí aj podľa veku žiakov: keď nespĺňajú vekovú hranicu nástroja, navrhne vedenie aktivity na projektore alebo aplikáciu Tiny."
 pro_koho: [ucitele]
 sady: [priprava-vyuky]
-stitky: [chatbot ve výuce, kvízbot, hraní rolí, textová hra, diskuze, bezpečnost, AI gramotnost, Tiny]
+stitky: [chatbot vo vyučovaní, kvízbot, hranie rolí, textová hra, diskusia, bezpečnosť, AI gramotnosť, Tiny]
 rezimy:
   - Nová aktivita
   - Úprava hotového promptu
-  - Zadání pro Tiny
+  - Zadanie pre Tiny
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/quiz_bot/
     typ: prompt
@@ -39,10 +39,10 @@ puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/piskvorky/
     typ: prompt
 puvodni_asistenti:
-  gpt:                         # Hádej chemický prvek a Kariérní poradce jsou od 8. 11. 2026 samostatné skills
+  gpt:                         # Hádaj chemický prvok a Kariérny poradca sú od 8. 11. 2026 samostatné zručnosti
     - https://chatgpt.com/g/g-67c5b020537c8191a0b9e15a1374bfde-poznej-svet-zemepisny-kviz/
-  dalsi:                       # sloučený asistent pro Tiny (na webu nebyl), nahrazen průvodcem v Tiny
-    - nazev: Asistent pro tvorbu zadání (Tiny)
+  dalsi:                       # zlúčený asistent pre Tiny (na webe nebol), nahradený sprievodcom v Tiny
+    - nazev: Asistent pre tvorbu zadaní (Tiny)
       systemovy_prompt:
         - https://docs.google.com/document/d/1AB9q7ftffIHAsedUor47I5sLC1-hd-nnvLWgrBsGntY/edit
         - https://docs.google.com/document/d/1-125LsGfhQ4Aq2MpXCQvGJ4YXI6pHuPh-RFdWxYV7ds/edit
@@ -55,12 +55,12 @@ stahnout:
   chatgpt: https://drive.google.com/uc?export=download&id=16_Pvz1QA5vJ59FZf466MBuVNShnxlO6K
 autori: [Eva Nečasová (AI dětem), AI reaktor UJEP (Míša Liegertová), Jan Jílek (Poznej svět)]
 metodika:
-  - nazev: Kurikulum umělé inteligence – Matematika pro život (AI dětem)
+  - nazev: Kurikulum umělé inteligence – Matematika pro život (AI dětem; v češtine)
     url: https://kurikulum.aidetem.cz/metodicke-materialy/matematika-pro-zivot/
-  - nazev: Aplikace Tiny (AI dětem)
+  - nazev: Aplikácia Tiny (AI dětem)
     url: https://tiny.school
-  - nazev: Linka bezpečí
-    url: https://www.linkabezpeci.cz/
-vek: dospělí (dovednosti jsou v Gemini a Claude 18+); prompty z výstupu jsou pro žáky podle věkových hranic nástroje
+  - nazev: Linka detskej istoty
+    url: https://www.ldi.sk/
+vek: dospelí (zručnosti sú v Gemini a Claude od 18 rokov); prompty z výstupu sú pre žiakov podľa vekových hraníc nástroja
 stav: koncept
 aktualizovano: 2026-11-21

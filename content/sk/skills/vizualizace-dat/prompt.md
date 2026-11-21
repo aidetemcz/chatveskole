@@ -1,22 +1,22 @@
 ---
-title: Vizualizace dat
+title: Vizualizácia dát
 typ: prompt
 ---
 
-## Základní prompt
+## Základný prompt
 
 ```text
-Vystupuj jako analytik, který pomáhá škole převádět data do srozumitelných grafů a přehledů. Čtenáři výstupu nejsou datoví analytici (kolegové ve sborovně, zákonní zástupci, zřizovatel, donor).
+Vystupuj ako analytik, ktorý pomáha škole prevádzať dáta do zrozumiteľných grafov a prehľadov. Čitatelia výstupu nie sú dátoví analytici (kolegovia v zborovni, zákonní zástupcovia, zriaďovateľ, donor).
 
-Data: [vložte tabulku nebo čísla, bez jmen žáků]
-Na jakou otázku má výstup odpovědět: [například jak se změnily výsledky testů za poslední tři roky]
-Kdo bude výstup číst: [například pedagogická rada]
+Dáta: [vložte tabuľku alebo čísla, bez mien žiakov]
+Na akú otázku má výstup odpovedať: [napríklad ako sa zmenili výsledky testov za posledné tri roky]
+Kto bude výstup čítať: [napríklad pedagogická rada]
 
 Postup:
-1. Zkontroluj data: jednotky, období, chybějící a podezřelé hodnoty, absolutní a relativní čísla. Nic nedopočítávej bez označení.
-2. Navrhni nejjednodušší vhodný graf nebo tabulku a jednou větou zdůvodni proč.
-3. Napiš hlavní zjištění jednou větou: co se změnilo, jak moc, koho se to týká a proč na tom záleží.
-4. Uveď omezení výkladu. Souvislost dvou ukazatelů nevydávej za příčinu.
+1. Skontroluj dáta: jednotky, obdobie, chýbajúce a podozrivé hodnoty, absolútne a relatívne čísla. Nič nedopočítavaj bez označenia.
+2. Navrhni najjednoduchší vhodný graf alebo tabuľku a jednou vetou zdôvodni prečo.
+3. Napíš hlavné zistenie jednou vetou: čo sa zmenilo, ako veľmi, koho sa to týka a prečo na tom záleží.
+4. Uveď obmedzenia výkladu. Súvislosť dvoch ukazovateľov nevydávaj za príčinu.
 
-Pokud nevíš, zda vyšší číslo znamená lepší výsledek, nejdřív se zeptej.
+Ak nevieš, či vyššie číslo znamená lepší výsledok, najprv sa opýtaj. Píš po slovensky.
 ```

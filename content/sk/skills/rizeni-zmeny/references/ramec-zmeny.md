@@ -1,52 +1,52 @@
-# **Rámec změny**
+# **Rámec zmeny**
 
-Rámec změny odpovídá na otázku **co měníme a proč**. Je to základní mapa projektu: stanoví cíl změny, okruh lidí, kterých se týká, a širší smysl pro školu. Slouží jako společný bod pro vedení, lídra změny i sbor. Nemá pevnou formu ani nemusí být digitální, ale má být dostupný celému týmu.
+Rámec zmeny odpovedá na otázku **čo meníme a prečo**. Je to základná mapa projektu: stanovuje cieľ zmeny, okruh ľudí, ktorých sa týka, a širší zmysel pre školu. Slúži ako spoločný bod pre vedenie, lídra zmeny aj pedagogický zbor. Nemá pevnú formu ani nemusí byť digitálny, ale má byť dostupný celému tímu.
 
-## **Části rámce (metodika AI akcelerátoru)**
+## **Časti rámca (metodika AI akcelerátora)**
 
-1. **Název projektu a čas průběhu** – jak se změna jmenuje (s aktivním slovesem, například „Učíme (se) digitálně“) a jak dlouho potrvá. Počítej s delším časem, než se zdá nutné.
+1. **Názov projektu a čas trvania** – ako sa zmena volá (s aktívnym slovesom, napríklad „Učíme (sa) digitálne“) a ako dlho potrvá. Počítaj s dlhším časom, než sa zdá nutné.
 
-2. **Projektový tým** – kdo za změnou stojí a kdo má jakou roli. Začni malým týmem (zhruba 2–3 učitelé z různých předmětů), vedením a lídrem změny.
+2. **Projektový tím** – kto stojí za zmenou a kto má akú rolu. Začni malým tímom (zhruba 2–3 vyučujúci z rôznych predmetov), vedením a lídrom zmeny.
 
-3. **Hlavní cíle** – kam chceme dojít. Málo konkrétních a měřitelných cílů; jeden dobře splněný cíl má větší hodnotu než několik napůl splněných.
+3. **Hlavné ciele** – kam chceme dôjsť. Málo konkrétnych a merateľných cieľov; jeden dobre splnený cieľ má väčšiu hodnotu než niekoľko napoly splnených.
 
-4. **Popis současné situace** – co se ve škole daří a co ne. Upřímně; je to výchozí bod.
+4. **Opis súčasnej situácie** – čo sa v škole darí a čo nie. Úprimne; je to východiskový bod.
 
-5. **Ukazatele úspěchu** – podle čeho poznáme, že se to povedlo. Konkrétní a pozorovatelný popis ideálního stavu.
+5. **Ukazovatele úspechu** – podľa čoho spoznáme, že sa to podarilo. Konkrétny a pozorovateľný opis ideálneho stavu.
 
-6. **Hlavní překážky** – co může změnu zpomalit, a u každé, jak ji řešit.
+6. **Hlavné prekážky** – čo môže zmenu spomaliť, a pri každej, ako ju riešiť.
 
-7. **Hlavní aktivity** – co, kdy a kdo odpovídá. Zatím obecně; detaily patří do plánu změny.
+7. **Hlavné aktivity** – čo, kedy a kto zodpovedá. Zatiaľ všeobecne; detaily patria do plánu zmeny.
 
-8. **Zdroje** – čas, finance, nástroje, sdílené materiály, psychologické bezpečí v týmu. Čas bývá nejvzácnější: pomáhají pravidelné termíny v kalendáři.
+8. **Zdroje** – čas, financie, nástroje, zdieľané materiály, psychologické bezpečie v tíme. Čas býva najvzácnejší: pomáhajú pravidelné termíny v kalendári.
 
-Otázky, kterými se rámec skládá: Jaký je projekt a jeho cíle? Jak vypadá současná situace a ideální stav? Jaké překážky stojí v cestě? Jaké aktivity je potřeba udělat, kdo je povede a do kdy? Jaké zdroje budou potřeba?
+Otázky, ktorými sa rámec skladá: Aký je projekt a jeho ciele? Ako vyzerá súčasná situácia a ideálny stav? Aké prekážky stoja v ceste? Aké aktivity treba urobiť, kto ich povedie a dokedy? Aké zdroje budú potrebné?
 
-Příklady z metodiky:
-- Ukazatel úspěchu: místo „učitelé budou motivovanější“ raději „alespoň tři učitelé pravidelně sdílejí zkušenosti s formativním přístupem na pedagogických radách“.
-- Překážka a řešení: strach z hodnocení → bezpečný prostor pro sdílení; nedostatek času → zkrátit jednu povinnou schůzku a nahradit ji sdílením praxe.
+Príklady z metodiky:
+- Ukazovateľ úspechu: namiesto „vyučujúci budú motivovanejší“ radšej „aspoň traja vyučujúci pravidelne zdieľajú skúsenosti s formatívnym prístupom na pedagogických radách“.
+- Prekážka a riešenie: strach z hodnotenia → bezpečný priestor na zdieľanie; nedostatok času → skrátiť jedno povinné stretnutie a nahradiť ho zdieľaním praxe.
 
-Modelový dokument: https://docs.google.com/document/d/1C-L4BZeE1roHg3bufExui5RnaP_g3Vn1qiMK3ffAtYU/edit?usp=sharing
+Modelový dokument (v češtine): https://docs.google.com/document/d/1C-L4BZeE1roHg3bufExui5RnaP_g3Vn1qiMK3ffAtYU/edit?usp=sharing
 
-## **Rámec změny z dat dotazníku (režim 1) – povinná struktura**
+## **Rámec zmeny z dát dotazníka (režim 1) – povinná štruktúra**
 
-Dotazníky se obvykle týkají kultury a komunikace ve škole: pocit bezpečí, respekt, naslouchání, vztahy, podpora, komunikace školy s rodiči, komunikace vedení s pedagogy. Předem nevíš, která oblast bude problematická – vycházíš jen z dat.
+Dotazníky sa zvyčajne týkajú kultúry a komunikácie v škole: pocit bezpečia, rešpekt, načúvanie, vzťahy, podpora, komunikácia školy so zákonnými zástupcami, komunikácia vedenia s pedagógmi. Vopred nevieš, ktorá oblasť bude problematická – vychádzaš len z dát.
 
-Vyplň vždy tyto části, v tomto pořadí:
+Vyplň vždy tieto časti, v tomto poradí:
 
-1. **Popis současné situace** – stručně a věcně, co vyplývá z dat. Formulace typu „Z dat vyplývá…“, „Výrazný rozdíl je patrný mezi…“. Žádné návrhy řešení, jen popis.
+1. **Opis súčasnej situácie** – stručne a vecne, čo vyplýva z dát. Formulácie typu „Z dát vyplýva…“, „Výrazný rozdiel je badateľný medzi…“. Žiadne návrhy riešení, len opis.
 
-2. **Hlavní cíle projektu (nejvýš 3)** – konkrétní, navázané přímo na zjištěné problémy, měřitelné a časově ohraničené. Ne „zlepšit atmosféru“, ale „zvýšit pocit…“, „zavést mechanismus…“.
+2. **Hlavné ciele projektu (najviac 3)** – konkrétne, naviazané priamo na zistené problémy, merateľné a časovo ohraničené. Nie „zlepšiť atmosféru“, ale „zvýšiť pocit…“, „zaviesť mechanizmus…“.
 
-3. **Ukazatele úspěchu** – ke každému cíli měřitelný ukazatel (procenta, rozdíly, nárůst nebo pokles): výchozí stav → cílový stav.
+3. **Ukazovatele úspechu** – ku každému cieľu merateľný ukazovateľ (percentá, rozdiely, nárast alebo pokles): východiskový stav → cieľový stav.
 
-4. **Hlavní překážky (nejvýš 3)** – systémové bariéry (čas, kultura, důvěra, kapacity), ne jednotlivci.
+4. **Hlavné prekážky (najviac 3)** – systémové bariéry (čas, kultúra, dôvera, kapacity), nie jednotlivci.
 
-5. **Zdroje nutné k dosažení úspěchu** – finanční (workshopy, metodická podpora), časové (rozvrh, třídnické hodiny), personální kapacity, nástroje pro sběr a vyhodnocení dat.
+5. **Zdroje nutné na dosiahnutie úspechu** – finančné (workshopy, metodická podpora), časové (rozvrh, triednické hodiny), personálne kapacity, nástroje na zber a vyhodnotenie dát.
 
-Pak se zeptej, zda uživatel chce navrhnout konkrétní metody pro dílčí problémy z dat. Opírej se o principy:
-- **respektující komunikace** – vzájemná úcta, naslouchání, jasná pravidla,
-- **participativní přístup** – zapojení žáků i učitelů do rozhodování,
-- **spolupráce pedagogů napříč školou** – sdílení praxe, společné učení.
+Potom sa opýtaj, či používateľ chce navrhnúť konkrétne metódy pre čiastkové problémy z dát. Opieraj sa o princípy:
+- **rešpektujúca komunikácia** – vzájomná úcta, načúvanie, jasné pravidlá,
+- **participatívny prístup** – zapojenie žiakov aj vyučujúcich do rozhodovania,
+- **spolupráca pedagógov naprieč školou** – zdieľanie praxe, spoločné učenie.
 
-Když jsou data nejednoznačná, výslovně to pojmenuj. Hlavní a vedlejší části rámce (tým, název, aktivity) doplň, pokud je uživatel dodá, nebo je nabídni jako další krok.
+Keď sú dáta nejednoznačné, výslovne to pomenuj. Hlavné a vedľajšie časti rámca (tím, názov, aktivity) doplň, ak ich používateľ dodá, alebo ich ponúkni ako ďalší krok.

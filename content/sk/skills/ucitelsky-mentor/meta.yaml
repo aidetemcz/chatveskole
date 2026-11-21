@@ -1,16 +1,16 @@
-title: Učitelský mentor
+title: Mentor pre pedagógov
 slug: ucitelsky-mentor
-kratky_popis: Laskavý mentor pro náročné situace ve třídě — pomůže situaci pochopit, najít praktické kroky a promyslet vlastní přístup.
-popis: "Pomůže vám v náročných sociálně-emočních situacích se žáky, s třídou, se zákonnými zástupci i se sebou samými. Laskavý a zkušený mentor s vámi situaci pochopí, najde realistické kroky a pomůže přemýšlet o vlastní praxi; vede k reflexi a empatii a stojí na respektující výchově. Když jde o krizi, která patří odborníkům, upozorní vás na to. Je určený pedagogům všech aprobací, třídním vyučujícím, vedení i výchovným poradcům."
+kratky_popis: Láskavý mentor pre náročné situácie v triede — pomôže situáciu pochopiť, nájsť praktické kroky a premyslieť vlastný prístup.
+popis: "Pomôže vám v náročných sociálno-emočných situáciách so žiakmi, s triedou, so zákonnými zástupcami aj so sebou samými. Láskavý a skúsený mentor s vami situáciu pochopí, nájde realistické kroky a pomôže premýšľať o vlastnej praxi; vedie k reflexii a empatii a stojí na rešpektujúcej výchove. Keď ide o krízu, ktorá patrí odborníkom, upozorní vás na to. Je určený pedagógom všetkých aprobácií, triednym vyučujúcim, vedeniu aj výchovným poradcom."
 pro_koho: [ucitele, vedeni]
 sady: [komunikace-a-podpora-ucitele]
-stitky: [mentoring, třídní klima, náročné chování, sociálně-emoční učení, reflexe, zvládání stresu]
+stitky: [mentoring, triedna klíma, náročné správanie, sociálno-emočné učenie, reflexia, zvládanie stresu]
 rezimy:
   - Mentorský rozhovor
-  - Třídní klima
-  - Slepé skvrny
-  - Trénink uvažování
-  - Analogie a mentální modely
+  - Triedna klíma
+  - Slepé miesta
+  - Tréning uvažovania
+  - Analógie a mentálne modely
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/ucitelsky-mentor/
     typ: asistent
@@ -35,10 +35,10 @@ stahnout:
   chatgpt: https://drive.google.com/uc?export=download&id=1DpRwy5mZHIzl_LBGcNqm1h7xoMrT3wkJ
 autori: [AI dětem, AI reaktor UJEP (Míša Liegertová)]   # ověřit: prompty z roku 2024 nejspíš z původní databáze AI reaktoru UJEP; doplnit jména
 metodika:            # příručky, ze kterých čerpal Poradce pro lepší třídní klima; doplnit autory a veřejné URL
-  - nazev: Metodická příručka respektující komunikace
-  - nazev: Metodická příručka Participativní přístup
-  - nazev: Metodická příručka pro podporu spolupráce pedagogů napříč školou
-  - nazev: Práce s problémovým chováním
-vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+  - nazev: Metodická příručka respektující komunikace (v češtine)
+  - nazev: Metodická příručka Participativní přístup (v češtine)
+  - nazev: Metodická příručka pro podporu spolupráce pedagogů napříč školou (v češtine)
+  - nazev: Práce s problémovým chováním (v češtine)
+vek: dospelí (zručnosti sú v Gemini a Claude 18+)
 stav: koncept
 aktualizovano: 2026-11-21

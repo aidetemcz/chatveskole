@@ -3,70 +3,71 @@ title: Úprava materiálu
 typ: prompt
 ---
 
-## Základní prompt
+## Základný prompt
 
 ```text
-Vystupuj jako zkušený vzdělávací designér. Pomoz mi upravit výukový materiál, který ti vložím.
+Vystupuj ako skúsený vzdelávací dizajnér. Pomôž mi upraviť vyučovací materiál, ktorý ti vložím.
 
-Co chci udělat: [například zjednodušit / prohloubit / rozšířit o nové úlohy / převést na kvíz, prezentaci nebo infografiku / zkrátit na 300 slov a vypsat hlavní myšlenky]
-Pro koho: [například 5. třída ZŠ, přírodopis – fotosyntéza]
-Cíl úpravy: [například aby text zvládli i slabší čtenáři]
-Rozsah výstupu: [například 1 strana A4, 10 úloh, 20 minut ve výuce]
-Co musí zůstat: [například všechny odborné pojmy a schéma]
-Materiál: [vložte text nebo soubor]
+Čo chcem urobiť: [napríklad zjednodušiť / prehĺbiť / rozšíriť o nové úlohy / previesť na kvíz, prezentáciu alebo infografiku / skrátiť na 300 slov a vypísať hlavné myšlienky]
+Pre koho: [napríklad 5. ročník ZŠ, prírodoveda – fotosyntéza]
+Cieľ úpravy: [napríklad aby text zvládli aj slabší čitatelia]
+Rozsah výstupu: [napríklad 1 strana A4, 10 úloh, 20 minút vo vyučovaní]
+Čo musí zostať: [napríklad všetky odborné pojmy a schéma]
+Materiál: [vložte text alebo súbor]
 
-Pravidla:
-1. Když materiál nebo důležitý údaj chybí, nejdřív se zeptej.
-2. Zachovej strukturu, formátování a věcnou správnost. Zjednodušit neznamená zkreslit. Cíl materiálu zůstává, mění se cesta k němu.
-3. Každou novou nebo podstatně změněnou část vyznač tučně. Větší nové bloky uveď štítkem „Upraveno:“ nebo „Nově přidáno:“. Odstraněné části do materiálu nepiš, uveď je v tabulce změn.
-4. Při zjednodušení přidej oporu (nápovědu, slovníček, vzorový příklad, rozdělení úlohy na kroky). Při prohloubení přidej otázky na analýzu a použití znalostí (porovnej, najdi chybu, vyřeš nový problém) nebo badatelskou výzvu.
-5. Výstup: a) celý upravený materiál připravený k použití, b) tabulka změn – co se změnilo a proč, c) 2–4 krátké poznámky pro vyučující, jak materiál použít a jak ho dál diferencovat pro rychlejší a pomalejší žáky.
-6. Na zjevné věcné chyby v původním materiálu upozorni a navrhni opravu.
-7. Na konci nabídni čistou verzi bez vyznačení změn k tisku.
+Pravidlá:
+1. Keď materiál alebo dôležitý údaj chýba, najprv sa opýtaj.
+2. Zachovaj štruktúru, formátovanie a vecnú správnosť. Zjednodušiť neznamená skresliť. Cieľ materiálu zostáva, mení sa cesta k nemu.
+3. Každú novú alebo podstatne zmenenú časť vyznač tučne. Väčšie nové bloky uveď štítkom „Upravené:“ alebo „Novo pridané:“. Odstránené časti do materiálu nepíš, uveď ich v tabuľke zmien.
+4. Pri zjednodušení pridaj oporu (nápovedu, slovníček, vzorový príklad, rozdelenie úlohy na kroky). Pri prehĺbení pridaj otázky na analýzu a použitie vedomostí (porovnaj, nájdi chybu, vyrieš nový problém) alebo bádateľskú výzvu.
+5. Výstup: a) celý upravený materiál pripravený na použitie, b) tabuľka zmien – čo sa zmenilo a prečo, c) 2–4 krátke poznámky pre vyučujúcich, ako materiál použiť a ako ho ďalej diferencovať pre rýchlejších a pomalších žiakov.
+6. Na zjavné vecné chyby v pôvodnom materiáli upozorni a navrhni opravu.
+7. Na konci ponúkni čistú verziu bez vyznačenia zmien na tlač.
+Píš po slovensky.
 ```
 
-## Varianta: Úprava pro žáky se speciálními vzdělávacími potřebami
+## Varianta: Úprava pre žiakov so špeciálnymi výchovno-vzdelávacími potrebami
 
 ```text
-Vystupuj jako zkušený speciální pedagog. Uprav výukový materiál níže pro žáky s odlišnými potřebami (se SVP, nadané nebo s odlišným mateřským jazykem). Cíl a věcná správnost zůstávají, mění se cesta k cíli.
+Vystupuj ako skúsený špeciálny pedagóg. Uprav vyučovací materiál nižšie pre žiakov s odlišnými potrebami (so špeciálnymi výchovno-vzdelávacími potrebami, nadaných alebo s odlišným materinským jazykom). Cieľ a vecná správnosť zostávajú, mení sa cesta k cieľu.
 
-Ročník a předmět: [například 6. třída ZŠ, zeměpis]
-Cíl hodiny: [například žák určí na mapě hlavní evropská pohoří]
-Profily žáků – bez jmen, jen to, co je pro úpravu potřeba:
-[Žák A – dyslexie: obtíže s delším textem a psanými pokyny; pomáhá čtení nahlas, kratší úseky, víc času, odpovídat ústně nebo na počítači.]
-[Žák B – ADHD: hůř udrží pozornost; pomáhají krátké kroky, pohyb, práce ve dvojici, častá zpětná vazba.]
-[Žák C – porucha autistického spektra: potřebuje jasnou strukturu, předem známý postup, konkrétní pokyny a vizuální oporu.]
-[Žák D – nadaný: potřebuje prohloubení a vlastní cestu, ne víc stejných úloh.]
-Doporučení poradenského zařízení (nepovinné): [například zkrácený rozsah písemných úkolů]
-Materiál: [vložte text nebo popis aktivity]
+Ročník a predmet: [napríklad 6. ročník ZŠ, geografia]
+Cieľ hodiny: [napríklad žiak určí na mape hlavné európske pohoria]
+Profily žiakov – bez mien, len to, čo je na úpravu potrebné:
+[Žiak A – dyslexia: ťažkosti s dlhším textom a písanými pokynmi; pomáha čítanie nahlas, kratšie úseky, viac času, odpovedať ústne alebo na počítači.]
+[Žiak B – ADHD: horšie udrží pozornosť; pomáhajú krátke kroky, pohyb, práca vo dvojici, častá spätná väzba.]
+[Žiak C – porucha autistického spektra: potrebuje jasnú štruktúru, vopred známy postup, konkrétne pokyny a vizuálnu oporu.]
+[Žiak D – nadaný: potrebuje prehĺbenie a vlastnú cestu, nie viac rovnakých úloh.]
+Odporúčania poradenského zariadenia (nepovinné): [napríklad skrátený rozsah písomných úloh]
+Materiál: [vložte text alebo opis aktivity]
 
-Pro každého žáka vytvoř krátkou upravenou verzi materiálu nebo aktivity. Změny vyznač tučně. Pod každou verzí uveď v tabulce, co se upravilo a proč. Vycházej z potřeb konkrétního žáka, ne z obecné nálepky. Verze pojmenuj neutrálně (verze A, B, C; „s oporou“, „rozšiřující“), ne „pro slabé“. Když ti údaje nestačí, zeptej se. Nediagnostikuj a neurčuj stupeň podpůrných opatření – vycházej jen z popsaných potřeb.
+Pre každého žiaka vytvor krátku upravenú verziu materiálu alebo aktivity. Zmeny vyznač tučne. Pod každou verziou uveď v tabuľke, čo sa upravilo a prečo. Vychádzaj z potrieb konkrétneho žiaka, nie zo všeobecnej nálepky. Verzie pomenuj neutrálne (verzia A, B, C; „s oporou“, „rozširujúca“), nie „pre slabých“. Keď ti údaje nestačia, opýtaj sa. Nediagnostikuj a neurčuj podporné opatrenia – vychádzaj len z opísaných potrieb.
 ```
 
-## Varianta: Aktualizace tematického plánu
+## Varianta: Aktualizácia tematického plánu
 
 ```text
-Vystupuj jako zkušený pedagogický konzultant pro tvorbu tematických plánů. Aktualizuj můj tematický plán.
+Vystupuj ako skúsený pedagogický konzultant pre tvorbu tematických plánov. Aktualizuj môj tematický plán.
 
-Předmět a ročník: [například matematika, 7. třída ZŠ]
-Co se má změnit: [například zapracovat revidované RVP ZV a digitální kompetenci / přidat projektový týden / zkrátit o 4 hodiny]
-Důraz na metody a formy práce: [například badatelské úlohy, formativní hodnocení]
-Další požadavky: [například mezipředmětové vazby s fyzikou, inkluze]
-Plán: [vložte tabulku nebo text]
+Predmet a ročník: [napríklad matematika, 7. ročník ZŠ]
+Čo sa má zmeniť: [napríklad zapracovať zmeny v ŠVP a digitálne kompetencie / pridať projektový týždeň / skrátiť o 4 hodiny]
+Dôraz na metódy a formy práce: [napríklad bádateľské úlohy, formatívne hodnotenie]
+Ďalšie požiadavky: [napríklad medzipredmetové vzťahy s fyzikou, inklúzia]
+Plán: [vložte tabuľku alebo text]
 
-Zachovej strukturu plánu (témata, časová dotace, očekávané výstupy, metody, hodnocení). Nové a změněné položky vyznač tučně a přidej sloupec „Změna“. Upozorni, když nesedí součet hodin. Konkrétní znění očekávaných výstupů z RVP si nevymýšlej – když si nejsi jistý formulací, napiš to a doporuč ověření v aktuálním RVP. Na konci shrň hlavní úpravy ve 3–5 odrážkách.
+Zachovaj štruktúru plánu (témy, časová dotácia, výkonové štandardy, metódy, hodnotenie). Nové a zmenené položky vyznač tučne a pridaj stĺpec „Zmena“. Upozorni, keď nesedí súčet hodín. Konkrétne znenie výkonových štandardov zo ŠVP si nevymýšľaj – keď si nie si istý formuláciou, napíš to a odporuč overenie v aktuálnom ŠVP. Na konci zhrň hlavné úpravy v 3–5 odrážkach.
 ```
 
-## Varianta: Dvě verze jednoho textu
+## Varianta: Dve verzie jedného textu
 
 ```text
-Vystupuj jako vyučující [němčiny] v [9. třídě ZŠ]. Připrav dvě verze textu na téma [Ferien], každou o délce asi [150] slov.
+Vystupuj ako vyučujúci [nemčiny] v [9. ročníku ZŠ]. Priprav dve verzie textu na tému [Ferien], každú s dĺžkou asi [150] slov.
 
-Verze A: [například rozhovor v přítomném čase, úroveň A1]
-Verze B: [například stejný rozhovor v minulém čase (Perfekt), úroveň A2]
-Vlastní text k úpravě (nepovinné – jinak napiš nový): [vložte text]
+Verzia A: [napríklad rozhovor v prítomnom čase, úroveň A1]
+Verzia B: [napríklad rovnaký rozhovor v minulom čase (Perfekt), úroveň A2]
+Vlastný text na úpravu (nepovinné – inak napíš nový): [vložte text]
 
-Obě verze mají stejné postavy i děj, aby s nimi mohla pracovat celá třída najednou. Používej co nejjednodušší slovní zásobu pro danou úroveň. Pod texty dej tabulku, čím se verze liší (gramatika, slovní zásoba, délka vět), a 3 otázky k porozumění společné pro obě verze. U cizího jazyka uveď úroveň podle SERR.
+Obe verzie majú rovnaké postavy aj dej, aby s nimi mohla pracovať celá trieda naraz. Používaj čo najjednoduchšiu slovnú zásobu pre danú úroveň. Pod texty daj tabuľku, čím sa verzie líšia (gramatika, slovná zásoba, dĺžka viet), a 3 otázky na porozumenie spoločné pre obe verzie. Pri cudzom jazyku uveď úroveň podľa SERR.
 ```
 
-**Tip:** Na zkrácení a shrnutí stačí základní prompt – do řádku „Co chci udělat“ napište třeba „zkrátit na 300 slov, vypsat 10 hlavních myšlenek a navrhnout věcný a poutavý titulek“. Když z materiálu potřebujete nový pracovní list, použijte prompt Pracovní listy.
+**Tip:** Na skrátenie a zhrnutie stačí základný prompt – do riadka „Čo chcem urobiť“ napíšte napríklad „skrátiť na 300 slov, vypísať 10 hlavných myšlienok a navrhnúť vecný a pútavý titulok“. Keď z materiálu potrebujete nový pracovný list, použite prompt Pracovné listy.

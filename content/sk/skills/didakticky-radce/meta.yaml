@@ -1,19 +1,19 @@
-title: Didaktický rádce
+title: Didaktický radca
 slug: didakticky-radce
-kratky_popis: Nápady na oživení hodiny, plán hodiny podle E-U-R, plán celku, úniková hra, projekt a otázky k závěrečné diskuzi.
-popis: "Pomůže vám naplánovat hodinu nebo tematický celek, ve kterém žáci aktivně pracují. Funguje jako zkušený kolega: zeptá se, co a koho chcete učit, a v rozhovoru s vámi dojde k hodině, kterou můžete jít odučit. Stojí na třífázovém modelu E-U-R (evokace, uvědomění, reflexe), na Katalogu aktivizačních výukových metod a na formativním hodnocení; cíle formuluje podle Nové taxonomie vzdělávacích cílů (Marzano a Kendall). Váš dosavadní způsob výuky neshazuje, navrhuje drobné posuny."
+kratky_popis: Nápady na oživenie hodiny, plán hodiny podľa E-U-R, plán celku, úniková hra, projekt a otázky na záverečnú diskusiu.
+popis: "Pomôže vám naplánovať hodinu alebo tematický celok, v ktorom žiaci aktívne pracujú. Funguje ako skúsený kolega: opýta sa, čo a koho chcete učiť, a v rozhovore s vami dospeje k hodine, ktorú môžete ísť odučiť. Stojí na trojfázovom modeli E-U-R (evokácia, uvedomenie, reflexia), na Katalógu aktivizujúcich vyučovacích metód a na formatívnom hodnotení; ciele formuluje podľa Novej taxonómie vzdelávacích cieľov (Marzano a Kendall). Váš doterajší spôsob vyučovania nezhadzuje, navrhuje drobné posuny."
 pro_koho: [ucitele]
 sady: [priprava-vyuky]
-stitky: [plánování výuky, aktivizační metody, E-U-R, Nová taxonomie vzdělávacích cílů, úniková hra, projektová výuka, EduScrum]
+stitky: [plánovanie vyučovania, aktivizujúce metódy, E-U-R, Nová taxonómia vzdelávacích cieľov, úniková hra, projektové vyučovanie, EduScrum]
 rezimy:
-  - Nápady na oživení výuky
+  - Nápady na oživenie vyučovania
   - Plán hodiny
-  - Plán týdne nebo tematického celku
+  - Plán týždňa alebo tematického celku
   - Úniková hra
   - Projekt (EduScrum)
-  - Otázky k závěrečné diskuzi
-  - K čemu mi to je
-  - Didaktická konzultace
+  - Otázky na záverečnú diskusiu
+  - Na čo mi to je
+  - Didaktická konzultácia
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/didakticky-radce/
     typ: asistent
@@ -53,13 +53,13 @@ stahnout:
   chatgpt: https://drive.google.com/uc?export=download&id=1KRAEo0xgTa6wehnHMIILJULM5fbhucjs
 autori: [Eva Nečasová (AI dětem), AI reaktor UJEP (Míša Liegertová)]
 metodika:
-  - nazev: Katalog aktivizačních výukových metod a Příručka aktivizační výuky (AI dětem)
+  - nazev: Katalóg aktivizujúcich vyučovacích metód a Príručka aktivizujúceho vyučovania (AI dětem)
   - nazev: Model E-U-R – Čtením a psaním ke kritickému myšlení (Kritické myšlení, z. s.)
     url: https://kritickemysleni.cz/
-  - nazev: Nová taxonomie vzdělávacích cílů (Marzano a Kendall)
+  - nazev: Nová taxonómia vzdelávacích cieľov (Marzano a Kendall)
   - nazev: EduScrum
     url: https://www.eduscrum.cz/co/
 znalosti: [katalog-aktivizacnich-metod.md, prirucka-aktivizacni-vyuky.md, formulace-vzdelavacich-cilu.md, klicove-kompetence.md, prurezova-temata.md]
-vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+vek: dospelí (zručnosti sú v Gemini a Claude od 18 rokov)
 stav: koncept
 aktualizovano: 2026-11-21

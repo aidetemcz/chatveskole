@@ -1,57 +1,57 @@
 ---
-title: Tvorba školních pravidel
+title: Tvorba školských pravidiel
 typ: prompt
 ---
 
-## Základní prompt
+## Základný prompt
 
 ```text
-Vystupuj jako zkušený školský poradce pro tvorbu školních pravidel. Pomoz mi vytvořit nebo upravit pravidla tak, aby byla:
-– stručná, jednoznačná a pochopitelná všem ve škole,
-– realistická, férová a vymahatelná,
-– v souladu s hodnotami a vizí školy,
-– vytvořená v dialogu se školní komunitou,
-– doplněná o způsob, jak je sledovat a pravidelně aktualizovat.
+Vystupuj ako skúsený školský poradca pre tvorbu školských pravidiel. Pomôž mi vytvoriť alebo upraviť pravidlá tak, aby boli:
+– stručné, jednoznačné a pochopiteľné všetkým v škole,
+– realistické, férové a vymáhateľné,
+– v súlade s hodnotami a víziou školy,
+– vytvorené v dialógu so školskou komunitou,
+– doplnené o spôsob, ako ich sledovať a pravidelne aktualizovať.
 
-Čeho se pravidla týkají: [například používání mobilů o přestávkách]
-Pro koho jsou: [například žáci 2. stupně a vyučující]
-Hodnoty školy, které mají podporovat: [například respekt, bezpečí, odpovědnost]
-Stávající pravidla a zkušenosti s nimi: [vlož text, nebo napiš „zatím nemáme“]
+Čoho sa pravidlá týkajú: [napríklad používanie mobilov cez prestávky]
+Pre koho sú: [napríklad žiaci 2. stupňa a vyučujúci]
+Hodnoty školy, ktoré majú podporovať: [napríklad rešpekt, bezpečie, zodpovednosť]
+Existujúce pravidlá a skúsenosti s nimi: [vlož text, alebo napíš „zatiaľ nemáme“]
 
-Pokud něco chybí, nejdřív se mě zeptej (nejvýš 4 otázky). Pak:
-1. Navrhni formulace pravidel v tabulce: Pravidlo | Proč | Co když se nedodrží.
-2. Upozorni na rizika (příliš represivní, nejasná nebo nevymahatelná pravidla, rozpor se školním řádem).
-3. Poraď, jak pravidla zavést: koho zapojit, jak je představit, jak sledovat dodržování a kdy je vyhodnotit.
-Pravidla formuluj pozitivně (co dělat, ne jen co nedělat); ke každému zákazu nabídni, co dělat místo toho. Důsledky ať jsou přiměřené, předem známé a vedou k nápravě, bez kolektivních trestů. Kde to dává smysl, ať pravidla platí i pro dospělé. Nežádej jména žáků ani popis incidentu, podle kterého by šlo dítě poznat. Buď vstřícný a praktický.
+Ak niečo chýba, najprv sa ma opýtaj (najviac 4 otázky). Potom:
+1. Navrhni formulácie pravidiel v tabuľke: Pravidlo | Prečo | Čo ak sa nedodrží.
+2. Upozorni na riziká (príliš represívne, nejasné alebo nevymáhateľné pravidlá, rozpor so školským poriadkom).
+3. Poraď, ako pravidlá zaviesť: koho zapojiť, ako ich predstaviť, ako sledovať dodržiavanie a kedy ich vyhodnotiť.
+Pravidlá formuluj pozitívne (čo robiť, nielen čo nerobiť); ku každému zákazu ponúkni, čo robiť namiesto toho. Dôsledky nech sú primerané, vopred známe a vedú k náprave, bez kolektívnych trestov. Kde to dáva zmysel, nech pravidlá platia aj pre dospelých. Nežiadaj mená žiakov ani opis incidentu, podľa ktorého by sa dalo dieťa spoznať. Buď ústretový a praktický. Píš po slovensky.
 ```
 
-## Varianta: Pravidla pro využívání AI ve škole
+## Varianta: Pravidlá na využívanie AI v škole
 
 ```text
-Vystupuj jako poradce pro digitalizaci školy. Pomoz mi připravit pravidla pro využívání umělé inteligence na naší škole v duchu doporučení NPI „Jak na AI ve škole“ (2025).
+Vystupuj ako poradca pre digitalizáciu školy. Pomôž mi pripraviť pravidlá na využívanie umelej inteligencie na našej škole.
 
-Škola: [například ZŠ, 1.–9. ročník]
-AI nástroje, které používáme nebo zvažujeme: [například žádné oficiálně / školní účty Microsoft 365]
-Co nás trápí: [například opisování úkolů, nejistota vyučujících]
-Kdo se má do tvorby zapojit: [například vedení, zástupci pedagogů, žákovský parlament, zákonné zástupce]
+Škola: [napríklad ZŠ, 1.–9. ročník]
+AI nástroje, ktoré používame alebo zvažujeme: [napríklad žiadne oficiálne / školské účty Microsoft 365]
+Čo nás trápi: [napríklad odpisovanie úloh, neistota vyučujúcich]
+Kto sa má do tvorby zapojiť: [napríklad vedenie, zástupcovia pedagógov, žiacka školská rada, zákonní zástupcovia]
 
-Vycházej z těchto zásad: s AI počítáme a mluvíme o ní otevřeně místo plošných zákazů; za výstupy odpovídají lidé, ne AI; použití AI se přiznává a informace se ověřují; chráníme soukromí a dodržujeme věková omezení; AI nesmí prohlubovat nerovnosti; posilujeme AI gramotnost; do rozhodování zapojujeme vyučující, žáky i zákonné zástupce.
+Vychádzaj z týchto zásad: s AI počítame a hovoríme o nej otvorene namiesto plošných zákazov; za výstupy zodpovedajú ľudia, nie AI; použitie AI sa priznáva a informácie sa overujú; chránime súkromie a dodržiavame vekové obmedzenia; AI nesmie prehlbovať nerovnosti; posilňujeme AI gramotnosť; do rozhodovania zapájame vyučujúcich, žiakov aj zákonných zástupcov.
 
-Navrhni pravidla v této osnově: 1. Proč pravidla máme. 2. Zásady pro žáky. 3. Zásady pro pedagogy (hodnocení vždy dělá vyučující). 4. Vedení a administrativa. 5. Co se do AI nikdy nevkládá. 6. Jak uvádět použití AI. 7. Povolené nástroje a věkové limity (nech prázdné k doplnění, nevymýšlej je). 8. Postup při porušení. 9. Komunikace se zákonnými zástupci. 10. Jak pravidla vznikla a kdy je revidujeme (aspoň jednou ročně).
-Nabídni i „semafor“ pro zadávání úloh: zelená = AI volně, použití uveď; oranžová = AI jen na určitou část; červená = bez AI.
-Upozorni, pokud by škola chtěla AI k hodnocení žáků, hlídání testů nebo rozpoznávání emocí – jde o vysoce rizikové nebo zakázané použití. Nedávej právní rady; doporuč konzultaci s pověřencem pro ochranu osobních údajů.
+Navrhni pravidlá v tejto osnove: 1. Prečo pravidlá máme. 2. Zásady pre žiakov. 3. Zásady pre pedagógov (hodnotenie vždy robí vyučujúci). 4. Vedenie a administratíva. 5. Čo sa do AI nikdy nevkladá. 6. Ako uvádzať použitie AI. 7. Povolené nástroje a vekové limity (nechaj prázdne na doplnenie, nevymýšľaj ich). 8. Postup pri porušení. 9. Komunikácia so zákonnými zástupcami. 10. Ako pravidlá vznikli a kedy ich revidujeme (aspoň raz ročne).
+Ponúkni aj „semafor“ na zadávanie úloh: zelená = AI voľne, použitie uveď; oranžová = AI len na určitú časť; červená = bez AI.
+Upozorni, ak by škola chcela AI na hodnotenie žiakov, dozor pri testoch alebo rozpoznávanie emócií – ide o vysokorizikové alebo zakázané použitie. Nedávaj právne rady; odporuč konzultáciu so zodpovednou osobou pre ochranu osobných údajov.
 ```
 
-## Varianta: Pravidla pro žáky (desatero)
+## Varianta: Pravidlá pre žiakov (desatoro)
 
 ```text
-Vystupuj jako zkušený pedagog a odborník na téma [například bezpečnost na internetu]. Vytvoř desatero pro žáky [například 2. stupně ZŠ], které jim pomůže [například chovat se bezpečně v online prostoru].
+Vystupuj ako skúsený pedagóg a odborník na tému [napríklad bezpečnosť na internete]. Vytvor desatoro pre žiakov [napríklad 2. stupňa ZŠ], ktoré im pomôže [napríklad správať sa bezpečne v online priestore].
 
-Znáš nejčastější chyby, které žáci v tomto tématu dělají, a pravidla na ně cílí.
-– Nejvýš 10 pravidel, krátké věty v první osobě a kladně („Svoje heslo nikomu neříkám“).
-– Jazyk přiměřený věku, bez strašení a moralizování.
-– Ke každému pravidlu jedna věta „proč“ nebo krátký příklad situace.
-– Na konci navrhni, jak desatero se třídou vytvořit nebo projít (třídnická hodina, hlasování, plakát), aby ho žáci přijali za své.
+Poznáš najčastejšie chyby, ktoré žiaci v tejto téme robia, a pravidlá na ne cielia.
+– Najviac 10 pravidiel, krátke vety v prvej osobe a kladne („Svoje heslo nikomu nehovorím“).
+– Jazyk primeraný veku, bez strašenia a moralizovania.
+– Ku každému pravidlu jedna veta „prečo“ alebo krátky príklad situácie.
+– Na konci navrhni, ako desatoro s triedou vytvoriť alebo prejsť (triednická hodina, hlasovanie, plagát), aby ho žiaci prijali za svoje.
 ```
 
-**Tip:** Návrh pravidel nejdřív projděte se zástupci žáků a vyučujících. U školního řádu nezapomeňte, že ho schvaluje školská rada.
+**Tip:** Návrh pravidiel najprv prejdite so zástupcami žiakov a vyučujúcich. Pri školskom poriadku si overte, kto ho musí prerokovať a schváliť.

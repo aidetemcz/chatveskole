@@ -1,91 +1,91 @@
 ---
-title: Řízení změny ve škole
+title: Riadenie zmeny v škole
 typ: prompt
 ---
 
-## Základní prompt
+## Základný prompt
 
 ```text
-Vystupuj jako zkušený poradce vedení školy pro řízení změny. Změna je hlavně práce s lidmi; technologie je jen prostředek.
+Vystupuj ako skúsený poradca vedenia školy pre riadenie zmeny. Zmena je hlavne práca s ľuďmi; technológia je len prostriedok.
 
-Jakou změnu chystáme: [například zavedení pravidel a výuky práce s AI]
-Proč právě teď: [stručně]
-Škola: [například ZŠ, 500 žáků, 35 pedagogů, zřizovatel obec]
-Kdo změnu povede: [například zástupkyně ředitele jako lídr změny, 4 hodiny měsíčně]
-Co víme o postojích sboru: [například třetina nadšená, část odmítá]
-Termín: [například do konce školního roku]
+Akú zmenu chystáme: [napríklad zavedenie pravidiel a vyučovania práce s AI]
+Prečo práve teraz: [stručne]
+Škola: [napríklad ZŠ, 500 žiakov, 35 pedagógov, zriaďovateľ obec]
+Kto zmenu povedie: [napríklad zástupkyňa riaditeľa ako líderka zmeny, 4 hodiny mesačne]
+Čo vieme o postojoch pedagogického zboru: [napríklad tretina nadšená, časť odmieta]
+Termín: [napríklad do konca školského roka]
 
-Pomoz mi změnu promyslet v pořadí vize → aktéři → kroky:
-1. Zadání: co se má změnit, proč a co součástí není; kdo rozhoduje, kdo koordinuje, kdo komunikuje.
-2. Aktéři: kdo změnu podporuje, kdo váhá, kdo odmítá a jakou podporu kdo potřebuje.
-3. Kroky v pěti fázích: zvýšení povědomí o změně → akceptace změny → důvěra v proces změny → schopnost změnu provést → stvrzení změny. Začni pilotním ověřením v malém a uveď, kdy pilot zastavit nebo změnit.
+Pomôž mi zmenu premyslieť v poradí vízia → aktéri → kroky:
+1. Zadanie: čo sa má zmeniť, prečo a čo jeho súčasťou nie je; kto rozhoduje, kto koordinuje, kto komunikuje.
+2. Aktéri: kto zmenu podporuje, kto váha, kto odmieta a akú podporu kto potrebuje.
+3. Kroky v piatich fázach: zvýšenie povedomia o zmene → akceptácia zmeny → dôvera v proces zmeny → schopnosť zmenu uskutočniť → upevnenie zmeny. Začni pilotným overením v malom a uveď, kedy pilot zastaviť alebo zmeniť.
 
-Odpověz v tomto formátu:
-– Shrnutí situace (5–8 vět)
-– Předpoklady a otázky k doplnění (nejvýš 5; když údaje chybí, nabídni varianty A/B/C)
-– Doporučený postup (kroky v pořadí, u každého kdo, co, kdy)
-– Rizika a jak je zmírnit (tabulka)
-– Ukazatele a jak je měřit (tabulka)
-– Co připravit do příští porady (kontrolní seznam)
+Odpovedz v tomto formáte:
+– Zhrnutie situácie (5–8 viet)
+– Predpoklady a otázky na doplnenie (najviac 5; keď údaje chýbajú, ponúkni varianty A/B/C)
+– Odporúčaný postup (kroky v poradí, pri každom kto, čo, kedy)
+– Riziká a ako ich zmierniť (tabuľka)
+– Ukazovatele a ako ich merať (tabuľka)
+– Čo pripraviť na budúcu poradu (kontrolný zoznam)
 
-Počítej s reálnými limity české školy (rozvrh, suplování, vytížení vyučujících, rozpočet). Nežádej osobní údaje žáků ani jména kolegů. Pokud jde o AI k hodnocení žáků, hlídání testů nebo rozpoznávání emocí, upozorni na vysoké riziko a doporuč posouzení s pověřencem pro ochranu osobních údajů. Piš česky, věcně, bez manažerského žargonu.
+Počítaj s reálnymi limitmi školy (rozvrh, zastupovanie, vyťaženie vyučujúcich, rozpočet). Nežiadaj osobné údaje žiakov ani mená kolegov. Ak ide o AI na hodnotenie žiakov, dozor pri testoch alebo rozpoznávanie emócií, upozorni na vysoké riziko a odporuč posúdenie so zodpovednou osobou pre ochranu osobných údajov. Píš po slovensky, vecne, bez manažérskeho žargónu.
 ```
 
-## Varianta: Rámec změny z dat dotazníku
+## Varianta: Rámec zmeny z dát dotazníka
 
 ```text
-Vystupuj jako průvodce vedení školy při proměně kultury a komunikace ve škole. Opírej se o principy respektující komunikace, participativního přístupu a spolupráce pedagogů. Vycházej výhradně z dat, ne z domněnek.
+Vystupuj ako sprievodca vedenia školy pri premene kultúry a komunikácie v škole. Opieraj sa o princípy rešpektujúcej komunikácie, participatívneho prístupu a spolupráce pedagógov. Vychádzaj výhradne z dát, nie z domnienok.
 
-Téma dotazníku: [například pocit bezpečí a respektu ve škole]
-Respondenti: [například žáci 6.–9. ročníku, vyučující, zákonní zástupci]
-Data: [vlož tabulku nebo přilož soubor; jeden řádek = odpověď jednoho respondenta, bez jmen]
+Téma dotazníka: [napríklad pocit bezpečia a rešpektu v škole]
+Respondenti: [napríklad žiaci 6.–9. ročníka, vyučujúci, zákonní zástupcovia]
+Dáta: [vlož tabuľku alebo prilož súbor; jeden riadok = odpoveď jedného respondenta, bez mien]
 
 Postup:
-1. Data analyzuj a najdi rozdíly mezi skupinami (role, ročníky). Problémové oblasti nech vyplynout z dat, nevybírej je předem. Když jsou data nejednoznačná nebo je neumíš spočítat přesně, řekni to.
-2. Sestav Rámec změny přesně v tomto pořadí:
-1) Popis současné situace – jen co vyplývá z dat („Z dat vyplývá…“), bez návrhů řešení.
-2) Hlavní cíle (nejvýš 3) – konkrétní, měřitelné, s termínem, navázané na zjištěné problémy.
-3) Ukazatele úspěchu – ke každému cíli výchozí stav → cílový stav (procenta, rozdíly).
-4) Hlavní překážky (nejvýš 3) – systémové (čas, důvěra, kapacity, kultura), ne jednotlivci.
-5) Zdroje – finance, čas (rozvrh, třídnické hodiny), lidé, nástroje pro sběr dat.
-Pokud jsou v datech různé skupiny, navrhuj pro ně různá řešení.
-3. Pak se mě zeptej, jestli chci navrhnout konkrétní metody pro jednotlivé problémy.
+1. Dáta analyzuj a nájdi rozdiely medzi skupinami (roly, ročníky). Problémové oblasti nechaj vyplynúť z dát, nevyberaj ich vopred. Keď sú dáta nejednoznačné alebo ich nevieš spočítať presne, povedz to.
+2. Zostav Rámec zmeny presne v tomto poradí:
+1) Opis súčasnej situácie – len to, čo vyplýva z dát („Z dát vyplýva…“), bez návrhov riešení.
+2) Hlavné ciele (najviac 3) – konkrétne, merateľné, s termínom, naviazané na zistené problémy.
+3) Ukazovatele úspechu – ku každému cieľu východiskový stav → cieľový stav (percentá, rozdiely).
+4) Hlavné prekážky (najviac 3) – systémové (čas, dôvera, kapacity, kultúra), nie jednotlivci.
+5) Zdroje – financie, čas (rozvrh, triednické hodiny), ľudia, nástroje na zber dát.
+Ak sú v dátach rôzne skupiny, navrhuj pre ne rôzne riešenia.
+3. Potom sa ma opýtaj, či chcem navrhnúť konkrétne metódy pre jednotlivé problémy.
 
-Piš stručně, lidsky, bez akademického jazyka. Vystupuj jako partner školy, ne jako hodnotitel.
+Píš stručne, ľudsky, bez akademického jazyka. Vystupuj ako partner školy, nie ako hodnotiteľ.
 ```
 
-## Varianta: Mapa aktérů změny
+## Varianta: Mapa aktérov zmeny
 
 ```text
-Pomoz mi sestavit mapu aktérů změny pro naši školu. Mapa není hodnocení lidí, ale pomůcka, jak každému nabídnout vhodnou podporu.
+Pomôž mi zostaviť mapu aktérov zmeny pre našu školu. Mapa nie je hodnotenie ľudí, ale pomôcka, ako každému ponúknuť vhodnú podporu.
 
-Změna: [například zavedení formativního hodnocení na 2. stupni]
-Co vím o lidech: [popiš skupiny nebo jednotlivce pomocí kódů či rolí, například „Ped_01, vyučující matematiky, 25 let praxe, obává se ztráty času“; nepiš jména]
+Zmena: [napríklad zavedenie formatívneho hodnotenia na 2. stupni]
+Čo viem o ľuďoch: [opíš skupiny alebo jednotlivcov pomocou kódov či rolí, napríklad „Ped_01, vyučujúci matematiky, 25 rokov praxe, obáva sa straty času“; nepíš mená]
 
-Vytvoř tabulku se sloupci: Kód | Role | Postoj ke změně (nepodporuje / spíše nepodporuje / neutrální / spíše podporuje / podporuje) | Stav (nevyužívá / nemá dovednosti / využívá občas / má dovednosti a využívá / pravidelně využívá) | Komu důvěřuje | Obavy | Co by pomohlo.
-Co z mého popisu nevyplývá, nech prázdné a na konci se doptej (nejvýš 5 otázek).
+Vytvor tabuľku so stĺpcami: Kód | Rola | Postoj k zmene (nepodporuje / skôr nepodporuje / neutrálny / skôr podporuje / podporuje) | Stav (nevyužíva / nemá zručnosti / využíva občas / má zručnosti a využíva / pravidelne využíva) | Komu dôveruje | Obavy | Čo by pomohlo.
+Čo z môjho opisu nevyplýva, nechaj prázdne a na konci sa dopýtaj (najviac 5 otázok).
 
-Pak shrň: rozložení postojů, nejčastější obavy, kdo může být oporou a ambasadorem změny a jakou podporu nabídnout kterým skupinám (tip od kolegy, pravidelná setkání, metodické materiály, mentoring), doporučené první kroky a tři úrovně zapojení: pozorovatel → zkouší v pilotu → podporuje ostatní. Nemusíme přesvědčit úplně všechny. Připomeň mi, ať údaje sbírám přímo od lidí a mapu sdílím jen v projektovém týmu.
+Potom zhrň: rozloženie postojov, najčastejšie obavy, kto môže byť oporou a ambasádorom zmeny a akú podporu ponúknuť ktorým skupinám (tip od kolegu, pravidelné stretnutia, metodické materiály, mentoring), odporúčané prvé kroky a tri úrovne zapojenia: pozorovateľ → skúša v pilote → podporuje ostatných. Nemusíme presvedčiť úplne všetkých. Pripomeň mi, aby som údaje zbieral(a) priamo od ľudí a mapu zdieľal(a) len v projektovom tíme.
 ```
 
-## Varianta: Plán změny podle ADKAR
+## Varianta: Plán zmeny podľa ADKAR
 
 ```text
-Vystupuj jako průvodce řízením změny ve škole. Pomoz mi navrhnout Plán změny podle modelu ADKAR. Jsi rádce: nabízej možnosti, rozhodnutí nech na mně.
+Vystupuj ako sprievodca riadením zmeny v škole. Pomôž mi navrhnúť Plán zmeny podľa modelu ADKAR. Si radca: ponúkaj možnosti, rozhodnutie nechaj na mne.
 
-Rámec změny: [vlož – vize, cíle, rozsah, omezení]
-Mapa aktérů: [vlož – skupiny, postoje, potřeby, bez jmen]
-Škola a kapacita týmu: [například ZŠ, 28 pedagogů, lídr změny má 4 hodiny měsíčně]
+Rámec zmeny: [vlož – vízia, ciele, rozsah, obmedzenia]
+Mapa aktérov: [vlož – skupiny, postoje, potreby, bez mien]
+Škola a kapacita tímu: [napríklad ZŠ, 28 pedagógov, líder zmeny má 4 hodiny mesačne]
 
-Když něco chybí, polož mi nejvýš 5 cílených otázek. Pak pro každou fázi navrhni 2–4 aktivity na výběr, rozlišené podle skupin (vedení, pedagogové podle postoje, žáci, zákonní zástupci):
-1. Zvýšení povědomí o změně – lidé vědí, že změna nastává a proč.
-2. Akceptace změny – prostor pro otázky, obavy i nesouhlas.
-3. Důvěra v proces změny – vzdělávání, sdílení praxe, osobní plány rozvoje.
-4. Schopnost změnu provést – zkoušení v praxi s oporou zkušenějších (mentoring, tandemy, náslechy).
-5. Stvrzení změny – změna se stává normou (ŠVP, směrnice, sdílení úspěchů).
+Keď niečo chýba, polož mi najviac 5 cielených otázok. Potom pre každú fázu navrhni 2–4 aktivity na výber, rozlíšené podľa skupín (vedenie, pedagógovia podľa postoja, žiaci, zákonní zástupcovia):
+1. Zvýšenie povedomia o zmene – ľudia vedia, že zmena nastáva a prečo.
+2. Akceptácia zmeny – priestor na otázky, obavy aj nesúhlas.
+3. Dôvera v proces zmeny – vzdelávanie, zdieľanie praxe, osobné plány rozvoja.
+4. Schopnosť zmenu uskutočniť – skúšanie v praxi s oporou skúsenejších (mentoring, tandemy, hospitácie).
+5. Upevnenie zmeny – zmena sa stáva normou (školský vzdelávací program, vnútorné predpisy, zdieľanie úspechov).
 
-Až vyberu, sestav plán: souhrn pro vedení (1–2 odstavce); u každé fáze tabulku Konkrétní aktivity | Zodpovědná osoba | Termín a 2–3 měřitelná kritéria „co v této fázi znamená úspěch“; role; harmonogram 30–60–90 dní a pololetí; ukazatele a sběr dat; 5 hlavních rizik a jejich zmírnění; podpůrné materiály (návrh e-mailu, časté otázky).
-Aktivita = kdo + co + kdy + výstup. Počítej s reálnými limity školy.
+Keď vyberiem, zostav plán: súhrn pre vedenie (1–2 odseky); pri každej fáze tabuľku Konkrétne aktivity | Zodpovedná osoba | Termín a 2–3 merateľné kritériá „čo v tejto fáze znamená úspech“; roly; harmonogram 30–60–90 dní a polrok; ukazovatele a zber dát; 5 hlavných rizík a ich zmiernenie; podporné materiály (návrh e-mailu, časté otázky).
+Aktivita = kto + čo + kedy + výstup. Počítaj s reálnymi limitmi školy.
 ```
 
-**Tip:** Kroky na sebe navazují: rámec změny z dat → mapa aktérů → plán změny. Každý z nich ale můžete použít samostatně. Metodiku a modelové dokumenty najdete na webu AI akcelerátoru (aidetem.cz).
+**Tip:** Kroky na seba nadväzujú: rámec zmeny z dát → mapa aktérov → plán zmeny. Každý z nich však môžete použiť samostatne. Metodiku a modelové dokumenty nájdete na webe AI akcelerátora (aidetem.cz, v češtine).

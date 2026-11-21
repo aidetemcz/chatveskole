@@ -1,18 +1,18 @@
 title: Úprava materiálu
 slug: uprava-materialu
-kratky_popis: Zjednoduší, rozšíří, zkrátí nebo převede hotový materiál, upraví ho pro žáky se SVP a aktualizuje tematický plán. Změny vyznačí.
-popis: "Upraví materiál, který už máte, pro konkrétní třídu nebo žáka. Zachová, co funguje, a všechny změny vyznačí, abyste je viděli na první pohled. Při úpravách pro žáky se speciálními vzdělávacími potřebami vychází z klasifikace SVP podle MŠMT a z vyhlášky č. 27/2016 Sb. Pomůže vyučujícím všech předmětů ZŠ a SŠ, když potřebují jeden materiál použít pro různé žáky."
+kratky_popis: Zjednoduší, rozšíri, skráti alebo prevedie hotový materiál, upraví ho pre žiakov so ŠVVP a aktualizuje tematický plán. Zmeny vyznačí.
+popis: "Upraví materiál, ktorý už máte, pre konkrétnu triedu alebo žiaka. Zachová, čo funguje, a všetky zmeny vyznačí, aby ste ich videli na prvý pohľad. Pri úpravách pre žiakov so špeciálnymi výchovno-vzdelávacími potrebami vychádza z opísaných potrieb žiaka; české podklady (klasifikácia podľa MŠMT, v češtine) používa len ako všeobecný prehľad. Pomôže vyučujúcim všetkých predmetov ZŠ a SŠ, keď potrebujú jeden materiál použiť pre rôznych žiakov."
 pro_koho: [ucitele]
 sady: [priprava-vyuky]
-stitky: [úprava materiálu, diferenciace, SVP, inkluze, tematický plán, zjednodušení textu, shrnutí]
+stitky: [úprava materiálu, diferenciácia, ŠVVP, inklúzia, tematický plán, zjednodušenie textu, zhrnutie]
 rezimy:
-  - Aktualizace tematického plánu
-  - Převod do jiné formy
-  - Rozšíření materiálu
-  - Změna obtížnosti
-  - Individualizace (SVP, nadaní, odlišný mateřský jazyk)
-  - Zkrácení a shrnutí
-  - Diferenciace textu
+  - Aktualizácia tematického plánu
+  - Prevod do inej formy
+  - Rozšírenie materiálu
+  - Zmena náročnosti
+  - Individualizácia (ŠVVP, nadaní, odlišný materinský jazyk)
+  - Skrátenie a zhrnutie
+  - Diferenciácia textu
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/aktualizace-tematickeho-planu/
     typ: prompt
@@ -39,10 +39,10 @@ stahnout:
   chatgpt: https://drive.google.com/uc?export=download&id=1eb4Dr0tqhHYbFapcCcVCDLeqKVQ6-bnB
 autori: [Eva Nečasová (AI dětem), AI reaktor UJEP (Míša Liegertová)]
 metodika:
-  - nazev: Klasifikace speciálních vzdělávacích potřeb podle MŠMT
-  - nazev: Vyhláška č. 27/2016 Sb., o vzdělávání žáků se speciálními vzdělávacími potřebami a žáků nadaných
+  - nazev: Klasifikace speciálních vzdělávacích potřeb podle MŠMT (česká, v češtine)
+  - nazev: Vyhláška č. 27/2016 Sb., o vzdělávání žáků se speciálními vzdělávacími potřebami a žáků nadaných (česká legislatíva, v češtine)
     url: https://www.zakonyprolidi.cz/cs/2016-27
 znalosti: [jedinci-se-specialnimi-vzdelavacimi-potrebami.md]
-vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+vek: dospelí (zručnosti sú v Gemini a Claude 18+)
 stav: koncept
 aktualizovano: 2026-11-15

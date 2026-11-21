@@ -1,19 +1,19 @@
-title: Komunikace s rodiči
+title: Komunikácia so zákonnými zástupcami
 slug: komunikace-s-rodici
-kratky_popis: Napíše zprávu zákonným zástupcům — od odpovědi na stížnost po pozvánku na akci — nebo pomůže promyslet postup v citlivé situaci.
-popis: "Pomůže vám s písemnou i ústní komunikací se zákonnými zástupci, od krátké informace po citlivé situace. Funguje jako zkušený kolega: když situace není jednoduchá, nejdřív s vámi promyslí, co a jak zákonným zástupcům sdělit, jinak rovnou napíše text k použití. Stojí na partnerství se zákonnými zástupci, na popisném jazyce o chování a práci žáka místo nálepek a na respektu k pohledu zákonného zástupce. Je určený třídním i předmětovým vyučujícím, výchovným poradcům, ředitelům a asistentům pedagoga."
+kratky_popis: Napíše správu zákonným zástupcom — od odpovede na sťažnosť po pozvánku na podujatie — alebo pomôže premyslieť postup v citlivej situácii.
+popis: "Pomôže vám s písomnou aj ústnou komunikáciou so zákonnými zástupcami, od krátkej informácie po citlivé situácie. Funguje ako skúsený kolega: keď situácia nie je jednoduchá, najprv s vami premyslí, čo a ako zákonným zástupcom oznámiť, inak rovno napíše text na použitie. Stojí na partnerstve so zákonnými zástupcami, na opisnom jazyku o správaní a práci žiaka namiesto nálepiek a na rešpekte k pohľadu zákonného zástupcu. Je určený triednym aj predmetovým vyučujúcim, výchovným poradcom, riaditeľom a asistentom učiteľa."
 pro_koho: [ucitele, vedeni]
 sady: [komunikace-a-podpora-ucitele]
-stitky: [komunikace se zákonnými zástupci, třídní vyučující, stížnost, pozvánka, třídní schůzka, generativní AI]
+stitky: [komunikácia so zákonnými zástupcami, triedny vyučujúci, sťažnosť, pozvánka, triedne aktívum, generatívna AI]
 rezimy:
-  - Odpověď na stížnost zákonného zástupce
-  - Zpráva o pokroku žáka
-  - Vysvětlení využití generativní AI ve výuce
-  - Pozvánka na školní akci (e-mail, plakát, sociální sítě, newsletter, web)
-  - Informace o školním projektu
-  - Pozvánka na třídní schůzku
-  - Promyslet postup v citlivé situaci
-  - Příprava telefonátu nebo schůzky se zákonnými zástupci
+  - Odpoveď na sťažnosť zákonného zástupcu
+  - Správa o pokroku žiaka
+  - Vysvetlenie využitia generatívnej AI vo vyučovaní
+  - Pozvánka na školské podujatie (e-mail, plagát, sociálne siete, newsletter, web)
+  - Informácia o školskom projekte
+  - Pozvánka na triedne aktívum
+  - Premyslieť postup v citlivej situácii
+  - Príprava telefonátu alebo stretnutia so zákonnými zástupcami
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/reakce-na-stiznost-rodice/
     typ: prompt
@@ -41,6 +41,6 @@ stahnout:
   gemini: https://drive.google.com/uc?export=download&id=1fuGUgdzAUoJ4eGV4LlLTqBVvH7Ige6X-
   chatgpt: https://drive.google.com/uc?export=download&id=1wIYGrS4GG2aURJKJg-uwgDEfu8SpbZ8E
 autori: [AI dětem, AI reaktor UJEP (Míša Liegertová)]   # ověřit: tři prompty z roku 2024 nejspíš z původní databáze AI reaktoru UJEP; doplnit jména
-vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+vek: dospelí (zručnosti sú v Gemini a Claude 18+)
 stav: koncept
 aktualizovano: 2026-11-21

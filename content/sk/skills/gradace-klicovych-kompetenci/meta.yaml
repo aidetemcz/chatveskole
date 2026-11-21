@@ -1,15 +1,15 @@
-title: Gradace klíčových kompetencí
+title: Gradácia kľúčových kompetencií
 slug: gradace-klicovych-kompetenci
-kratky_popis: Rozpracuje klíčovou kompetenci nebo dovednost do návazných úrovní s pozorovatelnými projevy žáka podle Carnegie Skills Progressions.
-popis: "Pomůže vám popsat, jak se konkrétní dovednost žáka postupně rozvíjí. Klíčovou kompetenci rozpracuje do návazných úrovní, výchozí jsou čtyři, s pozorovatelnými projevy žáka a příkladem ve stejné školní situaci. Opírá se o skutečné gradace Carnegie Skills Progressions a uvede kódy použitých položek, takže si je můžete dohledat. Nejde o známkovací stupnici ani o diagnózu žáka, ale o popis rozvoje, se kterým můžete pracovat ve výuce na ZŠ."
+kratky_popis: Rozpracuje kľúčovú kompetenciu alebo zručnosť do nadväzujúcich úrovní s pozorovateľnými prejavmi žiaka podľa Carnegie Skills Progressions.
+popis: "Pomôže vám opísať, ako sa konkrétna zručnosť žiaka postupne rozvíja. Kľúčovú kompetenciu rozpracuje do nadväzujúcich úrovní, predvolene štyroch, s pozorovateľnými prejavmi žiaka a príkladom v rovnakej školskej situácii. Opiera sa o skutočné gradácie Carnegie Skills Progressions a uvedie kódy použitých položiek, takže si ich môžete dohľadať. Nejde o známkovaciu stupnicu ani o diagnózu žiaka, ale o opis rozvoja, s ktorým môžete pracovať vo vyučovaní na ZŠ."
 pro_koho: [ucitele, vedeni]
 sady: [vedeni-skoly]
-stitky: [klíčové kompetence, RVP, ŠVP, gradace, Carnegie Skills Progressions, sebehodnocení]
+stitky: [kľúčové kompetencie, ŠVP, ŠkVP, gradácia, Carnegie Skills Progressions, sebahodnotenie]
 rezimy:
-  - Gradace kompetence do úrovní
-  - Žákovská verze „Dokážu…“
-  - Převod do vlastní tabulky nebo JSONL
-puvodni_obsah: []           # na starém webu nebyl
+  - Gradácia kompetencie do úrovní
+  - Žiacka verzia „Dokážem…“
+  - Prevod do vlastnej tabuľky alebo JSONL
+puvodni_obsah: []           # na starom webe nebol
 google_doc: https://docs.google.com/document/d/1EfyY7MsppbJLY9kEZ6WYZm2ziuqVGq5VCEGFLcAvDWQ/edit
 google_slozka: https://drive.google.com/drive/folders/1tIFIAxgdqj2JPRRpmPnF0hkcA46lZgRJ
 google_data: https://drive.google.com/drive/folders/1uicKvSMlaKauGyP-uYdt5GOaBBh0nRG-
@@ -17,10 +17,10 @@ stahnout:
   claude: https://drive.google.com/uc?export=download&id=1PRCh5D06AjstBAS2UbvkF4zw4zGCnkHx
   gemini: https://drive.google.com/uc?export=download&id=1G7TekcKT31zuDpK8934PXCfeBwm-84J5
   chatgpt: https://drive.google.com/uc?export=download&id=1EHP07gX2VvboOAoqVk2jOVfzhyhBIVsa
-autori: [AI dětem]          # ověřit autorství
+autori: [AI dětem]          # overiť autorstvo
 metodika:
-  - nazev: Carnegie Skills Progressions (Carnegie Foundation for the Advancement of Teaching; znalostní graf Learning Commons, CC BY 4.0)
+  - nazev: Carnegie Skills Progressions (Carnegie Foundation for the Advancement of Teaching; znalostný graf Learning Commons, CC BY 4.0)
 znalosti: [klicove-kompetence-disk-gradace.md]
-vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+vek: dospelí (zručnosti sú v Gemini a Claude od 18 rokov)
 stav: koncept
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-21

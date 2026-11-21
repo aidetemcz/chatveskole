@@ -1,13 +1,13 @@
-title: Kritéria hodnocení
+title: Kritériá hodnotenia
 slug: kriteria-hodnoceni
-kratky_popis: Z cíle podle Nové taxonomie vytvoří kritéria hodnocení pro vyučující i žáky, včetně úprav pro žáky se SVP.
-popis: "Pomůže vám k vzdělávacímu cíli vytvořit přehledná a konkrétní kritéria hodnocení. Cíl posoudí podle Nové taxonomie vzdělávacích cílů (Marzano a Kendall), určí jeho úroveň a proces a případně navrhne zpřesnění. Dostanete obvykle tři kritéria, každé ve znění pro vyučující a srozumitelně pro žáky v první osobě („Porovnám…“). Hodí se jako podklad pro formativní hodnocení i sebehodnocení žáků."
+kratky_popis: Z cieľa podľa Novej taxonómie vytvorí kritériá hodnotenia pre vyučujúcich aj žiakov, vrátane úprav pre žiakov so ŠVVP.
+popis: "Pomôže vám k vzdelávaciemu cieľu vytvoriť prehľadné a konkrétne kritériá hodnotenia. Cieľ posúdi podľa Novej taxonómie vzdelávacích cieľov (Marzano a Kendall), určí jeho úroveň a proces a prípadne navrhne spresnenie. Dostanete zvyčajne tri kritériá, každé v znení pre vyučujúcich a zrozumiteľne pre žiakov v prvej osobe („Porovnám…“). Hodí sa ako podklad pre formatívne hodnotenie aj sebahodnotenie žiakov."
 pro_koho: [ucitele]
 sady: [formativni-hodnoceni]
-stitky: [formativní hodnocení, kritéria hodnocení, sebehodnocení, J–Č–T–Ú, důkazy o učení, SVP]
+stitky: [formatívne hodnotenie, kritériá hodnotenia, sebahodnotenie, J–Č–T–Ú, dôkazy o učení, ŠVVP]
 rezimy:
-  - Kritéria z cíle (pro vyučující i pro žáky)
-  - Úprava kritérií pro žáky se SVP
+  - Kritériá z cieľa (pre vyučujúcich aj pre žiakov)
+  - Úprava kritérií pre žiakov so ŠVVP
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/tvorba-kriterii-hodnoceni/
     typ: prompt
@@ -31,11 +31,11 @@ stahnout:
   chatgpt: https://drive.google.com/uc?export=download&id=1Mfg2pQHDspFXJBYDkxCSmr8ubeQASJ3K
 autori: [Eva Nečasová (AI dětem)]
 metodika:
-  - nazev: Vysvědčení jinak (PdF MU, Jana Kratochvílová)
+  - nazev: Vysvědčení jinak (PdF MU, Jana Kratochvílová; v češtine)
     url: https://vysvedcenijinak.ped.muni.cz/
-  - nazev: Vysvědčení jinak – stupnice hodnocení v teoretických předmětech
+  - nazev: Vysvědčení jinak – stupnica hodnotenia v teoretických predmetoch (v češtine)
     url: https://vysvedcenijinak.ped.muni.cz/metodika/teoreticke-predmety/stupnice-hodnoceni-v-teoretickych-predmetech
 znalosti: [spravna-formulace-kriterii-hodnoceni.md, klicove-kompetence.md, prurezova-temata.md, jedinci-se-specialnimi-vzdelavacimi-potrebami.md]
-vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+vek: dospelí (zručnosti sú v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-21

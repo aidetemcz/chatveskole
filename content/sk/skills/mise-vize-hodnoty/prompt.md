@@ -1,76 +1,76 @@
 ---
-title: Hodnoty, mise a vize školy
+title: Hodnoty, misia a vízia školy
 typ: prompt
 ---
 
-## Základní prompt
+## Základný prompt
 
 ```text
-Vystupuj jako zkušený poradce pro řízení školy. Pomoz mi vytvořit hodnoty, misi a vizi naší školy tak, aby byly srozumitelné, výstižné a odpovídaly naší skutečné kultuře.
+Vystupuj ako skúsený poradca pre riadenie školy. Pomôž mi vytvoriť hodnoty, misiu a víziu našej školy tak, aby boli zrozumiteľné, výstižné a zodpovedali našej skutočnej kultúre.
 
-Naše škola: [například ZŠ s 1. i 2. stupněm, 350 žáků, menší město]
-Začneme: [hodnotami / misí / vizí / nevím, poraď]
-Co už máme: [například starou vizi, která nikoho neoslovuje / zatím nic]
+Naša škola: [napríklad ZŠ s 1. aj 2. stupňom, 350 žiakov, menšie mesto]
+Začneme: [hodnotami / misiou / víziou / neviem, poraď]
+Čo už máme: [napríklad starú víziu, ktorá nikoho neoslovuje / zatiaľ nič]
 
 Postup:
-1. Vždy mi polož 2–4 otázky najednou, ne víc. Vybírej podle toho, na čem pracujeme:
-– hodnoty: V čem je naše škola jedinečná? Jak chceme, aby se u nás děti každý den cítily? Na čem nám záleží ve vztazích? Co je klíčové při učení? Jak jednáme v náročných situacích?
-– mise: Co byste odpověděli zákonným zástupcům, kteří se ptají, proč vaši školu doporučujete? V čem jste jiní než školy v okolí? Která 3 slova vystihují váš tým, vztah s dětmi a se zákonnými zástupci? Čeho si na škole nejvíc ceníte?
-– vize: Jak bude škola vypadat za 5–10 let, když se vše podaří? Jak mají žáci přemýšlet a jednat, až odejdou? Jaká věta by nás každý den spojovala? Jak může škola přispět k udržitelnosti, demokracii a odpovědnosti?
-2. Z mých odpovědí navrhni 2–3 varianty textu a u každé řekni, z čeho vychází.
-3. Text společně doladíme a pak pokračujeme další částí.
+1. Vždy mi polož 2–4 otázky naraz, nie viac. Vyberaj podľa toho, na čom pracujeme:
+– hodnoty: V čom je naša škola jedinečná? Ako chceme, aby sa u nás deti každý deň cítili? Na čom nám záleží vo vzťahoch? Čo je kľúčové pri učení? Ako konáme v náročných situáciách?
+– misia: Čo by ste odpovedali zákonným zástupcom, ktorí sa pýtajú, prečo vašu školu odporúčate? V čom ste iní ako školy v okolí? Ktoré 3 slová vystihujú váš tím, vzťah s deťmi a so zákonnými zástupcami? Čo si na škole najviac ceníte?
+– vízia: Ako bude škola vyzerať o 5–10 rokov, keď sa všetko podarí? Ako majú žiaci premýšľať a konať, keď odídu? Aká veta by nás každý deň spájala? Ako môže škola prispieť k udržateľnosti, demokracii a zodpovednosti?
+2. Z mojich odpovedí navrhni 2–3 varianty textu a pri každej povedz, z čoho vychádza.
+3. Text spoločne doladíme a potom pokračujeme ďalšou časťou.
 
-Pravidla formulací:
-– Hodnoty: 3–6 hodnot po 1–3 slovech, pozitivně (co podporujeme, ne čeho se bojíme), ke každé věta, jak se projevuje v praxi.
-– Mise popisuje přítomnost: kdo jsme, co a pro koho děláme, čím jsme přínosní (1–3 věty).
-– Vize popisuje budoucnost: kam směřujeme, přiměřeně ambiciózně a srozumitelně i pro zákonné zástupce a žáky (1–2 věty).
-– Mise a vizi nemíchej; vize není mise v budoucím čase.
-– Žádné prázdné fráze („moderní škola 21. století“). Když odpovím obecně, zeptej se, podle čeho bychom to poznali v běžném dni. Nevymýšlej nic, co jsem neřekl(a).
-Na konci navrhni, jak text projednat se sborem, žáky a zákonnými zástupci.
+Pravidlá formulácií:
+– Hodnoty: 3–6 hodnôt po 1–3 slovách, pozitívne (čo podporujeme, nie čoho sa bojíme), ku každej veta, ako sa prejavuje v praxi.
+– Misia opisuje prítomnosť: kto sme, čo a pre koho robíme, čím sme prínosní (1–3 vety).
+– Vízia opisuje budúcnosť: kam smerujeme, primerane ambiciózne a zrozumiteľne aj pre zákonných zástupcov a žiakov (1–2 vety).
+– Misiu a víziu nemiešaj; vízia nie je misia v budúcom čase.
+– Žiadne prázdne frázy („moderná škola 21. storočia“). Keď odpoviem všeobecne, opýtaj sa, podľa čoho by sme to spoznali v bežnom dni. Nevymýšľaj nič, čo som nepovedal(a).
+Na konci navrhni, ako text prerokovať so zborovňou, žiakmi a zákonnými zástupcami.
 ```
 
 ## Varianta: Profil absolventa
 
 ```text
-Vystupuj jako zkušený školní stratég. Pomoz mi vytvořit jasný a srozumitelný profil absolventa naší školy.
+Vystupuj ako skúsený školský stratég. Pomôž mi vytvoriť jasný a zrozumiteľný profil absolventa našej školy.
 
-Typ a velikost školy: [například gymnázium, 480 žáků]
-Mise a hodnoty školy: [stručně, nebo vlož text]
-Priority nebo potřeby regionu: [například návaznost na technické obory v kraji]
-Silné stránky školy a žáků: [stručně]
-Kompetence, na které se chceme zaměřit: [například spolupráce, práce s informacemi, odpovědnost]
-Časový horizont platnosti profilu: [například 4 roky]
+Typ a veľkosť školy: [napríklad gymnázium, 480 žiakov]
+Misia a hodnoty školy: [stručne, alebo vlož text]
+Priority alebo potreby regiónu: [napríklad nadväznosť na technické odbory v kraji]
+Silné stránky školy a žiakov: [stručne]
+Kompetencie, na ktoré sa chceme zamerať: [napríklad spolupráca, práca s informáciami, zodpovednosť]
+Časový horizont platnosti profilu: [napríklad 4 roky]
 
-Pokud něco důležitého chybí, nejdřív se mě zeptej (nejvýš 5 otázek). Pak sestav dokument:
-1. Vize absolventa – 2–3 věty, jakého člověka škola formuje.
-2. Klíčové oblasti (3–6) – u každé konkrétní znalosti, dovednosti a postoje; propoj je s klíčovými kompetencemi z RVP.
-3. Hodnoty a charakterové rysy, které škola podporuje.
-4. Příklady uplatnění v dalším studiu, v práci i v osobním životě.
-5. Kdo za co odpovídá – pedagogové, vedení, zákonní zástupci, partneři školy.
-6. Pozorovatelné ukazatele – konkrétní chování nebo výstupy žáků se slovesem, které jde pozorovat (ne „umí“, „zná“, „je“), například „Absolvent samostatně naplánuje a obhájí projekt“.
-7. Jak a kdy profil vyhodnotíme a upravíme.
+Ak niečo dôležité chýba, najprv sa ma opýtaj (najviac 5 otázok). Potom zostav dokument:
+1. Vízia absolventa – 2–3 vety, akého človeka škola formuje.
+2. Kľúčové oblasti (3–6) – pri každej konkrétne vedomosti, zručnosti a postoje; prepoj ich s kľúčovými kompetenciami zo ŠVP.
+3. Hodnoty a charakterové vlastnosti, ktoré škola podporuje.
+4. Príklady uplatnenia v ďalšom štúdiu, v práci aj v osobnom živote.
+5. Kto za čo zodpovedá – pedagógovia, vedenie, zákonní zástupcovia, partneri školy.
+6. Pozorovateľné ukazovatele – konkrétne správanie alebo výstupy žiakov so slovesom, ktoré sa dá pozorovať (nie „vie“, „pozná“, „je“), napríklad „Absolvent samostatne naplánuje a obháji projekt“.
+7. Ako a kedy profil vyhodnotíme a upravíme.
 
-Piš srozumitelně pro celý sbor i zákonné zástupce, s nadpisy, krátkými odstavci a odrážkami. Nevymýšlej údaje o škole, které jsem neuvedl(a), ani konkrétní znění RVP. Na konci nabídni, jak profil propojit s ŠVP a s hodnocením žáků.
+Píš zrozumiteľne pre celý zbor aj zákonných zástupcov, s nadpismi, krátkymi odsekmi a odrážkami. Nevymýšľaj údaje o škole, ktoré som neuviedol(a), ani konkrétne znenie ŠVP. Na konci ponúkni, ako profil prepojiť so ŠkVP a s hodnotením žiakov.
 ```
 
 ## Varianta: Kontrola hotového textu
 
 ```text
-Vystupuj jako zkušený poradce pro řízení školy. Zkontroluj náš text a navrhni úpravy.
+Vystupuj ako skúsený poradca pre riadenie školy. Skontroluj náš text a navrhni úpravy.
 
-Co kontrolujeme: [hodnoty / misi / vizi / profil absolventa]
-Naše škola: [například ZŠ, 350 žáků, menší město]
-Pro koho je text určen: [například web, ŠVP, zákonní zástupci]
+Čo kontrolujeme: [hodnoty / misiu / víziu / profil absolventa]
+Naša škola: [napríklad ZŠ, 350 žiakov, menšie mesto]
+Pre koho je text určený: [napríklad web, ŠkVP, zákonní zástupcovia]
 Text: [vložte text]
 
-Posuď, zda je text:
-1. pozitivní – říká, co podporujeme, ne čeho se bojíme;
-2. srozumitelný pro žáky, vyučující i zákonné zástupce;
-3. konkrétní – bez prázdných frází, které by mohly viset na kterékoli škole;
-4. správně zaměřený – mise popisuje přítomnost (kdo jsme, co a pro koho děláme), vize budoucnost (kam za 5–10 let směřujeme);
-5. krátký – hodnot nejvýš 6, každá po 1–3 slovech.
+Posúď, či je text:
+1. pozitívny – hovorí, čo podporujeme, nie čoho sa bojíme;
+2. zrozumiteľný pre žiakov, vyučujúcich aj zákonných zástupcov;
+3. konkrétny – bez prázdnych fráz, ktoré by mohli visieť na ktorejkoľvek škole;
+4. správne zameraný – misia opisuje prítomnosť (kto sme, čo a pre koho robíme), vízia budúcnosť (kam o 5–10 rokov smerujeme);
+5. krátky – hodnôt najviac 6, každá po 1–3 slovách.
 
-Napiš, co funguje, co bys upravil(a) a proč. Pak nabídni 2–3 upravené varianty. Nevymýšlej nic, co v textu ani v zadání není. Na konci navrhni, jak text projednat se sborem, žáky a zákonnými zástupci.
+Napíš, čo funguje, čo by si upravil(a) a prečo. Potom ponúkni 2–3 upravené varianty. Nevymýšľaj nič, čo v texte ani v zadaní nie je. Na konci navrhni, ako text prerokovať so zborovňou, žiakmi a zákonnými zástupcami.
 ```
 
-**Tip:** Návrh vezměte na poradu a nechte kolegy, aby u každé hodnoty nebo oblasti profilu doplnili jeden příklad z vlastní praxe. Na hotovou vizi navazuje dovednost „Strategické dokumenty“.
+**Tip:** Návrh vezmite na poradu a nechajte kolegov, aby pri každej hodnote alebo oblasti profilu doplnili jeden príklad z vlastnej praxe. Na hotovú víziu nadväzuje zručnosť „Strategické dokumenty“.

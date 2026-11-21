@@ -1,14 +1,14 @@
-title: Vizualizace dat
+title: Vizualizácia dát
 slug: vizualizace-dat
-kratky_popis: Převede školní a projektová data do přesných a srozumitelných grafů, tabulek a přehledů s hlavním zjištěním.
-popis: "Pomůže vám převést školní a projektová data, třeba známky, výsledky testů, dotazníky nebo docházku, do přesných a srozumitelných grafů, tabulek a přehledů. Ke každému výstupu dostanete hlavní zjištění: co se změnilo, jak moc, koho se to týká a proč je to důležité, i s omezeními výkladu. Data neupravuje ani nedopočítává bez označení a nevytváří zavádějící srovnání. Výstupy se hodí pro sborovnu, zákonné zástupce, zřizovatele i donory; jména žáků z dat předem odstraňte."
+kratky_popis: Prevedie školské a projektové dáta do presných a zrozumiteľných grafov, tabuliek a prehľadov s hlavným zistením.
+popis: "Pomôže vám previesť školské a projektové dáta, napríklad známky, výsledky testov, dotazníky alebo dochádzku, do presných a zrozumiteľných grafov, tabuliek a prehľadov. Ku každému výstupu dostanete hlavné zistenie: čo sa zmenilo, ako veľmi, koho sa to týka a prečo je to dôležité, aj s obmedzeniami výkladu. Dáta neupravuje ani nedopočítava bez označenia a nevytvára zavádzajúce porovnania. Výstupy sa hodia pre zborovňu, zákonných zástupcov, zriaďovateľa aj donorov; mená žiakov z dát vopred odstráňte."
 pro_koho: [vedeni, ucitele]
 sady: [vedeni-skoly]
-stitky: [data, grafy, výroční zpráva, dotace, dotazníky, výsledky žáků]
+stitky: [dáta, grafy, výročná správa, dotácie, dotazníky, výsledky žiakov]
 rezimy:
-  - Návrh grafu nebo přehledu z dat
+  - Návrh grafu alebo prehľadu z dát
   - Kontrola hotového grafu
-  - Výklad, co čísla říkají
+  - Výklad, čo čísla hovoria
 puvodni_obsah: []
 google_doc: https://docs.google.com/document/d/1KJ4tXgnJVOq-J8n5jIpjdc-ImPOup2jI-K6x9830Pn0/edit
 google_slozka: https://drive.google.com/drive/folders/1vAlVbaTqflsxKW86kksFTa483AZItPRF
@@ -19,6 +19,6 @@ stahnout:
 autori: [AI dětem]
 metodika: []
 znalosti: []
-vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+vek: dospelí (zručnosti sú v Gemini a Claude 18+)
 stav: koncept
 aktualizovano: 2026-11-21

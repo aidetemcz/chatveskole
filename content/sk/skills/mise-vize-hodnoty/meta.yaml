@@ -1,14 +1,14 @@
-title: Hodnoty, mise, vize a profil absolventa
+title: Hodnoty, misia, vízia a profil absolventa
 slug: mise-vize-hodnoty
-kratky_popis: Provede školní tým otázkami k hodnotám, misi a vizi školy a k profilu absolventa a navrhne formulace k doladění.
-popis: "Pomůže vedení a týmu školy pojmenovat hodnoty, misi a vizi školy a sestavit profil absolventa. Nejdřív klade otázky, potom navrhne různé formulace, které spolu doladíte; zkontroluje i text, který už máte. Když chcete všechno, navrhne pořadí od hodnot přes misi a vizi k profilu absolventa, protože každá část staví na předchozí. Vychází z materiálu NPI ČR Strategické plánování (portál Vedeme školu)."
+kratky_popis: Prevedie školský tím otázkami k hodnotám, misii a vízii školy a k profilu absolventa a navrhne formulácie na doladenie.
+popis: "Pomôže vedeniu a tímu školy pomenovať hodnoty, misiu a víziu školy a zostaviť profil absolventa. Najprv kladie otázky, potom navrhne rôzne formulácie, ktoré spolu doladíte; skontroluje aj text, ktorý už máte. Keď chcete všetko, navrhne poradie od hodnôt cez misiu a víziu k profilu absolventa, pretože každá časť stavia na predchádzajúcej. Vychádza z materiálu českého NPI ČR Strategické plánování (portál Vedeme školu, v češtine)."
 pro_koho: [vedeni]
 sady: [vedeni-skoly]
-stitky: [strategické plánování, hodnoty, mise, vize, profil absolventa, NPI]
+stitky: [strategické plánovanie, hodnoty, misia, vízia, profil absolventa, NPI]
 rezimy:
   - Hodnoty
-  - Mise (poslání)
-  - Vize
+  - Misia (poslanie)
+  - Vízia
   - Profil absolventa
   - Kontrola hotového textu
 puvodni_obsah:
@@ -31,9 +31,9 @@ stahnout:
   chatgpt: https://drive.google.com/uc?export=download&id=1Trq20DjsrxzbEl-kvpUik7s2PRo2XQK3
 autori: [AI dětem]
 metodika:
-  - nazev: Strategické plánování (NPI ČR, Vedeme školu)
+  - nazev: Strategické plánování (NPI ČR, Vedeme školu; v češtine)
     url: https://vedemeskolu.npi.cz/strategicke-planovani
 znalosti: [klicove-kompetence.md]
-vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+vek: dospelí (zručnosti sú v Gemini a Claude 18+)
 stav: koncept
 aktualizovano: 2026-11-21

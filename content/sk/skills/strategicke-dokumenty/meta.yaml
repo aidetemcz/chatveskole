@@ -1,17 +1,17 @@
 title: Strategické dokumenty
 slug: strategicke-dokumenty
-kratky_popis: Sestaví návrh strategie školy se SWOT, prioritami, opatřeními, indikátory a harmonogramem; umí i samostatnou SWOT analýzu.
-popis: "Pomůže vedení školy rychle připravit srozumitelný a realistický strategický dokument, který můžete projednat ve sborovně a ukázat zákonným zástupcům i zřizovateli. Dostanete návrh se SWOT analýzou, prioritami, opatřeními, indikátory a harmonogramem. Všechny typy dokumentů mají společnou kostru, podle které zpracuje i jiný strategický dokument, třeba strategii spolupráce se zákonnými zástupci. Vychází z materiálu NPI ČR Strategické plánování (portál Vedeme školu)."
+kratky_popis: Zostaví návrh stratégie školy so SWOT, prioritami, opatreniami, indikátormi a harmonogramom; zvládne aj samostatnú SWOT analýzu.
+popis: "Pomôže vedeniu školy rýchlo pripraviť zrozumiteľný a realistický strategický dokument, ktorý môžete prerokovať v zborovni a ukázať zákonným zástupcom aj zriaďovateľovi. Dostanete návrh so SWOT analýzou, prioritami, opatreniami, indikátormi a harmonogramom. Všetky typy dokumentov majú spoločnú kostru, podľa ktorej spracuje aj iný strategický dokument, napríklad stratégiu spolupráce so zákonnými zástupcami. Vychádza z materiálu českého NPI Strategické plánování (portál Vedeme školu, v češtine)."
 pro_koho: [vedeni]
 sady: [vedeni-skoly]
-stitky: [strategické plánování, SWOT, digitální gramotnost, inkluze, digitální wellbeing, hodnocení, kvalita výuky, inovace]
+stitky: [strategické plánovanie, SWOT, digitálna gramotnosť, inklúzia, digitálny wellbeing, hodnotenie, kvalita vyučovania, inovácie]
 rezimy:
-  - Strategie rozvoje digitální gramotnosti
-  - Strategie podpory inkluze
-  - Strategie digitálního wellbeingu
-  - Metodologie hodnocení žáků
-  - Systém vnitřního hodnocení kvality výuky
-  - Plán postupného zavádění inovací do výuky
+  - Stratégia rozvoja digitálnej gramotnosti
+  - Stratégia podpory inklúzie
+  - Stratégia digitálneho wellbeingu
+  - Metodológia hodnotenia žiakov
+  - Systém vnútorného hodnotenia kvality vyučovania
+  - Plán postupného zavádzania inovácií do vyučovania
   - SWOT analýza
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/strategie-pro-rozvoj-digitalni-gramotnosti/
@@ -38,11 +38,11 @@ stahnout:
   chatgpt: https://drive.google.com/uc?export=download&id=1lLAbVmqIwidGIxT9BCkHr-Le_U_lLX0E
 autori: [AI dětem]
 metodika:
-  - nazev: Strategické plánování (NPI ČR, Vedeme školu)
+  - nazev: Strategické plánování (NPI ČR, Vedeme školu; v češtine)
     url: https://vedemeskolu.npi.cz/strategicke-planovani
-  - nazev: Národní koncepce digitálního wellbeingu (NPI ČR)
+  - nazev: Národní koncepce digitálního wellbeingu (NPI ČR; v češtine)
     url: https://digitalizace.rvp.cz/napric-predmety/digitalni-wellbeing
 znalosti: []
-vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+vek: dospelí (zručnosti sú v Gemini a Claude 18+)
 stav: koncept
 aktualizovano: 2026-11-21

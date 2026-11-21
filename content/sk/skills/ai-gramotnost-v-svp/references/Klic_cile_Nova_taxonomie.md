@@ -1,520 +1,526 @@
-# Klíč pro tvorbu vzdělávacích cílů podle Nové taxonomie
+# Kľúč na tvorbu vzdelávacích cieľov podľa Novej taxonómie
 
-Kontext pro AI nástroje, které mají hromadně navrhovat vzdělávací cíle ke konceptům v mapě. Vychází z knihy Marzano, R. J. & Kendall, J. S. (2007): *The New Taxonomy of Educational Objectives* (2. vyd., Corwin Press) a ze stylu formulací, který používáme v AI dětem.
+Kontext pre AI nástroje, ktoré majú hromadne navrhovať vzdelávacie ciele ku konceptom v mape. Vychádza z knihy Marzano, R. J. & Kendall, J. S. (2007): *The New Taxonomy of Educational Objectives* (2. vyd., Corwin Press) a zo štýlu formulácií, ktorý používame v AI dětem.
 
-Kniha nemá seznam sloves jako Bloomova taxonomie. Slovesa v tomto dokumentu jsme odvodili z popisů úloh v kapitolách 4 a 5. Pravidla stylu, kontext učení a výstupní formát jsou naše.
+Kniha nemá zoznam slovies ako Bloomova taxonómia. Slovesá v tomto dokumente sme odvodili z opisov úloh v kapitolách 4 a 5. Pravidlá štýlu, kontext učenia a výstupný formát sú naše.
 
----
-
-## Pokyn pro AI
-
-> Jsi zkušený didaktik. Navrhuješ vzdělávací cíle podle Nové taxonomie (Marzano & Kendall) ke konceptům, které ti zadám. Řiď se tímto dokumentem. U každého konceptu nejdřív urči dimenzi, pak pro každou požadovanou úroveň vyber nejvhodnější proces a napiš cíl podle pravidel stylu v kapitole 3. Ke každému cíli přidej kontext učení a kritérium splnění. Před odevzdáním projdi kontrolní seznam v kapitole 11 a cíle, které ho nesplní, přepiš. Nepoužívej Bloomovu taxonomii ani její úrovně (zapamatovat, aplikovat, tvořit…).
-
-**Co ode mě dostaneš:** název konceptu, jeho krátký popis, případně předmět a výstup z RVP, ročník nebo stupeň a co přesně chci vygenerovat.
-
-**Co mi vrátíš, pokud neřeknu jinak:** šest cílů na koncept, jeden na každou úroveň 1–6. U každého proces, dimenzi, dvě varianty kontextu učení a kritérium. Formát podle kapitoly 10.
-
-**Dva režimy.** Když tě požádám o **tvorbu** cílů, postupuj podle kapitol 1–12. Když tě požádám o **analýzu** existující formulace (výstup z RVP, cíl z učebnice nebo od učitele), postupuj podle kapitoly 14. Při analýze nehodnoť styl a nepoužívej pravidla z kapitoly 3. Ta platí jen pro cíle, které píšeme my.
+Poznámka k slovenskej verzii: v pôvodnej českej verzii sa analyzujú výstupy z českého RVP. V slovenskom kontexte rovnako analyzuj očakávané výstupy z kurikula, napríklad výkonové štandardy zo ŠVP, ciele z učebnice alebo od vyučujúceho. Príklady v kapitole 14 pochádzajú z českého RVP (informatika) a sú preložené.
 
 ---
 
-## 1. Cíl a kontext učení
+## Pokyn pre AI
 
-**Vzdělávací cíl** říká, co žák se znalostí udělá. Má dvě části:
+> Si skúsený didaktik. Navrhuješ vzdelávacie ciele podľa Novej taxonómie (Marzano & Kendall) ku konceptom, ktoré ti zadám. Riaď sa týmto dokumentom. Pri každom koncepte najprv urči dimenziu, potom pre každú požadovanú úroveň vyber najvhodnejší proces a napíš cieľ podľa pravidiel štýlu v kapitole 3. Ku každému cieľu pridaj kontext učenia a kritérium splnenia. Pred odovzdaním prejdi kontrolný zoznam v kapitole 11 a ciele, ktoré ho nesplnia, prepíš. Nepoužívaj Bloomovu taxonómiu ani jej úrovne (zapamätať si, aplikovať, tvoriť…).
 
-- **proces**, tedy co žák v hlavě nebo rukama dělá (porovná, vysvětlí, provede, stanoví si cíl…),  
-- **znalost**, se kterou to dělá (pojem, princip, postup, dovednost).
+**Čo odo mňa dostaneš:** názov konceptu, jeho krátky opis, prípadne predmet a očakávaný výstup z kurikula (ŠVP), ročník alebo stupeň a čo presne chcem vygenerovať.
 
-Samotné téma („šifrování“) cíl není. Cíl je až „Žák vysvětlí, jakou roli hraje při šifrování algoritmus a jakou klíč.“
+**Čo mi vrátiš, ak nepoviem inak:** šesť cieľov na koncept, jeden na každú úroveň 1–6. Pri každom proces, dimenziu, dva varianty kontextu učenia a kritérium. Formát podľa kapitoly 10.
 
-**Kontext učení** je konkrétní situace, materiál nebo téma, ve kterém žák cíl naplňuje. Cíl zůstává stejný a kontexty se mění. Díky tomu je cíl krátký a obecný a konkrétnost nese kontext.
-
-> **Cíl:** Žák pomocí systematického ladění zprovozní nefunkční hru. **Kontext učení:** hra ve Scratchi, která občas spadne · webová hra, ve které nereaguje tlačítko
-
-Kniha pracuje se *vzdělávacími cíli*. Podmínky a výkonnostní laťku (kolik a jak dobře) do cíle nepíšeme. Patří do kontextu a kritéria.
+**Dva režimy.** Keď ťa požiadam o **tvorbu** cieľov, postupuj podľa kapitol 1–12. Keď ťa požiadam o **analýzu** existujúcej formulácie (výstup z kurikula, cieľ z učebnice alebo od vyučujúceho), postupuj podľa kapitoly 14. Pri analýze nehodnoť štýl a nepoužívaj pravidlá z kapitoly 3. Tie platia len pre ciele, ktoré píšeme my.
 
 ---
 
-## 2. Model: tři dimenze × šest úrovní
+## 1. Cieľ a kontext učenia
 
-Každý cíl je průsečík jedné **dimenze** (s jakou znalostí žák pracuje) a jedné **úrovně** (jak ji zpracovává). Dohromady tvoří kvádr 3 × 6.
+**Vzdelávací cieľ** hovorí, čo žiak s poznatkom urobí. Má dve časti:
 
-### 2.1 Dimenze
+- **proces**, teda čo žiak v hlave alebo rukami robí (porovná, vysvetlí, vykoná, stanoví si cieľ…),  
+- **poznatok**, s ktorým to robí (pojem, princíp, postup, zručnosť).
 
-| Dimenze | Co sem patří | Typy |
+Samotná téma („šifrovanie“) cieľom nie je. Cieľ je až „Žiak vysvetlí, akú úlohu hrá pri šifrovaní algoritmus a akú kľúč.“
+
+**Kontext učenia** je konkrétna situácia, materiál alebo téma, v ktorej žiak cieľ napĺňa. Cieľ zostáva rovnaký a kontexty sa menia. Vďaka tomu je cieľ krátky a všeobecný a konkrétnosť nesie kontext.
+
+> **Cieľ:** Žiak pomocou systematického ladenia sfunkční nefunkčnú hru. **Kontext učenia:** hra v Scratchi, ktorá občas spadne · webová hra, v ktorej nereaguje tlačidlo
+
+Kniha pracuje so *vzdelávacími cieľmi*. Podmienky a výkonnostnú latku (koľko a ako dobre) do cieľa nepíšeme. Patria do kontextu a kritéria.
+
+---
+
+## 2. Model: tri dimenzie × šesť úrovní
+
+Každý cieľ je priesečník jednej **dimenzie** (s akým poznatkom žiak pracuje) a jednej **úrovne** (ako ho spracúva). Spolu tvoria kváder 3 × 6.
+
+### 2.1 Dimenzie
+
+| Dimenzia | Čo sem patrí | Typy |
 | :---- | :---- | :---- |
-| **Deklarativní znalosti** (Information) | Znalost toho, *co* platí. Nedá se provést. | **Detaily:** pojmy, fakta, časové sledy. **Organizující myšlenky:** zobecnění, principy. |
-| **Myšlenkové postupy** (Mental procedures) | Znalost toho, *jak* se něco dělá. Postupy, které žák provádí v hlavě. | **Dovednosti:** jednoduchá pravidla, algoritmy, taktiky; praxí se zautomatizují. **Procesy (makropostupy):** složité postupy jako psaní textu, návrh aplikace, ladění programu; je potřeba je pokaždé vědomě řídit. |
-| **Psychomotorické dovednosti** (Psychomotor procedures) | Pohybové postupy. Učí se stejně jako myšlenkové: nejdřív jako popis, pak se praxí vybrušují, nakonec „jdou samy“. | **Dovednosti:** základní schopnosti (obratnost prstů) a jednoduché kombinace (hod na koš). **Procesy:** složité kombinace (psaní všemi deseti, pájení, hra v týmu). |
+| **Deklaratívne poznatky** (Information) | Poznatok o tom, *čo* platí. Nedá sa vykonať. | **Detaily:** pojmy, fakty, časové slede. **Organizujúce myšlienky:** zovšeobecnenia, princípy. |
+| **Myšlienkové postupy** (Mental procedures) | Poznatok o tom, *ako* sa niečo robí. Postupy, ktoré žiak vykonáva v hlave. | **Zručnosti:** jednoduché pravidlá, algoritmy, taktiky; praxou sa zautomatizujú. **Procesy (makropostupy):** zložité postupy ako písanie textu, návrh aplikácie, ladenie programu; treba ich zakaždým vedome riadiť. |
+| **Psychomotorické zručnosti** (Psychomotor procedures) | Pohybové postupy. Učia sa rovnako ako myšlienkové: najprv ako opis, potom sa praxou vybrusujú, nakoniec „idú samy“. | **Zručnosti:** základné schopnosti (obratnosť prstov) a jednoduché kombinácie (hod na kôš). **Procesy:** zložité kombinácie (písanie všetkými desiatimi, spájkovanie, hra v tíme). |
 
-**Rozhodovací otázka:** Dá se to *provést*? Ano: jde o postup (myšlenkový, nebo pohybový). Ne, dá se to jen vědět, rozpoznat nebo vysvětlit: jde o deklarativní znalost.
+**Rozhodovacia otázka:** Dá sa to *vykonať*? Áno: ide o postup (myšlienkový alebo pohybový). Nie, dá sa to len vedieť, rozpoznať alebo vysvetliť: ide o deklaratívny poznatok.
 
-**Pozor:** Postup, který žák zatím umí jen popsat, je pro něj ve skutečnosti deklarativní znalost. Popis postupu prokazuje znalost *o* postupu. Zvládnutí prokáže až provedení.
+**Pozor:** Postup, ktorý žiak zatiaľ vie len opísať, je pre neho v skutočnosti deklaratívny poznatok. Opis postupu preukazuje poznatok *o* postupe. Zvládnutie preukáže až vykonanie.
 
-Jeden koncept často zahrnuje víc dimenzí. „Dvojková soustava“ je deklarativní znalost (proč ji počítač používá) i myšlenkový postup (převod čísla). Každý cíl ale míří jen na **jednu** dimenzi. Dimenzi uveď u každého cíle zvlášť.
+Jeden koncept často zahŕňa viac dimenzií. „Dvojková sústava“ je deklaratívny poznatok (prečo ju počítač používa) aj myšlienkový postup (prevod čísla). Každý cieľ však mieri len na **jednu** dimenziu. Dimenziu uveď pri každom cieli zvlášť.
 
-**Dimenzi určuje znalost, se kterou žák pracuje, ne jeho činnost.**
+**Dimenziu určuje poznatok, s ktorým žiak pracuje, nie jeho činnosť.**
 
-- Když žák *vysvětluje* postup (integrace) nebo hledá chyby v jeho provedení, dimenze zůstává **postup**. Příklad: „Žák vysvětlí princip psaní všemi deseti…“ patří k psychomotorickým dovednostem.  
-- Když žák na úrovni 4 použije princip jako podklad pro pokus nebo rozhodnutí, dimenze je **deklarativní znalost** (třeba pokus s fotosyntézou).  
-- U úrovní 5 a 6 uveď dimenzi znalosti, o které žák přemýšlí. Stanovení cíle ve zlepšení ladění je tedy myšlenkový postup.
+- Keď žiak *vysvetľuje* postup (integrácia) alebo hľadá chyby v jeho vykonaní, dimenzia zostáva **postup**. Príklad: „Žiak vysvetlí princíp písania všetkými desiatimi…“ patrí k psychomotorickým zručnostiam.  
+- Keď žiak na úrovni 4 použije princíp ako podklad pre pokus alebo rozhodnutie, dimenzia je **deklaratívny poznatok** (napríklad pokus s fotosyntézou).  
+- Pri úrovniach 5 a 6 uveď dimenziu poznatku, o ktorom žiak premýšľa. Stanovenie cieľa zlepšiť sa v ladení je teda myšlienkový postup.
 
-### 2.2 Úrovně a procesy
+### 2.2 Úrovne a procesy
 
-Úrovně nejsou seřazené podle obtížnosti, ale podle toho, kolik vědomé kontroly žák potřebuje. Obtížnost cíle určuje složitost znalosti a kontextu, ne úroveň.
+Úrovne nie sú zoradené podľa náročnosti, ale podľa toho, koľko vedomej kontroly žiak potrebuje. Náročnosť cieľa určuje zložitosť poznatku a kontextu, nie úroveň.
 
-**1 Vybavování** (Retrieval) · procesy: rozpoznání, vybavení, provedení
+**1 Vybavovanie** (Retrieval) · procesy: rozpoznanie, vybavenie, vykonanie
 
-*Co to je:* Žák si znalost vybaví v podobě, v jaké se ji naučil. Pozná správné tvrzení, sám ho zformuluje nebo provede naučený postup. Vybavování je přenos znalosti z dlouhodobé paměti do pracovní, kde s ní člověk může vědomě pracovat.
+*Čo to je:* Žiak si poznatok vybaví v podobe, v akej sa ho naučil. Spozná správne tvrdenie, sám ho sformuluje alebo vykoná naučený postup. Vybavovanie je prenos poznatku z dlhodobej pamäte do pracovnej, kde s ním človek môže vedome pracovať.
 
-*Jak se ověřuje:* Testem s výběrem odpovědi, otázkou na to, co se probíralo, nebo úkolem, ve kterém žák provede postup bez podstatných chyb.
+*Ako sa overuje:* Testom s výberom odpovede, otázkou na to, čo sa preberalo, alebo úlohou, v ktorej žiak vykoná postup bez podstatných chýb.
 
-**2 Porozumění** (Comprehension) · procesy: integrace, symbolizace
+**2 Porozumenie** (Comprehension) · procesy: integrácia, symbolizácia
 
-*Co to je:* Žák si znalost uspořádá do celku a propojí ji s tím, co už ví. Odliší podstatné od nepodstatného a jádro vyjádří vlastními slovy nebo znázorní. Porozumění převádí znalost do úsporné podoby, ve které se uloží do dlouhodobé paměti.
+*Čo to je:* Žiak si poznatok usporiada do celku a prepojí ho s tým, čo už vie. Odlíši podstatné od nepodstatného a jadro vyjadrí vlastnými slovami alebo znázorní. Porozumenie prevádza poznatok do úspornej podoby, v ktorej sa uloží do dlhodobej pamäte.
 
-*Jak se ověřuje:* Shrnutím vlastními slovy, popisem toho, co je podstatné, u postupu popisem kroků a toho, proč jdou v tomto pořadí. Nebo schématem či grafem, který znalost přesně zachycuje.
+*Ako sa overuje:* Zhrnutím vlastnými slovami, opisom toho, čo je podstatné, pri postupe opisom krokov a toho, prečo idú v tomto poradí. Alebo schémou či grafom, ktorý poznatok presne zachytáva.
 
-**3 Analýza** (Analysis) · procesy: porovnávání, třídění, analýza chyb, zobecňování, specifikace
+**3 Analýza** (Analysis) · procesy: porovnávanie, triedenie, analýza chýb, zovšeobecňovanie, špecifikácia
 
-*Co to je:* Žák z toho, co ví, vyvozuje něco nového, co dosud nevěděl. Porovnává, třídí, hledá chyby, zobecňuje a domýšlí důsledky. Na této úrovni žák tyto činnosti provádí vědomě a důsledně, a znalost tím mění a zpřesňuje.
+*Čo to je:* Žiak z toho, čo vie, vyvodzuje niečo nové, čo doteraz nevedel. Porovnáva, triedi, hľadá chyby, zovšeobecňuje a domýšľa dôsledky. Na tejto úrovni žiak tieto činnosti vykonáva vedome a dôsledne, a poznatok tým mení a spresňuje.
 
-*Jak se ověřuje:* Úlohou, kterou nejde vyřešit zopakováním, třeba porovnáním, zařazením do kategorie, hledáním chyb, odvozením pravidla z příkladů nebo předpovědí, co se stane, když… Žák přitom zdůvodní svůj postup.
+*Ako sa overuje:* Úlohou, ktorú nemožno vyriešiť zopakovaním, napríklad porovnaním, zaradením do kategórie, hľadaním chýb, odvodením pravidla z príkladov alebo predpoveďou, čo sa stane, keď… Žiak pritom zdôvodní svoj postup.
 
-**4 Použití znalostí** (Knowledge Utilization) · procesy: rozhodování, řešení problému, experimentování, zkoumání
+**4 Použitie poznatkov** (Knowledge Utilization) · procesy: rozhodovanie, riešenie problému, experimentovanie, skúmanie
 
-*Co to je:* Žák použije, co ví a umí, ke splnění konkrétního úkolu. Rozhoduje se mezi možnostmi, řeší problém, ověřuje hypotézu pokusem nebo ze zdrojů zkoumá, proč se něco stalo nebo co by se stalo, kdyby… Právě v konkrétním úkolu se znalost stává užitečnou.
+*Čo to je:* Žiak použije, čo vie a dokáže, na splnenie konkrétnej úlohy. Rozhoduje sa medzi možnosťami, rieši problém, overuje hypotézu pokusom alebo zo zdrojov skúma, prečo sa niečo stalo alebo čo by sa stalo, keby… Práve v konkrétnej úlohe sa poznatok stáva užitočným.
 
-*Jak se ověřuje:* Praktickým úkolem nebo projektem, který bez dané znalosti nejde splnit. Žák dojde k výsledku a vysvětlí, jak mu k němu znalost pomohla.
+*Ako sa overuje:* Praktickou úlohou alebo projektom, ktorý sa bez daného poznatku nedá splniť. Žiak dôjde k výsledku a vysvetlí, ako mu k nemu poznatok pomohol.
 
-**5 Metakognice** (Metacognition) · procesy: stanovení cílů, sledování průběhu, sledování jasnosti, sledování přesnosti
+**5 Metakognícia** (Metacognition) · procesy: stanovenie cieľov, sledovanie priebehu, sledovanie jasnosti, sledovanie presnosti
 
-*Co to je:* Žák řídí vlastní učení. Stanoví si cíl a plán a sleduje a vyhodnocuje, zda má potřebné znalosti a dovednosti ke splnění cíle. Metakognice je možná pouze v případě, že žák má dostatečný zájem na splnění cíle (Já-systém).
+*Čo to je:* Žiak riadi vlastné učenie. Stanoví si cieľ a plán a sleduje a vyhodnocuje, či má potrebné vedomosti a zručnosti na splnenie cieľa. Metakognícia je možná len vtedy, keď má žiak dostatočný záujem na splnení cieľa (systém ja).
 
-*Jak se ověřuje:* Cílem s plánem, který žák zapíše nebo jinak vytvoří či sdělí, průběžným popisem toho, co mu jde a co změní, nebo sebehodnocením, ve kterém přesně pojmenuje, čemu nerozumí, a zdrojem doloží, co má správně.
+*Ako sa overuje:* Cieľom s plánom, ktorý žiak zapíše alebo inak vytvorí či oznámi, priebežným opisom toho, čo mu ide a čo zmení, alebo sebahodnotením, v ktorom presne pomenuje, čomu nerozumie, a zdrojom doloží, čo má správne.
 
-**6 Já-systém** (Self-system · motivace) · procesy: důležitost, vlastní účinnost, emoční reakce, motivace
+**6 Systém ja** (Self-system · motivácia) · procesy: dôležitosť, vlastná účinnosť, emočná reakcia, motivácia
 
-*Co to je:* Žák zkoumá, co ho k učení vede, nebo od něj odrazuje. Zvažuje, jak je pro něj látka důležitá, jestli věří, že má schopnosti a možnosti se ji naučit, jaké emoce v něm vyvolává a co z toho nejvíc ovlivňuje jeho motivaci. Já-systém tvoří postoje, přesvědčení a emoce, které rozhodují, jestli se žák do učení pustí a kolik do něj vloží energie.
+*Čo to je:* Žiak skúma, čo ho k učeniu vedie alebo od neho odrádza. Zvažuje, aké dôležité je pre neho učivo, či verí, že má schopnosti a možnosti naučiť sa ho, aké emócie v ňom vyvoláva a čo z toho najviac ovplyvňuje jeho motiváciu. Systém ja tvoria postoje, presvedčenia a emócie, ktoré rozhodujú, či sa žiak do učenia pustí a koľko doň vloží energie.
 
-*Jak se ověřuje:* Reflexí, ve které žák pojmenuje svůj postoj, vysvětlí, z čeho vychází, a posoudí, jak rozumná je jeho úvaha. Cílem není postoj změnit, ale porozumět mu. Hodnotí se promyšlenost úvahy, ne míra motivace.
+*Ako sa overuje:* Reflexiou, v ktorej žiak pomenuje svoj postoj, vysvetlí, z čoho vychádza, a posúdi, aká rozumná je jeho úvaha. Cieľom nie je postoj zmeniť, ale porozumieť mu. Hodnotí sa premyslenosť úvahy, nie miera motivácie.
 
 ---
 
-## 3. Jak cíl napsat
+## 3. Ako cieľ napísať
 
-### 3.1 Šablona
+### 3.1 Šablóna
 
-> **Žák** + **sloveso** (proces) + **znalost** [+ nezbytná podmínka]
+> **Žiak** + **sloveso** (proces) + **poznatok** [+ nevyhnutná podmienka]
 
-Kniha používá „Žák dokáže + infinitiv“. My píšeme rovnou sloveso ve 3. osobě.
+Kniha používa „Žiak dokáže + neurčitok“. My píšeme rovno sloveso v 3. osobe.
 
-### 3.2 Pravidla stylu
+### 3.2 Pravidlá štýlu
 
-1. **Začni slovem „Žák“ a pokračuj slovesem ve 3. osobě jednotného čísla**, nejlépe dokonavým: uvede, vysvětlí, nakreslí, porovná, vybere, posoudí. Nedokonavé sloveso jen tam, kde jde o průběžnou činnost: „sleduje“.  
-2. **Nepiš „dokáže“, „umí“, „je schopen“, „zvládne“ + infinitiv.** Nepoužívej nepozorovatelná slovesa: zná, ví, rozumí, chápe, uvědomí si, naučí se, seznámí se.  
-3. **Zvratné „si/se“ patří hned za „Žák“:** „Žák si stanoví…“, ne „Žák stanoví si…“.  
-4. **Jedno hlavní sloveso.** Druhé jen tehdy, když je součástí téhož výkonu: „zhodnotí postup … a navrhne zlepšení“, „vysvětlí princip … a popíše jeho výhody“. Nikdy tři.  
-5. **Krátce.** Orientačně do 15 slov, dlouhý název konceptu se nepočítá. Žádná vata („v rámci“, „na základě získaných poznatků“).  
-6. **Obecně, ne scénářem.** Konkrétní situace, materiál, nástroj nebo příběh patří do kontextu učení. Místo „hru, která občas spadne“ napiš „nefunkční hru“, místo „třídních dat“ napiš „dat“. V cíli ale zůstává **nezbytná podmínka**, tedy to, co určuje samotný proces a platí obecně: hledisko porovnání („podle spotřebovaných látek“), podmínka u specifikace („když se zvětší velikost obrázků“), kritéria u rozhodování („podle předem stanovených kritérií“). Rozlišovací otázka: Změnil by se proces, kdybych to vynechal? Ano: je to podmínka a patří do cíle. Ne, jen by se změnila situace: je to scénář a patří do kontextu.  
-7. **Znalost pojmenuj.** Cíl musí dávat smysl i vytržený z mapy. Stačí krátce: „při ladění“, „o šifrování“, „psaní všemi deseti“.  
-8. **Kotvi v konkrétnosti tam, kde je to podstata procesu:** „na konkrétním příkladu“, „pro svou konkrétní potřebu“, „konkrétního programu“.  
-9. **„Svůj“ patří jen do úrovní 5 a 6**, kde jde o žákovu vlastní znalost, cíl nebo postoj („svých tvrzení“, „svou schopnost“, „pro svou potřebu“). Na úrovních 1–4 ho vynech („postupu při ladění“, ne „svého postupu při ladění“).  
-10. **Měřítko kvality jen tam, kde je součástí procesu:** „bez podstatných chyb“ u provedení, „podle předem stanovených kritérií“ u rozhodování. Jinak kvalitu nese kritérium.  
-11. **Perspektiva žáka, ne učitele.** Ne „Učitel představí…“, ale „Žák vysvětlí…“.  
-12. **Jeden cíl = jeden proces = jedna dimenze.**
+1. **Začni slovom „Žiak“ a pokračuj slovesom v 3. osobe jednotného čísla**, najlepšie dokonavým: uvedie, vysvetlí, nakreslí, porovná, vyberie, posúdi. Nedokonavé sloveso len tam, kde ide o priebežnú činnosť: „sleduje“.  
+2. **Nepíš „dokáže“, „vie“, „je schopný“, „zvládne“ + neurčitok.** Nepoužívaj nepozorovateľné slovesá: pozná, vie, rozumie, chápe, uvedomí si, naučí sa, oboznámi sa.  
+3. **Zvratné „si/sa“ patrí hneď za „Žiak“:** „Žiak si stanoví…“, nie „Žiak stanoví si…“.  
+4. **Jedno hlavné sloveso.** Druhé len vtedy, keď je súčasťou toho istého výkonu: „zhodnotí postup … a navrhne zlepšenie“, „vysvetlí princíp … a opíše jeho výhody“. Nikdy tri.  
+5. **Krátko.** Orientačne do 15 slov, dlhý názov konceptu sa nepočíta. Žiadna vata („v rámci“, „na základe získaných poznatkov“).  
+6. **Všeobecne, nie scenárom.** Konkrétna situácia, materiál, nástroj alebo príbeh patrí do kontextu učenia. Namiesto „hru, ktorá občas spadne“ napíš „nefunkčnú hru“, namiesto „triednych dát“ napíš „dát“. V cieli však zostáva **nevyhnutná podmienka**, teda to, čo určuje samotný proces a platí všeobecne: hľadisko porovnania („podľa spotrebovaných látok“), podmienka pri špecifikácii („keď sa zväčší veľkosť obrázkov“), kritériá pri rozhodovaní („podľa vopred stanovených kritérií“). Rozlišovacia otázka: Zmenil by sa proces, keby som to vynechal? Áno: je to podmienka a patrí do cieľa. Nie, len by sa zmenila situácia: je to scenár a patrí do kontextu.  
+7. **Poznatok pomenuj.** Cieľ musí dávať zmysel aj vytrhnutý z mapy. Stačí krátko: „pri ladení“, „o šifrovaní“, „písania všetkými desiatimi“.  
+8. **Ukotvi v konkrétnosti tam, kde je to podstata procesu:** „na konkrétnom príklade“, „pre svoju konkrétnu potrebu“, „konkrétneho programu“.  
+9. **„Svoj“ patrí len do úrovní 5 a 6**, kde ide o žiakov vlastný poznatok, cieľ alebo postoj („svojich tvrdení“, „svoju schopnosť“, „pre svoju potrebu“). Na úrovniach 1–4 ho vynechaj („postupu pri ladení“, nie „svojho postupu pri ladení“).  
+10. **Meradlo kvality len tam, kde je súčasťou procesu:** „bez podstatných chýb“ pri vykonaní, „podľa vopred stanovených kritérií“ pri rozhodovaní. Inak kvalitu nesie kritérium.  
+11. **Perspektíva žiaka, nie vyučujúceho.** Nie „Vyučujúci predstaví…“, ale „Žiak vysvetlí…“.  
+12. **Jeden cieľ = jeden proces = jedna dimenzia.**
 
-### 3.3 Před a po (skutečné úpravy z naší praxe)
+### 3.3 Pred a po (skutočné úpravy z našej praxe)
 
-| Původní formulace | Upravená | Co se změnilo |
+| Pôvodná formulácia | Upravená | Čo sa zmenilo |
 | :---- | :---- | :---- |
-| Žák dokáže nakreslit vývojový diagram svého postupu při ladění. | Žák nakreslí vývojový diagram postupu při ladění. | pryč „dokáže“ a zbytečné „svého“ |
-| Žák dokáže posoudit, jak důležité je pro něj šifrování rozumět, a zhodnotit, zda jeho úvaha dává smysl. | Žák zhodnotí důležitost znalosti šifrování pro svou konkrétní potřebu. | jedno sloveso, kratší |
-| Žák dokáže najít chybu v postupu spolužáka, který mění několik věcí najednou. | Žák zhodnotí postup ladění spolužáka a navrhne zlepšení. | scénář přesunut do kontextu |
-| Žák stanoví si cíl a plán zlepšení v ladění programů. | Žák si stanoví cíl a plán zlepšení v ladění konkrétního programu. | slovosled „si“, kotva v konkrétnosti |
-| Žák vybere vhodné zabezpečení pro sdílení třídních dat podle předem stanovených kritérií. | Žák vybere vhodné zabezpečení pro sdílení dat podle předem stanovených kritérií. | obecnější |
-| Žák pomocí systematického ladění zprovozní hru, která občas spadne. | Žák pomocí systematického ladění zprovozní nefunkční hru. | obecnější |
-| Žák posoudí pravdivost tvrzení „zámek v prohlížeči znamená, že je web bezpečný“. | Žák posoudí pravdivost tvrzení „heslo je bezpečné“ na konkrétním příkladu. | kratší tvrzení, kotva v příkladu |
-| Žák vysvětlí, proč se prsty při psaní všemi deseti vracejí do základní řady. | Žák vysvětlí princip psaní všemi deseti a popíše jeho výhody. | celek místo jednoho detailu |
-| Žák experimentálně ověří, zda je při nácviku psaní všemi deseti účinnější krátký denní trénink, nebo jeden dlouhý. | Žák experimentálně ověří, jaký způsob tréninku psaní všemi deseti je pro něj nejúčinnější. | kratší, hypotéza do kontextu |
+| Žiak dokáže nakresliť vývojový diagram svojho postupu pri ladení. | Žiak nakreslí vývojový diagram postupu pri ladení. | preč „dokáže“ a zbytočné „svojho“ |
+| Žiak dokáže posúdiť, aké dôležité je pre neho šifrovaniu rozumieť, a zhodnotiť, či jeho úvaha dáva zmysel. | Žiak zhodnotí dôležitosť poznatkov o šifrovaní pre svoju konkrétnu potrebu. | jedno sloveso, kratšie |
+| Žiak dokáže nájsť chybu v postupe spolužiaka, ktorý mení niekoľko vecí naraz. | Žiak zhodnotí postup ladenia spolužiaka a navrhne zlepšenie. | scenár presunutý do kontextu |
+| Žiak stanoví si cieľ a plán zlepšenia v ladení programov. | Žiak si stanoví cieľ a plán zlepšenia v ladení konkrétneho programu. | slovosled „si“, kotva v konkrétnosti |
+| Žiak vyberie vhodné zabezpečenie na zdieľanie triednych dát podľa vopred stanovených kritérií. | Žiak vyberie vhodné zabezpečenie na zdieľanie dát podľa vopred stanovených kritérií. | všeobecnejšie |
+| Žiak pomocou systematického ladenia sfunkční hru, ktorá občas spadne. | Žiak pomocou systematického ladenia sfunkční nefunkčnú hru. | všeobecnejšie |
+| Žiak posúdi pravdivosť tvrdenia „zámok v prehliadači znamená, že je web bezpečný“. | Žiak posúdi pravdivosť tvrdenia „heslo je bezpečné“ na konkrétnom príklade. | kratšie tvrdenie, kotva v príklade |
+| Žiak vysvetlí, prečo sa prsty pri písaní všetkými desiatimi vracajú do základného radu. | Žiak vysvetlí princíp písania všetkými desiatimi a opíše jeho výhody. | celok namiesto jedného detailu |
+| Žiak experimentálne overí, či je pri nácviku písania všetkými desiatimi účinnejší krátky denný tréning, alebo jeden dlhý. | Žiak experimentálne overí, aký spôsob tréningu písania všetkými desiatimi je pre neho najúčinnejší. | kratšie, hypotéza do kontextu |
 
 ---
 
-## 4. Procesy: vzory a slovesa
+## 4. Procesy: vzory a slovesá
 
-Vzor odpovídá obecné formě cíle z knihy (obr. 5.1). Za [znalost] dosaď konkrétní koncept. Slovesa jsou orientační. **Proces neurčuje sloveso, ale to, co úloha po žákovi skutečně chce** (viz kapitola 6).
+Vzor zodpovedá všeobecnej forme cieľa z knihy (obr. 5.1). Za [poznatok] dosaď konkrétny koncept. Slovesá sú orientačné. **Proces neurčuje sloveso, ale to, čo úloha od žiaka skutočne chce** (pozri kapitolu 6).
 
-### Úroveň 1: Vybavování
+### Úroveň 1: Vybavovanie
 
-| Proces | Co žák dělá | Vzor | Slovesa |
+| Proces | Čo žiak robí | Vzor | Slovesá |
 | :---- | :---- | :---- | :---- |
-| **Rozpoznání** | Ověří správnost předložených tvrzení o tom, co se probíralo. Sám je vytvořit nemusí. | Žák rozpozná správná tvrzení o [znalosti]. | rozpozná, vybere správné, přiřadí, označí |
-| **Vybavení** | Sám uvede, co se probíralo. U postupu popíše jeho povahu a účel, ne provedení. | Žák uvede [vlastnosti, příklady, účel] [znalosti]. | uvede, vyjmenuje, pojmenuje, definuje, popíše |
-| **Provedení** | Provede postup bez podstatné chyby. Nemusí vědět, proč postup funguje. **Jen u postupů.** | Žák [provede postup] (bez podstatných chyb). | provede, vypočítá, převede, sestaví, napíše, opraví, nastaví |
+| **Rozpoznanie** | Overí správnosť predložených tvrdení o tom, čo sa preberalo. Sám ich vytvoriť nemusí. | Žiak rozpozná správne tvrdenia o [poznatku]. | rozpozná, vyberie správne, priradí, označí |
+| **Vybavenie** | Sám uvedie, čo sa preberalo. Pri postupe opíše jeho povahu a účel, nie vykonanie. | Žiak uvedie [vlastnosti, príklady, účel] [poznatku]. | uvedie, vymenuje, pomenuje, definuje, opíše |
+| **Vykonanie** | Vykoná postup bez podstatnej chyby. Nemusí vedieť, prečo postup funguje. **Len pri postupoch.** | Žiak [vykoná postup] (bez podstatných chýb). | vykoná, vypočíta, prevedie, zostaví, napíše, opraví, nastaví |
 
-### Úroveň 2: Porozumění
+### Úroveň 2: Porozumenie
 
-| Proces | Co žák dělá | Vzor | Slovesa |
+| Proces | Čo žiak robí | Vzor | Slovesá |
 | :---- | :---- | :---- | :---- |
-| **Integrace** | Vyjádří jádro znalosti vlastními slovy a odliší podstatné od nepodstatného. U principu popíše vztah mezi proměnnými, u postupu logiku kroků a jejich pořadí. | Žák vysvětlí [princip / strukturu / logiku kroků] [znalosti]. | vysvětlí, shrne, popíše vlastními slovy, odliší podstatné od nepodstatného |
-| **Symbolizace** | Přesně znázorní znalost (schéma, graf, vývojový diagram, model) a zachytí v něm podstatné prvky. | Žák znázorní [znalost] [formou]. | znázorní, nakreslí, vytvoří schéma / graf / vývojový diagram / myšlenkovou mapu, sestaví model |
+| **Integrácia** | Vyjadrí jadro poznatku vlastnými slovami a odlíši podstatné od nepodstatného. Pri princípe opíše vzťah medzi premennými, pri postupe logiku krokov a ich poradie. | Žiak vysvetlí [princíp / štruktúru / logiku krokov] [poznatku]. | vysvetlí, zhrnie, opíše vlastnými slovami, odlíši podstatné od nepodstatného |
+| **Symbolizácia** | Presne znázorní poznatok (schéma, graf, vývojový diagram, model) a zachytí v ňom podstatné prvky. | Žiak znázorní [poznatok] [formou]. | znázorní, nakreslí, vytvorí schému / graf / vývojový diagram / myšlienkovú mapu, zostaví model |
 
 ### Úroveň 3: Analýza
 
-| Proces | Co žák dělá | Vzor | Slovesa |
+| Proces | Čo žiak robí | Vzor | Slovesá |
 | :---- | :---- | :---- | :---- |
-| **Porovnávání** | Určí důležité podobnosti a rozdíly podle podstatných znaků. | Žák porovná [A] a [B] podle [hlediska]. | porovná, určí podobnosti a rozdíly, odliší |
-| **Třídění** | Zařadí znalost do nadřazené kategorie, případně určí podkategorie, a zdůvodní to. | Žák zařadí [znalost] do [kategorie] a zdůvodní zařazení. | zařadí, roztřídí, určí kategorii, uspořádá |
-| **Analýza chyb** | U deklarativních znalostí posoudí, jestli je tvrzení pravdivé a podložené. U postupů najde chyby v provedení. | Žák posoudí pravdivost tvrzení o [znalosti]. / Žák určí chyby v [provedení postupu]. | posoudí pravdivost, odhalí, určí chyby, zhodnotí postup a navrhne zlepšení |
-| **Zobecňování** | Z konkrétních příkladů nebo dat vyvodí nové obecné pravidlo a obhájí ho. | Žák z [příkladů / dat] vyvodí obecné pravidlo o [znalosti]. | vyvodí, formuluje pravidlo, odvodí závěr |
-| **Specifikace** | Z pravidla nebo principu vyvodí, co se stane za určitých podmínek. **Ne u detailů.** | Žák předpoví, jak se [znalost] projeví, když [podmínka]. | předpoví, odvodí důsledek, určí, co se stane, když… |
+| **Porovnávanie** | Určí dôležité podobnosti a rozdiely podľa podstatných znakov. | Žiak porovná [A] a [B] podľa [hľadiska]. | porovná, určí podobnosti a rozdiely, odlíši |
+| **Triedenie** | Zaradí poznatok do nadradenej kategórie, prípadne určí podkategórie, a zdôvodní to. | Žiak zaradí [poznatok] do [kategórie] a zdôvodní zaradenie. | zaradí, roztriedi, určí kategóriu, usporiada |
+| **Analýza chýb** | Pri deklaratívnych poznatkoch posúdi, či je tvrdenie pravdivé a podložené. Pri postupoch nájde chyby vo vykonaní. | Žiak posúdi pravdivosť tvrdenia o [poznatku]. / Žiak určí chyby vo [vykonaní postupu]. | posúdi pravdivosť, odhalí, určí chyby, zhodnotí postup a navrhne zlepšenie |
+| **Zovšeobecňovanie** | Z konkrétnych príkladov alebo dát vyvodí nové všeobecné pravidlo a obháji ho. | Žiak z [príkladov / dát] vyvodí všeobecné pravidlo o [poznatku]. | vyvodí, sformuluje pravidlo, odvodí záver |
+| **Špecifikácia** | Z pravidla alebo princípu vyvodí, čo sa stane za určitých podmienok. **Nie pri detailoch.** | Žiak predpovie, ako sa [poznatok] prejaví, keď [podmienka]. | predpovie, odvodí dôsledok, určí, čo sa stane, keď… |
 
-### Úroveň 4: Použití znalostí
+### Úroveň 4: Použitie poznatkov
 
-Každý proces má dvě varianty: znalost se buď **použije** k řešení, nebo se řeší úkol **o** znalosti samotné. U postupů musí být úkol postavený tak, aby ho žák bez daného postupu nevyřešil.
+Každý proces má dva varianty: poznatok sa buď **použije** na riešenie, alebo sa rieši úloha **o** poznatku samotnom. Pri postupoch musí byť úloha postavená tak, aby ju žiak bez daného postupu nevyriešil.
 
-| Proces | Co žák dělá | Vzor | Slovesa |
+| Proces | Čo žiak robí | Vzor | Slovesá |
 | :---- | :---- | :---- | :---- |
-| **Rozhodování** | Vybírá mezi možnostmi, které zpočátku vypadají podobně, podle kritérií. | Žák vybere [nejvhodnější možnost] podle [kritérií]. | vybere, rozhodne se, zvolí, doporučí |
-| **Řešení problému** | Dosáhne cíle, kterému stojí v cestě překážka nebo omezení. | Žák pomocí [znalosti] vyřeší [problém]. | vyřeší, zprovozní, navrhne řešení, přizpůsobí |
-| **Experimentování** | Vytvoří hypotézu a ověří ji pozorováním nebo měřením. | Žák experimentálně ověří, [hypotéza o znalosti]. | experimentálně ověří, otestuje, navrhne a provede pokus |
-| **Zkoumání** | Hledá odpověď na otázku o minulosti, přítomnosti nebo budoucnosti (Co se stalo? Proč? Co by se stalo, kdyby…?) ze zdrojů a cizích tvrzení a závěr podloží argumenty. | Žák na základě zdrojů prozkoumá, [otázka]. | prozkoumá, dohledá a vyhodnotí zdroje, obhájí závěr |
+| **Rozhodovanie** | Vyberá medzi možnosťami, ktoré spočiatku vyzerajú podobne, podľa kritérií. | Žiak vyberie [najvhodnejšiu možnosť] podľa [kritérií]. | vyberie, rozhodne sa, zvolí, odporučí |
+| **Riešenie problému** | Dosiahne cieľ, ktorému stojí v ceste prekážka alebo obmedzenie. | Žiak pomocou [poznatku] vyrieši [problém]. | vyrieši, sfunkční, navrhne riešenie, prispôsobí |
+| **Experimentovanie** | Vytvorí hypotézu a overí ju pozorovaním alebo meraním. | Žiak experimentálne overí [hypotézu o poznatku]. | experimentálne overí, otestuje, navrhne a uskutoční pokus |
+| **Skúmanie** | Hľadá odpoveď na otázku o minulosti, prítomnosti alebo budúcnosti (Čo sa stalo? Prečo? Čo by sa stalo, keby…?) zo zdrojov a cudzích tvrdení a záver podloží argumentmi. | Žiak na základe zdrojov preskúma [otázku]. | preskúma, dohľadá a vyhodnotí zdroje, obháji záver |
 
-### Úroveň 5: Metakognice
+### Úroveň 5: Metakognícia
 
-| Proces | Co žák dělá | Vzor | Slovesa |
+| Proces | Čo žiak robí | Vzor | Slovesá |
 | :---- | :---- | :---- | :---- |
-| **Stanovení cílů** | Stanoví si konkrétní cíl a plán (kroky, časový rámec, zdroje). | Žák si stanoví cíl a plán zlepšení v [znalosti]. | si stanoví cíl a plán, naplánuje |
-| **Sledování průběhu** | Během práce sleduje, jak se blíží ke stanovenému cíli, a upravuje postup. | Žák během [činnosti] sleduje plnění stanoveného cíle. | sleduje, vyhodnocuje průběžně |
-| **Sledování jasnosti** | Přesně pojmenuje, čemu nerozumí nebo v čem si není jistý. | Žák pojmenuje, čemu v [znalosti] nerozumí. | pojmenuje nejasnosti, určí, čemu nerozumí |
-| **Sledování přesnosti** | Ověří své tvrzení nebo postup ve vnějším zdroji. | Žák ověří správnost svých tvrzení o [znalosti] v důvěryhodném zdroji. | ověří, porovná se zdrojem, doloží |
+| **Stanovenie cieľov** | Stanoví si konkrétny cieľ a plán (kroky, časový rámec, zdroje). | Žiak si stanoví cieľ a plán zlepšenia v [poznatku]. | si stanoví cieľ a plán, naplánuje |
+| **Sledovanie priebehu** | Počas práce sleduje, ako sa blíži k stanovenému cieľu, a upravuje postup. | Žiak počas [činnosti] sleduje plnenie stanoveného cieľa. | sleduje, priebežne vyhodnocuje |
+| **Sledovanie jasnosti** | Presne pomenuje, čomu nerozumie alebo v čom si nie je istý. | Žiak pomenuje, čomu v [poznatku] nerozumie. | pomenuje nejasnosti, určí, čomu nerozumie |
+| **Sledovanie presnosti** | Overí svoje tvrdenie alebo postup vo vonkajšom zdroji. | Žiak overí správnosť svojich tvrdení o [poznatku] v dôveryhodnom zdroji. | overí, porovná so zdrojom, doloží |
 
-### Úroveň 6: Já-systém
+### Úroveň 6: Systém ja
 
-| Proces | Co žák dělá | Vzor | Slovesa |
+| Proces | Čo žiak robí | Vzor | Slovesá |
 | :---- | :---- | :---- | :---- |
-| **Důležitost** | Určí, jak je pro něj znalost důležitá, a posoudí své důvody. | Žák zhodnotí důležitost [znalosti] pro svou konkrétní potřebu. | zhodnotí důležitost, určí důležitost |
-| **Vlastní účinnost** | Posoudí, nakolik věří, že má schopnosti a možnosti se zlepšit, a na čem to stojí. | Žák posoudí svou schopnost zlepšit se v [znalosti]. | posoudí svou schopnost |
-| **Emoční reakce** | Pojmenuje emoce, které se znalostí spojuje, a jejich příčinu. Cílem je emoci porozumět, ne ji změnit. | Žák pojmenuje emoce spojené s [znalostí] a jejich příčinu. | pojmenuje emoce, určí příčinu |
-| **Motivace** | Zváží důležitost, vlastní účinnost i emoce a určí, co jeho motivaci ovlivňuje nejvíc. | Žák určí, co nejvíc ovlivňuje jeho motivaci zlepšit se v [znalosti]. | určí, co ovlivňuje motivaci |
+| **Dôležitosť** | Určí, aký dôležitý je pre neho poznatok, a posúdi svoje dôvody. | Žiak zhodnotí dôležitosť [poznatku] pre svoju konkrétnu potrebu. | zhodnotí dôležitosť, určí dôležitosť |
+| **Vlastná účinnosť** | Posúdi, nakoľko verí, že má schopnosti a možnosti zlepšiť sa, a na čom to stojí. | Žiak posúdi svoju schopnosť zlepšiť sa v [poznatku]. | posúdi svoju schopnosť |
+| **Emočná reakcia** | Pomenuje emócie, ktoré s poznatkom spája, a ich príčinu. Cieľom je emócii porozumieť, nie ju zmeniť. | Žiak pomenuje emócie spojené s [poznatkom] a ich príčinu. | pomenuje emócie, určí príčinu |
+| **Motivácia** | Zváži dôležitosť, vlastnú účinnosť aj emócie a určí, čo jeho motiváciu ovplyvňuje najviac. | Žiak určí, čo najviac ovplyvňuje jeho motiváciu zlepšiť sa v [poznatku]. | určí, čo ovplyvňuje motiváciu |
 
 ---
 
-## 5. Co platí pro kterou dimenzi
+## 5. Čo platí pre ktorú dimenziu
 
-| Úroveň | Deklarativní znalosti | Myšlenkové a psychomotorické postupy |
+| Úroveň | Deklaratívne poznatky | Myšlienkové a psychomotorické postupy |
 | :---- | :---- | :---- |
-| **1** | Jen rozpoznání a vybavení. **Provedení neexistuje.** | Rozpoznání a vybavení prokazují jen znalost *o* postupu. Skutečné zvládnutí prokáže **provedení**, proto ho u postupů upřednostni. |
-| **2** | Integrace: podstatné vs. nepodstatné, u principu vztah proměnných. Integrace u detailů jen tehdy, když mají strukturu (třeba sled událostí). Symbolizace: schéma, graf. | Integrace: kroky, jejich pořadí a logika. Symbolizace: vývojový diagram, schéma postupu. |
-| **3** | Analýza chyb: pravdivost a podloženost tvrzení. **Specifikace jen u zobecnění a principů**, ne u detailů. | Analýza chyb: chyby v provedení. Třídění u dovedností: jen nadřazená kategorie. Specifikace: jak se postup změní za jiných podmínek. |
-| **4** | Znalost slouží jako podklad nebo kritérium rozhodnutí či řešení. | Postup je nástroj, bez kterého úkol nejde vyřešit. U psychomotoriky jde při rozhodování většinou o volbu nejvhodnější dovednosti. |
-| **5** | Sledování průběhu: jak se porozumění vyvíjí v čase. Hodí se sledování jasnosti a přesnosti. | Sledování průběhu: v reálném čase během provádění. Hodí se stanovení cílů a sledování průběhu. |
-| **6** | Stejné pro všechny dimenze. | Stejné pro všechny dimenze. |
+| **1** | Len rozpoznanie a vybavenie. **Vykonanie neexistuje.** | Rozpoznanie a vybavenie preukazujú len poznatok *o* postupe. Skutočné zvládnutie preukáže **vykonanie**, preto ho pri postupoch uprednostni. |
+| **2** | Integrácia: podstatné vs. nepodstatné, pri princípe vzťah premenných. Integrácia pri detailoch len vtedy, keď majú štruktúru (napríklad sled udalostí). Symbolizácia: schéma, graf. | Integrácia: kroky, ich poradie a logika. Symbolizácia: vývojový diagram, schéma postupu. |
+| **3** | Analýza chýb: pravdivosť a podloženosť tvrdení. **Špecifikácia len pri zovšeobecneniach a princípoch**, nie pri detailoch. | Analýza chýb: chyby vo vykonaní. Triedenie pri zručnostiach: len nadradená kategória. Špecifikácia: ako sa postup zmení za iných podmienok. |
+| **4** | Poznatok slúži ako podklad alebo kritérium rozhodnutia či riešenia. | Postup je nástroj, bez ktorého sa úloha nedá vyriešiť. Pri psychomotorike ide pri rozhodovaní väčšinou o voľbu najvhodnejšej zručnosti. |
+| **5** | Sledovanie priebehu: ako sa porozumenie vyvíja v čase. Hodí sa sledovanie jasnosti a presnosti. | Sledovanie priebehu: v reálnom čase počas vykonávania. Hodí sa stanovenie cieľov a sledovanie priebehu. |
+| **6** | Rovnaké pre všetky dimenzie. | Rovnaké pre všetky dimenzie. |
 
 ---
 
-## 6. Slovesa, která svádějí k omylu
+## 6. Slovesá, ktoré zvádzajú k omylu
 
-U Nové taxonomie rozhoduje o úrovni to, co úloha po žákovi skutečně chce, ne samotné sloveso. Tato slovesa se vyskytují na víc úrovních:
+Pri Novej taxonómii rozhoduje o úrovni to, čo úloha od žiaka skutočne chce, nie samotné sloveso. Tieto slovesá sa vyskytujú na viacerých úrovniach:
 
-| Sloveso | Úroveň 1 | Vyšší úroveň |
+| Sloveso | Úroveň 1 | Vyššia úroveň |
 | :---- | :---- | :---- |
-| **vysvětlí** | zopakuje probraný výklad (vybavení) | vyjádří jádro vlastními slovy a odliší podstatné (integrace, úr. 2) |
-| **uvede příklady** | **výchozí výklad:** příklady, které se probíraly nebo které žák zná ze svého okolí (vybavení) | jen když formulace výslovně chce nové příklady, které se neprobíraly, a žák k nim musí použít obecné pravidlo (úr. 3) |
-| **odpoví, vyslovuje odpovědi** | odpoví zpaměti (vybavení), nebo vyčte odpověď ze zadaných dat naučeným postupem (provedení) | odpověď vyžaduje porovnání, závěr nebo předpověď (úr. 3) |
-| **rozpozná** | vybere nebo potvrdí probrané tvrzení (rozpoznání) | odhalí chybu, manipulaci nebo chybnou interpretaci v novém materiálu (analýza chyb, úr. 3) |
-| **určí / posoudí** | ověří probrané tvrzení (rozpoznání) | posoudí nové tvrzení podle kritérií (analýza chyb, úr. 3) |
-| **opraví** | opraví chybu naučeným postupem (provedení) | zhodnotí cizí postup a navrhne zlepšení (analýza chyb, úr. 3) |
-| **vybere** | vybere správnou odpověď (rozpoznání) | vybere nejlepší možnost podle kritérií (rozhodování, úr. 4) |
-| **zhodnotí** | — | posoudí postup nebo tvrzení (analýza chyb, úr. 3), nebo důležitost pro sebe (důležitost, úr. 6) |
+| **vysvetlí** | zopakuje prebraný výklad (vybavenie) | vyjadrí jadro vlastnými slovami a odlíši podstatné (integrácia, úr. 2) |
+| **uvedie príklady** | **predvolený výklad:** príklady, ktoré sa preberali alebo ktoré žiak pozná zo svojho okolia (vybavenie) | len keď formulácia výslovne chce nové príklady, ktoré sa nepreberali, a žiak na ne musí použiť všeobecné pravidlo (úr. 3) |
+| **odpovie, vyslovuje odpovede** | odpovie spamäti (vybavenie), alebo vyčíta odpoveď zo zadaných dát naučeným postupom (vykonanie) | odpoveď vyžaduje porovnanie, záver alebo predpoveď (úr. 3) |
+| **rozpozná** | vyberie alebo potvrdí prebrané tvrdenie (rozpoznanie) | odhalí chybu, manipuláciu alebo chybnú interpretáciu v novom materiáli (analýza chýb, úr. 3) |
+| **určí / posúdi** | overí prebrané tvrdenie (rozpoznanie) | posúdi nové tvrdenie podľa kritérií (analýza chýb, úr. 3) |
+| **opraví** | opraví chybu naučeným postupom (vykonanie) | zhodnotí cudzí postup a navrhne zlepšenie (analýza chýb, úr. 3) |
+| **vyberie** | vyberie správnu odpoveď (rozpoznanie) | vyberie najlepšiu možnosť podľa kritérií (rozhodovanie, úr. 4) |
+| **zhodnotí** | — | posúdi postup alebo tvrdenie (analýza chýb, úr. 3), alebo dôležitosť pre seba (dôležitosť, úr. 6) |
 
-**Výchozí výklad je vždy nejnižší úroveň, kterou formulace připouští.** Vyšší úroveň přiřaď, jen když ji formulace výslovně vyžaduje: nové nebo neznámé příklady, výběr podle kritérií, zdůvodnění, porovnání, předpověď, vlastní postoj.
+**Predvolený výklad je vždy najnižšia úroveň, ktorú formulácia pripúšťa.** Vyššiu úroveň priraď, len keď ju formulácia výslovne vyžaduje: nové alebo neznáme príklady, výber podľa kritérií, zdôvodnenie, porovnanie, predpoveď, vlastný postoj.
 
-Při tvorbě cíle formuluj tak, aby bylo zřejmé, co žák dělá (probrané × nové, cizí × vlastní, jedna správná odpověď × výběr podle kritérií).
-
----
-
-## 7. Kontext učení
-
-- Ke každému cíli navrhni **dvě varianty** kontextu (pokud nechci jinak).  
-- Kontext je **konkrétní situace, materiál nebo téma**: hra ve Scratchi, zpráva o úniku hesel, vlastní heslo, video z tréninku.  
-- U rozpoznání a vybavení je kontextem téma nebo materiál, na kterém se znalost probírala (pokojová rostlina na okně, stolní počítač v učebně).  
-- Varianty mají být **různé**: škola × běžný život, různé nástroje, různé obory.  
-- Kontext musí cíl skutečně umožnit. U úrovně 4 musí obsahovat volbu, překážku, hypotézu nebo otevřenou otázku. U úrovně 5 a 6 jde o žákovu vlastní práci nebo situaci.  
-- Kontext je **přiměřený věku** zadaného ročníku. Bez výslovného zadání nevolíme znepokojivá témata: násilí, smrt a tragédie, sebepoškozování, sexualitu, drogy, kyberšikanu konkrétních lidí.  
-- Když kontext pracuje s AI nebo online nástrojem, předpokládej nástroj, který škola pro daný věk schválila. Nepracuj s podobou skutečných osob.  
-- Úrovně 5 a 6 nesmí po žákovi chtít, aby sdílel soukromé nebo citlivé informace. Reflexi může žák zapsat jen pro sebe (deník učení) a sdílí ji, jen pokud chce.
+Pri tvorbe cieľa formuluj tak, aby bolo zrejmé, čo žiak robí (prebrané × nové, cudzie × vlastné, jedna správna odpoveď × výber podľa kritérií).
 
 ---
 
-## 8. Kritérium splnění
+## 7. Kontext učenia
 
-Ke každému cíli napiš **krátce, jednu větu, nanejvýš dvě**: podle čeho poznáme, že žák cíl splnil. Popiš pozorovatelný projev, ne laťku v procentech. Kritérium nesmí předpokládat neúspěch: žák může uspět napoprvé.
+- Ku každému cieľu navrhni **dva varianty** kontextu (ak nechcem inak).  
+- Kontext je **konkrétna situácia, materiál alebo téma**: hra v Scratchi, správa o úniku hesiel, vlastné heslo, video z tréningu.  
+- Pri rozpoznaní a vybavení je kontextom téma alebo materiál, na ktorom sa poznatok preberal (izbová rastlina na okne, stolový počítač v učebni).  
+- Varianty majú byť **rôzne**: škola × bežný život, rôzne nástroje, rôzne odbory.  
+- Kontext musí cieľ skutočne umožniť. Pri úrovni 4 musí obsahovať voľbu, prekážku, hypotézu alebo otvorenú otázku. Pri úrovni 5 a 6 ide o žiakovu vlastnú prácu alebo situáciu.  
+- Kontext je **primeraný veku** zadaného ročníka. Bez výslovného zadania nevolíme znepokojujúce témy: násilie, smrť a tragédie, sebapoškodzovanie, sexualitu, drogy, kyberšikanovanie konkrétnych ľudí.  
+- Keď kontext pracuje s AI alebo online nástrojom, predpokladaj nástroj, ktorý škola pre daný vek schválila. Nepracuj s podobou skutočných osôb.  
+- Úrovne 5 a 6 nesmú od žiaka chcieť, aby zdieľal súkromné alebo citlivé informácie. Reflexiu môže žiak zapísať len pre seba (denník učenia) a zdieľa ju, len ak chce.
 
-| Úrovně | Co kritérium hodnotí |
+---
+
+## 8. Kritérium splnenia
+
+Ku každému cieľu napíš **krátko, jednu vetu, najviac dve**: podľa čoho spoznáme, že žiak cieľ splnil. Opíš pozorovateľný prejav, nie latku v percentách. Kritérium nesmie predpokladať neúspech: žiak môže uspieť na prvý raz.
+
+| Úrovne | Čo kritérium hodnotí |
 | :---- | :---- |
-| 1–2 | správnost a přesnost výsledku |
-| 3–4 | i kvalitu úvahy: žák ji musí ukázat, zdůvodnit nebo vysvětlit |
-| 5–6 | kvalitu sebereflexe: konkrétnost, doložení, posouzení vlastní úvahy. **Nehodnotí, jakou emoci nebo jak velkou motivaci žák má.** |
+| 1–2 | správnosť a presnosť výsledku |
+| 3–4 | aj kvalitu úvahy: žiak ju musí ukázať, zdôvodniť alebo vysvetliť |
+| 5–6 | kvalitu sebareflexie: konkrétnosť, doloženie, posúdenie vlastnej úvahy. **Nehodnotí, akú emóciu alebo akú veľkú motiváciu žiak má.** |
 
-| Proces | Kritérium musí ověřit |
+| Proces | Kritérium musí overiť |
 | :---- | :---- |
-| Rozpoznání | správně potvrdí nebo vyvrátí předložená tvrzení |
-| Vybavení | uvede správné údaje, které se probíraly |
-| Provedení | provede postup bez podstatné chyby |
-| Integrace | vyjádří jádro, odliší podstatné od nepodstatného; u postupu kroky, pořadí a jeho logiku |
-| Symbolizace | znázornění je přesné a zachycuje podstatné prvky |
-| Porovnávání | porovnává podle podstatných znaků, podobnosti i rozdíly popíše přesně |
-| Třídění | určí znaky, zařadí do kategorie a zdůvodní |
-| Analýza chyb | pojmenuje chybu a vysvětlí, proč to chyba je |
-| Zobecňování | pravidlo sedí na všechny příklady, žák uvede případné výjimky |
-| Specifikace | použije správné pravidlo a z něj vyvodí důsledek |
-| Rozhodování | určí možnosti a kritéria a vybere možnost, která je splňuje nejlépe |
-| Řešení problému | pojmenuje překážku, vyzkouší řešení a v případě neúspěchu ho upraví; vysvětlí, jak mu znalost pomohla |
-| Experimentování | předpověď vychází z principu, pokus ji skutečně testuje, závěr odpovídá výsledku |
-| Zkoumání | odliší, co je známé a co sporné, závěr podloží argumenty ze zdrojů |
-| Stanovení cílů | cíl je konkrétní a ověřitelný, plán má kroky, časový rámec a zdroje |
-| Sledování průběhu | během práce popisuje, co funguje, co ne a co změní |
-| Sledování jasnosti | přesně pojmenuje, co je mu nejasné, případně konkrétně popíše, které části má jasné a jak to ví |
-| Sledování přesnosti | svůj úsudek doloží vnějším zdrojem |
-| Důležitost, vlastní účinnost, emoční reakce, motivace | pojmenuje svůj postoj, vysvětlí, na čem stojí, a posoudí, jak rozumná je jeho úvaha |
+| Rozpoznanie | správne potvrdí alebo vyvráti predložené tvrdenia |
+| Vybavenie | uvedie správne údaje, ktoré sa preberali |
+| Vykonanie | vykoná postup bez podstatnej chyby |
+| Integrácia | vyjadrí jadro, odlíši podstatné od nepodstatného; pri postupe kroky, poradie a jeho logiku |
+| Symbolizácia | znázornenie je presné a zachytáva podstatné prvky |
+| Porovnávanie | porovnáva podľa podstatných znakov, podobnosti aj rozdiely opíše presne |
+| Triedenie | určí znaky, zaradí do kategórie a zdôvodní |
+| Analýza chýb | pomenuje chybu a vysvetlí, prečo je to chyba |
+| Zovšeobecňovanie | pravidlo sedí na všetky príklady, žiak uvedie prípadné výnimky |
+| Špecifikácia | použije správne pravidlo a z neho vyvodí dôsledok |
+| Rozhodovanie | určí možnosti a kritériá a vyberie možnosť, ktorá ich spĺňa najlepšie |
+| Riešenie problému | pomenuje prekážku, vyskúša riešenie a v prípade neúspechu ho upraví; vysvetlí, ako mu poznatok pomohol |
+| Experimentovanie | predpoveď vychádza z princípu, pokus ju skutočne testuje, záver zodpovedá výsledku |
+| Skúmanie | odlíši, čo je známe a čo sporné, záver podloží argumentmi zo zdrojov |
+| Stanovenie cieľov | cieľ je konkrétny a overiteľný, plán má kroky, časový rámec a zdroje |
+| Sledovanie priebehu | počas práce opisuje, čo funguje, čo nie a čo zmení |
+| Sledovanie jasnosti | presne pomenuje, čo je mu nejasné, prípadne konkrétne opíše, ktoré časti má jasné a ako to vie |
+| Sledovanie presnosti | svoj úsudok doloží vonkajším zdrojom |
+| Dôležitosť, vlastná účinnosť, emočná reakcia, motivácia | pomenuje svoj postoj, vysvetlí, na čom stojí, a posúdi, aká rozumná je jeho úvaha |
 
 ---
 
-## 9. Postup generování
+## 9. Postup generovania
 
-1. **Urči dimenzi a typ znalosti** konceptu (kapitola 2.1). Když koncept zahrnuje deklarativní znalost i postup, rozhodni u každého cíle zvlášť.  
-2. **Pro každou úroveň vyber jeden proces**, který je pro koncept nejpřirozenější:  
-   - **Úroveň 1:** u postupů provedení, u deklarativních znalostí vybavení (u jednoduchých faktů rozpoznání).  
-   - **Úroveň 2:** integrace. Symbolizace tam, kde má znalost přirozenou vizuální podobu (postup, sled, struktura, vztah proměnných).  
-   - **Úroveň 3:** pojmy → porovnávání nebo třídění; tvrzení a principy → analýza chyb nebo specifikace; postupy → analýza chyb nebo porovnávání; data a příklady → zobecňování.  
-   - **Úroveň 4:** volba mezi možnostmi → rozhodování; překážka → řešení problému; ověřitelná hypotéza → experimentování; otázka „proč / co kdyby“ řešená ze zdrojů → zkoumání.  
-   - **Úroveň 5:** u postupů stanovení cílů nebo sledování průběhu, u deklarativních znalostí sledování jasnosti nebo přesnosti.  
-   - **Úroveň 6:** kterýkoli ze čtyř procesů. Při generování víc konceptů procesy střídej.  
-3. **Zkontroluj omezení** z kapitoly 5.  
-4. **Napiš cíl** podle šablony a pravidel stylu (kapitola 3).  
-5. **Přidej dva kontexty učení** a **kritérium**.  
-6. **Projdi kontrolní seznam** (kapitola 11) a oprav, co nesedí.  
-7. Při generování víc konceptů hlídej **pestrost**. Přednost má ale vždy proces, který se ke konceptu hodí nejvíc. Střídej jen mezi procesy, které sedí stejně dobře.
+1. **Urči dimenziu a typ poznatku** konceptu (kapitola 2.1). Keď koncept zahŕňa deklaratívny poznatok aj postup, rozhodni pri každom cieli zvlášť.  
+2. **Pre každú úroveň vyber jeden proces**, ktorý je pre koncept najprirodzenejší:  
+   - **Úroveň 1:** pri postupoch vykonanie, pri deklaratívnych poznatkoch vybavenie (pri jednoduchých faktoch rozpoznanie).  
+   - **Úroveň 2:** integrácia. Symbolizácia tam, kde má poznatok prirodzenú vizuálnu podobu (postup, sled, štruktúra, vzťah premenných).  
+   - **Úroveň 3:** pojmy → porovnávanie alebo triedenie; tvrdenia a princípy → analýza chýb alebo špecifikácia; postupy → analýza chýb alebo porovnávanie; dáta a príklady → zovšeobecňovanie.  
+   - **Úroveň 4:** voľba medzi možnosťami → rozhodovanie; prekážka → riešenie problému; overiteľná hypotéza → experimentovanie; otázka „prečo / čo keby“ riešená zo zdrojov → skúmanie.  
+   - **Úroveň 5:** pri postupoch stanovenie cieľov alebo sledovanie priebehu, pri deklaratívnych poznatkoch sledovanie jasnosti alebo presnosti.  
+   - **Úroveň 6:** ktorýkoľvek zo štyroch procesov. Pri generovaní viacerých konceptov procesy striedaj.  
+3. **Skontroluj obmedzenia** z kapitoly 5.  
+4. **Napíš cieľ** podľa šablóny a pravidiel štýlu (kapitola 3).  
+5. **Pridaj dva kontexty učenia** a **kritérium**.  
+6. **Prejdi kontrolný zoznam** (kapitola 11) a oprav, čo nesedí.  
+7. Pri generovaní viacerých konceptov stráž **pestrosť**. Prednosť má však vždy proces, ktorý sa ku konceptu hodí najviac. Striedaj len medzi procesmi, ktoré sedia rovnako dobre.
 
 ---
 
-## 10. Výstupní formát
+## 10. Výstupný formát
 
-### Pro čtení (výchozí)
+### Na čítanie (predvolený)
 
 ```
-### Ladění programu
-Hlavní dimenze: myšlenkové postupy (proces) · Předmět: informatika · Ročník: 6.–7.
+### Ladenie programu
+Hlavná dimenzia: myšlienkové postupy (proces) · Predmet: informatika · Ročník: 6. – 7.
 
-| Úr. | Proces | Dimenze | Cíl | Kontext učení | Kritérium |
+| Úr. | Proces | Dimenzia | Cieľ | Kontext učenia | Kritérium |
 |---|---|---|---|---|---|
-| 1 | provedení | myšlenkové postupy | Žák opraví chybu v krátkém programu. | program ve Scratchi s prohozenými bloky · skript v Pythonu s chybou v podmínce | Program po opravě funguje podle zadání a oprava nezanesla novou chybu. |
+| 1 | vykonanie | myšlienkové postupy | Žiak opraví chybu v krátkom programe. | program v Scratchi s prehodenými blokmi · skript v Pythone s chybou v podmienke | Program po oprave funguje podľa zadania a oprava nezaniesla novú chybu. |
 ```
 
-Sloupec **Dimenze** uváděj vždy, i když je u všech cílů stejná. Předmět a ročník uveď, pokud jsem je zadala.
+Stĺpec **Dimenzia** uvádzaj vždy, aj keď je pri všetkých cieľoch rovnaká. Predmet a ročník uveď, ak som ich zadala.
 
-### Pro import do mapy (YAML, na vyžádání)
+### Na import do mapy (YAML, na požiadanie)
+
+Kľúče a hodnoty v YAML sú technické identifikátory mapy; nechaj ich v tvare nižšie (bez diakritiky, podľa pôvodnej českej verzie). Text cieľa, kontext a kritérium píš po slovensky.
 
 ```
-- koncept: Ladění programu
-  predmet: informatika              # volitelné
+- koncept: Ladenie programu
+  predmet: informatika              # voliteľné
   cile:
     - uroven: 1                     # 1–6
-      proces: provedeni             # bez diakritiky, viz kapitola 4
+      proces: provedeni             # bez diakritiky, pozri Názvy pre YAML
       dimenze: myslenkove-postupy   # deklarativni-znalosti | myslenkove-postupy | psychomotoricke-dovednosti
-      text: "Žák opraví chybu v krátkém programu."
+      text: "Žiak opraví chybu v krátkom programe."
       kontext_uceni:
-        - "Program ve Scratchi s prohozenými bloky"
-        - "Skript v Pythonu s chybou v podmínce"
-      kriterium: "Program po opravě funguje podle zadání a oprava nezanesla novou chybu."
-      rocnik: 6                     # volitelné
+        - "Program v Scratchi s prehodenými blokmi"
+        - "Skript v Pythone s chybou v podmienke"
+      kriterium: "Program po oprave funguje podľa zadania a oprava nezaniesla novú chybu."
+      rocnik: 6                     # voliteľné
 ```
 
-### Pro kontrolu existujících cílů
+### Na kontrolu existujúcich cieľov
 
-Tento formát je pro cíle, které píšeme my a které mají splňovat náš styl. Výstupy z RVP a cizí cíle analyzuj podle kapitoly 14.
+Tento formát je pre ciele, ktoré píšeme my a ktoré majú spĺňať náš štýl. Výstupy z kurikula a cudzie ciele analyzuj podľa kapitoly 14.
 
 ```
-**Původní cíl:** Žák dokáže pochopit, jak funguje internet.
-**Úroveň / proces / dimenze:** 2 Porozumění / integrace / deklarativní znalosti (odhad záměru)
-**Co nesedí:** bod 1 („dokáže“, nepozorovatelné „pochopit“), bod 10 (nejde napsat kritérium)
-**Nová formulace:** Žák vysvětlí princip přenosu dat internetem.
+**Pôvodný cieľ:** Žiak dokáže pochopiť, ako funguje internet.
+**Úroveň / proces / dimenzia:** 2 Porozumenie / integrácia / deklaratívne poznatky (odhad zámeru)
+**Čo nesedí:** bod 1 („dokáže“, nepozorovateľné „pochopiť“), bod 10 (nedá sa napísať kritérium)
+**Nová formulácia:** Žiak vysvetlí princíp prenosu dát internetom.
 ```
 
-- Když sloveso proces neurčuje („pochopí“, „uvědomí si“), odhadni záměr a napiš, že jde o odhad.  
-- Když je cíl dvojznačný, uveď obě varianty a ke každé navrhni formulaci.  
-- Když cíl spojuje víc procesů nebo dimenzí, rozděl ho na víc cílů.  
-- Když cíl kontrolou projde, napiš „bez úprav“ a případně jen doporučení.  
-- Kontext a kritérium přidávej, jen když o ně požádám.
+- Keď sloveso proces neurčuje („pochopí“, „uvedomí si“), odhadni zámer a napíš, že ide o odhad.  
+- Keď je cieľ dvojznačný, uveď oba varianty a ku každému navrhni formuláciu.  
+- Keď cieľ spája viac procesov alebo dimenzií, rozdeľ ho na viac cieľov.  
+- Keď cieľ kontrolou prejde, napíš „bez úprav“ a prípadne len odporúčanie.  
+- Kontext a kritérium pridávaj, len keď o ne požiadam.
 
-### Názvy pro YAML
+### Názvy pre YAML
 
-Názvy úrovní: `vybavovani`, `porozumeni`, `analyza`, `pouziti-znalosti`, `metakognice`, `ja-system`. Názvy procesů: `rozpoznani`, `vybaveni`, `provedeni`, `integrace`, `symbolizace`, `porovnavani`, `trideni`, `analyza-chyb`, `zobecnovani`, `specifikace`, `rozhodovani`, `reseni-problemu`, `experimentovani`, `zkoumani`, `stanoveni-cilu`, `sledovani-prubehu`, `sledovani-jasnosti`, `sledovani-presnosti`, `dulezitost`, `vlastni-ucinnost`, `emocni-reakce`, `motivace`.
+Názvy úrovní: `vybavovani` (vybavovanie), `porozumeni` (porozumenie), `analyza`, `pouziti-znalosti` (použitie poznatkov), `metakognice` (metakognícia), `ja-system` (systém ja). Názvy procesov: `rozpoznani` (rozpoznanie), `vybaveni` (vybavenie), `provedeni` (vykonanie), `integrace` (integrácia), `symbolizace` (symbolizácia), `porovnavani` (porovnávanie), `trideni` (triedenie), `analyza-chyb` (analýza chýb), `zobecnovani` (zovšeobecňovanie), `specifikace` (špecifikácia), `rozhodovani` (rozhodovanie), `reseni-problemu` (riešenie problému), `experimentovani` (experimentovanie), `zkoumani` (skúmanie), `stanoveni-cilu` (stanovenie cieľov), `sledovani-prubehu` (sledovanie priebehu), `sledovani-jasnosti` (sledovanie jasnosti), `sledovani-presnosti` (sledovanie presnosti), `dulezitost` (dôležitosť), `vlastni-ucinnost` (vlastná účinnosť), `emocni-reakce` (emočná reakcia), `motivace` (motivácia).
 
 ---
 
-## 11. Kontrolní seznam
+## 11. Kontrolný zoznam
 
-Každý cíl musí projít všemi body. Když neprojde, přepiš ho.
+Každý cieľ musí prejsť všetkými bodmi. Keď neprejde, prepíš ho.
 
-1. Začíná „Žák“ a slovesem ve 3. osobě? Není tam „dokáže“, „umí“, „zná“, „rozumí“?  
-2. Stojí „si/se“ hned za „Žák“?  
-3. Má jedno hlavní sloveso (nanejvýš dvě, pokud jde o jeden výkon)?  
-4. Je krátký (orientačně do 15 slov) a bez vaty? Je „svůj“ jen na úrovni 5 nebo 6?  
-5. Je pojmenovaná znalost, ale bez scénáře? Scénář je v kontextu a v cíli zůstala jen nezbytná podmínka?  
-6. Odpovídá sloveso procesu, ke kterému je cíl přiřazený (kapitola 6)?  
-7. Sedí proces k dimenzi (kapitola 5)? Žádné provedení u deklarativní znalosti, žádná specifikace u detailů?  
-8. U úrovně 4: je postup pro úkol nezbytný a je jasné, o jaký typ úkolu jde (volba, překážka, hypotéza, otázka)?  
-9. U úrovně 5 a 6: týká se cíl žákovy vlastní znalosti nebo dovednosti?  
-10. Je cíl pozorovatelný a dá se k němu napsat kritérium?  
-11. Je přiměřený zadanému ročníku (složitostí znalosti a kontextu, ne úrovní)?
+1. Začína „Žiak“ a slovesom v 3. osobe? Nie je tam „dokáže“, „vie“, „pozná“, „rozumie“?  
+2. Stojí „si/sa“ hneď za „Žiak“?  
+3. Má jedno hlavné sloveso (najviac dve, ak ide o jeden výkon)?  
+4. Je krátky (orientačne do 15 slov) a bez vaty? Je „svoj“ len na úrovni 5 alebo 6?  
+5. Je pomenovaný poznatok, ale bez scenára? Scenár je v kontexte a v cieli zostala len nevyhnutná podmienka?  
+6. Zodpovedá sloveso procesu, ku ktorému je cieľ priradený (kapitola 6)?  
+7. Sedí proces k dimenzii (kapitola 5)? Žiadne vykonanie pri deklaratívnom poznatku, žiadna špecifikácia pri detailoch?  
+8. Pri úrovni 4: je postup pre úlohu nevyhnutný a je jasné, o aký typ úlohy ide (voľba, prekážka, hypotéza, otázka)?  
+9. Pri úrovni 5 a 6: týka sa cieľ žiakovho vlastného poznatku alebo zručnosti?  
+10. Je cieľ pozorovateľný a dá sa k nemu napísať kritérium?  
+11. Je primeraný zadanému ročníku (zložitosťou poznatku a kontextu, nie úrovňou)?
 
 ---
 
-## 12. Vzorové příklady
+## 12. Vzorové príklady
 
-### 12.1 Kvádr Nové taxonomie (informatika)
+### 12.1 Kváder Novej taxonómie (informatika)
 
-| Úroveň | Deklarativní znalosti: šifrování | Myšlenkové postupy: ladění programu | Psychomotorické dovednosti: psaní všemi deseti |
+| Úroveň | Deklaratívne poznatky: šifrovanie | Myšlienkové postupy: ladenie programu | Psychomotorické zručnosti: písanie všetkými desiatimi |
 | :---- | :---- | :---- | :---- |
-| **1** | Žák uvede, k čemu slouží šifrovací klíč. *(vybavení)* | Žák opraví chybu v krátkém programu. *(provedení)* | Žák napíše text všemi deseti bez podstatných chyb. *(provedení)* |
-| **2** | Žák vysvětlí, jakou roli hraje při šifrování algoritmus a jakou klíč. *(integrace)* | Žák nakreslí vývojový diagram postupu při ladění. *(symbolizace)* | Žák vysvětlí princip psaní všemi deseti a popíše jeho výhody. *(integrace)* |
-| **3** | Žák posoudí pravdivost tvrzení „heslo je bezpečné“ na konkrétním příkladu. *(analýza chyb)* | Žák zhodnotí postup ladění spolužáka a navrhne zlepšení. *(analýza chyb)* | Žák na videozáznamu určí chyby v technice psaní všemi deseti. *(analýza chyb)* |
-| **4** | Žák vybere vhodné zabezpečení pro sdílení dat podle předem stanovených kritérií. *(rozhodování)* | Žák pomocí systematického ladění zprovozní nefunkční hru. *(řešení problému)* | Žák experimentálně ověří, jaký způsob tréninku psaní všemi deseti je pro něj nejúčinnější. *(experimentování)* |
-| **5** | Žák ověří správnost svých tvrzení o šifrování v důvěryhodném zdroji. *(sledování přesnosti)* | Žák si stanoví cíl a plán zlepšení v ladění konkrétního programu. *(stanovení cílů)* | Žák během tréninku psaní sleduje plnění stanoveného cíle. *(sledování průběhu)* |
-| **6** | Žák zhodnotí důležitost znalosti šifrování pro svou konkrétní potřebu. *(důležitost)* | Žák posoudí svou schopnost zlepšit se v ladění programů. *(vlastní účinnost)* | Žák určí důležitost psaní všemi deseti pro svou konkrétní potřebu. *(důležitost)* |
+| **1** | Žiak uvedie, na čo slúži šifrovací kľúč. *(vybavenie)* | Žiak opraví chybu v krátkom programe. *(vykonanie)* | Žiak napíše text všetkými desiatimi bez podstatných chýb. *(vykonanie)* |
+| **2** | Žiak vysvetlí, akú úlohu hrá pri šifrovaní algoritmus a akú kľúč. *(integrácia)* | Žiak nakreslí vývojový diagram postupu pri ladení. *(symbolizácia)* | Žiak vysvetlí princíp písania všetkými desiatimi a opíše jeho výhody. *(integrácia)* |
+| **3** | Žiak posúdi pravdivosť tvrdenia „heslo je bezpečné“ na konkrétnom príklade. *(analýza chýb)* | Žiak zhodnotí postup ladenia spolužiaka a navrhne zlepšenie. *(analýza chýb)* | Žiak na videozázname určí chyby v technike písania všetkými desiatimi. *(analýza chýb)* |
+| **4** | Žiak vyberie vhodné zabezpečenie na zdieľanie dát podľa vopred stanovených kritérií. *(rozhodovanie)* | Žiak pomocou systematického ladenia sfunkční nefunkčnú hru. *(riešenie problému)* | Žiak experimentálne overí, aký spôsob tréningu písania všetkými desiatimi je pre neho najúčinnejší. *(experimentovanie)* |
+| **5** | Žiak overí správnosť svojich tvrdení o šifrovaní v dôveryhodnom zdroji. *(sledovanie presnosti)* | Žiak si stanoví cieľ a plán zlepšenia v ladení konkrétneho programu. *(stanovenie cieľov)* | Žiak počas tréningu písania sleduje plnenie stanoveného cieľa. *(sledovanie priebehu)* |
+| **6** | Žiak zhodnotí dôležitosť poznatkov o šifrovaní pre svoju konkrétnu potrebu. *(dôležitosť)* | Žiak posúdi svoju schopnosť zlepšiť sa v ladení programov. *(vlastná účinnosť)* | Žiak určí dôležitosť písania všetkými desiatimi pre svoju konkrétnu potrebu. *(dôležitosť)* |
 
-### 12.2 Kompletní výstup pro jeden koncept
+### 12.2 Kompletný výstup pre jeden koncept
 
-**Ladění programu** · Hlavní dimenze: myšlenkové postupy (proces) · Předmět: informatika · Ročník: 6.–7.
+**Ladenie programu** · Hlavná dimenzia: myšlienkové postupy (proces) · Predmet: informatika · Ročník: 6. – 7.
 
-| Úr. | Proces | Dimenze | Cíl | Kontext učení | Kritérium |
+| Úr. | Proces | Dimenzia | Cieľ | Kontext učenia | Kritérium |
 | :---- | :---- | :---- | :---- | :---- | :---- |
-| 1 | provedení | myšlenkové postupy | Žák opraví chybu v krátkém programu. | program ve Scratchi s prohozenými bloky · skript v Pythonu s chybou v podmínce | Program po opravě funguje podle zadání a oprava nezanesla novou chybu. |
-| 2 | symbolizace | myšlenkové postupy | Žák nakreslí vývojový diagram postupu při ladění. | ladění hry ve Scratchi · ladění kalkulačky v Pythonu | Diagram zachycuje podstatné kroky (vyvolání chyby, odhad příčiny, změna jedné věci, ověření) ve správném pořadí. |
-| 3 | analýza chyb | myšlenkové postupy | Žák zhodnotí postup ladění spolužáka a navrhne zlepšení. | záznam spolužáka, který mění několik věcí najednou · spolužák, který opravuje bez opakovaného spuštění | Pojmenuje chybu v postupu, vysvětlí, proč brání najít příčinu, a navrhne lepší krok. |
-| 4 | řešení problému | myšlenkové postupy | Žák pomocí systematického ladění zprovozní nefunkční hru. | hra ve Scratchi, která občas spadne · webová hra, ve které nereaguje tlačítko | Hra funguje a žák popíše, jak ho postup ladění dovedl k příčině. |
-| 5 | stanovení cílů | myšlenkové postupy | Žák si stanoví cíl a plán zlepšení v ladění konkrétního programu. | vlastní projekt hry · domácí úkol v Pythonu | Cíl je konkrétní a ověřitelný, plán má kroky, časový rámec a zdroje. |
-| 6 | vlastní účinnost | myšlenkové postupy | Žák posoudí svou schopnost zlepšit se v ladění programů. | po dokončení projektu · na začátku programovacího bloku | Uvede, nakolik věří, že má schopnosti a možnosti se zlepšit, vysvětlí proč a posoudí, jestli je jeho úvaha rozumná. |
+| 1 | vykonanie | myšlienkové postupy | Žiak opraví chybu v krátkom programe. | program v Scratchi s prehodenými blokmi · skript v Pythone s chybou v podmienke | Program po oprave funguje podľa zadania a oprava nezaniesla novú chybu. |
+| 2 | symbolizácia | myšlienkové postupy | Žiak nakreslí vývojový diagram postupu pri ladení. | ladenie hry v Scratchi · ladenie kalkulačky v Pythone | Diagram zachytáva podstatné kroky (vyvolanie chyby, odhad príčiny, zmena jednej veci, overenie) v správnom poradí. |
+| 3 | analýza chýb | myšlienkové postupy | Žiak zhodnotí postup ladenia spolužiaka a navrhne zlepšenie. | záznam spolužiaka, ktorý mení niekoľko vecí naraz · spolužiak, ktorý opravuje bez opakovaného spustenia | Pomenuje chybu v postupe, vysvetlí, prečo bráni nájsť príčinu, a navrhne lepší krok. |
+| 4 | riešenie problému | myšlienkové postupy | Žiak pomocou systematického ladenia sfunkční nefunkčnú hru. | hra v Scratchi, ktorá občas spadne · webová hra, v ktorej nereaguje tlačidlo | Hra funguje a žiak opíše, ako ho postup ladenia doviedol k príčine. |
+| 5 | stanovenie cieľov | myšlienkové postupy | Žiak si stanoví cieľ a plán zlepšenia v ladení konkrétneho programu. | vlastný projekt hry · domáca úloha v Pythone | Cieľ je konkrétny a overiteľný, plán má kroky, časový rámec a zdroje. |
+| 6 | vlastná účinnosť | myšlienkové postupy | Žiak posúdi svoju schopnosť zlepšiť sa v ladení programov. | po dokončení projektu · na začiatku programovacieho bloku | Uvedie, nakoľko verí, že má schopnosti a možnosti zlepšiť sa, vysvetlí prečo a posúdi, či je jeho úvaha rozumná. |
 
-### 12.3 Mimo informatiku: medián (podle příkladu z knihy)
+### 12.3 Mimo informatiky: medián (podľa príkladu z knihy)
 
-Kniha ukazuje, že u jednoho tématu se dimenze mohou střídat. Medián je deklarativní znalost (co to je), jeho výpočet je myšlenkový postup.
+Kniha ukazuje, že pri jednej téme sa dimenzie môžu striedať. Medián je deklaratívny poznatok (čo to je), jeho výpočet je myšlienkový postup.
 
-| Úr. | Proces | Dimenze | Cíl |
+| Úr. | Proces | Dimenzia | Cieľ |
 | :---- | :---- | :---- | :---- |
-| 1 | rozpoznání | deklarativní znalosti | Žák rozpozná správná tvrzení o mediánu. |
-| 1 | provedení | myšlenkové postupy | Žák vypočítá medián souboru hodnot. |
-| 2 | integrace | deklarativní znalosti | Žák popíše určující vlastnosti mediánu. |
-| 3 | porovnávání | deklarativní znalosti | Žák porovná medián, aritmetický průměr a modus. |
-| 4 | řešení problému | myšlenkové postupy | Žák vyřeší úlohu, která vyžaduje výpočet a interpretaci mediánu. |
+| 1 | rozpoznanie | deklaratívne poznatky | Žiak rozpozná správne tvrdenia o mediáne. |
+| 1 | vykonanie | myšlienkové postupy | Žiak vypočíta medián súboru hodnôt. |
+| 2 | integrácia | deklaratívne poznatky | Žiak opíše určujúce vlastnosti mediánu. |
+| 3 | porovnávanie | deklaratívne poznatky | Žiak porovná medián, aritmetický priemer a modus. |
+| 4 | riešenie problému | myšlienkové postupy | Žiak vyrieši úlohu, ktorá vyžaduje výpočet a interpretáciu mediánu. |
 
 ---
 
-## 13. Jak zadat úkol
+## 13. Ako zadať úlohu
 
 **Jeden koncept, celá sada:**
 
-> Vygeneruj cíle pro koncept „Dvojková soustava“ (Popis: Způsob zápisu čísel pomocí 0 a 1, který používají počítače. Ročník: 7.). Výstup pro čtení.
+> Vygeneruj ciele pre koncept „Dvojková sústava“ (Opis: Spôsob zápisu čísel pomocou 0 a 1, ktorý používajú počítače. Ročník: 7.). Výstup na čítanie.
 
-**Víc konceptů najednou, jen některé úrovně:**
+**Viac konceptov naraz, len niektoré úrovne:**
 
-> Vygeneruj cíle pro tyto koncepty, jen úrovně 1–4, výstup v YAML: [seznam konceptů s popisy].
+> Vygeneruj ciele pre tieto koncepty, len úrovne 1–4, výstup v YAML: [zoznam konceptov s opismi].
 
-**Kontrola existujících cílů:**
+**Kontrola existujúcich cieľov:**
 
-> Zkontroluj tyto cíle podle kontrolního seznamu. U každého urči úroveň, proces a dimenzi a navrhni lepší formulaci, pokud je potřeba: [seznam cílů].
+> Skontroluj tieto ciele podľa kontrolného zoznamu. Pri každom urči úroveň, proces a dimenziu a navrhni lepšiu formuláciu, ak je potrebná: [zoznam cieľov].
 
-**Analýza výstupu z RVP:**
+**Analýza výstupu z kurikula:**
 
-> Analyzuj tento výstup z RVP podle kapitoly 14. Ročník: [ročník]. Výstup: [výstup].
+> Analyzuj tento výstup z kurikula (napr. výkonový štandard zo ŠVP) podľa kapitoly 14. Ročník: [ročník]. Výstup: [výstup].
 
-**Analýza výstupu z RVP a návrh cílů:**
+**Analýza výstupu z kurikula a návrh cieľov:**
 
-> Analyzuj tento výstup z RVP podle kapitoly 14 a ke každému výkonu navrhni cíl podle kapitol 3 a 9. Ročník: [ročník]. Výstup: [výstup].
+> Analyzuj tento výstup z kurikula podľa kapitoly 14 a ku každému výkonu navrhni cieľ podľa kapitol 3 a 9. Ročník: [ročník]. Výstup: [výstup].
 
 ---
 
-## 14. Analýza existujících formulací
+## 14. Analýza existujúcich formulácií
 
-Analýza je jiná úloha než tvorba. Formulaci neopravuješ, ale zjišťuješ, kam v kvádru míří.
+Analýza je iná úloha ako tvorba. Formuláciu neopravuješ, ale zisťuješ, kam v kvádri mieri.
 
 ### 14.1 Zásady
 
-- **Styl nehodnoť.** Výstupy z RVP se citují doslovně a mají vlastní styl. Nedokonavá slovesa („vyslovuje“, „rozpoznává“, „pracuje“) popisují opakovaný výkon a úroveň neovlivňují.  
-- **Úroveň určuje výkon, ne sloveso** (kapitola 6).  
-- **Výchozí výklad je nejnižší úroveň, kterou formulace připouští.** Vyšší úroveň přiřaď jen tehdy, když ji formulace výslovně vyžaduje. Nepředpokládej náročnější úlohu, než jaká z textu plyne.  
-- **Ročník úroveň neurčuje, ale pomáhá s výkladem.** Když formulace připouští víc výkladů, zvol ten, který odpovídá běžné výuce v daném ročníku.  
-- **Rozhodni se.** U každého výkonu uveď jednu hlavní klasifikaci. Alternativu uveď jen tehdy, když je rozumná, a napiš, co by ji vyvolalo.
+- **Štýl nehodnoť.** Výstupy z kurikula sa citujú doslovne a majú vlastný štýl. Nedokonavé slovesá („vyslovuje“, „rozpoznáva“, „pracuje“) opisujú opakovaný výkon a úroveň neovplyvňujú.  
+- **Úroveň určuje výkon, nie sloveso** (kapitola 6).  
+- **Predvolený výklad je najnižšia úroveň, ktorú formulácia pripúšťa.** Vyššiu úroveň priraď len vtedy, keď ju formulácia výslovne vyžaduje. Nepredpokladaj náročnejšiu úlohu, než aká z textu vyplýva.  
+- **Ročník úroveň neurčuje, ale pomáha s výkladom.** Keď formulácia pripúšťa viac výkladov, zvoľ ten, ktorý zodpovedá bežnému vyučovaniu v danom ročníku.  
+- **Rozhodni sa.** Pri každom výkone uveď jednu hlavnú klasifikáciu. Alternatívu uveď len vtedy, keď je rozumná, a napíš, čo by ju vyvolalo.
 
 ### 14.2 Postup
 
-1. **Rozlož formulaci na výkony.** Výkon je sloveso, jehož podmětem je žák. Výstupy často spojují víc výkonů čárkou nebo spojkou „a“.  
-2. **Slovesa ve vedlejších větách a přívlastcích nejsou výkony.** Popisují znalost. Ve spojení „data, která mu mohou pomoci lépe se rozhodnout“ se žák nerozhoduje. Jen uvádí data určitého druhu.  
-3. **Doplňující sloveso téhož výkonu neklasifikuj zvlášť.** Ve „vyvodí závěry a vysvětlí, jak k nim dospěl“ je vysvětlení součástí zobecňování: žák svůj závěr obhajuje.  
-4. U každého výkonu urči **dimenzi**, tedy s jakou znalostí žák pracuje (kapitola 2.1).  
-5. Urči **úroveň a proces** podle tabulky 14.3. Začni od nejnižšího řádku, který formulaci odpovídá.  
-6. Zapiš výsledek ve formátu 14.4.
+1. **Rozlož formuláciu na výkony.** Výkon je sloveso, ktorého podmetom je žiak. Výstupy často spájajú viac výkonov čiarkou alebo spojkou „a“.  
+2. **Slovesá vo vedľajších vetách a prívlastkoch nie sú výkony.** Opisujú poznatok. V spojení „dáta, ktoré mu môžu pomôcť lepšie sa rozhodnúť“ sa žiak nerozhoduje. Len uvádza dáta určitého druhu.  
+3. **Doplňujúce sloveso toho istého výkonu neklasifikuj zvlášť.** Vo „vyvodí závery a vysvetlí, ako k nim dospel“ je vysvetlenie súčasťou zovšeobecňovania: žiak svoj záver obhajuje.  
+4. Pri každom výkone urči **dimenziu**, teda s akým poznatkom žiak pracuje (kapitola 2.1).  
+5. Urči **úroveň a proces** podľa tabuľky 14.3. Začni od najnižšieho riadka, ktorý formulácii zodpovedá.  
+6. Zapíš výsledok vo formáte 14.4.
 
 ### 14.3 Signály úrovní
 
-| Co formulace po žákovi chce | Úroveň / proces |
+| Čo formulácia od žiaka chce | Úroveň / proces |
 | :---- | :---- |
-| vybrat nebo potvrdit správné tvrzení z nabídky | 1 rozpoznání |
-| uvést, vyjmenovat nebo popsat to, co se probíralo nebo co zná ze svého okolí | 1 vybavení |
-| provést naučený postup, včetně vyčtení údaje ze zadané tabulky, grafu nebo mapy | 1 provedení |
-| vyjádřit podstatu vlastními slovy, vysvětlit, jak nebo proč něco funguje, popsat logiku kroků | 2 integrace |
-| znázornit (schéma, graf, diagram, model) | 2 symbolizace |
-| porovnat, zařadit, najít chybu, posoudit nové tvrzení, odhalit manipulaci, vyvodit závěr nebo pravidlo, předpovědět důsledek | 3 analýza (proces podle kapitoly 4) |
-| vybrat podle kritérií, vyřešit problém s překážkou, ověřit hypotézu, prozkoumat otázku ze zdrojů | 4 použití znalostí |
-| stanovit si cíl, sledovat vlastní postup, pojmenovat vlastní nejasnosti, ověřit vlastní tvrzení | 5 metakognice |
-| posoudit vlastní postoj: důležitost, víru ve zlepšení, emoce, motivaci | 6 já-systém |
+| vybrať alebo potvrdiť správne tvrdenie z ponuky | 1 rozpoznanie |
+| uviesť, vymenovať alebo opísať to, čo sa preberalo alebo čo pozná zo svojho okolia | 1 vybavenie |
+| vykonať naučený postup, vrátane vyčítania údaja zo zadanej tabuľky, grafu alebo mapy | 1 vykonanie |
+| vyjadriť podstatu vlastnými slovami, vysvetliť, ako alebo prečo niečo funguje, opísať logiku krokov | 2 integrácia |
+| znázorniť (schéma, graf, diagram, model) | 2 symbolizácia |
+| porovnať, zaradiť, nájsť chybu, posúdiť nové tvrdenie, odhaliť manipuláciu, vyvodiť záver alebo pravidlo, predpovedať dôsledok | 3 analýza (proces podľa kapitoly 4) |
+| vybrať podľa kritérií, vyriešiť problém s prekážkou, overiť hypotézu, preskúmať otázku zo zdrojov | 4 použitie poznatkov |
+| stanoviť si cieľ, sledovať vlastný postup, pomenovať vlastné nejasnosti, overiť vlastné tvrdenie | 5 metakognícia |
+| posúdiť vlastný postoj: dôležitosť, vieru v zlepšenie, emócie, motiváciu | 6 systém ja |
 
-**Vybavení × provedení:** odpověď zpaměti je vybavení. Odpověď, kterou žák získá ze zadaného materiálu naučeným postupem (třeba přečte z tabulky), je provedení. Obojí je úroveň 1.
+**Vybavenie × vykonanie:** odpoveď spamäti je vybavenie. Odpoveď, ktorú žiak získa zo zadaného materiálu naučeným postupom (napríklad prečíta z tabuľky), je vykonanie. Oboje je úroveň 1.
 
-### 14.4 Výstupní formát
+### 14.4 Výstupný formát
 
 ```
-**Formulace:** …
+**Formulácia:** …
 **Ročník:** …
 
-| Výkon (citace) | Dimenze | Úroveň | Proces | Zdůvodnění |
+| Výkon (citácia) | Dimenzia | Úroveň | Proces | Zdôvodnenie |
 |---|---|---|---|---|
-| … | … | … | … | jedna věta |
+| … | … | … | … | jedna veta |
 
-**Slovesa, která nejsou výkonem:** „…“ a proč
-**Alternativní výklad:** jen pokud je rozumný, a co by ho vyvolalo
-**Návrh cílů:** jen na vyžádání, podle kapitol 3 a 9
+**Slovesá, ktoré nie sú výkonom:** „…“ a prečo
+**Alternatívny výklad:** len ak je rozumný, a čo by ho vyvolalo
+**Návrh cieľov:** len na požiadanie, podľa kapitol 3 a 9
 ```
 
-### 14.5 Kalibrační příklady
+### 14.5 Kalibračné príklady
 
-**Formulace:** uvede příklady dat, která ho obklopují a která mu mohou pomoci lépe se rozhodnout, vyslovuje odpovědi na základě dat **Ročník:** 1. stupeň
+Príklady pochádzajú z českého RVP (informatika) a sú preložené.
 
-| Výkon (citace) | Dimenze | Úroveň | Proces | Zdůvodnění |
+**Formulácia:** uvedie príklady dát, ktoré ho obklopujú a ktoré mu môžu pomôcť lepšie sa rozhodnúť, vyslovuje odpovede na základe dát **Ročník:** 1. stupeň
+
+| Výkon (citácia) | Dimenzia | Úroveň | Proces | Zdôvodnenie |
 | :---- | :---- | :---- | :---- | :---- |
-| uvede příklady dat, která ho obklopují | deklarativní znalosti | 1 | vybavení | Žák uvádí data, která zná z výuky a ze svého okolí. Nové příklady vymýšlet nemusí. |
-| vyslovuje odpovědi na základě dat | myšlenkové postupy | 1 | provedení | Žák vyčte odpověď ze zadaných dat naučeným postupem. |
+| uvedie príklady dát, ktoré ho obklopujú | deklaratívne poznatky | 1 | vybavenie | Žiak uvádza dáta, ktoré pozná z vyučovania a zo svojho okolia. Nové príklady vymýšľať nemusí. |
+| vyslovuje odpovede na základe dát | myšlienkové postupy | 1 | vykonanie | Žiak vyčíta odpoveď zo zadaných dát naučeným postupom. |
 
-**Slovesa, která nejsou výkonem:** „mohou pomoci lépe se rozhodnout“ popisuje, jaká data má žák uvést. Žák se nerozhoduje. **Alternativní výklad:** Kdyby úloha chtěla nové příklady, které se neprobíraly, nebo odpovědi vyžadující porovnání či závěr, šlo by o úroveň 3.
+**Slovesá, ktoré nie sú výkonom:** „môžu pomôcť lepšie sa rozhodnúť“ opisuje, aké dáta má žiak uviesť. Žiak sa nerozhoduje. **Alternatívny výklad:** Keby úloha chcela nové príklady, ktoré sa nepreberali, alebo odpovede vyžadujúce porovnanie či záver, išlo by o úroveň 3.
 
-**Formulace:** přečte data z modelu, tabulky, diagramu, grafu (1. stupeň)
+**Formulácia:** prečíta dáta z modelu, tabuľky, diagramu, grafu (1. stupeň)
 
-| Výkon | Dimenze | Úroveň | Proces | Zdůvodnění |
+| Výkon | Dimenzia | Úroveň | Proces | Zdôvodnenie |
 | :---- | :---- | :---- | :---- | :---- |
-| přečte data z modelu, tabulky, diagramu, grafu | myšlenkové postupy | 1 | provedení | Čtení údajů z tabulky nebo grafu je naučený postup, který žák provádí. |
+| prečíta dáta z modelu, tabuľky, diagramu, grafu | myšlienkové postupy | 1 | vykonanie | Čítanie údajov z tabuľky alebo grafu je naučený postup, ktorý žiak vykonáva. |
 
-**Formulace:** vyvodí závěry na základě dat a vysvětlí, jak k nim dospěl (1. stupeň)
+**Formulácia:** vyvodí závery na základe dát a vysvetlí, ako k nim dospel (1. stupeň)
 
-| Výkon | Dimenze | Úroveň | Proces | Zdůvodnění |
+| Výkon | Dimenzia | Úroveň | Proces | Zdôvodnenie |
 | :---- | :---- | :---- | :---- | :---- |
-| vyvodí závěry na základě dat a vysvětlí, jak k nim dospěl | deklarativní znalosti | 3 | zobecňování | Žák z konkrétních údajů vyvozuje nové obecné tvrzení. Vysvětlení je obhajoba závěru, ne samostatný výkon. |
+| vyvodí závery na základe dát a vysvetlí, ako k nim dospel | deklaratívne poznatky | 3 | zovšeobecňovanie | Žiak z konkrétnych údajov vyvodzuje nové všeobecné tvrdenie. Vysvetlenie je obhajoba záveru, nie samostatný výkon. |
 
-**Formulace:** rozpozná chybné interpretace dat, včetně běžných způsobů možné manipulace (2. stupeň)
+**Formulácia:** rozpozná chybné interpretácie dát, vrátane bežných spôsobov možnej manipulácie (2. stupeň)
 
-| Výkon | Dimenze | Úroveň | Proces | Zdůvodnění |
+| Výkon | Dimenzia | Úroveň | Proces | Zdôvodnenie |
 | :---- | :---- | :---- | :---- | :---- |
-| rozpozná chybné interpretace dat | deklarativní znalosti | 3 | analýza chyb | Žák posuzuje pravdivost nových tvrzení o datech. „Rozpozná“ tu neznamená výběr probraného tvrzení. |
+| rozpozná chybné interpretácie dát | deklaratívne poznatky | 3 | analýza chýb | Žiak posudzuje pravdivosť nových tvrdení o dátach. „Rozpozná“ tu neznamená výber prebraného tvrdenia. |
 
-**Alternativní výklad:** Kdyby žák jen v testu označoval probrané typy manipulace, šlo by o úroveň 1, rozpoznání.
+**Alternatívny výklad:** Keby žiak len v teste označoval prebrané typy manipulácie, išlo by o úroveň 1, rozpoznanie.

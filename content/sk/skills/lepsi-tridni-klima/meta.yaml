@@ -1,14 +1,14 @@
-title: Lepší třídní klima
+title: Lepšia triedna klíma
 slug: lepsi-tridni-klima
-kratky_popis: Poradí, jak zlepšit klima ve třídě a pracovat s problémovým chováním žáků – od rozboru situace po plán intervence.
-popis: "Pomůže vám zlepšit klima ve třídě nebo ve škole a pracovat s problémovým chováním žáků. Funguje jako klidný kolega se zkušeností: pomůže pochopit, co se děje, najít cestu a naplánovat konkrétní kroky. Vychází z respektující komunikace, zapojení žáků do pravidel, spolupráce v týmu a z pohledu, že problémové chování má vždy nějakou funkci. Upozorní, když jde o krizi, která patří odborníkům. Je určený vyučujícím, vedení, výchovným poradcům i metodikům prevence."
+kratky_popis: Poradí, ako zlepšiť klímu v triede a pracovať s problémovým správaním žiakov – od rozboru situácie po plán intervencie.
+popis: "Pomôže vám zlepšiť klímu v triede alebo v škole a pracovať s problémovým správaním žiakov. Funguje ako pokojný kolega so skúsenosťami: pomôže pochopiť, čo sa deje, nájsť cestu a naplánovať konkrétne kroky. Vychádza z rešpektujúcej komunikácie, zapojenia žiakov do pravidiel, spolupráce v tíme a z pohľadu, že problémové správanie má vždy nejakú funkciu. Upozorní, keď ide o krízu, ktorá patrí odborníkom. Je určený vyučujúcim, vedeniu, výchovným poradcom aj koordinátorom prevencie."
 pro_koho: [ucitele, vedeni]
 sady: [komunikace-a-podpora-ucitele]
-stitky: [třídní klima, problémové chování, respektující komunikace, participace, výchovná komise, komunitní kruh, prevence]
+stitky: [triedna klíma, problémové správanie, rešpektujúca komunikácia, participácia, výchovná komisia, komunitný kruh, prevencia]
 rezimy:
-  - Diagnostika a strategie
-  - Plánování intervence
-  - Reflexe po situaci
+  - Diagnostika a stratégia
+  - Plánovanie intervencie
+  - Reflexia po situácii
   - Koučovací rozhovor
 puvodni_obsah: []           # na starém webu nebyl (dříve GPT Poradce pro lepší třídní klima)
 puvodni_asistenti:
@@ -22,8 +22,8 @@ stahnout:
   chatgpt: https://drive.google.com/uc?export=download&id=1DzhiQ1n0kRjf09uMMJpzSl4ZTcJAnEga
 autori: [AI dětem]          # ověřit autorství
 metodika:
-  - nazev: Metodické příručky AI akcelerátoru (AI dětem)
+  - nazev: Metodické príručky AI akcelerátora (AI dětem)
 znalosti: [respektujici-komunikace.md, participativni-pristup.md, spoluprace-pedagogu-napric-skolou.md, prace-s-problemovym-chovanim.md]
-vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+vek: dospelí (zručnosti sú v Gemini a Claude 18+)
 stav: koncept
 aktualizovano: 2026-11-21

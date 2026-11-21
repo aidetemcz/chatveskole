@@ -1,14 +1,14 @@
-title: Školní pravidla
+title: Školské pravidlá
 slug: skolni-pravidla
-kratky_popis: Pomůže vytvořit nebo upravit srozumitelná a férová školní pravidla, pravidla pro využívání AI i desatero pro žáky.
-popis: "Pomůže vám vytvořit nová školní pravidla nebo zkontrolovat a vylepšit ta, která už máte. Dbá na to, aby byla stručná, srozumitelná všem, férová a vymahatelná a aby vznikala v dialogu se školní komunitou. Pravidla pro využívání AI opírá o doporučení NPI „Jak na AI ve škole“ (2025). Dostanete i návrh, jak pravidla zavést a jak je průběžně vyhodnocovat a aktualizovat."
+kratky_popis: Pomôže vytvoriť alebo upraviť zrozumiteľné a férové školské pravidlá, pravidlá na využívanie AI aj desatoro pre žiakov.
+popis: "Pomôže vám vytvoriť nové školské pravidlá alebo skontrolovať a vylepšiť tie, ktoré už máte. Dbá na to, aby boli stručné, zrozumiteľné všetkým, férové a vymáhateľné a aby vznikali v dialógu so školskou komunitou. Pravidlá na využívanie AI opiera o odporúčanie českého NPI „Jak na AI ve škole“ (2025, v češtine). Dostanete aj návrh, ako pravidlá zaviesť a ako ich priebežne vyhodnocovať a aktualizovať."
 pro_koho: [vedeni]
 sady: [vedeni-skoly]
-stitky: [školní pravidla, školní řád, AI ve škole, NPI, klima školy, bezpečnost na internetu]
+stitky: [školské pravidlá, školský poriadok, AI v škole, klíma školy, bezpečnosť na internete]
 rezimy:
-  - Školní pravidla
-  - Pravidla pro využívání AI ve škole
-  - Pravidla pro žáky
+  - Školské pravidlá
+  - Pravidlá na využívanie AI v škole
+  - Pravidlá pre žiakov
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/radce-pro-tvorbu-skolnich-pravidel/
     typ: asistent
@@ -29,9 +29,9 @@ stahnout:
   chatgpt: https://drive.google.com/uc?export=download&id=1zGqCxbHVUtOu387ejF2ztyecordJhSMi
 autori: [AI dětem]
 metodika:
-  - nazev: Jak na AI ve škole – Doporučení pro využívání umělé inteligence na ZŠ a SŠ (NPI ČR, 2025)
+  - nazev: Jak na AI ve škole – Doporučení pro využívání umělé inteligence na ZŠ a SŠ (NPI ČR, 2025; v češtine)
     url: https://digitalizace.rvp.cz/files/jak-na-ai-ve-skole-2025-plakat-d02.pdf
 znalosti: []
-vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+vek: dospelí (zručnosti sú v Gemini a Claude 18+)
 stav: koncept
 aktualizovano: 2026-11-21

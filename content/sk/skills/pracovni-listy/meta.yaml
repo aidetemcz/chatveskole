@@ -1,21 +1,21 @@
-title: Pracovní listy
+title: Pracovné listy
 slug: pracovni-listy
-kratky_popis: Doplňovačky, spojovačky, kvízy a testy s klíčem, otázky k textu, slovníčky a listy k reflexi – žákovská verze zvlášť od řešení.
-popis: "Připraví vám pracovní list nebo cvičení k tisku či promítnutí pro kterýkoli předmět ZŠ a SŠ. Dostanete žákovskou verzi bez odpovědí a zvlášť řešení s poznámkou pro vyučující. Když dodáte vlastní text, vychází jen z něj; když text nemáte, napíše ho a označí vám ho k ověření. Pokud nevíte, jaký typ cvičení zvolit, nabídne dva až tři podle cíle nebo sestaví kombinovaný list s rozcvičkou, hlavním úkolem a reflexí."
+kratky_popis: Doplňovačky, spájačky, kvízy a testy s kľúčom, otázky k textu, slovníčky a listy na reflexiu – žiacka verzia zvlášť od riešenia.
+popis: "Pripraví vám pracovný list alebo cvičenie na tlač či premietanie pre ktorýkoľvek predmet ZŠ a SŠ. Dostanete žiacku verziu bez odpovedí a zvlášť riešenie s poznámkou pre vyučujúcich. Keď dodáte vlastný text, vychádza len z neho; keď text nemáte, napíše ho a označí vám ho na overenie. Ak neviete, aký typ cvičenia zvoliť, ponúkne dva až tri podľa cieľa alebo zostaví kombinovaný list s rozcvičkou, hlavnou úlohou a reflexiou."
 pro_koho: [ucitele]
 sady: [priprava-vyuky]
-stitky: [pracovní list, cvičení, kvíz, test, doplňovačka, spojovačka, slovníček pojmů, reflexe]
+stitky: [pracovný list, cvičenie, kvíz, test, doplňovačka, spájačka, slovníček pojmov, reflexia]
 rezimy:
   - Doplňovačka
-  - Spojovačka
+  - Spájačka
   - Kvíz a test
   - Pravda / nepravda
-  - Otevřené otázky k textu
-  - Výuka s emotikony
-  - Slovníček pojmů
-  - List k reflexi učiva
-  - Početní příklady
-  - Tabulka slovní zásoby
+  - Otvorené otázky k textu
+  - Vyučovanie s emotikonmi
+  - Slovníček pojmov
+  - List na reflexiu učiva
+  - Počtové príklady
+  - Tabuľka slovnej zásoby
 puvodni_obsah:
   - url: https://chatveskole.cz/databaze-promptu/doplnovacka/
     typ: prompt
@@ -58,8 +58,8 @@ stahnout:
   chatgpt: https://drive.google.com/uc?export=download&id=1plYnbo1t-_cOzQxsQVsyQv06D48UJgva
 autori: [Eva Nečasová (AI dětem), AI reaktor UJEP (Míša Liegertová)]
 metodika:
-  - nazev: Revidovaná Bloomova taxonomie
+  - nazev: Revidovaná Bloomova taxonómia
     url: https://cs.wikipedia.org/wiki/Bloomova_taxonomie
-vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+vek: dospelí (zručnosti sú v Gemini a Claude 18+)
 stav: koncept
-aktualizovano: 2026-11-15
+aktualizovano: 2026-11-21

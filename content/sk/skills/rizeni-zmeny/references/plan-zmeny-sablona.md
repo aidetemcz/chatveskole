@@ -1,66 +1,66 @@
-# Plán změny – šablona
+# Plán zmeny – šablóna
 
-Prázdná šablona plánu změny z metodiky AI akcelerátoru (AI dětem). Plán navazuje na Rámec změny a Mapu aktérů změny a má pět fází podle modelu ADKAR (podrobnosti v plan-zmeny-adkar.md). Zodpovědnou osobu uváděj funkcí, ne jménem. Každá fáze má 2–3 měřitelná kritéria úspěchu.
+Prázdna šablóna plánu zmeny z metodiky AI akcelerátora (AI dětem). Plán nadväzuje na Rámec zmeny a Mapu aktérov zmeny a má päť fáz podľa modelu ADKAR (podrobnosti v plan-zmeny-adkar.md). Zodpovednú osobu uvádzaj funkciou, nie menom. Každá fáza má 2–3 merateľné kritériá úspechu.
 
-**Název projektu:** …
+**Názov projektu:** …
 
-**Datum zahájení a dokončení:** …
+**Dátum začatia a dokončenia:** …
 
-## Fáze 01 — Zvýšení povědomí o změně
+## Fáza 01 — Zvýšenie povedomia o zmene
 
-| Konkrétní aktivity | Zodpovědná osoba | Termín |
+| Konkrétne aktivity | Zodpovedná osoba | Termín |
 | :---- | :---- | :---- |
 |  |  |  |
 |  |  |  |
 
-**Co v této fázi znamená úspěch**
+**Čo v tejto fáze znamená úspech**
 
-Například: …
+Napríklad: …
 
-## Fáze 02 — Akceptace změny
+## Fáza 02 — Akceptácia zmeny
 
-| Konkrétní aktivity | Zodpovědná osoba | Termín |
+| Konkrétne aktivity | Zodpovedná osoba | Termín |
 | :---- | :---- | :---- |
 |  |  |  |
 |  |  |  |
 
-**Co v této fázi znamená úspěch**
+**Čo v tejto fáze znamená úspech**
 
-Například: …
+Napríklad: …
 
-## Fáze 03 — Důvěra v proces změny
+## Fáza 03 — Dôvera v proces zmeny
 
-| Konkrétní aktivity | Zodpovědná osoba | Termín |
+| Konkrétne aktivity | Zodpovedná osoba | Termín |
 | :---- | :---- | :---- |
 |  |  |  |
 |  |  |  |
 
-**Co v této fázi znamená úspěch**
+**Čo v tejto fáze znamená úspech**
 
-Například: …
+Napríklad: …
 
-## Fáze 04 — Schopnost změnu provést
+## Fáza 04 — Schopnosť zmenu uskutočniť
 
-| Konkrétní aktivity | Zodpovědná osoba | Termín |
+| Konkrétne aktivity | Zodpovedná osoba | Termín |
 | :---- | :---- | :---- |
 |  |  |  |
 |  |  |  |
 
-**Co v této fázi znamená úspěch**
+**Čo v tejto fáze znamená úspech**
 
-Například: …
+Napríklad: …
 
-## Fáze 05 — Stvrzení změny
+## Fáza 05 — Upevnenie zmeny
 
-| Konkrétní aktivity | Zodpovědná osoba | Termín |
+| Konkrétne aktivity | Zodpovedná osoba | Termín |
 | :---- | :---- | :---- |
 |  |  |  |
 |  |  |  |
 
-**Co v této fázi znamená úspěch**
+**Čo v tejto fáze znamená úspech**
 
-Například: …
+Napríklad: …
 
 ---
 
-Zdroj: AI dětem, AI akcelerátor – Plán změny (šablona „02 Plán změny — prázdný“), popis metodiky <https://aidetem.cz/ai-akcelerator-plan-zmeny/>
+Zdroj: AI dětem, AI akcelerátor – Plán zmeny (šablóna „02 Plán změny — prázdný“), opis metodiky (v češtine) <https://aidetem.cz/ai-akcelerator-plan-zmeny/>
