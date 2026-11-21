@@ -2,7 +2,7 @@
 title: Vibe Coding — materiály do výuky
 menu: Vibe Coding
 poradi: 4
-popis: Metodika AI dětem Tvorba jednoduchých aplikací pomocí Vibe Codingu, školení Vibe Coding pro školy a osm hotových zadání pro vyučující — interaktivní časová osa, graf z dat, myšlenková mapa, simulace logické úlohy a další.
+popis: Metodika AI dětem pro Vibe Coding se žáky, osm hotových zadání, ve kterých chatbot rovnou postaví aplikaci, a školení pro sborovny.
 sablona: materialy-pruvodce   # vlastní šablona src/pages/vibe-coding/materialy-do-vyuky.astro
 aktualizovano: 2026-11-21
 stav: koncept

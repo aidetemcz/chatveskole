@@ -2,7 +2,7 @@
 title: Tvorba pravidel pro využívání AI
 menu: Chatboti ve výuce
 poradi: 3
-popis: Jak ve škole nastavit pravidla pro využívání AI a digitálních technologií — společně se žáky, nebo jako vedení školy. Workshop, návrhy formulací, osnova pravidel a dovednost na pomoc.
+popis: Jak ve škole vytvořit pravidla pro využívání AI společně se žáky, nebo jako vedení školy. Workshop, návrhy formulací a osnova pravidel.
 aktualizovano: 2026-11-21
 sablona: pravidla-pruvodce   # vlastní šablona src/pages/ve-vyuce/pravidla-pro-ai.astro (návrh z Claude Design, 20. 11. 2026)
 stav: koncept

@@ -1,6 +1,6 @@
 ---
 title: Chatboti ve škole
-popis: Praktický průvodce chatboty pro vyučující a vedení škol. Dovednosti a prompty pro formativní hodnocení, přípravu výuky i řízení školy. Vibe Coding a pravidla pro AI.
+popis: "Praktický průvodce chatboty pro vyučující a vedení škol: dovednosti, prompty, Vibe Coding a pravidla pro využívání AI ve škole."
 sablona: homepage
 aktualizovano: 2026-11-21
 stav: koncept
