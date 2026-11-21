@@ -5,7 +5,6 @@ import { getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import { rozdel, naOddily } from '../../lib/komponenty';
-import { url } from '../../lib/url';
 
 const stranka = (await getEntry('stranky', 'vibe-coding/nastroje'))!;
 const d = stranka.data;
@@ -72,10 +71,6 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
             {hosting && <li><a class="cip" href={`#${hosting.id}`}>{hosting.nadpis}</a></li>}
           </ul>
         )}
-        <div class="tlacitka">
-          {doporuceni && <a class="btn btn--primary" href={`#${doporuceni.id}`}>{doporuceni.nadpis} ↓</a>}
-          <a class="btn btn--outline" href={url('/vibe-coding/jak-zacit')}>Jak začít</a>
-        </div>
       </div>
     </div>
   </div>
