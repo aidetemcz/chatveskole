@@ -37,7 +37,7 @@ const role = [...expertiHtml.matchAll(/<blockquote>\s*<p>([\s\S]*?)<\/p>\s*<\/bl
 });
 
 // Sedm technik: text před skládačkou a po ní
-const techniky = najdi(/techni/i);
+const techniky = najdi(/techni|techník/i);
 const technikyUvod = html(techniky, 0), technikyPoznamka = html(techniky, 1);
 
 // Tři tipy: položky „**Nadpis.** text“
@@ -50,7 +50,7 @@ const IKONY_TIPU = [
 ];
 
 // Prompt, nebo dovednost: tabulka → dvě karty
-const srovnani = najdi(/dovednost/i);
+const srovnani = najdi(/dovednost|zručnosť/i);
 const srovnaniHtml = html(srovnani);
 const srovnaniText = srovnaniHtml.replace(/<table>[\s\S]*?<\/table>/, '');
 const radky = [...(srovnaniHtml.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? '').matchAll(/<tr>([\s\S]*?)<\/tr>/g)]

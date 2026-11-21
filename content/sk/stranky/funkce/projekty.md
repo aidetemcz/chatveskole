@@ -1,11 +1,11 @@
 ---
 title: Projekty
-menu: Funkce
+menu: Funkcie
 poradi: 5
-popis: Projekty v ChatGPT a Claude, notebooky v Gemini a Copilotu — jak mít pokyny, soubory a konverzace k jednomu tématu na jednom místě a co do nich nahrávat.
+popis: Projekty v ChatGPT a Claude, notebooky v Gemini a Copilote — ako mať pokyny, súbory a konverzácie k jednej téme na jednom mieste a čo do nich nahrávať.
 sablona: projekty-pruvodce   # vlastní šablona src/pages/funkce/projekty.astro (návrh z Claude Design, 20. 11. 2026)
 aktualizovano: 2026-11-21
-stav: koncept
+stav: ke-kontrole
 zdroje:
   - https://help.openai.com/en/articles/10169521-projects-in-chatgpt
   - https://support.claude.com/en/articles/9517075-what-are-projects
@@ -15,81 +15,81 @@ zdroje:
   - data/funkce-chatbotu.yaml
 odkazy:
   - { text: Konektory, href: /funkce/konektory }
-  - { text: Katalog dovedností, href: /skills }
+  - { text: Katalóg zručností, href: /skills }
 ---
 
 # Projekty
 
-Projekt je složka v chatbotu, ve které máte **pokyny, soubory a konverzace k jednomu tématu**. Chatbot v ní pokaždé ví, o co jde: pro jakou třídu připravujete, podle jakého ŠVP, jakým stylem píšete. Nemusíte to opakovat v každé konverzaci.
+Projekt je priečinok v chatbote, v ktorom máte **pokyny, súbory a konverzácie k jednej téme**. Chatbot v ňom zakaždým vie, o čo ide: pre akú triedu pripravujete, podľa akého ŠkVP, akým štýlom píšete. Nemusíte to opakovať v každej konverzácii.
 
-Projekty jsou také nejjednodušší náhradou za vlastní GPTs a Gems, které končí.
+Projekty sú aj najjednoduchšou náhradou za vlastné GPTs a Gems, ktoré končia.
 
 <!-- komponenta: video -->
-[Průvodce založením a využitím projektu](https://www.loom.com/share/3b77f24d7e85482eaca0a3a6a9c3c69f)
+[Sprievodca založením a využitím projektu (video v češtine)](https://www.loom.com/share/3b77f24d7e85482eaca0a3a6a9c3c69f)
 
-## Co je v projektu
+## Čo je v projekte
 
-Všechno k jednomu tématu na jednom místě. Chatbot to má k dispozici v každé konverzaci uvnitř projektu.
+Všetko k jednej téme na jednom mieste. Chatbot to má k dispozícii v každej konverzácii vnútri projektu.
 
-- **Pokyny** — Co má chatbot vědět a jak má pracovat: pro koho píšete, jakým stylem, podle čeho.
-- **Soubory** — Podklady, ze kterých chatbot čerpá: ŠVP, kritéria, vaše osvědčené materiály.
-- **Konverzace** — Všechny rozhovory k tématu pohromadě, takže se k nim snadno vrátíte.
+- **Pokyny** — Čo má chatbot vedieť a ako má pracovať: pre koho píšete, akým štýlom, podľa čoho.
+- **Súbory** — Podklady, z ktorých chatbot čerpá: ŠkVP, kritériá, vaše osvedčené materiály.
+- **Konverzácie** — Všetky rozhovory k téme pohromade, takže sa k nim ľahko vrátite.
 
-## Kde projekty najdete
+## Kde projekty nájdete
 
-Projekty mají všechny čtyři chatovací aplikace, jen se jinak jmenují.
+Projekty majú všetky štyri chatovacie aplikácie, len sa inak volajú.
 
-| Nástroj | Jak se jmenují | Zdarma | Sdílení |
+| Nástroj | Ako sa volajú | Zadarmo | Zdieľanie |
 |---|---|---|---|
-| ChatGPT | Projekty | ano, projektů bez omezení, ve Free 5 souborů na projekt | jen v rámci pracovního prostoru (školní domény) |
-| Claude | Projekty | ano, ve Free nejvýš 5 projektů | jen uvnitř týmu (placené týmové tarify) |
-| Gemini | Notebooky (propojené s Gemini Notebook, dříve NotebookLM) | ano, na webu, ve Free až 50 zdrojů na notebook | v rámci Google Workspace |
-| Copilot | Notebooks | ano, v bezplatném Copilot Chatu se školním nebo pracovním účtem | v rámci organizace |
+| ChatGPT | Projekty | áno, projektov bez obmedzenia, vo Free 5 súborov na projekt | len v rámci pracovného priestoru (školskej domény) |
+| Claude | Projekty | áno, vo Free najviac 5 projektov | len v rámci tímu (platené tímové tarify) |
+| Gemini | Notebooky (prepojené s Gemini Notebook, predtým NotebookLM) | áno, na webe, vo Free až 50 zdrojov na notebook | v rámci Google Workspace |
+| Copilot | Notebooks | áno, v bezplatnom Copilot Chate so školským alebo pracovným účtom | v rámci organizácie |
 
-## Jak projekt založit
+## Ako založiť projekt
 
-1. **Založte a pojmenujte** — Pojmenujte projekt podle účelu, například *Dějepis 8. B* nebo *Slovní hodnocení 2026/27*.
-2. **Napište pokyny** — Do pokynů (instrukcí) napište, co má chatbot vědět a jak má pracovat. Můžete vložit instrukce kterékoli naší dovednosti, najdete je u dovednosti jako Google dokument.
-3. **Nahrajte soubory** — Přidejte podklady, ze kterých má chatbot čerpat. Co se hodí, najdete níže.
-4. **Pracujte uvnitř** — Všechny konverzace k tématu veďte uvnitř projektu.
+1. **Založte a pomenujte** — Pomenujte projekt podľa účelu, napríklad *Dejepis 8. B* alebo *Slovné hodnotenie 2026/27*.
+2. **Napíšte pokyny** — Do pokynov (inštrukcií) napíšte, čo má chatbot vedieť a ako má pracovať. Môžete vložiť inštrukcie ktorejkoľvek našej zručnosti, nájdete ich pri zručnosti ako dokument Google.
+3. **Nahrajte súbory** — Pridajte podklady, z ktorých má chatbot čerpať. Čo sa hodí, nájdete nižšie.
+4. **Pracujte vnútri** — Všetky konverzácie k téme veďte vnútri projektu.
 
-## Co do projektu nahrávat
+## Čo do projektu nahrávať
 
-Hodí se:
+Hodia sa:
 
-- ŠVP a tematické plány
-- hodnoticí kritéria
-- školní pravidla
+- ŠkVP a tematické plány
+- hodnotiace kritériá
+- školské pravidlá
 - modelové testy
-- volně dostupné učebnice
-- seznamy pojmů nebo slovíček
-- vaše osvědčené materiály
+- voľne dostupné učebnice
+- zoznamy pojmov alebo slovíčok
+- vaše osvedčené materiály
 
-### Dvě pravidla
+### Dve pravidlá
 
-- **Žádné osobní údaje** — Žádné seznamy žáků se jmény, známkami nebo diagnózami.
-- **Jen to, co smíte** — Nenahrávejte materiály, u kterých to zakazují autorská práva (například skeny placených učebnic).
+- **Žiadne osobné údaje** — Žiadne zoznamy žiakov s menami, známkami alebo diagnózami.
+- **Len to, čo smiete** — Nenahrávajte materiály, pri ktorých to zakazujú autorské práva (napríklad skeny platených učebníc).
 
-## Na formátu záleží
+## Na formáte záleží
 
-Chatbot nejlépe rozumí jednoduchému textu.
+Chatbot najlepšie rozumie jednoduchému textu.
 
-- **Volte jednoduché formáty** — Chatbot nejlépe pracuje s malými textovými soubory: text ukládejte jako `.txt` nebo `.md` (Markdown), tabulky jako `.csv`. Formáty `.docx` a `.xlsx` použijte, jen když to jinak nejde. Šetří to i limity a zrychluje práci.
-- **Pozor na PDF** — PDF s tabulkami a sloupci chatbot často přečte špatně a poplete, co k čemu patří. Nahrajte ho do chatu v projektu a požádejte chatbota, ať ho převede na Markdown. Výsledný soubor pak přidejte do projektu.
-- **Dlouhé dokumenty rozdělte** — Dlouhý dokument rozdělte na menší soubory podle témat. Rozdělení můžete nechat na chatbotovi, třeba po kapitolách.
+- **Voľte jednoduché formáty** — Chatbot najlepšie pracuje s malými textovými súbormi: text ukladajte ako `.txt` alebo `.md` (Markdown), tabuľky ako `.csv`. Formáty `.docx` a `.xlsx` použite, len keď to inak nejde. Šetrí to aj limity a zrýchľuje prácu.
+- **Pozor na PDF** — PDF s tabuľkami a stĺpcami chatbot často prečíta zle a popletie, čo k čomu patrí. Nahrajte ho do chatu v projekte a požiadajte chatbota, aby ho previedol na Markdown. Výsledný súbor potom pridajte do projektu.
+- **Dlhé dokumenty rozdeľte** — Dlhý dokument rozdeľte na menšie súbory podľa tém. Rozdelenie môžete nechať na chatbota, napríklad po kapitolách.
 
-### Projekt, nebo odkaz na web?
+### Projekt, alebo odkaz na web?
 
-Chatboti umí hledat na internetu, ale na konkrétní webové stránky se spolehlivě neodkazují. Pokud chcete, aby chatbot čerpal z určité stránky, požádejte ho v projektu, ať text stránky převede na Markdown, a soubor přidejte do projektu. Odkaz v pokynech nestačí: chatbot může tvrdit, že stránku přečetl, i když to není pravda.
+Chatboty vedia hľadať na internete, ale na konkrétne webové stránky sa spoľahlivo neodkazujú. Ak chcete, aby chatbot čerpal z určitej stránky, požiadajte ho v projekte, aby text stránky previedol na Markdown, a súbor pridajte do projektu. Odkaz v pokynoch nestačí: chatbot môže tvrdiť, že stránku prečítal, aj keď to nie je pravda.
 
-## Projekt jako náhrada sdíleného asistenta
+## Projekt ako náhrada zdieľaného asistenta
 
-Sdíleli jste s kolegy vlastní GPT odkazem? V ChatGPT můžete místo něj **sdílet projekt**. Kolegové v něm najdou stejné pokyny i soubory. Sdílet ho ale můžete jen uvnitř pracovního prostoru vaší školy, ne s lidmi mimo něj.
+Zdieľali ste s kolegami vlastný GPT odkazom? V ChatGPT môžete namiesto neho **zdieľať projekt**. Kolegovia v ňom nájdu rovnaké pokyny aj súbory. Zdieľať ho však môžete len v rámci pracovného priestoru vašej školy, nie s ľuďmi mimo neho.
 
-**Pozor:** ve sdíleném projektu vidí všichni členové všechny konverzace i nahrané soubory a nefunguje v něm paměť. Hodí se pro malý tým kolegů, kteří na něčem pracují společně, ne pro rozdávání asistenta desítkám kolegů. Pokud je projekt propojený s Google Diskem nebo OneDrivem, uvidí kolegové i tato data, i když do příslušných složek sami přístup nemají.
+**Pozor:** v zdieľanom projekte vidia všetci členovia všetky konverzácie aj nahrané súbory a nefunguje v ňom pamäť. Hodí sa pre malý tím kolegov, ktorí na niečom pracujú spoločne, nie na rozdávanie asistenta desiatkam kolegov. Ak je projekt prepojený s Diskom Google alebo OneDrivom, uvidia kolegovia aj tieto dáta, aj keď do príslušných priečinkov sami prístup nemajú.
 
-**Chcete asistenta pro kohokoli?** Dejte kolegům instrukce (u našich dovedností jsou jako Google dokument). Každý si z nich založí vlastní projekt během dvou minut.
+**Chcete asistenta pre kohokoľvek?** Dajte kolegom inštrukcie (pri našich zručnostiach sú ako dokument Google). Každý si z nich založí vlastný projekt za dve minúty.
 
-## Propojte chatbota s dalšími aplikacemi
+## Prepojte chatbota s ďalšími aplikáciami
 
-Konektory napojí chatbota na Disk, kalendář nebo e-mail, takže soubory nemusíte nahrávat ručně.
+Konektory prepoja chatbota s Diskom, kalendárom alebo e-mailom, takže súbory nemusíte nahrávať ručne.

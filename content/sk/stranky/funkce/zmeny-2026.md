@@ -1,39 +1,39 @@
 ---
-title: Změny ve funkcích chatbotů 2026
-menu: Funkce
+title: Zmeny vo funkciách chatbotov 2026
+menu: Funkcie
 poradi: 1
-popis: GPTs a Gems končí, nastupují dovednosti a pluginy. Co který chatbot umí dnes a co má umět v roce 2027 — přehled pro vyučující a školy.
-sablona: zmeny-funkci        # vykreslí se z data/funkce-chatbotu.yaml podle vzoru docs/design/vzor-funkce-chatbotu-2027.html
+popis: GPTs a Gems končia, nastupujú zručnosti a pluginy. Čo ktorý chatbot vie dnes a čo má vedieť v roku 2027 — prehľad pre vyučujúcich a školy.
+sablona: zmeny-funkci        # vykreslí se z data/funkce-chatbotu.yaml (sk: data/sk/funkce-chatbotu.yaml) podle vzoru docs/design/vzor-funkce-chatbotu-2027.html
 data: data/funkce-chatbotu.yaml
 aktualizovano: 2026-11-21
-stav: koncept
+stav: ke-kontrole
 odkazy:
-  - { text: Co jsou dovednosti, href: /funkce/skills }
-  - { text: Sady dovedností (pluginy), href: /funkce/pluginy }
-  - { text: Katalog dovedností, href: /skills }
+  - { text: Čo sú zručnosti, href: /funkce/skills }
+  - { text: Sady zručností (pluginy), href: /funkce/pluginy }
+  - { text: Katalóg zručností, href: /skills }
 ---
 
-# Jak se mění funkce chatbotů
+# Ako sa menia funkcie chatbotov
 
-ChatGPT, Gemini, Copilot a Claude opouštějí hotové asistenty, které se otevřou jedním odkazem. Nahrazují je dovednosti, pluginy a samostatná práce na úkolech. Přehled ukazuje, co každý nástroj umí dnes a co má podle oznámení vývojářů umět v roce 2027.
+ChatGPT, Gemini, Copilot a Claude opúšťajú hotových asistentov, ktorí sa otvoria jedným odkazom. Nahrádzajú ich zručnosti, pluginy a samostatná práca na úlohách. Prehľad ukazuje, čo každý nástroj vie dnes a čo má podľa oznámení vývojárov vedieť v roku 2027.
 
 <!-- komponenta: tři teze -->
 
-**AI asistenti končí.** AI asistenti, které jste možná znali jako Modely GPT nebo Google Gems, končí. Nahrazují je takzvané dovednosti (skills) a sady dovedností (pluginy). V Gemini se Gems převedou na dovednosti samy, stačí je zkontrolovat a zapnout. V ChatGPT je potřeba převést je ručně.
+**AI asistenti končia.** AI asistenti, ktorých ste možno poznali ako GPTs alebo Google Gems, končia. Nahrádzajú ich takzvané zručnosti (skills) a sady zručností (pluginy). V Gemini sa Gems prevedú na zručnosti samy, stačí ich skontrolovať a zapnúť. V ChatGPT ich treba previesť ručne.
 
-**Nastupují dovednosti a pluginy.** Dovednosti a pluginy jsou instrukce pro chatbota zabalené do funkce, kterou kdykoli vyvoláte lomítkem nebo zavináčem. Ušetří vám spoustu času.
+**Nastupujú zručnosti a pluginy.** Zručnosti a pluginy sú inštrukcie pre chatbota zabalené do funkcie, ktorú kedykoľvek vyvoláte lomkou alebo zavináčom. Ušetria vám veľa času.
 
-**Agenti jsou už jen placená funkce.** Agentovi zadáte úkol a on si jeho řešení sám rozplánuje. Ušetří vám spoustu času, agenti se ale stávají jen placeným doplňkem.
+**Agenti sú už len platená funkcia.** Agentovi zadáte úlohu a on si jej riešenie sám naplánuje. Ušetrí vám veľa času, agenti sa však stávajú len plateným doplnkom.
 
 <!-- komponenta: video -->
 
-[Video: Jak se mění funkce chatbotů](https://www.loom.com/share/a57780bf97fe42ff8d264bd5ad6ffe4b)
+[Video: Ako sa menia funkcie chatbotov (v češtine)](https://www.loom.com/share/a57780bf97fe42ff8d264bd5ad6ffe4b)
 
-## Kdy se co stane
+## Kedy sa čo stane
 
 <!-- komponenta: časová osa (data.casova_osa), červeně klíčová data, svislá čára „dnes“ -->
 
-## Co který nástroj umí dnes a v roce 2027
+## Čo ktorý nástroj vie dnes a v roku 2027
 
 <!-- komponenta: matice funkce × nástroje (data.matice), dvě kuličky dnes → 2027, podbarvené změny, na mobilu přepínač nástrojů -->
 
@@ -41,11 +41,11 @@ ChatGPT, Gemini, Copilot a Claude opouštějí hotové asistenty, které se otev
 
 <!-- komponenta: karty nástrojů (data.nastroje): Končí / Přibývá / Na co myslet ve škole -->
 
-## Co to znamená pro vás
+## Čo to znamená pre vás
 
-- **Používáte naše asistenty z chatveskole.cz?** Najdete je jako [dovednosti](/skills). Každý má i verzi promptu, kterou vložíte do jakéhokoli chatbota.
-- **Máte vlastní GPT nebo Gem?** Uložte si jeho pokyny a soubory, dokud to jde. V ChatGPT použijte „Migrate to plugin“, v Gemini zkontrolujte a zapněte koncept dovednosti. Jak na to, popisujeme na stránkách [Dovednosti](/funkce/skills) a [Pluginy](/funkce/pluginy).
-- **Sdílíte asistenta s kolegy nebo žáky odkazem?** Tahle cesta končí. Náhradou je sdílený [projekt](/funkce/projekty), dovednost poslaná jako soubor, nebo prompt.
-- **Pracujete se žáky?** Dovednosti jsou v Gemini a Claude jen pro dospělé. Pro žáky používejte [prompty](/funkce/prompty/zaci) nebo aplikaci [Tiny](/ve-vyuce/tiny).
+- **Používate našich asistentov z chatveskole.cz?** Nájdete ich ako [zručnosti](/skills). Každý má aj verziu promptu, ktorú vložíte do akéhokoľvek chatbota.
+- **Máte vlastný GPT alebo Gem?** Uložte si jeho pokyny a súbory, kým sa to dá. V ChatGPT použite „Migrate to plugin“, v Gemini skontrolujte a zapnite koncept zručnosti. Ako na to, opisujeme na stránkach [Zručnosti](/funkce/skills) a [Pluginy](/funkce/pluginy).
+- **Zdieľate asistenta s kolegami alebo žiakmi odkazom?** Táto cesta končí. Náhradou je zdieľaný [projekt](/funkce/projekty), zručnosť poslaná ako súbor, alebo prompt.
+- **Pracujete so žiakmi?** Zručnosti sú v Gemini a Claude len pre dospelých. Pre žiakov používajte [prompty](/funkce/prompty/zaci) alebo aplikáciu [Tiny](/ve-vyuce/tiny).
 
-Funkce se mění každý měsíc. Údaje ověřujeme v oficiálních nápovědách vývojářů, naposledy 13. 10. 2026.
+Funkcie sa menia každý mesiac. Údaje overujeme v oficiálnych nápovedách vývojárov, naposledy 13. 10. 2026.

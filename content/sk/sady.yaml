@@ -2,31 +2,31 @@
 # Jeden skill může být ve více sadách.
 
 - slug: priprava-vyuky
-  title: Příprava výuky
-  popis: Nápady na hodiny, pracovní listy, úpravy materiálů pro různé žáky a aktivity, ve kterých s chatbotem pracují sami žáci.
+  title: Príprava vyučovania
+  popis: Nápady na hodiny, pracovné listy, úpravy materiálov pre rôznych žiakov a aktivity, v ktorých s chatbotom pracujú sami žiaci.
   pro_koho: [ucitele]
   skills: [didakticky-radce, pracovni-listy, uprava-materialu, aktivity-s-chatbotem, rozvoj-mysleni, hadej-chemicky-prvek, karierni-poradce-matematika]
 
 - slug: komunikace-a-podpora-ucitele
-  title: Komunikace a podpora pedagoga
-  popis: Zprávy zákonným zástupcům, jazyková kontrola textů a mentor pro náročné situace ve třídě.
+  title: Komunikácia a podpora pedagóga
+  popis: Správy zákonným zástupcom, jazyková kontrola textov a mentor pre náročné situácie v triede.
   pro_koho: [ucitele, vedeni]
   skills: [komunikace-s-rodici, jazykovy-korektor, ucitelsky-mentor, lepsi-tridni-klima]
 
 - slug: formativni-hodnoceni
-  title: Formativní hodnocení
-  popis: Od vzdělávacího cíle přes kritéria a sebehodnocení až ke slovnímu hodnocení. Postaveno na metodice Vysvědčení jinak (PdF MU).
+  title: Formatívne hodnotenie
+  popis: Od vzdelávacieho cieľa cez kritériá a sebahodnotenie až po slovné hodnotenie. Postavené na českej metodike Vysvědčení jinak (PdF MU).
   pro_koho: [ucitele]
   skills: [vzdelavaci-cile, kriteria-hodnoceni, gradace-kriterii-hodnoceni, slovni-hodnoceni, radce-slovniho-hodnoceni]
 
 - slug: vedeni-skoly
-  title: Vedení školy
-  popis: Hodnoty, mise a vize, školní pravidla, strategické dokumenty, AI gramotnost v ŠVP a každodenní agenda ředitele.
+  title: Vedenie školy
+  popis: Hodnoty, misia a vízia, školské pravidlá, strategické dokumenty, AI gramotnosť v ŠkVP a každodenná agenda riaditeľa.
   pro_koho: [vedeni]
   skills: [mise-vize-hodnoty, skolni-pravidla, strategicke-dokumenty, ai-gramotnost-v-svp, gradace-klicovych-kompetenci, asistent-reditele, rizeni-zmeny, vizualizace-dat]
 
 - slug: ai-akcelerator
   title: AI akcelerátor
-  popis: Nástroje pro školy v programu AI akcelerátor — řízení změny podle ADKAR a mapování administrativních procesů.
+  popis: Nástroje pre školy v programe AI akcelerátor — riadenie zmeny podľa modelu ADKAR a mapovanie administratívnych procesov.
   pro_koho: [vedeni]
   skills: [rizeni-zmeny, procesni-analytik]

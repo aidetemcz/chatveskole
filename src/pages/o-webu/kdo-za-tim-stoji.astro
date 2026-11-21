@@ -27,11 +27,11 @@ const naTlacitko = (a: string, trida: string, sipka = true) => {
 const odkazyVOdstavci = (p: string) => [...p.matchAll(/<a [^>]*>[\s\S]*?<\/a>/g)].map(([a]) => a);
 const jenOdkazy = (p: string) => /^(\s*<a [^>]*>[\s\S]*?<\/a>\s*[·|]?)+$/.test(p);
 // Na obsahu se podíleli: souvislý text
-const podileli = najdi(/podíleli/i);
+const podileli = najdi(/podíleli|podieľali/i);
 const podileliHtml = htmlOddilu(podileli);
 
 // Přidejte se: text vlevo, odstavec jen s odkazem → tlačítko vpravo
-const pridat = najdi(/Přidejte/i);
+const pridat = najdi(/Přidejte|Pridajte/i);
 const pridatOdstavce = odstavce(htmlOddilu(pridat));
 const pridatText = pridatOdstavce.filter((p) => !jenOdkazy(p));
 const pridatTlacitka = pridatOdstavce.filter(jenOdkazy).flatMap(odkazyVOdstavci);

@@ -1,0 +1,23 @@
+# Slovenská verze data/skladacka-promptu.yaml (stránka /sk/funkce/prompty). Struktura, id a barvy stejné jako v češtině.
+# Příklad promptu je převedený na slovenské národné obrodenie (ke kontrole slovenským korektorem).
+techniky:
+  - { id: role, cislo: 1, nazev: Rola, popis: "V akej role má chatbot odpovedať.", barva: "#f7d9d9" }
+  - { id: ton, cislo: 2, nazev: Cieľová skupina a tón, popis: "Pre koho je text určený a akým štýlom má byť napísaný.", barva: "#cfe5ee" }
+  - { id: format, cislo: 3, nazev: Formát, popis: "Esej, tabuľka, osnova, kvíz, podklady na prezentáciu…", barva: "#f6e7b8" }
+  - { id: cil, cislo: 4, nazev: Cieľ, popis: "Na čo výstup poslúži. Chatbot potom vyberie, čo je podstatné.", barva: "#cfe9d6" }
+  - { id: delka, cislo: 5, nazev: Dĺžka, popis: "Koľko textu chcete.", barva: "#e2dbf5" }
+  - { id: priklad, cislo: 6, nazev: Príklad, popis: "Ak máte konkrétnu predstavu, ukážte ju.", barva: "#ecdcf0" }
+  - { id: omezeni, cislo: 7, nazev: Obmedzenia, popis: "Čo vo výstupe byť nemá.", barva: "#f6d6c2" }
+zapnuto: []   # stránka začíná holým zadáním (Eva 20. 11. 2026)
+kusy:
+  - { technika: role, text: "Si expert na slovenské dejiny a empatický pedagóg so zmyslom pre humor. " }
+  - { technika: null, text: "Napíš " }
+  - { technika: ton, text: "neformálne " }
+  - { technika: null, text: "zhrnutie slovenského národného obrodenia" }
+  - { technika: ton, text: " pre žiakov vo veku 14 rokov" }
+  - { technika: format, text: " vo forme podkladov na prezentáciu s piatimi snímkami" }
+  - { technika: null, text: ". " }
+  - { technika: cil, text: "Cieľom je, aby žiaci pochopili, prečo bolo národné obrodenie také dôležité pre slovenskú kultúru a jazyk. " }
+  - { technika: delka, text: "Na každú snímku najviac tri krátke body. " }
+  - { technika: priklad, text: "Príklad snímky: nadpis „Prečo na jazyku záležalo“ a body „Úradom a školám vládne latinčina a maďarčina“, „Štúrovci kodifikujú spisovnú slovenčinu“, „Slovenčina sa dostáva do novín a kníh“. " }
+  - { technika: omezeni, text: "Nepoužívaj letopočty, ktoré sa žiaci nemusia učiť naspamäť, a vynechaj odborné termíny bez vysvetlenia." }

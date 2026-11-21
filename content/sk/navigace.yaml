@@ -1,48 +1,48 @@
 # Hlavní menu webu. Pořadí = pořadí v menu. Patička používá stejnou strukturu.
 menu:
-  - title: Začínáme
+  - title: Začíname
     items:
-      - { title: Jak pracovat s chatboty, href: /zaciname/jak-pracovat-s-chatboty }
+      - { title: Ako pracovať s chatbotmi, href: /zaciname/jak-pracovat-s-chatboty }
       - { title: Dostupné nástroje, href: /zaciname/dostupne-nastroje }
-      - { title: Kolik stojí chatboti, href: /zaciname/kolik-stoji-chatboti }
-      - { title: Registrace do chatbotů, href: /zaciname/registrace }
-      - { title: Věkové limity a legislativa, href: /zaciname/vekove-limity-a-legislativa }
-      - { title: Zahraniční platby pro neplátce DPH, href: /zaciname/zahranicni-platby }
+      - { title: Koľko stoja chatboty, href: /zaciname/kolik-stoji-chatboti }
+      - { title: Registrácia do chatbotov, href: /zaciname/registrace }
+      - { title: Vekové limity a legislatíva, href: /zaciname/vekove-limity-a-legislativa }
+      - { title: Zahraničné platby pre neplatiteľov DPH, href: /zaciname/zahranicni-platby }
 
-  - title: Funkce
+  - title: Funkcie
     items:
-      - { title: Změny ve funkcích 2026, href: /funkce/zmeny-2026, zvyraznit: true }
+      - { title: Zmeny vo funkciách 2026, href: /funkce/zmeny-2026, zvyraznit: true }
       - { title: Prompty, href: /funkce/prompty }
-      - { title: Dovednosti (skills), href: /funkce/skills }
-      - { title: Sady dovedností (pluginy), href: /funkce/pluginy }
+      - { title: Zručnosti (skills), href: /funkce/skills }
+      - { title: Sady zručností (pluginy), href: /funkce/pluginy }
       - { title: Projekty, href: /funkce/projekty }
       - { title: Konektory, href: /funkce/konektory }
 
   - title: Vibe Coding
     items:
-      - { title: Co je to, href: /vibe-coding/co-je-to }
+      - { title: Čo to je, href: /vibe-coding/co-je-to }
       - { title: Dostupné nástroje, href: /vibe-coding/nastroje }
-      - { title: Jak začít, href: /vibe-coding/jak-zacit }
-      - { title: Materiály do výuky, href: /vibe-coding/materialy-do-vyuky }
-      - { title: Pro pokročilé, href: /vibe-coding/pro-pokrocile }
+      - { title: Ako začať, href: /vibe-coding/jak-zacit }
+      - { title: Materiály na vyučovanie, href: /vibe-coding/materialy-do-vyuky }
+      - { title: Pre pokročilých, href: /vibe-coding/pro-pokrocile }
 
-  - title: Chatboti ve výuce
+  - title: Chatboty vo vyučovaní
     items:
-      - { title: AI aplikace Tiny, href: /ve-vyuce/tiny }
-      - { title: Způsoby využití AI ve výuce, href: /ve-vyuce/zpusoby-vyuziti-ai }
+      - { title: AI aplikácia Tiny, href: /ve-vyuce/tiny }
+      - { title: Spôsoby využitia AI vo vyučovaní, href: /ve-vyuce/zpusoby-vyuziti-ai }
       - { title: Metodické materiály, href: /ve-vyuce/metodiky }
-      - { title: Tvorba pravidel pro využívání AI, href: /ve-vyuce/pravidla-pro-ai }
-      - { title: Doporučení pro ZŠ a SŠ, href: /ve-vyuce/doporuceni-zs-ss }
+      - { title: Tvorba pravidiel používania AI, href: /ve-vyuce/pravidla-pro-ai }
+      - { title: Odporúčania pre ZŠ a SŠ, href: /ve-vyuce/doporuceni-zs-ss }
 
-  - title: O webu
+  - title: O webe
     items:
       - { title: Nový web, href: /o-webu/novy-web }
-      - { title: Kdo za tím stojí, href: /o-webu/kdo-za-tim-stoji }
+      - { title: Kto za tým stojí, href: /o-webu/kdo-za-tim-stoji }
       - { title: Kontakt, href: /o-webu/kontakt }
-      - { title: Ochrana soukromí, href: /o-webu/ochrana-soukromi }
+      - { title: Ochrana súkromia, href: /o-webu/ochrana-soukromi }
 
 # Výrazné tlačítko v hlavičce (mimo rozbalovací menu)
-cta: { title: Katalog dovedností, href: /skills }
+cta: { title: Katalóg zručností, href: /skills }
 
 # Stránky generované z dat (nejsou .md v content/stranky):
 generovane:

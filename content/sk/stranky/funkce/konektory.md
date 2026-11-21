@@ -1,49 +1,49 @@
 ---
 title: Konektory
-menu: Funkce
+menu: Funkcie
 poradi: 6
-popis: Jak napojit chatbota na Google Disk, e-mail, kalendář nebo Microsoft 365, k čemu je to ve škole dobré a na co si dát pozor kvůli ochraně dat.
+popis: Ako prepojiť chatbota s Diskom Google, e-mailom, kalendárom alebo Microsoft 365, na čo je to v škole dobré a na čo si dať pozor pre ochranu dát.
 aktualizovano: 2026-11-21
-stav: koncept
+stav: ke-kontrole
 zdroje:
   - data/funkce-chatbotu.yaml
 ---
 
 # Konektory
 
-Konektor napojí chatbota na jinou aplikaci — Google Disk, Gmail, kalendář, Microsoft 365, Notion a další. Chatbot pak může s vaším svolením hledat ve vašich dokumentech, číst e-maily nebo zakládat události v kalendáři.
+Konektor prepojí chatbota s inou aplikáciou — Diskom Google, Gmailom, kalendárom, Microsoft 365, Notionom a ďalšími. Chatbot potom môže s vaším súhlasom hľadať vo vašich dokumentoch, čítať e-maily alebo zakladať udalosti v kalendári.
 
-## Jak fungují konektory
+## Ako fungujú konektory
 
 <!-- komponenta: infografika konektoru (src/components/data/InfografikaKonektor.astro) -->
 
-## K čemu je to ve škole dobré
+## Na čo je to v škole dobré
 
-Ve škole vám konektor ušetří hledání a přepisování. Chatbota můžete požádat, ať na vašem Disku najde ŠVP pro 2. stupeň a navrhne, kam zařadit téma umělé inteligence, nebo ať ze zápisu z porady uloženého na Disku udělá úkoly pro jednotlivé kolegy. Z kalendáře vám připraví seznam porad na příští měsíc i s návrhem programu té první. Zvládne také projít e-maily od zákonných zástupců z tohoto týdne a připravit přehled, na co máte odpovědět. To ale jen se školním účtem a osobní údaje z e-mailů pak nikam dál nevkládejte.
+V škole vám konektor ušetrí hľadanie a prepisovanie. Chatbota môžete požiadať, aby na vašom Disku našiel ŠkVP pre 2. stupeň a navrhol, kam zaradiť tému umelej inteligencie, alebo aby zo zápisnice z porady uloženej na Disku urobil úlohy pre jednotlivých kolegov. Z kalendára vám pripraví zoznam porád na budúci mesiac aj s návrhom programu tej prvej. Zvládne aj prejsť e-maily od zákonných zástupcov z tohto týždňa a pripraviť prehľad, na čo máte odpovedať. To však len so školským účtom a osobné údaje z e-mailov potom nikam ďalej nevkladajte.
 
-## Kde konektory najdete
+## Kde konektory nájdete
 
-| Nástroj | Jak se jmenují | Co je zdarma |
+| Nástroj | Ako sa volajú | Čo je zadarmo |
 |---|---|---|
-| ChatGPT | Aplikace (v pluginech) | Google Disk od tarifu Plus; vlastní konektory jen Business, Enterprise, Edu |
-| Gemini | Připojené aplikace | Gmail, Disk, Kalendář, Mapy, YouTube i aplikace třetích stran ve všech tarifech |
-| Copilot | Copilot konektory | přes 100 hotových; k datům školy jen s licencí |
-| Claude | Konektory | Gmail, Kalendář, Disk i Microsoft 365 ve všech tarifech; ve Free jeden vlastní konektor |
+| ChatGPT | Aplikácie (v pluginoch) | Disk Google od tarifu Plus; vlastné konektory len Business, Enterprise, Edu |
+| Gemini | Pripojené aplikácie | Gmail, Disk, Kalendár, Mapy, YouTube aj aplikácie tretích strán vo všetkých tarifoch |
+| Copilot | Copilot konektory | vyše 100 hotových; k dátam školy len s licenciou |
+| Claude | Konektory | Gmail, Kalendár, Disk aj Microsoft 365 vo všetkých tarifoch; vo Free jeden vlastný konektor |
 
-## Na co si dát pozor
+## Na čo si dať pozor
 
-Konektor dává chatbotu přístup ke všemu, co vidíte vy. V e-mailu a na Disku vyučujícího bývají osobní údaje žáků a jejich zákonných zástupců.
+Konektor dáva chatbotu prístup ku všetkému, čo vidíte vy. V e-maile a na Disku vyučujúceho bývajú osobné údaje žiakov a ich zákonných zástupcov.
 
-- **Připojujte jen pracovní účet a jen tam, kde to škola povoluje.** Zeptejte se správce IT nebo pověřence pro ochranu osobních údajů.
-- **Dávejte přednost školním verzím nástrojů** (Google Workspace for Education, Microsoft 365), kde se data nepoužívají k tréninku.
-- **Zadávejte úzké úkoly.** „Najdi dokument ŠVP“ je lepší než „projdi celý můj Disk“.
-- **Kontrolujte, než chatbot něco odešle nebo změní.** Chatboti se před odesláním e-mailu nebo vytvořením události ptají — čtěte, co potvrzujete.
-- **Konektor můžete kdykoli odpojit** v nastavení chatbota.
+- **Pripájajte len pracovný účet a len tam, kde to škola povoľuje.** Opýtajte sa správcu IT alebo zodpovednej osoby pre ochranu osobných údajov.
+- **Uprednostňujte školské verzie nástrojov** (Google Workspace for Education, Microsoft 365), kde sa dáta nepoužívajú na tréning.
+- **Zadávajte úzke úlohy.** „Nájdi dokument ŠkVP“ je lepšie ako „prejdi celý môj Disk“.
+- **Kontrolujte, skôr ako chatbot niečo odošle alebo zmení.** Chatboty sa pred odoslaním e-mailu alebo vytvorením udalosti pýtajú — čítajte, čo potvrdzujete.
+- **Konektor môžete kedykoľvek odpojiť** v nastaveniach chatbota.
 
-## Pro pokročilé: MCP
+## Pre pokročilých: MCP
 
-Konektory většinou stojí na otevřeném standardu MCP (Model Context Protocol). Díky němu může škola nebo vývojář napojit chatbota i na vlastní systém, například školní informační systém. To už je ale práce pro správce IT — víc v sekci [Vibe Coding pro pokročilé](/vibe-coding/pro-pokrocile).
+Konektory väčšinou stoja na otvorenom štandarde MCP (Model Context Protocol). Vďaka nemu môže škola alebo vývojár prepojiť chatbota aj s vlastným systémom, napríklad so školským informačným systémom. To je však už práca pre správcu IT — viac v sekcii [Vibe Coding pre pokročilých](/vibe-coding/pro-pokrocile).
 
 <!-- komponenta: infografika MCP (src/components/data/InfografikaMcp.astro) -->
 
-[Zpět na Změny ve funkcích 2026](/funkce/zmeny-2026)
+[Späť na Zmeny vo funkciách 2026](/funkce/zmeny-2026)
