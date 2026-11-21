@@ -75,7 +75,7 @@ Dovednost vás provede tvorbou pravidel krok za krokem: zeptá se na oblasti, c�
 
 ### Postup v pěti krocích
 
-1. **Zmapujte, co se děje** — Krátký dotazník pro vyučující a žáky: kdo co používá, k čemu, s jakou zkušeností.
+1. **Zmapujte stav využívání AI ve škole** — Krátký dotazník pro vyučující a žáky: kdo co používá, k čemu, s jakou zkušeností.
 2. **Domluvte se na hodnotách** — Co chceme, aby se žáci naučili? Kde AI pomáhá, kde škodí? Vyjděte z hodnot a vize školy.
 3. **Sepište pravidla** — Zvlášť pro vyučující, žáky a zákonné zástupce, krátce a srozumitelně. Pomůže dovednost Školní pravidla.
 4. **Projednejte je** — S pedagogickým sborem, žákovským parlamentem a zákonnými zástupci. Pravidla, která vzniknou v dialogu, se dodržují.
@@ -85,10 +85,10 @@ Dovednost vás provede tvorbou pravidel krok za krokem: zeptá se na oblasti, c�
 
 - **Které nástroje** škola doporučuje a s jakými účty (školní účty, věkové limity).
 - **Ochrana dat:** žádné osobní údaje žáků v chatbotech.
-- **Kdy AI smí žák použít:** ideálně u každé úlohy označit úroveň (viz níže).
+- **Kdy AI smí žák použít:** ideálně u každé úlohy označit úroveň (viz níže) nebo [způsob jejího využití](/ve-vyuce/zpusoby-vyuziti-ai).
 - **Jak přiznat použití AI:** krátká poznámka, k čemu a jak.
 - **Co je podvod:** vydávání výstupu AI za vlastní práci tam, kde to zadání nedovoluje.
-- **Jak AI používají vyučující:** příprava, hodnocení (AI nikdy nerozhoduje o známce sama), komunikace.
+- **Jak AI používají vyučující:** v přípravě, při hodnocení, v komunikaci se zákonnými zástupci a podobně.
 - **Kdo se stará o aktualizaci** pravidel.
 
 ## Úrovně využití AI v úlohách
