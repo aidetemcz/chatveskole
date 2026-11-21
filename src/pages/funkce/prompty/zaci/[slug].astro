@@ -4,6 +4,7 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../../../layouts/Base.astro';
 import Crumbs from '../../../../components/Crumbs.astro';
 import { url } from '../../../../lib/url';
+import { t, tf } from '../../../../lib/jazyk';
 
 export async function getStaticPaths() {
   const zaci = (await getCollection('prompty')).filter((p) => p.id.startsWith('zaci/'));
@@ -13,28 +14,28 @@ const { prompt } = Astro.props;
 const { Content } = await render(prompt);
 const d = prompt.data;
 ---
-<Base title={`${d.title} — prompt pro žáky`} description={d.perex ?? d.proc_ho_vyuzit}>
+<Base title={tf('{nazev} — prompt pro žáky', { nazev: d.title })} description={d.perex ?? d.proc_ho_vyuzit}>
   <div class="wrap layout">
     <article class="main">
-      <Crumbs items={[{ title: 'Katalog promptů', href: '/prompty' }, { title: 'Pro žáky', href: '/funkce/prompty/zaci' }, { title: d.title }]} />
+      <Crumbs items={[{ title: t('Katalog promptů'), href: '/prompty' }, { title: t('Pro žáky'), href: '/funkce/prompty/zaci' }, { title: d.title }]} />
       <header class="page-head"><h1>{d.title}</h1></header>
       <div class="prose"><Content /></div>
-      <div style="margin-top: 10px"><OdkazyKonec odkazy={[{ text: 'Další prompty pro žáky', href: url('/funkce/prompty/zaci') }, { text: 'AI aplikace Tiny', href: url('/ve-vyuce/tiny') }]} /></div>
+      <div style="margin-top: 10px"><OdkazyKonec odkazy={[{ text: t('Další prompty pro žáky'), href: url('/funkce/prompty/zaci') }, { text: t('AI aplikace Tiny'), href: url('/ve-vyuce/tiny') }]} /></div>
     </article>
     <aside class="side">
       {d.zpusob && (
         <div class="box">
-          <div><h2>Způsob využití AI</h2><p>{d.zpusob_odkaz ? <a href={url(d.zpusob_odkaz)}>{d.zpusob}</a> : d.zpusob}{d.perex && <> — {d.perex}</>}</p></div>
-          {d.pojistka && <div><h2>Pojistka</h2><p>{d.pojistka}</p></div>}
-          {d.jak_poznate && <div><h2>Jak poznáte, že se žák učí</h2><p>{d.jak_poznate}</p></div>}
-          {d.zpusob_odkaz && <a class="more" href={url('/ve-vyuce/zpusoby-vyuziti-ai')}>Všechny způsoby využití AI →</a>}
+          <div><h2>{t('Způsob využití AI')}</h2><p>{d.zpusob_odkaz ? <a href={url(d.zpusob_odkaz)}>{d.zpusob}</a> : d.zpusob}{d.perex && <> — {d.perex}</>}</p></div>
+          {d.pojistka && <div><h2>{t('Pojistka')}</h2><p>{d.pojistka}</p></div>}
+          {d.jak_poznate && <div><h2>{t('Jak poznáte, že se žák učí')}</h2><p>{d.jak_poznate}</p></div>}
+          {d.zpusob_odkaz && <a class="more" href={url('/ve-vyuce/zpusoby-vyuziti-ai')}>{t('Všechny způsoby využití AI →')}</a>}
         </div>
       )}
       {d.tiny_chatbot && (
         <div class="box box--sky">
-          <h2>V aplikaci Tiny</h2>
-          <p>Stejně pracuje chatbot <strong>{d.tiny_chatbot}</strong> — bez účtů žáků u velkých firem.</p>
-          <a class="more" href={url('/ve-vyuce/tiny')}>O aplikaci Tiny →</a>
+          <h2>{t('V aplikaci Tiny')}</h2>
+          <p>{t('Stejně pracuje chatbot')} <strong>{d.tiny_chatbot}</strong> {t('— bez účtů žáků u velkých firem.')}</p>
+          <a class="more" href={url('/ve-vyuce/tiny')}>{t('O aplikaci Tiny →')}</a>
         </div>
       )}
     </aside>

@@ -1,11 +1,12 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
+import { OBSAH } from './lib/jazyk';
 
 // id = cesta k souboru bez přípony (např. "zaciname/vekove-limity-a-legislativa", "vedeni/tvorba-skolnich-pravidel")
 const idZCesty = ({ entry }: { entry: string }) => entry.replace(/\.md$/, '');
 
 const stranky = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './content/stranky', generateId: idZCesty }),
+  loader: glob({ pattern: '**/*.md', base: `./${OBSAH}/stranky`, generateId: idZCesty }),
   schema: z
     .object({
       title: z.string(),
@@ -25,7 +26,7 @@ const stranky = defineCollection({
 const prompty = defineCollection({
   loader: glob({
     pattern: ['pedagogove/*.md', 'vedeni/*.md', 'archiv-2024/*.md', 'zaci/[!_]*.md'],
-    base: './content/prompty',
+    base: `./${OBSAH}/prompty`,
     generateId: idZCesty,
   }),
   schema: z
@@ -51,7 +52,7 @@ const prompty = defineCollection({
 });
 
 const promptyUvod = defineCollection({
-  loader: glob({ pattern: 'zaci/_index.md', base: './content/prompty', generateId: idZCesty }),
+  loader: glob({ pattern: 'zaci/_index.md', base: `./${OBSAH}/prompty`, generateId: idZCesty }),
   schema: z.object({ title: z.string(), popis: z.string().nullable().optional() }).passthrough(),
 });
 

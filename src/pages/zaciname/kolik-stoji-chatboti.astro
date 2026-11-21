@@ -3,6 +3,7 @@
 // Texty jsou v content/stranky/zaciname/kolik-stoji-chatboti.md (oddíly podle ##), tarify v data/ceny.yaml.
 import { getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { t, tf, LOCALE } from '../../lib/jazyk';
 import Crumbs from '../../components/Crumbs.astro';
 import Cenik from '../../components/data/Cenik.astro';
 import { rozdel, naOddily } from '../../lib/komponenty';
@@ -35,12 +36,12 @@ const claude = najdi(/Claude se slevou/i);
 const claudeHtml = htmlOddilu(claude);
 const tarify = najdi(/^Tarify/i);
 const vyplati = najdi(/vyplatí/i);
-const STITKY_VYPLATI = ['školní licence', 'zdarma', 'placená verze'];
+const STITKY_VYPLATI = [t('školní licence'), t('zdarma'), t('placená verze')];
 const dph = najdi(/DPH/i);
 const dphHtml = htmlOddilu(dph);
 
 const skupina = navigace.menu.find((g) => g.items.some((i) => i.href === '/' + stranka.id));
-const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString(LOCALE, { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
 ---
 <Base title={d.title} description={d.popis ?? undefined}>
   <div class="band band--white">
@@ -48,7 +49,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
       <div class="page-head">
         <div class="zahlavi">
           <Crumbs items={[...(skupina ? [{ title: skupina.title }] : []), { title: d.title }]} />
-          {datum && <span class="draft">Aktualizováno {datum}</span>}
+          {datum && <span class="draft">{tf('Aktualizováno {datum}', { datum })}</span>}
         </div>
         <h1>{d.title}</h1>
         <div class="lede perex" set:html={perex} />
@@ -89,7 +90,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
         {claude && (
           <div class="card claude" aria-labelledby={claude.id || undefined}>
             <div class="stack claude-uvod" style="gap: 10px">
-              <span class="stitek">Pro vedení a pedagogy, od 18 let</span>
+              <span class="stitek">{t('Pro vedení a pedagogy, od 18 let')}</span>
               <h2 id={claude.id || undefined} class="h-box">{claude.nadpis}</h2>
               <div class="prose" set:html={uvodOddilu(claudeHtml)} />
             </div>

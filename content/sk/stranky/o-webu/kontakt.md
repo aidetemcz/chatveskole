@@ -1,0 +1,35 @@
+---
+title: Kontakt
+menu: O webu
+poradi: 2
+popis: Napište nám — dotazy k webu, návrhy dovedností a promptů, chyby v textech, vzdělávací akce pro školy.
+aktualizovano: 2026-11-21
+sablona: kontakt-pruvodce   # vlastní šablona src/pages/o-webu/kontakt.astro
+stav: koncept
+---
+
+# Kontakt
+
+Máte dotaz k webu, našli jste chybu v textu, nebo chcete navrhnout dovednost či prompt? Napište nám. Ozvat se můžete i tehdy, když hledáte vzdělávací akci pro svou sborovnu nebo máte zájem o spolupráci.
+
+Web připravuje Eva Nečasová z neziskové organizace [AI dětem](https://aidetem.cz). Napište jí na [eva@aidetem.cz](mailto:eva@aidetem.cz).
+
+## Web a obsah
+
+Našli jste chybu, zastaralou informaci nebo nefunkční odkaz? Máte nápad, co na webu chybí? Napište Evě Nečasové na [eva@aidetem.cz](mailto:eva@aidetem.cz), nebo obecně na [cau@aidetem.cz](mailto:cau@aidetem.cz).
+
+## Pošlete nám dovednost nebo prompt {#poslat}
+
+Používáte dovednost nebo prompt, který se vám osvědčil? Pošlete nám ho přes formulář. Projdeme ho, vyzkoušíme a s vaším souhlasem zveřejníme i s vaším jménem.
+
+[Poslat dovednost nebo prompt](https://forms.gle/rn7SsvbmjJ43YZj29)
+
+## Školení a spolupráce
+
+Hledáte vzdělávací akci pro sborovnu nebo máte zájem o spolupráci? Ozvěte se Kláře na [klara@aidetem.cz](mailto:klara@aidetem.cz), nebo se podívejte na [nabídku vzdělávacích akcí](https://vzdelavame.aidetem.cz).
+
+## Novinky do e-mailu
+
+Jednou za čas vám pošleme, co je nového v umělé inteligenci a ve vzdělávání.
+
+[Přihlásit se k odběru](https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f9d89c882af9a3a8b)

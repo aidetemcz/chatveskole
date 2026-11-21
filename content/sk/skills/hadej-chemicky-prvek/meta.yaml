@@ -1,0 +1,24 @@
+title: Hádej chemický prvek
+slug: hadej-chemicky-prvek
+kratky_popis: Hádací hra pro žáky 8. a 9. ročníku – chatbot popíše chemický prvek a žák hádá, o který jde.
+popis: "Hádací hra, ve které si žáci 8. a 9. ročníku zábavně procvičí chemické prvky a periodickou soustavu. Chatbot popíše vlastnosti, využití a místo prvku v periodické soustavě a žák hádá jeho název; po chybné odpovědi dostane konkrétnější indicii. Fakta bere z přiložené periodické tabulky a vybírá hlavně prvky, které žáci znají ze školy. Na začátku můžete hru omezit, třeba jen na prvních 20 prvků, na kovy nebo na počet kol. Chatbot se ptá jen na křestní jméno nebo název skupinky."
+pro_koho: [ucitele]
+sady: [priprava-vyuky]
+stitky: [chemie, periodická soustava prvků, hra, procvičování, žáci, Tiny]
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/hadej-chemicke-prvky-asistent/
+    typ: asistent
+puvodni_asistenti:
+  gpt: https://chatgpt.com/g/g-sTf7nS5F8-hadej-chemicky-prvek
+google_doc: https://docs.google.com/document/d/1au78J6jl80G1vYSOtzoOD_mIW8h16MiPuF7CdNGMpE8/edit
+google_slozka: https://drive.google.com/drive/folders/1PbiL0KG_eNlFE4MSF_BLcS9jjfcjxgpf
+google_data: https://drive.google.com/drive/folders/1B6ad0P4NLVNbEd2fQsQXtbEvrEw9XozN
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1siHfTsfMuXMq-p3Cz-CRJQB_i5LzkCyE
+  gemini: https://drive.google.com/uc?export=download&id=17QcGDBNWbrbsNoLTVegkVzdVNFu4sQ-3
+  chatgpt: https://drive.google.com/uc?export=download&id=11kHR6uePupE6gw84QEWNf66FUTD7IhWS
+autori: [AI dětem]          # ověřit autorství
+znalosti: [periodicka-tabulka-prvku.md]
+vek: chatbot pro žáky 12–15 let; dovednosti jsou v Gemini a Claude 18+, se žáky použijte prompt nebo aplikaci Tiny
+stav: koncept
+aktualizovano: 2026-11-15

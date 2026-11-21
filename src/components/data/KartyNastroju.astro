@@ -1,6 +1,7 @@
 ---
 // Karty nástrojů z data/funkce-chatbotu.yaml: Končí / Přibývá / Na co myslet ve škole
 import { funkceChatbotu as F } from '../../lib/data';
+import { t } from '../../lib/jazyk';
 ---
 <div class="tcards">
   {F.nastroje.map((n) => (
@@ -10,9 +11,9 @@ import { funkceChatbotu as F } from '../../lib/data';
         <span class="maker">{n.vyrobce}</span>
         <span class="shift">{n.posun}</span>
       </header>
-      <div class="grp g-end"><h4>Končí</h4><ul>{n.konci.map((x) => <li>{x}</li>)}</ul></div>
-      <div class="grp g-new"><h4>Přibývá</h4><ul>{n.pribyva.map((x) => <li>{x}</li>)}</ul></div>
-      <div class="grp g-school"><h4>Na co myslet ve škole</h4><ul>{n.skola.map((x) => <li>{x}</li>)}</ul></div>
+      <div class="grp g-end"><h4>{t('Končí')}</h4><ul>{n.konci.map((x) => <li>{x}</li>)}</ul></div>
+      <div class="grp g-new"><h4>{t('Přibývá')}</h4><ul>{n.pribyva.map((x) => <li>{x}</li>)}</ul></div>
+      <div class="grp g-school"><h4>{t('Na co myslet ve škole')}</h4><ul>{n.skola.map((x) => <li>{x}</li>)}</ul></div>
     </article>
   ))}
 </div>

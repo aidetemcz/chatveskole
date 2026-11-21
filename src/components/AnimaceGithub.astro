@@ -2,37 +2,38 @@
 // Animace „Jak agent pracuje s GitHubem“ pro stránku Vibe Coding pro pokročilé (21. 11. 2026).
 // Čtyři fáze ve smyčce 12 s: propojení agenta s repozitářem → nová větev se změnami → pull request a schválení → sloučení a zveřejnění webu.
 // Jen CSS, bez JavaScriptu. Při prefers-reduced-motion se ukáže konečný stav.
+import { t } from '../lib/jazyk';
 ---
-<figure class="anim" role="img" aria-label="Animace: agent se propojí s repozitářem na GitHubu, změny uloží do nové větve, připraví pull request, po schválení se změny sloučí do hlavní větve a hosting web znovu zveřejní.">
+<figure class="anim" role="img" aria-label={t('Animace: agent se propojí s repozitářem na GitHubu, změny uloží do nové větve, připraví pull request, po schválení se změny sloučí do hlavní větve a hosting web znovu zveřejní.')}>
   <svg viewBox="0 0 1100 250" aria-hidden="true">
     <!-- agent -->
     <rect x="10" y="70" width="210" height="110" rx="12" class="box box--agent" />
     <g transform="translate(34 92)" class="ikona">
       <path d="M2 2h22a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H12l-6 5v-5H2a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3z" />
     </g>
-    <text x="34" y="144" class="nazev">Agent</text>
+    <text x="34" y="144" class="nazev">{t('Agent')}</text>
     <text x="34" y="164" class="pod">Claude Code, Codex</text>
 
     <!-- propojení agent ↔ GitHub -->
     <path d="M220 125 H300" class="spoj spoj--propojeni" />
-    <text x="260" y="112" class="stitek-cary f1">propojení</text>
+    <text x="260" y="112" class="stitek-cary f1">{t('propojení')}</text>
 
     <!-- GitHub repozitář -->
     <rect x="300" y="14" width="500" height="222" rx="12" class="box" />
     <text x="324" y="46" class="nazev">GitHub</text>
-    <text x="406" y="46" class="pod">repozitář</text>
+    <text x="406" y="46" class="pod">{t('repozitář')}</text>
 
     <!-- hlavní větev -->
     <path d="M326 165 H776" class="hlavni" />
     <circle cx="348" cy="165" r="7" class="commit" />
     <circle cx="752" cy="165" r="7" class="commit commit--novy f4" />
-    <text x="326" y="200" class="pod">hlavní větev</text>
+    <text x="326" y="200" class="pod">{t('hlavní větev')}</text>
 
     <!-- nová větev se změnami -->
     <path d="M390 165 C 420 165, 418 98, 448 98 H 652 C 682 98, 680 165, 710 165" class="vetev f2" pathLength="1" />
     <circle cx="510" cy="98" r="7" class="commit commit--vetev f2b" />
     <circle cx="590" cy="98" r="7" class="commit commit--vetev f2c" />
-    <text x="550" y="80" class="stitek-cary f2b">nová větev</text>
+    <text x="550" y="80" class="stitek-cary f2b">{t('nová větev')}</text>
 
     <!-- pull request -->
     <g class="pr f3">
@@ -46,18 +47,18 @@
 
     <!-- zveřejnění -->
     <path d="M800 125 H880" class="spoj spoj--web f4" />
-    <text x="840" y="112" class="stitek-cary f4">zveřejnění</text>
+    <text x="840" y="112" class="stitek-cary f4">{t('zveřejnění')}</text>
     <rect x="880" y="70" width="210" height="110" rx="12" class="box box--web f4web" />
     <text x="904" y="120" class="nazev">Web</text>
-    <text x="904" y="142" class="pod">hosting zveřejní</text>
-    <text x="904" y="160" class="pod">novou verzi</text>
+    <text x="904" y="142" class="pod">{t('hosting zveřejní')}</text>
+    <text x="904" y="160" class="pod">{t('novou verzi')}</text>
   </svg>
   <figcaption>
     <ol class="faze">
-      <li class="p1"><span>1</span>Propojení</li>
-      <li class="p2"><span>2</span>Změny ve větvi</li>
+      <li class="p1"><span>1</span>{t('Propojení')}</li>
+      <li class="p2"><span>2</span>{t('Změny ve větvi')}</li>
       <li class="p3"><span>3</span>Pull request</li>
-      <li class="p4"><span>4</span>Zveřejnění</li>
+      <li class="p4"><span>4</span>{t('Zveřejnění')}</li>
     </ol>
   </figcaption>
 </figure>

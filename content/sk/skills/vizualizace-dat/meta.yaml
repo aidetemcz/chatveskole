@@ -1,0 +1,24 @@
+title: Vizualizace dat
+slug: vizualizace-dat
+kratky_popis: Převede školní a projektová data do přesných a srozumitelných grafů, tabulek a přehledů s hlavním zjištěním.
+popis: "Pomůže vám převést školní a projektová data, třeba známky, výsledky testů, dotazníky nebo docházku, do přesných a srozumitelných grafů, tabulek a přehledů. Ke každému výstupu dostanete hlavní zjištění: co se změnilo, jak moc, koho se to týká a proč je to důležité, i s omezeními výkladu. Data neupravuje ani nedopočítává bez označení a nevytváří zavádějící srovnání. Výstupy se hodí pro sborovnu, zákonné zástupce, zřizovatele i donory; jména žáků z dat předem odstraňte."
+pro_koho: [vedeni, ucitele]
+sady: [vedeni-skoly]
+stitky: [data, grafy, výroční zpráva, dotace, dotazníky, výsledky žáků]
+rezimy:
+  - Návrh grafu nebo přehledu z dat
+  - Kontrola hotového grafu
+  - Výklad, co čísla říkají
+puvodni_obsah: []
+google_doc: https://docs.google.com/document/d/1KJ4tXgnJVOq-J8n5jIpjdc-ImPOup2jI-K6x9830Pn0/edit
+google_slozka: https://drive.google.com/drive/folders/1vAlVbaTqflsxKW86kksFTa483AZItPRF
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1a7VNdcae2JeDLq0LI8gaQvT__7P4jVVO
+  gemini: https://drive.google.com/uc?export=download&id=1dMntr8bcFbQKDD2gvohVEsg6BF5deXOd
+  chatgpt: https://drive.google.com/uc?export=download&id=1OUcBbUBlQW7UPH9g0gJVc1MWzyt-Vich
+autori: [AI dětem]
+metodika: []
+znalosti: []
+vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-21

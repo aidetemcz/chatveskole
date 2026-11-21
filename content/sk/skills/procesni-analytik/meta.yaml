@@ -1,0 +1,35 @@
+title: Procesní analytik
+slug: procesni-analytik
+kratky_popis: Z přepisu nebo nahrávky obrazovky sestaví věrnou mapu administrativního procesu školy, jak dnes skutečně probíhá.
+popis: "Pomůže vám zmapovat administrativní proces školy přesně tak, jak dnes skutečně probíhá. Z přepisu rozhovoru nebo nahrávky obrazovky, na které kolega ukazuje svou práci, sestaví kartu procesu: co proces spouští a čím končí, jednotlivé kroky, předávky, pozorování z praxe a otázky k ověření. Proces neposuzuje ani nenavrhuje jeho budoucí podobu, protože věrná, i když neúplná mapa je cennější než mapa plná domněnek. Je určený týmům škol v oblasti Administrativa programu AI akcelerátor."
+pro_koho: [vedeni]
+sady: [ai-akcelerator]
+stitky: [AI akcelerátor, administrativa, procesy, mapování procesu, karta procesu]
+rezimy:
+  - Mapa stávajícího procesu
+  - Diagram (na vyžádání)
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/procesni-analytik-ai-detem/
+    typ: asistent
+puvodni_asistenti:
+  gem: https://gemini.google.com/gem/152vcaYvQ_O-ln3-KxCv4g49-O_ZTzYLg?usp=sharing
+  systemovy_prompt:
+    - https://drive.google.com/drive/folders/1yXgO86zo2-x93QALLDZZVugjEN_ArsYz?usp=drive_link   # složka uvedená na webu
+    - https://docs.google.com/document/d/1Zw7UIHXLtKbEYf-eId0NHywp_D7WTEXV7_QYpcHhi2w/edit
+google_doc: https://docs.google.com/document/d/1Jrw1-QYxaEjlzWAVHKSAchVBuM-TplEb1xc_c3Yr9Lg/edit
+google_slozka: https://drive.google.com/drive/folders/1JlRSo74mR2rHMl2V_YDcM0yU0E5WULdW
+google_data: https://drive.google.com/drive/folders/1_gQUAqfg8xQ6S7ak71ZmbHCl5Sana0O8
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1N5au4cfvyGGKDVmcyPaFADRBjQGtUMq_
+  gemini: https://drive.google.com/uc?export=download&id=13frpjMZ2NIXKG7xvL57E_5sDOQvil8OS
+  chatgpt: https://drive.google.com/uc?export=download&id=125pE9Ss5cirR0Of4yIhSnI_0-oMnDVbB
+autori: [tým AI akcelerátoru (AI dětem)]   # doplnit jména autorů asistenta
+metodika:
+  - nazev: AI akcelerátor – oblast Administrativa (AI dětem)
+    url: https://aidetem.cz/ai-akcelerator-oblast-administrativa/
+  - nazev: Karta procesu (AI akcelerátor)
+    url: https://aidetem.cz/ai-akcelerator-karta-procesu/
+znalosti: []
+vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-21

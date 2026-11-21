@@ -2,12 +2,13 @@
 // Drobečková navigace + strukturovaná data BreadcrumbList pro Google (schema.org).
 // Položky bez odkazu (rubriky menu) se do strukturovaných dat nedávají, poslední položka je aktuální stránka.
 import { url } from '../lib/url';
+import { t } from '../lib/jazyk';
 interface Props { items: { title: string; href?: string }[] }
 const { items } = Astro.props;
 const abs = (h: string) => new URL(url(h).replace(/^([^#?]*?)\/?(#|\?|$)/, '$1/$2'), Astro.site).href;
 const tady = new URL(Astro.url.pathname.replace(/\/?$/, '/'), Astro.site).href;
 const cesta = [
-  { name: 'Domů', item: abs('/') },
+  { name: t('Domů'), item: abs('/') },
   ...items.slice(0, -1).filter((it) => it.href).map((it) => ({ name: it.title, item: abs(it.href!) })),
   ...(items.length ? [{ name: items[items.length - 1].title, item: tady }] : []),
 ];
@@ -17,8 +18,8 @@ const jsonLd = JSON.stringify({
   itemListElement: cesta.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: c.item })),
 });
 ---
-<nav class="crumbs" aria-label="Drobečková navigace" data-pagefind-ignore>
-  <a href={url('/')}>Domů</a>
+<nav class="crumbs" aria-label={t('Drobečková navigace')} data-pagefind-ignore>
+  <a href={url('/')}>{t('Domů')}</a>
   {items.map((it) => (
     <>
       <span aria-hidden="true">/</span>

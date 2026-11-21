@@ -3,6 +3,7 @@
 // Texty jsou v content/stranky/o-webu/novy-web.md (oddíly podle ##), grafika stejná jako u stránky Projekty.
 import { getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { t, tf, LOCALE } from '../../lib/jazyk';
 import Crumbs from '../../components/Crumbs.astro';
 import { rozdel, naOddily } from '../../lib/komponenty';
 import { url } from '../../lib/url';
@@ -52,15 +53,15 @@ type Odkaz = { text: string; href: string };
 const tlacitko = d.tlacitko && typeof d.tlacitko === 'object' && d.tlacitko.href ? (d.tlacitko as Odkaz) : null;
 const odkazy: Odkaz[] = [tlacitko, ...(Array.isArray(d.odkazy) ? d.odkazy : [])].filter((o): o is Odkaz => !!o && !!o.href);
 const katalog = odkazy.find((o) => o.href === '/skills');
-const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString(LOCALE, { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
 ---
 <Base title={d.title} description={d.popis ?? undefined}>
   <div class="band band--white">
     <div class="wrap hero">
       <div class="page-head">
         <div class="zahlavi">
-          <Crumbs items={[{ title: d.menu ?? 'O webu' }, { title: d.menu_titulek ?? d.title }]} />
-          {datum && <span class="draft">Aktualizováno {datum}</span>}
+          <Crumbs items={[{ title: d.menu ?? t('O webu') }, { title: d.menu_titulek ?? d.title }]} />
+          {datum && <span class="draft">{tf('Aktualizováno {datum}', { datum })}</span>}
         </div>
         <h1>{d.title}</h1>
         <div class="lede perex" set:html={perex} />

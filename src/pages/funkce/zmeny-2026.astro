@@ -1,6 +1,7 @@
 ---
 import OdkazyKonec from '../../components/OdkazyKonec.astro';
 import { url } from '../../lib/url';
+import { t, tf } from '../../lib/jazyk';
 // Změny ve funkcích chatbotů — celostránková šablona (sablona: zmeny-funkci).
 // Texty z content/stranky/funkce/zmeny-2026.md, data z data/funkce-chatbotu.yaml.
 import { getEntry } from 'astro:content';
@@ -17,7 +18,7 @@ const { uvod, oddily: oddilyMd } = naOddily(casti);
 // zdroje jako samostatný oddíl na konci
 const oddily = oddilyMd.flatMap((o) => {
   const i = o.casti.findIndex((c) => c.typ === 'komponenta' && c.klic === 'zdroje-nastroju');
-  return i > 0 ? [{ ...o, casti: o.casti.slice(0, i) }, { nadpis: 'Zdroje', id: 'zdroje', casti: o.casti.slice(i) }] : [o];
+  return i > 0 ? [{ ...o, casti: o.casti.slice(0, i) }, { nadpis: t('Zdroje'), id: 'zdroje', casti: o.casti.slice(i) }] : [o];
 });
 
 // úvod: první odstavec = perex, za značkou „tři teze“ následují odstavce s tezemi
@@ -30,8 +31,8 @@ const videoHtml = (tezeHtml.match(/<div class="video">[\s\S]*?<\/div>/) ?? [''])
 const GLYFY = [['full', 'none'], ['none', 'full'], ['half', 'half']];
 
 const POPISY: Record<string, string> = {
-  'casova-osa': 'Ohlášené termíny vývojářů. Svislá čára ukazuje dnešní den.',
-  matice: 'Každé pole ukazuje, jestli funkce existuje dnes a jestli ji vývojáři chystají i pro rok 2027. Podbarvená pole se mění.',
+  'casova-osa': t('Ohlášené termíny vývojářů. Svislá čára ukazuje dnešní den.'),
+  matice: t('Každé pole ukazuje, jestli funkce existuje dnes a jestli ji vývojáři chystají i pro rok 2027. Podbarvená pole se mění.'),
 };
 const popisOddilu = (o: { casti: Cast[] }) => { const k = o.casti.find((c) => c.typ === 'komponenta'); return k && k.typ === 'komponenta' ? POPISY[k.klic] : undefined; };
 const datum = d.aktualizovano ? datumCesky(d.aktualizovano) : null;
@@ -40,8 +41,8 @@ const datum = d.aktualizovano ? datumCesky(d.aktualizovano) : null;
   <div class="band band--white">
     <div class="wrap page-head">
       <div class="zahlavi">
-        <Crumbs items={[{ title: 'Funkce' }, { title: d.title }]} />
-        {datum && <span class="draft">Aktualizováno {datum}</span>}
+        <Crumbs items={[{ title: t('Funkce') }, { title: d.title }]} />
+        {datum && <span class="draft">{tf('Aktualizováno {datum}', { datum })}</span>}
       </div>
       <h1>{d.title}</h1>
       <div class="lede perex" set:html={perex} />
@@ -49,7 +50,7 @@ const datum = d.aktualizovano ? datumCesky(d.aktualizovano) : null;
   </div>
 
   {seznamTezi.length > 0 && (
-    <section class="band band--sky" aria-label="Hlavní změny">
+    <section class="band band--sky" aria-label={t('Hlavní změny')}>
       <div class="wrap shifts">
         {seznamTezi.map((t, i) => (
           <div class="shift-item">
@@ -67,7 +68,7 @@ const datum = d.aktualizovano ? datumCesky(d.aktualizovano) : null;
       <div class="wrap stack" style="gap: 30px">
         {i === 0 && videoHtml && (
           <div class="video-uvod stack" style="gap: 30px">
-            <div class="section-head"><div><h2 id="pruvodce">Průvodce novými funkcemi</h2></div></div>
+            <div class="section-head"><div><h2 id="pruvodce">{t('Průvodce novými funkcemi')}</h2></div></div>
             <div set:html={videoHtml} />
           </div>
         )}

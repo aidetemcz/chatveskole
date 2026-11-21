@@ -2,25 +2,15 @@
 // Vyhledávání na webu (Pagefind — index se vytváří po buildu, `npm run build`; v `npm run dev` nefunguje)
 import Base from '../layouts/Base.astro';
 import { url } from '../lib/url';
-const bundle = url('/pagefind/');
----
-<Base title="Hledat" description="Vyhledávání v dovednostech, promptech a návodech na webu Chatboti ve škole." noindex>
-  <div class="band band--white">
-    <div class="wrap stack" style="gap: 32px">
-      <header class="page-head">
-        <h1>Hledat na webu</h1>
-        <p class="lede">Dovednosti, prompty, návody a přehledy funkcí chatbotů.</p>
-      </header>
-      <div id="hledani" data-bundle={bundle} data-base={url('/')}></div>
-      <noscript><p>Vyhledávání potřebuje zapnutý JavaScript. Zkuste <a href={url('/skills')}>katalog dovedností</a> nebo <a href={url('/prompty')}>katalog promptů</a>.</p></noscript>
-    </div>
-  </div>
-  <link rel="stylesheet" href={`${bundle}pagefind-ui.css`} />
-  <script is:inline src={`${bundle}pagefind-ui.js`}></script>
-  <script is:inline>
+import { t, urlJazyka } from '../lib/jazyk';
+// index Pagefind je jeden pro obě jazykové verze (v kořeni webu); jazyk vybírá podle <html lang>
+const bundle = urlJazyka('cs', '/pagefind/');
+// skript vyhledávání jako text: překlady rozhraní Pagefind se do něj vkládají jako JS řetězce
+const js = (s: string) => `'${s.replace(/\\/g, '\\\\').replace(/'/g, "\\'")}'`;
+const skriptHledani = `
     (function () {
       var el = document.getElementById('hledani');
-      if (!window.PagefindUI) { el.innerHTML = '<p>Vyhledávání je dostupné jen na sestaveném webu.</p>'; return; }
+      if (!window.PagefindUI) { el.innerHTML = ${js('<p>' + t('Vyhledávání je dostupné jen na sestaveném webu.') + '</p>')}; return; }
       new PagefindUI({
         element: '#hledani',
         bundlePath: el.dataset.bundle,
@@ -30,23 +20,38 @@ const bundle = url('/pagefind/');
         resetStyles: false,
         autofocus: true,
         translations: {
-          placeholder: 'Co hledáte? Například slovní hodnocení',
-          clear_search: 'Vymazat',
-          load_more: 'Načíst další výsledky',
-          search_label: 'Hledat na webu',
-          filters_label: 'Filtry',
-          zero_results: 'Pro „[SEARCH_TERM]“ jsme nic nenašli',
-          many_results: '[COUNT] výsledků pro „[SEARCH_TERM]“',
-          one_result: '1 výsledek pro „[SEARCH_TERM]“',
-          alt_search: 'Pro „[SEARCH_TERM]“ jsme nic nenašli. Zobrazujeme výsledky pro „[DIFFERENT_TERM]“',
-          search_suggestion: 'Pro „[SEARCH_TERM]“ jsme nic nenašli. Zkuste jiné slovo.',
-          searching: 'Hledáme „[SEARCH_TERM]“…',
+          placeholder: ${js(t('Co hledáte? Například slovní hodnocení'))},
+          clear_search: ${js(t('Vymazat'))},
+          load_more: ${js(t('Načíst další výsledky'))},
+          search_label: ${js(t('Hledat na webu'))},
+          filters_label: ${js(t('Filtry'))},
+          zero_results: ${js(t('Pro „[SEARCH_TERM]“ jsme nic nenašli'))},
+          many_results: ${js(t('[COUNT] výsledků pro „[SEARCH_TERM]“'))},
+          one_result: ${js(t('1 výsledek pro „[SEARCH_TERM]“'))},
+          alt_search: ${js(t('Pro „[SEARCH_TERM]“ jsme nic nenašli. Zobrazujeme výsledky pro „[DIFFERENT_TERM]“'))},
+          search_suggestion: ${js(t('Pro „[SEARCH_TERM]“ jsme nic nenašli. Zkuste jiné slovo.'))},
+          searching: ${js(t('Hledáme „[SEARCH_TERM]“…'))},
         },
       });
       var q = new URLSearchParams(location.search).get('q');
       if (q) { var i = el.querySelector('input'); if (i) { i.value = q; i.dispatchEvent(new Event('input')); } }
     })();
-  </script>
+  `;
+---
+<Base title={t('Hledat')} description={t('Vyhledávání v dovednostech, promptech a návodech na webu Chatboti ve škole.')} noindex>
+  <div class="band band--white">
+    <div class="wrap stack" style="gap: 32px">
+      <header class="page-head">
+        <h1>{t('Hledat na webu')}</h1>
+        <p class="lede">{t('Dovednosti, prompty, návody a přehledy funkcí chatbotů.')}</p>
+      </header>
+      <div id="hledani" data-bundle={bundle} data-base={url('/')}></div>
+      <noscript><p>{t('Vyhledávání potřebuje zapnutý JavaScript. Zkuste')} <a href={url('/skills')}>{t('katalog dovedností')}</a> {t('nebo')} <a href={url('/prompty')}>{t('katalog promptů')}</a>.</p></noscript>
+    </div>
+  </div>
+  <link rel="stylesheet" href={`${bundle}pagefind-ui.css`} />
+  <script is:inline src={`${bundle}pagefind-ui.js`}></script>
+  <script is:inline set:html={skriptHledani}></script>
 </Base>
 
 <style is:global>

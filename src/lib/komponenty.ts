@@ -1,6 +1,7 @@
 // Komponenty v Markdownu: komentář <!-- komponenta: … --> v content/stranky/*.md označuje místo,
 // kam šablona vloží datovou komponentu, nebo jak má upravit HTML, které po komentáři následuje.
 import { url } from './url';
+import { t, tf } from './jazyk';
 
 export type Klic =
   | 'cenik' | 'sady-skills' | 'pluginy' | 'tiny' | 'infografika-mcp' | 'infografika-konektor' | 'instrukce' // datové komponenty (Astro)
@@ -107,7 +108,7 @@ export function naZalozky(html: string, id: string): string {
     `<button type="button" role="tab" id="${id}-tab-${i}" aria-controls="${id}-p-${i}" aria-selected="${i === 0}" data-target="p${i}">${p.nazev}</button>`).join('');
   const obsah = panely.map((p, i) =>
     `<div data-group-view="p${i}" role="tabpanel" id="${id}-p-${i}" aria-labelledby="${id}-tab-${i}"${i ? ' hidden' : ''}>${p.obsah}</div>`).join('');
-  return `${uvod}<div class="zalozky"><div class="seg" role="tablist" aria-label="Chatbot" data-switch="${id}">${tlacitka}</div><div id="${id}" class="zalozky-panely">${obsah}</div></div>${zbytek}`;
+  return `${uvod}<div class="zalozky"><div class="seg" role="tablist" aria-label="${t('Chatbot')}" data-switch="${id}">${tlacitka}</div><div id="${id}" class="zalozky-panely">${obsah}</div></div>${zbytek}`;
 }
 
 // Náhledové obrázky metodik podle adresy odkazu (public/img)
@@ -149,7 +150,7 @@ export function naKartuSObrazkem(html: string): string {
 // Sekce ### až do dalšího ## → karty ve dvou sloupcích (stránka Způsoby využití AI ve výuce, varianta A z Claude Design):
 // nadpis a tučný perex; „Co dělá žák“ a „Co dělá AI“ vedle sebe;
 // Hodí se / Nehodí se a ostatní položky jako řádky „Štítek: text“ (pojistka se nezobrazuje); v patičce Tiny a prompty jako tlačítka.
-const KRATCE: Record<string, string> = { 'Jak poznáte, že se žák učí': 'Hodnoticí kritérium', 'Otázka k reflexi': 'Reflexe' };
+const KRATCE: Record<string, string> = { 'Jak poznáte, že se žák učí': t('Hodnoticí kritérium'), 'Otázka k reflexi': t('Reflexe') };
 
 export function naKartyZpusobu(html: string): string {
   const konec = html.search(/<h2[\s>]/);
@@ -170,19 +171,19 @@ export function naKartyZpusobu(html: string): string {
     let out = `<article class="zpusob"><div class="zpusob-hlava"><h3${h?.[1] ?? ''}>${h?.[2] ?? ''}</h3>`
       + (perex ? `<p class="zpusob-perex">${perex}</p>` : '') + '</div>';
     if (zak || ai) out += '<div class="zpusob-role">'
-      + (zak ? `<div><span class="zpusob-role-kdo">Žák</span><p>${zak}</p></div>` : '')
+      + (zak ? `<div><span class="zpusob-role-kdo">${t('Žák')}</span><p>${zak}</p></div>` : '')
       + (ai ? `<div><span class="zpusob-role-kdo">AI</span><p>${ai}</p></div>` : '') + '</div>';
     const vel = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
-    const radky: [string, string][] = [...(hodi ? [['Hodí se, když', vel(hodi)]] : []), ...(nehodi ? [['Nehodí se, když', vel(nehodi)]] : []), ...polozky] as [string, string][];
+    const radky: [string, string][] = [...(hodi ? [[t('Hodí se, když'), vel(hodi)]] : []), ...(nehodi ? [[t('Nehodí se, když'), vel(nehodi)]] : []), ...polozky] as [string, string][];
     if (radky.length) out += '<div class="zpusob-dalsi">'
       + radky.map(([s, x]) => `<p><strong>${KRATCE[s] ?? s}:</strong> ${x}</p>`).join('') + '</div>';
     if (spustit) {
       const [tinyCast, chatbotCast = ''] = spustit.split(/,?\s*v běžném chatbotu/i);
       const odkazy = [...(/^V Tiny/i.test(tinyCast.trim()) ? chatbotCast : spustit).matchAll(/<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)];
       const tiny = tinyCast.trim().match(/^V Tiny\s+([\s\S]*)$/i);
-      const tlacitka = odkazy.map(([, href, nazev]) => `<a class="btn btn--outline btn--sm" href="${href}">Prompt ${bezTagu(nazev)} →</a>`).join('');
+      const tlacitka = odkazy.map(([, href, nazev]) => `<a class="btn btn--outline btn--sm" href="${href}">${tf('Prompt {nazev} →', { nazev: bezTagu(nazev) })}</a>`).join('');
       out += '<div class="zpusob-paticka">'
-        + (tiny ? `<p class="zpusob-tiny"><strong>V Tiny:</strong> ${tiny[1].trim().replace(/[.,]\s*$/, '')}</p>` : '')
+        + (tiny ? `<p class="zpusob-tiny"><strong>${t('V Tiny:')}</strong> ${tiny[1].trim().replace(/[.,]\s*$/, '')}</p>` : '')
         + tlacitka + '</div>';
     }
     return out + '</article>';

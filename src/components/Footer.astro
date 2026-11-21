@@ -2,11 +2,12 @@
 // Patička (návrh z Claude Design, 21. 11. 2026, podle patičky webu AI dětem). Menu z content/navigace.yaml.
 import { navigace } from '../lib/data';
 import { url } from '../lib/url';
+import { t } from '../lib/jazyk';
 
 const skupina = (nazev: string) => navigace.menu.find((g) => g.title === nazev);
 // první sloupec: značka a novinky; skupiny menu ve dvou dalších sloupcích; skupiny, které tu nejsou, se přidají na konec
-const SLOUPCE = [['Začínáme', 'Funkce'], ['Vibe Coding', 'Chatboti ve výuce']];
-const VYNECHAT = new Set(['O webu']); // odkazy na Kontakt a Kdo za tím stojí jsou ve spodní liště
+const SLOUPCE = [[t('Začínáme'), t('Funkce')], [t('Vibe Coding'), t('Chatboti ve výuce')]];
+const VYNECHAT = new Set([t('O webu')]); // odkazy na Kontakt a Kdo za tím stojí jsou ve spodní liště
 const umistene = new Set(SLOUPCE.flat());
 const sloupce = SLOUPCE.map((s) => s.map(skupina).filter((g): g is NonNullable<typeof g> => !!g));
 sloupce[sloupce.length - 1].push(...navigace.menu.filter((g) => !umistene.has(g.title) && !VYNECHAT.has(g.title)));
@@ -19,19 +20,19 @@ const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
       <div class="znacka">
         <a class="logo" href={url('/')}>
           <img src={url('/img/logo-ai-detem.png')} alt="" width="56" height="56" loading="lazy" />
-          <span><strong>Chatboti ve škole</strong><span>AI dětem</span></span>
+          <span><strong>{t('Chatboti ve škole')}</strong><span>{t('AI dětem')}</span></span>
         </a>
-        <p>Praktický průvodce chatboty pro vyučující a vedení škol. Projekt neziskové organizace <a href="https://aidetem.cz">AI dětem, z. s.</a></p>
+        <p>{t('Praktický průvodce chatboty pro vyučující a vedení škol. Projekt neziskové organizace')} <a href="https://aidetem.cz">{t('AI dětem, z. s.')}</a></p>
         <div class="site">
-          <a href="https://www.facebook.com/groups/aidetem" aria-label="AI dětem na Facebooku"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.5 1.6-1.5h1.6V4.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.4H7.6V14h2.7v8z"></path></svg></a>
-          <a href="https://www.linkedin.com/company/aidetem/" aria-label="AI dětem na LinkedInu"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"></path></svg></a>
-          <a href="https://www.instagram.com/ai_detem/" aria-label="AI dětem na Instagramu"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.3-3.6a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6z"></path></svg></a>
-          <a href="https://www.youtube.com/@aidetemcz" aria-label="AI dětem na YouTube"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"></path></svg></a>
+          <a href="https://www.facebook.com/groups/aidetem" aria-label={t('AI dětem na Facebooku')}><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.5 1.6-1.5h1.6V4.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.4H7.6V14h2.7v8z"></path></svg></a>
+          <a href="https://www.linkedin.com/company/aidetem/" aria-label={t('AI dětem na LinkedInu')}><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"></path></svg></a>
+          <a href="https://www.instagram.com/ai_detem/" aria-label={t('AI dětem na Instagramu')}><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.3-3.6a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6z"></path></svg></a>
+          <a href="https://www.youtube.com/@aidetemcz" aria-label={t('AI dětem na YouTube')}><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"></path></svg></a>
         </div>
         <div class="novinky">
-          <h2>Novinky do e-mailu</h2>
-          <p>Jednou za čas vám pošleme, co je nového v umělé inteligenci a ve vzdělávání.</p>
-          <a class="btn btn--primary" href="https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f9d89c882af9a3a8b">Přihlásit se k odběru</a>
+          <h2>{t('Novinky do e-mailu')}</h2>
+          <p>{t('Jednou za čas vám pošleme, co je nového v umělé inteligenci a ve vzdělávání.')}</p>
+          <a class="btn btn--primary" href="https://aidetem.ecomailapp.cz/public/form/2-2bb287d15897fe2f9d89c882af9a3a8b">{t('Přihlásit se k odběru')}</a>
         </div>
       </div>
       {sloupce.map((s) => (
@@ -48,8 +49,8 @@ const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
   </div>
   <div class="sign">
     <div class="wrap sign-obsah">
-      <span class="sign-text">Funkce chatovacích aplikací se mění každý den.<br />Když najdete nepřesnost, dejte nám prosím vědět na e-mail <a href="mailto:eva@aidetem.cz">eva@aidetem.cz</a>. Děkujeme!</span>
-      <span class="sign-odkazy"><a href={url('/o-webu/kontakt')}>Kontakt</a><a href={url('/o-webu/kdo-za-tim-stoji')}>Kdo za tím stojí</a><a href={url('/o-webu/ochrana-soukromi')}>Ochrana soukromí</a><button type="button" class="odkaz-tlacitko" data-cookies-nastaveni>Nastavení cookies</button><span>© {rok} AI dětem, z. s.</span></span>
+      <span class="sign-text">{t('Funkce chatovacích aplikací se mění každý den.')}<br />{t('Když najdete nepřesnost, dejte nám prosím vědět na e-mail')} <a href="mailto:eva@aidetem.cz">eva@aidetem.cz</a>. {t('Děkujeme!')}</span>
+      <span class="sign-odkazy"><a href={url('/o-webu/kontakt')}>{t('Kontakt')}</a><a href={url('/o-webu/kdo-za-tim-stoji')}>{t('Kdo za tím stojí')}</a><a href={url('/o-webu/ochrana-soukromi')}>{t('Ochrana soukromí')}</a><button type="button" class="odkaz-tlacitko" data-cookies-nastaveni>{t('Nastavení cookies')}</button><span>© {rok} {t('AI dětem, z. s.')}</span></span>
     </div>
   </div>
 </footer>

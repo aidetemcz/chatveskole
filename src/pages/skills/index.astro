@@ -5,6 +5,7 @@ import Crumbs from '../../components/Crumbs.astro';
 import SkillCard from '../../components/SkillCard.astro';
 import { url } from '../../lib/url';
 import { sady, skills, skillBySlug, PRO_KOHO_SKUPINA, pocet, type Skill } from '../../lib/data';
+import { t, tf } from '../../lib/jazyk';
 
 const podleUcelu = sady.map((s) => ({
   title: s.title, popis: s.popis, sada: s.slug,
@@ -19,18 +20,19 @@ const views = [
   { id: 'ucel', groups: podleUcelu },
   { id: 'komu', groups: podleKomu },
 ];
+const nDovednosti = pocet(skills.length, t('dovednost'), t('dovednosti'), t('dovedností'));
 ---
-<Base title="Katalog dovedností" description={`${pocet(skills.length, 'dovednost', 'dovednosti', 'dovedností')} pro vyučující a vedení škol ke stažení do Claude, Gemini, Copilotu a ChatGPT.`}>
+<Base title={t('Katalog dovedností')} description={tf('{pocet} pro vyučující a vedení škol ke stažení do Claude, Gemini, Copilotu a ChatGPT.', { pocet: nDovednosti })}>
   <div class="band band--white" style="padding-bottom: 32px">
     <div class="wrap stack" style="gap: 32px">
-      <Crumbs items={[{ title: 'Funkce', href: '/funkce/skills' }, { title: 'Katalog dovedností' }]} />
+      <Crumbs items={[{ title: t('Funkce'), href: '/funkce/skills' }, { title: t('Katalog dovedností') }]} />
       <header class="page-head">
-        <h1>Katalog dovedností</h1>
-        <p class="lede">{pocet(skills.length, 'dovednost', 'dovednosti', 'dovedností')} pro vyučující a vedení škol. Stáhněte dovednost a nainstalujte ji do Claude, Gemini, ChatGPT nebo Copilotu — chatbot ji pak použije, kdykoli ji budete potřebovat. Dovednosti nemá každý tarif; kde chybí, zkopírujte si dovednost jako prompt.</p>
+        <h1>{t('Katalog dovedností')}</h1>
+        <p class="lede">{tf('{pocet} pro vyučující a vedení škol. Stáhněte dovednost a nainstalujte ji do Claude, Gemini, ChatGPT nebo Copilotu — chatbot ji pak použije, kdykoli ji budete potřebovat. Dovednosti nemá každý tarif; kde chybí, zkopírujte si dovednost jako prompt.', { pocet: nDovednosti })}</p>
       </header>
-      <div class="seg" role="group" aria-label="Řazení" data-switch="skupiny-skills" style="align-self: flex-start">
-        <button type="button" data-target="ucel" aria-pressed="true">Řadit podle účelu</button>
-        <button type="button" data-target="komu" aria-pressed="false">Řadit podle toho, komu slouží</button>
+      <div class="seg" role="group" aria-label={t('Řazení')} data-switch="skupiny-skills" style="align-self: flex-start">
+        <button type="button" data-target="ucel" aria-pressed="true">{t('Řadit podle účelu')}</button>
+        <button type="button" data-target="komu" aria-pressed="false">{t('Řadit podle toho, komu slouží')}</button>
       </div>
     </div>
   </div>
@@ -43,14 +45,14 @@ const views = [
             <div class="wrap stack" style="gap: 28px">
               <div class="section-head">
                 <div class="stack" style="gap: 8px; max-width: var(--dve-tretiny)">
-                  <h2 style="font-size: 1.7rem">{g.title} <span class="count">{pocet(g.items.length, 'dovednost', 'dovednosti', 'dovedností')}</span></h2>
+                  <h2 style="font-size: 1.7rem">{g.title} <span class="count">{pocet(g.items.length, t('dovednost'), t('dovednosti'), t('dovedností'))}</span></h2>
                   {g.popis && <p style="margin-top: 0">{g.popis}</p>}
                 </div>
               </div>
               <div class="grid-2">
                 {g.items.map((k) => <SkillCard skill={k} />)}
               </div>
-              {i === v.groups.length - 1 && <OdkazyKonec vSekci odkazy={[{ text: 'Co jsou dovednosti a jak je nainstalovat', href: url('/funkce/skills') }, { text: 'Katalog promptů', href: url('/prompty') }, { text: 'Sady dovedností (pluginy)', href: url('/funkce/pluginy') }]} />}
+              {i === v.groups.length - 1 && <OdkazyKonec vSekci odkazy={[{ text: t('Co jsou dovednosti a jak je nainstalovat'), href: url('/funkce/skills') }, { text: t('Katalog promptů'), href: url('/prompty') }, { text: t('Sady dovedností (pluginy)'), href: url('/funkce/pluginy') }]} />}
             </div>
           </section>
         ))}

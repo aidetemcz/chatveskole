@@ -8,6 +8,7 @@ import Icon from '../../components/Icon.astro';
 import { rozdel, naOddily } from '../../lib/komponenty';
 import { sady, skillBySlug, ZIP } from '../../lib/data';
 import { url } from '../../lib/url';
+import { t, tf, LOCALE } from '../../lib/jazyk';
 
 const stranka = (await getEntry('stranky', 'funkce/pluginy'))!;
 const d = stranka.data;
@@ -32,15 +33,15 @@ const body = (h: string) => [...(h.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '').mat
 // Prompt / dovednost / plugin
 const srovnani = najdi(/^Prompt, dovednost/i);
 const srovnaniHtml = htmlOddilu(srovnani);
-const STITKY_SROVNANI = ['1 zadání', '1 úkol', 'celá oblast'];
+const STITKY_SROVNANI = [t('1 zadání'), t('1 úkol'), t('celá oblast')];
 const cesty = polozky(srovnaniHtml);
 
 // Nástroje: ### název → body (seznam) a box (odstavec „**Nadpis:** text“)
 const STAV: Record<string, { text: string; ma: boolean }> = {
-  ChatGPT: { text: 'Od července 2026', ma: true },
-  Claude: { text: 'Placené tarify', ma: true },
-  'Microsoft Copilot': { text: 'Od konce listopadu 2026', ma: true },
-  Gemini: { text: 'Nemá', ma: false },
+  ChatGPT: { text: t('Od července 2026'), ma: true },
+  Claude: { text: t('Placené tarify'), ma: true },
+  'Microsoft Copilot': { text: t('Od konce listopadu 2026'), ma: true },
+  Gemini: { text: t('Nemá'), ma: false },
 };
 const vNastrojich = najdi(/jednotlivých nástrojích/i);
 const nastroje = bloky(htmlOddilu(vNastrojich)).map((b, i) => {
@@ -53,9 +54,9 @@ const nastroje = bloky(htmlOddilu(vNastrojich)).map((b, i) => {
 
 // Sady
 const sadyOddil = najdi(/^Sady/i);
-const PRO_KOHO: Record<string, string> = { ucitele: 'vyučující', vedeni: 'vedení' };
-const proKoho = (p: string[]) => 'Pro ' + p.map((x) => PRO_KOHO[x] ?? x).join(' i ');
-const pocet = (n: number) => `${n} ${n === 1 ? 'dovednost' : n < 5 ? 'dovednosti' : 'dovedností'}`;
+const PRO_KOHO: Record<string, string> = { ucitele: t('vyučující'), vedeni: t('vedení') };
+const proKoho = (p: string[]) => tf('Pro {komu}', { komu: p.map((x) => PRO_KOHO[x] ?? x).join(` ${t('i')} `) });
+const pocet = (n: number) => `${n} ${n === 1 ? t('dovednost') : n < 5 ? t('dovednosti') : t('dovedností')}`;
 
 // Instalace sady: „**Nástroj (poznámka):** text“
 const instalace = najdi(/nainstalovat sadu/i);
@@ -68,26 +69,26 @@ const radky = polozky(instalaceHtml).map((r) => {
 const vyzva = najdi(/jedna dovednost/i);
 type Odkaz = { text: string; href: string };
 const odkazy: Odkaz[] = (Array.isArray(d.odkazy) ? d.odkazy : []).filter((o: Odkaz) => o && o.href);
-const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString(LOCALE, { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
 ---
 <Base title={d.title} description={d.popis ?? undefined}>
   <div class="band band--white">
     <div class="wrap hero">
       <div class="page-head">
         <div class="zahlavi">
-          <Crumbs items={[{ title: 'Funkce' }, { title: d.title }]} />
-          {datum && <span class="draft">Aktualizováno {datum}</span>}
+          <Crumbs items={[{ title: t('Funkce') }, { title: d.title }]} />
+          {datum && <span class="draft">{tf('Aktualizováno {datum}', { datum })}</span>}
         </div>
         <h1>{d.title}</h1>
         <div class="lede perex" set:html={perex} />
         <div class="tlacitka">
           {sadyOddil && <a class="btn btn--primary" href={`#${sadyOddil.id}`}>{sadyOddil.nadpis} ↓</a>}
-          <a class="btn btn--outline" href={url('/funkce/skills')}>Co jsou dovednosti</a>
+          <a class="btn btn--outline" href={url('/funkce/skills')}>{t('Co jsou dovednosti')}</a>
         </div>
       </div>
       {videoHtml && (
         <div class="video-uvod stack" style="gap: 30px">
-          <h2 id="pruvodce">Průvodce instalací a využitím sady dovedností</h2>
+          <h2 id="pruvodce">{t('Průvodce instalací a využitím sady dovedností')}</h2>
           <div set:html={videoHtml} />
         </div>
       )}
@@ -119,9 +120,9 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
       <div class="wrap stack" style="gap: 32px">
         <div class="hlava">
           <h2 id={vNastrojich.id || undefined}>{vNastrojich.nadpis}</h2>
-          <p>Vyberte chatovací aplikaci, kterou používáte.</p>
+          <p>{t('Vyberte chatovací aplikaci, kterou používáte.')}</p>
         </div>
-        <div class="zalozky-nastroju" role="tablist" aria-label="Chatovací aplikace" data-switch="pluginy-panely">
+        <div class="zalozky-nastroju" role="tablist" aria-label={t('Chatovací aplikace')} data-switch="pluginy-panely">
           {nastroje.map((n, i) => <button type="button" role="tab" id={`${n.id}-tab`} aria-controls={n.id} aria-selected={i === 0 ? 'true' : 'false'} data-target={n.id}>{n.nazev}</button>)}
         </div>
         <div id="pluginy-panely">
@@ -163,14 +164,14 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
               </div>
               <h3 id={`sada-${s.slug}`}>{s.title}</h3>
               <p>{s.popis}</p>
-              <ul class="cipy" aria-label="Dovednosti v sadě">
+              <ul class="cipy" aria-label={t('Dovednosti v sadě')}>
                 {s.skills.map((slug) => { const k = skillBySlug(slug); return k && <li><a class="cip" href={url(`/skills/${slug}`)}>{k.title}</a></li>; })}
               </ul>
               <div class="sada-akce">
-                <a class="btn btn--primary btn--sm" href={url(ZIP.plugin(s.slug))} download><Icon name="download" />Stáhnout plugin (ZIP)</a>
-                <a class="btn btn--outline btn--sm" href={url(`/sady/${s.slug}`)}>Detail sady</a>
+                <a class="btn btn--primary btn--sm" href={url(ZIP.plugin(s.slug))} download><Icon name="download" />{t('Stáhnout plugin (ZIP)')}</a>
+                <a class="btn btn--outline btn--sm" href={url(`/sady/${s.slug}`)}>{t('Detail sady')}</a>
               </div>
-              <p class="soubor">aidetem-{s.slug}.zip · nerozbalujte</p>
+              <p class="soubor">aidetem-{s.slug}.zip · {t('nerozbalujte')}</p>
             </article>
           ))}
         </div>

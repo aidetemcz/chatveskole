@@ -7,7 +7,7 @@
     "predev": "node scripts/build-downloads.mjs",
     "dev": "astro dev",
     "prebuild": "node scripts/build-downloads.mjs",
-    "build": "astro build",
+    "build": "astro build && node scripts/build-sk.mjs",
     "preview": "astro preview",
     "check": "node scripts/check-links.mjs && python3 scripts/check-skills.py && node scripts/build-vercel.mjs --check",
     "postbuild": "node scripts/po-buildu.mjs && pagefind --site dist",

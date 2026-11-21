@@ -1,0 +1,48 @@
+title: Strategické dokumenty
+slug: strategicke-dokumenty
+kratky_popis: Sestaví návrh strategie školy se SWOT, prioritami, opatřeními, indikátory a harmonogramem; umí i samostatnou SWOT analýzu.
+popis: "Pomůže vedení školy rychle připravit srozumitelný a realistický strategický dokument, který můžete projednat ve sborovně a ukázat zákonným zástupcům i zřizovateli. Dostanete návrh se SWOT analýzou, prioritami, opatřeními, indikátory a harmonogramem. Všechny typy dokumentů mají společnou kostru, podle které zpracuje i jiný strategický dokument, třeba strategii spolupráce se zákonnými zástupci. Vychází z materiálu NPI ČR Strategické plánování (portál Vedeme školu)."
+pro_koho: [vedeni]
+sady: [vedeni-skoly]
+stitky: [strategické plánování, SWOT, digitální gramotnost, inkluze, digitální wellbeing, hodnocení, kvalita výuky, inovace]
+rezimy:
+  - Strategie rozvoje digitální gramotnosti
+  - Strategie podpory inkluze
+  - Strategie digitálního wellbeingu
+  - Metodologie hodnocení žáků
+  - Systém vnitřního hodnocení kvality výuky
+  - Plán postupného zavádění inovací do výuky
+  - SWOT analýza
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/strategie-pro-rozvoj-digitalni-gramotnosti/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/strategie-pro-podporu-inkluze/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/integrace-digitalniho-wellbeingu/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/tvorba-metodologie-hodnoceni/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/navrh-systemu-vnitrniho-hodnoceni-kvality-vyuky/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/plan-postupneho-zavadeni-inovaci-do-vyuky/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/swot-analyza/
+    typ: prompt
+puvodni_asistenti: {}
+google_doc: https://docs.google.com/document/d/1RwNaT2_ND4qc7gzWBT5EGJr8DBsIg-WKzb9mjnrMpLs/edit
+google_slozka: https://drive.google.com/drive/folders/1oXr0RKTC8j01hPRBlr9fszK7wEbsB0qY
+google_data: https://drive.google.com/drive/folders/1OORuHMGj1_mTPvoKn-x_3-URvtClBK-T
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1z6Mw3DPXFIiD9PeFe5qoq0F3H7T5joU4
+  gemini: https://drive.google.com/uc?export=download&id=1AgPIsUaOEmzHI7-XeZf1x6_pb-EoTWEI
+  chatgpt: https://drive.google.com/uc?export=download&id=1lLAbVmqIwidGIxT9BCkHr-Le_U_lLX0E
+autori: [AI dětem]
+metodika:
+  - nazev: Strategické plánování (NPI ČR, Vedeme školu)
+    url: https://vedemeskolu.npi.cz/strategicke-planovani
+  - nazev: Národní koncepce digitálního wellbeingu (NPI ČR)
+    url: https://digitalizace.rvp.cz/napric-predmety/digitalni-wellbeing
+znalosti: []
+vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-21

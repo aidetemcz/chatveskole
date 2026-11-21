@@ -2,29 +2,30 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import YAML from 'yaml';
+import { OBSAH, dataSoubor, t } from './jazyk';
 
 const ROOT = process.cwd();
 const readYaml = (rel: string) => YAML.parse(fs.readFileSync(path.join(ROOT, rel), 'utf8'));
 
 export type MenuItem = { title: string; href: string; zvyraznit?: boolean };
 export type MenuGroup = { title: string; items: MenuItem[] };
-export const navigace: { menu: MenuGroup[]; cta: MenuItem } = readYaml('content/navigace.yaml');
+export const navigace: { menu: MenuGroup[]; cta: MenuItem } = readYaml(`${OBSAH}/navigace.yaml`);
 
 export type Sada = { slug: string; title: string; popis: string; pro_koho: string[]; skills: string[] };
-export const sady: Sada[] = readYaml('content/sady.yaml');
+export const sady: Sada[] = readYaml(`${OBSAH}/sady.yaml`);
 
 export type Znalost = { nazev: string; url: string; verejne?: boolean };
-export const znalosti: Record<string, Znalost> = readYaml('content/znalosti/znalosti.yaml');
+export const znalosti: Record<string, Znalost> = readYaml(`${OBSAH}/znalosti/znalosti.yaml`);
 
 export const PRO_KOHO: Record<string, string> = {
-  ucitele: 'Vyučující',
-  vedeni: 'Vedení školy',
-  'zaci-18plus': 'Studenti od 18 let',
+  ucitele: t('Vyučující'),
+  vedeni: t('Vedení školy'),
+  'zaci-18plus': t('Studenti od 18 let'),
 };
 export const PRO_KOHO_SKUPINA: Record<string, string> = {
-  ucitele: 'Pro vyučující',
-  vedeni: 'Pro vedení školy',
-  'zaci-18plus': 'Pro studenty od 18 let',
+  ucitele: t('Pro vyučující'),
+  vedeni: t('Pro vedení školy'),
+  'zaci-18plus': t('Pro studenty od 18 let'),
 };
 
 // --- prompt.md skillu: varianty promptu -------------------------------------------
@@ -76,12 +77,12 @@ export type Skill = {
   prompt: SkillPrompt;
 };
 
-const SKILLS_DIR = path.join(ROOT, 'content/skills');
+const SKILLS_DIR = path.join(ROOT, OBSAH, 'skills');
 export const skills: Skill[] = fs
   .readdirSync(SKILLS_DIR)
   .filter((d) => fs.existsSync(path.join(SKILLS_DIR, d, 'meta.yaml')))
   .map((slug) => {
-    const meta = readYaml(`content/skills/${slug}/meta.yaml`);
+    const meta = readYaml(`${OBSAH}/skills/${slug}/meta.yaml`);
     const prompt = parsePromptMd(fs.readFileSync(path.join(SKILLS_DIR, slug, 'prompt.md'), 'utf8'));
     return { ...meta, slug, prompt } as Skill;
   });
@@ -104,11 +105,11 @@ export const skillsVPoradi: Skill[] = (() => {
 
 // --- prompty: skupiny a kategorie ----------------------------------------------------
 export const SKUPINY_PROMPTU: { id: string; title: string }[] = [
-  { id: 'pedagogove', title: 'Pro vyučující' },
-  { id: 'vedeni', title: 'Pro vedení školy' },
-  { id: 'zaci', title: 'Pro žáky' },
+  { id: 'pedagogove', title: t('Pro vyučující') },
+  { id: 'vedeni', title: t('Pro vedení školy') },
+  { id: 'zaci', title: t('Pro žáky') },
 ];
-export const KATEGORIE_ZACI = 'Práce žáků s chatbotem';
+export const KATEGORIE_ZACI = t('Práce žáků s chatbotem');
 // pořadí účelů v katalogu promptů
 export const PORADI_KATEGORII = [
   'Tvorba materiálů do výuky',
@@ -125,7 +126,7 @@ export function promptText(body: string): string {
 }
 
 export function pocet(n: number, jedna: string, dve: string, pet: string) {
-  return `${n} ${n === 1 ? jedna : n >= 2 && n <= 4 ? dve : pet}`;
+  return `${n} ${t(n === 1 ? jedna : n >= 2 && n <= 4 ? dve : pet)}`;
 }
 
 export const ZIP = {
@@ -140,8 +141,8 @@ export function slugify(s: string): string {
 
 // Zdroje ve frontmatteru, které odkazují na data v repozitáři → stránka webu, kde se data zobrazují
 export const INTERNI_ZDROJE: Record<string, { title: string; href: string }> = {
-  'data/funkce-chatbotu.yaml': { title: 'Přehled funkcí chatbotů na tomto webu', href: '/funkce/zmeny-2026' },
-  'data/ceny.yaml': { title: 'Přehled cen chatbotů na tomto webu', href: '/zaciname/kolik-stoji-chatboti' },
+  'data/funkce-chatbotu.yaml': { title: t('Přehled funkcí chatbotů na tomto webu'), href: '/funkce/zmeny-2026' },
+  'data/ceny.yaml': { title: t('Přehled cen chatbotů na tomto webu'), href: '/zaciname/kolik-stoji-chatboti' },
 };
 
 // --- data pro tabulky ----------------------------------------------------------------
@@ -157,14 +158,14 @@ export type FunkceChatbotu = {
   matice: { funkce: string; popis: string; nastroje: Record<string, BunkaMatice> }[];
   zdroje: Record<string, string[]>;
 };
-export const funkceChatbotu: FunkceChatbotu = readYaml('data/funkce-chatbotu.yaml');
+export const funkceChatbotu: FunkceChatbotu = readYaml(dataSoubor('funkce-chatbotu.yaml'));
 
 export type Ceny = {
   aktualizovano: string;
   zahranicni_platby?: string;
   nastroje: { id: string; nazev: string; vyrobce: string; cenik: string; tarify: { nazev: string; cena: string; pozn?: string }[]; trenink?: string; zdroje?: string[] }[];
 };
-export const ceny: Ceny = readYaml('data/ceny.yaml');
+export const ceny: Ceny = readYaml(dataSoubor('ceny.yaml'));
 
 // datum 2026-11-17 → "17. 11. 2026" (nezlomitelné mezery)
 export function datumCesky(iso: string | Date): string {

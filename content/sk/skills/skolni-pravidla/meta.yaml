@@ -1,0 +1,37 @@
+title: Školní pravidla
+slug: skolni-pravidla
+kratky_popis: Pomůže vytvořit nebo upravit srozumitelná a férová školní pravidla, pravidla pro využívání AI i desatero pro žáky.
+popis: "Pomůže vám vytvořit nová školní pravidla nebo zkontrolovat a vylepšit ta, která už máte. Dbá na to, aby byla stručná, srozumitelná všem, férová a vymahatelná a aby vznikala v dialogu se školní komunitou. Pravidla pro využívání AI opírá o doporučení NPI „Jak na AI ve škole“ (2025). Dostanete i návrh, jak pravidla zavést a jak je průběžně vyhodnocovat a aktualizovat."
+pro_koho: [vedeni]
+sady: [vedeni-skoly]
+stitky: [školní pravidla, školní řád, AI ve škole, NPI, klima školy, bezpečnost na internetu]
+rezimy:
+  - Školní pravidla
+  - Pravidla pro využívání AI ve škole
+  - Pravidla pro žáky
+puvodni_obsah:
+  - url: https://chatveskole.cz/databaze-promptu/radce-pro-tvorbu-skolnich-pravidel/
+    typ: asistent
+  - url: https://chatveskole.cz/databaze-promptu/tvorba-skolnich-pravidel/
+    typ: prompt
+  - url: https://chatveskole.cz/databaze-promptu/tvorba-pravidel/
+    typ: prompt
+puvodni_asistenti:
+  gpt: https://chatgpt.com/g/g-6880ff40bee881919ba1526e3df63ee2-asistent-pro-tvorbu-skolnich-pravidel
+  gem: https://gemini.google.com/gem/1iQtpTkNr2g3Xihz6AkvUqM5Rg5p9Yq2p?usp=sharing
+  systemovy_prompt: https://docs.google.com/document/d/1mYDweoUpqNUM7GTUXpjK3VjuQR6W2ns7GdzG2MHsMJw/edit?usp=sharing
+google_doc: https://docs.google.com/document/d/1k0V9nqvSMF79JxynKbEhDfj7iofULqlyqJwUsuMdV0k/edit
+google_slozka: https://drive.google.com/drive/folders/1nI-WrDOqaLl06FaDfUmlHyOPhuoz5zVl
+google_data: https://drive.google.com/drive/folders/1H_2cS7STYwG8DIjNiT2Uc-KqAIUaYTDD
+stahnout:
+  claude: https://drive.google.com/uc?export=download&id=1CECTeQqUDqx9PpTFyuBqIqU4of3xPnd0
+  gemini: https://drive.google.com/uc?export=download&id=1zIVZyH_4M-VQkyJlGGFrtEyRdCi7JJrJ
+  chatgpt: https://drive.google.com/uc?export=download&id=1zGqCxbHVUtOu387ejF2ztyecordJhSMi
+autori: [AI dětem]
+metodika:
+  - nazev: Jak na AI ve škole – Doporučení pro využívání umělé inteligence na ZŠ a SŠ (NPI ČR, 2025)
+    url: https://digitalizace.rvp.cz/files/jak-na-ai-ve-skole-2025-plakat-d02.pdf
+znalosti: []
+vek: dospělí (dovednosti jsou v Gemini a Claude 18+)
+stav: koncept
+aktualizovano: 2026-11-21

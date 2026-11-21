@@ -3,6 +3,7 @@
 // Texty jsou v content/stranky/zaciname/vekove-limity-a-legislativa.md (oddíly podle ##), grafika jako u stránky Dostupné nástroje.
 import { getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { t, tf, LOCALE } from '../../lib/jazyk';
 import Crumbs from '../../components/Crumbs.astro';
 import { rozdel, naOddily } from '../../lib/komponenty';
 import { navigace } from '../../lib/data';
@@ -35,8 +36,8 @@ const limity = najdi(/Věkové limity/i);
 const limityHtml = htmlOddilu(limity);
 const hlavicka = [...(limityHtml.match(/<thead>([\s\S]*?)<\/thead>/)?.[1] ?? '').matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map(([, t]) => bezTagu(t));
 const STITEK: Record<string, { text: string; cerveny?: boolean }> = {
-  ChatGPT: { text: 'od 13 let' }, Gemini: { text: 'škola bez omezení' }, Copilot: { text: 'od 13 let' },
-  Claude: { text: 'jen 18+', cerveny: true }, Perplexity: { text: 'od 13 let' }, Tiny: { text: 'od 11 let' },
+  ChatGPT: { text: t('od 13 let') }, Gemini: { text: t('škola bez omezení') }, Copilot: { text: t('od 13 let') },
+  Claude: { text: t('jen 18+'), cerveny: true }, Perplexity: { text: t('od 13 let') }, Tiny: { text: t('od 11 let') },
 };
 const radky = [...(limityHtml.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? '').matchAll(/<tr>([\s\S]*?)<\/tr>/g)]
   .map(([, r]) => [...r.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(([, t]) => t.trim()))
@@ -62,7 +63,7 @@ const zaverHtml = htmlOddilu(zaver);
 const tlacitka = [...zaverHtml.matchAll(/<p>\s*<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*<\/p>/g)].map(([, href, t]) => ({ href, text: bezTagu(t) }));
 
 const skupina = navigace.menu.find((g) => g.items.some((it) => it.href === '/' + stranka.id));
-const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
+const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString(LOCALE, { day: 'numeric', month: 'numeric', year: 'numeric' }) : null;
 ---
 <Base title={d.title} description={d.popis ?? undefined}>
   <div class="band band--white">
@@ -70,7 +71,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
       <div class="page-head">
         <div class="zahlavi">
           <Crumbs items={[...(skupina ? [{ title: skupina.title }] : []), { title: d.title }]} />
-          {datum && <span class="draft">Aktualizováno {datum}</span>}
+          {datum && <span class="draft">{tf('Aktualizováno {datum}', { datum })}</span>}
         </div>
         <h1>{d.title}</h1>
         <div class="lede perex" set:html={perex} />
@@ -97,10 +98,10 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
               <h3 set:html={r.nazev} />
               {r.stitek && <span class:list={['stitek', { 'stitek--cerveny': r.stitek.cerveny }]}>{r.stitek.text}</span>}
               <dl>
-                {r.bunky.map((t, i) => (
+                {r.bunky.map((hodnota, i) => (
                   <div>
                     <dt>{hlavicka[i + 1]}</dt>
-                    <dd set:html={t === '—' ? 'Nemá' : t} />
+                    <dd set:html={hodnota === '—' ? t('Nemá') : hodnota} />
                   </div>
                 ))}
               </dl>
@@ -198,7 +199,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
         </div>
         {ukazka && (
           <figure class="ukazka">
-            <figcaption class="titulek titulek--sky">Příklad poznámky v dokumentu</figcaption>
+            <figcaption class="titulek titulek--sky">{t('Příklad poznámky v dokumentu')}</figcaption>
             <p set:html={ukazka} />
           </figure>
         )}
