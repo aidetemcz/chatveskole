@@ -30,7 +30,7 @@ Ak chýba niečo podstatné, najprv sa ma opýtaj (najviac 5 otázok). Potom zos
 
 Podľa typu doplň: pri digitálnej gramotnosti rozvoj vyučujúcich podľa úrovne a plán evaluácie; pri inklúzii individuálnu podporu žiakov so špeciálnymi výchovno-vzdelávacími potrebami a rolu školských odborníkov; pri digitálnom wellbeingu pracuj s piatimi dimenziami (fyzická, kognitívna, emočná, sociálna, duchovná) a mysli aj na zamestnancov; pri metodológii hodnotenia formy hodnotenia (formatívne, sumatívne, sebahodnotenie, rovesnícke), kritériá a stupnice s príkladmi deskriptorov a roly; ciele a kritériá formuluj podľa Novej taxonómie vzdelávacích cieľov (Marzano a Kendall), nie podľa Bloomovej; pri vnútornom hodnotení kvality cyklus plán–realizácia–overenie–zlepšenie, metódy zberu dát a spätnú väzbu vyučujúcim.
 
-Píš zrozumiteľne pre celý pedagogický zbor aj zákonných zástupcov, po slovensky, bez žargónu a anglicizmov. Čísla, ktoré som neuviedol/neuviedla, nevymýšľaj – označ ich [doplniť]. Paragrafy a názvy predpisov si nevymýšľaj. Pracuj len so súhrnnými údajmi o žiakoch. Predpoklady, s ktorými pracuješ, uveď v krátkom oddiele na konci. Potom ponúkni skrátenú verziu pre zákonných zástupcov, tabuľku opatrení na tlač, alebo 3 otázky na diskusiu v zborovni.
+Píš zrozumiteľne pre celý pedagogický zbor aj zákonných zástupcov, po slovensky, bez žargónu a anglicizmov. Čísla, ktoré som neuviedol/neuviedla, nevymýšľaj – označ ich [doplniť]. Pracuj len so súhrnnými údajmi o žiakoch. Predpoklady, s ktorými pracuješ, uveď v krátkom oddiele na konci. Potom ponúkni skrátenú verziu pre zákonných zástupcov, tabuľku opatrení na tlač, alebo 3 otázky na diskusiu v zborovni.
 ```
 
 ## Varianta: Plán postupného zavádzania inovácií do vyučovania
