@@ -144,7 +144,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
                 <span><strong>{cislo[2]}:</strong> <span set:html={b.text} /></span>
               </div>
             ) : (
-              <div class="ruzovy"><strong>{b.nadpis}</strong><span set:html={b.text} /></div>
+              <div class="card gdpr-box"><strong>{b.nadpis}</strong><span set:html={b.text} /></div>
             );
           })}
         </div>
@@ -253,6 +253,8 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .kontrola strong { font-family: var(--fh); font-size: 1.05rem; }
 
   .cislo-box { flex-direction: row; align-items: center; gap: 22px; }
+  .gdpr-box { gap: 6px; font-size: 0.95rem; }
+  .gdpr-box strong { font-weight: 600; }
   .cislo-box > span:last-child { font-size: 0.95rem; }
   .velke-cislo { font-family: var(--fh); font-size: 3.4rem; font-weight: 700; color: var(--accent); line-height: 1; }
   .ruzovy { background: var(--accent-soft); border-radius: 9px; padding: 22px 26px; display: flex; flex-direction: column; gap: 6px; font-size: 0.95rem; }
