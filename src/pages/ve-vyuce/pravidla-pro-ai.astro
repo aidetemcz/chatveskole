@@ -297,7 +297,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
   .osa-cas { font-size: 0.85rem; font-weight: 600; color: var(--sky-ink); text-align: right; padding-top: 2px; }
   .osa-bod { width: 16px; height: 16px; border-radius: 50%; background: var(--accent); border: 3px solid var(--accent-soft); margin: 2px 0 0 1px; position: relative; z-index: 1; }
   .osa-obsah { display: flex; flex-direction: column; gap: 6px; }
-  .osa-obsah strong { font-family: var(--fh); font-weight: 600; font-size: 1.1rem; }
+  .osa-obsah strong { font-family: var(--fh); font-weight: 600; font-size: 1.1rem; line-height: 1.3; }
   .osa-obsah p { margin: 0; font-size: 0.95rem; line-height: 1.6; }
   @media (max-width: 640px) {
     .osa li { grid-template-columns: 24px minmax(0, 1fr); }
@@ -318,7 +318,7 @@ const datum = d.aktualizovano ? d.aktualizovano.toLocaleDateString('cs-CZ', { da
 
   .postup { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 22px; }
   .postup-krok { border: 1px solid var(--sky); border-radius: 9px; padding: 22px 24px; display: flex; flex-direction: column; gap: 10px; background: var(--panel); }
-  .postup-nazev { font-family: var(--fh); font-size: 1.05rem; }
+  .postup-nazev { font-family: var(--fh); font-size: 1.05rem; line-height: 1.3; }
   .postup-krok p { margin: 0; font-size: 0.9rem; line-height: 1.55; }
 
   .kontrolni { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 12px; }
