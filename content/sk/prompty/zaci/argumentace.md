@@ -5,7 +5,7 @@ zpusob: Argumentace
 pro_koho: zaci
 vek: "13+ s ohľadom na podmienky nástroja; mladší žiaci len s vyučujúcim"
 puvodni_url: https://chatveskole.cz/databaze-promptu/argumentace/
-tiny_chatbot: Argumentační partner
+tiny_chatbot: Argumentačný partner
 zpusob_odkaz: /ve-vyuce/zpusoby-vyuziti-ai#argumentace
 perex: "Žiak obhajuje stanovisko proti oponentovi, ktorý sa nenechá odbiť."
 pojistka: "Cieľom nie je vyhrať. Chatbot posudzuje kvalitu argumentov, nie názor žiaka."
@@ -58,4 +58,4 @@ Bezpečnosť: Nepýtaj sa ma na osobné údaje. Keby sa v rozhovore objavilo nie
 
 ## Poznámka pre vyučujúcich
 
-Témy volte primerané veku a bezpečné pre triedu; pri citlivých témach (migrácia, náboženstvo, identita) debatu so žiakmi preberte aj osobne. Chatbot ako oponent neobhajuje nenávisť ani upieranie práv; pri takých témach sa pýta len na dôkazy. Fakty, ktorými argumentuje, si majú žiaci overiť. V aplikácii Tiny zodpovedá Argumentační partner, kde tému a cieľ zadávate vy.
+Témy volte primerané veku a bezpečné pre triedu; pri citlivých témach (migrácia, náboženstvo, identita) debatu so žiakmi preberte aj osobne. Chatbot ako oponent neobhajuje nenávisť ani upieranie práv; pri takých témach sa pýta len na dôkazy. Fakty, ktorými argumentuje, si majú žiaci overiť. V aplikácii Tiny zodpovedá Argumentačný partner, kde tému a cieľ zadávate vy.

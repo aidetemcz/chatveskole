@@ -98,7 +98,7 @@ Stručne, aby sa zmestil na jednu obrazovku (štruktúra pozri Výstup).
 
 #### Zadanie pre Tiny
 
-Chatboty v Tiny („Tinyboty“) majú bezpečnostné pravidlá v sebe, vyučujúci vidí konverzácie a žiaci nepotrebujú vlastný účet. Systémový prompt preto nepíš – priprav len **zadanie**, ktoré vyučujúci vloží do vybraného chatbota. Ponuka chatbotov sa môže meniť: vychádzaj z toho, čo vyučujúci v Tiny vidí, a nové chatboty nevymýšľaj. Názvy chatbotov nižšie sú pracovné; v aplikácii môžu byť uvedené inak (napríklad po česky).
+Chatboty v Tiny („Tinyboty“) majú bezpečnostné pravidlá v sebe, vyučujúci vidí konverzácie a žiaci nepotrebujú vlastný účet. Systémový prompt preto nepíš – priprav len **zadanie**, ktoré vyučujúci vloží do vybraného chatbota. Ponuka chatbotov sa môže meniť: vychádzaj z toho, čo vyučujúci v Tiny vidí, a nové chatboty nevymýšľaj.
 
 - **Výber chatbota podľa cieľa, nie podľa témy.** Napríklad: Opakovací parťák (upevniť, vracať sa k chybám), Testovací chatbot (overiť, čo žiak vie), Spoločné objavovanie (porozumieť princípu, pracovať so zdrojom), Zvedavý mimoň (vysvetliť vlastnými slovami), Historická postava / Expert (perspektíva človeka a doby), V hlavnej úlohe… (proces alebo objekt), Čo keby… (použiť vedomosti v novej situácii), Argumentačný partner (obhájiť názor), Chybujúci chatbot (hľadať a opravovať chyby), Parťák na brainstorming (nápady), Chatbot na plánovanie (projekt). Keď sa hodia dva, ponúkni oba a vysvetli rozdiel v učení; keď vyučujúci navrhne nevhodného, zdvorilo to vysvetli a odporuč vhodnejšieho.  
 - **Štruktúra zadania:** Téma, Vek (ročník), Dĺžka, Cieľ (činnosť žiaka s akčným slovesom), Zadanie (čo má chatbot robiť a ako postupovať), prípadne Zameraj sa na (2–4 body) a Vyhni sa (2–3 body).  

@@ -55,4 +55,4 @@ Ak sa v diskusii objaví citlivá téma (šikanovanie, sebapoškodzovanie, nási
 Priprav mi k téme [napríklad fotosyntéza] pre [napríklad 8. ročník] rebríček ôsmich otázok do diskusie: od jednoduchých (čo vieme) cez vysvetlenie vlastnými slovami až po náročné (porovnanie, príčiny a dôsledky, hodnotenie, „čo by sa stalo, keby…“). Pri každej otázke uveď jej typ. Na koniec pridaj jednu provokatívnu otázku, ktorá spochybní zabehnutý pohľad. Odpovede nepíš.
 ```
 
-**Tip:** Žiaci mladší ako 18 rokov môžu základný prompt používať len s ohľadom na vekové podmienky nástroja a pod dohľadom vyučujúceho; mladší žiaci len vo variante, keď chatbota ovláda vyučujúci. Bezpečnejšie prostredie na samostatnú prácu žiakov ponúka aplikácia Tiny (tiny.school), kde podobne funguje chatbot Společné objevování.
+**Tip:** Žiaci mladší ako 18 rokov môžu základný prompt používať len s ohľadom na vekové podmienky nástroja a pod dohľadom vyučujúceho; mladší žiaci len vo variante, keď chatbota ovláda vyučujúci. Bezpečnejšie prostredie na samostatnú prácu žiakov ponúka aplikácia Tiny (tiny.school), kde podobne funguje chatbot Spoločné objavovanie.

@@ -5,7 +5,7 @@ import HeroKrajina from '../components/HeroKrajina.astro';
 import Blobici from '../components/Blobici.astro';
 import { url } from '../lib/url';
 import { sady, pocet } from '../lib/data';
-import { t, tf } from '../lib/jazyk';
+import { t, tf, SK } from '../lib/jazyk';
 
 const prompty = await getCollection('prompty');
 const nSkup = (s: string) => prompty.filter((p) => p.id.startsWith(s + '/')).length;
@@ -80,16 +80,16 @@ const nKatalog = nUcitele + nVedeni + nZaci;
   <section class="band band--hp band--white" aria-labelledby="vyuka-h">
     <div class="wrap stack" style="gap: 32px">
       <div class="tiny-uvod">
-        <a href="https://tiny.school" class="tiny-mockup"><img src={url('/img/tiny-mockup.png')} alt={t('Aplikace Tiny v mobilu (tiny.school)')} width="579" height="535" loading="lazy" /></a>
+        <a href={SK ? 'https://www.tiny.school/sk/' : 'https://tiny.school'} class="tiny-mockup"><img src={url('/img/tiny-mockup.png')} alt={t('Aplikace Tiny v mobilu (tiny.school)')} width="579" height="535" loading="lazy" /></a>
         <div class="section-head">
-          <div><h2 id="vyuka-h">{t('Chatboti ve výuce')}</h2><p>{t('Tiny je AI aplikace s jedenácti vzdělávacími chatboty do hodiny. Připravili je didaktici AI dětem. Vy zadáte jen téma (například „opakování přítomného času“) a Tiny se postará o zbytek. Každý žák pak vede vlastní rozhovor k tématu. Místo odpovědí mu chatbot klade otázky, které ho posouvají v přemýšlení dál. Všechny konverzace vidíte a na konci hodiny dostanete od Tiny jejich shrnutí. Pro vyučující i žáky je Tiny zdarma.')}</p><p style="margin-top: 32px"><a class="btn btn--primary" href="https://tiny.school" target="_blank" rel="noopener">{t('Vyzkoušet Tiny')}<span class="sr-only">{t(' (otevře se v novém okně)')}</span></a></p></div>
+          <div><h2 id="vyuka-h">{t('Chatboti ve výuce')}</h2><p>{t('Tiny je AI aplikace s jedenácti vzdělávacími chatboty do hodiny. Připravili je didaktici AI dětem. Vy zadáte jen téma (například „opakování přítomného času“) a Tiny se postará o zbytek. Každý žák pak vede vlastní rozhovor k tématu. Místo odpovědí mu chatbot klade otázky, které ho posouvají v přemýšlení dál. Všechny konverzace vidíte a na konci hodiny dostanete od Tiny jejich shrnutí. Pro vyučující i žáky je Tiny zdarma.')}</p><p style="margin-top: 32px"><a class="btn btn--primary" href={SK ? 'https://www.tiny.school/sk/' : 'https://tiny.school'} target="_blank" rel="noopener">{t('Vyzkoušet Tiny')}<span class="sr-only">{t(' (otevře se v novém okně)')}</span></a></p></div>
         </div>
       </div>
       <div class="grid-3 vyuka-boxy">
         <div class="card card--lg">
           <h3 style="font-size: 1.15rem">{t('Metodické materiály pro Tiny')}</h3>
           <p>{t('Materiály k aplikaci Tiny: jak její chatboty zařadit do hodiny a jak s nimi žáci pracují.')}</p>
-          <a class="more" href="https://www.tiny.school/metodiky/" style="margin-top: auto">{t('Metodiky k Tiny →')}</a>
+          <a class="more" href={SK ? 'https://www.tiny.school/sk/metodiky/' : 'https://www.tiny.school/metodiky/'} style="margin-top: auto">{t('Metodiky k Tiny →')}</a>
         </div>
         <div class="card card--lg">
           <h3 style="font-size: 1.15rem">{t('Tvorba školních pravidel pro využívání AI')}</h3>
@@ -133,7 +133,7 @@ const nKatalog = nUcitele + nVedeni + nZaci;
         <a class="thumb" href="https://kurikulum.aidetem.cz/knowledgebase/vyuziti-chatbotu-ve-formativnim-hodnoceni/"><img src={url('/img/metodika-formativni-hodnoceni.jpg')} alt="" loading="lazy" /><div><h3>{t('Využití chatbotů ve formativním hodnocení')}</h3><p>{t('Metodika k sadě dovedností Formativní hodnocení.')}</p></div></a>
         <a class="thumb" href="https://kurikulum.aidetem.cz/knowledgebase/chatboti-ve-vyuce-pracovni-listy/"><img src={url('/img/metodika-chatboti-ve-vyuce.jpg')} alt="" loading="lazy" /><div><h3>{t('Chatboti ve výuce')}</h3><p>{t('Úvod do promptování pro žáky od 13 let.')}</p></div></a>
         <a class="thumb" href="https://kurikulum.aidetem.cz/knowledgebase/rozvoj-mysleni-s-vyuzitim-chatbota/"><img src={url('/img/metodika-rozvoj-mysleni.jpg')} alt="" loading="lazy" /><div><h3>{t('Rozvoj myšlení s využitím chatbota')}</h3><p>{t('Žáci rozvíjejí myšlení pomocí otázek.')}</p></div></a>
-        <a class="thumb" href="https://www.tiny.school/metodiky/"><img src={url('/img/metodika-tiny.jpg')} alt="" loading="lazy" /><div><h3>{t('Metodiky k aplikaci Tiny')}</h3><p>{t('Materiály, které vám pomohou využívat aplikaci Tiny ve výuce.')}</p></div></a>
+        <a class="thumb" href={SK ? 'https://www.tiny.school/sk/metodiky/' : 'https://www.tiny.school/metodiky/'}><img src={url('/img/metodika-tiny.jpg')} alt="" loading="lazy" /><div><h3>{t('Metodiky k aplikaci Tiny')}</h3><p>{t('Materiály, které vám pomohou využívat aplikaci Tiny ve výuce.')}</p></div></a>
       </div>
     </div>
   </section>

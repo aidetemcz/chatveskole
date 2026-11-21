@@ -60,7 +60,7 @@ Aktivity stačia krátke, na 5 až 15 minút, a majú nadväzovať na výklad, d
 - **Ako spoznáte, že sa žiak učí:** Zvládne náročnejšie otázky ako na začiatku a dokáže povedať, čo si potrebuje zopakovať.
 - **Otázka na reflexiu:** Na ktorú otázku by som nabudúce odpovedal bez nápovedy?
 - **Príklad:** Opakovanie slovných druhov pred štvrťročnou písomnou prácou.
-- **Kde to spustiť:** V Tiny [Opakovací parťák](https://www.tiny.school/opakovaci-partak/) alebo [Testovací chatbot](https://www.tiny.school/testovaci-chatbot/), v bežnom chatbote prompt [Opakovanie](/funkce/prompty/zaci/opakovani).
+- **Kde to spustiť:** V Tiny [Opakovací parťák](https://www.tiny.school/sk/opakovaci-partak/) alebo [Testovací chatbot](https://www.tiny.school/sk/testovaci-chatbot/), v bežnom chatbote prompt [Opakovanie](/funkce/prompty/zaci/opakovani).
 
 ### Spoločné objavovanie {#společné-objevování}
 
@@ -73,7 +73,7 @@ Aktivity stačia krátke, na 5 až 15 minút, a majú nadväzovať na výklad, d
 - **Ako spoznáte, že sa žiak učí:** Zhrnie nový poznatok vlastnými slovami bez pomoci chatbota.
 - **Otázka na reflexiu:** Na čo som prišiel sám a kde ma chatbot naviedol?
 - **Príklad:** Prečo sa na Zemi striedajú ročné obdobia.
-- **Kde to spustiť:** V Tiny [Společné objevování](https://www.tiny.school/spolecne-objevovani/), v bežnom chatbote prompt [Spoločné objavovanie](/funkce/prompty/zaci/spolecne-objevovani).
+- **Kde to spustiť:** V Tiny [Spoločné objavovanie](https://www.tiny.school/sk/spolocne-objavovanie/), v bežnom chatbote prompt [Spoločné objavovanie](/funkce/prompty/zaci/spolecne-objevovani).
 
 ### Vysvetľovanie {#vysvětlování}
 
@@ -86,7 +86,7 @@ Aktivity stačia krátke, na 5 až 15 minút, a majú nadväzovať na výklad, d
 - **Ako spoznáte, že sa žiak učí:** Jeho vysvetlenie je vecne správne, zrozumiteľné a obstojí aj pri doplňujúcich otázkach.
 - **Otázka na reflexiu:** Čo sa mi vysvetľovalo najťažšie a čo to hovorí o tom, ako učivu rozumiem?
 - **Príklad:** Fotosyntéza vysvetlená niekomu, kto nikdy nevidel rastlinu.
-- **Kde to spustiť:** V Tiny [Zvědavý mimoň](https://www.tiny.school/zvedavy-mimon/), v bežnom chatbote prompt [Vysvetľovanie](/funkce/prompty/zaci/vysvetlovani).
+- **Kde to spustiť:** V Tiny [Zvedavý mimoň](https://www.tiny.school/sk/zvedavy-mimon/), v bežnom chatbote prompt [Vysvetľovanie](/funkce/prompty/zaci/vysvetlovani).
 
 ## Žiak skúma súvislosti
 
@@ -103,7 +103,7 @@ Aktivity stačia krátke, na 5 až 15 minút, a majú nadväzovať na výklad, d
 - **Ako spoznáte, že sa žiak učí:** Kladie premyslené otázky a všimne si nepresnosť alebo rozdiel oproti zdroju.
 - **Otázka na reflexiu:** Čomu z rozhovoru verím a podľa čoho?
 - **Príklad:** Rozhovor s Máriou Teréziou o školskej reforme alebo s kvapkou vody o kolobehu vody.
-- **Kde to spustiť:** V Tiny [Historická postava / Expert](https://www.tiny.school/historicka-postava-expert/) a [V hlavní roli…](https://www.tiny.school/v-hlavni-roli/), v bežnom chatbote prompt [Rozhovor v role](/funkce/prompty/zaci/rozhovor-v-roli).
+- **Kde to spustiť:** V Tiny [Historická postava / Expert](https://www.tiny.school/sk/historicka-postava-expert/) a [V hlavnej úlohe…](https://www.tiny.school/sk/v-hlavnej-ulohe/), v bežnom chatbote prompt [Rozhovor v role](/funkce/prompty/zaci/rozhovor-v-roli).
 
 ### Čo keby {#co-kdyby}
 
@@ -116,7 +116,7 @@ Aktivity stačia krátke, na 5 až 15 minút, a majú nadväzovať na výklad, d
 - **Ako spoznáte, že sa žiak učí:** Jeho reťazec úvah je logický a opiera sa o učivo.
 - **Otázka na reflexiu:** Ktorý z mojich záverov stojí na vedomostiach a ktorý na odhade?
 - **Príklad:** Čo keby zemská os nebola naklonená.
-- **Kde to spustiť:** V Tiny [Co kdyby…](https://www.tiny.school/co-kdyby/), v bežnom chatbote prompt [Čo keby](/funkce/prompty/zaci/co-kdyby).
+- **Kde to spustiť:** V Tiny [Čo keby…](https://www.tiny.school/sk/co-keby/), v bežnom chatbote prompt [Čo keby](/funkce/prompty/zaci/co-kdyby).
 
 ## Žiak posudzuje
 
@@ -133,7 +133,7 @@ Aktivity stačia krátke, na 5 až 15 minút, a majú nadväzovať na výklad, d
 - **Ako spoznáte, že sa žiak učí:** Uvádza dôkazy, vyrovná sa s protiargumentom a pomenuje najslabšie miesto vlastnej pozície.
 - **Otázka na reflexiu:** Ktorý protiargument ma prinútil názor zmeniť alebo spresniť?
 - **Príklad:** Majú byť mobilné telefóny cez prestávky zakázané?
-- **Kde to spustiť:** V Tiny [Argumentační partner](https://www.tiny.school/argumentacni-partner/), v bežnom chatbote prompt [Argumentácia](/funkce/prompty/zaci/argumentace).
+- **Kde to spustiť:** V Tiny [Argumentačný partner](https://www.tiny.school/sk/argumentacny-partner/), v bežnom chatbote prompt [Argumentácia](/funkce/prompty/zaci/argumentace).
 
 ### Hľadanie chýb {#hledání-chyb}
 
@@ -146,7 +146,7 @@ Aktivity stačia krátke, na 5 až 15 minút, a majú nadväzovať na výklad, d
 - **Ako spoznáte, že sa žiak učí:** Nájde podstatné chyby a vie zdôvodniť, prečo ide o chybu.
 - **Otázka na reflexiu:** Ktorú chybu som prehliadol a prečo pôsobila vierohodne?
 - **Príklad:** Odsek o slnečnej sústave s tromi chybami.
-- **Kde to spustiť:** V Tiny [Chybující chatbot](https://www.tiny.school/chybujici-chatbot/), v bežnom chatbote prompt [Hľadanie chýb](/funkce/prompty/zaci/hledani-chyb).
+- **Kde to spustiť:** V Tiny [Chybujúci chatbot](https://www.tiny.school/sk/chybujuci-chatbot/), v bežnom chatbote prompt [Hľadanie chýb](/funkce/prompty/zaci/hledani-chyb).
 
 ## Žiak tvorí
 
@@ -163,7 +163,7 @@ Aktivity stačia krátke, na 5 až 15 minút, a majú nadväzovať na výklad, d
 - **Ako spoznáte, že sa žiak učí:** Má zoznam nápadov pred rozhovorom aj po ňom a svoj výber zdôvodní.
 - **Otázka na reflexiu:** Ktorý nápad je môj a ku ktorému by som sa bez AI nedostal?
 - **Príklad:** Námety na triedny projekt ku Dňu Zeme.
-- **Kde to spustiť:** V Tiny [Parťák pro brainstorming](https://www.tiny.school/partak-pro-brainstorming/), v bežnom chatbote prompt [Brainstorming](/funkce/prompty/zaci/brainstorming).
+- **Kde to spustiť:** V Tiny [Parťák na brainstorming](https://www.tiny.school/sk/partak-na-brainstorming/), v bežnom chatbote prompt [Brainstorming](/funkce/prompty/zaci/brainstorming).
 
 ### Plánovanie a štruktúra {#plánování-a-struktura}
 
@@ -176,7 +176,7 @@ Aktivity stačia krátke, na 5 až 15 minút, a majú nadväzovať na výklad, d
 - **Ako spoznáte, že sa žiak učí:** Predloží prvý návrh aj konečnú verziu a vysvetlí, čo zmenil a prečo.
 - **Otázka na reflexiu:** Čo som v pláne podcenil?
 - **Príklad:** Osnova referátu alebo harmonogram skupinového projektu.
-- **Kde to spustiť:** V Tiny [Chatbot pro plánování](https://www.tiny.school/chatbot-pro-planovani/), v bežnom chatbote prompt [Plánovanie a štruktúra](/funkce/prompty/zaci/planovani-a-struktura).
+- **Kde to spustiť:** V Tiny [Chatbot na plánovanie](https://www.tiny.school/sk/chatbot-na-planovanie/), v bežnom chatbote prompt [Plánovanie a štruktúra](/funkce/prompty/zaci/planovani-a-struktura).
 
 ### Spätná väzba {#zpětná-vazba}
 
@@ -224,4 +224,4 @@ Užitočné vodidlo na plánovanie vyučovania ponúkajú [Ethan a Lilach Mollic
 - [4 kroky ke smysluplnému učení s AI](https://digitalizace.rvp.cz/clanky/4-kroky-ke-smysluplnemu-uceni-s-ai) (v češtine), Národný pedagogický inštitút ČR a AI dětem
 - [AI Assessment Scale](https://aiassessmentscale.com/), Mike Perkins, Leon Furze, Jasper Roe a Jason MacVaugh
 - [Assigning AI: Seven Approaches for Students, with Prompts](https://arxiv.org/abs/2306.10052), Ethan Mollick a Lilach Mollick
-- Metodiky vzdelávacích chatbotov v aplikácii Tiny (v češtine), AI dětem
+- Metodiky vzdelávacích chatbotov v aplikácii Tiny, AI dětem

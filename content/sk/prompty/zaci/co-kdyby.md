@@ -5,7 +5,7 @@ zpusob: Co kdyby
 pro_koho: zaci
 vek: "13+ s ohľadom na podmienky nástroja; mladší žiaci len s vyučujúcim"
 puvodni_url: null   # nový prompt (11/2026), na starém webu nebyl
-tiny_chatbot: Co kdyby…
+tiny_chatbot: Čo keby…
 zpusob_odkaz: /ve-vyuce/zpusoby-vyuziti-ai#co-kdyby
 perex: "Žiak domýšľa, čo by sa stalo, keby sa zmenila jedna vec."
 pojistka: "Dôsledky formuluje žiak. Chatbot ich len spochybňuje a žiada zdôvodnenie."
@@ -53,4 +53,4 @@ Bezpečnosť: Nepýtaj sa ma na osobné údaje. Keby sa v rozhovore objavilo nie
 
 ## Poznámka pre vyučujúcich
 
-Prompt sa hodí, keď žiaci majú základné znalosti a majú ich použiť v novej situácii; bez nich by len hádali. Zmenu „Čo keby“ môžete zadať sami, aby mierila na učivo. Reťazec dôsledkov píše žiak — nechajte si ho odovzdať a posúďte, či je logický a opiera sa o učivo. Pri historických témach volte zmeny, o ktorých možno uvažovať vecne. V aplikácii Tiny zodpovedá chatbot Co kdyby…
+Prompt sa hodí, keď žiaci majú základné znalosti a majú ich použiť v novej situácii; bez nich by len hádali. Zmenu „Čo keby“ môžete zadať sami, aby mierila na učivo. Reťazec dôsledkov píše žiak — nechajte si ho odovzdať a posúďte, či je logický a opiera sa o učivo. Pri historických témach volte zmeny, o ktorých možno uvažovať vecne. V aplikácii Tiny zodpovedá chatbot Čo keby…

@@ -5,7 +5,7 @@ zpusob: Brainstorming
 pro_koho: zaci
 vek: "13+ s ohľadom na podmienky nástroja; mladší žiaci len s vyučujúcim"
 puvodni_url: https://chatveskole.cz/databaze-promptu/brainstorming/
-tiny_chatbot: Parťák pro brainstorming
+tiny_chatbot: Parťák na brainstorming
 zpusob_odkaz: /ve-vyuce/zpusoby-vyuziti-ai#brainstorming
 perex: "Žiak zbiera a triedi nápady, AI mu ich pomáha rozšíriť otázkami."
 pojistka: "Najprv ja, potom AI. Chatbot začína otázkou na nápady žiaka."
@@ -53,4 +53,4 @@ Začni: „Ahoj! Tak čo budeme dnes vymýšľať a aké nápady už máš?“ A
 
 ## Poznámka pre vyučujúcich
 
-Zadajte žiakom tému a očakávaný výsledok vopred (napr. „vybrať jeden realistický nápad“); aktivita potom zaberie zhruba 10 minút. V aplikácii Tiny zodpovedá chatbot Parťák pro brainstorming, kde zadanie vypĺňate vy.
+Zadajte žiakom tému a očakávaný výsledok vopred (napr. „vybrať jeden realistický nápad“); aktivita potom zaberie zhruba 10 minút. V aplikácii Tiny zodpovedá chatbot Parťák na brainstorming, kde zadanie vypĺňate vy.

@@ -68,7 +68,7 @@ Vyberte chatovaciu aplikáciu.
 2. Vytvorte lekciu: vyberte Tinybota a zadajte tému.
 3. Žiaci otvoria [student.tiny.school](https://student.tiny.school) a zadajú kód lekcie. Prihlasujú sa školským účtom Office 365 alebo Google, prípadne školským e-mailom.
 
-**Vek žiakov** — Tiny je určené žiakom od 11 rokov. Žiaci vo veku 11 a 12 rokov potrebujú súhlas zákonného zástupcu. Zabezpečí ho vyučujúci a vzor nájdete v [podmienkach Tiny](https://www.tiny.school/podminky-uziti/) (v češtine). Viac o Tiny nájdete na stránke [AI aplikácia Tiny](/ve-vyuce/tiny).
+**Vek žiakov** — Tiny je určené žiakom od 11 rokov. Žiaci vo veku 11 a 12 rokov potrebujú súhlas zákonného zástupcu. Zabezpečí ho vyučujúci a vzor nájdete v [podmienkach Tiny](https://www.tiny.school/sk/podmienky-pouzivania-aplikacie-tiny/). Viac o Tiny nájdete na stránke [AI aplikácia Tiny](/ve-vyuce/tiny).
 
 ## Zmenil sa postup?
 

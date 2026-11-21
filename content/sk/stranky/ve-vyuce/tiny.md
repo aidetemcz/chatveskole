@@ -2,15 +2,15 @@
 title: AI aplikácia Tiny
 menu: Chatboty vo vyučovaní
 poradi: 1
-popis: Tiny je česká aplikácia s chatbotmi, ktoré žiakov vedú otázkami namiesto hotových odpovedí. Vyučujúci vidí konverzácie, údaje zostávajú v EÚ. Pre školy zadarmo.
+popis: Tiny je aplikácia s chatbotmi, ktoré žiakov vedú otázkami namiesto hotových odpovedí. Vyučujúci vidí konverzácie, údaje zostávajú v EÚ. Pre školy zadarmo.
 sablona: tiny-pruvodce   # vlastní šablona src/pages/ve-vyuce/tiny.astro
 aktualizovano: 2026-11-21
 tlacitko: { text: Metodické materiály, href: /ve-vyuce/metodiky }
 stav: ke-kontrole   # slovenský preklad; ověřit ceny/tarify a věkové podmínky s týmem Tiny (web Tiny si v několika bodech protiřečí)
 zdroje:
-  - https://tiny.school
-  - https://www.tiny.school/popis-sluzby/
-  - https://www.tiny.school/podminky-uziti/
+  - https://www.tiny.school/sk/
+  - https://www.tiny.school/sk/tinyboti/
+  - https://www.tiny.school/sk/podmienky-pouzivania-aplikacie-tiny/
 odkazy:
   - { text: Prompty pre žiakov, href: /funkce/prompty/zaci }
 ---
@@ -19,11 +19,9 @@ odkazy:
 
 Tiny [tajny] je AI aplikácia s jedenástimi vzdelávacími chatbotmi do vyučovania. Hovoríme im Tinyboti a pripravili ich didaktici AI dětem. Vám stačí zadať tému, napríklad „opakovanie prítomného času“. Každý žiak potom vedie vlastný rozhovor, v ktorom mu Tinybot nehovorí hotové odpovede, ale otázkami ho vedie ďalej. Tiny je pre vyučujúcich aj žiakov zadarmo.
 
-Tiny je česká aplikácia. Názvy Tinybotov uvádzame tak, ako sa volajú v aplikácii, a metodiky k nim sú v češtine.
-
 <!-- komponenta: tlačítko -->
 
-[Vyskúšať Tiny](https://tiny.school)
+[Vyskúšať Tiny](https://www.tiny.school/sk/)
 
 ## Ako Tiny funguje
 
@@ -36,25 +34,25 @@ Tiny je česká aplikácia. Názvy Tinybotov uvádzame tak, ako sa volajú v apl
 
 Tinyboti sú postavení podľa Bloomovej taxonómie. Každý sa zameriava na jednu úroveň myslenia, od zapamätania cez porozumenie a aplikáciu po analýzu, hodnotenie a tvorbu. Vyberte toho, ktorý zodpovedá cieľu vašej hodiny.
 
-![Rastlina, ktorej vetvy zodpovedajú úrovniam myslenia. Zapamätanie: Testovací chatbot, Opakovací parťák. Porozumenie: Společné objevování, Zvědavý mimoň, Historická postava, V hlavní roli. Aplikácia: Co kdyby. Analýza a hodnotenie: Chybující chatbot, Argumentační partner. Tvorba: Parťák pro brainstorming, Chatbot pro plánování.](/img/tinyboti-diagram.svg)
+![Rastlina, ktorej vetvy zodpovedajú úrovniam myslenia. Zapamätanie: Testovací chatbot, Opakovací parťák. Porozumenie: Spoločné objavovanie, Zvedavý mimoň, Historická postava, V hlavnej úlohe. Aplikácia: Čo keby. Analýza a hodnotenie: Chybujúci chatbot, Argumentačný partner. Tvorba: Parťák na brainstorming, Chatbot na plánovanie.](/img/tinyboti-diagram-sk.svg)
 
 | Kognitívny proces | Tinybot | Čo robí | Metodika |
 |---|---|---|---|
-| Zapamätanie | Testovací chatbot | Overuje vedomosti žiaka rôznymi typmi testov. | [Metodika (v češtine)](https://www.tiny.school/testovaci-chatbot/) |
-| | Opakovací parťák | Pýta sa a vysvetľuje, ak žiak nerozumie. | [Metodika (v češtine)](https://www.tiny.school/opakovaci-partak/) |
-| Porozumenie | Společné objevování | Pomáha žiakovi učiť sa samostatne, na hodine aj doma. | [Metodika (v češtine)](https://www.tiny.school/spolecne-objevovani/) |
-| | Zvědavý mimoň | Robí, že učivu nerozumie, a chce, aby mu ho žiak vysvetlil. | [Metodika (v češtine)](https://www.tiny.school/zvedavy-mimon/) |
-| | Historická postava / Expert | Hrá historickú postavu alebo experta a približuje súvislosti. | [Metodika (v češtine)](https://www.tiny.school/historicka-postava-expert/) |
-| | V hlavní roli… | Vžije sa do zadanej roly a odpovedá z jej pohľadu. | [Metodika (v češtine)](https://www.tiny.school/v-hlavni-roli/) |
-| Aplikácia | Co kdyby… | Rozvíja hypotetický scenár a pomáha o ňom premýšľať. | [Metodika (v češtine)](https://www.tiny.school/co-kdyby/) |
-| Analýza a hodnotenie | Argumentační partner | V diskusii zastáva opačný názor a upozorňuje na argumentačné fauly. | [Metodika (v češtine)](https://www.tiny.school/argumentacni-partner/) |
-| | Chybující chatbot | Zámerne robí chyby a vedie žiaka k tomu, aby si informácie overoval. | [Metodika (v češtine)](https://www.tiny.school/chybujici-chatbot/) |
-| Tvorba | Parťák pro brainstorming | Pomáha vymýšľať nápady a riešenia. | [Metodika (v češtine)](https://www.tiny.school/partak-pro-brainstorming/) |
-| | Tinybot pro plánování | Pomáha rozvrhnúť prácu do konkrétnych krokov. | [Metodika (v češtine)](https://www.tiny.school/chatbot-pro-planovani/) |
+| Zapamätanie | Testovací chatbot | Overuje vedomosti žiaka rôznymi typmi testov. | [Metodika](https://www.tiny.school/sk/testovaci-chatbot/) |
+| | Opakovací parťák | Pýta sa a vysvetľuje, ak žiak nerozumie. | [Metodika](https://www.tiny.school/sk/opakovaci-partak/) |
+| Porozumenie | Spoločné objavovanie | Pomáha žiakovi učiť sa samostatne, na hodine aj doma. | [Metodika](https://www.tiny.school/sk/spolocne-objavovanie/) |
+| | Zvedavý mimoň | Robí, že učivu nerozumie, a chce, aby mu ho žiak vysvetlil. | [Metodika](https://www.tiny.school/sk/zvedavy-mimon/) |
+| | Historická postava / Expert | Hrá historickú postavu alebo experta a približuje súvislosti. | [Metodika](https://www.tiny.school/sk/historicka-postava-expert/) |
+| | V hlavnej úlohe… | Vžije sa do zadanej roly a odpovedá z jej pohľadu. | [Metodika](https://www.tiny.school/sk/v-hlavnej-ulohe/) |
+| Aplikácia | Čo keby… | Rozvíja hypotetický scenár a pomáha o ňom premýšľať. | [Metodika](https://www.tiny.school/sk/co-keby/) |
+| Analýza a hodnotenie | Argumentačný partner | V diskusii zastáva opačný názor a upozorňuje na argumentačné fauly. | [Metodika](https://www.tiny.school/sk/argumentacny-partner/) |
+| | Chybujúci chatbot | Zámerne robí chyby a vedie žiaka k tomu, aby si informácie overoval. | [Metodika](https://www.tiny.school/sk/chybujuci-chatbot/) |
+| Tvorba | Parťák na brainstorming | Pomáha vymýšľať nápady a riešenia. | [Metodika](https://www.tiny.school/sk/partak-na-brainstorming/) |
+| | Chatbot na plánovanie | Pomáha rozvrhnúť prácu do konkrétnych krokov. | [Metodika](https://www.tiny.school/sk/chatbot-na-planovanie/) |
 
 <!-- komponenta: tlačítko -->
 
-[Návody na Tiny (v češtine)](https://www.tiny.school/navody/)
+[Videonávody na Tiny](https://www.tiny.school/sk/video-navody/)
 
 ## Čo ďalšie Tiny ponúka
 
@@ -68,6 +66,6 @@ Tiny je pre školy zadarmo. Žiaci sa prihlasujú školským účtom Office 365 
 
 Tiny spracúva len osobné údaje nevyhnutné na prevádzku aplikácie. Žiakom neposiela obchodné oznámenia a údaje nepredáva tretím stranám. Po ukončení spolupráce sa údaje do 30 dní vymažú.
 
-Tiny je určené žiakom od 11 rokov. Žiaci vo veku 11 a 12 rokov potrebujú súhlas zákonného zástupcu. Zabezpečí ho vyučujúci a vzor nájdete v [podmienkach Tiny](https://www.tiny.school/podminky-uziti/) (v češtine). Pre deti mladšie ako 11 rokov Tiny nie je.
+Tiny je určené žiakom od 11 rokov. Žiaci vo veku 11 a 12 rokov potrebujú súhlas zákonného zástupcu. Zabezpečí ho vyučujúci a vzor nájdete v [podmienkach Tiny](https://www.tiny.school/sk/podmienky-pouzivania-aplikacie-tiny/). Pre deti mladšie ako 11 rokov Tiny nie je.
 
 Máte otázku? Napíšte nám na [tiny@aidetem.cz](mailto:tiny@aidetem.cz).

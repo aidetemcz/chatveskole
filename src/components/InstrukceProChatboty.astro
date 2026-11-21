@@ -5,9 +5,10 @@
 // Skript animace je převzatý z artifactu; změna: animace stojí, dokud ji uživatel nepustí (tlačítko Přehrát animaci); písma jsou self-hostovaná (Inter, Space Grotesk, JetBrains Mono).
 import '@fontsource/jetbrains-mono/700.css';
 import { url } from '../lib/url';
-import { t } from '../lib/jazyk';
+import { t, SK } from '../lib/jazyk';
+import sk from '../i18n/sk-instrukce.json';
 ---
-<div class="instr">
+<div class="instr" data-texty-instrukce={SK ? JSON.stringify(sk) : undefined}>
 <section class="instr-hlavicka" aria-labelledby="instr-h">
   <div>
     <h2 id="instr-h">{t('Instrukce pro chatboty')}</h2>
@@ -137,6 +138,9 @@ import { t } from '../lib/jazyk';
 <script>
 (() => {
   'use strict';
+  // texty animací: ve slovenské verzi překlady z atributu data-texty (src/i18n se do klientského skriptu nedostane)
+  const TX = JSON.parse(document.querySelector('[data-texty-instrukce]')?.getAttribute('data-texty-instrukce') || '{}');
+  const tr = (s) => TX[s] ?? s;
   // ---------- barvy a rozměry (stejné jako HeroKrajina.astro) ----------
   const B = { bg: '#e3f1f6', sky: '#b3cdd6', skyDeep: '#5f8c9b', skyInk: '#3f6b7a', navy: '#2f5868', navyDeep: '#1f3f4d',
     red: '#dc5b5b', redDark: '#c24848', redLight: '#e88585', blue2: '#7fa6b4', white: '#ffffff' };
@@ -148,9 +152,9 @@ import { t } from '../lib/jazyk';
   const HL = 330;                  // hladina
   const BX = 280;                  // střed loďky
   const BOX = { x: 34, y: 20, w: 732, h: 112 };
-  const PROMPT_KRATKY = 'Červená ryba';
-  const PROMPT_DLOUHY = 'Červená ryba. Hoď síť tam, kde jich plave nejvíc, vytáhni ji nad hladinu, červené ryby dej do loďky a modré pusť zpátky do moře.';
-  const SKILL = 'Dovednost: Lov červených ryb';
+  const PROMPT_KRATKY = tr('Červená ryba');
+  const PROMPT_DLOUHY = tr('Červená ryba. Hoď síť tam, kde jich plave nejvíc, vytáhni ji nad hladinu, červené ryby dej do loďky a modré pusť zpátky do moře.');
+  const SKILL = tr('Dovednost: Lov červených ryb');
 
   // ---------- pomocné funkce ----------
   const h3 = (x, y, s) => { let h = (Math.imul(x | 0, 374761393) + Math.imul(y | 0, 668265263) + Math.imul(s | 0, 2147483647)) | 0; h = Math.imul(h ^ (h >>> 13), 1274126177); return ((h ^ (h >>> 16)) >>> 0) / 4294967296; };
@@ -697,7 +701,7 @@ import { t } from '../lib/jazyk';
       const s = A.s, n = clamp(Math.floor((s - tPsani) / rychlostPsani), 0, prompt.length), odeslano = s >= tOdeslano;
       ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
       const tx = x + 24, ty = y + 30, lh = 25;
-      if (n === 0) { ctx.font = PISMO; ctx.fillStyle = B.skyDeep; ctx.globalAlpha = 0.8; ctx.fillText('Napište zprávu…', tx, ty); ctx.globalAlpha = 1; }
+      if (n === 0) { ctx.font = PISMO; ctx.fillStyle = B.skyDeep; ctx.globalAlpha = 0.8; ctx.fillText(tr('Napište zprávu…'), tx, ty); ctx.globalAlpha = 1; }
       const radky = zalamej(prompt, w - 120);
       let zbyva = n, kx = tx, ky = ty;
       ctx.font = PISMO; ctx.fillStyle = B.navyDeep;
@@ -787,7 +791,7 @@ import { t } from '../lib/jazyk';
       if (bezi && viditelna) { krok(dt); kresli(); }
       requestAnimationFrame(smycka);
     }
-    function nastavBeh(ano) { bezi = ano; tlacitko.setAttribute('aria-pressed', String(!ano)); tlacitko.setAttribute('aria-label', ano ? 'Pozastavit animaci' : 'Přehrát animaci'); tlacitko.dataset.stav = ano ? 'bezi' : 'stoji'; canvas.parentElement.dataset.stav = tlacitko.dataset.stav; if (ano) posledni = 0; }
+    function nastavBeh(ano) { bezi = ano; tlacitko.setAttribute('aria-pressed', String(!ano)); tlacitko.setAttribute('aria-label', ano ? tr('Pozastavit animaci') : tr('Přehrát animaci')); tlacitko.dataset.stav = ano ? 'bezi' : 'stoji'; canvas.parentElement.dataset.stav = tlacitko.dataset.stav; if (ano) posledni = 0; }
     function simuluj(sekundy) { const n = Math.round(sekundy / 0.02); for (let i = 0; i < n; i++) krok(0.02); kresli(); }
     const spustit = canvas.parentElement.querySelector('.spustit');
     tlacitko.addEventListener('click', () => { nastavBeh(!bezi); if (!bezi) spustit.focus(); });
@@ -869,19 +873,19 @@ import { t } from '../lib/jazyk';
     const okno = (a, b) => clamp((T - a) / (b - a), 0, 1);
 
     // ---------- projekty ----------
-    const SLOZKY = [{ x: 170, nazev: 'Grantové žádosti' }, { x: 400, nazev: 'Třídní schůzky' }, { x: 630, nazev: 'Školní akce' }];
+    const SLOZKY = [{ x: 170, nazev: tr('Grantové žádosti') }, { x: 400, nazev: tr('Třídní schůzky') }, { x: 630, nazev: tr('Školní akce') }];
     const SY = 200, SC = 6, SW = 14 * SC, SH = 9 * SC;
     const PANEL = { x: 46, y: 34, w: 708, h: 532 };
     // instrukce projektu: delší prompt, zobrazí se jen začátek a tři tečky
-    const INSTRUKCE = ['Jsi grantový konzultant naší školy. Pomáháš psát', 'žádosti o dotace pro ZŠ. Drž se podmínek výzvy,', 'piš věcně a konkrétně, u každé aktivity uveď cíl,', 'výstup a rozpočet. Vycházej z našich úspěšných…'];
+    const INSTRUKCE = [tr('Jsi grantový konzultant naší školy. Pomáháš psát'), tr('žádosti o dotace pro ZŠ. Drž se podmínek výzvy,'), tr('piš věcně a konkrétně, u každé aktivity uveď cíl,'), tr('výstup a rozpočet. Vycházej z našich úspěšných…')];
     const SOUBORY = ['zadost-2024.pdf', 'zadost-2025.pdf', 'podminky-vyzvy.pdf', 'rozpocet.xlsx'];
-    const VOLANI = 'Hodnocení kvality žádosti', DOTAZ_P = 'zkontroluj novou žádost';
+    const VOLANI = tr('Hodnocení kvality žádosti'), DOTAZ_P = tr('zkontroluj novou žádost');
     function kresliProjekty() {
       const tik = Math.floor(T * 3);
       const otevreni = ease(okno(2.1, 2.6)) * (1 - ease(okno(13.0, 13.4)));
       // složky
       ctx.globalAlpha = 1 - 0.85 * otevreni;
-      text('Projekty', 60, 92, 22, B.navyDeep, 700);
+      text(tr('Projekty'), 60, 92, 22, B.navyDeep, 700);
       SLOZKY.forEach((s, i) => {
         const stisk = i === 0 ? Math.sin(Math.PI * okno(1.9, 2.1)) : 0, c = SC * (1 - 0.08 * stisk);
         const w = 14 * c, h = 9 * c;
@@ -897,15 +901,15 @@ import { t } from '../lib/jazyk';
         ram(r.x, r.y, r.w, r.h, tik, B.skyDeep);
         if (k > 0.97) {
           obr(SLOZKA, x0, 62, 2.4, B.red, '#f6d4d4');
-          text('Grantové žádosti', x0 + 46, 74, 22, B.navyDeep, 700);
+          text(tr('Grantové žádosti'), x0 + 46, 74, 22, B.navyDeep, 700);
           cara({ x: PANEL.x + 20, y: 108 }, { x: PANEL.x + PANEL.w - 20, y: 108 }, tik);
           // instrukce (dlouhý prompt) se píšou
-          text('INSTRUKCE', x0, 136, 13, B.skyInk, 700);
+          text(tr('INSTRUKCE'), x0, 136, 13, B.skyInk, 700);
           const celkem = INSTRUKCE.join(' ').length, n = Math.floor(okno(2.8, 5.0) * celkem);
           let zbyva = n;
           INSTRUKCE.forEach((r2, i) => { if (zbyva <= 0) return; text(r2.slice(0, zbyva), x0, 164 + i * 25, 16, B.navyDeep); zbyva -= r2.length + 1; });
           // znalosti (soubory)
-          text('ZNALOSTI', x0, 284, 13, B.skyInk, 700);
+          text(tr('ZNALOSTI'), x0, 284, 13, B.skyInk, 700);
           SOUBORY.forEach((s, i) => {
             const u = okno(5.1 + i * 0.3, 5.4 + i * 0.3); if (u <= 0) return;
             const fx = x0 + (i % 2) * 330, fy = 306 + Math.floor(i / 2) * 52, k2 = outBack(u);
@@ -919,7 +923,7 @@ import { t } from '../lib/jazyk';
             ctx.globalAlpha = uTl * (1 - uChat);
             const stisk = T > 7.5 && T < 7.7;
             ram(tlac.x, tlac.y, tlac.w, tlac.h, tik + 11, stisk ? B.red : B.skyDeep, stisk ? '#fdf1f1' : B.white);
-            text('+ Nový chat v projektu', tlac.x + 20, tlac.y + 25, 16, B.navyDeep, 700);
+            text(tr('+ Nový chat v projektu'), tlac.x + 20, tlac.y + 25, 16, B.navyDeep, 700);
             ctx.globalAlpha = 1;
           }
           if (uChat > 0) {
@@ -939,12 +943,12 @@ import { t } from '../lib/jazyk';
             if (nDotaz > 0) { text(DOTAZ_P.slice(0, nDotaz), kx, ty, 17, B.navyDeep); ctx.font = '17px ' + MONO; kx += ctx.measureText(DOTAZ_P.slice(0, nDotaz)).width + 2; }
             const odeslano = T > 11.6;
             if (!odeslano && (T < 11.0 || (T * 2) % 1 < 0.55)) { ctx.fillStyle = B.navyDeep; ctx.fillRect(Math.round(nZav > 0 ? kx : tx), ty - 10, 2, 20); }
-            if (nZav <= 0) text('Napište zprávu…', tx, ty, 17, B.skyDeep);
+            if (nZav <= 0) text(tr('Napište zprávu…'), tx, ty, 17, B.skyDeep);
             // tlačítko odeslat
             const bx = chat.x + chat.w - 36, by = chat.y + 35;
             for (let j = -6; j <= 6; j++) for (let i = -6; i <= 6; i++) { const d = Math.hypot(i, j); if (d > 5.8 || (d > 4.9 && h3(i, j, tik) < 0.2)) continue; ctx.fillStyle = nDotaz > 0 ? (odeslano && T < 11.8 ? B.redDark : B.red) : B.sky; ctx.fillRect(bx + i * 3 - 1, by + j * 3 - 1, 3, 3); }
             ctx.fillStyle = B.white; for (let j = -3; j <= 3; j++) ctx.fillRect(bx - 1, by + j * 3 - 1, 3, 3); for (const [i, j] of [[-1, -2], [1, -2], [-2, -1], [2, -1]]) ctx.fillRect(bx + i * 3 - 1, by + j * 3 - 1, 3, 3);
-            if (odeslano) text('Dovednost pracuje s instrukcemi a znalostmi projektu…', tx, chat.y - 16, 14, B.skyInk);
+            if (odeslano) text(tr('Dovednost pracuje s instrukcemi a znalostmi projektu…'), tx, chat.y - 16, 14, B.skyInk);
             ctx.globalAlpha = 1;
           }
         }
@@ -964,22 +968,22 @@ import { t } from '../lib/jazyk';
     }
 
     // ---------- pluginy ----------
-    const DOTAZ = 'Co dělám zítra?';
+    const DOTAZ = tr('Co dělám zítra?');
     const HUB = { x: 250, y: 220, w: 300, h: 64 };
-    const CILE = [{ x: 145, ikona: ZAVINAC, nazev: 'Tvorba ToDo listu', stitek: 'dovednost' }, { x: 400, ikona: KALENDAR, nazev: 'Kalendář', stitek: 'konektor' }, { x: 655, ikona: OBALKA, nazev: 'E-mail', stitek: 'konektor' }];
+    const CILE = [{ x: 145, ikona: ZAVINAC, nazev: tr('Tvorba ToDo listu'), stitek: tr('dovednost') }, { x: 400, ikona: KALENDAR, nazev: tr('Kalendář'), stitek: tr('konektor') }, { x: 655, ikona: OBALKA, nazev: 'E-mail', stitek: tr('konektor') }];
     const CY = 410, CW = 230, CH = 76;
-    const UKOLY = [['7:45', 'Porada pedagogického sboru', 'kalendář'], ['10:00', 'Hospitace v hodině češtiny', 'kalendář'], ['', 'Odpovědět zákonným zástupcům k exkurzi', 'e-mail'], ['', 'Připravit test ze zlomků', 'úkoly']];
+    const UKOLY = [['7:45', tr('Porada pedagogického sboru'), tr('kalendář')], ['10:00', tr('Hospitace v hodině češtiny'), tr('kalendář')], ['', tr('Odpovědět zákonným zástupcům k exkurzi'), 'e-mail'], ['', tr('Připravit test ze zlomků'), tr('úkoly')]];
     function kresliPluginy() {
       const tik = Math.floor(T * 3);
       // okno chatu s dotazem
       const { x, y, w, h } = BOX;
       ram(x, y, w, h, tik, B.skyDeep);
       const n = Math.floor(okno(0.5, 1.8) * DOTAZ.length), odeslano = T >= 2.2;
-      if (n === 0) text('Napište zprávu…', x + 24, y + 34, 21, B.skyDeep);
+      if (n === 0) text(tr('Napište zprávu…'), x + 24, y + 34, 21, B.skyDeep);
       text(DOTAZ.slice(0, n), x + 24, y + 34, 21, B.navyDeep);
       if (!odeslano && (n < DOTAZ.length || (T * 2) % 1 < 0.55)) { ctx.font = '21px ' + MONO; ctx.fillStyle = B.navyDeep; ctx.fillRect(Math.round(x + 24 + (n ? ctx.measureText(DOTAZ.slice(0, n)).width + 2 : 0)), y + 24, 2, 20); }
       obr(ZASTRCKA, x + 24, y + h - 40, 3, B.red, '#f6d4d4', tik + 3);
-      text('Plugin: Asistent vyučujícího', x + 54, y + h - 27, 15, B.skyInk, 700);
+      text(tr('Plugin: Asistent vyučujícího'), x + 54, y + h - 27, 15, B.skyInk, 700);
       const bx = x + w - 44, by = y + h - 36;
       for (let j = -6; j <= 6; j++) for (let i = -6; i <= 6; i++) { const d = Math.hypot(i, j); if (d > 5.8 || (d > 4.9 && h3(i, j, tik) < 0.2)) continue; ctx.fillStyle = n === 0 ? B.sky : B.red; ctx.fillRect(bx + i * 3 - 1, by + j * 3 - 1, 3, 3); }
       ctx.fillStyle = B.white; for (let j = -3; j <= 3; j++) ctx.fillRect(bx - 1, by + j * 3 - 1, 3, 3); for (const [i, j] of [[-1, -2], [1, -2], [-2, -1], [2, -1]]) ctx.fillRect(bx + i * 3 - 1, by + j * 3 - 1, 3, 3);
@@ -992,8 +996,8 @@ import { t } from '../lib/jazyk';
         cara(zChatu, hubNahore, tik);
         ram(HUB.x, HUB.y, HUB.w, HUB.h, tik, B.red);
         obr(ZASTRCKA, HUB.x + 22, HUB.y + 18, 3, B.red, '#f6d4d4', tik + 5);
-        text('Asistent vyučujícího', HUB.x + 56, HUB.y + 26, 17, B.navyDeep, 700);
-        text('plugin', HUB.x + 56, HUB.y + 46, 13, B.skyInk);
+        text(tr('Asistent vyučujícího'), HUB.x + 56, HUB.y + 26, 17, B.navyDeep, 700);
+        text(tr('plugin'), HUB.x + 56, HUB.y + 46, 13, B.skyInk);
         CILE.forEach((c, i) => {
           const u = okno(2.8 + i * 0.2, 3.1 + i * 0.2); if (u <= 0) return;
           const dole = { x: c.x, y: CY };
@@ -1022,7 +1026,7 @@ import { t } from '../lib/jazyk';
         const k = outBack(okno(6.3, 6.8)), r = { x: 60, y: 168, w: 680, h: 400 };
         ram(r.x, r.y + (1 - k) * 30, r.w, r.h, tik, B.skyDeep);
         obr(IKONA_OK, r.x + 30, r.y + 30, 3, B.red, B.red);
-        text('Váš plán na zítra', r.x + 70, r.y + 40, 22, B.navyDeep, 700);
+        text(tr('Váš plán na zítra'), r.x + 70, r.y + 40, 22, B.navyDeep, 700);
         UKOLY.forEach(([cas, ukol, zdroj], i) => {
           const v = okno(7.0 + i * 0.35, 7.3 + i * 0.35); if (v <= 0) return;
           const yy = r.y + 100 + i * 70;
@@ -1058,7 +1062,7 @@ import { t } from '../lib/jazyk';
       if (bezi && viditelna) { T += dt; if (T >= DELKA) T = 0; kresli(); }
       requestAnimationFrame(smycka);
     }
-    function nastavBeh(ano) { bezi = ano; tlacitko.setAttribute('aria-pressed', String(!ano)); tlacitko.setAttribute('aria-label', ano ? 'Pozastavit animaci' : 'Přehrát animaci'); tlacitko.dataset.stav = ano ? 'bezi' : 'stoji'; canvas.parentElement.dataset.stav = tlacitko.dataset.stav; if (ano) posledni = 0; }
+    function nastavBeh(ano) { bezi = ano; tlacitko.setAttribute('aria-pressed', String(!ano)); tlacitko.setAttribute('aria-label', ano ? tr('Pozastavit animaci') : tr('Přehrát animaci')); tlacitko.dataset.stav = ano ? 'bezi' : 'stoji'; canvas.parentElement.dataset.stav = tlacitko.dataset.stav; if (ano) posledni = 0; }
     const spustit = canvas.parentElement.querySelector('.spustit');
     tlacitko.addEventListener('click', () => { nastavBeh(!bezi); if (!bezi) spustit.focus(); });
     spustit.addEventListener('click', () => { nastavBeh(true); tlacitko.focus(); });
