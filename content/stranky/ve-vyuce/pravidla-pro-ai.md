@@ -20,12 +20,7 @@ odkazy:
 
 Žáci AI používají, ať to škola dovolí, nebo ne. Pravidla nejsou o zákazu, ale o tom, **kdy a jak AI učení pomáhá a kdy ho nahrazuje**. A o tom, aby všichni, vyučující, žáci i zákonní zástupci, věděli, co platí.
 
-## Dvě cesty k pravidlům
-
-Pravidla můžete vytvořit společně se žáky, nebo je připraví vedení školy. Obě cesty se dají kombinovat.
-
-- **Společně se žáky** — Lekce o etice technologií a workshop, na kterém žáci pravidla sami navrhnou a odhlasují. Pravidla, na kterých se podíleli, lépe přijmou.
-- **Připraví je vedení školy** — Dovednost Školní pravidla vás provede krok za krokem. Hodí se i k ověření nebo aktualizaci pravidel, která už máte.
+Pravidla můžete vytvořit participativně, tedy společně se žáky, nebo shora, kdy je připraví jen vedení školy. Popisujeme obě cesty a dají se i kombinovat.
 
 ## Pravidla společně se žáky
 
