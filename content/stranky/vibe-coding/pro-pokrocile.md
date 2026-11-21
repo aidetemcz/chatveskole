@@ -33,7 +33,7 @@ Programovací agenti jsou AI nástroje, které pracují přímo se soubory vaše
 Základní sestava (anglicky stack) je soubor nástrojů a služeb, na kterých vaše aplikace stojí. Patří do ní agent, který kód píše, úložiště, kde je kód uložený, služba, která aplikaci zveřejní, a případně databáze pro data a přihlašování.
 
 1. **Programovací agent** — Agent čte a upravuje soubory projektu podle vašich pokynů. Vy mu běžnou řečí popíšete, co chcete změnit, a on to naprogramuje, spustí a otestuje.
-2. **Úložiště kódu** — Kód aplikace potřebuje místo, kde je uložený i s historií všech změn. Nejčastěji je to [GitHub](https://github.com), může to být ale i vlastní server. Když agent něco rozbije, snadno se vrátíte k předchozí verzi.
+2. **Úložiště kódu** — Kód aplikace potřebuje místo, kde je uložený i s historií všech změn. Nejčastěji je to [GitHub](https://github.com). Když agent něco rozbije, snadno se vrátíte k předchozí verzi.
 3. **Zveřejnění na internetu** — Služby jako [Vercel](https://vercel.com), [Netlify](https://www.netlify.com) nebo [GitHub Pages](https://pages.github.com) propojíte s úložištěm a ony aplikaci zveřejní. Po každé změně v úložišti se web sám znovu zveřejní.
 4. **Databáze a přihlašování** — Když aplikace potřebuje ukládat data nebo přihlašovat uživatele, použijte [Supabase](https://supabase.com), případně [Firebase](https://firebase.google.com) od Googlu nebo [Neon](https://neon.com). Nabízejí databázi, přihlašování uživatelů a ukládání souborů a mají bezplatný tarif s limity. Při zakládání projektu zvolte umístění dat v EU.
 
@@ -45,12 +45,6 @@ Agent na webu pracuje přímo s vaším repozitářem (úložištěm) na GitHubu
 2. **Propojte agenta s GitHubem** — V Claude Code na webu (claude.ai/code) nebo v Codexu v ChatGPT se přihlaste ke GitHubu a povolte přístup k vybraným repozitářům. U Claude Code přitom nainstalujete aplikaci Claude pro GitHub.
 3. **Zadejte úkol** — Vyberte repozitář a běžnou řečí napište, co má agent udělat. Agent si kód stáhne, upraví ho a změny uloží do nové větve, tedy do samostatné verze, která nezasahuje do té hlavní.
 4. **Zkontrolujte a schvalte změny** — Agent připraví pull request, tedy návrh změn. Projděte si ho a sloučte do hlavní větve. Hosting propojený s GitHubem pak web sám znovu zveřejní.
-
-**Pracujete na počítači?** — Claude Code v terminálu, Antigravity nebo Cursor pracují se složkou v počítači. Repozitář si do ní nejdřív stáhnete (naklonujete) a agent pak změny na GitHub odešle za vás.
-
-## Dovednosti i pro programování
-
-Dovednosti nejsou jen pro chatboty, používají je i programovací agenti. Dovednost agentovi řekne, jak má udělat úkol, který se opakuje. Může to být třeba „jak u nás píšeme stránky“, „jak přidat novou dovednost na web“ nebo „kontrola přístupnosti“. Formát je stejný jako u [dovedností pro vyučující](/funkce/skills).
 
 ## Bezpečnost
 
