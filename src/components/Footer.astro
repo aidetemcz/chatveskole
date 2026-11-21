@@ -60,8 +60,8 @@ const sipka = '<path d="M5 12h14M13 6l6 6-6 6"></path>';
 </footer>
 
 <style>
-  /* patička přes celou šířku okna, stejně jako hlavička */
-  .siroka { max-width: none; padding-left: 32px; padding-right: 32px; }
+  /* obsah patičky nejvýš 1270 px, pozadí přes celou šířku okna */
+  .siroka { max-width: 1270px; padding-left: 32px; padding-right: 32px; }
   @media (max-width: 640px) { .siroka { padding-left: 16px; padding-right: 16px; } }
   .site-footer { background: var(--sky-light); padding-top: 72px; font-size: 0.94rem; line-height: 1.55; }
   .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 48px 40px; padding-bottom: 56px; }
