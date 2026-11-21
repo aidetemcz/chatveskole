@@ -30,11 +30,11 @@ const kurikulum = tlacitkoZ(uvodHtml);
 const perex = bezTlacitka(uvodHtml);
 
 // Chatboti ve výuce: karty s náhledem (komponenta „karty s náhledem“ už převedla seznam na <div class="nahledy">)
-const vyuka = najdi(/^Chatboti ve výuce/i);
+const vyuka = najdi(/^Chatboti ve výuce|^Chatboty vo vyučovaní/i);
 const vyukaHtml = htmlOddilu(vyuka);
 
 // Metodiky k Tiny: úvodní text, karta s obrázkem (úvodní metodika), ### Metodiky k jednotlivým Tinybotům (seznam odkazů)
-const tiny = najdi(/aplikaci Tiny/i);
+const tiny = najdi(/aplikaci Tiny|aplikácii Tiny/i);
 const tinyHtml = htmlOddilu(tiny);
 const karta = tinyHtml.match(/<div class="karta-obrazek card">\s*(<img [^>]*>)\s*<div class="karta-obrazek-text">([\s\S]*?)<\/div><\/div>/);
 const uvodni = karta ? (() => {
@@ -50,7 +50,7 @@ const metodiky = [...(jednotlive?.html.match(/<ul>([\s\S]*?)<\/ul>/)?.[1] ?? '')
   });
 
 // Školení: karta bez obrázku (### nadpis, text, odkaz) → závěrečná výzva
-const skoleni = najdi(/Školení/i);
+const skoleni = najdi(/Školení|Školenia/i);
 const skoleniHtml = htmlOddilu(skoleni);
 const skoleniBlok = bloky(skoleniHtml.replace(/<\/?div[^>]*>/g, ''))[0];
 const skoleniTlacitko = tlacitkoZ(skoleniHtml);

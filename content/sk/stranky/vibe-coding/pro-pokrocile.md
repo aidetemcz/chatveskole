@@ -1,8 +1,8 @@
 ---
-title: Vibe Coding pro pokročilé
+title: Vibe Coding pre pokročilých
 menu: Vibe Coding
 poradi: 5
-popis: Programovací agenti jako Claude Code nebo Codex, GitHub, hosting a databáze. Jak agentovi zadat pravidla, na co si dát pozor a jak stavíme tento web.
+popis: Programovací agenti ako Claude Code alebo Codex, GitHub, hosting a databázy. Ako agentovi zadať pravidlá, na čo si dať pozor a ako staviame tento web.
 sablona: pokrocili-pruvodce   # vlastní šablona src/pages/vibe-coding/pro-pokrocile.astro
 aktualizovano: 2026-11-21
 zdroje:
@@ -10,58 +10,58 @@ zdroje:
   - https://supabase.com/docs/guides/database/postgres/row-level-security
   - https://firebase.google.com/pricing
   - https://neon.com/pricing
-stav: koncept
+stav: ke-kontrole   # slovenský preklad, kontrola korektorom
 ---
 
-# Vibe Coding pro pokročilé
+# Vibe Coding pre pokročilých
 
-Po nějaké době využívání Vibe Coding aplikací pro začátečníky pravděpodobně zjistíte, že mnohem lépe fungují agentní řešení jako Claude Code, OpenAI Codex nebo Google Antigravity. V následujícím přehledu popisujeme, jak je propojit do základní sestavy a na co si dát pozor.
+Po nejakom čase používania Vibe Coding aplikácií pre začiatočníkov pravdepodobne zistíte, že oveľa lepšie fungujú agentové riešenia ako Claude Code, OpenAI Codex alebo Google Antigravity. V nasledujúcom prehľade opisujeme, ako ich prepojiť do základnej zostavy a na čo si dať pozor.
 
 ## Programovací agenti
 
-Programovací agenti jsou AI nástroje, které pracují přímo se soubory vašeho projektu: spouštějí ho, testují a opravují. Vyberte si podle toho, co už používáte a kolik chcete platit.
+Programovací agenti sú nástroje AI, ktoré pracujú priamo so súbormi vášho projektu: spúšťajú ho, testujú a opravujú. Vyberte si podľa toho, čo už používate a koľko chcete platiť.
 
-| Nástroj | Pro koho | Cena |
+| Nástroj | Pre koho | Cena |
 |---|---|---|
-| **Claude Code** | vyučující informatiky, správci webů | v tarifu Claude Pro a vyšších |
-| **OpenAI Codex** | totéž pro ty, kdo pracují v ChatGPT | omezeně zdarma, plně v placených tarifech |
-| **Google Antigravity** | kdo chce vývojové prostředí od Googlu | zdarma s limity, 18+ |
-| **Cursor** | kdo chce editor kódu s AI | omezeně zdarma, 18+ |
+| **Claude Code** | vyučujúci informatiky, správcovia webov | v tarife Claude Pro a vyšších |
+| **OpenAI Codex** | to isté pre tých, kto pracujú v ChatGPT | obmedzene zadarmo, plne v platených tarifoch |
+| **Google Antigravity** | kto chce vývojové prostredie od Googlu | zadarmo s limitmi, 18+ |
+| **Cursor** | kto chce editor kódu s AI | obmedzene zadarmo, 18+ |
 
-## Základní sestava
+## Základná zostava
 
-Základní sestava (anglicky stack) je soubor nástrojů a služeb, na kterých vaše aplikace stojí. Patří do ní agent, který kód píše, úložiště, kde je kód uložený, služba, která aplikaci zveřejní, a případně databáze pro data a přihlašování.
+Základná zostava (anglicky stack) je súbor nástrojov a služieb, na ktorých vaša aplikácia stojí. Patrí do nej agent, ktorý kód píše, úložisko, kde je kód uložený, služba, ktorá aplikáciu zverejní, a prípadne databáza na údaje a prihlasovanie.
 
-1. **Programovací agent** — Agent čte a upravuje soubory projektu podle vašich pokynů. Vy mu běžnou řečí popíšete, co chcete změnit, a on to naprogramuje, spustí a otestuje.
-2. **Úložiště kódu** — Kód aplikace potřebuje místo, kde je uložený i s historií všech změn. Nejčastěji je to [GitHub](https://github.com). Když agent něco rozbije, snadno se vrátíte k předchozí verzi.
-3. **Zveřejnění na internetu** — Služby jako [Vercel](https://vercel.com), [Netlify](https://www.netlify.com) nebo [GitHub Pages](https://pages.github.com) propojíte s úložištěm a ony aplikaci zveřejní. Po každé změně v úložišti se web sám znovu zveřejní.
-4. **Databáze a přihlašování** — Když aplikace potřebuje ukládat data nebo přihlašovat uživatele, použijte [Supabase](https://supabase.com), případně [Firebase](https://firebase.google.com) od Googlu nebo [Neon](https://neon.com). Nabízejí databázi, přihlašování uživatelů a ukládání souborů a mají bezplatný tarif s limity. Při zakládání projektu zvolte umístění dat v EU.
+1. **Programovací agent** — Agent číta a upravuje súbory projektu podľa vašich pokynov. Vy mu bežnou rečou opíšete, čo chcete zmeniť, a on to naprogramuje, spustí a otestuje.
+2. **Úložisko kódu** — Kód aplikácie potrebuje miesto, kde je uložený aj s históriou všetkých zmien. Najčastejšie je to [GitHub](https://github.com). Keď agent niečo pokazí, ľahko sa vrátite k predchádzajúcej verzii.
+3. **Zverejnenie na internete** — Služby ako [Vercel](https://vercel.com), [Netlify](https://www.netlify.com) alebo [GitHub Pages](https://pages.github.com) prepojíte s úložiskom a ony aplikáciu zverejnia. Po každej zmene v úložisku sa web sám znova zverejní.
+4. **Databáza a prihlasovanie** — Keď aplikácia potrebuje ukladať údaje alebo prihlasovať používateľov, použite [Supabase](https://supabase.com), prípadne [Firebase](https://firebase.google.com) od Googlu alebo [Neon](https://neon.com). Ponúkajú databázu, prihlasovanie používateľov a ukladanie súborov a majú bezplatný tarif s limitmi. Pri zakladaní projektu zvoľte umiestnenie údajov v EÚ.
 
-## Jak napojit agenta na GitHub
+## Ako napojiť agenta na GitHub
 
-Agent na webu pracuje přímo s vaším repozitářem (úložištěm) na GitHubu, takže do počítače nemusíte nic instalovat. U Claude Code i OpenAI Codex je postup podobný.
+Agent na webe pracuje priamo s vaším repozitárom (úložiskom) na GitHube, takže do počítača nemusíte nič inštalovať. Pri Claude Code aj OpenAI Codex je postup podobný.
 
-1. **Vytvořte repozitář** — Založte si účet na GitHubu a v něm nový repozitář pro projekt. Může být soukromý. Agent na webu pracuje jen s repozitářem, který už na GitHubu existuje, proto i pro úplně nový projekt nejdřív založte prázdný.
-2. **Propojte agenta s GitHubem** — V Claude Code na webu (claude.ai/code) nebo v Codexu v ChatGPT se přihlaste ke GitHubu a povolte přístup k vybraným repozitářům. U Claude Code přitom nainstalujete aplikaci Claude pro GitHub.
-3. **Zadejte úkol** — Vyberte repozitář a běžnou řečí napište, co má agent udělat. Agent si kód stáhne, upraví ho a změny uloží do nové větve, tedy do samostatné verze, která nezasahuje do té hlavní.
-4. **Zkontrolujte a schvalte změny** — Agent připraví pull request, tedy návrh změn. Projděte si ho a sloučte do hlavní větve. Hosting propojený s GitHubem pak web sám znovu zveřejní.
+1. **Vytvorte repozitár** — Založte si účet na GitHube a v ňom nový repozitár pre projekt. Môže byť súkromný. Agent na webe pracuje len s repozitárom, ktorý už na GitHube existuje, preto aj pre úplne nový projekt najprv založte prázdny.
+2. **Prepojte agenta s GitHubom** — V Claude Code na webe (claude.ai/code) alebo v Codexe v ChatGPT sa prihláste ku GitHubu a povoľte prístup k vybraným repozitárom. Pri Claude Code pritom nainštalujete aplikáciu Claude pre GitHub.
+3. **Zadajte úlohu** — Vyberte repozitár a bežnou rečou napíšte, čo má agent urobiť. Agent si kód stiahne, upraví ho a zmeny uloží do novej vetvy, teda do samostatnej verzie, ktorá nezasahuje do tej hlavnej.
+4. **Skontrolujte a schváľte zmeny** — Agent pripraví pull request, teda návrh zmien. Prejdite si ho a zlúčte do hlavnej vetvy. Hosting prepojený s GitHubom potom web sám znova zverejní.
 
-## Bezpečnost
+## Bezpečnosť
 
-- **Nikdy nedávejte do kódu hesla a API klíče.** API klíč je heslo, kterým se aplikace přihlašuje k jiné službě. V kódu by se k němu mohl dostat někdo cizí. Uložte ho proto v nastavení hostingu (proměnné prostředí).
-- **Nesbírejte osobní údaje.** Výjimkou je, když máte vyřešené GDPR. Nejbezpečnější je statický web bez databáze, tedy web, který jen zobrazuje hotové stránky a nic neukládá.
-- **Zabezpečte databázi.** U Supabase zapněte u každé tabulky zabezpečení na úrovni řádků (Row Level Security) a nastavte pravidla, kdo smí data číst a měnit. Jinak se k nim může dostat kdokoli. Agenta o to výslovně požádejte a pravidla zkontrolujte.
-- **Kontrolujte, co agent instaluje.** Agent do projektu přidává hotové části kódu od jiných autorů, takzvané balíčky. Neznámé balíčky mohou obsahovat škodlivý kód.
-- **Myslete na přístupnost.** Web mají zvládnout i lidé se zrakovým nebo pohybovým omezením. Hlídejte kontrast, ovládání klávesnicí a popisky obrázků.
+- **Nikdy nedávajte do kódu heslá a API kľúče.** API kľúč je heslo, ktorým sa aplikácia prihlasuje k inej službe. V kóde by sa k nemu mohol dostať niekto cudzí. Uložte ho preto v nastaveniach hostingu (premenné prostredia).
+- **Nezbierajte osobné údaje.** Výnimkou je, keď máte vyriešené GDPR. Najbezpečnejší je statický web bez databázy, teda web, ktorý len zobrazuje hotové stránky a nič neukladá.
+- **Zabezpečte databázu.** V Supabase zapnite pri každej tabuľke zabezpečenie na úrovni riadkov (Row Level Security) a nastavte pravidlá, kto smie údaje čítať a meniť. Inak sa k nim môže dostať ktokoľvek. Agenta o to výslovne požiadajte a pravidlá skontrolujte.
+- **Kontrolujte, čo agent inštaluje.** Agent do projektu pridáva hotové časti kódu od iných autorov, takzvané balíčky. Neznáme balíčky môžu obsahovať škodlivý kód.
+- **Myslite na prístupnosť.** Web majú zvládnuť aj ľudia so zrakovým alebo pohybovým obmedzením. Strážte kontrast, ovládanie klávesnicou a popisy obrázkov.
 
-## Případová studie: tento web
+## Prípadová štúdia: tento web
 
-Web Chatboti ve škole jsme v roce 2026 převedli ze systému WordPress na Astro pomocí Vibe Codingu. Pokud proběhne ve funkcích nějaká další změna, stačí, když ji v přirozeném jazyce popíšeme Claude Code a on udělá změny za nás. My je pak jen zkontrolujeme, případně informace upřesníme.
+Web Chatboty v škole sme v roku 2026 previedli zo systému WordPress na Astro pomocou Vibe Codingu. Ak nastane vo funkciách nejaká ďalšia zmena, stačí, keď ju v prirodzenom jazyku opíšeme Claude Code a on urobí zmeny za nás. My ich potom len skontrolujeme, prípadne informácie spresníme.
 
-- **Všechny texty jsou soubory Markdown**, tedy obyčejný text s jednoduchými značkami pro nadpisy a seznamy. Jsou uložené v repozitáři (úložišti projektu). Když chceme změnit text, upravíme soubor.
-- **Každá dovednost je složka** se souborem `SKILL.md`, verzí ve formě promptu a údaji pro web, jako je popis a štítky. Web z ní sám vytvoří stránku, tlačítko Kopírovat a ZIP ke stažení.
-- **Data jsou v souborech YAML**, tedy v textových souborech s přehledně zapsanými údaji. Máme v nich ceny chatbotů a přehled funkcí. Když se změní ceník, upravíme jeden soubor.
-- **Nemáme žádnou databázi.** Web se předem sestaví do hotových (statických) stránek a běží na Vercelu.
-- **Změny děláme hromadně přes Claude Code.** Stačí mu napsat například „aktualizuj u všech dovedností věkové limity podle nového přehledu“.
+- **Všetky texty sú súbory Markdown**, teda obyčajný text s jednoduchými značkami pre nadpisy a zoznamy. Sú uložené v repozitári (úložisku projektu). Keď chceme zmeniť text, upravíme súbor.
+- **Každá zručnosť je priečinok** so súborom `SKILL.md`, verziou vo forme promptu a údajmi pre web, ako je opis a štítky. Web z neho sám vytvorí stránku, tlačidlo Kopírovať a ZIP na stiahnutie.
+- **Údaje sú v súboroch YAML**, teda v textových súboroch s prehľadne zapísanými údajmi. Máme v nich ceny chatbotov a prehľad funkcií. Keď sa zmení cenník, upravíme jeden súbor.
+- **Nemáme žiadnu databázu.** Web sa vopred zostaví do hotových (statických) stránok a beží na Verceli.
+- **Zmeny robíme hromadne cez Claude Code.** Stačí mu napísať napríklad „aktualizuj pri všetkých zručnostiach vekové limity podľa nového prehľadu“.
 
-[Zpět na Co je Vibe Coding](/vibe-coding/co-je-to)
+[Späť na Čo je Vibe Coding](/vibe-coding/co-je-to)

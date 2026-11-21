@@ -33,7 +33,7 @@ const metodikaObr = metodikaHtml.match(/<img [^>]*>/)?.[0] ?? '';
 const metodikaText = odstavce(metodikaHtml);
 
 // Školení: nadpis, ### název, zbytek jako obyčejný text; poslední odstavec jen s odkazem → tlačítko
-const skoleni = najdi(/Školení/i);
+const skoleni = najdi(/Školení|Školenie/i);
 let skoleniHtml = htmlOddilu(skoleni);
 const skoleniNazev = nadpisH3(skoleniHtml);
 const skoleniOdkaz = skoleniHtml.match(/<p>\s*<a href="([^"]+)"[^>]*>([^<]*)<\/a>\s*<\/p>\s*$/);
@@ -41,7 +41,7 @@ if (skoleniOdkaz) skoleniHtml = skoleniHtml.slice(0, skoleniOdkaz.index);
 const skoleniText = skoleniHtml.replace(/<h3[^>]*>[\s\S]*?<\/h3>/, '');
 
 // Zadání: úvodní odstavec, pak ### „Název (předměty)“ → karta s promptem a poznámkou; poslední odstavec jen s odkazem → tlačítko
-const zadani = najdi(/zadání/i);
+const zadani = najdi(/zadání|zadaní/i);
 let zadaniHtml = htmlOddilu(zadani);
 const dalsi = zadaniHtml.match(/<p>\s*<a href="([^"]+)"[^>]*>([^<]*)<\/a>\s*<\/p>\s*$/);
 if (dalsi) zadaniHtml = zadaniHtml.slice(0, dalsi.index);
